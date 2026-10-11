@@ -1,0 +1,8 @@
+# Local working files and packaged builds
+work/
+outputs/
+dist/
+*.zip
+*.log
+.DS_Store
+Thumbs.db
