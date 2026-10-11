@@ -1,0 +1,722 @@
+[
+  {
+    "tag": "BAB",
+    "country": "成都锦官公国",
+    "region": "chengdu_plain",
+    "inscription": "成都",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bab.dds",
+    "sha256": "124f6e122c7958745f4c4add6e84ff08d595567546549575971981cdbf9f436b",
+    "definition_sha256": "4b016d1373d577d91871b4a1e256d239418b8378d1a69db0597472e5fee312ac",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "textured_emblems",
+        "file": "te_dragon_flaming_pearl_clouds_gold_red_variant.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAE",
+    "country": "汉州侯国",
+    "region": "chengdu_plain",
+    "inscription": "汉州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bae.dds",
+    "sha256": "ea48e643ebe256908da4d3c86651cb8bca6f4b45bb071e95d4331084e2509368",
+    "definition_sha256": "5b89c9075bfe9c87c350bb3fe5b0118fc105e5453c3789f9adcc133f889582a7",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_fish_naiant.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAF",
+    "country": "彭州侯国",
+    "region": "chengdu_plain",
+    "inscription": "彭州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_baf.dds",
+    "sha256": "220c878110b35d5ac145b7f9f09fd195075c69aeb94d73034877fa5841b0cf52",
+    "definition_sha256": "c8e15a9bc8247962496789f06e10785e53578a9210b401940ad93fac11be5508",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_white_tiger.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAJ",
+    "country": "邛州侯国",
+    "region": "chengdu_plain",
+    "inscription": "邛州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_baj.dds",
+    "sha256": "081fa26c501a9df4e94e8192c210ab3f84c6d236a02e41a7a2c4bbe88bf0aac2",
+    "definition_sha256": "4f65827327c45c17b533b801da41a9c8e73fe357434d5928ca23f43586732f60",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_double_phoenix.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAL",
+    "country": "眉州侯国",
+    "region": "chengdu_plain",
+    "inscription": "眉州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bal.dds",
+    "sha256": "e663f5d13b6c92b1c892f6b382739fa2d1dd8385f64fa73a049106e4c28f7c8c",
+    "definition_sha256": "db00009542efa15ad6de2b834199d2838bccbc4a99ccda1f9bfc5641274aa17d",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_vermilion_bird.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAO",
+    "country": "嘉定山门侯国",
+    "region": "southern_salt_wine",
+    "inscription": "嘉定",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bao.dds",
+    "sha256": "41f150a352cb153012185454ff17bedb0dd8e3ba68138efcf9e3f2a7864ea64c",
+    "definition_sha256": "c86904d1e9d65b4d8cffb7e1e36e95c1753acd5c0fc3be0b0242ff9d4ac23f0c",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_lotus_throne.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAP",
+    "country": "叙州盐酒商邦",
+    "region": "southern_salt_wine",
+    "inscription": "叙州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bap.dds",
+    "sha256": "2efaecc6fa9b9c5b3800062a5ecf54459112df92f5015cf93e0c4d0d15dfbf94",
+    "definition_sha256": "87baaa4e52c01e27f8f353509ef083bc211a8d65c8a3f31340e8359599c2afdf",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_vermilion_bird.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAQ",
+    "country": "泸州侯国",
+    "region": "southern_salt_wine",
+    "inscription": "泸州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_baq.dds",
+    "sha256": "87babc94de56f0a6917af6a99ef3a34edb182e38f327311b2bc50186c8df9b9c",
+    "definition_sha256": "c92e69acd5709c44c8b17a1fe1b3533e7a9230807a0b3a31bab6d36c33e0fdd8",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_double_phoenix.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAW",
+    "country": "长宁侯国",
+    "region": "southern_salt_wine",
+    "inscription": "长宁",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_baw.dds",
+    "sha256": "c4d4f81db8be0315ee5fd38c0aa5a255f9e192907d28c6a5d7f8ee12af958f73",
+    "definition_sha256": "236e0ce971e097b5e6a2cfbe62648ac4ceeb78fd78737b9b3c7d93e2dff1c4aa",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_blessing_prosperity.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAX",
+    "country": "昌州侯国",
+    "region": "eastern_river",
+    "inscription": "昌州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bax.dds",
+    "sha256": "7bec7d70d8ce7cdf2cf0ada73e3358273e765f87a2117e32f1ec5182ffe51c8b",
+    "definition_sha256": "d8b2ebdedeb73db1fe62cf04298a7516e398794f72c7a260f2b1e8bd50f14452",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_azure_dragon.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BAZ",
+    "country": "重庆山城公国",
+    "region": "eastern_river",
+    "inscription": "重庆",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_baz.dds",
+    "sha256": "6acd469ccf9325117fe02371b69ca0fab19551a78ea2fabf9ce75846fdca47b1",
+    "definition_sha256": "a77a22929000b948cab4d767e5600ef924334b5b547c818c8997371cd8bc0331",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "textured_emblems",
+        "file": "te_dragon_flaming_pearl_clouds_gold_azure_variant.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBB",
+    "country": "涪州侯国",
+    "region": "eastern_river",
+    "inscription": "涪州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbb.dds",
+    "sha256": "a3c9e6899f9be570f27c703534f7b528f63b296b8b2a9a913e33f046a587e4b5",
+    "definition_sha256": "aef3e9db7a0bd51100c62b76980a9b12b95983a0090b366c3ab8f5dea0cbde66",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_fishes_pandya.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBC",
+    "country": "合州侯国",
+    "region": "eastern_river",
+    "inscription": "合州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbc.dds",
+    "sha256": "5e0c79828c0183801afb27cb93446362919da09206fa94541019e1e2db1ce3a1",
+    "definition_sha256": "e333adb2aac5dbf974a885ffeb9825764046df51b0c0d5b00ac265a15c421d5e",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_black_turtle.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBE",
+    "country": "夔州侯国",
+    "region": "eastern_river",
+    "inscription": "夔州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbe.dds",
+    "sha256": "debee1eae9c4c9e8e7942c19e4b73bcf8e7d596ce0efb731f0d4f0d2b3547f66",
+    "definition_sha256": "4a60b768ed7accc28bbf340a11bec3b28bbd7f290715c52ee7ed0b4455029d31",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_boathooks_saltire.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBF",
+    "country": "酉阳侯国",
+    "region": "eastern_river",
+    "inscription": "酉阳",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbf.dds",
+    "sha256": "1baa09ceaf68d6195f10d7a0582a1deee345977d26892f94cf473ee336c7bb35",
+    "definition_sha256": "9f714f545ec7e23df2214f3d89ee6d7e03b750d6631ec30c85f9e4ae5cf1f21d",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_qilin.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBH",
+    "country": "忠州侯国",
+    "region": "eastern_river",
+    "inscription": "忠州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbh.dds",
+    "sha256": "583d0b4787b93b0e6a3bb12015b2adcee56a96fa857b5dd019463b952768867b",
+    "definition_sha256": "d4d971aca55e7522bae6e3e088befd27b8b7d9dbf2dc0edd0fa57afcc50e8f5a",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_double_phoenix.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBI",
+    "country": "保宁蜀道侯国",
+    "region": "northern_shudao",
+    "inscription": "保宁",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbi.dds",
+    "sha256": "18748f6149b1a70d3e4397c7cf3cebd0268356a1ceae99f1c5077d26fa6fcc10",
+    "definition_sha256": "5d545bdeec5f936dd1815d97917bc7fb4704b1da3d11c147e7dca92662b5d730",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_white_tiger.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBJ",
+    "country": "巴州侯国",
+    "region": "northern_shudao",
+    "inscription": "巴州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbj.dds",
+    "sha256": "5b7379231bbca320b9fe1a50d8d36df06ded8cd4674ca1a60b1d77f71095e401",
+    "definition_sha256": "5be9c2c31be4a84d83782a0af5e73b4f740becf4575bc4be4798f35e841389f3",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_qilin.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBL",
+    "country": "广元侯国",
+    "region": "northern_shudao",
+    "inscription": "广元",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbl.dds",
+    "sha256": "24dc4219234294d59235e5310f5fed3cc7ecd033d10fd5fe326394e7a1605056",
+    "definition_sha256": "cf63168751d3caea7dedfcfc8b3251ed36dc24aaf96f5d58d40257f9f08a2f37",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_black_turtle.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBM",
+    "country": "剑州侯国",
+    "region": "northern_shudao",
+    "inscription": "剑州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbm.dds",
+    "sha256": "8c76bc52d78828e0de32587f5481fc488969abca4974e4e269d6f3c3f5671352",
+    "definition_sha256": "178f8d4469dd19da1e5c27a1eeb6ddb6c5f7006d96b6ced2aea53aa602d59de0",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_mountains_landscape_chitral.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBN",
+    "country": "龙安侯国",
+    "region": "northern_shudao",
+    "inscription": "龙安",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbn.dds",
+    "sha256": "2f3d24dbf151a1116a5186f96718519ebfacb1aa1cec36e2b9dd2c0492ddf4ad",
+    "definition_sha256": "600ff0197692b11060a9b570f92cea27be53899e1ea9e1aa7ad96eb47d363e3b",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_azure_dragon.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBO",
+    "country": "达州侯国",
+    "region": "northern_shudao",
+    "inscription": "达州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbo.dds",
+    "sha256": "52d91c3f97e09c1bdfa1ee114f8e96b652596c7f69cc24106f259f7d06d613a4",
+    "definition_sha256": "fa7d1cd67f2e54aa9a5cd7631f89c50875e3a843b622aced1dba102f7c475283",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_horse_courant.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBP",
+    "country": "顺庆侯国",
+    "region": "northern_shudao",
+    "inscription": "顺庆",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbp.dds",
+    "sha256": "153ba875c0054696613bec55d8f90a0eb22b52c16a466e5b338aa9d92ea8476a",
+    "definition_sha256": "9a1f85cb93e932c4084288373557a019f6f3633e2715f522c45d9c2413e0072b",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_double_phoenix.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBQ",
+    "country": "简州侯国",
+    "region": "central_hills",
+    "inscription": "简州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbq.dds",
+    "sha256": "b180acd4394877cdb9a23ade513042f411ef59093cbb235887db86c22bea19de",
+    "definition_sha256": "78027e30d872e5fbdaaa9c5dcbf484c7bac68c1cbf274a4a2b9ca62310c9ed5a",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_wheat_ear.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBR",
+    "country": "遂宁义仓侯国",
+    "region": "central_hills",
+    "inscription": "遂宁",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbr.dds",
+    "sha256": "8e8ad8d40c3030b37b00c8333c7daa8d05c629b0aa9bf15b2f79eca6c9b593b3",
+    "definition_sha256": "b315ac2b069ddae20362f21c1c1cd44967126b676dfb153294eb36ca5f651dba",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_wheat_garb.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBS",
+    "country": "潼川侯国",
+    "region": "central_hills",
+    "inscription": "潼川",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbs.dds",
+    "sha256": "bd7d8135b99e84d67e5d5b0ee5918de7455e4eb429d04a030b0f0c86d82db9d1",
+    "definition_sha256": "cca07a3e9cab6515660cbc1d9e59f62a4cd0a935e279b7a385478e607a6f28ef",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_tree_fruit_simple.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBT",
+    "country": "广安侯国",
+    "region": "central_hills",
+    "inscription": "广安",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbt.dds",
+    "sha256": "cc5c870647099cd1d384878993989651c9cee63df29a803ec52667ba3a02d6da",
+    "definition_sha256": "8cc51f272006dd79904e59f270e7eeb14846425fce892bbb70037a548b97c683",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_heron_wide.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBU",
+    "country": "雅州茶马侯国",
+    "region": "western_tea_horse",
+    "inscription": "雅州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbu.dds",
+    "sha256": "6296827611522c0b238b951a7ca0fd68bb9a540eb869f697a5bb97a5dd6c7ca7",
+    "definition_sha256": "d8fd02ed16e243a05da8130d4a8c8806d5a4ab8247340a4069e56d89091aa91c",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "textured_emblems",
+        "file": "te_wind_horse.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBV",
+    "country": "茂州侯国",
+    "region": "western_tea_horse",
+    "inscription": "茂州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbv.dds",
+    "sha256": "b299ca982577f3495e903fdbe652f94065488c319b3d94a0f7b1cbb31fd5fb93",
+    "definition_sha256": "946b35bcc3c08d4a90b3ca03b8e455d06083358c9ac6ca099de202cf29c5c1fc",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_auspicious_conch_shell.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBW",
+    "country": "松潘侯国",
+    "region": "western_tea_horse",
+    "inscription": "松潘",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbw.dds",
+    "sha256": "5347a2e8b1fa6790269d7d07949753f981993a1db778d08bff8c0bd993690e72",
+    "definition_sha256": "71e4df47abeccde4999b191153b36ae7becf742130bf26a172a62c67e5dced02",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "textured_emblems",
+        "file": "te_tibetan_garuda.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBX",
+    "country": "盐源侯国",
+    "region": "southwestern_valleys",
+    "inscription": "盐源",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbx.dds",
+    "sha256": "de4f8ef407a7721d3f60aa29769345cd54d8f6e89fe197726080704ee922ac6c",
+    "definition_sha256": "026e006368090a548e8de61801826bfb4f0f5078f9e5aff735fba171d2b3452d",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_lotus_chakra.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBY",
+    "country": "德昌侯国",
+    "region": "southwestern_valleys",
+    "inscription": "德昌",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bby.dds",
+    "sha256": "0e34b3f3bee9afdf2b7a6120470dc2c3b2ec017a14387ca8537bffdb96b9fdb3",
+    "definition_sha256": "a88eb3ae3816d403b2c2eadec793603a7a6e8f92637cb0fd10956dbde524d37b",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_auspicious_conch_shell.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BBZ",
+    "country": "黎州侯国",
+    "region": "southwestern_valleys",
+    "inscription": "黎州",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bbz.dds",
+    "sha256": "5df89ca95b9a6640fb33f6e320de6c0b2e00e3aa44772e680c83e6115329bb8a",
+    "definition_sha256": "c7a6a041922c7ed5427b0bd392a50c7a2612cc5b782792dede9b2399bb0635d9",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_lotus_flower_02.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BCA",
+    "country": "马湖侯国",
+    "region": "southwestern_valleys",
+    "inscription": "马湖",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bca.dds",
+    "sha256": "767996cb67c4735d0601a4d7b2eff065818797498f94da92e42ac07bbc94d5d9",
+    "definition_sha256": "cbe522d9877097f6894760e609c3b1e426778d2a3fa87e24dd56dab50647c5cd",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_fringe.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_mountains_hunza.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BCB",
+    "country": "建昌共治侯国",
+    "region": "southwestern_valleys",
+    "inscription": "建昌",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bcb.dds",
+    "sha256": "e81dae137ebd1bd629b522be79de7876c8da86b9db0fc68a3ab205fb0cc526cb",
+    "definition_sha256": "69e2dc3d614fd31558170da452b985d8fb1cc79de4ce9938d3c87f464e091353",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "colored_emblems",
+        "file": "ce_chinese_crossed_vajra_taijitu.dds"
+      }
+    ]
+  },
+  {
+    "tag": "BCC",
+    "country": "永宁侯国",
+    "region": "southwestern_valleys",
+    "inscription": "永宁",
+    "font": "LiSu / 隶书 (SIMLI.TTF)",
+    "texture": "ce_hbe_name_bcc.dds",
+    "sha256": "ecb81491bbab537ea32da35559dc9107e249ebb7a4cd2f22e73d6305d995cf96",
+    "definition_sha256": "0287ef8ab04fefe57df30a927c726fc0c25447a8f14ab3d4dca1cd30b1cc0717",
+    "native_assets": [
+      {
+        "category": "patterns",
+        "file": "pattern_solid.dds"
+      },
+      {
+        "category": "textured_emblems",
+        "file": "te_tibetan_flaming_jewels.dds"
+      }
+    ]
+  }
+]

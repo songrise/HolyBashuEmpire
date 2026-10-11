@@ -1,0 +1,4 @@
+BBB = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_indigo"
+    colored_emblem = { texture = "ce_fishes_pandya.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbb.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}

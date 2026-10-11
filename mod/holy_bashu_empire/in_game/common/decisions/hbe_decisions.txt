@@ -1,446 +1,446 @@
 ﻿hbe_tech_common_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_1.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_common_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_common_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_2.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_common_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_common_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_common_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_3.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_3 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_common_2  NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_common_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_common_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_4.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_4 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_common_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_common_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_5.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_5 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_common_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_common_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_common_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_6.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_6 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_common_5  NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_common_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_common_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_7.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_7 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_common_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_common_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_common_8.dds"
     potential = { hbe_is_prince = yes  NOT = { has_variable = hbe_tech_common_8 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_common_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_common_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_common_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_chengdu_plain_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_chengdu_plain_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_chengdu_plain_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_chengdu_plain_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_chengdu_plain_2 NOT = { has_variable = hbe_tech_chengdu_plain_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_chengdu_plain_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_chengdu_plain_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_chengdu_plain_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_chengdu_plain_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_chengdu_plain_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_chengdu_plain_2 NOT = { has_variable = hbe_tech_chengdu_plain_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_chengdu_plain_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_chengdu_plain_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_chengdu_plain_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_chengdu_plain_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_tech_chengdu_plain_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_chengdu_plain_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_chengdu_plain_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_chengdu_plain_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southern_salt_wine_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_southern_salt_wine_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_southern_salt_wine_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_southern_salt_wine_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_southern_salt_wine_2 NOT = { has_variable = hbe_tech_southern_salt_wine_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_southern_salt_wine_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_southern_salt_wine_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southern_salt_wine_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_southern_salt_wine_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southern_salt_wine_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_southern_salt_wine_2 NOT = { has_variable = hbe_tech_southern_salt_wine_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_southern_salt_wine_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_southern_salt_wine_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southern_salt_wine_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_tech_southern_salt_wine_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_southern_salt_wine_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southern_salt_wine_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southern_salt_wine_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_eastern_river_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_eastern_river_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_eastern_river_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_eastern_river_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_eastern_river_2 NOT = { has_variable = hbe_tech_eastern_river_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_eastern_river_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_eastern_river_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_eastern_river_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_eastern_river_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_eastern_river_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_eastern_river_2 NOT = { has_variable = hbe_tech_eastern_river_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_eastern_river_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_eastern_river_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_eastern_river_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_eastern_river_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_tech_eastern_river_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_eastern_river_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_eastern_river_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_eastern_river_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_northern_shudao_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_northern_shudao_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_northern_shudao_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_northern_shudao_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_northern_shudao_2 NOT = { has_variable = hbe_tech_northern_shudao_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_northern_shudao_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_northern_shudao_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_northern_shudao_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_northern_shudao_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_northern_shudao_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_northern_shudao_2 NOT = { has_variable = hbe_tech_northern_shudao_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_northern_shudao_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_northern_shudao_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_northern_shudao_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_northern_shudao_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_tech_northern_shudao_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_northern_shudao_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_northern_shudao_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_northern_shudao_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_central_hills_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_central_hills_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_central_hills_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_central_hills_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_central_hills_2 NOT = { has_variable = hbe_tech_central_hills_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_central_hills_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_central_hills_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_central_hills_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_central_hills_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_central_hills_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_central_hills_2 NOT = { has_variable = hbe_tech_central_hills_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_central_hills_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_central_hills_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_central_hills_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_central_hills_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_tech_central_hills_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_central_hills_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_central_hills_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_central_hills_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_western_tea_horse_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_western_tea_horse_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_western_tea_horse_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_western_tea_horse_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_western_tea_horse_2 NOT = { has_variable = hbe_tech_western_tea_horse_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_western_tea_horse_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_western_tea_horse_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_western_tea_horse_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_western_tea_horse_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_western_tea_horse_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_western_tea_horse_2 NOT = { has_variable = hbe_tech_western_tea_horse_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_western_tea_horse_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_western_tea_horse_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_western_tea_horse_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_tech_western_tea_horse_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_western_tea_horse_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_western_tea_horse_8.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_8_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southwestern_valleys_1 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_1.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_1 } }
     allow = { current_year >= 1337   NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_1.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_1_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_southwestern_valleys_2 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_2.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_2 } }
     allow = { current_year >= 1342 has_variable = hbe_tech_southwestern_valleys_1  NOT = { has_variable = hbe_research_pending } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_2.a ai_chance = { value = 100 } effect = { add_gold = -3 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_2_pending set_variable = { name = hbe_research_timer value = yes years = 3 } } }
 }
 hbe_tech_southwestern_valleys_3 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_3.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_3 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_southwestern_valleys_2 NOT = { has_variable = hbe_tech_southwestern_valleys_6 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_3.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_3_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_southwestern_valleys_4 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_4 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_southwestern_valleys_3  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_4.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_4_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southwestern_valleys_5 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_5 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_southwestern_valleys_4  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_5_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southwestern_valleys_6 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_6.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_6 } }
     allow = { current_year >= 1352 has_variable = hbe_tech_southwestern_valleys_2 NOT = { has_variable = hbe_tech_southwestern_valleys_3 } NOT = { has_variable = hbe_research_pending } gold >= 6 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_6.a ai_chance = { value = 100 } effect = { add_gold = -6 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_6_pending set_variable = { name = hbe_research_timer value = yes years = 5 } } }
 }
 hbe_tech_southwestern_valleys_7 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_7.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_7 } }
     allow = { current_year >= 1372 has_variable = hbe_tech_southwestern_valleys_6  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_tech_southwestern_valleys_7.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_7_pending set_variable = { name = hbe_research_timer value = yes years = 8 } } }
 }
 hbe_tech_southwestern_valleys_8 = {
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_8.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_tech_southwestern_valleys_8 } }
     allow = { current_year >= 1397 has_variable = hbe_tech_southwestern_valleys_7  NOT = { has_variable = hbe_research_pending } gold >= 10 }
     ai_will_do = { value = 10 }

@@ -1,36 +1,144 @@
-﻿BAB = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAE = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAF = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAJ = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAL = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAO = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAP = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAQ = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAW = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAX = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BAZ = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBB = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBC = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBE = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBF = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBH = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBI = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBJ = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBL = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBM = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBN = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBO = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBP = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBQ = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBR = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBS = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBT = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBU = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBV = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBW = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBX = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBY = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BBZ = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BCA = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BCB = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
-BCC = { pattern = "pattern_diagonal_split_01.dds" color1 = "red" color2 = "gold" }
+﻿BAB = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_ochre" color2 = "hbe_cinnabar"
+    textured_emblem = { texture = "te_dragon_flaming_pearl_clouds_gold_red_variant.dds" instance = { position = { 0.5 0.33 } scale = { 0.62 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bab.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAE = {
+    pattern = "pattern_solid.dds" color1 = "hbe_ochre" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_fish_naiant.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bae.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAF = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_ochre"
+    colored_emblem = { texture = "ce_chinese_white_tiger.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_baf.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAJ = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_ochre" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_double_phoenix.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_baj.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAL = {
+    pattern = "pattern_solid.dds" color1 = "hbe_ochre" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_vermilion_bird.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bal.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAO = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_cinnabar" color2 = "hbe_ink"
+    colored_emblem = { texture = "ce_lotus_throne.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bao.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAP = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_ink"
+    colored_emblem = { texture = "ce_chinese_vermilion_bird.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bap.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAQ = {
+    pattern = "pattern_solid.dds" color1 = "hbe_ink" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_double_phoenix.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_baq.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAW = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_cinnabar" color2 = "hbe_ink"
+    colored_emblem = { texture = "ce_chinese_blessing_prosperity.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_baw.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAX = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_azure_dragon.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bax.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BAZ = {
+    pattern = "pattern_solid.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    textured_emblem = { texture = "te_dragon_flaming_pearl_clouds_gold_azure_variant.dds" instance = { position = { 0.5 0.33 } scale = { 0.62 0.55 } } } colored_emblem = { texture = "ce_hbe_name_baz.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBB = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_indigo"
+    colored_emblem = { texture = "ce_fishes_pandya.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbb.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBC = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_black_turtle.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbc.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBE = {
+    pattern = "pattern_solid.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_boathooks_saltire.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbe.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBF = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_indigo"
+    colored_emblem = { texture = "ce_chinese_qilin.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbf.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBH = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_double_phoenix.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbh.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBI = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_ivory" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_white_tiger.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbi.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBJ = {
+    pattern = "pattern_solid.dds" color1 = "hbe_ivory" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_qilin.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbj.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBL = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_ivory"
+    colored_emblem = { texture = "ce_chinese_black_turtle.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbl.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBM = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_ivory" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_mountains_landscape_chitral.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbm.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBN = {
+    pattern = "pattern_solid.dds" color1 = "hbe_ivory" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_azure_dragon.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbn.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBO = {
+    pattern = "pattern_solid.dds" color1 = "hbe_cinnabar" color2 = "hbe_ivory"
+    colored_emblem = { texture = "ce_horse_courant.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbo.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBP = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_ivory" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_double_phoenix.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbp.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBQ = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_dark_red" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_wheat_ear.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbq.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBR = {
+    pattern = "pattern_solid.dds" color1 = "hbe_dark_red" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_wheat_garb.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbr.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBS = {
+    pattern = "pattern_solid.dds" color1 = "hbe_old_gold" color2 = "hbe_dark_red"
+    colored_emblem = { texture = "ce_tree_fruit_simple.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbs.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBT = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_dark_red" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_heron_wide.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbt.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBU = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_pine" color2 = "hbe_ivory"
+    textured_emblem = { texture = "te_wind_horse.dds" instance = { position = { 0.5 0.33 } scale = { 0.52 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbu.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBV = {
+    pattern = "pattern_solid.dds" color1 = "hbe_pine" color2 = "hbe_ivory"
+    colored_emblem = { texture = "ce_chinese_auspicious_conch_shell.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbv.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBW = {
+    pattern = "pattern_solid.dds" color1 = "hbe_ivory" color2 = "hbe_pine"
+    textured_emblem = { texture = "te_tibetan_garuda.dds" instance = { position = { 0.5 0.33 } scale = { 0.62 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbw.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBX = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_russet" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_lotus_chakra.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbx.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBY = {
+    pattern = "pattern_solid.dds" color1 = "hbe_russet" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_chinese_auspicious_conch_shell.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bby.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BBZ = {
+    pattern = "pattern_solid.dds" color1 = "hbe_old_gold" color2 = "hbe_russet"
+    colored_emblem = { texture = "ce_lotus_flower_02.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbz.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BCA = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_russet" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_mountains_hunza.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bca.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BCB = {
+    pattern = "pattern_solid.dds" color1 = "hbe_russet" color2 = "hbe_old_gold"
+    colored_emblem = { texture = "ce_chinese_crossed_vajra_taijitu.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bcb.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
+BCC = {
+    pattern = "pattern_solid.dds" color1 = "hbe_old_gold" color2 = "hbe_russet"
+    textured_emblem = { texture = "te_tibetan_flaming_jewels.dds" instance = { position = { 0.5 0.33 } scale = { 0.62 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bcc.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}

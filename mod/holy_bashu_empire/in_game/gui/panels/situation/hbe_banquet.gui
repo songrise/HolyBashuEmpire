@@ -1,0 +1,20 @@
+situation_panel = {
+    blockoverride "situation_panel_image" {
+        background = { texture = "gfx/interface/hbe/placeholder.dds" }
+    }
+    blockoverride "situation_subheader_content" { }
+    blockoverride "situation_panel_main_content" {
+        text_multi = {
+            layoutpolicy_horizontal = expanding autoresize = yes
+            text = "HBE_BANQUET_PANEL_TITLE"
+        }
+        text_multi = {
+            layoutpolicy_horizontal = expanding autoresize = yes
+            text = "HBE_BANQUET_PANEL_BODY"
+        }
+        text_multi = {
+            layoutpolicy_horizontal = expanding autoresize = yes
+            text = "HBE_BANQUET_PANEL_HELP"
+        }
+    }
+}

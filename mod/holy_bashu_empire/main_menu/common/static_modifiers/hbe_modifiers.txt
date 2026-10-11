@@ -1,3 +1,11 @@
 ﻿hbe_tianfu = { local_monthly_food_modifier = 0.10 local_construction_speed = 0.10 }
 hbe_project_food = { local_monthly_food_modifier = 0.05 }
 hbe_project_build = { local_construction_speed = 0.05 }
+
+hbe_banquet_success = { local_monthly_food_modifier = 0.05 local_construction_speed = 0.05 }
+
+hbe_charter_build = { local_construction_speed = 0.05 }
+
+hbe_charter_food = { local_monthly_food_modifier = 0.05 }
+
+hbe_charter_contract = { local_monthly_food_modifier = 0.025 local_construction_speed = 0.025 }

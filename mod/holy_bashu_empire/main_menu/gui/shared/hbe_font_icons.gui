@@ -1,0 +1,10 @@
+texticon = { icon = hbe_guoqi iconsize = { texture = "gfx/interface/icons/text_icons/hbe_guoqi.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_yiqi iconsize = { texture = "gfx/interface/icons/text_icons/hbe_yiqi.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_dispute iconsize = { texture = "gfx/interface/icons/text_icons/hbe_dispute.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_water iconsize = { texture = "gfx/interface/icons/text_icons/hbe_water.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_salt iconsize = { texture = "gfx/interface/icons/text_icons/hbe_salt.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_river iconsize = { texture = "gfx/interface/icons/text_icons/hbe_river.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_roads iconsize = { texture = "gfx/interface/icons/text_icons/hbe_roads.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_grain iconsize = { texture = "gfx/interface/icons/text_icons/hbe_grain.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_tea iconsize = { texture = "gfx/interface/icons/text_icons/hbe_tea.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }
+texticon = { icon = hbe_valleys iconsize = { texture = "gfx/interface/icons/text_icons/hbe_valleys.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }

@@ -1,0 +1,540 @@
+{
+  "mode": "built-in image_gen",
+  "sheets": [
+    {
+      "group": "common",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. open land-register book with bamboo counting slips and red seal. 2. Chinese bronze weights and wooden ruler. 3. rolled engineering plan with wooden divider. 4. crossed carpenter's plane and chisel with travel pouch. 5. brocade loom shuttle and master's wooden stamp. 6. miniature timber craft workshop with two tools. 7. surveyor's staff and folded road sketch. 8. wide antique river-and-mountain map with brass compass. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_common_1",
+          "name": "乡约与账簿",
+          "subject": "open land-register book with bamboo counting slips and red seal",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_common_2",
+          "name": "统一度量",
+          "subject": "Chinese bronze weights and wooden ruler",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_common_3",
+          "name": "帝国工程署",
+          "subject": "rolled engineering plan with wooden divider",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_common_4",
+          "name": "匠人互访",
+          "subject": "crossed carpenter's plane and chisel with travel pouch",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_common_5",
+          "name": "行会传习",
+          "subject": "brocade loom shuttle and master's wooden stamp",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_common_6",
+          "name": "跨区工艺学堂",
+          "subject": "miniature timber craft workshop with two tools",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_common_7",
+          "name": "驿路勘绘",
+          "subject": "surveyor's staff and folded road sketch",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_common_8",
+          "name": "山河交通总图",
+          "subject": "wide antique river-and-mountain map with brass compass",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/common.png"
+    },
+    {
+      "group": "chengdu_plain",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. timber sluice with stone channel. 2. brocade loom shuttle carrying patterned silk. 3. water-rights ledger with blue binding and bronze seal. 4. two joined wooden water channels. 5. timber grain-store model with rice sacks. 6. scholar's lectern with bamboo classics and inkstone. 7. gaiwan tea bowl beside rolled charter. 8. ceremonial scholar's hat behind porcelain gaiwan. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_chengdu_plain_1",
+          "name": "渠田协作",
+          "subject": "timber sluice with stone channel",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_2",
+          "name": "蜀锦作坊分工",
+          "subject": "brocade loom shuttle carrying patterned silk",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_3",
+          "name": "水权簿册",
+          "subject": "water-rights ledger with blue binding and bronze seal",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_4",
+          "name": "联渠灌溉",
+          "subject": "two joined wooden water channels",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_5",
+          "name": "天府粮仓",
+          "subject": "timber grain-store model with rice sacks",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_6",
+          "name": "官学讲会",
+          "subject": "scholar's lectern with bamboo classics and inkstone",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_7",
+          "name": "茶会章程",
+          "subject": "gaiwan tea bowl beside rolled charter",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_chengdu_plain_8",
+          "name": "盖碗公议学宫",
+          "subject": "ceremonial scholar's hat behind porcelain gaiwan",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/chengdu_plain.png"
+    },
+    {
+      "group": "southern_salt_wine",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. salt-well ledger beside coarse white salt bowl. 2. earthen wine jar beside salt basket. 3. wooden drilling derrick with pulley. 4. antique salt voucher bound with red silk. 5. brass salt merchants' guild seal and accounting board. 6. three earthen fermentation jars with wood lids. 7. banquet procurement scroll and bronze weight. 8. large bronze serving platter with lidded dishes. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_southern_salt_wine_1",
+          "name": "井灶公账",
+          "subject": "salt-well ledger beside coarse white salt bowl",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_2",
+          "name": "盐酒作坊协作",
+          "subject": "earthen wine jar beside salt basket",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_3",
+          "name": "井灶改良",
+          "subject": "wooden drilling derrick with pulley",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_4",
+          "name": "盐引担保",
+          "subject": "antique salt voucher bound with red silk",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_5",
+          "name": "巴蜀盐业总号",
+          "subject": "brass salt merchants' guild seal and accounting board",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_6",
+          "name": "窖坊分工",
+          "subject": "three earthen fermentation jars with wood lids",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_7",
+          "name": "宴席采购契约",
+          "subject": "banquet procurement scroll and bronze weight",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_southern_salt_wine_8",
+          "name": "帝国席面承办局",
+          "subject": "large bronze serving platter with lidded dishes",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/southern_salt_wine.png"
+    },
+    {
+      "group": "eastern_river",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. timber dock crane above cargo crates. 2. coil of tow rope with wooden oar. 3. bronze river checkpoint tally and rolled pass. 4. Chinese cargo junk with battened sail. 5. rolled river route treaty and bronze ship seal. 6. stone cliff bastion with small pennant. 7. crossed boat oar and infantry spear behind shield. 8. mountain river fortress model with gate tower. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_eastern_river_1",
+          "name": "码头转运",
+          "subject": "timber dock crane above cargo crates",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_eastern_river_2",
+          "name": "纤夫船帮",
+          "subject": "coil of tow rope with wooden oar",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_eastern_river_3",
+          "name": "关卡通行公约",
+          "subject": "bronze river checkpoint tally and rolled pass",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_eastern_river_4",
+          "name": "江运互保",
+          "subject": "Chinese cargo junk with battened sail",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_eastern_river_5",
+          "name": "川江通商总约",
+          "subject": "rolled river route treaty and bronze ship seal",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_eastern_river_6",
+          "name": "崖岸壁垒",
+          "subject": "stone cliff bastion with small pennant",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_eastern_river_7",
+          "name": "水陆协防",
+          "subject": "crossed boat oar and infantry spear behind shield",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_eastern_river_8",
+          "name": "山城江防枢纽",
+          "subject": "mountain river fortress model with gate tower",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/eastern_river.png"
+    },
+    {
+      "group": "northern_shudao",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. wooden cliff walkway model and survey scroll. 2. bamboo courier tube with knotted cord. 3. stone mountain pass gate model. 4. paired bronze garrison tallies with pennant. 5. bronze commander's helmet with furled banner. 6. checkpoint paper pass and copper cash string. 7. bundle of bamboo official dispatches. 8. wooden relay-station model with courier tube. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_northern_shudao_1",
+          "name": "栈道勘绘",
+          "subject": "wooden cliff walkway model and survey scroll",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_northern_shudao_2",
+          "name": "驿堡联络",
+          "subject": "bamboo courier tube with knotted cord",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_northern_shudao_3",
+          "name": "山关防务",
+          "subject": "stone mountain pass gate model",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_northern_shudao_4",
+          "name": "轮戍互援",
+          "subject": "paired bronze garrison tallies with pennant",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_northern_shudao_5",
+          "name": "蜀道联防总镇",
+          "subject": "bronze commander's helmet with furled banner",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_northern_shudao_6",
+          "name": "关市驿券",
+          "subject": "checkpoint paper pass and copper cash string",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_northern_shudao_7",
+          "name": "公文分驿",
+          "subject": "bundle of bamboo official dispatches",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_northern_shudao_8",
+          "name": "蜀道驿传总局",
+          "subject": "wooden relay-station model with courier tube",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/northern_shudao.png"
+    },
+    {
+      "group": "central_hills",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. terraced earthen field model with tiny stone reservoir. 2. market account book with weighing pan. 3. straw rice basket beside wooden ration scoop. 4. grain loan receipt with cloth rice sack. 5. three timber granaries linked by red cord. 6. sealed contract with inkstone and brush. 7. wooden abacus beside settlement voucher. 8. large brass civic seal on open register. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_central_hills_1",
+          "name": "坡田水塘",
+          "subject": "terraced earthen field model with tiny stone reservoir",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_central_hills_2",
+          "name": "市集公账",
+          "subject": "market account book with weighing pan",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_central_hills_3",
+          "name": "分仓赈贷",
+          "subject": "straw rice basket beside wooden ration scoop",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_central_hills_4",
+          "name": "乡社借粮",
+          "subject": "grain loan receipt with cloth rice sack",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_central_hills_5",
+          "name": "丘陵义仓联社",
+          "subject": "three timber granaries linked by red cord",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_central_hills_6",
+          "name": "契约见证",
+          "subject": "sealed contract with inkstone and brush",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_central_hills_7",
+          "name": "票据清算",
+          "subject": "wooden abacus beside settlement voucher",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_central_hills_8",
+          "name": "诸侯公信会馆",
+          "subject": "large brass civic seal on open register",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/central_hills.png"
+    },
+    {
+      "group": "western_tea_horse",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. pack horse miniature with two tea bricks. 2. mountain guide's wooden staff and brass compass. 3. leather pack saddle with tea bricks and bell. 4. folded mountain route map and bronze pass. 5. tea merchants' bronze balance and guild stamp. 6. wooden temple alms bowl with rice and ladle. 7. two ceremonial silk scarves around wooden covenant. 8. snow-mountain shaped bronze ceremonial seal and folded council charter. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_western_tea_horse_1",
+          "name": "茶马集市",
+          "subject": "pack horse miniature with two tea bricks",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_2",
+          "name": "山地向导",
+          "subject": "mountain guide's wooden staff and brass compass",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_3",
+          "name": "商队互保",
+          "subject": "leather pack saddle with tea bricks and bell",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_4",
+          "name": "通路会约",
+          "subject": "folded mountain route map and bronze pass",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_5",
+          "name": "茶马通商公所",
+          "subject": "tea merchants' bronze balance and guild stamp",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_6",
+          "name": "山门施济",
+          "subject": "wooden temple alms bowl with rice and ladle",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_7",
+          "name": "跨地调停",
+          "subject": "two ceremonial silk scarves around wooden covenant",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_western_tea_horse_8",
+          "name": "雪山公议会",
+          "subject": "snow-mountain shaped bronze ceremonial seal and folded council charter",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/western_tea_horse.png"
+    },
+    {
+      "group": "southwestern_valleys",
+      "columns": 4,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: game icon SPRITE ATLAS for Europa Universalis V mod. Create EXACTLY EIGHT DIFFERENT isolated object icons in an exact uniform FOUR COLUMNS BY TWO ROWS grid, row-major order. Wide 2:1 canvas. Transparent background throughout. Every cell has one separate centered icon, occupying 70 percent of its cell with generous transparent gutters, never touching cell boundaries. Eight equal cells, no labels, no grid lines, no borders, no text, no letters, no numbers. Authentic restrained European grand-strategy historical UI illustration: hand-painted realistic objects, visibly brushed highlights, upper-left soft light, aged bronze, wood, paper, ceramic and cloth, muted ochre/ivory/mineral colors; believable proportions, crisp strong silhouette readable at 64px. Not vector, cartoon, glossy mobile game or photorealistic product render. All subjects are pre-modern Sichuan-inspired objects. No people, no landscape backdrop, no extra objects outside the specified eight cells. Objects can be miniature physical architectural models where specified. Cell subjects in reading order (left to right top row, then left to right bottom row): 1. three woven trade baskets with local goods. 2. three carved wooden covenant tallies bound together. 3. small rope bridge model and rolled path survey. 4. small round wooden shield before merchant packs. 5. carved mountain merchants' wooden seal with ledger. 6. timber watchtower and bronze beacon brazier. 7. small iron garrison helmet and covenant tally. 8. ceremonial carved wooden council crest over folded charter. Keep every icon visually distinct. Maintain EXACTLY 4 columns and 2 rows.",
+      "cells": [
+        {
+          "key": "hbe_tech_southwestern_valleys_1",
+          "name": "山谷市集",
+          "subject": "three woven trade baskets with local goods",
+          "index": 0
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_2",
+          "name": "地方盟约",
+          "subject": "three carved wooden covenant tallies bound together",
+          "index": 1
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_3",
+          "name": "小路换市",
+          "subject": "small rope bridge model and rolled path survey",
+          "index": 2
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_4",
+          "name": "商盟互保",
+          "subject": "small round wooden shield before merchant packs",
+          "index": 3
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_5",
+          "name": "川西南山谷商盟",
+          "subject": "carved mountain merchants' wooden seal with ledger",
+          "index": 4
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_6",
+          "name": "联寨守望",
+          "subject": "timber watchtower and bronze beacon brazier",
+          "index": 5
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_7",
+          "name": "议约驻防",
+          "subject": "small iron garrison helmet and covenant tally",
+          "index": 6
+        },
+        {
+          "key": "hbe_tech_southwestern_valleys_8",
+          "name": "山地共保盟府",
+          "subject": "ceremonial carved wooden council crest over folded charter",
+          "index": 7
+        }
+      ],
+      "source": "assets/technology_atlases/southwestern_valleys.png"
+    }
+  ],
+  "icons": [
+    {
+      "key": "hbe_guoqi",
+      "name": "锅气",
+      "kind": "point",
+      "source": "assets/generated_icons/hbe_guoqi.png",
+      "prompt": "Hand-painted realistic EU5 object icon: aged bronze Sichuan hotpot with subtle steam, upper-left lighting, warm coal accents; isolated on true transparent background. No text, frame or cartoon styling."
+    },
+    {
+      "key": "hbe_yiqi",
+      "name": "义气",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: two matching halves of an ancient Chinese bronze tiger tally fitted together, a short subdued red silk binding, warm aged bronze and rubbed gold edges; symbol of keeping promises.",
+      "source": "assets/generated_icons/hbe_yiqi.png"
+    },
+    {
+      "key": "hbe_dispute",
+      "name": "争席度",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: one carved dark wooden Chinese official's chair with a small folded imperial gold cloth over its back, two closed bamboo fans crossed in front; contested political seating, compact and clear.",
+      "source": "assets/generated_icons/hbe_dispute.png"
+    },
+    {
+      "key": "hbe_water",
+      "name": "水权储备",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: a miniature worn wooden sluice gate resting between two gray stone supports, a small stream of blue-gray water passing beneath; Chinese irrigation, one coherent cutout assembly.",
+      "source": "assets/generated_icons/hbe_water.png"
+    },
+    {
+      "key": "hbe_salt",
+      "name": "盐引信用",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: one rolled antique Chinese salt-trade paper voucher tied with red cord, beside a small bowl of coarse salt crystals; no legible markings or printed text.",
+      "source": "assets/generated_icons/hbe_salt.png"
+    },
+    {
+      "key": "hbe_river",
+      "name": "江运互保",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: one Chinese river junk boat with a single tan batten sail, stout dark wooden hull and two small cargo bundles; iconic transportation, no water background.",
+      "source": "assets/generated_icons/hbe_river.png"
+    },
+    {
+      "key": "hbe_roads",
+      "name": "轮戍履约",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: a bronze Chinese garrison tally resting against a furled dark-red military pennant and a short bamboo dispatch tube; fulfilled frontier service.",
+      "source": "assets/generated_icons/hbe_roads.png"
+    },
+    {
+      "key": "hbe_grain",
+      "name": "义仓储备",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: one open woven straw grain basket full of rice, with a compact tied sheaf of rice leaning across it, warm tawny straw and pale kernels.",
+      "source": "assets/generated_icons/hbe_grain.png"
+    },
+    {
+      "key": "hbe_tea",
+      "name": "商队互保",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: a simple leather pack saddle carrying two rectangular dark tea bricks tied with rope, with a small bronze caravan bell hanging from the front; compact mountain caravan credit symbol.",
+      "source": "assets/generated_icons/hbe_tea.png"
+    },
+    {
+      "key": "hbe_valleys",
+      "name": "地方共治",
+      "kind": "point",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: three short carved wooden covenant tallies bound together with one muted red cord, arranged as a fan, small bronze seal at their base; local mountain communities jointly governing.",
+      "source": "assets/generated_icons/hbe_valleys.png"
+    },
+    {
+      "key": "hbe_banquet",
+      "name": "巴蜀大开席",
+      "kind": "situation",
+      "prompt": "Use case: stylized-concept. Asset type: single Europa Universalis V historical strategy game UI icon. Input image is STYLE REFERENCE ONLY. Create a NEW isolated object icon in the same restrained hand-painted realistic style as the original game's icons: visibly brushed detail, realistic proportions and volume, upper-left soft light, aged wood/bronze/paper/cloth materials, muted ochre, ivory and mineral colours. Strong silhouette readable at 64 pixels, large centered focal object occupying 80 percent of a square canvas. Real transparent background. No border or circular backing, no text or letters, no modern logos, no vector or cartoon style, no glossy mobile-game icon. Not a sheet. Subject: one Chinese imperial brass seal placed before two modest crossed brocade clan banners, ochre and muted cinnabar, with a tiny covered porcelain tea bowl at the base; a shared imperial tea assembly and charter, heraldic but rendered as tangible painted objects, no writing.",
+      "source": "assets/generated_icons/hbe_banquet.png"
+    }
+  ]
+}

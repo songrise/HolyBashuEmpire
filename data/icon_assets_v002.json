@@ -1,0 +1,1046 @@
+{
+  "mode": "built-in image_gen",
+  "atlases": 8,
+  "technology_icons": [
+    {
+      "key": "hbe_tech_common_1",
+      "name": "乡约与账簿",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_1.dds",
+      "sha256": "c84a0b89b2962c068e1911836018e9cab3900f3f78aedfc0f109a1ccf2e30b3f"
+    },
+    {
+      "key": "hbe_tech_common_2",
+      "name": "统一度量",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_2.dds",
+      "sha256": "d920c30dd3329c257e3a5d7e8c558cff78ce5b157efdc5b6151efc6585430f8d"
+    },
+    {
+      "key": "hbe_tech_common_3",
+      "name": "帝国工程署",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_3.dds",
+      "sha256": "6908fd00ff4e1a09012bfa3f2b8df2d767c3c8aec207cb0574994f2c67e47f2b"
+    },
+    {
+      "key": "hbe_tech_common_4",
+      "name": "匠人互访",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_4.dds",
+      "sha256": "241d79151abde323dd189195ee03565a7337decfa30e6dbcf464300329860ccb"
+    },
+    {
+      "key": "hbe_tech_common_5",
+      "name": "行会传习",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_5.dds",
+      "sha256": "069279eddff21a0b890a093db909a380499b1c887b27d8df6ee4059352350cfd"
+    },
+    {
+      "key": "hbe_tech_common_6",
+      "name": "跨区工艺学堂",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_6.dds",
+      "sha256": "9d653721539f0c08b9996f9fc08bc8d143f9054effee6404f1c704a766bc424f"
+    },
+    {
+      "key": "hbe_tech_common_7",
+      "name": "驿路勘绘",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_7.dds",
+      "sha256": "f8175e515b2548a12635ae4127886fd78a66161138a5eb3b6595474da07c0407"
+    },
+    {
+      "key": "hbe_tech_common_8",
+      "name": "山河交通总图",
+      "group": "common",
+      "atlas": "assets/technology_atlases/common.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_8.dds",
+      "sha256": "55978c49a790217ae5983dda7fb00c728788fedc757f8d2c4c2329c7046cbfde"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_1",
+      "name": "渠田协作",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_1.dds",
+      "sha256": "bfbe48d131d75cf0adf9e5091e3750aa3cd039a0cf228ff27b3a7a5cc34f4a6c"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_2",
+      "name": "蜀锦作坊分工",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_2.dds",
+      "sha256": "bf142efc120b2c4ba1218996086abdbfab617903957f1c6ea2d60bf7f45b18fd"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_3",
+      "name": "水权簿册",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_3.dds",
+      "sha256": "61f0a5c70ca5d5075941f0d7e9895580506ffe982883d0d2eb6608b0d0f5aa6e"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_4",
+      "name": "联渠灌溉",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_4.dds",
+      "sha256": "6aaf9729bf7c64363625d96c6a4bf5d1e355407ad598644dbcfd5de1b2040e67"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_5",
+      "name": "天府粮仓",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_5.dds",
+      "sha256": "796e8f811a9ab70ae3a12b72451e0fa70fa4c93a03e5d8985baecdb71e3c6e76"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_6",
+      "name": "官学讲会",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_6.dds",
+      "sha256": "b5783e8a6d0dbb22f880028aae56487f66c2553ce7efee7ceff95aaa9448cae1"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_7",
+      "name": "茶会章程",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_7.dds",
+      "sha256": "0eec48ec0224691a62389f99a2385cacebc06e62f09ef93274b7a23ff52537a1"
+    },
+    {
+      "key": "hbe_tech_chengdu_plain_8",
+      "name": "盖碗公议学宫",
+      "group": "chengdu_plain",
+      "atlas": "assets/technology_atlases/chengdu_plain.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_8.dds",
+      "sha256": "ae2e8213aa8b6fc61e0bc318da2e2da39fbf861447fb87cbffdb7c2e87477bf7"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_1",
+      "name": "井灶公账",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_1.dds",
+      "sha256": "d02b219e4048bc2ee18eea37a52609a5d290dfa1b54d1e4f92c6c1b31096ba4c"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_2",
+      "name": "盐酒作坊协作",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_2.dds",
+      "sha256": "512f4ebbd26a85a340e5db5c1642a56e4dd84ac08e9eea12998b0552ddacd737"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_3",
+      "name": "井灶改良",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_3.dds",
+      "sha256": "6a8b069d1bfef8360df39b2e88b119b4fbe3ac4985e5bd0f58d172ebd27ee571"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_4",
+      "name": "盐引担保",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_4.dds",
+      "sha256": "a9a70ccdcdb2f9dbba835697fcb857b0edd829ea532e4cc7d8f292f37e200a57"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_5",
+      "name": "巴蜀盐业总号",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_5.dds",
+      "sha256": "266912f5f2a6abdfe68e486e75efc63f8dba6c35dc03d3eedfbc930ca02c02d4"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_6",
+      "name": "窖坊分工",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_6.dds",
+      "sha256": "4d1b7a44cd55fdb7b56c1e95947a054b04461784f3947933ffcdec45f67c05ce"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_7",
+      "name": "宴席采购契约",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_7.dds",
+      "sha256": "0c1ef9225a4c61650502a57b693f6ea07dbd48a6a8e7ce79ee42bf7b4f0afc49"
+    },
+    {
+      "key": "hbe_tech_southern_salt_wine_8",
+      "name": "帝国席面承办局",
+      "group": "southern_salt_wine",
+      "atlas": "assets/technology_atlases/southern_salt_wine.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_8.dds",
+      "sha256": "df63100ed8c1cdcdc93c8de561a0e73dd20457a15b174d587c33f00cda276c5e"
+    },
+    {
+      "key": "hbe_tech_eastern_river_1",
+      "name": "码头转运",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_1.dds",
+      "sha256": "b18f8f685553b101861347683f92b43520c026f7893f2309ff976459367ec472"
+    },
+    {
+      "key": "hbe_tech_eastern_river_2",
+      "name": "纤夫船帮",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_2.dds",
+      "sha256": "dcc3211862756204f8111617b9fcfed63190a4fc30defba260217a698d7a8828"
+    },
+    {
+      "key": "hbe_tech_eastern_river_3",
+      "name": "关卡通行公约",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_3.dds",
+      "sha256": "ab9b7374f4b91499fe853f096fc58f5c6d4d3c168e2df8f2b928ca6568a495df"
+    },
+    {
+      "key": "hbe_tech_eastern_river_4",
+      "name": "江运互保",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_4.dds",
+      "sha256": "89bfa8f07404608079db796e14ef9d334ffe507cacda2ef4ebda88b2e512220f"
+    },
+    {
+      "key": "hbe_tech_eastern_river_5",
+      "name": "川江通商总约",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_5.dds",
+      "sha256": "7aa2bd2edcadb4ea2e9133bd39d5ba9c50c586e0bb84f931d89a2e11ce35de36"
+    },
+    {
+      "key": "hbe_tech_eastern_river_6",
+      "name": "崖岸壁垒",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_6.dds",
+      "sha256": "dc6d27f1b1fe057a3196d818f29e4c729c601b3791df787391345aad49946b2d"
+    },
+    {
+      "key": "hbe_tech_eastern_river_7",
+      "name": "水陆协防",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_7.dds",
+      "sha256": "104d931cfd4bad71ccbe340fecb39b603be19950452bb37105641df7c15347e3"
+    },
+    {
+      "key": "hbe_tech_eastern_river_8",
+      "name": "山城江防枢纽",
+      "group": "eastern_river",
+      "atlas": "assets/technology_atlases/eastern_river.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_8.dds",
+      "sha256": "56c5effc6dce9abf9de1ad508b164232b62eb6b4ada8a008f5882f1e41b5eb21"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_1",
+      "name": "栈道勘绘",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_1.dds",
+      "sha256": "fc5deaa66500ee413133835c40ad103b0c65256c4125de613edefa0fc3aebfe8"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_2",
+      "name": "驿堡联络",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_2.dds",
+      "sha256": "c720bf787066ce6255b1f0a535660cb0d127c43c5c4b6b8628fc3bd661286e35"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_3",
+      "name": "山关防务",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_3.dds",
+      "sha256": "42bd94bc595a7ab232c62855701ac7db61fb5a43db3b4cd7c5e227943a7f0f2b"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_4",
+      "name": "轮戍互援",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_4.dds",
+      "sha256": "9fb76fb061f6ce65a156a096d7c33947a490705d113ddc3243da2bab40da066b"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_5",
+      "name": "蜀道联防总镇",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_5.dds",
+      "sha256": "439e5c3a11f8aa98d302a3ff3cfee4f4cb1d747551ceeb477579b018fe24833e"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_6",
+      "name": "关市驿券",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_6.dds",
+      "sha256": "79672d088e61d76f58a472294c94ab0d8012df057afaac3061c8f4ae08d66b41"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_7",
+      "name": "公文分驿",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_7.dds",
+      "sha256": "d9e98d294971584215273e582637caaf9343e1993a2405a23b25cf36b74bdd24"
+    },
+    {
+      "key": "hbe_tech_northern_shudao_8",
+      "name": "蜀道驿传总局",
+      "group": "northern_shudao",
+      "atlas": "assets/technology_atlases/northern_shudao.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_8.dds",
+      "sha256": "fc084c3bf48dd5d32fa7f12c633649a90142a314457fd64cf4b34d534d20961c"
+    },
+    {
+      "key": "hbe_tech_central_hills_1",
+      "name": "坡田水塘",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds",
+      "sha256": "cf7c1f060663ced487b407f6915ea5064cb72dda66dfed04ebab6a78a792effe"
+    },
+    {
+      "key": "hbe_tech_central_hills_2",
+      "name": "市集公账",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds",
+      "sha256": "ffc4e1ba11821e6c6952b93ab3517c3cffafa3526149ec5accf12ebedc29b572"
+    },
+    {
+      "key": "hbe_tech_central_hills_3",
+      "name": "分仓赈贷",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds",
+      "sha256": "28e5fd39e3f2012648806e30229ddc5525f0dcf6877a8eaca66c644eff8ec73d"
+    },
+    {
+      "key": "hbe_tech_central_hills_4",
+      "name": "乡社借粮",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_4.dds",
+      "sha256": "69cdf770faf7b42a28e26c05ccac5b8ca62d50c5bd7a9dfcb1e2da2da3a3b6f3"
+    },
+    {
+      "key": "hbe_tech_central_hills_5",
+      "name": "丘陵义仓联社",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_5.dds",
+      "sha256": "ed54482a22a4de363a278b1b93f2093921fc0d7bbdfbf99c67e1a53b450eb527"
+    },
+    {
+      "key": "hbe_tech_central_hills_6",
+      "name": "契约见证",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_6.dds",
+      "sha256": "a1ab86418f140614c2e93024eec1160dbe909f17acdebb4448ceba6d7a0c45f3"
+    },
+    {
+      "key": "hbe_tech_central_hills_7",
+      "name": "票据清算",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_7.dds",
+      "sha256": "5acec91c15c3795c51b0b3ed91985c5aaac43deeff4730a084a98ac2d086158f"
+    },
+    {
+      "key": "hbe_tech_central_hills_8",
+      "name": "诸侯公信会馆",
+      "group": "central_hills",
+      "atlas": "assets/technology_atlases/central_hills.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_8.dds",
+      "sha256": "86704465423ed86dceb71491b80532dbc826bfc6ec645c0f065ceba23fb2fc31"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_1",
+      "name": "茶马集市",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_1.dds",
+      "sha256": "15f618cd826e2e42e381099b8fa650a2d0a271686945044b6690907d5db8b302"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_2",
+      "name": "山地向导",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_2.dds",
+      "sha256": "a01d5304c186fe84f46322ccccde23ef9e76cf0d5e50c5da37e0a0eb95b59058"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_3",
+      "name": "商队互保",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_3.dds",
+      "sha256": "6d734d03a039849b5b0dd35d19c64f14a48423ab100740f9f6e20077b23c3030"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_4",
+      "name": "通路会约",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_4.dds",
+      "sha256": "d8c0bfd4147f36a0cd3663f2963830e7bc272f458cf8cd95a9dc155853abe2c9"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_5",
+      "name": "茶马通商公所",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_5.dds",
+      "sha256": "b1c6ebe209994ff36ca373bad0df6a77038f61eef000b664e3aec82acda0d105"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_6",
+      "name": "山门施济",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds",
+      "sha256": "90e91569bed0cb93e131599f546b379792f36ec7b1f558c9f751da1ce4a2a7ed"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_7",
+      "name": "跨地调停",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds",
+      "sha256": "92044e416602676ad072f876c59c0e4c8e37ce864d4a77a6c59218dfc2d168ed"
+    },
+    {
+      "key": "hbe_tech_western_tea_horse_8",
+      "name": "雪山公议会",
+      "group": "western_tea_horse",
+      "atlas": "assets/technology_atlases/western_tea_horse.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds",
+      "sha256": "5fa32fd6d973cf4af64943488a46b4d064bf49ce5832387e0bfc02efd4113db0"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_1",
+      "name": "山谷市集",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_1.dds",
+      "sha256": "0a9e34e62bc062da2aca0251a8116416ddbce7858c50fc4cf60baa980b7f82d1"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_2",
+      "name": "地方盟约",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 1,
+      "crop": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_2.dds",
+      "sha256": "c1c37e6ac73413e58b6f37805588fa5ef65c2798202cf7be3b1d07fc88485482"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_3",
+      "name": "小路换市",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 2,
+      "crop": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_3.dds",
+      "sha256": "4a87d5e89e26a3a4a26d48badce7a6b56513376ecc30d691ed4eeeadef09a11e"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_4",
+      "name": "商盟互保",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 3,
+      "crop": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_4.dds",
+      "sha256": "53b576899ada0ca84ca62f6725e2314b40158fcf3df73de44d147960ed621692"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_5",
+      "name": "川西南山谷商盟",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 4,
+      "crop": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_5.dds",
+      "sha256": "43fb82c5e0550dff76a6734558898d8fb06a5af00c2467ecffddb46da1e375d4"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_6",
+      "name": "联寨守望",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 5,
+      "crop": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_6.dds",
+      "sha256": "8716ca7adfc9fc0143eb7e3e16f1f1d9bcd8b3a8db3d2df4c0eba784aeb1d64b"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_7",
+      "name": "议约驻防",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 6,
+      "crop": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_7.dds",
+      "sha256": "f8efb3410141933385217153121819982608e936552898dd3e5f2e9bf6594321"
+    },
+    {
+      "key": "hbe_tech_southwestern_valleys_8",
+      "name": "山地共保盟府",
+      "group": "southwestern_valleys",
+      "atlas": "assets/technology_atlases/southwestern_valleys.png",
+      "cell": 7,
+      "crop": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "image": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_8.dds",
+      "sha256": "5c039fda476b23aa9b411f29afd5821a02327142738a8a9e26602cf393cd2339"
+    }
+  ],
+  "other_icons": [
+    {
+      "key": "hbe_guoqi",
+      "name": "锅气",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_guoqi.dds",
+      "sha256": "aa9c63ca8a3b60839e65f771d409aa4a8cbdfe5ccdda41113bbea018e04b50cf"
+    },
+    {
+      "key": "hbe_yiqi",
+      "name": "义气",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_yiqi.dds",
+      "sha256": "c27ce41b50e56b241353e1bbce97d929e35b66e633e4efc28ba02c412cd3ba17"
+    },
+    {
+      "key": "hbe_dispute",
+      "name": "争席度",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_dispute.dds",
+      "sha256": "797243eed1f4d43e2cdbe0f7ed1968bf83359b79e44edd8ade2246b9559dd63d"
+    },
+    {
+      "key": "hbe_water",
+      "name": "水权储备",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_water.dds",
+      "sha256": "9c6171bf2e642d15bf523e45ed5868b8cae1b7c5a27c717c7056217f876e9995"
+    },
+    {
+      "key": "hbe_salt",
+      "name": "盐引信用",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_salt.dds",
+      "sha256": "d5623569a21297109ccbb2f76dc6d8557f7d99fc4fac99cc632c9e49ecdcac63"
+    },
+    {
+      "key": "hbe_river",
+      "name": "江运互保",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_river.dds",
+      "sha256": "68a1d4bfb8a096410e59941c9e7acb487c36023047ac2988d1b96052d453123a"
+    },
+    {
+      "key": "hbe_roads",
+      "name": "轮戍履约",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_roads.dds",
+      "sha256": "0cdc9d9347a8219df6f88b0744117a1d2ac206928872ce1dfc9af333225d6ce0"
+    },
+    {
+      "key": "hbe_grain",
+      "name": "义仓储备",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_grain.dds",
+      "sha256": "3123e58aa3b7782a1cc0f6be426885ae4ef36fee60d1ea9a35a4dc8bc568da22"
+    },
+    {
+      "key": "hbe_tea",
+      "name": "商队互保",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_tea.dds",
+      "sha256": "b073c500aed6883664a1c2598b9e583819374ea509da77eed0e41ba8abdba33e"
+    },
+    {
+      "key": "hbe_valleys",
+      "name": "地方共治",
+      "kind": "point",
+      "image": "main_menu/gfx/interface/icons/text_icons/hbe_valleys.dds",
+      "sha256": "e3502d7799d10059f3532b621feb438ef15da3ce0a690750dd1b5de558418cc8"
+    },
+    {
+      "key": "hbe_banquet",
+      "name": "巴蜀大开席",
+      "kind": "situation",
+      "image": "main_menu/gfx/interface/icons/situations/hbe_banquet.dds",
+      "sha256": "d8111f3120ec5d6b85f5ab771dbb21a1bcb0237f2c9b6c1071c1382c162dc58a"
+    }
+  ],
+  "source_manifest": "assets/icon_generation.json"
+}

@@ -7,6 +7,8 @@ import argparse, colorsys, csv, hashlib, json, re, struct, zlib
 from collections import OrderedDict
 from pathlib import Path
 from pdxscript import blocks, tokens, apply_edits
+from build_banquet import build_banquet
+from build_icon_assets import build_icon_assets
 
 ROOT = Path(__file__).resolve().parents[1]
 REGIONS = [
@@ -105,7 +107,7 @@ def main():
         write(out/rel,text,bom or (rel.endswith('.txt') and not rel.startswith('main_menu/setup/')))
     # Same fields as the game's -mod_stubber output; do not depend on a scratch directory.
     metadata=dict(name='',id='',version='',supported_game_version='',short_description='',tags=[],relationships=[],game_custom_data={})
-    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.01',supported_game_version='1.4.*',
+    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.02',supported_game_version='1.4.*',
                     short_description='架空巴蜀：七个帝国圈、三十六诸侯，天府加成、选举、地区经营与百年传承。',
                     tags=['Alternative History','Gameplay'])
     put('.metadata/metadata.json',json.dumps(metadata,ensure_ascii=False,indent=2))
@@ -363,8 +365,9 @@ hbe_add_credit = {
     catalog=table_nodes();decisions=[];monthly=[];events=[]
     def decision(key,title,desc,potential,allow,effect,cost=0,ai=10):
         L(key,title);L(key+'.desc',desc);L(key+'.a','执行')
+        image=f'gfx/interface/hbe/technology/{key}.dds' if key.startswith('hbe_tech_') else 'gfx/interface/hbe/placeholder.dds'
         decisions.append(f'''{key} = {{
-    decision_category = other_decisions image = "gfx/interface/hbe/placeholder.dds"
+    decision_category = other_decisions image = "{image}"
     potential = {{ hbe_is_prince = yes {potential} }}
     allow = {{ {allow} {'gold >= '+str(cost) if cost else ''} }}
     ai_will_do = {{ value = {ai} }}
@@ -510,6 +513,8 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     cover=b'\x89PNG\r\n\x1a\n'+png_chunk(b'IHDR',struct.pack('>2I5B',cover_width,cover_height,8,2,0,0,0))
     cover+=png_chunk(b'IDAT',zlib.compress(scanlines,9))+png_chunk(b'IEND',b'')
     (out/'.metadata/thumbnail.png').write_bytes(cover)
+    expansion = build_banquet(out, countries, REGIONS, L, put, ROOT, game)
+    icon_art = build_icon_assets(out, ROOT, catalog, put, game)
     # Both Chinese and English UI modes have complete keys (English uses Chinese placeholder text).
     variable_labels={'hbe_yiqi':'义气','hbe_guoqi':'锅气','hbe_salt_debt':'盐债',
                      'hbe_research_timer':'地方课题计时','hbe_flavor_cooldown':'地方事件间隔',
@@ -520,6 +525,10 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
         for key in re.findall(r'\bname\s*=\s*(hbe_[a-z0-9_]+)',f.read_text(encoding='utf-8-sig')):
             if key not in loc:L(key,variable_labels.get(key,'地区事业交付计时'))
     for language in ('simp_chinese','english'):
+        # Register painted resource icons in the native text-icon system.
+        for key,label in [(r[4],r[3]) for r in REGIONS]+[('hbe_guoqi','锅气'),('hbe_yiqi','义气'),('hbe_dispute','争席度')]:
+            for lk,lv in list(loc.items()):
+                if label in lv and '@'+key+'!' not in lv:loc[lk]=lv.replace(label,'@'+key+'! '+label)
         strings=[f'l_{language}:']+[f' {k}: "{v.replace(chr(92),chr(92)*2).replace(chr(34),chr(92)+chr(34)).replace(chr(10),chr(92)+"n")}"' for k,v in loc.items()]
         put(f'main_menu/localization/{language}/hbe_l_{language}.yml','\n'.join(strings),True)
     roster=[dict(tag=c['tag'],country=c['name'],circle=c['region'],group=c['group'],capital=c['capital'],locations=len(c['locations']),elector='yes' if c['tag'] in electors.values() else 'no') for c in countries]
@@ -527,10 +536,12 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     assignments=[dict(location=r['location_id'],country=loc_to_tag[r['location_id']],circle=r['circle_design_key'],province=r['original_province_id']) for r in rows]
     csv_write(ROOT/'data/locations_v001.csv',assignments)
     write(ROOT/'data/technology_v001.json',json.dumps(catalog,ensure_ascii=False,indent=2))
-    manifest=dict(version='0.01',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
+    manifest=dict(version='0.02',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
                   source_setup_sha256=sha(original_path),removed_domain_tokens=len(removed),
-                  research_nodes=len(catalog),regional_missions=35,recurring_services=7,events=len(events),
-                  decisions=len(decisions),illustrations='generic vanilla scenes; custom flat DDS decision placeholder',
+                  research_nodes=len(catalog),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events'],
+                  decisions=len(decisions)+expansion['new_decisions'],expansion=expansion,
+                  illustrations='vanilla event scenes; generated painted technology and point icons; native heraldry with LiSu inscriptions',
+                  icon_art=icon_art,
                   files={str(f.relative_to(out)).replace(chr(92),'/'):sha(f) for f in sorted(out.rglob('*')) if f.is_file() and f.name!='build_manifest.json'})
     put('build_manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))
     print(json.dumps({k:manifest[k] for k in ('version','research_nodes','regional_missions','recurring_services','events','decisions')},ensure_ascii=False))

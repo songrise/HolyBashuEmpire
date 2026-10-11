@@ -1,0 +1,4 @@
+BBC = {
+    pattern = "pattern_fringe.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    colored_emblem = { texture = "ce_chinese_black_turtle.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbc.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}

@@ -19,8 +19,8 @@ if (Test-Path -LiteralPath $playsetFile) {
     $playsetDoc = Get-Content -LiteralPath $playsetFile -Raw -Encoding UTF8 | ConvertFrom-Json
     Copy-Item -LiteralPath $playsetFile -Destination ($playsetFile + '.hbe-backup') -Force
 } else { $playsetDoc = [pscustomobject]@{file_version='1.0.0';playsets=@()} }
-$ownName = 'Holy Bashu Empire v0.01'
-$retained = @($playsetDoc.playsets | Where-Object { $_.name -ne $ownName })
+$ownName = 'Holy Bashu Empire v0.02'
+$retained = @($playsetDoc.playsets | Where-Object { $_.name -notlike 'Holy Bashu Empire v*' })
 foreach ($existingPlayset in $retained) { $existingPlayset.isActive = $false }
 $hbePlayset = [pscustomobject]@{ name=$ownName;isActive=$true;isAutomaticallySorted=$true;
     orderedListMods=@([pscustomobject]@{path=$modSource.Replace('\','/');isEnabled=$true});

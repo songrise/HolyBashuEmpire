@@ -1,0 +1,361 @@
+﻿hbe_clamp_guoqi = {
+    if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } }
+    if = { limit = { var:hbe_guoqi < 0 } set_variable = { name = hbe_guoqi value = 0 } }
+}
+hbe_banquet_clamp = {
+    if = { limit = { var:hbe_dispute > 100 } set_variable = { name = hbe_dispute value = 100 } }
+    if = { limit = { var:hbe_dispute < 0 } set_variable = { name = hbe_dispute value = 0 } }
+}
+
+hbe_banquet_register = {
+    if = { limit = { NOT = { has_variable = hbe_banquet_joined } }
+        hbe_initialize = yes set_variable = hbe_banquet_joined
+        set_variable = { name = hbe_stance value = 3 }
+        set_variable = { name = hbe_contribution value = 0 }
+        trigger_event_non_silently = { id = hbe_banquet.1 days = 1 }
+    }
+}
+hbe_choose_stance_1 = {
+    set_variable = { name = hbe_stance value = 1 }
+    set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
+}
+hbe_choose_stance_2 = {
+    set_variable = { name = hbe_stance value = 2 }
+    set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
+}
+hbe_choose_stance_3 = {
+    set_variable = { name = hbe_stance value = 3 }
+    set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
+}
+hbe_open_accounts = {
+    set_variable = { name = hbe_round_month value = 0 }
+    set_variable = { name = hbe_role_1 value = 0 }
+    set_variable = { name = hbe_role_2 value = 0 }
+    set_variable = { name = hbe_role_3 value = 0 }
+    international_organization:hbe_empire ?= { every_international_organization_member = {
+        remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered
+        remove_variable = hbe_round_pledged remove_variable = hbe_project_pending
+        remove_variable = hbe_project_timer remove_variable = hbe_fund_pledge
+        remove_variable = hbe_declined_project
+        trigger_event_non_silently = { id = hbe_banquet.2 days = 10 }
+    } }
+}
+hbe_fund_project = {
+    add_gold = -3 set_variable = hbe_round_contributed set_variable = hbe_round_delivered
+    change_variable = { name = hbe_contribution add = 1 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes }
+}
+hbe_pledge_project = {
+    set_variable = hbe_round_pledged set_variable = hbe_fund_pledge
+}
+hbe_deliver_contract = {
+    remove_variable = hbe_project_pending remove_variable = hbe_project_timer
+    set_variable = hbe_round_delivered change_variable = { name = hbe_contribution add = 2 } change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes add_prestige = 1
+    situation:hbe_banquet = {
+        if = { limit = { prev = { var:hbe_delivery_kind = 1 } var:hbe_project_kind = 1 }
+            if = { limit = { prev = { var:hbe_delivery_role = 1 } } change_variable = { name = hbe_role_1 add = 1 } }
+            else_if = { limit = { prev = { var:hbe_delivery_role = 2 } } change_variable = { name = hbe_role_2 add = 1 } }
+            else = { change_variable = { name = hbe_role_3 add = 1 } }
+        }
+        else_if = { limit = { prev = { var:hbe_delivery_kind = 2 } var:hbe_project_kind = 2 }
+            if = { limit = { prev = { var:hbe_delivery_role = 1 } } change_variable = { name = hbe_role_1 add = 1 } }
+            else_if = { limit = { prev = { var:hbe_delivery_role = 2 } } change_variable = { name = hbe_role_2 add = 1 } }
+            else = { change_variable = { name = hbe_role_3 add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_delivery_kind = 0 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } hbe_clamp_guoqi = yes } situation:hbe_banquet ?= { change_variable = { name = hbe_dispute subtract = 1 } hbe_banquet_clamp = yes } }
+    trigger_event_non_silently = { id = hbe_banquet.3 }
+}
+hbe_settle_accounts = {
+    if = { limit = { var:hbe_role_1 >= 1 var:hbe_role_2 >= 1 var:hbe_role_3 >= 1 var:hbe_dispute < 75 }
+        change_variable = { name = hbe_completed_projects add = 1 } change_variable = { name = hbe_dispute subtract = 5 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 5 } hbe_clamp_guoqi = yes }
+        international_organization:hbe_empire ?= { every_international_organization_member = {
+            if = { limit = { has_variable = hbe_round_delivered }
+                every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain }
+                    add_location_modifier = { modifier = hbe_banquet_success years = 3 mode = replace } }
+                if = { limit = { situation:hbe_banquet = { var:hbe_charter = 3 } } add_gold = 1 }
+                trigger_event_non_silently = { id = hbe_banquet.4 }
+            }
+        } }
+    }
+    else = { change_variable = { name = hbe_dispute add = 8 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 4 } hbe_clamp_guoqi = yes }
+        international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.5 } } }
+    }
+    hbe_banquet_clamp = yes hbe_advance_chapter = yes
+    change_variable = { name = hbe_round add = 1 }
+    if = { limit = { var:hbe_project_kind = 1 } set_variable = { name = hbe_project_kind value = 2 } }
+    else = { set_variable = { name = hbe_project_kind value = 1 } }
+    international_organization:hbe_empire ?= { every_international_organization_member = { remove_variable = hbe_subsidized_round } }
+    hbe_open_accounts = yes
+}
+hbe_advance_chapter = {
+if = { limit = { current_year >= 1352 var:hbe_completed_projects >= 3 var:hbe_chapter = 1 }
+            set_variable = { name = hbe_chapter value = 2 }
+            international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.12 } } }
+        }
+if = { limit = { current_year >= 1372 var:hbe_completed_projects >= 8 var:hbe_chapter = 2 }
+            set_variable = { name = hbe_chapter value = 3 }
+            international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.13 } } }
+        }
+if = { limit = { current_year >= 1397 var:hbe_completed_projects >= 14 var:hbe_chapter = 3 }
+            set_variable = { name = hbe_chapter value = 4 }
+            international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.14 } } }
+        }
+if = { limit = { current_year >= 1422 var:hbe_completed_projects >= 22 var:hbe_chapter = 4 }
+            set_variable = { name = hbe_chapter value = 5 }
+            international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.15 } } }
+        }
+}
+hbe_tally_charter = {
+    set_variable = { name = hbe_ballot_circle_votes value = 0 }
+    set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:chengdu.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:anzhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:guanzhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dayi.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:danleng.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 2.5 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:emei.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:yibin.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:hejiang.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:changning_changning.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 2 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:dazu.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:baxian.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:changshou_changshou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dingyuan.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:daning_kuizhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:pengshui.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dianjiang.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 3.5 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:langzhong.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:huacheng.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:jiachuan.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:mianzhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:jiangyou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dongxiang_dazhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:nanchong.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 3.5 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:jianzhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:suining.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:qixian_tongchuan.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dazhu.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 2 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:yandao.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:baoning_maozhou.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dazhasi.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 1.5 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+set_variable = { name = hbe_ballot_seat_votes value = 0 }
+    location:mala.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:dechang.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:hanyuan.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:leibo.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:beishe.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+location:guihua.owner ?= {
+        if = { limit = { is_member_of_international_organization = international_organization:hbe_empire var:hbe_ballot_vote = situation:hbe_banquet.var:hbe_proposal }
+            situation:hbe_banquet = { change_variable = { name = hbe_ballot_seat_votes add = 1 } }
+        }
+    }
+    if = { limit = { var:hbe_ballot_seat_votes > 3 } change_variable = { name = hbe_ballot_circle_votes add = 1 } }
+    if = { limit = { var:hbe_ballot_circle_votes >= 4 }
+        set_variable = { name = hbe_charter value = var:hbe_proposal }
+        change_variable = { name = hbe_dispute subtract = 10 }
+        international_organization:hbe_empire = { every_international_organization_member = { hbe_apply_charter = yes trigger_event_non_silently = { id = hbe_banquet.21 } } }
+    }
+    else = { change_variable = { name = hbe_dispute add = 5 }
+        international_organization:hbe_empire = { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.22 } } }
+    }
+    remove_variable = hbe_ballot_active set_variable = { name = hbe_ballot_cooldown value = yes years = 5 }
+    hbe_banquet_clamp = yes
+}
+hbe_apply_charter = {
+    every_owned_location = {
+        limit = { is_in_scripted_geography = scripted_geography:hbe_domain }
+        remove_location_modifier = hbe_charter_build remove_location_modifier = hbe_charter_food remove_location_modifier = hbe_charter_contract
+        if = { limit = { situation:hbe_banquet = { var:hbe_charter = 1 } } add_location_modifier = { modifier = hbe_charter_build years = -1 } }
+        else_if = { limit = { situation:hbe_banquet = { var:hbe_charter = 2 } } add_location_modifier = { modifier = hbe_charter_food years = -1 } }
+        else_if = { limit = { situation:hbe_banquet = { var:hbe_charter = 3 } } add_location_modifier = { modifier = hbe_charter_contract years = -1 } }
+    }
+}
+hbe_charter_maintenance = {
+    every_owned_location = {
+        limit = { is_in_scripted_geography = scripted_geography:hbe_domain }
+        if = { limit = { owner = { is_member_of_international_organization = international_organization:hbe_empire } situation:hbe_banquet ?= { var:hbe_charter = 1 } NOT = { has_location_modifier = hbe_charter_build } }
+            add_location_modifier = { modifier = hbe_charter_build years = -1 } }
+        else_if = { limit = { owner = { is_member_of_international_organization = international_organization:hbe_empire } situation:hbe_banquet ?= { var:hbe_charter = 2 } NOT = { has_location_modifier = hbe_charter_food } }
+            add_location_modifier = { modifier = hbe_charter_food years = -1 } }
+        else_if = { limit = { owner = { is_member_of_international_organization = international_organization:hbe_empire } situation:hbe_banquet ?= { var:hbe_charter = 3 } NOT = { has_location_modifier = hbe_charter_contract } }
+            add_location_modifier = { modifier = hbe_charter_contract years = -1 } }
+        else_if = { limit = { owner = { NOT = { is_member_of_international_organization = international_organization:hbe_empire } } }
+            remove_location_modifier = hbe_charter_build remove_location_modifier = hbe_charter_food remove_location_modifier = hbe_charter_contract }
+    }
+}
+hbe_banquet_monthly = {
+    international_organization:hbe_empire ?= { every_international_organization_member = { hbe_banquet_register = yes
+        if = { limit = { has_variable = hbe_project_pending NOT = { has_variable = hbe_project_timer } } hbe_deliver_contract = yes }
+    } }
+    change_variable = { name = hbe_round_month add = 1 }
+    if = { limit = { var:hbe_round_month = 12 }
+        international_organization:hbe_empire ?= { every_international_organization_member = {
+            if = { limit = { has_variable = hbe_fund_pledge }
+                remove_variable = hbe_fund_pledge remove_variable = hbe_round_pledged
+                if = { limit = { gold >= 4 } add_gold = -4 set_variable = hbe_round_contributed set_variable = hbe_round_delivered
+                    change_variable = { name = hbe_contribution add = 1 } change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } }
+                else = { change_variable = { name = hbe_yiqi subtract = 8 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 5 } hbe_banquet_clamp = yes } trigger_event_non_silently = { id = hbe_banquet.6 } }
+            }
+        } }
+    }
+    if = { limit = { has_variable = hbe_ballot_active } change_variable = { name = hbe_ballot_month add = 1 }
+        if = { limit = { var:hbe_ballot_month >= 6 } hbe_tally_charter = yes } }
+    if = { limit = { var:hbe_dispute >= 75 NOT = { has_variable = hbe_crisis_cooldown } }
+        set_variable = { name = hbe_crisis_cooldown value = yes years = 5 }
+        international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.23 } } }
+    }
+    if = { limit = { var:hbe_round_month >= 36 } hbe_settle_accounts = yes }
+    set_variable = { name = hbe_pot_display value = international_organization:hbe_empire.var:hbe_guoqi }
+    hbe_banquet_clamp = yes
+}

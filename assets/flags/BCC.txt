@@ -1,0 +1,4 @@
+BCC = {
+    pattern = "pattern_solid.dds" color1 = "hbe_old_gold" color2 = "hbe_russet"
+    textured_emblem = { texture = "te_tibetan_flaming_jewels.dds" instance = { position = { 0.5 0.33 } scale = { 0.62 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bcc.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}

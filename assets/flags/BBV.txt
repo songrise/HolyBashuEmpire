@@ -1,0 +1,4 @@
+BBV = {
+    pattern = "pattern_solid.dds" color1 = "hbe_pine" color2 = "hbe_ivory"
+    colored_emblem = { texture = "ce_chinese_auspicious_conch_shell.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbv.dds" color1 = "hbe_old_gold" color2 = "hbe_old_gold" color3 = "hbe_old_gold" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}

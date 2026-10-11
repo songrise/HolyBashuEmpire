@@ -36,6 +36,13 @@ hbe_apply_tianfu = yes
 }
 hbe_country_monthly = {
 if = { limit = { hbe_is_prince = yes } hbe_initialize = yes
+if = { limit = { is_situation_active = situation:hbe_banquet } if = { limit = { has_variable = hbe_service_chengdu_plain_pending NOT = { has_variable = hbe_service_chengdu_plain_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
+if = { limit = { has_variable = hbe_service_southern_salt_wine_pending NOT = { has_variable = hbe_service_southern_salt_wine_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
+if = { limit = { has_variable = hbe_service_eastern_river_pending NOT = { has_variable = hbe_service_eastern_river_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
+if = { limit = { has_variable = hbe_service_northern_shudao_pending NOT = { has_variable = hbe_service_northern_shudao_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
+if = { limit = { has_variable = hbe_service_central_hills_pending NOT = { has_variable = hbe_service_central_hills_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
+if = { limit = { has_variable = hbe_service_western_tea_horse_pending NOT = { has_variable = hbe_service_western_tea_horse_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
+if = { limit = { has_variable = hbe_service_southwestern_valleys_pending NOT = { has_variable = hbe_service_southwestern_valleys_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 } }
 if = { limit = { has_variable = hbe_tech_common_1_pending NOT = { has_variable = hbe_research_timer } }
             remove_variable = hbe_tech_common_1_pending remove_variable = hbe_research_pending set_variable = hbe_tech_common_1
             hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }

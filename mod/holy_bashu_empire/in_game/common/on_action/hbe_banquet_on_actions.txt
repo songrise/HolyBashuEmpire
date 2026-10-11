@@ -1,0 +1,71 @@
+﻿monthly_country_pulse = { on_actions = { hbe_banquet_country_maintenance } }
+hbe_banquet_country_maintenance = { effect = {
+    if = { limit = { hbe_is_prince = yes NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
+        international_organization:hbe_empire ?= { add_country_to_international_organization = prev }
+        if = { limit = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } NOT = { is_member_of_international_organization = international_organization:hbe_circle_chengdu_plain } }
+        international_organization:hbe_circle_chengdu_plain ?= { add_country_to_international_organization = prev }
+    }
+if = { limit = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } NOT = { is_member_of_international_organization = international_organization:hbe_circle_southern_salt_wine } }
+        international_organization:hbe_circle_southern_salt_wine ?= { add_country_to_international_organization = prev }
+    }
+if = { limit = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } NOT = { is_member_of_international_organization = international_organization:hbe_circle_eastern_river } }
+        international_organization:hbe_circle_eastern_river ?= { add_country_to_international_organization = prev }
+    }
+if = { limit = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } NOT = { is_member_of_international_organization = international_organization:hbe_circle_northern_shudao } }
+        international_organization:hbe_circle_northern_shudao ?= { add_country_to_international_organization = prev }
+    }
+if = { limit = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } NOT = { is_member_of_international_organization = international_organization:hbe_circle_central_hills } }
+        international_organization:hbe_circle_central_hills ?= { add_country_to_international_organization = prev }
+    }
+if = { limit = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } NOT = { is_member_of_international_organization = international_organization:hbe_circle_western_tea_horse } }
+        international_organization:hbe_circle_western_tea_horse ?= { add_country_to_international_organization = prev }
+    }
+if = { limit = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } NOT = { is_member_of_international_organization = international_organization:hbe_circle_southwestern_valleys } }
+        international_organization:hbe_circle_southwestern_valleys ?= { add_country_to_international_organization = prev }
+    }
+    }
+    if = { limit = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire } hbe_banquet_register = yes }
+    hbe_charter_maintenance = yes
+} }
+yearly_country_pulse = { on_actions = { hbe_banquet_yearly } }
+hbe_banquet_yearly = { trigger = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire } effect = { if = { limit = { situation:hbe_banquet = { var:hbe_charter = 1 } is_leader_of_international_organization = international_organization:hbe_empire }
+        if = { limit = { gold >= 1 } add_gold = -1 add_prestige = 1 }
+        else = { situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 5 } hbe_banquet_clamp = yes } }
+    } if = { limit = { current_year >= 1338 has_or_had_tag = BAB NOT = { has_variable = hbe_personal_bab } } trigger_event_non_silently = { id = hbe_banquet.200 } }
+if = { limit = { current_year >= 1339 has_or_had_tag = BAE NOT = { has_variable = hbe_personal_bae } } trigger_event_non_silently = { id = hbe_banquet.201 } }
+if = { limit = { current_year >= 1340 has_or_had_tag = BAF NOT = { has_variable = hbe_personal_baf } } trigger_event_non_silently = { id = hbe_banquet.202 } }
+if = { limit = { current_year >= 1341 has_or_had_tag = BAJ NOT = { has_variable = hbe_personal_baj } } trigger_event_non_silently = { id = hbe_banquet.203 } }
+if = { limit = { current_year >= 1342 has_or_had_tag = BAL NOT = { has_variable = hbe_personal_bal } } trigger_event_non_silently = { id = hbe_banquet.204 } }
+if = { limit = { current_year >= 1343 has_or_had_tag = BAO NOT = { has_variable = hbe_personal_bao } } trigger_event_non_silently = { id = hbe_banquet.205 } }
+if = { limit = { current_year >= 1338 has_or_had_tag = BAP NOT = { has_variable = hbe_personal_bap } } trigger_event_non_silently = { id = hbe_banquet.206 } }
+if = { limit = { current_year >= 1339 has_or_had_tag = BAQ NOT = { has_variable = hbe_personal_baq } } trigger_event_non_silently = { id = hbe_banquet.207 } }
+if = { limit = { current_year >= 1340 has_or_had_tag = BAW NOT = { has_variable = hbe_personal_baw } } trigger_event_non_silently = { id = hbe_banquet.208 } }
+if = { limit = { current_year >= 1341 has_or_had_tag = BAX NOT = { has_variable = hbe_personal_bax } } trigger_event_non_silently = { id = hbe_banquet.209 } }
+if = { limit = { current_year >= 1342 has_or_had_tag = BAZ NOT = { has_variable = hbe_personal_baz } } trigger_event_non_silently = { id = hbe_banquet.210 } }
+if = { limit = { current_year >= 1343 has_or_had_tag = BBB NOT = { has_variable = hbe_personal_bbb } } trigger_event_non_silently = { id = hbe_banquet.211 } }
+if = { limit = { current_year >= 1338 has_or_had_tag = BBC NOT = { has_variable = hbe_personal_bbc } } trigger_event_non_silently = { id = hbe_banquet.212 } }
+if = { limit = { current_year >= 1339 has_or_had_tag = BBE NOT = { has_variable = hbe_personal_bbe } } trigger_event_non_silently = { id = hbe_banquet.213 } }
+if = { limit = { current_year >= 1340 has_or_had_tag = BBF NOT = { has_variable = hbe_personal_bbf } } trigger_event_non_silently = { id = hbe_banquet.214 } }
+if = { limit = { current_year >= 1341 has_or_had_tag = BBH NOT = { has_variable = hbe_personal_bbh } } trigger_event_non_silently = { id = hbe_banquet.215 } }
+if = { limit = { current_year >= 1342 has_or_had_tag = BBI NOT = { has_variable = hbe_personal_bbi } } trigger_event_non_silently = { id = hbe_banquet.216 } }
+if = { limit = { current_year >= 1343 has_or_had_tag = BBJ NOT = { has_variable = hbe_personal_bbj } } trigger_event_non_silently = { id = hbe_banquet.217 } }
+if = { limit = { current_year >= 1338 has_or_had_tag = BBL NOT = { has_variable = hbe_personal_bbl } } trigger_event_non_silently = { id = hbe_banquet.218 } }
+if = { limit = { current_year >= 1339 has_or_had_tag = BBM NOT = { has_variable = hbe_personal_bbm } } trigger_event_non_silently = { id = hbe_banquet.219 } }
+if = { limit = { current_year >= 1340 has_or_had_tag = BBN NOT = { has_variable = hbe_personal_bbn } } trigger_event_non_silently = { id = hbe_banquet.220 } }
+if = { limit = { current_year >= 1341 has_or_had_tag = BBO NOT = { has_variable = hbe_personal_bbo } } trigger_event_non_silently = { id = hbe_banquet.221 } }
+if = { limit = { current_year >= 1342 has_or_had_tag = BBP NOT = { has_variable = hbe_personal_bbp } } trigger_event_non_silently = { id = hbe_banquet.222 } }
+if = { limit = { current_year >= 1343 has_or_had_tag = BBQ NOT = { has_variable = hbe_personal_bbq } } trigger_event_non_silently = { id = hbe_banquet.223 } }
+if = { limit = { current_year >= 1338 has_or_had_tag = BBR NOT = { has_variable = hbe_personal_bbr } } trigger_event_non_silently = { id = hbe_banquet.224 } }
+if = { limit = { current_year >= 1339 has_or_had_tag = BBS NOT = { has_variable = hbe_personal_bbs } } trigger_event_non_silently = { id = hbe_banquet.225 } }
+if = { limit = { current_year >= 1340 has_or_had_tag = BBT NOT = { has_variable = hbe_personal_bbt } } trigger_event_non_silently = { id = hbe_banquet.226 } }
+if = { limit = { current_year >= 1341 has_or_had_tag = BBU NOT = { has_variable = hbe_personal_bbu } } trigger_event_non_silently = { id = hbe_banquet.227 } }
+if = { limit = { current_year >= 1342 has_or_had_tag = BBV NOT = { has_variable = hbe_personal_bbv } } trigger_event_non_silently = { id = hbe_banquet.228 } }
+if = { limit = { current_year >= 1343 has_or_had_tag = BBW NOT = { has_variable = hbe_personal_bbw } } trigger_event_non_silently = { id = hbe_banquet.229 } }
+if = { limit = { current_year >= 1338 has_or_had_tag = BBX NOT = { has_variable = hbe_personal_bbx } } trigger_event_non_silently = { id = hbe_banquet.230 } }
+if = { limit = { current_year >= 1339 has_or_had_tag = BBY NOT = { has_variable = hbe_personal_bby } } trigger_event_non_silently = { id = hbe_banquet.231 } }
+if = { limit = { current_year >= 1340 has_or_had_tag = BBZ NOT = { has_variable = hbe_personal_bbz } } trigger_event_non_silently = { id = hbe_banquet.232 } }
+if = { limit = { current_year >= 1341 has_or_had_tag = BCA NOT = { has_variable = hbe_personal_bca } } trigger_event_non_silently = { id = hbe_banquet.233 } }
+if = { limit = { current_year >= 1342 has_or_had_tag = BCB NOT = { has_variable = hbe_personal_bcb } } trigger_event_non_silently = { id = hbe_banquet.234 } }
+if = { limit = { current_year >= 1343 has_or_had_tag = BCC NOT = { has_variable = hbe_personal_bcc } } trigger_event_non_silently = { id = hbe_banquet.235 } } }
+    random_events = { chance_to_happen = 35 1 = hbe_banquet.100 1 = hbe_banquet.101 1 = hbe_banquet.102 1 = hbe_banquet.103 1 = hbe_banquet.104 1 = hbe_banquet.105 1 = hbe_banquet.106 1 = hbe_banquet.107 1 = hbe_banquet.108 1 = hbe_banquet.109 1 = hbe_banquet.110 1 = hbe_banquet.111 1 = hbe_banquet.112 1 = hbe_banquet.113 1 = hbe_banquet.114 1 = hbe_banquet.115 1 = hbe_banquet.116 1 = hbe_banquet.117 1 = hbe_banquet.118 1 = hbe_banquet.119 1 = hbe_banquet.120 1 = hbe_banquet.30 1 = hbe_banquet.31 1 = hbe_banquet.32 1 = hbe_banquet.33 1 = hbe_banquet.34 1 = hbe_banquet.35 1 = hbe_banquet.36 }
+}

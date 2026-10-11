@@ -1,0 +1,4 @@
+BAZ = {
+    pattern = "pattern_solid.dds" color1 = "hbe_indigo" color2 = "hbe_cinnabar"
+    textured_emblem = { texture = "te_dragon_flaming_pearl_clouds_gold_azure_variant.dds" instance = { position = { 0.5 0.33 } scale = { 0.62 0.55 } } } colored_emblem = { texture = "ce_hbe_name_baz.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+}
