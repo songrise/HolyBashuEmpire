@@ -1,138 +1,91 @@
-"""Native EU5 heraldry with two-character LiSu inscriptions.
-
-Flag scripts reference the game's own heraldic art. Only the new inscription
-masks are shipped. The engine supplies cloth materials and final shading.
-"""
+"""No-text Bashu heraldry: generated charges on native cloth flag fields."""
 import hashlib
-from pathlib import Path
+from collections import deque
 from PIL import Image,ImageDraw,ImageFont
 from build_flags import save_dds
 
-FAMILIES=[
-    ('hbe_ochre','hbe_ink','hbe_cinnabar',[
-        ('te_dragon_flaming_pearl_clouds_gold_red_variant.dds','textured'),
-        ('ce_fish_naiant.dds','colored'),('ce_chinese_white_tiger.dds','colored'),
-        ('ce_chinese_double_phoenix.dds','colored'),('ce_chinese_vermilion_bird.dds','colored')]),
-    ('hbe_cinnabar','hbe_old_gold','hbe_ink',[
-        ('ce_lotus_throne.dds','colored'),('ce_chinese_vermilion_bird.dds','colored'),
-        ('ce_chinese_double_phoenix.dds','colored'),('ce_chinese_blessing_prosperity.dds','colored')]),
-    ('hbe_indigo','hbe_ivory','hbe_cinnabar',[
-        ('ce_chinese_azure_dragon.dds','colored'),
-        ('te_dragon_flaming_pearl_clouds_gold_azure_variant.dds','textured'),
-        ('ce_fishes_pandya.dds','colored'),('ce_chinese_black_turtle.dds','colored'),
-        ('ce_boathooks_saltire.dds','colored'),('ce_chinese_qilin.dds','colored'),
-        ('ce_chinese_double_phoenix.dds','colored')]),
-    ('hbe_ivory','hbe_ink','hbe_cinnabar',[
-        ('ce_chinese_white_tiger.dds','colored'),('ce_chinese_qilin.dds','colored'),
-        ('ce_chinese_black_turtle.dds','colored'),('ce_mountains_landscape_chitral.dds','colored'),
-        ('ce_chinese_azure_dragon.dds','colored'),('ce_horse_courant.dds','colored'),
-        ('ce_chinese_double_phoenix.dds','colored')]),
-    ('hbe_dark_red','hbe_ivory','hbe_old_gold',[
-        ('ce_wheat_ear.dds','colored'),('ce_wheat_garb.dds','colored'),
-        ('ce_tree_fruit_simple.dds','colored'),('ce_heron_wide.dds','colored')]),
-    ('hbe_pine','hbe_old_gold','hbe_ivory',[
-        ('te_wind_horse.dds','textured'),('ce_chinese_auspicious_conch_shell.dds','colored'),
-        ('te_tibetan_garuda.dds','textured')]),
-    ('hbe_russet','hbe_ivory','hbe_old_gold',[
-        ('ce_lotus_chakra.dds','colored'),('ce_chinese_auspicious_conch_shell.dds','colored'),
-        ('ce_lotus_flower_02.dds','colored'),('ce_mountains_hunza.dds','colored'),
-        ('ce_chinese_crossed_vajra_taijitu.dds','colored'),('te_tibetan_flaming_jewels.dds','textured')])
-]
-COLORS={
-    'hbe_ochre':(182,137,49),'hbe_cinnabar':(141,36,34),'hbe_dark_red':(91,28,29),
-    'hbe_old_gold':(216,180,91),'hbe_ink':(30,30,28),'hbe_indigo':(31,51,80),
-    'hbe_ivory':(232,222,192),'hbe_white':(250,248,242),'hbe_pine':(31,77,49),'hbe_russet':(99,52,38)
-}
+COLORS={'hbe_indigo':(26,43,66),'hbe_cinnabar':(122,30,28),
+        'hbe_pine':(23,60,39),'hbe_dark_red':(76,24,31),
+        'hbe_russet':(89,44,30),'hbe_azure':(35,69,85),'hbe_gold':(191,157,80),'hbe_ivory':(225,215,186)}
+FIELDS=['hbe_indigo','hbe_cinnabar','hbe_indigo','hbe_pine','hbe_dark_red','hbe_pine','hbe_russet']
+PATTERNS=['pattern_fringe.dds','pattern_diagonal_split_01.dds','pattern_vertical_split_01.dds','pattern_horizontal_bar_01.dds','pattern_horizontal_split_01.dds','pattern_solid.dds','pattern_border_thin.dds']
+def extract_charges(im):
+    # Assign whole connected atlas objects by center, keeping tails across grid lines.
+    w,h=im.size;alpha=im.getchannel('A').tobytes();seen=set();groups=[[] for _ in range(36)]
+    for start,v in enumerate(alpha):
+        if v<=128 or start in seen:continue
+        seen.add(start);q=deque([start]);points=[]
+        while q:
+            p=q.popleft();points.append(p);x=p%w;y=p//w
+            for n in ((p-1 if x else -1),(p+1 if x<w-1 else -1),(p-w if y else -1),(p+w if y<h-1 else -1)):
+                if n>=0 and n not in seen and alpha[n]>128:seen.add(n);q.append(n)
+        xs=[p%w for p in points];ys=[p//w for p in points]
+        if len(points)<35:continue
+        b=(min(xs),min(ys),max(xs)+1,max(ys)+1)
+        col=min(5,int((b[0]+b[2])/2/w*6));row=min(5,int((b[1]+b[3])/2/h*6))
+        groups[row*6+col].append((len(points),b,points))
+    result=[]
+    for parts in groups:
+        if not parts:raise ValueError('Missing isolated heraldic cell '+str(len(result)))
+        largest=max(p[0] for p in parts)
+        selected=[(b,points) for area,b,points in parts if area>=max(35,largest*.02)]
+        bounds=(max(0,min(b[0] for b,_ in selected)-1),max(0,min(b[1] for b,_ in selected)-1),min(w,max(b[2] for b,_ in selected)+1),min(h,max(b[3] for b,_ in selected)+1))
+        x0,y0,x1,y1=bounds;bw,bh=x1-x0,y1-y0;mask=bytearray(bw*bh)
+        for _,points in selected:
+            for p in points:
+                x=p%w;y=p//w
+                for dy in (-1,0,1):
+                    for dx in (-1,0,1):
+                        xx,yy=x+dx,y+dy
+                        if x0<=xx<x1 and y0<=yy<y1:mask[(yy-y0)*bw+xx-x0]=alpha[yy*w+xx]
+        charge=im.crop(bounds);charge.putalpha(Image.frombytes('L',(bw,bh),bytes(mask)))
+        result.append((charge,bounds))
+    return result
 
 def build_flags(out,countries,regions,root,put,game):
-    art=game/'main_menu/gfx/coat_of_arms'
-    font=Path('C:/Windows/Fonts/SIMLI.TTF')
-    if not font.is_file():raise RuntimeError('LiSu font SIMLI.TTF is required; no substitute is allowed.')
-    li=ImageFont.truetype(str(font),240)
-    label=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',18)
-    title=ImageFont.truetype(str(font),36)
-    assets=root/'assets/flags';assets.mkdir(parents=True,exist_ok=True)
-    # An independent white nameplate keeps LiSu readable under engine cloth shading.
-    plate=Image.new('RGBA',(384,128),(255,0,0,255))
-    save_dds(out/'main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_nameplate.dds',plate)
-    proof=Image.new('RGB',(1800,1450),'#312a22');pd=ImageDraw.Draw(proof)
-    pd.text((26,17),'神圣巴蜀帝国 · 府州旗样',font=title,fill=COLORS['hbe_old_gold'])
-    pd.text((26,60),'原生纹章构件 / 隶书两字题旗 · 配色校样（布面材质由游戏渲染）',font=label,fill=COLORS['hbe_ivory'])
+    atlas=Image.open(root/'assets/flag_redesign/heraldic_charges.png').convert('RGBA')
+    if atlas.getchannel('A').getextrema()[0]!=0:raise ValueError('Heraldic charges need transparent gutters')
+    charges=extract_charges(atlas)
+    folder=root/'assets/flags';folder.mkdir(parents=True,exist_ok=True)
+    proof=Image.new('RGB',(1800,1440),'#292722');draw=ImageDraw.Draw(proof)
+    font=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',18)
+    draw.text((20,15),'三十六府州旗样 · 无文字 / 原生旗底与独立纹章',font=font,fill='#d7ba7f')
     definitions=[];catalog=[];indices={r[0]:0 for r in regions}
-    def recolor(src,color):
-        src=src.convert('RGBA');rgb=Image.new('RGBA',src.size);pixels=[]
-        for r,g,b,a in src.getdata():
-            v=max(r,g,b)/255
-            col=(14,12,10) if v<0.015 else tuple(int(c*(.52+.48*min(1,v*2))) for c in color)
-            pixels.append((*col,a))
-        rgb.putdata(pixels);return rgb
     for i,c in enumerate(countries):
-        ri=next(j for j,r in enumerate(regions) if r[0]==c['region'])
-        j=indices[c['region']];indices[c['region']]+=1
-        field,metal,trim,charges=FAMILIES[ri];texture,kind=charges[j]
-        pattern='pattern_fringe.dds' if j%3==0 else 'pattern_solid.dds'
-        border=None
-        if j%3==2:field,trim=trim,field
-        if field in ('hbe_ivory','hbe_old_gold','hbe_ochre'):metal='hbe_ink'
-        elif metal=='hbe_ink':metal='hbe_ivory'
-        name=c['group'];assert len(name)==2,name
-        filename=f'ce_hbe_name_{c["tag"].lower()}.dds'
-        alpha=Image.new('L',(768,256),0);ad=ImageDraw.Draw(alpha)
-        ad.text((384,128),name,font=li,fill=255,anchor='mm',stroke_width=1)
-        alpha=alpha.resize((384,128),Image.Resampling.LANCZOS)
-        glyph=Image.new('RGBA',(384,128),(255,0,0,0));glyph.putalpha(alpha)
-        glyphpath=out/'main_menu/gfx/coat_of_arms/colored_emblems'/filename;save_dds(glyphpath,glyph)
-        layers=[];dependencies=[('patterns',pattern)]
-        category='textured_emblems' if kind=='textured' else 'colored_emblems'
-        dependencies.append((category,texture))
-        scale=(.62,.55) if kind=='textured' else (.60,.55)
-        if texture=='te_wind_horse.dds':scale=(.52,.55)
-        if kind=='textured':
-            layers.append(f'textured_emblem = {{ texture = "{texture}" instance = {{ position = {{ 0.5 0.33 }} scale = {{ {scale[0]} {scale[1]} }} }} }}')
-        else:
-            layers.append(f'colored_emblem = {{ texture = "{texture}" color1 = "{metal}" color2 = "{metal}" color3 = "{metal}" instance = {{ position = {{ 0.5 0.33 }} scale = {{ {scale[0]} {scale[1]} }} }} }}')
-        if border:
-            dependencies.append(('colored_emblems',border))
-            layers.insert(0,f'colored_emblem = {{ texture = "{border}" color1 = "{metal}" color2 = "{metal}" color3 = "{metal}" instance = {{ position = {{ 0.5 0.5 }} scale = {{ 0.94 0.93 }} }} }}')
-        layers.append('colored_emblem = { texture = "ce_hbe_nameplate.dds" color1 = "hbe_white" color2 = "hbe_white" color3 = "hbe_white" instance = { position = { 0.5 0.77 } scale = { 0.69 0.31 } } }')
-        layers.append(f'colored_emblem = {{ texture = "{filename}" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = {{ position = {{ 0.5 0.77 }} scale = {{ 0.60 0.28 }} }} }}')
+        ri=next(j for j,r in enumerate(regions) if r[0]==c['region']);j=indices[c['region']];indices[c['region']]+=1
+        charge,box=charges[i];ratio=min(450/charge.width,450/charge.height)
+        charge=charge.resize((round(charge.width*ratio),round(charge.height*ratio)),Image.Resampling.LANCZOS)
+        sprite=Image.new('RGBA',(512,512));sprite.alpha_composite(charge,((512-charge.width)//2,(512-charge.height)//2))
+        texture='te_hbe_crest_'+c['tag'].lower()+'.dds';path=out/'main_menu/gfx/coat_of_arms/textured_emblems'/texture;save_dds(path,sprite)
+        field=FIELDS[ri];pattern=PATTERNS[(j+ri)%len(PATTERNS)]
+        accent=('hbe_gold' if j%2==0 else 'hbe_ivory') if pattern in ('pattern_fringe.dds','pattern_border_thin.dds') else ['hbe_azure','hbe_cinnabar','hbe_pine','hbe_dark_red','hbe_indigo','hbe_russet'][(j+ri)%6]
+        if accent==field:accent='hbe_azure' if field!='hbe_azure' else 'hbe_dark_red'
         definition=f'''{c['tag']} = {{
-    pattern = "{pattern}" color1 = "{field}" color2 = "{trim}"
-    {' '.join(layers)}
-}}''';definitions.append(definition)
-        for category,asset in dependencies:
-            if not (art/category/asset).is_file():raise FileNotFoundError(art/category/asset)
-        im=Image.new('RGBA',(768,512),COLORS[field])
-        if pattern=='pattern_fringe.dds':
-            d=ImageDraw.Draw(im);d.rectangle((0,0,767,511),outline=COLORS[trim],width=27)
-        if border:
-            layer=recolor(Image.open(art/'colored_emblems'/border),COLORS[metal]).resize((722,476),Image.Resampling.LANCZOS)
-            im.alpha_composite(layer,(23,18))
-        charge=Image.open(art/('textured_emblems' if kind=='textured' else 'colored_emblems')/texture).convert('RGBA')
-        if kind!='textured':charge=recolor(charge,COLORS[metal])
-        cw,ch=round(768*scale[0]),round(512*scale[1])
-        im.alpha_composite(charge.resize((cw,ch),Image.Resampling.LANCZOS),(round(384-cw/2),round(512*.33-ch/2)))
-        ImageDraw.Draw(im).rectangle((119,315,649,474),fill=COLORS['hbe_white'])
-        lettering=Image.new('RGBA',alpha.size,COLORS['hbe_ink']);lettering.putalpha(alpha)
-        tw,th=round(768*.60),round(512*.28)
-        im.alpha_composite(lettering.resize((tw,th),Image.Resampling.LANCZOS),(round(384-tw/2),round(512*.77-th/2)))
-        im=im.resize((384,256),Image.Resampling.LANCZOS);im.save(assets/(c['tag']+'.png'))
-        (assets/(c['tag']+'.txt')).write_text(definition+'\n',encoding='utf-8')
-        x=(i%6)*300+12;y=(i//6)*224+106
-        proof.paste(im.convert('RGB').resize((276,184),Image.Resampling.LANCZOS),(x,y))
-        pd.text((x,y+188),c['tag']+'  '+c['name'],font=label,fill=COLORS['hbe_ivory'])
-        catalog.append(dict(tag=c['tag'],country=c['name'],region=c['region'],inscription=name,
-            font='LiSu / 隶书 (SIMLI.TTF)',nameplate='white field / black inscription',texture=filename,sha256=hashlib.sha256(glyphpath.read_bytes()).hexdigest(),
-            definition_sha256=hashlib.sha256(definition.encode()).hexdigest(),
-            native_assets=[{'category':cat,'file':f} for cat,f in dependencies]))
-    # Only superseded generated files with known country tags are removed.
-    for c in countries:
-        old=out/'main_menu/gfx/coat_of_arms/textured_emblems'/f'te_hbe_{c["tag"].lower()}.dds'
-        if old.is_file():old.unlink()
-        oldsvg=assets/(c['tag']+'.svg')
-        if oldsvg.is_file():oldsvg.unlink()
+ pattern = "{pattern}" color1 = "{field}" color2 = "{accent}"
+ textured_emblem = {{ texture = "{texture}" instance = {{ position = {{ 0.5 0.5 }} scale = {{ 0.72 0.95 }} }} }}
+}}'''
+        definitions.append(definition)
+        for ref in (game/'main_menu/gfx/coat_of_arms/patterns'/pattern,):
+            if not ref.is_file():raise FileNotFoundError(ref)
+        native_pattern=Image.open(game/'main_menu/gfx/coat_of_arms/patterns'/pattern).convert('RGBA').resize((384,256))
+        pixels=[]
+        for _,g,_,_ in native_pattern.getdata():
+            t=g/255;pixels.append(tuple(round(a*(1-t)+b*t) for a,b in zip(COLORS[field],COLORS[accent]))+(255,))
+        field_art=Image.new('RGBA',(384,256));field_art.putdata(pixels)
+        visual=sprite.resize((276,243),Image.Resampling.LANCZOS);field_art.alpha_composite(visual,(54,6));field_art.save(folder/(c['tag']+'.png'))
+        (folder/(c['tag']+'.txt')).write_text(definition+'\n',encoding='utf-8')
+        x=(i%6)*300+12;y=(i//6)*228+60
+        proof.paste(field_art.convert('RGB').resize((276,184),Image.Resampling.LANCZOS),(x,y));draw.text((x,y+188),c['tag']+'  '+c['name'],font=font,fill='#dfd0ab')
+        catalog.append(dict(tag=c['tag'],country=c['name'],region=c['region'],inscription='',font=None,
+            texture=texture,texture_category='textured_emblems',nameplate=None,dimensions=[512,512],
+            sha256=hashlib.sha256(path.read_bytes()).hexdigest(),definition_sha256=hashlib.sha256(definition.encode()).hexdigest(),
+            source='assets/flag_redesign/heraldic_charges.png',cell=i,crop=list(box),
+            native_assets=[{'category':'patterns','file':pattern}]))
+    for category in ('colored_emblems','textured_emblems'):
+        p=out/'main_menu/gfx/coat_of_arms'/category
+        for f in p.glob('*hbe_name*.dds'):f.unlink()
     put('main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt','\n'.join(definitions))
-    put('main_menu/common/named_colors/hbe_flags.txt','colors = {\n'+'\n'.join(f'{k} = rgb {{ '+' '.join(str(v) for v in rgb)+' }' for k,rgb in COLORS.items())+'\n}')
+    put('main_menu/common/named_colors/hbe_flags.txt','colors = {\n'+'\n'.join(k+' = rgb { '+' '.join(map(str,v))+' }' for k,v in COLORS.items())+'\n}')
     proof.save(root/'assets/flags_preview.png')
-    (root/'assets/flag_art_notes.md').write_text('旗面采用 EU5 原生纹章构件与引擎布面渲染，发行包不复制原版纹章贴图。\n各国两字简称用本机 SIMLI.TTF（隶书）栅格化为独立纹章遮罩，字体文件不打包。\n校样仅演示构图和配色，不是游戏截图。\n',encoding='utf-8')
+    (root/'assets/flag_art_notes.md').write_text('已按用户要求撤去三十六国全部文字和白色铭牌。旗底与布料由原版渲染，36幅独立纹章使用内置 image_gen 生成并机械分格。校样显示配色与构图，非游戏截图。\n',encoding='utf-8')
     return catalog

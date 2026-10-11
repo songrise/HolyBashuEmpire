@@ -1,12 +1,10 @@
 ﻿colors = {
-hbe_ochre = rgb { 182 137 49 }
-hbe_cinnabar = rgb { 141 36 34 }
-hbe_dark_red = rgb { 91 28 29 }
-hbe_old_gold = rgb { 216 180 91 }
-hbe_ink = rgb { 30 30 28 }
-hbe_indigo = rgb { 31 51 80 }
-hbe_ivory = rgb { 232 222 192 }
-hbe_white = rgb { 250 248 242 }
-hbe_pine = rgb { 31 77 49 }
-hbe_russet = rgb { 99 52 38 }
+hbe_indigo = rgb { 26 43 66 }
+hbe_cinnabar = rgb { 122 30 28 }
+hbe_pine = rgb { 23 60 39 }
+hbe_dark_red = rgb { 76 24 31 }
+hbe_russet = rgb { 89 44 30 }
+hbe_azure = rgb { 35 69 85 }
+hbe_gold = rgb { 191 157 80 }
+hbe_ivory = rgb { 225 215 186 }
 }

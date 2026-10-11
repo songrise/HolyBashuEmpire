@@ -1,0 +1,6 @@
+﻿hbe_civic_work_burst = { global_construction_speed = 0.05 }
+hbe_civic_fast_work = { local_construction_speed = 0.03 }
+hbe_civic_slow_work = { global_construction_speed = -0.05 }
+hbe_civic_strained = { peasants_estate_target_satisfaction = -0.03 }
+hbe_civic_exhausted = { peasants_estate_target_satisfaction = -0.08 global_construction_speed = -0.05 }
+hbe_civic_over_supply = { army_maintenance_efficiency = -0.10 }

@@ -13,6 +13,7 @@ from build_full_art_assets import build_full_art_assets
 from build_event_prose import apply_event_prose
 from build_player_guides import build_player_guides
 from build_native_content import build_native_content
+from build_social_expansion import build_social_expansion
 
 ROOT = Path(__file__).resolve().parents[1]
 REGIONS = [
@@ -111,7 +112,7 @@ def main():
         write(out/rel,text,bom or (rel.endswith('.txt') and not rel.startswith('main_menu/setup/')))
     # Same fields as the game's -mod_stubber output; do not depend on a scratch directory.
     metadata=dict(name='',id='',version='',supported_game_version='',short_description='',tags=[],relationships=[],game_custom_data={})
-    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.1.1',supported_game_version='1.4.*',
+    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.2.0',supported_game_version='1.4.*',
                     short_description='架空巴蜀：七个帝国圈、三十六诸侯，天府加成、选举、地区经营与百年传承。',
                     tags=['Alternative History','Gameplay'])
     put('.metadata/metadata.json',json.dumps(metadata,ensure_ascii=False,indent=2))
@@ -521,7 +522,11 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     event_prose = apply_event_prose(out, ROOT, L, loc)
     icon_art = build_icon_assets(out, ROOT, catalog, put, game)
     full_art = build_full_art_assets(out, ROOT, countries, REGIONS, put, game)
-    native_content = build_native_content(out, ROOT, countries, REGIONS, catalog, loc, put, full_art)
+    # A repeated build must not register the previous expansion before its keys exist.
+    stale_decisions = out/'in_game/common/decisions/hbe_civic_decisions.txt'
+    if stale_decisions.exists(): stale_decisions.unlink()
+    native_content = build_native_content(out, ROOT, countries, REGIONS, catalog, loc, put, full_art, game)
+    social_expansion = build_social_expansion(out, ROOT, countries, REGIONS, loc, put)
     # Both Chinese and English UI modes have complete keys (English uses Chinese placeholder text).
     variable_labels={'hbe_yiqi':'义气','hbe_guoqi':'锅气','hbe_salt_debt':'盐债',
                      'hbe_research_timer':'地方课题计时','hbe_flavor_cooldown':'地方事件间隔',
@@ -531,6 +536,8 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     for f in out.rglob('*.txt'):
         for key in re.findall(r'\bname\s*=\s*(hbe_[a-z0-9_]+)',f.read_text(encoding='utf-8-sig')):
             if key not in loc:L(key,variable_labels.get(key,'地区事业交付计时'))
+    from build_player_guides import GUIDES
+    GUIDES.extend((key.removeprefix('hbe_term_'),v[0],[v[0]],v[1],'hbe_burden' if key=='hbe_term_burden' else None) for key,v in social_expansion['concepts'].items())
     player_guides = build_player_guides(ROOT, loc, L, put)
     for language in ('simp_chinese','english'):
         strings=[f'l_{language}:']+[f' {k}: "{v.replace(chr(92),chr(92)*2).replace(chr(34),chr(92)+chr(34)).replace(chr(10),chr(92)+"n")}"' for k,v in loc.items()]
@@ -540,11 +547,11 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     assignments=[dict(location=r['location_id'],country=loc_to_tag[r['location_id']],circle=r['circle_design_key'],province=r['original_province_id']) for r in rows]
     csv_write(ROOT/'data/locations_v001.csv',assignments)
     write(ROOT/'data/technology_v001.json',json.dumps(catalog,ensure_ascii=False,indent=2))
-    manifest=dict(version='0.1.1',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
+    manifest=dict(version='0.2.0',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
                   source_setup_sha256=sha(original_path),removed_domain_tokens=len(removed),
-                  research_nodes=len(catalog),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events'],
-                  decisions=70,expansion=expansion,native_content=native_content,
-                  illustrations='12 shared painted event backgrounds, 8 organization emblems and panels, situation panel, 70 illustrated decisions and 64 native advance icons; white nameplates with LiSu inscriptions',
+                  research_nodes=len(catalog)+len(social_expansion['advances']),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events']+len(social_expansion['events']),
+                  decisions=70+len(social_expansion['decisions']),social_expansion=social_expansion,expansion=expansion,native_content=native_content,
+                  illustrations='15 shared painted event backgrounds, 8 organization emblems and panels, situation panel, 97 illustrated decisions, 80 native advance icons, 16 building icons, 9 unit illustrations and 36 text-free heraldic flags',
                   icon_art=icon_art,
                   full_art=full_art,
                   event_prose=event_prose,player_guides=player_guides,

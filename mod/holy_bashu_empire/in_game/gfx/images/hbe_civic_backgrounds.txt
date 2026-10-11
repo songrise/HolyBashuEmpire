@@ -1,0 +1,3 @@
+﻿hbe_event_background_civic_council = { tag = "hbe_event_background_civic_council" illustration_image = { texture_file = "gfx/interface/hbe/events/civic_council.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_civic_training = { tag = "hbe_event_background_civic_training" illustration_image = { texture_file = "gfx/interface/hbe/events/civic_training.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_civic_market = { tag = "hbe_event_background_civic_market" illustration_image = { texture_file = "gfx/interface/hbe/events/civic_market.dds" priority = 100 scope = country trigger = { always = yes } } }

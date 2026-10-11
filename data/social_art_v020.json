@@ -1,0 +1,720 @@
+{
+  "mode": "built-in image_gen",
+  "source_manifest": "assets/social_art_generation.json",
+  "exports": [
+    {
+      "key": "hbe_assembly_hall",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_assembly_hall.dds",
+      "sha256": "a26020d261d5ab25fc2f48647f29307827314bc8518a47d7089cf95c2d9981d7",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 0,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_works_archive",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_works_archive.dds",
+      "sha256": "d72f795d49b5a3284ced79a0db02611d3420ff67d986a071b83da46b4ba0f3c6",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 1,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_canal_office",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_canal_office.dds",
+      "sha256": "bbdd35d09ad673e191818cb52df05c384b58d99cceb43e428320f977665c92b6",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 2,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_brocade_school",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_brocade_school.dds",
+      "sha256": "250202935ef0bddb69999bfd4ed2bcd32bc8cb6eac620fb96b15cc72f4af5bff",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 3,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_salt_office",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_salt_office.dds",
+      "sha256": "a974bc9a2eba25ceee5fa591eb1bebe7383e832a6e60b1f0ba55a227a9407130",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 4,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_salt_contract_house",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_salt_contract_house.dds",
+      "sha256": "7ba6275ab4cab1633426d38781bbbb6cebef389b6b059ba5fe81454e5c0f0d8a",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 5,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_river_warehouse",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_river_warehouse.dds",
+      "sha256": "10c745cf54966cf42310271723e592b9a4e5d9c74157a80042c4c94c6a0922b2",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 6,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_cliff_stockade",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_cliff_stockade.dds",
+      "sha256": "790a099d6370e930282810e1fd62a9365f2e71ca5b20e46b6d9fe4ae6f828a64",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 7,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_plank_fort",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_plank_fort.dds",
+      "sha256": "78e04ac71150847fc6d919d578b856121a9b44ee5c4ee808df5f494dfb38ae7c",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 8,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_gate_registry",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_gate_registry.dds",
+      "sha256": "3f975a650ccf7c707224915d9c61574c70d09185781453de2a759231f3c2e76a",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 9,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_community_granary",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_community_granary.dds",
+      "sha256": "a0e7e71452b2e0fc7792ad510a2ce9c40e7f3aa19e227e93de48b5ff485e70e4",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 10,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_witness_house",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_witness_house.dds",
+      "sha256": "fd0116f5ab48a54ca13d6df962a4bb347ebba848fbfbec510d7b3d811d057e2a",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 11,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_tea_exchange",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_tea_exchange.dds",
+      "sha256": "8005e72adaaddea342841d801a6caf1da068b647044a9f9830852e5706a2c854",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 12,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_guide_station",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_guide_station.dds",
+      "sha256": "d86af5838f63034d370431b8d80efa5eb9329dabdf733693e2624dd173597a71",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 13,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_valley_inn",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_valley_inn.dds",
+      "sha256": "ab29b64df7d698ea863ce08e0caadfb39ecf2680c64f7ca348fe325af2a0e268",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 14,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_covenant_stockade",
+      "kind": "buildings",
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_covenant_stockade.dds",
+      "sha256": "2443fb8f50b2c22d1229662d88c42066706652f31d0c6a49bc3fa723c59e49c5",
+      "source": "assets/civic_atlases/buildings.png",
+      "cell": 15,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_civic_common_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_common_1.dds",
+      "sha256": "6019f0dfb7de4a1020fba362b1196ed23d98c727d2aef600b06def39cb4f1118",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 0,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_common_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_common_2.dds",
+      "sha256": "cedc56245f15f99adf7d7340b50896835984653ebde05a9841729384f4cb90ad",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 1,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_chengdu_plain_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_1.dds",
+      "sha256": "d2235c8a980482488cae0a007a0386d6bf2ef366ff63b2ea1a0e22a62077a30c",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 2,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_chengdu_plain_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_2.dds",
+      "sha256": "ed688499d605568359a2b66eae22d00757c9905fc21f9874e95b8d060cf97029",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 3,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_southern_salt_wine_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_1.dds",
+      "sha256": "e4cbbd2baa4c92d336bc731c1f281fe2e71e94b1142b11b5b91ae90a951b0cbd",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 4,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_southern_salt_wine_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_2.dds",
+      "sha256": "dbffc628a452c4652095cf1048ca09590747353d1ffa2988906e47ede33ac18d",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 5,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_eastern_river_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_eastern_river_1.dds",
+      "sha256": "30732607e323dd5318903e43ae8c8c5ced9eea941419002ebe85adab759d01ac",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 6,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_eastern_river_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_eastern_river_2.dds",
+      "sha256": "0e99d5c2b8cfd46996885215b12cdcf8efee0d677145dbf45571dc7236523f15",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 7,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_northern_shudao_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_northern_shudao_1.dds",
+      "sha256": "17b15fbc3846e472c345f15f54889b8a8c3288ee50d680390006be3fbb40f5fb",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 8,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_northern_shudao_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_northern_shudao_2.dds",
+      "sha256": "76ec4045b6393c33142542c1f0d7999712acfb6286620ed510ecf051624e52bd",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 9,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_central_hills_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_central_hills_1.dds",
+      "sha256": "76f9053fc6e2ccc8afd8783d1cbba0885d0e0944743f17a6f8032d3d9fc65483",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 10,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_central_hills_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_central_hills_2.dds",
+      "sha256": "99c2595d58eee106b9732b2a798a673f3e618549297f8f72327721f25f4b4fb9",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 11,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_western_tea_horse_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_1.dds",
+      "sha256": "f6104922aec1f02f2a765592b69c904af76e7462eddb11452db2d8b0ad20956b",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 12,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_western_tea_horse_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_2.dds",
+      "sha256": "f3ffbd975e5e0308efaedcf75d5a22ff849b66431b3698f09021002ce75be779",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 13,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_southwestern_valleys_1",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_1.dds",
+      "sha256": "8c983a2b4458de1efbb1a152c39a6230c26e14dad75f5e32104c97bcaac0e9e7",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 14,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_civic_southwestern_valleys_2",
+      "kind": "advances",
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_2.dds",
+      "sha256": "e428941d8c91ad16ed9b2ffa0567856733234d1302b6d753247213b621b68489",
+      "source": "assets/civic_atlases/advances.png",
+      "cell": 15,
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "key": "hbe_canal_crossbow",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
+      "sha256": "fcdde3983fc39a5aac7448ddccd990a85967a8d9eda2e273de869ceabcedfb5d",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 0,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_salt_guard",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
+      "sha256": "098758a75133abb3fdd9b62babc5e1ad006449491c4465109bcaa8674e41e583",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 1,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_river_garrison",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_river_garrison.dds",
+      "sha256": "7e719fdf224d4c80e69a1a109eecc61b2b81ebd30a1369c60550bb8a1ba764e9",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 2,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_pass_rotation",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_pass_rotation.dds",
+      "sha256": "486f9b7c085bcae6de4514962800130432b3f1af5c449673b9bcfacf8b26d34a",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 3,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_granary_militia",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
+      "sha256": "0233608a9928ea02f9727e8996fed26634b90de63af3d1292bb3a15f5e777d92",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 4,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_tea_riders",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
+      "sha256": "7e293377ee76306593d6fbb368fa95fc4608bc8794aa165a385b087bbbefd8da",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 5,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_valley_soldiers",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
+      "sha256": "33e0abad933bb522966b3361a4e1bf3bc19425649e877acf121e7500cc7f7282",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 6,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_trained_river",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_trained_river.dds",
+      "sha256": "fcc095df06d40936c7d6a6294e943525ca5ba15c06d4448f74c5453c872d12c5",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 7,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_permanent_pass",
+      "kind": "units",
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_permanent_pass.dds",
+      "sha256": "566e5091632397d011701ef20a78786723502a674ba034365a4821ec3ad01179",
+      "source": "assets/civic_atlases/units.png",
+      "cell": 8,
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "hbe_levy_policy",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_levy_policy.dds",
+      "sha256": "7069077623dc8a5d0f2754d0991762eb7a501c67fd4575fc9fc389c5b90c219d",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 0,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_communal_policy",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_communal_policy.dds",
+      "sha256": "9d314106e7523fb7c7c8de0c96ccb535916a6a75bbe338b880ccdb91e4066575",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 1,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_paid_policy",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_paid_policy.dds",
+      "sha256": "4df2036a35c1cdd51339271bd83daee3bf31aef58afbe2f24055ed81d37eb923",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 2,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_burden",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_burden.dds",
+      "sha256": "36d68f7da019ca30cf43f3e9c0f552040d852582d13e0d0c137f6a4a1f5cb8f3",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 3,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_council",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_council.dds",
+      "sha256": "aff23edb2aff0e69d338a2a817346c309a3c9130244671515d1448bffb81f65a",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 4,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_audit",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_audit.dds",
+      "sha256": "97258827622eecc2c54c3d48967ee45a46841b1d304663791263fc19767c050a",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 5,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_revision",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_revision.dds",
+      "sha256": "352802943731a5dffff019303f679e606aea23fa8758b68137dd8ea2fa464810",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 6,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_civil_ledger",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_civil_ledger.dds",
+      "sha256": "c1ed4ac40b43488ea28a519724ff4d07ec1accf6ff10144f5d8d3b35d233cfb7",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 7,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_0",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_0.dds",
+      "sha256": "f9144b192bd6f97892e8aa4277da0f4e4c5c52ec4bea8dd77f3f84e6bba04897",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 8,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_1",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_1.dds",
+      "sha256": "92199d9720ed5716380450bfbc4ba1e8c0bbd104f805d852ea1904b3cc4311b5",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 9,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_2",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_2.dds",
+      "sha256": "737facb562c1d3f5df0d9af1084a8949952457d43d184bd6f743015c447da011",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 10,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_3",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_3.dds",
+      "sha256": "7854fda10e2596b89692e60e53a47f5c0d68e3894e8d023d39f3ddbf85178254",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 11,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_4",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_4.dds",
+      "sha256": "a4c9215453e6f8d22e4b6a906d1381d6facf7482d0a0cc1483f635b744f0a9a6",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 12,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_5",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_5.dds",
+      "sha256": "0c5b330949d3c9653ede2e7c8bb1ef0b01a0fb1f216e6382aba23574fee88661",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 13,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_office_6",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_6.dds",
+      "sha256": "63aae41e5a389dd8bafeaa72bbbcd569436f0c8ed5c3d44db6ab9b5e48632c27",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 14,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "hbe_guest_compact",
+      "kind": "politics",
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_guest_compact.dds",
+      "sha256": "2ac674d93fbc6bb5c6b3993edce62c3e3c2b5617ce804f35f01d8fe41d3aa1b5",
+      "source": "assets/civic_atlases/politics.png",
+      "cell": 15,
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "key": "civic_council",
+      "kind": "scene",
+      "path": "main_menu/gfx/interface/hbe/events/civic_council.dds",
+      "sha256": "9770c15080b80c3ef27730e19092759bd331923d6488c49237fbf7e712b90127",
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "civic_training",
+      "kind": "scene",
+      "path": "main_menu/gfx/interface/hbe/events/civic_training.dds",
+      "sha256": "3b89350cabdec575ef435ad6f28819815d75359ad66bef793691be312c5a77cc",
+      "dimensions": [
+        1080,
+        440
+      ]
+    },
+    {
+      "key": "civic_market",
+      "kind": "scene",
+      "path": "main_menu/gfx/interface/hbe/events/civic_market.dds",
+      "sha256": "aa43ff36a37848ead6b0a1c99aa7c45ef4225d307fcd3f955b9ad56da7ed0bd0",
+      "dimensions": [
+        1080,
+        440
+      ]
+    }
+  ]
+}

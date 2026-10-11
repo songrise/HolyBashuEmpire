@@ -1,0 +1,212 @@
+{
+  "version": "0.2.0",
+  "status": "passed",
+  "checks": {
+    "BAB.native_policy": true,
+    "BAB.building_unlocked": true,
+    "BAB.policy_settlement": true,
+    "BAB.settlement_idempotent": true,
+    "BAB.operating_institution": true,
+    "BAB.office_appointed": true,
+    "BAB.office_expired": true,
+    "BAB.no_free_civic": true,
+    "BAB.upper_clamp": true,
+    "BAB.lower_clamp": true,
+    "BAB.supported_capacity": true,
+    "BAB.regiment_pressure": true,
+    "BAB.over_capacity_preserves_army": true,
+    "BAB.orphan_office_cleared": true,
+    "BAE.policy_settlement": true,
+    "BAE.vacancy_respected": true,
+    "BAE.successor": true,
+    "BAF.policy_settlement": true,
+    "BAF.paid_charge": true,
+    "36_princes_joined": true,
+    "situation_active_from_1337_10_1": true,
+    "native_special_regiment_saved": true,
+    "no_fixture_files_shipped": true,
+    "tested_core_scripts_unchanged": true,
+    "post_test_numeric_and_localization_fix_verified": true,
+    "no_new_custom_parse_errors": true,
+    "logged_warnings_addressed_by_targeted_fix": true
+  },
+  "missing": [],
+  "countries": {
+    "BAB": {
+      "id": 1209,
+      "joined": true,
+      "fixture_values": {
+        "hbe_test_burden_once": 26.0,
+        "hbe_test_effective_institution": 1.0
+      }
+    },
+    "BAE": {
+      "id": 1210,
+      "joined": true,
+      "fixture_values": {
+        "hbe_test_burden_once": 22.0,
+        "hbe_test_effective_institution": 1.0
+      }
+    },
+    "BAF": {
+      "id": 1211,
+      "joined": true,
+      "fixture_values": {
+        "hbe_test_burden_once": 20.0,
+        "hbe_test_effective_institution": 1.0
+      }
+    },
+    "BAJ": {
+      "id": 1212,
+      "joined": true
+    },
+    "BAL": {
+      "id": 1213,
+      "joined": true
+    },
+    "BAO": {
+      "id": 1214,
+      "joined": true
+    },
+    "BAP": {
+      "id": 1215,
+      "joined": true
+    },
+    "BAQ": {
+      "id": 1216,
+      "joined": true
+    },
+    "BAW": {
+      "id": 1217,
+      "joined": true
+    },
+    "BAX": {
+      "id": 1218,
+      "joined": true
+    },
+    "BAZ": {
+      "id": 1219,
+      "joined": true
+    },
+    "BBB": {
+      "id": 1220,
+      "joined": true
+    },
+    "BBC": {
+      "id": 1221,
+      "joined": true
+    },
+    "BBE": {
+      "id": 1222,
+      "joined": true
+    },
+    "BBF": {
+      "id": 1223,
+      "joined": true
+    },
+    "BBH": {
+      "id": 1224,
+      "joined": true
+    },
+    "BBI": {
+      "id": 1225,
+      "joined": true
+    },
+    "BBJ": {
+      "id": 1226,
+      "joined": true
+    },
+    "BBL": {
+      "id": 1227,
+      "joined": true
+    },
+    "BBM": {
+      "id": 1228,
+      "joined": true
+    },
+    "BBN": {
+      "id": 1229,
+      "joined": true
+    },
+    "BBO": {
+      "id": 1230,
+      "joined": true
+    },
+    "BBP": {
+      "id": 1231,
+      "joined": true
+    },
+    "BBQ": {
+      "id": 1232,
+      "joined": true
+    },
+    "BBR": {
+      "id": 1233,
+      "joined": true
+    },
+    "BBS": {
+      "id": 1234,
+      "joined": true
+    },
+    "BBT": {
+      "id": 1235,
+      "joined": true
+    },
+    "BBU": {
+      "id": 1236,
+      "joined": true
+    },
+    "BBV": {
+      "id": 1237,
+      "joined": true
+    },
+    "BBW": {
+      "id": 1238,
+      "joined": true
+    },
+    "BBX": {
+      "id": 1239,
+      "joined": true
+    },
+    "BBY": {
+      "id": 1240,
+      "joined": true
+    },
+    "BBZ": {
+      "id": 1241,
+      "joined": true
+    },
+    "BCA": {
+      "id": 1242,
+      "joined": true
+    },
+    "BCB": {
+      "id": 1243,
+      "joined": true
+    },
+    "BCC": {
+      "id": 1244,
+      "joined": true
+    }
+  },
+  "save_date": "1338.1.1",
+  "save_path": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\eu5-v020-test\\save games\\scheduled_save_DESKTOP-L1LK2TH_1338_01_01.eu5",
+  "source_manifest_sha256": "f4c9751b79b483e28767f91577dac932f32d338df05655b23e9687269d05074a",
+  "tested_manifest_sha256": "a30579f6a106dc15a51092e85ccf347bad76f64b8a994d9063be834408196a5a",
+  "post_test_changes": [
+    "in_game/common/building_types/hbe_civic_buildings.txt",
+    "main_menu/localization/english/hbe_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml"
+  ],
+  "post_test_validation": "Exact diff verification: four manpower coefficients reduced from 0.005 to 0.0015 within the native 0.0125-per-employee cap; one missing construction localization added in both languages. No second full engine run after these small changes, as requested.",
+  "art_scope": "Final DDS resources and flag composition proofs verified separately. Actual GUI rendering is not covered by the headless run.",
+  "addressed_custom_diagnostics": [
+    "[22:06:19][localization_util.cpp:103]: hbe_institution_construction: \"Hbe institution construction\"",
+    "[22:07:03][building_type.cpp:2529]: hbe_cliff_stockade has a too high efficiency for manpower, as its 0.03333 when 0.0125 is allowed",
+    "[22:07:03][building_type.cpp:2529]: hbe_plank_fort has a too high efficiency for manpower, as its 0.03333 when 0.0125 is allowed",
+    "[22:07:03][building_type.cpp:2529]: hbe_guide_station has a too high efficiency for manpower, as its 0.03333 when 0.0125 is allowed",
+    "[22:07:03][building_type.cpp:2529]: hbe_covenant_stockade has a too high efficiency for manpower, as its 0.03333 when 0.0125 is allowed"
+  ],
+  "unexpected_custom_diagnostics": [],
+  "scope": "Isolated 1337 observer run to 1338. Fixture grants research and funding, instant-builds native institutions and relaxes only the test unit year gate. Confirms policy settlement, operating employment, office succession/expiry, unit count pressure, supply cap and regiment survival. Not a century simulation or live GUI verification."
+}

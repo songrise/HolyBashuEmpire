@@ -1,4 +1,4 @@
 BAJ = {
-    pattern = "pattern_fringe.dds" color1 = "hbe_ochre" color2 = "hbe_cinnabar"
-    colored_emblem = { texture = "ce_chinese_double_phoenix.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_nameplate.dds" color1 = "hbe_white" color2 = "hbe_white" color3 = "hbe_white" instance = { position = { 0.5 0.77 } scale = { 0.69 0.31 } } } colored_emblem = { texture = "ce_hbe_name_baj.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+ pattern = "pattern_horizontal_bar_01.dds" color1 = "hbe_indigo" color2 = "hbe_dark_red"
+ textured_emblem = { texture = "te_hbe_crest_baj.dds" instance = { position = { 0.5 0.5 } scale = { 0.72 0.95 } } }
 }

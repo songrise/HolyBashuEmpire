@@ -150,7 +150,7 @@ REGION_CONTEXT={
 'central_hills':'塘堰、义仓与券据','western_tea_horse':'茶市、商队与山门',
 'southwestern_valleys':'谷市、乡寨与地方见证'}
 
-def build_native_content(out,root,countries,regions,nodes,loc,put,full_art):
+def build_native_content(out,root,countries,regions,nodes,loc,put,full_art,game):
     all_tags=[c['tag'] for c in countries]
     region_tags={r[0]:[c['tag'] for c in countries if c['region']==r[0]] for r in regions}
     region_names={r[0]:r[1] for r in regions}
@@ -175,8 +175,18 @@ def build_native_content(out,root,countries,regions,nodes,loc,put,full_art):
         loc[key]=n['name'];loc[key+'_desc']=prose+'\n\n'+unlock+'研究完成后的地区记录于月初结算。'
         loc[key+'_effects']=unlock
         parent=n['predecessor'] or ('written_alphabet' if key=='hbe_tech_common_1' else 'hbe_tech_common_1')
+        def node_age(row):
+            late=row['index'] in ((2,5,7) if row['group']=='common' else (4,7))
+            return 'age_2_renaissance' if late else 'age_1_traditions'
+        age=node_age(n)
+        logical_parent=parent
+        node_lookup={row['key']:row for row in nodes}
+        cross_age=age=='age_2_renaissance' and (parent not in node_lookup or node_age(node_lookup[parent])!=age)
+        if cross_age:
+            branch+=' has_advance = '+logical_parent
+            parent='renaissance_development'
         advances.append(f'''{key} = {{
-    age = age_1_traditions
+    age = {age}
     starting_technology_level = 99
     icon = {key}
     content_priority = {900-idx*10}
@@ -188,7 +198,7 @@ def build_native_content(out,root,countries,regions,nodes,loc,put,full_art):
 }}''')
         bridge.append(f'''if = {{ limit = {{ has_variable = {key} NOT = {{ has_advance = {key} }} }} research_advance = advance_type:{key} }}
     if = {{ limit = {{ has_advance = {key} NOT = {{ has_variable = {key} }} }} set_variable = {key} hbe_add_credit = yes trigger_event_non_silently = {{ id = hbe.2 }} }}''')
-        tech_text.append(dict(key=key,name=n['name'],body=prose,unlock=unlock,year=n['year'],native_research_cost=1.5 if idx<2 else 2.5 if idx in (2,5) else 4.0,predecessor=parent,tags=tags))
+        tech_text.append(dict(key=key,name=n['name'],body=prose,unlock=unlock,year=n['year'],native_research_cost=1.5 if idx<2 else 2.5 if idx in (2,5) else 4.0,predecessor=parent,logical_predecessor=logical_parent,age=age,tags=tags))
     put('in_game/common/advances/hbe_advances.txt','\n'.join(advances))
     put('in_game/common/scripted_effects/hbe_native_content_effects.txt','hbe_sync_native_research = {\n'+'\n'.join(bridge)+'\n}')
     put('in_game/common/on_action/hbe_native_content_on_actions.txt','''on_game_start = { on_actions = { hbe_native_content_start } }
@@ -271,6 +281,15 @@ hbe_native_content_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_
         loc['hbe_'+c['tag']+'_scenario_desc']=body
         biographies.append(dict(tag=c['tag'],country=c['name'],body=body,circle=c['region']))
     put('in_game/common/country_description_categories/hbe_profiles.txt','\n'.join(categories))
+    # GetHistoryDesc uses this ordered selector, not merely country_history_TAG.
+    history=(root/'data/bashu_history_v020.json')
+    contextual=json.loads(history.read_text(encoding='utf-8')) if history.exists() else {}
+    original_history=(game/'in_game/common/customizable_localization/country_history.txt').read_text(encoding='utf-8-sig')
+    registration='\n'.join('text = { localization_key = country_history_'+c['tag']+' trigger = { has_or_had_tag = '+c['tag']+' } }' for c in countries)
+    original_history=original_history.replace('type = country','type = country\n'+registration,1)
+    put('in_game/common/customizable_localization/country_history.txt',original_history)
+    for c in countries:
+        if contextual: loc['country_history_'+c['tag']]=contextual['common']+'\n\n'+contextual['circles'][c['region']]+'\n\n'+BIOGRAPHIES[c['group']]
     path=out/'in_game/setup/countries/hbe_countries.txt';s=path.read_text(encoding='utf-8-sig');edits=[]
     for tag,_,a,b,_ in blocks(s,0):edits.append((a,b,s[a:b].replace('description_category = administrative','description_category = hbe_profile_'+tag.lower())))
     put(path.relative_to(out).as_posix(),apply_edits(s,edits))

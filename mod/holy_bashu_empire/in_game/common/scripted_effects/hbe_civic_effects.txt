@@ -1,0 +1,165 @@
+﻿hbe_clamp_burden = { if = { limit = { var:hbe_burden < 0 } set_variable = { name = hbe_burden value = 0 } } if = { limit = { var:hbe_burden > 100 } set_variable = { name = hbe_burden value = 100 } } }
+hbe_civic_initialize = {
+ if = { limit = { NOT = { has_variable = hbe_civic_initialized } }
+ set_variable = hbe_civic_initialized set_variable = { name = hbe_office_chengdu_plain value = 0 } set_variable = { name = hbe_office_southern_salt_wine value = 0 } set_variable = { name = hbe_office_eastern_river value = 0 } set_variable = { name = hbe_office_northern_shudao value = 0 } set_variable = { name = hbe_office_central_hills value = 0 } set_variable = { name = hbe_office_western_tea_horse value = 0 } set_variable = { name = hbe_office_southwestern_valleys value = 0 } set_variable = { name = hbe_burden value = 20 }
+ set_variable = { name = hbe_labor_policy value = 0 } set_variable = { name = hbe_office_count value = 0 }
+ set_variable = { name = hbe_special_record value = hbe_civic_special_count }
+ trigger_event_non_silently = { id = hbe_civic.1 days = 30 } }
+}
+
+hbe_record_service_chengdu_plain = {
+ set_variable = { name = hbe_recent_delivery_chengdu_plain value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_chengdu_plain = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_chengdu_plain_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_chengdu_plain_1 has_variable = hbe_mission_chengdu_plain_2 } AND = { has_variable = hbe_guest_chengdu_plain has_advance = hbe_civic_common_2 } } OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_chengdu_plain = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_chengdu_plain value = 1 } set_variable = { name = hbe_office_chengdu_plain_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_chengdu_plain = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_record_service_southern_salt_wine = {
+ set_variable = { name = hbe_recent_delivery_southern_salt_wine value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_southern_salt_wine = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_southern_salt_wine_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_southern_salt_wine_1 has_variable = hbe_mission_southern_salt_wine_2 } AND = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_civic_common_2 } } OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_southern_salt_wine = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_southern_salt_wine value = 1 } set_variable = { name = hbe_office_southern_salt_wine_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_southern_salt_wine = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_record_service_eastern_river = {
+ set_variable = { name = hbe_recent_delivery_eastern_river value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_eastern_river = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_eastern_river_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_eastern_river_1 has_variable = hbe_mission_eastern_river_2 } AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_civic_common_2 } } OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } has_variable = hbe_recent_delivery_eastern_river var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_eastern_river = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_eastern_river value = 1 } set_variable = { name = hbe_office_eastern_river_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_eastern_river = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_record_service_northern_shudao = {
+ set_variable = { name = hbe_recent_delivery_northern_shudao value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_northern_shudao = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_northern_shudao_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_northern_shudao_1 has_variable = hbe_mission_northern_shudao_2 } AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_civic_common_2 } } OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_northern_shudao = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_northern_shudao value = 1 } set_variable = { name = hbe_office_northern_shudao_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_northern_shudao = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_record_service_central_hills = {
+ set_variable = { name = hbe_recent_delivery_central_hills value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_central_hills = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_central_hills_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_central_hills_1 has_variable = hbe_mission_central_hills_2 } AND = { has_variable = hbe_guest_central_hills has_advance = hbe_civic_common_2 } } OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } has_variable = hbe_recent_delivery_central_hills var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_central_hills = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_central_hills value = 1 } set_variable = { name = hbe_office_central_hills_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_central_hills = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_record_service_western_tea_horse = {
+ set_variable = { name = hbe_recent_delivery_western_tea_horse value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_western_tea_horse = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_western_tea_horse_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_western_tea_horse_1 has_variable = hbe_mission_western_tea_horse_2 } AND = { has_variable = hbe_guest_western_tea_horse has_advance = hbe_civic_common_2 } } OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_western_tea_horse = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_western_tea_horse value = 1 } set_variable = { name = hbe_office_western_tea_horse_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_western_tea_horse = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_record_service_southwestern_valleys = {
+ set_variable = { name = hbe_recent_delivery_southwestern_valleys value = yes years = 5 }
+ if = { limit = { has_policy = hbe_levy_policy } change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes
+ if = { limit = { NOT = { has_variable = hbe_work_burst_cooldown } } add_country_modifier = { modifier = hbe_civic_work_burst years = 2 mode = replace } set_variable = { name = hbe_work_burst_cooldown value = yes years = 5 } } }
+ else_if = { limit = { has_policy = hbe_communal_policy } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes }
+ else_if = { limit = { NOT = { has_policy = hbe_paid_policy } } change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes }
+}
+hbe_pay_service_southwestern_valleys = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
+hbe_office_southwestern_valleys_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_southwestern_valleys_1 has_variable = hbe_mission_southwestern_valleys_2 } AND = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_civic_common_2 } } OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } has_variable = hbe_recent_delivery_southwestern_valleys var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_southwestern_valleys = { NOT = { has_variable = hbe_civic_holder } } }
+ set_variable = { name = hbe_office_southwestern_valleys value = 1 } set_variable = { name = hbe_office_southwestern_valleys_term value = yes years = 5 }
+ change_variable = { name = hbe_office_count add = 1 }
+ international_organization:hbe_circle_southwestern_valleys = { set_variable = { name = hbe_civic_holder value = prev } }
+ trigger_event_non_silently = { id = hbe_civic.3 } } }
+hbe_open_local_council = { if = { limit = { has_variable = hbe_home_chengdu_plain } trigger_event_non_silently = { id = hbe_civic.100 } } if = { limit = { has_variable = hbe_home_southern_salt_wine } trigger_event_non_silently = { id = hbe_civic.102 } } if = { limit = { has_variable = hbe_home_eastern_river } trigger_event_non_silently = { id = hbe_civic.104 } } if = { limit = { has_variable = hbe_home_northern_shudao } trigger_event_non_silently = { id = hbe_civic.106 } } if = { limit = { has_variable = hbe_home_central_hills } trigger_event_non_silently = { id = hbe_civic.108 } } if = { limit = { has_variable = hbe_home_western_tea_horse } trigger_event_non_silently = { id = hbe_civic.110 } } if = { limit = { has_variable = hbe_home_southwestern_valleys } trigger_event_non_silently = { id = hbe_civic.112 } } }
+hbe_civic_monthly = {
+ hbe_civic_initialize = yes
+ set_variable = { name = hbe_office_count value = 0 }
+ international_organization:hbe_circle_chengdu_plain ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_chengdu_plain_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_chengdu_plain = 1 OR = { NOT = { has_variable = hbe_office_chengdu_plain_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } } NOT = { international_organization:hbe_circle_chengdu_plain = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_chengdu_plain value = 0 } remove_variable = hbe_office_chengdu_plain_term international_organization:hbe_circle_chengdu_plain ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_chengdu_plain = 1 } change_variable = { name = hbe_office_count add = 1 } }
+international_organization:hbe_circle_southern_salt_wine ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_southern_salt_wine_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_southern_salt_wine = 1 OR = { NOT = { has_variable = hbe_office_southern_salt_wine_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } } NOT = { international_organization:hbe_circle_southern_salt_wine = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_southern_salt_wine value = 0 } remove_variable = hbe_office_southern_salt_wine_term international_organization:hbe_circle_southern_salt_wine ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_southern_salt_wine = 1 } change_variable = { name = hbe_office_count add = 1 } }
+international_organization:hbe_circle_eastern_river ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_eastern_river_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_eastern_river = 1 OR = { NOT = { has_variable = hbe_office_eastern_river_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } } NOT = { international_organization:hbe_circle_eastern_river = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_eastern_river value = 0 } remove_variable = hbe_office_eastern_river_term international_organization:hbe_circle_eastern_river ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_eastern_river = 1 } change_variable = { name = hbe_office_count add = 1 } }
+international_organization:hbe_circle_northern_shudao ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_northern_shudao_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_northern_shudao = 1 OR = { NOT = { has_variable = hbe_office_northern_shudao_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } } NOT = { international_organization:hbe_circle_northern_shudao = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_northern_shudao value = 0 } remove_variable = hbe_office_northern_shudao_term international_organization:hbe_circle_northern_shudao ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_northern_shudao = 1 } change_variable = { name = hbe_office_count add = 1 } }
+international_organization:hbe_circle_central_hills ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_central_hills_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_central_hills = 1 OR = { NOT = { has_variable = hbe_office_central_hills_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } } NOT = { international_organization:hbe_circle_central_hills = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_central_hills value = 0 } remove_variable = hbe_office_central_hills_term international_organization:hbe_circle_central_hills ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_central_hills = 1 } change_variable = { name = hbe_office_count add = 1 } }
+international_organization:hbe_circle_western_tea_horse ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_western_tea_horse_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_western_tea_horse = 1 OR = { NOT = { has_variable = hbe_office_western_tea_horse_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } } NOT = { international_organization:hbe_circle_western_tea_horse = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_western_tea_horse value = 0 } remove_variable = hbe_office_western_tea_horse_term international_organization:hbe_circle_western_tea_horse ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_western_tea_horse = 1 } change_variable = { name = hbe_office_count add = 1 } }
+international_organization:hbe_circle_southwestern_valleys ?= {
+ if = { limit = { has_variable = hbe_civic_holder NOT = { exists = var:hbe_civic_holder } } remove_variable = hbe_civic_holder }
+ else_if = { limit = { exists = var:hbe_civic_holder } if = { limit = { var:hbe_civic_holder = { OR = { num_locations = 0 NOT = { has_variable = hbe_office_southwestern_valleys_term } } } } remove_variable = hbe_civic_holder } } }
+if = { limit = { var:hbe_office_southwestern_valleys = 1 OR = { NOT = { has_variable = hbe_office_southwestern_valleys_term } NOT = { is_member_of_international_organization = international_organization:hbe_empire } NOT = { OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } } NOT = { international_organization:hbe_circle_southwestern_valleys = { var:hbe_civic_holder = prev } } var:hbe_burden >= 70 } } set_variable = { name = hbe_office_southwestern_valleys value = 0 } remove_variable = hbe_office_southwestern_valleys_term international_organization:hbe_circle_southwestern_valleys ?= { if = { limit = { var:hbe_civic_holder = prev } remove_variable = hbe_civic_holder } } trigger_event_non_silently = { id = hbe_civic.4 } }
+if = { limit = { var:hbe_office_southwestern_valleys = 1 } change_variable = { name = hbe_office_count add = 1 } }
+ if = { limit = { hbe_civic_special_count > var:hbe_special_record }
+ set_variable = { name = hbe_new_special value = hbe_civic_special_count } change_variable = { name = hbe_new_special subtract = var:hbe_special_record }
+ change_variable = { name = hbe_burden add = var:hbe_new_special } hbe_clamp_burden = yes }
+ set_variable = { name = hbe_special_record value = hbe_civic_special_count }
+ if = { limit = { hbe_civic_special_count > hbe_civic_special_limit } add_country_modifier = { modifier = hbe_civic_over_supply months = 2 mode = replace } }
+ else = { remove_country_modifier = hbe_civic_over_supply }
+ if = { limit = { var:hbe_burden >= 70 } remove_country_modifier = hbe_civic_strained add_country_modifier = { modifier = hbe_civic_exhausted months = 2 mode = replace } }
+ else_if = { limit = { var:hbe_burden >= 40 } remove_country_modifier = hbe_civic_exhausted add_country_modifier = { modifier = hbe_civic_strained months = 2 mode = replace } }
+ else = { remove_country_modifier = hbe_civic_strained remove_country_modifier = hbe_civic_exhausted }
+ if = { limit = { var:hbe_burden >= 70 NOT = { has_variable = hbe_petition_cooldown } } trigger_event_non_silently = { id = hbe_civic.5 } }
+}
+hbe_civic_yearly = { if = { limit = { NOT = { at_war = yes } NOT = { has_variable = hbe_work_burst_cooldown } } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } if = { limit = { has_variable = hbe_home_chengdu_plain current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_chengdu_plain = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.100 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.101 } } } if = { limit = { has_variable = hbe_home_southern_salt_wine current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_southern_salt_wine = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.102 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.103 } } } if = { limit = { has_variable = hbe_home_eastern_river current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_eastern_river = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.104 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.105 } } } if = { limit = { has_variable = hbe_home_northern_shudao current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_northern_shudao = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.106 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.107 } } } if = { limit = { has_variable = hbe_home_central_hills current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_central_hills = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.108 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.109 } } } if = { limit = { has_variable = hbe_home_western_tea_horse current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_western_tea_horse = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.110 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.111 } } } if = { limit = { has_variable = hbe_home_southwestern_valleys current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_southwestern_valleys = 1 } }
+ if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.112 } }
+ else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.113 } } } }

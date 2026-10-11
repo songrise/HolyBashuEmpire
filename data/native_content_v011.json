@@ -9,6 +9,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "written_alphabet",
+      "logical_predecessor": "written_alphabet",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -56,6 +58,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -102,7 +106,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1372,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_common_2",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_common_2",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -150,6 +156,8 @@
       "year": 1337,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -197,6 +205,8 @@
       "year": 1352,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_common_4",
+      "logical_predecessor": "hbe_tech_common_4",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -243,7 +253,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1372,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_common_5",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_common_5",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -291,6 +303,8 @@
       "year": 1337,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -337,7 +351,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1372,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_common_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_common_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -385,6 +401,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -401,6 +419,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_chengdu_plain_1",
+      "logical_predecessor": "hbe_tech_chengdu_plain_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -417,6 +437,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_chengdu_plain_2",
+      "logical_predecessor": "hbe_tech_chengdu_plain_2",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -433,6 +455,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_chengdu_plain_3",
+      "logical_predecessor": "hbe_tech_chengdu_plain_3",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -448,7 +472,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_chengdu_plain_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_chengdu_plain_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -465,6 +491,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_chengdu_plain_2",
+      "logical_predecessor": "hbe_tech_chengdu_plain_2",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -481,6 +509,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_chengdu_plain_6",
+      "logical_predecessor": "hbe_tech_chengdu_plain_6",
+      "age": "age_1_traditions",
       "tags": [
         "BAB",
         "BAE",
@@ -496,7 +526,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_chengdu_plain_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_chengdu_plain_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -513,6 +545,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAO",
         "BAP",
@@ -528,6 +562,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_southern_salt_wine_1",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAO",
         "BAP",
@@ -543,6 +579,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_southern_salt_wine_2",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_2",
+      "age": "age_1_traditions",
       "tags": [
         "BAO",
         "BAP",
@@ -558,6 +596,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southern_salt_wine_3",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_3",
+      "age": "age_1_traditions",
       "tags": [
         "BAO",
         "BAP",
@@ -572,7 +612,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_southern_salt_wine_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BAO",
         "BAP",
@@ -588,6 +630,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_southern_salt_wine_2",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_2",
+      "age": "age_1_traditions",
       "tags": [
         "BAO",
         "BAP",
@@ -603,6 +647,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southern_salt_wine_6",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_6",
+      "age": "age_1_traditions",
       "tags": [
         "BAO",
         "BAP",
@@ -617,7 +663,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_southern_salt_wine_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_southern_salt_wine_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BAO",
         "BAP",
@@ -633,6 +681,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAX",
         "BAZ",
@@ -651,6 +701,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_eastern_river_1",
+      "logical_predecessor": "hbe_tech_eastern_river_1",
+      "age": "age_1_traditions",
       "tags": [
         "BAX",
         "BAZ",
@@ -669,6 +721,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_eastern_river_2",
+      "logical_predecessor": "hbe_tech_eastern_river_2",
+      "age": "age_1_traditions",
       "tags": [
         "BAX",
         "BAZ",
@@ -687,6 +741,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_eastern_river_3",
+      "logical_predecessor": "hbe_tech_eastern_river_3",
+      "age": "age_1_traditions",
       "tags": [
         "BAX",
         "BAZ",
@@ -704,7 +760,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_eastern_river_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_eastern_river_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BAX",
         "BAZ",
@@ -723,6 +781,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_eastern_river_2",
+      "logical_predecessor": "hbe_tech_eastern_river_2",
+      "age": "age_1_traditions",
       "tags": [
         "BAX",
         "BAZ",
@@ -741,6 +801,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_eastern_river_6",
+      "logical_predecessor": "hbe_tech_eastern_river_6",
+      "age": "age_1_traditions",
       "tags": [
         "BAX",
         "BAZ",
@@ -758,7 +820,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_eastern_river_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_eastern_river_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BAX",
         "BAZ",
@@ -777,6 +841,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBI",
         "BBJ",
@@ -795,6 +861,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_northern_shudao_1",
+      "logical_predecessor": "hbe_tech_northern_shudao_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBI",
         "BBJ",
@@ -813,6 +881,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_northern_shudao_2",
+      "logical_predecessor": "hbe_tech_northern_shudao_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBI",
         "BBJ",
@@ -831,6 +901,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_northern_shudao_3",
+      "logical_predecessor": "hbe_tech_northern_shudao_3",
+      "age": "age_1_traditions",
       "tags": [
         "BBI",
         "BBJ",
@@ -848,7 +920,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_northern_shudao_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_northern_shudao_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BBI",
         "BBJ",
@@ -867,6 +941,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_northern_shudao_2",
+      "logical_predecessor": "hbe_tech_northern_shudao_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBI",
         "BBJ",
@@ -885,6 +961,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_northern_shudao_6",
+      "logical_predecessor": "hbe_tech_northern_shudao_6",
+      "age": "age_1_traditions",
       "tags": [
         "BBI",
         "BBJ",
@@ -902,7 +980,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_northern_shudao_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_northern_shudao_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BBI",
         "BBJ",
@@ -921,6 +1001,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBQ",
         "BBR",
@@ -936,6 +1018,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_central_hills_1",
+      "logical_predecessor": "hbe_tech_central_hills_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBQ",
         "BBR",
@@ -951,6 +1035,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_central_hills_2",
+      "logical_predecessor": "hbe_tech_central_hills_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBQ",
         "BBR",
@@ -966,6 +1052,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_central_hills_3",
+      "logical_predecessor": "hbe_tech_central_hills_3",
+      "age": "age_1_traditions",
       "tags": [
         "BBQ",
         "BBR",
@@ -980,7 +1068,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_central_hills_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_central_hills_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BBQ",
         "BBR",
@@ -996,6 +1086,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_central_hills_2",
+      "logical_predecessor": "hbe_tech_central_hills_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBQ",
         "BBR",
@@ -1011,6 +1103,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_central_hills_6",
+      "logical_predecessor": "hbe_tech_central_hills_6",
+      "age": "age_1_traditions",
       "tags": [
         "BBQ",
         "BBR",
@@ -1025,7 +1119,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_central_hills_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_central_hills_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BBQ",
         "BBR",
@@ -1041,6 +1137,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBU",
         "BBV",
@@ -1055,6 +1153,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_western_tea_horse_1",
+      "logical_predecessor": "hbe_tech_western_tea_horse_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBU",
         "BBV",
@@ -1069,6 +1169,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_western_tea_horse_2",
+      "logical_predecessor": "hbe_tech_western_tea_horse_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBU",
         "BBV",
@@ -1083,6 +1185,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_western_tea_horse_3",
+      "logical_predecessor": "hbe_tech_western_tea_horse_3",
+      "age": "age_1_traditions",
       "tags": [
         "BBU",
         "BBV",
@@ -1096,7 +1200,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_western_tea_horse_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_western_tea_horse_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BBU",
         "BBV",
@@ -1111,6 +1217,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_western_tea_horse_2",
+      "logical_predecessor": "hbe_tech_western_tea_horse_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBU",
         "BBV",
@@ -1125,6 +1233,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_western_tea_horse_6",
+      "logical_predecessor": "hbe_tech_western_tea_horse_6",
+      "age": "age_1_traditions",
       "tags": [
         "BBU",
         "BBV",
@@ -1138,7 +1248,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_western_tea_horse_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_western_tea_horse_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BBU",
         "BBV",
@@ -1153,6 +1265,8 @@
       "year": 1337,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_common_1",
+      "logical_predecessor": "hbe_tech_common_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBX",
         "BBY",
@@ -1170,6 +1284,8 @@
       "year": 1342,
       "native_research_cost": 1.5,
       "predecessor": "hbe_tech_southwestern_valleys_1",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_1",
+      "age": "age_1_traditions",
       "tags": [
         "BBX",
         "BBY",
@@ -1187,6 +1303,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_southwestern_valleys_2",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBX",
         "BBY",
@@ -1204,6 +1322,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southwestern_valleys_3",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_3",
+      "age": "age_1_traditions",
       "tags": [
         "BBX",
         "BBY",
@@ -1220,7 +1340,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_southwestern_valleys_4",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_4",
+      "age": "age_2_renaissance",
       "tags": [
         "BBX",
         "BBY",
@@ -1238,6 +1360,8 @@
       "year": 1352,
       "native_research_cost": 2.5,
       "predecessor": "hbe_tech_southwestern_valleys_2",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_2",
+      "age": "age_1_traditions",
       "tags": [
         "BBX",
         "BBY",
@@ -1255,6 +1379,8 @@
       "year": 1372,
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southwestern_valleys_6",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_6",
+      "age": "age_1_traditions",
       "tags": [
         "BBX",
         "BBY",
@@ -1271,7 +1397,9 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "hbe_tech_southwestern_valleys_7",
+      "predecessor": "renaissance_development",
+      "logical_predecessor": "hbe_tech_southwestern_valleys_7",
+      "age": "age_2_renaissance",
       "tags": [
         "BBX",
         "BBY",

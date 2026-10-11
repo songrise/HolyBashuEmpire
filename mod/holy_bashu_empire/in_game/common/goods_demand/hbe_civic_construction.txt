@@ -1,0 +1,1 @@
+﻿hbe_institution_construction = { lumber = 0.6 masonry = 0.4 tools = 0.1 category = building_construction }

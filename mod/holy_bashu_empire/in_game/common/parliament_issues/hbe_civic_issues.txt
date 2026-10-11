@@ -1,0 +1,35 @@
+﻿hbe_fuyi_chengdu_plain = { estate = peasants_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.100 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }
+hbe_fuyi_southern_salt_wine = { estate = burghers_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.102 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }
+hbe_fuyi_eastern_river = { estate = burghers_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.104 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }
+hbe_fuyi_northern_shudao = { estate = peasants_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.106 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }
+hbe_fuyi_central_hills = { estate = peasants_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.108 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }
+hbe_fuyi_western_tea_horse = { estate = burghers_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.110 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }
+hbe_fuyi_southwestern_valleys = { estate = peasants_estate
+ allow = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } has_advance = hbe_civic_common_1 NOT = { has_variable = hbe_council_cooldown } }
+ modifier_when_in_debate = { peasants_estate_target_satisfaction = 0.01 }
+ on_debate_passed = { set_variable = { name = hbe_council_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.112 } }
+ on_debate_failed = { change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes } chance = 20 }

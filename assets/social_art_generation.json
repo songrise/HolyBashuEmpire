@@ -1,0 +1,45 @@
+{
+  "buildings": {
+    "source": "assets/civic_atlases/buildings.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-13befdd5-ab2c-4355-9830-d7a243914c23.png",
+    "mode": "built-in image_gen"
+  },
+  "advances": {
+    "source": "assets/civic_atlases/advances.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-4d846c99-3b7d-4867-a45e-6e6b9534819a.png",
+    "mode": "built-in image_gen"
+  },
+  "units": {
+    "source": "assets/civic_atlases/units.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-8448dab0-4da1-4fd2-9faa-98b5e6569529.png",
+    "mode": "built-in image_gen"
+  },
+  "politics": {
+    "source": "assets/civic_atlases/politics.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-9033f5a4-8564-44fa-afe8-2a65919a2c88.png",
+    "mode": "built-in image_gen"
+  },
+  "prompts": "docs/civic_art_prompts.md",
+  "civic_council": {
+    "source": "assets/event_illustrations/civic_council.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-aa367af0-079f-41e8-82a9-c6abca2fbeff.png",
+    "mode": "built-in image_gen"
+  },
+  "civic_training": {
+    "source": "assets/event_illustrations/civic_training.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-684ea4e7-79ef-45a3-a415-79dca29c085b.png",
+    "mode": "built-in image_gen"
+  },
+  "civic_market": {
+    "source": "assets/event_illustrations/civic_market.png",
+    "original_file": "C:\\Users\\songrise\\.codex\\generated_images\\01a129dd-a72e-7b31-993e-47affb5a2415\\exec-f5c097c2-d82e-4505-aa1d-f61286b9aeb8.png",
+    "mode": "built-in image_gen"
+  },
+  "heraldry": {
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "original_file": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-c3095917-d73d-47f3-954e-9a9e1a164133.png",
+    "mode": "built-in image_gen",
+    "prompts": "docs/flags_v020_prompt.txt",
+    "extraction": "Whole connected objects assigned to atlas cell by center; native cloth patterns and enlarged text-free charges"
+  }
+}

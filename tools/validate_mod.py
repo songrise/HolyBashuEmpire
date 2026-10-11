@@ -70,7 +70,7 @@ def main():
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
-    check('70 decisions and 64 native research nodes',manifest['decisions']==70 and manifest['research_nodes']==64)
+    check('97 decisions and 80 native research nodes',manifest['decisions']==97 and manifest['research_nodes']==80)
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
     check('centennial content and repeatable pulse persist','current_year >= 1437' in pulse and 'yearly_country_pulse' in pulse and 'current_year < 1457' not in pulse)
@@ -78,7 +78,7 @@ def main():
     check('war calls have a cross-boundary gate','join_war_disabled_trigger' in (m/'in_game/common/join_war_rules/hbe_isolation.txt').read_text(encoding="utf-8-sig"))
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    check('release metadata and manifest version match 0.1.1',manifest['version']=='0.1.1' and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']=='0.1.1')
+    check('release metadata and manifest version match 0.2.0',manifest['version']=='0.2.0' and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']=='0.2.0')
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -104,7 +104,7 @@ def main():
     check('centennial charter needs 100 years and real projects','current_year >= 1437' in new_decisions and 'var:hbe_completed_projects >= 30' in new_decisions)
     check('exactly 36 historical capital seats are counted',sum(banquet.count('location:'+c['capital']+'.owner ?=') for c in countries)==36)
     check('each of seven circles needs strict local majority',banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
-    check('79 added events and 96 total events',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==96)
+    check('79 inherited banquet events and 117 total events',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117)
     check('all 36 princes have personal events',sum('has_or_had_tag = '+c['tag'] in new_events for c in countries)==36)
     check('regional researched options and late recurring events exist','hbe_tech_western_tea_horse_3' in new_events and 'current_year >= 1457' in new_events)
     check('situation has native GUI panel',(m/'in_game/gui/panels/situation/hbe_banquet.gui').is_file())
@@ -113,8 +113,8 @@ def main():
     check('all 36 flag tag definitions exist exactly once',len(flagkeys)==36 and set(flagkeys)==tags)
     flaghashes=[]
     for f in expansion['flags']:
-        texture=m/'main_menu/gfx/coat_of_arms/colored_emblems'/f['texture'];b=texture.read_bytes()
-        check('DDS LiSu inscription '+f['tag'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(128,384) and len(b)==128+384*128*4 and hashlib.sha256(b).hexdigest()==f['sha256'] and len(f['inscription'])==2 and 'LiSu' in f['font'])
+        texture=m/'main_menu/gfx/coat_of_arms'/f['texture_category']/f['texture'];b=texture.read_bytes()
+        check('DDS heraldic charge '+f['tag'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(512,512) and len(b)==128+512*512*4 and hashlib.sha256(b).hexdigest()==f['sha256'] and f['inscription']=='' and f['font'] is None)
         check('native flag textures exist '+f['tag'],all((game/'main_menu/gfx/coat_of_arms'/ref['category']/ref['file']).is_file() for ref in f['native_assets']))
         flaghashes.append(f['sha256'])
     check('all 36 inscription textures are unique',len(set(flaghashes))==36)
@@ -161,7 +161,7 @@ def main():
     for e in pictures:
         painted_dds('painted non-research decision '+e['key'],e['image'],(440,1080),e['sha256'])
         check('decision picture linked '+e['key'],f'gfx/interface/hbe/decisions/{e["key"]}.dds' in decision_blocks[e['key']])
-    check('all 70 decision images exist and no active checker placeholders',len(decision_blocks)==70 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
+    check('all 97 decision images exist and no active checker placeholders',len(decision_blocks)==97 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
     check('all implicit decision titles and catalogue entries localized',all(k+'.title' in loc_keys and k+'.title.entry' in loc_keys and k+'.desc.entry' in loc_keys for k in decision_blocks))
     check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and 'tags = {' in b for b in decision_blocks.values()))
     native=json.loads((ROOT/'data/native_content_v011.json').read_text(encoding='utf-8'))
@@ -174,7 +174,7 @@ def main():
     check('36 single-country events indexed without new autonomous event rolls',len(native['events'])==36 and all('monthly_chance = 0' in event_blocks[e['id']] and 'dynamic_historical_event' in event_blocks[e['id']] and 'fire_only_once = yes' in event_blocks[e['id']] for e in native['events']))
     check('60 shared or recurring events keep their original dispatch',len(native['non_dhe_event_ids'])==60 and all('dynamic_historical_event' not in event_blocks[k] and 'fire_only_once' not in event_blocks[k] for k in native['non_dhe_event_ids']))
     check('36 distinct native country histories and lobby profiles localized',len(native['country_biographies'])==36 and len({e['body'] for e in native['country_biographies']})==36 and all('country_history_'+e['tag'] in loc_keys and 'country_description_category_desc_hbe_profile_'+e['tag'].lower() in loc_keys for e in native['country_biographies']))
-    check('all 36 flags use white plates and black LiSu',flagdefs.count('texture = "ce_hbe_nameplate.dds"')==36 and flagdefs.count('color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 }')==36)
+    check('36 redesigned flags contain no text or nameplates',flagdefs.count('texture = "te_hbe_crest_')==36 and 'hbe_name' not in flagdefs and all(f['inscription']=='' and f['nameplate'] is None for f in expansion['flags']))
     texts=json.loads((ROOT/'data/decision_texts_v011.json').read_text(encoding='utf-8'))
     check('70 decisions have full flavor prose separate from mechanics',len(texts)==70 and all('\n\n' in e['body'] and len(e['body'])>=75 for e in texts))
     prose=json.loads((ROOT/'data/event_texts_v01.json').read_text(encoding='utf-8'))
@@ -190,8 +190,10 @@ def main():
     check('all narrative descriptions include valid hover links',all('Concept(' in event_blocks[e['id']] or f'{e["id"]}.desc:' in loc_text and 'Concept(' in next(line for line in loc_text.splitlines() if line.lstrip().startswith(e['id']+'.desc:')) for e in prose))
     check('guide icon textures exist',all((m/'main_menu/gfx/interface/icons'/str(p+'.dds')).exists() for p in re.findall(r'texture\s*=\s*"([^"]+)"',concepts)))
     check('ledger narratives preserve dynamic state readouts',"GetVariable('hbe_yiqi')" in loc_text and "GetVariable('hbe_contribution')" in loc_text)
+    from validate_social_expansion import validate_social_expansion
+    validate_social_expansion(m,ROOT,game,manifest,loc_keys,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 64 research nodes.')
+    print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 80 research nodes.')
 
 if __name__=='__main__':main()

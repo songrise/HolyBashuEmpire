@@ -1,0 +1,56 @@
+"""Content identities for the 0.2 politics and local institutions expansion."""
+BUILDINGS = [
+ ('hbe_assembly_hall','府议公所','common',1,'government_category','burghers','paper = 0.08', 'local_burghers_max_literacy = 2',True),
+ ('hbe_works_archive','共役案房','common',3,'government_category','burghers','paper = 0.10 books = 0.03','local_burghers_max_literacy = 3',True),
+ ('hbe_canal_office','渠务所','chengdu_plain',1,'infrastructure_category','peasants','lumber = 0.08 tools = 0.04','local_monthly_food_modifier = 0.03',False),
+ ('hbe_brocade_school','锦户讲习院','chengdu_plain',2,'cultural_category','burghers','paper = 0.04 silk = 0.04','local_burghers_max_literacy = 3',True),
+ ('hbe_salt_office','井灶公廨','southern_salt_wine',1,'government_category','burghers','lumber = 0.08 tools = 0.04','local_construction_speed = 0.03',False),
+ ('hbe_salt_contract_house','盐酒契券所','southern_salt_wine',2,'trade_category','burghers','paper = 0.10','local_burghers_max_literacy = 2',True),
+ ('hbe_river_warehouse','江岸转运仓','eastern_river',1,'trade_category','burghers','lumber = 0.06 cloth = 0.04','local_construction_speed = 0.03',False),
+ ('hbe_cliff_stockade','山城联防寨','eastern_river',6,'military_category','soldiers','weaponry = 0.10 cloth = 0.04','local_manpower = 0.0015',False),
+ ('hbe_plank_fort','栈道驿堡','northern_shudao',2,'military_category','soldiers','lumber = 0.08 weaponry = 0.06','local_manpower = 0.0015',False),
+ ('hbe_gate_registry','关市券所','northern_shudao',6,'trade_category','burghers','paper = 0.08','local_burghers_max_literacy = 2',True),
+ ('hbe_community_granary','分仓义廪','central_hills',3,'infrastructure_category','peasants','lumber = 0.06 cloth = 0.04','local_monthly_food_modifier = 0.03',False),
+ ('hbe_witness_house','公信券馆','central_hills',6,'government_category','burghers','paper = 0.08 books = 0.02','local_burghers_max_literacy = 3',True),
+ ('hbe_tea_exchange','茶马交割场','western_tea_horse',1,'trade_category','burghers','paper = 0.04 cloth = 0.04','local_construction_speed = 0.03',False),
+ ('hbe_guide_station','山程护行所','western_tea_horse',2,'infrastructure_category','peasants','lumber = 0.06 cloth = 0.04','local_manpower = 0.0015',False),
+ ('hbe_valley_inn','谷市盟栈','southwestern_valleys',1,'trade_category','burghers','lumber = 0.06 cloth = 0.04','local_construction_speed = 0.03',False),
+ ('hbe_covenant_stockade','乡寨议约寨','southwestern_valleys',2,'military_category','soldiers','weaponry = 0.08 lumber = 0.04','local_manpower = 0.0015',False),
+]
+OFFICES = ['分水都理','盐引会首','江运总理','关驿都巡','义仓监理','茶路公议使','诸谷约正']
+TECHS = [('common','府议与民役簿','修约与公账审计'),
+ ('chengdu_plain','岁修与分水公议','渠学传习规程'),
+ ('southern_salt_wine','井灶保任章程','契券清偿总约'),
+ ('eastern_river','江岸会防约','寨兵常训章程'),
+ ('northern_shudao','关驿轮役册','关镇养兵法'),
+ ('central_hills','仓社赈借则','公信复核章程'),
+ ('western_tea_horse','山程互保册','山门与商路公议'),
+ ('southwestern_valleys','驻防粮额约','诸谷共保续约')]
+UNITS = [
+ ('hbe_canal_crossbow','渠乡弩手','chengdu_plain','light_infantry','hbe_canal_office','strength_damage_done = 0.08 movement_speed = -0.05','crossbow_tag light_tag',False),
+ ('hbe_salt_guard','井灶护运兵','southern_salt_wine','light_infantry','hbe_salt_contract_house','flanking_ability = 0.10 strength_damage_taken = 0.05','light_tag sword_tag',False),
+ ('hbe_river_garrison','川江寨兵','eastern_river','heavy_infantry','hbe_river_warehouse','morale_damage_taken = -0.08 supply_weight = 0.10','heavy_tag sword_tag',False),
+ ('hbe_pass_rotation','关隘轮戍兵','northern_shudao','heavy_infantry','hbe_plank_fort','strength_damage_taken = -0.08 movement_speed = -0.05','heavy_tag pike_tag',False),
+ ('hbe_granary_militia','义仓团练','central_hills','light_infantry','hbe_witness_house','strength_damage_done = -0.08 supply_weight = -0.10','light_tag pike_tag',False),
+ ('hbe_tea_riders','茶路护骑','western_tea_horse','light_cavalry','hbe_guide_station','flanking_ability = 0.10 strength_damage_done = -0.05','light_tag cavalry_tag',False),
+ ('hbe_valley_soldiers','联寨山卒','southwestern_valleys','light_infantry','hbe_covenant_stockade','initiative = 0.10 strength_damage_taken = 0.05','light_tag sword_tag',False),
+ ('hbe_trained_river','江防精练寨兵','eastern_river','heavy_infantry','hbe_river_warehouse','morale_damage_taken = -0.10 strength_damage_done = 0.05 supply_weight = 0.15','heavy_tag sword_tag',True),
+ ('hbe_permanent_pass','关镇长值兵','northern_shudao','heavy_infantry','hbe_plank_fort','strength_damage_taken = -0.10 morale_damage_taken = -0.05 supply_weight = 0.15','heavy_tag pike_tag',True),
+]
+INCIDENTS = [
+ ('下游未开渠','渠务簿上的上游已经放水，下游的使者却仍在堂外等候。岁修拖延，使一段旧渠无法承受约定的水次；若只顾本府田亩，秋后再谈共同信用，邻乡恐怕不会再认这本账。','按照共同水次出资修渠。','请受水各乡出储备合办。','先保本府，余事来岁再议。'),
+ ('织机旁的学徒','讲习院收到锦户联名呈请：新入坊的学徒仍只得搬运线料，未能触及器样。师傅担忧传艺会损害生计，雇主则催促成锦交付。我们应决定本府愿意为传习承担何种责任。','府库购置器样，保障传习。','由乡社见证学徒年限与分工。','先交订单，传习暂缓。'),
+ ('井架上的旧绳','汲卤的旧绳已经起毛，井户却迟迟不肯停工。承办者说合同将到交期，器具商说旧款尚未结清。一日停井有一日的损失，但让人命押在一根旧绳上，终非井灶公账所能交代。','付清器具，暂停井作检修。','按互保旧约分担查验。','催促交盐，暂用旧绳。'),
+ ('换印不换债','新任掌事者将旧盐引推回案上，称券面的印记并非自己所用。债主带来了交付凭据，井户也记得当时的粮料与脚钱。换一方印不应抹去曾经履行的承诺，却也须防止虚券借旧名索取。','核验凭据，以现钱认下旧责。','动用本府信用，联合核账。','称旧券无效，拒绝办理。'),
+ ('船已到，仓未开','船队按约抵岸，仓门却因争议迟迟不开。船工担忧江水变化，岸口掌事者坚持先补查验费用。货物在船上多留一日，便多一日损耗；上下游的合同正在这道仓门前等待解释。','支付接卸，先让货物入仓。','由互保储备承担本次交接。','先查旧额，船队继续等待。'),
+ ('寨中粮额','岸寨送来常训名册，船户却指出同一批粮料已经许给下月的转运。府库不能把一份供给在两本账上各记一次。若欲维持守备，我们便须补足其费用，或重议乡里原本承担的定额。','另购粮料，维持训练。','重议粮额，由各处共同签认。','先练兵，再向乡里追补。'),
+ ('当值者未至','前一班士卒已经收拾行囊，接替的人手仍未越过关口。轮戍簿写得清楚，来文却说道路误期。驻地的粮料只按旧日数目筹备，留下旧卒并不能让责任随之消失。','出资补缺，并查明误期。','依轮戍履约簿共同调度。','命旧卒留守，限乡里供养。'),
+ ('栈木谁来补','风雨损坏了一段旧栈，商旅改走远路，附近乡里则被要求立刻补木。关市享受通路的收入，沿路人家承担木料与劳力；若仍说这只是当地旧役，护路之约便无从使人信服。','关市收入先担木料。','按公约分配备料与轮役。','依旧额征木，立即修栈。'),
+ ('借粮待来岁','歉收之乡无力补还仓粮，义廪却也要预备下一次赈借。掌仓者希望限期收回，乡社见证人请求宽展到来岁。今日的催收若逼散了耕户，来日的仓账未必因此更充足。','购买补仓，宽展旧借。','以储备分仓调剂，留下回补约。','按原期催收，不许展限。'),
+ ('见证人的旧印','一位见证人去世后，其旧印忽然受到质疑。券馆保存的交割记载仍在，继任者却称自己未曾到场。公信若只随一人存亡，乡里多年经营便无法得到持久保障。','付费复核交割，承认旧印责任。','依公信储备组织共同查验。','暂停旧券，等各户重新签认。'),
+ ('向导请改山程','向导报告旧山程已被雨水冲断，建议商队绕行。出资者不愿多付脚钱，地方掌事者则不许临时借道损坏田地。地图上的一条线，不能替沿途的人决定今年应走的道路。','增付脚钱，按向导改路。','动用商队互保，议定临时通路。','仍按旧价旧路催促通行。'),
+ ('山门灯火','山门留宿的行旅越来越多，施济之所却难以独力准备粮料。商队愿意出资，条件是得到明确的候宿约；当地乡里担忧，好意会变成永远无法推卸的负担。','府库补助，明确候宿时日。','以公议储备分担施济和路费。','责成当地继续供给。'),
+ ('援军留在谷口','当初议定的援守之期已经届满，寨中仍未收到撤换文书。府库称道路未稳，不便让士卒离去；见证者呈上旧约，指出供粮之额只为原定时日准备。延长驻守，也应重新认下其责任。','雇粮续守，重新写下期限。','由诸谷共同议定接替。','军情未稳，先令乡寨继续供粮。'),
+ ('诸谷重签旧约','主持者换任之后，各谷带来不尽相同的旧约。有的留下守望时日，有的只记得一次口头允诺。使者要求统一签押，地方见证人希望原先的权利也一并存录，不能只认新的征调。','出资核抄，保存旧权再续约。','请诸谷共同见证与分担。','统一新额，旧例日后再议。'),
+]
+POLITICAL_ART = ['hbe_levy_policy','hbe_communal_policy','hbe_paid_policy','hbe_burden','hbe_council','hbe_audit','hbe_revision','hbe_civil_ledger']+[f'hbe_office_{i}' for i in range(7)]+['hbe_guest_compact']

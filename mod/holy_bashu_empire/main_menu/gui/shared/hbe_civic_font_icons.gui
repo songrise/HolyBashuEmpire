@@ -1,0 +1,1 @@
+texticon = { icon = hbe_burden iconsize = { texture = "gfx/interface/icons/text_icons/hbe_burden.dds" size = { 24 24 } offset = { 0 4 } fontsize = 16 } }

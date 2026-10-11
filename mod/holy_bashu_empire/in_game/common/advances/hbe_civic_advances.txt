@@ -1,0 +1,80 @@
+﻿hbe_civic_common_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_common_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352  NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_common_1 pure_tooltip_entry = hbe_civic_common_1_effects unlock_law = hbe_civil_service_law unlock_policy = hbe_levy_policy unlock_policy = hbe_communal_policy unlock_policy = hbe_paid_policy }
+hbe_civic_common_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_common_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1437  has_advance = hbe_tech_common_3 NOT = { has_variable = hbe_research_pending } }
+ requires = renaissance_development pure_tooltip_entry = hbe_civic_common_2_effects unlock_building = hbe_canal_office unlock_building = hbe_brocade_school unlock_building = hbe_salt_office unlock_building = hbe_salt_contract_house unlock_building = hbe_river_warehouse unlock_building = hbe_cliff_stockade unlock_building = hbe_plank_fort unlock_building = hbe_gate_registry unlock_building = hbe_community_granary unlock_building = hbe_witness_house unlock_building = hbe_tea_exchange unlock_building = hbe_guide_station unlock_building = hbe_valley_inn unlock_building = hbe_covenant_stockade unlock_unit = hbe_canal_crossbow unlock_unit = hbe_salt_guard unlock_unit = hbe_river_garrison unlock_unit = hbe_pass_rotation unlock_unit = hbe_granary_militia unlock_unit = hbe_tea_riders unlock_unit = hbe_valley_soldiers }
+hbe_civic_chengdu_plain_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_chengdu_plain_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_chengdu_plain_2 OR = { has_advance = hbe_tech_chengdu_plain_4 has_advance = hbe_tech_chengdu_plain_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_chengdu_plain_2 pure_tooltip_entry = hbe_civic_chengdu_plain_1_effects  }
+hbe_civic_chengdu_plain_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_chengdu_plain_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_chengdu_plain_5 OR = { has_advance = hbe_tech_chengdu_plain_5 has_advance = hbe_tech_chengdu_plain_8 } has_advance = hbe_civic_chengdu_plain_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_chengdu_plain_2_effects  }
+hbe_civic_southern_salt_wine_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_southern_salt_wine_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_southern_salt_wine_2 OR = { has_advance = hbe_tech_southern_salt_wine_4 has_advance = hbe_tech_southern_salt_wine_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_southern_salt_wine_2 pure_tooltip_entry = hbe_civic_southern_salt_wine_1_effects  }
+hbe_civic_southern_salt_wine_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_southern_salt_wine_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_southern_salt_wine_5 OR = { has_advance = hbe_tech_southern_salt_wine_5 has_advance = hbe_tech_southern_salt_wine_8 } has_advance = hbe_civic_southern_salt_wine_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_southern_salt_wine_2_effects  }
+hbe_civic_eastern_river_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_eastern_river_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_eastern_river_2 OR = { has_advance = hbe_tech_eastern_river_4 has_advance = hbe_tech_eastern_river_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_eastern_river_2 pure_tooltip_entry = hbe_civic_eastern_river_1_effects  }
+hbe_civic_eastern_river_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_eastern_river_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_eastern_river_5 OR = { has_advance = hbe_tech_eastern_river_5 has_advance = hbe_tech_eastern_river_8 } has_advance = hbe_civic_eastern_river_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_eastern_river_2_effects unlock_unit = hbe_trained_river }
+hbe_civic_northern_shudao_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_northern_shudao_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_northern_shudao_2 OR = { has_advance = hbe_tech_northern_shudao_4 has_advance = hbe_tech_northern_shudao_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_northern_shudao_2 pure_tooltip_entry = hbe_civic_northern_shudao_1_effects  }
+hbe_civic_northern_shudao_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_northern_shudao_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_northern_shudao_5 OR = { has_advance = hbe_tech_northern_shudao_5 has_advance = hbe_tech_northern_shudao_8 } has_advance = hbe_civic_northern_shudao_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_northern_shudao_2_effects unlock_unit = hbe_permanent_pass }
+hbe_civic_central_hills_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_central_hills_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_central_hills_2 OR = { has_advance = hbe_tech_central_hills_4 has_advance = hbe_tech_central_hills_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_central_hills_2 pure_tooltip_entry = hbe_civic_central_hills_1_effects  }
+hbe_civic_central_hills_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_central_hills_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_central_hills_5 OR = { has_advance = hbe_tech_central_hills_5 has_advance = hbe_tech_central_hills_8 } has_advance = hbe_civic_central_hills_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_central_hills_2_effects  }
+hbe_civic_western_tea_horse_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_western_tea_horse_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_western_tea_horse_2 OR = { has_advance = hbe_tech_western_tea_horse_4 has_advance = hbe_tech_western_tea_horse_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_western_tea_horse_2 pure_tooltip_entry = hbe_civic_western_tea_horse_1_effects  }
+hbe_civic_western_tea_horse_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_western_tea_horse_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_western_tea_horse_5 OR = { has_advance = hbe_tech_western_tea_horse_5 has_advance = hbe_tech_western_tea_horse_8 } has_advance = hbe_civic_western_tea_horse_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_western_tea_horse_2_effects  }
+hbe_civic_southwestern_valleys_1 = { age = age_1_traditions starting_technology_level = 99
+ icon = hbe_civic_southwestern_valleys_1 content_priority = 880 research_cost = 3
+ potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_southwestern_valleys_2 OR = { has_advance = hbe_tech_southwestern_valleys_4 has_advance = hbe_tech_southwestern_valleys_7 } NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_southwestern_valleys_2 pure_tooltip_entry = hbe_civic_southwestern_valleys_1_effects  }
+hbe_civic_southwestern_valleys_2 = { age = age_2_renaissance starting_technology_level = 99
+ icon = hbe_civic_southwestern_valleys_2 content_priority = 880 research_cost = 4
+ potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1457 has_variable = hbe_mission_southwestern_valleys_5 OR = { has_advance = hbe_tech_southwestern_valleys_5 has_advance = hbe_tech_southwestern_valleys_8 } has_advance = hbe_civic_southwestern_valleys_1 NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_southwestern_valleys_2_effects  }

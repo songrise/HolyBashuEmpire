@@ -41,6 +41,11 @@ hbe_term_contract = { }
 hbe_term_trial = { }
 hbe_term_success = { }
 hbe_term_alliance = { }
+hbe_term_burden = { texture = "text_icons/hbe_burden" }
+hbe_term_civic_office = { }
+hbe_term_operating = { }
+hbe_term_civic_army = { }
+hbe_term_civic_policy = { }
 hbe_history_dujiangyan = { }
 hbe_history_qingcheng = { }
 hbe_history_shujin = { }

@@ -1,0 +1,3 @@
+﻿hbe_event_illustration_civic_council = { scene = "hbe_event_scene_civic_council" tags = { 1000 = hbe_event_art_civic_council } }
+hbe_event_illustration_civic_training = { scene = "hbe_event_scene_civic_training" tags = { 1000 = hbe_event_art_civic_training } }
+hbe_event_illustration_civic_market = { scene = "hbe_event_scene_civic_market" tags = { 1000 = hbe_event_art_civic_market } }

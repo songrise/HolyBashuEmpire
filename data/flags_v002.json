@@ -3,20 +3,29 @@
     "tag": "BAB",
     "country": "成都锦官公国",
     "region": "chengdu_plain",
-    "inscription": "成都",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bab.dds",
-    "sha256": "124f6e122c7958745f4c4add6e84ff08d595567546549575971981cdbf9f436b",
-    "definition_sha256": "c597937c54e02439716d65d02217f3fc0478379b886a7d71c3f7afa8ff5d5bbf",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bab.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "82d9f93d929687ceebd15e58ec1823b34713edf546a2f9370aad165e8e679df4",
+    "definition_sha256": "d3865ebe527998a3b5d9fa9296293f2ea39287c05d8dd4773742e714ed51790d",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 0,
+    "crop": [
+      63,
+      11,
+      235,
+      177
+    ],
     "native_assets": [
       {
         "category": "patterns",
         "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "textured_emblems",
-        "file": "te_dragon_flaming_pearl_clouds_gold_red_variant.dds"
       }
     ]
   },
@@ -24,20 +33,29 @@
     "tag": "BAE",
     "country": "汉州侯国",
     "region": "chengdu_plain",
-    "inscription": "汉州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bae.dds",
-    "sha256": "ea48e643ebe256908da4d3c86651cb8bca6f4b45bb071e95d4331084e2509368",
-    "definition_sha256": "8d3fa01d0812eb5f920e272df480ceccc0b8f1376f2a750f326af8958f7aecef",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bae.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "ec54c27d1994f5b43294c0d9fd80f1569825b4add52c474ec022635eaf075794",
+    "definition_sha256": "b4415aa679fe98c98e923775f28979667049b799341cfde54e58a1889a5cbd79",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 1,
+    "crop": [
+      298,
+      16,
+      450,
+      177
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_fish_naiant.dds"
+        "file": "pattern_diagonal_split_01.dds"
       }
     ]
   },
@@ -45,20 +63,29 @@
     "tag": "BAF",
     "country": "彭州侯国",
     "region": "chengdu_plain",
-    "inscription": "彭州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_baf.dds",
-    "sha256": "220c878110b35d5ac145b7f9f09fd195075c69aeb94d73034877fa5841b0cf52",
-    "definition_sha256": "7e38ddfe40edffa353115117c3de5c6a8798f61a834404cbdd89c6925d021014",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_baf.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "b45a3a1ad64b33a87899e1efd4df0ae16ca10f448e8023fdf1798b4f4270190a",
+    "definition_sha256": "3693c3b6e2ccfa31909f085b1a5b1a3d4f10e2b5b7c6d82fd8b380bb2671c026",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 2,
+    "crop": [
+      527,
+      10,
+      711,
+      175
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_white_tiger.dds"
+        "file": "pattern_vertical_split_01.dds"
       }
     ]
   },
@@ -66,20 +93,29 @@
     "tag": "BAJ",
     "country": "邛州侯国",
     "region": "chengdu_plain",
-    "inscription": "邛州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_baj.dds",
-    "sha256": "081fa26c501a9df4e94e8192c210ab3f84c6d236a02e41a7a2c4bbe88bf0aac2",
-    "definition_sha256": "774a8ed40d5123048414ad51998b719c3e8dbb3e969d195a1a5e50a1b1ce2506",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_baj.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "287b2b0d6e61d7893af6795de47ce43152e0f13639cc42e75153f09c03ca5326",
+    "definition_sha256": "c6df5854ccbc0e74f3852c921677094114eb2aef754ed179c648cedb2c838279",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 3,
+    "crop": [
+      791,
+      1,
+      997,
+      180
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_double_phoenix.dds"
+        "file": "pattern_horizontal_bar_01.dds"
       }
     ]
   },
@@ -87,20 +123,29 @@
     "tag": "BAL",
     "country": "眉州侯国",
     "region": "chengdu_plain",
-    "inscription": "眉州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bal.dds",
-    "sha256": "e663f5d13b6c92b1c892f6b382739fa2d1dd8385f64fa73a049106e4c28f7c8c",
-    "definition_sha256": "e62c5328ac080832743381593c42cedd425901dbf39556ccdf0f6273f59b7fd7",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bal.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "75c26b01452f7b448e145f36daed40145482b33f6a5e5337722d7e8820148de9",
+    "definition_sha256": "e9a37e0b63d2258076e5369d083d1c50562c76afb16eae03d6e8caae589c5b24",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 4,
+    "crop": [
+      1064,
+      12,
+      1255,
+      185
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_vermilion_bird.dds"
+        "file": "pattern_horizontal_split_01.dds"
       }
     ]
   },
@@ -108,20 +153,29 @@
     "tag": "BAO",
     "country": "嘉定山门侯国",
     "region": "southern_salt_wine",
-    "inscription": "嘉定",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bao.dds",
-    "sha256": "41f150a352cb153012185454ff17bedb0dd8e3ba68138efcf9e3f2a7864ea64c",
-    "definition_sha256": "30f8be7cd231e21140956b4de2397e12c72273b0f6e9aa784599c42cf9d42da2",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bao.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "50208bf4ee0cf64e3146ded396de4d6fd0cc55e2e9c571a499fcf8c327a52cce",
+    "definition_sha256": "4ca14748f6d528321c355acfeda3fbcc0a8d4332944eb70c86525139e6fc24b4",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 5,
+    "crop": [
+      1326,
+      8,
+      1480,
+      168
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_lotus_throne.dds"
+        "file": "pattern_diagonal_split_01.dds"
       }
     ]
   },
@@ -129,20 +183,29 @@
     "tag": "BAP",
     "country": "叙州盐酒商邦",
     "region": "southern_salt_wine",
-    "inscription": "叙州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bap.dds",
-    "sha256": "2efaecc6fa9b9c5b3800062a5ecf54459112df92f5015cf93e0c4d0d15dfbf94",
-    "definition_sha256": "c7748b9ce7d168d0213f40aef5a9dd57bfd5cb91313e47a041db3c4d05090f18",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bap.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "759bbebb9073d4a549909f077c6633e548f4b31916f4bdc00c6baf0e965fdc78",
+    "definition_sha256": "f0eb2d94a7a531138f3378edfbc1ae2fc57d6f7ba4b3a3678790907d688ea60f",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 6,
+    "crop": [
+      81,
+      178,
+      194,
+      341
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_vermilion_bird.dds"
+        "file": "pattern_vertical_split_01.dds"
       }
     ]
   },
@@ -150,20 +213,29 @@
     "tag": "BAQ",
     "country": "泸州侯国",
     "region": "southern_salt_wine",
-    "inscription": "泸州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_baq.dds",
-    "sha256": "87babc94de56f0a6917af6a99ef3a34edb182e38f327311b2bc50186c8df9b9c",
-    "definition_sha256": "24be6ce2311d0db91019cecee081164627912d189d52857ae27d15b236143ed1",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_baq.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "b5bfe721fe45c32290c7ff19e65de827aa9cd0008f9dcff0907e4dae215128e7",
+    "definition_sha256": "29c5dccf9386280ca4c599e0826e3aaaffd8d11f3c547066e3c65d25cfbb5e7f",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 7,
+    "crop": [
+      283,
+      197,
+      470,
+      349
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_double_phoenix.dds"
+        "file": "pattern_horizontal_bar_01.dds"
       }
     ]
   },
@@ -171,20 +243,29 @@
     "tag": "BAW",
     "country": "长宁侯国",
     "region": "southern_salt_wine",
-    "inscription": "长宁",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_baw.dds",
-    "sha256": "c4d4f81db8be0315ee5fd38c0aa5a255f9e192907d28c6a5d7f8ee12af958f73",
-    "definition_sha256": "53c7d235425b9a30f64e5ee6aaf426367eeb12c4d64c7fe572993c1f0975166c",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_baw.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "68a61e1341a98c0f304e4ea368786898bab096461b5a7e1619cde7575c5e3d6f",
+    "definition_sha256": "5623fd49c6f796f102cd6e7cf75a6335e9a294026008ff4f9643777d03468753",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 8,
+    "crop": [
+      535,
+      183,
+      718,
+      350
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_blessing_prosperity.dds"
+        "file": "pattern_horizontal_split_01.dds"
       }
     ]
   },
@@ -192,20 +273,29 @@
     "tag": "BAX",
     "country": "昌州侯国",
     "region": "eastern_river",
-    "inscription": "昌州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bax.dds",
-    "sha256": "7bec7d70d8ce7cdf2cf0ada73e3358273e765f87a2117e32f1ec5182ffe51c8b",
-    "definition_sha256": "063102488fc748f62fb234e71bbea561188f4d18c997e116c1c95375501c833f",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bax.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "7e4efb738cb0866503a73280a8b9ea1084851fe55d90c80652d14011940b84d3",
+    "definition_sha256": "4b2d82ccaa6f057a2be1627aed039bf32a3c2933e203fa7377ccb15583b65afc",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 9,
+    "crop": [
+      790,
+      192,
+      963,
+      354
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_azure_dragon.dds"
+        "file": "pattern_vertical_split_01.dds"
       }
     ]
   },
@@ -213,20 +303,29 @@
     "tag": "BAZ",
     "country": "重庆山城公国",
     "region": "eastern_river",
-    "inscription": "重庆",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_baz.dds",
-    "sha256": "6acd469ccf9325117fe02371b69ca0fab19551a78ea2fabf9ce75846fdca47b1",
-    "definition_sha256": "8f7c25987044572f12786f26dcf969010fc0a96d99431eed1b387ae0aa5931a0",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_baz.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "f7ec37a017b777be6f4966b88e7f8a795fd43e54307b6b0d4886fb78f4b69b77",
+    "definition_sha256": "c86ce4c7df03317c1fbced332c3f882ae199585ecdee4b9bc0847eee9fb09cf1",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 10,
+    "crop": [
+      1044,
+      197,
+      1259,
+      348
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "textured_emblems",
-        "file": "te_dragon_flaming_pearl_clouds_gold_azure_variant.dds"
+        "file": "pattern_horizontal_bar_01.dds"
       }
     ]
   },
@@ -234,20 +333,29 @@
     "tag": "BBB",
     "country": "涪州侯国",
     "region": "eastern_river",
-    "inscription": "涪州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbb.dds",
-    "sha256": "a3c9e6899f9be570f27c703534f7b528f63b296b8b2a9a913e33f046a587e4b5",
-    "definition_sha256": "b19f3a6fc3c7223e09957eab1e2983e8c6842f66988b61e18345f798f3ee05a9",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbb.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "9712c1cc708706048b162648b877b8c52330aec93affd882cfda4be933ba2e7b",
+    "definition_sha256": "04ca10d2618dfca4fe413eec187c3c72edf3113ddc0aeb25f54d5085756e9302",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 11,
+    "crop": [
+      1322,
+      180,
+      1493,
+      343
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_fishes_pandya.dds"
+        "file": "pattern_horizontal_split_01.dds"
       }
     ]
   },
@@ -255,20 +363,29 @@
     "tag": "BBC",
     "country": "合州侯国",
     "region": "eastern_river",
-    "inscription": "合州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbc.dds",
-    "sha256": "5e0c79828c0183801afb27cb93446362919da09206fa94541019e1e2db1ce3a1",
-    "definition_sha256": "c9ef32dcd4b962fa70e8fe0cae17197465f45c350e69ea3c95e9b9b37257ff51",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbc.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "632fa8bf900e059eb5b0647270e333481d11b2b73256af1b702e66516925b876",
+    "definition_sha256": "7140799ecb803263ddd151e6bae77b730ef720e591343930c5860d160c35d396",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 12,
+    "crop": [
+      33,
+      356,
+      245,
+      514
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_black_turtle.dds"
+        "file": "pattern_solid.dds"
       }
     ]
   },
@@ -276,20 +393,29 @@
     "tag": "BBE",
     "country": "夔州侯国",
     "region": "eastern_river",
-    "inscription": "夔州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbe.dds",
-    "sha256": "debee1eae9c4c9e8e7942c19e4b73bcf8e7d596ce0efb731f0d4f0d2b3547f66",
-    "definition_sha256": "124c08cc34f6dc326bbbd5404bc387b44e5b5f0791e1d752a6c91e1b4a9da69a",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbe.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "986972ba9e0047cb7488f62633965f739ecbf23a9a77a9447a1bbdc62e25788a",
+    "definition_sha256": "98818707c715ab0b4d2a6074b80dabbf6bd27a834c3c392b200a9befe6e629cf",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 13,
+    "crop": [
+      270,
+      355,
+      503,
+      512
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_boathooks_saltire.dds"
+        "file": "pattern_border_thin.dds"
       }
     ]
   },
@@ -297,20 +423,29 @@
     "tag": "BBF",
     "country": "酉阳侯国",
     "region": "eastern_river",
-    "inscription": "酉阳",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbf.dds",
-    "sha256": "1baa09ceaf68d6195f10d7a0582a1deee345977d26892f94cf473ee336c7bb35",
-    "definition_sha256": "a17a625f427210e0c4c5e2c0a14e30e02ebbd6841538d24b8a8012c665ea9f1f",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbf.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "69d9811a24066a43cac23623319bfa119d2218a3024e159013f979e9e4890e12",
+    "definition_sha256": "172f673036ebbef85c70c7ff453da51d9ff3815d108b6e473434db13948f4fa1",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 14,
+    "crop": [
+      520,
+      351,
+      754,
+      492
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_qilin.dds"
+        "file": "pattern_fringe.dds"
       }
     ]
   },
@@ -318,20 +453,29 @@
     "tag": "BBH",
     "country": "忠州侯国",
     "region": "eastern_river",
-    "inscription": "忠州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbh.dds",
-    "sha256": "583d0b4787b93b0e6a3bb12015b2adcee56a96fa857b5dd019463b952768867b",
-    "definition_sha256": "799034295516c24ad622a833c6d4b27ec83fa2e1c688abe9a6c967dfdaa1f1d2",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbh.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "7f9f063045eb4137c942f4839e4d41684d3832fa1efa8d5ae1ede415db3e5df4",
+    "definition_sha256": "93d0b14bef19b2b2248ec0c17d0993b65b101d80cd2dee74c5564f596623b22f",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 15,
+    "crop": [
+      811,
+      350,
+      1006,
+      513
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_double_phoenix.dds"
+        "file": "pattern_diagonal_split_01.dds"
       }
     ]
   },
@@ -339,20 +483,29 @@
     "tag": "BBI",
     "country": "保宁蜀道侯国",
     "region": "northern_shudao",
-    "inscription": "保宁",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbi.dds",
-    "sha256": "18748f6149b1a70d3e4397c7cf3cebd0268356a1ceae99f1c5077d26fa6fcc10",
-    "definition_sha256": "44c048e4243afaa1601d613269591e3f7e85de46bd754ddb808155fd4e72e1da",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbi.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "7152ad5d4c3a1d84a6b8904515beade773df603603ce504549761a840919651f",
+    "definition_sha256": "388411343b9ce7d8b68fad58df4f15fbe2247e35ab1656a40e84aa61aeaebb00",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 16,
+    "crop": [
+      1056,
+      376,
+      1257,
+      514
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_white_tiger.dds"
+        "file": "pattern_horizontal_bar_01.dds"
       }
     ]
   },
@@ -360,20 +513,29 @@
     "tag": "BBJ",
     "country": "巴州侯国",
     "region": "northern_shudao",
-    "inscription": "巴州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbj.dds",
-    "sha256": "5b7379231bbca320b9fe1a50d8d36df06ded8cd4674ca1a60b1d77f71095e401",
-    "definition_sha256": "1e442eb03544ff770ef14d90b43031d0c524637c80f608e93864a61117177101",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbj.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "06c6c8e20bb5652284fe24cc792a369c7ddff27a8ec57cf66634c982b2fc32f1",
+    "definition_sha256": "ec219ba9340b73e72a632adb05bcc5f87375631444f2b8e1b90dd9733e2f5594",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 17,
+    "crop": [
+      1316,
+      349,
+      1488,
+      514
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_qilin.dds"
+        "file": "pattern_horizontal_split_01.dds"
       }
     ]
   },
@@ -381,20 +543,29 @@
     "tag": "BBL",
     "country": "广元侯国",
     "region": "northern_shudao",
-    "inscription": "广元",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbl.dds",
-    "sha256": "24dc4219234294d59235e5310f5fed3cc7ecd033d10fd5fe326394e7a1605056",
-    "definition_sha256": "cb90c2e006a371a49bf69d4823b4a982eab0c55a46acda47eaf157023b3671a9",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbl.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "6b4883209cc5c6a8f81cea1b78d45aa809e3708d43104f8069f83a4ab823a8c6",
+    "definition_sha256": "1d7bfcaf0eaa6e2b5591d044d0c6aac1cc31b1e90367057b02a94d8a12632ae3",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 18,
+    "crop": [
+      30,
+      518,
+      251,
+      658
+    ],
     "native_assets": [
       {
         "category": "patterns",
         "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_black_turtle.dds"
       }
     ]
   },
@@ -402,20 +573,29 @@
     "tag": "BBM",
     "country": "剑州侯国",
     "region": "northern_shudao",
-    "inscription": "剑州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbm.dds",
-    "sha256": "8c76bc52d78828e0de32587f5481fc488969abca4974e4e269d6f3c3f5671352",
-    "definition_sha256": "9e2f5b7d65ce9c39350c7eaba3cb374a339566c9375bb1a8c5618ac42207e95d",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbm.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "e45288a19ff732c4a743c9d79cc04014aefb57f9bd57314c026c7a4a6da03ffd",
+    "definition_sha256": "7e37d67f2134813771dec1b71393c36e7c33eb7aba05b31f00d4dd3aec185794",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 19,
+    "crop": [
+      300,
+      514,
+      472,
+      663
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_mountains_landscape_chitral.dds"
+        "file": "pattern_border_thin.dds"
       }
     ]
   },
@@ -423,20 +603,29 @@
     "tag": "BBN",
     "country": "龙安侯国",
     "region": "northern_shudao",
-    "inscription": "龙安",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbn.dds",
-    "sha256": "2f3d24dbf151a1116a5186f96718519ebfacb1aa1cec36e2b9dd2c0492ddf4ad",
-    "definition_sha256": "dddd29850759aeb62e2a45982fff506405aa70ec7075bcbf82e59cfa3947d8ce",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbn.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "285f4ff0a54f809669023705119992c1942b620643c7ea1184023229dd7245d6",
+    "definition_sha256": "88a50fc5394f2f46e60174705c7a9862851f1f52ca920620594e066cde13b9f6",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 20,
+    "crop": [
+      545,
+      503,
+      717,
+      666
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_azure_dragon.dds"
+        "file": "pattern_fringe.dds"
       }
     ]
   },
@@ -444,20 +633,29 @@
     "tag": "BBO",
     "country": "达州侯国",
     "region": "northern_shudao",
-    "inscription": "达州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbo.dds",
-    "sha256": "52d91c3f97e09c1bdfa1ee114f8e96b652596c7f69cc24106f259f7d06d613a4",
-    "definition_sha256": "d3dca5c79934473b07046409c1b5b3421f1521c190762a8b708d11a2615189b7",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbo.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "50158bf5d58cff5c56442f3d28e1c46026808c160f08fc5c7cdb4e9dab1a3b44",
+    "definition_sha256": "a77d43f2eda4761dca12b23d87f905289b1c0863f4ed2c913b8b3bbe20fe2612",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 21,
+    "crop": [
+      789,
+      512,
+      997,
+      659
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_horse_courant.dds"
+        "file": "pattern_diagonal_split_01.dds"
       }
     ]
   },
@@ -465,20 +663,29 @@
     "tag": "BBP",
     "country": "顺庆侯国",
     "region": "northern_shudao",
-    "inscription": "顺庆",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbp.dds",
-    "sha256": "153ba875c0054696613bec55d8f90a0eb22b52c16a466e5b338aa9d92ea8476a",
-    "definition_sha256": "57dc672f635cde9458c6ff5d9fbd0ec330eae0b1f1d0a0d7aaa679d033ca7d8a",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbp.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "5c83877c590765dcd8daa07174b9d5fd2a5b5c646aa0279aa53e1b3d37919e1d",
+    "definition_sha256": "e9eeea833d87e1e20fd7ce5af2157d52ea25d27f69041e7e2073f4d6ca899a68",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 22,
+    "crop": [
+      1077,
+      506,
+      1240,
+      657
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_double_phoenix.dds"
+        "file": "pattern_vertical_split_01.dds"
       }
     ]
   },
@@ -486,20 +693,29 @@
     "tag": "BBQ",
     "country": "简州侯国",
     "region": "central_hills",
-    "inscription": "简州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbq.dds",
-    "sha256": "b180acd4394877cdb9a23ade513042f411ef59093cbb235887db86c22bea19de",
-    "definition_sha256": "99d9c5fe5bbdf8d3e2aeb473db31b54e81258a36bad587e66f9e82d88372e8e4",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbq.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "2bc8a58ea07524d4a616d1a9a8e8025157d8a4c44e5e7b88cfc0f92f144e17d4",
+    "definition_sha256": "154d168896550b373e2ce9545feafe6b9fdb359d41193b1439955123b0b308bf",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 23,
+    "crop": [
+      1306,
+      524,
+      1502,
+      661
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_wheat_ear.dds"
+        "file": "pattern_horizontal_split_01.dds"
       }
     ]
   },
@@ -507,20 +723,29 @@
     "tag": "BBR",
     "country": "遂宁义仓侯国",
     "region": "central_hills",
-    "inscription": "遂宁",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbr.dds",
-    "sha256": "8e8ad8d40c3030b37b00c8333c7daa8d05c629b0aa9bf15b2f79eca6c9b593b3",
-    "definition_sha256": "d3b16873bcdc896dd86668ad8702af297cbb0fe525aff6c2d7d742f0a4dbaec8",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbr.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "e839a8a2e7bfa27492c658f50121192e91ca396f255026f956b1902af982ad91",
+    "definition_sha256": "da0d772904f42c51169b6e875fb059e7cd027e622999faa305b2711cb0051761",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 24,
+    "crop": [
+      66,
+      657,
+      197,
+      826
+    ],
     "native_assets": [
       {
         "category": "patterns",
         "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_wheat_garb.dds"
       }
     ]
   },
@@ -528,20 +753,29 @@
     "tag": "BBS",
     "country": "潼川侯国",
     "region": "central_hills",
-    "inscription": "潼川",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbs.dds",
-    "sha256": "bd7d8135b99e84d67e5d5b0ee5918de7455e4eb429d04a030b0f0c86d82db9d1",
-    "definition_sha256": "a4ac91964e339e3f3b9caffd14eabbed06e118b80a88924182b1820d166ae930",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbs.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "f25eb170d00d379eeb0e28c03885aad4f4ddfdb29f720281cc6f7bd1ebcde79d",
+    "definition_sha256": "a39edb761466c1efc22cc77d3ee71d24e44f5dcf07d67a35cb56242d56cb80eb",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 25,
+    "crop": [
+      308,
+      657,
+      459,
+      820
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_tree_fruit_simple.dds"
+        "file": "pattern_border_thin.dds"
       }
     ]
   },
@@ -549,20 +783,29 @@
     "tag": "BBT",
     "country": "广安侯国",
     "region": "central_hills",
-    "inscription": "广安",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbt.dds",
-    "sha256": "cc5c870647099cd1d384878993989651c9cee63df29a803ec52667ba3a02d6da",
-    "definition_sha256": "43a5795b45f4611c806cb15d448a30e8d2053269dfec66ca31228e4b259afc27",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbt.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "29925dc9839a1158c1e441857ad9e1f80718000fd0571181e1bea294201c4cfd",
+    "definition_sha256": "015b3f37c279e4f008104023667c11046c45942248cbd592d7687c5fec456a30",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 26,
+    "crop": [
+      525,
+      668,
+      715,
+      826
+    ],
     "native_assets": [
       {
         "category": "patterns",
         "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_heron_wide.dds"
       }
     ]
   },
@@ -570,20 +813,29 @@
     "tag": "BBU",
     "country": "雅州茶马侯国",
     "region": "western_tea_horse",
-    "inscription": "雅州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbu.dds",
-    "sha256": "6296827611522c0b238b951a7ca0fd68bb9a540eb869f697a5bb97a5dd6c7ca7",
-    "definition_sha256": "241bc210a6a701eb87e99f14b608dc1585b4b9b0d2d9e32a1174f8f10ae837e4",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbu.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "c5abd274e3c72ce2664ece0790d59f0b15317d6d218d52a90bb626a62df3cad0",
+    "definition_sha256": "4b351ea757086a6430bf97c4392a99e82372f6fc4c036a52e30a1bd479f25637",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 27,
+    "crop": [
+      785,
+      669,
+      997,
+      826
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "textured_emblems",
-        "file": "te_wind_horse.dds"
+        "file": "pattern_solid.dds"
       }
     ]
   },
@@ -591,20 +843,29 @@
     "tag": "BBV",
     "country": "茂州侯国",
     "region": "western_tea_horse",
-    "inscription": "茂州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbv.dds",
-    "sha256": "b299ca982577f3495e903fdbe652f94065488c319b3d94a0f7b1cbb31fd5fb93",
-    "definition_sha256": "f09ec231ca3e7cb68b734aeee354e2b0165f3150aa3af005a223e207d0fd1c9a",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbv.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "aa79ef6bfe1d1f453145e8d5f88bb03f1dbb6bb697ec65b2b72f673e77121992",
+    "definition_sha256": "3d71a2ffac9f387c04732e206927266b304ecc9c3f942d55e32eaf2d4424cbf6",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 28,
+    "crop": [
+      1050,
+      682,
+      1250,
+      822
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_auspicious_conch_shell.dds"
+        "file": "pattern_border_thin.dds"
       }
     ]
   },
@@ -612,20 +873,29 @@
     "tag": "BBW",
     "country": "松潘侯国",
     "region": "western_tea_horse",
-    "inscription": "松潘",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbw.dds",
-    "sha256": "5347a2e8b1fa6790269d7d07949753f981993a1db778d08bff8c0bd993690e72",
-    "definition_sha256": "ada6f46d4003fd2b539f08f3ad5562520ea0a8f1bd784ca23bc099c35811ec57",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbw.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "89f02dd2f7b55d9517244545f2c4b05e03479eba5964ed11d444be9815c355d6",
+    "definition_sha256": "05c2cd693f326afebc3114a7baf821e4d3fd7ca06548b7ad7ff28735d9f44906",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 29,
+    "crop": [
+      1293,
+      665,
+      1498,
+      819
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "textured_emblems",
-        "file": "te_tibetan_garuda.dds"
+        "file": "pattern_fringe.dds"
       }
     ]
   },
@@ -633,20 +903,29 @@
     "tag": "BBX",
     "country": "盐源侯国",
     "region": "southwestern_valleys",
-    "inscription": "盐源",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbx.dds",
-    "sha256": "de4f8ef407a7721d3f60aa29769345cd54d8f6e89fe197726080704ee922ac6c",
-    "definition_sha256": "a1ae064460c8f38add924e288b54472507d6df734352f11c75fc13988e183b71",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbx.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "c333019651a0cad9673972854286938967d44503c7073fc443d1de7a18d355c0",
+    "definition_sha256": "8bfa55ec8e0454193ef4a7821f716b990e0391e2ee5b48f6abb452809a87685a",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 30,
+    "crop": [
+      40,
+      843,
+      225,
+      989
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_lotus_chakra.dds"
+        "file": "pattern_border_thin.dds"
       }
     ]
   },
@@ -654,20 +933,29 @@
     "tag": "BBY",
     "country": "德昌侯国",
     "region": "southwestern_valleys",
-    "inscription": "德昌",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bby.dds",
-    "sha256": "0e34b3f3bee9afdf2b7a6120470dc2c3b2ec017a14387ca8537bffdb96b9fdb3",
-    "definition_sha256": "8e1d2bc9eabb47aabd0363750a195350be7f06b238d9aac292226a135614b9ff",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bby.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "a902df3d10c700dd0eeeaffa8523804e80d74f69b898273cb607726432b5b632",
+    "definition_sha256": "48f2b3a04df3b281c60f381564891dc316d4d5f6959e0581a50f3e2a93dac3cd",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 31,
+    "crop": [
+      277,
+      832,
+      497,
+      999
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_auspicious_conch_shell.dds"
+        "file": "pattern_fringe.dds"
       }
     ]
   },
@@ -675,20 +963,29 @@
     "tag": "BBZ",
     "country": "黎州侯国",
     "region": "southwestern_valleys",
-    "inscription": "黎州",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bbz.dds",
-    "sha256": "5df89ca95b9a6640fb33f6e320de6c0b2e00e3aa44772e680c83e6115329bb8a",
-    "definition_sha256": "04c23126487a85758d7dd068cf4b7901bbb088984e44a1010a103178e29df270",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bbz.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "fe2b7479a3c808e67ace3c3bc07c3c7234b503d9e05929111908c15cc925886b",
+    "definition_sha256": "f7dfd584163cd863df49ba9cdee02814e106f53db44dd96015d8bc7e5bc087fd",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 32,
+    "crop": [
+      530,
+      836,
+      705,
+      997
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_lotus_flower_02.dds"
+        "file": "pattern_diagonal_split_01.dds"
       }
     ]
   },
@@ -696,20 +993,29 @@
     "tag": "BCA",
     "country": "马湖侯国",
     "region": "southwestern_valleys",
-    "inscription": "马湖",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bca.dds",
-    "sha256": "767996cb67c4735d0601a4d7b2eff065818797498f94da92e42ac07bbc94d5d9",
-    "definition_sha256": "608c1cd4621f51d3e20825383658b093efa72d08098b773a91a6ef15a429ab32",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bca.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "4517534df3976d28953f699aaefb44cdb24c54354c89c08b2e349a63073fe9a6",
+    "definition_sha256": "3b8eb7c6186914f81a67e55ae4efe294f3c256e2a7bc405793253a939ca83686",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 33,
+    "crop": [
+      815,
+      832,
+      998,
+      1001
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_fringe.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_mountains_hunza.dds"
+        "file": "pattern_vertical_split_01.dds"
       }
     ]
   },
@@ -717,20 +1023,29 @@
     "tag": "BCB",
     "country": "建昌共治侯国",
     "region": "southwestern_valleys",
-    "inscription": "建昌",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bcb.dds",
-    "sha256": "e81dae137ebd1bd629b522be79de7876c8da86b9db0fc68a3ab205fb0cc526cb",
-    "definition_sha256": "effbe97a4fe9781bb308f55fc04a50c02531f0ab5bd84eb92fe4240dd0c6c078",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bcb.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "a330772d833bd4ec4cca73fb9eb9ecc4c27c46977dc5746dd8a3c9987a7b2383",
+    "definition_sha256": "cca572e412057a4e10d1baf0117f280db986503109d130d2f3b7b271a5eaf07d",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 34,
+    "crop": [
+      1036,
+      827,
+      1262,
+      996
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "colored_emblems",
-        "file": "ce_chinese_crossed_vajra_taijitu.dds"
+        "file": "pattern_horizontal_bar_01.dds"
       }
     ]
   },
@@ -738,20 +1053,29 @@
     "tag": "BCC",
     "country": "永宁侯国",
     "region": "southwestern_valleys",
-    "inscription": "永宁",
-    "font": "LiSu / 隶书 (SIMLI.TTF)",
-    "nameplate": "white field / black inscription",
-    "texture": "ce_hbe_name_bcc.dds",
-    "sha256": "ecb81491bbab537ea32da35559dc9107e249ebb7a4cd2f22e73d6305d995cf96",
-    "definition_sha256": "659f8527ffa8f4314dd62c11ad5acaa5eb6d0a69f1c30d82f1cb495e1f230542",
+    "inscription": "",
+    "font": null,
+    "texture": "te_hbe_crest_bcc.dds",
+    "texture_category": "textured_emblems",
+    "nameplate": null,
+    "dimensions": [
+      512,
+      512
+    ],
+    "sha256": "d957c876bb4fc1534163cd5377a2b3128dc28434b113942f581fc296896640b6",
+    "definition_sha256": "24536e3b013b06ad7f0f095e42b76e9bbfae328ca2aefac23b40fc109c85b5ba",
+    "source": "assets/flag_redesign/heraldic_charges.png",
+    "cell": 35,
+    "crop": [
+      1300,
+      828,
+      1507,
+      994
+    ],
     "native_assets": [
       {
         "category": "patterns",
-        "file": "pattern_solid.dds"
-      },
-      {
-        "category": "textured_emblems",
-        "file": "te_tibetan_flaming_jewels.dds"
+        "file": "pattern_horizontal_split_01.dds"
       }
     ]
   }
