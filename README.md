@@ -6,10 +6,12 @@ Europa Universalis V 架空喜剧风味包。四川各个可拥有地块在开�
 
 ## 当前阶段
 
-玩法策划草案，等待讨论定稿。
+玩法策划草案，按至少一百二十年的内容跨度设计，暂以 1337 至 1457 年为主轴。
 
 - [玩法策划](docs/gameplay_design.md)：开局体验、诸侯与皇帝玩法、帝国制度、特色机制、事件和首版范围。
 - [地区科技树](docs/regional_technology.md)：八项共同进步、七条地区树、专精选择、技术传播与六十四个候选节点。
+- [地区事件与任务](docs/regional_missions_events.md)：地区起业、专精与跨区事业，共六十项基础主线任务、三十九个事件。
+- [百年经营与传承](docs/century_campaign.md)：代际交班、旧约重审、晚期调整与百年改章；完整蓝图共一百一十项任务、七十九个事件和二十一类持续经营委托。
 - 游戏安装目录：`D:\SteamLibrary\steamapps\common\Europa Universalis V`。
 
 玩法数值均为讨论起点。地理边界、国家名单和游戏内表现将在玩法定稿后的制作阶段确定。
