@@ -78,8 +78,7 @@ def main():
     check('war calls have a cross-boundary gate','join_war_disabled_trigger' in (m/'in_game/common/join_war_rules/hbe_isolation.txt').read_text(encoding="utf-8-sig"))
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    image=(m/'loading_screen/gfx/interface/hbe/placeholder.dds').read_bytes()
-    check('placeholder DDS header and dimensions',image[:4]==b'DDS ' and struct.unpack_from('<I',image,4)[0]==124 and len(image)==128+384*192*4)
+    check('release metadata and manifest version match 0.1',manifest['version']=='0.1' and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']=='0.1')
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -132,7 +131,51 @@ def main():
         p=m/e['image'];b=p.read_bytes()
         check('painted specialty icon '+e['key'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(128,128) and hashlib.sha256(b).hexdigest()==e['sha256'])
     check('native font icons registered',(m/'main_menu/gui/shared/hbe_font_icons.gui').read_text(encoding='utf-8').count('texticon =')==10)
-    report=dict(status='passed',checks=checks,check_count=len(checks),gameplay_validation='pending in-game; structural checks are not a savegame test',version='0.02')
+    full=manifest['full_art']
+    def painted_dds(name,path,dimensions,expected):
+        b=(m/path).read_bytes()
+        check(name,b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==dimensions and len(b)==128+dimensions[0]*dimensions[1]*4 and hashlib.sha256(b).hexdigest()==expected)
+    check('12 painted event backgrounds serve all 96 events',len(full['event_backgrounds'])==12 and len(full['event_mapping'])==96 and len({e['id'] for e in full['event_mapping']})==96)
+    event_keys={e['key'] for e in full['event_backgrounds']}
+    check('event scene mapping resolves',all(e['scene'] in event_keys for e in full['event_mapping']))
+    scene_script=(m/'in_game/gfx/scenes/hbe_event_scenes.txt').read_text(encoding='utf-8-sig')
+    image_script=(m/'in_game/gfx/images/hbe_event_backgrounds.txt').read_text(encoding='utf-8-sig')
+    database=(m/'loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt').read_text(encoding='utf-8-sig')
+    all_events='\n'.join(f.read_text(encoding='utf-8-sig') for f in (m/'in_game/events').glob('hbe*events.txt'))
+    for e in full['event_backgrounds']:
+        key=e['key'];painted_dds('painted event background '+key,e['image'],(440,1080),e['sha256'])
+        check('private native illustration scene '+key,f'hbe_event_scene_{key} = ' in scene_script and f'list = "hbe_event_background_{key}"' in scene_script and f'hbe_event_art_{key}' in database and f'gfx/interface/hbe/events/{key}.dds' in image_script)
+    event_blocks={key:all_events[a:b] for key,_,a,b,_ in blocks(all_events,0)}
+    check('96 event illustration tags link private scenes',all(f'1000 = hbe_event_art_{e["scene"]}' in event_blocks[e['id']] for e in full['event_mapping']))
+    check('native portrait layers retained and native scene database not overridden','list = "characters_regular"' in scene_script and not (m/'in_game/gfx/scenes/00_scenes_events.txt').exists())
+    check('eight organization emblems and dedicated panel files',len(full['organizations'])==8 and {e['key'] for e in full['organizations']}=={'hbe_empire'}|{'hbe_circle_'+r[0] for r in manifest['regions']})
+    for e in full['organizations']:
+        painted_dds('organization emblem '+e['key'],e['icon'],(128,128),e['icon_sha256'])
+        painted_dds('organization panel '+e['key'],e['panel'],(440,1080),e['panel_sha256'])
+    panel=full['situation_panel'];painted_dds('painted banquet panel',panel['image'],(440,1080),panel['sha256'])
+    check('banquet GUI uses painted panel','gfx/interface/hbe/panels/hbe_banquet.dds' in (m/'in_game/gui/panels/situation/hbe_banquet.gui').read_text(encoding='utf-8-sig'))
+    pictures=full['decision_pictures']
+    check('seven atlases supply 70 unique non-research pictures',full['decision_atlases']==7 and len(pictures)==70 and len({e['key'] for e in pictures})==70 and len({e['sha256'] for e in pictures})==70)
+    decision_scripts='\n'.join(f.read_text(encoding='utf-8-sig') for f in (m/'in_game/common/decisions').glob('hbe*decisions.txt'))
+    decision_blocks={key:decision_scripts[a:b] for key,_,a,b,_ in blocks(decision_scripts,0)}
+    for e in pictures:
+        painted_dds('painted non-research decision '+e['key'],e['image'],(192,384),e['sha256'])
+        check('decision picture linked '+e['key'],f'gfx/interface/hbe/decisions/{e["key"]}.dds' in decision_blocks[e['key']])
+    check('all 134 decision images exist and no active checker placeholders',len(decision_blocks)==134 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
+    prose=json.loads((ROOT/'data/event_texts_v01.json').read_text(encoding='utf-8'))
+    check('all 96 events have independent two-paragraph Bashu narratives',manifest['event_prose']['events_rewritten']==96 and len(prose)==96 and len({e['body'] for e in prose})==96 and all('\n\n' in e['body'] and len(e['body'])>=120 for e in prose))
+    check('rewritten event narratives omit HRE jokes',all(not any(word in e['body']+e['title'] for word in ('神罗','欧洲','祖传选票','椅子比别家','菜单先来')) for e in prose))
+    concepts=(m/'main_menu/common/game_concepts/hbe_concepts.txt').read_text(encoding='utf-8-sig')
+    concept_keys={key for key,*_ in blocks(concepts,0)}
+    loc_text=loc_file.read_text(encoding='utf-8-sig')
+    references=set(re.findall(r"Concept\('(hbe_(?:term|history)_[a-z_]+)'",loc_text))
+    check('native glossary definitions have localized names and descriptions',all('game_concept_'+key in loc_keys and 'game_concept_'+key+'_desc' in loc_keys for key in concept_keys))
+    check('all inline hover links resolve to private native game concepts',references<=concept_keys and len(references)>=45)
+    check('mechanic and historical hover guides are present',len([k for k in concept_keys if k.startswith('hbe_term_')])==manifest['player_guides']['mechanic_concepts'] and len([k for k in concept_keys if k.startswith('hbe_history_')])==12)
+    check('all narrative descriptions include valid hover links',all('Concept(' in event_blocks[e['id']] or f'{e["id"]}.desc:' in loc_text and 'Concept(' in next(line for line in loc_text.splitlines() if line.lstrip().startswith(e['id']+'.desc:')) for e in prose))
+    check('guide icon textures exist',all((m/'main_menu/gfx/interface/icons'/str(p+'.dds')).exists() for p in re.findall(r'texture\s*=\s*"([^"]+)"',concepts)))
+    check('ledger narratives preserve dynamic state readouts',"GetVariable('hbe_yiqi')" in loc_text and "GetVariable('hbe_contribution')" in loc_text)
+    report=dict(status='passed',checks=checks,check_count=len(checks),gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 64 research nodes.')
 

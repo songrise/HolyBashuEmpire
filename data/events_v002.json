@@ -1,397 +1,397 @@
 [
   {
     "id": "hbe_banquet.1",
-    "title": "你这行省，怎么还选皇帝？",
+    "title": "敕书与会盟",
     "category": "entry"
   },
   {
     "id": "hbe_banquet.2",
-    "title": "三十六张椅子，第三十七张账单",
+    "title": "本届事业开账",
     "category": "accounts"
   },
   {
     "id": "hbe_banquet.3",
-    "title": "交付不是在纸上画个勾",
+    "title": "凭据与实物",
     "category": "delivery"
   },
   {
     "id": "hbe_banquet.4",
-    "title": "船到了，账也对上了",
+    "title": "同流而至",
     "category": "delivery"
   },
   {
     "id": "hbe_banquet.5",
-    "title": "盐船没来，菜单先来了",
+    "title": "未能结清",
     "category": "delivery"
   },
   {
     "id": "hbe_banquet.6",
-    "title": "签押还在，国库空了",
+    "title": "签押未兑",
     "category": "default"
   },
   {
     "id": "hbe_banquet.7",
-    "title": "席位、账目与锅底",
+    "title": "会盟总册",
     "category": "ledger"
   },
   {
     "id": "hbe_banquet.12",
-    "title": "账单送到谁家",
+    "title": "分摊之议",
     "category": "chapter"
   },
   {
     "id": "hbe_banquet.13",
-    "title": "祖宗坐过这个位置",
+    "title": "故治与新主",
     "category": "chapter"
   },
   {
     "id": "hbe_banquet.14",
-    "title": "换皇帝，还是换锅底",
+    "title": "公治之争",
     "category": "chapter"
   },
   {
     "id": "hbe_banquet.15",
-    "title": "百年了，重新排座次",
+    "title": "长约待议",
     "category": "chapter"
   },
   {
     "id": "hbe_banquet.20",
-    "title": "皇帝递来一张百年合同",
+    "title": "章程呈议",
     "category": "charter"
   },
   {
     "id": "hbe_banquet.21",
-    "title": "这次盖章，真有七圈的印",
+    "title": "新约成文",
     "category": "charter"
   },
   {
     "id": "hbe_banquet.22",
-    "title": "七圈的印，少了几枚",
+    "title": "议而未定",
     "category": "charter"
   },
   {
     "id": "hbe_banquet.23",
-    "title": "锅底都换了，欠条还在",
+    "title": "盟中争议",
     "category": "crisis"
   },
   {
     "id": "hbe_banquet.100",
-    "title": "上游说修渠，下游说放水",
+    "title": "上下游之诉",
     "category": "成都平原圈"
   },
   {
     "id": "hbe_banquet.101",
-    "title": "锦官城的座次图",
+    "title": "官学与诸府",
     "category": "成都平原圈"
   },
   {
     "id": "hbe_banquet.102",
-    "title": "都江堰不认选票",
+    "title": "堰上岁修",
     "category": "成都平原圈"
   },
   {
     "id": "hbe_banquet.103",
-    "title": "皇帝点菜，盐商结账",
+    "title": "盐利与公款",
     "category": "川南盐酒圈"
   },
   {
     "id": "hbe_banquet.104",
-    "title": "盐引背面还有盐引",
+    "title": "引券重押",
     "category": "川南盐酒圈"
   },
   {
     "id": "hbe_banquet.105",
-    "title": "三代灶户，一张百年欠条",
+    "title": "灶户旧欠",
     "category": "川南盐酒圈"
   },
   {
     "id": "hbe_banquet.106",
-    "title": "重庆说上席不在上游",
+    "title": "江岸的分担",
     "category": "重庆川东圈"
   },
   {
     "id": "hbe_banquet.107",
-    "title": "过滩一次，收费三次",
+    "title": "过滩之费",
     "category": "重庆川东圈"
   },
   {
     "id": "hbe_banquet.108",
-    "title": "码头换主，船牌不换",
+    "title": "新主与船牌",
     "category": "重庆川东圈"
   },
   {
     "id": "hbe_banquet.109",
-    "title": "祖传轮戍，轮到别人",
+    "title": "轮役的免书",
     "category": "川北蜀道圈"
   },
   {
     "id": "hbe_banquet.110",
-    "title": "驿马在账上跑得最快",
+    "title": "驿簿虚数",
     "category": "川北蜀道圈"
   },
   {
     "id": "hbe_banquet.111",
-    "title": "剑门借印，不借守军",
+    "title": "关印与守备",
     "category": "川北蜀道圈"
   },
   {
     "id": "hbe_banquet.112",
-    "title": "义仓赈粮，亲戚先领",
+    "title": "赈粮名册",
     "category": "川中丘陵圈"
   },
   {
     "id": "hbe_banquet.113",
-    "title": "调停书比诉状还厚",
+    "title": "界田旧契",
     "category": "川中丘陵圈"
   },
   {
     "id": "hbe_banquet.114",
-    "title": "丰收年也要翻旧仓",
+    "title": "丰年修仓",
     "category": "川中丘陵圈"
   },
   {
     "id": "hbe_banquet.115",
-    "title": "茶价未涨，印章先涨",
+    "title": "沿途验引",
     "category": "川西茶马圈"
   },
   {
     "id": "hbe_banquet.116",
-    "title": "马认识路，诸侯不认账",
+    "title": "山程损耗",
     "category": "川西茶马圈"
   },
   {
     "id": "hbe_banquet.117",
-    "title": "山门茶会，谁算东道",
+    "title": "调停之所",
     "category": "川西茶马圈"
   },
   {
     "id": "hbe_banquet.118",
-    "title": "谷口的敕书有两个译本",
+    "title": "约文的两种解读",
     "category": "川西南山谷圈"
   },
   {
     "id": "hbe_banquet.119",
-    "title": "互市赶集，不能只赶账",
+    "title": "互市的尺度",
     "category": "川西南山谷圈"
   },
   {
     "id": "hbe_banquet.120",
-    "title": "祖传路权也要登记",
+    "title": "共用的山路",
     "category": "川西南山谷圈"
   },
   {
     "id": "hbe_banquet.200",
-    "title": "锦官城想把主持做到世袭",
+    "title": "锦城的公治",
     "category": "成都锦官公国"
   },
   {
     "id": "hbe_banquet.201",
-    "title": "汉州的渠首签押",
+    "title": "汉州水口",
     "category": "汉州侯国"
   },
   {
     "id": "hbe_banquet.202",
-    "title": "彭州山门留座",
+    "title": "彭州山门",
     "category": "彭州侯国"
   },
   {
     "id": "hbe_banquet.203",
-    "title": "邛州的新瓷旧账",
+    "title": "邛州窑火",
     "category": "邛州侯国"
   },
   {
     "id": "hbe_banquet.204",
-    "title": "眉州文章压过账本",
+    "title": "眉州议疏",
     "category": "眉州侯国"
   },
   {
     "id": "hbe_banquet.205",
-    "title": "嘉定山门拒绝空签",
+    "title": "嘉定的见证",
     "category": "嘉定山门侯国"
   },
   {
     "id": "hbe_banquet.206",
-    "title": "叙州把盐引摆上主桌",
+    "title": "叙州盐券",
     "category": "叙州盐酒商邦"
   },
   {
     "id": "hbe_banquet.207",
-    "title": "泸州的宴席验收法",
+    "title": "泸州采办",
     "category": "泸州侯国"
   },
   {
     "id": "hbe_banquet.208",
-    "title": "长宁竹契不怕水",
+    "title": "长宁竹契",
     "category": "长宁侯国"
   },
   {
     "id": "hbe_banquet.209",
-    "title": "昌州石刻永不撤回",
+    "title": "昌州刻券",
     "category": "昌州侯国"
   },
   {
     "id": "hbe_banquet.210",
-    "title": "山城升降不是座次",
+    "title": "山城转仓",
     "category": "重庆山城公国"
   },
   {
     "id": "hbe_banquet.211",
-    "title": "涪州渡牌该认哪一岸",
+    "title": "两岸渡牌",
     "category": "涪州侯国"
   },
   {
     "id": "hbe_banquet.212",
-    "title": "合州三江，三份收据",
+    "title": "合州水口",
     "category": "合州侯国"
   },
   {
     "id": "hbe_banquet.213",
-    "title": "夔州峡口不收空气钱",
+    "title": "峡口护运",
     "category": "夔州侯国"
   },
   {
     "id": "hbe_banquet.214",
-    "title": "酉阳的图册画得太直",
+    "title": "酉阳的山程",
     "category": "酉阳侯国"
   },
   {
     "id": "hbe_banquet.215",
-    "title": "忠州忠于哪本账",
+    "title": "忠州的届次",
     "category": "忠州侯国"
   },
   {
     "id": "hbe_banquet.216",
-    "title": "保宁选票只盖一次",
+    "title": "保宁的印信",
     "category": "保宁蜀道侯国"
   },
   {
     "id": "hbe_banquet.217",
-    "title": "巴州关印有磨损",
+    "title": "巴州关役",
     "category": "巴州侯国"
   },
   {
     "id": "hbe_banquet.218",
-    "title": "广元关口的回程账",
+    "title": "广元回程",
     "category": "广元侯国"
   },
   {
     "id": "hbe_banquet.219",
-    "title": "剑州的路，比奏章短",
+    "title": "剑州栈路",
     "category": "剑州侯国"
   },
   {
     "id": "hbe_banquet.220",
-    "title": "龙安山货折什么价",
+    "title": "龙安山货",
     "category": "龙安侯国"
   },
   {
     "id": "hbe_banquet.221",
-    "title": "达州驿使带了两份餐票",
+    "title": "达州驿粮",
     "category": "达州侯国"
   },
   {
     "id": "hbe_banquet.222",
-    "title": "顺庆把船和马写在一起",
+    "title": "顺庆接运",
     "category": "顺庆侯国"
   },
   {
     "id": "hbe_banquet.223",
-    "title": "简州给合同加了封面",
+    "title": "简州目录",
     "category": "简州侯国"
   },
   {
     "id": "hbe_banquet.224",
-    "title": "遂宁义仓也收验收单",
+    "title": "遂宁出仓",
     "category": "遂宁义仓侯国"
   },
   {
     "id": "hbe_banquet.225",
-    "title": "潼川的官印带编号",
+    "title": "潼川印号",
     "category": "潼川侯国"
   },
   {
     "id": "hbe_banquet.226",
-    "title": "广安来了一车旧凭证",
+    "title": "广安旧粮券",
     "category": "广安侯国"
   },
   {
     "id": "hbe_banquet.227",
-    "title": "雅州马票盖在茶票上",
+    "title": "雅州茶马券",
     "category": "雅州茶马侯国"
   },
   {
     "id": "hbe_banquet.228",
-    "title": "茂州山门轮值名单",
+    "title": "茂州轮值",
     "category": "茂州侯国"
   },
   {
     "id": "hbe_banquet.229",
-    "title": "松潘的长路不止一行",
+    "title": "松潘长路",
     "category": "松潘侯国"
   },
   {
     "id": "hbe_banquet.230",
-    "title": "盐源互市用旧尺",
+    "title": "盐源旧尺",
     "category": "盐源侯国"
   },
   {
     "id": "hbe_banquet.231",
-    "title": "德昌的谷口轮签",
+    "title": "德昌轮签",
     "category": "德昌侯国"
   },
   {
     "id": "hbe_banquet.232",
-    "title": "黎州路权先问同行人",
+    "title": "黎州通行约",
     "category": "黎州侯国"
   },
   {
     "id": "hbe_banquet.233",
-    "title": "马湖渡船没有纸上那么大",
+    "title": "马湖渡额",
     "category": "马湖侯国"
   },
   {
     "id": "hbe_banquet.234",
-    "title": "建昌共治，不是共用一把印",
+    "title": "建昌诸谷议事",
     "category": "建昌共治侯国"
   },
   {
     "id": "hbe_banquet.235",
-    "title": "永宁想把互市开在谷口",
+    "title": "永宁互市场",
     "category": "永宁侯国"
   },
   {
     "id": "hbe_banquet.30",
-    "title": "茶会主持带来自己的椅子",
+    "title": "渠旁与堂上",
     "category": "generational"
   },
   {
     "id": "hbe_banquet.31",
-    "title": "祖传选票，概不赊欠",
+    "title": "先人的签押",
     "category": "generational"
   },
   {
     "id": "hbe_banquet.32",
-    "title": "皇帝换了，菜单没换",
+    "title": "继任者的库册",
     "category": "generational"
   },
   {
     "id": "hbe_banquet.33",
-    "title": "敕书装了新封皮",
+    "title": "敕书重录",
     "category": "generational"
   },
   {
     "id": "hbe_banquet.34",
-    "title": "七圈地图少了一个圈",
+    "title": "图册上的山路",
     "category": "generational"
   },
   {
     "id": "hbe_banquet.35",
-    "title": "百年合同的第一页",
+    "title": "百年约首",
     "category": "generational"
   },
   {
     "id": "hbe_banquet.36",
-    "title": "一百二十年，茶还要续",
+    "title": "续约之年",
     "category": "generational"
   }
 ]

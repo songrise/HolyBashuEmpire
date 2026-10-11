@@ -1,4 +1,4 @@
-# 神圣巴蜀帝国 v0.02
+# 神圣巴蜀帝国 v0.1
 
 独立 EU5 模组，使用原生 `.metadata/metadata.json`，可单独加载并作为创意工坊上传目录。当前结构是**神圣巴蜀帝国 → 七个帝国圈 → 三十六个可选府州诸侯国**，共同统治一百六十四个地块。当前安装版日志报告 EU5 1.4.0，元数据匹配 1.4.*。
 
@@ -22,6 +22,8 @@
 - 35 项地区阶段验收任务，按 1337、1352、1372、1397、1437 年推进；7 类三年交付、五年续办事业与地区履约储备。
 - 川南盐引贷款、债务上限、年度利息与还款；锅气、义气及帝国茶会的资源取舍。
 - 96 个事件：原有 17 个加新增 79 个，含 36 国专属、21 个地区事件、局势结算和百年章程议决。循环经营在 1457 年后继续。
+- 全部 96 个事件正文扩写为巴蜀历史叙事，去掉神罗笑梗，融入都江堰、蜀锦、卓筒井、蜀道、钓鱼城与雅州茶马贸易等背景。账本事件保留动态数值摘录。
+- 43 个机制概念与 12 个历史概念接入原生悬停指南：事件、决议和局势内的着色术语可直接查看用途、获取方式、时间门槛与关联规则。史料出处见 `docs/player_guide_v01.md`。
 - 原生局势“巴蜀大开席”：1337 年 10 月 1 日启动，全部帝国成员参加；三年一届分账，共锅、分锅、账房三种立场，两类跨圈工程、实际合同交付、争席危机，以及 1437 年以后七圈表决百年章程。
 - 64 个独立科技图标，由 ImageGen 生成 8 张 4×2 精灵图后拆分；10 个特色点数图标和 1 个局势图标。科技入口仍为研究决议。
 
@@ -29,8 +31,13 @@
 
 ## 美术
 
-事件使用原版通用室内场景作为插画占位，不打包原版插画。科技、特色点数与局势图标已换为透明背景的手绘器物；其他决议与局势大插画仍保留占位。旗帜引用游戏原生纹章构件，由游戏渲染布面，发行包只含新作的隶书简称遮罩。工坊封面位于 `.metadata/thumbnail.png`。
-源图、节点顺序与提示词见 `assets/icon_generation.json`；机械裁切、缩放和 DDS 导出由 `tools/build_icon_assets.py` 完成。
+96 个事件按题材共用 12 幅新绘插画，使用柔和色块、可见笔触与简化细节的 EU5 协调风格。帝国和七圈各有专属组织徽标，八张组织面板按帝国议事堂或地区场景配图。局势“大开席”使用专用大厅大图，朱红、金色和旗帜适度提高饱和度。
+
+70 个非科技决议各有独立配图，由七张 5×2 透明精灵图拆分，覆盖阶段验收、公共事业、贷款、议事和局势行动；加上此前 64 个科技图标，全部 134 个决议均已配图。10 个特色点数图标与局势小图标保留。
+
+事件场景接入原生插画数据库，并保留原生人物层、照明与镜头；不打包原版插画。旗帜引用游戏原生纹章构件，由游戏渲染布面，发行包只含新作的隶书简称遮罩。当前美术占位剩余工坊封面 `.metadata/thumbnail.png`。
+
+源图、节点顺序、映射与实际提示词见 `assets/icon_generation.json` 和 `assets/full_art_generation.json`；裁切、缩放与 DDS 导出由 `tools/build_icon_assets.py` 和 `tools/build_full_art_assets.py` 完成。
 
 ## 创意工坊
 
@@ -38,13 +45,13 @@
 
 ## 验证与源码
 
-`docs/validation_v002.json` 是 409 项结构与资源检查报告。独立观察者开局已推进到 1338 年，存档验证局势于 1337.10.1 启动、原始 36 国全部注册；见 `docs/runtime_v002.json`。尚未完成百年平衡测试和最终 GUI 的实机截图验收。
+当前结构与美术资源检查见 `docs/validation_v01.json`，引擎观察者验证见 `docs/runtime_v01.json`。v0.02 的 1338 年存档已验证局势于 1337.10.1 启动、原始 36 国全部注册；历史报告保留在 `docs/runtime_v002.json`。尚未完成百年平衡测试和最终 GUI 的实机截图验收。
 
 源码保存在 `C:\github\holy-bashu-empire`。重新生成：
 
 ```powershell
 python tools/build_mod.py --game-dir 'D:\SteamLibrary\steamapps\common\Europa Universalis V'
-python tools/validate_mod.py --game-dir 'D:\SteamLibrary\steamapps\common\Europa Universalis V' --report docs/validation_v002.json
+python tools/validate_mod.py --game-dir 'D:\SteamLibrary\steamapps\common\Europa Universalis V' --report docs/validation_v01.json
 ```
 
 `data/countries_v001.csv` 给出实际 36 国，`data/locations_v001.csv` 给出 164 个地块的归属。旧 `prince_roster_draft.csv` 保留逐地块候选资料；164 国方案已被当前 36 国开局替代。

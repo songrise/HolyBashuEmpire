@@ -1,7 +1,7 @@
 ﻿namespace = hbe
 hbe.100 = {
     type = country_event title = hbe.100.title desc = hbe.100.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.100.a trigger = { var:hbe_water >= 10 } change_variable = { name = hbe_water subtract = 10 } hbe_add_credit = yes }
@@ -10,7 +10,7 @@ hbe.100 = {
 }
 hbe.101 = {
     type = country_event title = hbe.101.title desc = hbe.101.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_salt }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.101.a trigger = { var:hbe_salt >= 10 } change_variable = { name = hbe_salt subtract = 10 } hbe_add_credit = yes }
@@ -19,7 +19,7 @@ hbe.101 = {
 }
 hbe.102 = {
     type = country_event title = hbe.102.title desc = hbe.102.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.102.a trigger = { var:hbe_river >= 10 } change_variable = { name = hbe_river subtract = 10 } hbe_add_credit = yes }
@@ -28,7 +28,7 @@ hbe.102 = {
 }
 hbe.103 = {
     type = country_event title = hbe.103.title desc = hbe.103.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.103.a trigger = { var:hbe_roads >= 10 } change_variable = { name = hbe_roads subtract = 10 } hbe_add_credit = yes }
@@ -37,7 +37,7 @@ hbe.103 = {
 }
 hbe.104 = {
     type = country_event title = hbe.104.title desc = hbe.104.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_grain }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.104.a trigger = { var:hbe_grain >= 10 } change_variable = { name = hbe_grain subtract = 10 } hbe_add_credit = yes }
@@ -46,7 +46,7 @@ hbe.104 = {
 }
 hbe.105 = {
     type = country_event title = hbe.105.title desc = hbe.105.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_tea }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.105.a trigger = { var:hbe_tea >= 10 } change_variable = { name = hbe_tea subtract = 10 } hbe_add_credit = yes }
@@ -55,25 +55,25 @@ hbe.105 = {
 }
 hbe.106 = {
     type = country_event title = hbe.106.title desc = hbe.106.desc outcome = neutral
-    illustration_tags = { 10 = regular 10 = interior }
+    illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
     option = { name = hbe.106.a trigger = { var:hbe_valleys >= 10 } change_variable = { name = hbe_valleys subtract = 10 } hbe_add_credit = yes }
     option = { name = hbe.106.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_valleys add = 5 } hbe_add_credit = yes }
     option = { name = hbe.106.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
 }
-hbe.1 = { type = country_event title = hbe.1.title desc = hbe.1.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.1.a } }
-hbe.2 = { type = country_event title = hbe.2.title desc = hbe.2.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.2.a } }
-hbe.3 = { type = country_event title = hbe.3.title desc = hbe.3.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.3.a } }
-hbe.4 = { type = country_event title = hbe.4.title desc = hbe.4.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.4.a } }
-hbe.10 = { type = country_event title = hbe.10.title desc = hbe.10.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.10.a } }
-hbe.11 = { type = country_event title = hbe.11.title desc = hbe.11.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.11.a } }
-hbe.12 = { type = country_event title = hbe.12.title desc = hbe.12.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.12.a } }
-hbe.13 = { type = country_event title = hbe.13.title desc = hbe.13.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.13.a } }
-hbe.14 = { type = country_event title = hbe.14.title desc = hbe.14.desc outcome = neutral illustration_tags = { 10 = regular 10 = interior } option = { name = hbe.14.a } }
+hbe.1 = { type = country_event title = hbe.1.title desc = hbe.1.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.1.a } }
+hbe.2 = { type = country_event title = hbe.2.title desc = hbe.2.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_academy } option = { name = hbe.2.a } }
+hbe.3 = { type = country_event title = hbe.3.title desc = hbe.3.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_ledger } option = { name = hbe.3.a } }
+hbe.4 = { type = country_event title = hbe.4.title desc = hbe.4.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_ledger } option = { name = hbe.4.a } }
+hbe.10 = { type = country_event title = hbe.10.title desc = hbe.10.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.10.a } }
+hbe.11 = { type = country_event title = hbe.11.title desc = hbe.11.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.11.a } }
+hbe.12 = { type = country_event title = hbe.12.title desc = hbe.12.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.12.a } }
+hbe.13 = { type = country_event title = hbe.13.title desc = hbe.13.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_tea } option = { name = hbe.13.a } }
+hbe.14 = { type = country_event title = hbe.14.title desc = hbe.14.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.14.a } }
 hbe.5 = {
         type = country_event title = hbe.5.title desc = hbe.5.desc outcome = neutral
-        illustration_tags = { 10 = regular 10 = interior }
+        illustration_tags = { 1000 = hbe_event_art_banquet }
         option = { name = hbe.5.a trigger = { international_organization:hbe_empire = { var:hbe_guoqi >= 10 } }
             international_organization:hbe_empire = { change_variable = { name = hbe_guoqi subtract = 10 }
                 every_international_organization_member = { change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes } } }

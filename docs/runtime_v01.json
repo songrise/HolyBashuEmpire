@@ -1,0 +1,236 @@
+{
+  "version": "0.1",
+  "save_date": "1338.1.1",
+  "situation_active": true,
+  "situation_start": "1337.10.1",
+  "registered_original_princes": 36,
+  "countries": {
+    "BAB": {
+      "id": 1209,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAE": {
+      "id": 1210,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAF": {
+      "id": 1211,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAJ": {
+      "id": 1212,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAL": {
+      "id": 1213,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAO": {
+      "id": 1214,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAP": {
+      "id": 1215,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAQ": {
+      "id": 1216,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAW": {
+      "id": 1217,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAX": {
+      "id": 1218,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BAZ": {
+      "id": 1219,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBB": {
+      "id": 1220,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBC": {
+      "id": 1221,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBE": {
+      "id": 1222,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBF": {
+      "id": 1223,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBH": {
+      "id": 1224,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBI": {
+      "id": 1225,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBJ": {
+      "id": 1226,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBL": {
+      "id": 1227,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBM": {
+      "id": 1228,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBN": {
+      "id": 1229,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBO": {
+      "id": 1230,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBP": {
+      "id": 1231,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBQ": {
+      "id": 1232,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBR": {
+      "id": 1233,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBS": {
+      "id": 1234,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBT": {
+      "id": 1235,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBU": {
+      "id": 1236,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBV": {
+      "id": 1237,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBW": {
+      "id": 1238,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBX": {
+      "id": 1239,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBY": {
+      "id": 1240,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BBZ": {
+      "id": 1241,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BCA": {
+      "id": 1242,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BCB": {
+      "id": 1243,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    },
+    "BCC": {
+      "id": 1244,
+      "joined": true,
+      "initialized": true,
+      "stance": true
+    }
+  },
+  "save_path": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\eu5-v01-test\\save games\\scheduled_save_DESKTOP-L1LK2TH_1338_01_01.eu5",
+  "save_modified": 1791718764.0325487,
+  "scope": "Final v0.1 isolated observer run to 1338; native artwork/concept definitions loaded without new custom parse errors. Existing localization-only hbe_pot_display warning retained. GUI hover appearance and 100-year balance remain untested.",
+  "engine_exit_code": 0,
+  "source_manifest_sha256": "2a872055403af83b60a3d0c2d3655be020f2a4b81a9a6231b634a1593c4f39a3",
+  "custom_diagnostic_lines": [
+    "[19:38:27][jomini_effect.cpp:1160]: Variable 'hbe_pot_display' is set but is never used. Note that use in localization doesn't count due to technical limitations. Use in unused scripted triggers and effects also does not count. Check for typos."
+  ],
+  "new_art_or_concept_parse_errors": 0,
+  "hover_concepts": 55,
+  "event_narratives": 96
+}

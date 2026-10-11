@@ -1,0 +1,1614 @@
+{
+  "mode": "built-in image_gen",
+  "event_backgrounds": [
+    {
+      "kind": "event_background",
+      "key": "council",
+      "image": "main_menu/gfx/interface/hbe/events/council.dds",
+      "sha256": "2052c370d389951246f66ab65ba55d5c731fbb005bfad89ec7666e3cd4986f59"
+    },
+    {
+      "kind": "event_background",
+      "key": "banquet",
+      "image": "main_menu/gfx/interface/hbe/events/banquet.dds",
+      "sha256": "39e93b6454031013f2c48ae193ee5518e618c6e9bdb5d0e7bec1a273b52aecf7"
+    },
+    {
+      "kind": "event_background",
+      "key": "ledger",
+      "image": "main_menu/gfx/interface/hbe/events/ledger.dds",
+      "sha256": "1a7e6c486242a905e1cc82ba6db997756d2719602ab6865ac7c54bae9d6f6d01"
+    },
+    {
+      "kind": "event_background",
+      "key": "water",
+      "image": "main_menu/gfx/interface/hbe/events/water.dds",
+      "sha256": "63e3d231230116b2c683a3022267f34d4b613d56f248bdac3f69ed3b38a23586"
+    },
+    {
+      "kind": "event_background",
+      "key": "salt",
+      "image": "main_menu/gfx/interface/hbe/events/salt.dds",
+      "sha256": "7e4e0707a1329b52bece524c289a0a262c6a3e8b9b2b153a6b92dd0ef94c7b54"
+    },
+    {
+      "kind": "event_background",
+      "key": "river",
+      "image": "main_menu/gfx/interface/hbe/events/river.dds",
+      "sha256": "2e7046180ae73d23b3df23e8bbd08f2c37187068ba3c6ee64cd890f0d261aec9"
+    },
+    {
+      "kind": "event_background",
+      "key": "roads",
+      "image": "main_menu/gfx/interface/hbe/events/roads.dds",
+      "sha256": "a882a704915a23e7434f8715ba4a68b26c82098b1600772e58d8f64e57938e8d"
+    },
+    {
+      "kind": "event_background",
+      "key": "grain",
+      "image": "main_menu/gfx/interface/hbe/events/grain.dds",
+      "sha256": "2523d791037f4a576da6707d1b322e6606fcc1e9fbd0a60f74df25a9b4addd31"
+    },
+    {
+      "kind": "event_background",
+      "key": "tea",
+      "image": "main_menu/gfx/interface/hbe/events/tea.dds",
+      "sha256": "ef3f71b61729d2bfc432d34230af5f2ef4ba9c7f8e86c72febfe5398c5239865"
+    },
+    {
+      "kind": "event_background",
+      "key": "valleys",
+      "image": "main_menu/gfx/interface/hbe/events/valleys.dds",
+      "sha256": "1e29e63563b7cb3063b49bc358ff026ddedec0ff4479371c1df9cb366bbe5ad1"
+    },
+    {
+      "kind": "event_background",
+      "key": "academy",
+      "image": "main_menu/gfx/interface/hbe/events/academy.dds",
+      "sha256": "67a35b43e40507ef9587b4a0d404a2bf17a29c1bf04e922ad3c60d13582271c9"
+    },
+    {
+      "kind": "event_background",
+      "key": "crisis",
+      "image": "main_menu/gfx/interface/hbe/events/crisis.dds",
+      "sha256": "3d24e470f55c0824a702c0f04e821c006947db133341a10f4a71c40f9d002afd"
+    }
+  ],
+  "event_mapping": [
+    {
+      "id": "hbe_banquet.1",
+      "title": "敕书与会盟",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.2",
+      "title": "本届事业开账",
+      "scene": "banquet"
+    },
+    {
+      "id": "hbe_banquet.3",
+      "title": "凭据与实物",
+      "scene": "ledger"
+    },
+    {
+      "id": "hbe_banquet.4",
+      "title": "同流而至",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.5",
+      "title": "未能结清",
+      "scene": "crisis"
+    },
+    {
+      "id": "hbe_banquet.6",
+      "title": "签押未兑",
+      "scene": "ledger"
+    },
+    {
+      "id": "hbe_banquet.7",
+      "title": "会盟总册",
+      "scene": "ledger"
+    },
+    {
+      "id": "hbe_banquet.12",
+      "title": "分摊之议",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.13",
+      "title": "故治与新主",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.14",
+      "title": "公治之争",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.15",
+      "title": "长约待议",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.20",
+      "title": "章程呈议",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.21",
+      "title": "新约成文",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.22",
+      "title": "议而未定",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.23",
+      "title": "盟中争议",
+      "scene": "crisis"
+    },
+    {
+      "id": "hbe_banquet.100",
+      "title": "上下游之诉",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.101",
+      "title": "官学与诸府",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.102",
+      "title": "堰上岁修",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.103",
+      "title": "盐利与公款",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.104",
+      "title": "引券重押",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.105",
+      "title": "灶户旧欠",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.106",
+      "title": "江岸的分担",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.107",
+      "title": "过滩之费",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.108",
+      "title": "新主与船牌",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.109",
+      "title": "轮役的免书",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.110",
+      "title": "驿簿虚数",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.111",
+      "title": "关印与守备",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.112",
+      "title": "赈粮名册",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.113",
+      "title": "界田旧契",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.114",
+      "title": "丰年修仓",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.115",
+      "title": "沿途验引",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.116",
+      "title": "山程损耗",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.117",
+      "title": "调停之所",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.118",
+      "title": "约文的两种解读",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.119",
+      "title": "互市的尺度",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.120",
+      "title": "共用的山路",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.200",
+      "title": "锦城的公治",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.201",
+      "title": "汉州水口",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.202",
+      "title": "彭州山门",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.203",
+      "title": "邛州窑火",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.204",
+      "title": "眉州议疏",
+      "scene": "water"
+    },
+    {
+      "id": "hbe_banquet.205",
+      "title": "嘉定的见证",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.206",
+      "title": "叙州盐券",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.207",
+      "title": "泸州采办",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.208",
+      "title": "长宁竹契",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe_banquet.209",
+      "title": "昌州刻券",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.210",
+      "title": "山城转仓",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.211",
+      "title": "两岸渡牌",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.212",
+      "title": "合州水口",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.213",
+      "title": "峡口护运",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.214",
+      "title": "酉阳的山程",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.215",
+      "title": "忠州的届次",
+      "scene": "river"
+    },
+    {
+      "id": "hbe_banquet.216",
+      "title": "保宁的印信",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.217",
+      "title": "巴州关役",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.218",
+      "title": "广元回程",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.219",
+      "title": "剑州栈路",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.220",
+      "title": "龙安山货",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.221",
+      "title": "达州驿粮",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.222",
+      "title": "顺庆接运",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.223",
+      "title": "简州目录",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.224",
+      "title": "遂宁出仓",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.225",
+      "title": "潼川印号",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.226",
+      "title": "广安旧粮券",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe_banquet.227",
+      "title": "雅州茶马券",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.228",
+      "title": "茂州轮值",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.229",
+      "title": "松潘长路",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.230",
+      "title": "盐源旧尺",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.231",
+      "title": "德昌轮签",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.232",
+      "title": "黎州通行约",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.233",
+      "title": "马湖渡额",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.234",
+      "title": "建昌诸谷议事",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.235",
+      "title": "永宁互市场",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe_banquet.30",
+      "title": "渠旁与堂上",
+      "scene": "banquet"
+    },
+    {
+      "id": "hbe_banquet.31",
+      "title": "先人的签押",
+      "scene": "ledger"
+    },
+    {
+      "id": "hbe_banquet.32",
+      "title": "继任者的库册",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.33",
+      "title": "敕书重录",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe_banquet.34",
+      "title": "图册上的山路",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe_banquet.35",
+      "title": "百年约首",
+      "scene": "council"
+    },
+    {
+      "id": "hbe_banquet.36",
+      "title": "续约之年",
+      "scene": "council"
+    },
+    {
+      "id": "hbe.100",
+      "title": "hbe.100",
+      "scene": "water"
+    },
+    {
+      "id": "hbe.101",
+      "title": "hbe.101",
+      "scene": "salt"
+    },
+    {
+      "id": "hbe.102",
+      "title": "hbe.102",
+      "scene": "river"
+    },
+    {
+      "id": "hbe.103",
+      "title": "hbe.103",
+      "scene": "roads"
+    },
+    {
+      "id": "hbe.104",
+      "title": "hbe.104",
+      "scene": "grain"
+    },
+    {
+      "id": "hbe.105",
+      "title": "hbe.105",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe.106",
+      "title": "hbe.106",
+      "scene": "valleys"
+    },
+    {
+      "id": "hbe.1",
+      "title": "hbe.1",
+      "scene": "council"
+    },
+    {
+      "id": "hbe.2",
+      "title": "hbe.2",
+      "scene": "academy"
+    },
+    {
+      "id": "hbe.3",
+      "title": "hbe.3",
+      "scene": "ledger"
+    },
+    {
+      "id": "hbe.4",
+      "title": "hbe.4",
+      "scene": "ledger"
+    },
+    {
+      "id": "hbe.10",
+      "title": "hbe.10",
+      "scene": "council"
+    },
+    {
+      "id": "hbe.11",
+      "title": "hbe.11",
+      "scene": "council"
+    },
+    {
+      "id": "hbe.12",
+      "title": "hbe.12",
+      "scene": "council"
+    },
+    {
+      "id": "hbe.13",
+      "title": "hbe.13",
+      "scene": "tea"
+    },
+    {
+      "id": "hbe.14",
+      "title": "hbe.14",
+      "scene": "council"
+    },
+    {
+      "id": "hbe.5",
+      "title": "hbe.5",
+      "scene": "banquet"
+    }
+  ],
+  "organizations": [
+    {
+      "key": "hbe_empire",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_empire.dds",
+      "icon_sha256": "ea208c80690f0fea6850eb4943114c52881f31eeab98378b4df5e42eb4dc680d",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_empire.dds",
+      "panel_sha256": "2052c370d389951246f66ab65ba55d5c731fbb005bfad89ec7666e3cd4986f59",
+      "shared_scene": "council"
+    },
+    {
+      "key": "hbe_circle_chengdu_plain",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_chengdu_plain.dds",
+      "icon_sha256": "311874cccbfbf074dbda1aa965a96b95cc4ef28b939542c9168d679d20134388",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_chengdu_plain.dds",
+      "panel_sha256": "63e3d231230116b2c683a3022267f34d4b613d56f248bdac3f69ed3b38a23586",
+      "shared_scene": "water"
+    },
+    {
+      "key": "hbe_circle_southern_salt_wine",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_southern_salt_wine.dds",
+      "icon_sha256": "b7c093e254a5148585225343bce6c12db1497848aaca2d98538025b376f8e020",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southern_salt_wine.dds",
+      "panel_sha256": "7e4e0707a1329b52bece524c289a0a262c6a3e8b9b2b153a6b92dd0ef94c7b54",
+      "shared_scene": "salt"
+    },
+    {
+      "key": "hbe_circle_eastern_river",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_eastern_river.dds",
+      "icon_sha256": "fb9a9d07f2f964de3dec8a8a55a724971da15aec894ced9b8e044d6a3bfeef62",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_eastern_river.dds",
+      "panel_sha256": "2e7046180ae73d23b3df23e8bbd08f2c37187068ba3c6ee64cd890f0d261aec9",
+      "shared_scene": "river"
+    },
+    {
+      "key": "hbe_circle_northern_shudao",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_northern_shudao.dds",
+      "icon_sha256": "044a1659c373354fc5588cf6649547b63949f30653b673713b9cf5b0dd72910f",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_northern_shudao.dds",
+      "panel_sha256": "a882a704915a23e7434f8715ba4a68b26c82098b1600772e58d8f64e57938e8d",
+      "shared_scene": "roads"
+    },
+    {
+      "key": "hbe_circle_central_hills",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_central_hills.dds",
+      "icon_sha256": "79fbfc08d19cff1a601b95f8788b3be1c7386d134289670fc2d804dfd1d6af02",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_central_hills.dds",
+      "panel_sha256": "2523d791037f4a576da6707d1b322e6606fcc1e9fbd0a60f74df25a9b4addd31",
+      "shared_scene": "grain"
+    },
+    {
+      "key": "hbe_circle_western_tea_horse",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_western_tea_horse.dds",
+      "icon_sha256": "0b48460f6ce83192b8b74cfcf25104003f4040fb7f1f11385c20ec101f9b356c",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_western_tea_horse.dds",
+      "panel_sha256": "ef3f71b61729d2bfc432d34230af5f2ef4ba9c7f8e86c72febfe5398c5239865",
+      "shared_scene": "tea"
+    },
+    {
+      "key": "hbe_circle_southwestern_valleys",
+      "icon": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_southwestern_valleys.dds",
+      "icon_sha256": "e2e6b74532f63f2a3311088dd66800eddd778406cca21f45201e677e5d98fed7",
+      "panel": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southwestern_valleys.dds",
+      "panel_sha256": "1e29e63563b7cb3063b49bc358ff026ddedec0ff4479371c1df9cb366bbe5ad1",
+      "shared_scene": "valleys"
+    }
+  ],
+  "situation_panel": {
+    "image": "main_menu/gfx/interface/hbe/panels/hbe_banquet.dds",
+    "sha256": "dc9663b399b7e8f46c4bdaa213795e6c214a93b4f75d979eb54e4ddfaae1cf61"
+  },
+  "decision_atlases": 7,
+  "decision_pictures": [
+    {
+      "key": "hbe_stance_change_1",
+      "name": "转向共锅派",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds",
+      "sha256": "8b33f2f2399b887b549407d01173d0fefbd749ac89c250bf4f27c9c44000ee9e",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_stance_change_2",
+      "name": "转向分锅派",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds",
+      "sha256": "a156d46bbbcfb88ec55a5f5839516de8d7ac29eec4980ee00a304c64bd9a7e29",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_stance_change_3",
+      "name": "转向账房派",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds",
+      "sha256": "1af568852acd4b449c5abba30936772c436b1c72cbe892c05978b1f4a7c525b9",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_project_fund",
+      "name": "分账会：出资三金",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds",
+      "sha256": "3b3879965281c296ee029187cc703cbaa874d8849c5c701d0ead83dd20317003",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_project_pledge",
+      "name": "分账会：先认账，届中付款",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds",
+      "sha256": "26409cb957882184d980223cdd96186d0c6e131d455b47d2815ddbdaca2708fa",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_project_reconsider",
+      "name": "分账会：撤回暂缓意见",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds",
+      "sha256": "d62ad00c371d600f6715a20fd9ebaf2be1073eaa5e71c2bfb80467ee009f1170",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_project_select_1",
+      "name": "本届工程：盐船共账",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds",
+      "sha256": "19bbbe1a8f11083ece5faf3213a77f5a6d0fc0206786f4cd1fed865a4f791f3c",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_project_select_2",
+      "name": "本届工程：茶马过蜀道",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds",
+      "sha256": "07e74de64e03b0c5e6818f10b7cb2cf216182d2bc3fe5fb474fd0d8c5fed6921",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_role_chengdu_plain",
+      "name": "本届交付：水粮担保",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds",
+      "sha256": "db038518dfd8d2f4b1d12e0ed34bf4e2af04b9f41a0d421eb41864d43930b423",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_role_southern_salt_wine",
+      "name": "本届交付：盐引承销",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds",
+      "sha256": "96c57c6420e7aba83958c62af0e29093884d2aa675307bab71a106f73cff9537",
+      "atlas": "assets/decision_atlases/decisions_1.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    },
+    {
+      "key": "hbe_propose_charter_2",
+      "name": "百年章程：万国茶会",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds",
+      "sha256": "63f36faefb3bd544d5fb274b8e3b0c1f7b7369ed3856ae8fd098acc734884c59",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_ballot_vote_2",
+      "name": "章程授权：支持万国茶会",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds",
+      "sha256": "114ac129e2a2776945c882bc36d6ca4196f2f4bbb35536e7279c6f957bec1b62",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_propose_charter_3",
+      "name": "百年章程：各吃各的，账照样交",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds",
+      "sha256": "1fda20e41330072c526375fcce014d6a985a08dd9e465c862cefca25529e3c59",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_ballot_vote_3",
+      "name": "章程授权：支持各吃各的，账照样交",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds",
+      "sha256": "3c52c2a4b2bff368869fd11b91053dba8c8bb2305289dc58843c5be16028a838",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_service_chengdu_plain",
+      "name": "修渠分水与官学讲会",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds",
+      "sha256": "7b85add663e05e03c3e7a4374b1355a9f00ce580c15a6ef4ca1525bdd35b075c",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_chengdu_plain_1",
+      "name": "成都平原圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds",
+      "sha256": "24f5117a4ac475738dccacc02357b3c53cf347daf6d812a2bcf4bc07897a1567",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_chengdu_plain_2",
+      "name": "成都平原圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds",
+      "sha256": "9630e67a6e92594c3c96168f02e61725ab66d86dfffdd0e4cbf4a2b102eb4bee",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_chengdu_plain_3",
+      "name": "成都平原圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds",
+      "sha256": "e0d1deec8e6481a2a3047e68a7721935eede1d39d8607b13623d909aeb8349ac",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_chengdu_plain_4",
+      "name": "成都平原圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds",
+      "sha256": "ad1c56339911fb995a803760a28979a09f4de5742af2e4e38df0a82f116af1c4",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_chengdu_plain_5",
+      "name": "成都平原圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds",
+      "sha256": "ca7324df24392dc13f8ef8e36c1219d346b9cccf01727e9db0e860ca953e5ec4",
+      "atlas": "assets/decision_atlases/decisions_3.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    },
+    {
+      "key": "hbe_service_southern_salt_wine",
+      "name": "井灶公账与宴席采办",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds",
+      "sha256": "daf7eea27e0024da23d102481897fe4671bc08642b50f8be5f58571a06b03483",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southern_salt_wine_1",
+      "name": "川南盐酒圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds",
+      "sha256": "3e46b8659041fe94e6b2dd96bcb4a54a70b73800c2ed281fb46a324b83d1b179",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southern_salt_wine_2",
+      "name": "川南盐酒圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds",
+      "sha256": "6593f6397187c2aff4e5b4d77fda8177647c4a1f38f0c509f9b082504d0a200d",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southern_salt_wine_3",
+      "name": "川南盐酒圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds",
+      "sha256": "bd9927e3f0e73339896e99df44ec450f58cb7b07bce598a79ea7873052354163",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southern_salt_wine_4",
+      "name": "川南盐酒圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds",
+      "sha256": "1eea71ba386e5875af3846debc563ebbdd7dca0ca1d4e4959c5bbf79a5d4c5af",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southern_salt_wine_5",
+      "name": "川南盐酒圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds",
+      "sha256": "b3d46a8eedce0215636318d25504a6e1f89225964a968901b0c22082286de055",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_service_eastern_river",
+      "name": "江岸转运与河防巡察",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds",
+      "sha256": "9f8559c28ccbee575905e6fba952421a9a6462618c8550eaace39f89d60dedca",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_eastern_river_1",
+      "name": "重庆川东圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds",
+      "sha256": "ae9e0f802e84e251164ab2989a9e619a12bf65e4eaffa31864a1eac8d5a42a85",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_eastern_river_2",
+      "name": "重庆川东圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds",
+      "sha256": "07837909f44c481f017c59641cd33112130551bc50cc36f29acacd7618a4762f",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_eastern_river_3",
+      "name": "重庆川东圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds",
+      "sha256": "166cac5c9fba6ca5a4ab47387c1dd0f356ab65da119559b09a8ab65cb3a00b77",
+      "atlas": "assets/decision_atlases/decisions_4.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    },
+    {
+      "key": "hbe_role_eastern_river",
+      "name": "本届交付：江船转运",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds",
+      "sha256": "1a462aa5234e5adc356a7901dd747ac5bf4c0a2c1900d42c653413dc33f858b8",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_role_northern_shudao",
+      "name": "本届交付：驿路轮戍",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds",
+      "sha256": "b8119ff3460805c2afc2a6b842105b3f8e47aac281a93e2399cf7e1afbf1abcb",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_role_central_hills",
+      "name": "本届交付：公账审计",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds",
+      "sha256": "8ad8e9f1b5aae68f385c3c3d59d62bfb838ecb1cdff642f3acc0ba9f38761d26",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_role_western_tea_horse",
+      "name": "本届交付：茶马采办",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds",
+      "sha256": "47861c959a7715bef6d2e82d264f6322342d298c84c76f2fb8dad6ea8286b2b9",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_role_southwestern_valleys",
+      "name": "本届交付：山谷互市",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds",
+      "sha256": "3d29510b697e233a9f4684aec899f0e19cc2bd55dde7039b6c03fc358436991c",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_project_subsidize",
+      "name": "皇帝垫账：补一项缺口",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds",
+      "sha256": "348a891665a141ceb1b972b83f49d4b87a9c2a2af699576e0ab9fbf60affec0f",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_audit_accounts",
+      "name": "公开公账：三金核账",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds",
+      "sha256": "2199ee93c7df08a6f728af8d8d9e4cbaf2a154e4ca660aded13da77532df9099",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_banquet_ledger",
+      "name": "查看大开席账本",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds",
+      "sha256": "d54df2f2818f12e34cd6b69c518d2875db67cd5734be59171ead5f56b76689fb",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_propose_charter_1",
+      "name": "百年章程：一锅巴蜀",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds",
+      "sha256": "e0d4a533956564147f482a00fd027f25e693a6c159022476441e271eb7081f40",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_ballot_vote_1",
+      "name": "章程授权：支持一锅巴蜀",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds",
+      "sha256": "f485885bafe5a386aea5a04578677c6b155f91e0bbe4da31665fdb058b1cdfcd",
+      "atlas": "assets/decision_atlases/decisions_2.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_eastern_river_4",
+      "name": "重庆川东圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds",
+      "sha256": "ce6c8276fd4fad4cf924e4ceae141e54684f937974aecae8c47321d66faa86ba",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_eastern_river_5",
+      "name": "重庆川东圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds",
+      "sha256": "14d4746a3d8a16e2c98363d0a202fafa3b95b5625cff898cf30cc25df162b74c",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_service_northern_shudao",
+      "name": "关隘轮戍与驿路接力",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds",
+      "sha256": "594189886efcbc69c7782c822e5bae10cf8c0cde498d2c884a16f9b3957778b8",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_northern_shudao_1",
+      "name": "川北蜀道圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds",
+      "sha256": "fae29b0713e299b88b17b5a81f27c98403bf5ef70a7f2c561cd0cc57c2e7ac3a",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_northern_shudao_2",
+      "name": "川北蜀道圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds",
+      "sha256": "47c7313dc9900bf99bb0d090441a972c658419809c821a4499f77b7ca9759c38",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_northern_shudao_3",
+      "name": "川北蜀道圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds",
+      "sha256": "a0fed51092eb200f5e0102a50c8d77b5c29ab50e98e3a205c5cc05d0be53bac1",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_northern_shudao_4",
+      "name": "川北蜀道圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds",
+      "sha256": "098e1b9267740d9347307826c8064842062e1ec0f8948008576a3a2053894c04",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_northern_shudao_5",
+      "name": "川北蜀道圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds",
+      "sha256": "b1fe8d59f48d8ff96a37435dab78a504f549ddc3104895842c14cb9e7db63674",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_service_central_hills",
+      "name": "分仓赈贷与契约见证",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds",
+      "sha256": "079302070b6047f3faac810f9242062b5c2d7f77f3d2a9b5f7b9ea99b80c5a77",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_central_hills_1",
+      "name": "川中丘陵圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds",
+      "sha256": "0a680e06962ffc515262a8a753ef561ab46fd285a0b52574455e1d4479dc5262",
+      "atlas": "assets/decision_atlases/decisions_5.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_central_hills_2",
+      "name": "川中丘陵圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds",
+      "sha256": "9442bcc0fb6a40e210903b769b20116c1680cede848b8574e3159dac00650ff2",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_central_hills_3",
+      "name": "川中丘陵圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds",
+      "sha256": "d96e4e4b0413b5b8722de9055528f7532841240349eb8f1ba403adce1fc51fcc",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_central_hills_4",
+      "name": "川中丘陵圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds",
+      "sha256": "328ea3b6894f342d17e0c5af08b724ee271243ead628a65f8fec7ac4c5585d0a",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_central_hills_5",
+      "name": "川中丘陵圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds",
+      "sha256": "7fe1c887f255a366347a440255ffd9ccb4a86b90e254c6ee02f6e0c36c04a261",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_service_western_tea_horse",
+      "name": "茶马采办与山门调停",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds",
+      "sha256": "671b09e78630665a456420896c9b1b878c26030a5850d8e9a833d113a18f36a5",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_western_tea_horse_1",
+      "name": "川西茶马圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds",
+      "sha256": "8154c6f7699a8c61b7a0986743e45b3a587daeb967a97a308a5e44a79bce196d",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_western_tea_horse_2",
+      "name": "川西茶马圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds",
+      "sha256": "210fd985c9c893d37191d2412cb0a52fef5daeb53b09266ead79042f5d55f383",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_western_tea_horse_3",
+      "name": "川西茶马圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds",
+      "sha256": "386175217d0e3b667da2501ce1bb17500f2871d86fc8525bc83bbd9253b9b3eb",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_western_tea_horse_4",
+      "name": "川西茶马圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds",
+      "sha256": "deaeb81ec707f9876601578e49f2c173354f8ac3d6bd668057fec66f67937dbf",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_mission_western_tea_horse_5",
+      "name": "川西茶马圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds",
+      "sha256": "4f1273ebe1710d89486300131253727dfde4056d2eba7a78a3281d6d9527985f",
+      "atlas": "assets/decision_atlases/decisions_6.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    },
+    {
+      "key": "hbe_service_southwestern_valleys",
+      "name": "山谷互市与地方议约",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds",
+      "sha256": "91647ba43d77bc77f2b9ff5e072c1cbfffed95e2611491f25bd8e16c12d4c618",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 0,
+      "crop": [
+        0,
+        0,
+        397,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southwestern_valleys_1",
+      "name": "川西南山谷圈：起业",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds",
+      "sha256": "5a442cb07c188fc3cdfd8a7b93d6df952b174c0bcbb2c5b48381281796a2ca7a",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 1,
+      "crop": [
+        397,
+        0,
+        793,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southwestern_valleys_2",
+      "name": "川西南山谷圈：成长",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds",
+      "sha256": "2a0c3a650b9ebcceebdd635cc2bbb8f2c204b101a5ea6b91137fb9d34269cfa2",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 2,
+      "crop": [
+        793,
+        0,
+        1190,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southwestern_valleys_3",
+      "name": "川西南山谷圈：旧约重审",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds",
+      "sha256": "3ec4419484cd0c2bc63028d9c1945a5b48bfad9a0a077dcb73a5e9a70ac64b32",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 3,
+      "crop": [
+        1190,
+        0,
+        1586,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southwestern_valleys_4",
+      "name": "川西南山谷圈：地区重组",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds",
+      "sha256": "9249b2b1da2837ce5e9b37ad28ce7d0c7bab91a256fbda8b2fea213eb8b64921",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 4,
+      "crop": [
+        1586,
+        0,
+        1983,
+        396
+      ]
+    },
+    {
+      "key": "hbe_mission_southwestern_valleys_5",
+      "name": "川西南山谷圈：百年章程",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds",
+      "sha256": "85b423d1e5b3db79c40f0c1a4d496c61a38b0e14138e5730c00f3d4be0852b1d",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 5,
+      "crop": [
+        0,
+        396,
+        397,
+        793
+      ]
+    },
+    {
+      "key": "hbe_salt_loan",
+      "name": "发行盐引周转",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds",
+      "sha256": "0e313e8dcf8e3630cd9ee093872c09de7493c3a644f0bc444282117cd4692cb6",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 6,
+      "crop": [
+        397,
+        396,
+        793,
+        793
+      ]
+    },
+    {
+      "key": "hbe_salt_repay",
+      "name": "归还盐债",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds",
+      "sha256": "0b4af511b5b2edb582be29e486459b16410adf476b4cb3cc3ad4f4c48522b4e3",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 7,
+      "crop": [
+        793,
+        396,
+        1190,
+        793
+      ]
+    },
+    {
+      "key": "hbe_status",
+      "name": "查看巴蜀会盟账本",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_status.dds",
+      "sha256": "a59c4c81f12019e9ef7a58b27e2c5a88a0662fd2b9d641e8ab86a6b4fe604b93",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 8,
+      "crop": [
+        1190,
+        396,
+        1586,
+        793
+      ]
+    },
+    {
+      "key": "hbe_assembly",
+      "name": "召开帝国茶会",
+      "image": "main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds",
+      "sha256": "ace63c038cb0a7dbcf8a9ed7a5ce107a7440994f7bbebd1fd9f7d4113a9974b0",
+      "atlas": "assets/decision_atlases/decisions_7.png",
+      "cell": 9,
+      "crop": [
+        1586,
+        396,
+        1983,
+        793
+      ]
+    }
+  ],
+  "source_manifest": "assets/full_art_generation.json",
+  "style": "restrained EU5 painted illustration; visibly reduced photorealism"
+}

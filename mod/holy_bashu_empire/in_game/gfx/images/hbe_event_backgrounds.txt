@@ -1,0 +1,12 @@
+﻿hbe_event_background_council = { tag = "hbe_event_background_council" illustration_image = { texture_file = "gfx/interface/hbe/events/council.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_banquet = { tag = "hbe_event_background_banquet" illustration_image = { texture_file = "gfx/interface/hbe/events/banquet.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_ledger = { tag = "hbe_event_background_ledger" illustration_image = { texture_file = "gfx/interface/hbe/events/ledger.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_water = { tag = "hbe_event_background_water" illustration_image = { texture_file = "gfx/interface/hbe/events/water.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_salt = { tag = "hbe_event_background_salt" illustration_image = { texture_file = "gfx/interface/hbe/events/salt.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_river = { tag = "hbe_event_background_river" illustration_image = { texture_file = "gfx/interface/hbe/events/river.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_roads = { tag = "hbe_event_background_roads" illustration_image = { texture_file = "gfx/interface/hbe/events/roads.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_grain = { tag = "hbe_event_background_grain" illustration_image = { texture_file = "gfx/interface/hbe/events/grain.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_tea = { tag = "hbe_event_background_tea" illustration_image = { texture_file = "gfx/interface/hbe/events/tea.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_valleys = { tag = "hbe_event_background_valleys" illustration_image = { texture_file = "gfx/interface/hbe/events/valleys.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_academy = { tag = "hbe_event_background_academy" illustration_image = { texture_file = "gfx/interface/hbe/events/academy.dds" priority = 100 scope = country trigger = { always = yes } } }
+hbe_event_background_crisis = { tag = "hbe_event_background_crisis" illustration_image = { texture_file = "gfx/interface/hbe/events/crisis.dds" priority = 100 scope = country trigger = { always = yes } } }

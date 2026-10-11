@@ -1,0 +1,666 @@
+{
+  "mode": "built-in image_gen",
+  "style": "EU5 harmonious painterly illustration; reduced photorealism",
+  "scenes": [
+    {
+      "key": "council",
+      "name": "帝国议事堂",
+      "source": "assets/event_illustrations/council.png",
+      "initial_subject": "A dignified medieval Sichuan timber council hall, deep vermilion columns, subdued ochre brocade clan banners with simple heraldic beasts and no writing, a raised rear table holding seven small bronze seals, wooden chairs arranged along the side walls, a courtyard glimpsed through lattice doors. A spacious empty floor in the middle foreground. Political negotiation, old institutional grandeur with modest provincial scale.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A dignified medieval Sichuan timber council hall, deep vermilion columns, subdued ochre brocade clan banners with simple heraldic beasts and no writing, a raised rear table holding seven small bronze seals, wooden chairs arranged along the side walls, a courtyard glimpsed through lattice doors. A spacious empty floor in the middle foreground. Political negotiation, old institutional grandeur with modest provincial scale.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "banquet",
+      "name": "巴蜀共席",
+      "source": "assets/event_illustrations/banquet.png",
+      "initial_subject": "A medieval Sichuan communal banquet pavilion, long wooden dining tables along left and right edges carrying earthenware dishes, ceramic tea bowls and two understated bronze hotpots, warm lantern light mixed with cloudy daylight, chairs in subtly mismatched regional styles, a kitchen doorway glowing at the far rear. Open uncluttered central foreground. A solemn state banquet with understated material humor, no exaggerated visual joke.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A medieval Sichuan communal banquet pavilion, long wooden dining tables along left and right edges carrying earthenware dishes, ceramic tea bowls and two understated bronze hotpots, warm lantern light mixed with cloudy daylight, chairs in subtly mismatched regional styles, a kitchen doorway glowing at the far rear. Open uncluttered central foreground. A solemn state banquet with understated material humor, no exaggerated visual joke.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "ledger",
+      "name": "会盟账房",
+      "source": "assets/event_illustrations/ledger.png",
+      "initial_subject": "A late-medieval Sichuan merchant accounting chamber: worn timber shelving with bound paper ledgers, woven sacks, old wooden abacus, bronze weights and rolled contracts, a clerk's empty worktable toward the right side, rain-muted daylight through lattice windows and a small warm oil lamp. Empty central foreground, nuanced brown and muted red palette, atmosphere of painstaking accounts and accumulated obligations.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A late-medieval Sichuan merchant accounting chamber: worn timber shelving with bound paper ledgers, woven sacks, old wooden abacus, bronze weights and rolled contracts, a clerk's empty worktable toward the right side, rain-muted daylight through lattice windows and a small warm oil lamp. Empty central foreground, nuanced brown and muted red palette, atmosphere of painstaking accounts and accumulated obligations.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "water",
+      "name": "都江堰渠田",
+      "source": "assets/event_illustrations/water.png",
+      "initial_subject": "A Sichuan irrigation works at the edge of fertile terraced paddies: timber sluice gates and a stone-lined branching canal across the middle distance, tiled farm buildings on one side, misty foothills in the background, muted blue-gray water, pale cloudy daylight. A broad bare stone-and-earth walkway across the foreground with no people, strong wooden and stone textures, flourishing but believable pre-modern farmland.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A Sichuan irrigation works at the edge of fertile terraced paddies: timber sluice gates and a stone-lined branching canal across the middle distance, tiled farm buildings on one side, misty foothills in the background, muted blue-gray water, pale cloudy daylight. A broad bare stone-and-earth walkway across the foreground with no people, strong wooden and stone textures, flourishing but believable pre-modern farmland.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "salt",
+      "name": "川南井灶",
+      "source": "assets/event_illustrations/salt.png",
+      "initial_subject": "A pre-modern Sichuan brine well yard with a tall wooden drilling derrick on the left, timber pulleys and rope, a low salt-boiling shed at the rear with subdued steam rising, ceramic brine vessels and salt baskets along the right wall. Muddy cobbled open foreground, warm furnace light inside the shed contrasted with overcast daylight. No modern pumps, pipes or machinery.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A pre-modern Sichuan brine well yard with a tall wooden drilling derrick on the left, timber pulleys and rope, a low salt-boiling shed at the rear with subdued steam rising, ceramic brine vessels and salt baskets along the right wall. Muddy cobbled open foreground, warm furnace light inside the shed contrasted with overcast daylight. No modern pumps, pipes or machinery.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "river",
+      "name": "川江码头",
+      "source": "assets/event_illustrations/river.png",
+      "initial_subject": "A late-medieval Sichuan river port: weathered timber quay and restrained cargo stacks at the sides, a traditional Chinese cargo junk with a furled batten sail moored in the middle distance, stone town steps ascending to gray tiled roofs, misty steep riverbanks beyond. Broad empty dock in central foreground, soft cool daylight and worn ochre wood, believable working commercial harbor.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A late-medieval Sichuan river port: weathered timber quay and restrained cargo stacks at the sides, a traditional Chinese cargo junk with a furled batten sail moored in the middle distance, stone town steps ascending to gray tiled roofs, misty steep riverbanks beyond. Broad empty dock in central foreground, soft cool daylight and worn ochre wood, believable working commercial harbor.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "roads",
+      "name": "蜀道关驿",
+      "source": "assets/event_illustrations/roads.png",
+      "initial_subject": "A Sichuan mountain-pass relay station of the fourteenth century: stout gray stone gate tower to the left, timber cliff walkway and mountain road receding through cloudy forested hills, modest gray-tiled courier lodge to the right, tied cargo baskets and a red pennant at the gate. Empty stone-road foreground for event characters, restrained military atmosphere, no battle or fantasy architecture.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A Sichuan mountain-pass relay station of the fourteenth century: stout gray stone gate tower to the left, timber cliff walkway and mountain road receding through cloudy forested hills, modest gray-tiled courier lodge to the right, tied cargo baskets and a red pennant at the gate. Empty stone-road foreground for event characters, restrained military atmosphere, no battle or fantasy architecture.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "grain",
+      "name": "丘陵义仓",
+      "source": "assets/event_illustrations/grain.png",
+      "initial_subject": "A medieval Sichuan communal granary courtyard in hilly country, timber granaries raised on short stone supports, broad tiled eaves, woven rice baskets and sealed cloth grain sacks grouped at the side, a small weighing table near the rear doorway, terraced hill fields glimpsed over a wall. Broad empty earthen foreground, gentle late-afternoon daylight, muted golden straw and brown timber, no famine spectacle.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A medieval Sichuan communal granary courtyard in hilly country, timber granaries raised on short stone supports, broad tiled eaves, woven rice baskets and sealed cloth grain sacks grouped at the side, a small weighing table near the rear doorway, terraced hill fields glimpsed over a wall. Broad empty earthen foreground, gentle late-afternoon daylight, muted golden straw and brown timber, no famine spectacle.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "tea",
+      "name": "茶马驿市",
+      "source": "assets/event_illustrations/tea.png",
+      "initial_subject": "A medieval western Sichuan tea-horse caravan staging courtyard: dark compressed tea-brick bundles, leather pack saddles and wooden merchant stalls at the sides, two small resting pack horses tethered in the middle distance, timber and stone buildings with restrained Tibetan-influenced details, distant pale mountain ridges under soft clouds. Empty central foreground, mineral green, faded russet and ochre, historically plausible trading route, no European camel caravan.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A medieval western Sichuan tea-horse caravan staging courtyard: dark compressed tea-brick bundles, leather pack saddles and wooden merchant stalls at the sides, two small resting pack horses tethered in the middle distance, timber and stone buildings with restrained Tibetan-influenced details, distant pale mountain ridges under soft clouds. Empty central foreground, mineral green, faded russet and ochre, historically plausible trading route, no European camel caravan.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "valleys",
+      "name": "山谷盟寨",
+      "source": "assets/event_illustrations/valleys.png",
+      "initial_subject": "A late-medieval southwestern Sichuan mountain community meeting yard: timber watchtower beside stone-and-wood hillside houses, a small covered pavilion containing carved wooden covenant tallies and rolled agreements at the back, rope bridge visible beyond village wall, three distinct simple muted clan pennants. Spacious empty paved foreground, atmospheric forested mountain layers, varied regional materials, no modern ethnicity stereotypes or fantasy tribal props.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A late-medieval southwestern Sichuan mountain community meeting yard: timber watchtower beside stone-and-wood hillside houses, a small covered pavilion containing carved wooden covenant tallies and rolled agreements at the back, rope bridge visible beyond village wall, three distinct simple muted clan pennants. Spacious empty paved foreground, atmospheric forested mountain layers, varied regional materials, no modern ethnicity stereotypes or fantasy tribal props.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "academy",
+      "name": "工艺与官学",
+      "source": "assets/event_illustrations/academy.png",
+      "initial_subject": "A fourteenth-century Sichuan scholar-and-craftsman academy workshop: timber hall, an old brocade loom at the left wall, carpentry tools and wooden construction models on a right-side workbench, bamboo manuscripts and inkstone on a rear desk, paper windows casting broad diffused daylight. The empty middle floor links learning and practical engineering, grounded workshop detail, warm muted browns and ivory, no Western laboratory equipment.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: A fourteenth-century Sichuan scholar-and-craftsman academy workshop: timber hall, an old brocade loom at the left wall, carpentry tools and wooden construction models on a right-side workbench, bamboo manuscripts and inkstone on a rear desk, paper windows casting broad diffused daylight. The empty middle floor links learning and practical engineering, grounded workshop detail, warm muted browns and ivory, no Western laboratory equipment.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    },
+    {
+      "key": "crisis",
+      "name": "争席风波",
+      "source": "assets/event_illustrations/crisis.png",
+      "initial_subject": "The courtyard outside a Sichuan provincial assembly hall just after heavy rain, two slightly displaced carved wooden chairs and a folded ceremonial banner off to one side, an overturned empty tea cup and scattered blank rolled papers near the rear stairs, closed red timber doors, wet flagstones, storm clouds clearing above gray tiled eaves. Wide empty central foreground, tense restrained political aftermath without violence, no comic exaggeration or disaster spectacle.",
+      "generation_prompt": "Use case: historical-scene. Asset type: shared EVENT BACKGROUND ILLUSTRATION for Europa Universalis V. Create one original horizontal historical background scene, aspect ratio 1080:440 (approximately 2.45:1). Match the game's restrained painterly realistic environment art: broad visible brush strokes, slightly softened edges, carefully modeled worn materials, atmospheric perspective, natural muted mineral colours, deep reddish-brown timber and ochre details, believable architectural proportions, balanced light without cinematic bloom. A medium-wide eye-level view, detailed architecture and props, strong readable silhouettes. Preserve ample open floor or ground in the central lower foreground for the game's separately-rendered event characters, all story props toward the sides and rear. This is a complete opaque scene, no frame, borders, UI, letters, readable text, watermark or logos. No foreground people, no photorealism, anime, 3D render, fantasy game art, modern objects, saturated neon or excessive decorative Chinese clichés. Set in fourteenth to fifteenth-century Sichuan. Primary scene: The courtyard outside a Sichuan provincial assembly hall just after heavy rain, two slightly displaced carved wooden chairs and a folded ceremonial banner off to one side, an overturned empty tea cup and scattered blank rolled papers near the rear stairs, closed red timber doors, wet flagstones, storm clouds clearing above gray tiled eaves. Wide empty central foreground, tense restrained political aftermath without violence, no comic exaggeration or disaster spectacle.",
+      "final_edit_prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET; Image 2 is a STYLE REFERENCE ONLY showing original Europa Universalis V event backgrounds. Repaint Image 1 as a harmonious EU5 historical game illustration, matching the restrained hand-painted appearance of Image 2. CRITICAL: significantly reduce photorealism. Clearly visible medium-to-broad brushwork and simplified painted colour masses must be present throughout wood, masonry, roofs, water and clouds. Remove photographic surface microtexture, individual wood pores, razor-sharp roof-tile detail, glossy wet reflections and 3D-render precision. Preserve recognizable medieval Sichuan architecture, all major subject props and the wide 2.45:1 composition, open central foreground, perspective and scene story. Softer atmospheric edges, moderate detail, matte surfaces, quiet diffuse light, unified low-saturation warm ochre/brown, muted red and slate-green palette. It should look deliberately illustrated and coordinate with EU5 UI, with no camera-photo aesthetics. Do not turn it into a cartoon, anime, flat vector, ink-wash calligraphy or overly heavy impasto. No people in foreground, no added writing, text, labels, frame, UI or watermark. Preserve opaque background.",
+      "style_reference": "Original EU5 East Asian event environments; local preview only, not distributed"
+    }
+  ],
+  "organizations": [
+    {
+      "key": "hbe_empire",
+      "name": "神圣巴蜀帝国",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A coiled ancient Chinese golden dragon guarding a small amber sun; seven small bronze studs curve below it, an understated medieval imperial coronet at top. Dark muted red enamel accents. Symbol of an elected Sichuan empire.",
+      "source": "assets/organization_art/hbe_empire.png"
+    },
+    {
+      "key": "hbe_circle_chengdu_plain",
+      "name": "成都平原圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A bronze lotus above two stylized blue irrigation streams, a small brocade shuttle diagonally behind the lotus; ochre enamel field. Water rights and silk craftsmanship.",
+      "source": "assets/organization_art/hbe_circle_chengdu_plain.png"
+    },
+    {
+      "key": "hbe_circle_southern_salt_wine",
+      "name": "川南盐酒圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A bronze three-legged salt-boiling vessel containing pale salt crystals, a small subdued flame below, a narrow earthen wine jar at one side; dark cinnabar enamel accents.",
+      "source": "assets/organization_art/hbe_circle_southern_salt_wine.png"
+    },
+    {
+      "key": "hbe_circle_eastern_river",
+      "name": "重庆川东圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A compact Chinese river junk with a battened sail above two river waves and a stout bronze anchor; deep indigo enamel accents.",
+      "source": "assets/organization_art/hbe_circle_eastern_river.png"
+    },
+    {
+      "key": "hbe_circle_northern_shudao",
+      "name": "川北蜀道圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A crenellated mountain-pass gate with two crossed bamboo courier tubes below, gray-ivory enamel accents and one subdued dark-red pennant.",
+      "source": "assets/organization_art/hbe_circle_northern_shudao.png"
+    },
+    {
+      "key": "hbe_circle_central_hills",
+      "name": "川中丘陵圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A single golden rice sheaf before three small timber granary silhouettes, bronze civic seal at the base; dark oxblood enamel accents.",
+      "source": "assets/organization_art/hbe_circle_central_hills.png"
+    },
+    {
+      "key": "hbe_circle_western_tea_horse",
+      "name": "川西茶马圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: A small bronze mountain pack horse carrying two dark tea bricks, subtle pale mountain peak behind it, muted pine-green enamel accents.",
+      "source": "assets/organization_art/hbe_circle_western_tea_horse.png"
+    },
+    {
+      "key": "hbe_circle_southwestern_valleys",
+      "name": "川西南山谷圈",
+      "kind": "emblem",
+      "prompt": "Use case: stylized-concept. Asset type: single ORGANIZATION EMBLEM icon for Europa Universalis V. Painted historical heraldry, NOT a scene. One coherent isolated emblem with a subtle narrow aged bronze rim/plaque, soft hand-painted shading and broad brush highlights, restrained matte material, medium detail, readable silhouette at 32-64 pixels, centred and filling 82 percent of square canvas. Match original EU5 organization icons' heraldic painted appearance; not photorealistic, not a polished 3D badge, no glossy lighting, no vector or cartoon. Antique gold/bronze, ivory and faded mineral accents. Real transparent background outside the emblem. No writing, letters, labels or modern branding. All eight emblems belong to a consistent family but have distinct main motifs. Subject: Three carved covenant tallies fanned before a simple mountain silhouette, restrained short rope binding and tiny watchtower at the base, russet enamel accents.",
+      "source": "assets/organization_art/hbe_circle_southwestern_valleys.png"
+    }
+  ],
+  "decision_sheets": [
+    {
+      "key": "decisions_1",
+      "cells": [
+        {
+          "key": "hbe_stance_change_1",
+          "name": "转向共锅派",
+          "description": "改变公共财政、地区自治和契约治理的立场；五年内不能再次改换。",
+          "subject": "a single broad bronze communal hotpot over a folded unified charter, short red silk cord"
+        },
+        {
+          "key": "hbe_stance_change_2",
+          "name": "转向分锅派",
+          "description": "改变公共财政、地区自治和契约治理的立场；五年内不能再次改换。",
+          "subject": "three separate porcelain gaiwan bowls arranged as a fan before a small blue covenant plaque"
+        },
+        {
+          "key": "hbe_stance_change_3",
+          "name": "转向账房派",
+          "description": "改变公共财政、地区自治和契约治理的立场；五年内不能再次改换。",
+          "subject": "a wooden abacus resting diagonally across two closed accounts books, amber wax seal"
+        },
+        {
+          "key": "hbe_project_fund",
+          "name": "分账会：出资三金",
+          "description": "本届公共经费出资三金，取得个人履约一份。出资不替代地区专业交付；项目成功后才有共同收益。",
+          "subject": "an open cloth purse with three small neat stacks of old copper cash and a bronze contribution tally"
+        },
+        {
+          "key": "hbe_project_pledge",
+          "name": "分账会：先认账，届中付款",
+          "description": "先签四金承诺，第十二个月核账。届时国库不足会违约，争席度上升；不强制把国库扣成负数。",
+          "subject": "a folded pledge scroll with red cord, a closed cloth coin pouch behind it and a small wooden payment tally"
+        },
+        {
+          "key": "hbe_project_reconsider",
+          "name": "分账会：撤回暂缓意见",
+          "description": "在承诺期内重新参加，之后可以出资或签地区交付合同。",
+          "subject": "an opened folding covenant with a loose untied red silk knot and a bronze admission seal"
+        },
+        {
+          "key": "hbe_project_select_1",
+          "name": "本届工程：盐船共账",
+          "description": "皇帝在前三个月确定主工程，消耗三金。已有专业交付时不能改项；出资者和承诺保持有效。",
+          "subject": "a small Chinese cargo junk model beside a pale salt bowl and a compact red account ledger"
+        },
+        {
+          "key": "hbe_project_select_2",
+          "name": "本届工程：茶马过蜀道",
+          "description": "皇帝在前三个月确定主工程，消耗三金。已有专业交付时不能改项；出资者和承诺保持有效。",
+          "subject": "a miniature pack horse carrying tea bricks beside a small timber footbridge model"
+        },
+        {
+          "key": "hbe_role_chengdu_plain",
+          "name": "本届交付：水粮担保",
+          "description": "成都平原圈承担水粮担保，支付二金并消耗十点水权储备，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "a cloth grain sack beside a miniature timber sluice and a blue sealed delivery receipt"
+        },
+        {
+          "key": "hbe_role_southern_salt_wine",
+          "name": "本届交付：盐引承销",
+          "description": "川南盐酒圈承担盐引承销，支付二金并消耗十点盐引信用，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "two stacked salt baskets and a rolled trade voucher with cinnabar merchant seal"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. a single broad bronze communal hotpot over a folded unified charter, short red silk cord. 2. three separate porcelain gaiwan bowls arranged as a fan before a small blue covenant plaque. 3. a wooden abacus resting diagonally across two closed accounts books, amber wax seal. 4. an open cloth purse with three small neat stacks of old copper cash and a bronze contribution tally. 5. a folded pledge scroll with red cord, a closed cloth coin pouch behind it and a small wooden payment tally. 6. an opened folding covenant with a loose untied red silk knot and a bronze admission seal. 7. a small Chinese cargo junk model beside a pale salt bowl and a compact red account ledger. 8. a miniature pack horse carrying tea bricks beside a small timber footbridge model. 9. a cloth grain sack beside a miniature timber sluice and a blue sealed delivery receipt. 10. two stacked salt baskets and a rolled trade voucher with cinnabar merchant seal. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_1.png"
+    },
+    {
+      "key": "decisions_3",
+      "cells": [
+        {
+          "key": "hbe_propose_charter_2",
+          "name": "百年章程：万国茶会",
+          "description": "皇帝出五金、消耗二十锅气，开启六个月授权表决。每圈须有超过半数原府州席位赞成，七圈至少四圈支持。原三十六首府的当前帝国成员领主行使席位，释放小国不增加席位。失败后五年才能重提。",
+          "subject": "a broad fan-shaped federal charter behind seven tiny distinct porcelain tea bowls"
+        },
+        {
+          "key": "hbe_ballot_vote_2",
+          "name": "章程授权：支持万国茶会",
+          "description": "明确支持这一份章程，替代本国上次表态；六个月议决期间可调整。本国拥有多个原首府时一并行使这些固定席位。",
+          "subject": "a white porcelain gaiwan framed by two crossed wooden covenant tallies and a blue voting seal"
+        },
+        {
+          "key": "hbe_propose_charter_3",
+          "name": "百年章程：各吃各的，账照样交",
+          "description": "皇帝出五金、消耗二十锅气，开启六个月授权表决。每圈须有超过半数原府州席位赞成，七圈至少四圈支持。原三十六首府的当前帝国成员领主行使席位，释放小国不增加席位。失败后五年才能重提。",
+          "subject": "three slim contract ledgers stacked beside a large bronze balance weight and folded charter"
+        },
+        {
+          "key": "hbe_ballot_vote_3",
+          "name": "章程授权：支持各吃各的，账照样交",
+          "description": "明确支持这一份章程，替代本国上次表态；六个月议决期间可调整。本国拥有多个原首府时一并行使这些固定席位。",
+          "subject": "a bronze civic authorization stamp beside a small abacus and folded contract ballot"
+        },
+        {
+          "key": "hbe_service_chengdu_plain",
+          "name": "修渠分水与官学讲会",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点水权储备、3 点义气与五年经营收益。\n当前水权储备：[ROOT.GetVariable('hbe_water').GetValue|0]。",
+          "subject": "miniature wooden irrigation gate beside a brocade shuttle and blue water-rights seal, compact arrangement, blue-green and ochre accents"
+        },
+        {
+          "key": "hbe_mission_chengdu_plain_1",
+          "name": "成都平原圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点水权储备和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "miniature wooden irrigation gate atop a small rolled survey plan with a plain wooden founding stamp, blue-green and ochre accents"
+        },
+        {
+          "key": "hbe_mission_chengdu_plain_2",
+          "name": "成都平原圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点水权储备和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "a brocade shuttle and blue water-rights seal before two different small workshop structures and a tied progress register, blue-green and ochre accents"
+        },
+        {
+          "key": "hbe_mission_chengdu_plain_3",
+          "name": "成都平原圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点水权储备和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside miniature wooden irrigation gate, new bronze inspection seal and loose red cord, blue-green and ochre accents"
+        },
+        {
+          "key": "hbe_mission_chengdu_plain_4",
+          "name": "成都平原圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点水权储备和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind a brocade shuttle and blue water-rights seal, two different administrative tallies, blue-green and ochre accents"
+        },
+        {
+          "key": "hbe_mission_chengdu_plain_5",
+          "name": "成都平原圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点水权储备和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature wooden irrigation gate to one side, blue-green and ochre accents"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. a broad fan-shaped federal charter behind seven tiny distinct porcelain tea bowls. 2. a white porcelain gaiwan framed by two crossed wooden covenant tallies and a blue voting seal. 3. three slim contract ledgers stacked beside a large bronze balance weight and folded charter. 4. a bronze civic authorization stamp beside a small abacus and folded contract ballot. 5. miniature wooden irrigation gate beside a brocade shuttle and blue water-rights seal, compact arrangement, blue-green and ochre accents. 6. miniature wooden irrigation gate atop a small rolled survey plan with a plain wooden founding stamp, blue-green and ochre accents. 7. a brocade shuttle and blue water-rights seal before two different small workshop structures and a tied progress register, blue-green and ochre accents. 8. a weathered unfolded old treaty beside miniature wooden irrigation gate, new bronze inspection seal and loose red cord, blue-green and ochre accents. 9. a carved wooden district route map behind a brocade shuttle and blue water-rights seal, two different administrative tallies, blue-green and ochre accents. 10. a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature wooden irrigation gate to one side, blue-green and ochre accents. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_3.png"
+    },
+    {
+      "key": "decisions_4",
+      "cells": [
+        {
+          "key": "hbe_service_southern_salt_wine",
+          "name": "井灶公账与宴席采办",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点盐引信用、3 点义气与五年经营收益。\n当前盐引信用：[ROOT.GetVariable('hbe_salt').GetValue|0]。",
+          "subject": "a small salt well derrick model beside an earthen wine jar and coarse salt bowl, compact arrangement, cinnabar and old gold accents"
+        },
+        {
+          "key": "hbe_mission_southern_salt_wine_1",
+          "name": "川南盐酒圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点盐引信用和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "a small salt well derrick model atop a small rolled survey plan with a plain wooden founding stamp, cinnabar and old gold accents"
+        },
+        {
+          "key": "hbe_mission_southern_salt_wine_2",
+          "name": "川南盐酒圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点盐引信用和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "an earthen wine jar and coarse salt bowl before two different small workshop structures and a tied progress register, cinnabar and old gold accents"
+        },
+        {
+          "key": "hbe_mission_southern_salt_wine_3",
+          "name": "川南盐酒圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点盐引信用和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside a small salt well derrick model, new bronze inspection seal and loose red cord, cinnabar and old gold accents"
+        },
+        {
+          "key": "hbe_mission_southern_salt_wine_4",
+          "name": "川南盐酒圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点盐引信用和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind an earthen wine jar and coarse salt bowl, two different administrative tallies, cinnabar and old gold accents"
+        },
+        {
+          "key": "hbe_mission_southern_salt_wine_5",
+          "name": "川南盐酒圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点盐引信用和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, a small salt well derrick model to one side, cinnabar and old gold accents"
+        },
+        {
+          "key": "hbe_service_eastern_river",
+          "name": "江岸转运与河防巡察",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点江运互保、3 点义气与五年经营收益。\n当前江运互保：[ROOT.GetVariable('hbe_river').GetValue|0]。",
+          "subject": "miniature river cargo boat beside a boat hook and cargo rope coil, compact arrangement, indigo and ivory accents"
+        },
+        {
+          "key": "hbe_mission_eastern_river_1",
+          "name": "重庆川东圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点江运互保和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "miniature river cargo boat atop a small rolled survey plan with a plain wooden founding stamp, indigo and ivory accents"
+        },
+        {
+          "key": "hbe_mission_eastern_river_2",
+          "name": "重庆川东圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点江运互保和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "a boat hook and cargo rope coil before two different small workshop structures and a tied progress register, indigo and ivory accents"
+        },
+        {
+          "key": "hbe_mission_eastern_river_3",
+          "name": "重庆川东圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点江运互保和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside miniature river cargo boat, new bronze inspection seal and loose red cord, indigo and ivory accents"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. a small salt well derrick model beside an earthen wine jar and coarse salt bowl, compact arrangement, cinnabar and old gold accents. 2. a small salt well derrick model atop a small rolled survey plan with a plain wooden founding stamp, cinnabar and old gold accents. 3. an earthen wine jar and coarse salt bowl before two different small workshop structures and a tied progress register, cinnabar and old gold accents. 4. a weathered unfolded old treaty beside a small salt well derrick model, new bronze inspection seal and loose red cord, cinnabar and old gold accents. 5. a carved wooden district route map behind an earthen wine jar and coarse salt bowl, two different administrative tallies, cinnabar and old gold accents. 6. a large bronze centennial seal with a regional motif resting on an opened grand charter, a small salt well derrick model to one side, cinnabar and old gold accents. 7. miniature river cargo boat beside a boat hook and cargo rope coil, compact arrangement, indigo and ivory accents. 8. miniature river cargo boat atop a small rolled survey plan with a plain wooden founding stamp, indigo and ivory accents. 9. a boat hook and cargo rope coil before two different small workshop structures and a tied progress register, indigo and ivory accents. 10. a weathered unfolded old treaty beside miniature river cargo boat, new bronze inspection seal and loose red cord, indigo and ivory accents. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_4.png"
+    },
+    {
+      "key": "decisions_2",
+      "cells": [
+        {
+          "key": "hbe_role_eastern_river",
+          "name": "本届交付：江船转运",
+          "description": "重庆川东圈承担江船转运，支付二金并消耗十点江运互保，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "a tightly tied cargo bale over a coil of ship rope with a small bronze dispatch seal"
+        },
+        {
+          "key": "hbe_role_northern_shudao",
+          "name": "本届交付：驿路轮戍",
+          "description": "川北蜀道圈承担驿路轮戍，支付二金并消耗十点轮戍履约，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "a bamboo courier tube crossed behind a small iron garrison helmet and a delivery tally"
+        },
+        {
+          "key": "hbe_role_central_hills",
+          "name": "本届交付：公账审计",
+          "description": "川中丘陵圈承担公账审计，支付二金并消耗十点义仓储备，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "an open audit register with a small wooden abacus and bronze inspection stamp"
+        },
+        {
+          "key": "hbe_role_western_tea_horse",
+          "name": "本届交付：茶马采办",
+          "description": "川西茶马圈承担茶马采办，支付二金并消耗十点商队互保，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "a folded leather pack saddle with dark tea bricks, a large caravan bell and sealed receipt"
+        },
+        {
+          "key": "hbe_role_southwestern_valleys",
+          "name": "本届交付：山谷互市",
+          "description": "川西南山谷圈承担山谷互市，支付二金并消耗十点地方共治，半年验收。同届只能参加一种交付或出资。研究地方第一项课题后开放；整合后的旧府州可由共同公账技术接办，没有本地储备时改用十点义气作担保。",
+          "subject": "two different woven market baskets before a carved mountain covenant tally"
+        },
+        {
+          "key": "hbe_project_subsidize",
+          "name": "皇帝垫账：补一项缺口",
+          "description": "支付十金聘请本地机构补交一个缺失环节。本届限一次；优先补第一项，再补第二、第三项。",
+          "subject": "a small imperial coronet on an open wooden cashbox filled with copper coin strings"
+        },
+        {
+          "key": "hbe_audit_accounts",
+          "name": "公开公账：三金核账",
+          "description": "支付三金，降低四点争席度并增加二点义气；两年可核账一次。",
+          "subject": "a spread open ledger with ink brush, bronze examination seal and a wooden counting rod"
+        },
+        {
+          "key": "hbe_banquet_ledger",
+          "name": "查看大开席账本",
+          "description": "查看立场、本届交付、争席度、长期章程和个人履约。",
+          "subject": "a thick closed banquet register with a small bronze hotpot emblem embossed on its cover"
+        },
+        {
+          "key": "hbe_propose_charter_1",
+          "name": "百年章程：一锅巴蜀",
+          "description": "皇帝出五金、消耗二十锅气，开启六个月授权表决。每圈须有超过半数原府州席位赞成，七圈至少四圈支持。原三十六首府的当前帝国成员领主行使席位，释放小国不增加席位。失败后五年才能重提。",
+          "subject": "a grand scroll unfurled behind a large bronze communal hotpot and imperial seal"
+        },
+        {
+          "key": "hbe_ballot_vote_1",
+          "name": "章程授权：支持一锅巴蜀",
+          "description": "明确支持这一份章程，替代本国上次表态；六个月议决期间可调整。本国拥有多个原首府时一并行使这些固定席位。",
+          "subject": "a hand-carved official authorization stamp hovering above a single bowl charter and two bronze seal pads"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. a tightly tied cargo bale over a coil of ship rope with a small bronze dispatch seal. 2. a bamboo courier tube crossed behind a small iron garrison helmet and a delivery tally. 3. an open audit register with a small wooden abacus and bronze inspection stamp. 4. a folded leather pack saddle with dark tea bricks, a large caravan bell and sealed receipt. 5. two different woven market baskets before a carved mountain covenant tally. 6. a small imperial coronet on an open wooden cashbox filled with copper coin strings. 7. a spread open ledger with ink brush, bronze examination seal and a wooden counting rod. 8. a thick closed banquet register with a small bronze hotpot emblem embossed on its cover. 9. a grand scroll unfurled behind a large bronze communal hotpot and imperial seal. 10. a hand-carved official authorization stamp hovering above a single bowl charter and two bronze seal pads. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_2.png"
+    },
+    {
+      "key": "decisions_5",
+      "cells": [
+        {
+          "key": "hbe_mission_eastern_river_4",
+          "name": "重庆川东圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点江运互保和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind a boat hook and cargo rope coil, two different administrative tallies, indigo and ivory accents"
+        },
+        {
+          "key": "hbe_mission_eastern_river_5",
+          "name": "重庆川东圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点江运互保和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature river cargo boat to one side, indigo and ivory accents"
+        },
+        {
+          "key": "hbe_service_northern_shudao",
+          "name": "关隘轮戍与驿路接力",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点轮戍履约、3 点义气与五年经营收益。\n当前轮戍履约：[ROOT.GetVariable('hbe_roads').GetValue|0]。",
+          "subject": "miniature mountain-pass gate beside a bamboo courier tube and garrison tally, compact arrangement, ivory and faded red accents"
+        },
+        {
+          "key": "hbe_mission_northern_shudao_1",
+          "name": "川北蜀道圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点轮戍履约和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "miniature mountain-pass gate atop a small rolled survey plan with a plain wooden founding stamp, ivory and faded red accents"
+        },
+        {
+          "key": "hbe_mission_northern_shudao_2",
+          "name": "川北蜀道圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点轮戍履约和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "a bamboo courier tube and garrison tally before two different small workshop structures and a tied progress register, ivory and faded red accents"
+        },
+        {
+          "key": "hbe_mission_northern_shudao_3",
+          "name": "川北蜀道圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点轮戍履约和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside miniature mountain-pass gate, new bronze inspection seal and loose red cord, ivory and faded red accents"
+        },
+        {
+          "key": "hbe_mission_northern_shudao_4",
+          "name": "川北蜀道圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点轮戍履约和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind a bamboo courier tube and garrison tally, two different administrative tallies, ivory and faded red accents"
+        },
+        {
+          "key": "hbe_mission_northern_shudao_5",
+          "name": "川北蜀道圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点轮戍履约和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature mountain-pass gate to one side, ivory and faded red accents"
+        },
+        {
+          "key": "hbe_service_central_hills",
+          "name": "分仓赈贷与契约见证",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点义仓储备、3 点义气与五年经营收益。\n当前义仓储备：[ROOT.GetVariable('hbe_grain').GetValue|0]。",
+          "subject": "miniature timber granary beside a straw rice basket and weighing scoop, compact arrangement, oxblood and warm straw accents"
+        },
+        {
+          "key": "hbe_mission_central_hills_1",
+          "name": "川中丘陵圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点义仓储备和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "miniature timber granary atop a small rolled survey plan with a plain wooden founding stamp, oxblood and warm straw accents"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. a carved wooden district route map behind a boat hook and cargo rope coil, two different administrative tallies, indigo and ivory accents. 2. a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature river cargo boat to one side, indigo and ivory accents. 3. miniature mountain-pass gate beside a bamboo courier tube and garrison tally, compact arrangement, ivory and faded red accents. 4. miniature mountain-pass gate atop a small rolled survey plan with a plain wooden founding stamp, ivory and faded red accents. 5. a bamboo courier tube and garrison tally before two different small workshop structures and a tied progress register, ivory and faded red accents. 6. a weathered unfolded old treaty beside miniature mountain-pass gate, new bronze inspection seal and loose red cord, ivory and faded red accents. 7. a carved wooden district route map behind a bamboo courier tube and garrison tally, two different administrative tallies, ivory and faded red accents. 8. a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature mountain-pass gate to one side, ivory and faded red accents. 9. miniature timber granary beside a straw rice basket and weighing scoop, compact arrangement, oxblood and warm straw accents. 10. miniature timber granary atop a small rolled survey plan with a plain wooden founding stamp, oxblood and warm straw accents. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_5.png"
+    },
+    {
+      "key": "decisions_6",
+      "cells": [
+        {
+          "key": "hbe_mission_central_hills_2",
+          "name": "川中丘陵圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点义仓储备和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "a straw rice basket and weighing scoop before two different small workshop structures and a tied progress register, oxblood and warm straw accents"
+        },
+        {
+          "key": "hbe_mission_central_hills_3",
+          "name": "川中丘陵圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点义仓储备和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside miniature timber granary, new bronze inspection seal and loose red cord, oxblood and warm straw accents"
+        },
+        {
+          "key": "hbe_mission_central_hills_4",
+          "name": "川中丘陵圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点义仓储备和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind a straw rice basket and weighing scoop, two different administrative tallies, oxblood and warm straw accents"
+        },
+        {
+          "key": "hbe_mission_central_hills_5",
+          "name": "川中丘陵圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点义仓储备和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature timber granary to one side, oxblood and warm straw accents"
+        },
+        {
+          "key": "hbe_service_western_tea_horse",
+          "name": "茶马采办与山门调停",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点商队互保、3 点义气与五年经营收益。\n当前商队互保：[ROOT.GetVariable('hbe_tea').GetValue|0]。",
+          "subject": "miniature pack horse with tea bricks beside a leather pack saddle and caravan bell, compact arrangement, pine green and bronze accents"
+        },
+        {
+          "key": "hbe_mission_western_tea_horse_1",
+          "name": "川西茶马圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点商队互保和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "miniature pack horse with tea bricks atop a small rolled survey plan with a plain wooden founding stamp, pine green and bronze accents"
+        },
+        {
+          "key": "hbe_mission_western_tea_horse_2",
+          "name": "川西茶马圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点商队互保和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "a leather pack saddle and caravan bell before two different small workshop structures and a tied progress register, pine green and bronze accents"
+        },
+        {
+          "key": "hbe_mission_western_tea_horse_3",
+          "name": "川西茶马圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点商队互保和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside miniature pack horse with tea bricks, new bronze inspection seal and loose red cord, pine green and bronze accents"
+        },
+        {
+          "key": "hbe_mission_western_tea_horse_4",
+          "name": "川西茶马圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点商队互保和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind a leather pack saddle and caravan bell, two different administrative tallies, pine green and bronze accents"
+        },
+        {
+          "key": "hbe_mission_western_tea_horse_5",
+          "name": "川西茶马圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点商队互保和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature pack horse with tea bricks to one side, pine green and bronze accents"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. a straw rice basket and weighing scoop before two different small workshop structures and a tied progress register, oxblood and warm straw accents. 2. a weathered unfolded old treaty beside miniature timber granary, new bronze inspection seal and loose red cord, oxblood and warm straw accents. 3. a carved wooden district route map behind a straw rice basket and weighing scoop, two different administrative tallies, oxblood and warm straw accents. 4. a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature timber granary to one side, oxblood and warm straw accents. 5. miniature pack horse with tea bricks beside a leather pack saddle and caravan bell, compact arrangement, pine green and bronze accents. 6. miniature pack horse with tea bricks atop a small rolled survey plan with a plain wooden founding stamp, pine green and bronze accents. 7. a leather pack saddle and caravan bell before two different small workshop structures and a tied progress register, pine green and bronze accents. 8. a weathered unfolded old treaty beside miniature pack horse with tea bricks, new bronze inspection seal and loose red cord, pine green and bronze accents. 9. a carved wooden district route map behind a leather pack saddle and caravan bell, two different administrative tallies, pine green and bronze accents. 10. a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature pack horse with tea bricks to one side, pine green and bronze accents. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_6.png"
+    },
+    {
+      "key": "decisions_7",
+      "cells": [
+        {
+          "key": "hbe_service_southwestern_valleys",
+          "name": "山谷互市与地方议约",
+          "description": "投入 4 金币，三年后交付本圈事业，取得 10 点地方共治、3 点义气与五年经营收益。\n当前地方共治：[ROOT.GetVariable('hbe_valleys').GetValue|0]。",
+          "subject": "miniature timber mountain watchtower beside three carved covenant tallies and a merchant basket, compact arrangement, russet and ivory accents"
+        },
+        {
+          "key": "hbe_mission_southwestern_valleys_1",
+          "name": "川西南山谷圈：起业",
+          "description": "起业验收需要研究、持续交付与真实出资。消耗 10 点地方共治和 2 金币；义气增加 5，锅气增加 2。",
+          "subject": "miniature timber mountain watchtower atop a small rolled survey plan with a plain wooden founding stamp, russet and ivory accents"
+        },
+        {
+          "key": "hbe_mission_southwestern_valleys_2",
+          "name": "川西南山谷圈：成长",
+          "description": "成长验收需要研究、持续交付与真实出资。消耗 10 点地方共治和 4 金币；义气增加 5，锅气增加 2。",
+          "subject": "three carved covenant tallies and a merchant basket before two different small workshop structures and a tied progress register, russet and ivory accents"
+        },
+        {
+          "key": "hbe_mission_southwestern_valleys_3",
+          "name": "川西南山谷圈：旧约重审",
+          "description": "旧约重审验收需要研究、持续交付与真实出资。消耗 10 点地方共治和 6 金币；义气增加 5，锅气增加 2。",
+          "subject": "a weathered unfolded old treaty beside miniature timber mountain watchtower, new bronze inspection seal and loose red cord, russet and ivory accents"
+        },
+        {
+          "key": "hbe_mission_southwestern_valleys_4",
+          "name": "川西南山谷圈：地区重组",
+          "description": "地区重组验收需要研究、持续交付与真实出资。消耗 10 点地方共治和 8 金币；义气增加 5，锅气增加 2。",
+          "subject": "a carved wooden district route map behind three carved covenant tallies and a merchant basket, two different administrative tallies, russet and ivory accents"
+        },
+        {
+          "key": "hbe_mission_southwestern_valleys_5",
+          "name": "川西南山谷圈：百年章程",
+          "description": "百年章程验收需要研究、持续交付与真实出资。消耗 10 点地方共治和 10 金币；义气增加 5，锅气增加 2。",
+          "subject": "a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature timber mountain watchtower to one side, russet and ivory accents"
+        },
+        {
+          "key": "hbe_salt_loan",
+          "name": "发行盐引周转",
+          "description": "取得 15 金币，增加 10 点盐债；每年需支付 1 金币利息，欠债上限 30。",
+          "subject": "two antique rolled salt vouchers beside an open bag of copper cash, short dark-red cord"
+        },
+        {
+          "key": "hbe_salt_repay",
+          "name": "归还盐债",
+          "description": "支付 10 金币，归还 10 点盐债并恢复义气。",
+          "subject": "a bound repayment voucher crossed by a returned copper coin string and a small salt crystal bowl"
+        },
+        {
+          "key": "hbe_status",
+          "name": "查看巴蜀会盟账本",
+          "description": "查看义气、锅气、研究进度和自治盟约。",
+          "subject": "a broad open imperial accounts register with several colored chapter tabs and a small dragon seal"
+        },
+        {
+          "key": "hbe_assembly",
+          "name": "召开帝国茶会",
+          "description": "皇帝出资召集诸侯，讨论公共经费与自治。五年可召开一次。",
+          "subject": "a central porcelain tea bowl before a semicircle of three small carved official chairs and an imperial pennant"
+        }
+      ],
+      "columns": 5,
+      "rows": 2,
+      "prompt": "Use case: stylized-concept. Asset type: SPRITE ATLAS of decision illustrations for Europa Universalis V. EXACTLY TEN DISTINCT separate painted object compositions in a uniform FIVE COLUMNS by TWO ROWS grid, horizontal 2.5:1 canvas. Ten equal square cells, each one centred object assembly filling at most 68 percent of the cell, large transparent gutters around all sides, no object crosses cell boundaries. Real transparent background. Historical medieval Sichuan props, hand-painted EU5 UI illustration with visible soft broad brush marks, matte aged materials, muted ochre/bronze/ivory/mineral colours, quiet upper-left lighting, strong readable silhouettes, moderate simplified detail. Not photographic, not glossy 3D rendering, not flat vector, cartoon or anime. No labels, readable writing, letters, numerals, grid lines, frames or background scenes. Give every cell a different unmistakable primary shape. Cell subjects in reading order, top row left to right then bottom row: 1. miniature timber mountain watchtower beside three carved covenant tallies and a merchant basket, compact arrangement, russet and ivory accents. 2. miniature timber mountain watchtower atop a small rolled survey plan with a plain wooden founding stamp, russet and ivory accents. 3. three carved covenant tallies and a merchant basket before two different small workshop structures and a tied progress register, russet and ivory accents. 4. a weathered unfolded old treaty beside miniature timber mountain watchtower, new bronze inspection seal and loose red cord, russet and ivory accents. 5. a carved wooden district route map behind three carved covenant tallies and a merchant basket, two different administrative tallies, russet and ivory accents. 6. a large bronze centennial seal with a regional motif resting on an opened grand charter, miniature timber mountain watchtower to one side, russet and ivory accents. 7. two antique rolled salt vouchers beside an open bag of copper cash, short dark-red cord. 8. a bound repayment voucher crossed by a returned copper coin string and a small salt crystal bowl. 9. a broad open imperial accounts register with several colored chapter tabs and a small dragon seal. 10. a central porcelain tea bowl before a semicircle of three small carved official chairs and an imperial pennant. Maintain EXACTLY five columns and two rows; transparent margins are mandatory.",
+      "source": "assets/decision_atlases/decisions_7.png"
+    }
+  ],
+  "situation_panel": {
+    "key": "hbe_banquet_panel",
+    "name": "巴蜀大开席局势大图",
+    "kind": "panel",
+    "prompt": "Use case: historical-scene. Asset type: dedicated SITUATION PANEL illustration for Europa Universalis V, wide horizontal 1080:440 proportions. Theme: the Holy Bashu Empire's great communal banquet and political accounting. Paint a medieval Sichuan assembly pavilion with seven different simple muted heraldic clan pennants at the rear, a long rear banquet table bearing an understated bronze hotpot, porcelain tea bowls, bound ledgers and seven small official seals; several mismatched carved chairs along the sides, distant misty tiled-roof courtyards through open lattice doors. Open central lower foreground. Harmonious restrained EU5 digital painted illustration: obvious medium-to-broad brush marks and simplified colour masses, softly painted wood, stone and fabric, atmospheric softened edges, matte surfaces, low saturation ochre/brown, faded red and slate-green, natural diffuse light, believable but clearly illustrated architecture. Avoid photographic microtexture or camera optics, 3D rendering precision, excessive tile and wood grain detail, gloss, bloom, cartoon, anime and flat vector. No people, no text, frame, UI or readable marks. Fully opaque image. Compose the subject so it remains clear inside a wide short game panel.",
+    "source": "assets/organization_art/hbe_banquet_panel.png",
+    "final_edit_prompt": "Use case: precise-object-edit. Edit this existing painted Europa Universalis V situation-panel illustration. Increase overall colour saturation modestly, approximately 15 percent, with a little stronger warm cinnabar red, antique gold and muted green on the banners and table textiles. Keep the palette harmonious and restrained, no neon or harsh contrast. Preserve the soft hand-painted brushwork, exact composition, architecture, furniture, seven banners and main table objects. Keep brightness, lighting, opaque background and all details unchanged. No people or writing added.",
+    "saturation_adjustment": "About 15 percent higher saturation, focused on cinnabar, gold and banners"
+  }
+}

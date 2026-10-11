@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [string]$UserDataPath = (Join-Path ([Environment]::GetFolderPath('MyDocuments')) 'Paradox Interactive\Europa Universalis V')
 )
@@ -23,5 +23,5 @@ if (Test-Path -LiteralPath $modTarget) {
 }
 New-Item -ItemType Directory -Path $modParent -Force | Out-Null
 Copy-Item -LiteralPath $modSource -Destination $modParent -Recurse
-Write-Output "Installed Holy Bashu Empire v0.02 at $modTarget"
+Write-Output "Installed Holy Bashu Empire v0.1 at $modTarget"
 Write-Output 'Enable the mod in the EU5 mod manager, then start a NEW 1337 game.'

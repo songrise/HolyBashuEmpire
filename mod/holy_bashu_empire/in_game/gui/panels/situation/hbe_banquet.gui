@@ -1,6 +1,6 @@
 situation_panel = {
     blockoverride "situation_panel_image" {
-        background = { texture = "gfx/interface/hbe/placeholder.dds" }
+        background = { texture = "gfx/interface/hbe/panels/hbe_banquet.dds" }
     }
     blockoverride "situation_subheader_content" { }
     blockoverride "situation_panel_main_content" {

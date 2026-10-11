@@ -1,0 +1,55 @@
+﻿hbe_term_guoqi = { texture = "text_icons/hbe_guoqi" }
+hbe_term_yiqi = { texture = "text_icons/hbe_yiqi" }
+hbe_term_dispute = { texture = "text_icons/hbe_dispute" }
+hbe_term_water = { texture = "text_icons/hbe_water" }
+hbe_term_salt = { texture = "text_icons/hbe_salt" }
+hbe_term_river = { texture = "text_icons/hbe_river" }
+hbe_term_roads = { texture = "text_icons/hbe_roads" }
+hbe_term_grain = { texture = "text_icons/hbe_grain" }
+hbe_term_tea = { texture = "text_icons/hbe_tea" }
+hbe_term_valleys = { texture = "text_icons/hbe_valleys" }
+hbe_term_tianfu = { }
+hbe_term_isolation = { }
+hbe_term_circle = { }
+hbe_term_elector = { }
+hbe_term_research = { }
+hbe_term_specialization = { }
+hbe_term_service = { }
+hbe_term_mission = { }
+hbe_term_round = { }
+hbe_term_commitment = { }
+hbe_term_funding = { }
+hbe_term_pledge = { }
+hbe_term_delivery = { }
+hbe_term_contribution = { }
+hbe_term_saltproject = { }
+hbe_term_teaproject = { }
+hbe_term_subsidy = { }
+hbe_term_audit = { }
+hbe_term_chapter = { }
+hbe_term_charter = { }
+hbe_term_seat = { }
+hbe_term_common = { }
+hbe_term_divided = { }
+hbe_term_ledger = { }
+hbe_term_debt = { }
+hbe_term_charter_common = { }
+hbe_term_charter_divided = { }
+hbe_term_charter_contract = { }
+hbe_term_regional = { }
+hbe_term_contract = { }
+hbe_term_trial = { }
+hbe_term_success = { }
+hbe_term_alliance = { }
+hbe_history_dujiangyan = { }
+hbe_history_qingcheng = { }
+hbe_history_shujin = { }
+hbe_history_salt = { }
+hbe_history_tea = { }
+hbe_history_shudao = { }
+hbe_history_jianmen = { }
+hbe_history_diaoyu = { }
+hbe_history_qiong = { }
+hbe_history_sansu = { }
+hbe_history_wenweng = { }
+hbe_history_river = { }
