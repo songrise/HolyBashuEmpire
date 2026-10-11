@@ -9,6 +9,7 @@ Europa Universalis V 架空喜剧风味包。四川各个可拥有地块在开�
 玩法策划草案，等待讨论定稿。
 
 - [玩法策划](docs/gameplay_design.md)：开局体验、诸侯与皇帝玩法、帝国制度、特色机制、事件和首版范围。
+- [地区科技树](docs/regional_technology.md)：八项共同进步、七条地区树、专精选择、技术传播与六十四个候选节点。
 - 游戏安装目录：`D:\SteamLibrary\steamapps\common\Europa Universalis V`。
 
 玩法数值均为讨论起点。地理边界、国家名单和游戏内表现将在玩法定稿后的制作阶段确定。
