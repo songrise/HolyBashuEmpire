@@ -1,0 +1,714 @@
+{
+  "version": "0.01",
+  "countries": [
+    {
+      "tag": "BAB",
+      "name": "成都锦官公国",
+      "province": "chengdu_province",
+      "region": "chengdu_plain",
+      "capital": "chengdu",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "chengdu",
+        "jintang",
+        "pixian",
+        "shuangliu",
+        "xindu"
+      ],
+      "group": "成都"
+    },
+    {
+      "tag": "BAE",
+      "name": "汉州侯国",
+      "province": "hanzhou_province",
+      "region": "chengdu_plain",
+      "capital": "anzhou",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "anzhou",
+        "deyang",
+        "mianzhu",
+        "shifang"
+      ],
+      "group": "汉州"
+    },
+    {
+      "tag": "BAF",
+      "name": "彭州侯国",
+      "province": "pengzhou_province",
+      "region": "chengdu_plain",
+      "capital": "guanzhou",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "guanzhou",
+        "jinyuan",
+        "pengzhou"
+      ],
+      "group": "彭州"
+    },
+    {
+      "tag": "BAJ",
+      "name": "邛州侯国",
+      "province": "qiongzhou_sichuan_province",
+      "region": "chengdu_plain",
+      "capital": "dayi",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "dayi",
+        "pujiang_qiongzhou",
+        "qiongzhou"
+      ],
+      "group": "邛州"
+    },
+    {
+      "tag": "BAL",
+      "name": "眉州侯国",
+      "province": "meizhou_province",
+      "region": "chengdu_plain",
+      "capital": "danleng",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "danleng",
+        "meizhou",
+        "pengshan",
+        "qingshen"
+      ],
+      "group": "眉州"
+    },
+    {
+      "tag": "BAO",
+      "name": "嘉定山门侯国",
+      "province": "jiading_province",
+      "region": "southern_salt_wine",
+      "capital": "emei",
+      "culture": "yi_culture",
+      "religion": "bimoism",
+      "locations": [
+        "emei",
+        "jiajiang",
+        "longyou_jiading",
+        "qianwei",
+        "rongzhou",
+        "weiyuan_jiading"
+      ],
+      "group": "嘉定"
+    },
+    {
+      "tag": "BAP",
+      "name": "叙州盐酒商邦",
+      "province": "xuzhou_sichuan_province",
+      "region": "southern_salt_wine",
+      "capital": "yibin",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "fushun",
+        "nanxi",
+        "qingfu",
+        "xuanhua",
+        "yibin"
+      ],
+      "group": "叙州"
+    },
+    {
+      "tag": "BAQ",
+      "name": "泸州侯国",
+      "province": "luzhou_sichuan_province",
+      "region": "southern_salt_wine",
+      "capital": "hejiang",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "hejiang",
+        "jiangan",
+        "luzhou",
+        "naxi"
+      ],
+      "group": "泸州"
+    },
+    {
+      "tag": "BAW",
+      "name": "长宁侯国",
+      "province": "changning_province",
+      "region": "southern_salt_wine",
+      "capital": "changning_changning",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "changning_changning",
+        "luoji",
+        "rongxian",
+        "yunlian"
+      ],
+      "group": "长宁"
+    },
+    {
+      "tag": "BAX",
+      "name": "昌州侯国",
+      "province": "changzhou_sichuan_province",
+      "region": "eastern_river",
+      "capital": "dazu",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "dazu",
+        "rongchang",
+        "yongchuan"
+      ],
+      "group": "昌州"
+    },
+    {
+      "tag": "BAZ",
+      "name": "重庆山城公国",
+      "province": "chongqing_province",
+      "region": "eastern_river",
+      "capital": "baxian",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "banan",
+        "baxian",
+        "bishan",
+        "jiangjin",
+        "nanchuan",
+        "qijiang"
+      ],
+      "group": "重庆"
+    },
+    {
+      "tag": "BBB",
+      "name": "涪州侯国",
+      "province": "fuzhou_sichuan_province",
+      "region": "eastern_river",
+      "capital": "changshou_changshou",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "changshou_changshou",
+        "fuzhou_sichuan",
+        "wulong"
+      ],
+      "group": "涪州"
+    },
+    {
+      "tag": "BBC",
+      "name": "合州侯国",
+      "province": "hezhou_sichuan_province",
+      "region": "eastern_river",
+      "capital": "dingyuan",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "dingyuan",
+        "shizhao",
+        "tongliang"
+      ],
+      "group": "合州"
+    },
+    {
+      "tag": "BBE",
+      "name": "夔州侯国",
+      "province": "kuizhou_province",
+      "region": "eastern_river",
+      "capital": "daning_kuizhou",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "daning_kuizhou",
+        "fengjie",
+        "jianshi",
+        "kaizhou",
+        "liangshan",
+        "wanzhou",
+        "wushan",
+        "yunyang"
+      ],
+      "group": "夔州"
+    },
+    {
+      "tag": "BBF",
+      "name": "酉阳侯国",
+      "province": "youyang_province",
+      "region": "eastern_river",
+      "capital": "pengshui",
+      "culture": "hmong_culture",
+      "religion": "hmongism",
+      "locations": [
+        "pengshui",
+        "qianjiang_shaoqing",
+        "xiushan",
+        "youyang"
+      ],
+      "group": "酉阳"
+    },
+    {
+      "tag": "BBH",
+      "name": "忠州侯国",
+      "province": "zhongzhou_province",
+      "region": "eastern_river",
+      "capital": "dianjiang",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "dianjiang",
+        "fengdu",
+        "linjiang",
+        "shizhu"
+      ],
+      "group": "忠州"
+    },
+    {
+      "tag": "BBI",
+      "name": "保宁蜀道侯国",
+      "province": "baoning_province",
+      "region": "northern_shudao",
+      "capital": "langzhong",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "cangxi",
+        "langzhong",
+        "nanbu"
+      ],
+      "group": "保宁"
+    },
+    {
+      "tag": "BBJ",
+      "name": "巴州侯国",
+      "province": "bazhou_sichuan_province",
+      "region": "northern_shudao",
+      "capital": "huacheng",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "huacheng",
+        "nanjiang",
+        "tongjiang",
+        "zengkou"
+      ],
+      "group": "巴州"
+    },
+    {
+      "tag": "BBL",
+      "name": "广元侯国",
+      "province": "guangyuan_province",
+      "region": "northern_shudao",
+      "capital": "jiachuan",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "jiachuan",
+        "miangu",
+        "zhaohua"
+      ],
+      "group": "广元"
+    },
+    {
+      "tag": "BBM",
+      "name": "剑州侯国",
+      "province": "jianzhou_province",
+      "region": "northern_shudao",
+      "capital": "mianzhou",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "mianzhou",
+        "puan",
+        "zhangming",
+        "zitong"
+      ],
+      "group": "剑州"
+    },
+    {
+      "tag": "BBN",
+      "name": "龙安侯国",
+      "province": "longan_province",
+      "region": "northern_shudao",
+      "capital": "jiangyou",
+      "culture": "rma_culture",
+      "religion": "rmaism",
+      "locations": [
+        "jiangyou",
+        "pingwu",
+        "qingchuan"
+      ],
+      "group": "龙安"
+    },
+    {
+      "tag": "BBO",
+      "name": "达州侯国",
+      "province": "dazhou_province",
+      "region": "northern_shudao",
+      "capital": "dongxiang_dazhou",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "dongxiang_dazhou",
+        "mingtong",
+        "taiping",
+        "tongchuan_dazhou",
+        "xinning_dazhou"
+      ],
+      "group": "达州"
+    },
+    {
+      "tag": "BBP",
+      "name": "顺庆侯国",
+      "province": "shunqing_province",
+      "region": "northern_shudao",
+      "capital": "nanchong",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "nanchong",
+        "xiangru",
+        "xichong",
+        "yilong",
+        "yingshan_shunqing"
+      ],
+      "group": "顺庆"
+    },
+    {
+      "tag": "BBQ",
+      "name": "简州侯国",
+      "province": "jianzhou_west_province",
+      "region": "central_hills",
+      "capital": "jianzhou",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "jianzhou",
+        "jingyan",
+        "neijiang",
+        "renshou",
+        "zixian",
+        "ziyang_zizhong"
+      ],
+      "group": "简州"
+    },
+    {
+      "tag": "BBR",
+      "name": "遂宁义仓侯国",
+      "province": "suining_province",
+      "region": "central_hills",
+      "capital": "suining",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "anyue",
+        "lezhi",
+        "pengxi",
+        "suining",
+        "xiaoxi"
+      ],
+      "group": "遂宁"
+    },
+    {
+      "tag": "BBS",
+      "name": "潼川侯国",
+      "province": "tongchuan_province",
+      "region": "central_hills",
+      "capital": "qixian_tongchuan",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "qixian_tongchuan",
+        "shehong",
+        "yanting",
+        "zhongjiang"
+      ],
+      "group": "潼川"
+    },
+    {
+      "tag": "BBT",
+      "name": "广安侯国",
+      "province": "guangan_province",
+      "region": "central_hills",
+      "capital": "dazhu",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "dazhu",
+        "huaying",
+        "linshui",
+        "liujiang",
+        "qujiang_guangan",
+        "yuechi"
+      ],
+      "group": "广安"
+    },
+    {
+      "tag": "BBU",
+      "name": "雅州茶马侯国",
+      "province": "yazhou_province",
+      "region": "western_tea_horse",
+      "capital": "yandao",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "diaomen",
+        "lushan_yazhou",
+        "mingshan",
+        "rongjing",
+        "yandao"
+      ],
+      "group": "雅州"
+    },
+    {
+      "tag": "BBV",
+      "name": "茂州侯国",
+      "province": "maozhou_province",
+      "region": "western_tea_horse",
+      "capital": "baoning_maozhou",
+      "culture": "gyalrong_culture",
+      "religion": "bon",
+      "locations": [
+        "baoning_maozhou",
+        "shiquan_maozhou",
+        "wenchuan",
+        "wenshan"
+      ],
+      "group": "茂州"
+    },
+    {
+      "tag": "BBW",
+      "name": "松潘侯国",
+      "province": "songpan_province",
+      "region": "western_tea_horse",
+      "capital": "dazhasi",
+      "culture": "amdowa_culture",
+      "religion": "tibetan_buddhism",
+      "locations": [
+        "dazhasi",
+        "fuzhou_songpan",
+        "gurkyang",
+        "heishui",
+        "hongyuan",
+        "maerkang",
+        "muge",
+        "qiongxi",
+        "rinpung",
+        "songzhou_songpan"
+      ],
+      "group": "松潘"
+    },
+    {
+      "tag": "BBX",
+      "name": "盐源侯国",
+      "province": "baixing_province",
+      "region": "southwestern_valleys",
+      "capital": "mala",
+      "culture": "dai_culture",
+      "religion": "satsana_phi",
+      "locations": [
+        "mala",
+        "pingchuan",
+        "runyan",
+        "zuosuo"
+      ],
+      "group": "盐源"
+    },
+    {
+      "tag": "BBY",
+      "name": "德昌侯国",
+      "province": "dechang_province",
+      "region": "southwestern_valleys",
+      "capital": "dechang",
+      "culture": "shu_culture",
+      "religion": "mahayana",
+      "locations": [
+        "dechang",
+        "huichuan_dechang",
+        "huili",
+        "mingyi"
+      ],
+      "group": "德昌"
+    },
+    {
+      "tag": "BBZ",
+      "name": "黎州侯国",
+      "province": "lizhou_sichuan_province",
+      "region": "southwestern_valleys",
+      "capital": "hanyuan",
+      "culture": "shu_culture",
+      "religion": "sanjiao",
+      "locations": [
+        "hanyuan",
+        "lugu",
+        "qiongbu",
+        "shimian",
+        "suzhou",
+        "zhenxi_lizhou"
+      ],
+      "group": "黎州"
+    },
+    {
+      "tag": "BCA",
+      "name": "马湖侯国",
+      "province": "mahu_province",
+      "region": "southwestern_valleys",
+      "capital": "leibo",
+      "culture": "yi_culture",
+      "religion": "bimoism",
+      "locations": [
+        "leibo",
+        "lizhou_mahu",
+        "mabian",
+        "mahu",
+        "muchuan"
+      ],
+      "group": "马湖"
+    },
+    {
+      "tag": "BCB",
+      "name": "建昌共治侯国",
+      "province": "sichuan_province",
+      "region": "southwestern_valleys",
+      "capital": "beishe",
+      "culture": "yi_culture",
+      "religion": "bimoism",
+      "locations": [
+        "beishe",
+        "jianchang_sichuan",
+        "kuozhou",
+        "puge"
+      ],
+      "group": "建昌"
+    },
+    {
+      "tag": "BCC",
+      "name": "永宁侯国",
+      "province": "yongning_province",
+      "region": "southwestern_valleys",
+      "capital": "guihua",
+      "culture": "hmong_culture",
+      "religion": "hmongism",
+      "locations": [
+        "guihua",
+        "gulin",
+        "luojiao",
+        "mangbu",
+        "yongning"
+      ],
+      "group": "永宁"
+    }
+  ],
+  "electors": {
+    "chengdu_plain": "BAB",
+    "southern_salt_wine": "BAP",
+    "eastern_river": "BAZ",
+    "northern_shudao": "BBI",
+    "central_hills": "BBR",
+    "western_tea_horse": "BBU",
+    "southwestern_valleys": "BCB"
+  },
+  "regions": [
+    [
+      "chengdu_plain",
+      "成都平原圈",
+      "chengdu",
+      "水权储备",
+      "hbe_water",
+      "修渠分水",
+      "官学讲会"
+    ],
+    [
+      "southern_salt_wine",
+      "川南盐酒圈",
+      "yibin",
+      "盐引信用",
+      "hbe_salt",
+      "井灶公账",
+      "宴席采办"
+    ],
+    [
+      "eastern_river",
+      "重庆川东圈",
+      "baxian",
+      "江运互保",
+      "hbe_river",
+      "江岸转运",
+      "河防巡察"
+    ],
+    [
+      "northern_shudao",
+      "川北蜀道圈",
+      "langzhong",
+      "轮戍履约",
+      "hbe_roads",
+      "关隘轮戍",
+      "驿路接力"
+    ],
+    [
+      "central_hills",
+      "川中丘陵圈",
+      "suining",
+      "义仓储备",
+      "hbe_grain",
+      "分仓赈贷",
+      "契约见证"
+    ],
+    [
+      "western_tea_horse",
+      "川西茶马圈",
+      "yandao",
+      "商队互保",
+      "hbe_tea",
+      "茶马采办",
+      "山门调停"
+    ],
+    [
+      "southwestern_valleys",
+      "川西南山谷圈",
+      "jianchang",
+      "地方共治",
+      "hbe_valleys",
+      "山谷互市",
+      "地方议约"
+    ]
+  ],
+  "source_setup_sha256": "d893a853b6045c1e9ea9961d92bf38b0228c2524d1ef808e212858da7798d3a1",
+  "removed_domain_tokens": 164,
+  "research_nodes": 64,
+  "regional_missions": 35,
+  "recurring_services": 7,
+  "events": 17,
+  "decisions": 110,
+  "illustrations": "generic vanilla scenes; custom flat DDS decision placeholder",
+  "files": {
+    ".metadata/metadata.json": "f311cec7f7d4360a082323f4264710a0e2a2a5fccf3b71bbb592f7230141ef50",
+    ".metadata/thumbnail.png": "978e438345a8c31f400bdc7d64a9433e3c6489579d89d86a8a2257e9b3acb8c4",
+    "in_game/common/biases/hbe_opinions.txt": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3",
+    "in_game/common/decisions/hbe_decisions.txt": "f89d8ce0be9965ae8a00cfe8ae96c71171709590a2de1aa835c3a8eaadd1c1ee",
+    "in_game/common/international_organization_land_ownership_rules/hbe_land.txt": "092e362f4e2fd68a7c65c43e40f938a0913604c4f6c201b19ba11ea74dfeefbc",
+    "in_game/common/international_organization_special_statuses/hbe_statuses.txt": "ac82df70c67828890cad12553b6aeaf11d762b6843ceaf52eb54a1f6338869c9",
+    "in_game/common/international_organizations/hbe_empire.txt": "104d17ce6d04b9ba3b899c3a419844658fe0aeae0794b8d9da4d93d84ba08f0a",
+    "in_game/common/join_war_rules/hbe_isolation.txt": "b28bcc3370ebc565e37530d0c531b8c94718ae99ebebdf96c8ef84df8613018d",
+    "in_game/common/on_action/hbe_on_actions.txt": "340507837a04f692839901754def88c93b4bb174d17aec13f4eebaf427543a4d",
+    "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
+    "in_game/common/scripted_effects/hbe_effects.txt": "5b19316dff135fded5b5b7e82d33f12ffa3342388afac18ef18fa3278fb2a6b2",
+    "in_game/common/scripted_geography/hbe_geography.txt": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f",
+    "in_game/common/scripted_triggers/hbe_triggers.txt": "3762b16b08198ddbeab78f35226324003735566dd2804f63e4b74042f63a7eca",
+    "in_game/events/hbe_events.txt": "3a566ec5927617568fed11fca18b60c0e8d16c446ee41ad4384f234298ae650d",
+    "in_game/setup/countries/hbe_countries.txt": "c39f3da71cb78c8c78efac2cb1dd22289bcb7839c32be8ba534812517852a744",
+    "loading_screen/gfx/interface/hbe/placeholder.dds": "226cfe7ca22f750e3bdf461bbfdffd389559dfe62fe393b2fe73ba9d1d536c41",
+    "main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt": "23d32260ac340e0f8de9aef9c0e5ceef46628afeb25e5ced7d15b1227a3fe08c",
+    "main_menu/common/modifier_icons/hbe_icons.txt": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978",
+    "main_menu/common/modifier_type_definitions/hbe_types.txt": "3cb6310b5f2afb958ad0d0f8f6605ae52bcb2e68db61784d7cedcbc8be5ec511",
+    "main_menu/common/scenarios/hbe_scenarios.txt": "a1721fee702056ca5fc956c12382a376ddacebcb6af70fc765def6878648f3c5",
+    "main_menu/common/static_modifiers/hbe_modifiers.txt": "d8faca971557d97d5a07e6cc1371f85de21c3aea99bba1a591af9e93336c5ee6",
+    "main_menu/gui/messagetypes.txt": "05d9bd34a22c2cd18b6af611b643fc214b1fb1ec48fc61924d07f6d5de100d64",
+    "main_menu/localization/english/hbe_l_english.yml": "94c33eb9fcbc9f8b2de499e09335f118a05a4d57b39237af28400d444907773f",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "70cc414b4ef7208074ac6b792f3ba0908c4a0c4d5185ee317a3240c980075f43",
+    "main_menu/setup/1337/04_hbe_dynasties.txt": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7",
+    "main_menu/setup/1337/05_hbe_characters.txt": "c6d49f5d9f423458308bd495cd12a1a5a501eaf3411c1298814b459db2c8dd84",
+    "main_menu/setup/1337/10_countries.txt": "4b519e685bb4456ba6690a38c800ea8f86b49328a2e3ed450ecb665dd5471f11",
+    "main_menu/setup/1337/99_hbe_organizations.txt": "7dc4cfe06266a5b4a6478c8f648df47f2c4ca7261f8621fff880688949b0e66c",
+    "main_menu/setup/templates/hbe_monarchy.txt": "0acbd5a337b7097dc9a47bdbd6af163b1d0f07967821db62ec1a48cd1d444432"
+  }
+}

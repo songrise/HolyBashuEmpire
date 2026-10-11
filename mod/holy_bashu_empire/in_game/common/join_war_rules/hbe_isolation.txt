@@ -1,0 +1,8 @@
+﻿hbe_isolation_join_rule = {
+    join_war_disabled_trigger = {
+        OR = {
+            AND = { hbe_is_domain_polity = yes OR = { scope:first_leader = { hbe_is_domain_polity = no } scope:second_leader = { hbe_is_domain_polity = no } } }
+            AND = { hbe_is_domain_polity = no OR = { scope:first_leader = { hbe_is_domain_polity = yes } scope:second_leader = { hbe_is_domain_polity = yes } } }
+        }
+    }
+}

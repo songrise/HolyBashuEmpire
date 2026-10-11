@@ -1,0 +1,8 @@
+﻿hbe_elector_can_participate_in_parliament = {
+    positive = "gfx/interface/icons/modifier_types/elector_can_participate_in_parliament.dds"
+    negative = "gfx/interface/icons/modifier_types/elector_can_participate_in_parliament.dds"
+}
+hbe_elector_agenda_impact = {
+    positive = "gfx/interface/icons/modifier_types/elector_agenda_impact.dds"
+    negative = "gfx/interface/icons/modifier_types/elector_agenda_impact.dds"
+}

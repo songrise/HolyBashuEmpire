@@ -1,0 +1,17 @@
+﻿hbe_election = {
+    loc = hbe_election potential = { always = yes } allow = { }
+    ai_tick = monthly is_live = { always = yes } requires_explicit_votes = no
+    can_vote = { scope:actor = { is_member_of_international_organization = scope:recipient
+        has_special_status_in_international_organization = { type = special_status:hbe_elector international_organization = scope:recipient } } }
+    votes = { add = { desc = hbe_elector value = 1 } }
+    total_votes_needed = { add = { value = scope:total_votes_available multiply = 0.5 } }
+    should_finalize_vote = { scope:recipient = { international_organization_has_leader = no } scope:highest_vote > scope:total_votes_needed }
+    select_trigger = { looking_for_a = international_organization target_flag = recipient name = choose_international_organization
+        column = { data = name } visible = { international_organization_type = international_organization_type:hbe_empire } enabled = { } }
+    select_trigger = { looking_for_a = country source = recipient target_flag = vote allow_self = yes name = election_select_country
+        none_available_msg_key = election_select_no_countries default_sort = country_tax_base column = { data = name }
+        visible = { can_lead_international_organization = scope:recipient } enabled = { } }
+    effect = { scope:recipient = { set_leader_country = scope:vote } }
+    ai_will_do = { add = { desc = hbe_election_merit value = scope:vote.country_tax_base multiply = 2 }
+        add = { desc = hbe_election_trust value = "scope:actor.opinion(scope:vote)" multiply = 0.5 } }
+}

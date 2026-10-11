@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "36 selectable princes",
+      "passed": true
+    },
+    {
+      "check": "7 circles and 7 distinct electors",
+      "passed": true
+    },
+    {
+      "check": "164 unique domain locations",
+      "passed": true
+    },
+    {
+      "check": "all countries have 3 to 10 locations",
+      "passed": true
+    },
+    {
+      "check": "country capitals belong to their countries",
+      "passed": true
+    },
+    {
+      "check": "all source-owned locations were removed",
+      "passed": true
+    },
+    {
+      "check": "file hash .metadata/metadata.json",
+      "passed": true
+    },
+    {
+      "check": "file hash .metadata/thumbnail.png",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/biases/hbe_opinions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/decisions/hbe_decisions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organization_land_ownership_rules/hbe_land.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organization_special_statuses/hbe_statuses.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organizations/hbe_empire.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/join_war_rules/hbe_isolation.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/resolutions/hbe_election.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_geography/hbe_geography.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_triggers/hbe_triggers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_events.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/setup/countries/hbe_countries.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash loading_screen/gfx/interface/hbe/placeholder.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_icons/hbe_icons.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_type_definitions/hbe_types.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/scenarios/hbe_scenarios.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gui/messagetypes.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/04_hbe_dynasties.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/05_hbe_characters.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/10_countries.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/99_hbe_organizations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/templates/hbe_monarchy.txt",
+      "passed": true
+    },
+    {
+      "check": "bookmark files are UTF8 without BOM",
+      "passed": true
+    },
+    {
+      "check": "database scripts use UTF8 BOM",
+      "passed": true
+    },
+    {
+      "check": "all script braces and custom definitions are valid",
+      "passed": true
+    },
+    {
+      "check": "every domain location has exactly one new owner",
+      "passed": true
+    },
+    {
+      "check": "ownership matches manifest",
+      "passed": true
+    },
+    {
+      "check": "all capital cultures and religions exist",
+      "passed": true
+    },
+    {
+      "check": "Chinese localization has UTF8 BOM",
+      "passed": true
+    },
+    {
+      "check": "all custom text references localized",
+      "passed": true
+    },
+    {
+      "check": "36 distinct starting rulers exist",
+      "passed": true
+    },
+    {
+      "check": "7 seat election requires a strict majority",
+      "passed": true
+    },
+    {
+      "check": "Tianfu has exactly +10% food and construction",
+      "passed": true
+    },
+    {
+      "check": "Tianfu is permanent and idempotent",
+      "passed": true
+    },
+    {
+      "check": "external owners have the Tianfu modifier removed",
+      "passed": true
+    },
+    {
+      "check": "110 decision prototypes and 64 research nodes",
+      "passed": true
+    },
+    {
+      "check": "35 regional milestone missions and repeatable services",
+      "passed": true
+    },
+    {
+      "check": "centennial content and repeatable pulse persist",
+      "passed": true
+    },
+    {
+      "check": "war declarations use the isolation gate",
+      "passed": true
+    },
+    {
+      "check": "war calls have a cross-boundary gate",
+      "passed": true
+    },
+    {
+      "check": "IO members precede leaders in the persistent reader",
+      "passed": true
+    },
+    {
+      "check": "placeholder DDS header and dimensions",
+      "passed": true
+    },
+    {
+      "check": "custom effect and trigger references resolve",
+      "passed": true
+    }
+  ],
+  "check_count": 56,
+  "gameplay_validation": "pending in-game; structural checks are not a savegame test",
+  "version": "0.01"
+}

@@ -1,0 +1,8 @@
+﻿io_opinion_hbe_empire = { value = 10 }
+io_opinion_hbe_circle_chengdu_plain = { value = 10 }
+io_opinion_hbe_circle_southern_salt_wine = { value = 10 }
+io_opinion_hbe_circle_eastern_river = { value = 10 }
+io_opinion_hbe_circle_northern_shudao = { value = 10 }
+io_opinion_hbe_circle_central_hills = { value = 10 }
+io_opinion_hbe_circle_western_tea_horse = { value = 10 }
+io_opinion_hbe_circle_southwestern_valleys = { value = 10 }

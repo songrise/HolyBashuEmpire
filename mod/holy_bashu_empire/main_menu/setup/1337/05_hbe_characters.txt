@@ -1,0 +1,362 @@
+character_db = {
+hbe_ruler_bab = {
+    first_name = { name = hbe_given_name_0 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 45 dip = 40 mil = 35
+    birth_date = 1295.1.1
+    birth = chengdu
+    dynasty = hbe_dynasty_bab
+    tag = BAB
+}
+hbe_ruler_bae = {
+    first_name = { name = hbe_given_name_1 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 46 dip = 43 mil = 42
+    birth_date = 1296.1.1
+    birth = anzhou
+    dynasty = hbe_dynasty_bae
+    tag = BAE
+}
+hbe_ruler_baf = {
+    first_name = { name = hbe_given_name_2 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 47 dip = 46 mil = 49
+    birth_date = 1297.1.1
+    birth = guanzhou
+    dynasty = hbe_dynasty_baf
+    tag = BAF
+}
+hbe_ruler_baj = {
+    first_name = { name = hbe_given_name_3 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 48 dip = 49 mil = 56
+    birth_date = 1298.1.1
+    birth = dayi
+    dynasty = hbe_dynasty_baj
+    tag = BAJ
+}
+hbe_ruler_bal = {
+    first_name = { name = hbe_given_name_4 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 49 dip = 52 mil = 63
+    birth_date = 1299.1.1
+    birth = danleng
+    dynasty = hbe_dynasty_bal
+    tag = BAL
+}
+hbe_ruler_bao = {
+    first_name = { name = hbe_given_name_5 }
+    culture = yi_culture
+    religion = bimoism
+    adm = 50 dip = 55 mil = 40
+    birth_date = 1300.1.1
+    birth = emei
+    dynasty = hbe_dynasty_bao
+    tag = BAO
+}
+hbe_ruler_bap = {
+    first_name = { name = hbe_given_name_6 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 51 dip = 58 mil = 47
+    birth_date = 1301.1.1
+    birth = yibin
+    dynasty = hbe_dynasty_bap
+    tag = BAP
+}
+hbe_ruler_baq = {
+    first_name = { name = hbe_given_name_7 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 52 dip = 61 mil = 54
+    birth_date = 1302.1.1
+    birth = hejiang
+    dynasty = hbe_dynasty_baq
+    tag = BAQ
+}
+hbe_ruler_baw = {
+    first_name = { name = hbe_given_name_0 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 53 dip = 64 mil = 61
+    birth_date = 1303.1.1
+    birth = changning_changning
+    dynasty = hbe_dynasty_baw
+    tag = BAW
+}
+hbe_ruler_bax = {
+    first_name = { name = hbe_given_name_1 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 54 dip = 42 mil = 38
+    birth_date = 1304.1.1
+    birth = dazu
+    dynasty = hbe_dynasty_bax
+    tag = BAX
+}
+hbe_ruler_baz = {
+    first_name = { name = hbe_given_name_2 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 55 dip = 45 mil = 45
+    birth_date = 1305.1.1
+    birth = baxian
+    dynasty = hbe_dynasty_baz
+    tag = BAZ
+}
+hbe_ruler_bbb = {
+    first_name = { name = hbe_given_name_3 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 56 dip = 48 mil = 52
+    birth_date = 1306.1.1
+    birth = changshou_changshou
+    dynasty = hbe_dynasty_bbb
+    tag = BBB
+}
+hbe_ruler_bbc = {
+    first_name = { name = hbe_given_name_4 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 57 dip = 51 mil = 59
+    birth_date = 1307.1.1
+    birth = dingyuan
+    dynasty = hbe_dynasty_bbc
+    tag = BBC
+}
+hbe_ruler_bbe = {
+    first_name = { name = hbe_given_name_5 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 58 dip = 54 mil = 36
+    birth_date = 1308.1.1
+    birth = daning_kuizhou
+    dynasty = hbe_dynasty_bbe
+    tag = BBE
+}
+hbe_ruler_bbf = {
+    first_name = { name = hbe_given_name_6 }
+    culture = hmong_culture
+    religion = hmongism
+    adm = 59 dip = 57 mil = 43
+    birth_date = 1309.1.1
+    birth = pengshui
+    dynasty = hbe_dynasty_bbf
+    tag = BBF
+}
+hbe_ruler_bbh = {
+    first_name = { name = hbe_given_name_7 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 60 dip = 60 mil = 50
+    birth_date = 1295.1.1
+    birth = dianjiang
+    dynasty = hbe_dynasty_bbh
+    tag = BBH
+}
+hbe_ruler_bbi = {
+    first_name = { name = hbe_given_name_0 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 61 dip = 63 mil = 57
+    birth_date = 1296.1.1
+    birth = langzhong
+    dynasty = hbe_dynasty_bbi
+    tag = BBI
+}
+hbe_ruler_bbj = {
+    first_name = { name = hbe_given_name_1 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 62 dip = 41 mil = 64
+    birth_date = 1297.1.1
+    birth = huacheng
+    dynasty = hbe_dynasty_bbj
+    tag = BBJ
+}
+hbe_ruler_bbl = {
+    first_name = { name = hbe_given_name_2 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 63 dip = 44 mil = 41
+    birth_date = 1298.1.1
+    birth = jiachuan
+    dynasty = hbe_dynasty_bbl
+    tag = BBL
+}
+hbe_ruler_bbm = {
+    first_name = { name = hbe_given_name_3 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 64 dip = 47 mil = 48
+    birth_date = 1299.1.1
+    birth = mianzhou
+    dynasty = hbe_dynasty_bbm
+    tag = BBM
+}
+hbe_ruler_bbn = {
+    first_name = { name = hbe_given_name_4 }
+    culture = rma_culture
+    religion = rmaism
+    adm = 45 dip = 50 mil = 55
+    birth_date = 1300.1.1
+    birth = jiangyou
+    dynasty = hbe_dynasty_bbn
+    tag = BBN
+}
+hbe_ruler_bbo = {
+    first_name = { name = hbe_given_name_5 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 46 dip = 53 mil = 62
+    birth_date = 1301.1.1
+    birth = dongxiang_dazhou
+    dynasty = hbe_dynasty_bbo
+    tag = BBO
+}
+hbe_ruler_bbp = {
+    first_name = { name = hbe_given_name_6 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 47 dip = 56 mil = 39
+    birth_date = 1302.1.1
+    birth = nanchong
+    dynasty = hbe_dynasty_bbp
+    tag = BBP
+}
+hbe_ruler_bbq = {
+    first_name = { name = hbe_given_name_7 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 48 dip = 59 mil = 46
+    birth_date = 1303.1.1
+    birth = jianzhou
+    dynasty = hbe_dynasty_bbq
+    tag = BBQ
+}
+hbe_ruler_bbr = {
+    first_name = { name = hbe_given_name_0 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 49 dip = 62 mil = 53
+    birth_date = 1304.1.1
+    birth = suining
+    dynasty = hbe_dynasty_bbr
+    tag = BBR
+}
+hbe_ruler_bbs = {
+    first_name = { name = hbe_given_name_1 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 50 dip = 40 mil = 60
+    birth_date = 1305.1.1
+    birth = qixian_tongchuan
+    dynasty = hbe_dynasty_bbs
+    tag = BBS
+}
+hbe_ruler_bbt = {
+    first_name = { name = hbe_given_name_2 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 51 dip = 43 mil = 37
+    birth_date = 1306.1.1
+    birth = dazhu
+    dynasty = hbe_dynasty_bbt
+    tag = BBT
+}
+hbe_ruler_bbu = {
+    first_name = { name = hbe_given_name_3 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 52 dip = 46 mil = 44
+    birth_date = 1307.1.1
+    birth = yandao
+    dynasty = hbe_dynasty_bbu
+    tag = BBU
+}
+hbe_ruler_bbv = {
+    first_name = { name = hbe_given_name_4 }
+    culture = gyalrong_culture
+    religion = bon
+    adm = 53 dip = 49 mil = 51
+    birth_date = 1308.1.1
+    birth = baoning_maozhou
+    dynasty = hbe_dynasty_bbv
+    tag = BBV
+}
+hbe_ruler_bbw = {
+    first_name = { name = hbe_given_name_5 }
+    culture = amdowa_culture
+    religion = tibetan_buddhism
+    adm = 54 dip = 52 mil = 58
+    birth_date = 1309.1.1
+    birth = dazhasi
+    dynasty = hbe_dynasty_bbw
+    tag = BBW
+}
+hbe_ruler_bbx = {
+    first_name = { name = hbe_given_name_6 }
+    culture = dai_culture
+    religion = satsana_phi
+    adm = 55 dip = 55 mil = 35
+    birth_date = 1295.1.1
+    birth = mala
+    dynasty = hbe_dynasty_bbx
+    tag = BBX
+}
+hbe_ruler_bby = {
+    first_name = { name = hbe_given_name_7 }
+    culture = shu_culture
+    religion = mahayana
+    adm = 56 dip = 58 mil = 42
+    birth_date = 1296.1.1
+    birth = dechang
+    dynasty = hbe_dynasty_bby
+    tag = BBY
+}
+hbe_ruler_bbz = {
+    first_name = { name = hbe_given_name_0 }
+    culture = shu_culture
+    religion = sanjiao
+    adm = 57 dip = 61 mil = 49
+    birth_date = 1297.1.1
+    birth = hanyuan
+    dynasty = hbe_dynasty_bbz
+    tag = BBZ
+}
+hbe_ruler_bca = {
+    first_name = { name = hbe_given_name_1 }
+    culture = yi_culture
+    religion = bimoism
+    adm = 58 dip = 64 mil = 56
+    birth_date = 1298.1.1
+    birth = leibo
+    dynasty = hbe_dynasty_bca
+    tag = BCA
+}
+hbe_ruler_bcb = {
+    first_name = { name = hbe_given_name_2 }
+    culture = yi_culture
+    religion = bimoism
+    adm = 59 dip = 42 mil = 63
+    birth_date = 1299.1.1
+    birth = beishe
+    dynasty = hbe_dynasty_bcb
+    tag = BCB
+}
+hbe_ruler_bcc = {
+    first_name = { name = hbe_given_name_3 }
+    culture = hmong_culture
+    religion = hmongism
+    adm = 60 dip = 45 mil = 40
+    birth_date = 1300.1.1
+    birth = guihua
+    dynasty = hbe_dynasty_bcc
+    tag = BCC
+}
+}

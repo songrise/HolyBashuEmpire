@@ -1,0 +1,105 @@
+﻿hbe_empire = {
+    unique = yes has_target = no has_leader_country = yes leader_type = character
+    leader_title_key = HBE_EMPEROR
+    leader = { leader_country ?= { ruler ?= { add_to_list = leaders } } }
+    leader_change_trigger_type = rulerchange leader_change_method = vote
+    leadership_election_resolution = hbe_election
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    join_defensive_wars = Never join_offensive_wars = Never
+    show_on_diplomatic_map = yes show_as_overlord_on_map_trigger = { always = yes }
+    land_ownership_rule = hbe_land_ownership
+    can_declare_war = { custom_tooltip = { text = hbe_isolation_tt hbe_war_is_internal = yes } }
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { hbe_is_prince = yes }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    can_lead_trigger = { hbe_is_prince = yes is_subject = no has_ruler = yes }
+    special_statuses_implemented = { hbe_elector }
+    variables = { hbe_guoqi = { format = HBE_GUOQI_DISPLAY change_format = VARIABLE_CHANGE_FORMAT min = 0 max = 100 start = 40 } }
+    leader_modifier = { monthly_prestige = 0.05 }
+}
+hbe_circle_chengdu_plain = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}
+hbe_circle_southern_salt_wine = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}
+hbe_circle_eastern_river = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}
+hbe_circle_northern_shudao = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}
+hbe_circle_central_hills = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}
+hbe_circle_western_tea_horse = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}
+hbe_circle_southwestern_valleys = {
+    unique = yes has_target = no has_leader_country = yes leader_type = country
+    leader_change_trigger_type = none
+    disband_if_no_leader = no disband_minimum_member_count = 1
+    expel_members_who_are_targets_of_other_members = no
+    create_visible_trigger = { always = no } invite_visible_trigger = { always = no }
+    can_join_trigger = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+    can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
+    auto_disband_trigger = { always = no }
+    join_defensive_wars = Never join_offensive_wars = Never
+    can_declare_war = { hbe_war_is_internal = yes }
+}

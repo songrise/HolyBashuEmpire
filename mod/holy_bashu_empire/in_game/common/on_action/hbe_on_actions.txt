@@ -1,0 +1,14 @@
+﻿on_game_start = { on_actions = { hbe_start } }
+hbe_start = { effect = { every_country = { limit = { hbe_is_prince = yes } hbe_initialize = yes } } }
+monthly_country_pulse = { on_actions = { hbe_monthly } }
+hbe_monthly = { effect = { hbe_country_monthly = yes } }
+yearly_country_pulse = { on_actions = { hbe_yearly } }
+hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
+    if = { limit = { has_variable = hbe_salt_debt var:hbe_salt_debt > 0 } add_gold = -1 }
+    if = { limit = { current_year >= 1352 NOT = { has_variable = hbe_epoch_10 } } set_variable = hbe_epoch_10 trigger_event_non_silently = { id = hbe.10 } }
+if = { limit = { current_year >= 1372 NOT = { has_variable = hbe_epoch_11 } } set_variable = hbe_epoch_11 trigger_event_non_silently = { id = hbe.11 } }
+if = { limit = { current_year >= 1397 NOT = { has_variable = hbe_epoch_12 } } set_variable = hbe_epoch_12 trigger_event_non_silently = { id = hbe.12 } }
+if = { limit = { current_year >= 1422 NOT = { has_variable = hbe_epoch_13 } } set_variable = hbe_epoch_13 trigger_event_non_silently = { id = hbe.13 } }
+if = { limit = { current_year >= 1437 NOT = { has_variable = hbe_epoch_14 } } set_variable = hbe_epoch_14 trigger_event_non_silently = { id = hbe.14 } } }
+    random_events = { chance_to_happen = 20 1 = hbe.100 1 = hbe.101 1 = hbe.102 1 = hbe.103 1 = hbe.104 1 = hbe.105 1 = hbe.106 }
+}

@@ -1,0 +1,6 @@
+﻿hbe_elector_can_participate_in_parliament = {
+    boolean = yes game_data = { category = internationalorganization }
+}
+hbe_elector_agenda_impact = {
+    percent = yes game_data = { category = internationalorganization }
+}

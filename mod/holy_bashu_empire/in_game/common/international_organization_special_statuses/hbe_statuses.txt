@@ -1,0 +1,7 @@
+﻿hbe_elector = {
+    max_countries = 7 priority = 10 elector = yes
+    can_bestow_trigger = { is_member_of_international_organization = scope:recipient is_subject = no }
+    auto_bestowal_trigger = { always = yes }
+    auto_rescind_trigger = { NOT = { is_member_of_international_organization = scope:recipient } }
+    special_status_power = { value = 1 }
+}

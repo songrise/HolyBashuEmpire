@@ -1,0 +1,9 @@
+﻿hbe_land_ownership = {
+    modifier = { }
+    can_add_trigger = { always = yes }
+    can_add_location_trigger = { is_in_scripted_geography = scripted_geography:hbe_domain }
+    can_remove_trigger = { always = no }
+    can_remove_location_trigger = { always = no }
+    on_added = { } on_removed = { }
+    ai_desire_to_add = { value = 0 }
+}

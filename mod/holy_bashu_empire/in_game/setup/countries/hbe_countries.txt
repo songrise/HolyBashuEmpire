@@ -1,0 +1,288 @@
+﻿BAB = {
+    color = rgb { 209 115 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BAE = {
+    color = rgb { 115 142 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BAF = {
+    color = rgb { 170 209 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BAJ = {
+    color = rgb { 209 115 197 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BAL = {
+    color = rgb { 115 209 193 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BAO = {
+    color = rgb { 209 166 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = yi_culture
+    religion_definition = bimoism
+    description_category = administrative
+    difficulty = 2
+}
+BAP = {
+    color = rgb { 138 115 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BAQ = {
+    color = rgb { 119 209 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BAW = {
+    color = rgb { 209 115 146 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BAX = {
+    color = rgb { 115 174 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BAZ = {
+    color = rgb { 201 209 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBB = {
+    color = rgb { 189 115 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBC = {
+    color = rgb { 115 209 162 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBE = {
+    color = rgb { 209 134 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBF = {
+    color = rgb { 115 123 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = hmong_culture
+    religion_definition = hmongism
+    description_category = administrative
+    difficulty = 2
+}
+BBH = {
+    color = rgb { 150 209 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBI = {
+    color = rgb { 209 115 178 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBJ = {
+    color = rgb { 115 205 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBL = {
+    color = rgb { 209 185 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBM = {
+    color = rgb { 158 115 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBN = {
+    color = rgb { 115 209 130 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = rma_culture
+    religion_definition = rmaism
+    description_category = administrative
+    difficulty = 2
+}
+BBO = {
+    color = rgb { 209 115 127 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBP = {
+    color = rgb { 115 154 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBQ = {
+    color = rgb { 182 209 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBR = {
+    color = rgb { 209 115 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBS = {
+    color = rgb { 115 209 181 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBT = {
+    color = rgb { 209 154 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BBU = {
+    color = rgb { 126 115 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBV = {
+    color = rgb { 131 209 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = gyalrong_culture
+    religion_definition = bon
+    description_category = administrative
+    difficulty = 2
+}
+BBW = {
+    color = rgb { 209 115 158 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = amdowa_culture
+    religion_definition = tibetan_buddhism
+    description_category = administrative
+    difficulty = 2
+}
+BBX = {
+    color = rgb { 115 186 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = dai_culture
+    religion_definition = satsana_phi
+    description_category = administrative
+    difficulty = 2
+}
+BBY = {
+    color = rgb { 209 205 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = mahayana
+    description_category = administrative
+    difficulty = 2
+}
+BBZ = {
+    color = rgb { 177 115 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = shu_culture
+    religion_definition = sanjiao
+    description_category = administrative
+    difficulty = 2
+}
+BCA = {
+    color = rgb { 115 209 150 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = yi_culture
+    religion_definition = bimoism
+    description_category = administrative
+    difficulty = 2
+}
+BCB = {
+    color = rgb { 209 122 115 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = yi_culture
+    religion_definition = bimoism
+    description_category = administrative
+    difficulty = 2
+}
+BCC = {
+    color = rgb { 115 135 209 }
+    color2 = rgb { 236 216 158 }
+    culture_definition = hmong_culture
+    religion_definition = hmongism
+    description_category = administrative
+    difficulty = 2
+}
