@@ -1,0 +1,301 @@
+{
+  "version": "0.1.1",
+  "save_date": "1338.1.1",
+  "situation_active": true,
+  "situation_start": "1337.10.1",
+  "registered_original_princes": 36,
+  "countries": {
+    "BAB": {
+      "id": 1209,
+      "joined": true
+    },
+    "BAE": {
+      "id": 1210,
+      "joined": true
+    },
+    "BAF": {
+      "id": 1211,
+      "joined": true
+    },
+    "BAJ": {
+      "id": 1212,
+      "joined": true
+    },
+    "BAL": {
+      "id": 1213,
+      "joined": true
+    },
+    "BAO": {
+      "id": 1214,
+      "joined": true
+    },
+    "BAP": {
+      "id": 1215,
+      "joined": true
+    },
+    "BAQ": {
+      "id": 1216,
+      "joined": true
+    },
+    "BAW": {
+      "id": 1217,
+      "joined": true
+    },
+    "BAX": {
+      "id": 1218,
+      "joined": true
+    },
+    "BAZ": {
+      "id": 1219,
+      "joined": true
+    },
+    "BBB": {
+      "id": 1220,
+      "joined": true
+    },
+    "BBC": {
+      "id": 1221,
+      "joined": true
+    },
+    "BBE": {
+      "id": 1222,
+      "joined": true
+    },
+    "BBF": {
+      "id": 1223,
+      "joined": true
+    },
+    "BBH": {
+      "id": 1224,
+      "joined": true
+    },
+    "BBI": {
+      "id": 1225,
+      "joined": true
+    },
+    "BBJ": {
+      "id": 1226,
+      "joined": true
+    },
+    "BBL": {
+      "id": 1227,
+      "joined": true
+    },
+    "BBM": {
+      "id": 1228,
+      "joined": true
+    },
+    "BBN": {
+      "id": 1229,
+      "joined": true
+    },
+    "BBO": {
+      "id": 1230,
+      "joined": true
+    },
+    "BBP": {
+      "id": 1231,
+      "joined": true
+    },
+    "BBQ": {
+      "id": 1232,
+      "joined": true
+    },
+    "BBR": {
+      "id": 1233,
+      "joined": true
+    },
+    "BBS": {
+      "id": 1234,
+      "joined": true
+    },
+    "BBT": {
+      "id": 1235,
+      "joined": true
+    },
+    "BBU": {
+      "id": 1236,
+      "joined": true
+    },
+    "BBV": {
+      "id": 1237,
+      "joined": true
+    },
+    "BBW": {
+      "id": 1238,
+      "joined": true
+    },
+    "BBX": {
+      "id": 1239,
+      "joined": true
+    },
+    "BBY": {
+      "id": 1240,
+      "joined": true
+    },
+    "BBZ": {
+      "id": 1241,
+      "joined": true
+    },
+    "BCA": {
+      "id": 1242,
+      "joined": true
+    },
+    "BCB": {
+      "id": 1243,
+      "joined": true
+    },
+    "BCC": {
+      "id": 1244,
+      "joined": true
+    }
+  },
+  "legacy_completed_course_reward_not_duplicated": true,
+  "native_research_variable_bridge_and_single_reward": true,
+  "legacy_pending_course_completed_and_granted_native_advance": true,
+  "save_path": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\eu5-v011-test\\save games\\scheduled_save_DESKTOP-L1LK2TH_1338_01_01.eu5",
+  "source_manifest_sha256": "15c2dd92a70b01c3f262c016915f7dcccac03a07b722754683b88cc115286e45",
+  "scope": "Isolated 1337 observer run to 1338; native research effect and migration verified. GUI rendering and century balance pending.",
+  "no_free_starting_research_verified": true,
+  "new_custom_script_parse_errors": 0,
+  "custom_compatibility_diagnostics": [
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_7'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_6'",
+    "[20:28:45][jomini_effect.cpp:1160]: Variable 'hbe_pot_display' is set but is never used. Note that use in localization doesn't count due to technical limitations. Use in unused scripted triggers and effects also does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_2'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:45][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_8'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_1'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_4'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_western_tea_horse_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_2_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_5'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southwestern_valleys_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southwestern_valleys_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_southwestern_valleys_3'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_common_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_3_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_central_hills_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_central_hills_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_eastern_river_7_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_western_tea_horse_pending'",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_1_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_8_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_southern_salt_wine_6_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_southern_salt_wine_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_chengdu_plain_4_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_tech_chengdu_plain_1_pending'",
+    "[20:28:46][jomini_effect.cpp:1165]: Variable 'hbe_tech_northern_shudao_5_pending' is used but is never set. Setting it in an unused scripted trigger or effect does not count. Check for typos.",
+    "[20:28:46][jomini_effect.cpp:1207]:  Possible match: 'hbe_service_northern_shudao_pending'"
+  ],
+  "global_automated_test_summary": "Tests:\n[ FAIL ] Error log: 11699 errors",
+  "diagnostic_scope": "Global automated log check reports existing game/platform/setup errors and legacy compatibility-variable warnings. This report verifies exact HBE saved-state assertions and absence of new HBE script parse errors; it is not a claim that the entire game error log is clean."
+}

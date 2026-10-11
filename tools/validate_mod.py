@@ -70,7 +70,7 @@ def main():
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
-    check('134 decisions and 64 research nodes',manifest['decisions']==134 and manifest['research_nodes']==64)
+    check('70 decisions and 64 native research nodes',manifest['decisions']==70 and manifest['research_nodes']==64)
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
     check('centennial content and repeatable pulse persist','current_year >= 1437' in pulse and 'yearly_country_pulse' in pulse and 'current_year < 1457' not in pulse)
@@ -78,7 +78,7 @@ def main():
     check('war calls have a cross-boundary gate','join_war_disabled_trigger' in (m/'in_game/common/join_war_rules/hbe_isolation.txt').read_text(encoding="utf-8-sig"))
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    check('release metadata and manifest version match 0.1',manifest['version']=='0.1' and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']=='0.1')
+    check('release metadata and manifest version match 0.1.1',manifest['version']=='0.1.1' and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']=='0.1.1')
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -122,10 +122,10 @@ def main():
     check('country event AI choices use native MTTH base syntax','ai_chance = { value' not in new_events and 'ai_chance = { base' in new_events)
     art=manifest['icon_art'];tech_art=art['technology_icons'];other_art=art['other_icons']
     check('eight sprite atlases map exactly 64 unique research icons',art['atlases']==8 and len(tech_art)==64 and len({e['key'] for e in tech_art})==64 and len({e['sha256'] for e in tech_art})==64)
-    research_script=(m/'in_game/common/decisions/hbe_decisions.txt').read_text(encoding='utf-8-sig')
+    research_script=(m/'in_game/common/advances/hbe_advances.txt').read_text(encoding='utf-8-sig')
     for e in tech_art:
         p=m/e['image'];b=p.read_bytes()
-        check('painted research icon '+e['key'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(256,256) and hashlib.sha256(b).hexdigest()==e['sha256'] and f'gfx/interface/hbe/technology/{e["key"]}.dds' in research_script)
+        check('painted research icon '+e['key'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(256,256) and hashlib.sha256(b).hexdigest()==e['sha256'] and ('icon = '+e['key']) in research_script and (m/'main_menu/gfx/interface/advance'/f'{e["key"]}.dds').read_bytes()==b)
     check('ten point icons and one native situation icon',len(other_art)==11 and sum(e['kind']=='point' for e in other_art)==10 and any(e['key']=='hbe_banquet' for e in other_art))
     for e in other_art:
         p=m/e['image'];b=p.read_bytes()
@@ -159,9 +159,24 @@ def main():
     decision_scripts='\n'.join(f.read_text(encoding='utf-8-sig') for f in (m/'in_game/common/decisions').glob('hbe*decisions.txt'))
     decision_blocks={key:decision_scripts[a:b] for key,_,a,b,_ in blocks(decision_scripts,0)}
     for e in pictures:
-        painted_dds('painted non-research decision '+e['key'],e['image'],(192,384),e['sha256'])
+        painted_dds('painted non-research decision '+e['key'],e['image'],(440,1080),e['sha256'])
         check('decision picture linked '+e['key'],f'gfx/interface/hbe/decisions/{e["key"]}.dds' in decision_blocks[e['key']])
-    check('all 134 decision images exist and no active checker placeholders',len(decision_blocks)==134 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
+    check('all 70 decision images exist and no active checker placeholders',len(decision_blocks)==70 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
+    check('all implicit decision titles and catalogue entries localized',all(k+'.title' in loc_keys and k+'.title.entry' in loc_keys and k+'.desc.entry' in loc_keys for k in decision_blocks))
+    check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and 'tags = {' in b for b in decision_blocks.values()))
+    native=json.loads((ROOT/'data/native_content_v011.json').read_text(encoding='utf-8'))
+    advances=(m/'in_game/common/advances/hbe_advances.txt').read_text(encoding='utf-8-sig')
+    advance_blocks={key:advances[a:b] for key,_,a,b,_ in blocks(advances,0)}
+    check('64 research icons belong to native advance nodes only',len(advance_blocks)==64 and not any(k.startswith('hbe_tech_') for k in decision_blocks) and all('icon = '+k in b and k+'_desc' in loc_keys for k,b in advance_blocks.items()))
+    check('all native research nodes have original year gates and explicit tag potentials',all('current_year >= '+str(e['year']) in advance_blocks[e['key']] and all('has_or_had_tag = '+t in advance_blocks[e['key']] for t in e['tags']) for e in native['advances']))
+    check('native starting technology does not pregrant regional research',all('starting_technology_level = 99' in b for b in advance_blocks.values()))
+    check('seven pairs of research branches are mutually exclusive',all('has_advance = hbe_tech_'+r[0]+'_6' in advance_blocks['hbe_tech_'+r[0]+'_3'] and 'has_advance = hbe_tech_'+r[0]+'_3' in advance_blocks['hbe_tech_'+r[0]+'_6'] for r in manifest['regions']))
+    check('36 single-country events indexed without new autonomous event rolls',len(native['events'])==36 and all('monthly_chance = 0' in event_blocks[e['id']] and 'dynamic_historical_event' in event_blocks[e['id']] and 'fire_only_once = yes' in event_blocks[e['id']] for e in native['events']))
+    check('60 shared or recurring events keep their original dispatch',len(native['non_dhe_event_ids'])==60 and all('dynamic_historical_event' not in event_blocks[k] and 'fire_only_once' not in event_blocks[k] for k in native['non_dhe_event_ids']))
+    check('36 distinct native country histories and lobby profiles localized',len(native['country_biographies'])==36 and len({e['body'] for e in native['country_biographies']})==36 and all('country_history_'+e['tag'] in loc_keys and 'country_description_category_desc_hbe_profile_'+e['tag'].lower() in loc_keys for e in native['country_biographies']))
+    check('all 36 flags use white plates and black LiSu',flagdefs.count('texture = "ce_hbe_nameplate.dds"')==36 and flagdefs.count('color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 }')==36)
+    texts=json.loads((ROOT/'data/decision_texts_v011.json').read_text(encoding='utf-8'))
+    check('70 decisions have full flavor prose separate from mechanics',len(texts)==70 and all('\n\n' in e['body'] and len(e['body'])>=75 for e in texts))
     prose=json.loads((ROOT/'data/event_texts_v01.json').read_text(encoding='utf-8'))
     check('all 96 events have independent two-paragraph Bashu narratives',manifest['event_prose']['events_rewritten']==96 and len(prose)==96 and len({e['body'] for e in prose})==96 and all('\n\n' in e['body'] and len(e['body'])>=120 for e in prose))
     check('rewritten event narratives omit HRE jokes',all(not any(word in e['body']+e['title'] for word in ('神罗','欧洲','祖传选票','椅子比别家','菜单先来')) for e in prose))

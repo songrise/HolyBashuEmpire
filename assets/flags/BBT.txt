@@ -1,4 +1,4 @@
 BBT = {
     pattern = "pattern_fringe.dds" color1 = "hbe_dark_red" color2 = "hbe_old_gold"
-    colored_emblem = { texture = "ce_heron_wide.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_name_bbt.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
+    colored_emblem = { texture = "ce_heron_wide.dds" color1 = "hbe_ivory" color2 = "hbe_ivory" color3 = "hbe_ivory" instance = { position = { 0.5 0.33 } scale = { 0.6 0.55 } } } colored_emblem = { texture = "ce_hbe_nameplate.dds" color1 = "hbe_white" color2 = "hbe_white" color3 = "hbe_white" instance = { position = { 0.5 0.77 } scale = { 0.69 0.31 } } } colored_emblem = { texture = "ce_hbe_name_bbt.dds" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = { position = { 0.5 0.77 } scale = { 0.60 0.28 } } }
 }

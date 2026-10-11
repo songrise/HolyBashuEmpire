@@ -1,0 +1,4 @@
+﻿on_game_start = { on_actions = { hbe_native_content_start } }
+hbe_native_content_start = { effect = { every_country = { limit = { hbe_is_prince = yes } hbe_sync_native_research = yes } } }
+monthly_country_pulse = { on_actions = { hbe_native_content_monthly } }
+hbe_native_content_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_sync_native_research = yes } }

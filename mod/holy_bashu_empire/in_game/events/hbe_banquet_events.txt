@@ -252,6 +252,9 @@ hbe_banquet.120 = {
     option = { name = hbe_banquet.120.a trigger = { gold >= 2 } ai_chance = { base = 45 } add_gold = -2 change_variable = { name = hbe_valleys add = 5 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute subtract = 1 } hbe_banquet_clamp = yes } } option = { name = hbe_banquet.120.b trigger = { OR = { has_variable = hbe_tech_southwestern_valleys_3 has_variable = hbe_tech_southwestern_valleys_6 } var:hbe_valleys >= 5 } ai_chance = { base = 40 } change_variable = { name = hbe_valleys subtract = 5 } change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute subtract = 2 } hbe_banquet_clamp = yes } add_prestige = 2 } option = { name = hbe_banquet.120.c ai_chance = { base = 15 } change_variable = { name = hbe_valleys add = 3 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 2 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.200 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAB from = 1338.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.200.title desc = hbe_banquet.200.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAB NOT = { has_variable = hbe_personal_bab } }
@@ -259,6 +262,9 @@ hbe_banquet.200 = {
     option = { name = hbe_banquet.200.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.200.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.201 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAE from = 1339.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.201.title desc = hbe_banquet.201.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAE NOT = { has_variable = hbe_personal_bae } }
@@ -266,6 +272,9 @@ hbe_banquet.201 = {
     option = { name = hbe_banquet.201.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.201.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.202 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAF from = 1340.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.202.title desc = hbe_banquet.202.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAF NOT = { has_variable = hbe_personal_baf } }
@@ -273,6 +282,9 @@ hbe_banquet.202 = {
     option = { name = hbe_banquet.202.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.202.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.203 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAJ from = 1341.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.203.title desc = hbe_banquet.203.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAJ NOT = { has_variable = hbe_personal_baj } }
@@ -280,6 +292,9 @@ hbe_banquet.203 = {
     option = { name = hbe_banquet.203.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.203.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.204 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAL from = 1342.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.204.title desc = hbe_banquet.204.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAL NOT = { has_variable = hbe_personal_bal } }
@@ -287,6 +302,9 @@ hbe_banquet.204 = {
     option = { name = hbe_banquet.204.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.204.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.205 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAO from = 1343.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.205.title desc = hbe_banquet.205.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_salt }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAO NOT = { has_variable = hbe_personal_bao } }
@@ -294,6 +312,9 @@ hbe_banquet.205 = {
     option = { name = hbe_banquet.205.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.205.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.206 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAP from = 1338.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.206.title desc = hbe_banquet.206.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_salt }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAP NOT = { has_variable = hbe_personal_bap } }
@@ -301,6 +322,9 @@ hbe_banquet.206 = {
     option = { name = hbe_banquet.206.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.206.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.207 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAQ from = 1339.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.207.title desc = hbe_banquet.207.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_salt }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAQ NOT = { has_variable = hbe_personal_baq } }
@@ -308,6 +332,9 @@ hbe_banquet.207 = {
     option = { name = hbe_banquet.207.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.207.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.208 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAW from = 1340.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.208.title desc = hbe_banquet.208.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_salt }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAW NOT = { has_variable = hbe_personal_baw } }
@@ -315,6 +342,9 @@ hbe_banquet.208 = {
     option = { name = hbe_banquet.208.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.208.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.209 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAX from = 1341.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.209.title desc = hbe_banquet.209.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAX NOT = { has_variable = hbe_personal_bax } }
@@ -322,6 +352,9 @@ hbe_banquet.209 = {
     option = { name = hbe_banquet.209.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.209.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.210 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BAZ from = 1342.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.210.title desc = hbe_banquet.210.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BAZ NOT = { has_variable = hbe_personal_baz } }
@@ -329,6 +362,9 @@ hbe_banquet.210 = {
     option = { name = hbe_banquet.210.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.210.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.211 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBB from = 1343.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.211.title desc = hbe_banquet.211.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBB NOT = { has_variable = hbe_personal_bbb } }
@@ -336,6 +372,9 @@ hbe_banquet.211 = {
     option = { name = hbe_banquet.211.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.211.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.212 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBC from = 1338.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.212.title desc = hbe_banquet.212.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBC NOT = { has_variable = hbe_personal_bbc } }
@@ -343,6 +382,9 @@ hbe_banquet.212 = {
     option = { name = hbe_banquet.212.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.212.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.213 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBE from = 1339.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.213.title desc = hbe_banquet.213.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBE NOT = { has_variable = hbe_personal_bbe } }
@@ -350,6 +392,9 @@ hbe_banquet.213 = {
     option = { name = hbe_banquet.213.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.213.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.214 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBF from = 1340.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.214.title desc = hbe_banquet.214.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBF NOT = { has_variable = hbe_personal_bbf } }
@@ -357,6 +402,9 @@ hbe_banquet.214 = {
     option = { name = hbe_banquet.214.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.214.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.215 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBH from = 1341.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.215.title desc = hbe_banquet.215.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBH NOT = { has_variable = hbe_personal_bbh } }
@@ -364,6 +412,9 @@ hbe_banquet.215 = {
     option = { name = hbe_banquet.215.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.215.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.216 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBI from = 1342.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.216.title desc = hbe_banquet.216.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBI NOT = { has_variable = hbe_personal_bbi } }
@@ -371,6 +422,9 @@ hbe_banquet.216 = {
     option = { name = hbe_banquet.216.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.216.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.217 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBJ from = 1343.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.217.title desc = hbe_banquet.217.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBJ NOT = { has_variable = hbe_personal_bbj } }
@@ -378,6 +432,9 @@ hbe_banquet.217 = {
     option = { name = hbe_banquet.217.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.217.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.218 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBL from = 1338.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.218.title desc = hbe_banquet.218.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBL NOT = { has_variable = hbe_personal_bbl } }
@@ -385,6 +442,9 @@ hbe_banquet.218 = {
     option = { name = hbe_banquet.218.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.218.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.219 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBM from = 1339.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.219.title desc = hbe_banquet.219.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBM NOT = { has_variable = hbe_personal_bbm } }
@@ -392,6 +452,9 @@ hbe_banquet.219 = {
     option = { name = hbe_banquet.219.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.219.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.220 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBN from = 1340.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.220.title desc = hbe_banquet.220.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBN NOT = { has_variable = hbe_personal_bbn } }
@@ -399,6 +462,9 @@ hbe_banquet.220 = {
     option = { name = hbe_banquet.220.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.220.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.221 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBO from = 1341.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.221.title desc = hbe_banquet.221.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBO NOT = { has_variable = hbe_personal_bbo } }
@@ -406,6 +472,9 @@ hbe_banquet.221 = {
     option = { name = hbe_banquet.221.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.221.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.222 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBP from = 1342.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.222.title desc = hbe_banquet.222.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBP NOT = { has_variable = hbe_personal_bbp } }
@@ -413,6 +482,9 @@ hbe_banquet.222 = {
     option = { name = hbe_banquet.222.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.222.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.223 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBQ from = 1343.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.223.title desc = hbe_banquet.223.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_grain }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBQ NOT = { has_variable = hbe_personal_bbq } }
@@ -420,6 +492,9 @@ hbe_banquet.223 = {
     option = { name = hbe_banquet.223.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.223.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.224 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBR from = 1338.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.224.title desc = hbe_banquet.224.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_grain }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBR NOT = { has_variable = hbe_personal_bbr } }
@@ -427,6 +502,9 @@ hbe_banquet.224 = {
     option = { name = hbe_banquet.224.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.224.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.225 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBS from = 1339.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.225.title desc = hbe_banquet.225.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_grain }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBS NOT = { has_variable = hbe_personal_bbs } }
@@ -434,6 +512,9 @@ hbe_banquet.225 = {
     option = { name = hbe_banquet.225.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.225.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.226 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBT from = 1340.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.226.title desc = hbe_banquet.226.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_grain }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBT NOT = { has_variable = hbe_personal_bbt } }
@@ -441,6 +522,9 @@ hbe_banquet.226 = {
     option = { name = hbe_banquet.226.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.226.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.227 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBU from = 1341.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.227.title desc = hbe_banquet.227.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_tea }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBU NOT = { has_variable = hbe_personal_bbu } }
@@ -448,6 +532,9 @@ hbe_banquet.227 = {
     option = { name = hbe_banquet.227.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.227.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.228 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBV from = 1342.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.228.title desc = hbe_banquet.228.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_tea }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBV NOT = { has_variable = hbe_personal_bbv } }
@@ -455,6 +542,9 @@ hbe_banquet.228 = {
     option = { name = hbe_banquet.228.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.228.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.229 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBW from = 1343.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.229.title desc = hbe_banquet.229.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_tea }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBW NOT = { has_variable = hbe_personal_bbw } }
@@ -462,6 +552,9 @@ hbe_banquet.229 = {
     option = { name = hbe_banquet.229.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.229.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.230 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBX from = 1338.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.230.title desc = hbe_banquet.230.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBX NOT = { has_variable = hbe_personal_bbx } }
@@ -469,6 +562,9 @@ hbe_banquet.230 = {
     option = { name = hbe_banquet.230.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.230.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.231 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBY from = 1339.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.231.title desc = hbe_banquet.231.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBY NOT = { has_variable = hbe_personal_bby } }
@@ -476,6 +572,9 @@ hbe_banquet.231 = {
     option = { name = hbe_banquet.231.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.231.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.232 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BBZ from = 1340.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.232.title desc = hbe_banquet.232.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BBZ NOT = { has_variable = hbe_personal_bbz } }
@@ -483,6 +582,9 @@ hbe_banquet.232 = {
     option = { name = hbe_banquet.232.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.232.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.233 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BCA from = 1341.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.233.title desc = hbe_banquet.233.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BCA NOT = { has_variable = hbe_personal_bca } }
@@ -490,6 +592,9 @@ hbe_banquet.233 = {
     option = { name = hbe_banquet.233.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.233.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.234 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BCB from = 1342.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.234.title desc = hbe_banquet.234.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BCB NOT = { has_variable = hbe_personal_bcb } }
@@ -497,6 +602,9 @@ hbe_banquet.234 = {
     option = { name = hbe_banquet.234.a trigger = { gold >= 2 } ai_chance = { base = 75 } add_gold = -2 change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain } add_location_modifier = { modifier = hbe_project_build years = 3 mode = replace } } } option = { name = hbe_banquet.234.b ai_chance = { base = 25 } change_variable = { name = hbe_yiqi subtract = 2 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 1 } hbe_banquet_clamp = yes } }
 }
 hbe_banquet.235 = {
+    fire_only_once = yes
+    dynamic_historical_event = { tag = BCC from = 1343.1.1 to = 1837.1.1 monthly_chance = 0 }
+
     type = country_event title = hbe_banquet.235.title desc = hbe_banquet.235.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { is_member_of_international_organization = international_organization:hbe_empire has_or_had_tag = BCC NOT = { has_variable = hbe_personal_bcc } }

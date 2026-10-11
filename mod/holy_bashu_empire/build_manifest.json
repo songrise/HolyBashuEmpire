@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.1.1",
   "countries": [
     {
       "tag": "BAB",
@@ -678,7 +678,7 @@
   "regional_missions": 35,
   "recurring_services": 7,
   "events": 96,
-  "decisions": 134,
+  "decisions": 70,
   "expansion": {
     "new_events": 79,
     "new_decisions": 24,
@@ -689,9 +689,10 @@
         "region": "chengdu_plain",
         "inscription": "成都",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bab.dds",
         "sha256": "124f6e122c7958745f4c4add6e84ff08d595567546549575971981cdbf9f436b",
-        "definition_sha256": "4b016d1373d577d91871b4a1e256d239418b8378d1a69db0597472e5fee312ac",
+        "definition_sha256": "c597937c54e02439716d65d02217f3fc0478379b886a7d71c3f7afa8ff5d5bbf",
         "native_assets": [
           {
             "category": "patterns",
@@ -709,9 +710,10 @@
         "region": "chengdu_plain",
         "inscription": "汉州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bae.dds",
         "sha256": "ea48e643ebe256908da4d3c86651cb8bca6f4b45bb071e95d4331084e2509368",
-        "definition_sha256": "5b89c9075bfe9c87c350bb3fe5b0118fc105e5453c3789f9adcc133f889582a7",
+        "definition_sha256": "8d3fa01d0812eb5f920e272df480ceccc0b8f1376f2a750f326af8958f7aecef",
         "native_assets": [
           {
             "category": "patterns",
@@ -729,9 +731,10 @@
         "region": "chengdu_plain",
         "inscription": "彭州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_baf.dds",
         "sha256": "220c878110b35d5ac145b7f9f09fd195075c69aeb94d73034877fa5841b0cf52",
-        "definition_sha256": "c8e15a9bc8247962496789f06e10785e53578a9210b401940ad93fac11be5508",
+        "definition_sha256": "7e38ddfe40edffa353115117c3de5c6a8798f61a834404cbdd89c6925d021014",
         "native_assets": [
           {
             "category": "patterns",
@@ -749,9 +752,10 @@
         "region": "chengdu_plain",
         "inscription": "邛州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_baj.dds",
         "sha256": "081fa26c501a9df4e94e8192c210ab3f84c6d236a02e41a7a2c4bbe88bf0aac2",
-        "definition_sha256": "4f65827327c45c17b533b801da41a9c8e73fe357434d5928ca23f43586732f60",
+        "definition_sha256": "774a8ed40d5123048414ad51998b719c3e8dbb3e969d195a1a5e50a1b1ce2506",
         "native_assets": [
           {
             "category": "patterns",
@@ -769,9 +773,10 @@
         "region": "chengdu_plain",
         "inscription": "眉州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bal.dds",
         "sha256": "e663f5d13b6c92b1c892f6b382739fa2d1dd8385f64fa73a049106e4c28f7c8c",
-        "definition_sha256": "db00009542efa15ad6de2b834199d2838bccbc4a99ccda1f9bfc5641274aa17d",
+        "definition_sha256": "e62c5328ac080832743381593c42cedd425901dbf39556ccdf0f6273f59b7fd7",
         "native_assets": [
           {
             "category": "patterns",
@@ -789,9 +794,10 @@
         "region": "southern_salt_wine",
         "inscription": "嘉定",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bao.dds",
         "sha256": "41f150a352cb153012185454ff17bedb0dd8e3ba68138efcf9e3f2a7864ea64c",
-        "definition_sha256": "c86904d1e9d65b4d8cffb7e1e36e95c1753acd5c0fc3be0b0242ff9d4ac23f0c",
+        "definition_sha256": "30f8be7cd231e21140956b4de2397e12c72273b0f6e9aa784599c42cf9d42da2",
         "native_assets": [
           {
             "category": "patterns",
@@ -809,9 +815,10 @@
         "region": "southern_salt_wine",
         "inscription": "叙州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bap.dds",
         "sha256": "2efaecc6fa9b9c5b3800062a5ecf54459112df92f5015cf93e0c4d0d15dfbf94",
-        "definition_sha256": "87baaa4e52c01e27f8f353509ef083bc211a8d65c8a3f31340e8359599c2afdf",
+        "definition_sha256": "c7748b9ce7d168d0213f40aef5a9dd57bfd5cb91313e47a041db3c4d05090f18",
         "native_assets": [
           {
             "category": "patterns",
@@ -829,9 +836,10 @@
         "region": "southern_salt_wine",
         "inscription": "泸州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_baq.dds",
         "sha256": "87babc94de56f0a6917af6a99ef3a34edb182e38f327311b2bc50186c8df9b9c",
-        "definition_sha256": "c92e69acd5709c44c8b17a1fe1b3533e7a9230807a0b3a31bab6d36c33e0fdd8",
+        "definition_sha256": "24be6ce2311d0db91019cecee081164627912d189d52857ae27d15b236143ed1",
         "native_assets": [
           {
             "category": "patterns",
@@ -849,9 +857,10 @@
         "region": "southern_salt_wine",
         "inscription": "长宁",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_baw.dds",
         "sha256": "c4d4f81db8be0315ee5fd38c0aa5a255f9e192907d28c6a5d7f8ee12af958f73",
-        "definition_sha256": "236e0ce971e097b5e6a2cfbe62648ac4ceeb78fd78737b9b3c7d93e2dff1c4aa",
+        "definition_sha256": "53c7d235425b9a30f64e5ee6aaf426367eeb12c4d64c7fe572993c1f0975166c",
         "native_assets": [
           {
             "category": "patterns",
@@ -869,9 +878,10 @@
         "region": "eastern_river",
         "inscription": "昌州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bax.dds",
         "sha256": "7bec7d70d8ce7cdf2cf0ada73e3358273e765f87a2117e32f1ec5182ffe51c8b",
-        "definition_sha256": "d8b2ebdedeb73db1fe62cf04298a7516e398794f72c7a260f2b1e8bd50f14452",
+        "definition_sha256": "063102488fc748f62fb234e71bbea561188f4d18c997e116c1c95375501c833f",
         "native_assets": [
           {
             "category": "patterns",
@@ -889,9 +899,10 @@
         "region": "eastern_river",
         "inscription": "重庆",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_baz.dds",
         "sha256": "6acd469ccf9325117fe02371b69ca0fab19551a78ea2fabf9ce75846fdca47b1",
-        "definition_sha256": "a77a22929000b948cab4d767e5600ef924334b5b547c818c8997371cd8bc0331",
+        "definition_sha256": "8f7c25987044572f12786f26dcf969010fc0a96d99431eed1b387ae0aa5931a0",
         "native_assets": [
           {
             "category": "patterns",
@@ -909,9 +920,10 @@
         "region": "eastern_river",
         "inscription": "涪州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbb.dds",
         "sha256": "a3c9e6899f9be570f27c703534f7b528f63b296b8b2a9a913e33f046a587e4b5",
-        "definition_sha256": "aef3e9db7a0bd51100c62b76980a9b12b95983a0090b366c3ab8f5dea0cbde66",
+        "definition_sha256": "b19f3a6fc3c7223e09957eab1e2983e8c6842f66988b61e18345f798f3ee05a9",
         "native_assets": [
           {
             "category": "patterns",
@@ -929,9 +941,10 @@
         "region": "eastern_river",
         "inscription": "合州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbc.dds",
         "sha256": "5e0c79828c0183801afb27cb93446362919da09206fa94541019e1e2db1ce3a1",
-        "definition_sha256": "e333adb2aac5dbf974a885ffeb9825764046df51b0c0d5b00ac265a15c421d5e",
+        "definition_sha256": "c9ef32dcd4b962fa70e8fe0cae17197465f45c350e69ea3c95e9b9b37257ff51",
         "native_assets": [
           {
             "category": "patterns",
@@ -949,9 +962,10 @@
         "region": "eastern_river",
         "inscription": "夔州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbe.dds",
         "sha256": "debee1eae9c4c9e8e7942c19e4b73bcf8e7d596ce0efb731f0d4f0d2b3547f66",
-        "definition_sha256": "4a60b768ed7accc28bbf340a11bec3b28bbd7f290715c52ee7ed0b4455029d31",
+        "definition_sha256": "124c08cc34f6dc326bbbd5404bc387b44e5b5f0791e1d752a6c91e1b4a9da69a",
         "native_assets": [
           {
             "category": "patterns",
@@ -969,9 +983,10 @@
         "region": "eastern_river",
         "inscription": "酉阳",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbf.dds",
         "sha256": "1baa09ceaf68d6195f10d7a0582a1deee345977d26892f94cf473ee336c7bb35",
-        "definition_sha256": "9f714f545ec7e23df2214f3d89ee6d7e03b750d6631ec30c85f9e4ae5cf1f21d",
+        "definition_sha256": "a17a625f427210e0c4c5e2c0a14e30e02ebbd6841538d24b8a8012c665ea9f1f",
         "native_assets": [
           {
             "category": "patterns",
@@ -989,9 +1004,10 @@
         "region": "eastern_river",
         "inscription": "忠州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbh.dds",
         "sha256": "583d0b4787b93b0e6a3bb12015b2adcee56a96fa857b5dd019463b952768867b",
-        "definition_sha256": "d4d971aca55e7522bae6e3e088befd27b8b7d9dbf2dc0edd0fa57afcc50e8f5a",
+        "definition_sha256": "799034295516c24ad622a833c6d4b27ec83fa2e1c688abe9a6c967dfdaa1f1d2",
         "native_assets": [
           {
             "category": "patterns",
@@ -1009,9 +1025,10 @@
         "region": "northern_shudao",
         "inscription": "保宁",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbi.dds",
         "sha256": "18748f6149b1a70d3e4397c7cf3cebd0268356a1ceae99f1c5077d26fa6fcc10",
-        "definition_sha256": "5d545bdeec5f936dd1815d97917bc7fb4704b1da3d11c147e7dca92662b5d730",
+        "definition_sha256": "44c048e4243afaa1601d613269591e3f7e85de46bd754ddb808155fd4e72e1da",
         "native_assets": [
           {
             "category": "patterns",
@@ -1029,9 +1046,10 @@
         "region": "northern_shudao",
         "inscription": "巴州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbj.dds",
         "sha256": "5b7379231bbca320b9fe1a50d8d36df06ded8cd4674ca1a60b1d77f71095e401",
-        "definition_sha256": "5be9c2c31be4a84d83782a0af5e73b4f740becf4575bc4be4798f35e841389f3",
+        "definition_sha256": "1e442eb03544ff770ef14d90b43031d0c524637c80f608e93864a61117177101",
         "native_assets": [
           {
             "category": "patterns",
@@ -1049,9 +1067,10 @@
         "region": "northern_shudao",
         "inscription": "广元",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbl.dds",
         "sha256": "24dc4219234294d59235e5310f5fed3cc7ecd033d10fd5fe326394e7a1605056",
-        "definition_sha256": "cf63168751d3caea7dedfcfc8b3251ed36dc24aaf96f5d58d40257f9f08a2f37",
+        "definition_sha256": "cb90c2e006a371a49bf69d4823b4a982eab0c55a46acda47eaf157023b3671a9",
         "native_assets": [
           {
             "category": "patterns",
@@ -1069,9 +1088,10 @@
         "region": "northern_shudao",
         "inscription": "剑州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbm.dds",
         "sha256": "8c76bc52d78828e0de32587f5481fc488969abca4974e4e269d6f3c3f5671352",
-        "definition_sha256": "178f8d4469dd19da1e5c27a1eeb6ddb6c5f7006d96b6ced2aea53aa602d59de0",
+        "definition_sha256": "9e2f5b7d65ce9c39350c7eaba3cb374a339566c9375bb1a8c5618ac42207e95d",
         "native_assets": [
           {
             "category": "patterns",
@@ -1089,9 +1109,10 @@
         "region": "northern_shudao",
         "inscription": "龙安",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbn.dds",
         "sha256": "2f3d24dbf151a1116a5186f96718519ebfacb1aa1cec36e2b9dd2c0492ddf4ad",
-        "definition_sha256": "600ff0197692b11060a9b570f92cea27be53899e1ea9e1aa7ad96eb47d363e3b",
+        "definition_sha256": "dddd29850759aeb62e2a45982fff506405aa70ec7075bcbf82e59cfa3947d8ce",
         "native_assets": [
           {
             "category": "patterns",
@@ -1109,9 +1130,10 @@
         "region": "northern_shudao",
         "inscription": "达州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbo.dds",
         "sha256": "52d91c3f97e09c1bdfa1ee114f8e96b652596c7f69cc24106f259f7d06d613a4",
-        "definition_sha256": "fa7d1cd67f2e54aa9a5cd7631f89c50875e3a843b622aced1dba102f7c475283",
+        "definition_sha256": "d3dca5c79934473b07046409c1b5b3421f1521c190762a8b708d11a2615189b7",
         "native_assets": [
           {
             "category": "patterns",
@@ -1129,9 +1151,10 @@
         "region": "northern_shudao",
         "inscription": "顺庆",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbp.dds",
         "sha256": "153ba875c0054696613bec55d8f90a0eb22b52c16a466e5b338aa9d92ea8476a",
-        "definition_sha256": "9a1f85cb93e932c4084288373557a019f6f3633e2715f522c45d9c2413e0072b",
+        "definition_sha256": "57dc672f635cde9458c6ff5d9fbd0ec330eae0b1f1d0a0d7aaa679d033ca7d8a",
         "native_assets": [
           {
             "category": "patterns",
@@ -1149,9 +1172,10 @@
         "region": "central_hills",
         "inscription": "简州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbq.dds",
         "sha256": "b180acd4394877cdb9a23ade513042f411ef59093cbb235887db86c22bea19de",
-        "definition_sha256": "78027e30d872e5fbdaaa9c5dcbf484c7bac68c1cbf274a4a2b9ca62310c9ed5a",
+        "definition_sha256": "99d9c5fe5bbdf8d3e2aeb473db31b54e81258a36bad587e66f9e82d88372e8e4",
         "native_assets": [
           {
             "category": "patterns",
@@ -1169,9 +1193,10 @@
         "region": "central_hills",
         "inscription": "遂宁",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbr.dds",
         "sha256": "8e8ad8d40c3030b37b00c8333c7daa8d05c629b0aa9bf15b2f79eca6c9b593b3",
-        "definition_sha256": "b315ac2b069ddae20362f21c1c1cd44967126b676dfb153294eb36ca5f651dba",
+        "definition_sha256": "d3b16873bcdc896dd86668ad8702af297cbb0fe525aff6c2d7d742f0a4dbaec8",
         "native_assets": [
           {
             "category": "patterns",
@@ -1189,9 +1214,10 @@
         "region": "central_hills",
         "inscription": "潼川",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbs.dds",
         "sha256": "bd7d8135b99e84d67e5d5b0ee5918de7455e4eb429d04a030b0f0c86d82db9d1",
-        "definition_sha256": "cca07a3e9cab6515660cbc1d9e59f62a4cd0a935e279b7a385478e607a6f28ef",
+        "definition_sha256": "a4ac91964e339e3f3b9caffd14eabbed06e118b80a88924182b1820d166ae930",
         "native_assets": [
           {
             "category": "patterns",
@@ -1209,9 +1235,10 @@
         "region": "central_hills",
         "inscription": "广安",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbt.dds",
         "sha256": "cc5c870647099cd1d384878993989651c9cee63df29a803ec52667ba3a02d6da",
-        "definition_sha256": "8cc51f272006dd79904e59f270e7eeb14846425fce892bbb70037a548b97c683",
+        "definition_sha256": "43a5795b45f4611c806cb15d448a30e8d2053269dfec66ca31228e4b259afc27",
         "native_assets": [
           {
             "category": "patterns",
@@ -1229,9 +1256,10 @@
         "region": "western_tea_horse",
         "inscription": "雅州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbu.dds",
         "sha256": "6296827611522c0b238b951a7ca0fd68bb9a540eb869f697a5bb97a5dd6c7ca7",
-        "definition_sha256": "d8fd02ed16e243a05da8130d4a8c8806d5a4ab8247340a4069e56d89091aa91c",
+        "definition_sha256": "241bc210a6a701eb87e99f14b608dc1585b4b9b0d2d9e32a1174f8f10ae837e4",
         "native_assets": [
           {
             "category": "patterns",
@@ -1249,9 +1277,10 @@
         "region": "western_tea_horse",
         "inscription": "茂州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbv.dds",
         "sha256": "b299ca982577f3495e903fdbe652f94065488c319b3d94a0f7b1cbb31fd5fb93",
-        "definition_sha256": "946b35bcc3c08d4a90b3ca03b8e455d06083358c9ac6ca099de202cf29c5c1fc",
+        "definition_sha256": "f09ec231ca3e7cb68b734aeee354e2b0165f3150aa3af005a223e207d0fd1c9a",
         "native_assets": [
           {
             "category": "patterns",
@@ -1269,9 +1298,10 @@
         "region": "western_tea_horse",
         "inscription": "松潘",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbw.dds",
         "sha256": "5347a2e8b1fa6790269d7d07949753f981993a1db778d08bff8c0bd993690e72",
-        "definition_sha256": "71e4df47abeccde4999b191153b36ae7becf742130bf26a172a62c67e5dced02",
+        "definition_sha256": "ada6f46d4003fd2b539f08f3ad5562520ea0a8f1bd784ca23bc099c35811ec57",
         "native_assets": [
           {
             "category": "patterns",
@@ -1289,9 +1319,10 @@
         "region": "southwestern_valleys",
         "inscription": "盐源",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbx.dds",
         "sha256": "de4f8ef407a7721d3f60aa29769345cd54d8f6e89fe197726080704ee922ac6c",
-        "definition_sha256": "026e006368090a548e8de61801826bfb4f0f5078f9e5aff735fba171d2b3452d",
+        "definition_sha256": "a1ae064460c8f38add924e288b54472507d6df734352f11c75fc13988e183b71",
         "native_assets": [
           {
             "category": "patterns",
@@ -1309,9 +1340,10 @@
         "region": "southwestern_valleys",
         "inscription": "德昌",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bby.dds",
         "sha256": "0e34b3f3bee9afdf2b7a6120470dc2c3b2ec017a14387ca8537bffdb96b9fdb3",
-        "definition_sha256": "a88eb3ae3816d403b2c2eadec793603a7a6e8f92637cb0fd10956dbde524d37b",
+        "definition_sha256": "8e1d2bc9eabb47aabd0363750a195350be7f06b238d9aac292226a135614b9ff",
         "native_assets": [
           {
             "category": "patterns",
@@ -1329,9 +1361,10 @@
         "region": "southwestern_valleys",
         "inscription": "黎州",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bbz.dds",
         "sha256": "5df89ca95b9a6640fb33f6e320de6c0b2e00e3aa44772e680c83e6115329bb8a",
-        "definition_sha256": "c7a6a041922c7ed5427b0bd392a50c7a2612cc5b782792dede9b2399bb0635d9",
+        "definition_sha256": "04c23126487a85758d7dd068cf4b7901bbb088984e44a1010a103178e29df270",
         "native_assets": [
           {
             "category": "patterns",
@@ -1349,9 +1382,10 @@
         "region": "southwestern_valleys",
         "inscription": "马湖",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bca.dds",
         "sha256": "767996cb67c4735d0601a4d7b2eff065818797498f94da92e42ac07bbc94d5d9",
-        "definition_sha256": "cbe522d9877097f6894760e609c3b1e426778d2a3fa87e24dd56dab50647c5cd",
+        "definition_sha256": "608c1cd4621f51d3e20825383658b093efa72d08098b773a91a6ef15a429ab32",
         "native_assets": [
           {
             "category": "patterns",
@@ -1369,9 +1403,10 @@
         "region": "southwestern_valleys",
         "inscription": "建昌",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bcb.dds",
         "sha256": "e81dae137ebd1bd629b522be79de7876c8da86b9db0fc68a3ab205fb0cc526cb",
-        "definition_sha256": "69e2dc3d614fd31558170da452b985d8fb1cc79de4ce9938d3c87f464e091353",
+        "definition_sha256": "effbe97a4fe9781bb308f55fc04a50c02531f0ab5bd84eb92fe4240dd0c6c078",
         "native_assets": [
           {
             "category": "patterns",
@@ -1389,9 +1424,10 @@
         "region": "southwestern_valleys",
         "inscription": "永宁",
         "font": "LiSu / 隶书 (SIMLI.TTF)",
+        "nameplate": "white field / black inscription",
         "texture": "ce_hbe_name_bcc.dds",
         "sha256": "ecb81491bbab537ea32da35559dc9107e249ebb7a4cd2f22e73d6305d995cf96",
-        "definition_sha256": "0287ef8ab04fefe57df30a927c726fc0c25447a8f14ab3d4dca1cd30b1cc0717",
+        "definition_sha256": "659f8527ffa8f4314dd62c11ad5acaa5eb6d0a69f1c30d82f1cb495e1f230542",
         "native_assets": [
           {
             "category": "patterns",
@@ -1419,7 +1455,18 @@
     "fixed_seats": 36,
     "external_isolation_preserved": true
   },
-  "illustrations": "12 shared painted event backgrounds, 8 organization emblems and panels, situation panel, 134 illustrated decisions; native LiSu heraldry",
+  "native_content": {
+    "native_advances": 64,
+    "registered_decisions": 70,
+    "registered_events": 36,
+    "total_events": 96,
+    "non_dhe_events": 60,
+    "country_biographies": 36,
+    "catalogue": "data/native_content_v011.json",
+    "pending_v01_research": "settles with original timer",
+    "new_research": "native research queue; monthly idempotent variable bridge"
+  },
+  "illustrations": "12 shared painted event backgrounds, 8 organization emblems and panels, situation panel, 70 illustrated decisions and 64 native advance icons; white nameplates with LiSu inscriptions",
   "icon_art": {
     "mode": "built-in image_gen",
     "atlases": 8,
@@ -3100,7 +3147,7 @@
         "key": "hbe_stance_change_1",
         "name": "转向共锅派",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds",
-        "sha256": "8b33f2f2399b887b549407d01173d0fefbd749ac89c250bf4f27c9c44000ee9e",
+        "sha256": "0d7cc805e49dd47f0a4d9a7ace0e9de85513d956ebfbf761544822d342ca4628",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 0,
         "crop": [
@@ -3108,13 +3155,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_stance_change_2",
         "name": "转向分锅派",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds",
-        "sha256": "a156d46bbbcfb88ec55a5f5839516de8d7ac29eec4980ee00a304c64bd9a7e29",
+        "sha256": "184481aa4b043ec58782f7b89cd5edff23e97b9a3e2563d89d2ece3ab9a5fec7",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 1,
         "crop": [
@@ -3122,13 +3173,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_stance_change_3",
         "name": "转向账房派",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds",
-        "sha256": "1af568852acd4b449c5abba30936772c436b1c72cbe892c05978b1f4a7c525b9",
+        "sha256": "a322516b8926b8684e4ea8d8e0d79a5be4ce79c5400c28399971ae24e0798f11",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 2,
         "crop": [
@@ -3136,13 +3191,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_project_fund",
         "name": "分账会：出资三金",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds",
-        "sha256": "3b3879965281c296ee029187cc703cbaa874d8849c5c701d0ead83dd20317003",
+        "sha256": "d168957fc18953316205f2f15aed8f15e2c15ec538a3d734408438aa6058c1ff",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 3,
         "crop": [
@@ -3150,13 +3209,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_project_pledge",
         "name": "分账会：先认账，届中付款",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds",
-        "sha256": "26409cb957882184d980223cdd96186d0c6e131d455b47d2815ddbdaca2708fa",
+        "sha256": "0117f55dadb02bbcd8caba0c288806f3e802fcee2daad68f8c2259566b7290ae",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 4,
         "crop": [
@@ -3164,13 +3227,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_project_reconsider",
         "name": "分账会：撤回暂缓意见",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds",
-        "sha256": "d62ad00c371d600f6715a20fd9ebaf2be1073eaa5e71c2bfb80467ee009f1170",
+        "sha256": "3e09e896eeae61fc32a927cf78a47c583e24b64f11ad7e9e3e8cdda62652ba57",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 5,
         "crop": [
@@ -3178,13 +3245,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_project_select_1",
         "name": "本届工程：盐船共账",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds",
-        "sha256": "19bbbe1a8f11083ece5faf3213a77f5a6d0fc0206786f4cd1fed865a4f791f3c",
+        "sha256": "e08cfff2e16a9094d4ae396fda817cf8859b1d908b83806743d11ba5e4e79099",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 6,
         "crop": [
@@ -3192,13 +3263,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_project_select_2",
         "name": "本届工程：茶马过蜀道",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds",
-        "sha256": "07e74de64e03b0c5e6818f10b7cb2cf216182d2bc3fe5fb474fd0d8c5fed6921",
+        "sha256": "52ca119f4d639c7f8e7d1d23265d17028c438431b88318cc987256c0315e2c65",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 7,
         "crop": [
@@ -3206,13 +3281,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_chengdu_plain",
         "name": "本届交付：水粮担保",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds",
-        "sha256": "db038518dfd8d2f4b1d12e0ed34bf4e2af04b9f41a0d421eb41864d43930b423",
+        "sha256": "62987a4b54a92778b0a0a8d328d2f0f73dee970dc24f15138ed2f57097702587",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 8,
         "crop": [
@@ -3220,13 +3299,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_southern_salt_wine",
         "name": "本届交付：盐引承销",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds",
-        "sha256": "96c57c6420e7aba83958c62af0e29093884d2aa675307bab71a106f73cff9537",
+        "sha256": "3c7c6120d8a71e88e2aea57087c7178720e5df6916402695904f9ab7cf8522e2",
         "atlas": "assets/decision_atlases/decisions_1.png",
         "cell": 9,
         "crop": [
@@ -3234,13 +3317,17 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_propose_charter_2",
         "name": "百年章程：万国茶会",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds",
-        "sha256": "63f36faefb3bd544d5fb274b8e3b0c1f7b7369ed3856ae8fd098acc734884c59",
+        "sha256": "27cb166cbcb7e1f799ee1edfe4ec93f0138187171a6947cf4cbb6642d582f60b",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 0,
         "crop": [
@@ -3248,13 +3335,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_ballot_vote_2",
         "name": "章程授权：支持万国茶会",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds",
-        "sha256": "114ac129e2a2776945c882bc36d6ca4196f2f4bbb35536e7279c6f957bec1b62",
+        "sha256": "c8ecc24d8205160ab779b516abd4adf49ce6bfa56a1d020f9dbaf251b9fc5197",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 1,
         "crop": [
@@ -3262,13 +3353,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_propose_charter_3",
         "name": "百年章程：各吃各的，账照样交",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds",
-        "sha256": "1fda20e41330072c526375fcce014d6a985a08dd9e465c862cefca25529e3c59",
+        "sha256": "8fb51d452e6ee4c84263d9ce3d490002d1ae5d53add33abef2c8eb3f044d5df0",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 2,
         "crop": [
@@ -3276,13 +3371,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_ballot_vote_3",
         "name": "章程授权：支持各吃各的，账照样交",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds",
-        "sha256": "3c52c2a4b2bff368869fd11b91053dba8c8bb2305289dc58843c5be16028a838",
+        "sha256": "5a15158234852ef732fa510d22a35a0114a864357e30243b6c9d35b16b73dc92",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 3,
         "crop": [
@@ -3290,13 +3389,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_chengdu_plain",
         "name": "修渠分水与官学讲会",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds",
-        "sha256": "7b85add663e05e03c3e7a4374b1355a9f00ce580c15a6ef4ca1525bdd35b075c",
+        "sha256": "77f6ce9320a3c19a8f87a642de38ffd55a1fc232f6c9186a1ccb2a1221c45283",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 4,
         "crop": [
@@ -3304,13 +3407,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_chengdu_plain_1",
         "name": "成都平原圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds",
-        "sha256": "24f5117a4ac475738dccacc02357b3c53cf347daf6d812a2bcf4bc07897a1567",
+        "sha256": "06b03e33ce31e04c256f90d6a32beb5aef7e29b9b10b60a8f1d6259ec72410bc",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 5,
         "crop": [
@@ -3318,13 +3425,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_chengdu_plain_2",
         "name": "成都平原圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds",
-        "sha256": "9630e67a6e92594c3c96168f02e61725ab66d86dfffdd0e4cbf4a2b102eb4bee",
+        "sha256": "d3867262f3d69b1a4be98952f71b4ff5839ec78235bedf4c9b20c2bbf1f3ea9a",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 6,
         "crop": [
@@ -3332,13 +3443,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_chengdu_plain_3",
         "name": "成都平原圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds",
-        "sha256": "e0d1deec8e6481a2a3047e68a7721935eede1d39d8607b13623d909aeb8349ac",
+        "sha256": "33b595b61bf1fd2cfb7d19840ca03961d3d4809dde14faadadf0ed569967399c",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 7,
         "crop": [
@@ -3346,13 +3461,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_chengdu_plain_4",
         "name": "成都平原圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds",
-        "sha256": "ad1c56339911fb995a803760a28979a09f4de5742af2e4e38df0a82f116af1c4",
+        "sha256": "609d859ae9b3b2c351a71c05656999843b49109edc1c102e522d6afc85c0751a",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 8,
         "crop": [
@@ -3360,13 +3479,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_chengdu_plain_5",
         "name": "成都平原圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds",
-        "sha256": "ca7324df24392dc13f8ef8e36c1219d346b9cccf01727e9db0e860ca953e5ec4",
+        "sha256": "a4dc0ee2ee5ce3477931658500cd578ffa15bc3dad12a90142bd8a042a32f549",
         "atlas": "assets/decision_atlases/decisions_3.png",
         "cell": 9,
         "crop": [
@@ -3374,13 +3497,17 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_southern_salt_wine",
         "name": "井灶公账与宴席采办",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds",
-        "sha256": "daf7eea27e0024da23d102481897fe4671bc08642b50f8be5f58571a06b03483",
+        "sha256": "1243ceae92bb36a21d967e040f206ad8d3b932ac98b0ca05e2a21c84d99bda46",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 0,
         "crop": [
@@ -3388,13 +3515,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southern_salt_wine_1",
         "name": "川南盐酒圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds",
-        "sha256": "3e46b8659041fe94e6b2dd96bcb4a54a70b73800c2ed281fb46a324b83d1b179",
+        "sha256": "7f9127e07b22ea86360b8b39271bfd63099ef9235ae1689491703ba0fe3784e7",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 1,
         "crop": [
@@ -3402,13 +3533,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southern_salt_wine_2",
         "name": "川南盐酒圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds",
-        "sha256": "6593f6397187c2aff4e5b4d77fda8177647c4a1f38f0c509f9b082504d0a200d",
+        "sha256": "0a76361a7eec1bfc685236d7fd938eed92db53317980eb9604b09f1a4b69b6db",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 2,
         "crop": [
@@ -3416,13 +3551,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southern_salt_wine_3",
         "name": "川南盐酒圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds",
-        "sha256": "bd9927e3f0e73339896e99df44ec450f58cb7b07bce598a79ea7873052354163",
+        "sha256": "978e56e727dddfc592dc97433a85c4232a05d326dae5b5b2f4d251fcf08d468e",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 3,
         "crop": [
@@ -3430,13 +3569,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southern_salt_wine_4",
         "name": "川南盐酒圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds",
-        "sha256": "1eea71ba386e5875af3846debc563ebbdd7dca0ca1d4e4959c5bbf79a5d4c5af",
+        "sha256": "e1790198cc799bb2f9ebead6c9047552aa90453e6c1a56b03d0a56003db16aa4",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 4,
         "crop": [
@@ -3444,13 +3587,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southern_salt_wine_5",
         "name": "川南盐酒圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds",
-        "sha256": "b3d46a8eedce0215636318d25504a6e1f89225964a968901b0c22082286de055",
+        "sha256": "c8777d12ca81269f49d17509b0a8844a32c97953b3d0bd7d3e6b3ee99b1b3751",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 5,
         "crop": [
@@ -3458,13 +3605,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_eastern_river",
         "name": "江岸转运与河防巡察",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds",
-        "sha256": "9f8559c28ccbee575905e6fba952421a9a6462618c8550eaace39f89d60dedca",
+        "sha256": "c21984a9873c21d62b331db89f63721c07b3549d87a2aa6b13d4cdeafb88f3d9",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 6,
         "crop": [
@@ -3472,13 +3623,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_eastern_river_1",
         "name": "重庆川东圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds",
-        "sha256": "ae9e0f802e84e251164ab2989a9e619a12bf65e4eaffa31864a1eac8d5a42a85",
+        "sha256": "18ff2537b372aa70f4d55f9e06ea88839c03e4520644e777cdfd74ee7f4f4cdc",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 7,
         "crop": [
@@ -3486,13 +3641,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_eastern_river_2",
         "name": "重庆川东圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds",
-        "sha256": "07837909f44c481f017c59641cd33112130551bc50cc36f29acacd7618a4762f",
+        "sha256": "6d04a498e3ccefb063da27e500ff1bead3579f412293f4468271e8984ce77d20",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 8,
         "crop": [
@@ -3500,13 +3659,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_eastern_river_3",
         "name": "重庆川东圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds",
-        "sha256": "166cac5c9fba6ca5a4ab47387c1dd0f356ab65da119559b09a8ab65cb3a00b77",
+        "sha256": "644842ef75154e09a9b397fd81a89b2fd91110df71f3f8f814841e831a72c144",
         "atlas": "assets/decision_atlases/decisions_4.png",
         "cell": 9,
         "crop": [
@@ -3514,13 +3677,17 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_eastern_river",
         "name": "本届交付：江船转运",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds",
-        "sha256": "1a462aa5234e5adc356a7901dd747ac5bf4c0a2c1900d42c653413dc33f858b8",
+        "sha256": "391bf41b03b685e4cf5fe4d1759ee938548c182a7dbd4e4d37005ff5bb257d09",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 0,
         "crop": [
@@ -3528,13 +3695,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_northern_shudao",
         "name": "本届交付：驿路轮戍",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds",
-        "sha256": "b8119ff3460805c2afc2a6b842105b3f8e47aac281a93e2399cf7e1afbf1abcb",
+        "sha256": "37014f60e23242becbea38766a031ae6d69c69f1d2cd9f32645cf1cfa6bb0bae",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 1,
         "crop": [
@@ -3542,13 +3713,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_central_hills",
         "name": "本届交付：公账审计",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds",
-        "sha256": "8ad8e9f1b5aae68f385c3c3d59d62bfb838ecb1cdff642f3acc0ba9f38761d26",
+        "sha256": "00b9a45fb22a78b1f1ffbedfc8d041625d87b660521e250244b1f590bdd4f574",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 2,
         "crop": [
@@ -3556,13 +3731,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_western_tea_horse",
         "name": "本届交付：茶马采办",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds",
-        "sha256": "47861c959a7715bef6d2e82d264f6322342d298c84c76f2fb8dad6ea8286b2b9",
+        "sha256": "6d901a1b28f9e439291b6010abb7534d0bea5dae5dc27e89d898b41ad5623456",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 3,
         "crop": [
@@ -3570,13 +3749,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_role_southwestern_valleys",
         "name": "本届交付：山谷互市",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds",
-        "sha256": "3d29510b697e233a9f4684aec899f0e19cc2bd55dde7039b6c03fc358436991c",
+        "sha256": "b574924c73f6319495c7c9117294786a3a434b2fcf27f1f1d300f7f0ccfb3d94",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 4,
         "crop": [
@@ -3584,13 +3767,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_project_subsidize",
         "name": "皇帝垫账：补一项缺口",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds",
-        "sha256": "348a891665a141ceb1b972b83f49d4b87a9c2a2af699576e0ab9fbf60affec0f",
+        "sha256": "941d45cc1d5e011986f133bd9fe0139e260dd22d244bfea00b631b158846239d",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 5,
         "crop": [
@@ -3598,13 +3785,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_audit_accounts",
         "name": "公开公账：三金核账",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds",
-        "sha256": "2199ee93c7df08a6f728af8d8d9e4cbaf2a154e4ca660aded13da77532df9099",
+        "sha256": "edac5dfe6e18ce0707089f14257181739e8ac0925fe9fa1d3452c15144f4613f",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 6,
         "crop": [
@@ -3612,13 +3803,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_banquet_ledger",
         "name": "查看大开席账本",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds",
-        "sha256": "d54df2f2818f12e34cd6b69c518d2875db67cd5734be59171ead5f56b76689fb",
+        "sha256": "e6193192d1cf4703ec0a0aca3b959b3b99a856820d9feaf310f37b3f514f6039",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 7,
         "crop": [
@@ -3626,13 +3821,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_propose_charter_1",
         "name": "百年章程：一锅巴蜀",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds",
-        "sha256": "e0d4a533956564147f482a00fd027f25e693a6c159022476441e271eb7081f40",
+        "sha256": "7494b3bda1bb11f3aaec25e415c625c0f6d75c765f7521a9286004e75dce5a38",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 8,
         "crop": [
@@ -3640,13 +3839,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_ballot_vote_1",
         "name": "章程授权：支持一锅巴蜀",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds",
-        "sha256": "f485885bafe5a386aea5a04578677c6b155f91e0bbe4da31665fdb058b1cdfcd",
+        "sha256": "a4ccab12eda9156f7c37de2a1807c6167f4f79d955af5e11edd522213b407426",
         "atlas": "assets/decision_atlases/decisions_2.png",
         "cell": 9,
         "crop": [
@@ -3654,13 +3857,17 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_eastern_river_4",
         "name": "重庆川东圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds",
-        "sha256": "ce6c8276fd4fad4cf924e4ceae141e54684f937974aecae8c47321d66faa86ba",
+        "sha256": "e3f715d2fcb5b0f5ee83491c4cdaf3a5da78141682b49a71851bcbcf273964ad",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 0,
         "crop": [
@@ -3668,13 +3875,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_eastern_river_5",
         "name": "重庆川东圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds",
-        "sha256": "14d4746a3d8a16e2c98363d0a202fafa3b95b5625cff898cf30cc25df162b74c",
+        "sha256": "c470e55be6ebd0e4f0d04e2a47012c5319243916a6c8064a0ce1993dbe569cb9",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 1,
         "crop": [
@@ -3682,13 +3893,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_northern_shudao",
         "name": "关隘轮戍与驿路接力",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds",
-        "sha256": "594189886efcbc69c7782c822e5bae10cf8c0cde498d2c884a16f9b3957778b8",
+        "sha256": "2262da2bca01735262e3c231b93a28e412123900eb615ba5059d37403520ed70",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 2,
         "crop": [
@@ -3696,13 +3911,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_northern_shudao_1",
         "name": "川北蜀道圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds",
-        "sha256": "fae29b0713e299b88b17b5a81f27c98403bf5ef70a7f2c561cd0cc57c2e7ac3a",
+        "sha256": "102a795b3c10d559761993b99bca41d9c2f7df4d174c29bd68906fceaea61da7",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 3,
         "crop": [
@@ -3710,13 +3929,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_northern_shudao_2",
         "name": "川北蜀道圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds",
-        "sha256": "47c7313dc9900bf99bb0d090441a972c658419809c821a4499f77b7ca9759c38",
+        "sha256": "08ac73fdc49e5b7b8f81912b854294f67ca0666fb1a85c652669bde76b2b25ad",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 4,
         "crop": [
@@ -3724,13 +3947,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_northern_shudao_3",
         "name": "川北蜀道圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds",
-        "sha256": "a0fed51092eb200f5e0102a50c8d77b5c29ab50e98e3a205c5cc05d0be53bac1",
+        "sha256": "6a67886af923617e19024f78b563e25067420a057efbbf766948cd2b0cdaeabe",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 5,
         "crop": [
@@ -3738,13 +3965,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_northern_shudao_4",
         "name": "川北蜀道圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds",
-        "sha256": "098e1b9267740d9347307826c8064842062e1ec0f8948008576a3a2053894c04",
+        "sha256": "0cca94b88a72973c74029c0f8b1f270110a411dc47887bec64c8a4d584c14554",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 6,
         "crop": [
@@ -3752,13 +3983,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_northern_shudao_5",
         "name": "川北蜀道圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds",
-        "sha256": "b1fe8d59f48d8ff96a37435dab78a504f549ddc3104895842c14cb9e7db63674",
+        "sha256": "ed8658e9f37e697f1df479282128dd28a9d661f01fe8d156935cda8ba5a62ab5",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 7,
         "crop": [
@@ -3766,13 +4001,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_central_hills",
         "name": "分仓赈贷与契约见证",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds",
-        "sha256": "079302070b6047f3faac810f9242062b5c2d7f77f3d2a9b5f7b9ea99b80c5a77",
+        "sha256": "9aa12ddd271b23f4fbb3cda7e0cb14f2eaeb7976621c5452cb948f7b6a2eebd2",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 8,
         "crop": [
@@ -3780,13 +4019,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_central_hills_1",
         "name": "川中丘陵圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds",
-        "sha256": "0a680e06962ffc515262a8a753ef561ab46fd285a0b52574455e1d4479dc5262",
+        "sha256": "4106ef42ba86988b0ac258849e17f89ca1b4b66f54591190f5e1c5772b6ec96e",
         "atlas": "assets/decision_atlases/decisions_5.png",
         "cell": 9,
         "crop": [
@@ -3794,13 +4037,17 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_central_hills_2",
         "name": "川中丘陵圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds",
-        "sha256": "9442bcc0fb6a40e210903b769b20116c1680cede848b8574e3159dac00650ff2",
+        "sha256": "a5206076bb8accf1cad462cbd9a29aeff56aafa1f7a584ba43002c1b6e6c28ec",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 0,
         "crop": [
@@ -3808,13 +4055,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_central_hills_3",
         "name": "川中丘陵圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds",
-        "sha256": "d96e4e4b0413b5b8722de9055528f7532841240349eb8f1ba403adce1fc51fcc",
+        "sha256": "a012c35a5249bd61613bd57f9b8b02f78d2487a780942b35eb9e78ad0cdc297b",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 1,
         "crop": [
@@ -3822,13 +4073,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_central_hills_4",
         "name": "川中丘陵圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds",
-        "sha256": "328ea3b6894f342d17e0c5af08b724ee271243ead628a65f8fec7ac4c5585d0a",
+        "sha256": "199873837de24ff20713dc9cbf3468aecb689e7238424fb21d1d50f9fb78ee3e",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 2,
         "crop": [
@@ -3836,13 +4091,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_central_hills_5",
         "name": "川中丘陵圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds",
-        "sha256": "7fe1c887f255a366347a440255ffd9ccb4a86b90e254c6ee02f6e0c36c04a261",
+        "sha256": "098e578de79d63eb38d30c2af216a85de68a7c93e840dde238691694e8477a28",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 3,
         "crop": [
@@ -3850,13 +4109,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_western_tea_horse",
         "name": "茶马采办与山门调停",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds",
-        "sha256": "671b09e78630665a456420896c9b1b878c26030a5850d8e9a833d113a18f36a5",
+        "sha256": "d66ec931a66c11999acbc2914d2a90d7d7727645f2efedbabee881b1decdb09c",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 4,
         "crop": [
@@ -3864,13 +4127,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_western_tea_horse_1",
         "name": "川西茶马圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds",
-        "sha256": "8154c6f7699a8c61b7a0986743e45b3a587daeb967a97a308a5e44a79bce196d",
+        "sha256": "a31dd16df1e9aa65e877d95834456a2ccbdbdc6dda2ab6873a279c77053bce94",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 5,
         "crop": [
@@ -3878,13 +4145,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_western_tea_horse_2",
         "name": "川西茶马圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds",
-        "sha256": "210fd985c9c893d37191d2412cb0a52fef5daeb53b09266ead79042f5d55f383",
+        "sha256": "6b286f58b19dd1a7d8741e1df6eabd447a010c263a899cb51a0f72a30f206362",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 6,
         "crop": [
@@ -3892,13 +4163,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_western_tea_horse_3",
         "name": "川西茶马圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds",
-        "sha256": "386175217d0e3b667da2501ce1bb17500f2871d86fc8525bc83bbd9253b9b3eb",
+        "sha256": "eb2ef34f042bf16d57820765d7f258543a6f1eaba1f2de538fb973515bce1777",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 7,
         "crop": [
@@ -3906,13 +4181,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_western_tea_horse_4",
         "name": "川西茶马圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds",
-        "sha256": "deaeb81ec707f9876601578e49f2c173354f8ac3d6bd668057fec66f67937dbf",
+        "sha256": "6656a4d2f4558d0982d7b139444cc552e3864288efcf66870b4fd6a27e92678a",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 8,
         "crop": [
@@ -3920,13 +4199,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_western_tea_horse_5",
         "name": "川西茶马圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds",
-        "sha256": "4f1273ebe1710d89486300131253727dfde4056d2eba7a78a3281d6d9527985f",
+        "sha256": "109d3905a2077df1cd4b7700dd1939e399c2e0caa13e7cc5c42cdf696df4e8fd",
         "atlas": "assets/decision_atlases/decisions_6.png",
         "cell": 9,
         "crop": [
@@ -3934,13 +4217,17 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_service_southwestern_valleys",
         "name": "山谷互市与地方议约",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds",
-        "sha256": "91647ba43d77bc77f2b9ff5e072c1cbfffed95e2611491f25bd8e16c12d4c618",
+        "sha256": "bc049ea508baf2154d0f178f1cf8b5ca66a0a7a7889a3c7df7a8d5f2abd63f46",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 0,
         "crop": [
@@ -3948,13 +4235,17 @@
           0,
           397,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southwestern_valleys_1",
         "name": "川西南山谷圈：起业",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds",
-        "sha256": "5a442cb07c188fc3cdfd8a7b93d6df952b174c0bcbb2c5b48381281796a2ca7a",
+        "sha256": "0786e90373a0ba72e75b31519038accb1b28f14ae533674ec856e329729602d2",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 1,
         "crop": [
@@ -3962,13 +4253,17 @@
           0,
           793,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southwestern_valleys_2",
         "name": "川西南山谷圈：成长",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds",
-        "sha256": "2a0c3a650b9ebcceebdd635cc2bbb8f2c204b101a5ea6b91137fb9d34269cfa2",
+        "sha256": "536129c5cb1141b11e7624f23f63baf3d4d532295838af63fca16c4289d4811d",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 2,
         "crop": [
@@ -3976,13 +4271,17 @@
           0,
           1190,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southwestern_valleys_3",
         "name": "川西南山谷圈：旧约重审",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds",
-        "sha256": "3ec4419484cd0c2bc63028d9c1945a5b48bfad9a0a077dcb73a5e9a70ac64b32",
+        "sha256": "89130b353a18d800723b1c92528b9fae4830de6abc466b77c796cdeae5071d76",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 3,
         "crop": [
@@ -3990,13 +4289,17 @@
           0,
           1586,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southwestern_valleys_4",
         "name": "川西南山谷圈：地区重组",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds",
-        "sha256": "9249b2b1da2837ce5e9b37ad28ce7d0c7bab91a256fbda8b2fea213eb8b64921",
+        "sha256": "f95658e9378c31847989f9f388aa5bd0fad16875b5b849c634bd54481da16e9c",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 4,
         "crop": [
@@ -4004,13 +4307,17 @@
           0,
           1983,
           396
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_mission_southwestern_valleys_5",
         "name": "川西南山谷圈：百年章程",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds",
-        "sha256": "85b423d1e5b3db79c40f0c1a4d496c61a38b0e14138e5730c00f3d4be0852b1d",
+        "sha256": "3cf0f4e47e2ef16a3661d04d2534fb77cd9b712a59124ec3febd469a30d685c4",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 5,
         "crop": [
@@ -4018,13 +4325,17 @@
           396,
           397,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_salt_loan",
         "name": "发行盐引周转",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds",
-        "sha256": "0e313e8dcf8e3630cd9ee093872c09de7493c3a644f0bc444282117cd4692cb6",
+        "sha256": "a493668f9cb9623ccbdd912deb0cf05bbf63beb5e421cde50b0bb810efc4d48a",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 6,
         "crop": [
@@ -4032,13 +4343,17 @@
           396,
           793,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_salt_repay",
         "name": "归还盐债",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds",
-        "sha256": "0b4af511b5b2edb582be29e486459b16410adf476b4cb3cc3ad4f4c48522b4e3",
+        "sha256": "86645d13943a55f7a5995f0877010573242734482d71fdfa4c346a28c8b70cb2",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 7,
         "crop": [
@@ -4046,13 +4361,17 @@
           396,
           1190,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_status",
         "name": "查看巴蜀会盟账本",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_status.dds",
-        "sha256": "a59c4c81f12019e9ef7a58b27e2c5a88a0662fd2b9d641e8ab86a6b4fe604b93",
+        "sha256": "871f11c3272a1cea2c6d9cfbe2487a96677beee13435f50f01cd12fedd85bf30",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 8,
         "crop": [
@@ -4060,13 +4379,17 @@
           396,
           1586,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       },
       {
         "key": "hbe_assembly",
         "name": "召开帝国茶会",
         "image": "main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds",
-        "sha256": "ace63c038cb0a7dbcf8a9ed7a5ce107a7440994f7bbebd1fd9f7d4113a9974b0",
+        "sha256": "a710275d9f90a010d2ea002c9e131f1cfb94287335b2dc370d7e4ddc01ff2989",
         "atlas": "assets/decision_atlases/decisions_7.png",
         "cell": 9,
         "crop": [
@@ -4074,6 +4397,10 @@
           396,
           1983,
           793
+        ],
+        "dimensions": [
+          1080,
+          440
         ]
       }
     ],
@@ -4088,40 +4415,44 @@
   "player_guides": {
     "mechanic_concepts": 43,
     "history_concepts": 12,
-    "linked_localization_entries": 466,
+    "linked_localization_entries": 743,
     "source_registry": "data/player_guides_v01.json"
   },
   "files": {
-    ".metadata/metadata.json": "627e4ae0c5a78dde071407e8bf6de126a7e220381a05687d418a8fb6d32c9b13",
+    ".metadata/metadata.json": "0fa8936b364b3b4290fdee6335a26265e6f43b2ee0b67341d0ef2917f3e3fe24",
     ".metadata/thumbnail.png": "978e438345a8c31f400bdc7d64a9433e3c6489579d89d86a8a2257e9b3acb8c4",
+    "in_game/common/advances/hbe_advances.txt": "a765d76e9cfb9a6c4ab47925b7623fa76e9b556b04b454e77f94e1573033af78",
     "in_game/common/biases/hbe_opinions.txt": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3",
-    "in_game/common/decisions/hbe_banquet_decisions.txt": "489fa2ece4aa4a445cd5a8a4a2fd05ddcdf984f1584c8bda7b5296fc33467920",
-    "in_game/common/decisions/hbe_decisions.txt": "733bfc12be9b307b0f014b3264a49b9c8b23cfd9cac27bfd5074dc08b3c856dc",
+    "in_game/common/country_description_categories/hbe_profiles.txt": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00",
+    "in_game/common/decisions/hbe_banquet_decisions.txt": "901008161a21045e1797c70dfb6290497a2ec5f6a8340fa71899cf395bb28ae7",
+    "in_game/common/decisions/hbe_decisions.txt": "a107275a27742968c412f9018e5549333dde86b2ae9a965201e8466b17b1d05e",
     "in_game/common/international_organization_land_ownership_rules/hbe_land.txt": "092e362f4e2fd68a7c65c43e40f938a0913604c4f6c201b19ba11ea74dfeefbc",
     "in_game/common/international_organization_special_statuses/hbe_statuses.txt": "ac82df70c67828890cad12553b6aeaf11d762b6843ceaf52eb54a1f6338869c9",
     "in_game/common/international_organizations/hbe_empire.txt": "104d17ce6d04b9ba3b899c3a419844658fe0aeae0794b8d9da4d93d84ba08f0a",
     "in_game/common/join_war_rules/hbe_isolation.txt": "b28bcc3370ebc565e37530d0c531b8c94718ae99ebebdf96c8ef84df8613018d",
     "in_game/common/on_action/hbe_banquet_on_actions.txt": "97722c90a6acf4025bc6131cd669c10f971038bec0e097e5f38c35fc6df29311",
+    "in_game/common/on_action/hbe_native_content_on_actions.txt": "8aef95955a4897efb19680b097fa364f0529aa9b242c1f69caa55c1bcc09f930",
     "in_game/common/on_action/hbe_on_actions.txt": "340507837a04f692839901754def88c93b4bb174d17aec13f4eebaf427543a4d",
     "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
     "in_game/common/scripted_effects/hbe_banquet_effects.txt": "d62341fde25c136b601b1208fa7b0923794d28a02075cff527d7a9d7db0f216c",
     "in_game/common/scripted_effects/hbe_effects.txt": "794c7d226599f5eaa1659484ae81c547230a2063240a8d1721ef353dc4bb7bfd",
+    "in_game/common/scripted_effects/hbe_native_content_effects.txt": "40ef74f01c8153ce328f7c68ac5fe8b78482d60125f4eed75e1bdee1160ed051",
     "in_game/common/scripted_geography/hbe_geography.txt": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f",
     "in_game/common/scripted_triggers/hbe_triggers.txt": "3762b16b08198ddbeab78f35226324003735566dd2804f63e4b74042f63a7eca",
     "in_game/common/situations/hbe_banquet.txt": "6e5e0dda5db167d777b164e33cd133c57d6e9475c9592d65cf1abb1f64f57760",
-    "in_game/events/hbe_banquet_events.txt": "6a0da62452643574592336d4c0997de54236d704c1814c8acc7094dc6e95fcd8",
+    "in_game/events/hbe_banquet_events.txt": "8ccbe5e969a5b2706987efa3c5dabd95c80daa15f2b5f74b77ba9e282f7db551",
     "in_game/events/hbe_events.txt": "d412f50c98699b68fff78704c1b67f800227b33785544233837ba77fb8a2e141",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
     "in_game/gfx/scenes/hbe_event_scenes.txt": "5c626fe9edf4338fdeb1c4713d44d552d1ecd4a388c6270add23c29d5ac04ee2",
     "in_game/gui/panels/situation/hbe_banquet.gui": "9c0d7f37c4735844d379a1c0a40717678a81b87bce448f4e24dab7eabeb7124a",
-    "in_game/setup/countries/hbe_countries.txt": "c39f3da71cb78c8c78efac2cb1dd22289bcb7839c32be8ba534812517852a744",
+    "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
     "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa",
     "loading_screen/gfx/interface/hbe/placeholder.dds": "226cfe7ca22f750e3bdf461bbfdffd389559dfe62fe393b2fe73ba9d1d536c41",
-    "main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt": "e1c47ce6c9411852a6fc4e30679ca52f519b659fdf0e5bf1ad989a5c78b4117c",
+    "main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt": "729e8286a89510e44ddaefeb4a992cec9e49b24d86b1f062d066ca23b85a3363",
     "main_menu/common/game_concepts/hbe_concepts.txt": "dc8707379f4ff6686d105de49b75bbe520f30907d2e711bd779c94a0f18d62de",
     "main_menu/common/modifier_icons/hbe_icons.txt": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978",
     "main_menu/common/modifier_type_definitions/hbe_types.txt": "3cb6310b5f2afb958ad0d0f8f6605ae52bcb2e68db61784d7cedcbc8be5ec511",
-    "main_menu/common/named_colors/hbe_flags.txt": "6a106cba92734cad7a9bf3f29e9935302557b413533ca75abc8ad0e1c4b68509",
+    "main_menu/common/named_colors/hbe_flags.txt": "c48fc27b5c72ba87d0f6c37f2f74c942081255b75a822dce73ea38e77401b18c",
     "main_menu/common/scenarios/hbe_scenarios.txt": "a1721fee702056ca5fc956c12382a376ddacebcb6af70fc765def6878648f3c5",
     "main_menu/common/static_modifiers/hbe_modifiers.txt": "a0a1be70b87ff6f77d7774d4c778a12654000a39b9d7a8992cf1cc501d741334",
     "main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_name_bab.dds": "124f6e122c7958745f4c4add6e84ff08d595567546549575971981cdbf9f436b",
@@ -4160,6 +4491,7 @@
     "main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_name_bca.dds": "767996cb67c4735d0601a4d7b2eff065818797498f94da92e42ac07bbc94d5d9",
     "main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_name_bcb.dds": "e81dae137ebd1bd629b522be79de7876c8da86b9db0fc68a3ab205fb0cc526cb",
     "main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_name_bcc.dds": "ecb81491bbab537ea32da35559dc9107e249ebb7a4cd2f22e73d6305d995cf96",
+    "main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_nameplate.dds": "cbc7d6cdfa1c68b69dec08991c431847c661be1c72c79e25c5508cf664bec745",
     "main_menu/gfx/interface/advance/hbe_tech_central_hills_1.dds": "cf7c1f060663ced487b407f6915ea5064cb72dda66dfed04ebab6a78a792effe",
     "main_menu/gfx/interface/advance/hbe_tech_central_hills_2.dds": "ffc4e1ba11821e6c6952b93ab3517c3cffafa3526149ec5accf12ebedc29b572",
     "main_menu/gfx/interface/advance/hbe_tech_central_hills_3.dds": "28e5fd39e3f2012648806e30229ddc5525f0dcf6877a8eaca66c644eff8ec73d",
@@ -4224,76 +4556,76 @@
     "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_6.dds": "90e91569bed0cb93e131599f546b379792f36ec7b1f558c9f751da1ce4a2a7ed",
     "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_7.dds": "92044e416602676ad072f876c59c0e4c8e37ce864d4a77a6c59218dfc2d168ed",
     "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_8.dds": "5fa32fd6d973cf4af64943488a46b4d064bf49ce5832387e0bfc02efd4113db0",
-    "main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds": "ace63c038cb0a7dbcf8a9ed7a5ce107a7440994f7bbebd1fd9f7d4113a9974b0",
-    "main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds": "2199ee93c7df08a6f728af8d8d9e4cbaf2a154e4ca660aded13da77532df9099",
-    "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds": "f485885bafe5a386aea5a04578677c6b155f91e0bbe4da31665fdb058b1cdfcd",
-    "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds": "114ac129e2a2776945c882bc36d6ca4196f2f4bbb35536e7279c6f957bec1b62",
-    "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds": "3c52c2a4b2bff368869fd11b91053dba8c8bb2305289dc58843c5be16028a838",
-    "main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds": "d54df2f2818f12e34cd6b69c518d2875db67cd5734be59171ead5f56b76689fb",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds": "0a680e06962ffc515262a8a753ef561ab46fd285a0b52574455e1d4479dc5262",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds": "9442bcc0fb6a40e210903b769b20116c1680cede848b8574e3159dac00650ff2",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds": "d96e4e4b0413b5b8722de9055528f7532841240349eb8f1ba403adce1fc51fcc",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds": "328ea3b6894f342d17e0c5af08b724ee271243ead628a65f8fec7ac4c5585d0a",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds": "7fe1c887f255a366347a440255ffd9ccb4a86b90e254c6ee02f6e0c36c04a261",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds": "24f5117a4ac475738dccacc02357b3c53cf347daf6d812a2bcf4bc07897a1567",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds": "9630e67a6e92594c3c96168f02e61725ab66d86dfffdd0e4cbf4a2b102eb4bee",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds": "e0d1deec8e6481a2a3047e68a7721935eede1d39d8607b13623d909aeb8349ac",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds": "ad1c56339911fb995a803760a28979a09f4de5742af2e4e38df0a82f116af1c4",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds": "ca7324df24392dc13f8ef8e36c1219d346b9cccf01727e9db0e860ca953e5ec4",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds": "ae9e0f802e84e251164ab2989a9e619a12bf65e4eaffa31864a1eac8d5a42a85",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds": "07837909f44c481f017c59641cd33112130551bc50cc36f29acacd7618a4762f",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds": "166cac5c9fba6ca5a4ab47387c1dd0f356ab65da119559b09a8ab65cb3a00b77",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds": "ce6c8276fd4fad4cf924e4ceae141e54684f937974aecae8c47321d66faa86ba",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds": "14d4746a3d8a16e2c98363d0a202fafa3b95b5625cff898cf30cc25df162b74c",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds": "fae29b0713e299b88b17b5a81f27c98403bf5ef70a7f2c561cd0cc57c2e7ac3a",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds": "47c7313dc9900bf99bb0d090441a972c658419809c821a4499f77b7ca9759c38",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds": "a0fed51092eb200f5e0102a50c8d77b5c29ab50e98e3a205c5cc05d0be53bac1",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds": "098e1b9267740d9347307826c8064842062e1ec0f8948008576a3a2053894c04",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds": "b1fe8d59f48d8ff96a37435dab78a504f549ddc3104895842c14cb9e7db63674",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds": "3e46b8659041fe94e6b2dd96bcb4a54a70b73800c2ed281fb46a324b83d1b179",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds": "6593f6397187c2aff4e5b4d77fda8177647c4a1f38f0c509f9b082504d0a200d",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds": "bd9927e3f0e73339896e99df44ec450f58cb7b07bce598a79ea7873052354163",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds": "1eea71ba386e5875af3846debc563ebbdd7dca0ca1d4e4959c5bbf79a5d4c5af",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds": "b3d46a8eedce0215636318d25504a6e1f89225964a968901b0c22082286de055",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds": "5a442cb07c188fc3cdfd8a7b93d6df952b174c0bcbb2c5b48381281796a2ca7a",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds": "2a0c3a650b9ebcceebdd635cc2bbb8f2c204b101a5ea6b91137fb9d34269cfa2",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds": "3ec4419484cd0c2bc63028d9c1945a5b48bfad9a0a077dcb73a5e9a70ac64b32",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds": "9249b2b1da2837ce5e9b37ad28ce7d0c7bab91a256fbda8b2fea213eb8b64921",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds": "85b423d1e5b3db79c40f0c1a4d496c61a38b0e14138e5730c00f3d4be0852b1d",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds": "8154c6f7699a8c61b7a0986743e45b3a587daeb967a97a308a5e44a79bce196d",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds": "210fd985c9c893d37191d2412cb0a52fef5daeb53b09266ead79042f5d55f383",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds": "386175217d0e3b667da2501ce1bb17500f2871d86fc8525bc83bbd9253b9b3eb",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds": "deaeb81ec707f9876601578e49f2c173354f8ac3d6bd668057fec66f67937dbf",
-    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds": "4f1273ebe1710d89486300131253727dfde4056d2eba7a78a3281d6d9527985f",
-    "main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds": "3b3879965281c296ee029187cc703cbaa874d8849c5c701d0ead83dd20317003",
-    "main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds": "26409cb957882184d980223cdd96186d0c6e131d455b47d2815ddbdaca2708fa",
-    "main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds": "d62ad00c371d600f6715a20fd9ebaf2be1073eaa5e71c2bfb80467ee009f1170",
-    "main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds": "19bbbe1a8f11083ece5faf3213a77f5a6d0fc0206786f4cd1fed865a4f791f3c",
-    "main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds": "07e74de64e03b0c5e6818f10b7cb2cf216182d2bc3fe5fb474fd0d8c5fed6921",
-    "main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds": "348a891665a141ceb1b972b83f49d4b87a9c2a2af699576e0ab9fbf60affec0f",
-    "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds": "e0d4a533956564147f482a00fd027f25e693a6c159022476441e271eb7081f40",
-    "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds": "63f36faefb3bd544d5fb274b8e3b0c1f7b7369ed3856ae8fd098acc734884c59",
-    "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds": "1fda20e41330072c526375fcce014d6a985a08dd9e465c862cefca25529e3c59",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds": "8ad8e9f1b5aae68f385c3c3d59d62bfb838ecb1cdff642f3acc0ba9f38761d26",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds": "db038518dfd8d2f4b1d12e0ed34bf4e2af04b9f41a0d421eb41864d43930b423",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds": "1a462aa5234e5adc356a7901dd747ac5bf4c0a2c1900d42c653413dc33f858b8",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds": "b8119ff3460805c2afc2a6b842105b3f8e47aac281a93e2399cf7e1afbf1abcb",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds": "96c57c6420e7aba83958c62af0e29093884d2aa675307bab71a106f73cff9537",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds": "3d29510b697e233a9f4684aec899f0e19cc2bd55dde7039b6c03fc358436991c",
-    "main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds": "47861c959a7715bef6d2e82d264f6322342d298c84c76f2fb8dad6ea8286b2b9",
-    "main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds": "0e313e8dcf8e3630cd9ee093872c09de7493c3a644f0bc444282117cd4692cb6",
-    "main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds": "0b4af511b5b2edb582be29e486459b16410adf476b4cb3cc3ad4f4c48522b4e3",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds": "079302070b6047f3faac810f9242062b5c2d7f77f3d2a9b5f7b9ea99b80c5a77",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds": "7b85add663e05e03c3e7a4374b1355a9f00ce580c15a6ef4ca1525bdd35b075c",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds": "9f8559c28ccbee575905e6fba952421a9a6462618c8550eaace39f89d60dedca",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds": "594189886efcbc69c7782c822e5bae10cf8c0cde498d2c884a16f9b3957778b8",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds": "daf7eea27e0024da23d102481897fe4671bc08642b50f8be5f58571a06b03483",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds": "91647ba43d77bc77f2b9ff5e072c1cbfffed95e2611491f25bd8e16c12d4c618",
-    "main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds": "671b09e78630665a456420896c9b1b878c26030a5850d8e9a833d113a18f36a5",
-    "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds": "8b33f2f2399b887b549407d01173d0fefbd749ac89c250bf4f27c9c44000ee9e",
-    "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds": "a156d46bbbcfb88ec55a5f5839516de8d7ac29eec4980ee00a304c64bd9a7e29",
-    "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds": "1af568852acd4b449c5abba30936772c436b1c72cbe892c05978b1f4a7c525b9",
-    "main_menu/gfx/interface/hbe/decisions/hbe_status.dds": "a59c4c81f12019e9ef7a58b27e2c5a88a0662fd2b9d641e8ab86a6b4fe604b93",
+    "main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds": "a710275d9f90a010d2ea002c9e131f1cfb94287335b2dc370d7e4ddc01ff2989",
+    "main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds": "edac5dfe6e18ce0707089f14257181739e8ac0925fe9fa1d3452c15144f4613f",
+    "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds": "a4ccab12eda9156f7c37de2a1807c6167f4f79d955af5e11edd522213b407426",
+    "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds": "c8ecc24d8205160ab779b516abd4adf49ce6bfa56a1d020f9dbaf251b9fc5197",
+    "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds": "5a15158234852ef732fa510d22a35a0114a864357e30243b6c9d35b16b73dc92",
+    "main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds": "e6193192d1cf4703ec0a0aca3b959b3b99a856820d9feaf310f37b3f514f6039",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds": "4106ef42ba86988b0ac258849e17f89ca1b4b66f54591190f5e1c5772b6ec96e",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds": "a5206076bb8accf1cad462cbd9a29aeff56aafa1f7a584ba43002c1b6e6c28ec",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds": "a012c35a5249bd61613bd57f9b8b02f78d2487a780942b35eb9e78ad0cdc297b",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds": "199873837de24ff20713dc9cbf3468aecb689e7238424fb21d1d50f9fb78ee3e",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds": "098e578de79d63eb38d30c2af216a85de68a7c93e840dde238691694e8477a28",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds": "06b03e33ce31e04c256f90d6a32beb5aef7e29b9b10b60a8f1d6259ec72410bc",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds": "d3867262f3d69b1a4be98952f71b4ff5839ec78235bedf4c9b20c2bbf1f3ea9a",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds": "33b595b61bf1fd2cfb7d19840ca03961d3d4809dde14faadadf0ed569967399c",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds": "609d859ae9b3b2c351a71c05656999843b49109edc1c102e522d6afc85c0751a",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds": "a4dc0ee2ee5ce3477931658500cd578ffa15bc3dad12a90142bd8a042a32f549",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds": "18ff2537b372aa70f4d55f9e06ea88839c03e4520644e777cdfd74ee7f4f4cdc",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds": "6d04a498e3ccefb063da27e500ff1bead3579f412293f4468271e8984ce77d20",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds": "644842ef75154e09a9b397fd81a89b2fd91110df71f3f8f814841e831a72c144",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds": "e3f715d2fcb5b0f5ee83491c4cdaf3a5da78141682b49a71851bcbcf273964ad",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds": "c470e55be6ebd0e4f0d04e2a47012c5319243916a6c8064a0ce1993dbe569cb9",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds": "102a795b3c10d559761993b99bca41d9c2f7df4d174c29bd68906fceaea61da7",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds": "08ac73fdc49e5b7b8f81912b854294f67ca0666fb1a85c652669bde76b2b25ad",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds": "6a67886af923617e19024f78b563e25067420a057efbbf766948cd2b0cdaeabe",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds": "0cca94b88a72973c74029c0f8b1f270110a411dc47887bec64c8a4d584c14554",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds": "ed8658e9f37e697f1df479282128dd28a9d661f01fe8d156935cda8ba5a62ab5",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds": "7f9127e07b22ea86360b8b39271bfd63099ef9235ae1689491703ba0fe3784e7",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds": "0a76361a7eec1bfc685236d7fd938eed92db53317980eb9604b09f1a4b69b6db",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds": "978e56e727dddfc592dc97433a85c4232a05d326dae5b5b2f4d251fcf08d468e",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds": "e1790198cc799bb2f9ebead6c9047552aa90453e6c1a56b03d0a56003db16aa4",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds": "c8777d12ca81269f49d17509b0a8844a32c97953b3d0bd7d3e6b3ee99b1b3751",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds": "0786e90373a0ba72e75b31519038accb1b28f14ae533674ec856e329729602d2",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds": "536129c5cb1141b11e7624f23f63baf3d4d532295838af63fca16c4289d4811d",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds": "89130b353a18d800723b1c92528b9fae4830de6abc466b77c796cdeae5071d76",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds": "f95658e9378c31847989f9f388aa5bd0fad16875b5b849c634bd54481da16e9c",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds": "3cf0f4e47e2ef16a3661d04d2534fb77cd9b712a59124ec3febd469a30d685c4",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds": "a31dd16df1e9aa65e877d95834456a2ccbdbdc6dda2ab6873a279c77053bce94",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds": "6b286f58b19dd1a7d8741e1df6eabd447a010c263a899cb51a0f72a30f206362",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds": "eb2ef34f042bf16d57820765d7f258543a6f1eaba1f2de538fb973515bce1777",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds": "6656a4d2f4558d0982d7b139444cc552e3864288efcf66870b4fd6a27e92678a",
+    "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds": "109d3905a2077df1cd4b7700dd1939e399c2e0caa13e7cc5c42cdf696df4e8fd",
+    "main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds": "d168957fc18953316205f2f15aed8f15e2c15ec538a3d734408438aa6058c1ff",
+    "main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds": "0117f55dadb02bbcd8caba0c288806f3e802fcee2daad68f8c2259566b7290ae",
+    "main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds": "3e09e896eeae61fc32a927cf78a47c583e24b64f11ad7e9e3e8cdda62652ba57",
+    "main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds": "e08cfff2e16a9094d4ae396fda817cf8859b1d908b83806743d11ba5e4e79099",
+    "main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds": "52ca119f4d639c7f8e7d1d23265d17028c438431b88318cc987256c0315e2c65",
+    "main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds": "941d45cc1d5e011986f133bd9fe0139e260dd22d244bfea00b631b158846239d",
+    "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds": "7494b3bda1bb11f3aaec25e415c625c0f6d75c765f7521a9286004e75dce5a38",
+    "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds": "27cb166cbcb7e1f799ee1edfe4ec93f0138187171a6947cf4cbb6642d582f60b",
+    "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds": "8fb51d452e6ee4c84263d9ce3d490002d1ae5d53add33abef2c8eb3f044d5df0",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds": "00b9a45fb22a78b1f1ffbedfc8d041625d87b660521e250244b1f590bdd4f574",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds": "62987a4b54a92778b0a0a8d328d2f0f73dee970dc24f15138ed2f57097702587",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds": "391bf41b03b685e4cf5fe4d1759ee938548c182a7dbd4e4d37005ff5bb257d09",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds": "37014f60e23242becbea38766a031ae6d69c69f1d2cd9f32645cf1cfa6bb0bae",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds": "3c7c6120d8a71e88e2aea57087c7178720e5df6916402695904f9ab7cf8522e2",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds": "b574924c73f6319495c7c9117294786a3a434b2fcf27f1f1d300f7f0ccfb3d94",
+    "main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds": "6d901a1b28f9e439291b6010abb7534d0bea5dae5dc27e89d898b41ad5623456",
+    "main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds": "a493668f9cb9623ccbdd912deb0cf05bbf63beb5e421cde50b0bb810efc4d48a",
+    "main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds": "86645d13943a55f7a5995f0877010573242734482d71fdfa4c346a28c8b70cb2",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds": "9aa12ddd271b23f4fbb3cda7e0cb14f2eaeb7976621c5452cb948f7b6a2eebd2",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds": "77f6ce9320a3c19a8f87a642de38ffd55a1fc232f6c9186a1ccb2a1221c45283",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds": "c21984a9873c21d62b331db89f63721c07b3549d87a2aa6b13d4cdeafb88f3d9",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds": "2262da2bca01735262e3c231b93a28e412123900eb615ba5059d37403520ed70",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds": "1243ceae92bb36a21d967e040f206ad8d3b932ac98b0ca05e2a21c84d99bda46",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds": "bc049ea508baf2154d0f178f1cf8b5ca66a0a7a7889a3c7df7a8d5f2abd63f46",
+    "main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds": "d66ec931a66c11999acbc2914d2a90d7d7727645f2efedbabee881b1decdb09c",
+    "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds": "0d7cc805e49dd47f0a4d9a7ace0e9de85513d956ebfbf761544822d342ca4628",
+    "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds": "184481aa4b043ec58782f7b89cd5edff23e97b9a3e2563d89d2ece3ab9a5fec7",
+    "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds": "a322516b8926b8684e4ea8d8e0d79a5be4ce79c5400c28399971ae24e0798f11",
+    "main_menu/gfx/interface/hbe/decisions/hbe_status.dds": "871f11c3272a1cea2c6d9cfbe2487a96677beee13435f50f01cd12fedd85bf30",
     "main_menu/gfx/interface/hbe/events/academy.dds": "67a35b43e40507ef9587b4a0d404a2bf17a29c1bf04e922ad3c60d13582271c9",
     "main_menu/gfx/interface/hbe/events/banquet.dds": "39e93b6454031013f2c48ae193ee5518e618c6e9bdb5d0e7bec1a273b52aecf7",
     "main_menu/gfx/interface/hbe/events/council.dds": "2052c370d389951246f66ab65ba55d5c731fbb005bfad89ec7666e3cd4986f59",
@@ -4400,8 +4732,8 @@
     "main_menu/gfx/interface/illustrations/international_organization_types/hbe_empire.dds": "2052c370d389951246f66ab65ba55d5c731fbb005bfad89ec7666e3cd4986f59",
     "main_menu/gui/messagetypes.txt": "05d9bd34a22c2cd18b6af611b643fc214b1fb1ec48fc61924d07f6d5de100d64",
     "main_menu/gui/shared/hbe_font_icons.gui": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374",
-    "main_menu/localization/english/hbe_l_english.yml": "37cc210cca3deea93cad41c4d96f517d289c8c45fe7e968c8b454ffcc8ea5ae9",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "8675246b2168c9df89840880df35cbd330d214187e055dacc81de8a95b9dffdd",
+    "main_menu/localization/english/hbe_l_english.yml": "50b2b422344226aa20a9c19ae1369b95c6a090e3a313f7adb34963f0076e5010",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "8ed316ea90f421a47b853f7105c373bef431c410c986b60a658b2db15969353d",
     "main_menu/setup/1337/04_hbe_dynasties.txt": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7",
     "main_menu/setup/1337/05_hbe_characters.txt": "c6d49f5d9f423458308bd495cd12a1a5a501eaf3411c1298814b459db2c8dd84",
     "main_menu/setup/1337/10_countries.txt": "4b519e685bb4456ba6690a38c800ea8f86b49328a2e3ed450ecb665dd5471f11",

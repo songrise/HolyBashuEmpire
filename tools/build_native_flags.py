@@ -41,7 +41,7 @@ FAMILIES=[
 COLORS={
     'hbe_ochre':(182,137,49),'hbe_cinnabar':(141,36,34),'hbe_dark_red':(91,28,29),
     'hbe_old_gold':(216,180,91),'hbe_ink':(30,30,28),'hbe_indigo':(31,51,80),
-    'hbe_ivory':(232,222,192),'hbe_pine':(31,77,49),'hbe_russet':(99,52,38)
+    'hbe_ivory':(232,222,192),'hbe_white':(250,248,242),'hbe_pine':(31,77,49),'hbe_russet':(99,52,38)
 }
 
 def build_flags(out,countries,regions,root,put,game):
@@ -52,6 +52,9 @@ def build_flags(out,countries,regions,root,put,game):
     label=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',18)
     title=ImageFont.truetype(str(font),36)
     assets=root/'assets/flags';assets.mkdir(parents=True,exist_ok=True)
+    # An independent white nameplate keeps LiSu readable under engine cloth shading.
+    plate=Image.new('RGBA',(384,128),(255,0,0,255))
+    save_dds(out/'main_menu/gfx/coat_of_arms/colored_emblems/ce_hbe_nameplate.dds',plate)
     proof=Image.new('RGB',(1800,1450),'#312a22');pd=ImageDraw.Draw(proof)
     pd.text((26,17),'神圣巴蜀帝国 · 府州旗样',font=title,fill=COLORS['hbe_old_gold'])
     pd.text((26,60),'原生纹章构件 / 隶书两字题旗 · 配色校样（布面材质由游戏渲染）',font=label,fill=COLORS['hbe_ivory'])
@@ -91,7 +94,8 @@ def build_flags(out,countries,regions,root,put,game):
         if border:
             dependencies.append(('colored_emblems',border))
             layers.insert(0,f'colored_emblem = {{ texture = "{border}" color1 = "{metal}" color2 = "{metal}" color3 = "{metal}" instance = {{ position = {{ 0.5 0.5 }} scale = {{ 0.94 0.93 }} }} }}')
-        layers.append(f'colored_emblem = {{ texture = "{filename}" color1 = "{metal}" color2 = "{metal}" color3 = "{metal}" instance = {{ position = {{ 0.5 0.77 }} scale = {{ 0.60 0.28 }} }} }}')
+        layers.append('colored_emblem = { texture = "ce_hbe_nameplate.dds" color1 = "hbe_white" color2 = "hbe_white" color3 = "hbe_white" instance = { position = { 0.5 0.77 } scale = { 0.69 0.31 } } }')
+        layers.append(f'colored_emblem = {{ texture = "{filename}" color1 = "hbe_ink" color2 = "hbe_ink" color3 = "hbe_ink" instance = {{ position = {{ 0.5 0.77 }} scale = {{ 0.60 0.28 }} }} }}')
         definition=f'''{c['tag']} = {{
     pattern = "{pattern}" color1 = "{field}" color2 = "{trim}"
     {' '.join(layers)}
@@ -108,7 +112,8 @@ def build_flags(out,countries,regions,root,put,game):
         if kind!='textured':charge=recolor(charge,COLORS[metal])
         cw,ch=round(768*scale[0]),round(512*scale[1])
         im.alpha_composite(charge.resize((cw,ch),Image.Resampling.LANCZOS),(round(384-cw/2),round(512*.33-ch/2)))
-        lettering=Image.new('RGBA',alpha.size,COLORS[metal]);lettering.putalpha(alpha)
+        ImageDraw.Draw(im).rectangle((119,315,649,474),fill=COLORS['hbe_white'])
+        lettering=Image.new('RGBA',alpha.size,COLORS['hbe_ink']);lettering.putalpha(alpha)
         tw,th=round(768*.60),round(512*.28)
         im.alpha_composite(lettering.resize((tw,th),Image.Resampling.LANCZOS),(round(384-tw/2),round(512*.77-th/2)))
         im=im.resize((384,256),Image.Resampling.LANCZOS);im.save(assets/(c['tag']+'.png'))
@@ -117,7 +122,7 @@ def build_flags(out,countries,regions,root,put,game):
         proof.paste(im.convert('RGB').resize((276,184),Image.Resampling.LANCZOS),(x,y))
         pd.text((x,y+188),c['tag']+'  '+c['name'],font=label,fill=COLORS['hbe_ivory'])
         catalog.append(dict(tag=c['tag'],country=c['name'],region=c['region'],inscription=name,
-            font='LiSu / 隶书 (SIMLI.TTF)',texture=filename,sha256=hashlib.sha256(glyphpath.read_bytes()).hexdigest(),
+            font='LiSu / 隶书 (SIMLI.TTF)',nameplate='white field / black inscription',texture=filename,sha256=hashlib.sha256(glyphpath.read_bytes()).hexdigest(),
             definition_sha256=hashlib.sha256(definition.encode()).hexdigest(),
             native_assets=[{'category':cat,'file':f} for cat,f in dependencies]))
     # Only superseded generated files with known country tags are removed.

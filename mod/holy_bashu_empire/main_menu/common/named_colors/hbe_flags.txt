@@ -6,6 +6,7 @@ hbe_old_gold = rgb { 216 180 91 }
 hbe_ink = rgb { 30 30 28 }
 hbe_indigo = rgb { 31 51 80 }
 hbe_ivory = rgb { 232 222 192 }
+hbe_white = rgb { 250 248 242 }
 hbe_pine = rgb { 31 77 49 }
 hbe_russet = rgb { 99 52 38 }
 }
