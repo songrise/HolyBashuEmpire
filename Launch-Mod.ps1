@@ -21,7 +21,7 @@ if (Test-Path -LiteralPath $playsetFile) {
 } else { $playsetDoc = [pscustomobject]@{file_version='1.0.0';playsets=@()} }
 $ownName = 'Holy Bashu Empire v0.02'
 $retained = @($playsetDoc.playsets | Where-Object { $_.name -notlike 'Holy Bashu Empire v*' })
-foreach ($existingPlayset in $retained) { $existingPlayset.isActive = $false }
+foreach ($existingPlayset in $retained) { $existingPlayset | Add-Member -NotePropertyName isActive -NotePropertyValue $false -Force }
 $hbePlayset = [pscustomobject]@{ name=$ownName;isActive=$true;isAutomaticallySorted=$true;
     orderedListMods=@([pscustomobject]@{path=$modSource.Replace('\','/');isEnabled=$true});
     DLC=@([pscustomobject]@{paradoxAppId='d000_shared';isEnabled=$true}) }
