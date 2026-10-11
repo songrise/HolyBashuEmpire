@@ -23,5 +23,6 @@ if (Test-Path -LiteralPath $modTarget) {
 }
 New-Item -ItemType Directory -Path $modParent -Force | Out-Null
 Copy-Item -LiteralPath $modSource -Destination $modParent -Recurse
-Write-Output "Installed Holy Bashu Empire v0.1 at $modTarget"
+$installedVersion = (Get-Content -LiteralPath (Join-Path $modTarget '.metadata\metadata.json') -Raw -Encoding UTF8 | ConvertFrom-Json).version
+Write-Output "Installed Holy Bashu Empire v$installedVersion at $modTarget"
 Write-Output 'Enable the mod in the EU5 mod manager, then start a NEW 1337 game.'
