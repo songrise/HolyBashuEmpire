@@ -1,0 +1,131 @@
+{
+  "release": {
+    "item_id": 3818491932,
+    "app_id": 3450310,
+    "title": "神圣巴蜀帝国 Holy Bashu Empire",
+    "visibility": 0,
+    "preview_url": "https://images.steamusercontent.com/ugc/15060143164378431135/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+    "additional_previews": [
+      {
+        "index": 0,
+        "url": "https://images.steamusercontent.com/ugc/10089394321281458581/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+        "filename": "封面.jpg",
+        "type": 0
+      },
+      {
+        "index": 1,
+        "url": "https://images.steamusercontent.com/ugc/16949371261289276822/6273DE1A7E43C1474AD7501E7BF95E8E8BBB40E3/",
+        "filename": "七圈地图.jpg",
+        "type": 0
+      },
+      {
+        "index": 2,
+        "url": "https://images.steamusercontent.com/ugc/15931706084167562350/EC38A5FB9CBED0FFFFF34CD7AB14671280DF62C4/",
+        "filename": "玩法总览.jpg",
+        "type": 0
+      },
+      {
+        "index": 3,
+        "url": "https://images.steamusercontent.com/ugc/17057584865573562887/B5556F29332D0E42690551C0B16429D8AAC60D79/",
+        "filename": "科技分支.jpg",
+        "type": 0
+      },
+      {
+        "index": 4,
+        "url": "https://images.steamusercontent.com/ugc/17248598049921642797/CC815DB2974E21200EAC7C7C8E53F360C2B0D34C/",
+        "filename": "名产与建筑.jpg",
+        "type": 0
+      }
+    ],
+    "metadata": "{\"version\":\"0.3.0\",\"manifest_sha256\":\"b383219fe3bc55caadff95971271b8bd514993a2a3f71f283c752fd59ed04753\",\"package_sha256\":\"c11de3b9515b911b91790fe6edefaf4a0983df470ec05e8f91d5024f5b985755\",\"compact_package\":true}",
+    "file_size": 90989424,
+    "updated": 1791830490,
+    "language": "schinese"
+  },
+  "schinese": {
+    "item_id": 3818491932,
+    "app_id": 3450310,
+    "title": "神圣巴蜀帝国 Holy Bashu Empire",
+    "visibility": 0,
+    "preview_url": "https://images.steamusercontent.com/ugc/15060143164378431135/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+    "additional_previews": [
+      {
+        "index": 0,
+        "url": "https://images.steamusercontent.com/ugc/10089394321281458581/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+        "filename": "封面.jpg",
+        "type": 0
+      },
+      {
+        "index": 1,
+        "url": "https://images.steamusercontent.com/ugc/16949371261289276822/6273DE1A7E43C1474AD7501E7BF95E8E8BBB40E3/",
+        "filename": "七圈地图.jpg",
+        "type": 0
+      },
+      {
+        "index": 2,
+        "url": "https://images.steamusercontent.com/ugc/15931706084167562350/EC38A5FB9CBED0FFFFF34CD7AB14671280DF62C4/",
+        "filename": "玩法总览.jpg",
+        "type": 0
+      },
+      {
+        "index": 3,
+        "url": "https://images.steamusercontent.com/ugc/17057584865573562887/B5556F29332D0E42690551C0B16429D8AAC60D79/",
+        "filename": "科技分支.jpg",
+        "type": 0
+      },
+      {
+        "index": 4,
+        "url": "https://images.steamusercontent.com/ugc/17248598049921642797/CC815DB2974E21200EAC7C7C8E53F360C2B0D34C/",
+        "filename": "名产与建筑.jpg",
+        "type": 0
+      }
+    ],
+    "metadata": "{\"version\":\"0.3.0\",\"manifest_sha256\":\"b383219fe3bc55caadff95971271b8bd514993a2a3f71f283c752fd59ed04753\",\"package_sha256\":\"c11de3b9515b911b91790fe6edefaf4a0983df470ec05e8f91d5024f5b985755\",\"compact_package\":true}",
+    "file_size": 90989424,
+    "updated": 1791830490,
+    "language": "schinese"
+  },
+  "english": {
+    "item_id": 3818491932,
+    "app_id": 3450310,
+    "title": "Holy Bashu Empire",
+    "visibility": 0,
+    "preview_url": "https://images.steamusercontent.com/ugc/15060143164378431135/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+    "additional_previews": [
+      {
+        "index": 0,
+        "url": "https://images.steamusercontent.com/ugc/10089394321281458581/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+        "filename": "封面.jpg",
+        "type": 0
+      },
+      {
+        "index": 1,
+        "url": "https://images.steamusercontent.com/ugc/16949371261289276822/6273DE1A7E43C1474AD7501E7BF95E8E8BBB40E3/",
+        "filename": "七圈地图.jpg",
+        "type": 0
+      },
+      {
+        "index": 2,
+        "url": "https://images.steamusercontent.com/ugc/15931706084167562350/EC38A5FB9CBED0FFFFF34CD7AB14671280DF62C4/",
+        "filename": "玩法总览.jpg",
+        "type": 0
+      },
+      {
+        "index": 3,
+        "url": "https://images.steamusercontent.com/ugc/17057584865573562887/B5556F29332D0E42690551C0B16429D8AAC60D79/",
+        "filename": "科技分支.jpg",
+        "type": 0
+      },
+      {
+        "index": 4,
+        "url": "https://images.steamusercontent.com/ugc/17248598049921642797/CC815DB2974E21200EAC7C7C8E53F360C2B0D34C/",
+        "filename": "名产与建筑.jpg",
+        "type": 0
+      }
+    ],
+    "metadata": "{\"version\":\"0.3.0\",\"manifest_sha256\":\"b383219fe3bc55caadff95971271b8bd514993a2a3f71f283c752fd59ed04753\",\"package_sha256\":\"c11de3b9515b911b91790fe6edefaf4a0983df470ec05e8f91d5024f5b985755\",\"compact_package\":true}",
+    "file_size": 90989424,
+    "updated": 1791830490,
+    "language": "english"
+  }
+}

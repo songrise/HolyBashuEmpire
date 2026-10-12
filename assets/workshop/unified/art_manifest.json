@@ -1,0 +1,78 @@
+{
+  "mode": "built-in ImageGen; user-authorised exact screenshot compositing",
+  "no_version_numbers": true,
+  "chosen_map": "user-selected second layout",
+  "four_commodities": [
+    "蜀绣",
+    "井盐",
+    "蜀纸",
+    "边茶"
+  ],
+  "correct_factions": [
+    "共建派",
+    "兴业派"
+  ],
+  "images": [
+    {
+      "name": "封面",
+      "file": "封面.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 932425,
+      "sha256": "b3798ebb83d8edc318b2ae7cdc69c041aea12a4e6c7a5315f49b4344aa4b353a",
+      "generated_source": "exec-bbfcff23-4ac1-406f-87db-87a168dddc2e.png",
+      "manual_review": "no version text; factual labels checked"
+    },
+    {
+      "name": "七圈地图",
+      "file": "七圈地图.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 638703,
+      "sha256": "cc5f33e08c0e6e5c723b2e6d5d162d70f0c9a787683c90910a3f86087d67cc9d",
+      "generated_source": "exec-ae7f02b0-050b-43e8-9b1d-e0ac09017dcd.png",
+      "manual_review": "no version text; factual labels checked"
+    },
+    {
+      "name": "玩法总览",
+      "file": "玩法总览.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 875177,
+      "sha256": "3aae3180c437d77c8766d22573532f2b0285164fddce41004b388fa932368406",
+      "generated_source": "exec-21ae9875-18b6-4d71-9aa1-b3a333320812.png",
+      "manual_review": "no version text; factual labels checked"
+    },
+    {
+      "name": "科技分支",
+      "file": "科技分支.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 778271,
+      "sha256": "3655f38af8b96b55529d80fd72e2d910063bcd8297c9a964b39013ab181f76a6",
+      "generated_source": "exec-99d5117d-4282-45a5-a1c9-3b0fda4b660e.png",
+      "manual_review": "no version text; factual labels checked"
+    },
+    {
+      "name": "名产与建筑",
+      "file": "名产与建筑.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 912951,
+      "sha256": "1366206a0e40a705ec26f7af2461dbfdc66eb19187a87a51a10f3ebd28a35cf8",
+      "generated_source": "exec-9444bc3a-e361-4f4b-95f9-ff0fc2d0d30d.png",
+      "manual_review": "no version text; factual labels checked"
+    }
+  ],
+  "prompt_set": "Newly generated ivory-paper, blue-black Song-type illustrated-book posters; preserve each original gameplay theme. Map keeps user-selected layout with version footer removed. Technology UI is composited from authoritative screenshot."
+}

@@ -1,0 +1,5406 @@
+{
+  "version": "0.3.0",
+  "source_manifest_sha256": "b383219fe3bc55caadff95971271b8bd514993a2a3f71f283c752fd59ed04753",
+  "source_bytes": 343184501,
+  "payload_bytes": 90989424,
+  "payload_file_count": 451,
+  "excluded_bytes": 30435122,
+  "excluded": [
+    {
+      "path": "build_manifest.json",
+      "bytes": 343218,
+      "reason": "development metadata or non-runtime file"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/panels/hbe_banquet.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_common_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_1.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_2.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_3.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_4.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_5.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds",
+      "bytes": 262272,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_communal_policy.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_levy_policy.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_paid_policy.dds",
+      "bytes": 1900928,
+      "reason": "no runtime reference; implicit native icon directories retained"
+    }
+  ],
+  "encoded_count": 292,
+  "reference_checks": 122,
+  "script_bytes_unchanged": true,
+  "files": [
+    {
+      "path": ".metadata/metadata.json",
+      "source_bytes": 364,
+      "mode": "unchanged",
+      "bytes": 364,
+      "sha256": "69fbfe308402b018059c8769fdbf83ad4724a669580010a79d89b90f6d654dd7"
+    },
+    {
+      "path": ".metadata/thumbnail.png",
+      "source_bytes": 704535,
+      "mode": "matching unversioned promotional thumbnail",
+      "bytes": 520836,
+      "sha256": "6dd602b19e33431e1ec389bb9ecf2251ef6a0955c8ccdb808bdddcc2645b8512"
+    },
+    {
+      "path": "in_game/events/hbe_banquet_events.txt",
+      "source_bytes": 100303,
+      "mode": "unchanged",
+      "bytes": 100303,
+      "sha256": "968f12b580b21645f4ac94741e76a4144174e0f0460c5ccced73f383c3dd182d"
+    },
+    {
+      "path": "in_game/events/hbe_civic_events.txt",
+      "source_bytes": 33084,
+      "mode": "unchanged",
+      "bytes": 33084,
+      "sha256": "66aba8b28f5ab2dff2f9ca06cdea2c473e3a234bae349fdd82623f78b8193288"
+    },
+    {
+      "path": "in_game/events/hbe_events.txt",
+      "source_bytes": 15020,
+      "mode": "unchanged",
+      "bytes": 15020,
+      "sha256": "99b09cc13f1c53ad867185d1651d381e8e9867abd7fbaf5262f95bd2ac7faf4d"
+    },
+    {
+      "path": "in_game/events/hbe_opening_family_events.txt",
+      "source_bytes": 234,
+      "mode": "unchanged",
+      "bytes": 234,
+      "sha256": "e8b3bc9871592c2ee68f73b89a94196c0e531433cea361b7c42c5a9f941a70c4"
+    },
+    {
+      "path": "in_game/common/advances/hbe_advances.txt",
+      "source_bytes": 60642,
+      "mode": "unchanged",
+      "bytes": 60642,
+      "sha256": "968c825772c4aa71c39952084acfd5caefc3e0b1fe184967cf9b254f03507823"
+    },
+    {
+      "path": "in_game/common/advances/hbe_civic_advances.txt",
+      "source_bytes": 15271,
+      "mode": "unchanged",
+      "bytes": 15271,
+      "sha256": "1a916ee090c5964b3085ea0289ca8f10bb020a3c33407df42c28c42f69020d3c"
+    },
+    {
+      "path": "in_game/common/advances/hbe_guest_licenses.txt",
+      "source_bytes": 2760,
+      "mode": "unchanged",
+      "bytes": 2760,
+      "sha256": "e41a5657abf6c1becf749ac1df6215778c4b395f1c55850b4db7fc53320b74ea"
+    },
+    {
+      "path": "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt",
+      "source_bytes": 770,
+      "mode": "unchanged",
+      "bytes": 770,
+      "sha256": "19206a630242baa2bbd7db6fa2ce6d81bd3eb033369b66f1678e8872f44e1d1b"
+    },
+    {
+      "path": "in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt",
+      "source_bytes": 663,
+      "mode": "unchanged",
+      "bytes": 663,
+      "sha256": "059da010d23efa1f12c71ff15983d75824b9057e8ad18ca519f8f2adc66bac7b"
+    },
+    {
+      "path": "in_game/common/biases/hbe_faction_departure.txt",
+      "source_bytes": 58,
+      "mode": "unchanged",
+      "bytes": 58,
+      "sha256": "078e8680a83f65b7fa6ca4b1abb243e7a4396d7c8946401baff93f1f8f26c76e"
+    },
+    {
+      "path": "in_game/common/biases/hbe_feast_opinions.txt",
+      "source_bytes": 90,
+      "mode": "unchanged",
+      "bytes": 90,
+      "sha256": "25974a12c74e52075f32821603bd073cd84958dbb5df8edb2e508886e33a9973"
+    },
+    {
+      "path": "in_game/common/biases/hbe_opinions.txt",
+      "source_bytes": 431,
+      "mode": "unchanged",
+      "bytes": 431,
+      "sha256": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3"
+    },
+    {
+      "path": "in_game/common/building_types/hbe_civic_buildings.txt",
+      "source_bytes": 35286,
+      "mode": "unchanged",
+      "bytes": 35286,
+      "sha256": "cacdf257c5713c46c0bbfe55f7b0c039ec87d929dd10e3ec05b15a5abc120c07"
+    },
+    {
+      "path": "in_game/common/country_description_categories/hbe_profiles.txt",
+      "source_bytes": 759,
+      "mode": "unchanged",
+      "bytes": 759,
+      "sha256": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00"
+    },
+    {
+      "path": "in_game/common/customizable_localization/country_history.txt",
+      "source_bytes": 17889,
+      "mode": "unchanged",
+      "bytes": 17889,
+      "sha256": "a18cce46abee7c833798aab1e24921e8b043eb864941837e9d05b8cf03918310"
+    },
+    {
+      "path": "in_game/common/decisions/hbe_banquet_decisions.txt",
+      "source_bytes": 24919,
+      "mode": "unchanged",
+      "bytes": 24919,
+      "sha256": "fd82438cfbece64bab7dfa0dcec86f22f2caa6120ec40fcb188901c6c4bdba58"
+    },
+    {
+      "path": "in_game/common/decisions/hbe_civic_decisions.txt",
+      "source_bytes": 51699,
+      "mode": "unchanged",
+      "bytes": 51699,
+      "sha256": "47bdc321b55026404e7461733bf2e0c3abdbf3cb8945a88e7cf6c78bccafb184"
+    },
+    {
+      "path": "in_game/common/decisions/hbe_decisions.txt",
+      "source_bytes": 45754,
+      "mode": "unchanged",
+      "bytes": 45754,
+      "sha256": "68ca0cd985fe9c623f0bb50ca08933e392db875845547a1984780dda3aead623"
+    },
+    {
+      "path": "in_game/common/estate_privileges/hbe_civic_privileges.txt",
+      "source_bytes": 2359,
+      "mode": "unchanged",
+      "bytes": 2359,
+      "sha256": "ee967323f1a7d06db5682cb3b855e97263e9a501ea5801d7e1c3b01a2fa3818d"
+    },
+    {
+      "path": "in_game/common/generic_actions/hbe_feast_actions.txt",
+      "source_bytes": 1966,
+      "mode": "unchanged",
+      "bytes": 1966,
+      "sha256": "54565feb164f1c30246279b82e01cb01354c6ae9296b0af83933b6bde24c5df0"
+    },
+    {
+      "path": "in_game/common/goods/hbe_special_goods.txt",
+      "source_bytes": 1017,
+      "mode": "unchanged",
+      "bytes": 1017,
+      "sha256": "6edb3531f23f6af955ff53cc6590d517bd2ea00dd3cef507cd1111b6d7f42be6"
+    },
+    {
+      "path": "in_game/common/goods_demand/hbe_civic_construction.txt",
+      "source_bytes": 110,
+      "mode": "unchanged",
+      "bytes": 110,
+      "sha256": "01d69e30adc1bc40500adbfbbe43567219ec8f45c6ce150ae854f85f9f1018e1"
+    },
+    {
+      "path": "in_game/common/goods_demand/pop_demands.txt",
+      "source_bytes": 2504,
+      "mode": "unchanged",
+      "bytes": 2504,
+      "sha256": "8efe07e9940d6db51da49c5e9ec27e6dbe3f15523f60c1fe3c92af0ccd4bfffb"
+    },
+    {
+      "path": "in_game/common/international_organizations/hbe_empire.txt",
+      "source_bytes": 8342,
+      "mode": "unchanged",
+      "bytes": 8342,
+      "sha256": "377d48b1389001713e893cb93cdb0256b783cab82ec1111f688c818dd80df170"
+    },
+    {
+      "path": "in_game/common/international_organizations/hbe_feast_parties.txt",
+      "source_bytes": 2314,
+      "mode": "unchanged",
+      "bytes": 2314,
+      "sha256": "2894bd9d3affca0af4699700c1da6ae0883fcf15502f21d279e01add17396e68"
+    },
+    {
+      "path": "in_game/common/international_organization_land_ownership_rules/hbe_land.txt",
+      "source_bytes": 342,
+      "mode": "unchanged",
+      "bytes": 342,
+      "sha256": "092e362f4e2fd68a7c65c43e40f938a0913604c4f6c201b19ba11ea74dfeefbc"
+    },
+    {
+      "path": "in_game/common/international_organization_special_statuses/hbe_statuses.txt",
+      "source_bytes": 359,
+      "mode": "unchanged",
+      "bytes": 359,
+      "sha256": "ac82df70c67828890cad12553b6aeaf11d762b6843ceaf52eb54a1f6338869c9"
+    },
+    {
+      "path": "in_game/common/join_war_rules/hbe_isolation.txt",
+      "source_bytes": 421,
+      "mode": "unchanged",
+      "bytes": 421,
+      "sha256": "b28bcc3370ebc565e37530d0c531b8c94718ae99ebebdf96c8ef84df8613018d"
+    },
+    {
+      "path": "in_game/common/laws/hbe_civic_law.txt",
+      "source_bytes": 4541,
+      "mode": "unchanged",
+      "bytes": 4541,
+      "sha256": "fe3f9fba423ebe46aa6974dc85f5c037880bdaa53dc62710c86dab7f3c1af205"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_ai_on_actions.txt",
+      "source_bytes": 213,
+      "mode": "unchanged",
+      "bytes": 213,
+      "sha256": "71e87bad553e39e8885adfd7ae52772f085735e26bda81b249a03430cc36e96b"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_banquet_on_actions.txt",
+      "source_bytes": 9933,
+      "mode": "unchanged",
+      "bytes": 9933,
+      "sha256": "4ac0eea5b0f7517abc8ee3ac3f0b59671db5a2dfca0cfe6afae85deb34fb6bbc"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_civic_on_actions.txt",
+      "source_bytes": 2869,
+      "mode": "unchanged",
+      "bytes": 2869,
+      "sha256": "3ddd608cfa502762e8a0c6eb1efb45f6f9ae61a2be9d5f0c9a7cfb059c367431"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_guest_license_on_actions.txt",
+      "source_bytes": 369,
+      "mode": "unchanged",
+      "bytes": 369,
+      "sha256": "059b77fc4e26aa5083887dfe71e6518397b75e4c54e848b11706a5d00be18608"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_native_content_on_actions.txt",
+      "source_bytes": 375,
+      "mode": "unchanged",
+      "bytes": 375,
+      "sha256": "8aef95955a4897efb19680b097fa364f0529aa9b242c1f69caa55c1bcc09f930"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_on_actions.txt",
+      "source_bytes": 1374,
+      "mode": "unchanged",
+      "bytes": 1374,
+      "sha256": "340507837a04f692839901754def88c93b4bb174d17aec13f4eebaf427543a4d"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_opening_pacts_on_actions.txt",
+      "source_bytes": 383,
+      "mode": "unchanged",
+      "bytes": 383,
+      "sha256": "2d1154f8a9648ab5cd095655be616b697fb9e426471a139207b3baf70fe2ccab"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_simple_banquet_on_actions.txt",
+      "source_bytes": 680,
+      "mode": "unchanged",
+      "bytes": 680,
+      "sha256": "2b4fbefb81bb48d55160a24338603af189631e62fac30f4e9f39d5a4be4b3d2e"
+    },
+    {
+      "path": "in_game/common/on_action/hbe_technology_on_actions.txt",
+      "source_bytes": 358,
+      "mode": "unchanged",
+      "bytes": 358,
+      "sha256": "643f65190f2c82c95da033b31f4e3cf2d2f32f826925728d4148438b87e7ac7b"
+    },
+    {
+      "path": "in_game/common/parliament_issues/hbe_civic_issues.txt",
+      "source_bytes": 4704,
+      "mode": "unchanged",
+      "bytes": 4704,
+      "sha256": "d956ff1278417ca38f2eaad596e5886799f100e79313dbd5242d1a1b0195e7ef"
+    },
+    {
+      "path": "in_game/common/resolutions/hbe_election.txt",
+      "source_bytes": 1581,
+      "mode": "unchanged",
+      "bytes": 1581,
+      "sha256": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_ai_effects.txt",
+      "source_bytes": 460,
+      "mode": "unchanged",
+      "bytes": 460,
+      "sha256": "f158733dccf6d238d0da5455538d8672d950c6cc16697c2dac8d516a8bad501e"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_banquet_effects.txt",
+      "source_bytes": 23814,
+      "mode": "unchanged",
+      "bytes": 23814,
+      "sha256": "c4dd7d3cb039ba28bcd2fccabe00c6beb7ad98d5c19e90b0575463e54c1cac10"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_civic_effects.txt",
+      "source_bytes": 31466,
+      "mode": "unchanged",
+      "bytes": 31466,
+      "sha256": "50a54e56928727a14b286449ee7b5ddbae2c59c1b28c95353b6ab0db560050a6"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_effects.txt",
+      "source_bytes": 31776,
+      "mode": "unchanged",
+      "bytes": 31776,
+      "sha256": "b3beccd30485b420fccc46c3970393047f2f5de1f489d6b72bbcc1b3aaf66fba"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt",
+      "source_bytes": 3826,
+      "mode": "unchanged",
+      "bytes": 3826,
+      "sha256": "79512cedb773f91ac133fada19748de391b4bc53243073907da38eed6728b6b7"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_guest_license_effects.txt",
+      "source_bytes": 1585,
+      "mode": "unchanged",
+      "bytes": 1585,
+      "sha256": "c3304c7a66e960444360e93ea9617fdc7cab0d61c4b3705c2307bd3982c9bf59"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_native_content_effects.txt",
+      "source_bytes": 25266,
+      "mode": "unchanged",
+      "bytes": 25266,
+      "sha256": "40ef74f01c8153ce328f7c68ac5fe8b78482d60125f4eed75e1bdee1160ed051"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_opening_pacts_effects.txt",
+      "source_bytes": 48968,
+      "mode": "unchanged",
+      "bytes": 48968,
+      "sha256": "ae69ff68ce26fc73735812637a53e35633e6144eef4af51b20275d5ce4db34e6"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt",
+      "source_bytes": 3829,
+      "mode": "unchanged",
+      "bytes": 3829,
+      "sha256": "66c1693c7d6d2f5ea5f1f83ac17770498c390272512d92cc930e83bd648eb5f6"
+    },
+    {
+      "path": "in_game/common/scripted_effects/hbe_technology_effects.txt",
+      "source_bytes": 7445,
+      "mode": "unchanged",
+      "bytes": 7445,
+      "sha256": "98436c41935890d591d4cda9d2df0cfc1e130368739321bf6cbd27c66ec12f96"
+    },
+    {
+      "path": "in_game/common/scripted_geography/hbe_geography.txt",
+      "source_bytes": 3324,
+      "mode": "unchanged",
+      "bytes": 3324,
+      "sha256": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f"
+    },
+    {
+      "path": "in_game/common/scripted_triggers/hbe_civic_triggers.txt",
+      "source_bytes": 4987,
+      "mode": "unchanged",
+      "bytes": 4987,
+      "sha256": "5069ae83fd819bcfb3e1e5d70584d0955b51ece64b9c8c9302115d3ee4cdacc0"
+    },
+    {
+      "path": "in_game/common/scripted_triggers/hbe_triggers.txt",
+      "source_bytes": 1302,
+      "mode": "unchanged",
+      "bytes": 1302,
+      "sha256": "3762b16b08198ddbeab78f35226324003735566dd2804f63e4b74042f63a7eca"
+    },
+    {
+      "path": "in_game/common/script_values/hbe_civic_values.txt",
+      "source_bytes": 1793,
+      "mode": "unchanged",
+      "bytes": 1793,
+      "sha256": "7f3943b96c3e6e6e8c1b042a612f8dc8eb2e7c493b7bb6c34d36e8c6eb488a53"
+    },
+    {
+      "path": "in_game/common/script_values/hbe_feast_dividend_values.txt",
+      "source_bytes": 444,
+      "mode": "unchanged",
+      "bytes": 444,
+      "sha256": "8de9795ccbc31a77bd58282ee396058f3d9d65bba80c1439a6233481a06bef77"
+    },
+    {
+      "path": "in_game/common/script_values/hbe_feast_values.txt",
+      "source_bytes": 92,
+      "mode": "unchanged",
+      "bytes": 92,
+      "sha256": "76bcf431443a870007f98acdf51b7322c9f5ff442a1a3bc0266fa6ba7a00bfd7"
+    },
+    {
+      "path": "in_game/common/situations/hbe_banquet.txt",
+      "source_bytes": 2206,
+      "mode": "unchanged",
+      "bytes": 2206,
+      "sha256": "9112a9997192b856ad73b20019a4204ea92cdfd76f88e00a8a5b1f7d69c54e5b"
+    },
+    {
+      "path": "in_game/common/unit_families/hbe_civic_families.txt",
+      "source_bytes": 66,
+      "mode": "unchanged",
+      "bytes": 66,
+      "sha256": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7"
+    },
+    {
+      "path": "in_game/common/unit_types/hbe_civic_units.txt",
+      "source_bytes": 18832,
+      "mode": "unchanged",
+      "bytes": 18832,
+      "sha256": "3744bd2e59fd33894119cc40dc8abdf8418bbfdbd703c59b0be827e0940c0bfd"
+    },
+    {
+      "path": "in_game/gfx/images/hbe_civic_backgrounds.txt",
+      "source_bytes": 684,
+      "mode": "unchanged",
+      "bytes": 684,
+      "sha256": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d"
+    },
+    {
+      "path": "in_game/gfx/images/hbe_event_backgrounds.txt",
+      "source_bytes": 2460,
+      "mode": "unchanged",
+      "bytes": 2460,
+      "sha256": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e"
+    },
+    {
+      "path": "in_game/gfx/images/hbe_v021_backgrounds.txt",
+      "source_bytes": 247,
+      "mode": "unchanged",
+      "bytes": 247,
+      "sha256": "9fdc73f4484385dabe78baa1f1a7e7be2c4d9b0a9005955cb05c9ad2a55ba944"
+    },
+    {
+      "path": "in_game/gfx/scenes/hbe_civic_scenes.txt",
+      "source_bytes": 3819,
+      "mode": "unchanged",
+      "bytes": 3819,
+      "sha256": "a395f832ca7d26270af884c3d5f5757a211534fc8c2c692a94daec2b42d1d7e4"
+    },
+    {
+      "path": "in_game/gfx/scenes/hbe_event_scenes.txt",
+      "source_bytes": 15089,
+      "mode": "unchanged",
+      "bytes": 15089,
+      "sha256": "5c626fe9edf4338fdeb1c4713d44d552d1ecd4a388c6270add23c29d5ac04ee2"
+    },
+    {
+      "path": "in_game/gfx/scenes/hbe_v021_scenes.txt",
+      "source_bytes": 1283,
+      "mode": "unchanged",
+      "bytes": 1283,
+      "sha256": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856"
+    },
+    {
+      "path": "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt",
+      "source_bytes": 1536,
+      "mode": "unchanged",
+      "bytes": 1536,
+      "sha256": "00205abfc446974e38b49ad84742bb1137cc0e850d84d7cb9219e0e930f290c6"
+    },
+    {
+      "path": "in_game/gui/panels/situation/hbe_banquet.gui",
+      "source_bytes": 7763,
+      "mode": "unchanged",
+      "bytes": 7763,
+      "sha256": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df"
+    },
+    {
+      "path": "in_game/setup/countries/hbe_countries.txt",
+      "source_bytes": 7523,
+      "mode": "unchanged",
+      "bytes": 7523,
+      "sha256": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9"
+    },
+    {
+      "path": "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt",
+      "source_bytes": 390,
+      "mode": "unchanged",
+      "bytes": 390,
+      "sha256": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7"
+    },
+    {
+      "path": "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt",
+      "source_bytes": 1284,
+      "mode": "unchanged",
+      "bytes": 1284,
+      "sha256": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa"
+    },
+    {
+      "path": "loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt",
+      "source_bytes": 144,
+      "mode": "unchanged",
+      "bytes": 144,
+      "sha256": "4094274778343be9e6caee5857cc9bd2406c012525d8d64084e70b9b83d65c02"
+    },
+    {
+      "path": "loading_screen/gfx/interface/hbe/placeholder.dds",
+      "source_bytes": 295040,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 1.8536,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        384,
+        192
+      ],
+      "bytes": 73856,
+      "sha256": "9153da175e2fc67acf1c6d5421761d88c3c732111371e955329759be27ff37e1"
+    },
+    {
+      "path": "main_menu/gui/messagetypes.txt",
+      "source_bytes": 206040,
+      "mode": "unchanged",
+      "bytes": 206040,
+      "sha256": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c"
+    },
+    {
+      "path": "main_menu/common/game_concepts/hbe_concepts.txt",
+      "source_bytes": 1863,
+      "mode": "unchanged",
+      "bytes": 1863,
+      "sha256": "ded83a83b18ad141ee2c1fac953bbb813a02d06b44e246f15ba6fe3c51a341b5"
+    },
+    {
+      "path": "main_menu/common/modifier_icons/hbe_icons.txt",
+      "source_bytes": 427,
+      "mode": "unchanged",
+      "bytes": 427,
+      "sha256": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978"
+    },
+    {
+      "path": "main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt",
+      "source_bytes": 751,
+      "mode": "unchanged",
+      "bytes": 751,
+      "sha256": "1bbdb431adcbcddb3838e31af4217fa9144b1f6b326f02a6545d73c352653e46"
+    },
+    {
+      "path": "main_menu/common/modifier_type_definitions/hbe_types.txt",
+      "source_bytes": 225,
+      "mode": "unchanged",
+      "bytes": 225,
+      "sha256": "3cb6310b5f2afb958ad0d0f8f6605ae52bcb2e68db61784d7cedcbc8be5ec511"
+    },
+    {
+      "path": "main_menu/common/named_colors/hbe_flags.txt",
+      "source_bytes": 260,
+      "mode": "unchanged",
+      "bytes": 260,
+      "sha256": "513cbb0779c9fc42ee447024670f41e18e0cd01d182e2a968be63b343abf3862"
+    },
+    {
+      "path": "main_menu/common/scenarios/hbe_scenarios.txt",
+      "source_bytes": 4647,
+      "mode": "unchanged",
+      "bytes": 4647,
+      "sha256": "a1721fee702056ca5fc956c12382a376ddacebcb6af70fc765def6878648f3c5"
+    },
+    {
+      "path": "main_menu/common/static_modifiers/hbe_ai_modifiers.txt",
+      "source_bytes": 93,
+      "mode": "unchanged",
+      "bytes": 93,
+      "sha256": "2f1f9367d42553bc4403f029870238c172f229a686dbdced11a51cbed8f826ba"
+    },
+    {
+      "path": "main_menu/common/static_modifiers/hbe_civic_modifiers.txt",
+      "source_bytes": 418,
+      "mode": "unchanged",
+      "bytes": 418,
+      "sha256": "aab20e6faae1024508ecfc43ad7d2abec037196524ba57235add59a8d0b06500"
+    },
+    {
+      "path": "main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt",
+      "source_bytes": 2657,
+      "mode": "unchanged",
+      "bytes": 2657,
+      "sha256": "3dc38d6bcfdc7173d3b0f1ceeeed671bb4482506e3ccce3b205fa8b0f7c3f107"
+    },
+    {
+      "path": "main_menu/common/static_modifiers/hbe_feast_modifiers.txt",
+      "source_bytes": 405,
+      "mode": "unchanged",
+      "bytes": 405,
+      "sha256": "1a079a367747502380069afb5eed6393253ee8edf627365d9274d3237aff501c"
+    },
+    {
+      "path": "main_menu/common/static_modifiers/hbe_modifiers.txt",
+      "source_bytes": 508,
+      "mode": "unchanged",
+      "bytes": 508,
+      "sha256": "a0a1be70b87ff6f77d7774d4c778a12654000a39b9d7a8992cf1cc501d741334"
+    },
+    {
+      "path": "main_menu/common/static_modifiers/hbe_technology_modifiers.txt",
+      "source_bytes": 1673,
+      "mode": "unchanged",
+      "bytes": 1673,
+      "sha256": "702aa35e0a09ee95ac754b3d990f40e3fb68d7b2865cc51ee22c08dd73cb1629"
+    },
+    {
+      "path": "main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt",
+      "source_bytes": 7517,
+      "mode": "unchanged",
+      "bytes": 7517,
+      "sha256": "5cc1082988fcce5f2c9c77df0a1a33502fccc92b4ab674f4c0c1420d85e0a53a"
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bab.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "9e711103a0b60bbe8e5a5ecc4ead6b806c5d64de3b749f7025cff52f13c7b649",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.134,
+      "alpha_mean_error": 0.4244
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bae.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "96801813f1b4cf4265d1828a24099163761b79284412cc4541727d394e83d1b8",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.801,
+      "alpha_mean_error": 0.3783
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baf.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "1f1763bb654675d28dd8f619d97b65a997101127d6b687fb555b782a35d0e7bf",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.6402,
+      "alpha_mean_error": 0.3418
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baj.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.7277,
+      "alpha_mean_error": 0.367,
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 262272,
+      "sha256": "eb8516c22e12b63d55679e7f17cce3ce2e1a57cc2ed57cfa69f9b3fe40479720"
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bal.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "b8eaa79a32af91d5ac3c2936401be762a93c9579b64f6548f1747aed926318e4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.8523,
+      "alpha_mean_error": 0.3507
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bao.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.59,
+      "alpha_mean_error": 0.2091,
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 262272,
+      "sha256": "df9a20fd8fbc1add97cc13556d814061d6b41f786fba25a7df67735c33a850fb"
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bap.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "712f81de11818f317795a149674c732f6a766545f07a3fe43afb5a2b66a7d654",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.0861,
+      "alpha_mean_error": 0.1825
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baq.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "3f4c54624ef3991465a69b5482a8754831dea04333450b52c3c331dadb3da922",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.4721,
+      "alpha_mean_error": 0.2677
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baw.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "660ff2277283a7864cb9806ea16c35fc99dc6039f9ccca69215b4701ce169295",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.3282,
+      "alpha_mean_error": 0.3828
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bax.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.6813,
+      "alpha_mean_error": 0.1734,
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 262272,
+      "sha256": "79ae0a0218cf06cdfc23faf3bcc31727c300d42f18fa829febbffa860b1625b6"
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baz.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "6e9130b7de0434afcc465f545f9b227ac081d5e4398295236b0bbc7840b0c0fd",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.7775,
+      "alpha_mean_error": 0.2582
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbb.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "4b4828c846aab0df5d231be4fe9650729471ea1bed4af00f2a7f8ca8fa0baaac",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.4051,
+      "alpha_mean_error": 0.2977
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbc.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "3fd8ffcf86165b1297e427c305ec2ccf33f3f200dc2af9dfee1f60ca8467c018",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.9612,
+      "alpha_mean_error": 0.2142
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbe.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "79bea7620ef08d73010eee3d327ffc0c61c39d88394c43c6cbac47524310aa47",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 5.1374,
+      "alpha_mean_error": 0.2153
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbf.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "f413a517ab375d2786af98bd0c841be12f2e165a11ed5492c900a26512b3d697",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 5.6467,
+      "alpha_mean_error": 0.2176
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbh.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "2e4a09a49a5f88a467ae0aef18c6f59f4f2d90ce2d0733efbe0d41a4606483eb",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.8299,
+      "alpha_mean_error": 0.2831
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbi.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "f8081a145111fa958f3fdc122061936c5ef9d1393b49b4b149775030565356bc",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.9877,
+      "alpha_mean_error": 0.2338
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbj.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "967952ea756bf981c27ba301d2a9633a1743dffc6dd49bd9682db546da0eae00",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.0475,
+      "alpha_mean_error": 0.3564
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbl.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "63d3a45ff1e22f4b82aa65c737520eeab124251f7b5fe89b1cf91eab9e6c098f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.9162,
+      "alpha_mean_error": 0.2696
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbm.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.7981,
+      "alpha_mean_error": 0.2834,
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 262272,
+      "sha256": "448e8915428371cc0a3c01ff37ac0e294072133876fc7abba15dfca44e043b0f"
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbn.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "7c0ceb5861241b72ac0e714d05138db76391ce5c25fe4613eb5789be6fa5e11c",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.6387,
+      "alpha_mean_error": 0.3338
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbo.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "c4c67d382238e7b9cbc98c0c9887e11d888cd32239319e28a5072066afb55a8d",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.6729,
+      "alpha_mean_error": 0.2798
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbp.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "547ab8bc7bf6d0b2add7dd2e284093a0798beca234d28558e3a535384cf3a362",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.0478,
+      "alpha_mean_error": 0.1882
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbq.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "e13d3f827b80b2653b6bc9a7513b0316caa68b70f57d632a0aedeabe767fe9df",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.4907,
+      "alpha_mean_error": 0.3583
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbr.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "9797b89d908ffcc5842ff5e9d1e1ca17eb8c0ca3a65574fcda406b47e3599188",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.0778,
+      "alpha_mean_error": 0.1391
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbs.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.9449,
+      "alpha_mean_error": 0.389,
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 262272,
+      "sha256": "b419613c0da2f84cac0e8bad9ae2f36155f47e1b6cfad6e5499e3a96cd961f0a"
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbt.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "e4b2858ca0fcee95afe5036496e4e3b9dcbbb22a234e31156a7201c261bc6990",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.7597,
+      "alpha_mean_error": 0.2635
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbu.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "9f20c23f5e59c71d5d543e49a09b54389fbf71ed737355a1f53425ccb07a252d",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.2268,
+      "alpha_mean_error": 0.3328
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbv.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "f54157274b01afb33c3d4802076f0d21861de3a308bdf9a37dc3a45a4f49f35f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.583,
+      "alpha_mean_error": 0.192
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbw.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "5f063168cf048110c87531933f59fe54199de32ffbb59ab1404681b20a038781",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.4778,
+      "alpha_mean_error": 0.2657
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbx.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "83c22fb6f90ef49425f43d65d4fa9aad31cfa930ea41036319bacd47f64dd727",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 3.8758,
+      "alpha_mean_error": 0.1848
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bby.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "dfba1a9521f1a900c209d02590355ca7194d90c2bf2994ef353ae2a63599d194",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 5.3527,
+      "alpha_mean_error": 0.3951
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbz.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "911cbba3e4ffce5f4d0dfb4f7bfba17732a62acf1b1f84e483e950b8953bad20",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 3.9796,
+      "alpha_mean_error": 0.4238
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bca.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "282353a59362dfb87f692e24799394c260020cec1e5d7b9d187af144c788ab44",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.7811,
+      "alpha_mean_error": 0.4064
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bcb.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "850d8257a526f8e1000e4fb15bc08e8307b63427aa4f6d03a95402c5d88b7d89",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.8656,
+      "alpha_mean_error": 0.2234
+    },
+    {
+      "path": "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bcc.dds",
+      "source_bytes": 1048704,
+      "mode": "native DXT5/BC3",
+      "bytes": 262272,
+      "sha256": "df2b65024ee43fdec5526b9831cf270d348c7467b9ab36c3f0f8b361a7c1f8e7",
+      "dimensions": [
+        512,
+        512
+      ],
+      "rgb_mean_error": 4.647,
+      "alpha_mean_error": 0.285
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_central_hills_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "f0fd1aa17392385d6bd5c45d9835891836f577719948376634dcea027e0edecd",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.9593,
+      "alpha_mean_error": 0.2178
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_central_hills_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "0b753c4a6f83140fe2edf8edcd6940538a5e02f9c7397e39466aa187cfb37ed4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2025,
+      "alpha_mean_error": 0.2647
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "171d24f011706b8243c4ccd474edf55396e595fb2d5eafc15fa6e7474ba9d3aa",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2865,
+      "alpha_mean_error": 0.2155
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "2f12fc37a45e46add15ae0e2fba8756b21a77d2f5046bb617e7bf32b4472f136",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.4991,
+      "alpha_mean_error": 0.2234
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_common_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "193c52de78c4a2e14e3690ee88dfb52b04233c0c55165853a3406fb6580bd7c6",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.9676,
+      "alpha_mean_error": 0.2767
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_common_2.dds",
+      "source_bytes": 262272,
+      "mode": "raw retained for quality",
+      "bytes": 262272,
+      "sha256": "cedc56245f15f99adf7d7340b50896835984653ebde05a9841729384f4cb90ad",
+      "rgb_mean_error": 6.8004,
+      "alpha_mean_error": 0.4886
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_eastern_river_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "8d9c92773b1168357aade4b98f1429747f6fc9f4c2a7e90ab2bcfe33d66c9af4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.8432,
+      "alpha_mean_error": 0.2573
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_eastern_river_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "e434be538953e021e8cd2e4ececd8c026af5fbbdd1851b5e84ea2f060f69334a",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.129,
+      "alpha_mean_error": 0.3882
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_northern_shudao_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "412b611dcb21bcdcda073029b26066397264b7f67af50b943933e73d44862b66",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2861,
+      "alpha_mean_error": 0.2747
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_northern_shudao_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "27215893dbbd02bbab190e45096f793659fc1509566e9f7facce284b8ecaf10d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.6364,
+      "alpha_mean_error": 0.2188
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "4bee80466f08bf133e1b39253d01ab89cd3516e213f6d3d94a4a05e95688a256",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0149,
+      "alpha_mean_error": 0.325
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "8c1934ebdd4b732a7ebc9eda297fdc06ff2eb8c5c7dacbca45072533dbe70ea6",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.12,
+      "alpha_mean_error": 0.3691
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "64bb70ac458ddb9c64556bac2eed31d0f6d63bae34b30dc9badc98a127245bb7",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.4425,
+      "alpha_mean_error": 0.2516
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_2.dds",
+      "source_bytes": 262272,
+      "mode": "raw retained for quality",
+      "bytes": 262272,
+      "sha256": "e428941d8c91ad16ed9b2ffa0567856733234d1302b6d753247213b621b68489",
+      "rgb_mean_error": 6.3452,
+      "alpha_mean_error": 0.2844
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "ca2ad0f9b6997a9514ae6f5a1872744a0a87242e05fc8df955d2433cc8f31b08",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0573,
+      "alpha_mean_error": 0.2162
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "2c39c642412a8ba7e98aaaead16b10a37d8a19d884ee2f15b83d4bf1a85b4ea1",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9556,
+      "alpha_mean_error": 0.3208
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_1.dds",
+      "source_bytes": 262272,
+      "mode": "raw retained for quality",
+      "bytes": 262272,
+      "sha256": "cf7c1f060663ced487b407f6915ea5064cb72dda66dfed04ebab6a78a792effe",
+      "rgb_mean_error": 6.007,
+      "alpha_mean_error": 0.205
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "83640a64a88642a2749171a0ad9fd7082faab0f1d39590982f598801c1c20b3d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.4546,
+      "alpha_mean_error": 0.1957
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "ac3a5382251ec70158e8ee636f37acbe965a355c6b8db40baed1d14ec0c8bbac",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9145,
+      "alpha_mean_error": 0.1865
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "09f3a169e6f58c37b59e26ee69fbcbc3910ffe5ae8c177c98eda42ba10e00298",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.5311,
+      "alpha_mean_error": 0.1669
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "a1b7785998483994c411880b22d7fe5d35239d567cef724ae6db6d9e8805ee50",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.7955,
+      "alpha_mean_error": 0.2573
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "06f643ad9c721147751314bcd99ec01c6f797c26502ae3160d603026d5c787d4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.433,
+      "alpha_mean_error": 0.2307
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "293e894c7aa8841ecdb7a54525f372d353dada078bffd8352165da39be9e0a49",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.743,
+      "alpha_mean_error": 0.1494
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_central_hills_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "cced43d9a48bcb3e15c606e000bbc74e613ba293287c2e7dedf7f0c1c97e84c5",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9107,
+      "alpha_mean_error": 0.1566
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "79384cc4ae70a2cba7a495bb75690b5eb5046b64e3bcaebb71284c3b4bd43ca4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2983,
+      "alpha_mean_error": 0.2778
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "8fa951f06ec505df0b501e5e2efb6daeff8fc6918443e7022128c6a00303b931",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2437,
+      "alpha_mean_error": 0.1504
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "6f6203478cf3a01e4aa7eb4edac6d65e624c6b1b3908048258b17401d760e945",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.7747,
+      "alpha_mean_error": 0.1712
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "dd6c8e06052995b9617b157ade33fdf6b2699eaf5a5dc93056be7efefed93834",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.1386,
+      "alpha_mean_error": 0.2427
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "688c2ad09e212ec9f46dbc6df658c585e9430d67b44ad4acd33c8befe5510414",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2058,
+      "alpha_mean_error": 0.269
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "98b60e682c3a9b300b7d09f628a2fe6d936c493dd47971e380bc82640f4ae29d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.4473,
+      "alpha_mean_error": 0.2097
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "601f5fcdcea35f8b6de14aae72374481aac3568bdb95479d50354910ee46ed4e",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.511,
+      "alpha_mean_error": 0.2471
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "e04ff10fd3a70fdaf9d54512de43a176b3fa9cc398a74d63b1aae9b961f346d9",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0885,
+      "alpha_mean_error": 0.1759
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "bb8c87d8e6bd729a826f16c4f79c518d29ccbdf3cee0d1e33b4573d27223269a",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.5741,
+      "alpha_mean_error": 0.2093
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "7d50409eb80de2443327659e92a611afca9c1bf12ad3663c87b696e9876fb09b",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.4362,
+      "alpha_mean_error": 0.2549
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "b3c6f0e47938ec584f821e6176892816e51534b00c7725b44657f7bfdf84ae0c",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.8,
+      "alpha_mean_error": 0.1822
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "c43f09aeec19bc13219d535274ba5bac3b1730c6f903fae483f5b8ae86cebdd1",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 3.9441,
+      "alpha_mean_error": 0.2519
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "837c86110a86e2359e812c5267ade83f49deef7ead690ea1d721a1eddc11046d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.5788,
+      "alpha_mean_error": 0.2038
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "5172efbe2f7ec31e6d1d78bc38ff04bacfefa6474b78b5f8a847236a2677f98d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.1257,
+      "alpha_mean_error": 0.3348
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "065fc565d4ebdd9cfe386fb85418282b9ceef98665e1bb1f845e4ad5292aea86",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.3712,
+      "alpha_mean_error": 0.2127
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_common_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "a0e94631cc9dfc527c98dde3cc1c1b11ceaf3387b46796cd815958aa74a10315",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2882,
+      "alpha_mean_error": 0.1549
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "7d6968829e25a9702c9c8ccaf1cbb4a841d9239ee2baf2955af12bc442d8bc5f",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.557,
+      "alpha_mean_error": 0.3661
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "1aa2ecd364e57f831ae5fd08124fe1eb16020c6ad591df61886d7656c902dda7",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.3769,
+      "alpha_mean_error": 0.2323
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "137960c7c03c45ef37115f6354dac01e52471d9bba13bbba33c1bf627d8bc648",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9449,
+      "alpha_mean_error": 0.2462
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "db139ba2f0ae4502b164efd898030b6996a45f76ea24747f96126909af0ee6ba",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.4493,
+      "alpha_mean_error": 0.3638
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "53e9971cf27d89efa280350dbcf07e750f97f26e841546a12490b304ec0be7c7",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0062,
+      "alpha_mean_error": 0.154
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "9875772f418aaa9db3ea32736052de60cbd97a3211cb5c1301b191a9e868a6a9",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.5102,
+      "alpha_mean_error": 0.2991
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "5d00e9e81b46b132857130c5f356d768f4c7dfbae7623db98ea7ff8f30c11e2c",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0394,
+      "alpha_mean_error": 0.3027
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_eastern_river_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "e06eed10fe59aa6d4705ec84c67b8acb9ff09ce183d0fa3bd528a93d93125223",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.4165,
+      "alpha_mean_error": 0.2416
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "0db7a73951a3f0e5e89267c2d7e5c2cf33a6c3f7dd768c7671f55301cd8157c3",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.5317,
+      "alpha_mean_error": 0.2133
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "a054ac7a366c401e724b4eb993f163f2df1735c2a7e7b8d356685350f0f1facd",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.4624,
+      "alpha_mean_error": 0.282
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "27fccbcc74fa5c3ada1322a6260dc441d476536a711d49a272e5437946cb821e",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.538,
+      "alpha_mean_error": 0.2329
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "68ed9f65bb173a61ac7eea82d8d83b3cb2509208b147a3cdb70f26899640b88f",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.7507,
+      "alpha_mean_error": 0.3853
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "44d5029bce78aa0919f29949b5b94cf3f82dffacdfb791fc8c57bc7bcda33bc5",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.2383,
+      "alpha_mean_error": 0.2827
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "f9e865dc5d93412caa55d5745e70fbe397d5eb596497ce0fe73126c943374be9",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.3739,
+      "alpha_mean_error": 0.264
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "997fc5ba59daf2eb82cc8e38b3448e90d9e865e0f1e9ed72cb859a7d0b459784",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.2635,
+      "alpha_mean_error": 0.2154
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_northern_shudao_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "a0de1f2aacfacf3bc8beb8932d47fc0966571eabd293d3182ab50ffa70e926f0",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.018,
+      "alpha_mean_error": 0.3358
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "a0987bb8eeb0182a34115026a963c03f0506960038e74374e7bf7a2e363ebd91",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9784,
+      "alpha_mean_error": 0.2116
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "dd77f0f400df46ef0c6ad522d54c17ba3232048050eb5d1756db831f72ac1938",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.3545,
+      "alpha_mean_error": 0.1806
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "898104332fcf74893cfb1fd1f29a8715e57e2e0f51bf38ce8582bb9a4d3cb76a",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0998,
+      "alpha_mean_error": 0.3815
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "58d22865a3d0ef95220fc29918520d31e2115d148201390668968962dba0104e",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9461,
+      "alpha_mean_error": 0.1922
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "c3a5a67164b352268c6c45e6bbfc092c55412290ac77192c499481d34f48ccb4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.43,
+      "alpha_mean_error": 0.1701
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.5149,
+      "alpha_mean_error": 0.1763,
+      "dimensions": [
+        256,
+        256
+      ],
+      "bytes": 65664,
+      "sha256": "89cf61b0f218510d7ebaab406e5dc3f3c29852e7fb42712f5c0be2796e803318"
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "40542b376ab74edbb0c8f58ae8b8246ed134d8dc4a8b397ac20bc04f5dc9bc1d",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.483,
+      "alpha_mean_error": 0.1881
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "90efbc1f6f0fb08da01842463116ffe3ded3c889afb81e9e5cc4cfdc8cd1b405",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.4153,
+      "alpha_mean_error": 0.1409
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_1.dds",
+      "source_bytes": 262272,
+      "mode": "raw retained for quality",
+      "bytes": 262272,
+      "sha256": "0a9e34e62bc062da2aca0251a8116416ddbce7858c50fc4cf60baa980b7f82d1",
+      "rgb_mean_error": 6.7595,
+      "alpha_mean_error": 0.1961
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "cdab532ede0d9221c57220adc00f03fa10a8766c76316bfe2242218dcdbbdd74",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.3199,
+      "alpha_mean_error": 0.3319
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "38ea2035ced620413a07de0290fc6df3b7678099818ae425fac8e0e2709b2fd9",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.9612,
+      "alpha_mean_error": 0.4145
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "b1f84f56f1f1dc4c642306baee860374c6d4689601bd682bb390f7b997a1c877",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.7627,
+      "alpha_mean_error": 0.1841
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "c67321b802562300fff3cfc667cd4784103c261facb9e8fa52033cb99e137bd9",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.7089,
+      "alpha_mean_error": 0.1615
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "d31aa5fff1431a975adf6d1d48e185fc9d4e07f2494db04db0c7d12606bf138a",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.41,
+      "alpha_mean_error": 0.5788
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "787f461cbe6481d77c2d1b51b99348482e61c7b1e5e1cf281c4fe62c1155461a",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.9635,
+      "alpha_mean_error": 0.2323
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "c4851721962bfb9b9981016a751adadb2c6678dc7810651c7942ebdf0b38ead4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.7599,
+      "alpha_mean_error": 0.2602
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_1.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "356b237252ec913615370523cd2ebf6ac5a1f98fbda569415d586fe156e42176",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.731,
+      "alpha_mean_error": 0.3181
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_2.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "21aed0aa5850031a457b6b8d7f0eba17343a6cfab1088e3a21bd472ac4b6fad4",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.3174,
+      "alpha_mean_error": 0.283
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_3.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "e59374451e362dd5c690bc7d5e2776e2db93239892b015dd9c3c5b2b3a7cfbab",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.5121,
+      "alpha_mean_error": 0.2032
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_4.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "e05dd50a1272921a5ec1bfb661341ac74bdf5ad0fa28321859f7cfee0644ffcf",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.4734,
+      "alpha_mean_error": 0.1789
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_5.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "7b4ca36c031f0a16892ac7348a7358d4c481ba1794642115c17b21503e219197",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 5.0187,
+      "alpha_mean_error": 0.4675
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_6.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.333,
+      "alpha_mean_error": 0.1732,
+      "dimensions": [
+        256,
+        256
+      ],
+      "bytes": 65664,
+      "sha256": "7dfdc92684dd65169702313a31d12058845fede2d0d806a8e84381210252795f"
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_7.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "1af6f43f1a4c048caae4c5d71c939f002f21f7a2072c317db88f601126fecd07",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.2465,
+      "alpha_mean_error": 0.2254
+    },
+    {
+      "path": "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_8.dds",
+      "source_bytes": 262272,
+      "mode": "native DXT5/BC3",
+      "bytes": 65664,
+      "sha256": "67518d88a36aeaa2b86d6a25fa76382541d3e62cf91912fc3f38b05473d7ca1b",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgb_mean_error": 4.5371,
+      "alpha_mean_error": 0.1819
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "89dac4d1285ac2df1451883cb3328dbf8b55189548732ec2acbbfe59ff47aada",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.385,
+      "alpha_mean_error": 0.0414
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "f243beeef9e8d8405612f1c8e3600c9de0db9d5df350633c0a9f7f4071a42c53",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.7659,
+      "alpha_mean_error": 0.0164
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "7f7e702c7c7c39ec81e5a02b8ce9c626d2ff740f1ac97e23bfeff3c5aa45bbd7",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.212,
+      "alpha_mean_error": 0.0214
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "13c6a0968337642ad029e41b1fe584c423a7a7b89b21a3b319d53c71d89deef9",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.3233,
+      "alpha_mean_error": 0.0303
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "310d43961f7c90e2f3a38e0d0b7cc68a001dcf2453cfdf302b22f49fe8fbe4df",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.7394,
+      "alpha_mean_error": 0.0271
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.6622,
+      "alpha_mean_error": 0.0171,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "480b54f5ed0830950907361c0549f92645db3f8e12cb87eb8da42d6c6ddbedda"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "20db9fe0a78e67802dba19b6bcfc8afc7d7e5a9d36de2668e88fa939859e62c5",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2897,
+      "alpha_mean_error": 0.0181
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "70ffcf559548908c09de6197bbbb887749f94580e409eff587e775c94aa88d7a",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.624,
+      "alpha_mean_error": 0.0393
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "da3d59b928f12df99bd32c0e39cd4930a098f3c5eea1ecbef2c189c9cf8f660d",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.9062,
+      "alpha_mean_error": 0.032
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "f95efb76fe6bfd99a72b01cba0d84aa957c42eaa01f2e74ca3bb9f35aafbfe04",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.8043,
+      "alpha_mean_error": 0.0263
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "a972bd705977cf11763fecd5c7c348452b1d6b197db30cfedf7c3a0437d80b59",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.3269,
+      "alpha_mean_error": 0.0231
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "a09460151cd23f652e54019e6305e37cd0b530c595503bd27ee7a7d490d36f63",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.5753,
+      "alpha_mean_error": 0.0244
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "9099d984c749970ac6cd5968f44be513ad10a26cd818b650236088fb646642e3",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.3111,
+      "alpha_mean_error": 0.0327
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "aed1b7d00d32f233fb48c81484b580d1ecd5b19a411c2a8f84d4d7e8c6c460e1",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.498,
+      "alpha_mean_error": 0.026
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "c3953023bcc27fd65ef0347be5d3668a15b0375be001150b553407693134d1db",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2341,
+      "alpha_mean_error": 0.031
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "1913ed86260570b59f262654877b1b2bdf53eaa80882835dec54713614c6a2a8",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.1695,
+      "alpha_mean_error": 0.0207
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "3cbb9ae9e8af4ec978fc942714de507b931b3047da3bd171fbe04ebf54d2534d",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.5373,
+      "alpha_mean_error": 0.0202
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "0fe810ecf57806bb9d0fda44383417de9deeb9a3dac89afb52ed5f8bbe48a25d",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.5143,
+      "alpha_mean_error": 0.0507
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "5b9a03462d9ef954dfeae9fa70dd04fccb559c3f2d4107db7dba0cfc411b29a1",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.332,
+      "alpha_mean_error": 0.0283
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "d127e489e4962012b277aa7a081277158c88e5094faaa57944f1a8a55e8ea880",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.7179,
+      "alpha_mean_error": 0.0238
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "bd4c1fd9d98936634638721baabe945ec016485567aede0f996ec2ec8923b0cf",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.948,
+      "alpha_mean_error": 0.021
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "2d5fc7ec29f318199f948ed8742685e4b83411047848fe86ff87a5409ca08bcd",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.6626,
+      "alpha_mean_error": 0.021
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "117ace4beefb446ddda0c936eda38d95c6925db82974ef7c5d6256b357864af1",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.9797,
+      "alpha_mean_error": 0.032
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "e5917f45eba689a5674a0b0eb081f5c7f232a1dc07fe143c1334d888fd349242",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.7549,
+      "alpha_mean_error": 0.0281
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "8be4b767a9d297e0171e28cd7c26bacaa29a9079eba3250ecc89612def242f2c",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.5255,
+      "alpha_mean_error": 0.027
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "31a564262e852106e937128b4dcb5478fe6b2c7b0a539cbfc820f1b6f2032fef",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.6893,
+      "alpha_mean_error": 0.0211
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "1e8250bdb2531f464e0de02c0a66c642253e52091a6fd8c2919231dab9f77e55",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.067,
+      "alpha_mean_error": 0.0351
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "ab9dfcdaeb913028a8a3a7ef651759136c2ea5f146843b9c902b79f7f1e0efc2",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.157,
+      "alpha_mean_error": 0.0426
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "fb89c36d3ebae84072f6f51134f13f3a835f1b73b9b036dc5f16122bae868d68",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2126,
+      "alpha_mean_error": 0.0315
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "0fc4aade8f62c11cb3dcb7c3c7d3421e42ce79952290a024aeadcfa70f69751f",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.7092,
+      "alpha_mean_error": 0.0208
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "f1e56124b941afe5d17788a9be3520f2985b25e913b0446b4983cf9ddc4b42c3",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.7871,
+      "alpha_mean_error": 0.0289
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "b236c866aaee2ba9ea0f6e9efe1e8d714c95f9edf5f47cfe2971011bea9708d4",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.9137,
+      "alpha_mean_error": 0.0249
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "192a9da2affd772e402fde77d3b7bb1d65a42c4ac109bb9491d52172d2c943f8",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.3463,
+      "alpha_mean_error": 0.0252
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "abad5cbd0702de1c7153473ec02faeaf45d141b64eb6256d55f935c83655ef61",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.9367,
+      "alpha_mean_error": 0.0292
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "4103a137645ce7bccee3b341f994090909346fac105ad04856dabce701be8e51",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2196,
+      "alpha_mean_error": 0.0156
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "8520c248aff4523cc92a63d06f3deff2716ce1cc095e6c993181391282de5864",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.3142,
+      "alpha_mean_error": 0.0267
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "4d636a2fc878173ca284cabff476c6ff55332220f35dea94ef31249954a7fb95",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.5319,
+      "alpha_mean_error": 0.0321
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "6dbe597561fab6973db2dadbcbdb684d5579c256830fc8d96661f11de5d8a51a",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2362,
+      "alpha_mean_error": 0.0365
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "2575de44f9a8207cc9772a6e9620a11558097dd63fd32b7dcc0ac3e666f824c5",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.0096,
+      "alpha_mean_error": 0.0354
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "afaf23a7971ac07ca78d01473d87400f8cb94fd08c215da3d89d98d3e606f4c2",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.6902,
+      "alpha_mean_error": 0.0231
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "5d359cde910cfe8cc58f6bd5cb312d04a1713ce9f27c6eda872cb37f4b7ffb78",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.5305,
+      "alpha_mean_error": 0.0282
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "d0dc2ebb48f9ae1a9bac0348e7b601ce1aaff62057a40c7833fa41b8478ac5e9",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.9628,
+      "alpha_mean_error": 0.0266
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "d38b11bb807f1c4783c590da8190b672e83f04701d4a574e80f375538cb7f6ef",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.674,
+      "alpha_mean_error": 0.027
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "c5c08b70a9ab3619b1b5131ee11032c3060d48c83661578b11fa2c5f7815efa6",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2213,
+      "alpha_mean_error": 0.036
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "3c59149fb1bd2a3957c7c95b204665b98f0c6e4cee121efec193cfec670b3a8f",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.0305,
+      "alpha_mean_error": 0.038
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "200544ebfa3f508cc4f87302579362b0bc6afb6c2186e6a454db7e39ccf6e75f",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.9266,
+      "alpha_mean_error": 0.0247
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "59c4ac5da9688b3997df769d3d7988edf9ed8f7e7b3e9400b5bc7b29790c08db",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.2946,
+      "alpha_mean_error": 0.0207
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "48e0ca6db5c3f8c7774ebaf79ee70b7c1633680bd6c8f60f85eb2beb43719127",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.3324,
+      "alpha_mean_error": 0.0218
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "bb2b7478927bc31a850ba817be7e22ec9b08286e41f3315e1b3369963328ab0b",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.3148,
+      "alpha_mean_error": 0.0166
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "be32d3292de1ff88debbf1c951dd2ee858abf93b2a3f59ba35d17621b72249d8",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.3902,
+      "alpha_mean_error": 0.0183
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "df2781fcd98f5c7e8598589077e509a58816753bc53700621d004d5a74e936dc",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.0567,
+      "alpha_mean_error": 0.0188
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "0d9ae11bd10ac8cad228fda5f6b843a4f9285a38a30087bbcb4bb70990189d49",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.7227,
+      "alpha_mean_error": 0.0164
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "15220c1b21de20bf9ef38b67738586bc216f79905bf8854c347adecd828d3505",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.0705,
+      "alpha_mean_error": 0.032
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "2e46f6839bfb192368a634e207f0435ddb2404e776d94171e3b7d08665eaa181",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.6407,
+      "alpha_mean_error": 0.0207
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "9209156fcc3cadef8dd914a20553ba9f4421f900d826bfbf50d9351b7e2b41ee",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.9231,
+      "alpha_mean_error": 0.0204
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.9149,
+      "alpha_mean_error": 0.0249,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "2fed70bc98c1b9ce965cee321e60e1c00a726c7398a77ecbac7138bd25c89220"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "9936bd5afa446ed5c4d2d1098fbe40ccfcbd9a051bd0a10c85cb266ded31facc",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.1174,
+      "alpha_mean_error": 0.025
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "788ec74adf94c433e60295d79790e9be9227d99776808529d3413db1f839f29f",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.2206,
+      "alpha_mean_error": 0.0213
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds",
+      "source_bytes": 1900928,
+      "mode": "raw retained for quality",
+      "bytes": 1900928,
+      "sha256": "9aa12ddd271b23f4fbb3cda7e0cb14f2eaeb7976621c5452cb948f7b6a2eebd2",
+      "rgb_mean_error": 6.0385,
+      "alpha_mean_error": 0.0264
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "a24e0edee067e70c4cbc9e058957383d0cd33d2383f91760e6938cfb2e193cf0",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.217,
+      "alpha_mean_error": 0.026
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds",
+      "source_bytes": 1900928,
+      "mode": "raw retained for quality",
+      "bytes": 1900928,
+      "sha256": "c21984a9873c21d62b331db89f63721c07b3549d87a2aa6b13d4cdeafb88f3d9",
+      "rgb_mean_error": 6.1556,
+      "alpha_mean_error": 0.0323
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "345225c15e6028d92384a1cd7747f0385197f93af6d28b1a715cb5ef78279efe",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.6315,
+      "alpha_mean_error": 0.0337
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "78b66d04f8318bd668fb422b623999191be21b1a857263acaccefb6b333f137c",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.0482,
+      "alpha_mean_error": 0.0364
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "e037c7ce1732e8e872c65ccce4a59e90bc7e9bffdbc825559f2d46ebae3206f2",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 5.5587,
+      "alpha_mean_error": 0.0323
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "0d0290d73027c71707a954e3d9dd8386ab066ffe88b1fa0fe6facc5aa4d4c2b8",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.4059,
+      "alpha_mean_error": 0.0354
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds",
+      "source_bytes": 1900928,
+      "mode": "raw retained for quality",
+      "bytes": 1900928,
+      "sha256": "a322516b8926b8684e4ea8d8e0d79a5be4ce79c5400c28399971ae24e0798f11",
+      "rgb_mean_error": 6.1664,
+      "alpha_mean_error": 0.0161
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/decisions/hbe_status.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "277888423fd8d8e13bd876e66a57c6dbc67d73a6dd39fb5cbe387cef03f3fd6a",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.0023,
+      "alpha_mean_error": 0.0167
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/academy.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.8473,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "01b6145f2c73f344c8c7a3e309b8832ee983e4095df92808c7341438e28d0c6e"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/banquet.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.6069,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "9b570d497665823253b4141c3ff0c4dbd32323644f9e59f169a4f4dd03010954"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/civic_council.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.6082,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "17d446dce7baa618e7966d762f7aa496ecf332c2864ab76269b7bfa2306a4d33"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/civic_market.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.6698,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "c5137aa6524b024ea3f10557b960ccadd56d41ffdc7433a0c2af6c54e897b492"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/civic_training.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7152,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "909c4504671e159d014ea69cded9db768a32271d392e73257a07df416e5dec93"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/council.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.6306,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "6c02ada8e365fe3123b4ec1f80a7b3d7470951f82beba4798f0b71314eb80fbe"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/crisis.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.8953,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "33bcb5ff37c66997a5c72b208fd29a3f56457337bdddf37d2ef04f5bc1651564"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/feast_two_parties_v021.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.541,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "316e4cd894f6e845027611d5b61d88617b638068a0695083ffc0b5db88db5153"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/grain.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7168,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "b0c0b47c34b431178096df4fa428449b585420c1565ac333d1b3451ed86299e2"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/ledger.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.5688,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "d3ca89995b5b63c22fa5ffd7b629ee21a9766d9736c9688e293c82db96b103cb"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/river.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7578,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "370e49f4e98a21a0f972c07d7f6ecf47432173c7bd24e9713d3b86d2c294a165"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/roads.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.793,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "354d58df7ecb6d2be0ff9d04a5a02590b2f98d45bad3b02a82b41766389a58de"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/salt.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.1856,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92814dd183e25c13681f9de51a21ba366505cd969d3a1c26d7b4418e187ba9b0"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/tea.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.8185,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "05723817f433566da708917b9ca62999d3ae8245228ebddfba92b0dabcc75452"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/valleys.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.011,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "0242f8487e48eb3121b16007c3a55c2a8cf312d466d84926b69f9a06d467f5f1"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/events/water.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.0979,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "3665c65630985ab6726f3f9fb919d3f5ecadb54669855539444d667b724fe778"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.541,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "316e4cd894f6e845027611d5b61d88617b638068a0695083ffc0b5db88db5153"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_audit.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "5e74f3746cda5b2c1eb362c74e5e1922f3c03247ee477398842f0072a4e55c10",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.4807,
+      "alpha_mean_error": 0.135
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_burden.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "5e1baaa40aecb4b7f3aa1d312da3afa729976f1041fe864c23088d9fb342ebab",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.0406,
+      "alpha_mean_error": 0.1049
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_civil_ledger.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.3784,
+      "alpha_mean_error": 0.045,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "571ee57bbe579b6d9197ce2e100a851c46018ae1252441cf6aead94093d0163b"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_council.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.381,
+      "alpha_mean_error": 0.1035,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "03f4cbcf50862648bc37ba047726bff8409f51335a591918017ea144f7028910"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_guest_compact.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.9095,
+      "alpha_mean_error": 0.0717,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "8dca165827171ed13ee60db187b4180f44b6fbd2f55eb217ab7b0eb66ae6fd9c"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_0.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.6368,
+      "alpha_mean_error": 0.0603,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "bef376d3ce2ffd14c6b3426cf2d944217f91885a0515aab350fca07e04e8adcb"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.6082,
+      "alpha_mean_error": 0.0607,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "58bde0fc2f7151b0dd4b0be4aec6ecdc456101dfddf2835e27940d78daad7cb2"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.8167,
+      "alpha_mean_error": 0.0846,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "116a4ff89d8a7957ccf3c4bd8a92c225febfb318c2fd62a5302bdc88aaa2a22f"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_3.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.6651,
+      "alpha_mean_error": 0.0804,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "d86b7f2b404dc76b367bb1508ff158e6fc12abbb35500121ed028f6674d49f93"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_4.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "5d962d9c9207adc9078d41f39972098d413c28234cdccddcd7531882b82f3822",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.7143,
+      "alpha_mean_error": 0.0757
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_5.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.6228,
+      "alpha_mean_error": 0.0675,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "f3db6bceb6c24c8a801db315ca98f0ac3974a1dc864291a59b38f44add2f1ad3"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_office_6.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.264,
+      "alpha_mean_error": 0.1469,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "60dce00400fcd105ec1975694ab8ed53886921b86fc98ba41791809ce6bf5682"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/civic/decisions/hbe_revision.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "bytes": 475328,
+      "sha256": "e8563190121af096c0ed948671055587de1e57d74ffb76b3af87b5fa5870cf70",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "rgb_mean_error": 4.0545,
+      "alpha_mean_error": 0.0684
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/v021/decisions/hbe_project_fund.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.3851,
+      "alpha_mean_error": 0.0969,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "bf307c712412606f04221a0b32d5c2ca89fce8e64e1f328cf543f6032e32dec9"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_1.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.8404,
+      "alpha_mean_error": 0.0964,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "61e67fecb5db8f646edfd5c71754bcab86ac8cd2862ac306eb26c0096a895b39"
+    },
+    {
+      "path": "main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_2.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.9209,
+      "alpha_mean_error": 0.1073,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "ba42ff569bd042dffd3b1c7a81e7ace71e63d926ea060cd4b9e146c8c20b90ac"
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_assembly_hall.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "61a7ccd6f326bbd468f4764838720dc66cb6156334bce0d282056a744eea69e3",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.4832,
+      "alpha_mean_error": 0.3973
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_brocade_school.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "250202935ef0bddb69999bfd4ed2bcd32bc8cb6eac620fb96b15cc72f4af5bff",
+      "rgb_mean_error": 6.7152,
+      "alpha_mean_error": 0.3572
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_canal_office.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "bbdd35d09ad673e191818cb52df05c384b58d99cceb43e428320f977665c92b6",
+      "rgb_mean_error": 7.0156,
+      "alpha_mean_error": 0.2656
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_cliff_stockade.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "53923006f83a4fef7ab0f0f76a7a309c888394c74ef90cee680ff1f0b45cceae",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.9237,
+      "alpha_mean_error": 0.3291
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_community_granary.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "7dc9d5977426eb18434329df68b199a3f17d77ee1df930510fbfd0ffaf3b00d5",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.2222,
+      "alpha_mean_error": 0.2491
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_covenant_stockade.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "2443fb8f50b2c22d1229662d88c42066706652f31d0c6a49bc3fa723c59e49c5",
+      "rgb_mean_error": 6.7901,
+      "alpha_mean_error": 0.3366
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_gate_registry.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "a0beaf87791fc57a391497d0527bde6768a520bb16fc9c11d85d211334d633a1",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.2769,
+      "alpha_mean_error": 0.3832
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_guide_station.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "5adb032b2cfa923c7552472b96627ad0c22669facddefeff7e98f6507a545421",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5554,
+      "alpha_mean_error": 0.3997
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_plank_fort.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "49e1d29c878e5937db39dad5775bf780861cd0f55a7787b36e08474c5e2d452f",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.3763,
+      "alpha_mean_error": 0.4752
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_river_warehouse.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "5cf67fa32be0098015c234e5e8c823fac44e756aa934934bae597db8be690bad",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.711,
+      "alpha_mean_error": 0.2546
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_salt_contract_house.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "4f2174e075f99f3de796b0a726f9c89a97dadfbebea49f439cf17309f63cfa35",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.704,
+      "alpha_mean_error": 0.1765
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_salt_office.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "a974bc9a2eba25ceee5fa591eb1bebe7383e832a6e60b1f0ba55a227a9407130",
+      "rgb_mean_error": 6.22,
+      "alpha_mean_error": 0.5318
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_tea_exchange.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "6ca5afba8f88ed86feb5a4b064220264e3192211cc13e0cc557ed4d0d0c306eb",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.7057,
+      "alpha_mean_error": 0.399
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_valley_inn.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "a70c4bad9fb9e68216047cde301b75f10f2ae187da881e1a2e440a9d0b622ff5",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.3143,
+      "alpha_mean_error": 0.3019
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_witness_house.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "e94cc65a0637b33006603ab4b3608e18b01d3cc2d7d0893cef9754ff10fa5514",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.4865,
+      "alpha_mean_error": 0.243
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/buildings/hbe_works_archive.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "d72f795d49b5a3284ced79a0db02611d3420ff67d986a071b83da46b4ba0f3c6",
+      "rgb_mean_error": 6.0833,
+      "alpha_mean_error": 0.1901
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_common_action.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "4b25f4235a6d80bc8d6f8235a08c3ee6c57e9f401592e337a7b1814c64d4dd8f",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.9037,
+      "alpha_mean_error": 0.5842
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_fund_action.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "a3cf6669926584cc9f7cf3739c0e4d9c6f57a38468af0c93747309bab2af0db8",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.9701,
+      "alpha_mean_error": 0.6202
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_local_action.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "ae76871ef0f2553597d98a17aa26af669a094d650db0882d8d3c6d6d5aa80f70",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.2957,
+      "alpha_mean_error": 0.6829
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_audit.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "97258827622eecc2c54c3d48967ee45a46841b1d304663791263fc19767c050a",
+      "rgb_mean_error": 8.4134,
+      "alpha_mean_error": 0.9103
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_burden.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "36d68f7da019ca30cf43f3e9c0f552040d852582d13e0d0c137f6a4a1f5cb8f3",
+      "rgb_mean_error": 7.0741,
+      "alpha_mean_error": 0.597
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_civil_ledger.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "0efdffaec8e4fb3c145f54d38cb6daa663f1a300bfa3cf1621132ab35f9af630",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5796,
+      "alpha_mean_error": 0.2512
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_communal_policy.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "57ebe4ffaf326f77e5693cc82edf2329489b5a590eb521288d652ed92d1a686f",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.6526,
+      "alpha_mean_error": 0.7483
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_council.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "aff23edb2aff0e69d338a2a817346c309a3c9130244671515d1448bffb81f65a",
+      "rgb_mean_error": 6.0168,
+      "alpha_mean_error": 0.6505
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_guest_compact.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "2ac674d93fbc6bb5c6b3993edce62c3e3c2b5617ce804f35f01d8fe41d3aa1b5",
+      "rgb_mean_error": 6.2071,
+      "alpha_mean_error": 0.4102
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_levy_policy.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "8584628d74457960d999402f95583975fee3c579862e2d07f959117f2f0c956e",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.2528,
+      "alpha_mean_error": 0.553
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_0.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "f9144b192bd6f97892e8aa4277da0f4e4c5c52ec4bea8dd77f3f84e6bba04897",
+      "rgb_mean_error": 6.094,
+      "alpha_mean_error": 0.3039
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_1.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "702b9321d510ab4c2b572b9c5c92bc5730fb0cfcd935350d68ac077e3603f30a",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.9291,
+      "alpha_mean_error": 0.3484
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_2.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "737facb562c1d3f5df0d9af1084a8949952457d43d184bd6f743015c447da011",
+      "rgb_mean_error": 6.7556,
+      "alpha_mean_error": 0.4861
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_3.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "7854fda10e2596b89692e60e53a47f5c0d68e3894e8d023d39f3ddbf85178254",
+      "rgb_mean_error": 6.8255,
+      "alpha_mean_error": 0.4771
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_4.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "a4c9215453e6f8d22e4b6a906d1381d6facf7482d0a0cc1483f635b744f0a9a6",
+      "rgb_mean_error": 7.6344,
+      "alpha_mean_error": 0.5245
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_5.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "0c5b330949d3c9653ede2e7c8bb1ef0b01a0fb1f216e6382aba23574fee88661",
+      "rgb_mean_error": 6.1484,
+      "alpha_mean_error": 0.3693
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_office_6.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "69b1ae65085459168477ebe5ad73a261bbf4594ebaaf201c427c500e951d6a5d",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5531,
+      "alpha_mean_error": 0.9401
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_paid_policy.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "4df2036a35c1cdd51339271bd83daee3bf31aef58afbe2f24055ed81d37eb923",
+      "rgb_mean_error": 6.8848,
+      "alpha_mean_error": 0.3581
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/hbe_civic/hbe_revision.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "352802943731a5dffff019303f679e606aea23fa8758b68137dd8ea2fa464810",
+      "rgb_mean_error": 6.8481,
+      "alpha_mean_error": 0.3948
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_central_hills.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "79fbfc08d19cff1a601b95f8788b3be1c7386d134289670fc2d804dfd1d6af02",
+      "rgb_mean_error": 7.1884,
+      "alpha_mean_error": 0.2668
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_chengdu_plain.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "311874cccbfbf074dbda1aa965a96b95cc4ef28b939542c9168d679d20134388",
+      "rgb_mean_error": 7.1635,
+      "alpha_mean_error": 0.2599
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_eastern_river.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "fb9a9d07f2f964de3dec8a8a55a724971da15aec894ced9b8e044d6a3bfeef62",
+      "rgb_mean_error": 6.9502,
+      "alpha_mean_error": 0.2486
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_northern_shudao.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "044a1659c373354fc5588cf6649547b63949f30653b673713b9cf5b0dd72910f",
+      "rgb_mean_error": 6.4488,
+      "alpha_mean_error": 0.2423
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_southern_salt_wine.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "9533b12b3270be9f500f5047c4327f727371e07c2066df4a7c8c8dd56e383246",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.8096,
+      "alpha_mean_error": 0.2486
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_southwestern_valleys.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "e2e6b74532f63f2a3311088dd66800eddd778406cca21f45201e677e5d98fed7",
+      "rgb_mean_error": 6.2855,
+      "alpha_mean_error": 0.2281
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_circle_western_tea_horse.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "cc127ffdbb6a7634c8adac1cf11bb77f55894c1041681053056e06a22bb928a6",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.7648,
+      "alpha_mean_error": 0.2343
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "751cabc5c3119bc17fee7e1771857960623896eb4cdf6eaaff403af83a3dde21",
+      "rgb_mean_error": 6.1816,
+      "alpha_mean_error": 0.3109
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_empire.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "ea208c80690f0fea6850eb4943114c52881f31eeab98378b4df5e42eb4dc680d",
+      "rgb_mean_error": 6.8971,
+      "alpha_mean_error": 0.2741
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "7c3b1672976e312d659ef5b84b78895eb41d0afb3dfc7f3857215e52bc7e4925",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.9807,
+      "alpha_mean_error": 0.3048
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/laws/hbe_civil_service_law.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "aff23edb2aff0e69d338a2a817346c309a3c9130244671515d1448bffb81f65a",
+      "rgb_mean_error": 6.0168,
+      "alpha_mean_error": 0.6505
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_ai_internal_ambition.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "075fea1f1cb88fd0fbffaed12e94d7e3a4791db527656df47fa1e9752a6fdad5",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5089,
+      "alpha_mean_error": 0.5574
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_common_reward.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "9d3417d415575ae99842a41392b6a6fc78746dfd2181978fca07e201232cab1e",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.4376,
+      "alpha_mean_error": 0.5776
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_cooperation.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "36fe9db3251a9edc092c64f1c254e35b97638f9e2117089179277a522c8ce286",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.586,
+      "alpha_mean_error": 0.6555
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_local_reward.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "1e8eb3a2eeb49ed1eb6224ccf17f7470464471f1241c1c66edd25aa5003488f9",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.7727,
+      "alpha_mean_error": 0.3212
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_success.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "aa259a0f3f612ae3b61f0493152b7da72df5982c308517b0efde0cd7a7bb0f03",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.8735,
+      "alpha_mean_error": 1.0225
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "68a9c3bc72d563c5da9e01e8ed0bcd5912209f359ceec4e51d822d1ae0a44403",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.1408,
+      "alpha_mean_error": 0.5017
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_7.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "6c7c4228672605d1688d1a8c28d6e23788ad72aa70305be1952edb3c9baec670",
+      "rgb_mean_error": 6.1172,
+      "alpha_mean_error": 0.8099
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "6ddedfbba3b2930eca05a7e94475e51930a738ac058381636ae31a44ff4e6e3a",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5399,
+      "alpha_mean_error": 0.5049
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_7.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "fe30fcf9b961ebaa804c45077d7498607ebd5a1f52bc0ad86f882230a0f6b461",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.7959,
+      "alpha_mean_error": 0.3058
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "17d41cde45f00ecd359cda8ed450cb4b14b88feee2ce4a9ef48dae6a6d2b6db8",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.8253,
+      "alpha_mean_error": 0.5449
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_7.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "bed601a98a44c86ac7f5370e5ffa5c2aa0e4b0bab1a6fa964ef43d41b811cbba",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.9847,
+      "alpha_mean_error": 0.609
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "85744f589c22a4b230b8381603c8d3164d5fa884327cf9fd8f0aaa7606838941",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.2848,
+      "alpha_mean_error": 0.8663
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_7.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "a4a562b7a79974ae6fb378f3253bd197b5e605625d03cc3a2a794cefe9f9e21e",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.5911,
+      "alpha_mean_error": 0.4713
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "3f66c7f6c8196b4944d42588879719069e42794a556d6f489726037405e46c3b",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.1874,
+      "alpha_mean_error": 0.5392
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_7.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "86d4d6e5f33bdb927dc502d57fd8259ca15a12eb75144addc7981362fa14b07c",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.0072,
+      "alpha_mean_error": 0.3282
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "09053a8d4c1077a64273738f5598e70df1895b04f92baefb2981c28ede3662bd",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.8767,
+      "alpha_mean_error": 0.4548
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_7.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "dfed6041d86e8eecb6c998d412233d3c1c8502374d1609a14026357ca242e042",
+      "rgb_mean_error": 6.1261,
+      "alpha_mean_error": 0.3735
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_4.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "d12c2de1872e513e01da388c64248a62f8bf941d1edfddcfbfa48cec90ba9e61",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.749,
+      "alpha_mean_error": 0.4174
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_7.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "a7a0442b0f3d4f649cb4788f53db5b52aea440acfd4425e4672c3243921839d7",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.6909,
+      "alpha_mean_error": 0.5765
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_audit.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "97258827622eecc2c54c3d48967ee45a46841b1d304663791263fc19767c050a",
+      "rgb_mean_error": 8.4134,
+      "alpha_mean_error": 0.9103
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_burden.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "36d68f7da019ca30cf43f3e9c0f552040d852582d13e0d0c137f6a4a1f5cb8f3",
+      "rgb_mean_error": 7.0741,
+      "alpha_mean_error": 0.597
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_civil_ledger.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "0efdffaec8e4fb3c145f54d38cb6daa663f1a300bfa3cf1621132ab35f9af630",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5796,
+      "alpha_mean_error": 0.2512
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_communal_policy.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "57ebe4ffaf326f77e5693cc82edf2329489b5a590eb521288d652ed92d1a686f",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.6526,
+      "alpha_mean_error": 0.7483
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_council.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "aff23edb2aff0e69d338a2a817346c309a3c9130244671515d1448bffb81f65a",
+      "rgb_mean_error": 6.0168,
+      "alpha_mean_error": 0.6505
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_guest_compact.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "2ac674d93fbc6bb5c6b3993edce62c3e3c2b5617ce804f35f01d8fe41d3aa1b5",
+      "rgb_mean_error": 6.2071,
+      "alpha_mean_error": 0.4102
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_levy_policy.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "8584628d74457960d999402f95583975fee3c579862e2d07f959117f2f0c956e",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.2528,
+      "alpha_mean_error": 0.553
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_0.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "f9144b192bd6f97892e8aa4277da0f4e4c5c52ec4bea8dd77f3f84e6bba04897",
+      "rgb_mean_error": 6.094,
+      "alpha_mean_error": 0.3039
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_1.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "702b9321d510ab4c2b572b9c5c92bc5730fb0cfcd935350d68ac077e3603f30a",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.9291,
+      "alpha_mean_error": 0.3484
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_2.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "737facb562c1d3f5df0d9af1084a8949952457d43d184bd6f743015c447da011",
+      "rgb_mean_error": 6.7556,
+      "alpha_mean_error": 0.4861
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_3.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "7854fda10e2596b89692e60e53a47f5c0d68e3894e8d023d39f3ddbf85178254",
+      "rgb_mean_error": 6.8255,
+      "alpha_mean_error": 0.4771
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_4.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "a4c9215453e6f8d22e4b6a906d1381d6facf7482d0a0cc1483f635b744f0a9a6",
+      "rgb_mean_error": 7.6344,
+      "alpha_mean_error": 0.5245
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_5.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "0c5b330949d3c9653ede2e7c8bb1ef0b01a0fb1f216e6382aba23574fee88661",
+      "rgb_mean_error": 6.1484,
+      "alpha_mean_error": 0.3693
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_office_6.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "69b1ae65085459168477ebe5ad73a261bbf4594ebaaf201c427c500e951d6a5d",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.5531,
+      "alpha_mean_error": 0.9401
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_paid_policy.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "4df2036a35c1cdd51339271bd83daee3bf31aef58afbe2f24055ed81d37eb923",
+      "rgb_mean_error": 6.8848,
+      "alpha_mean_error": 0.3581
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/policies/hbe_revision.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "352802943731a5dffff019303f679e606aea23fa8758b68137dd8ea2fa464810",
+      "rgb_mean_error": 6.8481,
+      "alpha_mean_error": 0.3948
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/privileges/hbe_guild_payment_guarantee.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "4df2036a35c1cdd51339271bd83daee3bf31aef58afbe2f24055ed81d37eb923",
+      "rgb_mean_error": 6.8848,
+      "alpha_mean_error": 0.3581
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/privileges/hbe_village_witnesses.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "57ebe4ffaf326f77e5693cc82edf2329489b5a590eb521288d652ed92d1a686f",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.6526,
+      "alpha_mean_error": 0.7483
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/situations/hbe_banquet.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "d8111f3120ec5d6b85f5ab771dbb21a1bcb0237f2c9b6c1071c1382c162dc58a",
+      "rgb_mean_error": 6.4227,
+      "alpha_mean_error": 0.4711
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_burden.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "36d68f7da019ca30cf43f3e9c0f552040d852582d13e0d0c137f6a4a1f5cb8f3",
+      "rgb_mean_error": 7.0741,
+      "alpha_mean_error": 0.597
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_dispute.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "38b558046a8a38224ea7349ec06888653f8005b51ee2e106d5ba01435e14df7e",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.4108,
+      "alpha_mean_error": 0.5245
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_grain.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "3123e58aa3b7782a1cc0f6be426885ae4ef36fee60d1ea9a35a4dc8bc568da22",
+      "rgb_mean_error": 6.6698,
+      "alpha_mean_error": 0.6122
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_guoqi.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "aa9c63ca8a3b60839e65f771d409aa4a8cbdfe5ccdda41113bbea018e04b50cf",
+      "rgb_mean_error": 6.1319,
+      "alpha_mean_error": 0.3847
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_river.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "b64ee7778dce7015ad116251721fd50c54874101e1ecec75acc04ed11a1ea6e9",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.1242,
+      "alpha_mean_error": 0.5012
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_roads.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "0eb1d5e6037635cd8c2112faf655d37cd78838e93abe8a23dbc0c961ed172c04",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.3159,
+      "alpha_mean_error": 0.4728
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_salt.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "d5623569a21297109ccbb2f76dc6d8557f7d99fc4fac99cc632c9e49ecdcac63",
+      "rgb_mean_error": 6.4033,
+      "alpha_mean_error": 0.4165
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_tea.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "10b4032640f2d8bf4a5caa00b56099feabc076187422ef30c8abfed136149dae",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.3471,
+      "alpha_mean_error": 0.3208
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_valleys.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "e3502d7799d10059f3532b621feb438ef15da3ce0a690750dd1b5de558418cc8",
+      "rgb_mean_error": 6.8087,
+      "alpha_mean_error": 0.4048
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_water.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "3cde78d46dc45a3800381045931a6a070ce1d4aa52342d2bbffde8345f1d4b27",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.6269,
+      "alpha_mean_error": 0.4091
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/text_icons/hbe_yiqi.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "c27ce41b50e56b241353e1bbce97d929e35b66e633e4efc28ba02c412cd3ba17",
+      "rgb_mean_error": 6.6265,
+      "alpha_mean_error": 0.4012
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_border_tea.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "700f6d17a89562f6cfb8c384aaa6eb01dc7a28ea7433c625b44f6f1d28f21992",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 4.1344,
+      "alpha_mean_error": 0.2629
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_embroidery.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "86e36c467178c7f381526a13bbe9bd2fe4bfd104e4100894daa8a7a7afe569d0",
+      "rgb_mean_error": 6.1,
+      "alpha_mean_error": 0.2911
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_paper.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "f9b0d23c7b92b098625832945c3b2fdfe7406478763e7a11f17aff3e2705b8d5",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.556,
+      "alpha_mean_error": 0.3469
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_well_salt.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "12a5bf5680cfd52651ee71e334ad64cec8c496656ad0fdcc6f43ea88a6b599ea",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.0163,
+      "alpha_mean_error": 0.2742
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_canal_crossbow.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "7517ad942228d5dded07755ac0df4f30becad7b8f18ffc646d13c3b7bfac466d",
+      "rgb_mean_error": 6.0939,
+      "alpha_mean_error": 0.0429
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_granary_militia.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "7071f41dbab6d030f8584dca6cb9079f3fee9c33dce3f9886f40deb3a9392354",
+      "rgb_mean_error": 6.4152,
+      "alpha_mean_error": 0.0499
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_pass_rotation.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "a2ced6dd2e25bdc15be2e13e006cf8a9775cd483d76256b85c798dd840739dc8",
+      "rgb_mean_error": 6.251,
+      "alpha_mean_error": 0.049
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_permanent_pass.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "47356fb2012102edcb3e80921012991b7dd7cd2ef7d6bf76a16a0018bbbddcd8",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.4736,
+      "alpha_mean_error": 0.0154
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_river_garrison.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "10c4e4ab2905f8e9514a98948224f46ff714c92f28e438ef5018fe21ca6097c4",
+      "rgb_mean_error": 6.1549,
+      "alpha_mean_error": 0.0174
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_salt_guard.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "85f8146ae1fc158f2b767897f4eb85f42d8d62f4437b88b84590b50557930249",
+      "rgb_mean_error": 6.3942,
+      "alpha_mean_error": 0.0402
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_tea_riders.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "2454204c20d8d9c6f797f7fb539e619a9a8f513e474f9ca486b7301eff481b81",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.9764,
+      "alpha_mean_error": 0.0609
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_trained_river.dds",
+      "source_bytes": 65664,
+      "mode": "raw retained for quality",
+      "bytes": 65664,
+      "sha256": "261d3733b31e4326afe38d565187ac725adeda4e06d8fec226264520f7a3c8d3",
+      "rgb_mean_error": 6.0022,
+      "alpha_mean_error": 0.0165
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/unit_types/hbe_valley_soldiers.dds",
+      "source_bytes": 65664,
+      "mode": "native DXT5/BC3",
+      "bytes": 16512,
+      "sha256": "13a9dc47d65aaa9ced2d50501b2d706799f30f2e6b07d0456397fd6e63f14eb8",
+      "dimensions": [
+        128,
+        128
+      ],
+      "rgb_mean_error": 5.781,
+      "alpha_mean_error": 0.0201
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_border_tea.dds",
+      "source_bytes": 634896,
+      "mode": "unchanged",
+      "bytes": 634896,
+      "sha256": "0594dc5346280ccb37972cce7d85dfa0fb19f8a5e07e6ee5876d218ceef09e69"
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_embroidery.dds",
+      "source_bytes": 634896,
+      "mode": "unchanged",
+      "bytes": 634896,
+      "sha256": "862ddeb068438563266f4da67a3c0f00ae77fab8aab13a7c87cfc781b14ca6fb"
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_paper.dds",
+      "source_bytes": 634896,
+      "mode": "unchanged",
+      "bytes": 634896,
+      "sha256": "d25ff6bdb7eccf84ff0494c1b4feac306888cebad0edeb49a0d755fb5dba4620"
+    },
+    {
+      "path": "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_well_salt.dds",
+      "source_bytes": 634896,
+      "mode": "unchanged",
+      "bytes": 634896,
+      "sha256": "fa3214bae886a264c7c1c1a78265f6390ac4eb283367059008de83e5f653771f"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_central_hills.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7168,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "b0c0b47c34b431178096df4fa428449b585420c1565ac333d1b3451ed86299e2"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_chengdu_plain.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.0979,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "3665c65630985ab6726f3f9fb919d3f5ecadb54669855539444d667b724fe778"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_eastern_river.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7578,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "370e49f4e98a21a0f972c07d7f6ecf47432173c7bd24e9713d3b86d2c294a165"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_northern_shudao.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.793,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "354d58df7ecb6d2be0ff9d04a5a02590b2f98d45bad3b02a82b41766389a58de"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southern_salt_wine.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.1856,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92814dd183e25c13681f9de51a21ba366505cd969d3a1c26d7b4418e187ba9b0"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southwestern_valleys.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 3.011,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "0242f8487e48eb3121b16007c3a55c2a8cf312d466d84926b69f9a06d467f5f1"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_western_tea_horse.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.8185,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "05723817f433566da708917b9ca62999d3ae8245228ebddfba92b0dabcc75452"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/international_organization_types/hbe_empire.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.6306,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "6c02ada8e365fe3123b4ec1f80a7b3d7470951f82beba4798f0b71314eb80fbe"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.4885,
+      "alpha_mean_error": 0.0398,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "6f9de1aeef895fa2b9fc9ae902994627dae4108f3498e2257d9b6b422c2f55eb"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7122,
+      "alpha_mean_error": 0.0822,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "f47a251f6284194df31570ef4ec63aa783d11762ddca0a8d0c9128c77c1f5bf7"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_pass_rotation.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.6442,
+      "alpha_mean_error": 0.0721,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "dafe5df7804d2fa42023fd7f61ad7929d4c5c0bb2ef54d24470bccd05d2aca95"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_permanent_pass.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.5395,
+      "alpha_mean_error": 0.0404,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "62ecc1dd9887b90529e4e4834e70d88abd191929fc20c3dc67d0a4e3732e960b"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_river_garrison.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.4443,
+      "alpha_mean_error": 0.0298,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "979064f7d28d31d81f7431c2d54a17be9a038aef2bb9202580b6aa412dcc4aa9"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.546,
+      "alpha_mean_error": 0.0584,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "de75b877fd1bd85021872a9da65c3db4a19cbe5e55fd33350c2bd5dab4f97c70"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.7233,
+      "alpha_mean_error": 0.0751,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "2011422988f9e7dc1ee1318d45a05a5a9d2c69862996aefbc44472368681cfde"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_trained_river.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.4263,
+      "alpha_mean_error": 0.0373,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "7cad30d0c87f82e60efabaa840583a85963c9d53dcbed6c8f5a4b718afd884d1"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 2.5994,
+      "alpha_mean_error": 0.0405,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "555c8be35b69dc7b6d8a78ac41fb3947ff282f77701b82e3f88d4c077342a2db"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_canal_crossbow.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_granary_militia.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_pass_rotation.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_permanent_pass.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_river_garrison.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_salt_guard.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_tea_riders.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_trained_river.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gfx/interface/illustrations/units/masks/hbe_valley_soldiers.dds",
+      "source_bytes": 1900928,
+      "mode": "native DXT5/BC3",
+      "rgb_mean_error": 0.0,
+      "alpha_mean_error": 0.0,
+      "dimensions": [
+        1080,
+        440
+      ],
+      "bytes": 475328,
+      "sha256": "92e05fb0e64a323ceed69995017ac892587e2cf8f604e3207a5eab89bb2b2c38"
+    },
+    {
+      "path": "main_menu/gui/shared/hbe_civic_font_icons.gui",
+      "source_bytes": 154,
+      "mode": "unchanged",
+      "bytes": 154,
+      "sha256": "1354d7f8070b164590c8e05c052fbe5bd29c63b510b0c30733713339dcbfab77"
+    },
+    {
+      "path": "main_menu/gui/shared/hbe_font_icons.gui",
+      "source_bytes": 1520,
+      "mode": "unchanged",
+      "bytes": 1520,
+      "sha256": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374"
+    },
+    {
+      "path": "main_menu/localization/english/hbe_l_english.yml",
+      "source_bytes": 461868,
+      "mode": "unchanged",
+      "bytes": 461868,
+      "sha256": "81b79b5a64792f45d8a487fbc856912af79da7b14739ecbacb316de53d30aa9d"
+    },
+    {
+      "path": "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "source_bytes": 461873,
+      "mode": "unchanged",
+      "bytes": 461873,
+      "sha256": "ef14dcd4e8e8f748c747808037a4f5759f7cc1f867d470fc53c8b1d3fc4acbbd"
+    },
+    {
+      "path": "main_menu/setup/1337/04_hbe_dynasties.txt",
+      "source_bytes": 2625,
+      "mode": "unchanged",
+      "bytes": 2625,
+      "sha256": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7"
+    },
+    {
+      "path": "main_menu/setup/1337/05_hbe_characters.txt",
+      "source_bytes": 8558,
+      "mode": "unchanged",
+      "bytes": 8558,
+      "sha256": "c6d49f5d9f423458308bd495cd12a1a5a501eaf3411c1298814b459db2c8dd84"
+    },
+    {
+      "path": "main_menu/setup/1337/10_countries.txt",
+      "source_bytes": 1991067,
+      "mode": "unchanged",
+      "bytes": 1991067,
+      "sha256": "4b519e685bb4456ba6690a38c800ea8f86b49328a2e3ed450ecb665dd5471f11"
+    },
+    {
+      "path": "main_menu/setup/1337/99_hbe_organizations.txt",
+      "source_bytes": 2848,
+      "mode": "unchanged",
+      "bytes": 2848,
+      "sha256": "7dc4cfe06266a5b4a6478c8f648df47f2c4ca7261f8621fff880688949b0e66c"
+    },
+    {
+      "path": "main_menu/setup/templates/hbe_monarchy.txt",
+      "source_bytes": 1666,
+      "mode": "unchanged",
+      "bytes": 1666,
+      "sha256": "0acbd5a337b7097dc9a47bdbd6af163b1d0f07967821db62ec1a48cd1d444432"
+    }
+  ],
+  "scope": "Runtime file audit, DDS decode/dimensions/alpha/color checks and explicit texture references. No repeated game simulation; uses previously tested gameplay source with GUI-only followup.",
+  "payload_manifest_sha256": "c11de3b9515b911b91790fe6edefaf4a0983df470ec05e8f91d5024f5b985755",
+  "encoder": "Microsoft DirectXTex texconv 2026.5.8.1; legacy DXT5 header; mip count unchanged at 1",
+  "thumbnail_updated": true
+}
