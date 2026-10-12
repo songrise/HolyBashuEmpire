@@ -233,20 +233,18 @@ hbe_feast_prestige_share = {
     if 'text = "HBE_FEAST_LAST_DIVIDEND"' not in text:
         marker='text = "HBE_FEAST_REWARDS" }'
         text=text.replace(marker,marker+'\n text_multi = { size = { 480 24 } autoresize = no visible = "[IsPlayerValid]" text = "HBE_FEAST_LAST_DIVIDEND" }')
-    # Explicit row widgets set grid width; a bare hbox lets the 100% column
-    # depend on an unconstrained grid and can produce blank stretched backgrounds.
+    # The vanilla flag is 30 wide. Fixed positions keep the score inside the
+    # content area and reserve 24 units for the scroll bar and its gutter.
     for party in ('hbe_common_party','hbe_local_party'):
         row=f'''scrollwidget = {{ fixedgridbox = {{
-   size = {{ 222 -1 }} layoutpolicy_horizontal = expanding
-   addrow = 30 addcolumn = 222 datamodel_reuse_widgets = yes
+   size = {{ 210 -1 }} minimumsize = {{ 210 -1 }} maximumsize = {{ 210 -1 }}
+   addrow = 30 addcolumn = 210 datamodel_reuse_widgets = yes
    datamodel = "[GetUniqueInternationalOrganization('{party}').GetMembers]"
-   item = {{ widget = {{ size = {{ 222 30 }}
+   item = {{ widget = {{ size = {{ 210 30 }}
     background = {{ using = color_whiteish_texture alpha = 0.08 }}
-    hbox = {{ size = {{ 222 30 }} margin = {{ 3 2 }} spacing = 4
-     country_flag_very_small = {{ tooltipwidget = {{ using = CountryTooltip }} }}
-     text_single = {{ size = {{ 151 26 }} maximumsize = {{ 151 26 }} autoresize = no align = left|nobaseline text = "[Country.GetName]" }}
-     text_single = {{ size = {{ 35 26 }} autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }}
-    }}
+    country_flag_very_small = {{ position = {{ 3 5 }} size = {{ 30 20 }} tooltipwidget = {{ using = CountryTooltip }} }}
+    text_single = {{ position = {{ 37 2 }} size = {{ 137 26 }} maximumsize = {{ 137 26 }} autoresize = no align = left|nobaseline text = "[Country.GetName]" }}
+    text_single = {{ position = {{ 178 2 }} size = {{ 28 26 }} maximumsize = {{ 28 26 }} autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }}
    }} }}
   }} }}
 '''
@@ -254,6 +252,7 @@ hbe_feast_prestige_share = {
         candidate=next((x for x in blocks(text) if x[0]=='scrollwidget' and f"GetUniqueInternationalOrganization('{party}').GetMembers" in text[x[2]:x[3]]),None)
         assert candidate,party
         text=apply_edits(text,[(candidate[1],candidate[4],row)])
+    text=text.replace('hbox = { size = { 234 24 }\n  text_single = { size = { 175 24 } text = "HBE_FEAST_MEMBER_NAME" }\n  text_single = { size = { 45 24 } text = "HBE_FEAST_MEMBER_POINTS" }\n }','widget = { size = { 210 24 }\n  text_single = { position = { 37 0 } size = { 137 24 } autoresize = no align = left|nobaseline text = "HBE_FEAST_MEMBER_NAME" }\n  text_single = { position = { 178 0 } size = { 28 24 } autoresize = no align = right|nobaseline text = "HBE_FEAST_MEMBER_POINTS" }\n }')
     ts=tokens(text)
     ai=next(i for i,t in enumerate(ts) if t.value=='"situation_panel_main_actions"' and ts[i-1].value=='blockoverride')+1
     action_start,action_end=ts[ai].end,ts[close_index(ts,ai)].start
@@ -281,4 +280,6 @@ hbe_feast_prestige_share = {
     concepts=(out/'main_menu/common/game_concepts/hbe_concepts.txt').read_text(encoding='utf-8-sig')
     guide_count=sum(k.startswith('hbe_term_') for k,*_ in blocks(concepts,0))
     report=dict(guest_licenses=len(grouped),audit_native_unlocks=0,member_row_width=222,explicit_player_actions=3,faction_switch_years=5,departure_opinion=-5,dividend_fraction=.25,imperial_bonus=dict(income_months=.5,minimum=8,maximum=64),party_prestige_pool=3,dividend_weight='ln(1+contribution)',service_hover=concept,moved_era_nodes=28,advance_layout=layout,vanilla_anchors=VANILLA_ANCHORS,improved_units=list(improved),mechanic_guide_count=guide_count)
+    report['member_row_width']=210
+    report['member_scrollbar_gutter']=24
     return report

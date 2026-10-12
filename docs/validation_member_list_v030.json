@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": {
+    "only GUI game content changed": true,
+    "both faction member datamodels retained": true,
+    "both grids have bounded width": true,
+    "both flags keep native dimensions": true,
+    "both names have bounded width": true,
+    "both scores use fixed positions": true,
+    "both headers match name and score positions": true,
+    "columns do not overlap": true,
+    "score is fully inside row": true,
+    "scrollbar gutter reserved": true,
+    "both country tooltips retained": true,
+    "original contribution value binding retained": true,
+    "GUI braces parse": true,
+    "version unchanged": true
+  },
+  "check_count": 14,
+  "changed_game_files": [
+    "in_game/gui/panels/situation/hbe_banquet.gui"
+  ],
+  "source_manifest_sha256": "b383219fe3bc55caadff95971271b8bd514993a2a3f71f283c752fd59ed04753",
+  "scope": "GUI syntax, column geometry, data bindings and game-file change scope. No live pixel verification or engine simulation."
+}

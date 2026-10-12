@@ -69,26 +69,25 @@ targetted_button_regular = { size = { 480 32 } text = "hbe_feast_local_action"
   hbox = { size = { 480 312 } spacing = 12
 vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } spacing = 4
  text_multi = { size = { 234 64 } autoresize = no align = left|top text = "HBE_FEAST_COMMON" }
- hbox = { size = { 234 24 }
-  text_single = { size = { 175 24 } text = "HBE_FEAST_MEMBER_NAME" }
-  text_single = { size = { 45 24 } text = "HBE_FEAST_MEMBER_POINTS" }
+ widget = { size = { 210 24 }
+  text_single = { position = { 37 0 } size = { 137 24 } autoresize = no align = left|nobaseline text = "HBE_FEAST_MEMBER_NAME" }
+  text_single = { position = { 178 0 } size = { 28 24 } autoresize = no align = right|nobaseline text = "HBE_FEAST_MEMBER_POINTS" }
  }
  scrollarea = { size = { 234 216 } scrollbarpolicy_horizontal = always_off autoresizeviewport = yes
   viewportwidget = { widget = { scissor = yes } }
   scrollbar_vertical = { using = Scrollbar_Vertical }
   scrollwidget = { fixedgridbox = {
-   size = { 222 -1 } layoutpolicy_horizontal = expanding
-   addrow = 30 addcolumn = 222 datamodel_reuse_widgets = yes
+   size = { 210 -1 } minimumsize = { 210 -1 } maximumsize = { 210 -1 }
+   addrow = 30 addcolumn = 210 datamodel_reuse_widgets = yes
    datamodel = "[GetUniqueInternationalOrganization('hbe_common_party').GetMembers]"
-   item = { widget = { size = { 222 30 }
+   item = { widget = { size = { 210 30 }
     background = { using = color_whiteish_texture alpha = 0.08 }
-    hbox = { size = { 222 30 } margin = { 3 2 } spacing = 4
-     country_flag_very_small = { tooltipwidget = { using = CountryTooltip } }
-     text_single = { size = { 151 26 } maximumsize = { 151 26 } autoresize = no align = left|nobaseline text = "[Country.GetName]" }
-     text_single = { size = { 35 26 } autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
-    }
+    country_flag_very_small = { position = { 3 5 } size = { 30 20 } tooltipwidget = { using = CountryTooltip } }
+    text_single = { position = { 37 2 } size = { 137 26 } maximumsize = { 137 26 } autoresize = no align = left|nobaseline text = "[Country.GetName]" }
+    text_single = { position = { 178 2 } size = { 28 26 } maximumsize = { 28 26 } autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
    } }
   } }
+
 
 
 
@@ -110,26 +109,25 @@ vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } 
 }
 vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } spacing = 4
  text_multi = { size = { 234 64 } autoresize = no align = left|top text = "HBE_FEAST_LOCAL" }
- hbox = { size = { 234 24 }
-  text_single = { size = { 175 24 } text = "HBE_FEAST_MEMBER_NAME" }
-  text_single = { size = { 45 24 } text = "HBE_FEAST_MEMBER_POINTS" }
+ widget = { size = { 210 24 }
+  text_single = { position = { 37 0 } size = { 137 24 } autoresize = no align = left|nobaseline text = "HBE_FEAST_MEMBER_NAME" }
+  text_single = { position = { 178 0 } size = { 28 24 } autoresize = no align = right|nobaseline text = "HBE_FEAST_MEMBER_POINTS" }
  }
  scrollarea = { size = { 234 216 } scrollbarpolicy_horizontal = always_off autoresizeviewport = yes
   viewportwidget = { widget = { scissor = yes } }
   scrollbar_vertical = { using = Scrollbar_Vertical }
   scrollwidget = { fixedgridbox = {
-   size = { 222 -1 } layoutpolicy_horizontal = expanding
-   addrow = 30 addcolumn = 222 datamodel_reuse_widgets = yes
+   size = { 210 -1 } minimumsize = { 210 -1 } maximumsize = { 210 -1 }
+   addrow = 30 addcolumn = 210 datamodel_reuse_widgets = yes
    datamodel = "[GetUniqueInternationalOrganization('hbe_local_party').GetMembers]"
-   item = { widget = { size = { 222 30 }
+   item = { widget = { size = { 210 30 }
     background = { using = color_whiteish_texture alpha = 0.08 }
-    hbox = { size = { 222 30 } margin = { 3 2 } spacing = 4
-     country_flag_very_small = { tooltipwidget = { using = CountryTooltip } }
-     text_single = { size = { 151 26 } maximumsize = { 151 26 } autoresize = no align = left|nobaseline text = "[Country.GetName]" }
-     text_single = { size = { 35 26 } autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
-    }
+    country_flag_very_small = { position = { 3 5 } size = { 30 20 } tooltipwidget = { using = CountryTooltip } }
+    text_single = { position = { 37 2 } size = { 137 26 } maximumsize = { 137 26 } autoresize = no align = left|nobaseline text = "[Country.GetName]" }
+    text_single = { position = { 178 2 } size = { 28 26 } maximumsize = { 28 26 } autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
    } }
   } }
+
 
 
 

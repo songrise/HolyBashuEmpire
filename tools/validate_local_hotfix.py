@@ -45,7 +45,7 @@ def validate(root):
  check('cash and prestige payout occur before contribution reset',fs['hbe_settle_accounts'].index('hbe_pay_feast_dividends')<fs['hbe_settle_accounts'].index('hbe_open_accounts') and d.count('add_prestige = var:hbe_feast_last_prestige')==2 and 'multiply = 3' in weights)
  gui=read('in_game/gui/panels/situation/hbe_banquet.gui')
  check('explicit player action bindings with native legality checks',gui.count('actor = "[Player]"')==3 and gui.count('scripted_action_tooltip =')==3 and gui.count('IsUberButtonEnabled')==3)
- check('two concrete-width row widgets replace unconstrained paper hboxes',gui.count('addcolumn = 222')==2 and 'addcolumn = 100%' not in gui and 'using = bg_paper_card' not in gui)
+ check('two concrete-width row widgets replace unconstrained paper hboxes',gui.count('addcolumn = 210')==2 and 'addcolumn = 100%' not in gui and 'using = bg_paper_card' not in gui)
  loc=read('main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml')
  check('local projects and dividends have native hover explanations','hbe_term_local_service' in read('main_menu/common/game_concepts/hbe_concepts.txt') and "Concept('hbe_term_local_service', '地方事业')" in loc and "Concept('hbe_term_feast_dividend', '派内分红')" in loc)
  check('version remains 0.3.0',manifest['version']=='0.3.0' and json.loads(read('.metadata/metadata.json'))['version']=='0.3.0')

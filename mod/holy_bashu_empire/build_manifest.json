@@ -6658,7 +6658,7 @@
     "in_game/gfx/scenes/hbe_event_scenes.txt": "5c626fe9edf4338fdeb1c4713d44d552d1ecd4a388c6270add23c29d5ac04ee2",
     "in_game/gfx/scenes/hbe_v021_scenes.txt": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856",
     "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "00205abfc446974e38b49ad84742bb1137cc0e850d84d7cb9219e0e930f290c6",
-    "in_game/gui/panels/situation/hbe_banquet.gui": "620a7c7ae0afd2b3e1d30baab46c1653079a4da7e6d2a51fd17c83bcde8fc515",
+    "in_game/gui/panels/situation/hbe_banquet.gui": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
     "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
     "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa",
@@ -8990,7 +8990,7 @@
   "quality_hotfix": {
     "guest_licenses": 7,
     "audit_native_unlocks": 0,
-    "member_row_width": 222,
+    "member_row_width": 210,
     "explicit_player_actions": 3,
     "faction_switch_years": 5,
     "departure_opinion": -5,
@@ -9232,7 +9232,8 @@
       "hbe_trained_river",
       "hbe_permanent_pass"
     ],
-    "mechanic_guide_count": 50
+    "mechanic_guide_count": 50,
+    "member_scrollbar_gutter": 24
   },
   "opening_pacts": {
     "truce_pairs": 630,
