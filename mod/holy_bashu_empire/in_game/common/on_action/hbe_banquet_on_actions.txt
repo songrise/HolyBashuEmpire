@@ -1,4 +1,4 @@
-﻿monthly_country_pulse = { on_actions = { hbe_banquet_country_maintenance } }
+monthly_country_pulse = { on_actions = { hbe_banquet_country_maintenance } }
 hbe_banquet_country_maintenance = { effect = {
     if = { limit = { hbe_is_prince = yes NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
         international_organization:hbe_empire ?= { add_country_to_international_organization = prev }
@@ -67,5 +67,5 @@ if = { limit = { current_year >= 1340 has_or_had_tag = BBZ NOT = { has_variable 
 if = { limit = { current_year >= 1341 has_or_had_tag = BCA NOT = { has_variable = hbe_personal_bca } } trigger_event_non_silently = { id = hbe_banquet.233 } }
 if = { limit = { current_year >= 1342 has_or_had_tag = BCB NOT = { has_variable = hbe_personal_bcb } } trigger_event_non_silently = { id = hbe_banquet.234 } }
 if = { limit = { current_year >= 1343 has_or_had_tag = BCC NOT = { has_variable = hbe_personal_bcc } } trigger_event_non_silently = { id = hbe_banquet.235 } } }
-    random_events = { chance_to_happen = 35 1 = hbe_banquet.100 1 = hbe_banquet.101 1 = hbe_banquet.102 1 = hbe_banquet.103 1 = hbe_banquet.104 1 = hbe_banquet.105 1 = hbe_banquet.106 1 = hbe_banquet.107 1 = hbe_banquet.108 1 = hbe_banquet.109 1 = hbe_banquet.110 1 = hbe_banquet.111 1 = hbe_banquet.112 1 = hbe_banquet.113 1 = hbe_banquet.114 1 = hbe_banquet.115 1 = hbe_banquet.116 1 = hbe_banquet.117 1 = hbe_banquet.118 1 = hbe_banquet.119 1 = hbe_banquet.120 1 = hbe_banquet.30 1 = hbe_banquet.31 1 = hbe_banquet.32 1 = hbe_banquet.33 1 = hbe_banquet.34 1 = hbe_banquet.35 1 = hbe_banquet.36 }
+    random_events = { chance_to_happen = 35 1 = hbe_banquet.100 1 = hbe_banquet.101 1 = hbe_banquet.102 1 = hbe_banquet.103 1 = hbe_banquet.104 1 = hbe_banquet.105 1 = hbe_banquet.106 1 = hbe_banquet.107 1 = hbe_banquet.108 1 = hbe_banquet.109 1 = hbe_banquet.110 1 = hbe_banquet.111 1 = hbe_banquet.112 1 = hbe_banquet.113 1 = hbe_banquet.114 1 = hbe_banquet.115 1 = hbe_banquet.116 1 = hbe_banquet.117 1 = hbe_banquet.118 1 = hbe_banquet.119 1 = hbe_banquet.120 }
 }

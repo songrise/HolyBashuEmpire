@@ -5,7 +5,8 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     def read(p):return (mod/p).read_text(encoding='utf-8-sig')
     buildings=read('in_game/common/building_types/hbe_civic_buildings.txt');units=read('in_game/common/unit_types/hbe_civic_units.txt')
     advances=read('in_game/common/advances/hbe_civic_advances.txt');old=read('in_game/common/advances/hbe_advances.txt')
-    check('16 native special buildings with employment and real maintenance',len(blocks(buildings,0))==16 and buildings.count('is_special = yes')==16 and buildings.count('employment_size = 0.15')==16 and buildings.count('unique_production_methods =')==16)
+    slots=23 if 'technology_rewards' in manifest else 16
+    check('16 native special buildings with employment and real maintenance',len(blocks(buildings,0))==16 and buildings.count('is_special = yes')==16 and buildings.count('employment_size = 0.15')==16 and buildings.count('unique_production_methods =')==slots)
     check('all buildings unlocked by preexisting native advances',all('unlock_building = '+b['key'] in old for b in data['buildings']))
     check('all buildings have domain or circle location potential',buildings.count('location_potential = { is_in_scripted_geography =')==16)
     check('seven nationwide institution limits include unfinished construction',buildings.count('country_has_no_other_copy_of_building')==sum(b['unique_country'] for b in data['buildings']))

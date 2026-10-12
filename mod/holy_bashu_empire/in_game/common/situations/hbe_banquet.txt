@@ -1,16 +1,14 @@
-﻿hbe_banquet = {
+hbe_banquet = {
     international_organization_type = hbe_empire
     monthly_spawn_chance = monthly_spawn_chance_unique
     can_start = { game_is_initialized = yes current_date >= 1337.10.1 exists = international_organization:hbe_empire }
     can_end = { NOT = { exists = international_organization:hbe_empire } }
     visible = { is_member_of_international_organization = international_organization:hbe_empire }
-    variables = { hbe_dispute = { format = HBE_DISPUTE_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 15 min = 0 max = 100 }
-hbe_chapter = { format = HBE_CHAPTER_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 1 min = 1 max = 5 }
-hbe_round = { format = HBE_ROUND_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 1 min = 1 max = 9999 }
-hbe_round_month = { format = HBE_MONTH_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 36 }
-hbe_completed_projects = { format = HBE_SUCCESSES_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 }
-hbe_pot_display = { format = HBE_POT_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 40 min = 0 max = 100 } }
-    on_start = {
+    variables = {hbe_round = { format = HBE_ROUND_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 1 min = 1 max = 9999 }
+ hbe_round_month = { format = HBE_FEAST_MONTH_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 24 }
+ hbe_feast_total = { format = HBE_FEAST_TOTAL_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 }
+ hbe_completed_projects = { format = HBE_SUCCESSES_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 }}
+    on_start = { set_variable = hbe_feast_v021 set_variable = { name = hbe_chapter value = 1 }
         set_variable = { name = hbe_project_kind value = 1 }
         set_variable = { name = hbe_charter value = 0 }
         international_organization:hbe_empire = { every_international_organization_member = { hbe_banquet_register = yes } }
@@ -21,10 +19,9 @@ hbe_pot_display = { format = HBE_POT_DISPLAY change_format = VARIABLE_CHANGE_FOR
     map_color = {
         if = { limit = { owner ?= { is_member_of_international_organization = international_organization:hbe_empire var:hbe_stance = 1 } } value = red }
         else_if = { limit = { owner ?= { is_member_of_international_organization = international_organization:hbe_empire var:hbe_stance = 2 } } value = blue }
-        else_if = { limit = { owner ?= { is_member_of_international_organization = international_organization:hbe_empire } } value = yellow }
+        else_if = { limit = { owner ?= { is_member_of_international_organization = international_organization:hbe_empire } } value = blue }
         else = { value = define:NMapColors|DEFAULT_COLOR }
     }
     legend_key = { desc = hbe_stance_1 color = red require_color_on_map = yes }
     legend_key = { desc = hbe_stance_2 color = blue require_color_on_map = yes }
-    legend_key = { desc = hbe_stance_3 color = yellow require_color_on_map = yes }
 }

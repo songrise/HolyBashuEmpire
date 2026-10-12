@@ -1,4 +1,4 @@
-﻿hbe_stance_change_1 = {
+hbe_stance_change_1 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_stance_change_1.dds"
     potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
@@ -17,7 +17,7 @@ hbe_stance_change_2 = {
 hbe_stance_change_3 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_stance_change_3.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { NOT = { var:hbe_stance = 3 } NOT = { has_variable = hbe_stance_cooldown }  }
     ai_will_do = { value = 0 }
     option = { name = hbe_stance_change_3.a ai_chance = { value = 100 } effect = {  hbe_choose_stance_3 = yes } }
@@ -26,14 +26,14 @@ hbe_project_fund = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_project_fund.dds"
     potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
-    allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } gold >= 3  }
-    ai_will_do = { value = 10 }
+    allow = { NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee }
+    ai_will_do = { value = 12 }
     option = { name = hbe_project_fund.a ai_chance = { value = 100 } effect = {  hbe_fund_project = yes } }
 }
 hbe_project_pledge = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_project_pledge.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project }  }
     ai_will_do = { value = 0 }
     option = { name = hbe_project_pledge.a ai_chance = { value = 100 } effect = {  hbe_pledge_project = yes } }
@@ -41,7 +41,7 @@ hbe_project_pledge = {
 hbe_project_reconsider = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_project_reconsider.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } has_variable = hbe_declined_project  }
     ai_will_do = { value = 0 }
     option = { name = hbe_project_reconsider.a ai_chance = { value = 100 } effect = {  remove_variable = hbe_declined_project } }
@@ -49,7 +49,7 @@ hbe_project_reconsider = {
 hbe_project_select_1 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_project_select_1.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet is_leader_of_international_organization = international_organization:hbe_empire }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 3 var:hbe_role_1 = 0 var:hbe_role_2 = 0 var:hbe_role_3 = 0 NOT = { any_country = { has_variable = hbe_project_pending } } NOT = { var:hbe_project_kind = 1 } } gold >= 3 }
     ai_will_do = { value = 0 }
     option = { name = hbe_project_select_1.a ai_chance = { value = 100 } effect = { add_gold = -3 situation:hbe_banquet = { set_variable = { name = hbe_project_kind value = 1 } } } }
@@ -57,7 +57,7 @@ hbe_project_select_1 = {
 hbe_project_select_2 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_project_select_2.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet is_leader_of_international_organization = international_organization:hbe_empire }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 3 var:hbe_role_1 = 0 var:hbe_role_2 = 0 var:hbe_role_3 = 0 NOT = { any_country = { has_variable = hbe_project_pending } } NOT = { var:hbe_project_kind = 2 } } gold >= 3 }
     ai_will_do = { value = 0 }
     option = { name = hbe_project_select_2.a ai_chance = { value = 100 } effect = { add_gold = -3 situation:hbe_banquet = { set_variable = { name = hbe_project_kind value = 2 } } } }
@@ -65,7 +65,7 @@ hbe_project_select_2 = {
 hbe_role_chengdu_plain = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_chengdu_plain any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_chengdu_plain_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain } } } OR = { var:hbe_water >= 10 AND = { NOT = { has_variable = hbe_water } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } }  gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_chengdu_plain.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 1 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -78,7 +78,7 @@ hbe_role_chengdu_plain = {
 hbe_role_southern_salt_wine = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_southern_salt_wine any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_southern_salt_wine_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine } } } OR = { var:hbe_salt >= 10 AND = { NOT = { has_variable = hbe_salt } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } } situation:hbe_banquet = { var:hbe_project_kind = 1 } gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_southern_salt_wine.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 2 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -91,7 +91,7 @@ hbe_role_southern_salt_wine = {
 hbe_role_eastern_river = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_eastern_river.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_eastern_river any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_eastern_river_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river } } } OR = { var:hbe_river >= 10 AND = { NOT = { has_variable = hbe_river } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } } situation:hbe_banquet = { var:hbe_project_kind = 1 } gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_eastern_river.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 3 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -104,7 +104,7 @@ hbe_role_eastern_river = {
 hbe_role_northern_shudao = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_northern_shudao any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_northern_shudao_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao } } } OR = { var:hbe_roads >= 10 AND = { NOT = { has_variable = hbe_roads } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } } situation:hbe_banquet = { var:hbe_project_kind = 2 } gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_northern_shudao.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 4 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -117,7 +117,7 @@ hbe_role_northern_shudao = {
 hbe_role_central_hills = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_central_hills.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_central_hills any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_central_hills_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills } } } OR = { var:hbe_grain >= 10 AND = { NOT = { has_variable = hbe_grain } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } } situation:hbe_banquet = { var:hbe_project_kind = 1 } gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_central_hills.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 5 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -130,7 +130,7 @@ hbe_role_central_hills = {
 hbe_role_western_tea_horse = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_western_tea_horse any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_western_tea_horse_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse } } } OR = { var:hbe_tea >= 10 AND = { NOT = { has_variable = hbe_tea } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } } situation:hbe_banquet = { var:hbe_project_kind = 2 } gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_western_tea_horse.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 6 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -143,7 +143,7 @@ hbe_role_western_tea_horse = {
 hbe_role_southwestern_valleys = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet OR = { has_variable = hbe_home_southwestern_valleys any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys } } }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_southwestern_valleys_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys } } } OR = { var:hbe_valleys >= 10 AND = { NOT = { has_variable = hbe_valleys } has_variable = hbe_tech_common_2 var:hbe_yiqi >= 10 } } situation:hbe_banquet = { var:hbe_project_kind = 2 } gold >= 2 }
     ai_will_do = { value = 40 }
     option = { name = hbe_role_southwestern_valleys.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 7 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
@@ -156,7 +156,7 @@ hbe_role_southwestern_valleys = {
 hbe_project_subsidize = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_project_subsidize.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet is_leader_of_international_organization = international_organization:hbe_empire }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month >= 12 var:hbe_round_month < 30 OR = { var:hbe_role_1 < 1 var:hbe_role_2 < 1 var:hbe_role_3 < 1 } } NOT = { has_variable = hbe_subsidized_round } gold >= 10 }
     ai_will_do = { value = 20 }
     option = { name = hbe_project_subsidize.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_subsidized_round
@@ -169,7 +169,7 @@ hbe_project_subsidize = {
 hbe_audit_accounts = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_audit_accounts.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { NOT = { has_variable = hbe_audit_cooldown } gold >= 3 }
     ai_will_do = { value = 10 }
     option = { name = hbe_audit_accounts.a ai_chance = { value = 100 } effect = { add_gold = -3 situation:hbe_banquet ?= { change_variable = { name = hbe_dispute subtract = 4 } hbe_banquet_clamp = yes } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes set_variable = { name = hbe_audit_cooldown value = yes years = 2 } } }
@@ -185,7 +185,7 @@ hbe_banquet_ledger = {
 hbe_propose_charter_1 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_propose_charter_1.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet is_leader_of_international_organization = international_organization:hbe_empire }
+    potential = { always = no }
     allow = { current_year >= 1437 situation:hbe_banquet = { var:hbe_chapter = 5 var:hbe_completed_projects >= 30 var:hbe_charter = 0 NOT = { has_variable = hbe_ballot_active } NOT = { has_variable = hbe_ballot_cooldown } } international_organization:hbe_empire = { var:hbe_guoqi >= 20 } var:hbe_stance = 1 gold >= 5 }
     ai_will_do = { value = 3 }
     option = { name = hbe_propose_charter_1.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 1 } } situation:hbe_banquet = { set_variable = { name = hbe_ballot_month value = 0 } set_variable = hbe_ballot_active }
@@ -196,7 +196,7 @@ hbe_propose_charter_1 = {
 hbe_ballot_vote_1 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { has_variable = hbe_ballot_active }  }
     ai_will_do = { value = 0 }
     option = { name = hbe_ballot_vote_1.a ai_chance = { value = 100 } effect = {  set_variable = { name = hbe_ballot_vote value = 1 } } }
@@ -204,7 +204,7 @@ hbe_ballot_vote_1 = {
 hbe_propose_charter_2 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_propose_charter_2.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet is_leader_of_international_organization = international_organization:hbe_empire }
+    potential = { always = no }
     allow = { current_year >= 1437 situation:hbe_banquet = { var:hbe_chapter = 5 var:hbe_completed_projects >= 30 var:hbe_charter = 0 NOT = { has_variable = hbe_ballot_active } NOT = { has_variable = hbe_ballot_cooldown } } international_organization:hbe_empire = { var:hbe_guoqi >= 20 } var:hbe_stance = 2 gold >= 5 }
     ai_will_do = { value = 3 }
     option = { name = hbe_propose_charter_2.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 2 } } situation:hbe_banquet = { set_variable = { name = hbe_ballot_month value = 0 } set_variable = hbe_ballot_active }
@@ -215,7 +215,7 @@ hbe_propose_charter_2 = {
 hbe_ballot_vote_2 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { has_variable = hbe_ballot_active }  }
     ai_will_do = { value = 0 }
     option = { name = hbe_ballot_vote_2.a ai_chance = { value = 100 } effect = {  set_variable = { name = hbe_ballot_vote value = 2 } } }
@@ -223,7 +223,7 @@ hbe_ballot_vote_2 = {
 hbe_propose_charter_3 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_propose_charter_3.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet is_leader_of_international_organization = international_organization:hbe_empire }
+    potential = { always = no }
     allow = { current_year >= 1437 situation:hbe_banquet = { var:hbe_chapter = 5 var:hbe_completed_projects >= 30 var:hbe_charter = 0 NOT = { has_variable = hbe_ballot_active } NOT = { has_variable = hbe_ballot_cooldown } } international_organization:hbe_empire = { var:hbe_guoqi >= 20 } var:hbe_stance = 3 gold >= 5 }
     ai_will_do = { value = 3 }
     option = { name = hbe_propose_charter_3.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 3 } } situation:hbe_banquet = { set_variable = { name = hbe_ballot_month value = 0 } set_variable = hbe_ballot_active }
@@ -234,7 +234,7 @@ hbe_propose_charter_3 = {
 hbe_ballot_vote_3 = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds"
-    potential = { is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet  }
+    potential = { always = no }
     allow = { situation:hbe_banquet = { has_variable = hbe_ballot_active }  }
     ai_will_do = { value = 0 }
     option = { name = hbe_ballot_vote_3.a ai_chance = { value = 100 } effect = {  set_variable = { name = hbe_ballot_vote value = 3 } } }

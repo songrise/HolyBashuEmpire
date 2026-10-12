@@ -1,0 +1,33 @@
+{
+  "version": "0.2.1",
+  "status": "passed",
+  "checks": {
+    "native_rewards": true,
+    "production_unlock": true,
+    "party_join": true,
+    "guarded_contributions": true,
+    "switch": true,
+    "network_cleanup": true,
+    "scoreboard": true,
+    "settlement": true,
+    "no_new_script_errors": true
+  },
+  "observed": {
+    "before_research": 0.3982,
+    "after_research": 0.5482,
+    "before_production": -1e-05,
+    "after_production": 0.09999,
+    "before_roads": 0.0,
+    "after_roads": -0.15,
+    "research_delta": 0.15,
+    "production_delta": 0.1,
+    "roads_delta": -0.15
+  },
+  "fixture_save": "scheduled_save_DESKTOP-L1LK2TH_1337_06_29.eu5",
+  "source_manifest_sha256": "a1ade42465e143f2b31442fee938d2c363e07bda4338ca6664367fc3f909424b",
+  "scope": "new technology rewards and two-faction state/settlement; three simulated months; not century balance or GUI visual acceptance",
+  "new_errors": [],
+  "post_test_changes": [
+    "metadata line endings normalized to LF; no script or asset content changed"
+  ]
+}

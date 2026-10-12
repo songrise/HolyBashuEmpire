@@ -1,18 +1,6 @@
-﻿namespace = hbe_banquet
-hbe_banquet.1 = {
-    type = country_event title = hbe_banquet.1.title desc = hbe_banquet.1.desc outcome = neutral
-    illustration_tags = { 1000 = hbe_event_art_council }
-
-
-    option = { name = hbe_banquet.1.a ai_chance = { base = 30 } hbe_choose_stance_1 = yes } option = { name = hbe_banquet.1.b ai_chance = { base = 35 } hbe_choose_stance_2 = yes } option = { name = hbe_banquet.1.c ai_chance = { base = 35 } hbe_choose_stance_3 = yes }
-}
-hbe_banquet.2 = {
-    type = country_event title = hbe_banquet.2.title desc = hbe_banquet.2.desc outcome = neutral
-    illustration_tags = { 1000 = hbe_event_art_banquet }
-
-
-    option = { name = hbe_banquet.2.a trigger = { gold >= 3 situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } } ai_chance = { base = 60 } hbe_fund_project = yes } option = { name = hbe_banquet.2.b trigger = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } } ai_chance = { base = 10 } hbe_pledge_project = yes } option = { name = hbe_banquet.2.c ai_chance = { base = 15 } if = { limit = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } } set_variable = hbe_declined_project } } option = { name = hbe_banquet.2.d trigger = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } gold >= 2 OR = { has_variable = hbe_tech_chengdu_plain_1 has_variable = hbe_tech_southern_salt_wine_1 has_variable = hbe_tech_eastern_river_1 has_variable = hbe_tech_northern_shudao_1 has_variable = hbe_tech_central_hills_1 has_variable = hbe_tech_western_tea_horse_1 has_variable = hbe_tech_southwestern_valleys_1 has_variable = hbe_tech_common_2 } } ai_chance = { base = 90 }  }
-}
+namespace = hbe_banquet
+hbe_banquet.1 = { type = country_event title = hbe_banquet.1.title desc = hbe_banquet.1.desc illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe_banquet.1.a ai_chance = { base = 50 } hbe_choose_stance_1 = yes } option = { name = hbe_banquet.1.b ai_chance = { base = 50 } hbe_choose_stance_2 = yes }}
+hbe_banquet.2 = { type = country_event title = hbe_banquet.2.title desc = hbe_banquet.2.desc illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe_banquet.2.a ai_chance = { base = 60 } trigger = { NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee } hbe_fund_project = yes } option = { name = hbe_banquet.2.b ai_chance = { base = 40 }  }}
 hbe_banquet.3 = {
     type = country_event title = hbe_banquet.3.title desc = hbe_banquet.3.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_ledger }
@@ -20,20 +8,8 @@ hbe_banquet.3 = {
 
     option = { name = hbe_banquet.3.a ai_chance = { base = 100 }  }
 }
-hbe_banquet.4 = {
-    type = country_event title = hbe_banquet.4.title desc = hbe_banquet.4.desc outcome = neutral
-    illustration_tags = { 1000 = hbe_event_art_river }
-
-
-    option = { name = hbe_banquet.4.a ai_chance = { base = 100 }  }
-}
-hbe_banquet.5 = {
-    type = country_event title = hbe_banquet.5.title desc = hbe_banquet.5.desc outcome = neutral
-    illustration_tags = { 1000 = hbe_event_art_crisis }
-
-
-    option = { name = hbe_banquet.5.a ai_chance = { base = 100 }  }
-}
+hbe_banquet.4 = { type = country_event title = hbe_banquet.4.title desc = hbe_banquet.4.desc illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe_banquet.4.a ai_chance = { base = 100 }  }}
+hbe_banquet.5 = { type = country_event title = hbe_banquet.5.title desc = hbe_banquet.5.desc illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe_banquet.5.a ai_chance = { base = 100 }  }}
 hbe_banquet.6 = {
     type = country_event title = hbe_banquet.6.title desc = hbe_banquet.6.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_ledger }
@@ -41,13 +17,7 @@ hbe_banquet.6 = {
 
     option = { name = hbe_banquet.6.a ai_chance = { base = 100 }  }
 }
-hbe_banquet.7 = {
-    type = country_event title = hbe_banquet.7.title desc = hbe_banquet.7.desc outcome = neutral
-    illustration_tags = { 1000 = hbe_event_art_ledger }
-
-
-    option = { name = hbe_banquet.7.a ai_chance = { base = 100 }  }
-}
+hbe_banquet.7 = { type = country_event title = hbe_banquet.7.title desc = hbe_banquet.7.desc illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe_banquet.7.a ai_chance = { base = 100 }  }}
 hbe_banquet.12 = {
     type = country_event title = hbe_banquet.12.title desc = hbe_banquet.12.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_council }

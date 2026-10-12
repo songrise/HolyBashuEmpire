@@ -191,7 +191,7 @@
   },
   "save_date": "1338.1.1",
   "save_path": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\eu5-v020-test\\save games\\scheduled_save_DESKTOP-L1LK2TH_1338_01_01.eu5",
-  "source_manifest_sha256": "f4c9751b79b483e28767f91577dac932f32d338df05655b23e9687269d05074a",
+  "source_manifest_sha256": "29a51ea6afe47646c1c0ab063799c70e373169bdc25c5e872b835000ed623917",
   "tested_manifest_sha256": "a30579f6a106dc15a51092e85ccf347bad76f64b8a994d9063be834408196a5a",
   "post_test_changes": [
     "in_game/common/building_types/hbe_civic_buildings.txt",
@@ -199,7 +199,7 @@
     "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml"
   ],
   "post_test_validation": "Exact diff verification: four manpower coefficients reduced from 0.005 to 0.0015 within the native 0.0125-per-employee cap; one missing construction localization added in both languages. No second full engine run after these small changes, as requested.",
-  "art_scope": "Final DDS resources and flag composition proofs verified separately. Actual GUI rendering is not covered by the headless run.",
+  "art_scope": "Final DDS resources and flag composition proofs verified separately. Actual GUI rendering is not covered by the headless run. Workshop cover added after the engine run; only image size, PNG decoding and content hashes were checked for this art change.",
   "addressed_custom_diagnostics": [
     "[22:06:19][localization_util.cpp:103]: hbe_institution_construction: \"Hbe institution construction\"",
     "[22:07:03][building_type.cpp:2529]: hbe_cliff_stockade has a too high efficiency for manpower, as its 0.03333 when 0.0125 is allowed",

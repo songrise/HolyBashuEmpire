@@ -1,4 +1,4 @@
-﻿hbe_tech_common_1 = {
+hbe_tech_common_1 = {
     age = age_1_traditions
     starting_technology_level = 99
     icon = hbe_tech_common_1
@@ -10,6 +10,20 @@
     pure_tooltip_entry = hbe_tech_common_1_effects
 
     unlock_building = hbe_assembly_hall
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    country_cabinet_efficiency = 0.1
+    global_monthly_control = 0.05
 }
 hbe_tech_common_2 = {
     age = age_1_traditions
@@ -21,6 +35,20 @@ hbe_tech_common_2 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342  NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_common_2_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_merchant_capacity_modifier = 0.15
+    merchant_maintenance_efficiency = 0.1
 }
 hbe_tech_common_3 = {
     age = age_2_renaissance
@@ -34,6 +62,20 @@ hbe_tech_common_3 = {
     pure_tooltip_entry = hbe_tech_common_3_effects
 
     unlock_building = hbe_works_archive
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_construction_speed = 0.2
+    global_build_buildings_efficiency = 0.1
 }
 hbe_tech_common_4 = {
     age = age_1_traditions
@@ -45,6 +87,20 @@ hbe_tech_common_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1337  NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_common_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    research_speed_modifier = 0.15
+    global_institution_growth_modifier = 0.2
 }
 hbe_tech_common_5 = {
     age = age_1_traditions
@@ -56,6 +112,20 @@ hbe_tech_common_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352  NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_common_4
     pure_tooltip_entry = hbe_tech_common_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_production_efficiency = 0.1
+    global_burghers_max_literacy = 10
 }
 hbe_tech_common_6 = {
     age = age_2_renaissance
@@ -67,6 +137,20 @@ hbe_tech_common_6 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372  has_advance = hbe_tech_common_5 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_common_6_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    research_speed_modifier = 0.15
+    global_books_output_modifier = 0.2
 }
 hbe_tech_common_7 = {
     age = age_1_traditions
@@ -78,6 +162,20 @@ hbe_tech_common_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1337  NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_common_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_road_building_time = -0.15
+    build_gravel_road_cost_modifier = -0.15
 }
 hbe_tech_common_8 = {
     age = age_2_renaissance
@@ -89,6 +187,20 @@ hbe_tech_common_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372  has_advance = hbe_tech_common_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_common_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_construction_speed = 0.15
+    global_trade_center_power = 0.15
 }
 hbe_tech_chengdu_plain_1 = {
     age = age_1_traditions
@@ -102,6 +214,20 @@ hbe_tech_chengdu_plain_1 = {
     pure_tooltip_entry = hbe_tech_chengdu_plain_1_effects
 
     unlock_building = hbe_canal_office
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_monthly_food_modifier = 0.15
+    global_rice_output_modifier = 0.15
 }
 hbe_tech_chengdu_plain_2 = {
     age = age_1_traditions
@@ -116,6 +242,21 @@ hbe_tech_chengdu_plain_2 = {
 
     unlock_building = hbe_brocade_school
     unlock_unit = hbe_canal_crossbow
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_fine_cloth_output_modifier = 0.25
+    global_silk_output_modifier = 0.15
+    unlock_production_method = hbe_chengdu_plain_basic_production
 }
 hbe_tech_chengdu_plain_3 = {
     age = age_1_traditions
@@ -127,6 +268,20 @@ hbe_tech_chengdu_plain_3 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_chengdu_plain_6 } NOT = { has_variable = hbe_tech_chengdu_plain_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_chengdu_plain_2
     pure_tooltip_entry = hbe_tech_chengdu_plain_3_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_food_decay = -0.15
+    peasants_estate_target_satisfaction = 0.05
 }
 hbe_tech_chengdu_plain_4 = {
     age = age_1_traditions
@@ -138,6 +293,21 @@ hbe_tech_chengdu_plain_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_chengdu_plain_6 } NOT = { has_variable = hbe_tech_chengdu_plain_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_chengdu_plain_3
     pure_tooltip_entry = hbe_tech_chengdu_plain_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_monthly_food_modifier = 0.2
+    global_rgo_build_time = -0.2
+    unlock_production_method = hbe_chengdu_plain_advanced_production
 }
 hbe_tech_chengdu_plain_5 = {
     age = age_2_renaissance
@@ -149,6 +319,20 @@ hbe_tech_chengdu_plain_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_chengdu_plain_6 } NOT = { has_variable = hbe_tech_chengdu_plain_6 } has_advance = hbe_tech_chengdu_plain_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_chengdu_plain_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_rice_output_modifier = 0.3
+    global_devastation_recovery = 0.005
 }
 hbe_tech_chengdu_plain_6 = {
     age = age_1_traditions
@@ -160,6 +344,20 @@ hbe_tech_chengdu_plain_6 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_chengdu_plain_3 } NOT = { has_variable = hbe_tech_chengdu_plain_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_chengdu_plain_2
     pure_tooltip_entry = hbe_tech_chengdu_plain_6_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_max_literacy = 10
+    cultural_tradition_modifier = 0.15
 }
 hbe_tech_chengdu_plain_7 = {
     age = age_1_traditions
@@ -171,6 +369,20 @@ hbe_tech_chengdu_plain_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_chengdu_plain_3 } NOT = { has_variable = hbe_tech_chengdu_plain_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_chengdu_plain_6
     pure_tooltip_entry = hbe_tech_chengdu_plain_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    diplomatic_capacity_modifier = 0.2
+    stability_cost_efficiency = 0.15
 }
 hbe_tech_chengdu_plain_8 = {
     age = age_2_renaissance
@@ -182,6 +394,20 @@ hbe_tech_chengdu_plain_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_chengdu_plain_3 } NOT = { has_variable = hbe_tech_chengdu_plain_3 } has_advance = hbe_tech_chengdu_plain_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_chengdu_plain_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    research_speed_modifier = 0.2
+    cultural_influence_modifier = 0.25
 }
 hbe_tech_southern_salt_wine_1 = {
     age = age_1_traditions
@@ -195,6 +421,21 @@ hbe_tech_southern_salt_wine_1 = {
     pure_tooltip_entry = hbe_tech_southern_salt_wine_1_effects
 
     unlock_building = hbe_salt_office
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_salt_output_modifier = 0.2
+    global_build_buildings_efficiency = 0.1
+    unlock_production_method = hbe_southern_salt_wine_basic_production
 }
 hbe_tech_southern_salt_wine_2 = {
     age = age_1_traditions
@@ -209,6 +450,20 @@ hbe_tech_southern_salt_wine_2 = {
 
     unlock_building = hbe_salt_contract_house
     unlock_unit = hbe_salt_guard
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_liquor_output_modifier = 0.25
+    global_pottery_output_modifier = 0.15
 }
 hbe_tech_southern_salt_wine_3 = {
     age = age_1_traditions
@@ -220,6 +475,21 @@ hbe_tech_southern_salt_wine_3 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_southern_salt_wine_6 } NOT = { has_variable = hbe_tech_southern_salt_wine_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southern_salt_wine_2
     pure_tooltip_entry = hbe_tech_southern_salt_wine_3_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_salt_output_modifier = 0.3
+    global_tools_output_modifier = 0.15
+    unlock_production_method = hbe_southern_salt_wine_advanced_production
 }
 hbe_tech_southern_salt_wine_4 = {
     age = age_1_traditions
@@ -231,6 +501,20 @@ hbe_tech_southern_salt_wine_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_southern_salt_wine_6 } NOT = { has_variable = hbe_tech_southern_salt_wine_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southern_salt_wine_3
     pure_tooltip_entry = hbe_tech_southern_salt_wine_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    total_loan_capacity_modifier = 0.5
+    bank_interest = -0.005
 }
 hbe_tech_southern_salt_wine_5 = {
     age = age_2_renaissance
@@ -242,6 +526,20 @@ hbe_tech_southern_salt_wine_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_southern_salt_wine_6 } NOT = { has_variable = hbe_tech_southern_salt_wine_6 } has_advance = hbe_tech_southern_salt_wine_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_southern_salt_wine_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_salt_output_modifier = 0.25
+    global_merchant_capacity_modifier = 0.25
 }
 hbe_tech_southern_salt_wine_6 = {
     age = age_1_traditions
@@ -253,6 +551,20 @@ hbe_tech_southern_salt_wine_6 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_southern_salt_wine_3 } NOT = { has_variable = hbe_tech_southern_salt_wine_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southern_salt_wine_2
     pure_tooltip_entry = hbe_tech_southern_salt_wine_6_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_liquor_output_modifier = 0.3
+    cultural_tradition_modifier = 0.1
 }
 hbe_tech_southern_salt_wine_7 = {
     age = age_1_traditions
@@ -264,6 +576,20 @@ hbe_tech_southern_salt_wine_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_southern_salt_wine_3 } NOT = { has_variable = hbe_tech_southern_salt_wine_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southern_salt_wine_6
     pure_tooltip_entry = hbe_tech_southern_salt_wine_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    merchant_maintenance_efficiency = 0.2
+    global_production_efficiency = 0.1
 }
 hbe_tech_southern_salt_wine_8 = {
     age = age_2_renaissance
@@ -275,6 +601,20 @@ hbe_tech_southern_salt_wine_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_southern_salt_wine_3 } NOT = { has_variable = hbe_tech_southern_salt_wine_3 } has_advance = hbe_tech_southern_salt_wine_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_southern_salt_wine_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_liquor_output_modifier = 0.25
+    cultural_influence_modifier = 0.25
 }
 hbe_tech_eastern_river_1 = {
     age = age_1_traditions
@@ -288,6 +628,20 @@ hbe_tech_eastern_river_1 = {
     pure_tooltip_entry = hbe_tech_eastern_river_1_effects
 
     unlock_building = hbe_river_warehouse
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_merchant_capacity_modifier = 0.2
+    merchant_maintenance_efficiency = 0.1
 }
 hbe_tech_eastern_river_2 = {
     age = age_1_traditions
@@ -301,6 +655,21 @@ hbe_tech_eastern_river_2 = {
     pure_tooltip_entry = hbe_tech_eastern_river_2_effects
 
     unlock_unit = hbe_river_garrison
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_naval_supplies_output_modifier = 0.25
+    ship_build_speed = 0.2
+    unlock_production_method = hbe_eastern_river_basic_production
 }
 hbe_tech_eastern_river_3 = {
     age = age_1_traditions
@@ -312,6 +681,20 @@ hbe_tech_eastern_river_3 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_eastern_river_6 } NOT = { has_variable = hbe_tech_eastern_river_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_eastern_river_2
     pure_tooltip_entry = hbe_tech_eastern_river_3_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_trade_center_power = 0.2
+    merchant_maintenance_efficiency = 0.15
 }
 hbe_tech_eastern_river_4 = {
     age = age_1_traditions
@@ -323,6 +706,21 @@ hbe_tech_eastern_river_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_eastern_river_6 } NOT = { has_variable = hbe_tech_eastern_river_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_eastern_river_3
     pure_tooltip_entry = hbe_tech_eastern_river_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_merchant_capacity_modifier = 0.25
+    global_food_decay = -0.1
+    unlock_production_method = hbe_eastern_river_advanced_production
 }
 hbe_tech_eastern_river_5 = {
     age = age_2_renaissance
@@ -334,6 +732,20 @@ hbe_tech_eastern_river_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_eastern_river_6 } NOT = { has_variable = hbe_tech_eastern_river_6 } has_advance = hbe_tech_eastern_river_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_eastern_river_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_trade_center_power = 0.25
+    global_production_efficiency = 0.15
 }
 hbe_tech_eastern_river_6 = {
     age = age_1_traditions
@@ -347,6 +759,20 @@ hbe_tech_eastern_river_6 = {
     pure_tooltip_entry = hbe_tech_eastern_river_6_effects
 
     unlock_building = hbe_cliff_stockade
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_defensive = 0.2
+    fort_maintenance_efficiency = 0.2
 }
 hbe_tech_eastern_river_7 = {
     age = age_1_traditions
@@ -358,6 +784,20 @@ hbe_tech_eastern_river_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_eastern_river_3 } NOT = { has_variable = hbe_tech_eastern_river_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_eastern_river_6
     pure_tooltip_entry = hbe_tech_eastern_river_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    army_maintenance_efficiency = 0.2
+    global_levy_recruitment_speed_modifier = 0.2
 }
 hbe_tech_eastern_river_8 = {
     age = age_2_renaissance
@@ -369,6 +809,20 @@ hbe_tech_eastern_river_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_eastern_river_3 } NOT = { has_variable = hbe_tech_eastern_river_3 } has_advance = hbe_tech_eastern_river_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_eastern_river_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_defensive = 0.25
+    army_initiative = 0.15
 }
 hbe_tech_northern_shudao_1 = {
     age = age_1_traditions
@@ -380,6 +834,20 @@ hbe_tech_northern_shudao_1 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1337  NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_northern_shudao_1_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_road_building_time = -0.15
+    build_gravel_road_cost_modifier = -0.15
 }
 hbe_tech_northern_shudao_2 = {
     age = age_1_traditions
@@ -394,6 +862,20 @@ hbe_tech_northern_shudao_2 = {
 
     unlock_building = hbe_plank_fort
     unlock_unit = hbe_pass_rotation
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_supply_limit_modifier = 0.2
+    army_maintenance_efficiency = 0.1
 }
 hbe_tech_northern_shudao_3 = {
     age = age_1_traditions
@@ -405,6 +887,20 @@ hbe_tech_northern_shudao_3 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_northern_shudao_6 } NOT = { has_variable = hbe_tech_northern_shudao_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_northern_shudao_2
     pure_tooltip_entry = hbe_tech_northern_shudao_3_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_defensive = 0.25
+    fort_maintenance_efficiency = 0.2
 }
 hbe_tech_northern_shudao_4 = {
     age = age_1_traditions
@@ -416,6 +912,20 @@ hbe_tech_northern_shudao_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_northern_shudao_6 } NOT = { has_variable = hbe_tech_northern_shudao_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_northern_shudao_3
     pure_tooltip_entry = hbe_tech_northern_shudao_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_levy_recruitment_speed_modifier = 0.25
+    army_maintenance_efficiency = 0.2
 }
 hbe_tech_northern_shudao_5 = {
     age = age_2_renaissance
@@ -427,6 +937,20 @@ hbe_tech_northern_shudao_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_northern_shudao_6 } NOT = { has_variable = hbe_tech_northern_shudao_6 } has_advance = hbe_tech_northern_shudao_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_northern_shudao_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_defensive = 0.2
+    global_manpower_modifier = 0.2
 }
 hbe_tech_northern_shudao_6 = {
     age = age_1_traditions
@@ -440,6 +964,21 @@ hbe_tech_northern_shudao_6 = {
     pure_tooltip_entry = hbe_tech_northern_shudao_6_effects
 
     unlock_building = hbe_gate_registry
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_merchant_capacity_modifier = 0.2
+    merchant_maintenance_efficiency = 0.15
+    unlock_production_method = hbe_northern_shudao_basic_production
 }
 hbe_tech_northern_shudao_7 = {
     age = age_1_traditions
@@ -451,6 +990,21 @@ hbe_tech_northern_shudao_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_northern_shudao_3 } NOT = { has_variable = hbe_tech_northern_shudao_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_northern_shudao_6
     pure_tooltip_entry = hbe_tech_northern_shudao_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_road_building_time = -0.15
+    diplomatic_capacity_modifier = 0.2
+    unlock_production_method = hbe_northern_shudao_advanced_production
 }
 hbe_tech_northern_shudao_8 = {
     age = age_2_renaissance
@@ -462,6 +1016,20 @@ hbe_tech_northern_shudao_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_northern_shudao_3 } NOT = { has_variable = hbe_tech_northern_shudao_3 } has_advance = hbe_tech_northern_shudao_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_northern_shudao_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_institution_growth_modifier = 0.3
+    global_monthly_control = 0.1
 }
 hbe_tech_central_hills_1 = {
     age = age_1_traditions
@@ -473,6 +1041,20 @@ hbe_tech_central_hills_1 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1337  NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_central_hills_1_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_monthly_food_modifier = 0.15
+    global_max_rgo_size_modifier_in_rural = 0.15
 }
 hbe_tech_central_hills_2 = {
     age = age_1_traditions
@@ -486,6 +1068,20 @@ hbe_tech_central_hills_2 = {
     pure_tooltip_entry = hbe_tech_central_hills_2_effects
 
     unlock_unit = hbe_granary_militia
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_trade_center_power = 0.15
+    global_monthly_control = 0.05
 }
 hbe_tech_central_hills_3 = {
     age = age_1_traditions
@@ -499,6 +1095,21 @@ hbe_tech_central_hills_3 = {
     pure_tooltip_entry = hbe_tech_central_hills_3_effects
 
     unlock_building = hbe_community_granary
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_food_decay = -0.25
+    food_purchase_efficiency = 0.2
+    unlock_production_method = hbe_central_hills_basic_production
 }
 hbe_tech_central_hills_4 = {
     age = age_1_traditions
@@ -510,6 +1121,21 @@ hbe_tech_central_hills_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_central_hills_6 } NOT = { has_variable = hbe_tech_central_hills_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_central_hills_3
     pure_tooltip_entry = hbe_tech_central_hills_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    stability_cost_efficiency = 0.2
+    peasants_estate_target_satisfaction = 0.08
+    unlock_production_method = hbe_central_hills_advanced_production
 }
 hbe_tech_central_hills_5 = {
     age = age_2_renaissance
@@ -521,6 +1147,20 @@ hbe_tech_central_hills_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_central_hills_6 } NOT = { has_variable = hbe_tech_central_hills_6 } has_advance = hbe_tech_central_hills_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_central_hills_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_monthly_food_modifier = 0.25
+    global_disease_resistance = 0.05
 }
 hbe_tech_central_hills_6 = {
     age = age_1_traditions
@@ -534,6 +1174,20 @@ hbe_tech_central_hills_6 = {
     pure_tooltip_entry = hbe_tech_central_hills_6_effects
 
     unlock_building = hbe_witness_house
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    total_loan_capacity_modifier = 0.4
+    burghers_estate_target_satisfaction = 0.08
 }
 hbe_tech_central_hills_7 = {
     age = age_1_traditions
@@ -545,6 +1199,20 @@ hbe_tech_central_hills_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_central_hills_3 } NOT = { has_variable = hbe_tech_central_hills_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_central_hills_6
     pure_tooltip_entry = hbe_tech_central_hills_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    bank_interest = -0.005
+    merchant_maintenance_efficiency = 0.2
 }
 hbe_tech_central_hills_8 = {
     age = age_2_renaissance
@@ -556,6 +1224,20 @@ hbe_tech_central_hills_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_central_hills_3 } NOT = { has_variable = hbe_tech_central_hills_3 } has_advance = hbe_tech_central_hills_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_central_hills_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_merchant_capacity_modifier = 0.25
+    global_monthly_prosperity = 0.05
 }
 hbe_tech_western_tea_horse_1 = {
     age = age_1_traditions
@@ -569,6 +1251,21 @@ hbe_tech_western_tea_horse_1 = {
     pure_tooltip_entry = hbe_tech_western_tea_horse_1_effects
 
     unlock_building = hbe_tea_exchange
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_tea_output_modifier = 0.25
+    global_merchant_capacity_modifier = 0.15
+    unlock_production_method = hbe_western_tea_horse_basic_production
 }
 hbe_tech_western_tea_horse_2 = {
     age = age_1_traditions
@@ -583,6 +1280,20 @@ hbe_tech_western_tea_horse_2 = {
 
     unlock_building = hbe_guide_station
     unlock_unit = hbe_tea_riders
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_supply_limit_modifier = 0.2
+    merchant_maintenance_efficiency = 0.15
 }
 hbe_tech_western_tea_horse_3 = {
     age = age_1_traditions
@@ -594,6 +1305,21 @@ hbe_tech_western_tea_horse_3 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_western_tea_horse_6 } NOT = { has_variable = hbe_tech_western_tea_horse_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_western_tea_horse_2
     pure_tooltip_entry = hbe_tech_western_tea_horse_3_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_leather_output_modifier = 0.25
+    global_food_decay = -0.1
+    unlock_production_method = hbe_western_tea_horse_advanced_production
 }
 hbe_tech_western_tea_horse_4 = {
     age = age_1_traditions
@@ -605,6 +1331,20 @@ hbe_tech_western_tea_horse_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_western_tea_horse_6 } NOT = { has_variable = hbe_tech_western_tea_horse_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_western_tea_horse_3
     pure_tooltip_entry = hbe_tech_western_tea_horse_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_merchant_capacity_modifier = 0.25
+    global_road_building_time = -0.15
 }
 hbe_tech_western_tea_horse_5 = {
     age = age_2_renaissance
@@ -616,6 +1356,20 @@ hbe_tech_western_tea_horse_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_western_tea_horse_6 } NOT = { has_variable = hbe_tech_western_tea_horse_6 } has_advance = hbe_tech_western_tea_horse_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_western_tea_horse_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_tea_output_modifier = 0.3
+    global_trade_center_power = 0.2
 }
 hbe_tech_western_tea_horse_6 = {
     age = age_1_traditions
@@ -627,6 +1381,20 @@ hbe_tech_western_tea_horse_6 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_western_tea_horse_3 } NOT = { has_variable = hbe_tech_western_tea_horse_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_western_tea_horse_2
     pure_tooltip_entry = hbe_tech_western_tea_horse_6_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    tolerance_heathen = 1
+    global_disease_resistance = 0.05
 }
 hbe_tech_western_tea_horse_7 = {
     age = age_1_traditions
@@ -638,6 +1406,20 @@ hbe_tech_western_tea_horse_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_western_tea_horse_3 } NOT = { has_variable = hbe_tech_western_tea_horse_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_western_tea_horse_6
     pure_tooltip_entry = hbe_tech_western_tea_horse_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    diplomatic_capacity_modifier = 0.25
+    cultural_influence_modifier = 0.2
 }
 hbe_tech_western_tea_horse_8 = {
     age = age_2_renaissance
@@ -649,6 +1431,20 @@ hbe_tech_western_tea_horse_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_western_tea_horse_3 } NOT = { has_variable = hbe_tech_western_tea_horse_3 } has_advance = hbe_tech_western_tea_horse_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_western_tea_horse_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    cultures_capacity = 1
+    cultural_tradition_modifier = 0.25
 }
 hbe_tech_southwestern_valleys_1 = {
     age = age_1_traditions
@@ -662,6 +1458,21 @@ hbe_tech_southwestern_valleys_1 = {
     pure_tooltip_entry = hbe_tech_southwestern_valleys_1_effects
 
     unlock_building = hbe_valley_inn
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_production_efficiency = 0.1
+    global_trade_center_power = 0.15
+    unlock_production_method = hbe_southwestern_valleys_basic_production
 }
 hbe_tech_southwestern_valleys_2 = {
     age = age_1_traditions
@@ -676,6 +1487,20 @@ hbe_tech_southwestern_valleys_2 = {
 
     unlock_building = hbe_covenant_stockade
     unlock_unit = hbe_valley_soldiers
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    tribes_estate_target_satisfaction = 0.1
+    peasants_estate_target_satisfaction = 0.05
 }
 hbe_tech_southwestern_valleys_3 = {
     age = age_1_traditions
@@ -687,6 +1512,20 @@ hbe_tech_southwestern_valleys_3 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_southwestern_valleys_6 } NOT = { has_variable = hbe_tech_southwestern_valleys_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southwestern_valleys_2
     pure_tooltip_entry = hbe_tech_southwestern_valleys_3_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_tools_output_modifier = 0.25
+    global_road_building_time = -0.15
 }
 hbe_tech_southwestern_valleys_4 = {
     age = age_1_traditions
@@ -698,6 +1537,21 @@ hbe_tech_southwestern_valleys_4 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_southwestern_valleys_6 } NOT = { has_variable = hbe_tech_southwestern_valleys_6 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southwestern_valleys_3
     pure_tooltip_entry = hbe_tech_southwestern_valleys_4_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_production_efficiency = 0.15
+    global_merchant_capacity_modifier = 0.2
+    unlock_production_method = hbe_southwestern_valleys_advanced_production
 }
 hbe_tech_southwestern_valleys_5 = {
     age = age_2_renaissance
@@ -709,6 +1563,20 @@ hbe_tech_southwestern_valleys_5 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_southwestern_valleys_6 } NOT = { has_variable = hbe_tech_southwestern_valleys_6 } has_advance = hbe_tech_southwestern_valleys_4 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_southwestern_valleys_5_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_tools_output_modifier = 0.25
+    burghers_estate_target_satisfaction = 0.1
 }
 hbe_tech_southwestern_valleys_6 = {
     age = age_1_traditions
@@ -720,6 +1588,20 @@ hbe_tech_southwestern_valleys_6 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1352 NOT = { has_advance = hbe_tech_southwestern_valleys_3 } NOT = { has_variable = hbe_tech_southwestern_valleys_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southwestern_valleys_2
     pure_tooltip_entry = hbe_tech_southwestern_valleys_6_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_supply_limit_modifier = 0.25
+    global_levy_recruitment_speed_modifier = 0.15
 }
 hbe_tech_southwestern_valleys_7 = {
     age = age_1_traditions
@@ -731,6 +1613,20 @@ hbe_tech_southwestern_valleys_7 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1372 NOT = { has_advance = hbe_tech_southwestern_valleys_3 } NOT = { has_variable = hbe_tech_southwestern_valleys_3 } NOT = { has_variable = hbe_research_pending } }
     requires = hbe_tech_southwestern_valleys_6
     pure_tooltip_entry = hbe_tech_southwestern_valleys_7_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    army_maintenance_efficiency = 0.2
+    global_defensive = 0.15
 }
 hbe_tech_southwestern_valleys_8 = {
     age = age_2_renaissance
@@ -742,4 +1638,18 @@ hbe_tech_southwestern_valleys_8 = {
     allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 NOT = { has_advance = hbe_tech_southwestern_valleys_3 } NOT = { has_variable = hbe_tech_southwestern_valleys_3 } has_advance = hbe_tech_southwestern_valleys_7 NOT = { has_variable = hbe_research_pending } }
     requires = renaissance_development
     pure_tooltip_entry = hbe_tech_southwestern_valleys_8_effects
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+
+    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.
+    global_manpower_modifier = 0.25
+    tribes_estate_target_satisfaction = 0.1
 }

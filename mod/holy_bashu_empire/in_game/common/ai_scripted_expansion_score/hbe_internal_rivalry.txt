@@ -1,0 +1,10 @@
+hbe_internal_rivalry = {
+ attacker_potential = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 }
+ target_trigger = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire is_neighbor_of = scope:attacker }
+ score = { add = 6 }
+ multiplier = {
+  add = 0.10
+  if = { limit = { OR = { AND = { scope:attacker = { var:hbe_stance = 1 } scope:target = { var:hbe_stance = 2 } } AND = { scope:attacker = { var:hbe_stance = 2 } scope:target = { var:hbe_stance = 1 } } } } add = 0.10 }
+ }
+ never_attack = { OR = { scope:attacker = { var:hbe_burden >= 70 } scope:target = { is_allied_with = { target = scope:attacker } } } }
+}

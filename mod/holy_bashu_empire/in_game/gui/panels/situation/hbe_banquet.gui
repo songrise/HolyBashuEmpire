@@ -1,20 +1,65 @@
+# Reuses vanilla situation blocks and two_countries_header_template.
+# No GetGagMemberItems/GetCountryGuelphsProgress: those are engine-bound to Italy.
 situation_panel = {
-    blockoverride "situation_panel_image" {
-        background = { texture = "gfx/interface/hbe/panels/hbe_banquet.dds" }
-    }
-    blockoverride "situation_subheader_content" { }
-    blockoverride "situation_panel_main_content" {
-        text_multi = {
-            layoutpolicy_horizontal = expanding autoresize = yes
-            text = "HBE_BANQUET_PANEL_TITLE"
-        }
-        text_multi = {
-            layoutpolicy_horizontal = expanding autoresize = yes
-            text = "HBE_BANQUET_PANEL_BODY"
-        }
-        text_multi = {
-            layoutpolicy_horizontal = expanding autoresize = yes
-            text = "HBE_BANQUET_PANEL_HELP"
-        }
-    }
+ blockoverride "situation_header_left" {
+  vbox = { text_single = { text = "HBE_COMMON_LEADER" }
+   hbox = { datacontext = "[GetUniqueInternationalOrganization('hbe_common_party').GetLeaderCountry]" spacing = 4
+    country_flag_small = {} text_single = { text = "[Country.GetName]" } }
+  }
+ }
+ blockoverride "situation_header_right" {
+  vbox = { text_single = { text = "HBE_LOCAL_LEADER" }
+   hbox = { datacontext = "[GetUniqueInternationalOrganization('hbe_local_party').GetLeaderCountry]" spacing = 4
+    country_flag_small = {} text_single = { text = "[Country.GetName]" } }
+  }
+ }
+ blockoverride "situation_panel_image" {
+  using = two_countries_header_template
+  blockoverride "two_countries_header_image" { background = { texture = "gfx/interface/hbe/panels/hbe_banquet.dds" texture_density = 2 spriteType = stretched spriteborder = { 0 0 } } }
+  blockoverride "FirstCountryContext" { datacontext = "[GetUniqueInternationalOrganization('hbe_common_party').GetLeaderCountry]" }
+  blockoverride "SecondCountryContext" { datacontext = "[GetUniqueInternationalOrganization('hbe_local_party').GetLeaderCountry]" }
+  blockoverride "first_character_portrait_anchor" { parentanchor = bottom|left }
+  blockoverride "second_character_portrait_anchor" { parentanchor = bottom|right }
+  blockoverride "character_religion_visibility" { visible = no }
+  blockoverride "character_name_maximumsize" { maximumsize = { 270 -1 } }
+  blockoverride "character_role" { datacontext = "[Character.GetRuledCountry]" country_flag_small = {} }
+ }
+ blockoverride "situation_subheader_content" {}
+ blockoverride "situation_panel_main_content" {
+  text_multi = { layoutpolicy_horizontal = expanding autoresize = yes text = "HBE_FEAST_STATUS" }
+  widget = { layoutpolicy_horizontal = expanding size = { -1 18 }
+   barchart = { layoutpolicy_horizontal = expanding size = { -1 16 }
+    barslice = { texture = "gfx/interface/progressbars/progress_bar_whiteish.dds" color = { 0.60 0.22 0.16 1 }
+     value = "[FixedPointToFloat(GetUniqueInternationalOrganization('hbe_common_party').MakeScope.GetVariable('hbe_party_points').GetValue)]" }
+    barslice = { texture = "gfx/interface/progressbars/progress_bar_whiteish.dds" color = { 0.18 0.38 0.56 1 }
+     value = "[FixedPointToFloat(GetUniqueInternationalOrganization('hbe_local_party').MakeScope.GetVariable('hbe_party_points').GetValue)]" }
+   }
+  }
+  text_multi = { layoutpolicy_horizontal = expanding autoresize = yes text = "HBE_FEAST_GUIDE" }
+  text_multi = { layoutpolicy_horizontal = expanding autoresize = yes text = "HBE_FEAST_REWARDS" }
+  hbox = { layoutpolicy_horizontal = expanding spacing = 12
+vbox = { layoutpolicy_horizontal = expanding spacing = 4
+ text_multi = { autoresize = yes text = "HBE_FEAST_COMMON" }
+ text_single = { text = "HBE_FEAST_MEMBER_COLUMNS" }
+ vbox = { layoutpolicy_horizontal = expanding datamodel = "[GetUniqueInternationalOrganization('hbe_common_party').GetMembers]"
+  item = { hbox = { layoutpolicy_horizontal = expanding spacing = 6 using = bg_paper_card size = { -1 30 }
+   country_flag_small = { tooltipwidget = { using = CountryTooltip } }
+   text_single = { layoutpolicy_horizontal = expanding text = "[Country.GetName]" }
+   text_single = { minimumsize = { 45 -1 } text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
+  } }
+ }
+}
+vbox = { layoutpolicy_horizontal = expanding spacing = 4
+ text_multi = { autoresize = yes text = "HBE_FEAST_LOCAL" }
+ text_single = { text = "HBE_FEAST_MEMBER_COLUMNS" }
+ vbox = { layoutpolicy_horizontal = expanding datamodel = "[GetUniqueInternationalOrganization('hbe_local_party').GetMembers]"
+  item = { hbox = { layoutpolicy_horizontal = expanding spacing = 6 using = bg_paper_card size = { -1 30 }
+   country_flag_small = { tooltipwidget = { using = CountryTooltip } }
+   text_single = { layoutpolicy_horizontal = expanding text = "[Country.GetName]" }
+   text_single = { minimumsize = { 45 -1 } text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
+  } }
+ }
+}
+  }
+ }
 }

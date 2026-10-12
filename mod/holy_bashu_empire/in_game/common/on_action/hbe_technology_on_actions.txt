@@ -1,0 +1,4 @@
+on_game_start = { on_actions = { hbe_technology_start } }
+hbe_technology_start = { effect = { every_country = { limit = { hbe_is_prince = yes } hbe_technology_networks = yes } } }
+monthly_country_pulse = { on_actions = { hbe_technology_monthly } }
+ hbe_technology_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_technology_networks = yes } }

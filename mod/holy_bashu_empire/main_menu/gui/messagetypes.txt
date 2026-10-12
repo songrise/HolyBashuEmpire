@@ -1,4 +1,4 @@
-﻿MAJOR_EVENT_INFO={
+MAJOR_EVENT_INFO={
 log=no
 onmap=no
 popup=yes
@@ -15014,3 +15014,21 @@ PERFORM_hbe_election_ACTION = { log = yes onmap = no popup = no idle = no option
 WE_PERFORM_hbe_election_ACTION = { log = yes onmap = no popup = no idle = no option = yes pausepopup = no message_category = government }
 
 OTHER_PERFORMS_hbe_election_ACTION = { log = yes onmap = no popup = no idle = no option = yes pausepopup = no message_category = government }
+
+PERFORM_hbe_feast_fund_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+WE_PERFORM_hbe_feast_fund_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+OTHER_PERFORMS_hbe_feast_fund_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+PERFORM_hbe_feast_common_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+WE_PERFORM_hbe_feast_common_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+OTHER_PERFORMS_hbe_feast_common_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+PERFORM_hbe_feast_local_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+WE_PERFORM_hbe_feast_local_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }
+
+OTHER_PERFORMS_hbe_feast_local_action_ACTION = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }

@@ -1,0 +1,14 @@
+hbe_network_chengdu_plain_4 = { global_monthly_food_modifier = 0.25 global_rice_output_modifier = 0.2 }
+hbe_network_chengdu_plain_7 = { research_speed_modifier = 0.2 cultural_influence_modifier = 0.25 }
+hbe_network_southern_salt_wine_4 = { global_salt_output_modifier = 0.3 global_merchant_capacity_modifier = 0.2 }
+hbe_network_southern_salt_wine_7 = { global_liquor_output_modifier = 0.3 cultural_tradition_modifier = 0.2 }
+hbe_network_eastern_river_4 = { global_merchant_capacity_modifier = 0.3 merchant_maintenance_efficiency = 0.2 }
+hbe_network_eastern_river_7 = { global_defensive = 0.25 army_maintenance_efficiency = 0.2 }
+hbe_network_northern_shudao_4 = { global_supply_limit_modifier = 0.3 fort_maintenance_efficiency = 0.25 }
+hbe_network_northern_shudao_7 = { global_road_building_time = -0.1 global_institution_growth_modifier = 0.25 }
+hbe_network_central_hills_4 = { global_monthly_food_modifier = 0.25 global_food_decay = -0.2 }
+hbe_network_central_hills_7 = { bank_interest = -0.005 total_loan_capacity_modifier = 0.6 }
+hbe_network_western_tea_horse_4 = { global_tea_output_modifier = 0.3 global_merchant_capacity_modifier = 0.25 }
+hbe_network_western_tea_horse_7 = { cultural_influence_modifier = 0.25 diplomatic_capacity_modifier = 0.25 }
+hbe_network_southwestern_valleys_4 = { global_tools_output_modifier = 0.3 global_production_efficiency = 0.15 }
+hbe_network_southwestern_valleys_7 = { army_maintenance_efficiency = 0.25 tribes_estate_target_satisfaction = 0.1 }

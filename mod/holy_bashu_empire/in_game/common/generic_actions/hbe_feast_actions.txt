@@ -1,0 +1,18 @@
+hbe_feast_fund_action = { type = situation ai_tick = never automation_tick = never
+   potential = { scope:actor = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet } }
+   allow = { scope:actor = { NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee } }
+   select_trigger = { looking_for_a = situation target_flag = recipient name = "choose_situation" column = { data = name } visible = { situation:hbe_banquet = this situation_is_active = yes } }
+   effect = { scope:actor = { hbe_fund_project = yes } } ai_will_do = { value = 0 }
+  }
+hbe_feast_common_action = { type = situation ai_tick = never automation_tick = never
+   potential = { scope:actor = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet } }
+   allow = { scope:actor = { NOT = { var:hbe_stance = 1 } NOT = { has_variable = hbe_stance_cooldown } } }
+   select_trigger = { looking_for_a = situation target_flag = recipient name = "choose_situation" column = { data = name } visible = { situation:hbe_banquet = this situation_is_active = yes } }
+   effect = { scope:actor = { hbe_choose_stance_1 = yes } } ai_will_do = { value = 0 }
+  }
+hbe_feast_local_action = { type = situation ai_tick = never automation_tick = never
+   potential = { scope:actor = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire is_situation_active = situation:hbe_banquet } }
+   allow = { scope:actor = { NOT = { var:hbe_stance = 2 } NOT = { has_variable = hbe_stance_cooldown } } }
+   select_trigger = { looking_for_a = situation target_flag = recipient name = "choose_situation" column = { data = name } visible = { situation:hbe_banquet = this situation_is_active = yes } }
+   effect = { scope:actor = { hbe_choose_stance_2 = yes } } ai_will_do = { value = 0 }
+  }

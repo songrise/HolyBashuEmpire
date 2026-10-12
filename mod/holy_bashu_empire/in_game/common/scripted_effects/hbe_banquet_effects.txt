@@ -1,4 +1,4 @@
-﻿hbe_clamp_guoqi = {
+hbe_clamp_guoqi = {
     if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } }
     if = { limit = { var:hbe_guoqi < 0 } set_variable = { name = hbe_guoqi value = 0 } }
 }
@@ -8,93 +8,64 @@ hbe_banquet_clamp = {
 }
 
 hbe_banquet_register = {
-    if = { limit = { NOT = { has_variable = hbe_banquet_joined } }
-        hbe_initialize = yes set_variable = hbe_banquet_joined
-        set_variable = { name = hbe_stance value = 3 }
-        set_variable = { name = hbe_contribution value = 0 }
-        trigger_event_non_silently = { id = hbe_banquet.1 days = 1 }
-    }
+ if = { limit = { NOT = { has_variable = hbe_banquet_joined } }
+  hbe_initialize = yes set_variable = hbe_banquet_joined set_variable = { name = hbe_contribution value = 0 }
+  if = { limit = { OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAL has_or_had_tag = BAP has_or_had_tag = BAW has_or_had_tag = BAZ has_or_had_tag = BBC has_or_had_tag = BBF has_or_had_tag = BBI has_or_had_tag = BBL has_or_had_tag = BBN has_or_had_tag = BBP has_or_had_tag = BBR has_or_had_tag = BBT has_or_had_tag = BBV has_or_had_tag = BBX has_or_had_tag = BBZ has_or_had_tag = BCB } } set_variable = { name = hbe_stance value = 1 } } else = { set_variable = { name = hbe_stance value = 2 } }
+  trigger_event_non_silently = { id = hbe_banquet.1 days = 1 }
+ } hbe_feast_sync_party = yes
 }
-hbe_choose_stance_1 = {
-    set_variable = { name = hbe_stance value = 1 }
-    set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
-}
-hbe_choose_stance_2 = {
-    set_variable = { name = hbe_stance value = 2 }
-    set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
-}
-hbe_choose_stance_3 = {
-    set_variable = { name = hbe_stance value = 3 }
-    set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
-}
+hbe_choose_stance_1 = {set_variable = { name = hbe_stance value = 1 } set_variable = { name = hbe_stance_cooldown value = yes years = 5 } hbe_feast_sync_party = yes}
+hbe_choose_stance_2 = {set_variable = { name = hbe_stance value = 2 } set_variable = { name = hbe_stance_cooldown value = yes years = 5 } hbe_feast_sync_party = yes}
+hbe_choose_stance_3 = {hbe_choose_stance_2 = yes}
 hbe_open_accounts = {
-    set_variable = { name = hbe_round_month value = 0 }
-    set_variable = { name = hbe_role_1 value = 0 }
-    set_variable = { name = hbe_role_2 value = 0 }
-    set_variable = { name = hbe_role_3 value = 0 }
-    international_organization:hbe_empire ?= { every_international_organization_member = {
-        remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered
-        remove_variable = hbe_round_pledged remove_variable = hbe_project_pending
-        remove_variable = hbe_project_timer remove_variable = hbe_fund_pledge
-        remove_variable = hbe_declined_project
-        trigger_event_non_silently = { id = hbe_banquet.2 days = 10 }
-    } }
+ set_variable = { name = hbe_round_month value = 0 } set_variable = { name = hbe_feast_total value = 0 }
+ international_organization:hbe_empire ?= { every_international_organization_member = {
+  hbe_banquet_register = yes set_variable = { name = hbe_feast_points value = 0 }
+  remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered remove_variable = hbe_feast_helped
+  remove_variable = hbe_round_pledged remove_variable = hbe_fund_pledge remove_variable = hbe_declined_project
+ } } hbe_feast_recount = yes
 }
 hbe_fund_project = {
-    add_gold = -3 set_variable = hbe_round_contributed set_variable = hbe_round_delivered
-    change_variable = { name = hbe_contribution add = 1 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes }
+ if = { limit = { is_situation_active = situation:hbe_banquet NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee }
+  hbe_banquet_register = yes
+  add_gold = { value = hbe_feast_fee multiply = -1 } set_variable = hbe_round_contributed set_variable = hbe_round_delivered
+  change_variable = { name = hbe_feast_points add = 1 } change_variable = { name = hbe_contribution add = 1 }
+  change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes
+  add_country_modifier = { modifier = hbe_feast_cooperation years = 2 mode = replace }
+  hbe_feast_recount = yes
+ }
 }
-hbe_pledge_project = {
-    set_variable = hbe_round_pledged set_variable = hbe_fund_pledge
-}
-hbe_deliver_contract = {
-if = { limit = { OR = { var:hbe_delivery_circle = 1 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_chengdu_plain } } } set_variable = { name = hbe_recent_delivery_chengdu_plain value = yes years = 5 } }
-if = { limit = { OR = { var:hbe_delivery_circle = 2 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_southern_salt_wine } } } set_variable = { name = hbe_recent_delivery_southern_salt_wine value = yes years = 5 } }
-if = { limit = { OR = { var:hbe_delivery_circle = 3 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_eastern_river } } } set_variable = { name = hbe_recent_delivery_eastern_river value = yes years = 5 } }
-if = { limit = { OR = { var:hbe_delivery_circle = 4 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_northern_shudao } } } set_variable = { name = hbe_recent_delivery_northern_shudao value = yes years = 5 } }
-if = { limit = { OR = { var:hbe_delivery_circle = 5 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_central_hills } } } set_variable = { name = hbe_recent_delivery_central_hills value = yes years = 5 } }
-if = { limit = { OR = { var:hbe_delivery_circle = 6 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_western_tea_horse } } } set_variable = { name = hbe_recent_delivery_western_tea_horse value = yes years = 5 } }
-if = { limit = { OR = { var:hbe_delivery_circle = 7 AND = { NOT = { has_variable = hbe_delivery_circle } has_variable = hbe_home_southwestern_valleys } } } set_variable = { name = hbe_recent_delivery_southwestern_valleys value = yes years = 5 } }
-remove_variable = hbe_delivery_circle
-
-    remove_variable = hbe_project_pending remove_variable = hbe_project_timer
-    set_variable = hbe_round_delivered change_variable = { name = hbe_contribution add = 2 } change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes add_prestige = 1
-    situation:hbe_banquet = {
-        if = { limit = { prev = { var:hbe_delivery_kind = 1 } var:hbe_project_kind = 1 }
-            if = { limit = { prev = { var:hbe_delivery_role = 1 } } change_variable = { name = hbe_role_1 add = 1 } }
-            else_if = { limit = { prev = { var:hbe_delivery_role = 2 } } change_variable = { name = hbe_role_2 add = 1 } }
-            else = { change_variable = { name = hbe_role_3 add = 1 } }
-        }
-        else_if = { limit = { prev = { var:hbe_delivery_kind = 2 } var:hbe_project_kind = 2 }
-            if = { limit = { prev = { var:hbe_delivery_role = 1 } } change_variable = { name = hbe_role_1 add = 1 } }
-            else_if = { limit = { prev = { var:hbe_delivery_role = 2 } } change_variable = { name = hbe_role_2 add = 1 } }
-            else = { change_variable = { name = hbe_role_3 add = 1 } }
-        }
-    }
-    if = { limit = { var:hbe_delivery_kind = 0 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } hbe_clamp_guoqi = yes } situation:hbe_banquet ?= { change_variable = { name = hbe_dispute subtract = 1 } hbe_banquet_clamp = yes } }
-    trigger_event_non_silently = { id = hbe_banquet.3 }
-}
+hbe_pledge_project = {hbe_fund_project = yes}
+hbe_deliver_contract = {remove_variable = hbe_project_pending remove_variable = hbe_project_timer hbe_feast_help = yes}
 hbe_settle_accounts = {
-    if = { limit = { var:hbe_role_1 >= 1 var:hbe_role_2 >= 1 var:hbe_role_3 >= 1 var:hbe_dispute < 75 }
-        change_variable = { name = hbe_completed_projects add = 1 } change_variable = { name = hbe_dispute subtract = 5 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 5 } hbe_clamp_guoqi = yes }
-        international_organization:hbe_empire ?= { every_international_organization_member = {
-            if = { limit = { has_variable = hbe_round_delivered }
-                every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_domain }
-                    add_location_modifier = { modifier = hbe_banquet_success years = 3 mode = replace } }
-                if = { limit = { situation:hbe_banquet = { var:hbe_charter = 3 } } add_gold = 1 }
-                trigger_event_non_silently = { id = hbe_banquet.4 }
-            }
-        } }
-    }
-    else = { change_variable = { name = hbe_dispute add = 8 } international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 4 } hbe_clamp_guoqi = yes }
-        international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.5 } } }
-    }
-    hbe_banquet_clamp = yes hbe_advance_chapter = yes
-    change_variable = { name = hbe_round add = 1 }
-    if = { limit = { var:hbe_project_kind = 1 } set_variable = { name = hbe_project_kind value = 2 } }
-    else = { set_variable = { name = hbe_project_kind value = 1 } }
-    international_organization:hbe_empire ?= { every_international_organization_member = { remove_variable = hbe_subsidized_round } }
-    hbe_open_accounts = yes
+ hbe_feast_recount = yes
+ if = { limit = { var:hbe_feast_total >= var:hbe_feast_required }
+  change_variable = { name = hbe_completed_projects add = 1 }
+  international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 5 } hbe_clamp_guoqi = yes }
+  international_organization:hbe_empire ?= { every_international_organization_member = {
+   if = { limit = { var:hbe_feast_points > 0 }
+    add_gold = 6 add_prestige = 3 change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes
+    add_country_modifier = { modifier = hbe_feast_success years = 3 mode = replace }
+    if = { limit = { var:hbe_stance = 1 international_organization:hbe_common_party.var:hbe_party_points >= international_organization:hbe_local_party.var:hbe_party_points }
+     add_country_modifier = { modifier = hbe_feast_common_reward years = 3 mode = replace } }
+    else_if = { limit = { var:hbe_stance = 2 international_organization:hbe_local_party.var:hbe_party_points >= international_organization:hbe_common_party.var:hbe_party_points }
+     add_country_modifier = { modifier = hbe_feast_local_reward years = 3 mode = replace } }
+    trigger_event_non_silently = { id = hbe_banquet.4 }
+   }
+  } }
+  if = { limit = { current_year >= 1437 var:hbe_completed_projects >= 6 var:hbe_charter = 0 }
+   if = { limit = { international_organization:hbe_common_party.var:hbe_party_points >= international_organization:hbe_local_party.var:hbe_party_points } set_variable = { name = hbe_charter value = 1 } }
+   else = { set_variable = { name = hbe_charter value = 2 } }
+   international_organization:hbe_empire ?= { every_international_organization_member = { hbe_apply_charter = yes } }
+  }
+ } else = { international_organization:hbe_empire ?= { every_international_organization_member = { if = { limit = { var:hbe_feast_points > 0 } trigger_event_non_silently = { id = hbe_banquet.5 } } } } }
+ change_variable = { name = hbe_round add = 1 }
+ # Keep long-campaign milestone variables for existing civic and history events.
+ if = { limit = { current_year >= 1352 } set_variable = { name = hbe_chapter value = 2 } }
+ if = { limit = { current_year >= 1372 } set_variable = { name = hbe_chapter value = 3 } }
+ if = { limit = { current_year >= 1397 } set_variable = { name = hbe_chapter value = 4 } }
+ if = { limit = { current_year >= 1437 } set_variable = { name = hbe_chapter value = 5 } }
+ hbe_open_accounts = yes
 }
 hbe_advance_chapter = {
 if = { limit = { current_year >= 1352 var:hbe_completed_projects >= 3 var:hbe_chapter = 1 }
@@ -348,27 +319,13 @@ hbe_charter_maintenance = {
  }
 }
 hbe_banquet_monthly = {
-    international_organization:hbe_empire ?= { every_international_organization_member = { hbe_banquet_register = yes
-        if = { limit = { has_variable = hbe_project_pending NOT = { has_variable = hbe_project_timer } } hbe_deliver_contract = yes }
-    } }
-    change_variable = { name = hbe_round_month add = 1 }
-    if = { limit = { var:hbe_round_month = 12 }
-        international_organization:hbe_empire ?= { every_international_organization_member = {
-            if = { limit = { has_variable = hbe_fund_pledge }
-                remove_variable = hbe_fund_pledge remove_variable = hbe_round_pledged
-                if = { limit = { gold >= 4 } add_gold = -4 set_variable = hbe_round_contributed set_variable = hbe_round_delivered
-                    change_variable = { name = hbe_contribution add = 1 } change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 1 } hbe_clamp_guoqi = yes } }
-                else = { change_variable = { name = hbe_yiqi subtract = 8 } hbe_clamp_yiqi = yes situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 5 } hbe_banquet_clamp = yes } trigger_event_non_silently = { id = hbe_banquet.6 } }
-            }
-        } }
-    }
-    if = { limit = { has_variable = hbe_ballot_active } change_variable = { name = hbe_ballot_month add = 1 }
-        if = { limit = { var:hbe_ballot_month >= 6 } hbe_tally_charter = yes } }
-    if = { limit = { var:hbe_dispute >= 75 NOT = { has_variable = hbe_crisis_cooldown } }
-        set_variable = { name = hbe_crisis_cooldown value = yes years = 5 }
-        international_organization:hbe_empire ?= { every_international_organization_member = { trigger_event_non_silently = { id = hbe_banquet.23 } } }
-    }
-    if = { limit = { var:hbe_round_month >= 36 } hbe_settle_accounts = yes }
-    set_variable = { name = hbe_pot_display value = international_organization:hbe_empire.var:hbe_guoqi }
-    hbe_banquet_clamp = yes
+ if = { limit = { NOT = { has_variable = hbe_feast_v021 } }
+  set_variable = hbe_feast_v021 remove_variable = hbe_ballot_active
+  if = { limit = { var:hbe_charter = 3 } set_variable = { name = hbe_charter value = 2 } }
+  hbe_open_accounts = yes
+ }
+ international_organization:hbe_empire ?= { every_international_organization_member = { hbe_banquet_register = yes } }
+ change_variable = { name = hbe_round_month add = 1 } hbe_feast_recount = yes
+ if = { limit = { var:hbe_round_month >= 24 } hbe_settle_accounts = yes }
+ set_variable = { name = hbe_pot_display value = international_organization:hbe_empire.var:hbe_guoqi }
 }

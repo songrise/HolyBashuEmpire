@@ -1,0 +1,443 @@
+{
+  "version": "0.2.1",
+  "checks": [
+    {
+      "name": "80 technologies retain 80 unique native IDs",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_common_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_common_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_chengdu_plain_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_chengdu_plain_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_southern_salt_wine_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_southern_salt_wine_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_eastern_river_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_eastern_river_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_northern_shudao_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_northern_shudao_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_central_hills_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_central_hills_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_western_tea_horse_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_western_tea_horse_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_southwestern_valleys_1 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_southwestern_valleys_2 immediate fields",
+      "passed": true
+    },
+    {
+      "name": "14 real production methods resolve through native unlocks",
+      "passed": true
+    },
+    {
+      "name": "all productions consume real goods and output into market",
+      "passed": true
+    },
+    {
+      "name": "16 supplied buildings preserved with 7 extra production slots",
+      "passed": true
+    },
+    {
+      "name": "network bonuses depend on recent delivery, employment and manageable burden",
+      "passed": true
+    },
+    {
+      "name": "3 reported duplicate cards now have distinct modifiers",
+      "passed": true
+    },
+    {
+      "name": "road time stays above 20 percent on branch [1, 2, 3, 4, 5]",
+      "passed": true
+    },
+    {
+      "name": "road time stays above 20 percent on branch [1, 2, 6, 7, 8]",
+      "passed": true
+    },
+    {
+      "name": "AI rival targets only internal neighboring princes",
+      "passed": true
+    },
+    {
+      "name": "AI makes no forced wars or truce bypasses",
+      "passed": true
+    },
+    {
+      "name": "exactly two non-military parties",
+      "passed": true
+    },
+    {
+      "name": "funding has a once-per-round effect guard and real scaled payment",
+      "passed": true
+    },
+    {
+      "name": "completed service cannot double count",
+      "passed": true
+    },
+    {
+      "name": "only contributors receive end rewards",
+      "passed": true
+    },
+    {
+      "name": "ties reward both factions",
+      "passed": true
+    },
+    {
+      "name": "failure keeps participation rewards without penalty",
+      "passed": true
+    },
+    {
+      "name": "old third-party state migrates without restarting new campaigns",
+      "passed": true
+    },
+    {
+      "name": "adaptive goal remains attainable after unification",
+      "passed": true
+    },
+    {
+      "name": "four visible feast decisions",
+      "passed": true
+    },
+    {
+      "name": "three actions appear directly in native situation panel",
+      "passed": true
+    },
+    {
+      "name": "native two-leader template and two country member lists",
+      "passed": true
+    },
+    {
+      "name": "affected scripts have balanced nested syntax",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese complete technology effects",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese specific card effects",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese no old third-party choice in active entry",
+      "passed": true
+    },
+    {
+      "name": "english complete technology effects",
+      "passed": true
+    },
+    {
+      "name": "english specific card effects",
+      "passed": true
+    },
+    {
+      "name": "english no old third-party choice in active entry",
+      "passed": true
+    },
+    {
+      "name": "manifest matches all built files",
+      "passed": true
+    }
+  ],
+  "passed": 109,
+  "engine_test": "separate targeted fixture; not a full campaign"
+}
