@@ -9,21 +9,21 @@ COLORS={'hbe_indigo':(26,43,66),'hbe_cinnabar':(122,30,28),
         'hbe_russet':(89,44,30),'hbe_azure':(35,69,85),'hbe_gold':(191,157,80),'hbe_ivory':(225,215,186)}
 FIELDS=['hbe_indigo','hbe_cinnabar','hbe_indigo','hbe_pine','hbe_dark_red','hbe_pine','hbe_russet']
 PATTERNS=['pattern_fringe.dds','pattern_diagonal_split_01.dds','pattern_vertical_split_01.dds','pattern_horizontal_bar_01.dds','pattern_horizontal_split_01.dds','pattern_solid.dds','pattern_border_thin.dds']
-def extract_charges(im):
+def extract_charges(im,cols=6,rows=6,threshold=128):
     # Assign whole connected atlas objects by center, keeping tails across grid lines.
-    w,h=im.size;alpha=im.getchannel('A').tobytes();seen=set();groups=[[] for _ in range(36)]
+    w,h=im.size;alpha=im.getchannel('A').tobytes();seen=set();groups=[[] for _ in range(cols*rows)]
     for start,v in enumerate(alpha):
-        if v<=128 or start in seen:continue
+        if v<=threshold or start in seen:continue
         seen.add(start);q=deque([start]);points=[]
         while q:
             p=q.popleft();points.append(p);x=p%w;y=p//w
             for n in ((p-1 if x else -1),(p+1 if x<w-1 else -1),(p-w if y else -1),(p+w if y<h-1 else -1)):
-                if n>=0 and n not in seen and alpha[n]>128:seen.add(n);q.append(n)
+                if n>=0 and n not in seen and alpha[n]>threshold:seen.add(n);q.append(n)
         xs=[p%w for p in points];ys=[p//w for p in points]
         if len(points)<35:continue
         b=(min(xs),min(ys),max(xs)+1,max(ys)+1)
-        col=min(5,int((b[0]+b[2])/2/w*6));row=min(5,int((b[1]+b[3])/2/h*6))
-        groups[row*6+col].append((len(points),b,points))
+        col=min(cols-1,int((b[0]+b[2])/2/w*cols));row=min(rows-1,int((b[1]+b[3])/2/h*rows))
+        groups[row*cols+col].append((len(points),b,points))
     result=[]
     for parts in groups:
         if not parts:raise ValueError('Missing isolated heraldic cell '+str(len(result)))

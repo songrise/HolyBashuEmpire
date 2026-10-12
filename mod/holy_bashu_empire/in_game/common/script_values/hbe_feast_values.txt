@@ -1,1 +1,1 @@
-hbe_feast_fee = { value = monthly_income_trade_and_tax multiply = 0.35 min = 2 max = 6 }
+﻿hbe_feast_fee = { value = monthly_income_trade_and_tax multiply = 0.35 min = 2 max = 6 }

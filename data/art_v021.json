@@ -1,0 +1,479 @@
+{
+  "mode": "built-in image_gen",
+  "version": "0.2.1",
+  "exports": [
+    {
+      "key": "hbe_common_party",
+      "name": "共建派",
+      "kind": "organization",
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 0,
+      "crop": [
+        23,
+        22,
+        245,
+        248
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "751cabc5c3119bc17fee7e1771857960623896eb4cdf6eaaff403af83a3dde21"
+    },
+    {
+      "key": "hbe_local_party",
+      "name": "兴业派",
+      "kind": "organization",
+      "path": "main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 1,
+      "crop": [
+        277,
+        35,
+        490,
+        248
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "53191cf7c2fb4ae416c6431a77c0b85cb9ce21606d26688745c6b261157c0412"
+    },
+    {
+      "key": "hbe_feast_cooperation",
+      "name": "会盟相助",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_cooperation.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 2,
+      "crop": [
+        529,
+        48,
+        751,
+        238
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "ab163d7bc3a7788c6a8b2a7933843dc5b0ff980641265d3b10e3365f84ee9424"
+    },
+    {
+      "key": "hbe_feast_success",
+      "name": "盛会余泽",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_success.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 3,
+      "crop": [
+        793,
+        26,
+        1017,
+        239
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "5e981aa7b0f32acefc4c1f085970c53cdc2238bba5305e365954571be7d25154"
+    },
+    {
+      "key": "hbe_feast_common_reward",
+      "name": "共同兴建",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_common_reward.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 4,
+      "crop": [
+        1038,
+        38,
+        1273,
+        235
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "9cb57e3f88844a60c1e860d64e4d4a831834c29fdd0f37abb41d0c06b22bd4eb"
+    },
+    {
+      "key": "hbe_feast_local_reward",
+      "name": "百业争荣",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_local_reward.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 5,
+      "crop": [
+        1291,
+        50,
+        1515,
+        245
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "89e5555ca4842075eb1cf5e70b19511c2b9ba66c0ca95c2c798c9bdf8e92d50e"
+    },
+    {
+      "key": "hbe_network_chengdu_plain_4",
+      "name": "渠田共济",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 6,
+      "crop": [
+        22,
+        277,
+        254,
+        496
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "094b80e7261564b5e50b00d0840b2dc61890575b48e2fbea2fc863c5c1907707"
+    },
+    {
+      "key": "hbe_network_southern_salt_wine_4",
+      "name": "井盐担保",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 7,
+      "crop": [
+        285,
+        265,
+        496,
+        497
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "a49eb8983c034086fd9ede9d56b0109fc6313826f9fec838acebe7bba7e8c512"
+    },
+    {
+      "key": "hbe_network_eastern_river_4",
+      "name": "川江互保",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 8,
+      "crop": [
+        520,
+        264,
+        755,
+        497
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "e312edc8db89b4f04d9eacdfcac29ea544624b8bc9f8a12ef3d63f5c1a57dcf1"
+    },
+    {
+      "key": "hbe_network_northern_shudao_4",
+      "name": "关隘轮守",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 9,
+      "crop": [
+        779,
+        278,
+        1019,
+        505
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "35c43d97cb254163aa499fad7eae205adabcf1d0e880ba63b715948e4b8899f3"
+    },
+    {
+      "key": "hbe_network_central_hills_4",
+      "name": "义仓相济",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 10,
+      "crop": [
+        1044,
+        273,
+        1278,
+        499
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "9e072f0e730e87db1337a62b3e61bd05578a7ae43a8572b14f56b81be9ee77cd"
+    },
+    {
+      "key": "hbe_network_western_tea_horse_4",
+      "name": "茶马通路",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 11,
+      "crop": [
+        1292,
+        289,
+        1515,
+        496
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "0084db0c6330e3257d0a1a48829877e53078def2cf3841e80beb1a9ba0ef8a23"
+    },
+    {
+      "key": "hbe_network_southwestern_valleys_4",
+      "name": "诸谷换市",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_4.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 12,
+      "crop": [
+        21,
+        531,
+        253,
+        737
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "4223a60333630cb615a54fae3f0f299ddfee7318e915ba8cf76a446098969dc6"
+    },
+    {
+      "key": "hbe_network_chengdu_plain_7",
+      "name": "锦江讲会",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 13,
+      "crop": [
+        276,
+        537,
+        501,
+        737
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "a67502f35ddc95b75197269f788ea3f61612ba9e5312b3fe075cfd2d96f1f892"
+    },
+    {
+      "key": "hbe_network_southern_salt_wine_7",
+      "name": "盐酒席面",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 14,
+      "crop": [
+        532,
+        536,
+        764,
+        726
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "290d9eaf17d4b0d5676a9f9ddc4cef517f5372c83b23490868fd24cf84813210"
+    },
+    {
+      "key": "hbe_network_eastern_river_7",
+      "name": "江岸会防",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 15,
+      "crop": [
+        779,
+        518,
+        1013,
+        737
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "e1f608aaa90a877569b8c9e6be641efd1d570044bb5948cad88e1936d98db8fe"
+    },
+    {
+      "key": "hbe_network_northern_shudao_7",
+      "name": "蜀道接递",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 16,
+      "crop": [
+        1033,
+        525,
+        1272,
+        736
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "d0f5569ed374eb970c3d8da2075a5cacf8564533fd7732e0bdc6d5b7f40ed83a"
+    },
+    {
+      "key": "hbe_network_central_hills_7",
+      "name": "乡社清算",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 17,
+      "crop": [
+        1293,
+        520,
+        1517,
+        739
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "6c7c4228672605d1688d1a8c28d6e23788ad72aa70305be1952edb3c9baec670"
+    },
+    {
+      "key": "hbe_network_western_tea_horse_7",
+      "name": "山门公议",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 18,
+      "crop": [
+        17,
+        750,
+        264,
+        984
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "d558952d3b5503a584f302493d8377e0981a905dd6472da1c094ae9bf1374ef1"
+    },
+    {
+      "key": "hbe_network_southwestern_valleys_7",
+      "name": "乡寨共保",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_7.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 19,
+      "crop": [
+        286,
+        749,
+        500,
+        991
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "dfed6041d86e8eecb6c998d412233d3c1c8502374d1609a14026357ca242e042"
+    },
+    {
+      "key": "hbe_feast_fund_action",
+      "name": "为会盟出资",
+      "kind": "action",
+      "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_fund_action.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 20,
+      "crop": [
+        529,
+        773,
+        751,
+        989
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "de1703f4bfaa4d705cd3eb59a9b0c49a93e888b100d74794210813ac96d98409"
+    },
+    {
+      "key": "hbe_feast_common_action",
+      "name": "支持共建派",
+      "kind": "action",
+      "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_common_action.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 21,
+      "crop": [
+        780,
+        750,
+        1014,
+        988
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "33060a7a96a966752a2fc44b0be95efe0da38bcf37cbddecb3685cf198e674e2"
+    },
+    {
+      "key": "hbe_feast_local_action",
+      "name": "支持兴业派",
+      "kind": "action",
+      "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_local_action.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 22,
+      "crop": [
+        1041,
+        760,
+        1271,
+        992
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "bb7e5baff5d9ba9b77ff79ce32ec4dfdb7e65af3cbfee1d4de3dfa06e87be7aa"
+    },
+    {
+      "key": "hbe_ai_internal_ambition",
+      "name": "府州竞逐",
+      "kind": "modifier",
+      "path": "main_menu/gfx/interface/icons/modifiers/hbe_ai_internal_ambition.dds",
+      "source": "assets/art_v021/icons.png",
+      "cell": 23,
+      "crop": [
+        1293,
+        749,
+        1517,
+        984
+      ],
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "b85bf66b6605c5ccfbe56feca9fd2b7c39c81aea3c33f974f9e92a89dacaf7fb"
+    },
+    {
+      "key": "hbe_feast_two_parties_v021",
+      "kind": "panel",
+      "path": "main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds",
+      "event_path": "main_menu/gfx/interface/hbe/events/feast_two_parties_v021.dds",
+      "source": "assets/art_v021/feast_two_parties.png",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "sha256": "9cd3386e71afdc065a540d737323ce52b9a3e5b205f658b791dd88296e391626"
+    }
+  ],
+  "prompts": "docs/art_prompts_v021.md",
+  "source_sha256": {
+    "assets/art_v021/icons.png": "1d629cf4ff1bf12b35abde6dfbefcba07d6fb695d472cfcb2283593ab53126cc",
+    "assets/art_v021/feast_two_parties.png": "62f7e87d80d4f9222eac5a976a95dd9003f5f331cdba6467dbbb527a39808456"
+  }
+}

@@ -78,7 +78,7 @@ def main():
     check('war calls have a cross-boundary gate','join_war_disabled_trigger' in (m/'in_game/common/join_war_rules/hbe_isolation.txt').read_text(encoding="utf-8-sig"))
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
+    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -97,7 +97,7 @@ def main():
     check('participation includes all IO members and subjects','visible = { is_member_of_international_organization = international_organization:hbe_empire }' in sit)
     check('monthly registration does not filter emperor or subjects','every_international_organization_member = { hbe_banquet_register = yes' in banquet)
     check('situation persists after charters and 1457','current_year < 1457' not in banquet and 'can_end = { NOT = { exists = international_organization:hbe_empire } }' in sit)
-    if manifest['version']=='0.2.1':
+    if manifest['version'] in ('0.2.1','0.3.0'):
         check('two-year accounts are once per situation','var:hbe_round_month >= 24' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
         check('cooperative settlement uses adaptive contribution target','var:hbe_feast_total >= var:hbe_feast_required' in banquet)
         check('funding requires real scaled payment','gold >= hbe_feast_fee' in new_decisions and 'hbe_fund_project' in banquet)
@@ -113,7 +113,7 @@ def main():
     check('each of seven circles needs strict local majority',banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
     check('79 inherited banquet events and 117 total events',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117)
     check('all 36 princes have personal events',sum('has_or_had_tag = '+c['tag'] in new_events for c in countries)==36)
-    check('regional researched options and late recurring events exist','hbe_tech_western_tea_horse_3' in new_events and 'current_year >= 1457' in new_events)
+    check('regional researched options and late recurring events exist',('hbe_choice_western_tea_horse_1' in new_events if 'event_choices' in manifest else 'hbe_tech_western_tea_horse_3' in new_events) and 'current_year >= 1457' in new_events)
     check('situation has native GUI panel',(m/'in_game/gui/panels/situation/hbe_banquet.gui').is_file())
     flagdefs=(m/'main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt').read_text(encoding='utf-8-sig')
     flagkeys=[k for k,*_ in blocks(flagdefs,0)]
@@ -153,21 +153,21 @@ def main():
         key=e['key'];painted_dds('painted event background '+key,e['image'],(440,1080),e['sha256'])
         check('private native illustration scene '+key,f'hbe_event_scene_{key} = ' in scene_script and f'list = "hbe_event_background_{key}"' in scene_script and f'hbe_event_art_{key}' in database and f'gfx/interface/hbe/events/{key}.dds' in image_script)
     event_blocks={key:all_events[a:b] for key,_,a,b,_ in blocks(all_events,0)}
-    check('96 event illustration tags link private scenes',all(f'1000 = hbe_event_art_{e["scene"]}' in event_blocks[e['id']] for e in full['event_mapping']))
+    check('96 event illustration tags link private scenes',all(('1000 = hbe_event_art_feast_two_parties' if 'art_v021' in manifest and e['id'] in ['hbe_banquet.1','hbe_banquet.2','hbe_banquet.4','hbe_banquet.5','hbe_banquet.7'] else f'1000 = hbe_event_art_{e["scene"]}') in event_blocks[e['id']] for e in full['event_mapping']))
     check('native portrait layers retained and native scene database not overridden','list = "characters_regular"' in scene_script and not (m/'in_game/gfx/scenes/00_scenes_events.txt').exists())
     check('eight organization emblems and dedicated panel files',len(full['organizations'])==8 and {e['key'] for e in full['organizations']}=={'hbe_empire'}|{'hbe_circle_'+r[0] for r in manifest['regions']})
     for e in full['organizations']:
         painted_dds('organization emblem '+e['key'],e['icon'],(128,128),e['icon_sha256'])
         painted_dds('organization panel '+e['key'],e['panel'],(440,1080),e['panel_sha256'])
     panel=full['situation_panel'];painted_dds('painted banquet panel',panel['image'],(440,1080),panel['sha256'])
-    check('banquet GUI uses painted panel','gfx/interface/hbe/panels/hbe_banquet.dds' in (m/'in_game/gui/panels/situation/hbe_banquet.gui').read_text(encoding='utf-8-sig'))
+    check('banquet GUI uses painted panel',any(p in (m/'in_game/gui/panels/situation/hbe_banquet.gui').read_text(encoding='utf-8-sig') for p in ['gfx/interface/hbe/panels/hbe_banquet.dds','gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds']))
     pictures=full['decision_pictures']
     check('seven atlases supply 70 unique non-research pictures',full['decision_atlases']==7 and len(pictures)==70 and len({e['key'] for e in pictures})==70 and len({e['sha256'] for e in pictures})==70)
     decision_scripts='\n'.join(f.read_text(encoding='utf-8-sig') for f in (m/'in_game/common/decisions').glob('hbe*decisions.txt'))
     decision_blocks={key:decision_scripts[a:b] for key,_,a,b,_ in blocks(decision_scripts,0)}
     for e in pictures:
         painted_dds('painted non-research decision '+e['key'],e['image'],(440,1080),e['sha256'])
-        check('decision picture linked '+e['key'],f'gfx/interface/hbe/decisions/{e["key"]}.dds' in decision_blocks[e['key']])
+        check('decision picture linked '+e['key'],any(p in decision_blocks[e['key']] for p in [f'gfx/interface/hbe/decisions/{e["key"]}.dds',f'gfx/interface/hbe/v021/decisions/{e["key"]}.dds']))
     check('all 97 decision images exist and no active checker placeholders',len(decision_blocks)==97 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
     check('all implicit decision titles and catalogue entries localized',all(k+'.title' in loc_keys and k+'.title.entry' in loc_keys and k+'.desc.entry' in loc_keys for k in decision_blocks))
     check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and 'tags = {' in b for b in decision_blocks.values()))

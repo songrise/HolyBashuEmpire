@@ -1,4 +1,4 @@
-monthly_country_pulse = { on_actions = { hbe_banquet_country_maintenance } }
+﻿monthly_country_pulse = { on_actions = { hbe_banquet_country_maintenance } }
 hbe_banquet_country_maintenance = { effect = {
     if = { limit = { hbe_is_prince = yes NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
         international_organization:hbe_empire ?= { add_country_to_international_organization = prev }

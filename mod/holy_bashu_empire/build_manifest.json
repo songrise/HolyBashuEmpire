@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.3.0",
   "countries": [
     {
       "tag": "BAB",
@@ -6590,77 +6590,84 @@
     "source_registry": "data/player_guides_v01.json"
   },
   "files": {
-    ".metadata/metadata.json": "c1879e8847b1c508bcbc162f81993d887925c0b49e53357714c046959dc405ba",
-    ".metadata/thumbnail.png": "193d31b122d51b4b109a3242a5e14d80867a1d742617a7c772d4c635f59f3c2f",
-    "in_game/common/advances/hbe_advances.txt": "186d6f6f03c3fd90cd1a5bab4df6a3432a07b3ba683eec41dee067f2d3d4f112",
-    "in_game/common/advances/hbe_civic_advances.txt": "d52fb5f5d20aa037da0ee2834375e45c1e98a268db9ee2e997468bb50ceb4e3c",
-    "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt": "de4bce5c7f08abf9e4ed84bc10baf43196208d3dfd44e77cc3ca6b0f353f082d",
-    "in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt": "24ff7d7b11a594a42936fef6be5d0c4b706e0ae42486dd6baba2a518ce777aeb",
-    "in_game/common/biases/hbe_feast_opinions.txt": "3d689200b5e44e439e736fe8329f9f901d5f300d78b841b70a6cb68fd887babe",
+    ".metadata/metadata.json": "69fbfe308402b018059c8769fdbf83ad4724a669580010a79d89b90f6d654dd7",
+    ".metadata/thumbnail.png": "5202607af092d6c05c08ef7a1162943392bf7e86daa6ea57a54212c0ef3c8481",
+    "in_game/common/advances/hbe_advances.txt": "a05a8da97187c02510583f467d366103fc50531fdcf0a428dc28971eab12ae2a",
+    "in_game/common/advances/hbe_civic_advances.txt": "8e9d1a1798d917820e8e7a2ff07c44a5906a1a584ce00f7574ec7ebe2bc1ca24",
+    "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt": "19206a630242baa2bbd7db6fa2ce6d81bd3eb033369b66f1678e8872f44e1d1b",
+    "in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt": "059da010d23efa1f12c71ff15983d75824b9057e8ad18ca519f8f2adc66bac7b",
+    "in_game/common/biases/hbe_feast_opinions.txt": "25974a12c74e52075f32821603bd073cd84958dbb5df8edb2e508886e33a9973",
     "in_game/common/biases/hbe_opinions.txt": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3",
-    "in_game/common/building_types/hbe_civic_buildings.txt": "b886a38f233b0ec49c13666097f3bcd7069da98d87e706e9d2ddd8d6e93143fe",
+    "in_game/common/building_types/hbe_civic_buildings.txt": "ccabd2aef6884523bcc0724cbf843d93f8c9c437a103c735a03c0e82dd05141b",
     "in_game/common/country_description_categories/hbe_profiles.txt": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00",
     "in_game/common/customizable_localization/country_history.txt": "a18cce46abee7c833798aab1e24921e8b043eb864941837e9d05b8cf03918310",
-    "in_game/common/decisions/hbe_banquet_decisions.txt": "f411ea5486582ef0429cf871949c2dbcb7b112e3877a1610e3bb136d4d01586b",
+    "in_game/common/decisions/hbe_banquet_decisions.txt": "fd82438cfbece64bab7dfa0dcec86f22f2caa6120ec40fcb188901c6c4bdba58",
     "in_game/common/decisions/hbe_civic_decisions.txt": "8ff2aee1def7c74659417ec3bc44c42f4385eddd91dcb4b103f3f4306ef944b3",
     "in_game/common/decisions/hbe_decisions.txt": "68ca0cd985fe9c623f0bb50ca08933e392db875845547a1984780dda3aead623",
     "in_game/common/estate_privileges/hbe_civic_privileges.txt": "ee967323f1a7d06db5682cb3b855e97263e9a501ea5801d7e1c3b01a2fa3818d",
-    "in_game/common/generic_actions/hbe_feast_actions.txt": "ed8dcfc566cb6b998faacc8706a7881a2afa13b047d49b9ab22224769460be67",
+    "in_game/common/generic_actions/hbe_feast_actions.txt": "54565feb164f1c30246279b82e01cb01354c6ae9296b0af83933b6bde24c5df0",
+    "in_game/common/goods/hbe_special_goods.txt": "6edb3531f23f6af955ff53cc6590d517bd2ea00dd3cef507cd1111b6d7f42be6",
     "in_game/common/goods_demand/hbe_civic_construction.txt": "01d69e30adc1bc40500adbfbbe43567219ec8f45c6ce150ae854f85f9f1018e1",
+    "in_game/common/goods_demand/pop_demands.txt": "8efe07e9940d6db51da49c5e9ec27e6dbe3f15523f60c1fe3c92af0ccd4bfffb",
     "in_game/common/international_organization_land_ownership_rules/hbe_land.txt": "092e362f4e2fd68a7c65c43e40f938a0913604c4f6c201b19ba11ea74dfeefbc",
     "in_game/common/international_organization_special_statuses/hbe_statuses.txt": "ac82df70c67828890cad12553b6aeaf11d762b6843ceaf52eb54a1f6338869c9",
     "in_game/common/international_organizations/hbe_empire.txt": "104d17ce6d04b9ba3b899c3a419844658fe0aeae0794b8d9da4d93d84ba08f0a",
-    "in_game/common/international_organizations/hbe_feast_parties.txt": "e47e8518dff9054825026ae789857a55ea4d8e958f345ddfeb2c80d5d82cb305",
+    "in_game/common/international_organizations/hbe_feast_parties.txt": "2894bd9d3affca0af4699700c1da6ae0883fcf15502f21d279e01add17396e68",
     "in_game/common/join_war_rules/hbe_isolation.txt": "b28bcc3370ebc565e37530d0c531b8c94718ae99ebebdf96c8ef84df8613018d",
     "in_game/common/laws/hbe_civic_law.txt": "fe3f9fba423ebe46aa6974dc85f5c037880bdaa53dc62710c86dab7f3c1af205",
-    "in_game/common/on_action/hbe_ai_on_actions.txt": "15ec56889b1aa30153fabb69cdebad41eeb25290090c15117f403905211168e2",
-    "in_game/common/on_action/hbe_banquet_on_actions.txt": "57831db6f02386b7a44633219114b9c5d3a7e2bcbda625e230e7e1e01a47aeaa",
+    "in_game/common/on_action/hbe_ai_on_actions.txt": "71e87bad553e39e8885adfd7ae52772f085735e26bda81b249a03430cc36e96b",
+    "in_game/common/on_action/hbe_banquet_on_actions.txt": "4ac0eea5b0f7517abc8ee3ac3f0b59671db5a2dfca0cfe6afae85deb34fb6bbc",
     "in_game/common/on_action/hbe_civic_on_actions.txt": "3ddd608cfa502762e8a0c6eb1efb45f6f9ae61a2be9d5f0c9a7cfb059c367431",
     "in_game/common/on_action/hbe_native_content_on_actions.txt": "8aef95955a4897efb19680b097fa364f0529aa9b242c1f69caa55c1bcc09f930",
     "in_game/common/on_action/hbe_on_actions.txt": "340507837a04f692839901754def88c93b4bb174d17aec13f4eebaf427543a4d",
-    "in_game/common/on_action/hbe_simple_banquet_on_actions.txt": "628720cf8a884d0645356e66dc20f4acc09c9f13a464ff4fda7573d2731aed2b",
-    "in_game/common/on_action/hbe_technology_on_actions.txt": "e6df1880cd4f46188bc797c02654079ba6b13d3293955c7dd2c6906f1df88fde",
+    "in_game/common/on_action/hbe_simple_banquet_on_actions.txt": "2b4fbefb81bb48d55160a24338603af189631e62fac30f4e9f39d5a4be4b3d2e",
+    "in_game/common/on_action/hbe_technology_on_actions.txt": "643f65190f2c82c95da033b31f4e3cf2d2f32f826925728d4148438b87e7ac7b",
     "in_game/common/parliament_issues/hbe_civic_issues.txt": "d956ff1278417ca38f2eaad596e5886799f100e79313dbd5242d1a1b0195e7ef",
     "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
     "in_game/common/script_values/hbe_civic_values.txt": "7f3943b96c3e6e6e8c1b042a612f8dc8eb2e7c493b7bb6c34d36e8c6eb488a53",
-    "in_game/common/script_values/hbe_feast_values.txt": "155f9f7f8fc142c84867a2400cc4e546ad59b9d6ff7220644ab3941ab21b02b9",
-    "in_game/common/scripted_effects/hbe_ai_effects.txt": "a5d17328732644674bc8af4db49804f24d673e0fb676e08d32ad2a08bcbd845f",
-    "in_game/common/scripted_effects/hbe_banquet_effects.txt": "5da2ff5c7422eeda80dd526467c5b24b713522f9803bf2137928f5af89eb169f",
-    "in_game/common/scripted_effects/hbe_civic_effects.txt": "c21ccff9827a949b36736b2b3de57e96b413cae68190e06185b039c902a5f8fd",
+    "in_game/common/script_values/hbe_feast_values.txt": "76bcf431443a870007f98acdf51b7322c9f5ff442a1a3bc0266fa6ba7a00bfd7",
+    "in_game/common/scripted_effects/hbe_ai_effects.txt": "f158733dccf6d238d0da5455538d8672d950c6cc16697c2dac8d516a8bad501e",
+    "in_game/common/scripted_effects/hbe_banquet_effects.txt": "f239b0b1db45907b0d834341b299915f588bac72958468958c21b874f090cacf",
+    "in_game/common/scripted_effects/hbe_civic_effects.txt": "f59ce3fcf58981c984daa69b1d5bea9b2ff62eafbb0793e50a967f41020f3b57",
     "in_game/common/scripted_effects/hbe_effects.txt": "b3beccd30485b420fccc46c3970393047f2f5de1f489d6b72bbcc1b3aaf66fba",
     "in_game/common/scripted_effects/hbe_native_content_effects.txt": "40ef74f01c8153ce328f7c68ac5fe8b78482d60125f4eed75e1bdee1160ed051",
-    "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt": "4ac5c7eaaf41d4bb38a10d3a83bf98d4f026480b03bad5ad7316f44cb9c55833",
-    "in_game/common/scripted_effects/hbe_technology_effects.txt": "43fbd22a06f57076bb2833285b7482d071cbc64ec0d458ba6592c0ccabfbb7c1",
+    "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt": "32bdb0311a5622463489fb2df6b8f9ebb5dc5a6c12298a51cd095bd637d72563",
+    "in_game/common/scripted_effects/hbe_technology_effects.txt": "98436c41935890d591d4cda9d2df0cfc1e130368739321bf6cbd27c66ec12f96",
     "in_game/common/scripted_geography/hbe_geography.txt": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f",
     "in_game/common/scripted_triggers/hbe_civic_triggers.txt": "5069ae83fd819bcfb3e1e5d70584d0955b51ece64b9c8c9302115d3ee4cdacc0",
     "in_game/common/scripted_triggers/hbe_triggers.txt": "3762b16b08198ddbeab78f35226324003735566dd2804f63e4b74042f63a7eca",
-    "in_game/common/situations/hbe_banquet.txt": "d2aa44a678d7cee910a1e9561a5a8184f134f6e1b7cb63fe5cc0e9861726d61a",
+    "in_game/common/situations/hbe_banquet.txt": "de087c057e3b4b6df3f6e4afb8631d53dc38ee3839ec6495f8b4555ca7696fd3",
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
     "in_game/common/unit_types/hbe_civic_units.txt": "5ed317e4a8f634d3daa67687f826b2c46832e99580593f4a95f0e6663d04d51f",
-    "in_game/events/hbe_banquet_events.txt": "c8278b14042d1a9e95624082344e3f9faaac0c7a63b1da64fac20475c8569937",
-    "in_game/events/hbe_civic_events.txt": "3b9d1737c2efa5d6e8c646d840d0b542aadfd14124a684a706b0e21e44949c5f",
-    "in_game/events/hbe_events.txt": "d412f50c98699b68fff78704c1b67f800227b33785544233837ba77fb8a2e141",
+    "in_game/events/hbe_banquet_events.txt": "968f12b580b21645f4ac94741e76a4144174e0f0460c5ccced73f383c3dd182d",
+    "in_game/events/hbe_civic_events.txt": "66aba8b28f5ab2dff2f9ca06cdea2c473e3a234bae349fdd82623f78b8193288",
+    "in_game/events/hbe_events.txt": "99b09cc13f1c53ad867185d1651d381e8e9867abd7fbaf5262f95bd2ac7faf4d",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
+    "in_game/gfx/images/hbe_v021_backgrounds.txt": "9fdc73f4484385dabe78baa1f1a7e7be2c4d9b0a9005955cb05c9ad2a55ba944",
     "in_game/gfx/scenes/hbe_civic_scenes.txt": "a395f832ca7d26270af884c3d5f5757a211534fc8c2c692a94daec2b42d1d7e4",
     "in_game/gfx/scenes/hbe_event_scenes.txt": "5c626fe9edf4338fdeb1c4713d44d552d1ecd4a388c6270add23c29d5ac04ee2",
+    "in_game/gfx/scenes/hbe_v021_scenes.txt": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856",
     "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "00205abfc446974e38b49ad84742bb1137cc0e850d84d7cb9219e0e930f290c6",
-    "in_game/gui/panels/situation/hbe_banquet.gui": "cd20335c51922375a8e35843d375c9480800cb878cb8c7dae59620171aa2bba8",
+    "in_game/gui/panels/situation/hbe_banquet.gui": "f174547bd44605a0bfe0b2122fcda1d7c66bd5d59b3d6bc84a4b00aeec225746",
     "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
     "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa",
+    "loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt": "4094274778343be9e6caee5857cc9bd2406c012525d8d64084e70b9b83d65c02",
     "loading_screen/gfx/interface/hbe/placeholder.dds": "226cfe7ca22f750e3bdf461bbfdffd389559dfe62fe393b2fe73ba9d1d536c41",
     "main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt": "5cc1082988fcce5f2c9c77df0a1a33502fccc92b4ab674f4c0c1420d85e0a53a",
     "main_menu/common/game_concepts/hbe_concepts.txt": "f008931a6fd8e34e993f5b356cde8c3ec9f0ac2968d3a1cc382ad35924f24ceb",
     "main_menu/common/modifier_icons/hbe_icons.txt": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978",
+    "main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt": "1bbdb431adcbcddb3838e31af4217fa9144b1f6b326f02a6545d73c352653e46",
     "main_menu/common/modifier_type_definitions/hbe_types.txt": "3cb6310b5f2afb958ad0d0f8f6605ae52bcb2e68db61784d7cedcbc8be5ec511",
     "main_menu/common/named_colors/hbe_flags.txt": "513cbb0779c9fc42ee447024670f41e18e0cd01d182e2a968be63b343abf3862",
     "main_menu/common/scenarios/hbe_scenarios.txt": "a1721fee702056ca5fc956c12382a376ddacebcb6af70fc765def6878648f3c5",
-    "main_menu/common/static_modifiers/hbe_ai_modifiers.txt": "494df3b77acb6670e7e0e8835635f1f941f25dd3e48118b6ee8717052bd7687b",
+    "main_menu/common/static_modifiers/hbe_ai_modifiers.txt": "2f1f9367d42553bc4403f029870238c172f229a686dbdced11a51cbed8f826ba",
     "main_menu/common/static_modifiers/hbe_civic_modifiers.txt": "aab20e6faae1024508ecfc43ad7d2abec037196524ba57235add59a8d0b06500",
-    "main_menu/common/static_modifiers/hbe_feast_modifiers.txt": "3241ae5e4c379d0298e0a301f36c5a79d1ba2de10f421d40090b0bb101182979",
+    "main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt": "3dc38d6bcfdc7173d3b0f1ceeeed671bb4482506e3ccce3b205fa8b0f7c3f107",
+    "main_menu/common/static_modifiers/hbe_feast_modifiers.txt": "1a079a367747502380069afb5eed6393253ee8edf627365d9274d3237aff501c",
     "main_menu/common/static_modifiers/hbe_modifiers.txt": "a0a1be70b87ff6f77d7774d4c778a12654000a39b9d7a8992cf1cc501d741334",
-    "main_menu/common/static_modifiers/hbe_technology_modifiers.txt": "9316fb3bd756cb0d286aba12ce35c6ed17b3f400cf73d16feab8d58ea74da519",
+    "main_menu/common/static_modifiers/hbe_technology_modifiers.txt": "3bf0b916239835d34f6e0056bd259620ddd18a57bb0e51db320d64c20a360c89",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bab.dds": "82d9f93d929687ceebd15e58ec1823b34713edf546a2f9370aad165e8e679df4",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bae.dds": "ec54c27d1994f5b43294c0d9fd80f1569825b4add52c474ec022635eaf075794",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baf.dds": "b45a3a1ad64b33a87899e1efd4df0ae16ca10f448e8023fdf1798b4f4270190a",
@@ -6870,6 +6877,7 @@
     "main_menu/gfx/interface/hbe/events/civic_training.dds": "3b89350cabdec575ef435ad6f28819815d75359ad66bef793691be312c5a77cc",
     "main_menu/gfx/interface/hbe/events/council.dds": "2052c370d389951246f66ab65ba55d5c731fbb005bfad89ec7666e3cd4986f59",
     "main_menu/gfx/interface/hbe/events/crisis.dds": "3d24e470f55c0824a702c0f04e821c006947db133341a10f4a71c40f9d002afd",
+    "main_menu/gfx/interface/hbe/events/feast_two_parties_v021.dds": "9cd3386e71afdc065a540d737323ce52b9a3e5b205f658b791dd88296e391626",
     "main_menu/gfx/interface/hbe/events/grain.dds": "2523d791037f4a576da6707d1b322e6606fcc1e9fbd0a60f74df25a9b4addd31",
     "main_menu/gfx/interface/hbe/events/ledger.dds": "1a7e6c486242a905e1cc82ba6db997756d2719602ab6865ac7c54bae9d6f6d01",
     "main_menu/gfx/interface/hbe/events/river.dds": "2e7046180ae73d23b3df23e8bbd08f2c37187068ba3c6ee64cd890f0d261aec9",
@@ -6879,6 +6887,7 @@
     "main_menu/gfx/interface/hbe/events/valleys.dds": "1e29e63563b7cb3063b49bc358ff026ddedec0ff4479371c1df9cb366bbe5ad1",
     "main_menu/gfx/interface/hbe/events/water.dds": "63e3d231230116b2c683a3022267f34d4b613d56f248bdac3f69ed3b38a23586",
     "main_menu/gfx/interface/hbe/panels/hbe_banquet.dds": "dc9663b399b7e8f46c4bdaa213795e6c214a93b4f75d979eb54e4ddfaae1cf61",
+    "main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds": "9cd3386e71afdc065a540d737323ce52b9a3e5b205f658b791dd88296e391626",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds": "cf7c1f060663ced487b407f6915ea5064cb72dda66dfed04ebab6a78a792effe",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds": "ffc4e1ba11821e6c6952b93ab3517c3cffafa3526149ec5accf12ebedc29b572",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds": "28e5fd39e3f2012648806e30229ddc5525f0dcf6877a8eaca66c644eff8ec73d",
@@ -6943,6 +6952,9 @@
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds": "90e91569bed0cb93e131599f546b379792f36ec7b1f558c9f751da1ce4a2a7ed",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds": "92044e416602676ad072f876c59c0e4c8e37ce864d4a77a6c59218dfc2d168ed",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds": "5fa32fd6d973cf4af64943488a46b4d064bf49ce5832387e0bfc02efd4113db0",
+    "main_menu/gfx/interface/hbe/v021/decisions/hbe_project_fund.dds": "8d9726bbb23978331f4a3780b4dbf545e219777412c150c65701ab271f3e09f8",
+    "main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_1.dds": "f831c42b724c5c9ea43a6fd87a83f5961173960ab112a6971d4e2e817895303a",
+    "main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_2.dds": "6307b8332ba851648fefbcd6f5d9046debdcac967d98da5e75691a723a600251",
     "main_menu/gfx/interface/icons/buildings/hbe_assembly_hall.dds": "a26020d261d5ab25fc2f48647f29307827314bc8518a47d7089cf95c2d9981d7",
     "main_menu/gfx/interface/icons/buildings/hbe_brocade_school.dds": "250202935ef0bddb69999bfd4ed2bcd32bc8cb6eac620fb96b15cc72f4af5bff",
     "main_menu/gfx/interface/icons/buildings/hbe_canal_office.dds": "bbdd35d09ad673e191818cb52df05c384b58d99cceb43e428320f977665c92b6",
@@ -6959,6 +6971,9 @@
     "main_menu/gfx/interface/icons/buildings/hbe_valley_inn.dds": "ab29b64df7d698ea863ce08e0caadfb39ecf2680c64f7ca348fe325af2a0e268",
     "main_menu/gfx/interface/icons/buildings/hbe_witness_house.dds": "fd0116f5ab48a54ca13d6df962a4bb347ebba848fbfbec510d7b3d811d057e2a",
     "main_menu/gfx/interface/icons/buildings/hbe_works_archive.dds": "d72f795d49b5a3284ced79a0db02611d3420ff67d986a071b83da46b4ba0f3c6",
+    "main_menu/gfx/interface/icons/generic_actions/hbe_feast_common_action.dds": "33060a7a96a966752a2fc44b0be95efe0da38bcf37cbddecb3685cf198e674e2",
+    "main_menu/gfx/interface/icons/generic_actions/hbe_feast_fund_action.dds": "de1703f4bfaa4d705cd3eb59a9b0c49a93e888b100d74794210813ac96d98409",
+    "main_menu/gfx/interface/icons/generic_actions/hbe_feast_local_action.dds": "bb7e5baff5d9ba9b77ff79ce32ec4dfdb7e65af3cbfee1d4de3dfa06e87be7aa",
     "main_menu/gfx/interface/icons/hbe_civic/hbe_audit.dds": "97258827622eecc2c54c3d48967ee45a46841b1d304663791263fc19767c050a",
     "main_menu/gfx/interface/icons/hbe_civic/hbe_burden.dds": "36d68f7da019ca30cf43f3e9c0f552040d852582d13e0d0c137f6a4a1f5cb8f3",
     "main_menu/gfx/interface/icons/hbe_civic/hbe_civil_ledger.dds": "c1ed4ac40b43488ea28a519724ff4d07ec1accf6ff10144f5d8d3b35d233cfb7",
@@ -6982,10 +6997,29 @@
     "main_menu/gfx/interface/icons/international_organizations/hbe_circle_southern_salt_wine.dds": "b7c093e254a5148585225343bce6c12db1497848aaca2d98538025b376f8e020",
     "main_menu/gfx/interface/icons/international_organizations/hbe_circle_southwestern_valleys.dds": "e2e6b74532f63f2a3311088dd66800eddd778406cca21f45201e677e5d98fed7",
     "main_menu/gfx/interface/icons/international_organizations/hbe_circle_western_tea_horse.dds": "0b48460f6ce83192b8b74cfcf25104003f4040fb7f1f11385c20ec101f9b356c",
-    "main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds": "311874cccbfbf074dbda1aa965a96b95cc4ef28b939542c9168d679d20134388",
+    "main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds": "751cabc5c3119bc17fee7e1771857960623896eb4cdf6eaaff403af83a3dde21",
     "main_menu/gfx/interface/icons/international_organizations/hbe_empire.dds": "ea208c80690f0fea6850eb4943114c52881f31eeab98378b4df5e42eb4dc680d",
-    "main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds": "b7c093e254a5148585225343bce6c12db1497848aaca2d98538025b376f8e020",
+    "main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds": "53191cf7c2fb4ae416c6431a77c0b85cb9ce21606d26688745c6b261157c0412",
     "main_menu/gfx/interface/icons/laws/hbe_civil_service_law.dds": "aff23edb2aff0e69d338a2a817346c309a3c9130244671515d1448bffb81f65a",
+    "main_menu/gfx/interface/icons/modifiers/hbe_ai_internal_ambition.dds": "b85bf66b6605c5ccfbe56feca9fd2b7c39c81aea3c33f974f9e92a89dacaf7fb",
+    "main_menu/gfx/interface/icons/modifiers/hbe_feast_common_reward.dds": "9cb57e3f88844a60c1e860d64e4d4a831834c29fdd0f37abb41d0c06b22bd4eb",
+    "main_menu/gfx/interface/icons/modifiers/hbe_feast_cooperation.dds": "ab163d7bc3a7788c6a8b2a7933843dc5b0ff980641265d3b10e3365f84ee9424",
+    "main_menu/gfx/interface/icons/modifiers/hbe_feast_local_reward.dds": "89e5555ca4842075eb1cf5e70b19511c2b9ba66c0ca95c2c798c9bdf8e92d50e",
+    "main_menu/gfx/interface/icons/modifiers/hbe_feast_success.dds": "5e981aa7b0f32acefc4c1f085970c53cdc2238bba5305e365954571be7d25154",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_4.dds": "9e072f0e730e87db1337a62b3e61bd05578a7ae43a8572b14f56b81be9ee77cd",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_7.dds": "6c7c4228672605d1688d1a8c28d6e23788ad72aa70305be1952edb3c9baec670",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_4.dds": "094b80e7261564b5e50b00d0840b2dc61890575b48e2fbea2fc863c5c1907707",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_7.dds": "a67502f35ddc95b75197269f788ea3f61612ba9e5312b3fe075cfd2d96f1f892",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_4.dds": "e312edc8db89b4f04d9eacdfcac29ea544624b8bc9f8a12ef3d63f5c1a57dcf1",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_7.dds": "e1f608aaa90a877569b8c9e6be641efd1d570044bb5948cad88e1936d98db8fe",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_4.dds": "35c43d97cb254163aa499fad7eae205adabcf1d0e880ba63b715948e4b8899f3",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_7.dds": "d0f5569ed374eb970c3d8da2075a5cacf8564533fd7732e0bdc6d5b7f40ed83a",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_4.dds": "a49eb8983c034086fd9ede9d56b0109fc6313826f9fec838acebe7bba7e8c512",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_7.dds": "290d9eaf17d4b0d5676a9f9ddc4cef517f5372c83b23490868fd24cf84813210",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_4.dds": "4223a60333630cb615a54fae3f0f299ddfee7318e915ba8cf76a446098969dc6",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_7.dds": "dfed6041d86e8eecb6c998d412233d3c1c8502374d1609a14026357ca242e042",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_4.dds": "0084db0c6330e3257d0a1a48829877e53078def2cf3841e80beb1a9ba0ef8a23",
+    "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_7.dds": "d558952d3b5503a584f302493d8377e0981a905dd6472da1c094ae9bf1374ef1",
     "main_menu/gfx/interface/icons/policies/hbe_audit.dds": "97258827622eecc2c54c3d48967ee45a46841b1d304663791263fc19767c050a",
     "main_menu/gfx/interface/icons/policies/hbe_burden.dds": "36d68f7da019ca30cf43f3e9c0f552040d852582d13e0d0c137f6a4a1f5cb8f3",
     "main_menu/gfx/interface/icons/policies/hbe_civil_ledger.dds": "c1ed4ac40b43488ea28a519724ff4d07ec1accf6ff10144f5d8d3b35d233cfb7",
@@ -7016,6 +7050,14 @@
     "main_menu/gfx/interface/icons/text_icons/hbe_valleys.dds": "e3502d7799d10059f3532b621feb438ef15da3ce0a690750dd1b5de558418cc8",
     "main_menu/gfx/interface/icons/text_icons/hbe_water.dds": "9c6171bf2e642d15bf523e45ed5868b8cae1b7c5a27c717c7056217f876e9995",
     "main_menu/gfx/interface/icons/text_icons/hbe_yiqi.dds": "c27ce41b50e56b241353e1bbce97d929e35b66e633e4efc28ba02c412cd3ba17",
+    "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_border_tea.dds": "53d1028ae0bd14f0909593a136382c982c110a5af37036bf80566e43321ea8ae",
+    "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_embroidery.dds": "86e36c467178c7f381526a13bbe9bd2fe4bfd104e4100894daa8a7a7afe569d0",
+    "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_paper.dds": "00c2460a29c83a1586399b17a79d16bd5347ebe72df3028c912341d1d5d30725",
+    "main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_well_salt.dds": "a643516209d16ee716ee3579ec0298cdab6067f26114925c6770c6ddff0f0e53",
+    "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_border_tea.dds": "0594dc5346280ccb37972cce7d85dfa0fb19f8a5e07e6ee5876d218ceef09e69",
+    "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_embroidery.dds": "862ddeb068438563266f4da67a3c0f00ae77fab8aab13a7c87cfc781b14ca6fb",
+    "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_paper.dds": "d25ff6bdb7eccf84ff0494c1b4feac306888cebad0edeb49a0d755fb5dba4620",
+    "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_well_salt.dds": "fa3214bae886a264c7c1c1a78265f6390ac4eb283367059008de83e5f653771f",
     "main_menu/gfx/interface/icons/unit_types/hbe_canal_crossbow.dds": "7517ad942228d5dded07755ac0df4f30becad7b8f18ffc646d13c3b7bfac466d",
     "main_menu/gfx/interface/icons/unit_types/hbe_granary_militia.dds": "7071f41dbab6d030f8584dca6cb9079f3fee9c33dce3f9886f40deb3a9392354",
     "main_menu/gfx/interface/icons/unit_types/hbe_pass_rotation.dds": "a2ced6dd2e25bdc15be2e13e006cf8a9775cd483d76256b85c798dd840739dc8",
@@ -7051,11 +7093,11 @@
     "main_menu/gfx/interface/illustrations/units/masks/hbe_tea_riders.dds": "3fb7511fd00210c935e1224726c7b1b28bda83f9ff7b2572f129ebfafbbecb29",
     "main_menu/gfx/interface/illustrations/units/masks/hbe_trained_river.dds": "3fb7511fd00210c935e1224726c7b1b28bda83f9ff7b2572f129ebfafbbecb29",
     "main_menu/gfx/interface/illustrations/units/masks/hbe_valley_soldiers.dds": "3fb7511fd00210c935e1224726c7b1b28bda83f9ff7b2572f129ebfafbbecb29",
-    "main_menu/gui/messagetypes.txt": "d607f491bbabd508473f7371220b4bfd50964f595874bfb69a95e5fe5cd25fea",
+    "main_menu/gui/messagetypes.txt": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c",
     "main_menu/gui/shared/hbe_civic_font_icons.gui": "1354d7f8070b164590c8e05c052fbe5bd29c63b510b0c30733713339dcbfab77",
     "main_menu/gui/shared/hbe_font_icons.gui": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374",
-    "main_menu/localization/english/hbe_l_english.yml": "c4f21bf2b2b437dfd79e77f30098fb19928f4932f27461271336ca5e0d336fb4",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "66cf990265d320235a43190c5dbd8fd837e24cbcfbf0c98875d5c129ddc62017",
+    "main_menu/localization/english/hbe_l_english.yml": "e25e4bb01ad3c286a8e7699d49bd2547365d7f0452816dd5ef620458bbaa8f27",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "73c51258c940ed9149806911c099fb85f687df0f78e2b1be9614c3e10ac6a8e5",
     "main_menu/setup/1337/04_hbe_dynasties.txt": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7",
     "main_menu/setup/1337/05_hbe_characters.txt": "c6d49f5d9f423458308bd495cd12a1a5a501eaf3411c1298814b459db2c8dd84",
     "main_menu/setup/1337/10_countries.txt": "4b519e685bb4456ba6690a38c800ea8f86b49328a2e3ed450ecb665dd5471f11",
@@ -7072,7 +7114,7 @@
     "prompt": "docs/workshop_cover_prompt_v020.txt"
   },
   "technology_rewards": {
-    "version": "0.2.1",
+    "version": "0.3.0",
     "advances": [
       {
         "key": "hbe_tech_common_1",
@@ -7082,7 +7124,7 @@
           "global_monthly_control": 0.05
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_common_2",
@@ -7092,7 +7134,7 @@
           "merchant_maintenance_efficiency": 0.1
         },
         "unlocks": [],
-        "link": "整合其他旧府州后，[Concept('hbe_term_delivery', '专业交付')|e]可按现有规则使用10点@hbe_yiqi! [Concept('hbe_term_yiqi', '义气')|e]作替代担保。。。。。。"
+        "link": "整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
       },
       {
         "key": "hbe_tech_common_3",
@@ -7102,7 +7144,7 @@
           "global_build_buildings_efficiency": 0.1
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_common_4",
@@ -7112,7 +7154,7 @@
           "global_institution_growth_modifier": 0.2
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
       },
       {
         "key": "hbe_tech_common_5",
@@ -7122,17 +7164,18 @@
           "global_burghers_max_literacy": 10
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
       },
       {
         "key": "hbe_tech_common_6",
         "name": "跨区工艺学堂",
         "modifiers": {
           "research_speed_modifier": 0.15,
-          "global_books_output_modifier": 0.2
+          "global_books_output_modifier": 0.2,
+          "global_hbe_shu_paper_output_modifier": 0.2
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_common_7",
@@ -7142,7 +7185,7 @@
           "build_gravel_road_cost_modifier": -0.15
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
       },
       {
         "key": "hbe_tech_common_8",
@@ -7152,7 +7195,7 @@
           "global_trade_center_power": 0.15
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_chengdu_plain_1",
@@ -7162,19 +7205,20 @@
           "global_rice_output_modifier": 0.15
         },
         "unlocks": [],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+        "link": "解锁本圈三年地方事业与地方援助资格。"
       },
       {
         "key": "hbe_tech_chengdu_plain_2",
         "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
         "modifiers": {
           "global_fine_cloth_output_modifier": 0.25,
-          "global_silk_output_modifier": 0.15
+          "global_silk_output_modifier": 0.15,
+          "global_hbe_shu_embroidery_output_modifier": 0.25
         },
         "unlocks": [
           "hbe_chengdu_plain_basic_production"
         ],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。"
+        "link": "取得本圈成长验收的课题资格。\n解锁机构生产方式：锦坊试织。"
       },
       {
         "key": "hbe_tech_chengdu_plain_3",
@@ -7184,7 +7228,7 @@
           "peasants_estate_target_satisfaction": 0.05
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_chengdu_plain_4",
@@ -7194,9 +7238,10 @@
           "global_rgo_build_time": -0.2
         },
         "unlocks": [
-          "hbe_chengdu_plain_advanced_production"
+          "hbe_chengdu_plain_advanced_production",
+          "hbe_chengdu_plain_paper_production"
         ],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：锦坊绣作。\n解锁机构生产方式：蜀纸描样。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_chengdu_plain_5",
@@ -7206,7 +7251,7 @@
           "global_devastation_recovery": 0.005
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_chengdu_plain_6",
@@ -7216,7 +7261,7 @@
           "cultural_tradition_modifier": 0.15
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_chengdu_plain_7",
@@ -7226,17 +7271,18 @@
           "stability_cost_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_chengdu_plain_8",
         "name": "盖碗公议学宫",
         "modifiers": {
           "research_speed_modifier": 0.2,
-          "cultural_influence_modifier": 0.25
+          "cultural_influence_modifier": 0.25,
+          "global_hbe_shu_embroidery_output_modifier": 0.3
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_1",
@@ -7248,7 +7294,7 @@
         "unlocks": [
           "hbe_southern_salt_wine_basic_production"
         ],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。"
+        "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：井灶汲卤。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_2",
@@ -7258,19 +7304,20 @@
           "global_pottery_output_modifier": 0.15
         },
         "unlocks": [],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈成长验收的课题资格。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_3",
         "name": "井灶改良",
         "modifiers": {
           "global_salt_output_modifier": 0.3,
-          "global_tools_output_modifier": 0.15
+          "global_tools_output_modifier": 0.15,
+          "global_hbe_well_salt_output_modifier": 0.3
         },
         "unlocks": [
           "hbe_southern_salt_wine_advanced_production"
         ],
-        "link": "解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。"
+        "link": "解锁机构生产方式：井灶精煎。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_4",
@@ -7280,17 +7327,18 @@
           "bank_interest": -0.005
         },
         "unlocks": [],
-        "link": "解锁盐引贷款，并作为本圈[Concept('hbe_term_contract', '旧约')|e]重审资格。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。"
+        "link": "解锁盐引贷款，并取得本圈旧约重审验收资格。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_5",
         "name": "巴蜀盐业总号",
         "modifiers": {
           "global_salt_output_modifier": 0.25,
-          "global_merchant_capacity_modifier": 0.25
+          "global_merchant_capacity_modifier": 0.25,
+          "global_hbe_well_salt_output_modifier": 0.25
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_6",
@@ -7300,7 +7348,7 @@
           "cultural_tradition_modifier": 0.1
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_7",
@@ -7310,7 +7358,7 @@
           "global_production_efficiency": 0.1
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_southern_salt_wine_8",
@@ -7320,7 +7368,7 @@
           "cultural_influence_modifier": 0.25
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_eastern_river_1",
@@ -7330,7 +7378,7 @@
           "merchant_maintenance_efficiency": 0.1
         },
         "unlocks": [],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+        "link": "解锁本圈三年地方事业与地方援助资格。"
       },
       {
         "key": "hbe_tech_eastern_river_2",
@@ -7342,7 +7390,7 @@
         "unlocks": [
           "hbe_eastern_river_basic_production"
         ],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。"
+        "link": "取得本圈成长验收的课题资格。\n解锁机构生产方式：江船备料。"
       },
       {
         "key": "hbe_tech_eastern_river_3",
@@ -7352,7 +7400,7 @@
           "merchant_maintenance_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_eastern_river_4",
@@ -7364,7 +7412,7 @@
         "unlocks": [
           "hbe_eastern_river_advanced_production"
         ],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_eastern_river_5",
@@ -7374,7 +7422,7 @@
           "global_production_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_eastern_river_6",
@@ -7384,7 +7432,7 @@
           "fort_maintenance_efficiency": 0.2
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_eastern_river_7",
@@ -7394,7 +7442,7 @@
           "global_levy_recruitment_speed_modifier": 0.2
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_eastern_river_8",
@@ -7404,7 +7452,7 @@
           "army_initiative": 0.15
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_northern_shudao_1",
@@ -7414,7 +7462,7 @@
           "build_gravel_road_cost_modifier": -0.15
         },
         "unlocks": [],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+        "link": "解锁本圈三年地方事业与地方援助资格。"
       },
       {
         "key": "hbe_tech_northern_shudao_2",
@@ -7424,7 +7472,7 @@
           "army_maintenance_efficiency": 0.1
         },
         "unlocks": [],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈成长验收的课题资格。"
       },
       {
         "key": "hbe_tech_northern_shudao_3",
@@ -7434,7 +7482,7 @@
           "fort_maintenance_efficiency": 0.2
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_northern_shudao_4",
@@ -7444,7 +7492,7 @@
           "army_maintenance_efficiency": 0.2
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_northern_shudao_5",
@@ -7454,7 +7502,7 @@
           "global_manpower_modifier": 0.2
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_northern_shudao_6",
@@ -7466,19 +7514,20 @@
         "unlocks": [
           "hbe_northern_shudao_basic_production"
         ],
-        "link": "解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。"
+        "link": "解锁机构生产方式：关驿抄券。"
       },
       {
         "key": "hbe_tech_northern_shudao_7",
         "name": "公文分驿",
         "modifiers": {
           "global_road_building_time": -0.15,
-          "diplomatic_capacity_modifier": 0.2
+          "diplomatic_capacity_modifier": 0.2,
+          "global_hbe_shu_paper_output_modifier": 0.25
         },
         "unlocks": [
           "hbe_northern_shudao_advanced_production"
         ],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：蜀纸精抄。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_northern_shudao_8",
@@ -7488,7 +7537,7 @@
           "global_monthly_control": 0.1
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_central_hills_1",
@@ -7498,7 +7547,7 @@
           "global_max_rgo_size_modifier_in_rural": 0.15
         },
         "unlocks": [],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+        "link": "解锁本圈三年地方事业与地方援助资格。"
       },
       {
         "key": "hbe_tech_central_hills_2",
@@ -7508,7 +7557,7 @@
           "global_monthly_control": 0.05
         },
         "unlocks": [],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈成长验收的课题资格。"
       },
       {
         "key": "hbe_tech_central_hills_3",
@@ -7520,7 +7569,7 @@
         "unlocks": [
           "hbe_central_hills_basic_production"
         ],
-        "link": "解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。"
+        "link": "解锁机构生产方式：仓社附田。"
       },
       {
         "key": "hbe_tech_central_hills_4",
@@ -7532,7 +7581,7 @@
         "unlocks": [
           "hbe_central_hills_advanced_production"
         ],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_central_hills_5",
@@ -7542,7 +7591,7 @@
           "global_disease_resistance": 0.05
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_central_hills_6",
@@ -7552,7 +7601,7 @@
           "burghers_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_central_hills_7",
@@ -7562,7 +7611,7 @@
           "merchant_maintenance_efficiency": 0.2
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_central_hills_8",
@@ -7572,7 +7621,7 @@
           "global_monthly_prosperity": 0.05
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_western_tea_horse_1",
@@ -7584,7 +7633,7 @@
         "unlocks": [
           "hbe_western_tea_horse_basic_production"
         ],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。"
+        "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：驮具修造。"
       },
       {
         "key": "hbe_tech_western_tea_horse_2",
@@ -7594,19 +7643,21 @@
           "merchant_maintenance_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈成长验收的课题资格。"
       },
       {
         "key": "hbe_tech_western_tea_horse_3",
         "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
         "modifiers": {
           "global_leather_output_modifier": 0.25,
-          "global_food_decay": -0.1
+          "global_food_decay": -0.1,
+          "global_hbe_border_tea_output_modifier": 0.25
         },
         "unlocks": [
-          "hbe_western_tea_horse_advanced_production"
+          "hbe_western_tea_horse_advanced_production",
+          "hbe_western_tea_horse_paper_production"
         ],
-        "link": "解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。"
+        "link": "解锁机构生产方式：边茶压砖。\n解锁机构生产方式：蜀纸包茶。"
       },
       {
         "key": "hbe_tech_western_tea_horse_4",
@@ -7616,17 +7667,18 @@
           "global_road_building_time": -0.15
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_western_tea_horse_5",
         "name": "茶马通商公所",
         "modifiers": {
           "global_tea_output_modifier": 0.3,
-          "global_trade_center_power": 0.2
+          "global_trade_center_power": 0.2,
+          "global_hbe_border_tea_output_modifier": 0.3
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_western_tea_horse_6",
@@ -7636,7 +7688,7 @@
           "global_disease_resistance": 0.05
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_western_tea_horse_7",
@@ -7646,7 +7698,7 @@
           "cultural_influence_modifier": 0.2
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_western_tea_horse_8",
@@ -7656,7 +7708,7 @@
           "cultural_tradition_modifier": 0.25
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_1",
@@ -7668,7 +7720,7 @@
         "unlocks": [
           "hbe_southwestern_valleys_basic_production"
         ],
-        "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。"
+        "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：谷市农具。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_2",
@@ -7678,7 +7730,7 @@
           "peasants_estate_target_satisfaction": 0.05
         },
         "unlocks": [],
-        "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈成长验收的课题资格。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_3",
@@ -7688,7 +7740,7 @@
           "global_road_building_time": -0.15
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_4",
@@ -7700,7 +7752,7 @@
         "unlocks": [
           "hbe_southwestern_valleys_advanced_production"
         ],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_5",
@@ -7710,7 +7762,7 @@
           "burghers_estate_target_satisfaction": 0.1
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_6",
@@ -7720,7 +7772,7 @@
           "global_levy_recruitment_speed_modifier": 0.15
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_7",
@@ -7730,7 +7782,7 @@
           "global_defensive": 0.15
         },
         "unlocks": [],
-        "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
+        "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
       },
       {
         "key": "hbe_tech_southwestern_valleys_8",
@@ -7740,7 +7792,7 @@
           "tribes_estate_target_satisfaction": 0.1
         },
         "unlocks": [],
-        "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+        "link": "取得本圈地区重组及百年章程验收的课题资格。"
       },
       {
         "key": "hbe_civic_common_1",
@@ -7750,7 +7802,7 @@
           "global_estate_target_satisfaction": 0.05
         },
         "unlocks": [],
-        "link": "解锁三种民役政策、两项阶层特权、府议与驻防粮额；@hbe_burden! [Concept('hbe_term_burden', '役负')|e]影响事业与招募。。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_civic_common_2",
@@ -7760,17 +7812,18 @@
           "global_build_buildings_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "解锁公账审计、客籍议约与1457年的修约议事。。。。。。。"
+        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
       },
       {
         "key": "hbe_civic_chengdu_plain_1",
         "name": "岁修与分水公议",
         "modifiers": {
           "global_monthly_food_modifier": 0.15,
-          "global_fine_cloth_output_modifier": 0.15
+          "global_fine_cloth_output_modifier": 0.15,
+          "global_hbe_shu_embroidery_output_modifier": 0.2
         },
         "unlocks": [],
-        "link": "解锁分水都理五年委任与本圈协调事务。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。"
+        "link": "岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。"
       },
       {
         "key": "hbe_civic_chengdu_plain_2",
@@ -7780,17 +7833,18 @@
           "cultural_tradition_modifier": 0.2
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_southern_salt_wine_1",
         "name": "井灶保任章程",
         "modifiers": {
           "global_salt_output_modifier": 0.2,
-          "burghers_estate_target_satisfaction": 0.1
+          "burghers_estate_target_satisfaction": 0.1,
+          "global_hbe_well_salt_output_modifier": 0.2
         },
         "unlocks": [],
-        "link": "解锁盐引会首五年委任与本圈协调事务。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。"
+        "link": "井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。"
       },
       {
         "key": "hbe_civic_southern_salt_wine_2",
@@ -7800,7 +7854,7 @@
           "total_loan_capacity_modifier": 0.5
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_eastern_river_1",
@@ -7810,7 +7864,7 @@
           "fort_maintenance_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "解锁江运总理五年委任与本圈协调事务。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。"
+        "link": "江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。"
       },
       {
         "key": "hbe_civic_eastern_river_2",
@@ -7820,7 +7874,7 @@
           "army_maintenance_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_northern_shudao_1",
@@ -7830,7 +7884,7 @@
           "global_road_building_time": -0.1
         },
         "unlocks": [],
-        "link": "解锁关驿都巡五年委任与本圈协调事务。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。"
+        "link": "关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。"
       },
       {
         "key": "hbe_civic_northern_shudao_2",
@@ -7840,7 +7894,7 @@
           "global_manpower_modifier": 0.15
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_central_hills_1",
@@ -7850,7 +7904,7 @@
           "peasants_estate_target_satisfaction": 0.1
         },
         "unlocks": [],
-        "link": "解锁义仓监理五年委任与本圈协调事务。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。"
+        "link": "仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。"
       },
       {
         "key": "hbe_civic_central_hills_2",
@@ -7860,7 +7914,7 @@
           "global_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_western_tea_horse_1",
@@ -7870,7 +7924,7 @@
           "merchant_maintenance_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "解锁茶路公议使五年委任与本圈协调事务。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。"
+        "link": "山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。"
       },
       {
         "key": "hbe_civic_western_tea_horse_2",
@@ -7880,7 +7934,7 @@
           "diplomatic_capacity_modifier": 0.2
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_southwestern_valleys_1",
@@ -7890,7 +7944,7 @@
           "tribes_estate_target_satisfaction": 0.1
         },
         "unlocks": [],
-        "link": "解锁诸谷约正五年委任与本圈协调事务。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。"
+        "link": "驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。"
       },
       {
         "key": "hbe_civic_southwestern_valleys_2",
@@ -7900,7 +7954,7 @@
           "global_production_efficiency": 0.15
         },
         "unlocks": [],
-        "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
       }
     ],
     "production": [
@@ -7918,13 +7972,27 @@
       {
         "key": "hbe_chengdu_plain_advanced_production",
         "building": "hbe_brocade_school",
-        "goods": "fine_cloth",
+        "goods": "hbe_shu_embroidery",
         "inputs": {
           "silk": 0.6,
           "dyes": 0.12,
-          "tools": 0.06
+          "tools": 0.06,
+          "paper": 0.04
         },
-        "output": 1.05,
+        "output": 1.2,
+        "advance": "hbe_tech_chengdu_plain_4"
+      },
+      {
+        "key": "hbe_chengdu_plain_paper_production",
+        "building": "hbe_brocade_school",
+        "goods": "hbe_shu_embroidery",
+        "inputs": {
+          "silk": 0.6,
+          "dyes": 0.12,
+          "tools": 0.06,
+          "hbe_shu_paper": 0.04
+        },
+        "output": 1.5,
         "advance": "hbe_tech_chengdu_plain_4"
       },
       {
@@ -7941,12 +8009,12 @@
       {
         "key": "hbe_southern_salt_wine_advanced_production",
         "building": "hbe_salt_office",
-        "goods": "salt",
+        "goods": "hbe_well_salt",
         "inputs": {
           "lumber": 0.45,
           "tools": 0.15
         },
-        "output": 1.5,
+        "output": 1.8,
         "advance": "hbe_tech_southern_salt_wine_3"
       },
       {
@@ -7986,12 +8054,12 @@
       {
         "key": "hbe_northern_shudao_advanced_production",
         "building": "hbe_gate_registry",
-        "goods": "paper",
+        "goods": "hbe_shu_paper",
         "inputs": {
           "lumber": 0.6,
           "tools": 0.08
         },
-        "output": 1.0,
+        "output": 1.25,
         "advance": "hbe_tech_northern_shudao_7"
       },
       {
@@ -8030,12 +8098,25 @@
       {
         "key": "hbe_western_tea_horse_advanced_production",
         "building": "hbe_tea_exchange",
-        "goods": "leather",
+        "goods": "hbe_border_tea",
         "inputs": {
-          "livestock": 0.65,
-          "tools": 0.1
+          "tea": 0.65,
+          "tools": 0.08,
+          "paper": 0.03
         },
-        "output": 1.05,
+        "output": 1.2,
+        "advance": "hbe_tech_western_tea_horse_3"
+      },
+      {
+        "key": "hbe_western_tea_horse_paper_production",
+        "building": "hbe_tea_exchange",
+        "goods": "hbe_border_tea",
+        "inputs": {
+          "tea": 0.65,
+          "tools": 0.08,
+          "hbe_shu_paper": 0.03
+        },
+        "output": 1.5,
         "advance": "hbe_tech_western_tea_horse_3"
       },
       {
@@ -8081,7 +8162,8 @@
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_chengdu_plain_7 hbe_operating_brocade_school = yes has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_yiqi >= 60",
         "modifiers": {
           "research_speed_modifier": 0.2,
-          "cultural_influence_modifier": 0.25
+          "cultural_influence_modifier": 0.25,
+          "global_hbe_shu_embroidery_output_modifier": 0.3
         }
       },
       {
@@ -8092,7 +8174,8 @@
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southern_salt_wine_4 hbe_operating_salt_office = yes has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 OR = { NOT = { has_variable = hbe_salt_debt } var:hbe_salt_debt <= 20 }",
         "modifiers": {
           "global_salt_output_modifier": 0.3,
-          "global_merchant_capacity_modifier": 0.2
+          "global_merchant_capacity_modifier": 0.2,
+          "global_hbe_well_salt_output_modifier": 0.3
         }
       },
       {
@@ -8147,7 +8230,8 @@
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_northern_shudao_7 hbe_operating_gate_registry = yes has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 has_variable = hbe_mission_northern_shudao_2",
         "modifiers": {
           "global_road_building_time": -0.1,
-          "global_institution_growth_modifier": 0.25
+          "global_institution_growth_modifier": 0.25,
+          "global_hbe_shu_paper_output_modifier": 0.3
         }
       },
       {
@@ -8180,7 +8264,8 @@
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_western_tea_horse_4 hbe_operating_tea_exchange = yes has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_tea >= 30",
         "modifiers": {
           "global_tea_output_modifier": 0.3,
-          "global_merchant_capacity_modifier": 0.25
+          "global_merchant_capacity_modifier": 0.25,
+          "global_hbe_border_tea_output_modifier": 0.3
         }
       },
       {
@@ -8220,11 +8305,13 @@
   },
   "internal_ai": {
     "start_year": 1342,
-    "score_bonus": 6,
-    "base_multiplier": 0.1,
-    "opposed_faction_extra": 0.1,
-    "aggressiveness": 0.15,
-    "war_interval_months": -6
+    "score_bonus": 3,
+    "base_multiplier": 0.05,
+    "opposed_faction_extra": 0.03,
+    "aggressiveness": 0.05,
+    "war_interval_months": -3,
+    "peace_months_normal": 144,
+    "peace_months_aggressive": 96
   },
   "simple_banquet": {
     "factions": 2,
@@ -8239,5 +8326,656 @@
       "hbe_stance_change_2"
     ],
     "native_ui_template": "two_countries_header_template"
+  },
+  "art_v021": {
+    "mode": "built-in image_gen",
+    "version": "0.2.1",
+    "exports": [
+      {
+        "key": "hbe_common_party",
+        "name": "共建派",
+        "kind": "organization",
+        "path": "main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 0,
+        "crop": [
+          23,
+          22,
+          245,
+          248
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "751cabc5c3119bc17fee7e1771857960623896eb4cdf6eaaff403af83a3dde21"
+      },
+      {
+        "key": "hbe_local_party",
+        "name": "兴业派",
+        "kind": "organization",
+        "path": "main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 1,
+        "crop": [
+          277,
+          35,
+          490,
+          248
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "53191cf7c2fb4ae416c6431a77c0b85cb9ce21606d26688745c6b261157c0412"
+      },
+      {
+        "key": "hbe_feast_cooperation",
+        "name": "会盟相助",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_cooperation.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 2,
+        "crop": [
+          529,
+          48,
+          751,
+          238
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "ab163d7bc3a7788c6a8b2a7933843dc5b0ff980641265d3b10e3365f84ee9424"
+      },
+      {
+        "key": "hbe_feast_success",
+        "name": "盛会余泽",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_success.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 3,
+        "crop": [
+          793,
+          26,
+          1017,
+          239
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "5e981aa7b0f32acefc4c1f085970c53cdc2238bba5305e365954571be7d25154"
+      },
+      {
+        "key": "hbe_feast_common_reward",
+        "name": "共同兴建",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_common_reward.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 4,
+        "crop": [
+          1038,
+          38,
+          1273,
+          235
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "9cb57e3f88844a60c1e860d64e4d4a831834c29fdd0f37abb41d0c06b22bd4eb"
+      },
+      {
+        "key": "hbe_feast_local_reward",
+        "name": "百业争荣",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_feast_local_reward.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 5,
+        "crop": [
+          1291,
+          50,
+          1515,
+          245
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "89e5555ca4842075eb1cf5e70b19511c2b9ba66c0ca95c2c798c9bdf8e92d50e"
+      },
+      {
+        "key": "hbe_network_chengdu_plain_4",
+        "name": "渠田共济",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 6,
+        "crop": [
+          22,
+          277,
+          254,
+          496
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "094b80e7261564b5e50b00d0840b2dc61890575b48e2fbea2fc863c5c1907707"
+      },
+      {
+        "key": "hbe_network_southern_salt_wine_4",
+        "name": "井盐担保",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 7,
+        "crop": [
+          285,
+          265,
+          496,
+          497
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "a49eb8983c034086fd9ede9d56b0109fc6313826f9fec838acebe7bba7e8c512"
+      },
+      {
+        "key": "hbe_network_eastern_river_4",
+        "name": "川江互保",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 8,
+        "crop": [
+          520,
+          264,
+          755,
+          497
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "e312edc8db89b4f04d9eacdfcac29ea544624b8bc9f8a12ef3d63f5c1a57dcf1"
+      },
+      {
+        "key": "hbe_network_northern_shudao_4",
+        "name": "关隘轮守",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 9,
+        "crop": [
+          779,
+          278,
+          1019,
+          505
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "35c43d97cb254163aa499fad7eae205adabcf1d0e880ba63b715948e4b8899f3"
+      },
+      {
+        "key": "hbe_network_central_hills_4",
+        "name": "义仓相济",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 10,
+        "crop": [
+          1044,
+          273,
+          1278,
+          499
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "9e072f0e730e87db1337a62b3e61bd05578a7ae43a8572b14f56b81be9ee77cd"
+      },
+      {
+        "key": "hbe_network_western_tea_horse_4",
+        "name": "茶马通路",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 11,
+        "crop": [
+          1292,
+          289,
+          1515,
+          496
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "0084db0c6330e3257d0a1a48829877e53078def2cf3841e80beb1a9ba0ef8a23"
+      },
+      {
+        "key": "hbe_network_southwestern_valleys_4",
+        "name": "诸谷换市",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_4.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 12,
+        "crop": [
+          21,
+          531,
+          253,
+          737
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "4223a60333630cb615a54fae3f0f299ddfee7318e915ba8cf76a446098969dc6"
+      },
+      {
+        "key": "hbe_network_chengdu_plain_7",
+        "name": "锦江讲会",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 13,
+        "crop": [
+          276,
+          537,
+          501,
+          737
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "a67502f35ddc95b75197269f788ea3f61612ba9e5312b3fe075cfd2d96f1f892"
+      },
+      {
+        "key": "hbe_network_southern_salt_wine_7",
+        "name": "盐酒席面",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 14,
+        "crop": [
+          532,
+          536,
+          764,
+          726
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "290d9eaf17d4b0d5676a9f9ddc4cef517f5372c83b23490868fd24cf84813210"
+      },
+      {
+        "key": "hbe_network_eastern_river_7",
+        "name": "江岸会防",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 15,
+        "crop": [
+          779,
+          518,
+          1013,
+          737
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "e1f608aaa90a877569b8c9e6be641efd1d570044bb5948cad88e1936d98db8fe"
+      },
+      {
+        "key": "hbe_network_northern_shudao_7",
+        "name": "蜀道接递",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 16,
+        "crop": [
+          1033,
+          525,
+          1272,
+          736
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "d0f5569ed374eb970c3d8da2075a5cacf8564533fd7732e0bdc6d5b7f40ed83a"
+      },
+      {
+        "key": "hbe_network_central_hills_7",
+        "name": "乡社清算",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 17,
+        "crop": [
+          1293,
+          520,
+          1517,
+          739
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "6c7c4228672605d1688d1a8c28d6e23788ad72aa70305be1952edb3c9baec670"
+      },
+      {
+        "key": "hbe_network_western_tea_horse_7",
+        "name": "山门公议",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 18,
+        "crop": [
+          17,
+          750,
+          264,
+          984
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "d558952d3b5503a584f302493d8377e0981a905dd6472da1c094ae9bf1374ef1"
+      },
+      {
+        "key": "hbe_network_southwestern_valleys_7",
+        "name": "乡寨共保",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_7.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 19,
+        "crop": [
+          286,
+          749,
+          500,
+          991
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "dfed6041d86e8eecb6c998d412233d3c1c8502374d1609a14026357ca242e042"
+      },
+      {
+        "key": "hbe_feast_fund_action",
+        "name": "为会盟出资",
+        "kind": "action",
+        "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_fund_action.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 20,
+        "crop": [
+          529,
+          773,
+          751,
+          989
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "de1703f4bfaa4d705cd3eb59a9b0c49a93e888b100d74794210813ac96d98409"
+      },
+      {
+        "key": "hbe_feast_common_action",
+        "name": "支持共建派",
+        "kind": "action",
+        "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_common_action.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 21,
+        "crop": [
+          780,
+          750,
+          1014,
+          988
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "33060a7a96a966752a2fc44b0be95efe0da38bcf37cbddecb3685cf198e674e2"
+      },
+      {
+        "key": "hbe_feast_local_action",
+        "name": "支持兴业派",
+        "kind": "action",
+        "path": "main_menu/gfx/interface/icons/generic_actions/hbe_feast_local_action.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 22,
+        "crop": [
+          1041,
+          760,
+          1271,
+          992
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "bb7e5baff5d9ba9b77ff79ce32ec4dfdb7e65af3cbfee1d4de3dfa06e87be7aa"
+      },
+      {
+        "key": "hbe_ai_internal_ambition",
+        "name": "府州竞逐",
+        "kind": "modifier",
+        "path": "main_menu/gfx/interface/icons/modifiers/hbe_ai_internal_ambition.dds",
+        "source": "assets/art_v021/icons.png",
+        "cell": 23,
+        "crop": [
+          1293,
+          749,
+          1517,
+          984
+        ],
+        "dimensions": [
+          128,
+          128
+        ],
+        "sha256": "b85bf66b6605c5ccfbe56feca9fd2b7c39c81aea3c33f974f9e92a89dacaf7fb"
+      },
+      {
+        "key": "hbe_feast_two_parties_v021",
+        "kind": "panel",
+        "path": "main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds",
+        "event_path": "main_menu/gfx/interface/hbe/events/feast_two_parties_v021.dds",
+        "source": "assets/art_v021/feast_two_parties.png",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "9cd3386e71afdc065a540d737323ce52b9a3e5b205f658b791dd88296e391626"
+      }
+    ],
+    "prompts": "docs/art_prompts_v021.md",
+    "source_sha256": {
+      "assets/art_v021/icons.png": "1d629cf4ff1bf12b35abde6dfbefcba07d6fb695d472cfcb2283593ab53126cc",
+      "assets/art_v021/feast_two_parties.png": "62f7e87d80d4f9222eac5a976a95dd9003f5f331cdba6467dbbb527a39808456"
+    }
+  },
+  "special_goods": {
+    "version": "0.3.0",
+    "goods": [
+      {
+        "key": "hbe_shu_embroidery",
+        "name": "蜀绣",
+        "base": "fine_cloth",
+        "price": 9,
+        "transport": 0.35,
+        "development": 10,
+        "wealth": 1.0,
+        "demand": {
+          "nobles": 0.22,
+          "burghers": 0.1,
+          "clergy": 0.08
+        },
+        "group": "chengdu_plain",
+        "building": "hbe_brocade_school",
+        "advance": 4,
+        "inputs": {
+          "silk": 0.6,
+          "dyes": 0.12,
+          "tools": 0.06,
+          "paper": 0.04
+        },
+        "output": 1.2,
+        "method": "锦坊绣作",
+        "boosts": [
+          [
+            "hbe_tech_chengdu_plain_2",
+            0.25
+          ],
+          [
+            "hbe_tech_chengdu_plain_8",
+            0.3
+          ]
+        ],
+        "network": [
+          "chengdu_plain",
+          7
+        ],
+        "desc": "锦江两岸的织坊以丝为底，以彩线施针，山水花鸟遂能随衣冠远行。府第陈设与礼物往来，为绣工提供了比寻常布帛更丰厚的订单。"
+      },
+      {
+        "key": "hbe_well_salt",
+        "name": "井盐",
+        "base": "salt",
+        "price": 5,
+        "transport": 0.4,
+        "development": 0,
+        "wealth": 0.7,
+        "demand": {
+          "nobles": 0.08,
+          "burghers": 0.07,
+          "clergy": 0.05,
+          "peasants": 0.02
+        },
+        "group": "southern_salt_wine",
+        "building": "hbe_salt_office",
+        "advance": 3,
+        "inputs": {
+          "lumber": 0.45,
+          "tools": 0.15
+        },
+        "output": 1.8,
+        "method": "井灶精煎",
+        "boosts": [
+          [
+            "hbe_tech_southern_salt_wine_3",
+            0.3
+          ],
+          [
+            "hbe_tech_southern_salt_wine_5",
+            0.25
+          ]
+        ],
+        "network": [
+          "southern_salt_wine",
+          4
+        ],
+        "desc": "深井取卤，灶火成盐。川南井户将地底的咸水煎成洁净细盐，装入盐袋，沿江运向城镇与山地；食用、腌藏与长途备粮使它有着广泛的买家。"
+      },
+      {
+        "key": "hbe_shu_paper",
+        "name": "蜀纸",
+        "base": "paper",
+        "price": 4,
+        "transport": 0.25,
+        "development": 5,
+        "wealth": 0.8,
+        "demand": {
+          "nobles": 0.1,
+          "burghers": 0.09,
+          "clergy": 0.12
+        },
+        "group": "northern_shudao",
+        "building": "hbe_gate_registry",
+        "advance": 7,
+        "inputs": {
+          "lumber": 0.6,
+          "tools": 0.08
+        },
+        "output": 1.25,
+        "method": "蜀纸精抄",
+        "boosts": [
+          [
+            "hbe_tech_northern_shudao_7",
+            0.25
+          ],
+          [
+            "hbe_tech_common_6",
+            0.2
+          ]
+        ],
+        "network": [
+          "northern_shudao",
+          7
+        ],
+        "desc": "竹麻入槽，纤维成帘。蜀地纸坊供应驿券、契书与经卷，轻而便运的纸张又成为锦坊描样和茶商包装所需的材料，商旅与读书人的订单遂汇到同一座纸坊。"
+      },
+      {
+        "key": "hbe_border_tea",
+        "name": "边茶",
+        "base": "tea",
+        "price": 5,
+        "transport": 0.25,
+        "development": 0,
+        "wealth": 0.7,
+        "demand": {
+          "nobles": 0.08,
+          "burghers": 0.12,
+          "clergy": 0.1,
+          "tribesmen": 0.05
+        },
+        "group": "western_tea_horse",
+        "building": "hbe_tea_exchange",
+        "advance": 3,
+        "inputs": {
+          "tea": 0.65,
+          "tools": 0.08,
+          "paper": 0.03
+        },
+        "output": 1.2,
+        "method": "边茶压砖",
+        "boosts": [
+          [
+            "hbe_tech_western_tea_horse_3",
+            0.25
+          ],
+          [
+            "hbe_tech_western_tea_horse_5",
+            0.3
+          ]
+        ],
+        "network": [
+          "western_tea_horse",
+          4
+        ],
+        "desc": "散茶筛拣、蒸压成砖，再用竹篾束紧。商队需要经得起山程与风雨的茶货，山地聚落、寺院与市镇的持续购买，使护行与茶坊经营成为同一条商路上的事业。"
+      }
+    ],
+    "demand_registration": "Full native pop_demand preserved with four appended keys; conflicts with other mods replacing this singleton.",
+    "balance": "Demand-driven premium goods; reference price is not guaranteed sale income."
+  },
+  "event_choices": {
+    "reworked_events": 44,
+    "regional": 28,
+    "civic": 14,
+    "settlement": 2,
+    "style_reference": "main_menu/localization/simp_chinese/events/DHE/flavor_chi_l_simp_chinese.yml",
+    "mutually_exclusive_arrangements": 21
   }
 }

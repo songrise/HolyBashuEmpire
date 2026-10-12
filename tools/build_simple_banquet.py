@@ -34,6 +34,12 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  loc.update(titles)
  loc['HBE_FEAST_GUIDE']=loc['HBE_FEAST_GUIDE'].replace('两派合计达到12贡献','两派合计达到界面显示的目标（开局12贡献）')
  loc['HBE_FEAST_TOTAL_DISPLAY']='共同贡献：$VALUE|0$'
+ loc['HBE_FEAST_MEMBER_NAME']='成员'
+ loc['HBE_FEAST_MEMBER_POINTS']='贡献'
+ loc['HBE_FEAST_GUIDE']='出资记1贡献，完成地方事业记2贡献，每届各限一次。\n每两年结算，达到共同目标，两派参与国均获奖励；领先派再获专属支持。'
+ loc['HBE_FEAST_REWARDS']='参与：建设+15%、商人容量+15%（两年）。\n成功：6金币、3声望、5信誉；生产和粮食+15%（三年）。'
+ loc['HBE_FEAST_COMMON']="共建派 · [GetUniqueInternationalOrganization('hbe_common_party').MakeScope.GetVariable('hbe_party_points').GetValue|0]贡献\n领先奖励：建设+20%、粮食+15%。"
+ loc['HBE_FEAST_LOCAL']="兴业派 · [GetUniqueInternationalOrganization('hbe_local_party').MakeScope.GetVariable('hbe_party_points').GetValue|0]贡献\n领先奖励：商人容量+25%、文化影响力+20%。"
  # Plain words in the main feast surfaces; internal keys and old save variables survive.
  for k,v in list(loc.items()):
   if k.startswith(('hbe_banquet','hbe_project','hbe_stance','HBE_BANQUET','HBE_DISPUTE')):
@@ -105,6 +111,7 @@ def build_simple_banquet(out,root,countries,loc,put,game):
   hbe_banquet_register = yes set_variable = { name = hbe_feast_points value = 0 }
   remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered remove_variable = hbe_feast_helped
   remove_variable = hbe_round_pledged remove_variable = hbe_fund_pledge remove_variable = hbe_declined_project
+  if = { limit = { is_ai = no situation:hbe_banquet = { var:hbe_round > 1 } } trigger_event_non_silently = { id = hbe_banquet.2 days = 1 } }
  } } hbe_feast_recount = yes
 '''
  replacements['hbe_settle_accounts']='''
@@ -303,35 +310,47 @@ situation_panel = {
   blockoverride "character_role" { datacontext = "[Character.GetRuledCountry]" country_flag_small = {} }
  }
  blockoverride "situation_subheader_content" {}
+ blockoverride "situation_panel_main_maximumsize" { minimumsize = { -1 320 } }
+ blockoverride "situation_panel_main_actions" {
+  vbox = { minimumsize = { 480 -1 } maximumsize = { 480 -1 } using = situations_actions }
+ }
  blockoverride "situation_panel_main_content" {
-  text_multi = { layoutpolicy_horizontal = expanding autoresize = yes text = "HBE_FEAST_STATUS" }
-  widget = { layoutpolicy_horizontal = expanding size = { -1 18 }
-   barchart = { layoutpolicy_horizontal = expanding size = { -1 16 }
+  vbox = { minimumsize = { 480 -1 } maximumsize = { 480 -1 } spacing = 8
+  text_multi = { size = { 480 46 } autoresize = no align = left|top text = "HBE_FEAST_STATUS" }
+  widget = { size = { 480 18 }
+   barchart = { size = { 480 16 }
     barslice = { texture = "gfx/interface/progressbars/progress_bar_whiteish.dds" color = { 0.60 0.22 0.16 1 }
      value = "[FixedPointToFloat(GetUniqueInternationalOrganization('hbe_common_party').MakeScope.GetVariable('hbe_party_points').GetValue)]" }
     barslice = { texture = "gfx/interface/progressbars/progress_bar_whiteish.dds" color = { 0.18 0.38 0.56 1 }
      value = "[FixedPointToFloat(GetUniqueInternationalOrganization('hbe_local_party').MakeScope.GetVariable('hbe_party_points').GetValue)]" }
    }
   }
-  text_multi = { layoutpolicy_horizontal = expanding autoresize = yes text = "HBE_FEAST_GUIDE" }
-  text_multi = { layoutpolicy_horizontal = expanding autoresize = yes text = "HBE_FEAST_REWARDS" }
+  text_multi = { size = { 480 64 } autoresize = no align = left|top text = "HBE_FEAST_GUIDE" }
+  text_multi = { size = { 480 64 } autoresize = no align = left|top text = "HBE_FEAST_REWARDS" }
 '''
  # Ordinary Country data models retain working flags/tooltips and score readings.
- gui+='  hbox = { layoutpolicy_horizontal = expanding spacing = 12\n'
+ gui+='  hbox = { size = { 480 312 } spacing = 12\n'
  for i,(key,name) in names.items():
   title='HBE_FEAST_COMMON' if i==1 else 'HBE_FEAST_LOCAL'
-  gui+=f'''vbox = {{ layoutpolicy_horizontal = expanding spacing = 4
- text_multi = {{ autoresize = yes text = "{title}" }}
- text_single = {{ text = "HBE_FEAST_MEMBER_COLUMNS" }}
- vbox = {{ layoutpolicy_horizontal = expanding datamodel = "[GetUniqueInternationalOrganization('{key}').GetMembers]"
-  item = {{ hbox = {{ layoutpolicy_horizontal = expanding spacing = 6 using = bg_paper_card size = {{ -1 30 }}
+  gui+=f'''vbox = {{ size = {{ 234 312 }} minimumsize = {{ 234 312 }} maximumsize = {{ 234 312 }} spacing = 4
+ text_multi = {{ size = {{ 234 64 }} autoresize = no align = left|top text = "{title}" }}
+ hbox = {{ size = {{ 234 24 }}
+  text_single = {{ size = {{ 175 24 }} text = "HBE_FEAST_MEMBER_NAME" }}
+  text_single = {{ size = {{ 45 24 }} text = "HBE_FEAST_MEMBER_POINTS" }}
+ }}
+ scrollarea = {{ size = {{ 234 216 }} scrollbarpolicy_horizontal = always_off autoresizeviewport = yes
+  viewportwidget = {{ widget = {{ scissor = yes }} }}
+  scrollbar_vertical = {{ using = Scrollbar_Vertical }}
+  scrollwidget = {{ fixedgridbox = {{ addrow = 30 addcolumn = 100% datamodel = "[GetUniqueInternationalOrganization('{key}').GetMembers]"
+  item = {{ hbox = {{ spacing = 4 using = bg_paper_card size = {{ 222 30 }}
    country_flag_small = {{ tooltipwidget = {{ using = CountryTooltip }} }}
-   text_single = {{ layoutpolicy_horizontal = expanding text = "[Country.GetName]" }}
-   text_single = {{ minimumsize = {{ 45 -1 }} text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }}
+   text_single = {{ size = {{ 145 30 }} maximumsize = {{ 145 30 }} text = "[Country.GetName]" }}
+   text_single = {{ size = {{ 32 30 }} align = right text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }}
+  }} }}
   }} }}
  }}
 }}\n'''
- gui+='  }\n }\n}\n'
+ gui+='  }\n  }\n }\n}\n'
  put('in_game/gui/panels/situation/hbe_banquet.gui',gui)
  (root/'docs/simple_banquet_v021.md').write_text('''# 大开席：两派同席
 

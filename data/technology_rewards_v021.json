@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.3.0",
   "advances": [
     {
       "key": "hbe_tech_common_1",
@@ -9,7 +9,7 @@
         "global_monthly_control": 0.05
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_common_2",
@@ -19,7 +19,7 @@
         "merchant_maintenance_efficiency": 0.1
       },
       "unlocks": [],
-      "link": "整合其他旧府州后，[Concept('hbe_term_delivery', '专业交付')|e]可按现有规则使用10点@hbe_yiqi! [Concept('hbe_term_yiqi', '义气')|e]作替代担保。。。。。。"
+      "link": "整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
     },
     {
       "key": "hbe_tech_common_3",
@@ -29,7 +29,7 @@
         "global_build_buildings_efficiency": 0.1
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_common_4",
@@ -39,7 +39,7 @@
         "global_institution_growth_modifier": 0.2
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
     },
     {
       "key": "hbe_tech_common_5",
@@ -49,17 +49,18 @@
         "global_burghers_max_literacy": 10
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
     },
     {
       "key": "hbe_tech_common_6",
       "name": "跨区工艺学堂",
       "modifiers": {
         "research_speed_modifier": 0.15,
-        "global_books_output_modifier": 0.2
+        "global_books_output_modifier": 0.2,
+        "global_hbe_shu_paper_output_modifier": 0.2
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_common_7",
@@ -69,7 +70,7 @@
         "build_gravel_road_cost_modifier": -0.15
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
     },
     {
       "key": "hbe_tech_common_8",
@@ -79,7 +80,7 @@
         "global_trade_center_power": 0.15
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_chengdu_plain_1",
@@ -89,19 +90,20 @@
         "global_rice_output_modifier": 0.15
       },
       "unlocks": [],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+      "link": "解锁本圈三年地方事业与地方援助资格。"
     },
     {
       "key": "hbe_tech_chengdu_plain_2",
       "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
       "modifiers": {
         "global_fine_cloth_output_modifier": 0.25,
-        "global_silk_output_modifier": 0.15
+        "global_silk_output_modifier": 0.15,
+        "global_hbe_shu_embroidery_output_modifier": 0.25
       },
       "unlocks": [
         "hbe_chengdu_plain_basic_production"
       ],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。。\n解锁机构生产方式：锦坊试织。"
+      "link": "取得本圈成长验收的课题资格。\n解锁机构生产方式：锦坊试织。"
     },
     {
       "key": "hbe_tech_chengdu_plain_3",
@@ -111,7 +113,7 @@
         "peasants_estate_target_satisfaction": 0.05
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_chengdu_plain_4",
@@ -121,9 +123,10 @@
         "global_rgo_build_time": -0.2
       },
       "unlocks": [
-        "hbe_chengdu_plain_advanced_production"
+        "hbe_chengdu_plain_advanced_production",
+        "hbe_chengdu_plain_paper_production"
       ],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：分工织锦。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：锦坊绣作。\n解锁机构生产方式：蜀纸描样。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_chengdu_plain_5",
@@ -133,7 +136,7 @@
         "global_devastation_recovery": 0.005
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_chengdu_plain_6",
@@ -143,7 +146,7 @@
         "cultural_tradition_modifier": 0.15
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_chengdu_plain_7",
@@ -153,17 +156,18 @@
         "stability_cost_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_chengdu_plain_8",
       "name": "盖碗公议学宫",
       "modifiers": {
         "research_speed_modifier": 0.2,
-        "cultural_influence_modifier": 0.25
+        "cultural_influence_modifier": 0.25,
+        "global_hbe_shu_embroidery_output_modifier": 0.3
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_1",
@@ -175,7 +179,7 @@
       "unlocks": [
         "hbe_southern_salt_wine_basic_production"
       ],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。。\n解锁机构生产方式：井灶汲卤。"
+      "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：井灶汲卤。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_2",
@@ -185,19 +189,20 @@
         "global_pottery_output_modifier": 0.15
       },
       "unlocks": [],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈成长验收的课题资格。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_3",
       "name": "井灶改良",
       "modifiers": {
         "global_salt_output_modifier": 0.3,
-        "global_tools_output_modifier": 0.15
+        "global_tools_output_modifier": 0.15,
+        "global_hbe_well_salt_output_modifier": 0.3
       },
       "unlocks": [
         "hbe_southern_salt_wine_advanced_production"
       ],
-      "link": "解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。。\n解锁机构生产方式：井架联灶。"
+      "link": "解锁机构生产方式：井灶精煎。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_4",
@@ -207,17 +212,18 @@
         "bank_interest": -0.005
       },
       "unlocks": [],
-      "link": "解锁盐引贷款，并作为本圈[Concept('hbe_term_contract', '旧约')|e]重审资格。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。"
+      "link": "解锁盐引贷款，并取得本圈旧约重审验收资格。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_5",
       "name": "巴蜀盐业总号",
       "modifiers": {
         "global_salt_output_modifier": 0.25,
-        "global_merchant_capacity_modifier": 0.25
+        "global_merchant_capacity_modifier": 0.25,
+        "global_hbe_well_salt_output_modifier": 0.25
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_6",
@@ -227,7 +233,7 @@
         "cultural_tradition_modifier": 0.1
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_7",
@@ -237,7 +243,7 @@
         "global_production_efficiency": 0.1
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_southern_salt_wine_8",
@@ -247,7 +253,7 @@
         "cultural_influence_modifier": 0.25
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_eastern_river_1",
@@ -257,7 +263,7 @@
         "merchant_maintenance_efficiency": 0.1
       },
       "unlocks": [],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+      "link": "解锁本圈三年地方事业与地方援助资格。"
     },
     {
       "key": "hbe_tech_eastern_river_2",
@@ -269,7 +275,7 @@
       "unlocks": [
         "hbe_eastern_river_basic_production"
       ],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。。\n解锁机构生产方式：江船备料。"
+      "link": "取得本圈成长验收的课题资格。\n解锁机构生产方式：江船备料。"
     },
     {
       "key": "hbe_tech_eastern_river_3",
@@ -279,7 +285,7 @@
         "merchant_maintenance_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_eastern_river_4",
@@ -291,7 +297,7 @@
       "unlocks": [
         "hbe_eastern_river_advanced_production"
       ],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：船帮联作。\n解锁“川江互保”：运行江岸转运仓、近五年完成本圈事业、役负低于70，且江运互保至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_eastern_river_5",
@@ -301,7 +307,7 @@
         "global_production_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_eastern_river_6",
@@ -311,7 +317,7 @@
         "fort_maintenance_efficiency": 0.2
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_eastern_river_7",
@@ -321,7 +327,7 @@
         "global_levy_recruitment_speed_modifier": 0.2
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_eastern_river_8",
@@ -331,7 +337,7 @@
         "army_initiative": 0.15
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_northern_shudao_1",
@@ -341,7 +347,7 @@
         "build_gravel_road_cost_modifier": -0.15
       },
       "unlocks": [],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+      "link": "解锁本圈三年地方事业与地方援助资格。"
     },
     {
       "key": "hbe_tech_northern_shudao_2",
@@ -351,7 +357,7 @@
         "army_maintenance_efficiency": 0.1
       },
       "unlocks": [],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈成长验收的课题资格。"
     },
     {
       "key": "hbe_tech_northern_shudao_3",
@@ -361,7 +367,7 @@
         "fort_maintenance_efficiency": 0.2
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_northern_shudao_4",
@@ -371,7 +377,7 @@
         "army_maintenance_efficiency": 0.2
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_northern_shudao_5",
@@ -381,7 +387,7 @@
         "global_manpower_modifier": 0.2
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_northern_shudao_6",
@@ -393,19 +399,20 @@
       "unlocks": [
         "hbe_northern_shudao_basic_production"
       ],
-      "link": "解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。。\n解锁机构生产方式：关驿抄券。"
+      "link": "解锁机构生产方式：关驿抄券。"
     },
     {
       "key": "hbe_tech_northern_shudao_7",
       "name": "公文分驿",
       "modifiers": {
         "global_road_building_time": -0.15,
-        "diplomatic_capacity_modifier": 0.2
+        "diplomatic_capacity_modifier": 0.2,
+        "global_hbe_shu_paper_output_modifier": 0.25
       },
       "unlocks": [
         "hbe_northern_shudao_advanced_production"
       ],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：驿券纸坊。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：蜀纸精抄。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_northern_shudao_8",
@@ -415,7 +422,7 @@
         "global_monthly_control": 0.1
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_central_hills_1",
@@ -425,7 +432,7 @@
         "global_max_rgo_size_modifier_in_rural": 0.15
       },
       "unlocks": [],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。。。。。。"
+      "link": "解锁本圈三年地方事业与地方援助资格。"
     },
     {
       "key": "hbe_tech_central_hills_2",
@@ -435,7 +442,7 @@
         "global_monthly_control": 0.05
       },
       "unlocks": [],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈成长验收的课题资格。"
     },
     {
       "key": "hbe_tech_central_hills_3",
@@ -447,7 +454,7 @@
       "unlocks": [
         "hbe_central_hills_basic_production"
       ],
-      "link": "解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。。\n解锁机构生产方式：仓社附田。"
+      "link": "解锁机构生产方式：仓社附田。"
     },
     {
       "key": "hbe_tech_central_hills_4",
@@ -459,7 +466,7 @@
       "unlocks": [
         "hbe_central_hills_advanced_production"
       ],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：塘堰轮作。\n解锁“义仓相济”：运行分仓义廪、近五年完成本圈事业、役负低于70，且义仓储备至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_central_hills_5",
@@ -469,7 +476,7 @@
         "global_disease_resistance": 0.05
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_central_hills_6",
@@ -479,7 +486,7 @@
         "burghers_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_central_hills_7",
@@ -489,7 +496,7 @@
         "merchant_maintenance_efficiency": 0.2
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_central_hills_8",
@@ -499,7 +506,7 @@
         "global_monthly_prosperity": 0.05
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_western_tea_horse_1",
@@ -511,7 +518,7 @@
       "unlocks": [
         "hbe_western_tea_horse_basic_production"
       ],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。。\n解锁机构生产方式：驮具修造。"
+      "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：驮具修造。"
     },
     {
       "key": "hbe_tech_western_tea_horse_2",
@@ -521,19 +528,21 @@
         "merchant_maintenance_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈成长验收的课题资格。"
     },
     {
       "key": "hbe_tech_western_tea_horse_3",
       "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
       "modifiers": {
         "global_leather_output_modifier": 0.25,
-        "global_food_decay": -0.1
+        "global_food_decay": -0.1,
+        "global_hbe_border_tea_output_modifier": 0.25
       },
       "unlocks": [
-        "hbe_western_tea_horse_advanced_production"
+        "hbe_western_tea_horse_advanced_production",
+        "hbe_western_tea_horse_paper_production"
       ],
-      "link": "解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。。\n解锁机构生产方式：商队皮作。"
+      "link": "解锁机构生产方式：边茶压砖。\n解锁机构生产方式：蜀纸包茶。"
     },
     {
       "key": "hbe_tech_western_tea_horse_4",
@@ -543,17 +552,18 @@
         "global_road_building_time": -0.15
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_western_tea_horse_5",
       "name": "茶马通商公所",
       "modifiers": {
         "global_tea_output_modifier": 0.3,
-        "global_trade_center_power": 0.2
+        "global_trade_center_power": 0.2,
+        "global_hbe_border_tea_output_modifier": 0.3
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_western_tea_horse_6",
@@ -563,7 +573,7 @@
         "global_disease_resistance": 0.05
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_western_tea_horse_7",
@@ -573,7 +583,7 @@
         "cultural_influence_modifier": 0.2
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_western_tea_horse_8",
@@ -583,7 +593,7 @@
         "cultural_tradition_modifier": 0.25
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_1",
@@ -595,7 +605,7 @@
       "unlocks": [
         "hbe_southwestern_valleys_basic_production"
       ],
-      "link": "解锁本圈三年地方事业与本地[Concept('hbe_term_delivery', '专业交付')|e]资格。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。。\n解锁机构生产方式：谷市农具。"
+      "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：谷市农具。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_2",
@@ -605,7 +615,7 @@
         "peasants_estate_target_satisfaction": 0.05
       },
       "unlocks": [],
-      "link": "取得本圈成长验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈成长验收的课题资格。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_3",
@@ -615,7 +625,7 @@
         "global_road_building_time": -0.15
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_4",
@@ -627,7 +637,7 @@
       "unlocks": [
         "hbe_southwestern_valleys_advanced_production"
       ],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：诸谷铁木联作。\n解锁“诸谷换市”：运行谷市盟栈、近五年完成本圈事业、役负低于70，且地方共治至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_5",
@@ -637,7 +647,7 @@
         "burghers_estate_target_satisfaction": 0.1
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_6",
@@ -647,7 +657,7 @@
         "global_levy_recruitment_speed_modifier": 0.15
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_7",
@@ -657,7 +667,7 @@
         "global_defensive": 0.15
       },
       "unlocks": [],
-      "link": "取得本圈[Concept('hbe_term_contract', '旧约')|e]重审验收的[Concept('hbe_term_research', '课题')|e]资格。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
+      "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_southwestern_valleys_8",
@@ -667,7 +677,7 @@
         "tribes_estate_target_satisfaction": 0.1
       },
       "unlocks": [],
-      "link": "取得本圈地区重组及[Concept('hbe_term_charter', '百年章程')|e]验收的[Concept('hbe_term_research', '课题')|e]资格。。。。。。"
+      "link": "取得本圈地区重组及百年章程验收的课题资格。"
     },
     {
       "key": "hbe_civic_common_1",
@@ -677,7 +687,7 @@
         "global_estate_target_satisfaction": 0.05
       },
       "unlocks": [],
-      "link": "解锁三种民役政策、两项阶层特权、府议与驻防粮额；@hbe_burden! [Concept('hbe_term_burden', '役负')|e]影响事业与招募。。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_civic_common_2",
@@ -687,17 +697,18 @@
         "global_build_buildings_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "解锁公账审计、客籍议约与1457年的修约议事。。。。。。。"
+      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
     },
     {
       "key": "hbe_civic_chengdu_plain_1",
       "name": "岁修与分水公议",
       "modifiers": {
         "global_monthly_food_modifier": 0.15,
-        "global_fine_cloth_output_modifier": 0.15
+        "global_fine_cloth_output_modifier": 0.15,
+        "global_hbe_shu_embroidery_output_modifier": 0.2
       },
       "unlocks": [],
-      "link": "解锁分水都理五年委任与本圈协调事务。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。。\n岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。"
+      "link": "岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。"
     },
     {
       "key": "hbe_civic_chengdu_plain_2",
@@ -707,17 +718,18 @@
         "cultural_tradition_modifier": 0.2
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_southern_salt_wine_1",
       "name": "井灶保任章程",
       "modifiers": {
         "global_salt_output_modifier": 0.2,
-        "burghers_estate_target_satisfaction": 0.1
+        "burghers_estate_target_satisfaction": 0.1,
+        "global_hbe_well_salt_output_modifier": 0.2
       },
       "unlocks": [],
-      "link": "解锁盐引会首五年委任与本圈协调事务。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。。\n井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。"
+      "link": "井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。"
     },
     {
       "key": "hbe_civic_southern_salt_wine_2",
@@ -727,7 +739,7 @@
         "total_loan_capacity_modifier": 0.5
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_eastern_river_1",
@@ -737,7 +749,7 @@
         "fort_maintenance_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "解锁江运总理五年委任与本圈协调事务。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。。\n江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。"
+      "link": "江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。"
     },
     {
       "key": "hbe_civic_eastern_river_2",
@@ -747,7 +759,7 @@
         "army_maintenance_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_northern_shudao_1",
@@ -757,7 +769,7 @@
         "global_road_building_time": -0.1
       },
       "unlocks": [],
-      "link": "解锁关驿都巡五年委任与本圈协调事务。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。。\n关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。"
+      "link": "关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。"
     },
     {
       "key": "hbe_civic_northern_shudao_2",
@@ -767,7 +779,7 @@
         "global_manpower_modifier": 0.15
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_central_hills_1",
@@ -777,7 +789,7 @@
         "peasants_estate_target_satisfaction": 0.1
       },
       "unlocks": [],
-      "link": "解锁义仓监理五年委任与本圈协调事务。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。。\n仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。"
+      "link": "仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。"
     },
     {
       "key": "hbe_civic_central_hills_2",
@@ -787,7 +799,7 @@
         "global_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_western_tea_horse_1",
@@ -797,7 +809,7 @@
         "merchant_maintenance_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "解锁茶路公议使五年委任与本圈协调事务。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。。\n山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。"
+      "link": "山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。"
     },
     {
       "key": "hbe_civic_western_tea_horse_2",
@@ -807,7 +819,7 @@
         "diplomatic_capacity_modifier": 0.2
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_southwestern_valleys_1",
@@ -817,7 +829,7 @@
         "tribes_estate_target_satisfaction": 0.1
       },
       "unlocks": [],
-      "link": "解锁诸谷约正五年委任与本圈协调事务。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。。\n驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。"
+      "link": "驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。"
     },
     {
       "key": "hbe_civic_southwestern_valleys_2",
@@ -827,7 +839,7 @@
         "global_production_efficiency": 0.15
       },
       "unlocks": [],
-      "link": "解锁本圈续约协调与传习减役；川东、[Concept('hbe_history_shudao', '蜀道')|e]另解锁升级兵种。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。。\n续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
     }
   ],
   "production": [
@@ -845,13 +857,27 @@
     {
       "key": "hbe_chengdu_plain_advanced_production",
       "building": "hbe_brocade_school",
-      "goods": "fine_cloth",
+      "goods": "hbe_shu_embroidery",
       "inputs": {
         "silk": 0.6,
         "dyes": 0.12,
-        "tools": 0.06
+        "tools": 0.06,
+        "paper": 0.04
       },
-      "output": 1.05,
+      "output": 1.2,
+      "advance": "hbe_tech_chengdu_plain_4"
+    },
+    {
+      "key": "hbe_chengdu_plain_paper_production",
+      "building": "hbe_brocade_school",
+      "goods": "hbe_shu_embroidery",
+      "inputs": {
+        "silk": 0.6,
+        "dyes": 0.12,
+        "tools": 0.06,
+        "hbe_shu_paper": 0.04
+      },
+      "output": 1.5,
       "advance": "hbe_tech_chengdu_plain_4"
     },
     {
@@ -868,12 +894,12 @@
     {
       "key": "hbe_southern_salt_wine_advanced_production",
       "building": "hbe_salt_office",
-      "goods": "salt",
+      "goods": "hbe_well_salt",
       "inputs": {
         "lumber": 0.45,
         "tools": 0.15
       },
-      "output": 1.5,
+      "output": 1.8,
       "advance": "hbe_tech_southern_salt_wine_3"
     },
     {
@@ -913,12 +939,12 @@
     {
       "key": "hbe_northern_shudao_advanced_production",
       "building": "hbe_gate_registry",
-      "goods": "paper",
+      "goods": "hbe_shu_paper",
       "inputs": {
         "lumber": 0.6,
         "tools": 0.08
       },
-      "output": 1.0,
+      "output": 1.25,
       "advance": "hbe_tech_northern_shudao_7"
     },
     {
@@ -957,12 +983,25 @@
     {
       "key": "hbe_western_tea_horse_advanced_production",
       "building": "hbe_tea_exchange",
-      "goods": "leather",
+      "goods": "hbe_border_tea",
       "inputs": {
-        "livestock": 0.65,
-        "tools": 0.1
+        "tea": 0.65,
+        "tools": 0.08,
+        "paper": 0.03
       },
-      "output": 1.05,
+      "output": 1.2,
+      "advance": "hbe_tech_western_tea_horse_3"
+    },
+    {
+      "key": "hbe_western_tea_horse_paper_production",
+      "building": "hbe_tea_exchange",
+      "goods": "hbe_border_tea",
+      "inputs": {
+        "tea": 0.65,
+        "tools": 0.08,
+        "hbe_shu_paper": 0.03
+      },
+      "output": 1.5,
       "advance": "hbe_tech_western_tea_horse_3"
     },
     {
@@ -1008,7 +1047,8 @@
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_chengdu_plain_7 hbe_operating_brocade_school = yes has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_yiqi >= 60",
       "modifiers": {
         "research_speed_modifier": 0.2,
-        "cultural_influence_modifier": 0.25
+        "cultural_influence_modifier": 0.25,
+        "global_hbe_shu_embroidery_output_modifier": 0.3
       }
     },
     {
@@ -1019,7 +1059,8 @@
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southern_salt_wine_4 hbe_operating_salt_office = yes has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 OR = { NOT = { has_variable = hbe_salt_debt } var:hbe_salt_debt <= 20 }",
       "modifiers": {
         "global_salt_output_modifier": 0.3,
-        "global_merchant_capacity_modifier": 0.2
+        "global_merchant_capacity_modifier": 0.2,
+        "global_hbe_well_salt_output_modifier": 0.3
       }
     },
     {
@@ -1074,7 +1115,8 @@
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_northern_shudao_7 hbe_operating_gate_registry = yes has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 has_variable = hbe_mission_northern_shudao_2",
       "modifiers": {
         "global_road_building_time": -0.1,
-        "global_institution_growth_modifier": 0.25
+        "global_institution_growth_modifier": 0.25,
+        "global_hbe_shu_paper_output_modifier": 0.3
       }
     },
     {
@@ -1107,7 +1149,8 @@
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_western_tea_horse_4 hbe_operating_tea_exchange = yes has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_tea >= 30",
       "modifiers": {
         "global_tea_output_modifier": 0.3,
-        "global_merchant_capacity_modifier": 0.25
+        "global_merchant_capacity_modifier": 0.25,
+        "global_hbe_border_tea_output_modifier": 0.3
       }
     },
     {

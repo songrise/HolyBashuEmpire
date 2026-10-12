@@ -1,2 +1,2 @@
-monthly_country_pulse = { on_actions = { hbe_ai_pulse } }
+﻿monthly_country_pulse = { on_actions = { hbe_ai_pulse } }
 hbe_ai_pulse = { trigger = { OR = { hbe_is_prince = yes has_country_modifier = hbe_ai_internal_ambition } } effect = { hbe_ai_internal_update = yes } }

@@ -1,0 +1,23 @@
+﻿hbe_choice_chengdu_plain_1 = { global_monthly_food_modifier = 0.25 global_rice_output_modifier = 0.2 }
+hbe_choice_chengdu_plain_2 = { global_construction_speed = 0.15 peasants_estate_target_satisfaction = 0.06 }
+hbe_choice_chengdu_plain_3 = { global_food_decay = -0.15 global_monthly_control = -0.05 }
+hbe_choice_southern_salt_wine_1 = { global_salt_output_modifier = 0.2 global_hbe_well_salt_output_modifier = 0.3 }
+hbe_choice_southern_salt_wine_2 = { global_production_efficiency = 0.15 peasants_estate_target_satisfaction = 0.06 }
+hbe_choice_southern_salt_wine_3 = { global_merchant_capacity_modifier = 0.25 burghers_estate_target_satisfaction = 0.05 global_monthly_control = -0.05 }
+hbe_choice_eastern_river_1 = { global_merchant_capacity_modifier = 0.3 global_food_decay = 0.1 }
+hbe_choice_eastern_river_2 = { ship_build_speed = 0.25 merchant_maintenance_efficiency = 0.15 }
+hbe_choice_eastern_river_3 = { army_maintenance_efficiency = 0.2 global_defensive = 0.2 global_merchant_capacity_modifier = -0.1 }
+hbe_choice_northern_shudao_1 = { global_road_building_time = -0.15 global_supply_limit_modifier = 0.2 }
+hbe_choice_northern_shudao_2 = { global_hbe_shu_paper_output_modifier = 0.3 global_institution_growth_modifier = 0.2 }
+hbe_choice_northern_shudao_3 = { global_merchant_capacity_modifier = 0.2 global_monthly_control = -0.05 }
+hbe_choice_central_hills_1 = { global_trade_center_power = 0.25 global_food_decay = 0.1 }
+hbe_choice_central_hills_2 = { global_food_decay = -0.25 peasants_estate_target_satisfaction = 0.08 }
+hbe_choice_central_hills_3 = { global_manpower_modifier = 0.2 army_maintenance_efficiency = 0.15 global_monthly_food_modifier = -0.1 }
+hbe_choice_western_tea_horse_1 = { global_hbe_border_tea_output_modifier = 0.3 global_tea_output_modifier = 0.15 global_merchant_capacity_modifier = -0.1 }
+hbe_choice_western_tea_horse_2 = { global_merchant_capacity_modifier = 0.3 merchant_maintenance_efficiency = 0.15 }
+hbe_choice_western_tea_horse_3 = { cultural_influence_modifier = 0.25 tolerance_heathen = 1 global_production_efficiency = -0.05 }
+hbe_choice_southwestern_valleys_1 = { global_tools_output_modifier = 0.3 global_production_efficiency = 0.15 }
+hbe_choice_southwestern_valleys_2 = { global_construction_speed = 0.2 tribes_estate_target_satisfaction = 0.08 }
+hbe_choice_southwestern_valleys_3 = { global_merchant_capacity_modifier = 0.25 tribes_estate_target_satisfaction = 0.08 global_monthly_control = -0.05 }
+hbe_event_workers_paid = { peasants_estate_target_satisfaction = 0.08 global_construction_speed = 0.1 }
+hbe_event_goods_fair = { global_merchant_capacity_modifier = 0.25 cultural_influence_modifier = 0.15 }

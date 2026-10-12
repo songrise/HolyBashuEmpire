@@ -1,0 +1,164 @@
+{
+  "version": "0.3.0",
+  "goods": [
+    {
+      "key": "hbe_shu_embroidery",
+      "name": "蜀绣",
+      "base": "fine_cloth",
+      "price": 9,
+      "transport": 0.35,
+      "development": 10,
+      "wealth": 1.0,
+      "demand": {
+        "nobles": 0.22,
+        "burghers": 0.1,
+        "clergy": 0.08
+      },
+      "group": "chengdu_plain",
+      "building": "hbe_brocade_school",
+      "advance": 4,
+      "inputs": {
+        "silk": 0.6,
+        "dyes": 0.12,
+        "tools": 0.06,
+        "paper": 0.04
+      },
+      "output": 1.2,
+      "method": "锦坊绣作",
+      "boosts": [
+        [
+          "hbe_tech_chengdu_plain_2",
+          0.25
+        ],
+        [
+          "hbe_tech_chengdu_plain_8",
+          0.3
+        ]
+      ],
+      "network": [
+        "chengdu_plain",
+        7
+      ],
+      "desc": "锦江两岸的织坊以丝为底，以彩线施针，山水花鸟遂能随衣冠远行。府第陈设与礼物往来，为绣工提供了比寻常布帛更丰厚的订单。"
+    },
+    {
+      "key": "hbe_well_salt",
+      "name": "井盐",
+      "base": "salt",
+      "price": 5,
+      "transport": 0.4,
+      "development": 0,
+      "wealth": 0.7,
+      "demand": {
+        "nobles": 0.08,
+        "burghers": 0.07,
+        "clergy": 0.05,
+        "peasants": 0.02
+      },
+      "group": "southern_salt_wine",
+      "building": "hbe_salt_office",
+      "advance": 3,
+      "inputs": {
+        "lumber": 0.45,
+        "tools": 0.15
+      },
+      "output": 1.8,
+      "method": "井灶精煎",
+      "boosts": [
+        [
+          "hbe_tech_southern_salt_wine_3",
+          0.3
+        ],
+        [
+          "hbe_tech_southern_salt_wine_5",
+          0.25
+        ]
+      ],
+      "network": [
+        "southern_salt_wine",
+        4
+      ],
+      "desc": "深井取卤，灶火成盐。川南井户将地底的咸水煎成洁净细盐，装入盐袋，沿江运向城镇与山地；食用、腌藏与长途备粮使它有着广泛的买家。"
+    },
+    {
+      "key": "hbe_shu_paper",
+      "name": "蜀纸",
+      "base": "paper",
+      "price": 4,
+      "transport": 0.25,
+      "development": 5,
+      "wealth": 0.8,
+      "demand": {
+        "nobles": 0.1,
+        "burghers": 0.09,
+        "clergy": 0.12
+      },
+      "group": "northern_shudao",
+      "building": "hbe_gate_registry",
+      "advance": 7,
+      "inputs": {
+        "lumber": 0.6,
+        "tools": 0.08
+      },
+      "output": 1.25,
+      "method": "蜀纸精抄",
+      "boosts": [
+        [
+          "hbe_tech_northern_shudao_7",
+          0.25
+        ],
+        [
+          "hbe_tech_common_6",
+          0.2
+        ]
+      ],
+      "network": [
+        "northern_shudao",
+        7
+      ],
+      "desc": "竹麻入槽，纤维成帘。蜀地纸坊供应驿券、契书与经卷，轻而便运的纸张又成为锦坊描样和茶商包装所需的材料，商旅与读书人的订单遂汇到同一座纸坊。"
+    },
+    {
+      "key": "hbe_border_tea",
+      "name": "边茶",
+      "base": "tea",
+      "price": 5,
+      "transport": 0.25,
+      "development": 0,
+      "wealth": 0.7,
+      "demand": {
+        "nobles": 0.08,
+        "burghers": 0.12,
+        "clergy": 0.1,
+        "tribesmen": 0.05
+      },
+      "group": "western_tea_horse",
+      "building": "hbe_tea_exchange",
+      "advance": 3,
+      "inputs": {
+        "tea": 0.65,
+        "tools": 0.08,
+        "paper": 0.03
+      },
+      "output": 1.2,
+      "method": "边茶压砖",
+      "boosts": [
+        [
+          "hbe_tech_western_tea_horse_3",
+          0.25
+        ],
+        [
+          "hbe_tech_western_tea_horse_5",
+          0.3
+        ]
+      ],
+      "network": [
+        "western_tea_horse",
+        4
+      ],
+      "desc": "散茶筛拣、蒸压成砖，再用竹篾束紧。商队需要经得起山程与风雨的茶货，山地聚落、寺院与市镇的持续购买，使护行与茶坊经营成为同一条商路上的事业。"
+    }
+  ],
+  "demand_registration": "Full native pop_demand preserved with four appended keys; conflicts with other mods replacing this singleton.",
+  "balance": "Demand-driven premium goods; reference price is not guaranteed sale income."
+}

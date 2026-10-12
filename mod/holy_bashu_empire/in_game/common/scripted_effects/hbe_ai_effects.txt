@@ -1,5 +1,5 @@
-hbe_ai_internal_update = {
- if = { limit = { is_ai = yes hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 months_since_war >= 48 }
+﻿hbe_ai_internal_update = {
+ if = { limit = { is_ai = yes hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 months_since_war >= 96 }
   if = { limit = { NOT = { has_country_modifier = hbe_ai_internal_ambition } } add_country_modifier = { modifier = hbe_ai_internal_ambition years = -1 } }
  } else = { remove_country_modifier = hbe_ai_internal_ambition }
 }

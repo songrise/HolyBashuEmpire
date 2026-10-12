@@ -1,4 +1,4 @@
-monthly_country_pulse = { on_actions = { hbe_simple_feast_country } }
+﻿monthly_country_pulse = { on_actions = { hbe_simple_feast_country } }
 hbe_simple_feast_country = { trigger = { hbe_is_prince = yes } effect = {
  if = { limit = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire }
   hbe_banquet_register = yes

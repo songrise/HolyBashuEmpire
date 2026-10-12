@@ -17,6 +17,9 @@ from build_social_expansion import build_social_expansion
 from build_technology_rewards import build_technology_rewards
 from build_bashu_ai import build_bashu_ai
 from build_simple_banquet import build_simple_banquet
+from build_art_v021 import build_art_v021
+from build_special_goods import prepare_special_goods,finish_special_goods
+from build_event_choices import build_event_choices
 
 ROOT = Path(__file__).resolve().parents[1]
 REGIONS = [
@@ -115,7 +118,7 @@ def main():
         write(out/rel,text,bom or (rel.endswith('.txt') and not rel.startswith('main_menu/setup/')))
     # Same fields as the game's -mod_stubber output; do not depend on a scratch directory.
     metadata=dict(name='',id='',version='',supported_game_version='',short_description='',tags=[],relationships=[],game_custom_data={})
-    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.2.1',supported_game_version='1.4.*',
+    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.3.0',supported_game_version='1.4.*',
                     short_description='架空巴蜀：七个帝国圈、三十六诸侯，天府加成、选举、地区经营与百年传承。',
                     tags=['Alternative History','Gameplay'])
     put('.metadata/metadata.json',json.dumps(metadata,ensure_ascii=False,indent=2))
@@ -530,9 +533,13 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     if stale_decisions.exists(): stale_decisions.unlink()
     native_content = build_native_content(out, ROOT, countries, REGIONS, catalog, loc, put, full_art, game)
     social_expansion = build_social_expansion(out, ROOT, countries, REGIONS, loc, put)
+    special_goods = prepare_special_goods(out, ROOT, loc, put, game)
     technology_rewards = build_technology_rewards(out, ROOT, loc, put, game)
     internal_ai = build_bashu_ai(out, ROOT, loc, put, game)
     simple_banquet = build_simple_banquet(out, ROOT, countries, loc, put, game)
+    art_v021 = build_art_v021(out, ROOT, loc, put, game)
+    finish_special_goods(out, ROOT, loc, put, game, special_goods)
+    event_choices = build_event_choices(out, ROOT, loc, put, game)
     # Both Chinese and English UI modes have complete keys (English uses Chinese placeholder text).
     variable_labels={'hbe_yiqi':'义气','hbe_guoqi':'锅气','hbe_salt_debt':'盐债',
                      'hbe_research_timer':'地方课题计时','hbe_flavor_cooldown':'地方事件间隔',
@@ -553,11 +560,11 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     assignments=[dict(location=r['location_id'],country=loc_to_tag[r['location_id']],circle=r['circle_design_key'],province=r['original_province_id']) for r in rows]
     csv_write(ROOT/'data/locations_v001.csv',assignments)
     write(ROOT/'data/technology_v001.json',json.dumps(catalog,ensure_ascii=False,indent=2))
-    manifest=dict(version='0.2.1',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
+    manifest=dict(version='0.3.0',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
                   source_setup_sha256=sha(original_path),removed_domain_tokens=len(removed),
                   research_nodes=len(catalog)+len(social_expansion['advances']),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events']+len(social_expansion['events']),
                   decisions=70+len(social_expansion['decisions']),social_expansion=social_expansion,expansion=expansion,native_content=native_content,
-                  technology_rewards=technology_rewards,internal_ai=internal_ai,simple_banquet=simple_banquet,
+                  technology_rewards=technology_rewards,internal_ai=internal_ai,simple_banquet=simple_banquet,art_v021=art_v021,special_goods=special_goods,event_choices=event_choices,
                   illustrations='15 shared painted event backgrounds, 8 organization emblems and panels, situation panel, 97 illustrated decisions, 80 native advance icons, 16 building icons, 9 unit illustrations and 36 text-free heraldic flags',
                   icon_art=icon_art,
                   full_art=full_art,

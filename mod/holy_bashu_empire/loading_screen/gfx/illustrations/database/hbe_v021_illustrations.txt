@@ -1,0 +1,1 @@
+﻿hbe_event_illustration_feast_two_parties = { scene = "hbe_event_scene_feast_two_parties" tags = { 1000 = hbe_event_art_feast_two_parties } }

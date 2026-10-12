@@ -1,4 +1,4 @@
-MAJOR_EVENT_INFO={
+﻿MAJOR_EVENT_INFO={
 log=no
 onmap=no
 popup=yes

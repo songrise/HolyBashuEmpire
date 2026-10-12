@@ -1,0 +1,8 @@
+﻿global_hbe_shu_embroidery_output_modifier = { percent = yes game_data = { category = country } }
+local_hbe_shu_embroidery_output_modifier = { percent = yes game_data = { category = location } }
+global_hbe_well_salt_output_modifier = { percent = yes game_data = { category = country } }
+local_hbe_well_salt_output_modifier = { percent = yes game_data = { category = location } }
+global_hbe_shu_paper_output_modifier = { percent = yes game_data = { category = country } }
+local_hbe_shu_paper_output_modifier = { percent = yes game_data = { category = location } }
+global_hbe_border_tea_output_modifier = { percent = yes game_data = { category = country } }
+local_hbe_border_tea_output_modifier = { percent = yes game_data = { category = location } }

@@ -160,24 +160,36 @@ def script_mods(mods):
  return ' '.join(f'{k} = {v:g}' for k,v in mods.items())
 
 def build_technology_rewards(out,root,loc,put,game):
- summary={'version':'0.2.1','advances':[],'production':[],'networks':[]}
+ from build_special_goods import GOODS
+ specialty={r['group']:r for r in GOODS}
+ summary={'version':'0.3.0','advances':[],'production':[],'networks':[]}
  pm_unlocks={}
  for g,b,bn,an,good,bi,bo,ai,ao,bt,at in PRODUCTION:
   for suffix,title,inputs,output,index in [('basic',bn,bi,bo,bt),('advanced',an,ai,ao,at)]:
+   produced=good
+   if suffix=='advanced' and g in specialty:
+    r=specialty[g];title=r['method'];inputs=r['inputs'];output=r['output'];produced=r['key']
    p=f'hbe_{g}_{suffix}_production'
    pm_unlocks.setdefault(f'hbe_tech_{g}_{index}',[]).append(p)
    loc[p]=title
    loc[p+'_desc']=f'{title}利用机构雇员与市场材料生产商品；缺工或缺料会降低实际产出。'
-   summary['production'].append(dict(key=p,building=b,goods=good,inputs=inputs,output=output,advance=f'hbe_tech_{g}_{index}'))
+   summary['production'].append(dict(key=p,building=b,goods=produced,inputs=inputs,output=output,advance=f'hbe_tech_{g}_{index}'))
+   if suffix=='advanced' and g in ['chengdu_plain','western_tea_horse']:
+    premium=p.replace('_advanced_','_paper_');premium_inputs={('hbe_shu_paper' if k=='paper' else k):v for k,v in inputs.items()}
+    pm_unlocks.setdefault(f'hbe_tech_{g}_{index}',[]).append(premium)
+    loc[premium]='蜀纸描样' if g=='chengdu_plain' else '蜀纸包茶'
+    loc[premium+'_desc']='选用蜀纸提高成品质量，满额基础产出提高25%；缺货时可改回普通纸生产。'
+    summary['production'].append(dict(key=premium,building=b,goods=produced,inputs=premium_inputs,output=output*1.25,advance=f'hbe_tech_{g}_{index}'))
  # Vanilla country modifier names also include dynamically generated goods outputs.
  definitions=(game/'main_menu/common/modifier_type_definitions/00_modifier_types.txt').read_text(encoding='utf-8-sig')
  defined={k for k,*_ in blocks(definitions,0)}
  goods={k for f in (game/'in_game/common/goods').glob('*.txt') for k,*_ in blocks(f.read_text(encoding='utf-8-sig'),0)}
+ goods|={r['key'] for r in GOODS}
  allmods={k for rows in [*REWARDS.values(),*CIVIC.values()] for row in rows for k in row}
  allmods|={k for *_,mods,req,trigger in NETWORKS for k in mods}
  allmods|={k for mods in BUILDING_BUFFS.values() for k in mods}
- dynamic={f'{scope}_{good}_output_modifier' for scope in ('global','local') for good in goods}
- assert allmods <= defined|dynamic, sorted(allmods-defined-dynamic)
+ defined|={k for f in (out/'main_menu/common/modifier_type_definitions').glob('*.txt') for k,*_ in blocks(f.read_text(encoding='utf-8-sig'),0)}
+ assert allmods <= defined, sorted(allmods-defined)
  for filename,catalog in [('hbe_advances.txt',REWARDS),('hbe_civic_advances.txt',CIVIC)]:
   path=out/'in_game/common/advances'/filename;txt=path.read_text(encoding='utf-8-sig');edits=[]
   for key,_,start,end,_ in blocks(txt,0):
@@ -187,15 +199,22 @@ def build_technology_rewards(out,root,loc,put,game):
    # A rebuild may reapply this pass: remove only fields owned by this catalogue.
    for m in mods:body=re.sub(r'(?m)^\s*'+re.escape(m)+r'\s*=\s*[-\d.]+\s*$', '',body)
    body=re.sub(r'(?m)^\s*unlock_production_method\s*=\s*hbe_\w+\s*$','',body)
-   body+='\n    # 0.2.1: immediate native rewards, rendered by the vanilla technology UI.\n'
+   body=re.sub(r'(?m)^\s*# 0\.2\.1: immediate native rewards, rendered by the vanilla technology UI\.\s*$','',body).rstrip()
+   body+='\n    # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.\n'
    body+=''.join(f'    {m} = {v:g}\n' for m,v in mods.items())
    body+=''.join(f'    unlock_production_method = {p}\n' for p in pm_unlocks.get(key,[]))
    edits.append((start,end,body))
    prose=loc[key+'_desc'].split('\n\n')[0]
-   old=loc.get(key+'_effects','')
-   # Retain concrete old mission/unlock rules, discard the repeated blanket claim.
-   old=old.split('；首次结算')[0].split('；每项')[0]
-   if old.startswith('完成记录用于'):old=''
+   # Generate from authoritative rules. Never feed previous generated prose back in.
+   old=''
+   node_index=int(index)
+   if prefix=='hbe_tech_':
+    if group!='common' and node_index==1:old='解锁本圈三年地方事业与地方援助资格'
+    elif group!='common' and node_index==2:old='取得本圈成长验收的课题资格'
+    elif group!='common' and node_index in (4,7):old='取得本圈旧约重审验收的课题资格'
+    elif group!='common' and node_index in (5,8):old='取得本圈地区重组及百年章程验收的课题资格'
+    if key=='hbe_tech_southern_salt_wine_4':old='解锁盐引贷款，并取得本圈旧约重审验收资格'
+    if key=='hbe_tech_common_2':old='整合其他旧府州后，地方援助可以使用10点义气作替代担保'
    effects=[]
    if old:effects.append(old+'。')
    for p in pm_unlocks.get(key,[]):effects.append('解锁机构生产方式：'+loc[p]+'。')
@@ -209,9 +228,11 @@ def build_technology_rewards(out,root,loc,put,game):
    if key=='hbe_tech_common_4':effects.append('配合锦江讲会和跨区工艺学堂，加快技术与制度传播。')
    if key=='hbe_tech_common_5':effects.append('提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。')
    if key=='hbe_tech_common_7':effects.append('降低原版道路工期与碎石路成本；可与蜀道接递叠加。')
-   text='\n'.join(effects)
+   text='\n'.join(dict.fromkeys(effects))
    loc[key+'_effects']=text
-   loc[key+'_desc']=prose+'\n\n研究完成：立即获得下列永久加成与解锁。\n'+text+'\n\n旧存档的履约记录与首次奖励在下个月初同步，不影响即时科技加成。'
+   # The vanilla card already lists modifiers, native unlocks and pure_tooltip_entry.
+   # Flavor descriptions must not repeat this entire mechanics table below it.
+   loc[key+'_desc']=prose
    summary['advances'].append(dict(key=key,name=loc[key],modifiers=mods,unlocks=pm_unlocks.get(key,[]),link=text))
   put('in_game/common/advances/'+filename,apply_edits(txt,edits))
  # Existing sixteen institutions gain distinct local effects, fully supply-scaled.
@@ -231,10 +252,16 @@ def build_technology_rewards(out,root,loc,put,game):
    g,b,bn,an,good,bi,bo,ai,ao,bt,at=prod
    methods=[]
    for suffix,inputs,output in [('basic',bi,bo),('advanced',ai,ao)]:
-    methods.append(f'hbe_{g}_{suffix}_production = {{ icon_type = goods icon = {good} {script_mods(inputs)} produced = {good} output = {output:g} category = guild_input }}')
+    produced=good
+    if suffix=='advanced' and g in specialty:
+     r=specialty[g];inputs=r['inputs'];output=r['output'];produced=r['key']
+    methods.append(f'hbe_{g}_{suffix}_production = {{ icon_type = goods icon = {produced} {script_mods(inputs)} produced = {produced} output = {output:g} category = guild_input }}')
+    if suffix=='advanced' and g in ['chengdu_plain','western_tea_horse']:
+     premium_inputs={('hbe_shu_paper' if k=='paper' else k):v for k,v in inputs.items()}
+     methods.append(f'hbe_{g}_paper_production = {{ icon_type = goods icon = {produced} allow = {{ has_advance = hbe_tech_common_6 }} {script_mods(premium_inputs)} produced = {produced} output = {output*1.25:g} category = guild_input }}')
    body+='\n unique_production_methods = { '+' '.join(methods)+' }\n'
    desc='\n\n本机构另设生产槽：'+bn+'，升级为'+an+'。生产消耗市场材料，产出进入原版市场；日常供养槽仍须维持。'
-   if desc not in loc[key+'_desc']:loc[key+'_desc']+=desc
+   loc[key+'_desc']=loc[key+'_desc'].split('\n\n本机构另设生产槽：')[0]+desc.replace(an,specialty[g]['method'] if g in specialty else an)
    loc[key+'_slot_0']='日常供养'
    loc[key+'_slot_1']='地方生产'
   edits.append((start,end,body))
@@ -267,7 +294,7 @@ monthly_country_pulse = { on_actions = { hbe_technology_monthly } }
  put('in_game/common/scripted_effects/hbe_civic_effects.txt',apply_edits(txt,edits))
  (root/'data/technology_rewards_v021.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  # All existing images are retained; production methods use vanilla goods icons.
- lines=['# 0.2.1 科技与地区产业','', '80项课题均有即时原版加成；16种机构强化，新增14种机构生产方式和14种条件联动。', '', '数值采用强势地区风味定位。永久加成与机构运营收益可叠加，地区A/B分支仍互斥。', '', '## 科技表','', '|课题|即时加成（原版字段）|联动与解锁|','|---|---|---|']
+ lines=['# 0.3.0 科技与地区产业','', '80项课题均有即时原版加成；16种机构强化，新增14种机构生产方式和14种条件联动。', '', '数值采用强势地区风味定位。永久加成与机构运营收益可叠加，地区A/B分支仍互斥。', '', '## 科技表','', '|课题|即时加成（原版字段）|联动与解锁|','|---|---|---|']
  for row in summary['advances']:lines.append('|'+row['name']+'|'+script_mods(row['modifiers'])+'|'+row['link'].replace('\n','；')+'|')
  lines+=['','## 机构生产','', '|机构|生产方式|原料|基础产出/级|解锁科技|','|---|---|---|---|---|']
  for row in summary['production']:lines.append(f'|{loc[row["building"]]}|{loc[row["key"]]}|{script_mods(row["inputs"])}|{row["goods"]} {row["output"]}|{loc[row["advance"]]}|')

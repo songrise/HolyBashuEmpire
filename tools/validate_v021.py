@@ -17,7 +17,7 @@ def validate(root):
   check(row['key']+' immediate fields',all(re.search(r'(?m)^\s*'+k+r'\s*=\s*'+re.escape(f'{v:g}')+r'\s*$',nodes[row['key']]) for k,v in row['modifiers'].items()))
  building=read('in_game/common/building_types/hbe_civic_buildings.txt')
  pms={k:building[s:e] for k,_,s,e,_ in blocks(building) if k.startswith('hbe_') and k.endswith('_production')}
- check('14 real production methods resolve through native unlocks',len(pms)==14 and all('unlock_production_method = '+r['key'] in nodes[r['advance']] for r in rewards['production']))
+ check('all real production methods resolve through native unlocks',len(pms)==len(rewards['production'])==(16 if 'special_goods' in manifest else 14) and all('unlock_production_method = '+r['key'] in nodes[r['advance']] for r in rewards['production']))
  check('all productions consume real goods and output into market',all(r['inputs'] and r['output']>0 and 'produced = '+r['goods'] in pms[r['key']] for r in rewards['production']))
  check('16 supplied buildings preserved with 7 extra production slots',len(blocks(building,0))==16 and building.count('category = building_maintenance')==16 and building.count('unique_production_methods =')==23)
  net=read('in_game/common/scripted_effects/hbe_technology_effects.txt')
@@ -59,8 +59,54 @@ def validate(root):
   entries={m[1]:json.loads(m[2]) for m in re.finditer(r'(?m)^\s+([^:\s]+):\s*(".*")$',text)}
   check(language+' complete technology effects',all(r['key']+'_effects' in entries and r['key']+'_desc' in entries for r in rewards['advances']))
   check(language+' specific card effects',len({entries[k+'_effects'] for k in ['hbe_tech_common_4','hbe_tech_common_5','hbe_tech_common_7']})==3)
+  check(language+' effect lines appear once',all(len(entries[r['key']+'_effects'].splitlines())==len(set(entries[r['key']+'_effects'].splitlines())) for r in rewards['advances']))
+  check(language+' flavor paragraph does not repeat mechanics table',all('解锁“' not in entries[r['key']+'_desc'] and '旧存档的履约记录' not in entries[r['key']+'_desc'] for r in rewards['advances']))
   check(language+' no old third-party choice in active entry',entries['hbe_banquet.1.a']!=entries['hbe_banquet.1.b'] and '账房' not in entries['hbe_banquet.1.desc'])
  check('manifest matches all built files',all(hashlib.sha256((mod/p).read_bytes()).hexdigest()==h for p,h in manifest['files'].items()))
+ if 'special_goods' in manifest:
+  from PIL import Image
+  game=Path(r'D:\SteamLibrary\steamapps\common\Europa Universalis V\game')
+  goods=manifest['special_goods']['goods'];goods_text=read('in_game/common/goods/hbe_special_goods.txt')
+  check('four unique real premium goods',len(blocks(goods_text,0))==len(goods)==4)
+  vanilla=(game/'in_game/common/goods_demand/pop_demands.txt').read_text(encoding='utf-8-sig')
+  demand=read('in_game/common/goods_demand/pop_demands.txt')
+  check('native population demand singleton registered once',len([k for k,*_ in blocks(demand,0) if k=='pop_demand'])==1)
+  # Compare actual goods coefficients rather than comments or outer block text.
+  base={m[1]:m[2] for m in re.finditer(r'(?m)^\s*([a-z_]+)\s*=\s*([0-9.]+)\s*$',vanilla)}
+  extended={m[1]:m[2] for m in re.finditer(r'(?m)^\s*([a-z_]+)\s*=\s*([0-9.]+)\s*$',demand)}
+  check('native demand coefficients preserved exactly',all(extended.get(k)==v for k,v in base.items()))
+  for r in goods:
+   key=r['key'];pm=f'hbe_{r["group"]}_advanced_production'
+   check(key+' actual produced good and tech unlock','produced = '+key in pms[pm] and 'unlock_production_method = '+pm in nodes[f'hbe_tech_{r["group"]}_{r["advance"]}'])
+   check(key+' population buys it',extended.get(key)=='1' and sum(r['demand'].values())>=.17)
+   check(key+' unique original-style goods art',Image.open(mod/f'main_menu/gfx/interface/icons/trade_goods/icon_goods_{key}.dds').size==(128,128) and (mod/f'main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_{key}.dds').exists())
+   check(key+' production boosters visible natively',any('global_'+key+'_output_modifier' in body for body in nodes.values()) and 'local_'+key+'_output_modifier' in building)
+  check('paper has optional downstream industrial demand',sum('hbe_shu_paper' in r['inputs'] for r in rewards['production'])==2 and all('hbe_shu_paper' not in r['inputs'] for r in goods))
+  check('goods are neither gold grants nor renamed vanilla IDs',not re.search(r'\badd_gold\b',goods_text) and not {r['key'] for r in goods}&{'fine_cloth','salt','paper','tea'})
+ if 'event_choices' in manifest:
+  events='\n'.join(p.read_text(encoding='utf-8-sig') for p in (mod/'in_game/events').glob('hbe*events.txt'))
+  eb={k:events[s:e] for k,_,s,e,_ in blocks(events,0)}
+  catalogue=json.loads((root/'data/event_choices_v021.json').read_text(encoding='utf-8'))
+  static=read('main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt');sb={k:static[s:e] for k,_,s,e,_ in blocks(static,0)}
+  check('44 affected events retain native IDs',len(catalogue)==44 and all(r['id'] in eb for r in catalogue))
+  for r in catalogue:
+   body=eb[r['id']];opts=[body[s:e] for k,_,s,e,_ in blocks(body,0) if k=='option']
+   check(r['id']+' three distinct effect choices',len(opts)==3 and len({re.sub(r'name = \S+|ai_chance = \{[^}]*\}', '',x).strip() for x in opts})==3)
+  check('21 regional arrangements and two spending bonuses resolve',len(sb)==23 and all(k in sb for k in re.findall(r'modifier = (hbe_choice_\w+|hbe_event_\w+)',events)))
+  check('no negative gold choice lacks an affordability check',all('gold >=' in body for k,body in eb.items() if (k in {r['id'] for r in catalogue} and re.search(r'add_gold = -[1-9]',body))))
+  check('long-term choices explicitly exclude each other',all(eb[f'hbe_banquet.{100+n}'].count('remove_country_modifier = hbe_choice_')==9 for n in range(21)))
+  check('choice modifiers have balanced native syntax',bool(blocks(static)))
+ if 'art_v021' in manifest:
+  import struct
+  artwork=manifest['art_v021']['exports']
+  check('24 unique new icons and dedicated panel',len(artwork)==25 and len({r['sha256'] for r in artwork if r['kind']!='panel'})==24)
+  for r in artwork:
+   content=(mod/r['path']).read_bytes();w,h=r['dimensions']
+   check('DDS size and hash '+r['key'],content[:4]==b'DDS ' and struct.unpack_from('<2I',content,12)==(h,w) and len(content)==128+w*h*4 and hashlib.sha256(content).hexdigest()==r['sha256'])
+  check('two faction lists have independent clipped scrolling',gui.count('size = { 234 216 }')==2 and gui.count('scissor = yes')==2)
+  check('panel width and action area are bounded','maximumsize = { 480 -1 }' in gui and 'blockoverride "situation_panel_main_actions"' in gui)
+  check('new painterly background is connected','gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds' in gui)
+  check('reduced AI pressure encoded','aggressiveness_modifier = 0.05' in read('main_menu/common/static_modifiers/hbe_ai_modifiers.txt') and 'months_since_war >= 144' in aifiles[0])
  report=dict(version=manifest['version'],checks=checks,passed=len(checks),engine_test='separate targeted fixture; not a full campaign')
  (root/'docs/validation_v021.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'{len(checks)} focused checks passed')

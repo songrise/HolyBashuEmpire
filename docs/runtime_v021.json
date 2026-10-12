@@ -28,6 +28,13 @@
   "scope": "new technology rewards and two-faction state/settlement; three simulated months; not century balance or GUI visual acceptance",
   "new_errors": [],
   "post_test_changes": [
-    "metadata line endings normalized to LF; no script or asset content changed"
-  ]
+    "24 painted icons and two-party situation background",
+    "Bounded two-column scrollable GUI layout",
+    "Idempotent technology flavor descriptions",
+    "AI ambition reduced to 5 percent and longer peacetime threshold",
+    "Four native goods and population/industrial demand, regional output boosts",
+    "44 regional/civic/settlement events with actual trade-offs"
+  ],
+  "final_manifest_sha256": "0d360c8654ef1c7e232331bd3a5d6aeb1adda9c368609a198ed49c5eef5769cc",
+  "post_test_verification": "213 focused checks and repeated-build regression passed; new goods have a separate short engine load fixture. No full campaign rerun; live GUI rendering remains for user confirmation."
 }

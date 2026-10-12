@@ -1,4 +1,4 @@
-hbe_feast_sync_party = {
+﻿hbe_feast_sync_party = {
 
  if = { limit = { OR = { NOT = { has_variable = hbe_stance } var:hbe_stance > 2 } } set_variable = { name = hbe_stance value = 2 } }
  if = { limit = { NOT = { has_variable = hbe_feast_points } } set_variable = { name = hbe_feast_points value = 0 } }

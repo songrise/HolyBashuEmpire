@@ -1,0 +1,40 @@
+﻿hbe_event_scene_feast_two_parties = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "frontobjects_exterior"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "vfx_mist"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "vfx_light"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "vfx_paint"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "characters_regular"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_event_background_feast_two_parties"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}

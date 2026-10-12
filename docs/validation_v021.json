@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.3.0",
   "checks": [
     {
       "name": "80 technologies retain 80 unique native IDs",
@@ -326,7 +326,7 @@
       "passed": true
     },
     {
-      "name": "14 real production methods resolve through native unlocks",
+      "name": "all real production methods resolve through native unlocks",
       "passed": true
     },
     {
@@ -418,6 +418,14 @@
       "passed": true
     },
     {
+      "name": "simp_chinese effect lines appear once",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese flavor paragraph does not repeat mechanics table",
+      "passed": true
+    },
+    {
       "name": "simp_chinese no old third-party choice in active entry",
       "passed": true
     },
@@ -430,14 +438,422 @@
       "passed": true
     },
     {
+      "name": "english effect lines appear once",
+      "passed": true
+    },
+    {
+      "name": "english flavor paragraph does not repeat mechanics table",
+      "passed": true
+    },
+    {
       "name": "english no old third-party choice in active entry",
       "passed": true
     },
     {
       "name": "manifest matches all built files",
       "passed": true
+    },
+    {
+      "name": "four unique real premium goods",
+      "passed": true
+    },
+    {
+      "name": "native population demand singleton registered once",
+      "passed": true
+    },
+    {
+      "name": "native demand coefficients preserved exactly",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_embroidery actual produced good and tech unlock",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_embroidery population buys it",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_embroidery unique original-style goods art",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_embroidery production boosters visible natively",
+      "passed": true
+    },
+    {
+      "name": "hbe_well_salt actual produced good and tech unlock",
+      "passed": true
+    },
+    {
+      "name": "hbe_well_salt population buys it",
+      "passed": true
+    },
+    {
+      "name": "hbe_well_salt unique original-style goods art",
+      "passed": true
+    },
+    {
+      "name": "hbe_well_salt production boosters visible natively",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_paper actual produced good and tech unlock",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_paper population buys it",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_paper unique original-style goods art",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_paper production boosters visible natively",
+      "passed": true
+    },
+    {
+      "name": "hbe_border_tea actual produced good and tech unlock",
+      "passed": true
+    },
+    {
+      "name": "hbe_border_tea population buys it",
+      "passed": true
+    },
+    {
+      "name": "hbe_border_tea unique original-style goods art",
+      "passed": true
+    },
+    {
+      "name": "hbe_border_tea production boosters visible natively",
+      "passed": true
+    },
+    {
+      "name": "paper has optional downstream industrial demand",
+      "passed": true
+    },
+    {
+      "name": "goods are neither gold grants nor renamed vanilla IDs",
+      "passed": true
+    },
+    {
+      "name": "44 affected events retain native IDs",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.100 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.101 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.102 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.100 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.100 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.101 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.103 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.104 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.105 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.101 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.102 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.103 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.106 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.107 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.108 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.102 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.104 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.105 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.109 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.110 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.111 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.103 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.106 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.107 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.112 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.113 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.114 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.104 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.108 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.109 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.115 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.116 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.117 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.105 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.110 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.111 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.118 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.119 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.120 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe.106 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.112 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.113 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.4 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.5 three distinct effect choices",
+      "passed": true
+    },
+    {
+      "name": "21 regional arrangements and two spending bonuses resolve",
+      "passed": true
+    },
+    {
+      "name": "no negative gold choice lacks an affordability check",
+      "passed": true
+    },
+    {
+      "name": "long-term choices explicitly exclude each other",
+      "passed": true
+    },
+    {
+      "name": "choice modifiers have balanced native syntax",
+      "passed": true
+    },
+    {
+      "name": "24 unique new icons and dedicated panel",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_common_party",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_local_party",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_cooperation",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_success",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_common_reward",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_local_reward",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_chengdu_plain_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_southern_salt_wine_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_eastern_river_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_northern_shudao_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_central_hills_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_western_tea_horse_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_southwestern_valleys_4",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_chengdu_plain_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_southern_salt_wine_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_eastern_river_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_northern_shudao_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_central_hills_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_western_tea_horse_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_network_southwestern_valleys_7",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_fund_action",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_common_action",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_local_action",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_ai_internal_ambition",
+      "passed": true
+    },
+    {
+      "name": "DDS size and hash hbe_feast_two_parties_v021",
+      "passed": true
+    },
+    {
+      "name": "two faction lists have independent clipped scrolling",
+      "passed": true
+    },
+    {
+      "name": "panel width and action area are bounded",
+      "passed": true
+    },
+    {
+      "name": "new painterly background is connected",
+      "passed": true
+    },
+    {
+      "name": "reduced AI pressure encoded",
+      "passed": true
     }
   ],
-  "passed": 109,
+  "passed": 213,
   "engine_test": "separate targeted fixture; not a full campaign"
 }

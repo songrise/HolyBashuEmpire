@@ -1,4 +1,4 @@
-hbe_clamp_burden = { if = { limit = { var:hbe_burden < 0 } set_variable = { name = hbe_burden value = 0 } } if = { limit = { var:hbe_burden > 100 } set_variable = { name = hbe_burden value = 100 } } }
+﻿hbe_clamp_burden = { if = { limit = { var:hbe_burden < 0 } set_variable = { name = hbe_burden value = 0 } } if = { limit = { var:hbe_burden > 100 } set_variable = { name = hbe_burden value = 100 } } }
 hbe_civic_initialize = {
  if = { limit = { NOT = { has_variable = hbe_civic_initialized } }
  set_variable = hbe_civic_initialized set_variable = { name = hbe_office_chengdu_plain value = 0 } set_variable = { name = hbe_office_southern_salt_wine value = 0 } set_variable = { name = hbe_office_eastern_river value = 0 } set_variable = { name = hbe_office_northern_shudao value = 0 } set_variable = { name = hbe_office_central_hills value = 0 } set_variable = { name = hbe_office_western_tea_horse value = 0 } set_variable = { name = hbe_office_southwestern_valleys value = 0 } set_variable = { name = hbe_burden value = 20 }

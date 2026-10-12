@@ -1,4 +1,4 @@
-hbe_banquet = {
+﻿hbe_banquet = {
     international_organization_type = hbe_empire
     monthly_spawn_chance = monthly_spawn_chance_unique
     can_start = { game_is_initialized = yes current_date >= 1337.10.1 exists = international_organization:hbe_empire }

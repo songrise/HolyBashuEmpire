@@ -1,4 +1,4 @@
-hbe_clamp_guoqi = {
+﻿hbe_clamp_guoqi = {
     if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } }
     if = { limit = { var:hbe_guoqi < 0 } set_variable = { name = hbe_guoqi value = 0 } }
 }
@@ -23,6 +23,7 @@ hbe_open_accounts = {
   hbe_banquet_register = yes set_variable = { name = hbe_feast_points value = 0 }
   remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered remove_variable = hbe_feast_helped
   remove_variable = hbe_round_pledged remove_variable = hbe_fund_pledge remove_variable = hbe_declined_project
+  if = { limit = { is_ai = no situation:hbe_banquet = { var:hbe_round > 1 } } trigger_event_non_silently = { id = hbe_banquet.2 days = 1 } }
  } } hbe_feast_recount = yes
 }
 hbe_fund_project = {

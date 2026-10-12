@@ -1,0 +1,1 @@
+﻿hbe_event_background_feast_two_parties = { tag = "hbe_event_background_feast_two_parties" illustration_image = { texture_file = "gfx/interface/hbe/events/feast_two_parties_v021.dds" priority = 100 scope = country trigger = { always = yes } } }

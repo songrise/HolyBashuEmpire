@@ -1,2 +1,2 @@
-io_opinion_hbe_common_party = { value = 3 }
+﻿io_opinion_hbe_common_party = { value = 3 }
 io_opinion_hbe_local_party = { value = 3 }

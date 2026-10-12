@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "languages": 2,
+  "technology_nodes": 80,
+  "unchanged_entries": 334,
+  "specific_case": "tea caravan network listed once after rebuilding twice",
+  "engine_rerun": false
+}

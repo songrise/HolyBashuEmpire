@@ -4,63 +4,63 @@ hbe.100 = {
     illustration_tags = { 1000 = hbe_event_art_water }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_chengdu_plain NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.100.a trigger = { var:hbe_water >= 10 } change_variable = { name = hbe_water subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.100.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_water add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.100.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.100.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_chengdu_plain_1 remove_country_modifier = hbe_choice_chengdu_plain_2 remove_country_modifier = hbe_choice_chengdu_plain_3 add_gold = 0 change_variable = { name = hbe_burden add = 8 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -1 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_chengdu_plain_1 years = 3 mode = replace } }
+option = { name = hbe.100.b trigger = { gold >= 6 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_chengdu_plain_1 remove_country_modifier = hbe_choice_chengdu_plain_2 remove_country_modifier = hbe_choice_chengdu_plain_3 add_gold = -6 change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_chengdu_plain_2 years = 3 mode = replace } }
+option = { name = hbe.100.c ai_chance = { base = 25 } remove_country_modifier = hbe_choice_chengdu_plain_1 remove_country_modifier = hbe_choice_chengdu_plain_2 remove_country_modifier = hbe_choice_chengdu_plain_3 add_gold = 3 change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -1 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_chengdu_plain_3 years = 3 mode = replace } }
 }
 hbe.101 = {
     type = country_event title = hbe.101.title desc = hbe.101.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_salt }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_southern_salt_wine NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.101.a trigger = { var:hbe_salt >= 10 } change_variable = { name = hbe_salt subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.101.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_salt add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.101.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.101.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_southern_salt_wine_1 remove_country_modifier = hbe_choice_southern_salt_wine_2 remove_country_modifier = hbe_choice_southern_salt_wine_3 add_gold = 6 change_variable = { name = hbe_burden add = 10 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_southern_salt_wine_1 years = 3 mode = replace } }
+option = { name = hbe.101.b trigger = { gold >= 7 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_southern_salt_wine_1 remove_country_modifier = hbe_choice_southern_salt_wine_2 remove_country_modifier = hbe_choice_southern_salt_wine_3 add_gold = -7 change_variable = { name = hbe_burden add = -7 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_southern_salt_wine_2 years = 3 mode = replace } }
+option = { name = hbe.101.c ai_chance = { base = 25 } remove_country_modifier = hbe_choice_southern_salt_wine_1 remove_country_modifier = hbe_choice_southern_salt_wine_2 remove_country_modifier = hbe_choice_southern_salt_wine_3 add_gold = 3 change_variable = { name = hbe_burden add = 0 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_southern_salt_wine_3 years = 3 mode = replace } }
 }
 hbe.102 = {
     type = country_event title = hbe.102.title desc = hbe.102.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_river }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_eastern_river NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.102.a trigger = { var:hbe_river >= 10 } change_variable = { name = hbe_river subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.102.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_river add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.102.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.102.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_eastern_river_1 remove_country_modifier = hbe_choice_eastern_river_2 remove_country_modifier = hbe_choice_eastern_river_3 add_gold = 6 change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -1 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_eastern_river_1 years = 3 mode = replace } }
+option = { name = hbe.102.b trigger = { gold >= 6 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_eastern_river_1 remove_country_modifier = hbe_choice_eastern_river_2 remove_country_modifier = hbe_choice_eastern_river_3 add_gold = -6 change_variable = { name = hbe_burden add = -2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_eastern_river_2 years = 3 mode = replace } }
+option = { name = hbe.102.c ai_chance = { base = 25 } remove_country_modifier = hbe_choice_eastern_river_1 remove_country_modifier = hbe_choice_eastern_river_2 remove_country_modifier = hbe_choice_eastern_river_3 add_gold = 0 change_variable = { name = hbe_burden add = 3 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 0 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_eastern_river_3 years = 3 mode = replace } }
 }
 hbe.103 = {
     type = country_event title = hbe.103.title desc = hbe.103.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_roads }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_northern_shudao NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.103.a trigger = { var:hbe_roads >= 10 } change_variable = { name = hbe_roads subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.103.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_roads add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.103.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.103.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_northern_shudao_1 remove_country_modifier = hbe_choice_northern_shudao_2 remove_country_modifier = hbe_choice_northern_shudao_3 add_gold = 0 change_variable = { name = hbe_burden add = 8 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -1 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_northern_shudao_1 years = 3 mode = replace } }
+option = { name = hbe.103.b trigger = { gold >= 6 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_northern_shudao_1 remove_country_modifier = hbe_choice_northern_shudao_2 remove_country_modifier = hbe_choice_northern_shudao_3 add_gold = -6 change_variable = { name = hbe_burden add = -4 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_northern_shudao_2 years = 3 mode = replace } }
+option = { name = hbe.103.c ai_chance = { base = 25 } remove_country_modifier = hbe_choice_northern_shudao_1 remove_country_modifier = hbe_choice_northern_shudao_2 remove_country_modifier = hbe_choice_northern_shudao_3 add_gold = 4 change_variable = { name = hbe_burden add = -2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_northern_shudao_3 years = 3 mode = replace } }
 }
 hbe.104 = {
     type = country_event title = hbe.104.title desc = hbe.104.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_grain }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.104.a trigger = { var:hbe_grain >= 10 } change_variable = { name = hbe_grain subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.104.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_grain add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.104.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.104.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_central_hills_1 remove_country_modifier = hbe_choice_central_hills_2 remove_country_modifier = hbe_choice_central_hills_3 add_gold = 8 change_variable = { name = hbe_burden add = 0 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_central_hills_1 years = 3 mode = replace } }
+option = { name = hbe.104.b trigger = { gold >= 5 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_central_hills_1 remove_country_modifier = hbe_choice_central_hills_2 remove_country_modifier = hbe_choice_central_hills_3 add_gold = -5 change_variable = { name = hbe_burden add = -5 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_central_hills_2 years = 3 mode = replace } }
+option = { name = hbe.104.c ai_chance = { base = 25 } remove_country_modifier = hbe_choice_central_hills_1 remove_country_modifier = hbe_choice_central_hills_2 remove_country_modifier = hbe_choice_central_hills_3 add_gold = 0 change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 0 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_central_hills_3 years = 3 mode = replace } }
 }
 hbe.105 = {
     type = country_event title = hbe.105.title desc = hbe.105.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_tea }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_western_tea_horse NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.105.a trigger = { var:hbe_tea >= 10 } change_variable = { name = hbe_tea subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.105.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_tea add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.105.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.105.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_western_tea_horse_1 remove_country_modifier = hbe_choice_western_tea_horse_2 remove_country_modifier = hbe_choice_western_tea_horse_3 add_gold = 7 change_variable = { name = hbe_burden add = 4 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_western_tea_horse_1 years = 3 mode = replace } }
+option = { name = hbe.105.b trigger = { gold >= 6 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_western_tea_horse_1 remove_country_modifier = hbe_choice_western_tea_horse_2 remove_country_modifier = hbe_choice_western_tea_horse_3 add_gold = -6 change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 3 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_western_tea_horse_2 years = 3 mode = replace } }
+option = { name = hbe.105.c trigger = { gold >= 2 } ai_chance = { base = 25 } remove_country_modifier = hbe_choice_western_tea_horse_1 remove_country_modifier = hbe_choice_western_tea_horse_2 remove_country_modifier = hbe_choice_western_tea_horse_3 add_gold = -2 change_variable = { name = hbe_burden add = -2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_western_tea_horse_3 years = 3 mode = replace } }
 }
 hbe.106 = {
     type = country_event title = hbe.106.title desc = hbe.106.desc outcome = neutral
     illustration_tags = { 1000 = hbe_event_art_valleys }
     trigger = { hbe_is_prince = yes has_variable = hbe_home_southwestern_valleys NOT = { has_variable = hbe_flavor_cooldown } }
     immediate = { set_variable = { name = hbe_flavor_cooldown value = yes years = 5 } }
-    option = { name = hbe.106.a trigger = { var:hbe_valleys >= 10 } change_variable = { name = hbe_valleys subtract = 10 } hbe_add_credit = yes }
-    option = { name = hbe.106.b trigger = { gold >= 3 } add_gold = -3 change_variable = { name = hbe_valleys add = 5 } hbe_add_credit = yes }
-    option = { name = hbe.106.c change_variable = { name = hbe_yiqi subtract = 5 } hbe_clamp_yiqi = yes add_prestige = -1 }
+option = { name = hbe.106.a ai_chance = { base = 35 } remove_country_modifier = hbe_choice_southwestern_valleys_1 remove_country_modifier = hbe_choice_southwestern_valleys_2 remove_country_modifier = hbe_choice_southwestern_valleys_3 add_gold = 5 change_variable = { name = hbe_burden add = 8 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -1 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_southwestern_valleys_1 years = 3 mode = replace } }
+option = { name = hbe.106.b trigger = { gold >= 6 } ai_chance = { base = 40 } remove_country_modifier = hbe_choice_southwestern_valleys_1 remove_country_modifier = hbe_choice_southwestern_valleys_2 remove_country_modifier = hbe_choice_southwestern_valleys_3 add_gold = -6 change_variable = { name = hbe_burden add = -5 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_southwestern_valleys_2 years = 3 mode = replace } }
+option = { name = hbe.106.c ai_chance = { base = 25 } remove_country_modifier = hbe_choice_southwestern_valleys_1 remove_country_modifier = hbe_choice_southwestern_valleys_2 remove_country_modifier = hbe_choice_southwestern_valleys_3 add_gold = 2 change_variable = { name = hbe_burden add = -2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -1 } hbe_clamp_yiqi = yes add_country_modifier = { modifier = hbe_choice_southwestern_valleys_3 years = 3 mode = replace } }
 }
 hbe.1 = { type = country_event title = hbe.1.title desc = hbe.1.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.1.a } }
 hbe.2 = { type = country_event title = hbe.2.title desc = hbe.2.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_academy } option = { name = hbe.2.a } }

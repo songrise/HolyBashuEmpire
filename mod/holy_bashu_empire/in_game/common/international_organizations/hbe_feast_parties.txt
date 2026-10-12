@@ -1,4 +1,4 @@
-hbe_common_party = {
+﻿hbe_common_party = {
  unique = yes has_target = no has_leader_country = yes leader_type = country
  leader_change_method = score leader_change_trigger_type = timed months_between_leader_changes = 1
  leader_score = { add = { value = var:hbe_feast_points multiply = 100 } add = country_tax_base }
