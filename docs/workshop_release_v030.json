@@ -1,0 +1,28 @@
+{
+  "item_id": 3818491932,
+  "title": "神圣巴蜀帝国 Holy Bashu Empire",
+  "visibility": 0,
+  "metadata": "{\"version\":\"0.3.0\",\"manifest_sha256\":\"7cd41979a35c7e7dd88ed89eadca7f877bc55eaf9377d3b5df90166edf1bf817\"}",
+  "file_size": 343149681,
+  "preview_url": "https://images.steamusercontent.com/ugc/13038983076716100879/FCC475DA0EEA194B7702FD85D47A7CED89FE4008/",
+  "additional_previews": [
+    {
+      "index": 0,
+      "url": "https://images.steamusercontent.com/ugc/13863353630793998528/FCC475DA0EEA194B7702FD85D47A7CED89FE4008/",
+      "filename": "神圣巴蜀帝国_v0.3.0_工坊封面.jpg",
+      "type": 0
+    },
+    {
+      "index": 1,
+      "url": "https://images.steamusercontent.com/ugc/13508418285333323237/3BBB2F68A587346DAE08C5AF117600AC81D59593/",
+      "filename": "神圣巴蜀帝国_v0.3.0_七圈特色.jpg",
+      "type": 0
+    },
+    {
+      "index": 2,
+      "url": "https://images.steamusercontent.com/ugc/10958913249781336587/D760B887468274B25FEBA89F2E210717F88190A1/",
+      "filename": "神圣巴蜀帝国_v0.3.0_玩法宣传.jpg",
+      "type": 0
+    }
+  ]
+}
