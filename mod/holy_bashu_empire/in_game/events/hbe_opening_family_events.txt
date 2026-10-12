@@ -1,2 +1,2 @@
 ﻿namespace = hbe_opening_family
-hbe_opening_family.1 = { type = country_event hidden = yes immediate = { hbe_apply_opening_pacts = yes } }
+hbe_opening_family.1 = { type = country_event hidden = yes immediate = { hbe_apply_opening_pacts = yes every_country = { limit = { hbe_is_prince = yes } hbe_repair_opening_child_abilities = yes } } }

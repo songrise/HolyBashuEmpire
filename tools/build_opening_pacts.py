@@ -21,7 +21,8 @@ def build_opening_pacts(out,countries,loc,put):
  pairs=list(combinations([c['tag'] for c in countries],2))
  truces='\n'.join(f'c:{a} ?= {{ add_truce_with = {{ target = c:{b} mutual = yes years = 1 }} }}' for a,b in pairs)
  child='''dynasty = scope:hbe_start_father.dynasty culture = scope:hbe_start_father.culture religion = scope:hbe_start_father.religion
- father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female no_stats = yes trait_category = none'''
+ father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female
+ adm = { 20 70 } dip = { 20 70 } mil = { 20 70 } trait_category = none'''
  effects='''hbe_generate_opening_child = {
  random_list = {
   50 = { save_scope_value_as = { name = hbe_start_child_female value = yes } }
@@ -47,6 +48,19 @@ hbe_generate_opening_family = {
   25 = { set_variable = { name = hbe_opening_children value = 3 } hbe_generate_opening_child = yes hbe_generate_opening_child = yes hbe_generate_opening_child = yes }
  }
  set_variable = hbe_opening_family_done
+ set_variable = hbe_opening_abilities_fixed
+}
+hbe_repair_opening_child_abilities = {
+ if = { limit = { has_variable = hbe_opening_family_done NOT = { has_variable = hbe_opening_abilities_fixed } has_ruler = yes }
+  ruler = { every_child = {
+   limit = { is_alive = yes adm <= 0 dip <= 0 mil <= 0 }
+   set_to_limited_random_stats = { min_adm = 20 max_adm = 70 min_dip = 20 max_dip = 70 min_mil = 20 max_mil = 70 }
+   if = { limit = { adm > 70 } add_adm = { value = 70 subtract = adm } }
+   if = { limit = { dip > 70 } add_dip = { value = 70 subtract = dip } }
+   if = { limit = { mil > 70 } add_mil = { value = 70 subtract = mil } }
+  } }
+  set_variable = hbe_opening_abilities_fixed
+ }
 }
 hbe_apply_opening_pacts = {
  if = { limit = { current_date >= 1337.4.1 current_date < 1337.4.3 }
@@ -63,9 +77,11 @@ hbe_apply_opening_pacts = {
  put('in_game/common/scripted_effects/hbe_opening_pacts_effects.txt',effects)
  put('in_game/common/on_action/hbe_opening_pacts_on_actions.txt','''on_game_start = { on_actions = { hbe_opening_pacts_start } }
 hbe_opening_pacts_start = { effect = { c:BAB ?= { trigger_event_silently = { id = hbe_opening_family.1 days = 1 } } } }
+monthly_country_pulse = { on_actions = { hbe_opening_abilities_monthly } }
+hbe_opening_abilities_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_repair_opening_child_abilities = yes } }
 ''')
  put('in_game/events/hbe_opening_family_events.txt','''namespace = hbe_opening_family
-hbe_opening_family.1 = { type = country_event hidden = yes immediate = { hbe_apply_opening_pacts = yes } }
+hbe_opening_family.1 = { type = country_event hidden = yes immediate = { hbe_apply_opening_pacts = yes every_country = { limit = { hbe_is_prince = yes } hbe_repair_opening_child_abilities = yes } } }
 ''')
  loc['hbe_opening_children']='开局随机后代数'
- return dict(truce_pairs=len(pairs),truce_years=1,circle_defence=7,spouses=36,children_per_ruler='0–3',child_age_ranges=[[0,16],[0,20],[0,24]],minimum_parent_age_at_birth=16,opening_only=True)
+ return dict(truce_pairs=len(pairs),truce_years=1,circle_defence=7,spouses=36,children_per_ruler='0–3',child_age_ranges=[[0,16],[0,20],[0,24]],child_ability_range=[20,70],old_zero_stat_children_repair_once=True,minimum_parent_age_at_birth=16,opening_only=True)

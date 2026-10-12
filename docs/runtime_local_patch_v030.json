@@ -202,12 +202,21 @@
     "BAJ.logarithmic cash": true,
     "BAJ.logarithmic prestige": true,
     "cash budget conserved": true,
+    "BAB.imperial bonus bounds": true,
+    "BAF.imperial bonus bounds": true,
+    "imperial bonus floor": true,
+    "imperial bonus mid": true,
+    "imperial bonus cap": true,
+    "old zero-ability child repaired": true,
+    "old-child fixture truly starts with zero abilities": true,
+    "child repair does not reroll abilities": true,
+    "new opening children have three nonzero abilities": true,
     "prestige pool conserved": true,
     "single signed circle license": true,
     "five-year switch guard": true,
     "latest native compile no custom errors": true
   },
-  "check_count": 203,
+  "check_count": 212,
   "failed": [],
   "observed": {
     "BAB.policy_burden": 22.8,
@@ -253,12 +262,295 @@
     ],
     "adult_offspring_at_two_years": 21,
     "repair_snapshot_date": "1337.4.20",
-    "BAB.cash_dividend": 0.33333,
+    "imperial_bonus_pool": 16.0,
+    "BAB.cash_dividend": 5.66661,
     "BAB.prestige_dividend": 0.99999,
-    "BAF.cash_dividend": 0.66666,
+    "BAF.cash_dividend": 11.33322,
     "BAF.prestige_dividend": 1.99998,
     "BAJ.cash_dividend": 0,
-    "BAJ.prestige_dividend": 0
+    "BAJ.prestige_dividend": 0,
+    "opening_child_abilities": [
+      [
+        27,
+        39,
+        23
+      ],
+      [
+        69,
+        45,
+        26
+      ],
+      [
+        56,
+        21,
+        40
+      ],
+      [
+        29,
+        28,
+        26
+      ],
+      [
+        58,
+        54,
+        23
+      ],
+      [
+        43,
+        52,
+        40
+      ],
+      [
+        45,
+        24,
+        26
+      ],
+      [
+        29,
+        31,
+        40
+      ],
+      [
+        21,
+        30,
+        51
+      ],
+      [
+        33,
+        31,
+        24
+      ],
+      [
+        55,
+        60,
+        22
+      ],
+      [
+        25,
+        22,
+        70
+      ],
+      [
+        40,
+        21,
+        27
+      ],
+      [
+        33,
+        38,
+        34
+      ],
+      [
+        37,
+        45,
+        34
+      ],
+      [
+        48,
+        22,
+        70
+      ],
+      [
+        46,
+        48,
+        54
+      ],
+      [
+        67,
+        31,
+        22
+      ],
+      [
+        50,
+        34,
+        50
+      ],
+      [
+        26,
+        42,
+        57
+      ],
+      [
+        33,
+        62,
+        41
+      ],
+      [
+        38,
+        66,
+        56
+      ],
+      [
+        57,
+        34,
+        54
+      ],
+      [
+        29,
+        44,
+        41
+      ],
+      [
+        34,
+        60,
+        30
+      ],
+      [
+        57,
+        24,
+        32
+      ],
+      [
+        47,
+        43,
+        33
+      ],
+      [
+        70,
+        59,
+        50
+      ],
+      [
+        36,
+        56,
+        65
+      ],
+      [
+        28,
+        20,
+        45
+      ],
+      [
+        28,
+        68,
+        43
+      ],
+      [
+        25,
+        25,
+        63
+      ],
+      [
+        70,
+        66,
+        68
+      ],
+      [
+        43,
+        43,
+        70
+      ],
+      [
+        65,
+        56,
+        43
+      ],
+      [
+        34,
+        51,
+        41
+      ],
+      [
+        25,
+        29,
+        53
+      ],
+      [
+        32,
+        22,
+        69
+      ],
+      [
+        30,
+        50,
+        31
+      ],
+      [
+        39,
+        62,
+        33
+      ],
+      [
+        40,
+        66,
+        70
+      ],
+      [
+        30,
+        67,
+        58
+      ],
+      [
+        58,
+        43,
+        70
+      ],
+      [
+        58,
+        29,
+        64
+      ],
+      [
+        46,
+        34,
+        30
+      ],
+      [
+        39,
+        44,
+        32
+      ],
+      [
+        66,
+        27,
+        51
+      ],
+      [
+        36,
+        48,
+        25
+      ],
+      [
+        22,
+        65,
+        34
+      ],
+      [
+        60,
+        68,
+        56
+      ],
+      [
+        30,
+        40,
+        25
+      ],
+      [
+        63,
+        34,
+        44
+      ],
+      [
+        26,
+        28,
+        51
+      ],
+      [
+        24,
+        64,
+        60
+      ],
+      [
+        25,
+        68,
+        45
+      ],
+      [
+        34,
+        60,
+        37
+      ]
+    ]
   },
   "goods": {
     "hbe_shu_embroidery": {
@@ -286,6 +578,6 @@
   "two_year_save": "scheduled_save_DESKTOP-L1LK2TH_1339_04_03.eu5",
   "two_year_playthrough": "df03f802-b8bb-4097-a684-2f55450866cb",
   "dividend_repair_save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_20.eu5",
-  "source_manifest_sha256": "e6a6319278d206e852c27fc3764dff2dcc459743b4d1fa14cdc6a31f2a823e80",
-  "scope": "Two-year new-game simulation through 1339.4.3 plus one focused 20-day dividend repair. Setup grants tech/money, supplies buildings, tests policy/office/unit caps, and suppresses unrelated AI fixture decisions. Family and native market data inspected directly from saves. Latest requested one-year truce and July feast date received simple script checks after the full run. No live GUI pixel validation and no century balance claim. Native test harness also reports existing base-game diagnostics; independent save assertions determine this result."
+  "source_manifest_sha256": "fcf12e7b5d66f6bf123ee17cd5991e506e3dc0b494e60730ba4b03a6ba6bf4ea",
+  "scope": "Retains the prior two-year snapshot through 1339.4.3 for unchanged mechanics. This bonus/ability revision is checked with a short new-game snapshot through 1337.4.20: actual cash and prestige, bonus clamps, generated child abilities, and one-time zero-ability migration. No repeat two-year simulation and no live GUI pixel validation. Native harness base-game diagnostics are separate from these save assertions."
 }

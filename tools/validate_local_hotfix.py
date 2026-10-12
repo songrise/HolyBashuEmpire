@@ -41,7 +41,7 @@ def validate(root):
  check('logarithmic weights match ln(1+c) for all legitimate round contributions',all(abs(w[c]-math.log1p(c))<1e-6 for c in range(4)))
  check('three contributions yield twice the share of one, not three times',math.isclose(w[3]/w[1],2,abs_tol=1e-6))
  d=read('in_game/common/scripted_effects/hbe_feast_dividend_effects.txt')
- check('dividends funded by actual recorded payment and contributions only',d.count('multiply = 0.25')==2 and d.count('var:hbe_feast_points > 0')==4 and 'value = hbe_feast_fee' in fs['hbe_fund_project'] and 'name = hbe_feast_paid value = 0' in fs['hbe_open_accounts'])
+ check('dividends combine minted income bonus and actual paid rebate for contributors only',d.count('multiply = 0.25')==2 and d.count('var:hbe_feast_points > 0')==4 and 'value = hbe_feast_fee' in fs['hbe_fund_project'] and 'name = hbe_feast_paid value = 0' in fs['hbe_open_accounts'] and d.count('add = prev.var:hbe_member_imperial_bonus')==2 and 'multiply = 0.5' in weights and 'min = 8' in weights and 'max = 64' in weights)
  check('cash and prestige payout occur before contribution reset',fs['hbe_settle_accounts'].index('hbe_pay_feast_dividends')<fs['hbe_settle_accounts'].index('hbe_open_accounts') and d.count('add_prestige = var:hbe_feast_last_prestige')==2 and 'multiply = 3' in weights)
  gui=read('in_game/gui/panels/situation/hbe_banquet.gui')
  check('explicit player action bindings with native legality checks',gui.count('actor = "[Player]"')==3 and gui.count('scripted_action_tooltip =')==3 and gui.count('IsUberButtonEnabled')==3)
@@ -49,6 +49,9 @@ def validate(root):
  loc=read('main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml')
  check('local projects and dividends have native hover explanations','hbe_term_local_service' in read('main_menu/common/game_concepts/hbe_concepts.txt') and "Concept('hbe_term_local_service', '地方事业')" in loc and "Concept('hbe_term_feast_dividend', '派内分红')" in loc)
  check('version remains 0.3.0',manifest['version']=='0.3.0' and json.loads(read('.metadata/metadata.json'))['version']=='0.3.0')
+ families=read('in_game/common/scripted_effects/hbe_opening_pacts_effects.txt')
+ check('new opening children have independent native random abilities',families.count('adm = { 20 70 } dip = { 20 70 } mil = { 20 70 }')==3 and 'no_stats = yes' not in families)
+ check('old zero-ability child repair is one-time and preserves other children','NOT = { has_variable = hbe_opening_abilities_fixed }' in families and 'is_alive = yes adm <= 0 dip <= 0 mil <= 0' in families and 'set_to_limited_random_stats =' in families)
  for p in manifest['files']:
   if any(s in p for s in ('guest_license','dividend','faction_departure')) and p.endswith('.txt'):check('syntax.'+p,bool(blocks(read(p))))
  report=dict(version='0.3.0',local_patch=True,passed=sum(checks.values()),checks=checks,engine_validation='reported separately; these are structural and numeric checks')

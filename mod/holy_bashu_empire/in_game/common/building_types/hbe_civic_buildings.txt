@@ -6,7 +6,7 @@
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_domain }
  allow = { scope:actor = { has_advance = hbe_tech_common_1 } country_has_no_other_copy_of_building = { type = hbe_assembly_hall } }
- modifier = {                                                                                                                         local_monthly_control = 0.1 local_burghers_max_literacy = 5 }
+ modifier = {                                                                                                                               local_monthly_control = 0.1 local_burghers_max_literacy = 5 }
  unique_production_methods = { hbe_assembly_hall_maintenance = { icon_type = building_type icon = hbe_assembly_hall paper = 0.08 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -18,7 +18,7 @@ hbe_works_archive = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_domain }
  allow = { scope:actor = { has_advance = hbe_tech_common_3 } country_has_no_other_copy_of_building = { type = hbe_works_archive } }
- modifier = { local_burghers_max_literacy = 3                                                                                                                        local_construction_speed = 0.15 local_monthly_literacy = 0.02 }
+ modifier = { local_burghers_max_literacy = 3                                                                                                                              local_construction_speed = 0.15 local_monthly_literacy = 0.02 }
  unique_production_methods = { hbe_works_archive_maintenance = { icon_type = building_type icon = hbe_works_archive paper = 0.10 books = 0.03 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -30,7 +30,7 @@ hbe_canal_office = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_chengdu_plain_1 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_chengdu_plain } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_monthly_food_modifier = 0.15 local_rice_output_modifier = 0.15 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_monthly_food_modifier = 0.15 local_rice_output_modifier = 0.15 }
  unique_production_methods = { hbe_canal_office_maintenance = { icon_type = building_type icon = hbe_canal_office lumber = 0.08 tools = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -42,9 +42,13 @@ hbe_brocade_school = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_chengdu_plain_2 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_chengdu_plain } } } country_has_no_other_copy_of_building = { type = hbe_brocade_school } }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                     local_fine_cloth_output_modifier = 0.2 local_burghers_max_literacy = 10 local_hbe_shu_embroidery_output_modifier = 0.25 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                             local_fine_cloth_output_modifier = 0.2 local_burghers_max_literacy = 10 local_hbe_shu_embroidery_output_modifier = 0.25 }
  unique_production_methods = { hbe_brocade_school_maintenance = { icon_type = building_type icon = hbe_brocade_school paper = 0.04 silk = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -134,9 +138,13 @@ hbe_salt_office = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_southern_salt_wine_1 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_southern_salt_wine } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                     local_salt_output_modifier = 0.2 local_construction_speed = 0.1 local_hbe_well_salt_output_modifier = 0.25 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                             local_salt_output_modifier = 0.2 local_construction_speed = 0.1 local_hbe_well_salt_output_modifier = 0.25 }
  unique_production_methods = { hbe_salt_office_maintenance = { icon_type = building_type icon = hbe_salt_office lumber = 0.08 tools = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -226,7 +234,7 @@ hbe_salt_contract_house = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_southern_salt_wine_2 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_southern_salt_wine } } } country_has_no_other_copy_of_building = { type = hbe_salt_contract_house } }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_liquor_output_modifier = 0.2 local_burghers_max_literacy = 6 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_liquor_output_modifier = 0.2 local_burghers_max_literacy = 6 }
  unique_production_methods = { hbe_salt_contract_house_maintenance = { icon_type = building_type icon = hbe_salt_contract_house paper = 0.10 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -238,9 +246,13 @@ hbe_river_warehouse = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river OR = { has_river = yes is_coastal = yes } }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_eastern_river_1 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_eastern_river } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_food_decay = -0.25 local_construction_speed = 0.1 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_food_decay = -0.25 local_construction_speed = 0.1 }
  unique_production_methods = { hbe_river_warehouse_maintenance = { icon_type = building_type icon = hbe_river_warehouse lumber = 0.06 cloth = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -330,7 +342,7 @@ hbe_cliff_stockade = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river OR = { topography = mountains topography = hills topography = plateau } }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_eastern_river_6 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_eastern_river } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_manpower = 0.0015 local_defensive = 0.2 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_manpower = 0.0015 local_defensive = 0.2 }
  unique_production_methods = { hbe_cliff_stockade_maintenance = { icon_type = building_type icon = hbe_cliff_stockade weaponry = 0.10 cloth = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -342,7 +354,7 @@ hbe_plank_fort = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_northern_shudao_2 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_northern_shudao } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_manpower = 0.0015 local_defensive = 0.2 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_manpower = 0.0015 local_defensive = 0.2 }
  unique_production_methods = { hbe_plank_fort_maintenance = { icon_type = building_type icon = hbe_plank_fort lumber = 0.08 weaponry = 0.06 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -354,9 +366,13 @@ hbe_gate_registry = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_northern_shudao_6 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_northern_shudao } } } country_has_no_other_copy_of_building = { type = hbe_gate_registry } }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                     local_monthly_control = 0.15 local_burghers_max_literacy = 8 local_hbe_shu_paper_output_modifier = 0.25 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                             local_monthly_control = 0.15 local_burghers_max_literacy = 8 local_hbe_shu_paper_output_modifier = 0.25 }
  unique_production_methods = { hbe_gate_registry_maintenance = { icon_type = building_type icon = hbe_gate_registry paper = 0.08 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -446,9 +462,13 @@ hbe_community_granary = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_central_hills_3 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_central_hills } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_monthly_food_modifier = 0.2 local_food_decay = -0.25 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_monthly_food_modifier = 0.2 local_food_decay = -0.25 }
  unique_production_methods = { hbe_community_granary_maintenance = { icon_type = building_type icon = hbe_community_granary lumber = 0.06 cloth = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -538,7 +558,7 @@ hbe_witness_house = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_central_hills_6 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_central_hills } } } country_has_no_other_copy_of_building = { type = hbe_witness_house } }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_monthly_prosperity = 0.1 local_burghers_max_literacy = 10 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_monthly_prosperity = 0.1 local_burghers_max_literacy = 10 }
  unique_production_methods = { hbe_witness_house_maintenance = { icon_type = building_type icon = hbe_witness_house paper = 0.08 books = 0.02 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -550,9 +570,13 @@ hbe_tea_exchange = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_western_tea_horse_1 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_western_tea_horse } } }  }
- modifier = { local_construction_speed = 0.03 can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                     local_tea_output_modifier = 0.2 local_leather_output_modifier = 0.15 local_hbe_border_tea_output_modifier = 0.25 }
+ modifier = { local_construction_speed = 0.03 can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                                                             local_tea_output_modifier = 0.2 local_leather_output_modifier = 0.15 local_hbe_border_tea_output_modifier = 0.25 }
  unique_production_methods = { hbe_tea_exchange_maintenance = { icon_type = building_type icon = hbe_tea_exchange paper = 0.04 cloth = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -642,7 +666,7 @@ hbe_guide_station = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_western_tea_horse_2 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_western_tea_horse } } }  }
- modifier = { local_manpower = 0.0015 can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_construction_speed = 0.15 local_food_decay = -0.15 }
+ modifier = { local_manpower = 0.0015 can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_construction_speed = 0.15 local_food_decay = -0.15 }
  unique_production_methods = { hbe_guide_station_maintenance = { icon_type = building_type icon = hbe_guide_station lumber = 0.06 cloth = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }
@@ -654,9 +678,13 @@ hbe_valley_inn = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_southwestern_valleys_1 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_southwestern_valleys } } }  }
- modifier = { local_construction_speed = 0.03 can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_tools_output_modifier = 0.2 local_monthly_prosperity = 0.08 }
+ modifier = { local_construction_speed = 0.03 can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_tools_output_modifier = 0.2 local_monthly_prosperity = 0.08 }
  unique_production_methods = { hbe_valley_inn_maintenance = { icon_type = building_type icon = hbe_valley_inn lumber = 0.06 cloth = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
+
+
+
+
 
 
 
@@ -746,7 +774,7 @@ hbe_covenant_stockade = {
  country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
  allow = { scope:actor = { OR = { has_advance = hbe_tech_southwestern_valleys_2 AND = { has_advance = hbe_civic_common_2 has_variable = hbe_guest_southwestern_valleys } } }  }
- modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                       local_manpower = 0.0015 local_defensive = 0.15 }
+ modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1                                                                                                                             local_manpower = 0.0015 local_defensive = 0.15 }
  unique_production_methods = { hbe_covenant_stockade_maintenance = { icon_type = building_type icon = hbe_covenant_stockade weaponry = 0.08 lumber = 0.04 category = building_maintenance } }
  ai_construct_weight = { value = 0.7 }
 }

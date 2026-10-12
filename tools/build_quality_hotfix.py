@@ -131,7 +131,13 @@ hbe_guest_license_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_s
 
     # The two guarded operations cap legitimate round contributions at 3.
     # Tabulate ln(1+c), avoiding an unsupported engine logarithm operator.
-    put('in_game/common/script_values/hbe_feast_dividend_values.txt','''hbe_feast_log_weight = {
+    put('in_game/common/script_values/hbe_feast_dividend_values.txt','''hbe_feast_imperial_bonus = {
+ value = monthly_income_trade_and_tax
+ multiply = 0.5
+ min = 8
+ max = 64
+}
+hbe_feast_log_weight = {
  value = var:hbe_member_dividend_weight
 }
 hbe_feast_dividend_share = {
@@ -156,6 +162,8 @@ hbe_feast_prestige_share = {
   else_if = {{ limit = {{ var:hbe_feast_points >= 2 }} set_variable = {{ name = hbe_member_dividend_weight value = 1.09861 }} }}
   else = {{ set_variable = {{ name = hbe_member_dividend_weight value = 0.69315 }} }}
   prev = {{ change_variable = {{ name = hbe_party_dividend_weight add = prev.var:hbe_member_dividend_weight }} }}
+  set_variable = {{ name = hbe_member_imperial_bonus value = hbe_feast_imperial_bonus }}
+  prev = {{ change_variable = {{ name = hbe_party_dividend_pool add = prev.var:hbe_member_imperial_bonus }} }}
   if = {{ limit = {{ has_variable = hbe_feast_paid }}
    prev = {{ change_variable = {{ name = hbe_party_dividend_pool add = {{ value = prev.var:hbe_feast_paid multiply = 0.25 }} }} }}
   }}
@@ -198,13 +206,14 @@ hbe_feast_prestige_share = {
     loc['hbe_party_dividend_pool']='本届派内分红池'
     loc['hbe_party_dividend_weight']='本派分红权重'
     loc['hbe_member_dividend_weight']='个人分红权重'
-    loc['HBE_FEAST_REWARDS']='参与：建设+15%、商人容量+15%（两年）。\n成功：6金币、3声望、5信誉；生产和粮食+15%（三年）。\n派内分红：实付出资的25%及每派3点威望，按贡献的对数权重分配。'
+    loc['hbe_member_imperial_bonus']='本府为派内奖池增加的帝国奖金'
+    loc['HBE_FEAST_REWARDS']='参与：建设+15%、商人容量+15%（两年）。\n成功：6金币、3声望、5信誉；生产和粮食+15%（三年）。\n派内分红：每位贡献国增加半个月税贸收入的帝国奖金（8—64金币），加上实付出资的25%；另有每派3点威望。每两年按贡献的对数权重分配。'
     loc['HBE_FEAST_LAST_DIVIDEND']="本府上届分红：[Player.MakeScope.GetVariable('hbe_feast_last_dividend').GetValue|2]金币、[Player.MakeScope.GetVariable('hbe_feast_last_prestige').GetValue|2]威望"
     dc='hbe_term_feast_dividend';path=out/'main_menu/common/game_concepts/hbe_concepts.txt';text=path.read_text(encoding='utf-8-sig')
     if not any(x[0]==dc for x in blocks(text,0)):text+='\n'+dc+' = { }\n'
     put('main_menu/common/game_concepts/hbe_concepts.txt',text)
     loc['game_concept_'+dc]='派内分红'
-    loc['game_concept_'+dc+'_desc']='#T 每两年结算的派内分红#!\n无论共同目标是否完成，各派拿本届成员实际出资的25%作为小额分红池，并分配3点威望，均分给有贡献的成员。\n\n分配权重为ln(1＋本届贡献)：1、2、3贡献分别约为0.693、1.099、1.386。三贡献约得一贡献的两倍，避免收益被高贡献者垄断。\n个人金币或威望＝本派对应奖励池×个人权重÷本派权重总和。零贡献不参与；没有现金出资时没有金币分红，完成事业仍可分得威望。\n\n按结算时所属派系分配；换派不重置出资记录。分红不会重复归还全额出资。共同成功另有的3点声望奖励仍保留。'
+    loc['game_concept_'+dc+'_desc']='#T 每两年结算的派内分红#!\n无论共同目标是否完成，有贡献的成员都参与派内分红。每位贡献国按结算时半个月税贸收入增加一笔帝国奖金，最低8、最高64金币；再加上这些成员本届实际出资的25%，组成派内金币奖池。帝国奖金直接生成，不额外扣取任何成员的国库。每派另有3点威望。\n\n分配权重为ln(1＋本届贡献)：1、2、3贡献分别约为0.693、1.099、1.386。三贡献约得一贡献的两倍。\n个人金币或威望＝本派对应奖励池×个人权重÷本派权重总和。零贡献既不增加帝国奖金，也不领取奖励；仅完成地方事业而未现金出资，仍可获得金币与威望。8—64金币限制的是每位贡献国加入奖池的金额，个人最终分红按权重计算。\n\n例如两国贡献1与3、各出资2金币，且均触发最低奖金，奖池共17金币，分别领取约5.67和11.33金币。按结算时所属派系分配；换派不重置出资记录。共同成功另有的3点声望奖励仍保留。'
     loc['HBE_FEAST_REWARDS']=loc['HBE_FEAST_REWARDS'].replace('派内分红',f"[Concept('{dc}', '派内分红')|e]")
 
     # A native concept link explains the actual seven timed country decisions.
@@ -271,5 +280,5 @@ hbe_feast_prestige_share = {
             loc[k+suffix]=loc['hbe_feast_'+('common' if i==1 else 'local')+'_action_desc']
     concepts=(out/'main_menu/common/game_concepts/hbe_concepts.txt').read_text(encoding='utf-8-sig')
     guide_count=sum(k.startswith('hbe_term_') for k,*_ in blocks(concepts,0))
-    report=dict(guest_licenses=len(grouped),audit_native_unlocks=0,member_row_width=222,explicit_player_actions=3,faction_switch_years=5,departure_opinion=-5,dividend_fraction=.25,party_prestige_pool=3,dividend_weight='ln(1+contribution)',service_hover=concept,moved_era_nodes=28,advance_layout=layout,vanilla_anchors=VANILLA_ANCHORS,improved_units=list(improved),mechanic_guide_count=guide_count)
+    report=dict(guest_licenses=len(grouped),audit_native_unlocks=0,member_row_width=222,explicit_player_actions=3,faction_switch_years=5,departure_opinion=-5,dividend_fraction=.25,imperial_bonus=dict(income_months=.5,minimum=8,maximum=64),party_prestige_pool=3,dividend_weight='ln(1+contribution)',service_hover=concept,moved_era_nodes=28,advance_layout=layout,vanilla_anchors=VANILLA_ANCHORS,improved_units=list(improved),mechanic_guide_count=guide_count)
     return report

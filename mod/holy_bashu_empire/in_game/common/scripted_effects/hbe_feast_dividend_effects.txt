@@ -8,6 +8,8 @@ international_organization:hbe_common_party ?= {
   else_if = { limit = { var:hbe_feast_points >= 2 } set_variable = { name = hbe_member_dividend_weight value = 1.09861 } }
   else = { set_variable = { name = hbe_member_dividend_weight value = 0.69315 } }
   prev = { change_variable = { name = hbe_party_dividend_weight add = prev.var:hbe_member_dividend_weight } }
+  set_variable = { name = hbe_member_imperial_bonus value = hbe_feast_imperial_bonus }
+  prev = { change_variable = { name = hbe_party_dividend_pool add = prev.var:hbe_member_imperial_bonus } }
   if = { limit = { has_variable = hbe_feast_paid }
    prev = { change_variable = { name = hbe_party_dividend_pool add = { value = prev.var:hbe_feast_paid multiply = 0.25 } } }
   }
@@ -36,6 +38,8 @@ international_organization:hbe_local_party ?= {
   else_if = { limit = { var:hbe_feast_points >= 2 } set_variable = { name = hbe_member_dividend_weight value = 1.09861 } }
   else = { set_variable = { name = hbe_member_dividend_weight value = 0.69315 } }
   prev = { change_variable = { name = hbe_party_dividend_weight add = prev.var:hbe_member_dividend_weight } }
+  set_variable = { name = hbe_member_imperial_bonus value = hbe_feast_imperial_bonus }
+  prev = { change_variable = { name = hbe_party_dividend_pool add = prev.var:hbe_member_imperial_bonus } }
   if = { limit = { has_variable = hbe_feast_paid }
    prev = { change_variable = { name = hbe_party_dividend_pool add = { value = prev.var:hbe_feast_paid multiply = 0.25 } } }
   }

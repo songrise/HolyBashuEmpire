@@ -1,4 +1,10 @@
-﻿hbe_feast_log_weight = {
+﻿hbe_feast_imperial_bonus = {
+ value = monthly_income_trade_and_tax
+ multiply = 0.5
+ min = 8
+ max = 64
+}
+hbe_feast_log_weight = {
  value = var:hbe_member_dividend_weight
 }
 hbe_feast_dividend_share = {

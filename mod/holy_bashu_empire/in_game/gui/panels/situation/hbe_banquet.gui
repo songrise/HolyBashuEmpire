@@ -104,6 +104,8 @@ vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } 
 
 
 
+
+
  }
 }
 vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } spacing = 4
@@ -128,6 +130,8 @@ vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } 
     }
    } }
   } }
+
+
 
 
 

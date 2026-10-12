@@ -122,6 +122,10 @@ hbe_trained_river = {
 
 
 
+
+
+
+
  combat_power = 1.20 morale_damage_taken = -0.12 strength_damage_done = 0.08 supply_weight = 0.20
 }
 hbe_permanent_pass = {
@@ -136,6 +140,10 @@ hbe_permanent_pass = {
  OR = { has_advance = hbe_civic_northern_shudao_2 AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_civic_common_2 } }
  has_variable = hbe_mission_northern_shudao_5 } }
  gfx_tags = { heavy_tag pike_tag }
+
+
+
+
 
 
 

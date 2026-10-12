@@ -4,11 +4,14 @@
   50 = { save_scope_value_as = { name = hbe_start_child_female value = no } }
  }
 if = { limit = { scope:hbe_start_father = { character_age >= 40 } scope:hbe_start_mother = { character_age >= 40 } } create_character = { age = { 0 24 } dynasty = scope:hbe_start_father.dynasty culture = scope:hbe_start_father.culture religion = scope:hbe_start_father.religion
- father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female no_stats = yes trait_category = none } }
+ father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female
+ adm = { 20 70 } dip = { 20 70 } mil = { 20 70 } trait_category = none } }
 else_if = { limit = { scope:hbe_start_father = { character_age >= 36 } scope:hbe_start_mother = { character_age >= 36 } } create_character = { age = { 0 20 } dynasty = scope:hbe_start_father.dynasty culture = scope:hbe_start_father.culture religion = scope:hbe_start_father.religion
- father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female no_stats = yes trait_category = none } }
+ father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female
+ adm = { 20 70 } dip = { 20 70 } mil = { 20 70 } trait_category = none } }
 else = { create_character = { age = { 0 16 } dynasty = scope:hbe_start_father.dynasty culture = scope:hbe_start_father.culture religion = scope:hbe_start_father.religion
- father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female no_stats = yes trait_category = none } }
+ father = scope:hbe_start_father mother = scope:hbe_start_mother female = scope:hbe_start_child_female
+ adm = { 20 70 } dip = { 20 70 } mil = { 20 70 } trait_category = none } }
 }
 hbe_generate_opening_family = {
  ruler = { save_scope_as = hbe_start_father }
@@ -26,6 +29,19 @@ hbe_generate_opening_family = {
   25 = { set_variable = { name = hbe_opening_children value = 3 } hbe_generate_opening_child = yes hbe_generate_opening_child = yes hbe_generate_opening_child = yes }
  }
  set_variable = hbe_opening_family_done
+ set_variable = hbe_opening_abilities_fixed
+}
+hbe_repair_opening_child_abilities = {
+ if = { limit = { has_variable = hbe_opening_family_done NOT = { has_variable = hbe_opening_abilities_fixed } has_ruler = yes }
+  ruler = { every_child = {
+   limit = { is_alive = yes adm <= 0 dip <= 0 mil <= 0 }
+   set_to_limited_random_stats = { min_adm = 20 max_adm = 70 min_dip = 20 max_dip = 70 min_mil = 20 max_mil = 70 }
+   if = { limit = { adm > 70 } add_adm = { value = 70 subtract = adm } }
+   if = { limit = { dip > 70 } add_dip = { value = 70 subtract = dip } }
+   if = { limit = { mil > 70 } add_mil = { value = 70 subtract = mil } }
+  } }
+  set_variable = hbe_opening_abilities_fixed
+ }
 }
 hbe_apply_opening_pacts = {
  if = { limit = { current_date >= 1337.4.1 current_date < 1337.4.3 }

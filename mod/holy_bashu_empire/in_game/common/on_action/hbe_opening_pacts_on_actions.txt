@@ -1,2 +1,4 @@
 ﻿on_game_start = { on_actions = { hbe_opening_pacts_start } }
 hbe_opening_pacts_start = { effect = { c:BAB ?= { trigger_event_silently = { id = hbe_opening_family.1 days = 1 } } } }
+monthly_country_pulse = { on_actions = { hbe_opening_abilities_monthly } }
+hbe_opening_abilities_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_repair_opening_child_abilities = yes } }
