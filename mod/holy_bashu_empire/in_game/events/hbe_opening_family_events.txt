@@ -1,0 +1,2 @@
+﻿namespace = hbe_opening_family
+hbe_opening_family.1 = { type = country_event hidden = yes immediate = { hbe_apply_opening_pacts = yes } }

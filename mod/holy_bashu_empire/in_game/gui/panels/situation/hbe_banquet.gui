@@ -27,8 +27,31 @@ situation_panel = {
  blockoverride "situation_subheader_content" {}
  blockoverride "situation_panel_main_maximumsize" { minimumsize = { -1 320 } }
  blockoverride "situation_panel_main_actions" {
-  vbox = { minimumsize = { 480 -1 } maximumsize = { 480 -1 } using = situations_actions }
+ vbox = { size = { 480 -1 } spacing = 5
+ text_multi = { size = { 480 62 } autoresize = no align = left|top text = "HBE_FEAST_ACTION_HELP" }
+targetted_button_regular = { size = { 480 32 } text = "hbe_feast_fund_action"
+ enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+ scripted_action_tooltip = { click_type = left click_mode = single action_name = "hbe_feast_fund_action"
+  actor = "[Player]" parameter = { parameter_name = "recipient" parameter_value = "[GetSituationByKey('hbe_banquet')]" }
  }
+ tooltipwidget = { BasicFunctionalTooltip = {} }
+}
+targetted_button_regular = { size = { 480 32 } text = "hbe_feast_common_action"
+ enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+ scripted_action_tooltip = { click_type = left click_mode = single action_name = "hbe_feast_common_action"
+  actor = "[Player]" parameter = { parameter_name = "recipient" parameter_value = "[GetSituationByKey('hbe_banquet')]" }
+ }
+ tooltipwidget = { BasicFunctionalTooltip = {} }
+}
+targetted_button_regular = { size = { 480 32 } text = "hbe_feast_local_action"
+ enabled = "[PdxGuiWidget.IsUberButtonEnabled]"
+ scripted_action_tooltip = { click_type = left click_mode = single action_name = "hbe_feast_local_action"
+  actor = "[Player]" parameter = { parameter_name = "recipient" parameter_value = "[GetSituationByKey('hbe_banquet')]" }
+ }
+ tooltipwidget = { BasicFunctionalTooltip = {} }
+}
+ }
+}
  blockoverride "situation_panel_main_content" {
   vbox = { minimumsize = { 480 -1 } maximumsize = { 480 -1 } spacing = 8
   text_multi = { size = { 480 46 } autoresize = no align = left|top text = "HBE_FEAST_STATUS" }
@@ -41,7 +64,8 @@ situation_panel = {
    }
   }
   text_multi = { size = { 480 64 } autoresize = no align = left|top text = "HBE_FEAST_GUIDE" }
-  text_multi = { size = { 480 64 } autoresize = no align = left|top text = "HBE_FEAST_REWARDS" }
+  text_multi = { size = { 480 94 } autoresize = no align = left|top text = "HBE_FEAST_REWARDS" }
+ text_multi = { size = { 480 24 } autoresize = no visible = "[IsPlayerValid]" text = "HBE_FEAST_LAST_DIVIDEND" }
   hbox = { size = { 480 312 } spacing = 12
 vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } spacing = 4
  text_multi = { size = { 234 64 } autoresize = no align = left|top text = "HBE_FEAST_COMMON" }
@@ -52,13 +76,34 @@ vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } 
  scrollarea = { size = { 234 216 } scrollbarpolicy_horizontal = always_off autoresizeviewport = yes
   viewportwidget = { widget = { scissor = yes } }
   scrollbar_vertical = { using = Scrollbar_Vertical }
-  scrollwidget = { fixedgridbox = { addrow = 30 addcolumn = 100% datamodel = "[GetUniqueInternationalOrganization('hbe_common_party').GetMembers]"
-  item = { hbox = { spacing = 4 using = bg_paper_card size = { 222 30 }
-   country_flag_small = { tooltipwidget = { using = CountryTooltip } }
-   text_single = { size = { 145 30 } maximumsize = { 145 30 } text = "[Country.GetName]" }
-   text_single = { size = { 32 30 } align = right text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
+  scrollwidget = { fixedgridbox = {
+   size = { 222 -1 } layoutpolicy_horizontal = expanding
+   addrow = 30 addcolumn = 222 datamodel_reuse_widgets = yes
+   datamodel = "[GetUniqueInternationalOrganization('hbe_common_party').GetMembers]"
+   item = { widget = { size = { 222 30 }
+    background = { using = color_whiteish_texture alpha = 0.08 }
+    hbox = { size = { 222 30 } margin = { 3 2 } spacing = 4
+     country_flag_very_small = { tooltipwidget = { using = CountryTooltip } }
+     text_single = { size = { 151 26 } maximumsize = { 151 26 } autoresize = no align = left|nobaseline text = "[Country.GetName]" }
+     text_single = { size = { 35 26 } autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
+    }
+   } }
   } }
-  } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  }
 }
 vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } spacing = 4
@@ -70,13 +115,34 @@ vbox = { size = { 234 312 } minimumsize = { 234 312 } maximumsize = { 234 312 } 
  scrollarea = { size = { 234 216 } scrollbarpolicy_horizontal = always_off autoresizeviewport = yes
   viewportwidget = { widget = { scissor = yes } }
   scrollbar_vertical = { using = Scrollbar_Vertical }
-  scrollwidget = { fixedgridbox = { addrow = 30 addcolumn = 100% datamodel = "[GetUniqueInternationalOrganization('hbe_local_party').GetMembers]"
-  item = { hbox = { spacing = 4 using = bg_paper_card size = { 222 30 }
-   country_flag_small = { tooltipwidget = { using = CountryTooltip } }
-   text_single = { size = { 145 30 } maximumsize = { 145 30 } text = "[Country.GetName]" }
-   text_single = { size = { 32 30 } align = right text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
+  scrollwidget = { fixedgridbox = {
+   size = { 222 -1 } layoutpolicy_horizontal = expanding
+   addrow = 30 addcolumn = 222 datamodel_reuse_widgets = yes
+   datamodel = "[GetUniqueInternationalOrganization('hbe_local_party').GetMembers]"
+   item = { widget = { size = { 222 30 }
+    background = { using = color_whiteish_texture alpha = 0.08 }
+    hbox = { size = { 222 30 } margin = { 3 2 } spacing = 4
+     country_flag_very_small = { tooltipwidget = { using = CountryTooltip } }
+     text_single = { size = { 151 26 } maximumsize = { 151 26 } autoresize = no align = left|nobaseline text = "[Country.GetName]" }
+     text_single = { size = { 35 26 } autoresize = no align = right|nobaseline text = "[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|0]" }
+    }
+   } }
   } }
-  } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  }
 }
   }

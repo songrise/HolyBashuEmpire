@@ -1,0 +1,13 @@
+﻿hbe_feast_log_weight = {
+ value = var:hbe_member_dividend_weight
+}
+hbe_feast_dividend_share = {
+ value = var:hbe_member_dividend_weight
+ divide = var:hbe_member_party_weight
+ multiply = var:hbe_member_party_pool
+}
+hbe_feast_prestige_share = {
+ value = var:hbe_member_dividend_weight
+ divide = var:hbe_member_party_weight
+ multiply = 3
+}

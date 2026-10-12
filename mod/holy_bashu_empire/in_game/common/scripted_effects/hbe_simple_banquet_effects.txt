@@ -13,6 +13,10 @@ if = { limit = { var:hbe_stance = 2 }
    else_if = { limit = { NOT = { is_member_of_international_organization = international_organization:hbe_local_party } } international_organization:hbe_local_party = { add_country_to_international_organization = prev } }
  }
 
+
+ if = { limit = { NOT = { has_variable = hbe_feast_last_dividend } } set_variable = { name = hbe_feast_last_dividend value = 0 } }
+
+ if = { limit = { NOT = { has_variable = hbe_feast_last_prestige } } set_variable = { name = hbe_feast_last_prestige value = 0 } }
 }
 hbe_feast_recount = {
  situation:hbe_banquet ?= { set_variable = { name = hbe_feast_total value = 0 } set_variable = { name = hbe_feast_required value = 0 } }

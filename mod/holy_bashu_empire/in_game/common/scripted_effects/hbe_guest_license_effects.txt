@@ -1,0 +1,23 @@
+﻿hbe_sync_guest_licenses = {
+if = { limit = { has_variable = hbe_guest_chengdu_plain has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_chengdu_plain } }
+ research_advance = advance_type:hbe_guest_license_chengdu_plain
+}
+if = { limit = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_southern_salt_wine } }
+ research_advance = advance_type:hbe_guest_license_southern_salt_wine
+}
+if = { limit = { has_variable = hbe_guest_eastern_river has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_eastern_river } }
+ research_advance = advance_type:hbe_guest_license_eastern_river
+}
+if = { limit = { has_variable = hbe_guest_northern_shudao has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_northern_shudao } }
+ research_advance = advance_type:hbe_guest_license_northern_shudao
+}
+if = { limit = { has_variable = hbe_guest_central_hills has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_central_hills } }
+ research_advance = advance_type:hbe_guest_license_central_hills
+}
+if = { limit = { has_variable = hbe_guest_western_tea_horse has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_western_tea_horse } }
+ research_advance = advance_type:hbe_guest_license_western_tea_horse
+}
+if = { limit = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_civic_common_2 NOT = { has_advance = hbe_guest_license_southwestern_valleys } }
+ research_advance = advance_type:hbe_guest_license_southwestern_valleys
+}
+}

@@ -17,7 +17,7 @@ hbe_record_service_chengdu_plain = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_chengdu_plain_1 hbe_operating_canal_office = yes } change_variable = { name = hbe_water add = 8 } change_variable = { name = hbe_burden add = -4 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_chengdu_plain_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_chengdu_plain_1 hbe_operating_canal_office = yes } change_variable = { name = hbe_water add = 6.4 } change_variable = { name = hbe_burden add = -3.2 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_chengdu_plain_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_chengdu_plain = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
@@ -36,7 +36,7 @@ hbe_record_service_southern_salt_wine = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_southern_salt_wine_1 hbe_operating_salt_office = yes } change_variable = { name = hbe_salt add = 10 } if = { limit = { has_advance = hbe_civic_southern_salt_wine_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_southern_salt_wine_1 hbe_operating_salt_office = yes } change_variable = { name = hbe_salt add = 8.0 } if = { limit = { has_advance = hbe_civic_southern_salt_wine_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_southern_salt_wine = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
@@ -55,7 +55,7 @@ hbe_record_service_eastern_river = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_eastern_river_1 hbe_operating_river_warehouse = yes } change_variable = { name = hbe_river add = 8 } change_variable = { name = hbe_burden add = -2 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_eastern_river_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_eastern_river_1 hbe_operating_river_warehouse = yes } change_variable = { name = hbe_river add = 6.4 } change_variable = { name = hbe_burden add = -1.6 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_eastern_river_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_eastern_river = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
@@ -74,7 +74,7 @@ hbe_record_service_northern_shudao = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_northern_shudao_1 hbe_operating_plank_fort = yes } change_variable = { name = hbe_roads add = 6 } change_variable = { name = hbe_burden add = -5 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_northern_shudao_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_northern_shudao_1 hbe_operating_plank_fort = yes } change_variable = { name = hbe_roads add = 4.8 } change_variable = { name = hbe_burden add = -4.0 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_northern_shudao_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_northern_shudao = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
@@ -93,7 +93,7 @@ hbe_record_service_central_hills = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_central_hills_1 hbe_operating_community_granary = yes } change_variable = { name = hbe_grain add = 10 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_central_hills_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_central_hills_1 hbe_operating_community_granary = yes } change_variable = { name = hbe_grain add = 8.0 } change_variable = { name = hbe_burden add = -2.4 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_central_hills_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_central_hills = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
@@ -112,7 +112,7 @@ hbe_record_service_western_tea_horse = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_western_tea_horse_1 hbe_operating_guide_station = yes } change_variable = { name = hbe_tea add = 10 } change_variable = { name = hbe_burden add = -1 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_western_tea_horse_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_western_tea_horse_1 hbe_operating_guide_station = yes } change_variable = { name = hbe_tea add = 8.0 } change_variable = { name = hbe_burden add = -0.8 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_western_tea_horse_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_western_tea_horse = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }
@@ -131,7 +131,7 @@ hbe_record_service_southwestern_valleys = {
  hbe_feast_help = yes
 
  # TECHNOLOGY_SERVICE_BEGIN
- if = { limit = { has_advance = hbe_civic_southwestern_valleys_1 hbe_operating_covenant_stockade = yes } change_variable = { name = hbe_valleys add = 8 } change_variable = { name = hbe_burden add = -4 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_southwestern_valleys_2 } change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes } }
+ if = { limit = { has_advance = hbe_civic_southwestern_valleys_1 hbe_operating_covenant_stockade = yes } change_variable = { name = hbe_valleys add = 6.4 } change_variable = { name = hbe_burden add = -3.2 } hbe_clamp_burden = yes if = { limit = { has_advance = hbe_civic_southwestern_valleys_2 } change_variable = { name = hbe_yiqi add = 1.6 } hbe_clamp_yiqi = yes } }
  # TECHNOLOGY_SERVICE_END
 }
 hbe_pay_service_southwestern_valleys = { if = { limit = { has_policy = hbe_paid_policy } add_gold = { value = hbe_paid_bill multiply = -1 } } }

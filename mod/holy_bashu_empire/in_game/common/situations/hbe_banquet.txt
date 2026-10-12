@@ -1,7 +1,7 @@
 ﻿hbe_banquet = {
     international_organization_type = hbe_empire
     monthly_spawn_chance = monthly_spawn_chance_unique
-    can_start = { game_is_initialized = yes current_date >= 1337.10.1 exists = international_organization:hbe_empire }
+    can_start = { game_is_initialized = yes current_date >= 1337.7.1 exists = international_organization:hbe_empire }
     can_end = { NOT = { exists = international_organization:hbe_empire } }
     visible = { is_member_of_international_organization = international_organization:hbe_empire }
     variables = {hbe_round = { format = HBE_ROUND_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 1 min = 1 max = 9999 }

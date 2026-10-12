@@ -72,7 +72,6 @@ def build_social_expansion(out,root,countries,regions,loc,put):
         trig=active(k).split(' = ')[0]
         triggers.append(f'{trig} = {{ {MEMBER} total_effective_building_levels:{k} >= 0.25 any_owned_location = {{ any_buildings_in_location = {{ building_type = building_type:{k} building_employed_amount >= 0.05 }} }} }}')
         unlocks[t].append('unlock_building = '+k)
-        if g!='common':unlocks[tech('common',2)].append('unlock_building = '+k)
         buildingdata.append(dict(key=k,name=name,group=g,advance=t,maintenance=inputs,unique_country=unique,employment=150,build_days=540))
     put('in_game/common/building_types/hbe_civic_buildings.txt','\n'.join(buildings))
     put('in_game/common/goods_demand/hbe_civic_construction.txt','hbe_institution_construction = { lumber = 0.6 masonry = 0.4 tools = 0.1 category = building_construction }')
@@ -124,7 +123,6 @@ hbe_civic_special_limit = {{
  gfx_tags = {{ {gfx} }}
 }}''')
         unlocks[prerequisite].append('unlock_unit = '+k)
-        if not late:unlocks[tech('common',2)].append('unlock_unit = '+k)
         unitdata.append(dict(key=k,name=name,group=g,advance=prerequisite,building=bld,alternate_buildings=alternates,year=1457 if late else 1352,late=late,shared_family='hbe_civic_special_family'))
     put('in_game/common/unit_types/hbe_civic_units.txt','\n'.join(units))
 

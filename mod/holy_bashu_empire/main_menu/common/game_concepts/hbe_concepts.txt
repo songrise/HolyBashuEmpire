@@ -58,3 +58,7 @@ hbe_history_qiong = { }
 hbe_history_sansu = { }
 hbe_history_wenweng = { }
 hbe_history_river = { }
+
+hbe_term_local_service = { }
+
+hbe_term_feast_dividend = { }

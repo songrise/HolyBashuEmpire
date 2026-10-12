@@ -14,13 +14,31 @@ hbe_banquet_register = {
   trigger_event_non_silently = { id = hbe_banquet.1 days = 1 }
  } hbe_feast_sync_party = yes
 }
-hbe_choose_stance_1 = {set_variable = { name = hbe_stance value = 1 } set_variable = { name = hbe_stance_cooldown value = yes years = 5 } hbe_feast_sync_party = yes}
-hbe_choose_stance_2 = {set_variable = { name = hbe_stance value = 2 } set_variable = { name = hbe_stance_cooldown value = yes years = 5 } hbe_feast_sync_party = yes}
+hbe_choose_stance_1 = {if = { limit = { NOT = { var:hbe_stance = 1 } NOT = { has_variable = hbe_stance_cooldown } }
+ save_scope_as = hbe_party_departing
+ international_organization:hbe_local_party ?= { every_international_organization_member = {
+  limit = { NOT = { this = scope:hbe_party_departing } }
+  add_opinion = { modifier = hbe_left_feast_party target = scope:hbe_party_departing }
+ } }
+ set_variable = { name = hbe_stance value = 1 }
+ set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
+ hbe_feast_sync_party = yes
+}}
+hbe_choose_stance_2 = {if = { limit = { NOT = { var:hbe_stance = 2 } NOT = { has_variable = hbe_stance_cooldown } }
+ save_scope_as = hbe_party_departing
+ international_organization:hbe_common_party ?= { every_international_organization_member = {
+  limit = { NOT = { this = scope:hbe_party_departing } }
+  add_opinion = { modifier = hbe_left_feast_party target = scope:hbe_party_departing }
+ } }
+ set_variable = { name = hbe_stance value = 2 }
+ set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
+ hbe_feast_sync_party = yes
+}}
 hbe_choose_stance_3 = {hbe_choose_stance_2 = yes}
 hbe_open_accounts = {
  set_variable = { name = hbe_round_month value = 0 } set_variable = { name = hbe_feast_total value = 0 }
  international_organization:hbe_empire ?= { every_international_organization_member = {
-  hbe_banquet_register = yes set_variable = { name = hbe_feast_points value = 0 }
+  hbe_banquet_register = yes set_variable = { name = hbe_feast_points value = 0 } set_variable = { name = hbe_feast_paid value = 0 }
   remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered remove_variable = hbe_feast_helped
   remove_variable = hbe_round_pledged remove_variable = hbe_fund_pledge remove_variable = hbe_declined_project
   if = { limit = { is_ai = no situation:hbe_banquet = { var:hbe_round > 1 } } trigger_event_non_silently = { id = hbe_banquet.2 days = 1 } }
@@ -29,7 +47,7 @@ hbe_open_accounts = {
 hbe_fund_project = {
  if = { limit = { is_situation_active = situation:hbe_banquet NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee }
   hbe_banquet_register = yes
-  add_gold = { value = hbe_feast_fee multiply = -1 } set_variable = hbe_round_contributed set_variable = hbe_round_delivered
+  set_variable = { name = hbe_feast_paid value = hbe_feast_fee } add_gold = { value = hbe_feast_fee multiply = -1 } set_variable = hbe_round_contributed set_variable = hbe_round_delivered
   change_variable = { name = hbe_feast_points add = 1 } change_variable = { name = hbe_contribution add = 1 }
   change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes
   add_country_modifier = { modifier = hbe_feast_cooperation years = 2 mode = replace }
@@ -39,6 +57,8 @@ hbe_fund_project = {
 hbe_pledge_project = {hbe_fund_project = yes}
 hbe_deliver_contract = {remove_variable = hbe_project_pending remove_variable = hbe_project_timer hbe_feast_help = yes}
 hbe_settle_accounts = {
+ hbe_pay_feast_dividends = yes
+
  hbe_feast_recount = yes
  if = { limit = { var:hbe_feast_total >= var:hbe_feast_required }
   change_variable = { name = hbe_completed_projects add = 1 }

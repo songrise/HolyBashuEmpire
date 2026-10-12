@@ -17,6 +17,8 @@ from build_social_expansion import build_social_expansion
 from build_technology_rewards import build_technology_rewards
 from build_bashu_ai import build_bashu_ai
 from build_simple_banquet import build_simple_banquet
+from build_quality_hotfix import build_quality_hotfix
+from build_opening_pacts import build_opening_pacts
 from build_art_v021 import build_art_v021
 from build_special_goods import prepare_special_goods,finish_special_goods
 from build_event_choices import build_event_choices
@@ -552,6 +554,9 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     from build_player_guides import GUIDES
     GUIDES.extend((key.removeprefix('hbe_term_'),v[0],[v[0]],v[1],'hbe_burden' if key=='hbe_term_burden' else None) for key,v in social_expansion['concepts'].items())
     player_guides = build_player_guides(ROOT, loc, L, put)
+    quality_hotfix = build_quality_hotfix(out, ROOT, loc, put)
+    player_guides['mechanic_concepts']=quality_hotfix['mechanic_guide_count']
+    opening_pacts=build_opening_pacts(out,countries,loc,put)
     for language in ('simp_chinese','english'):
         strings=[f'l_{language}:']+[f' {k}: "{v.replace(chr(92),chr(92)*2).replace(chr(34),chr(92)+chr(34)).replace(chr(10),chr(92)+"n")}"' for k,v in loc.items()]
         put(f'main_menu/localization/{language}/hbe_l_{language}.yml','\n'.join(strings),True)
@@ -560,7 +565,7 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     assignments=[dict(location=r['location_id'],country=loc_to_tag[r['location_id']],circle=r['circle_design_key'],province=r['original_province_id']) for r in rows]
     csv_write(ROOT/'data/locations_v001.csv',assignments)
     write(ROOT/'data/technology_v001.json',json.dumps(catalog,ensure_ascii=False,indent=2))
-    manifest=dict(version='0.3.0',countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
+    manifest=dict(version='0.3.0',quality_hotfix=quality_hotfix,opening_pacts=opening_pacts,countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
                   source_setup_sha256=sha(original_path),removed_domain_tokens=len(removed),
                   research_nodes=len(catalog)+len(social_expansion['advances']),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events']+len(social_expansion['events']),
                   decisions=70+len(social_expansion['decisions']),social_expansion=social_expansion,expansion=expansion,native_content=native_content,

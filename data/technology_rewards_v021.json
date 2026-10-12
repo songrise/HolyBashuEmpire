@@ -5,8 +5,8 @@
       "key": "hbe_tech_common_1",
       "name": "乡约与账簿",
       "modifiers": {
-        "country_cabinet_efficiency": 0.1,
-        "global_monthly_control": 0.05
+        "global_monthly_literacy": 0.02,
+        "global_monthly_control": 0.04
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -15,8 +15,8 @@
       "key": "hbe_tech_common_2",
       "name": "统一度量",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.15,
-        "merchant_maintenance_efficiency": 0.1
+        "global_merchant_capacity_modifier": 0.12,
+        "merchant_maintenance_efficiency": 0.08
       },
       "unlocks": [],
       "link": "整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
@@ -25,8 +25,8 @@
       "key": "hbe_tech_common_3",
       "name": "帝国工程署",
       "modifiers": {
-        "global_construction_speed": 0.2,
-        "global_build_buildings_efficiency": 0.1
+        "global_institution_growth_modifier": 0.16,
+        "global_max_literacy": 4.0
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -35,8 +35,8 @@
       "key": "hbe_tech_common_4",
       "name": "匠人互访",
       "modifiers": {
-        "research_speed_modifier": 0.15,
-        "global_institution_growth_modifier": 0.2
+        "research_speed_modifier": 0.12,
+        "global_institution_growth_modifier": 0.16
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
@@ -45,8 +45,8 @@
       "key": "hbe_tech_common_5",
       "name": "行会传习",
       "modifiers": {
-        "global_production_efficiency": 0.1,
-        "global_burghers_max_literacy": 10
+        "global_production_efficiency": 0.08,
+        "global_burghers_max_literacy": 8.0
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
@@ -55,9 +55,9 @@
       "key": "hbe_tech_common_6",
       "name": "跨区工艺学堂",
       "modifiers": {
-        "research_speed_modifier": 0.15,
-        "global_books_output_modifier": 0.2,
-        "global_hbe_shu_paper_output_modifier": 0.2
+        "research_speed_modifier": 0.12,
+        "global_books_output_modifier": 0.16,
+        "global_hbe_shu_paper_output_modifier": 0.16
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -66,8 +66,8 @@
       "key": "hbe_tech_common_7",
       "name": "驿路勘绘",
       "modifiers": {
-        "global_road_building_time": -0.15,
-        "build_gravel_road_cost_modifier": -0.15
+        "global_road_building_time": -0.12,
+        "build_gravel_road_cost_modifier": -0.12
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
@@ -76,8 +76,8 @@
       "key": "hbe_tech_common_8",
       "name": "山河交通总图",
       "modifiers": {
-        "global_construction_speed": 0.15,
-        "global_trade_center_power": 0.15
+        "burghers_estate_target_satisfaction": 0.048,
+        "global_trade_center_power": 0.12
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -86,8 +86,8 @@
       "key": "hbe_tech_chengdu_plain_1",
       "name": "渠田协作",
       "modifiers": {
-        "global_monthly_food_modifier": 0.15,
-        "global_rice_output_modifier": 0.15
+        "global_monthly_food_modifier": 0.12,
+        "global_rice_output_modifier": 0.12
       },
       "unlocks": [],
       "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -96,9 +96,9 @@
       "key": "hbe_tech_chengdu_plain_2",
       "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
       "modifiers": {
-        "global_fine_cloth_output_modifier": 0.25,
-        "global_silk_output_modifier": 0.15,
-        "global_hbe_shu_embroidery_output_modifier": 0.25
+        "global_fine_cloth_output_modifier": 0.2,
+        "global_silk_output_modifier": 0.12,
+        "global_hbe_shu_embroidery_output_modifier": 0.2
       },
       "unlocks": [
         "hbe_chengdu_plain_basic_production"
@@ -109,8 +109,8 @@
       "key": "hbe_tech_chengdu_plain_3",
       "name": "水权簿册",
       "modifiers": {
-        "global_food_decay": -0.15,
-        "peasants_estate_target_satisfaction": 0.05
+        "global_food_decay": -0.12,
+        "peasants_estate_target_satisfaction": 0.04
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -119,8 +119,8 @@
       "key": "hbe_tech_chengdu_plain_4",
       "name": "联渠灌溉",
       "modifiers": {
-        "global_monthly_food_modifier": 0.2,
-        "global_rgo_build_time": -0.2
+        "global_monthly_food_modifier": 0.16,
+        "global_rgo_build_time": -0.16
       },
       "unlocks": [
         "hbe_chengdu_plain_advanced_production",
@@ -132,8 +132,8 @@
       "key": "hbe_tech_chengdu_plain_5",
       "name": "天府粮仓",
       "modifiers": {
-        "global_rice_output_modifier": 0.3,
-        "global_devastation_recovery": 0.005
+        "global_rice_output_modifier": 0.24,
+        "global_devastation_recovery": 0.004
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -142,8 +142,8 @@
       "key": "hbe_tech_chengdu_plain_6",
       "name": "官学讲会",
       "modifiers": {
-        "global_max_literacy": 10,
-        "cultural_tradition_modifier": 0.15
+        "global_max_literacy": 8.0,
+        "cultural_tradition_modifier": 0.12
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -152,8 +152,8 @@
       "key": "hbe_tech_chengdu_plain_7",
       "name": "茶会章程",
       "modifiers": {
-        "diplomatic_capacity_modifier": 0.2,
-        "stability_cost_efficiency": 0.15
+        "diplomatic_capacity_modifier": 0.16,
+        "stability_cost_efficiency": 0.12
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
@@ -162,9 +162,9 @@
       "key": "hbe_tech_chengdu_plain_8",
       "name": "盖碗公议学宫",
       "modifiers": {
-        "research_speed_modifier": 0.2,
-        "cultural_influence_modifier": 0.25,
-        "global_hbe_shu_embroidery_output_modifier": 0.3
+        "research_speed_modifier": 0.16,
+        "cultural_influence_modifier": 0.2,
+        "global_hbe_shu_embroidery_output_modifier": 0.24
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -173,8 +173,8 @@
       "key": "hbe_tech_southern_salt_wine_1",
       "name": "井灶公账",
       "modifiers": {
-        "global_salt_output_modifier": 0.2,
-        "global_build_buildings_efficiency": 0.1
+        "global_salt_output_modifier": 0.16,
+        "burghers_estate_target_satisfaction": 0.048
       },
       "unlocks": [
         "hbe_southern_salt_wine_basic_production"
@@ -185,8 +185,8 @@
       "key": "hbe_tech_southern_salt_wine_2",
       "name": "盐酒作坊协作",
       "modifiers": {
-        "global_liquor_output_modifier": 0.25,
-        "global_pottery_output_modifier": 0.15
+        "global_liquor_output_modifier": 0.2,
+        "global_pottery_output_modifier": 0.12
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -195,9 +195,9 @@
       "key": "hbe_tech_southern_salt_wine_3",
       "name": "井灶改良",
       "modifiers": {
-        "global_salt_output_modifier": 0.3,
-        "global_tools_output_modifier": 0.15,
-        "global_hbe_well_salt_output_modifier": 0.3
+        "global_salt_output_modifier": 0.24,
+        "global_tools_output_modifier": 0.12,
+        "global_hbe_well_salt_output_modifier": 0.24
       },
       "unlocks": [
         "hbe_southern_salt_wine_advanced_production"
@@ -208,8 +208,8 @@
       "key": "hbe_tech_southern_salt_wine_4",
       "name": "盐引担保",
       "modifiers": {
-        "total_loan_capacity_modifier": 0.5,
-        "bank_interest": -0.005
+        "total_loan_capacity_modifier": 0.4,
+        "bank_interest": -0.004
       },
       "unlocks": [],
       "link": "解锁盐引贷款，并取得本圈旧约重审验收资格。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。"
@@ -218,9 +218,9 @@
       "key": "hbe_tech_southern_salt_wine_5",
       "name": "巴蜀盐业总号",
       "modifiers": {
-        "global_salt_output_modifier": 0.25,
-        "global_merchant_capacity_modifier": 0.25,
-        "global_hbe_well_salt_output_modifier": 0.25
+        "global_salt_output_modifier": 0.2,
+        "global_merchant_capacity_modifier": 0.2,
+        "global_hbe_well_salt_output_modifier": 0.2
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -229,8 +229,8 @@
       "key": "hbe_tech_southern_salt_wine_6",
       "name": "窖坊分工",
       "modifiers": {
-        "global_liquor_output_modifier": 0.3,
-        "cultural_tradition_modifier": 0.1
+        "global_liquor_output_modifier": 0.24,
+        "cultural_tradition_modifier": 0.08
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -239,8 +239,8 @@
       "key": "hbe_tech_southern_salt_wine_7",
       "name": "宴席采购[Concept('hbe_term_contract', '契约')|e]",
       "modifiers": {
-        "merchant_maintenance_efficiency": 0.2,
-        "global_production_efficiency": 0.1
+        "merchant_maintenance_efficiency": 0.16,
+        "global_production_efficiency": 0.08
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。"
@@ -249,8 +249,8 @@
       "key": "hbe_tech_southern_salt_wine_8",
       "name": "帝国席面承办局",
       "modifiers": {
-        "global_liquor_output_modifier": 0.25,
-        "cultural_influence_modifier": 0.25
+        "global_liquor_output_modifier": 0.2,
+        "cultural_influence_modifier": 0.2
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -259,8 +259,8 @@
       "key": "hbe_tech_eastern_river_1",
       "name": "码头转运",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.2,
-        "merchant_maintenance_efficiency": 0.1
+        "global_merchant_capacity_modifier": 0.16,
+        "merchant_maintenance_efficiency": 0.08
       },
       "unlocks": [],
       "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -269,8 +269,8 @@
       "key": "hbe_tech_eastern_river_2",
       "name": "纤夫船帮",
       "modifiers": {
-        "global_naval_supplies_output_modifier": 0.25,
-        "ship_build_speed": 0.2
+        "global_naval_supplies_output_modifier": 0.2,
+        "ship_build_speed": 0.16
       },
       "unlocks": [
         "hbe_eastern_river_basic_production"
@@ -281,8 +281,8 @@
       "key": "hbe_tech_eastern_river_3",
       "name": "关卡通行公约",
       "modifiers": {
-        "global_trade_center_power": 0.2,
-        "merchant_maintenance_efficiency": 0.15
+        "global_trade_center_power": 0.16,
+        "merchant_maintenance_efficiency": 0.12
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -291,8 +291,8 @@
       "key": "hbe_tech_eastern_river_4",
       "name": "@hbe_river! [Concept('hbe_term_river', '江运互保')|e]",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.25,
-        "global_food_decay": -0.1
+        "global_merchant_capacity_modifier": 0.2,
+        "global_food_decay": -0.08
       },
       "unlocks": [
         "hbe_eastern_river_advanced_production"
@@ -303,8 +303,8 @@
       "key": "hbe_tech_eastern_river_5",
       "name": "[Concept('hbe_history_river', '川江')|e]通商总约",
       "modifiers": {
-        "global_trade_center_power": 0.25,
-        "global_production_efficiency": 0.15
+        "global_trade_center_power": 0.2,
+        "global_production_efficiency": 0.12
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -313,8 +313,8 @@
       "key": "hbe_tech_eastern_river_6",
       "name": "崖岸壁垒",
       "modifiers": {
-        "global_defensive": 0.2,
-        "fort_maintenance_efficiency": 0.2
+        "global_defensive": 0.16,
+        "fort_maintenance_efficiency": 0.16
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -323,8 +323,8 @@
       "key": "hbe_tech_eastern_river_7",
       "name": "水陆协防",
       "modifiers": {
-        "army_maintenance_efficiency": 0.2,
-        "global_levy_recruitment_speed_modifier": 0.2
+        "global_monthly_control": 0.08,
+        "global_levy_recruitment_speed_modifier": 0.16
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
@@ -333,8 +333,8 @@
       "key": "hbe_tech_eastern_river_8",
       "name": "山城江防枢纽",
       "modifiers": {
-        "global_defensive": 0.25,
-        "army_initiative": 0.15
+        "global_defensive": 0.2,
+        "army_initiative": 0.12
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -343,8 +343,8 @@
       "key": "hbe_tech_northern_shudao_1",
       "name": "栈道勘绘",
       "modifiers": {
-        "global_road_building_time": -0.15,
-        "build_gravel_road_cost_modifier": -0.15
+        "global_road_building_time": -0.12,
+        "build_gravel_road_cost_modifier": -0.12
       },
       "unlocks": [],
       "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -353,8 +353,8 @@
       "key": "hbe_tech_northern_shudao_2",
       "name": "驿堡联络",
       "modifiers": {
-        "global_supply_limit_modifier": 0.2,
-        "army_maintenance_efficiency": 0.1
+        "global_supply_limit_modifier": 0.16,
+        "army_maintenance_efficiency": 0.08
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -363,8 +363,8 @@
       "key": "hbe_tech_northern_shudao_3",
       "name": "山关防务",
       "modifiers": {
-        "global_defensive": 0.25,
-        "fort_maintenance_efficiency": 0.2
+        "global_defensive": 0.2,
+        "fort_maintenance_efficiency": 0.16
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -373,8 +373,8 @@
       "key": "hbe_tech_northern_shudao_4",
       "name": "轮戍互援",
       "modifiers": {
-        "global_levy_recruitment_speed_modifier": 0.25,
-        "army_maintenance_efficiency": 0.2
+        "global_levy_recruitment_speed_modifier": 0.2,
+        "army_maintenance_efficiency": 0.16
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。"
@@ -383,8 +383,8 @@
       "key": "hbe_tech_northern_shudao_5",
       "name": "[Concept('hbe_history_shudao', '蜀道')|e]联防总镇",
       "modifiers": {
-        "global_defensive": 0.2,
-        "global_manpower_modifier": 0.2
+        "global_defensive": 0.16,
+        "global_manpower_modifier": 0.16
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -393,8 +393,8 @@
       "key": "hbe_tech_northern_shudao_6",
       "name": "关市驿券",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.2,
-        "merchant_maintenance_efficiency": 0.15
+        "global_books_output_modifier": 0.16,
+        "global_monthly_literacy": 0.02
       },
       "unlocks": [
         "hbe_northern_shudao_basic_production"
@@ -405,9 +405,9 @@
       "key": "hbe_tech_northern_shudao_7",
       "name": "公文分驿",
       "modifiers": {
-        "global_road_building_time": -0.15,
-        "diplomatic_capacity_modifier": 0.2,
-        "global_hbe_shu_paper_output_modifier": 0.25
+        "global_road_building_time": -0.12,
+        "diplomatic_capacity_modifier": 0.16,
+        "global_hbe_shu_paper_output_modifier": 0.2
       },
       "unlocks": [
         "hbe_northern_shudao_advanced_production"
@@ -418,8 +418,8 @@
       "key": "hbe_tech_northern_shudao_8",
       "name": "[Concept('hbe_history_shudao', '蜀道')|e]驿传总局",
       "modifiers": {
-        "global_institution_growth_modifier": 0.3,
-        "global_monthly_control": 0.1
+        "global_institution_growth_modifier": 0.24,
+        "global_monthly_control": 0.08
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -428,8 +428,8 @@
       "key": "hbe_tech_central_hills_1",
       "name": "坡田水塘",
       "modifiers": {
-        "global_monthly_food_modifier": 0.15,
-        "global_max_rgo_size_modifier_in_rural": 0.15
+        "global_monthly_food_modifier": 0.12,
+        "global_max_rgo_size_modifier_in_rural": 0.12
       },
       "unlocks": [],
       "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -438,8 +438,8 @@
       "key": "hbe_tech_central_hills_2",
       "name": "市集公账",
       "modifiers": {
-        "global_trade_center_power": 0.15,
-        "global_monthly_control": 0.05
+        "stability_cost_efficiency": 0.12,
+        "global_monthly_control": 0.04
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -448,8 +448,8 @@
       "key": "hbe_tech_central_hills_3",
       "name": "分仓赈贷",
       "modifiers": {
-        "global_food_decay": -0.25,
-        "food_purchase_efficiency": 0.2
+        "global_food_decay": -0.2,
+        "food_purchase_efficiency": 0.16
       },
       "unlocks": [
         "hbe_central_hills_basic_production"
@@ -460,8 +460,8 @@
       "key": "hbe_tech_central_hills_4",
       "name": "乡社借粮",
       "modifiers": {
-        "stability_cost_efficiency": 0.2,
-        "peasants_estate_target_satisfaction": 0.08
+        "stability_cost_efficiency": 0.16,
+        "peasants_estate_target_satisfaction": 0.064
       },
       "unlocks": [
         "hbe_central_hills_advanced_production"
@@ -472,8 +472,8 @@
       "key": "hbe_tech_central_hills_5",
       "name": "丘陵义仓联社",
       "modifiers": {
-        "global_monthly_food_modifier": 0.25,
-        "global_disease_resistance": 0.05
+        "global_monthly_food_modifier": 0.2,
+        "global_disease_resistance": 0.04
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -482,8 +482,8 @@
       "key": "hbe_tech_central_hills_6",
       "name": "[Concept('hbe_term_contract', '契约')|e]见证",
       "modifiers": {
-        "total_loan_capacity_modifier": 0.4,
-        "burghers_estate_target_satisfaction": 0.08
+        "total_loan_capacity_modifier": 0.32,
+        "burghers_estate_target_satisfaction": 0.064
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -492,8 +492,8 @@
       "key": "hbe_tech_central_hills_7",
       "name": "票据清算",
       "modifiers": {
-        "bank_interest": -0.005,
-        "merchant_maintenance_efficiency": 0.2
+        "bank_interest": -0.004,
+        "merchant_maintenance_efficiency": 0.16
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
@@ -502,8 +502,8 @@
       "key": "hbe_tech_central_hills_8",
       "name": "诸侯公信会馆",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.25,
-        "global_monthly_prosperity": 0.05
+        "global_merchant_capacity_modifier": 0.2,
+        "global_monthly_prosperity": 0.04
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -512,8 +512,8 @@
       "key": "hbe_tech_western_tea_horse_1",
       "name": "茶马集市",
       "modifiers": {
-        "global_tea_output_modifier": 0.25,
-        "global_merchant_capacity_modifier": 0.15
+        "global_tea_output_modifier": 0.2,
+        "global_merchant_capacity_modifier": 0.12
       },
       "unlocks": [
         "hbe_western_tea_horse_basic_production"
@@ -524,8 +524,8 @@
       "key": "hbe_tech_western_tea_horse_2",
       "name": "山地向导",
       "modifiers": {
-        "global_supply_limit_modifier": 0.2,
-        "merchant_maintenance_efficiency": 0.15
+        "global_supply_limit_modifier": 0.16,
+        "merchant_maintenance_efficiency": 0.12
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -534,9 +534,9 @@
       "key": "hbe_tech_western_tea_horse_3",
       "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
       "modifiers": {
-        "global_leather_output_modifier": 0.25,
-        "global_food_decay": -0.1,
-        "global_hbe_border_tea_output_modifier": 0.25
+        "global_leather_output_modifier": 0.2,
+        "global_food_decay": -0.08,
+        "global_hbe_border_tea_output_modifier": 0.2
       },
       "unlocks": [
         "hbe_western_tea_horse_advanced_production",
@@ -548,8 +548,8 @@
       "key": "hbe_tech_western_tea_horse_4",
       "name": "通路会约",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.25,
-        "global_road_building_time": -0.15
+        "global_merchant_capacity_modifier": 0.2,
+        "global_institution_growth_modifier": 0.16
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。"
@@ -558,9 +558,9 @@
       "key": "hbe_tech_western_tea_horse_5",
       "name": "茶马通商公所",
       "modifiers": {
-        "global_tea_output_modifier": 0.3,
-        "global_trade_center_power": 0.2,
-        "global_hbe_border_tea_output_modifier": 0.3
+        "global_tea_output_modifier": 0.24,
+        "global_trade_center_power": 0.16,
+        "global_hbe_border_tea_output_modifier": 0.24
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -569,8 +569,8 @@
       "key": "hbe_tech_western_tea_horse_6",
       "name": "山门施济",
       "modifiers": {
-        "tolerance_heathen": 1,
-        "global_disease_resistance": 0.05
+        "tolerance_heathen": 0.8,
+        "global_disease_resistance": 0.04
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -579,8 +579,8 @@
       "key": "hbe_tech_western_tea_horse_7",
       "name": "跨地调停",
       "modifiers": {
-        "diplomatic_capacity_modifier": 0.25,
-        "cultural_influence_modifier": 0.2
+        "diplomatic_capacity_modifier": 0.2,
+        "cultural_influence_modifier": 0.16
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
@@ -589,8 +589,8 @@
       "key": "hbe_tech_western_tea_horse_8",
       "name": "雪山公议会",
       "modifiers": {
-        "cultures_capacity": 1,
-        "cultural_tradition_modifier": 0.25
+        "cultures_capacity_modifier": 0.16,
+        "cultural_tradition_modifier": 0.2
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -599,8 +599,8 @@
       "key": "hbe_tech_southwestern_valleys_1",
       "name": "山谷市集",
       "modifiers": {
-        "global_production_efficiency": 0.1,
-        "global_trade_center_power": 0.15
+        "global_production_efficiency": 0.08,
+        "global_trade_center_power": 0.12
       },
       "unlocks": [
         "hbe_southwestern_valleys_basic_production"
@@ -611,8 +611,8 @@
       "key": "hbe_tech_southwestern_valleys_2",
       "name": "地方盟约",
       "modifiers": {
-        "tribes_estate_target_satisfaction": 0.1,
-        "peasants_estate_target_satisfaction": 0.05
+        "tribes_estate_target_satisfaction": 0.08,
+        "peasants_estate_target_satisfaction": 0.04
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -621,8 +621,8 @@
       "key": "hbe_tech_southwestern_valleys_3",
       "name": "小路换市",
       "modifiers": {
-        "global_tools_output_modifier": 0.25,
-        "global_road_building_time": -0.15
+        "global_tools_output_modifier": 0.2,
+        "tribes_estate_target_satisfaction": 0.048
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -631,8 +631,8 @@
       "key": "hbe_tech_southwestern_valleys_4",
       "name": "商盟互保",
       "modifiers": {
-        "global_production_efficiency": 0.15,
-        "global_merchant_capacity_modifier": 0.2
+        "global_production_efficiency": 0.12,
+        "tolerance_heathen": 0.8
       },
       "unlocks": [
         "hbe_southwestern_valleys_advanced_production"
@@ -643,8 +643,8 @@
       "key": "hbe_tech_southwestern_valleys_5",
       "name": "川西南山谷商盟",
       "modifiers": {
-        "global_tools_output_modifier": 0.25,
-        "burghers_estate_target_satisfaction": 0.1
+        "global_tools_output_modifier": 0.2,
+        "burghers_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -653,8 +653,8 @@
       "key": "hbe_tech_southwestern_valleys_6",
       "name": "联寨守望",
       "modifiers": {
-        "global_supply_limit_modifier": 0.25,
-        "global_levy_recruitment_speed_modifier": 0.15
+        "global_supply_limit_modifier": 0.2,
+        "global_levy_recruitment_speed_modifier": 0.12
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -663,8 +663,8 @@
       "key": "hbe_tech_southwestern_valleys_7",
       "name": "议约驻防",
       "modifiers": {
-        "army_maintenance_efficiency": 0.2,
-        "global_defensive": 0.15
+        "army_maintenance_efficiency": 0.16,
+        "global_defensive": 0.12
       },
       "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
@@ -673,8 +673,8 @@
       "key": "hbe_tech_southwestern_valleys_8",
       "name": "山地共保盟府",
       "modifiers": {
-        "global_manpower_modifier": 0.25,
-        "tribes_estate_target_satisfaction": 0.1
+        "global_manpower_modifier": 0.2,
+        "tribes_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
       "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -683,8 +683,8 @@
       "key": "hbe_civic_common_1",
       "name": "府议与民役簿",
       "modifiers": {
-        "stability_cost_efficiency": 0.15,
-        "global_estate_target_satisfaction": 0.05
+        "stability_cost_efficiency": 0.12,
+        "global_estate_target_satisfaction": 0.04
       },
       "unlocks": [],
       "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -693,153 +693,153 @@
       "key": "hbe_civic_common_2",
       "name": "修约与公账审计",
       "modifiers": {
-        "country_cabinet_efficiency": 0.2,
-        "global_build_buildings_efficiency": 0.15
+        "country_cabinet_efficiency": 0.16,
+        "global_monthly_literacy": 0.02
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": "开放公账审计与逐圈客籍议约。签订某圈议约后授予该圈机构及基础兵种资格；仍需当地领土和实际供养，不一次开放全部七圈。"
     },
     {
       "key": "hbe_civic_chengdu_plain_1",
       "name": "岁修与分水公议",
       "modifiers": {
-        "global_monthly_food_modifier": 0.15,
-        "global_fine_cloth_output_modifier": 0.15,
-        "global_hbe_shu_embroidery_output_modifier": 0.2
+        "global_monthly_food_modifier": 0.12,
+        "global_fine_cloth_output_modifier": 0.12,
+        "global_hbe_shu_embroidery_output_modifier": 0.16
       },
       "unlocks": [],
-      "link": "岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。"
+      "link": "运行渠务所时，完成本圈地方事业额外获得6.4地区储备，役负降低3.2。"
     },
     {
       "key": "hbe_civic_chengdu_plain_2",
       "name": "渠学传习规程",
       "modifiers": {
-        "global_books_output_modifier": 0.3,
-        "cultural_tradition_modifier": 0.2
+        "global_books_output_modifier": 0.24,
+        "cultural_tradition_modifier": 0.16
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_southern_salt_wine_1",
       "name": "井灶保任章程",
       "modifiers": {
-        "global_salt_output_modifier": 0.2,
-        "burghers_estate_target_satisfaction": 0.1,
-        "global_hbe_well_salt_output_modifier": 0.2
+        "global_salt_output_modifier": 0.16,
+        "burghers_estate_target_satisfaction": 0.08,
+        "global_hbe_well_salt_output_modifier": 0.16
       },
       "unlocks": [],
-      "link": "井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。"
+      "link": "运行井灶公廨时，完成本圈地方事业额外获得8地区储备。"
     },
     {
       "key": "hbe_civic_southern_salt_wine_2",
       "name": "契券清偿总约",
       "modifiers": {
-        "bank_interest": -0.005,
-        "total_loan_capacity_modifier": 0.5
+        "bank_interest": -0.004,
+        "total_loan_capacity_modifier": 0.4
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_eastern_river_1",
       "name": "江岸会防约",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.2,
-        "fort_maintenance_efficiency": 0.15
+        "burghers_estate_target_satisfaction": 0.064,
+        "global_monthly_control": 0.08
       },
       "unlocks": [],
-      "link": "江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。"
+      "link": "运行江岸转运仓时，完成本圈地方事业额外获得6.4地区储备，役负降低1.6。"
     },
     {
       "key": "hbe_civic_eastern_river_2",
       "name": "寨兵常训章程",
       "modifiers": {
-        "army_initiative": 0.2,
-        "army_maintenance_efficiency": 0.15
+        "army_initiative": 0.16,
+        "army_maintenance_efficiency": 0.12
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_northern_shudao_1",
       "name": "关驿轮役册",
       "modifiers": {
-        "global_supply_limit_modifier": 0.25,
-        "global_road_building_time": -0.1
+        "global_supply_limit_modifier": 0.2,
+        "global_institution_growth_modifier": 0.12
       },
       "unlocks": [],
-      "link": "关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。"
+      "link": "运行栈道驿堡时，完成本圈地方事业额外获得4.8地区储备，役负降低4。"
     },
     {
       "key": "hbe_civic_northern_shudao_2",
       "name": "关镇养兵法",
       "modifiers": {
-        "global_defensive": 0.25,
-        "global_manpower_modifier": 0.15
+        "global_defensive": 0.2,
+        "global_manpower_modifier": 0.12
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_central_hills_1",
       "name": "仓社赈借则",
       "modifiers": {
-        "global_food_decay": -0.15,
-        "peasants_estate_target_satisfaction": 0.1
+        "global_food_decay": -0.12,
+        "peasants_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
-      "link": "仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。"
+      "link": "运行分仓义廪时，完成本圈地方事业额外获得8地区储备，役负降低2.4。"
     },
     {
       "key": "hbe_civic_central_hills_2",
       "name": "公信复核章程",
       "modifiers": {
-        "global_monthly_prosperity": 0.08,
-        "global_estate_target_satisfaction": 0.08
+        "global_monthly_prosperity": 0.064,
+        "global_estate_target_satisfaction": 0.064
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_western_tea_horse_1",
       "name": "山程互保册",
       "modifiers": {
-        "global_tea_output_modifier": 0.2,
-        "merchant_maintenance_efficiency": 0.15
+        "global_tea_output_modifier": 0.16,
+        "merchant_maintenance_efficiency": 0.12
       },
       "unlocks": [],
-      "link": "山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。"
+      "link": "运行山程护行所时，完成本圈地方事业额外获得8地区储备，役负降低0.8。"
     },
     {
       "key": "hbe_civic_western_tea_horse_2",
       "name": "山门与商路公议",
       "modifiers": {
-        "tolerance_heathen": 1,
-        "diplomatic_capacity_modifier": 0.2
+        "tolerance_heathen": 0.8,
+        "diplomatic_capacity_modifier": 0.16
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     },
     {
       "key": "hbe_civic_southwestern_valleys_1",
       "name": "驻防粮额约",
       "modifiers": {
-        "global_supply_limit_modifier": 0.2,
-        "tribes_estate_target_satisfaction": 0.1
+        "global_supply_limit_modifier": 0.16,
+        "tribes_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
-      "link": "驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。"
+      "link": "运行乡寨议约寨时，完成本圈地方事业额外获得6.4地区储备，役负降低3.2。"
     },
     {
       "key": "hbe_civic_southwestern_valleys_2",
       "name": "诸谷共保续约",
       "modifiers": {
-        "cultures_capacity": 1,
-        "global_production_efficiency": 0.15
+        "cultures_capacity_modifier": 0.16,
+        "tribes_estate_target_satisfaction": 0.08
       },
       "unlocks": [],
-      "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+      "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
     }
   ],
   "production": [
@@ -1035,8 +1035,8 @@
       "building": "hbe_canal_office",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_chengdu_plain_4 hbe_operating_canal_office = yes has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_water >= 30",
       "modifiers": {
-        "global_monthly_food_modifier": 0.25,
-        "global_rice_output_modifier": 0.2
+        "global_monthly_food_modifier": 0.2,
+        "global_rice_output_modifier": 0.16
       }
     },
     {
@@ -1046,9 +1046,9 @@
       "building": "hbe_brocade_school",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_chengdu_plain_7 hbe_operating_brocade_school = yes has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_yiqi >= 60",
       "modifiers": {
-        "research_speed_modifier": 0.2,
-        "cultural_influence_modifier": 0.25,
-        "global_hbe_shu_embroidery_output_modifier": 0.3
+        "research_speed_modifier": 0.16,
+        "cultural_influence_modifier": 0.2,
+        "global_hbe_shu_embroidery_output_modifier": 0.24
       }
     },
     {
@@ -1058,9 +1058,9 @@
       "building": "hbe_salt_office",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southern_salt_wine_4 hbe_operating_salt_office = yes has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 OR = { NOT = { has_variable = hbe_salt_debt } var:hbe_salt_debt <= 20 }",
       "modifiers": {
-        "global_salt_output_modifier": 0.3,
-        "global_merchant_capacity_modifier": 0.2,
-        "global_hbe_well_salt_output_modifier": 0.3
+        "global_salt_output_modifier": 0.24,
+        "global_merchant_capacity_modifier": 0.16,
+        "global_hbe_well_salt_output_modifier": 0.24
       }
     },
     {
@@ -1070,8 +1070,8 @@
       "building": "hbe_salt_contract_house",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southern_salt_wine_7 hbe_operating_salt_contract_house = yes has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 var:hbe_salt >= 30",
       "modifiers": {
-        "global_liquor_output_modifier": 0.3,
-        "cultural_tradition_modifier": 0.2
+        "global_liquor_output_modifier": 0.24,
+        "cultural_tradition_modifier": 0.16
       }
     },
     {
@@ -1081,8 +1081,8 @@
       "building": "hbe_river_warehouse",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_eastern_river_4 hbe_operating_river_warehouse = yes has_variable = hbe_recent_delivery_eastern_river var:hbe_burden < 70 var:hbe_river >= 30",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.3,
-        "merchant_maintenance_efficiency": 0.2
+        "global_merchant_capacity_modifier": 0.24,
+        "merchant_maintenance_efficiency": 0.16
       }
     },
     {
@@ -1092,8 +1092,8 @@
       "building": "hbe_cliff_stockade",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_eastern_river_7 hbe_operating_cliff_stockade = yes has_variable = hbe_recent_delivery_eastern_river var:hbe_burden < 70 has_variable = hbe_mission_eastern_river_2",
       "modifiers": {
-        "global_defensive": 0.25,
-        "army_maintenance_efficiency": 0.2
+        "global_defensive": 0.2,
+        "army_maintenance_efficiency": 0.16
       }
     },
     {
@@ -1103,8 +1103,8 @@
       "building": "hbe_plank_fort",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_northern_shudao_4 hbe_operating_plank_fort = yes has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 var:hbe_roads >= 30",
       "modifiers": {
-        "global_supply_limit_modifier": 0.3,
-        "fort_maintenance_efficiency": 0.25
+        "global_supply_limit_modifier": 0.24,
+        "fort_maintenance_efficiency": 0.2
       }
     },
     {
@@ -1114,9 +1114,9 @@
       "building": "hbe_gate_registry",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_northern_shudao_7 hbe_operating_gate_registry = yes has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 has_variable = hbe_mission_northern_shudao_2",
       "modifiers": {
-        "global_road_building_time": -0.1,
-        "global_institution_growth_modifier": 0.25,
-        "global_hbe_shu_paper_output_modifier": 0.3
+        "global_road_building_time": -0.08,
+        "global_institution_growth_modifier": 0.2,
+        "global_hbe_shu_paper_output_modifier": 0.24
       }
     },
     {
@@ -1126,8 +1126,8 @@
       "building": "hbe_community_granary",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_central_hills_4 hbe_operating_community_granary = yes has_variable = hbe_recent_delivery_central_hills var:hbe_burden < 70 var:hbe_grain >= 30",
       "modifiers": {
-        "global_monthly_food_modifier": 0.25,
-        "global_food_decay": -0.2
+        "global_monthly_food_modifier": 0.2,
+        "global_food_decay": -0.16
       }
     },
     {
@@ -1137,8 +1137,8 @@
       "building": "hbe_witness_house",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_central_hills_7 hbe_operating_witness_house = yes has_variable = hbe_recent_delivery_central_hills var:hbe_burden < 70 var:hbe_yiqi >= 60",
       "modifiers": {
-        "bank_interest": -0.005,
-        "total_loan_capacity_modifier": 0.6
+        "bank_interest": -0.004,
+        "total_loan_capacity_modifier": 0.48
       }
     },
     {
@@ -1148,9 +1148,9 @@
       "building": "hbe_tea_exchange",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_western_tea_horse_4 hbe_operating_tea_exchange = yes has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_tea >= 30",
       "modifiers": {
-        "global_tea_output_modifier": 0.3,
-        "global_merchant_capacity_modifier": 0.25,
-        "global_hbe_border_tea_output_modifier": 0.3
+        "global_tea_output_modifier": 0.24,
+        "global_merchant_capacity_modifier": 0.2,
+        "global_hbe_border_tea_output_modifier": 0.24
       }
     },
     {
@@ -1160,8 +1160,8 @@
       "building": "hbe_guide_station",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_western_tea_horse_7 hbe_operating_guide_station = yes has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_yiqi >= 60",
       "modifiers": {
-        "cultural_influence_modifier": 0.25,
-        "diplomatic_capacity_modifier": 0.25
+        "cultural_influence_modifier": 0.2,
+        "diplomatic_capacity_modifier": 0.2
       }
     },
     {
@@ -1171,8 +1171,8 @@
       "building": "hbe_valley_inn",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southwestern_valleys_4 hbe_operating_valley_inn = yes has_variable = hbe_recent_delivery_southwestern_valleys var:hbe_burden < 70 var:hbe_valleys >= 30",
       "modifiers": {
-        "global_tools_output_modifier": 0.3,
-        "global_production_efficiency": 0.15
+        "global_tools_output_modifier": 0.24,
+        "global_production_efficiency": 0.12
       }
     },
     {
@@ -1182,8 +1182,8 @@
       "building": "hbe_covenant_stockade",
       "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southwestern_valleys_7 hbe_operating_covenant_stockade = yes has_variable = hbe_recent_delivery_southwestern_valleys var:hbe_burden < 70 has_variable = hbe_mission_southwestern_valleys_2",
       "modifiers": {
-        "army_maintenance_efficiency": 0.25,
-        "tribes_estate_target_satisfaction": 0.1
+        "army_maintenance_efficiency": 0.2,
+        "tribes_estate_target_satisfaction": 0.08
       }
     }
   ]

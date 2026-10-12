@@ -1,0 +1,2 @@
+﻿on_game_start = { on_actions = { hbe_opening_pacts_start } }
+hbe_opening_pacts_start = { effect = { c:BAB ?= { trigger_event_silently = { id = hbe_opening_family.1 days = 1 } } } }

@@ -176,7 +176,7 @@ def build_native_content(out,root,countries,regions,nodes,loc,put,full_art,game)
         loc[key+'_effects']=unlock
         parent=n['predecessor'] or ('written_alphabet' if key=='hbe_tech_common_1' else 'hbe_tech_common_1')
         def node_age(row):
-            late=row['index'] in ((2,5,7) if row['group']=='common' else (4,7))
+            late=row['index'] in ((2,5,7) if row['group']=='common' else (2,3,4,5,6,7))
             return 'age_2_renaissance' if late else 'age_1_traditions'
         age=node_age(n)
         logical_parent=parent

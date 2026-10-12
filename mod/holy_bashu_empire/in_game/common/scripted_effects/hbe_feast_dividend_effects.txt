@@ -1,0 +1,58 @@
+﻿hbe_pay_feast_dividends = {
+international_organization:hbe_common_party ?= {
+ set_variable = { name = hbe_party_dividend_pool value = 0 }
+ set_variable = { name = hbe_party_dividend_weight value = 0 }
+ every_international_organization_member = {
+  limit = { has_variable = hbe_feast_points var:hbe_feast_points > 0 }
+  if = { limit = { var:hbe_feast_points >= 3 } set_variable = { name = hbe_member_dividend_weight value = 1.38629 } }
+  else_if = { limit = { var:hbe_feast_points >= 2 } set_variable = { name = hbe_member_dividend_weight value = 1.09861 } }
+  else = { set_variable = { name = hbe_member_dividend_weight value = 0.69315 } }
+  prev = { change_variable = { name = hbe_party_dividend_weight add = prev.var:hbe_member_dividend_weight } }
+  if = { limit = { has_variable = hbe_feast_paid }
+   prev = { change_variable = { name = hbe_party_dividend_pool add = { value = prev.var:hbe_feast_paid multiply = 0.25 } } }
+  }
+ }
+ every_international_organization_member = {
+  set_variable = { name = hbe_feast_last_dividend value = 0 }
+  set_variable = { name = hbe_feast_last_prestige value = 0 }
+ }
+ if = { limit = { var:hbe_party_dividend_weight > 0 }
+  every_international_organization_member = { limit = { has_variable = hbe_feast_points var:hbe_feast_points > 0 }
+   set_variable = { name = hbe_member_party_weight value = prev.var:hbe_party_dividend_weight }
+   set_variable = { name = hbe_member_party_pool value = prev.var:hbe_party_dividend_pool }
+   set_variable = { name = hbe_feast_last_dividend value = hbe_feast_dividend_share }
+   add_gold = var:hbe_feast_last_dividend
+   set_variable = { name = hbe_feast_last_prestige value = hbe_feast_prestige_share }
+   add_prestige = var:hbe_feast_last_prestige
+  }
+ }
+}
+international_organization:hbe_local_party ?= {
+ set_variable = { name = hbe_party_dividend_pool value = 0 }
+ set_variable = { name = hbe_party_dividend_weight value = 0 }
+ every_international_organization_member = {
+  limit = { has_variable = hbe_feast_points var:hbe_feast_points > 0 }
+  if = { limit = { var:hbe_feast_points >= 3 } set_variable = { name = hbe_member_dividend_weight value = 1.38629 } }
+  else_if = { limit = { var:hbe_feast_points >= 2 } set_variable = { name = hbe_member_dividend_weight value = 1.09861 } }
+  else = { set_variable = { name = hbe_member_dividend_weight value = 0.69315 } }
+  prev = { change_variable = { name = hbe_party_dividend_weight add = prev.var:hbe_member_dividend_weight } }
+  if = { limit = { has_variable = hbe_feast_paid }
+   prev = { change_variable = { name = hbe_party_dividend_pool add = { value = prev.var:hbe_feast_paid multiply = 0.25 } } }
+  }
+ }
+ every_international_organization_member = {
+  set_variable = { name = hbe_feast_last_dividend value = 0 }
+  set_variable = { name = hbe_feast_last_prestige value = 0 }
+ }
+ if = { limit = { var:hbe_party_dividend_weight > 0 }
+  every_international_organization_member = { limit = { has_variable = hbe_feast_points var:hbe_feast_points > 0 }
+   set_variable = { name = hbe_member_party_weight value = prev.var:hbe_party_dividend_weight }
+   set_variable = { name = hbe_member_party_pool value = prev.var:hbe_party_dividend_pool }
+   set_variable = { name = hbe_feast_last_dividend value = hbe_feast_dividend_share }
+   add_gold = var:hbe_feast_last_dividend
+   set_variable = { name = hbe_feast_last_prestige value = hbe_feast_prestige_share }
+   add_prestige = var:hbe_feast_last_prestige
+  }
+ }
+}
+}

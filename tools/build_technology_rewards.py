@@ -159,6 +159,28 @@ BUILDING_BUFFS = {
 def script_mods(mods):
  return ' '.join(f'{k} = {v:g}' for k,v in mods.items())
 
+# Keep source values unscaled, so repeated builds do not apply a second nerf.
+SOCIAL_REWARDS = {
+ 'hbe_tech_common_1': M(global_monthly_literacy=.025, global_monthly_control=.05),
+ 'hbe_tech_common_3': M(global_institution_growth_modifier=.20, global_max_literacy=5),
+ 'hbe_tech_common_8': M(burghers_estate_target_satisfaction=.06, global_trade_center_power=.15),
+ 'hbe_tech_southern_salt_wine_1': M(global_salt_output_modifier=.20, burghers_estate_target_satisfaction=.06),
+ 'hbe_tech_eastern_river_7': M(global_monthly_control=.10, global_levy_recruitment_speed_modifier=.20),
+ 'hbe_tech_northern_shudao_6': M(global_books_output_modifier=.20, global_monthly_literacy=.025),
+ 'hbe_tech_central_hills_2': M(stability_cost_efficiency=.15, global_monthly_control=.05),
+ 'hbe_tech_western_tea_horse_4': M(global_merchant_capacity_modifier=.25, global_institution_growth_modifier=.20),
+ 'hbe_tech_western_tea_horse_8': M(cultures_capacity_modifier=.20, cultural_tradition_modifier=.25),
+ 'hbe_tech_southwestern_valleys_3': M(global_tools_output_modifier=.25, tribes_estate_target_satisfaction=.06),
+ 'hbe_tech_southwestern_valleys_4': M(global_production_efficiency=.15, tolerance_heathen=1),
+ 'hbe_civic_common_2': M(country_cabinet_efficiency=.20, global_monthly_literacy=.025),
+ 'hbe_civic_eastern_river_1': M(burghers_estate_target_satisfaction=.08, global_monthly_control=.10),
+ 'hbe_civic_northern_shudao_1': M(global_supply_limit_modifier=.25, global_institution_growth_modifier=.15),
+ 'hbe_civic_southwestern_valleys_2': M(cultures_capacity_modifier=.20, tribes_estate_target_satisfaction=.10),
+}
+TECHNOLOGY_STRENGTH = .8
+def balanced_mods(mods):
+ return {k:round(v*TECHNOLOGY_STRENGTH, 8) for k,v in mods.items()}
+
 def build_technology_rewards(out,root,loc,put,game):
  from build_special_goods import GOODS
  specialty={r['group']:r for r in GOODS}
@@ -186,6 +208,7 @@ def build_technology_rewards(out,root,loc,put,game):
  goods={k for f in (game/'in_game/common/goods').glob('*.txt') for k,*_ in blocks(f.read_text(encoding='utf-8-sig'),0)}
  goods|={r['key'] for r in GOODS}
  allmods={k for rows in [*REWARDS.values(),*CIVIC.values()] for row in rows for k in row}
+ allmods|={k for mods in SOCIAL_REWARDS.values() for k in mods}
  allmods|={k for *_,mods,req,trigger in NETWORKS for k in mods}
  allmods|={k for mods in BUILDING_BUFFS.values() for k in mods}
  defined|={k for f in (out/'main_menu/common/modifier_type_definitions').glob('*.txt') for k,*_ in blocks(f.read_text(encoding='utf-8-sig'),0)}
@@ -194,12 +217,13 @@ def build_technology_rewards(out,root,loc,put,game):
   path=out/'in_game/common/advances'/filename;txt=path.read_text(encoding='utf-8-sig');edits=[]
   for key,_,start,end,_ in blocks(txt,0):
    prefix='hbe_tech_' if key.startswith('hbe_tech_') else 'hbe_civic_'
-   group,index=key.removeprefix(prefix).rsplit('_',1);mods=catalog[group][int(index)-1]
+   group,index=key.removeprefix(prefix).rsplit('_',1);base_mods=catalog[group][int(index)-1]
+   mods=balanced_mods(SOCIAL_REWARDS.get(key,base_mods))
    body=txt[start:end]
    # A rebuild may reapply this pass: remove only fields owned by this catalogue.
-   for m in mods:body=re.sub(r'(?m)^\s*'+re.escape(m)+r'\s*=\s*[-\d.]+\s*$', '',body)
+   for m in set(base_mods)|set(mods):body=re.sub(r'(?m)^\s*'+re.escape(m)+r'\s*=\s*[-\d.]+\s*$', '',body)
    body=re.sub(r'(?m)^\s*unlock_production_method\s*=\s*hbe_\w+\s*$','',body)
-   body=re.sub(r'(?m)^\s*# 0\.2\.1: immediate native rewards, rendered by the vanilla technology UI\.\s*$','',body).rstrip()
+   body=re.sub(r'(?m)^\s*# 0\.\d+\.\d+: immediate native rewards, rendered by the vanilla technology UI\.\s*$','',body).rstrip()
    body+='\n    # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.\n'
    body+=''.join(f'    {m} = {v:g}\n' for m,v in mods.items())
    body+=''.join(f'    unlock_production_method = {p}\n' for p in pm_unlocks.get(key,[]))
@@ -222,8 +246,11 @@ def build_technology_rewards(out,root,loc,put,game):
     if key==f'hbe_tech_{g}_{idx}':
      effects.append(f'解锁“{title}”：运行{loc[b]}、近五年完成本圈事业、役负低于70，且{req}时获得额外联动收益；条件不满足时暂停。')
    if prefix=='hbe_civic_' and group!='common':
-    if index=='1':effects.append(SERVICE[group][-1])
-    else:effects.append('续办地方事业时额外获得2义气；须维持本圈机构运行。')
+    if index=='1':
+     _,b,counter,amount,relief,_=SERVICE[group]
+     effects.append(f'运行{loc[b]}时，完成本圈地方事业额外获得{amount*.8:g}地区储备'+(f'，役负降低{relief*.8:g}' if relief else '')+'。')
+    else:effects.append('续办地方事业时额外获得1.6义气；须维持本圈机构运行。')
+   if key=='hbe_civic_common_2':effects.append('开放公账审计与逐圈客籍议约。签订某圈议约后授予该圈机构及基础兵种资格；仍需当地领土和实际供养，不一次开放全部七圈。')
    if not effects:effects.append('本课题的永久加成立即生效，并推进后续地区课题与验收。')
    if key=='hbe_tech_common_4':effects.append('配合锦江讲会和跨区工艺学堂，加快技术与制度传播。')
    if key=='hbe_tech_common_5':effects.append('提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。')
@@ -268,6 +295,7 @@ def build_technology_rewards(out,root,loc,put,game):
  put('in_game/common/building_types/hbe_civic_buildings.txt',apply_edits(txt,edits))
  effects=[];static=[]
  for g,idx,b,title,mods,req,trigger in NETWORKS:
+  mods=balanced_mods(mods)
   key=f'hbe_network_{g}_{idx}';loc[key]=title;loc[key+'_desc']=f'本圈科技、机构与近年事业共同维持的{title}。断供、役负过高或五年未交付后暂停。'
   loc['STATIC_MODIFIER_NAME_'+key]=title;loc['STATIC_MODIFIER_DESC_'+key]=loc[key+'_desc']
   static.append(f'{key} = {{ {script_mods(mods)} }}')
@@ -286,10 +314,11 @@ monthly_country_pulse = { on_actions = { hbe_technology_monthly } }
  for key,_,start,end,_ in blocks(txt,0):
   if key.startswith('hbe_record_service_'):
    g=key.removeprefix('hbe_record_service_');_,b,counter,amount,relief,_=SERVICE[g]
+   amount=round(amount*.8,8);relief=round(relief*.8,8)
    body=txt[start:end];body=re.sub(r'(?s)\n\s*# TECHNOLOGY_SERVICE_BEGIN.*?# TECHNOLOGY_SERVICE_END\n','\n',body)
    body+=f'\n # TECHNOLOGY_SERVICE_BEGIN\n if = {{ limit = {{ has_advance = hbe_civic_{g}_1 hbe_operating_{b.removeprefix("hbe_")} = yes }} change_variable = {{ name = {counter} add = {amount} }}'
    if relief:body+=f' change_variable = {{ name = hbe_burden add = -{relief} }} hbe_clamp_burden = yes'
-   body+=f' if = {{ limit = {{ has_advance = hbe_civic_{g}_2 }} change_variable = {{ name = hbe_yiqi add = 2 }} hbe_clamp_yiqi = yes }} }}\n # TECHNOLOGY_SERVICE_END\n'
+   body+=f' if = {{ limit = {{ has_advance = hbe_civic_{g}_2 }} change_variable = {{ name = hbe_yiqi add = 1.6 }} hbe_clamp_yiqi = yes }} }}\n # TECHNOLOGY_SERVICE_END\n'
    edits.append((start,end,body))
  put('in_game/common/scripted_effects/hbe_civic_effects.txt',apply_edits(txt,edits))
  (root/'data/technology_rewards_v021.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

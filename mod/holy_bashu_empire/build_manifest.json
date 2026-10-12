@@ -6584,7 +6584,7 @@
     "ledger_appendices": 2
   },
   "player_guides": {
-    "mechanic_concepts": 48,
+    "mechanic_concepts": 50,
     "history_concepts": 12,
     "linked_localization_entries": 945,
     "source_registry": "data/player_guides_v01.json"
@@ -6592,17 +6592,19 @@
   "files": {
     ".metadata/metadata.json": "69fbfe308402b018059c8769fdbf83ad4724a669580010a79d89b90f6d654dd7",
     ".metadata/thumbnail.png": "5202607af092d6c05c08ef7a1162943392bf7e86daa6ea57a54212c0ef3c8481",
-    "in_game/common/advances/hbe_advances.txt": "a05a8da97187c02510583f467d366103fc50531fdcf0a428dc28971eab12ae2a",
-    "in_game/common/advances/hbe_civic_advances.txt": "8e9d1a1798d917820e8e7a2ff07c44a5906a1a584ce00f7574ec7ebe2bc1ca24",
+    "in_game/common/advances/hbe_advances.txt": "968c825772c4aa71c39952084acfd5caefc3e0b1fe184967cf9b254f03507823",
+    "in_game/common/advances/hbe_civic_advances.txt": "1a916ee090c5964b3085ea0289ca8f10bb020a3c33407df42c28c42f69020d3c",
+    "in_game/common/advances/hbe_guest_licenses.txt": "e41a5657abf6c1becf749ac1df6215778c4b395f1c55850b4db7fc53320b74ea",
     "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt": "19206a630242baa2bbd7db6fa2ce6d81bd3eb033369b66f1678e8872f44e1d1b",
     "in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt": "059da010d23efa1f12c71ff15983d75824b9057e8ad18ca519f8f2adc66bac7b",
+    "in_game/common/biases/hbe_faction_departure.txt": "078e8680a83f65b7fa6ca4b1abb243e7a4396d7c8946401baff93f1f8f26c76e",
     "in_game/common/biases/hbe_feast_opinions.txt": "25974a12c74e52075f32821603bd073cd84958dbb5df8edb2e508886e33a9973",
     "in_game/common/biases/hbe_opinions.txt": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3",
-    "in_game/common/building_types/hbe_civic_buildings.txt": "ccabd2aef6884523bcc0724cbf843d93f8c9c437a103c735a03c0e82dd05141b",
+    "in_game/common/building_types/hbe_civic_buildings.txt": "fbccc3a849b1b6985e45877db4761c72bc1623d3fae197c57c1872ac1c150e02",
     "in_game/common/country_description_categories/hbe_profiles.txt": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00",
     "in_game/common/customizable_localization/country_history.txt": "a18cce46abee7c833798aab1e24921e8b043eb864941837e9d05b8cf03918310",
     "in_game/common/decisions/hbe_banquet_decisions.txt": "fd82438cfbece64bab7dfa0dcec86f22f2caa6120ec40fcb188901c6c4bdba58",
-    "in_game/common/decisions/hbe_civic_decisions.txt": "8ff2aee1def7c74659417ec3bc44c42f4385eddd91dcb4b103f3f4306ef944b3",
+    "in_game/common/decisions/hbe_civic_decisions.txt": "47bdc321b55026404e7461733bf2e0c3abdbf3cb8945a88e7cf6c78bccafb184",
     "in_game/common/decisions/hbe_decisions.txt": "68ca0cd985fe9c623f0bb50ca08933e392db875845547a1984780dda3aead623",
     "in_game/common/estate_privileges/hbe_civic_privileges.txt": "ee967323f1a7d06db5682cb3b855e97263e9a501ea5801d7e1c3b01a2fa3818d",
     "in_game/common/generic_actions/hbe_feast_actions.txt": "54565feb164f1c30246279b82e01cb01354c6ae9296b0af83933b6bde24c5df0",
@@ -6611,37 +6613,44 @@
     "in_game/common/goods_demand/pop_demands.txt": "8efe07e9940d6db51da49c5e9ec27e6dbe3f15523f60c1fe3c92af0ccd4bfffb",
     "in_game/common/international_organization_land_ownership_rules/hbe_land.txt": "092e362f4e2fd68a7c65c43e40f938a0913604c4f6c201b19ba11ea74dfeefbc",
     "in_game/common/international_organization_special_statuses/hbe_statuses.txt": "ac82df70c67828890cad12553b6aeaf11d762b6843ceaf52eb54a1f6338869c9",
-    "in_game/common/international_organizations/hbe_empire.txt": "104d17ce6d04b9ba3b899c3a419844658fe0aeae0794b8d9da4d93d84ba08f0a",
+    "in_game/common/international_organizations/hbe_empire.txt": "377d48b1389001713e893cb93cdb0256b783cab82ec1111f688c818dd80df170",
     "in_game/common/international_organizations/hbe_feast_parties.txt": "2894bd9d3affca0af4699700c1da6ae0883fcf15502f21d279e01add17396e68",
     "in_game/common/join_war_rules/hbe_isolation.txt": "b28bcc3370ebc565e37530d0c531b8c94718ae99ebebdf96c8ef84df8613018d",
     "in_game/common/laws/hbe_civic_law.txt": "fe3f9fba423ebe46aa6974dc85f5c037880bdaa53dc62710c86dab7f3c1af205",
     "in_game/common/on_action/hbe_ai_on_actions.txt": "71e87bad553e39e8885adfd7ae52772f085735e26bda81b249a03430cc36e96b",
     "in_game/common/on_action/hbe_banquet_on_actions.txt": "4ac0eea5b0f7517abc8ee3ac3f0b59671db5a2dfca0cfe6afae85deb34fb6bbc",
     "in_game/common/on_action/hbe_civic_on_actions.txt": "3ddd608cfa502762e8a0c6eb1efb45f6f9ae61a2be9d5f0c9a7cfb059c367431",
+    "in_game/common/on_action/hbe_guest_license_on_actions.txt": "059b77fc4e26aa5083887dfe71e6518397b75e4c54e848b11706a5d00be18608",
     "in_game/common/on_action/hbe_native_content_on_actions.txt": "8aef95955a4897efb19680b097fa364f0529aa9b242c1f69caa55c1bcc09f930",
     "in_game/common/on_action/hbe_on_actions.txt": "340507837a04f692839901754def88c93b4bb174d17aec13f4eebaf427543a4d",
+    "in_game/common/on_action/hbe_opening_pacts_on_actions.txt": "ad6a896fabfb547c9460ba50dbae53d5e353811d37730b7ff371487aa7e4412d",
     "in_game/common/on_action/hbe_simple_banquet_on_actions.txt": "2b4fbefb81bb48d55160a24338603af189631e62fac30f4e9f39d5a4be4b3d2e",
     "in_game/common/on_action/hbe_technology_on_actions.txt": "643f65190f2c82c95da033b31f4e3cf2d2f32f826925728d4148438b87e7ac7b",
     "in_game/common/parliament_issues/hbe_civic_issues.txt": "d956ff1278417ca38f2eaad596e5886799f100e79313dbd5242d1a1b0195e7ef",
     "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
     "in_game/common/script_values/hbe_civic_values.txt": "7f3943b96c3e6e6e8c1b042a612f8dc8eb2e7c493b7bb6c34d36e8c6eb488a53",
+    "in_game/common/script_values/hbe_feast_dividend_values.txt": "d8a31c07f2cfc5366f22b117e58f5dae0d6e69b49d4d8177f96d9580804f5d58",
     "in_game/common/script_values/hbe_feast_values.txt": "76bcf431443a870007f98acdf51b7322c9f5ff442a1a3bc0266fa6ba7a00bfd7",
     "in_game/common/scripted_effects/hbe_ai_effects.txt": "f158733dccf6d238d0da5455538d8672d950c6cc16697c2dac8d516a8bad501e",
-    "in_game/common/scripted_effects/hbe_banquet_effects.txt": "f239b0b1db45907b0d834341b299915f588bac72958468958c21b874f090cacf",
-    "in_game/common/scripted_effects/hbe_civic_effects.txt": "f59ce3fcf58981c984daa69b1d5bea9b2ff62eafbb0793e50a967f41020f3b57",
+    "in_game/common/scripted_effects/hbe_banquet_effects.txt": "c4dd7d3cb039ba28bcd2fccabe00c6beb7ad98d5c19e90b0575463e54c1cac10",
+    "in_game/common/scripted_effects/hbe_civic_effects.txt": "50a54e56928727a14b286449ee7b5ddbae2c59c1b28c95353b6ab0db560050a6",
     "in_game/common/scripted_effects/hbe_effects.txt": "b3beccd30485b420fccc46c3970393047f2f5de1f489d6b72bbcc1b3aaf66fba",
+    "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "50c2bf32b1b79f604b00cd2b5e8912c8d747c0eda9cbd0ba9b3a93d023f51b3d",
+    "in_game/common/scripted_effects/hbe_guest_license_effects.txt": "c3304c7a66e960444360e93ea9617fdc7cab0d61c4b3705c2307bd3982c9bf59",
     "in_game/common/scripted_effects/hbe_native_content_effects.txt": "40ef74f01c8153ce328f7c68ac5fe8b78482d60125f4eed75e1bdee1160ed051",
-    "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt": "32bdb0311a5622463489fb2df6b8f9ebb5dc5a6c12298a51cd095bd637d72563",
+    "in_game/common/scripted_effects/hbe_opening_pacts_effects.txt": "e7f65bdafb8662ecbd90bda45f4ddfefceaca8c6e7f92618e4b97df546a08de8",
+    "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt": "66c1693c7d6d2f5ea5f1f83ac17770498c390272512d92cc930e83bd648eb5f6",
     "in_game/common/scripted_effects/hbe_technology_effects.txt": "98436c41935890d591d4cda9d2df0cfc1e130368739321bf6cbd27c66ec12f96",
     "in_game/common/scripted_geography/hbe_geography.txt": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f",
     "in_game/common/scripted_triggers/hbe_civic_triggers.txt": "5069ae83fd819bcfb3e1e5d70584d0955b51ece64b9c8c9302115d3ee4cdacc0",
     "in_game/common/scripted_triggers/hbe_triggers.txt": "3762b16b08198ddbeab78f35226324003735566dd2804f63e4b74042f63a7eca",
-    "in_game/common/situations/hbe_banquet.txt": "de087c057e3b4b6df3f6e4afb8631d53dc38ee3839ec6495f8b4555ca7696fd3",
+    "in_game/common/situations/hbe_banquet.txt": "9112a9997192b856ad73b20019a4204ea92cdfd76f88e00a8a5b1f7d69c54e5b",
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
-    "in_game/common/unit_types/hbe_civic_units.txt": "5ed317e4a8f634d3daa67687f826b2c46832e99580593f4a95f0e6663d04d51f",
+    "in_game/common/unit_types/hbe_civic_units.txt": "b19d0edd74f6114b06bcf684ea0e5d008c1b8c88c8aba476ce2b18913bc124a6",
     "in_game/events/hbe_banquet_events.txt": "968f12b580b21645f4ac94741e76a4144174e0f0460c5ccced73f383c3dd182d",
     "in_game/events/hbe_civic_events.txt": "66aba8b28f5ab2dff2f9ca06cdea2c473e3a234bae349fdd82623f78b8193288",
     "in_game/events/hbe_events.txt": "99b09cc13f1c53ad867185d1651d381e8e9867abd7fbaf5262f95bd2ac7faf4d",
+    "in_game/events/hbe_opening_family_events.txt": "341afa31f7d6fdcec757be474b25113de7e6f3b09b5aa3574c8fd1e07b06e35e",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
     "in_game/gfx/images/hbe_v021_backgrounds.txt": "9fdc73f4484385dabe78baa1f1a7e7be2c4d9b0a9005955cb05c9ad2a55ba944",
@@ -6649,14 +6658,14 @@
     "in_game/gfx/scenes/hbe_event_scenes.txt": "5c626fe9edf4338fdeb1c4713d44d552d1ecd4a388c6270add23c29d5ac04ee2",
     "in_game/gfx/scenes/hbe_v021_scenes.txt": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856",
     "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "00205abfc446974e38b49ad84742bb1137cc0e850d84d7cb9219e0e930f290c6",
-    "in_game/gui/panels/situation/hbe_banquet.gui": "f174547bd44605a0bfe0b2122fcda1d7c66bd5d59b3d6bc84a4b00aeec225746",
+    "in_game/gui/panels/situation/hbe_banquet.gui": "8239e772e0288b03d1f082327d825a61a9cd90280534484b8e4f394100a02d33",
     "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
     "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa",
     "loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt": "4094274778343be9e6caee5857cc9bd2406c012525d8d64084e70b9b83d65c02",
     "loading_screen/gfx/interface/hbe/placeholder.dds": "226cfe7ca22f750e3bdf461bbfdffd389559dfe62fe393b2fe73ba9d1d536c41",
     "main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt": "5cc1082988fcce5f2c9c77df0a1a33502fccc92b4ab674f4c0c1420d85e0a53a",
-    "main_menu/common/game_concepts/hbe_concepts.txt": "f008931a6fd8e34e993f5b356cde8c3ec9f0ac2968d3a1cc382ad35924f24ceb",
+    "main_menu/common/game_concepts/hbe_concepts.txt": "ded83a83b18ad141ee2c1fac953bbb813a02d06b44e246f15ba6fe3c51a341b5",
     "main_menu/common/modifier_icons/hbe_icons.txt": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978",
     "main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt": "1bbdb431adcbcddb3838e31af4217fa9144b1f6b326f02a6545d73c352653e46",
     "main_menu/common/modifier_type_definitions/hbe_types.txt": "3cb6310b5f2afb958ad0d0f8f6605ae52bcb2e68db61784d7cedcbc8be5ec511",
@@ -6667,7 +6676,7 @@
     "main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt": "3dc38d6bcfdc7173d3b0f1ceeeed671bb4482506e3ccce3b205fa8b0f7c3f107",
     "main_menu/common/static_modifiers/hbe_feast_modifiers.txt": "1a079a367747502380069afb5eed6393253ee8edf627365d9274d3237aff501c",
     "main_menu/common/static_modifiers/hbe_modifiers.txt": "a0a1be70b87ff6f77d7774d4c778a12654000a39b9d7a8992cf1cc501d741334",
-    "main_menu/common/static_modifiers/hbe_technology_modifiers.txt": "3bf0b916239835d34f6e0056bd259620ddd18a57bb0e51db320d64c20a360c89",
+    "main_menu/common/static_modifiers/hbe_technology_modifiers.txt": "702aa35e0a09ee95ac754b3d990f40e3fb68d7b2865cc51ee22c08dd73cb1629",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bab.dds": "82d9f93d929687ceebd15e58ec1823b34713edf546a2f9370aad165e8e679df4",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bae.dds": "ec54c27d1994f5b43294c0d9fd80f1569825b4add52c474ec022635eaf075794",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baf.dds": "b45a3a1ad64b33a87899e1efd4df0ae16ca10f448e8023fdf1798b4f4270190a",
@@ -7096,8 +7105,8 @@
     "main_menu/gui/messagetypes.txt": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c",
     "main_menu/gui/shared/hbe_civic_font_icons.gui": "1354d7f8070b164590c8e05c052fbe5bd29c63b510b0c30733713339dcbfab77",
     "main_menu/gui/shared/hbe_font_icons.gui": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374",
-    "main_menu/localization/english/hbe_l_english.yml": "e25e4bb01ad3c286a8e7699d49bd2547365d7f0452816dd5ef620458bbaa8f27",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "73c51258c940ed9149806911c099fb85f687df0f78e2b1be9614c3e10ac6a8e5",
+    "main_menu/localization/english/hbe_l_english.yml": "d309bd4a22e30a3d11dc622255453518c54905983f09e92e5a9542169d194607",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "c40896e6a4d7e38836a3b794ab473768959b54054909d272db31181fbd1567ca",
     "main_menu/setup/1337/04_hbe_dynasties.txt": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7",
     "main_menu/setup/1337/05_hbe_characters.txt": "c6d49f5d9f423458308bd495cd12a1a5a501eaf3411c1298814b459db2c8dd84",
     "main_menu/setup/1337/10_countries.txt": "4b519e685bb4456ba6690a38c800ea8f86b49328a2e3ed450ecb665dd5471f11",
@@ -7120,8 +7129,8 @@
         "key": "hbe_tech_common_1",
         "name": "乡约与账簿",
         "modifiers": {
-          "country_cabinet_efficiency": 0.1,
-          "global_monthly_control": 0.05
+          "global_monthly_literacy": 0.02,
+          "global_monthly_control": 0.04
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7130,8 +7139,8 @@
         "key": "hbe_tech_common_2",
         "name": "统一度量",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.15,
-          "merchant_maintenance_efficiency": 0.1
+          "global_merchant_capacity_modifier": 0.12,
+          "merchant_maintenance_efficiency": 0.08
         },
         "unlocks": [],
         "link": "整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
@@ -7140,8 +7149,8 @@
         "key": "hbe_tech_common_3",
         "name": "帝国工程署",
         "modifiers": {
-          "global_construction_speed": 0.2,
-          "global_build_buildings_efficiency": 0.1
+          "global_institution_growth_modifier": 0.16,
+          "global_max_literacy": 4.0
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7150,8 +7159,8 @@
         "key": "hbe_tech_common_4",
         "name": "匠人互访",
         "modifiers": {
-          "research_speed_modifier": 0.15,
-          "global_institution_growth_modifier": 0.2
+          "research_speed_modifier": 0.12,
+          "global_institution_growth_modifier": 0.16
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
@@ -7160,8 +7169,8 @@
         "key": "hbe_tech_common_5",
         "name": "行会传习",
         "modifiers": {
-          "global_production_efficiency": 0.1,
-          "global_burghers_max_literacy": 10
+          "global_production_efficiency": 0.08,
+          "global_burghers_max_literacy": 8.0
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
@@ -7170,9 +7179,9 @@
         "key": "hbe_tech_common_6",
         "name": "跨区工艺学堂",
         "modifiers": {
-          "research_speed_modifier": 0.15,
-          "global_books_output_modifier": 0.2,
-          "global_hbe_shu_paper_output_modifier": 0.2
+          "research_speed_modifier": 0.12,
+          "global_books_output_modifier": 0.16,
+          "global_hbe_shu_paper_output_modifier": 0.16
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7181,8 +7190,8 @@
         "key": "hbe_tech_common_7",
         "name": "驿路勘绘",
         "modifiers": {
-          "global_road_building_time": -0.15,
-          "build_gravel_road_cost_modifier": -0.15
+          "global_road_building_time": -0.12,
+          "build_gravel_road_cost_modifier": -0.12
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
@@ -7191,8 +7200,8 @@
         "key": "hbe_tech_common_8",
         "name": "山河交通总图",
         "modifiers": {
-          "global_construction_speed": 0.15,
-          "global_trade_center_power": 0.15
+          "burghers_estate_target_satisfaction": 0.048,
+          "global_trade_center_power": 0.12
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7201,8 +7210,8 @@
         "key": "hbe_tech_chengdu_plain_1",
         "name": "渠田协作",
         "modifiers": {
-          "global_monthly_food_modifier": 0.15,
-          "global_rice_output_modifier": 0.15
+          "global_monthly_food_modifier": 0.12,
+          "global_rice_output_modifier": 0.12
         },
         "unlocks": [],
         "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -7211,9 +7220,9 @@
         "key": "hbe_tech_chengdu_plain_2",
         "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
         "modifiers": {
-          "global_fine_cloth_output_modifier": 0.25,
-          "global_silk_output_modifier": 0.15,
-          "global_hbe_shu_embroidery_output_modifier": 0.25
+          "global_fine_cloth_output_modifier": 0.2,
+          "global_silk_output_modifier": 0.12,
+          "global_hbe_shu_embroidery_output_modifier": 0.2
         },
         "unlocks": [
           "hbe_chengdu_plain_basic_production"
@@ -7224,8 +7233,8 @@
         "key": "hbe_tech_chengdu_plain_3",
         "name": "水权簿册",
         "modifiers": {
-          "global_food_decay": -0.15,
-          "peasants_estate_target_satisfaction": 0.05
+          "global_food_decay": -0.12,
+          "peasants_estate_target_satisfaction": 0.04
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7234,8 +7243,8 @@
         "key": "hbe_tech_chengdu_plain_4",
         "name": "联渠灌溉",
         "modifiers": {
-          "global_monthly_food_modifier": 0.2,
-          "global_rgo_build_time": -0.2
+          "global_monthly_food_modifier": 0.16,
+          "global_rgo_build_time": -0.16
         },
         "unlocks": [
           "hbe_chengdu_plain_advanced_production",
@@ -7247,8 +7256,8 @@
         "key": "hbe_tech_chengdu_plain_5",
         "name": "天府粮仓",
         "modifiers": {
-          "global_rice_output_modifier": 0.3,
-          "global_devastation_recovery": 0.005
+          "global_rice_output_modifier": 0.24,
+          "global_devastation_recovery": 0.004
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7257,8 +7266,8 @@
         "key": "hbe_tech_chengdu_plain_6",
         "name": "官学讲会",
         "modifiers": {
-          "global_max_literacy": 10,
-          "cultural_tradition_modifier": 0.15
+          "global_max_literacy": 8.0,
+          "cultural_tradition_modifier": 0.12
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7267,8 +7276,8 @@
         "key": "hbe_tech_chengdu_plain_7",
         "name": "茶会章程",
         "modifiers": {
-          "diplomatic_capacity_modifier": 0.2,
-          "stability_cost_efficiency": 0.15
+          "diplomatic_capacity_modifier": 0.16,
+          "stability_cost_efficiency": 0.12
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“锦江讲会”：运行锦户讲习院、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
@@ -7277,9 +7286,9 @@
         "key": "hbe_tech_chengdu_plain_8",
         "name": "盖碗公议学宫",
         "modifiers": {
-          "research_speed_modifier": 0.2,
-          "cultural_influence_modifier": 0.25,
-          "global_hbe_shu_embroidery_output_modifier": 0.3
+          "research_speed_modifier": 0.16,
+          "cultural_influence_modifier": 0.2,
+          "global_hbe_shu_embroidery_output_modifier": 0.24
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7288,8 +7297,8 @@
         "key": "hbe_tech_southern_salt_wine_1",
         "name": "井灶公账",
         "modifiers": {
-          "global_salt_output_modifier": 0.2,
-          "global_build_buildings_efficiency": 0.1
+          "global_salt_output_modifier": 0.16,
+          "burghers_estate_target_satisfaction": 0.048
         },
         "unlocks": [
           "hbe_southern_salt_wine_basic_production"
@@ -7300,8 +7309,8 @@
         "key": "hbe_tech_southern_salt_wine_2",
         "name": "盐酒作坊协作",
         "modifiers": {
-          "global_liquor_output_modifier": 0.25,
-          "global_pottery_output_modifier": 0.15
+          "global_liquor_output_modifier": 0.2,
+          "global_pottery_output_modifier": 0.12
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7310,9 +7319,9 @@
         "key": "hbe_tech_southern_salt_wine_3",
         "name": "井灶改良",
         "modifiers": {
-          "global_salt_output_modifier": 0.3,
-          "global_tools_output_modifier": 0.15,
-          "global_hbe_well_salt_output_modifier": 0.3
+          "global_salt_output_modifier": 0.24,
+          "global_tools_output_modifier": 0.12,
+          "global_hbe_well_salt_output_modifier": 0.24
         },
         "unlocks": [
           "hbe_southern_salt_wine_advanced_production"
@@ -7323,8 +7332,8 @@
         "key": "hbe_tech_southern_salt_wine_4",
         "name": "盐引担保",
         "modifiers": {
-          "total_loan_capacity_modifier": 0.5,
-          "bank_interest": -0.005
+          "total_loan_capacity_modifier": 0.4,
+          "bank_interest": -0.004
         },
         "unlocks": [],
         "link": "解锁盐引贷款，并取得本圈旧约重审验收资格。\n解锁“井盐担保”：运行井灶公廨、近五年完成本圈事业、役负低于70，且盐债不超过20时获得额外联动收益；条件不满足时暂停。"
@@ -7333,9 +7342,9 @@
         "key": "hbe_tech_southern_salt_wine_5",
         "name": "巴蜀盐业总号",
         "modifiers": {
-          "global_salt_output_modifier": 0.25,
-          "global_merchant_capacity_modifier": 0.25,
-          "global_hbe_well_salt_output_modifier": 0.25
+          "global_salt_output_modifier": 0.2,
+          "global_merchant_capacity_modifier": 0.2,
+          "global_hbe_well_salt_output_modifier": 0.2
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7344,8 +7353,8 @@
         "key": "hbe_tech_southern_salt_wine_6",
         "name": "窖坊分工",
         "modifiers": {
-          "global_liquor_output_modifier": 0.3,
-          "cultural_tradition_modifier": 0.1
+          "global_liquor_output_modifier": 0.24,
+          "cultural_tradition_modifier": 0.08
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7354,8 +7363,8 @@
         "key": "hbe_tech_southern_salt_wine_7",
         "name": "宴席采购[Concept('hbe_term_contract', '契约')|e]",
         "modifiers": {
-          "merchant_maintenance_efficiency": 0.2,
-          "global_production_efficiency": 0.1
+          "merchant_maintenance_efficiency": 0.16,
+          "global_production_efficiency": 0.08
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“盐酒席面”：运行盐酒契券所、近五年完成本圈事业、役负低于70，且盐引信用至少30时获得额外联动收益；条件不满足时暂停。"
@@ -7364,8 +7373,8 @@
         "key": "hbe_tech_southern_salt_wine_8",
         "name": "帝国席面承办局",
         "modifiers": {
-          "global_liquor_output_modifier": 0.25,
-          "cultural_influence_modifier": 0.25
+          "global_liquor_output_modifier": 0.2,
+          "cultural_influence_modifier": 0.2
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7374,8 +7383,8 @@
         "key": "hbe_tech_eastern_river_1",
         "name": "码头转运",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.2,
-          "merchant_maintenance_efficiency": 0.1
+          "global_merchant_capacity_modifier": 0.16,
+          "merchant_maintenance_efficiency": 0.08
         },
         "unlocks": [],
         "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -7384,8 +7393,8 @@
         "key": "hbe_tech_eastern_river_2",
         "name": "纤夫船帮",
         "modifiers": {
-          "global_naval_supplies_output_modifier": 0.25,
-          "ship_build_speed": 0.2
+          "global_naval_supplies_output_modifier": 0.2,
+          "ship_build_speed": 0.16
         },
         "unlocks": [
           "hbe_eastern_river_basic_production"
@@ -7396,8 +7405,8 @@
         "key": "hbe_tech_eastern_river_3",
         "name": "关卡通行公约",
         "modifiers": {
-          "global_trade_center_power": 0.2,
-          "merchant_maintenance_efficiency": 0.15
+          "global_trade_center_power": 0.16,
+          "merchant_maintenance_efficiency": 0.12
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7406,8 +7415,8 @@
         "key": "hbe_tech_eastern_river_4",
         "name": "@hbe_river! [Concept('hbe_term_river', '江运互保')|e]",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.25,
-          "global_food_decay": -0.1
+          "global_merchant_capacity_modifier": 0.2,
+          "global_food_decay": -0.08
         },
         "unlocks": [
           "hbe_eastern_river_advanced_production"
@@ -7418,8 +7427,8 @@
         "key": "hbe_tech_eastern_river_5",
         "name": "[Concept('hbe_history_river', '川江')|e]通商总约",
         "modifiers": {
-          "global_trade_center_power": 0.25,
-          "global_production_efficiency": 0.15
+          "global_trade_center_power": 0.2,
+          "global_production_efficiency": 0.12
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7428,8 +7437,8 @@
         "key": "hbe_tech_eastern_river_6",
         "name": "崖岸壁垒",
         "modifiers": {
-          "global_defensive": 0.2,
-          "fort_maintenance_efficiency": 0.2
+          "global_defensive": 0.16,
+          "fort_maintenance_efficiency": 0.16
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7438,8 +7447,8 @@
         "key": "hbe_tech_eastern_river_7",
         "name": "水陆协防",
         "modifiers": {
-          "army_maintenance_efficiency": 0.2,
-          "global_levy_recruitment_speed_modifier": 0.2
+          "global_monthly_control": 0.08,
+          "global_levy_recruitment_speed_modifier": 0.16
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“江岸会防”：运行山城联防寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
@@ -7448,8 +7457,8 @@
         "key": "hbe_tech_eastern_river_8",
         "name": "山城江防枢纽",
         "modifiers": {
-          "global_defensive": 0.25,
-          "army_initiative": 0.15
+          "global_defensive": 0.2,
+          "army_initiative": 0.12
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7458,8 +7467,8 @@
         "key": "hbe_tech_northern_shudao_1",
         "name": "栈道勘绘",
         "modifiers": {
-          "global_road_building_time": -0.15,
-          "build_gravel_road_cost_modifier": -0.15
+          "global_road_building_time": -0.12,
+          "build_gravel_road_cost_modifier": -0.12
         },
         "unlocks": [],
         "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -7468,8 +7477,8 @@
         "key": "hbe_tech_northern_shudao_2",
         "name": "驿堡联络",
         "modifiers": {
-          "global_supply_limit_modifier": 0.2,
-          "army_maintenance_efficiency": 0.1
+          "global_supply_limit_modifier": 0.16,
+          "army_maintenance_efficiency": 0.08
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7478,8 +7487,8 @@
         "key": "hbe_tech_northern_shudao_3",
         "name": "山关防务",
         "modifiers": {
-          "global_defensive": 0.25,
-          "fort_maintenance_efficiency": 0.2
+          "global_defensive": 0.2,
+          "fort_maintenance_efficiency": 0.16
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7488,8 +7497,8 @@
         "key": "hbe_tech_northern_shudao_4",
         "name": "轮戍互援",
         "modifiers": {
-          "global_levy_recruitment_speed_modifier": 0.25,
-          "army_maintenance_efficiency": 0.2
+          "global_levy_recruitment_speed_modifier": 0.2,
+          "army_maintenance_efficiency": 0.16
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“关隘轮守”：运行栈道驿堡、近五年完成本圈事业、役负低于70，且轮戍履约至少30时获得额外联动收益；条件不满足时暂停。"
@@ -7498,8 +7507,8 @@
         "key": "hbe_tech_northern_shudao_5",
         "name": "[Concept('hbe_history_shudao', '蜀道')|e]联防总镇",
         "modifiers": {
-          "global_defensive": 0.2,
-          "global_manpower_modifier": 0.2
+          "global_defensive": 0.16,
+          "global_manpower_modifier": 0.16
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7508,8 +7517,8 @@
         "key": "hbe_tech_northern_shudao_6",
         "name": "关市驿券",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.2,
-          "merchant_maintenance_efficiency": 0.15
+          "global_books_output_modifier": 0.16,
+          "global_monthly_literacy": 0.02
         },
         "unlocks": [
           "hbe_northern_shudao_basic_production"
@@ -7520,9 +7529,9 @@
         "key": "hbe_tech_northern_shudao_7",
         "name": "公文分驿",
         "modifiers": {
-          "global_road_building_time": -0.15,
-          "diplomatic_capacity_modifier": 0.2,
-          "global_hbe_shu_paper_output_modifier": 0.25
+          "global_road_building_time": -0.12,
+          "diplomatic_capacity_modifier": 0.16,
+          "global_hbe_shu_paper_output_modifier": 0.2
         },
         "unlocks": [
           "hbe_northern_shudao_advanced_production"
@@ -7533,8 +7542,8 @@
         "key": "hbe_tech_northern_shudao_8",
         "name": "[Concept('hbe_history_shudao', '蜀道')|e]驿传总局",
         "modifiers": {
-          "global_institution_growth_modifier": 0.3,
-          "global_monthly_control": 0.1
+          "global_institution_growth_modifier": 0.24,
+          "global_monthly_control": 0.08
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7543,8 +7552,8 @@
         "key": "hbe_tech_central_hills_1",
         "name": "坡田水塘",
         "modifiers": {
-          "global_monthly_food_modifier": 0.15,
-          "global_max_rgo_size_modifier_in_rural": 0.15
+          "global_monthly_food_modifier": 0.12,
+          "global_max_rgo_size_modifier_in_rural": 0.12
         },
         "unlocks": [],
         "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -7553,8 +7562,8 @@
         "key": "hbe_tech_central_hills_2",
         "name": "市集公账",
         "modifiers": {
-          "global_trade_center_power": 0.15,
-          "global_monthly_control": 0.05
+          "stability_cost_efficiency": 0.12,
+          "global_monthly_control": 0.04
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7563,8 +7572,8 @@
         "key": "hbe_tech_central_hills_3",
         "name": "分仓赈贷",
         "modifiers": {
-          "global_food_decay": -0.25,
-          "food_purchase_efficiency": 0.2
+          "global_food_decay": -0.2,
+          "food_purchase_efficiency": 0.16
         },
         "unlocks": [
           "hbe_central_hills_basic_production"
@@ -7575,8 +7584,8 @@
         "key": "hbe_tech_central_hills_4",
         "name": "乡社借粮",
         "modifiers": {
-          "stability_cost_efficiency": 0.2,
-          "peasants_estate_target_satisfaction": 0.08
+          "stability_cost_efficiency": 0.16,
+          "peasants_estate_target_satisfaction": 0.064
         },
         "unlocks": [
           "hbe_central_hills_advanced_production"
@@ -7587,8 +7596,8 @@
         "key": "hbe_tech_central_hills_5",
         "name": "丘陵义仓联社",
         "modifiers": {
-          "global_monthly_food_modifier": 0.25,
-          "global_disease_resistance": 0.05
+          "global_monthly_food_modifier": 0.2,
+          "global_disease_resistance": 0.04
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7597,8 +7606,8 @@
         "key": "hbe_tech_central_hills_6",
         "name": "[Concept('hbe_term_contract', '契约')|e]见证",
         "modifiers": {
-          "total_loan_capacity_modifier": 0.4,
-          "burghers_estate_target_satisfaction": 0.08
+          "total_loan_capacity_modifier": 0.32,
+          "burghers_estate_target_satisfaction": 0.064
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7607,8 +7616,8 @@
         "key": "hbe_tech_central_hills_7",
         "name": "票据清算",
         "modifiers": {
-          "bank_interest": -0.005,
-          "merchant_maintenance_efficiency": 0.2
+          "bank_interest": -0.004,
+          "merchant_maintenance_efficiency": 0.16
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
@@ -7617,8 +7626,8 @@
         "key": "hbe_tech_central_hills_8",
         "name": "诸侯公信会馆",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.25,
-          "global_monthly_prosperity": 0.05
+          "global_merchant_capacity_modifier": 0.2,
+          "global_monthly_prosperity": 0.04
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7627,8 +7636,8 @@
         "key": "hbe_tech_western_tea_horse_1",
         "name": "茶马集市",
         "modifiers": {
-          "global_tea_output_modifier": 0.25,
-          "global_merchant_capacity_modifier": 0.15
+          "global_tea_output_modifier": 0.2,
+          "global_merchant_capacity_modifier": 0.12
         },
         "unlocks": [
           "hbe_western_tea_horse_basic_production"
@@ -7639,8 +7648,8 @@
         "key": "hbe_tech_western_tea_horse_2",
         "name": "山地向导",
         "modifiers": {
-          "global_supply_limit_modifier": 0.2,
-          "merchant_maintenance_efficiency": 0.15
+          "global_supply_limit_modifier": 0.16,
+          "merchant_maintenance_efficiency": 0.12
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7649,9 +7658,9 @@
         "key": "hbe_tech_western_tea_horse_3",
         "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
         "modifiers": {
-          "global_leather_output_modifier": 0.25,
-          "global_food_decay": -0.1,
-          "global_hbe_border_tea_output_modifier": 0.25
+          "global_leather_output_modifier": 0.2,
+          "global_food_decay": -0.08,
+          "global_hbe_border_tea_output_modifier": 0.2
         },
         "unlocks": [
           "hbe_western_tea_horse_advanced_production",
@@ -7663,8 +7672,8 @@
         "key": "hbe_tech_western_tea_horse_4",
         "name": "通路会约",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.25,
-          "global_road_building_time": -0.15
+          "global_merchant_capacity_modifier": 0.2,
+          "global_institution_growth_modifier": 0.16
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“茶马通路”：运行茶马交割场、近五年完成本圈事业、役负低于70，且商队互保至少30时获得额外联动收益；条件不满足时暂停。"
@@ -7673,9 +7682,9 @@
         "key": "hbe_tech_western_tea_horse_5",
         "name": "茶马通商公所",
         "modifiers": {
-          "global_tea_output_modifier": 0.3,
-          "global_trade_center_power": 0.2,
-          "global_hbe_border_tea_output_modifier": 0.3
+          "global_tea_output_modifier": 0.24,
+          "global_trade_center_power": 0.16,
+          "global_hbe_border_tea_output_modifier": 0.24
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7684,8 +7693,8 @@
         "key": "hbe_tech_western_tea_horse_6",
         "name": "山门施济",
         "modifiers": {
-          "tolerance_heathen": 1,
-          "global_disease_resistance": 0.05
+          "tolerance_heathen": 0.8,
+          "global_disease_resistance": 0.04
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7694,8 +7703,8 @@
         "key": "hbe_tech_western_tea_horse_7",
         "name": "跨地调停",
         "modifiers": {
-          "diplomatic_capacity_modifier": 0.25,
-          "cultural_influence_modifier": 0.2
+          "diplomatic_capacity_modifier": 0.2,
+          "cultural_influence_modifier": 0.16
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“山门公议”：运行山程护行所、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
@@ -7704,8 +7713,8 @@
         "key": "hbe_tech_western_tea_horse_8",
         "name": "雪山公议会",
         "modifiers": {
-          "cultures_capacity": 1,
-          "cultural_tradition_modifier": 0.25
+          "cultures_capacity_modifier": 0.16,
+          "cultural_tradition_modifier": 0.2
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7714,8 +7723,8 @@
         "key": "hbe_tech_southwestern_valleys_1",
         "name": "山谷市集",
         "modifiers": {
-          "global_production_efficiency": 0.1,
-          "global_trade_center_power": 0.15
+          "global_production_efficiency": 0.08,
+          "global_trade_center_power": 0.12
         },
         "unlocks": [
           "hbe_southwestern_valleys_basic_production"
@@ -7726,8 +7735,8 @@
         "key": "hbe_tech_southwestern_valleys_2",
         "name": "地方盟约",
         "modifiers": {
-          "tribes_estate_target_satisfaction": 0.1,
-          "peasants_estate_target_satisfaction": 0.05
+          "tribes_estate_target_satisfaction": 0.08,
+          "peasants_estate_target_satisfaction": 0.04
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7736,8 +7745,8 @@
         "key": "hbe_tech_southwestern_valleys_3",
         "name": "小路换市",
         "modifiers": {
-          "global_tools_output_modifier": 0.25,
-          "global_road_building_time": -0.15
+          "global_tools_output_modifier": 0.2,
+          "tribes_estate_target_satisfaction": 0.048
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7746,8 +7755,8 @@
         "key": "hbe_tech_southwestern_valleys_4",
         "name": "商盟互保",
         "modifiers": {
-          "global_production_efficiency": 0.15,
-          "global_merchant_capacity_modifier": 0.2
+          "global_production_efficiency": 0.12,
+          "tolerance_heathen": 0.8
         },
         "unlocks": [
           "hbe_southwestern_valleys_advanced_production"
@@ -7758,8 +7767,8 @@
         "key": "hbe_tech_southwestern_valleys_5",
         "name": "川西南山谷商盟",
         "modifiers": {
-          "global_tools_output_modifier": 0.25,
-          "burghers_estate_target_satisfaction": 0.1
+          "global_tools_output_modifier": 0.2,
+          "burghers_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7768,8 +7777,8 @@
         "key": "hbe_tech_southwestern_valleys_6",
         "name": "联寨守望",
         "modifiers": {
-          "global_supply_limit_modifier": 0.25,
-          "global_levy_recruitment_speed_modifier": 0.15
+          "global_supply_limit_modifier": 0.2,
+          "global_levy_recruitment_speed_modifier": 0.12
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7778,8 +7787,8 @@
         "key": "hbe_tech_southwestern_valleys_7",
         "name": "议约驻防",
         "modifiers": {
-          "army_maintenance_efficiency": 0.2,
-          "global_defensive": 0.15
+          "army_maintenance_efficiency": 0.16,
+          "global_defensive": 0.12
         },
         "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡寨共保”：运行乡寨议约寨、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
@@ -7788,8 +7797,8 @@
         "key": "hbe_tech_southwestern_valleys_8",
         "name": "山地共保盟府",
         "modifiers": {
-          "global_manpower_modifier": 0.25,
-          "tribes_estate_target_satisfaction": 0.1
+          "global_manpower_modifier": 0.2,
+          "tribes_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
         "link": "取得本圈地区重组及百年章程验收的课题资格。"
@@ -7798,8 +7807,8 @@
         "key": "hbe_civic_common_1",
         "name": "府议与民役簿",
         "modifiers": {
-          "stability_cost_efficiency": 0.15,
-          "global_estate_target_satisfaction": 0.05
+          "stability_cost_efficiency": 0.12,
+          "global_estate_target_satisfaction": 0.04
         },
         "unlocks": [],
         "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
@@ -7808,153 +7817,153 @@
         "key": "hbe_civic_common_2",
         "name": "修约与公账审计",
         "modifiers": {
-          "country_cabinet_efficiency": 0.2,
-          "global_build_buildings_efficiency": 0.15
+          "country_cabinet_efficiency": 0.16,
+          "global_monthly_literacy": 0.02
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+        "link": "开放公账审计与逐圈客籍议约。签订某圈议约后授予该圈机构及基础兵种资格；仍需当地领土和实际供养，不一次开放全部七圈。"
       },
       {
         "key": "hbe_civic_chengdu_plain_1",
         "name": "岁修与分水公议",
         "modifiers": {
-          "global_monthly_food_modifier": 0.15,
-          "global_fine_cloth_output_modifier": 0.15,
-          "global_hbe_shu_embroidery_output_modifier": 0.2
+          "global_monthly_food_modifier": 0.12,
+          "global_fine_cloth_output_modifier": 0.12,
+          "global_hbe_shu_embroidery_output_modifier": 0.16
         },
         "unlocks": [],
-        "link": "岁修与分水公议完成后，运行渠务所的地方事业额外获得8水权储备，役负降低4。"
+        "link": "运行渠务所时，完成本圈地方事业额外获得6.4地区储备，役负降低3.2。"
       },
       {
         "key": "hbe_civic_chengdu_plain_2",
         "name": "渠学传习规程",
         "modifiers": {
-          "global_books_output_modifier": 0.3,
-          "cultural_tradition_modifier": 0.2
+          "global_books_output_modifier": 0.24,
+          "cultural_tradition_modifier": 0.16
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_southern_salt_wine_1",
         "name": "井灶保任章程",
         "modifiers": {
-          "global_salt_output_modifier": 0.2,
-          "burghers_estate_target_satisfaction": 0.1,
-          "global_hbe_well_salt_output_modifier": 0.2
+          "global_salt_output_modifier": 0.16,
+          "burghers_estate_target_satisfaction": 0.08,
+          "global_hbe_well_salt_output_modifier": 0.16
         },
         "unlocks": [],
-        "link": "井灶保任章程完成后，运行井灶公廨的地方事业额外获得10盐引信用。"
+        "link": "运行井灶公廨时，完成本圈地方事业额外获得8地区储备。"
       },
       {
         "key": "hbe_civic_southern_salt_wine_2",
         "name": "契券清偿总约",
         "modifiers": {
-          "bank_interest": -0.005,
-          "total_loan_capacity_modifier": 0.5
+          "bank_interest": -0.004,
+          "total_loan_capacity_modifier": 0.4
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_eastern_river_1",
         "name": "江岸会防约",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.2,
-          "fort_maintenance_efficiency": 0.15
+          "burghers_estate_target_satisfaction": 0.064,
+          "global_monthly_control": 0.08
         },
         "unlocks": [],
-        "link": "江岸会防约完成后，运行转运仓的地方事业额外获得8江运互保，役负降低2。"
+        "link": "运行江岸转运仓时，完成本圈地方事业额外获得6.4地区储备，役负降低1.6。"
       },
       {
         "key": "hbe_civic_eastern_river_2",
         "name": "寨兵常训章程",
         "modifiers": {
-          "army_initiative": 0.2,
-          "army_maintenance_efficiency": 0.15
+          "army_initiative": 0.16,
+          "army_maintenance_efficiency": 0.12
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_northern_shudao_1",
         "name": "关驿轮役册",
         "modifiers": {
-          "global_supply_limit_modifier": 0.25,
-          "global_road_building_time": -0.1
+          "global_supply_limit_modifier": 0.2,
+          "global_institution_growth_modifier": 0.12
         },
         "unlocks": [],
-        "link": "关驿轮役册完成后，运行驿堡的地方事业额外获得6轮戍履约，役负降低5。"
+        "link": "运行栈道驿堡时，完成本圈地方事业额外获得4.8地区储备，役负降低4。"
       },
       {
         "key": "hbe_civic_northern_shudao_2",
         "name": "关镇养兵法",
         "modifiers": {
-          "global_defensive": 0.25,
-          "global_manpower_modifier": 0.15
+          "global_defensive": 0.2,
+          "global_manpower_modifier": 0.12
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_central_hills_1",
         "name": "仓社赈借则",
         "modifiers": {
-          "global_food_decay": -0.15,
-          "peasants_estate_target_satisfaction": 0.1
+          "global_food_decay": -0.12,
+          "peasants_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
-        "link": "仓社赈借则完成后，运行义廪的地方事业额外获得10义仓储备，役负降低3。"
+        "link": "运行分仓义廪时，完成本圈地方事业额外获得8地区储备，役负降低2.4。"
       },
       {
         "key": "hbe_civic_central_hills_2",
         "name": "公信复核章程",
         "modifiers": {
-          "global_monthly_prosperity": 0.08,
-          "global_estate_target_satisfaction": 0.08
+          "global_monthly_prosperity": 0.064,
+          "global_estate_target_satisfaction": 0.064
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_western_tea_horse_1",
         "name": "山程互保册",
         "modifiers": {
-          "global_tea_output_modifier": 0.2,
-          "merchant_maintenance_efficiency": 0.15
+          "global_tea_output_modifier": 0.16,
+          "merchant_maintenance_efficiency": 0.12
         },
         "unlocks": [],
-        "link": "山程互保册完成后，运行护行所的地方事业额外获得10商队互保，役负降低1。"
+        "link": "运行山程护行所时，完成本圈地方事业额外获得8地区储备，役负降低0.8。"
       },
       {
         "key": "hbe_civic_western_tea_horse_2",
         "name": "山门与商路公议",
         "modifiers": {
-          "tolerance_heathen": 1,
-          "diplomatic_capacity_modifier": 0.2
+          "tolerance_heathen": 0.8,
+          "diplomatic_capacity_modifier": 0.16
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       },
       {
         "key": "hbe_civic_southwestern_valleys_1",
         "name": "驻防粮额约",
         "modifiers": {
-          "global_supply_limit_modifier": 0.2,
-          "tribes_estate_target_satisfaction": 0.1
+          "global_supply_limit_modifier": 0.16,
+          "tribes_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
-        "link": "驻防粮额约完成后，运行议约寨的地方事业额外获得8地方共治，役负降低4。"
+        "link": "运行乡寨议约寨时，完成本圈地方事业额外获得6.4地区储备，役负降低3.2。"
       },
       {
         "key": "hbe_civic_southwestern_valleys_2",
         "name": "诸谷共保续约",
         "modifiers": {
-          "cultures_capacity": 1,
-          "global_production_efficiency": 0.15
+          "cultures_capacity_modifier": 0.16,
+          "tribes_estate_target_satisfaction": 0.08
         },
         "unlocks": [],
-        "link": "续办地方事业时额外获得2义气；须维持本圈机构运行。"
+        "link": "续办地方事业时额外获得1.6义气；须维持本圈机构运行。"
       }
     ],
     "production": [
@@ -8150,8 +8159,8 @@
         "building": "hbe_canal_office",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_chengdu_plain_4 hbe_operating_canal_office = yes has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_water >= 30",
         "modifiers": {
-          "global_monthly_food_modifier": 0.25,
-          "global_rice_output_modifier": 0.2
+          "global_monthly_food_modifier": 0.2,
+          "global_rice_output_modifier": 0.16
         }
       },
       {
@@ -8161,9 +8170,9 @@
         "building": "hbe_brocade_school",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_chengdu_plain_7 hbe_operating_brocade_school = yes has_variable = hbe_recent_delivery_chengdu_plain var:hbe_burden < 70 var:hbe_yiqi >= 60",
         "modifiers": {
-          "research_speed_modifier": 0.2,
-          "cultural_influence_modifier": 0.25,
-          "global_hbe_shu_embroidery_output_modifier": 0.3
+          "research_speed_modifier": 0.16,
+          "cultural_influence_modifier": 0.2,
+          "global_hbe_shu_embroidery_output_modifier": 0.24
         }
       },
       {
@@ -8173,9 +8182,9 @@
         "building": "hbe_salt_office",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southern_salt_wine_4 hbe_operating_salt_office = yes has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 OR = { NOT = { has_variable = hbe_salt_debt } var:hbe_salt_debt <= 20 }",
         "modifiers": {
-          "global_salt_output_modifier": 0.3,
-          "global_merchant_capacity_modifier": 0.2,
-          "global_hbe_well_salt_output_modifier": 0.3
+          "global_salt_output_modifier": 0.24,
+          "global_merchant_capacity_modifier": 0.16,
+          "global_hbe_well_salt_output_modifier": 0.24
         }
       },
       {
@@ -8185,8 +8194,8 @@
         "building": "hbe_salt_contract_house",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southern_salt_wine_7 hbe_operating_salt_contract_house = yes has_variable = hbe_recent_delivery_southern_salt_wine var:hbe_burden < 70 var:hbe_salt >= 30",
         "modifiers": {
-          "global_liquor_output_modifier": 0.3,
-          "cultural_tradition_modifier": 0.2
+          "global_liquor_output_modifier": 0.24,
+          "cultural_tradition_modifier": 0.16
         }
       },
       {
@@ -8196,8 +8205,8 @@
         "building": "hbe_river_warehouse",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_eastern_river_4 hbe_operating_river_warehouse = yes has_variable = hbe_recent_delivery_eastern_river var:hbe_burden < 70 var:hbe_river >= 30",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.3,
-          "merchant_maintenance_efficiency": 0.2
+          "global_merchant_capacity_modifier": 0.24,
+          "merchant_maintenance_efficiency": 0.16
         }
       },
       {
@@ -8207,8 +8216,8 @@
         "building": "hbe_cliff_stockade",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_eastern_river_7 hbe_operating_cliff_stockade = yes has_variable = hbe_recent_delivery_eastern_river var:hbe_burden < 70 has_variable = hbe_mission_eastern_river_2",
         "modifiers": {
-          "global_defensive": 0.25,
-          "army_maintenance_efficiency": 0.2
+          "global_defensive": 0.2,
+          "army_maintenance_efficiency": 0.16
         }
       },
       {
@@ -8218,8 +8227,8 @@
         "building": "hbe_plank_fort",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_northern_shudao_4 hbe_operating_plank_fort = yes has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 var:hbe_roads >= 30",
         "modifiers": {
-          "global_supply_limit_modifier": 0.3,
-          "fort_maintenance_efficiency": 0.25
+          "global_supply_limit_modifier": 0.24,
+          "fort_maintenance_efficiency": 0.2
         }
       },
       {
@@ -8229,9 +8238,9 @@
         "building": "hbe_gate_registry",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_northern_shudao_7 hbe_operating_gate_registry = yes has_variable = hbe_recent_delivery_northern_shudao var:hbe_burden < 70 has_variable = hbe_mission_northern_shudao_2",
         "modifiers": {
-          "global_road_building_time": -0.1,
-          "global_institution_growth_modifier": 0.25,
-          "global_hbe_shu_paper_output_modifier": 0.3
+          "global_road_building_time": -0.08,
+          "global_institution_growth_modifier": 0.2,
+          "global_hbe_shu_paper_output_modifier": 0.24
         }
       },
       {
@@ -8241,8 +8250,8 @@
         "building": "hbe_community_granary",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_central_hills_4 hbe_operating_community_granary = yes has_variable = hbe_recent_delivery_central_hills var:hbe_burden < 70 var:hbe_grain >= 30",
         "modifiers": {
-          "global_monthly_food_modifier": 0.25,
-          "global_food_decay": -0.2
+          "global_monthly_food_modifier": 0.2,
+          "global_food_decay": -0.16
         }
       },
       {
@@ -8252,8 +8261,8 @@
         "building": "hbe_witness_house",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_central_hills_7 hbe_operating_witness_house = yes has_variable = hbe_recent_delivery_central_hills var:hbe_burden < 70 var:hbe_yiqi >= 60",
         "modifiers": {
-          "bank_interest": -0.005,
-          "total_loan_capacity_modifier": 0.6
+          "bank_interest": -0.004,
+          "total_loan_capacity_modifier": 0.48
         }
       },
       {
@@ -8263,9 +8272,9 @@
         "building": "hbe_tea_exchange",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_western_tea_horse_4 hbe_operating_tea_exchange = yes has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_tea >= 30",
         "modifiers": {
-          "global_tea_output_modifier": 0.3,
-          "global_merchant_capacity_modifier": 0.25,
-          "global_hbe_border_tea_output_modifier": 0.3
+          "global_tea_output_modifier": 0.24,
+          "global_merchant_capacity_modifier": 0.2,
+          "global_hbe_border_tea_output_modifier": 0.24
         }
       },
       {
@@ -8275,8 +8284,8 @@
         "building": "hbe_guide_station",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_western_tea_horse_7 hbe_operating_guide_station = yes has_variable = hbe_recent_delivery_western_tea_horse var:hbe_burden < 70 var:hbe_yiqi >= 60",
         "modifiers": {
-          "cultural_influence_modifier": 0.25,
-          "diplomatic_capacity_modifier": 0.25
+          "cultural_influence_modifier": 0.2,
+          "diplomatic_capacity_modifier": 0.2
         }
       },
       {
@@ -8286,8 +8295,8 @@
         "building": "hbe_valley_inn",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southwestern_valleys_4 hbe_operating_valley_inn = yes has_variable = hbe_recent_delivery_southwestern_valleys var:hbe_burden < 70 var:hbe_valleys >= 30",
         "modifiers": {
-          "global_tools_output_modifier": 0.3,
-          "global_production_efficiency": 0.15
+          "global_tools_output_modifier": 0.24,
+          "global_production_efficiency": 0.12
         }
       },
       {
@@ -8297,8 +8306,8 @@
         "building": "hbe_covenant_stockade",
         "requirements": "hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire has_advance = hbe_tech_southwestern_valleys_7 hbe_operating_covenant_stockade = yes has_variable = hbe_recent_delivery_southwestern_valleys var:hbe_burden < 70 has_variable = hbe_mission_southwestern_valleys_2",
         "modifiers": {
-          "army_maintenance_efficiency": 0.25,
-          "tribes_estate_target_satisfaction": 0.1
+          "army_maintenance_efficiency": 0.2,
+          "tribes_estate_target_satisfaction": 0.08
         }
       }
     ]
@@ -8977,5 +8986,270 @@
     "settlement": 2,
     "style_reference": "main_menu/localization/simp_chinese/events/DHE/flavor_chi_l_simp_chinese.yml",
     "mutually_exclusive_arrangements": 21
+  },
+  "quality_hotfix": {
+    "guest_licenses": 7,
+    "audit_native_unlocks": 0,
+    "member_row_width": 222,
+    "explicit_player_actions": 3,
+    "faction_switch_years": 5,
+    "departure_opinion": -5,
+    "dividend_fraction": 0.25,
+    "party_prestige_pool": 3,
+    "dividend_weight": "ln(1+contribution)",
+    "service_hover": "hbe_term_local_service",
+    "moved_era_nodes": 28,
+    "advance_layout": {
+      "hbe_tech_chengdu_plain_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_chengdu_plain_2"
+      },
+      "hbe_tech_chengdu_plain_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_chengdu_plain_3",
+        "logical_predecessor": "hbe_tech_chengdu_plain_3"
+      },
+      "hbe_tech_chengdu_plain_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_chengdu_plain_4",
+        "logical_predecessor": "hbe_tech_chengdu_plain_4"
+      },
+      "hbe_tech_chengdu_plain_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "global_clergy_max_literacy_advance",
+        "logical_predecessor": "hbe_tech_chengdu_plain_2"
+      },
+      "hbe_tech_chengdu_plain_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_chengdu_plain_6",
+        "logical_predecessor": "hbe_tech_chengdu_plain_6"
+      },
+      "hbe_tech_chengdu_plain_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_chengdu_plain_7",
+        "logical_predecessor": "hbe_tech_chengdu_plain_7"
+      },
+      "hbe_tech_southern_salt_wine_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_southern_salt_wine_2"
+      },
+      "hbe_tech_southern_salt_wine_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southern_salt_wine_3",
+        "logical_predecessor": "hbe_tech_southern_salt_wine_3"
+      },
+      "hbe_tech_southern_salt_wine_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southern_salt_wine_4",
+        "logical_predecessor": "hbe_tech_southern_salt_wine_4"
+      },
+      "hbe_tech_southern_salt_wine_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_urbanisation",
+        "logical_predecessor": "hbe_tech_southern_salt_wine_2"
+      },
+      "hbe_tech_southern_salt_wine_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southern_salt_wine_6",
+        "logical_predecessor": "hbe_tech_southern_salt_wine_6"
+      },
+      "hbe_tech_southern_salt_wine_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southern_salt_wine_7",
+        "logical_predecessor": "hbe_tech_southern_salt_wine_7"
+      },
+      "hbe_tech_eastern_river_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "merchants_and_trade",
+        "logical_predecessor": "hbe_tech_eastern_river_2"
+      },
+      "hbe_tech_eastern_river_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_eastern_river_3",
+        "logical_predecessor": "hbe_tech_eastern_river_3"
+      },
+      "hbe_tech_eastern_river_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_eastern_river_4",
+        "logical_predecessor": "hbe_tech_eastern_river_4"
+      },
+      "hbe_tech_eastern_river_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_eastern_river_2"
+      },
+      "hbe_tech_eastern_river_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_eastern_river_6",
+        "logical_predecessor": "hbe_tech_eastern_river_6"
+      },
+      "hbe_tech_eastern_river_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_eastern_river_7",
+        "logical_predecessor": "hbe_tech_eastern_river_7"
+      },
+      "hbe_tech_northern_shudao_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_northern_shudao_2"
+      },
+      "hbe_tech_northern_shudao_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_northern_shudao_3",
+        "logical_predecessor": "hbe_tech_northern_shudao_3"
+      },
+      "hbe_tech_northern_shudao_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_northern_shudao_4",
+        "logical_predecessor": "hbe_tech_northern_shudao_4"
+      },
+      "hbe_tech_northern_shudao_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "government_size_renaissance",
+        "logical_predecessor": "hbe_tech_northern_shudao_2"
+      },
+      "hbe_tech_northern_shudao_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_northern_shudao_6",
+        "logical_predecessor": "hbe_tech_northern_shudao_6"
+      },
+      "hbe_tech_northern_shudao_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_northern_shudao_7",
+        "logical_predecessor": "hbe_tech_northern_shudao_7"
+      },
+      "hbe_tech_central_hills_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_central_hills_2"
+      },
+      "hbe_tech_central_hills_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_central_hills_3",
+        "logical_predecessor": "hbe_tech_central_hills_3"
+      },
+      "hbe_tech_central_hills_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_central_hills_4",
+        "logical_predecessor": "hbe_tech_central_hills_4"
+      },
+      "hbe_tech_central_hills_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "law_making_renaissance",
+        "logical_predecessor": "hbe_tech_central_hills_2"
+      },
+      "hbe_tech_central_hills_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_central_hills_6",
+        "logical_predecessor": "hbe_tech_central_hills_6"
+      },
+      "hbe_tech_central_hills_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_central_hills_7",
+        "logical_predecessor": "hbe_tech_central_hills_7"
+      },
+      "hbe_tech_western_tea_horse_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "trade_range_advance_age_2",
+        "logical_predecessor": "hbe_tech_western_tea_horse_2"
+      },
+      "hbe_tech_western_tea_horse_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_western_tea_horse_3",
+        "logical_predecessor": "hbe_tech_western_tea_horse_3"
+      },
+      "hbe_tech_western_tea_horse_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_western_tea_horse_4",
+        "logical_predecessor": "hbe_tech_western_tea_horse_4"
+      },
+      "hbe_tech_western_tea_horse_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_western_tea_horse_2"
+      },
+      "hbe_tech_western_tea_horse_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_western_tea_horse_6",
+        "logical_predecessor": "hbe_tech_western_tea_horse_6"
+      },
+      "hbe_tech_western_tea_horse_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_western_tea_horse_7",
+        "logical_predecessor": "hbe_tech_western_tea_horse_7"
+      },
+      "hbe_tech_southwestern_valleys_3": {
+        "age": "age_2_renaissance",
+        "predecessor": "renaissance_development",
+        "logical_predecessor": "hbe_tech_southwestern_valleys_2"
+      },
+      "hbe_tech_southwestern_valleys_4": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southwestern_valleys_3",
+        "logical_predecessor": "hbe_tech_southwestern_valleys_3"
+      },
+      "hbe_tech_southwestern_valleys_5": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southwestern_valleys_4",
+        "logical_predecessor": "hbe_tech_southwestern_valleys_4"
+      },
+      "hbe_tech_southwestern_valleys_6": {
+        "age": "age_2_renaissance",
+        "predecessor": "recruitment_improvements_renaissance",
+        "logical_predecessor": "hbe_tech_southwestern_valleys_2"
+      },
+      "hbe_tech_southwestern_valleys_7": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southwestern_valleys_6",
+        "logical_predecessor": "hbe_tech_southwestern_valleys_6"
+      },
+      "hbe_tech_southwestern_valleys_8": {
+        "age": "age_2_renaissance",
+        "predecessor": "hbe_tech_southwestern_valleys_7",
+        "logical_predecessor": "hbe_tech_southwestern_valleys_7"
+      }
+    },
+    "vanilla_anchors": {
+      "hbe_tech_chengdu_plain_6": "global_clergy_max_literacy_advance",
+      "hbe_tech_southern_salt_wine_6": "renaissance_urbanisation",
+      "hbe_tech_eastern_river_3": "merchants_and_trade",
+      "hbe_tech_northern_shudao_6": "government_size_renaissance",
+      "hbe_tech_central_hills_6": "law_making_renaissance",
+      "hbe_tech_western_tea_horse_3": "trade_range_advance_age_2",
+      "hbe_tech_southwestern_valleys_6": "recruitment_improvements_renaissance",
+      "hbe_civic_common_2": "government_size_renaissance",
+      "hbe_civic_eastern_river_2": "drill_army_advance",
+      "hbe_civic_northern_shudao_2": "supply_depot_advance_age_2_renaissance"
+    },
+    "improved_units": [
+      "hbe_trained_river",
+      "hbe_permanent_pass"
+    ],
+    "mechanic_guide_count": 50
+  },
+  "opening_pacts": {
+    "truce_pairs": 630,
+    "truce_years": 1,
+    "circle_defence": 7,
+    "spouses": 36,
+    "children_per_ruler": "0–3",
+    "child_age_ranges": [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        24
+      ]
+    ],
+    "minimum_parent_age_at_birth": 16,
+    "opening_only": true
   }
 }

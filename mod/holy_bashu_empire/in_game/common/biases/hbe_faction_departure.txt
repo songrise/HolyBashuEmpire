@@ -1,0 +1,1 @@
+﻿hbe_left_feast_party = { value = -5 yearly_decay = 1 }

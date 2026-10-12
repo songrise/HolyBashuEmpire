@@ -28,8 +28,15 @@ hbe_circle_chengdu_plain = {
     can_join_trigger = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }
 hbe_circle_southern_salt_wine = {
     unique = yes has_target = no has_leader_country = yes leader_type = country
@@ -40,8 +47,15 @@ hbe_circle_southern_salt_wine = {
     can_join_trigger = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }
 hbe_circle_eastern_river = {
     unique = yes has_target = no has_leader_country = yes leader_type = country
@@ -52,8 +66,15 @@ hbe_circle_eastern_river = {
     can_join_trigger = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }
 hbe_circle_northern_shudao = {
     unique = yes has_target = no has_leader_country = yes leader_type = country
@@ -64,8 +85,15 @@ hbe_circle_northern_shudao = {
     can_join_trigger = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }
 hbe_circle_central_hills = {
     unique = yes has_target = no has_leader_country = yes leader_type = country
@@ -76,8 +104,15 @@ hbe_circle_central_hills = {
     can_join_trigger = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }
 hbe_circle_western_tea_horse = {
     unique = yes has_target = no has_leader_country = yes leader_type = country
@@ -88,8 +123,15 @@ hbe_circle_western_tea_horse = {
     can_join_trigger = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }
 hbe_circle_southwestern_valleys = {
     unique = yes has_target = no has_leader_country = yes leader_type = country
@@ -100,6 +142,13 @@ hbe_circle_southwestern_valleys = {
     can_join_trigger = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-    join_defensive_wars = Never join_offensive_wars = Never
+
     can_declare_war = { hbe_war_is_internal = yes }
+
+ join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
+ join_defensive_wars_can_call = { always = yes }
+ join_offensive_wars_always = { always = no }
+ join_offensive_wars_auto_call = { always = no }
+ join_offensive_wars_can_call = { always = no }
+ joins_defensive_wars_as_co_belligerent = no
 }

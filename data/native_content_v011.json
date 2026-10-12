@@ -436,9 +436,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_chengdu_plain_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_chengdu_plain_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -456,7 +456,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_chengdu_plain_3",
       "logical_predecessor": "hbe_tech_chengdu_plain_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -472,7 +472,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_chengdu_plain_4",
       "logical_predecessor": "hbe_tech_chengdu_plain_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -490,9 +490,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_chengdu_plain_2",
+      "predecessor": "global_clergy_max_literacy_advance",
       "logical_predecessor": "hbe_tech_chengdu_plain_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -510,7 +510,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_chengdu_plain_6",
       "logical_predecessor": "hbe_tech_chengdu_plain_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAB",
         "BAE",
@@ -526,7 +526,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_chengdu_plain_7",
       "logical_predecessor": "hbe_tech_chengdu_plain_7",
       "age": "age_2_renaissance",
       "tags": [
@@ -578,9 +578,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_southern_salt_wine_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_southern_salt_wine_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAO",
         "BAP",
@@ -597,7 +597,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southern_salt_wine_3",
       "logical_predecessor": "hbe_tech_southern_salt_wine_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAO",
         "BAP",
@@ -612,7 +612,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_southern_salt_wine_4",
       "logical_predecessor": "hbe_tech_southern_salt_wine_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -629,9 +629,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_southern_salt_wine_2",
+      "predecessor": "renaissance_urbanisation",
       "logical_predecessor": "hbe_tech_southern_salt_wine_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAO",
         "BAP",
@@ -648,7 +648,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southern_salt_wine_6",
       "logical_predecessor": "hbe_tech_southern_salt_wine_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAO",
         "BAP",
@@ -663,7 +663,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_southern_salt_wine_7",
       "logical_predecessor": "hbe_tech_southern_salt_wine_7",
       "age": "age_2_renaissance",
       "tags": [
@@ -720,9 +720,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_eastern_river_2",
+      "predecessor": "merchants_and_trade",
       "logical_predecessor": "hbe_tech_eastern_river_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAX",
         "BAZ",
@@ -742,7 +742,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_eastern_river_3",
       "logical_predecessor": "hbe_tech_eastern_river_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAX",
         "BAZ",
@@ -760,7 +760,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_eastern_river_4",
       "logical_predecessor": "hbe_tech_eastern_river_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -780,9 +780,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_eastern_river_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_eastern_river_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAX",
         "BAZ",
@@ -802,7 +802,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_eastern_river_6",
       "logical_predecessor": "hbe_tech_eastern_river_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BAX",
         "BAZ",
@@ -820,7 +820,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_eastern_river_7",
       "logical_predecessor": "hbe_tech_eastern_river_7",
       "age": "age_2_renaissance",
       "tags": [
@@ -880,9 +880,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_northern_shudao_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_northern_shudao_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBI",
         "BBJ",
@@ -902,7 +902,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_northern_shudao_3",
       "logical_predecessor": "hbe_tech_northern_shudao_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBI",
         "BBJ",
@@ -920,7 +920,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_northern_shudao_4",
       "logical_predecessor": "hbe_tech_northern_shudao_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -940,9 +940,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_northern_shudao_2",
+      "predecessor": "government_size_renaissance",
       "logical_predecessor": "hbe_tech_northern_shudao_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBI",
         "BBJ",
@@ -962,7 +962,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_northern_shudao_6",
       "logical_predecessor": "hbe_tech_northern_shudao_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBI",
         "BBJ",
@@ -980,7 +980,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_northern_shudao_7",
       "logical_predecessor": "hbe_tech_northern_shudao_7",
       "age": "age_2_renaissance",
       "tags": [
@@ -1034,9 +1034,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_central_hills_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_central_hills_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBQ",
         "BBR",
@@ -1053,7 +1053,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_central_hills_3",
       "logical_predecessor": "hbe_tech_central_hills_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBQ",
         "BBR",
@@ -1068,7 +1068,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_central_hills_4",
       "logical_predecessor": "hbe_tech_central_hills_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -1085,9 +1085,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_central_hills_2",
+      "predecessor": "law_making_renaissance",
       "logical_predecessor": "hbe_tech_central_hills_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBQ",
         "BBR",
@@ -1104,7 +1104,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_central_hills_6",
       "logical_predecessor": "hbe_tech_central_hills_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBQ",
         "BBR",
@@ -1119,7 +1119,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_central_hills_7",
       "logical_predecessor": "hbe_tech_central_hills_7",
       "age": "age_2_renaissance",
       "tags": [
@@ -1168,9 +1168,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_western_tea_horse_2",
+      "predecessor": "trade_range_advance_age_2",
       "logical_predecessor": "hbe_tech_western_tea_horse_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBU",
         "BBV",
@@ -1186,7 +1186,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_western_tea_horse_3",
       "logical_predecessor": "hbe_tech_western_tea_horse_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBU",
         "BBV",
@@ -1200,7 +1200,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_western_tea_horse_4",
       "logical_predecessor": "hbe_tech_western_tea_horse_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -1216,9 +1216,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_western_tea_horse_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_western_tea_horse_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBU",
         "BBV",
@@ -1234,7 +1234,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_western_tea_horse_6",
       "logical_predecessor": "hbe_tech_western_tea_horse_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBU",
         "BBV",
@@ -1248,7 +1248,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_western_tea_horse_7",
       "logical_predecessor": "hbe_tech_western_tea_horse_7",
       "age": "age_2_renaissance",
       "tags": [
@@ -1302,9 +1302,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_southwestern_valleys_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_southwestern_valleys_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBX",
         "BBY",
@@ -1323,7 +1323,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southwestern_valleys_3",
       "logical_predecessor": "hbe_tech_southwestern_valleys_3",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBX",
         "BBY",
@@ -1340,7 +1340,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_southwestern_valleys_4",
       "logical_predecessor": "hbe_tech_southwestern_valleys_4",
       "age": "age_2_renaissance",
       "tags": [
@@ -1359,9 +1359,9 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "hbe_tech_southwestern_valleys_2",
+      "predecessor": "recruitment_improvements_renaissance",
       "logical_predecessor": "hbe_tech_southwestern_valleys_2",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBX",
         "BBY",
@@ -1380,7 +1380,7 @@
       "native_research_cost": 4.0,
       "predecessor": "hbe_tech_southwestern_valleys_6",
       "logical_predecessor": "hbe_tech_southwestern_valleys_6",
-      "age": "age_1_traditions",
+      "age": "age_2_renaissance",
       "tags": [
         "BBX",
         "BBY",
@@ -1397,7 +1397,7 @@
       "unlock": "取得本圈地区重组及百年章程验收的课题资格；首次结算时义气增加3、帝国锅气增加1。",
       "year": 1397,
       "native_research_cost": 4.0,
-      "predecessor": "renaissance_development",
+      "predecessor": "hbe_tech_southwestern_valleys_7",
       "logical_predecessor": "hbe_tech_southwestern_valleys_7",
       "age": "age_2_renaissance",
       "tags": [

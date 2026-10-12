@@ -34,8 +34,8 @@ UNITS = [
  ('hbe_granary_militia','义仓团练','central_hills','light_infantry','hbe_witness_house','strength_damage_done = -0.08 supply_weight = -0.10','light_tag pike_tag',False),
  ('hbe_tea_riders','茶路护骑','western_tea_horse','light_cavalry','hbe_guide_station','flanking_ability = 0.10 strength_damage_done = -0.05','light_tag cavalry_tag',False),
  ('hbe_valley_soldiers','联寨山卒','southwestern_valleys','light_infantry','hbe_covenant_stockade','initiative = 0.10 strength_damage_taken = 0.05','light_tag sword_tag',False),
- ('hbe_trained_river','江防精练寨兵','eastern_river','heavy_infantry','hbe_river_warehouse','morale_damage_taken = -0.10 strength_damage_done = 0.05 supply_weight = 0.15','heavy_tag sword_tag',True),
- ('hbe_permanent_pass','关镇长值兵','northern_shudao','heavy_infantry','hbe_plank_fort','strength_damage_taken = -0.10 morale_damage_taken = -0.05 supply_weight = 0.15','heavy_tag pike_tag',True),
+ ('hbe_trained_river','江防精练寨兵','eastern_river','heavy_infantry','hbe_river_warehouse','combat_power = 1.20 morale_damage_taken = -0.12 strength_damage_done = 0.08 supply_weight = 0.20','heavy_tag sword_tag',True),
+ ('hbe_permanent_pass','关镇长值兵','northern_shudao','heavy_infantry','hbe_plank_fort','combat_power = 1.15 strength_damage_taken = -0.15 morale_damage_taken = -0.08 supply_weight = 0.20','heavy_tag pike_tag',True),
 ]
 INCIDENTS = [
  ('下游未开渠','渠务簿上的上游已经放水，下游的使者却仍在堂外等候。岁修拖延，使一段旧渠无法承受约定的水次；若只顾本府田亩，秋后再谈共同信用，邻乡恐怕不会再认这本账。','按照共同水次出资修渠。','请受水各乡出储备合办。','先保本府，余事来岁再议。'),
