@@ -1,0 +1,7 @@
+{
+  "version": "0.3.1",
+  "status": "passed",
+  "current_checks": 1143,
+  "fresh_build_checks": 1141,
+  "limits": "Independent fresh build validated; not asserted byte-identical to the maintained release. Raw successful check rows remain local."
+}

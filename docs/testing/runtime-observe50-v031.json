@@ -1,0 +1,802 @@
+{
+  "version": "0.3.1",
+  "status": "completed",
+  "checks": {
+    "eleven_checkpoint_saves": true,
+    "single_playthrough": true,
+    "fifty_year_end": true,
+    "source_files_unchanged": true,
+    "no_hbe_noncompatibility_diagnostics": true,
+    "all_active_governments_have_head": true,
+    "burden_yiqi_within_bounds": true
+  },
+  "snapshots": [
+    {
+      "date": "1337.4.2",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_02.eu5",
+      "summary": {
+        "active_princes": 36,
+        "domain_locations": 164,
+        "treasury_total": 1575.41,
+        "treasury_median": 36.33,
+        "population_total": 1864.48,
+        "negative_treasuries": [],
+        "specialty_tech_total": 0,
+        "specialty_tech_median": 0.0,
+        "ruler_changes": 36,
+        "missing_rulers": [],
+        "regencies": {},
+        "governments_without_head": [],
+        "buildings": 0,
+        "building_levels": 0,
+        "operating_buildings": 0,
+        "units": 0,
+        "active_bashu_wars": 0,
+        "contribution_total": 0,
+        "burden_mean": 20.0,
+        "yiqi_mean": 40.0,
+        "last_dividend_total": 0,
+        "last_prestige_total": 0
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_well_salt": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        }
+      },
+      "story_summary": {
+        "regional_started": 0,
+        "regional_phase_max": 0,
+        "regional_ending_flags": 0,
+        "regional_closed": 0,
+        "migration_started": 0,
+        "migration_phase_max": 0,
+        "short_chains_seen": 0,
+        "independent_fired": 0
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1342.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1342_04_01.eu5",
+      "summary": {
+        "active_princes": 34,
+        "domain_locations": 149,
+        "treasury_total": 1422.84,
+        "treasury_median": 26.75,
+        "population_total": 1894.75,
+        "negative_treasuries": [],
+        "specialty_tech_total": 84,
+        "specialty_tech_median": 2.0,
+        "ruler_changes": 35,
+        "missing_rulers": [],
+        "regencies": {},
+        "governments_without_head": [],
+        "buildings": 6,
+        "building_levels": 4.0,
+        "operating_buildings": 4,
+        "units": 0,
+        "active_bashu_wars": 4,
+        "contribution_total": 122.0,
+        "burden_mean": 6.71,
+        "yiqi_mean": 58.53,
+        "last_dividend_total": 302.56,
+        "last_prestige_total": 5.67
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_well_salt": {
+          "production": 0.95104,
+          "max_pop_demand": 5.40019,
+          "max_industrial_demand": 0,
+          "max_price": 6.49583
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        }
+      },
+      "story_summary": {
+        "regional_started": 15,
+        "regional_phase_max": 1.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 0,
+        "migration_started": 0,
+        "migration_phase_max": 0.0,
+        "short_chains_seen": 22,
+        "independent_fired": 25
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1347.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1347_04_01.eu5",
+      "summary": {
+        "active_princes": 30,
+        "domain_locations": 156,
+        "treasury_total": 1022.18,
+        "treasury_median": 3.57,
+        "population_total": 2045.81,
+        "negative_treasuries": [
+          "BBB"
+        ],
+        "specialty_tech_total": 85,
+        "specialty_tech_median": 3.0,
+        "ruler_changes": 36,
+        "missing_rulers": [
+          "BAF"
+        ],
+        "regencies": {
+          "nobles_estate_regency": 1
+        },
+        "governments_without_head": [],
+        "buildings": 11,
+        "building_levels": 9.0,
+        "operating_buildings": 9,
+        "units": 0,
+        "active_bashu_wars": 1,
+        "contribution_total": 210.0,
+        "burden_mean": 4.6,
+        "yiqi_mean": 77.57,
+        "last_dividend_total": 288.5,
+        "last_prestige_total": 5.69
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_well_salt": {
+          "production": 4.69301,
+          "max_pop_demand": 15.86543,
+          "max_industrial_demand": 0,
+          "max_price": 12.24039
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.08505,
+          "max_pop_demand": 12.22393,
+          "max_industrial_demand": 0,
+          "max_price": 7.26149
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 2.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 3,
+        "migration_started": 32,
+        "migration_phase_max": 1.0,
+        "short_chains_seen": 41,
+        "independent_fired": 60
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1352.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1352_04_01.eu5",
+      "summary": {
+        "active_princes": 27,
+        "domain_locations": 152,
+        "treasury_total": 2263.35,
+        "treasury_median": 56.43,
+        "population_total": 1674.66,
+        "negative_treasuries": [],
+        "specialty_tech_total": 80,
+        "specialty_tech_median": 3,
+        "ruler_changes": 38,
+        "missing_rulers": [
+          "BBZ"
+        ],
+        "regencies": {
+          "interregnum": 1
+        },
+        "governments_without_head": [],
+        "buildings": 15,
+        "building_levels": 14.0,
+        "operating_buildings": 14,
+        "units": 0,
+        "active_bashu_wars": 2,
+        "contribution_total": 314.0,
+        "burden_mean": 5.07,
+        "yiqi_mean": 97.3,
+        "last_dividend_total": 252.05,
+        "last_prestige_total": 5.86
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_well_salt": {
+          "production": 5.33531,
+          "max_pop_demand": 15.3618,
+          "max_industrial_demand": 0,
+          "max_price": 10.61519
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.74156,
+          "max_pop_demand": 40.76993,
+          "max_industrial_demand": 0,
+          "max_price": 14.6434
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 3.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 3,
+        "migration_started": 32,
+        "migration_phase_max": 2.0,
+        "short_chains_seen": 63,
+        "independent_fired": 88
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1357.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1357_04_01.eu5",
+      "summary": {
+        "active_princes": 21,
+        "domain_locations": 130,
+        "treasury_total": 3401.91,
+        "treasury_median": 77.48,
+        "population_total": 1713.53,
+        "negative_treasuries": [],
+        "specialty_tech_total": 70,
+        "specialty_tech_median": 4,
+        "ruler_changes": 48,
+        "missing_rulers": [
+          "BAB",
+          "BBP"
+        ],
+        "regencies": {
+          "interregnum": 1,
+          "consort_regency": 1
+        },
+        "governments_without_head": [],
+        "buildings": 23,
+        "building_levels": 21.0,
+        "operating_buildings": 21,
+        "units": 0,
+        "active_bashu_wars": 15,
+        "contribution_total": 303.0,
+        "burden_mean": 5.05,
+        "yiqi_mean": 94.76,
+        "last_dividend_total": 204.85,
+        "last_prestige_total": 5.2
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 0.47844,
+          "max_pop_demand": 4.77182,
+          "max_industrial_demand": 0,
+          "max_price": 23.5943
+        },
+        "hbe_well_salt": {
+          "production": 5.35884,
+          "max_pop_demand": 17.66462,
+          "max_industrial_demand": 0,
+          "max_price": 11.27342
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.7742,
+          "max_pop_demand": 51.31839,
+          "max_industrial_demand": 0,
+          "max_price": 14.98347
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 4.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 3,
+        "migration_started": 32,
+        "migration_phase_max": 3.0,
+        "short_chains_seen": 77,
+        "independent_fired": 114
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1362.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1362_04_01.eu5",
+      "summary": {
+        "active_princes": 15,
+        "domain_locations": 119,
+        "treasury_total": 2181.96,
+        "treasury_median": 68.19,
+        "population_total": 1596.23,
+        "negative_treasuries": [],
+        "specialty_tech_total": 68,
+        "specialty_tech_median": 4,
+        "ruler_changes": 51,
+        "missing_rulers": [
+          "BAB",
+          "BAP"
+        ],
+        "regencies": {
+          "interregnum": 1,
+          "consort_regency": 1
+        },
+        "governments_without_head": [],
+        "buildings": 32,
+        "building_levels": 31.0,
+        "operating_buildings": 31,
+        "units": 0,
+        "active_bashu_wars": 8,
+        "contribution_total": 298.0,
+        "burden_mean": 5.2,
+        "yiqi_mean": 99.93,
+        "last_dividend_total": 173.89,
+        "last_prestige_total": 6.0
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 1.53018,
+          "max_pop_demand": 7.81902,
+          "max_industrial_demand": 0,
+          "max_price": 20.88861
+        },
+        "hbe_well_salt": {
+          "production": 5.98008,
+          "max_pop_demand": 16.6108,
+          "max_industrial_demand": 0,
+          "max_price": 10.95585
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.80723,
+          "max_pop_demand": 51.55263,
+          "max_industrial_demand": 0,
+          "max_price": 14.99915
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 5.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 3,
+        "migration_started": 32,
+        "migration_phase_max": 4.0,
+        "short_chains_seen": 89,
+        "independent_fired": 142
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1367.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1367_04_01.eu5",
+      "summary": {
+        "active_princes": 13,
+        "domain_locations": 127,
+        "treasury_total": 3441.87,
+        "treasury_median": 114.3,
+        "population_total": 1763.49,
+        "negative_treasuries": [],
+        "specialty_tech_total": 65,
+        "specialty_tech_median": 5,
+        "ruler_changes": 52,
+        "missing_rulers": [
+          "BAB",
+          "BAP"
+        ],
+        "regencies": {
+          "interregnum": 1,
+          "consort_regency": 1
+        },
+        "governments_without_head": [],
+        "buildings": 35,
+        "building_levels": 35.0,
+        "operating_buildings": 31,
+        "units": 0,
+        "active_bashu_wars": 0,
+        "contribution_total": 305.0,
+        "burden_mean": 6.08,
+        "yiqi_mean": 99.85,
+        "last_dividend_total": 167.27,
+        "last_prestige_total": 5.67
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 1.62922,
+          "max_pop_demand": 6.37548,
+          "max_industrial_demand": 0,
+          "max_price": 22.02073
+        },
+        "hbe_well_salt": {
+          "production": 6.9491,
+          "max_pop_demand": 17.25504,
+          "max_industrial_demand": 0,
+          "max_price": 12.12045
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.81141,
+          "max_pop_demand": 56.56601,
+          "max_industrial_demand": 0,
+          "max_price": 14.99981
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 5.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 3,
+        "migration_started": 32,
+        "migration_phase_max": 5.0,
+        "short_chains_seen": 99,
+        "independent_fired": 153
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1372.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1372_04_01.eu5",
+      "summary": {
+        "active_princes": 12,
+        "domain_locations": 127,
+        "treasury_total": 4235.45,
+        "treasury_median": 96.93,
+        "population_total": 1767.57,
+        "negative_treasuries": [],
+        "specialty_tech_total": 62,
+        "specialty_tech_median": 5.0,
+        "ruler_changes": 55,
+        "missing_rulers": [
+          "BAB",
+          "BAQ"
+        ],
+        "regencies": {
+          "interregnum": 1,
+          "consort_regency": 1
+        },
+        "governments_without_head": [],
+        "buildings": 38,
+        "building_levels": 38.0,
+        "operating_buildings": 38,
+        "units": 0,
+        "active_bashu_wars": 0,
+        "contribution_total": 312.0,
+        "burden_mean": 4.42,
+        "yiqi_mean": 95.75,
+        "last_dividend_total": 172.99,
+        "last_prestige_total": 6.0
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 2.55163,
+          "max_pop_demand": 10.2957,
+          "max_industrial_demand": 0,
+          "max_price": 20.03284
+        },
+        "hbe_well_salt": {
+          "production": 9.75488,
+          "max_pop_demand": 30.09194,
+          "max_industrial_demand": 0,
+          "max_price": 10.69252
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.81623,
+          "max_pop_demand": 64.81397,
+          "max_industrial_demand": 0,
+          "max_price": 14.99981
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 6.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 5,
+        "migration_started": 32,
+        "migration_phase_max": 5.0,
+        "short_chains_seen": 107,
+        "independent_fired": 165
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1377.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1377_04_01.eu5",
+      "summary": {
+        "active_princes": 11,
+        "domain_locations": 127,
+        "treasury_total": 8912.09,
+        "treasury_median": 143.66,
+        "population_total": 1795.84,
+        "negative_treasuries": [],
+        "specialty_tech_total": 61,
+        "specialty_tech_median": 5,
+        "ruler_changes": 56,
+        "missing_rulers": [
+          "BAQ"
+        ],
+        "regencies": {
+          "consort_regency": 1
+        },
+        "governments_without_head": [],
+        "buildings": 47,
+        "building_levels": 43.0,
+        "operating_buildings": 40,
+        "units": 0,
+        "active_bashu_wars": 0,
+        "contribution_total": 338.0,
+        "burden_mean": 3.82,
+        "yiqi_mean": 92.0,
+        "last_dividend_total": 181.22,
+        "last_prestige_total": 6.0
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 2.44965,
+          "max_pop_demand": 8.12472,
+          "max_industrial_demand": 0,
+          "max_price": 19.80576
+        },
+        "hbe_well_salt": {
+          "production": 10.54897,
+          "max_pop_demand": 21.92225,
+          "max_industrial_demand": 0,
+          "max_price": 9.93321
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.8166,
+          "max_pop_demand": 61.66764,
+          "max_industrial_demand": 0,
+          "max_price": 14.99981
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 7.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 5,
+        "migration_started": 32,
+        "migration_phase_max": 6.0,
+        "short_chains_seen": 116,
+        "independent_fired": 174
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1382.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1382_04_01.eu5",
+      "summary": {
+        "active_princes": 11,
+        "domain_locations": 127,
+        "treasury_total": 10125.03,
+        "treasury_median": 249.08,
+        "population_total": 1863.53,
+        "negative_treasuries": [],
+        "specialty_tech_total": 70,
+        "specialty_tech_median": 7,
+        "ruler_changes": 59,
+        "missing_rulers": [],
+        "regencies": {},
+        "governments_without_head": [],
+        "buildings": 48,
+        "building_levels": 48.0,
+        "operating_buildings": 45,
+        "units": 1,
+        "active_bashu_wars": 0,
+        "contribution_total": 393.0,
+        "burden_mean": 4.45,
+        "yiqi_mean": 99.27,
+        "last_dividend_total": 199.14,
+        "last_prestige_total": 6.0
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 2.70635,
+          "max_pop_demand": 12.32521,
+          "max_industrial_demand": 0,
+          "max_price": 21.47177
+        },
+        "hbe_well_salt": {
+          "production": 10.52438,
+          "max_pop_demand": 29.93707,
+          "max_industrial_demand": 0,
+          "max_price": 10.31074
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.83831,
+          "max_pop_demand": 64.32447,
+          "max_industrial_demand": 0,
+          "max_price": 14.99981
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 7.0,
+        "regional_ending_flags": 0,
+        "regional_closed": 5,
+        "migration_started": 32,
+        "migration_phase_max": 7.0,
+        "short_chains_seen": 125,
+        "independent_fired": 187
+      },
+      "guests": [],
+      "reforms": []
+    },
+    {
+      "date": "1387.4.1",
+      "playthrough_id": "0d2c5e6e-27b9-4895-8c7a-ba994da153a4",
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1387_04_01.eu5",
+      "summary": {
+        "active_princes": 11,
+        "domain_locations": 127,
+        "treasury_total": 11970.42,
+        "treasury_median": 509.84,
+        "population_total": 1908.8,
+        "negative_treasuries": [],
+        "specialty_tech_total": 73,
+        "specialty_tech_median": 7,
+        "ruler_changes": 60,
+        "missing_rulers": [],
+        "regencies": {},
+        "governments_without_head": [],
+        "buildings": 52,
+        "building_levels": 51.0,
+        "operating_buildings": 49,
+        "units": 1,
+        "active_bashu_wars": 0,
+        "contribution_total": 418.0,
+        "burden_mean": 3.45,
+        "yiqi_mean": 99.91,
+        "last_dividend_total": 196.3,
+        "last_prestige_total": 5.57
+      },
+      "goods": {
+        "hbe_shu_embroidery": {
+          "production": 2.71081,
+          "max_pop_demand": 10.41382,
+          "max_industrial_demand": 0,
+          "max_price": 22.25511
+        },
+        "hbe_well_salt": {
+          "production": 10.60648,
+          "max_pop_demand": 23.36968,
+          "max_industrial_demand": 0,
+          "max_price": 10.78398
+        },
+        "hbe_shu_paper": {
+          "production": 0,
+          "max_pop_demand": 0,
+          "max_industrial_demand": 0,
+          "max_price": 0
+        },
+        "hbe_border_tea": {
+          "production": 0.86391,
+          "max_pop_demand": 63.30312,
+          "max_industrial_demand": 0,
+          "max_price": 14.99981
+        }
+      },
+      "story_summary": {
+        "regional_started": 23,
+        "regional_phase_max": 8.0,
+        "regional_ending_flags": 2,
+        "regional_closed": 7,
+        "migration_started": 32,
+        "migration_phase_max": 8.0,
+        "short_chains_seen": 134,
+        "independent_fired": 201
+      },
+      "guests": [],
+      "reforms": []
+    }
+  ],
+  "engine_diagnostics": [],
+  "compatibility_warning_count": 188,
+  "source_manifest_sha256": "8d9dd4d3bd2acb57bcacc992f7924fdc69c0c6ef583e8a7b53e4bb679d26e63d",
+  "source_files_changed": [],
+  "natural_ai": true,
+  "grants": false,
+  "limits": [
+    "One natural campaign, not a statistical comparison of war probabilities.",
+    "Migration begins in 1345 with nominal final chapter near 1394, beyond this campaign’s 1387 endpoint.",
+    "AI recipe choice and hiring may prefer ordinary goods even when specialty recipes are unlocked.",
+    "Detailed country snapshots and raw saves remain in ignored local work/outputs; not included in the release or commit."
+  ]
+}

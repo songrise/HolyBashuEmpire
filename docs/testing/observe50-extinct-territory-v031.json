@@ -1,0 +1,285 @@
+{
+  "extinct": 25,
+  "rows": [
+    {
+      "tag": "BAE",
+      "name": "汉州",
+      "initial_id": 1210,
+      "opening_lands": 4,
+      "final_owners": {
+        "BBQ": 4
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BAF",
+      "name": "彭州",
+      "initial_id": 1211,
+      "opening_lands": 3,
+      "final_owners": {
+        "BAL": 3
+      },
+      "inside": 3,
+      "outside": 0
+    },
+    {
+      "tag": "BAJ",
+      "name": "邛州",
+      "initial_id": 1212,
+      "opening_lands": 3,
+      "final_owners": {
+        "BAL": 3
+      },
+      "inside": 3,
+      "outside": 0
+    },
+    {
+      "tag": "BAO",
+      "name": "嘉定山门",
+      "initial_id": 1214,
+      "opening_lands": 6,
+      "final_owners": {
+        "BBZ": 3,
+        "BAP": 3
+      },
+      "inside": 6,
+      "outside": 0
+    },
+    {
+      "tag": "BAW",
+      "name": "长宁",
+      "initial_id": 1217,
+      "opening_lands": 4,
+      "final_owners": {
+        "BAQ": 4
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BAX",
+      "name": "昌州",
+      "initial_id": 1218,
+      "opening_lands": 3,
+      "final_owners": {
+        "BBQ": 3
+      },
+      "inside": 3,
+      "outside": 0
+    },
+    {
+      "tag": "BBB",
+      "name": "涪州",
+      "initial_id": 1220,
+      "opening_lands": 3,
+      "final_owners": {
+        "CHI": 3
+      },
+      "inside": 0,
+      "outside": 3
+    },
+    {
+      "tag": "BBC",
+      "name": "合州",
+      "initial_id": 1221,
+      "opening_lands": 3,
+      "final_owners": {
+        "BBQ": 3
+      },
+      "inside": 3,
+      "outside": 0
+    },
+    {
+      "tag": "BBE",
+      "name": "夔州",
+      "initial_id": 1222,
+      "opening_lands": 8,
+      "final_owners": {
+        "CHI": 8
+      },
+      "inside": 0,
+      "outside": 8
+    },
+    {
+      "tag": "BBH",
+      "name": "忠州",
+      "initial_id": 1224,
+      "opening_lands": 4,
+      "final_owners": {
+        "CHI": 4
+      },
+      "inside": 0,
+      "outside": 4
+    },
+    {
+      "tag": "BBI",
+      "name": "保宁蜀道",
+      "initial_id": 1225,
+      "opening_lands": 3,
+      "final_owners": {
+        "BBJ": 3
+      },
+      "inside": 3,
+      "outside": 0
+    },
+    {
+      "tag": "BBL",
+      "name": "广元",
+      "initial_id": 1227,
+      "opening_lands": 3,
+      "final_owners": {
+        "BBJ": 3
+      },
+      "inside": 3,
+      "outside": 0
+    },
+    {
+      "tag": "BBM",
+      "name": "剑州",
+      "initial_id": 1228,
+      "opening_lands": 4,
+      "final_owners": {
+        "BBQ": 4
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BBO",
+      "name": "达州",
+      "initial_id": 1230,
+      "opening_lands": 5,
+      "final_owners": {
+        "CHI": 5
+      },
+      "inside": 0,
+      "outside": 5
+    },
+    {
+      "tag": "BBP",
+      "name": "顺庆",
+      "initial_id": 1231,
+      "opening_lands": 5,
+      "final_owners": {
+        "BBQ": 2,
+        "CHI": 3
+      },
+      "inside": 2,
+      "outside": 3
+    },
+    {
+      "tag": "BBR",
+      "name": "遂宁义仓",
+      "initial_id": 1233,
+      "opening_lands": 5,
+      "final_owners": {
+        "BBQ": 5
+      },
+      "inside": 5,
+      "outside": 0
+    },
+    {
+      "tag": "BBS",
+      "name": "潼川",
+      "initial_id": 1234,
+      "opening_lands": 4,
+      "final_owners": {
+        "BBQ": 4
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BBT",
+      "name": "广安",
+      "initial_id": 1235,
+      "opening_lands": 6,
+      "final_owners": {
+        "CHI": 6
+      },
+      "inside": 0,
+      "outside": 6
+    },
+    {
+      "tag": "BBV",
+      "name": "茂州",
+      "initial_id": 1237,
+      "opening_lands": 4,
+      "final_owners": {
+        "BBQ": 4
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BBW",
+      "name": "松潘",
+      "initial_id": 1238,
+      "opening_lands": 10,
+      "final_owners": {
+        "BBQ": 10
+      },
+      "inside": 10,
+      "outside": 0
+    },
+    {
+      "tag": "BBX",
+      "name": "盐源",
+      "initial_id": 1239,
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BBY",
+      "name": "德昌",
+      "initial_id": 1240,
+      "opening_lands": 4,
+      "final_owners": {
+        "": 4
+      },
+      "inside": 0,
+      "outside": 4
+    },
+    {
+      "tag": "BCA",
+      "name": "马湖",
+      "initial_id": 1242,
+      "opening_lands": 5,
+      "final_owners": {
+        "BAP": 4,
+        "BBZ": 1
+      },
+      "inside": 5,
+      "outside": 0
+    },
+    {
+      "tag": "BCB",
+      "name": "建昌共治",
+      "initial_id": 1243,
+      "opening_lands": 4,
+      "final_owners": {
+        "BBZ": 1,
+        "BAP": 3
+      },
+      "inside": 4,
+      "outside": 0
+    },
+    {
+      "tag": "BCC",
+      "name": "永宁",
+      "initial_id": 1244,
+      "opening_lands": 5,
+      "final_owners": {
+        "BAQ": 5
+      },
+      "inside": 5,
+      "outside": 0
+    }
+  ],
+  "limits": "Final land ownership does not establish the exact annexation cause or date."
+}

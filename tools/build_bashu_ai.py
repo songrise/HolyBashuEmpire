@@ -12,10 +12,10 @@ def build_bashu_ai(out,root,loc,put,game):
  put('in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt','''hbe_internal_rivalry = {
  attacker_potential = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 }
  target_trigger = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire is_neighbor_of = scope:attacker }
- score = { add = 3 }
+ score = { add = 2 }
  multiplier = {
-  add = 0.05
-  if = { limit = { OR = { AND = { scope:attacker = { var:hbe_stance = 1 } scope:target = { var:hbe_stance = 2 } } AND = { scope:attacker = { var:hbe_stance = 2 } scope:target = { var:hbe_stance = 1 } } } } add = 0.03 }
+  value = 0.95
+  if = { limit = { OR = { AND = { scope:attacker = { var:hbe_stance = 1 } scope:target = { var:hbe_stance = 2 } } AND = { scope:attacker = { var:hbe_stance = 2 } scope:target = { var:hbe_stance = 1 } } } } add = 0.02 }
  }
  never_attack = { OR = { scope:attacker = { var:hbe_burden >= 70 } scope:target = { is_allied_with = { target = scope:attacker } } } }
 }''')
@@ -37,10 +37,10 @@ hbe_ai_pulse = { trigger = { OR = { hbe_is_prince = yes has_country_modifier = h
 
 1342年起，已休养的AI更容易选择邻府为扩张目标。一般国家须和平十二年，扩张/好战性格须八年；正常宣战理由、实力评估、停战与盟友关系继续由原版处理。
 
-内部目标评估加3分、总分加权+5%；异派相邻国家额外+3%。和平八年以上、役负低于70的AI获得5%进取倾向，原版战争间隔缩短3个月。处于战争、役负过高、退盟或玩家控制时撤销。邻府候选评分系数也从8降为4。
+内部目标评估加2分、总分权重0.95；异派相邻国家权重0.97。和平八年以上、役负低于70的AI获得5%进取倾向，原版战争间隔缩短3个月。处于战争、役负过高、退盟或玩家控制时撤销。邻府候选评分系数也从8降为4。
 
 没有自动宣战事件，没有移除停战、盟约或外围军事隔离，也没有全局改动原版AI性格。两派不组成自动参战的军事集团。
 
 依据原版ai_scripted_expansion_target/attack_neighbors.txt及ai_scripted_expansion_score/readme.txt。
 ''',encoding='utf-8')
- return dict(start_year=1342,score_bonus=3,base_multiplier=.05,opposed_faction_extra=.03,aggressiveness=.05,war_interval_months=-3,peace_months_normal=144,peace_months_aggressive=96)
+ return dict(start_year=1342,score_bonus=2,base_multiplier=.95,opposed_faction_extra=.02,aggressiveness=.05,war_interval_months=-3,peace_months_normal=144,peace_months_aggressive=96)

@@ -82,7 +82,7 @@ def apply(out,root):
       body=re.sub(r'\b'+typ+r'\s*=\s*'+re.escape(d[typ])+r'\b',typ+' = '+fmt(new),body,count=1)
       change.append(dict(type=typ,before=fmt(old),after=fmt(new),vanilla_reference='.025' if typ=='global_production_efficiency' else '.05'))
     # Previously unscaled feast leadership rewards are also brought to the 0.7 pass.
-    extras={'hbe_feast_common_reward':{'global_construction_speed':'.14'},'hbe_feast_local_reward':{'global_merchant_capacity_modifier':'.18','cultural_influence_modifier':'.14'}}.get(key,{})
+    extras={'hbe_feast_common_reward':{'global_construction_speed':'0.14'},'hbe_feast_local_reward':{'global_merchant_capacity_modifier':'0.18','cultural_influence_modifier':'0.14'}}.get(key,{})
     for typ,new in extras.items():
      if typ in d and D(d[typ])>D(new):
       body=re.sub(r'\b'+typ+r'\s*=\s*'+re.escape(d[typ])+r'\b',typ+' = '+new,body,count=1);change.append(dict(type=typ,before=d[typ],after=new))
@@ -137,7 +137,7 @@ def apply(out,root):
  p=out/'in_game/common/unit_types/hbe_civic_units.txt';t=p.read_text(encoding='utf-8-sig');edits=[]
  for key,_,s,e,_ in blocks(t,0):
   if key not in ('hbe_trained_river','hbe_permanent_pass'):continue
-  body=t[s:e];old=flats(body)['combat_power'];new='.20' if key=='hbe_trained_river' else '.15';body=re.sub(r'\bcombat_power\s*=\s*\S+','combat_power = '+new,body);edits.append((s,e,body))
+  body=t[s:e];old=flats(body)['combat_power'];new='0.20' if key=='hbe_trained_river' else '0.15';body=re.sub(r'\bcombat_power\s*=\s*\S+','combat_power = '+new,body);edits.append((s,e,body))
   report.setdefault('units',[]).append(dict(unit=key,old_added_power=old,new_added_power=new,inherited_power=1,effective_power=1+float(new)))
  if edits:p.write_text(apply_edits(t,edits),encoding='utf-8-sig')
  # Two complementary minor reforms, offered through the native reform UI.

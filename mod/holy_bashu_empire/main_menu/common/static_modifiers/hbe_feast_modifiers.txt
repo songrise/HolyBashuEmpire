@@ -1,4 +1,4 @@
 ﻿hbe_feast_cooperation = { global_construction_speed = 0.11 global_merchant_capacity_modifier = 0.11 }
 
-hbe_feast_common_reward = { global_construction_speed = .14  }
-hbe_feast_local_reward = { global_merchant_capacity_modifier = .18 cultural_influence_modifier = .14 }
+hbe_feast_common_reward = { global_construction_speed = 0.14  }
+hbe_feast_local_reward = { global_merchant_capacity_modifier = 0.18 cultural_influence_modifier = 0.14 }

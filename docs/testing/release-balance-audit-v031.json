@@ -1,0 +1,158 @@
+{
+  "version": "0.3.1",
+  "status": "passed",
+  "checks": {
+    "global_production_efficiency single technology at most twice common native scale": true,
+    "global_monthly_food_modifier single technology at most twice common native scale": true,
+    "hbe_canal_crossbow actual 500 men": true,
+    "hbe_salt_guard actual 500 men": true,
+    "hbe_river_garrison actual 500 men": true,
+    "hbe_pass_rotation actual 500 men": true,
+    "hbe_granary_militia actual 500 men": true,
+    "hbe_tea_riders actual 500 men": true,
+    "hbe_valley_soldiers actual 500 men": true,
+    "hbe_trained_river actual 500 men": true,
+    "hbe_trained_river upgraded power <= 1.2": true,
+    "hbe_permanent_pass actual 500 men": true,
+    "hbe_permanent_pass upgraded power <= 1.2": true,
+    "hbe_discount_early_infantry_maintenance goods unchanged and 90 percent quantities": true,
+    "hbe_discount_cavalry_maintenance goods unchanged and 90 percent quantities": true,
+    "13 civilian buildings national cap 3": true,
+    "civilian buildings do not grant recruitment": true,
+    "temporary output uses one stronger shared modifier": true,
+    "hbe_shu_embroidery premium reference at most 2x ordinary": true,
+    "hbe_well_salt premium reference at most 2x ordinary": true,
+    "hbe_shu_paper premium reference at most 2x ordinary": true,
+    "hbe_border_tea premium reference at most 2x ordinary": true,
+    "costs and receipts use shared native economic base": true
+  },
+  "technology_comparison": {
+    "global_production_efficiency": {
+      "hbe_values": [
+        0.04,
+        0.04,
+        0.05,
+        0.04,
+        0.05
+      ],
+      "cap": 0.05,
+      "common_native_reference": 0.025,
+      "native_count": 34,
+      "native_median": 0.025,
+      "native_max": 0.05,
+      "scope": "Per comparable reward; permanent technology effects can stack as in vanilla."
+    },
+    "global_monthly_food_modifier": {
+      "hbe_values": [
+        0.08,
+        0.1,
+        0.08,
+        0.1,
+        0.08
+      ],
+      "cap": 0.1,
+      "common_native_reference": 0.05,
+      "native_count": 48,
+      "native_median": 0.05,
+      "native_max": 0.125,
+      "scope": "Per comparable reward; permanent technology effects can stack as in vanilla."
+    }
+  },
+  "units": [
+    {
+      "unit": "hbe_canal_crossbow",
+      "men": 500,
+      "effective_combat_power": 1.0,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_salt_guard",
+      "men": 500,
+      "effective_combat_power": 1.0,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_river_garrison",
+      "men": 500,
+      "effective_combat_power": 1.0,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_pass_rotation",
+      "men": 500,
+      "effective_combat_power": 1.0,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_granary_militia",
+      "men": 500,
+      "effective_combat_power": 1.0,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_tea_riders",
+      "men": 500,
+      "effective_combat_power": 2.6,
+      "construction": "cavalry_construction",
+      "maintenance": "hbe_discount_cavalry_maintenance"
+    },
+    {
+      "unit": "hbe_valley_soldiers",
+      "men": 500,
+      "effective_combat_power": 1.0,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_trained_river",
+      "men": 500,
+      "effective_combat_power": 1.2,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_permanent_pass",
+      "men": 500,
+      "effective_combat_power": 1.15,
+      "construction": "early_infantry_construction",
+      "maintenance": "hbe_discount_early_infantry_maintenance"
+    }
+  ],
+  "goods_reference_comparison": [
+    {
+      "good": "hbe_shu_embroidery",
+      "reference_price": 9.0,
+      "ordinary_reference": 6.0,
+      "ratio": 1.5
+    },
+    {
+      "good": "hbe_well_salt",
+      "reference_price": 5.0,
+      "ordinary_reference": 4.0,
+      "ratio": 1.25
+    },
+    {
+      "good": "hbe_shu_paper",
+      "reference_price": 4.0,
+      "ordinary_reference": 2.0,
+      "ratio": 2.0
+    },
+    {
+      "good": "hbe_border_tea",
+      "reference_price": 5.0,
+      "ordinary_reference": 3.0,
+      "ratio": 1.6666666666666667
+    }
+  ],
+  "limits": [
+    "Reference prices and recipe margins do not equal realized market prices/profits.",
+    "Statistical natural-AI outcomes are reported separately from the structural balance assertions.",
+    "Intentional virtual feast bonus 8–64 gold per contributor is retained as requested.",
+    "No extra indiscriminate 0.7 multiplication was applied to previously rebalanced effects."
+  ]
+}

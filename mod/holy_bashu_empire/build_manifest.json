@@ -6614,19 +6614,19 @@
     "in_game/events/hbe_story_western_tea_horse.txt": "c2ee799da8052f92a929cfad665868e8828936ec906b5a3d41fca984a405e183",
     "in_game/common/advances/hbe_advances.txt": "03f36cced4d14f87855c3736262df8fa827dbe2057295acdb00a34e0d49dc8a3",
     "in_game/common/advances/hbe_civic_advances.txt": "293717e50ee9c25384984c9efa93b621157afd7d71c6b97169d9a5cf883eaa2f",
-    "in_game/common/advances/hbe_guest_licenses.txt": "e41a5657abf6c1becf749ac1df6215778c4b395f1c55850b4db7fc53320b74ea",
+    "in_game/common/advances/hbe_guest_licenses.txt": "0aea84e029d71fcede2b54430c72c449643a9aff8677adba37fc1b5edd1afe03",
     "in_game/common/ai_scripted_expansion_score/hbe_external_caution.txt": "dc07c1d7d15fe9eb45509c7532d7339eaea9d7dc466ba1bb30163d232e8aef83",
-    "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt": "19206a630242baa2bbd7db6fa2ce6d81bd3eb033369b66f1678e8872f44e1d1b",
+    "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt": "dc0807dc5e840c7a092eb2cd34e451a9c77bc4cdf0104d9ed6ff4900e3c67f50",
     "in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt": "aa08c68ecf63e60ef182a495efda6dc21d27e451034aa42e7e4a801a51d96691",
     "in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt": "059da010d23efa1f12c71ff15983d75824b9057e8ad18ca519f8f2adc66bac7b",
     "in_game/common/biases/hbe_faction_departure.txt": "078e8680a83f65b7fa6ca4b1abb243e7a4396d7c8946401baff93f1f8f26c76e",
     "in_game/common/biases/hbe_feast_opinions.txt": "25974a12c74e52075f32821603bd073cd84958dbb5df8edb2e508886e33a9973",
     "in_game/common/biases/hbe_opinions.txt": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3",
-    "in_game/common/building_types/hbe_civic_buildings.txt": "0b8573bc79a2dac54da53cd2712209ef21ee77b2153a8ce9c667eebc396d919c",
+    "in_game/common/building_types/hbe_civic_buildings.txt": "8721e2368d8897ec199fa40bec7f1ddd528489ea0f7eab6f892d08bac8718964",
     "in_game/common/country_description_categories/hbe_profiles.txt": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00",
     "in_game/common/customizable_localization/country_history.txt": "a18cce46abee7c833798aab1e24921e8b043eb864941837e9d05b8cf03918310",
     "in_game/common/decisions/hbe_banquet_decisions.txt": "fd82438cfbece64bab7dfa0dcec86f22f2caa6120ec40fcb188901c6c4bdba58",
-    "in_game/common/decisions/hbe_civic_decisions.txt": "47bdc321b55026404e7461733bf2e0c3abdbf3cb8945a88e7cf6c78bccafb184",
+    "in_game/common/decisions/hbe_civic_decisions.txt": "f8a5bbc701dd34384b82b2326984ee0cc6ea13b7bad8d1f675604f113f1e72a2",
     "in_game/common/decisions/hbe_decisions.txt": "b8b289705ba0ad37273fb303745f3ebb6c7146a6414f83a39ec5f3bd31a5c47d",
     "in_game/common/estate_privileges/hbe_civic_privileges.txt": "ee967323f1a7d06db5682cb3b855e97263e9a501ea5801d7e1c3b01a2fa3818d",
     "in_game/common/generic_actions/hbe_feast_actions.txt": "54565feb164f1c30246279b82e01cb01354c6ae9296b0af83933b6bde24c5df0",
@@ -6657,10 +6657,10 @@
     "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
     "in_game/common/scripted_effects/hbe_ai_effects.txt": "f158733dccf6d238d0da5455538d8672d950c6cc16697c2dac8d516a8bad501e",
     "in_game/common/scripted_effects/hbe_banquet_effects.txt": "32754ac4f075dd63f029d74b6cbcd0d17a3df4f04081ac69a601452623242915",
-    "in_game/common/scripted_effects/hbe_civic_effects.txt": "50a54e56928727a14b286449ee7b5ddbae2c59c1b28c95353b6ab0db560050a6",
+    "in_game/common/scripted_effects/hbe_civic_effects.txt": "f882938e7c3f7d1917ff005ff308930538bfc0ba99527089546c11787459a2f5",
     "in_game/common/scripted_effects/hbe_effects.txt": "35aed53faad9e2f83991f13607297f5e682057e5ea6f5cfa34677d4f4686a1bd",
     "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "79512cedb773f91ac133fada19748de391b4bc53243073907da38eed6728b6b7",
-    "in_game/common/scripted_effects/hbe_guest_license_effects.txt": "c3304c7a66e960444360e93ea9617fdc7cab0d61c4b3705c2307bd3982c9bf59",
+    "in_game/common/scripted_effects/hbe_guest_license_effects.txt": "39efe7565c15390e19115ecc25bf6c16636cc07c68986cb464aeb8b7c5df3aae",
     "in_game/common/scripted_effects/hbe_native_content_effects.txt": "914673a3c93ea1a9a8dbd2e0fa4c4832b593b4a3426b9fe7fef2261152dea465",
     "in_game/common/scripted_effects/hbe_observer_sync.txt": "d6ae1135e77eb229de9ffbf5f8817a1b2a3bc0ec8d29dd4c0f66e5cfa859d7d3",
     "in_game/common/scripted_effects/hbe_opening_pacts_effects.txt": "ae69ff68ce26fc73735812637a53e35633e6144eef4af51b20275d5ce4db34e6",
@@ -6680,7 +6680,7 @@
     "in_game/common/script_values/hbe_feast_values.txt": "958dcf9e40882edd6f3e1d291b714e65a2afaeecaf74d93d59ebba209a1ecf68",
     "in_game/common/situations/hbe_banquet.txt": "9112a9997192b856ad73b20019a4204ea92cdfd76f88e00a8a5b1f7d69c54e5b",
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
-    "in_game/common/unit_types/hbe_civic_units.txt": "87da02630b71ee6f2acc1608386e3c6b4428d8d6dc5a1838757607411f1f1d8c",
+    "in_game/common/unit_types/hbe_civic_units.txt": "b1af2ba4645ca8622bfc98fd7da2532e097f565f9115119871360aafc9024fbe",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
     "in_game/gfx/images/hbe_story_backgrounds.txt": "0a92322392eaa45c129d639afd9391d5e2797485f5846c671a206df3098cf08e",
@@ -6709,7 +6709,7 @@
     "main_menu/common/static_modifiers/hbe_civic_modifiers.txt": "bf398254356dd9244640451eea31015e6c27c296956450a4816267d4016e68d4",
     "main_menu/common/static_modifiers/hbe_deep_support_modifiers.txt": "2fd48e26bb7bd2be4f7b39a95e1ac99cff642bfaa6189c639be0e018080ed59a",
     "main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt": "95b0bd763b7809c68dc2fed6e8ad99b537879db1a4372afc733c4b8ce622c2df",
-    "main_menu/common/static_modifiers/hbe_feast_modifiers.txt": "8a994d8d343c70beaa395d7cf5f58a07efd0042872d0920cbb51be5105114c99",
+    "main_menu/common/static_modifiers/hbe_feast_modifiers.txt": "327e3109fe4ef32484189227c02578c02d1804e245ad553bcf38dc984d842de3",
     "main_menu/common/static_modifiers/hbe_legacy_output_flags.txt": "97d17761d619c216057ea2ac7880e4690ad401115a41bebe20aa3633a02eb0c0",
     "main_menu/common/static_modifiers/hbe_modifiers.txt": "ab700ba3cc2951a6af494b4d4a0bdccfcf58572fa61c050339b561f746c5160d",
     "main_menu/common/static_modifiers/hbe_story_modifiers.txt": "6d03f7d7968d6d10bd14e99aecf2d29d103dd7ceaceffd8d7b48f42e6a600ed7",
@@ -7211,7 +7211,7 @@
     "main_menu/localization/english/hbe_advance_gates_l_english.yml": "f3269dffe49e59c959821aa3e74f725fa199fa0231ad11d970777af2cc99b902",
     "main_menu/localization/english/hbe_deep_balance_l_english.yml": "5069450c803a882bc203da8d96d31eb2b7f2885aea1a4f0deffb4aab4b920f23",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
-    "main_menu/localization/english/hbe_l_english.yml": "91dc430d64e5a618410918f879ec05dde170045e9a90b038f2ae83709f320264",
+    "main_menu/localization/english/hbe_l_english.yml": "61bfd654efffe5e7b1b199314b05dc23032402dd6806daaeecf2b58aa5fca07d",
     "main_menu/localization/english/hbe_observer_hotfix_l_english.yml": "72fce30a3cda30a7d8fc33d55e7299116d289d4e7c4f535f4e011b1c6c2308ef",
     "main_menu/localization/english/hbe_personal_tooltips_l_english.yml": "83225c91e770a2085c769d8095e44ce40600cb2f59a3ce1a8ac7687e2f115695",
     "main_menu/localization/english/hbe_story_l_english.yml": "f70de6ea78d1e11d48e8739fcf76162fa4ebcd36ba1acc5b033a5fbb83b45038",
@@ -7219,7 +7219,7 @@
     "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml": "07e87fafc60103f5e72e6e0874853f44a81415f108e44e8f7aab5244363eb251",
     "main_menu/localization/simp_chinese/hbe_deep_balance_l_simp_chinese.yml": "ebd7e78fc90635c811d7feeeffadb81acd515f2c9a554afdb972a314f8f58dfc",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "3ca87890925eb31dae7b9fa5bdcf0f2d86c93484dd3c83fb552b640200d7148e",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "2d85c63b122bd7303054f82a6aa682f62d817bb4952a8a267a96758ca3d2fd47",
     "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml": "91fefc537d19a0a0a9ec5d31ba7c30ec5e4066ed80da970cfb20f223b0c323e7",
     "main_menu/localization/simp_chinese/hbe_personal_tooltips_l_simp_chinese.yml": "cb02540cd7d6a60340809673214a06f7cf8552575f0ed48e5d0c8e34e23b67f4",
     "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml": "623b6960a8efed699646bcbd470dc50514ed98715ac779a434eab22583d0f7a3",
@@ -8431,13 +8431,24 @@
   },
   "internal_ai": {
     "start_year": 1342,
-    "score_bonus": 3,
-    "base_multiplier": 0.05,
-    "opposed_faction_extra": 0.03,
+    "score_bonus": 2,
+    "base_multiplier": 0.95,
+    "opposed_faction_extra": 0.02,
     "aggressiveness": 0.05,
     "war_interval_months": -3,
     "peace_months_normal": 144,
-    "peace_months_aggressive": 96
+    "peace_months_aggressive": 96,
+    "release_adjustment": {
+      "previous_weights": [
+        1.05,
+        1.08
+      ],
+      "current_weights": [
+        0.95,
+        0.97
+      ],
+      "scope": "Neighboring HBE princes; no changes to external caution, global aggressiveness, truces, alliances or CB rules."
+    }
   },
   "simple_banquet": {
     "factions": 2,
@@ -36178,5 +36189,77 @@
       }
     ],
     "support_duration_rule": "Single-unit duration only. Stronger/equal arrangements replace and refresh; weaker arrangements preserve the active effect. Duration does not add."
-  }
+  },
+  "guest_production_patch": {
+    "version": "0.3.1",
+    "regions": 7,
+    "starter_recipe_unlocks": 11,
+    "certificates": [
+      {
+        "region": "chengdu_plain",
+        "certificate": "hbe_guest_license_chengdu_plain",
+        "methods": [
+          "hbe_chengdu_plain_basic_production",
+          "hbe_chengdu_plain_ordinary_production"
+        ]
+      },
+      {
+        "region": "southern_salt_wine",
+        "certificate": "hbe_guest_license_southern_salt_wine",
+        "methods": [
+          "hbe_southern_salt_wine_basic_production",
+          "hbe_southern_salt_wine_ordinary_production"
+        ]
+      },
+      {
+        "region": "eastern_river",
+        "certificate": "hbe_guest_license_eastern_river",
+        "methods": [
+          "hbe_eastern_river_basic_production"
+        ]
+      },
+      {
+        "region": "northern_shudao",
+        "certificate": "hbe_guest_license_northern_shudao",
+        "methods": [
+          "hbe_northern_shudao_basic_production",
+          "hbe_northern_shudao_ordinary_production"
+        ]
+      },
+      {
+        "region": "central_hills",
+        "certificate": "hbe_guest_license_central_hills",
+        "methods": [
+          "hbe_central_hills_basic_production"
+        ]
+      },
+      {
+        "region": "western_tea_horse",
+        "certificate": "hbe_guest_license_western_tea_horse",
+        "methods": [
+          "hbe_western_tea_horse_basic_production",
+          "hbe_western_tea_horse_ordinary_production"
+        ]
+      },
+      {
+        "region": "southwestern_valleys",
+        "certificate": "hbe_guest_license_southwestern_valleys",
+        "methods": [
+          "hbe_southwestern_valleys_basic_production"
+        ]
+      }
+    ],
+    "guest_prerequisite": "hbe_tech_common_4 (Craftsmen Exchanges), replacing the 1437 audit in guest eligibility only.",
+    "unchanged": "Opening eligibility, direct regional land ownership, Common Measures, Communal policy, 60 fraternity, fees, geography, building caps, advanced recipe unlocks and regional technology bonuses."
+  },
+  "native_decimal_repair": [
+    {
+      "file": "in_game/common/unit_types/hbe_civic_units.txt",
+      "literals": 2
+    },
+    {
+      "file": "main_menu/common/static_modifiers/hbe_feast_modifiers.txt",
+      "literals": 3
+    }
+  ]
 }

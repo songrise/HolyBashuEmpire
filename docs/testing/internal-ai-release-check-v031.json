@@ -1,0 +1,16 @@
+{
+  "version": "0.3.1",
+  "checks": {
+    "two_checkpoints": true,
+    "no_hbe_engine_diagnostics": true,
+    "source_runtime_identical": true,
+    "internal_only": true,
+    "new_weights": true,
+    "no_forced_wars": true
+  },
+  "engine_diagnostics": [],
+  "compatibility_warning_count": 188,
+  "scope": "Three month engine load and pulse check. Internal weighting is structurally checked; this is not a repeat 50-year statistical comparison.",
+  "source_manifest_sha256": "3a95f09d7f57b9841741e285eaa185306cf52d6f0d45c45e1556be3aac9c9dbe",
+  "differences": []
+}

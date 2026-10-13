@@ -1,0 +1,9 @@
+{
+  "version": "0.3.1",
+  "payload_bytes": 99798547,
+  "payload_file_count": 567,
+  "reference_checks": 136,
+  "script_bytes_unchanged": true,
+  "source_manifest_sha256": "3a95f09d7f57b9841741e285eaa185306cf52d6f0d45c45e1556be3aac9c9dbe",
+  "payload_manifest_sha256": "05ffb8c7d34e361deec7a3e7d7cc716b263fde16a91de72e07d5ddcbab72615e"
+}

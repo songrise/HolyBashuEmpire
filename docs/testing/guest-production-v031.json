@@ -1,0 +1,56 @@
+{
+  "static": {
+    "status": "passed",
+    "check_count": 168,
+    "regions": 7,
+    "starter_unlocks": 11,
+    "failed": [],
+    "scope": "All seven guest gates, recipe registrations, no opening grants, no advanced recipes and native numeric format. Raw successful rows remain local."
+  },
+  "runtime": {
+    "status": "passed",
+    "checks": {
+      "opening_no_guest_licenses": true,
+      "southern_salt_wine_actual_decision_eligible": true,
+      "southern_salt_wine_signed_and_limited_license": true,
+      "northern_shudao_actual_decision_eligible": true,
+      "northern_shudao_signed_and_limited_license": true,
+      "western_tea_horse_actual_decision_eligible": true,
+      "western_tea_horse_signed_and_limited_license": true,
+      "foreign_salt_actual_basic_recipe_active": true,
+      "no_guest_feature_engine_diagnostics": true
+    },
+    "buildings": [
+      {
+        "building": "hbe_salt_office",
+        "owner": 1209.0,
+        "active_methods": [
+          "hbe_southern_salt_wine_basic_production"
+        ],
+        "employed": 0.08874,
+        "profit": 0.39651
+      },
+      {
+        "building": "hbe_tea_exchange",
+        "owner": 1209.0,
+        "active_methods": [
+          "hbe_western_tea_horse_ordinary_production"
+        ],
+        "employed": 0.00478,
+        "profit": 0
+      },
+      {
+        "building": "hbe_gate_registry",
+        "owner": 2391.0,
+        "active_methods": [
+          "hbe_northern_shudao_ordinary_production"
+        ],
+        "employed": 0.01495,
+        "profit": 0
+      }
+    ],
+    "new_diagnostics": [],
+    "scope": "Three-month isolated fixture with technology, gold and land grants. Opening snapshot verifies no guest licenses; actual decision allow/effect used. AI may choose ordinary recipes and can release acquired territory, so active specialty production is separately recorded.",
+    "source_manifest_sha256": "904d20db9a723da0d3e6116df94f40630140f22c38df91be0371cc676a9607d2"
+  }
+}

@@ -62,12 +62,14 @@ def main():
         internal_variables.update(re.findall(r'(?:set_variable|change_variable|save_scope_value_as)\s*=\s*\{[^{}]*?\bname\s*=\s*(hbe\w+)',s))
         refs+=re.findall(r'\b(?:title|desc|name|text|loc|leader_title_key|format)\s*=\s*(hbe[\w.]+|HBE_\w+)',s)
     check('all custom text references localized',set(refs)-internal_variables<=loc_keys)
+    check('native numeric literals include a leading zero',all(not re.search(r'\b\w+\s*=\s*-?\.\d',f.read_text(encoding='utf-8-sig')) for f in script_files))
     char_keys={k for k,*_ in blocks((m/'main_menu/setup/1337/05_hbe_characters.txt').read_text(encoding="utf-8-sig"),1)}
     check('36 distinct starting rulers exist',char_keys=={f'hbe_ruler_{t.lower()}' for t in tags})
     election=(m/'in_game/common/resolutions/hbe_election.txt').read_text(encoding="utf-8-sig")
     check('7 seat election requires a strict majority', 'scope:highest_vote > scope:total_votes_needed' in election)
     modifiers=(m/'main_menu/common/static_modifiers/hbe_modifiers.txt').read_text(encoding="utf-8-sig")
-    check('Tianfu has exactly +10% food and construction','local_monthly_food_modifier = 0.10 local_construction_speed = 0.10' in modifiers)
+    tianfu=next(modifiers[b:e] for k,_,b,e,_ in blocks(modifiers,0) if k=='hbe_tianfu')
+    check('Tianfu has 7% food/construction and 5% disease resistance',all(abs(float(re.search(r'\b'+k+r'\s*=\s*([\d.]+)',tianfu)[1])-v)<1e-9 for k,v in {'local_monthly_food_modifier':.07,'local_construction_speed':.07,'local_disease_resistance':.05}.items()))
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
@@ -79,7 +81,7 @@ def main():
     check('war calls have a cross-boundary gate','join_war_disabled_trigger' in (m/'in_game/common/join_war_rules/hbe_isolation.txt').read_text(encoding="utf-8-sig"))
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
+    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0','0.3.1') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -98,7 +100,7 @@ def main():
     check('participation includes all IO members and subjects','visible = { is_member_of_international_organization = international_organization:hbe_empire }' in sit)
     check('monthly registration does not filter emperor or subjects','every_international_organization_member = { hbe_banquet_register = yes' in banquet)
     check('situation persists after charters and 1457','current_year < 1457' not in banquet and 'can_end = { NOT = { exists = international_organization:hbe_empire } }' in sit)
-    if manifest['version'] in ('0.2.1','0.3.0'):
+    if manifest['version'] in ('0.2.1','0.3.0','0.3.1'):
         check('two-year accounts are once per situation','var:hbe_round_month >= 24' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
         check('cooperative settlement uses adaptive contribution target','var:hbe_feast_total >= var:hbe_feast_required' in banquet)
         check('funding requires real scaled payment','gold >= hbe_feast_fee' in new_decisions and 'hbe_fund_project' in banquet)
@@ -133,7 +135,7 @@ def main():
     research_script=(m/'in_game/common/advances/hbe_advances.txt').read_text(encoding='utf-8-sig')
     for e in tech_art:
         p=m/e['image'];b=p.read_bytes()
-        check('painted research icon '+e['key'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(256,256) and hashlib.sha256(b).hexdigest()==e['sha256'] and ('icon = '+e['key']) in research_script and (m/'main_menu/gfx/interface/advance'/f'{e["key"]}.dds').read_bytes()==b)
+        check('painted research icon '+e['key'],b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==(256,256) and hashlib.sha256(b).hexdigest()==e['sha256'] and ('icon = '+e['key'].replace('hbe_tech_central_hills_8','hbe_tech_central_hills_witness_8')) in research_script and (m/'main_menu/gfx/interface/advance'/f'{e["key"]}.dds').read_bytes()==b)
     check('ten point icons and one native situation icon',len(other_art)==11 and sum(e['kind']=='point' for e in other_art)==10 and any(e['key']=='hbe_banquet' for e in other_art))
     for e in other_art:
         p=m/e['image'];b=p.read_bytes()
@@ -178,7 +180,9 @@ def main():
     check('64 research icons belong to native advance nodes only',len(advance_blocks)==64 and not any(k.startswith('hbe_tech_') for k in decision_blocks) and all('icon = '+k in b and k+'_desc' in loc_keys for k,b in advance_blocks.items()))
     check('all native research nodes have original year gates and explicit tag potentials',all('current_year >= '+str(e['year']) in advance_blocks[e['key']] and all('has_or_had_tag = '+t in advance_blocks[e['key']] for t in e['tags']) for e in native['advances']))
     check('native starting technology does not pregrant regional research',all('starting_technology_level = 99' in b for b in advance_blocks.values()))
-    check('seven pairs of research branches are mutually exclusive',all('has_advance = hbe_tech_'+r[0]+'_6' in advance_blocks['hbe_tech_'+r[0]+'_3'] and 'has_advance = hbe_tech_'+r[0]+'_3' in advance_blocks['hbe_tech_'+r[0]+'_6'] for r in manifest['regions']))
+    def excludes(body,key):
+        return any(re.search(r'(?:has_advance\s*=\s*'+re.escape(key)+r'\b|hbe_advance_gate_'+re.escape(key)+r'\s*=\s*yes)',body[b:e]) for k,_,b,e,_ in blocks(body) if k=='NOT')
+    check('seven pairs of research branches are mutually exclusive',all(excludes(advance_blocks['hbe_tech_'+r[0]+'_3'],'hbe_tech_'+r[0]+'_6') and excludes(advance_blocks['hbe_tech_'+r[0]+'_6'],'hbe_tech_'+r[0]+'_3') for r in manifest['regions']))
     check('36 single-country events indexed without new autonomous event rolls',len(native['events'])==36 and all('monthly_chance = 0' in event_blocks[e['id']] and 'dynamic_historical_event' in event_blocks[e['id']] and 'fire_only_once = yes' in event_blocks[e['id']] for e in native['events']))
     check('60 shared or recurring events keep their original dispatch',len(native['non_dhe_event_ids'])==60 and all('dynamic_historical_event' not in event_blocks[k] and 'fire_only_once' not in event_blocks[k] for k in native['non_dhe_event_ids']))
     check('36 distinct native country histories and lobby profiles localized',len(native['country_biographies'])==36 and len({e['body'] for e in native['country_biographies']})==36 and all('country_history_'+e['tag'] in loc_keys and 'country_description_category_desc_hbe_profile_'+e['tag'].lower() in loc_keys for e in native['country_biographies']))

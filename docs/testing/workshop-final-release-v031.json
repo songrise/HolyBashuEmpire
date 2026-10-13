@@ -1,0 +1,47 @@
+{
+  "status": "verified",
+  "version": "0.3.1",
+  "item": 3818491932,
+  "source_manifest_sha256": "3a95f09d7f57b9841741e285eaa185306cf52d6f0d45c45e1556be3aac9c9dbe",
+  "local_install_files_verified": 640,
+  "local_mismatches": [],
+  "records": {
+    "schinese": {
+      "title": "神圣巴蜀帝国 Holy Bashu Empire",
+      "description_sha256": "2657eb26b573382476bf1af6ff4a2c7643385ae9c718242bff02732a35ada435",
+      "file_size": 99798547,
+      "gallery_count": 5,
+      "metadata": {
+        "version": "0.3.1",
+        "manifest_sha256": "3a95f09d7f57b9841741e285eaa185306cf52d6f0d45c45e1556be3aac9c9dbe",
+        "package_sha256": "05ffb8c7d34e361deec7a3e7d7cc716b263fde16a91de72e07d5ddcbab72615e",
+        "compact_package": true
+      }
+    },
+    "english": {
+      "title": "Holy Bashu Empire",
+      "description_sha256": "aaf3b09cb19b653d38b5ffb7edb07d4fe35d959eb9f8eae13d3894106bb99eae",
+      "file_size": 99798547,
+      "gallery_count": 5,
+      "metadata": {
+        "version": "0.3.1",
+        "manifest_sha256": "3a95f09d7f57b9841741e285eaa185306cf52d6f0d45c45e1556be3aac9c9dbe",
+        "package_sha256": "05ffb8c7d34e361deec7a3e7d7cc716b263fde16a91de72e07d5ddcbab72615e",
+        "compact_package": true
+      }
+    },
+    "tchinese": {
+      "title": "神圣巴蜀帝国 Holy Bashu Empire",
+      "description_sha256": "2657eb26b573382476bf1af6ff4a2c7643385ae9c718242bff02732a35ada435",
+      "file_size": 99798547,
+      "gallery_count": 5,
+      "metadata": {
+        "version": "0.3.1",
+        "manifest_sha256": "3a95f09d7f57b9841741e285eaa185306cf52d6f0d45c45e1556be3aac9c9dbe",
+        "package_sha256": "05ffb8c7d34e361deec7a3e7d7cc716b263fde16a91de72e07d5ddcbab72615e",
+        "compact_package": true
+      }
+    }
+  },
+  "git_remote_push": false
+}
