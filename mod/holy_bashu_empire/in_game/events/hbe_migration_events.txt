@@ -33,7 +33,7 @@ hbe_migration.2 = {
  option = { name = hbe_migration.2.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_prestige = -3
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_migration_choice_2_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_migration_choice_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
 hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.2.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -81,7 +81,7 @@ hbe_migration.4 = {
  option = { name = hbe_migration.4.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_prestige = -3
 add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_migration_choice_4_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_migration_choice_4_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.4.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -104,17 +104,17 @@ hbe_migration.5 = {
  option = { name = hbe_migration.5.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_prestige = -3
 add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_migration_choice_5_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_migration_choice_5_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.5.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
-add_country_modifier = { modifier = hbe_migration_choice_5_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_migration_choice_5_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.5.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.03 }
-add_country_modifier = { modifier = hbe_migration_choice_5_3 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_migration_choice_5_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } }

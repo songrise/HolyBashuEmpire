@@ -85,7 +85,7 @@ hbe_tech_common_5 = {
     requires = hbe_tech_common_4
     pure_tooltip_entry = hbe_tech_common_5_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_production_efficiency = 0.08
+    global_production_efficiency = 0.04
     global_burghers_max_literacy = 8
 }
 hbe_tech_common_6 = {
@@ -144,7 +144,7 @@ hbe_tech_chengdu_plain_1 = {
 
     unlock_building = hbe_canal_office
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_monthly_food_modifier = 0.12
+    global_monthly_food_modifier = 0.08
     global_rice_output_modifier = 0.12
 
     
@@ -213,7 +213,7 @@ hbe_tech_chengdu_plain_4 = {
     requires = hbe_tech_chengdu_plain_3
     pure_tooltip_entry = hbe_tech_chengdu_plain_4_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_monthly_food_modifier = 0.16
+    global_monthly_food_modifier = 0.1
     global_rgo_build_time = -0.16
     unlock_production_method = hbe_chengdu_plain_advanced_production
     unlock_production_method = hbe_chengdu_plain_paper_production
@@ -409,7 +409,7 @@ hbe_tech_southern_salt_wine_7 = {
     pure_tooltip_entry = hbe_tech_southern_salt_wine_7_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     merchant_maintenance_efficiency = 0.16
-    global_production_efficiency = 0.08
+    global_production_efficiency = 0.04
 }
 hbe_tech_southern_salt_wine_8 = {
     age = age_2_renaissance
@@ -535,7 +535,7 @@ hbe_tech_eastern_river_5 = {
     pure_tooltip_entry = hbe_tech_eastern_river_5_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_trade_center_power = 0.2
-    global_production_efficiency = 0.12
+    global_production_efficiency = 0.05
 }
 hbe_tech_eastern_river_6 = {
     age = age_2_renaissance
@@ -755,7 +755,7 @@ hbe_tech_central_hills_1 = {
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_central_hills_1_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_monthly_food_modifier = 0.12
+    global_monthly_food_modifier = 0.08
     global_max_rgo_size_modifier_in_rural = 0.12
 
     
@@ -852,7 +852,7 @@ hbe_tech_central_hills_5 = {
     requires = hbe_tech_central_hills_4
     pure_tooltip_entry = hbe_tech_central_hills_5_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_monthly_food_modifier = 0.2
+    global_monthly_food_modifier = 0.1
     global_disease_resistance = 0.04
 }
 hbe_tech_central_hills_6 = {
@@ -1063,7 +1063,7 @@ hbe_tech_southwestern_valleys_1 = {
 
     unlock_building = hbe_valley_inn
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_production_efficiency = 0.08
+    global_production_efficiency = 0.04
     global_trade_center_power = 0.12
     unlock_production_method = hbe_southwestern_valleys_basic_production
 
@@ -1143,7 +1143,7 @@ hbe_tech_southwestern_valleys_4 = {
     requires = hbe_tech_southwestern_valleys_3
     pure_tooltip_entry = hbe_tech_southwestern_valleys_4_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_production_efficiency = 0.12
+    global_production_efficiency = 0.05
     tolerance_heathen = 0.8
     unlock_production_method = hbe_southwestern_valleys_advanced_production
 }

@@ -10,7 +10,7 @@ add_country_modifier = { modifier = hbe_short_choice_central_hills_1_1_1 years =
 set_variable = { name = hbe_short_central_hills_1_phase value = 1 }
 remove_variable = hbe_short_central_hills_1_pending
 set_variable = { name = hbe_short_central_hills_1_clock value = yes months = 6 } } option = { name = hbe_short_central_hills.1.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_central_hills_1_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_1_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_central_hills_1_phase value = 1 }
 remove_variable = hbe_short_central_hills_1_pending
 set_variable = { name = hbe_short_central_hills_1_clock value = yes months = 6 } } option = { name = hbe_short_central_hills.1.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -29,7 +29,7 @@ hbe_short_central_hills.2 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS } var:hbe_short_central_hills_1_phase = 1 NOT = { has_variable = hbe_short_central_hills_1_clock } }
  immediate = {  }
  option = { name = hbe_short_central_hills.2.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_central_hills_1_2_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_1_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
 set_variable = { name = hbe_short_central_hills_1_phase value = 2 }
 remove_variable = hbe_short_central_hills_1_pending
 set_variable = { name = hbe_short_central_hills_1_clock value = yes months = 12 } } option = { name = hbe_short_central_hills.2.b ai_chance = { base = 30 } add_prestige = 2
@@ -51,11 +51,11 @@ hbe_short_central_hills.3 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS } var:hbe_short_central_hills_1_phase = 2 NOT = { has_variable = hbe_short_central_hills_1_clock } }
  immediate = {  }
  option = { name = hbe_short_central_hills.3.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_1 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_1 years = 4 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 4 }
 set_variable = { name = hbe_short_central_hills_1_phase value = 3 }
 remove_variable = hbe_short_central_hills_1_pending
-add_prestige = 1 } option = { name = hbe_short_central_hills.3.b ai_chance = { base = 30 } add_gold = 3
-add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_2 years = 4 mode = replace }
+add_prestige = 1 } option = { name = hbe_short_central_hills.3.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_3 }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
 set_variable = { name = hbe_short_central_hills_1_phase value = 3 }
 remove_variable = hbe_short_central_hills_1_pending
 add_prestige = 1 } option = { name = hbe_short_central_hills.3.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -78,7 +78,7 @@ add_country_modifier = { modifier = hbe_short_choice_central_hills_2_1_1 years =
 set_variable = { name = hbe_short_central_hills_2_phase value = 1 }
 remove_variable = hbe_short_central_hills_2_pending
 set_variable = { name = hbe_short_central_hills_2_clock value = yes months = 6 } } option = { name = hbe_short_central_hills.11.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_central_hills_2_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_2_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_central_hills_2_phase value = 1 }
 remove_variable = hbe_short_central_hills_2_pending
 set_variable = { name = hbe_short_central_hills_2_clock value = yes months = 6 } } option = { name = hbe_short_central_hills.11.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
@@ -106,7 +106,7 @@ set_variable = { name = hbe_short_central_hills_2_phase value = 2 }
 remove_variable = hbe_short_central_hills_2_pending
 set_variable = { name = hbe_short_central_hills_2_clock value = yes months = 12 } } option = { name = hbe_short_central_hills.12.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_short_choice_central_hills_2_2_3 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_2_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 set_variable = { name = hbe_short_central_hills_2_phase value = 2 }
 remove_variable = hbe_short_central_hills_2_pending
 set_variable = { name = hbe_short_central_hills_2_clock value = yes months = 12 } } option = { name = hbe_short_central_hills.12.d ai_chance = { base = 3 } set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
@@ -125,7 +125,7 @@ add_country_modifier = { modifier = hbe_short_choice_central_hills_2_3_1 years =
 set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
 remove_variable = hbe_short_central_hills_2_pending
 add_prestige = 1 } option = { name = hbe_short_central_hills.13.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_central_hills_2_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_2_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
 remove_variable = hbe_short_central_hills_2_pending
  } option = { name = hbe_short_central_hills.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -192,8 +192,8 @@ hbe_short_central_hills.23 = {
 add_country_modifier = { modifier = hbe_short_choice_central_hills_3_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_central_hills_3_phase value = 3 }
 remove_variable = hbe_short_central_hills_3_pending
-add_prestige = 1 } option = { name = hbe_short_central_hills.23.b ai_chance = { base = 30 } add_gold = 2
-add_country_modifier = { modifier = hbe_short_choice_central_hills_3_3_2 years = 4 mode = replace }
+add_prestige = 1 } option = { name = hbe_short_central_hills.23.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
+add_country_modifier = { modifier = hbe_short_choice_central_hills_3_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
 set_variable = { name = hbe_short_central_hills_3_phase value = 3 }
 remove_variable = hbe_short_central_hills_3_pending
 add_prestige = 1 } option = { name = hbe_short_central_hills.23.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }

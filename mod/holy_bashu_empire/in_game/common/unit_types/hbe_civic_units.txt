@@ -126,7 +126,7 @@ hbe_trained_river = {
 
 
 
- combat_power = 1.20 morale_damage_taken = -0.12 strength_damage_done = 0.08 supply_weight = 0.20
+ combat_power = .20 morale_damage_taken = -0.12 strength_damage_done = 0.08 supply_weight = 0.20
 }
 hbe_permanent_pass = {
  copy_from = a_age_2_renaissance_heavy_infantry
@@ -165,5 +165,5 @@ hbe_permanent_pass = {
 
 
 
- combat_power = 1.15 strength_damage_taken = -0.15 morale_damage_taken = -0.08 supply_weight = 0.20
+ combat_power = .15 strength_damage_taken = -0.15 morale_damage_taken = -0.08 supply_weight = 0.20
 }

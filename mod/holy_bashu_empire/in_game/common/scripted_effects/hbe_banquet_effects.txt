@@ -65,10 +65,10 @@ hbe_settle_accounts = {
   international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 5 } hbe_clamp_guoqi = yes }
   international_organization:hbe_empire ?= { every_international_organization_member = {
    if = { limit = { var:hbe_feast_points > 0 }
-    add_gold = 6 add_prestige = 3 change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes
-    add_country_modifier = { modifier = hbe_feast_success years = 3 mode = replace }
+    add_gold = { value = hbe_feast_success_receipt } add_prestige = 2 change_variable = { name = hbe_yiqi add = 4 } hbe_clamp_yiqi = yes
+    hbe_grant_production_support_years = { strength = 5 duration = 3 } hbe_grant_food_support_years = { strength = 8 duration = 3 }
     if = { limit = { var:hbe_stance = 1 international_organization:hbe_common_party.var:hbe_party_points >= international_organization:hbe_local_party.var:hbe_party_points }
-     add_country_modifier = { modifier = hbe_feast_common_reward years = 3 mode = replace } }
+     add_country_modifier = { modifier = hbe_feast_common_reward years = 3 mode = replace } hbe_grant_food_support_years = { strength = 8 duration = 3 } }
     else_if = { limit = { var:hbe_stance = 2 international_organization:hbe_local_party.var:hbe_party_points >= international_organization:hbe_common_party.var:hbe_party_points }
      add_country_modifier = { modifier = hbe_feast_local_reward years = 3 mode = replace } }
     trigger_event_non_silently = { id = hbe_banquet.4 }

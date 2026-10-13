@@ -10,7 +10,7 @@ add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_1_1 yea
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 1 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 set_variable = { name = hbe_short_western_tea_horse_1_clock value = yes months = 6 } } option = { name = hbe_short_western_tea_horse.1.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 2 }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 1 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 set_variable = { name = hbe_short_western_tea_horse_1_clock value = yes months = 6 } } option = { name = hbe_short_western_tea_horse.1.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -33,11 +33,11 @@ add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_2_1 yea
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 2 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 set_variable = { name = hbe_short_western_tea_horse_1_clock value = yes months = 12 } } option = { name = hbe_short_western_tea_horse.2.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_2_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 2 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 set_variable = { name = hbe_short_western_tea_horse_1_clock value = yes months = 12 } } option = { name = hbe_short_western_tea_horse.2.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_2_3 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 2 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 set_variable = { name = hbe_short_western_tea_horse_1_clock value = yes months = 12 } } option = { name = hbe_short_western_tea_horse.2.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
@@ -55,8 +55,8 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_1_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.3.b ai_chance = { base = 30 } add_gold = 2
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_3_2 years = 4 mode = replace }
+add_prestige = 1 } option = { name = hbe_short_western_tea_horse.3.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 add_prestige = 1 } option = { name = hbe_short_western_tea_horse.3.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -123,7 +123,7 @@ add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_2_3_1 yea
 set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_2_pending
 add_prestige = 1 } option = { name = hbe_short_western_tea_horse.13.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_2_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_2_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_2_pending
  } option = { name = hbe_short_western_tea_horse.13.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -167,11 +167,11 @@ add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_2_1 yea
 set_variable = { name = hbe_short_western_tea_horse_3_phase value = 2 }
 remove_variable = hbe_short_western_tea_horse_3_pending
 set_variable = { name = hbe_short_western_tea_horse_3_clock value = yes months = 12 } } option = { name = hbe_short_western_tea_horse.22.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_2_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 set_variable = { name = hbe_short_western_tea_horse_3_phase value = 2 }
 remove_variable = hbe_short_western_tea_horse_3_pending
 set_variable = { name = hbe_short_western_tea_horse_3_clock value = yes months = 12 } } option = { name = hbe_short_western_tea_horse.22.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
-add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_2_3 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_western_tea_horse_3_phase value = 2 }
 remove_variable = hbe_short_western_tea_horse_3_pending
 set_variable = { name = hbe_short_western_tea_horse_3_clock value = yes months = 12 } } option = { name = hbe_short_western_tea_horse.22.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_3_phase value = 3 }

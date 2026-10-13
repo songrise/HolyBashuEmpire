@@ -1,0 +1,66 @@
+{
+  "version": "0.3.1",
+  "status": "passed",
+  "checks": {
+    "both_reforms": true,
+    "external_excluded": true,
+    "bill_tiers": true,
+    "service_payment": true,
+    "receipt_payment": true,
+    "production_cap": true,
+    "food_cap": true,
+    "fixture_finished": true,
+    "one_support_per_kind": true,
+    "weaker_rewards_do_not_add_or_shorten_duration": true,
+    "economic_bill_exact": true,
+    "economic_receipt_exact": true,
+    "production_actual_5_percent": true,
+    "food_actual_8_percent": true,
+    "no_new_feature_engine_errors": true
+  },
+  "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_25.eu5",
+  "save_bytes": 203489746,
+  "source_manifest_sha256": "59ccc56af6340ecf88887acfca0df579207fefcbfe22da02220b0161d4191ac6",
+  "variables": {
+    "hbe_deep_both_reforms": true,
+    "hbe_deep_external_excluded": true,
+    "hbe_deep_small_bill": 1.97973,
+    "hbe_deep_large_bill": 9.89867,
+    "hbe_deep_bill_tiers": true,
+    "hbe_deep_invoice": 7.71624,
+    "hbe_deep_before_gold": 2044.55008,
+    "hbe_deep_spent": 7.71624,
+    "hbe_deep_service_payment": true,
+    "hbe_deep_receipt_expected": 3.95947,
+    "hbe_deep_before_receipt": 2036.83384,
+    "hbe_deep_received": 3.95947,
+    "hbe_deep_receipt_payment": true,
+    "hbe_deep_production_before": 0.0,
+    "hbe_production_support_strength": 5.0,
+    "hbe_deep_food_before": 0.105,
+    "hbe_food_support_strength": 8.0,
+    "hbe_deep_fixture_finished": true,
+    "hbe_deep_production_delta": 0.05,
+    "hbe_deep_production_cap": true,
+    "hbe_deep_food_delta": 0.08,
+    "hbe_deep_food_cap": true
+  },
+  "timed_supports": [
+    {
+      "modifier": "hbe_shared_production_support",
+      "size": 5.0,
+      "start": "1337.4.6",
+      "end": "1337.7.5"
+    },
+    {
+      "modifier": "hbe_shared_food_support",
+      "size": 8.0,
+      "start": "1337.4.6",
+      "end": "1337.7.5"
+    }
+  ],
+  "fixture_only_unused_variable_warnings": 5,
+  "new_feature_engine_errors": [],
+  "scope": "One month, isolated native fixture with explicit test gold/technology/building grants. Verifies payments, support effects and reform registration; not a natural-AI or long-term economic test.",
+  "prior_failed_fixture": "First fixture exposed zero duration fields making support expire immediately; helpers now supply only one positive duration field. Two malformed fixture variable effects were also corrected. Original evidence preserved locally."
+}

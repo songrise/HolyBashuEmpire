@@ -1,0 +1,2 @@
+﻿monthly_country_pulse = { on_actions = { hbe_deep_balance_monthly } }
+hbe_deep_balance_monthly = { trigger = { is_member_of_international_organization = international_organization:hbe_empire } effect = { hbe_migrate_legacy_output_supports = yes } }

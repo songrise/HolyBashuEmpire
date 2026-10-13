@@ -16,7 +16,7 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_1_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_chengdu_plain_branch_1_tt
 custom_tooltip = hbe_story_next_4_tt
-hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 1 } set_variable = { name = hbe_story_chengdu_plain_phase value = 1 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 4 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.1.c ai_chance = { base = 35 } add_gold = 3
+hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 1 } set_variable = { name = hbe_story_chengdu_plain_phase value = 1 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 4 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.1.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_3 }
 add_prestige = 1
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_1_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_chengdu_plain_branch_2_tt
@@ -58,7 +58,7 @@ hbe_story_chengdu_plain.3 = {
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.3.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_3_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_3_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_story_chengdu_plain_branch_1_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 2 } set_variable = { name = hbe_story_chengdu_plain_phase value = 3 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 6 } remove_variable = hbe_story_chengdu_plain_pending }
@@ -91,9 +91,9 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_4_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_chengdu_plain_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 1 } set_variable = { name = hbe_story_chengdu_plain_phase value = 4 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 7 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.4.c ai_chance = { base = 35 } add_gold = 4
+hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 1 } set_variable = { name = hbe_story_chengdu_plain_phase value = 4 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 7 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.4.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_4 }
 add_prestige = 2
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_4_3 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_4_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 custom_tooltip = hbe_story_chengdu_plain_branch_2_tt
 custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = -2 } set_variable = { name = hbe_story_chengdu_plain_phase value = 4 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 7 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.4.d ai_chance = { base = 4 } custom_tooltip = hbe_story_chengdu_plain_stop_tt
@@ -166,7 +166,7 @@ add_research_progress = 0.28
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_7_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_chengdu_plain_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 1 } set_variable = { name = hbe_story_chengdu_plain_phase value = 7 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 8 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.7.c ai_chance = { base = 35 } add_gold = 2
+hidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 1 } set_variable = { name = hbe_story_chengdu_plain_phase value = 7 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 8 } remove_variable = hbe_story_chengdu_plain_pending } } option = { name = hbe_story_chengdu_plain.7.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_2 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_7_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_chengdu_plain_branch_2_tt
 custom_tooltip = hbe_story_next_8_tt
@@ -216,7 +216,7 @@ hbe_story_chengdu_plain.101 = {
 add_prestige = 1
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_101_1 years = 2 mode = replace } } option = { name = hbe_story_chengdu_plain.101.b ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_101_2 years = 3 mode = replace } } option = { name = hbe_story_chengdu_plain.101.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_101_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 } } option = { name = hbe_story_chengdu_plain.101.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.01 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_101_3 years = 4 mode = replace } }
 }
@@ -233,7 +233,7 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.02 }
 add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_102_2 years = 4 mode = replace } } option = { name = hbe_story_chengdu_plain.102.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_102_3 years = 2 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_102_3 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 2 } }
 }
 
 hbe_story_chengdu_plain.103 = {
@@ -246,7 +246,7 @@ add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_103_1 years =
 add_research_progress = 0.175
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_103_2 years = 2 mode = replace } } option = { name = hbe_story_chengdu_plain.103.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_103_3 years = 3 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_103_3 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 } }
 }
 
 hbe_story_chengdu_plain.104 = {
@@ -256,9 +256,9 @@ hbe_story_chengdu_plain.104 = {
  immediate = { set_variable = hbe_story_seen_chengdu_plain_104 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_chengdu_plain.104.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_104_1 years = 2 mode = replace } } option = { name = hbe_story_chengdu_plain.104.b ai_chance = { base = 30 } add_prestige = 3
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_104_1 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 2 } } option = { name = hbe_story_chengdu_plain.104.b ai_chance = { base = 30 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_104_2 years = 3 mode = replace } } option = { name = hbe_story_chengdu_plain.104.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_104_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 } } option = { name = hbe_story_chengdu_plain.104.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_104_3 years = 4 mode = replace } }
 }
@@ -285,9 +285,9 @@ hbe_story_chengdu_plain.106 = {
  option = { name = hbe_story_chengdu_plain.106.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_106_1 years = 4 mode = replace } } option = { name = hbe_story_chengdu_plain.106.b ai_chance = { base = 30 } add_prestige = 1
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_106_2 years = 2 mode = replace } } option = { name = hbe_story_chengdu_plain.106.c ai_chance = { base = 30 } add_gold = 3
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_106_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 } } option = { name = hbe_story_chengdu_plain.106.c ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_3 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_106_3 years = 3 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_106_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 } }
 }
 
 hbe_story_chengdu_plain.107 = {
@@ -297,9 +297,9 @@ hbe_story_chengdu_plain.107 = {
  immediate = { set_variable = hbe_story_seen_chengdu_plain_107 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_chengdu_plain.107.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_107_1 years = 2 mode = replace } } option = { name = hbe_story_chengdu_plain.107.b ai_chance = { base = 30 } add_prestige = 3
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_107_1 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 2 } } option = { name = hbe_story_chengdu_plain.107.b ai_chance = { base = 30 } add_prestige = 3
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_107_2 years = 3 mode = replace } } option = { name = hbe_story_chengdu_plain.107.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_107_3 years = 4 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_107_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 } }
 }
 
 hbe_story_chengdu_plain.108 = {
@@ -323,7 +323,7 @@ hbe_story_chengdu_plain.109 = {
  immediate = { set_variable = hbe_story_seen_chengdu_plain_109 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_chengdu_plain.109.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_109_1 years = 4 mode = replace } } option = { name = hbe_story_chengdu_plain.109.b ai_chance = { base = 30 } add_prestige = 1
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_109_1 years = 4 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 4 } } option = { name = hbe_story_chengdu_plain.109.b ai_chance = { base = 30 } add_prestige = 1
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_109_2 years = 2 mode = replace } } option = { name = hbe_story_chengdu_plain.109.c trigger = { gold >= hbe_event_cost_1 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.01 }
@@ -351,7 +351,7 @@ hbe_story_chengdu_plain.111 = {
  option = { name = hbe_story_chengdu_plain.111.a trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_111_1 years = 3 mode = replace } } option = { name = hbe_story_chengdu_plain.111.b ai_chance = { base = 30 } add_prestige = 1
-add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_111_2 years = 4 mode = replace } } option = { name = hbe_story_chengdu_plain.111.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_111_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 } } option = { name = hbe_story_chengdu_plain.111.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_111_3 years = 2 mode = replace } }
 }

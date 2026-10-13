@@ -1,0 +1,215 @@
+﻿hbe_grant_production_support_years = {
+ if = { limit = { custom_tooltip = { text = hbe_output_support_available_tt
+ OR = { NOT = { has_country_modifier = hbe_shared_production_support } var:hbe_production_support_strength <= $strength$ } } }
+ hidden_effect = { set_variable = { name = hbe_production_support_strength value = $strength$ } }
+ add_country_modifier = { modifier = hbe_shared_production_support size = $strength$ years = $duration$ mode = replace }
+ }
+}
+
+hbe_grant_production_support_months = {
+ if = { limit = { custom_tooltip = { text = hbe_output_support_available_tt
+ OR = { NOT = { has_country_modifier = hbe_shared_production_support } var:hbe_production_support_strength <= $strength$ } } }
+ hidden_effect = { set_variable = { name = hbe_production_support_strength value = $strength$ } }
+ add_country_modifier = { modifier = hbe_shared_production_support size = $strength$ months = $duration$ mode = replace }
+ }
+}
+
+hbe_grant_production_support_days = {
+ if = { limit = { custom_tooltip = { text = hbe_output_support_available_tt
+ OR = { NOT = { has_country_modifier = hbe_shared_production_support } var:hbe_production_support_strength <= $strength$ } } }
+ hidden_effect = { set_variable = { name = hbe_production_support_strength value = $strength$ } }
+ add_country_modifier = { modifier = hbe_shared_production_support size = $strength$ days = $duration$ mode = replace }
+ }
+}
+
+hbe_grant_food_support_years = {
+ if = { limit = { custom_tooltip = { text = hbe_output_support_available_tt
+ OR = { NOT = { has_country_modifier = hbe_shared_food_support } var:hbe_food_support_strength <= $strength$ } } }
+ hidden_effect = { set_variable = { name = hbe_food_support_strength value = $strength$ } }
+ add_country_modifier = { modifier = hbe_shared_food_support size = $strength$ years = $duration$ mode = replace }
+ }
+}
+
+hbe_grant_food_support_months = {
+ if = { limit = { custom_tooltip = { text = hbe_output_support_available_tt
+ OR = { NOT = { has_country_modifier = hbe_shared_food_support } var:hbe_food_support_strength <= $strength$ } } }
+ hidden_effect = { set_variable = { name = hbe_food_support_strength value = $strength$ } }
+ add_country_modifier = { modifier = hbe_shared_food_support size = $strength$ months = $duration$ mode = replace }
+ }
+}
+
+hbe_grant_food_support_days = {
+ if = { limit = { custom_tooltip = { text = hbe_output_support_available_tt
+ OR = { NOT = { has_country_modifier = hbe_shared_food_support } var:hbe_food_support_strength <= $strength$ } } }
+ hidden_effect = { set_variable = { name = hbe_food_support_strength value = $strength$ } }
+ add_country_modifier = { modifier = hbe_shared_food_support size = $strength$ days = $duration$ mode = replace }
+ }
+}
+
+hbe_migrate_legacy_output_supports = { if = { limit = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_legacy_output_migrated } } if = { limit = { NOT = { has_country_modifier = hbe_shared_production_support } } set_variable = hbe_migrate_production_needed } if = { limit = { NOT = { has_country_modifier = hbe_shared_food_support } } set_variable = hbe_migrate_food_needed }
+if = { limit = { has_country_modifier = hbe_choice_chengdu_plain_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 10 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_choice_southern_salt_wine_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_choice_southwestern_valleys_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_feast_success has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_feast_success has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 8 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_feast_common_reward has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 8 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_3_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_4_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_101_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_102_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_103_3 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_104_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_104_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_106_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_106_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_107_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_107_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_109_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_chengdu_plain_111_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_1_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_4_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_7_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_102_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_103_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_106_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_108_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_108_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_109_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_111_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_111_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_113_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southern_salt_wine_113_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_5_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_5_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_103_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_106_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_108_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_111_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_111_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_113_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_eastern_river_113_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_6_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_103_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_104_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_105_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_106_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_110_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_northern_shudao_110_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_3_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_4_2 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_6_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_101_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_101_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_102_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_103_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_104_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_106_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_108_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_108_2 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_109_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_109_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_110_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_central_hills_111_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_3_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_101_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_102_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_102_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_103_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_104_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_105_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_108_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_western_tea_horse_109_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_4_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_4_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_102_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_103_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_103_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_104_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_106_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_108_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_110_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_112_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_112_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_story_choice_southwestern_valleys_112_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_migration_choice_2_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_migration_choice_4_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_migration_choice_5_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_migration_choice_5_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_migration_choice_5_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_1_1_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_1_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_1_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_1_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_2_3_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_3_1_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_chengdu_plain_3_3_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_1_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_1_1_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_1_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_1_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_2_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_2_2_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_2_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_2_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southern_salt_wine_3_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_eastern_river_2_1_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_eastern_river_2_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_eastern_river_2_2_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_eastern_river_2_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_eastern_river_2_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_eastern_river_3_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_northern_shudao_1_1_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_northern_shudao_1_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_northern_shudao_3_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_1_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_1_2_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_1_3_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_1_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_2_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_2_2_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_2_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_central_hills_3_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_1_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_1_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_1_2_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_1_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_2_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_3_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_western_tea_horse_3_2_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southwestern_valleys_1_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southwestern_valleys_1_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southwestern_valleys_2_1_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_southwestern_valleys_2_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_1_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_1_2_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_1_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_2_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_3_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_6_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_6_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_7_1_3 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_7_2_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 6 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_7_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_8_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_8_2_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_8_2_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_8_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_9_1_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_11_1_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_11_1_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_11_1_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_11_3_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_12_2_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_short_choice_shared_12_3_1 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_202_2 has_variable = hbe_migrate_food_needed } hbe_grant_food_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_203_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_203_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_209_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_209_3 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 5 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_212_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_212_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_216_1 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 4 duration = 3 } }
+if = { limit = { has_country_modifier = hbe_shared_choice_216_2 has_variable = hbe_migrate_production_needed } hbe_grant_production_support_months = { strength = 3 duration = 3 } }
+remove_variable = hbe_migrate_production_needed remove_variable = hbe_migrate_food_needed set_variable = hbe_legacy_output_migrated } }

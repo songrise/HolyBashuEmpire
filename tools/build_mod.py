@@ -600,8 +600,11 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_unit_maintenance(out, ROOT)
     from apply_local_ui_patch import apply as apply_local_ui_patch
     apply_local_ui_patch(out, ROOT)
+    from apply_deep_balance_v031 import apply as apply_deep_balance
+    deep_balance_report = apply_deep_balance(out, ROOT)
     manifest_path = out / "build_manifest.json"
     final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    final_manifest["deep_balance_v031"] = {"version":"0.3.1", "local_only":True, "decision_prices":len(deep_balance_report["decision_prices"]), "event_receipts":len(deep_balance_report["event_receipts"]), "national_output_caps":deep_balance_report["national_output_caps"], "reforms":deep_balance_report["reforms"], "support_duration_rule":deep_balance_report["support_duration_rule"]}
     final_manifest["files"] = {p.relative_to(out).as_posix():sha(p) for p in out.rglob("*") if p.is_file() and p.name != "build_manifest.json"}
     manifest_path.write_text(json.dumps(final_manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({k:manifest[k] for k in ('version','research_nodes','regional_missions','recurring_services','events','decisions')},ensure_ascii=False))

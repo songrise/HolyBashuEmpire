@@ -15,7 +15,7 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_central_hills_1_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_1_tt
 custom_tooltip = hbe_story_next_4_tt
-hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 1 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 4 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.1.c ai_chance = { base = 35 } add_gold = 3
+hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 1 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 4 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.1.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_3 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_1_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_2_tt
 custom_tooltip = hbe_story_next_4_tt
@@ -54,7 +54,7 @@ hbe_story_central_hills.3 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } var:hbe_story_central_hills_phase = 2 NOT = { has_variable = hbe_story_central_hills_closed } }
  immediate = {  }
  option = { name = hbe_story_central_hills.3.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_3_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_3_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_story_central_hills_branch_1_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 2 } set_variable = { name = hbe_story_central_hills_phase value = 3 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 6 } remove_variable = hbe_story_central_hills_pending }
@@ -63,7 +63,7 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_central_hills_3_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_1_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 3 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 6 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.3.c ai_chance = { base = 35 } add_gold = 4
+hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 3 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 6 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.3.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_4 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_3_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_2_tt
 custom_tooltip = hbe_story_next_6_tt
@@ -84,7 +84,7 @@ custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 2 } set_variable = { name = hbe_story_central_hills_phase value = 4 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 7 } remove_variable = hbe_story_central_hills_pending }
 add_prestige = 1 } option = { name = hbe_story_central_hills.4.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_story_choice_central_hills_4_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_4_2 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
 custom_tooltip = hbe_story_central_hills_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 4 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 7 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.4.c ai_chance = { base = 35 } add_prestige = 2
@@ -111,7 +111,7 @@ add_research_progress = 0.175
 add_country_modifier = { modifier = hbe_story_choice_central_hills_5_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 5 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 7 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.5.c ai_chance = { base = 35 } add_gold = 4
+hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 5 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 7 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.5.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_4 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_5_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_2_tt
 custom_tooltip = hbe_story_next_7_tt
@@ -135,8 +135,8 @@ add_research_progress = 0.28
 add_country_modifier = { modifier = hbe_story_choice_central_hills_6_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_central_hills_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 6 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 8 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.6.c ai_chance = { base = 35 } add_gold = 3
-add_country_modifier = { modifier = hbe_story_choice_central_hills_6_3 years = 3 mode = replace }
+hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = 1 } set_variable = { name = hbe_story_central_hills_phase value = 6 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 8 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.6.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_3 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_6_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 custom_tooltip = hbe_story_central_hills_branch_2_tt
 custom_tooltip = hbe_story_next_8_tt
 hidden_effect = { change_variable = { name = hbe_story_central_hills_direction add = -2 } set_variable = { name = hbe_story_central_hills_phase value = 6 } set_variable = { name = hbe_story_central_hills_clock value = yes years = 8 } remove_variable = hbe_story_central_hills_pending } } option = { name = hbe_story_central_hills.6.d ai_chance = { base = 4 } custom_tooltip = hbe_story_central_hills_stop_tt
@@ -208,9 +208,9 @@ hbe_story_central_hills.101 = {
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_101_1 years = 2 mode = replace } } option = { name = hbe_story_central_hills.101.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_101_2 years = 3 mode = replace } } option = { name = hbe_story_central_hills.101.c ai_chance = { base = 30 } add_prestige = 2
+add_country_modifier = { modifier = hbe_story_choice_central_hills_101_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 } } option = { name = hbe_story_central_hills.101.c ai_chance = { base = 30 } add_prestige = 2
 add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_101_3 years = 4 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_101_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 } }
 }
 
 hbe_story_central_hills.102 = {
@@ -222,7 +222,7 @@ hbe_story_central_hills.102 = {
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_102_1 years = 3 mode = replace } } option = { name = hbe_story_central_hills.102.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
-add_country_modifier = { modifier = hbe_story_choice_central_hills_102_2 years = 4 mode = replace } } option = { name = hbe_story_central_hills.102.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_102_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 } } option = { name = hbe_story_central_hills.102.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.175
 add_country_modifier = { modifier = hbe_story_choice_central_hills_102_3 years = 2 mode = replace } }
 }
@@ -234,7 +234,7 @@ hbe_story_central_hills.103 = {
  immediate = { set_variable = hbe_story_seen_central_hills_103 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_central_hills.103.a ai_chance = { base = 30 } add_prestige = 1
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_103_1 years = 4 mode = replace } } option = { name = hbe_story_central_hills.103.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_103_1 years = 4 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 4 } } option = { name = hbe_story_central_hills.103.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_103_2 years = 2 mode = replace } } option = { name = hbe_story_central_hills.103.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_103_3 years = 3 mode = replace } }
@@ -249,7 +249,7 @@ hbe_story_central_hills.104 = {
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_104_1 years = 2 mode = replace } } option = { name = hbe_story_central_hills.104.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_104_2 years = 3 mode = replace } } option = { name = hbe_story_central_hills.104.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_104_3 years = 4 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_104_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 } }
 }
 
 hbe_story_central_hills.105 = {
@@ -271,7 +271,7 @@ hbe_story_central_hills.106 = {
  immediate = { set_variable = hbe_story_seen_central_hills_106 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_central_hills.106.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_106_1 years = 4 mode = replace } } option = { name = hbe_story_central_hills.106.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_story_choice_central_hills_106_2 years = 2 mode = replace } } option = { name = hbe_story_central_hills.106.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_106_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 } } option = { name = hbe_story_central_hills.106.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_106_3 years = 3 mode = replace } }
 }
 
@@ -293,9 +293,9 @@ hbe_story_central_hills.108 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBS } current_year >= 1339 NOT = { has_variable = hbe_story_seen_central_hills_108 } NOT = { has_variable = hbe_story_solo_cooldown } }
  immediate = { set_variable = hbe_story_seen_central_hills_108 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_central_hills.108.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_108_1 years = 3 mode = replace } } option = { name = hbe_story_central_hills.108.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_108_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 } } option = { name = hbe_story_central_hills.108.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_story_choice_central_hills_108_2 years = 4 mode = replace } } option = { name = hbe_story_central_hills.108.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_108_2 years = 4 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 4 } } option = { name = hbe_story_central_hills.108.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.01 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_108_3 years = 2 mode = replace } }
 }
@@ -307,9 +307,9 @@ hbe_story_central_hills.109 = {
  immediate = { set_variable = hbe_story_seen_central_hills_109 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_central_hills.109.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_109_1 years = 4 mode = replace } } option = { name = hbe_story_central_hills.109.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_story_choice_central_hills_109_2 years = 2 mode = replace } } option = { name = hbe_story_central_hills.109.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_109_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 } } option = { name = hbe_story_central_hills.109.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_story_choice_central_hills_109_3 years = 3 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_109_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 } }
 }
 
 hbe_story_central_hills.110 = {
@@ -321,7 +321,7 @@ hbe_story_central_hills.110 = {
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_110_1 years = 2 mode = replace } } option = { name = hbe_story_central_hills.110.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_central_hills_110_2 years = 3 mode = replace } } option = { name = hbe_story_central_hills.110.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_110_3 years = 4 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_110_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 } }
 }
 
 hbe_story_central_hills.111 = {
@@ -331,7 +331,7 @@ hbe_story_central_hills.111 = {
  immediate = { set_variable = hbe_story_seen_central_hills_111 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_central_hills.111.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }
-add_country_modifier = { modifier = hbe_story_choice_central_hills_111_1 years = 3 mode = replace } } option = { name = hbe_story_central_hills.111.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_central_hills_111_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 } } option = { name = hbe_story_central_hills.111.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_central_hills_111_2 years = 4 mode = replace } } option = { name = hbe_story_central_hills.111.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2

@@ -22,7 +22,7 @@ hbe_civic_chengdu_plain_1 = { age = age_1_traditions starting_technology_level =
  allow = { is_member_of_international_organization = international_organization:hbe_empire current_year >= 1397 has_variable = hbe_mission_chengdu_plain_2 OR = { hbe_advance_gate_hbe_tech_chengdu_plain_4 = yes hbe_advance_gate_hbe_tech_chengdu_plain_7 = yes } NOT = { has_variable = hbe_research_pending } }
  requires = hbe_tech_chengdu_plain_2 pure_tooltip_entry = hbe_civic_chengdu_plain_1_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    global_monthly_food_modifier = 0.12
+    global_monthly_food_modifier = 0.08
     global_fine_cloth_output_modifier = 0.12
     global_hbe_shu_embroidery_output_modifier = 0.16
 }

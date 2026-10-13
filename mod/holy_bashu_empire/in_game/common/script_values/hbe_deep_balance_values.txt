@@ -1,0 +1,24 @@
+﻿# Uses the vanilla scaled_gold_for_effect economic base; payment and affordability share one value.
+hbe_decision_bill_2 = { value = hbe_event_economic_base multiply = 0.5 min = 1 max = { value = 5000 multiply = 0.5 } }
+hbe_decision_bill_3 = { value = hbe_event_economic_base multiply = 0.75 min = 1.5 max = { value = 5000 multiply = 0.75 } }
+hbe_decision_bill_4 = { value = hbe_event_economic_base multiply = 1 min = 2 max = { value = 5000 multiply = 1 } }
+hbe_decision_bill_5 = { value = hbe_event_economic_base multiply = 1.25 min = 2.5 max = { value = 5000 multiply = 1.25 } }
+hbe_decision_bill_6 = { value = hbe_event_economic_base multiply = 1.5 min = 3 max = { value = 5000 multiply = 1.5 } }
+hbe_decision_bill_8 = { value = hbe_event_economic_base multiply = 2 min = 4 max = { value = 5000 multiply = 2 } }
+hbe_decision_bill_10 = { value = hbe_event_economic_base multiply = 2.5 min = 5 max = { value = 5000 multiply = 2.5 } }
+hbe_event_receipt_1 = { value = hbe_event_economic_base multiply = 0.25 min = 0.25 max = { value = 5000 multiply = 0.25 } }
+hbe_event_receipt_2 = { value = hbe_event_economic_base multiply = 0.5 min = 0.5 max = { value = 5000 multiply = 0.5 } }
+hbe_event_receipt_3 = { value = hbe_event_economic_base multiply = 0.75 min = 0.75 max = { value = 5000 multiply = 0.75 } }
+hbe_event_receipt_4 = { value = hbe_event_economic_base multiply = 1 min = 1 max = { value = 5000 multiply = 1 } }
+hbe_event_receipt_5 = { value = hbe_event_economic_base multiply = 1.25 min = 1.25 max = { value = 5000 multiply = 1.25 } }
+hbe_event_receipt_6 = { value = hbe_event_economic_base multiply = 1.5 min = 1.5 max = { value = 5000 multiply = 1.5 } }
+hbe_event_receipt_7 = { value = hbe_event_economic_base multiply = 1.75 min = 1.75 max = { value = 5000 multiply = 1.75 } }
+hbe_event_receipt_8 = { value = hbe_event_economic_base multiply = 2 min = 2 max = { value = 5000 multiply = 2 } }
+hbe_event_receipt_9 = { value = hbe_event_economic_base multiply = 2.25 min = 2.25 max = { value = 5000 multiply = 2.25 } }
+hbe_event_receipt_10 = { value = hbe_event_economic_base multiply = 2.5 min = 2.5 max = { value = 5000 multiply = 2.5 } }
+hbe_event_receipt_11 = { value = hbe_event_economic_base multiply = 2.75 min = 2.75 max = { value = 5000 multiply = 2.75 } }
+hbe_event_receipt_12 = { value = hbe_event_economic_base multiply = 3 min = 3 max = { value = 5000 multiply = 3 } }
+hbe_event_receipt_13 = { value = hbe_event_economic_base multiply = 3.25 min = 3.25 max = { value = 5000 multiply = 3.25 } }
+hbe_event_receipt_14 = { value = hbe_event_economic_base multiply = 3.5 min = 3.5 max = { value = 5000 multiply = 3.5 } }
+hbe_event_receipt_15 = { value = hbe_event_economic_base multiply = 3.75 min = 3.75 max = { value = 5000 multiply = 3.75 } }
+hbe_feast_success_receipt = { value = hbe_event_economic_base min = 1 max = 5000 }

@@ -1,0 +1,2 @@
+﻿hbe_shared_production_support = { global_production_efficiency = 0.01 }
+hbe_shared_food_support = { global_monthly_food_modifier = 0.01 }

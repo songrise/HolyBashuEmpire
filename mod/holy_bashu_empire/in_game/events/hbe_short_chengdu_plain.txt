@@ -7,11 +7,11 @@ hbe_short_chengdu_plain.1 = {
  immediate = { set_variable = hbe_short_chengdu_plain_1_seen set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_chengdu_plain.1.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_1_1 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_1_1 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 2 }
 set_variable = { name = hbe_short_chengdu_plain_1_phase value = 1 }
 remove_variable = hbe_short_chengdu_plain_1_pending
 set_variable = { name = hbe_short_chengdu_plain_1_clock value = yes months = 6 } } option = { name = hbe_short_chengdu_plain.1.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_chengdu_plain_1_phase value = 1 }
 remove_variable = hbe_short_chengdu_plain_1_pending
 set_variable = { name = hbe_short_chengdu_plain_1_clock value = yes months = 6 } } option = { name = hbe_short_chengdu_plain.1.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -34,7 +34,7 @@ add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_2_1 years =
 set_variable = { name = hbe_short_chengdu_plain_1_phase value = 2 }
 remove_variable = hbe_short_chengdu_plain_1_pending
 set_variable = { name = hbe_short_chengdu_plain_1_clock value = yes months = 12 } } option = { name = hbe_short_chengdu_plain.2.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_2_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_chengdu_plain_1_phase value = 2 }
 remove_variable = hbe_short_chengdu_plain_1_pending
 set_variable = { name = hbe_short_chengdu_plain_1_clock value = yes months = 12 } } option = { name = hbe_short_chengdu_plain.2.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -57,7 +57,7 @@ add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_3_1 years =
 set_variable = { name = hbe_short_chengdu_plain_1_phase value = 3 }
 remove_variable = hbe_short_chengdu_plain_1_pending
 add_prestige = 1 } option = { name = hbe_short_chengdu_plain.3.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_1_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_chengdu_plain_1_phase value = 3 }
 remove_variable = hbe_short_chengdu_plain_1_pending
  } option = { name = hbe_short_chengdu_plain.3.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -129,7 +129,7 @@ add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_2_3_2 years =
 set_variable = { name = hbe_short_chengdu_plain_2_phase value = 3 }
 remove_variable = hbe_short_chengdu_plain_2_pending
  } option = { name = hbe_short_chengdu_plain.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_2_3_3 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_2_3_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 4 }
 set_variable = { name = hbe_short_chengdu_plain_2_phase value = 3 }
 remove_variable = hbe_short_chengdu_plain_2_pending
 add_prestige = 1 } option = { name = hbe_short_chengdu_plain.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_chengdu_plain_2_phase value = 3 }
@@ -143,7 +143,7 @@ hbe_short_chengdu_plain.21 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAF has_or_had_tag = BAE } NOT = { has_variable = hbe_short_chengdu_plain_3_seen } NOT = { has_variable = hbe_story_solo_cooldown } current_year >= 1339 }
  immediate = { set_variable = hbe_short_chengdu_plain_3_seen set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_chengdu_plain.21.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_3_1_1 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_3_1_1 years = 2 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 2 }
 set_variable = { name = hbe_short_chengdu_plain_3_phase value = 1 }
 remove_variable = hbe_short_chengdu_plain_3_pending
 set_variable = { name = hbe_short_chengdu_plain_3_clock value = yes months = 6 } } option = { name = hbe_short_chengdu_plain.21.b ai_chance = { base = 30 } add_prestige = 2
@@ -196,7 +196,7 @@ add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_3_3_2 years =
 set_variable = { name = hbe_short_chengdu_plain_3_phase value = 3 }
 remove_variable = hbe_short_chengdu_plain_3_pending
  } option = { name = hbe_short_chengdu_plain.23.c ai_chance = { base = 30 } add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_3_3_3 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_chengdu_plain_3_3_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 4 }
 set_variable = { name = hbe_short_chengdu_plain_3_phase value = 3 }
 remove_variable = hbe_short_chengdu_plain_3_pending
 add_prestige = 1 } option = { name = hbe_short_chengdu_plain.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_chengdu_plain_3_phase value = 3 }

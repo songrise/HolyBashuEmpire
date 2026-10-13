@@ -1,0 +1,83 @@
+{
+  "version": "0.3.1",
+  "local_only": true,
+  "decision_prices": 43,
+  "event_receipts": 77,
+  "pooled_temporary_output_modifiers": 164,
+  "national_output_caps": {
+    "global_production_efficiency": 0.05,
+    "global_monthly_food_modifier": 0.1,
+    "vanilla_references": {
+      "global_production_efficiency": 0.025,
+      "global_monthly_food_modifier": 0.05
+    },
+    "max_ratio": 2
+  },
+  "reforms": [
+    {
+      "reform": "hbe_prefectural_council",
+      "years_to_implement": 5,
+      "major": false,
+      "government_restriction": null
+    },
+    {
+      "reform": "hbe_mountain_river_dispatch",
+      "years_to_implement": 5,
+      "major": false,
+      "government_restriction": null
+    }
+  ],
+  "support_duration_rule": "Single-unit duration only. Stronger/equal arrangements replace and refresh; weaker arrangements preserve the active effect. Duration does not add.",
+  "unit_upgrade_power": [
+    {
+      "unit": "hbe_trained_river",
+      "old_added_power": "1.20",
+      "new_added_power": ".20",
+      "inherited_power": 1,
+      "effective_power": 1.2
+    },
+    {
+      "unit": "hbe_permanent_pass",
+      "old_added_power": "1.15",
+      "new_added_power": ".15",
+      "inherited_power": 1,
+      "effective_power": 1.15
+    }
+  ],
+  "kept": {
+    "prestige": "Existing event magnitudes 1-5 match native minor rewards.",
+    "literacy": "Monthly 0.02 matches native upper technology examples; max-literacy uses already_percent, not fraction.",
+    "goods": "Global pop demand and premium reference prices retained; reference margins are not realized profits.",
+    "dividends": "Per-contributor virtual bonus 8-64 and logarithmic 1/2/3 weights retained; 64 is a pool contribution cap, not a payout cap.",
+    "burden": "Existing threshold penalties, policy tradeoffs and conditional peacetime recovery retained.",
+    "loan_repayment": "Fixed monetary debt transactions retain matching nominal amounts."
+  },
+  "static_checks": 14185,
+  "native_checks": {
+    "both_reforms": true,
+    "external_excluded": true,
+    "bill_tiers": true,
+    "service_payment": true,
+    "receipt_payment": true,
+    "production_cap": true,
+    "food_cap": true,
+    "fixture_finished": true,
+    "one_support_per_kind": true,
+    "weaker_rewards_do_not_add_or_shorten_duration": true,
+    "economic_bill_exact": true,
+    "economic_receipt_exact": true,
+    "production_actual_5_percent": true,
+    "food_actual_8_percent": true,
+    "no_new_feature_engine_errors": true
+  },
+  "build_reproduction": {
+    "status": "passed",
+    "compared_files": 639,
+    "differences": []
+  },
+  "detail_archive": {
+    "path": "work/deep-balance-evidence-20261014",
+    "tracked": false,
+    "patch_report_sha256": "452150336509595e24f471395392011689bc147e4223451709eb4092eacea92e"
+  }
+}

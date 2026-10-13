@@ -4,12 +4,12 @@ hbe_story_choice_chengdu_plain_1_3 = { cultural_influence_modifier = 0.07 global
 hbe_story_choice_chengdu_plain_2_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_chengdu_plain_2_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_chengdu_plain_2_3 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
-hbe_story_choice_chengdu_plain_3_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_chengdu_plain_3_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_3_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_chengdu_plain_3_3 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_4_1 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
 hbe_story_choice_chengdu_plain_4_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
-hbe_story_choice_chengdu_plain_4_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_chengdu_plain_4_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_5_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_story_choice_chengdu_plain_5_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_chengdu_plain_5_3 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
@@ -22,37 +22,37 @@ hbe_story_choice_chengdu_plain_7_3 = { cultural_influence_modifier = 0.07 global
 hbe_story_ending_chengdu_plain_1 = { peasants_estate_target_satisfaction = 0.02 global_disease_resistance = 0.04 cultural_influence_modifier = 0.06 global_monthly_food_modifier = -0.02 }
 hbe_story_ending_chengdu_plain_2 = { monthly_prestige = 0.056 cultural_influence_modifier = 0.07 global_merchant_capacity_modifier = 0.03 tax_income_efficiency = -0.02 }
 hbe_story_choice_chengdu_plain_101_1 = { global_merchant_capacity_modifier = 0.06 tax_income_efficiency = -0.04 }
-hbe_story_choice_chengdu_plain_101_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_chengdu_plain_101_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_chengdu_plain_101_3 = { cultural_influence_modifier = 0.04 burghers_estate_target_satisfaction = 0.02 tax_income_efficiency = -0.02 }
 hbe_story_choice_chengdu_plain_102_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_chengdu_plain_102_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
-hbe_story_choice_chengdu_plain_102_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_chengdu_plain_102_3 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_chengdu_plain_103_1 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
 hbe_story_choice_chengdu_plain_103_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_chengdu_plain_103_3 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
-hbe_story_choice_chengdu_plain_104_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_story_choice_chengdu_plain_104_2 = { monthly_prestige = 0.056 global_production_efficiency = 0.03 burghers_estate_target_satisfaction = -0.02 }
+hbe_story_choice_chengdu_plain_103_3 = {  global_rice_output_modifier = 0.04 }
+hbe_story_choice_chengdu_plain_104_1 = {  research_speed_modifier = 0.02 }
+hbe_story_choice_chengdu_plain_104_2 = { monthly_prestige = 0.056  burghers_estate_target_satisfaction = -0.02 }
 hbe_story_choice_chengdu_plain_104_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_chengdu_plain_105_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_chengdu_plain_105_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_chengdu_plain_105_3 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_chengdu_plain_106_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_story_choice_chengdu_plain_106_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_story_choice_chengdu_plain_106_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_chengdu_plain_107_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_chengdu_plain_106_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_chengdu_plain_106_3 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_chengdu_plain_107_1 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_chengdu_plain_107_2 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
-hbe_story_choice_chengdu_plain_107_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_chengdu_plain_107_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_108_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_108_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_chengdu_plain_108_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_chengdu_plain_109_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_chengdu_plain_109_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_109_2 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_109_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_chengdu_plain_110_1 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
 hbe_story_choice_chengdu_plain_110_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_story_choice_chengdu_plain_110_3 = { cultural_influence_modifier = 0.04 burghers_estate_target_satisfaction = 0.02 tax_income_efficiency = -0.02 }
 hbe_story_choice_chengdu_plain_111_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_story_choice_chengdu_plain_111_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_chengdu_plain_111_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_chengdu_plain_111_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_chengdu_plain_112_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_chengdu_plain_112_2 = { nobles_estate_target_satisfaction = 0.03 monthly_prestige = 0.035 cultural_influence_modifier = -0.04 }
@@ -62,7 +62,7 @@ hbe_story_choice_chengdu_plain_113_2 = { nobles_estate_target_satisfaction = 0.0
 hbe_story_choice_chengdu_plain_113_3 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_story_choice_southern_salt_wine_1_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_southern_salt_wine_1_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_southern_salt_wine_1_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_1_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_2_1 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_southern_salt_wine_2_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_2_3 = { cultural_influence_modifier = 0.07 global_merchant_capacity_modifier = 0.04 research_speed_modifier = -0.03 }
@@ -71,7 +71,7 @@ hbe_story_choice_southern_salt_wine_3_2 = { global_institution_growth_modifier =
 hbe_story_choice_southern_salt_wine_3_3 = { tax_income_efficiency = 0.04 burghers_estate_target_satisfaction = 0.02 global_production_efficiency = -0.04 }
 hbe_story_choice_southern_salt_wine_4_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_southern_salt_wine_4_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
-hbe_story_choice_southern_salt_wine_4_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_southern_salt_wine_4_3 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_southern_salt_wine_5_1 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southern_salt_wine_5_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_southern_salt_wine_5_3 = { cultural_influence_modifier = 0.07 global_merchant_capacity_modifier = 0.04 research_speed_modifier = -0.03 }
@@ -80,48 +80,48 @@ hbe_story_choice_southern_salt_wine_6_2 = { research_speed_modifier = 0.06 globa
 hbe_story_choice_southern_salt_wine_6_3 = { cultural_influence_modifier = 0.07 global_merchant_capacity_modifier = 0.04 research_speed_modifier = -0.03 }
 hbe_story_choice_southern_salt_wine_7_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southern_salt_wine_7_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
-hbe_story_choice_southern_salt_wine_7_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_7_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_ending_southern_salt_wine_1 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.006 global_institution_growth_modifier = 0.04 }
 hbe_story_ending_southern_salt_wine_2 = { cultural_influence_modifier = 0.07 global_hbe_well_salt_output_modifier = 0.06 monthly_prestige = 0.042 research_speed_modifier = -0.02 }
 hbe_story_choice_southern_salt_wine_101_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_southern_salt_wine_101_2 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 }
 hbe_story_choice_southern_salt_wine_101_3 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
-hbe_story_choice_southern_salt_wine_102_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_102_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_102_2 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_southern_salt_wine_102_3 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 }
 hbe_story_choice_southern_salt_wine_103_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_southern_salt_wine_103_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_southern_salt_wine_103_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_103_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_104_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_southern_salt_wine_104_2 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southern_salt_wine_104_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_southern_salt_wine_105_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_105_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_southern_salt_wine_105_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_story_choice_southern_salt_wine_106_1 = { global_disease_resistance = 0.04 global_monthly_food_modifier = 0.03 }
+hbe_story_choice_southern_salt_wine_106_1 = { global_disease_resistance = 0.04  }
 hbe_story_choice_southern_salt_wine_106_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_southern_salt_wine_106_3 = { ship_build_speed = 0.07 global_monthly_food_modifier = -0.04 peasants_estate_target_satisfaction = -0.04 }
 hbe_story_choice_southern_salt_wine_107_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_107_2 = { nobles_estate_target_satisfaction = 0.03 monthly_prestige = 0.035 cultural_influence_modifier = -0.04 }
 hbe_story_choice_southern_salt_wine_107_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_southern_salt_wine_108_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_108_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_108_2 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
-hbe_story_choice_southern_salt_wine_108_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_108_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_109_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
-hbe_story_choice_southern_salt_wine_109_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_southern_salt_wine_109_2 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_southern_salt_wine_109_3 = { tax_income_efficiency = 0.04 burghers_estate_target_satisfaction = 0.02 global_production_efficiency = -0.04 }
 hbe_story_choice_southern_salt_wine_110_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_story_choice_southern_salt_wine_110_2 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 }
 hbe_story_choice_southern_salt_wine_110_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_southern_salt_wine_111_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_story_choice_southern_salt_wine_111_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_southern_salt_wine_111_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_southern_salt_wine_111_2 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southern_salt_wine_111_3 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_southern_salt_wine_112_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southern_salt_wine_112_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_southern_salt_wine_112_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_southern_salt_wine_113_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_story_choice_southern_salt_wine_113_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_story_choice_southern_salt_wine_113_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_southern_salt_wine_113_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_southern_salt_wine_113_3 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_eastern_river_1_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_eastern_river_1_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_eastern_river_1_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
@@ -134,8 +134,8 @@ hbe_story_choice_eastern_river_3_3 = { tax_income_efficiency = 0.06 global_merch
 hbe_story_choice_eastern_river_4_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_eastern_river_4_2 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_eastern_river_4_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_eastern_river_5_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
-hbe_story_choice_eastern_river_5_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_eastern_river_5_1 = {  nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_eastern_river_5_2 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_eastern_river_5_3 = { global_supply_limit_modifier = 0.07 navy_maintenance_efficiency = 0.03 burghers_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_6_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_eastern_river_6_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
@@ -153,20 +153,20 @@ hbe_story_choice_eastern_river_102_2 = { global_monthly_control = 0.01 tribes_es
 hbe_story_choice_eastern_river_102_3 = { tax_income_efficiency = 0.06 global_merchant_capacity_modifier = -0.05 }
 hbe_story_choice_eastern_river_103_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_eastern_river_103_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_eastern_river_103_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_eastern_river_103_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_104_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_104_2 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_eastern_river_104_3 = { global_supply_limit_modifier = 0.07 navy_maintenance_efficiency = 0.03 burghers_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_105_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_eastern_river_105_2 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_eastern_river_105_3 = { tax_income_efficiency = 0.04 burghers_estate_target_satisfaction = 0.02 global_production_efficiency = -0.04 }
-hbe_story_choice_eastern_river_106_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_eastern_river_106_1 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_eastern_river_106_2 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
 hbe_story_choice_eastern_river_106_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_107_1 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
 hbe_story_choice_eastern_river_107_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_107_3 = { cultural_influence_modifier = 0.07 global_merchant_capacity_modifier = 0.04 research_speed_modifier = -0.03 }
-hbe_story_choice_eastern_river_108_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_eastern_river_108_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_108_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_eastern_river_108_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_eastern_river_109_1 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
@@ -175,20 +175,20 @@ hbe_story_choice_eastern_river_109_3 = { global_monthly_control = 0.01 tribes_es
 hbe_story_choice_eastern_river_110_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_eastern_river_110_2 = { nobles_estate_target_satisfaction = 0.03 monthly_prestige = 0.035 cultural_influence_modifier = -0.04 }
 hbe_story_choice_eastern_river_110_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_story_choice_eastern_river_111_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
+hbe_story_choice_eastern_river_111_1 = {  global_rice_output_modifier = 0.04 }
 hbe_story_choice_eastern_river_111_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_eastern_river_111_3 = { monthly_prestige = 0.056 global_production_efficiency = 0.03 burghers_estate_target_satisfaction = -0.02 }
+hbe_story_choice_eastern_river_111_3 = { monthly_prestige = 0.056  burghers_estate_target_satisfaction = -0.02 }
 hbe_story_choice_eastern_river_112_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_eastern_river_112_2 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_eastern_river_112_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_eastern_river_113_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_story_choice_eastern_river_113_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_story_choice_eastern_river_113_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_eastern_river_113_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_eastern_river_113_3 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_northern_shudao_1_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_northern_shudao_1_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_northern_shudao_1_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_2_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_story_choice_northern_shudao_2_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_northern_shudao_2_2 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_northern_shudao_2_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_3_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_northern_shudao_3_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
@@ -199,7 +199,7 @@ hbe_story_choice_northern_shudao_4_3 = { global_supply_limit_modifier = 0.06 arm
 hbe_story_choice_northern_shudao_5_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_northern_shudao_5_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_5_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_northern_shudao_6_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_northern_shudao_6_1 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_northern_shudao_6_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_northern_shudao_6_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_7_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
@@ -215,16 +215,16 @@ hbe_story_choice_northern_shudao_102_2 = { nobles_estate_target_satisfaction = 0
 hbe_story_choice_northern_shudao_102_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_northern_shudao_103_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_northern_shudao_103_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_northern_shudao_103_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_northern_shudao_103_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_104_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_northern_shudao_104_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_northern_shudao_104_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_story_choice_northern_shudao_105_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_northern_shudao_104_3 = {  research_speed_modifier = 0.02 }
+hbe_story_choice_northern_shudao_105_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_105_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_northern_shudao_105_3 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_northern_shudao_106_1 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_northern_shudao_106_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_northern_shudao_106_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_northern_shudao_106_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_northern_shudao_107_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_northern_shudao_107_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_107_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
@@ -234,8 +234,8 @@ hbe_story_choice_northern_shudao_108_3 = { cultural_influence_modifier = 0.04 bu
 hbe_story_choice_northern_shudao_109_1 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
 hbe_story_choice_northern_shudao_109_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_northern_shudao_109_3 = { monthly_army_tradition = 0.035 army_maintenance_efficiency = -0.03 }
-hbe_story_choice_northern_shudao_110_1 = { global_disease_resistance = 0.04 global_monthly_food_modifier = 0.03 }
-hbe_story_choice_northern_shudao_110_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_northern_shudao_110_1 = { global_disease_resistance = 0.04  }
+hbe_story_choice_northern_shudao_110_2 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_northern_shudao_110_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_northern_shudao_111_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_northern_shudao_111_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
@@ -252,54 +252,54 @@ hbe_story_choice_central_hills_1_3 = { tax_income_efficiency = 0.04 nobles_estat
 hbe_story_choice_central_hills_2_1 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_central_hills_2_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_central_hills_2_3 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_central_hills_3_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_central_hills_3_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_3_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_central_hills_3_3 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_4_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
-hbe_story_choice_central_hills_4_2 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
+hbe_story_choice_central_hills_4_2 = {  global_rice_output_modifier = 0.04 }
 hbe_story_choice_central_hills_4_3 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_5_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_story_choice_central_hills_5_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_central_hills_5_3 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_6_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_story_choice_central_hills_6_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_central_hills_6_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_central_hills_6_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_7_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_central_hills_7_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_central_hills_7_3 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_ending_central_hills_1 = { global_monthly_food_modifier = 0.06 global_food_decay = -0.04 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_ending_central_hills_2 = { tax_income_efficiency = 0.04 global_monthly_control = 0.01 global_monthly_food_modifier = 0.03 peasants_estate_target_satisfaction = -0.02 }
 hbe_story_choice_central_hills_101_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
-hbe_story_choice_central_hills_101_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_central_hills_101_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_central_hills_101_2 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_central_hills_101_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_central_hills_102_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
-hbe_story_choice_central_hills_102_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_central_hills_102_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_central_hills_102_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_story_choice_central_hills_103_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_central_hills_103_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_103_2 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_central_hills_103_3 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_central_hills_104_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_story_choice_central_hills_104_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_central_hills_104_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_central_hills_104_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_central_hills_105_1 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
 hbe_story_choice_central_hills_105_2 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_105_3 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 }
 hbe_story_choice_central_hills_106_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_story_choice_central_hills_106_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_central_hills_106_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_central_hills_106_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_central_hills_107_1 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_story_choice_central_hills_107_2 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
 hbe_story_choice_central_hills_107_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_story_choice_central_hills_108_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
-hbe_story_choice_central_hills_108_2 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
+hbe_story_choice_central_hills_108_1 = {  nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_central_hills_108_2 = {  global_rice_output_modifier = 0.04 }
 hbe_story_choice_central_hills_108_3 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_central_hills_109_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_story_choice_central_hills_109_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_story_choice_central_hills_109_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_central_hills_109_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_central_hills_109_3 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_central_hills_110_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_central_hills_110_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_central_hills_110_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_central_hills_111_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
+hbe_story_choice_central_hills_110_3 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_central_hills_111_1 = {  global_rice_output_modifier = 0.04 }
 hbe_story_choice_central_hills_111_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_central_hills_111_3 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_central_hills_112_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
@@ -314,7 +314,7 @@ hbe_story_choice_western_tea_horse_1_3 = { global_supply_limit_modifier = 0.06 a
 hbe_story_choice_western_tea_horse_2_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_western_tea_horse_2_2 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_western_tea_horse_2_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_western_tea_horse_3_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_western_tea_horse_3_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_3_2 = { global_livestock_output_modifier = 0.06 global_supply_limit_modifier = 0.04 }
 hbe_story_choice_western_tea_horse_3_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_4_1 = { global_disease_resistance = 0.08 global_merchant_capacity_modifier = -0.06 }
@@ -332,18 +332,18 @@ hbe_story_choice_western_tea_horse_7_3 = { global_supply_limit_modifier = 0.06 a
 hbe_story_ending_western_tea_horse_1 = { global_disease_resistance = 0.04 merchant_maintenance_efficiency = 0.04 global_livestock_output_modifier = 0.06 tribes_estate_target_satisfaction = 0.01 }
 hbe_story_ending_western_tea_horse_2 = { army_maintenance_efficiency = 0.04 global_supply_limit_modifier = 0.06 monthly_army_tradition = 0.021 tax_income_efficiency = -0.02 }
 hbe_story_choice_western_tea_horse_101_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_story_choice_western_tea_horse_101_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_western_tea_horse_101_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_101_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_story_choice_western_tea_horse_102_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_western_tea_horse_102_1 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_western_tea_horse_102_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_western_tea_horse_102_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_western_tea_horse_102_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_western_tea_horse_103_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_western_tea_horse_103_2 = { global_disease_resistance = 0.08 global_merchant_capacity_modifier = -0.06 }
-hbe_story_choice_western_tea_horse_103_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_western_tea_horse_103_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_104_1 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
-hbe_story_choice_western_tea_horse_104_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_western_tea_horse_104_2 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_western_tea_horse_104_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_story_choice_western_tea_horse_105_1 = { global_disease_resistance = 0.04 global_monthly_food_modifier = 0.03 }
+hbe_story_choice_western_tea_horse_105_1 = { global_disease_resistance = 0.04  }
 hbe_story_choice_western_tea_horse_105_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_western_tea_horse_105_3 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
 hbe_story_choice_western_tea_horse_106_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
@@ -354,8 +354,8 @@ hbe_story_choice_western_tea_horse_107_2 = { global_road_building_time = -0.06 m
 hbe_story_choice_western_tea_horse_107_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_108_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_story_choice_western_tea_horse_108_2 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
-hbe_story_choice_western_tea_horse_108_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_story_choice_western_tea_horse_109_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_story_choice_western_tea_horse_108_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_western_tea_horse_109_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_109_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_western_tea_horse_109_3 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_western_tea_horse_110_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
@@ -371,7 +371,7 @@ hbe_story_choice_western_tea_horse_113_1 = { global_monthly_literacy = 0.006 glo
 hbe_story_choice_western_tea_horse_113_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_western_tea_horse_113_3 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southwestern_valleys_1_1 = { merchant_maintenance_efficiency = 0.05 tribes_estate_target_satisfaction = 0.03 }
-hbe_story_choice_southwestern_valleys_1_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_story_choice_southwestern_valleys_1_2 = {  research_speed_modifier = 0.02 }
 hbe_story_choice_southwestern_valleys_1_3 = { tax_income_efficiency = 0.06 global_merchant_capacity_modifier = -0.05 }
 hbe_story_choice_southwestern_valleys_2_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_southwestern_valleys_2_2 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
@@ -380,8 +380,8 @@ hbe_story_choice_southwestern_valleys_3_1 = { peasants_estate_target_satisfactio
 hbe_story_choice_southwestern_valleys_3_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_southwestern_valleys_3_3 = { ship_build_speed = 0.07 global_monthly_food_modifier = -0.04 peasants_estate_target_satisfaction = -0.04 }
 hbe_story_choice_southwestern_valleys_4_1 = { merchant_maintenance_efficiency = 0.05 tribes_estate_target_satisfaction = 0.03 }
-hbe_story_choice_southwestern_valleys_4_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_story_choice_southwestern_valleys_4_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southwestern_valleys_4_2 = {  research_speed_modifier = 0.02 }
+hbe_story_choice_southwestern_valleys_4_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southwestern_valleys_5_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_southwestern_valleys_5_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_southwestern_valleys_5_3 = { tax_income_efficiency = 0.06 global_merchant_capacity_modifier = -0.05 }
@@ -396,13 +396,13 @@ hbe_story_ending_southwestern_valleys_2 = { tax_income_efficiency = 0.04 global_
 hbe_story_choice_southwestern_valleys_101_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_story_choice_southwestern_valleys_101_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_southwestern_valleys_101_3 = { global_supply_limit_modifier = 0.07 navy_maintenance_efficiency = 0.03 burghers_estate_target_satisfaction = -0.03 }
-hbe_story_choice_southwestern_valleys_102_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
+hbe_story_choice_southwestern_valleys_102_1 = {  global_rice_output_modifier = 0.04 }
 hbe_story_choice_southwestern_valleys_102_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_story_choice_southwestern_valleys_102_3 = { tax_income_efficiency = 0.04 burghers_estate_target_satisfaction = 0.02 global_production_efficiency = -0.04 }
 hbe_story_choice_southwestern_valleys_103_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_story_choice_southwestern_valleys_103_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_story_choice_southwestern_valleys_103_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_story_choice_southwestern_valleys_104_1 = { global_disease_resistance = 0.04 global_monthly_food_modifier = 0.03 }
+hbe_story_choice_southwestern_valleys_103_2 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southwestern_valleys_103_3 = {  research_speed_modifier = 0.02 }
+hbe_story_choice_southwestern_valleys_104_1 = { global_disease_resistance = 0.04  }
 hbe_story_choice_southwestern_valleys_104_2 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_southwestern_valleys_104_3 = { tax_income_efficiency = 0.06 global_merchant_capacity_modifier = -0.05 }
 hbe_story_choice_southwestern_valleys_105_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
@@ -410,43 +410,43 @@ hbe_story_choice_southwestern_valleys_105_2 = { nobles_estate_target_satisfactio
 hbe_story_choice_southwestern_valleys_105_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_southwestern_valleys_106_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_story_choice_southwestern_valleys_106_2 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_story_choice_southwestern_valleys_106_3 = { monthly_prestige = 0.056 global_production_efficiency = 0.03 burghers_estate_target_satisfaction = -0.02 }
+hbe_story_choice_southwestern_valleys_106_3 = { monthly_prestige = 0.056  burghers_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southwestern_valleys_107_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_story_choice_southwestern_valleys_107_2 = { cultural_influence_modifier = 0.04 burghers_estate_target_satisfaction = 0.02 tax_income_efficiency = -0.02 }
 hbe_story_choice_southwestern_valleys_107_3 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southwestern_valleys_108_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
-hbe_story_choice_southwestern_valleys_108_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_story_choice_southwestern_valleys_108_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_story_choice_southwestern_valleys_108_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_story_choice_southwestern_valleys_109_1 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
 hbe_story_choice_southwestern_valleys_109_2 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_southwestern_valleys_109_3 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_story_choice_southwestern_valleys_110_1 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southwestern_valleys_110_2 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_story_choice_southwestern_valleys_110_3 = { monthly_prestige = 0.056 global_production_efficiency = 0.03 burghers_estate_target_satisfaction = -0.02 }
+hbe_story_choice_southwestern_valleys_110_3 = { monthly_prestige = 0.056  burghers_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southwestern_valleys_111_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southwestern_valleys_111_2 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_story_choice_southwestern_valleys_111_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_story_choice_southwestern_valleys_112_1 = { global_disease_resistance = 0.04 global_monthly_food_modifier = 0.03 }
-hbe_story_choice_southwestern_valleys_112_2 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_story_choice_southwestern_valleys_112_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_story_choice_southwestern_valleys_112_1 = { global_disease_resistance = 0.04  }
+hbe_story_choice_southwestern_valleys_112_2 = {  research_speed_modifier = 0.02 }
+hbe_story_choice_southwestern_valleys_112_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_story_choice_southwestern_valleys_113_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_story_choice_southwestern_valleys_113_2 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
 hbe_story_choice_southwestern_valleys_113_3 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
 hbe_migration_choice_1_1 = { global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_migration_choice_1_2 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_migration_choice_1_3 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
-hbe_migration_choice_2_1 = { global_population_capacity_modifier = 0.04 global_migration_attraction = 0.056 tax_income_efficiency = -0.04 global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_migration_choice_2_1 = { global_population_capacity_modifier = 0.04 global_migration_attraction = 0.056 tax_income_efficiency = -0.04  nobles_estate_target_satisfaction = -0.03 }
 hbe_migration_choice_2_2 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_migration_choice_2_3 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
 hbe_migration_choice_3_1 = { global_pop_assimilation_speed_modifier = 0.06 tribes_estate_target_satisfaction = 0.01 global_monthly_literacy = 0.004 }
 hbe_migration_choice_3_2 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_migration_choice_3_3 = { nobles_estate_target_satisfaction = 0.06 global_monthly_control = -0.005 global_migration_attraction = -0.1 peasants_estate_target_satisfaction = 0.01 }
-hbe_migration_choice_4_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 }
+hbe_migration_choice_4_1 = {  global_rice_output_modifier = 0.04 global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 }
 hbe_migration_choice_4_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_migration_choice_4_3 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
-hbe_migration_choice_5_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.02 global_production_efficiency = 0.04 }
-hbe_migration_choice_5_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_migration_choice_5_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
+hbe_migration_choice_5_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.02  }
+hbe_migration_choice_5_2 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_migration_choice_5_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
 hbe_migration_choice_6_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 global_population_capacity_modifier = 0.04 global_migration_attraction = 0.056 tax_income_efficiency = -0.04 }
 hbe_migration_choice_6_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_migration_choice_6_3 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
@@ -461,14 +461,14 @@ hbe_migration_choice_9_2 = { global_monthly_control = 0.01 tax_income_efficiency
 hbe_migration_choice_9_3 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
 hbe_migration_ending_1 = { global_migration_attraction = 0.07 global_population_capacity_modifier = 0.04 global_pop_assimilation_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_migration_ending_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 nobles_estate_target_satisfaction = 0.02 global_migration_attraction = -0.05 }
-hbe_short_choice_chengdu_plain_1_1_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_short_choice_chengdu_plain_1_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_chengdu_plain_1_1_1 = {  research_speed_modifier = 0.02 }
+hbe_short_choice_chengdu_plain_1_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_chengdu_plain_1_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_chengdu_plain_1_2_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_chengdu_plain_1_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_chengdu_plain_1_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_chengdu_plain_1_2_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_chengdu_plain_1_3_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_short_choice_chengdu_plain_1_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_chengdu_plain_1_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_chengdu_plain_1_3_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_chengdu_plain_2_1_1 = { cultural_influence_modifier = 0.07 clergy_estate_target_satisfaction = -0.02 }
 hbe_short_choice_chengdu_plain_2_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
@@ -478,8 +478,8 @@ hbe_short_choice_chengdu_plain_2_2_2 = { cultural_influence_modifier = 0.06 nobl
 hbe_short_choice_chengdu_plain_2_2_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_chengdu_plain_2_3_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_short_choice_chengdu_plain_2_3_2 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
-hbe_short_choice_chengdu_plain_2_3_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_short_choice_chengdu_plain_3_1_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_short_choice_chengdu_plain_2_3_3 = {  research_speed_modifier = 0.02 }
+hbe_short_choice_chengdu_plain_3_1_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_short_choice_chengdu_plain_3_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_chengdu_plain_3_1_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_chengdu_plain_3_2_1 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
@@ -487,27 +487,27 @@ hbe_short_choice_chengdu_plain_3_2_2 = { tax_income_efficiency = 0.04 nobles_est
 hbe_short_choice_chengdu_plain_3_2_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_chengdu_plain_3_3_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_chengdu_plain_3_3_2 = { tax_income_efficiency = 0.04 burghers_estate_target_satisfaction = 0.02 global_production_efficiency = -0.04 }
-hbe_short_choice_chengdu_plain_3_3_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_short_choice_chengdu_plain_3_3_3 = {  research_speed_modifier = 0.02 }
 hbe_short_choice_southern_salt_wine_1_1_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
-hbe_short_choice_southern_salt_wine_1_1_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_short_choice_southern_salt_wine_1_1_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_short_choice_southern_salt_wine_1_1_2 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_southern_salt_wine_1_1_3 = {  research_speed_modifier = 0.02 }
 hbe_short_choice_southern_salt_wine_1_2_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_southern_salt_wine_1_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_southern_salt_wine_1_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_southern_salt_wine_1_2_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_southern_salt_wine_1_3_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_southern_salt_wine_1_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_southern_salt_wine_1_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_southern_salt_wine_1_3_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_southern_salt_wine_2_1_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_southern_salt_wine_2_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_southern_salt_wine_2_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_southern_salt_wine_2_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_short_choice_southern_salt_wine_2_2_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_short_choice_southern_salt_wine_2_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_southern_salt_wine_2_2_1 = {  research_speed_modifier = 0.02 }
+hbe_short_choice_southern_salt_wine_2_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_southern_salt_wine_2_2_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_southern_salt_wine_2_3_1 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_short_choice_southern_salt_wine_2_3_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_southern_salt_wine_2_3_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_southern_salt_wine_2_3_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_southern_salt_wine_3_1_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_short_choice_southern_salt_wine_3_1_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_southern_salt_wine_3_1_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_southern_salt_wine_3_1_3 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_short_choice_southern_salt_wine_3_2_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_southern_salt_wine_3_2_2 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
@@ -524,29 +524,29 @@ hbe_short_choice_eastern_river_1_2_3 = { global_institution_growth_modifier = 0.
 hbe_short_choice_eastern_river_1_3_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_eastern_river_1_3_2 = { global_supply_limit_modifier = 0.07 navy_maintenance_efficiency = 0.03 burghers_estate_target_satisfaction = -0.03 }
 hbe_short_choice_eastern_river_1_3_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_eastern_river_2_1_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
-hbe_short_choice_eastern_river_2_1_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_eastern_river_2_1_1 = {  nobles_estate_target_satisfaction = -0.03 }
+hbe_short_choice_eastern_river_2_1_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_eastern_river_2_1_3 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_short_choice_eastern_river_2_2_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_short_choice_eastern_river_2_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_eastern_river_2_2_1 = {  research_speed_modifier = 0.02 }
+hbe_short_choice_eastern_river_2_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_eastern_river_2_2_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_eastern_river_2_3_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_short_choice_eastern_river_2_3_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_eastern_river_2_3_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_eastern_river_2_3_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_eastern_river_3_1_1 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_short_choice_eastern_river_3_1_2 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_eastern_river_3_1_3 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 }
 hbe_short_choice_eastern_river_3_2_1 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_short_choice_eastern_river_3_2_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_eastern_river_3_2_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_eastern_river_3_2_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_eastern_river_3_3_1 = { global_monthly_food_modifier = -0.04 cultural_influence_modifier = 0.06 global_disease_resistance = 0.02 }
 hbe_short_choice_eastern_river_3_3_2 = { cultural_influence_modifier = 0.07 global_merchant_capacity_modifier = 0.04 research_speed_modifier = -0.03 }
 hbe_short_choice_eastern_river_3_3_3 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_short_choice_northern_shudao_1_1_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_northern_shudao_1_1_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
-hbe_short_choice_northern_shudao_1_1_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_northern_shudao_1_1_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_northern_shudao_1_2_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_northern_shudao_1_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_northern_shudao_1_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_northern_shudao_1_2_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_northern_shudao_1_3_1 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_short_choice_northern_shudao_1_3_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
@@ -564,28 +564,28 @@ hbe_short_choice_northern_shudao_3_1_1 = { global_monthly_control = 0.01 tax_inc
 hbe_short_choice_northern_shudao_3_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_northern_shudao_3_1_3 = { tax_income_efficiency = 0.06 global_merchant_capacity_modifier = -0.05 }
 hbe_short_choice_northern_shudao_3_2_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_northern_shudao_3_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_northern_shudao_3_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_northern_shudao_3_2_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_northern_shudao_3_3_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_northern_shudao_3_3_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_northern_shudao_3_3_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_central_hills_1_1_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
-hbe_short_choice_central_hills_1_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_central_hills_1_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_central_hills_1_1_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_central_hills_1_2_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
+hbe_short_choice_central_hills_1_2_1 = {  global_rice_output_modifier = 0.04 }
 hbe_short_choice_central_hills_1_2_2 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_central_hills_1_2_3 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
-hbe_short_choice_central_hills_1_3_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_central_hills_1_3_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_central_hills_1_3_1 = {  global_rice_output_modifier = 0.04 global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
+hbe_short_choice_central_hills_1_3_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_central_hills_1_3_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_central_hills_2_1_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_central_hills_2_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_central_hills_2_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_central_hills_2_1_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_central_hills_2_2_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_central_hills_2_2_2 = { cultural_influence_modifier = 0.06 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = -0.02 }
-hbe_short_choice_central_hills_2_2_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_short_choice_central_hills_2_2_3 = {  research_speed_modifier = 0.02 }
 hbe_short_choice_central_hills_2_3_1 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
-hbe_short_choice_central_hills_2_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_central_hills_2_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_central_hills_2_3_3 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
 hbe_short_choice_central_hills_3_1_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_short_choice_central_hills_3_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
@@ -594,16 +594,16 @@ hbe_short_choice_central_hills_3_2_1 = { global_monthly_control = 0.01 tax_incom
 hbe_short_choice_central_hills_3_2_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_central_hills_3_2_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_central_hills_3_3_1 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_short_choice_central_hills_3_3_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_central_hills_3_3_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_central_hills_3_3_3 = { merchant_maintenance_efficiency = 0.05 tribes_estate_target_satisfaction = 0.03 }
 hbe_short_choice_western_tea_horse_1_1_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_short_choice_western_tea_horse_1_1_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_western_tea_horse_1_1_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_western_tea_horse_1_1_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_western_tea_horse_1_2_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_western_tea_horse_1_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_short_choice_western_tea_horse_1_2_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_short_choice_western_tea_horse_1_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_western_tea_horse_1_2_3 = {  research_speed_modifier = 0.02 }
 hbe_short_choice_western_tea_horse_1_3_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_western_tea_horse_1_3_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_western_tea_horse_1_3_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_western_tea_horse_1_3_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_western_tea_horse_2_1_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_short_choice_western_tea_horse_2_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
@@ -612,28 +612,28 @@ hbe_short_choice_western_tea_horse_2_2_1 = { global_monthly_control = 0.01 noble
 hbe_short_choice_western_tea_horse_2_2_2 = { tax_income_efficiency = 0.04 burghers_estate_target_satisfaction = 0.02 global_production_efficiency = -0.04 }
 hbe_short_choice_western_tea_horse_2_2_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_western_tea_horse_2_3_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_western_tea_horse_2_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_western_tea_horse_2_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_western_tea_horse_2_3_3 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_short_choice_western_tea_horse_3_1_1 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_western_tea_horse_3_1_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_western_tea_horse_3_1_3 = { merchant_maintenance_efficiency = 0.05 tribes_estate_target_satisfaction = 0.03 }
 hbe_short_choice_western_tea_horse_3_2_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
-hbe_short_choice_western_tea_horse_3_2_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_short_choice_western_tea_horse_3_2_3 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_western_tea_horse_3_2_2 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_western_tea_horse_3_2_3 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_western_tea_horse_3_3_1 = { merchant_maintenance_efficiency = 0.05 tribes_estate_target_satisfaction = 0.03 }
 hbe_short_choice_western_tea_horse_3_3_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_western_tea_horse_3_3_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_southwestern_valleys_1_1_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_short_choice_southwestern_valleys_1_1_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_southwestern_valleys_1_1_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_southwestern_valleys_1_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_southwestern_valleys_1_2_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_southwestern_valleys_1_2_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_southwestern_valleys_1_2_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_southwestern_valleys_1_2_3 = { merchant_maintenance_efficiency = 0.05 tribes_estate_target_satisfaction = 0.03 }
 hbe_short_choice_southwestern_valleys_1_3_1 = { global_road_building_time = -0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_southwestern_valleys_1_3_2 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_southwestern_valleys_1_3_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_short_choice_southwestern_valleys_2_1_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_short_choice_southwestern_valleys_2_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_southwestern_valleys_2_1_1 = {  research_speed_modifier = 0.02 }
+hbe_short_choice_southwestern_valleys_2_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_southwestern_valleys_2_1_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_short_choice_southwestern_valleys_2_2_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_southwestern_valleys_2_2_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
@@ -651,19 +651,19 @@ hbe_short_choice_southwestern_valleys_3_3_1 = { global_monthly_literacy = 0.01 r
 hbe_short_choice_southwestern_valleys_3_3_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_southwestern_valleys_3_3_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_shared_1_1_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_short_choice_shared_1_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_1_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_1_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_short_choice_shared_1_2_1 = { global_disease_resistance = 0.04 global_monthly_food_modifier = 0.03 }
+hbe_short_choice_shared_1_2_1 = { global_disease_resistance = 0.04  }
 hbe_short_choice_shared_1_2_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_shared_1_2_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_shared_1_3_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
-hbe_short_choice_shared_1_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_1_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_1_3_3 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_short_choice_shared_2_1_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_2_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_shared_2_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_shared_2_2_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_short_choice_shared_2_2_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_shared_2_2_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_2_2_3 = { global_population_capacity_modifier = 0.04 global_migration_attraction = 0.056 tax_income_efficiency = -0.04 }
 hbe_short_choice_shared_2_3_1 = { global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 }
 hbe_short_choice_shared_2_3_2 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
@@ -675,7 +675,7 @@ hbe_short_choice_shared_3_2_1 = { global_monthly_control = 0.01 tax_income_effic
 hbe_short_choice_shared_3_2_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_shared_3_2_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_shared_3_3_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
-hbe_short_choice_shared_3_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_3_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_3_3_3 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_short_choice_shared_4_1_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_shared_4_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
@@ -699,30 +699,30 @@ hbe_short_choice_shared_6_1_1 = { global_disease_resistance = 0.06 peasants_esta
 hbe_short_choice_shared_6_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_shared_6_1_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_shared_6_2_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
-hbe_short_choice_shared_6_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_6_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_6_2_3 = { research_speed_modifier = 0.06 global_monthly_literacy = 0.01 clergy_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_6_3_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_short_choice_shared_6_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_6_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_6_3_3 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.05 tax_income_efficiency = -0.03 }
 hbe_short_choice_shared_7_1_1 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_short_choice_shared_7_1_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
-hbe_short_choice_shared_7_1_3 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_shared_7_2_1 = { global_monthly_food_modifier = 0.06 global_rice_output_modifier = 0.04 }
-hbe_short_choice_shared_7_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_7_1_3 = {  global_rice_output_modifier = 0.04 global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
+hbe_short_choice_shared_7_2_1 = {  global_rice_output_modifier = 0.04 }
+hbe_short_choice_shared_7_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_7_2_3 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_short_choice_shared_7_3_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
 hbe_short_choice_shared_7_3_2 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_shared_7_3_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_shared_8_1_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
-hbe_short_choice_shared_8_1_2 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_shared_8_1_2 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_8_1_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_short_choice_shared_8_2_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
-hbe_short_choice_shared_8_2_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_short_choice_shared_8_2_3 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_short_choice_shared_8_2_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_8_2_3 = {  research_speed_modifier = 0.02 }
 hbe_short_choice_shared_8_3_1 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
-hbe_short_choice_shared_8_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_8_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_8_3_3 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.04 }
-hbe_short_choice_shared_9_1_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_short_choice_shared_9_1_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_9_1_2 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_9_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_shared_9_2_1 = { global_livestock_output_modifier = 0.06 global_supply_limit_modifier = 0.04 global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
@@ -740,32 +740,32 @@ hbe_short_choice_shared_10_2_3 = { global_monthly_control = 0.01 tribes_estate_t
 hbe_short_choice_shared_10_3_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_shared_10_3_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_shared_10_3_3 = { tax_income_efficiency = 0.06 global_merchant_capacity_modifier = -0.05 }
-hbe_short_choice_shared_11_1_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_short_choice_shared_11_1_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
-hbe_short_choice_shared_11_1_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_shared_11_1_1 = {  research_speed_modifier = 0.02 }
+hbe_short_choice_shared_11_1_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_11_1_3 = {  peasants_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_11_2_1 = { peasants_estate_target_satisfaction = 0.03 tax_income_efficiency = -0.03 }
 hbe_short_choice_shared_11_2_2 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
 hbe_short_choice_shared_11_2_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_shared_11_3_1 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
-hbe_short_choice_shared_11_3_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_short_choice_shared_11_3_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_short_choice_shared_11_3_3 = { global_monthly_literacy = 0.01 research_speed_modifier = 0.04 nobles_estate_target_satisfaction = -0.02 }
 hbe_short_choice_shared_12_1_1 = { global_pop_assimilation_speed_modifier = 0.06 tribes_estate_target_satisfaction = 0.01 global_monthly_literacy = 0.004 }
 hbe_short_choice_shared_12_1_2 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
 hbe_short_choice_shared_12_1_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_short_choice_shared_12_2_1 = { global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 }
 hbe_short_choice_shared_12_2_2 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
-hbe_short_choice_shared_12_2_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 }
-hbe_short_choice_shared_12_3_1 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_short_choice_shared_12_2_3 = {  peasants_estate_target_satisfaction = -0.03 }
+hbe_short_choice_shared_12_3_1 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_short_choice_shared_12_3_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_short_choice_shared_12_3_3 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_shared_choice_201_1 = { global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_shared_choice_201_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_shared_choice_201_3 = { global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 }
 hbe_shared_choice_202_1 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
-hbe_shared_choice_202_2 = { global_monthly_food_modifier = 0.04 nobles_estate_target_satisfaction = -0.03 }
+hbe_shared_choice_202_2 = {  nobles_estate_target_satisfaction = -0.03 }
 hbe_shared_choice_202_3 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 }
-hbe_shared_choice_203_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_shared_choice_203_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_shared_choice_203_1 = {  research_speed_modifier = 0.02 }
+hbe_shared_choice_203_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_shared_choice_203_3 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
 hbe_shared_choice_204_1 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
 hbe_shared_choice_204_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
@@ -782,17 +782,17 @@ hbe_shared_choice_207_3 = { global_monthly_control = 0.01 nobles_estate_target_s
 hbe_shared_choice_208_1 = { global_disease_resistance = 0.06 peasants_estate_target_satisfaction = 0.02 global_monthly_control = 0.01 nobles_estate_target_satisfaction = -0.03 }
 hbe_shared_choice_208_2 = { global_food_decay = -0.06 peasants_estate_target_satisfaction = 0.03 nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_shared_choice_208_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_shared_choice_209_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
+hbe_shared_choice_209_1 = {  research_speed_modifier = 0.02 }
 hbe_shared_choice_209_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
-hbe_shared_choice_209_3 = { global_production_efficiency = 0.06 peasants_estate_target_satisfaction = -0.03 global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
+hbe_shared_choice_209_3 = {  peasants_estate_target_satisfaction = -0.03 global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_shared_choice_210_1 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
 hbe_shared_choice_210_2 = { clergy_estate_target_satisfaction = 0.04 monthly_prestige = 0.028 }
 hbe_shared_choice_210_3 = { global_monthly_control = 0.01 tribes_estate_target_satisfaction = 0.02 global_merchant_capacity_modifier = 0.02 }
 hbe_shared_choice_211_1 = { peasants_estate_target_satisfaction = 0.04 tax_income_efficiency = -0.05 }
 hbe_shared_choice_211_2 = { tax_income_efficiency = 0.04 nobles_estate_target_satisfaction = 0.02 peasants_estate_target_satisfaction = -0.03 }
 hbe_shared_choice_211_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_shared_choice_212_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.06 global_production_efficiency = 0.04 }
-hbe_shared_choice_212_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_shared_choice_212_1 = { global_institution_growth_modifier = 0.04 research_speed_modifier = 0.06  }
+hbe_shared_choice_212_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_shared_choice_212_3 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_shared_choice_213_1 = { global_migration_attraction = 0.084 global_migration_speed_modifier = 0.06 nobles_estate_target_satisfaction = -0.04 }
 hbe_shared_choice_213_2 = { global_migration_attraction = -0.1 nobles_estate_target_satisfaction = 0.03 peasants_estate_target_satisfaction = 0.01 }
@@ -803,8 +803,8 @@ hbe_shared_choice_214_3 = { global_monthly_control = 0.01 nobles_estate_target_s
 hbe_shared_choice_215_1 = { global_merchant_capacity_modifier = 0.06 merchant_maintenance_efficiency = 0.04 }
 hbe_shared_choice_215_2 = { nobles_estate_target_satisfaction = 0.03 global_monthly_control = -0.005 }
 hbe_shared_choice_215_3 = { global_monthly_control = 0.01 tax_income_efficiency = 0.03 }
-hbe_shared_choice_216_1 = { global_production_efficiency = 0.04 research_speed_modifier = 0.02 }
-hbe_shared_choice_216_2 = { burghers_estate_target_satisfaction = 0.03 global_production_efficiency = 0.03 global_merchant_capacity_modifier = -0.04 }
+hbe_shared_choice_216_1 = {  research_speed_modifier = 0.02 }
+hbe_shared_choice_216_2 = { burghers_estate_target_satisfaction = 0.03  global_merchant_capacity_modifier = -0.04 }
 hbe_shared_choice_216_3 = { cultural_influence_modifier = 0.06 peasants_estate_target_satisfaction = 0.02 }
 hbe_shared_choice_217_1 = { global_monthly_literacy = 0.006 global_migration_attraction = 0.042 tribes_estate_target_satisfaction = 0.02 }
 hbe_shared_choice_217_2 = { global_supply_limit_modifier = 0.06 army_maintenance_efficiency = 0.04 peasants_estate_target_satisfaction = -0.03 }

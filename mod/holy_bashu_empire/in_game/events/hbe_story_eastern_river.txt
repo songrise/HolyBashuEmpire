@@ -63,7 +63,7 @@ add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_3_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.3.c ai_chance = { base = 35 } add_gold = 4
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.3.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_4 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_3_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_6_tt
@@ -87,7 +87,7 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_4_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.4.c ai_chance = { base = 35 } add_gold = 2
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.4.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_2 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_4_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_7_tt
@@ -102,13 +102,13 @@ hbe_story_eastern_river.5 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 4 NOT = { has_variable = hbe_story_eastern_river_closed } }
  immediate = {  }
  option = { name = hbe_story_eastern_river.5.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
 add_prestige = 1 } option = { name = hbe_story_eastern_river.5.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.5.c ai_chance = { base = 35 } add_prestige = 2
@@ -134,7 +134,7 @@ add_prestige = 1 } option = { name = hbe_story_eastern_river.6.b trigger = { gol
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_6_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.6.c ai_chance = { base = 35 } add_gold = 5
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.6.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_5 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_toll_6_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_8_tt
@@ -220,7 +220,7 @@ hbe_story_eastern_river.102 = {
  option = { name = hbe_story_eastern_river.102.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.03 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_102_1 years = 3 mode = replace } } option = { name = hbe_story_eastern_river.102.b ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_102_2 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.102.c ai_chance = { base = 30 } add_gold = 4
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_102_2 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.102.c ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_4 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_102_3 years = 2 mode = replace } }
 }
@@ -234,8 +234,8 @@ hbe_story_eastern_river.103 = {
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_103_1 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.103.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.175
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_103_2 years = 2 mode = replace } } option = { name = hbe_story_eastern_river.103.c ai_chance = { base = 30 } add_gold = 2
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_103_3 years = 3 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_103_2 years = 2 mode = replace } } option = { name = hbe_story_eastern_river.103.c ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_103_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 } }
 }
 
 hbe_story_eastern_river.104 = {
@@ -259,7 +259,7 @@ hbe_story_eastern_river.105 = {
  option = { name = hbe_story_eastern_river.105.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_105_1 years = 3 mode = replace } } option = { name = hbe_story_eastern_river.105.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.175
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_105_2 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.105.c ai_chance = { base = 30 } add_gold = 3
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_105_2 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.105.c ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_3 }
 add_estate_satisfaction = { type = estate_type:tribes_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_105_3 years = 2 mode = replace } }
 }
@@ -271,7 +271,7 @@ hbe_story_eastern_river.106 = {
  immediate = { set_variable = hbe_story_seen_eastern_river_106 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_eastern_river.106.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_106_1 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.106.b ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_106_1 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 4 } } option = { name = hbe_story_eastern_river.106.b ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_106_2 years = 2 mode = replace } } option = { name = hbe_story_eastern_river.106.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_106_3 years = 3 mode = replace } }
@@ -296,7 +296,7 @@ hbe_story_eastern_river.108 = {
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBE } current_year >= 1339 NOT = { has_variable = hbe_story_seen_eastern_river_108 } NOT = { has_variable = hbe_story_solo_cooldown } }
  immediate = { set_variable = hbe_story_seen_eastern_river_108 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_eastern_river.108.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_108_1 years = 3 mode = replace } } option = { name = hbe_story_eastern_river.108.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_108_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 } } option = { name = hbe_story_eastern_river.108.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_108_2 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.108.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_108_3 years = 2 mode = replace } }
 }
@@ -335,10 +335,10 @@ hbe_story_eastern_river.111 = {
  immediate = { set_variable = hbe_story_seen_eastern_river_111 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_eastern_river.111.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.01 }
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_111_1 years = 3 mode = replace } } option = { name = hbe_story_eastern_river.111.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_111_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 } } option = { name = hbe_story_eastern_river.111.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_111_2 years = 4 mode = replace } } option = { name = hbe_story_eastern_river.111.c ai_chance = { base = 30 } add_prestige = 3
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_111_3 years = 2 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_111_3 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 } }
 }
 
 hbe_story_eastern_river.112 = {
@@ -362,7 +362,7 @@ hbe_story_eastern_river.113 = {
  option = { name = hbe_story_eastern_river.113.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_113_1 years = 2 mode = replace } } option = { name = hbe_story_eastern_river.113.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_113_2 years = 3 mode = replace } } option = { name = hbe_story_eastern_river.113.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_113_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 } } option = { name = hbe_story_eastern_river.113.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_story_choice_eastern_river_113_3 years = 4 mode = replace } }
+add_country_modifier = { modifier = hbe_story_choice_eastern_river_113_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 4 } }
 }

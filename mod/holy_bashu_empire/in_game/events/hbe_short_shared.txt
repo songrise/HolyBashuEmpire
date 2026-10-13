@@ -11,7 +11,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_1_1_1 years = 2 mode
 set_variable = { name = hbe_short_shared_1_phase value = 1 }
 remove_variable = hbe_short_shared_1_pending
 set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 } } option = { name = hbe_short_shared.1.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_1_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_1_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_shared_1_phase value = 1 }
 remove_variable = hbe_short_shared_1_pending
 set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 } } option = { name = hbe_short_shared.1.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -29,7 +29,7 @@ hbe_short_shared.2 = {
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_1_phase = 1 NOT = { has_variable = hbe_short_shared_1_clock } }
  immediate = {  }
  option = { name = hbe_short_shared.2.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_shared_1_2_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_1_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_1_phase value = 2 }
 remove_variable = hbe_short_shared_1_pending
 set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 } } option = { name = hbe_short_shared.2.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -55,7 +55,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_1_3_1 years = 4 mode
 set_variable = { name = hbe_short_shared_1_phase value = 3 }
 remove_variable = hbe_short_shared_1_pending
  } option = { name = hbe_short_shared.3.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_shared_1_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_1_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_shared_1_phase value = 3 }
 remove_variable = hbe_short_shared_1_pending
  } option = { name = hbe_short_shared.3.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -99,8 +99,8 @@ hbe_short_shared.12 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_2_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_2_phase value = 2 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 } } option = { name = hbe_short_shared.12.b ai_chance = { base = 30 } add_gold = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_2_2_2 years = 3 mode = replace }
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 } } option = { name = hbe_short_shared.12.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
+add_country_modifier = { modifier = hbe_short_choice_shared_2_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 set_variable = { name = hbe_short_shared_2_phase value = 2 }
 remove_variable = hbe_short_shared_2_pending
 set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 } } option = { name = hbe_short_shared.12.c trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
@@ -188,7 +188,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_3_3_1 years = 4 mode
 set_variable = { name = hbe_short_shared_3_phase value = 3 }
 remove_variable = hbe_short_shared_3_pending
 add_prestige = 1 } option = { name = hbe_short_shared.23.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_shared_3_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_3_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_shared_3_phase value = 3 }
 remove_variable = hbe_short_shared_3_pending
 add_prestige = 1 } option = { name = hbe_short_shared.23.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -373,7 +373,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_6_2_1 years = 3 mode
 set_variable = { name = hbe_short_shared_6_phase value = 2 }
 remove_variable = hbe_short_shared_6_pending
 set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 } } option = { name = hbe_short_shared.52.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_6_2_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_6_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_6_phase value = 2 }
 remove_variable = hbe_short_shared_6_pending
 set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 } } option = { name = hbe_short_shared.52.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -396,7 +396,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_6_3_1 years = 4 mode
 set_variable = { name = hbe_short_shared_6_phase value = 3 }
 remove_variable = hbe_short_shared_6_pending
 add_prestige = 1 } option = { name = hbe_short_shared.53.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_shared_6_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_6_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_shared_6_phase value = 3 }
 remove_variable = hbe_short_shared_6_pending
  } option = { name = hbe_short_shared.53.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -422,7 +422,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_7_1_2 years = 2 mode
 set_variable = { name = hbe_short_shared_7_phase value = 1 }
 remove_variable = hbe_short_shared_7_pending
 set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 } } option = { name = hbe_short_shared.61.c trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_shared_7_1_3 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_7_1_3 years = 2 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 2 }
 set_variable = { name = hbe_short_shared_7_phase value = 1 }
 remove_variable = hbe_short_shared_7_pending
 set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 } } option = { name = hbe_short_shared.61.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_7_phase value = 3 }
@@ -436,11 +436,11 @@ hbe_short_shared.62 = {
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_7_phase = 1 NOT = { has_variable = hbe_short_shared_7_clock } }
  immediate = {  }
  option = { name = hbe_short_shared.62.a ai_chance = { base = 30 } add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_short_choice_shared_7_2_1 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_7_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
 set_variable = { name = hbe_short_shared_7_phase value = 2 }
 remove_variable = hbe_short_shared_7_pending
 set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 } } option = { name = hbe_short_shared.62.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_7_2_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_7_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_7_phase value = 2 }
 remove_variable = hbe_short_shared_7_pending
 set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 } } option = { name = hbe_short_shared.62.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -485,7 +485,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_8_1_1 years = 2 mode
 set_variable = { name = hbe_short_shared_8_phase value = 1 }
 remove_variable = hbe_short_shared_8_pending
 set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 } } option = { name = hbe_short_shared.71.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_8_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_8_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 2 }
 set_variable = { name = hbe_short_shared_8_phase value = 1 }
 remove_variable = hbe_short_shared_8_pending
 set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 } } option = { name = hbe_short_shared.71.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
@@ -507,12 +507,12 @@ add_country_modifier = { modifier = hbe_short_choice_shared_8_2_1 years = 3 mode
 set_variable = { name = hbe_short_shared_8_phase value = 2 }
 remove_variable = hbe_short_shared_8_pending
 set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 } } option = { name = hbe_short_shared.72.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_8_2_2 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_8_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_8_phase value = 2 }
 remove_variable = hbe_short_shared_8_pending
 set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 } } option = { name = hbe_short_shared.72.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_short_choice_shared_8_2_3 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_8_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 set_variable = { name = hbe_short_shared_8_phase value = 2 }
 remove_variable = hbe_short_shared_8_pending
 set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 } } option = { name = hbe_short_shared.72.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_8_phase value = 3 }
@@ -531,7 +531,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_8_3_1 years = 4 mode
 set_variable = { name = hbe_short_shared_8_phase value = 3 }
 remove_variable = hbe_short_shared_8_pending
 add_prestige = 1 } option = { name = hbe_short_shared.73.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_shared_8_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_8_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_shared_8_phase value = 3 }
 remove_variable = hbe_short_shared_8_pending
  } option = { name = hbe_short_shared.73.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -550,7 +550,7 @@ hbe_short_shared.81 = {
  trigger = { hbe_is_prince = yes always = yes NOT = { has_variable = hbe_short_shared_9_seen } NOT = { has_variable = hbe_story_solo_cooldown } current_year >= 1339 }
  immediate = { set_variable = hbe_short_shared_9_seen set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_shared.81.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_shared_9_1_1 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_9_1_1 years = 2 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 2 }
 set_variable = { name = hbe_short_shared_9_phase value = 1 }
 remove_variable = hbe_short_shared_9_pending
 set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 } } option = { name = hbe_short_shared.81.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -669,7 +669,7 @@ remove_variable = hbe_short_shared_10_pending
 add_country_modifier = { modifier = hbe_short_choice_shared_10_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 3 }
 remove_variable = hbe_short_shared_10_pending
- } option = { name = hbe_short_shared.93.c ai_chance = { base = 30 } add_gold = 3
+ } option = { name = hbe_short_shared.93.c ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_3 }
 add_country_modifier = { modifier = hbe_short_choice_shared_10_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 3 }
 remove_variable = hbe_short_shared_10_pending
@@ -685,16 +685,16 @@ hbe_short_shared.101 = {
  immediate = { set_variable = hbe_short_shared_11_seen set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_shared.101.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_short_choice_shared_11_1_1 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_11_1_1 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 2 }
 set_variable = { name = hbe_short_shared_11_phase value = 1 }
 remove_variable = hbe_short_shared_11_pending
 set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 } } option = { name = hbe_short_shared.101.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
-add_country_modifier = { modifier = hbe_short_choice_shared_11_1_2 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_11_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_shared_11_phase value = 1 }
 remove_variable = hbe_short_shared_11_pending
 set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 } } option = { name = hbe_short_shared.101.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
-add_country_modifier = { modifier = hbe_short_choice_shared_11_1_3 years = 2 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_11_1_3 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 2 }
 set_variable = { name = hbe_short_shared_11_phase value = 1 }
 remove_variable = hbe_short_shared_11_pending
 set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 } } option = { name = hbe_short_shared.101.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_11_phase value = 3 }
@@ -734,7 +734,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_11_3_1 years = 4 mod
 set_variable = { name = hbe_short_shared_11_phase value = 3 }
 remove_variable = hbe_short_shared_11_pending
  } option = { name = hbe_short_shared.103.b ai_chance = { base = 30 } add_prestige = 4
-add_country_modifier = { modifier = hbe_short_choice_shared_11_3_2 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_11_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_shared_11_phase value = 3 }
 remove_variable = hbe_short_shared_11_pending
  } option = { name = hbe_short_shared.103.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
@@ -785,7 +785,7 @@ add_country_modifier = { modifier = hbe_short_choice_shared_12_2_2 years = 3 mod
 set_variable = { name = hbe_short_shared_12_phase value = 2 }
 remove_variable = hbe_short_shared_12_pending
 set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 } } option = { name = hbe_short_shared.112.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
-add_country_modifier = { modifier = hbe_short_choice_shared_12_2_3 years = 3 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_12_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 set_variable = { name = hbe_short_shared_12_phase value = 2 }
 remove_variable = hbe_short_shared_12_pending
 set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 } } option = { name = hbe_short_shared.112.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_12_phase value = 3 }
@@ -799,7 +799,7 @@ hbe_short_shared.113 = {
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_12_phase = 2 NOT = { has_variable = hbe_short_shared_12_clock } }
  immediate = {  }
  option = { name = hbe_short_shared.113.a ai_chance = { base = 30 } add_prestige = 1
-add_country_modifier = { modifier = hbe_short_choice_shared_12_3_1 years = 4 mode = replace }
+add_country_modifier = { modifier = hbe_short_choice_shared_12_3_1 years = 4 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 4 }
 set_variable = { name = hbe_short_shared_12_phase value = 3 }
 remove_variable = hbe_short_shared_12_pending
  } option = { name = hbe_short_shared.113.b ai_chance = { base = 30 } add_prestige = 4
@@ -836,7 +836,7 @@ hbe_short_shared.202 = {
  option = { name = hbe_short_shared.202.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_shared_choice_202_1 years = 3 mode = replace } } option = { name = hbe_short_shared.202.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
-add_country_modifier = { modifier = hbe_shared_choice_202_2 years = 3 mode = replace } } option = { name = hbe_short_shared.202.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_shared_choice_202_2 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 } } option = { name = hbe_short_shared.202.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
 add_country_modifier = { modifier = hbe_shared_choice_202_3 years = 3 mode = replace } } option = { name = hbe_short_shared.202.d ai_chance = { base = 2 } add_prestige = -2 }
 }
@@ -848,8 +848,8 @@ hbe_short_shared.203 = {
  immediate = { set_variable = hbe_shared_seen_203 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_shared.203.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_shared_choice_203_1 years = 3 mode = replace } } option = { name = hbe_short_shared.203.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_shared_choice_203_2 years = 3 mode = replace } } option = { name = hbe_short_shared.203.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_shared_choice_203_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 } } option = { name = hbe_short_shared.203.b ai_chance = { base = 30 } add_prestige = 2
+add_country_modifier = { modifier = hbe_shared_choice_203_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 } } option = { name = hbe_short_shared.203.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_shared_choice_203_3 years = 3 mode = replace } } option = { name = hbe_short_shared.203.d ai_chance = { base = 2 } add_prestige = -2 }
 }
@@ -924,9 +924,9 @@ hbe_short_shared.209 = {
  option = { name = hbe_short_shared.209.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.14
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
-add_country_modifier = { modifier = hbe_shared_choice_209_1 years = 3 mode = replace } } option = { name = hbe_short_shared.209.b ai_chance = { base = 30 } add_prestige = 2
+add_country_modifier = { modifier = hbe_shared_choice_209_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 } } option = { name = hbe_short_shared.209.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_shared_choice_209_2 years = 3 mode = replace } } option = { name = hbe_short_shared.209.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
-add_country_modifier = { modifier = hbe_shared_choice_209_3 years = 3 mode = replace } } option = { name = hbe_short_shared.209.d ai_chance = { base = 2 } add_prestige = -2 }
+add_country_modifier = { modifier = hbe_shared_choice_209_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 } } option = { name = hbe_short_shared.209.d ai_chance = { base = 2 } add_prestige = -2 }
 }
 
 hbe_short_shared.210 = {
@@ -961,8 +961,8 @@ hbe_short_shared.212 = {
  immediate = { set_variable = hbe_shared_seen_212 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_shared.212.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
-add_country_modifier = { modifier = hbe_shared_choice_212_1 years = 3 mode = replace } } option = { name = hbe_short_shared.212.b ai_chance = { base = 30 } add_prestige = 2
-add_country_modifier = { modifier = hbe_shared_choice_212_2 years = 3 mode = replace } } option = { name = hbe_short_shared.212.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_shared_choice_212_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 } } option = { name = hbe_short_shared.212.b ai_chance = { base = 30 } add_prestige = 2
+add_country_modifier = { modifier = hbe_shared_choice_212_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 } } option = { name = hbe_short_shared.212.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_shared_choice_212_3 years = 3 mode = replace } } option = { name = hbe_short_shared.212.d ai_chance = { base = 2 } add_prestige = -2 }
 }
 
@@ -1010,9 +1010,9 @@ hbe_short_shared.216 = {
  immediate = { set_variable = hbe_shared_seen_216 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_short_shared.216.a trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
-add_country_modifier = { modifier = hbe_shared_choice_216_1 years = 3 mode = replace } } option = { name = hbe_short_shared.216.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_shared_choice_216_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 } } option = { name = hbe_short_shared.216.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
-add_country_modifier = { modifier = hbe_shared_choice_216_2 years = 3 mode = replace } } option = { name = hbe_short_shared.216.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_shared_choice_216_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 } } option = { name = hbe_short_shared.216.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_shared_choice_216_3 years = 3 mode = replace } } option = { name = hbe_short_shared.216.d ai_chance = { base = 2 } add_prestige = -2 }
 }
 

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "files": 640,
+  "manifest_sha256": "bc5c09b3486bf37dad7c1291199d0f7fdbac280f856db78fb3727fe9c17b07cf",
+  "unexpected_fixture_files": false,
+  "version": "0.3.1"
+}
