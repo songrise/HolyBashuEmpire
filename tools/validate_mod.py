@@ -55,12 +55,13 @@ def main():
     check('all capital cultures and religions exist',all(c['culture'] in native_defs and c['religion'] in native_defs for c in countries))
     loc_file=m/'main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml'
     check('Chinese localization has UTF8 BOM',loc_file.read_bytes().startswith(b'\xef\xbb\xbf'))
-    loc_keys=set(re.findall(r'^\s+([^\s:]+):',loc_file.read_text(encoding='utf-8-sig'),re.M))
-    refs=[]
+    loc_keys=set(re.findall(r'^\s+([^\s:]+):','\n'.join(p.read_text(encoding='utf-8-sig') for p in (m/'main_menu/localization/simp_chinese').glob('*.yml')),re.M))
+    refs=[];internal_variables=set()
     for f in script_files:
         s=f.read_text(encoding='utf-8-sig')
+        internal_variables.update(re.findall(r'(?:set_variable|change_variable|save_scope_value_as)\s*=\s*\{[^{}]*?\bname\s*=\s*(hbe\w+)',s))
         refs+=re.findall(r'\b(?:title|desc|name|text|loc|leader_title_key|format)\s*=\s*(hbe[\w.]+|HBE_\w+)',s)
-    check('all custom text references localized',set(refs)<=loc_keys)
+    check('all custom text references localized',set(refs)-internal_variables<=loc_keys)
     char_keys={k for k,*_ in blocks((m/'main_menu/setup/1337/05_hbe_characters.txt').read_text(encoding="utf-8-sig"),1)}
     check('36 distinct starting rulers exist',char_keys=={f'hbe_ruler_{t.lower()}' for t in tags})
     election=(m/'in_game/common/resolutions/hbe_election.txt').read_text(encoding="utf-8-sig")
@@ -92,7 +93,7 @@ def main():
     banquet=(m/'in_game/common/scripted_effects/hbe_banquet_effects.txt').read_text(encoding='utf-8-sig')
     new_decisions=(m/'in_game/common/decisions/hbe_banquet_decisions.txt').read_text(encoding='utf-8-sig')
     new_events=(m/'in_game/events/hbe_banquet_events.txt').read_text(encoding='utf-8-sig')
-    check('native situation starts deterministically within first year','current_date >= 1337.10.1' in sit and 'monthly_spawn_chance = monthly_spawn_chance_unique' in sit)
+    check('native situation starts deterministically within first year','current_date >= 1337.7.1' in sit and 'monthly_spawn_chance = monthly_spawn_chance_unique' in sit)
     check('native spawn chance is 100 percent','monthly_spawn_chance_unique = 1' in (game/'main_menu/common/script_values/default_values.txt').read_text(encoding='utf-8-sig'))
     check('participation includes all IO members and subjects','visible = { is_member_of_international_organization = international_organization:hbe_empire }' in sit)
     check('monthly registration does not filter emperor or subjects','every_international_organization_member = { hbe_banquet_register = yes' in banquet)
@@ -111,7 +112,7 @@ def main():
         check('centennial charter needs 100 years and real projects','current_year >= 1437' in new_decisions and 'var:hbe_completed_projects >= 30' in new_decisions)
     check('exactly 36 historical capital seats are counted',sum(banquet.count('location:'+c['capital']+'.owner ?=') for c in countries)==36)
     check('each of seven circles needs strict local majority',banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
-    check('79 inherited banquet events and 117 total events',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117)
+    check('79 inherited banquet events plus authored story expansion',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117+manifest.get('playable_stories',{}).get('event_count',0))
     check('all 36 princes have personal events',sum('has_or_had_tag = '+c['tag'] in new_events for c in countries)==36)
     check('regional researched options and late recurring events exist',('hbe_choice_western_tea_horse_1' in new_events if 'event_choices' in manifest else 'hbe_tech_western_tea_horse_3' in new_events) and 'current_year >= 1457' in new_events)
     check('situation has native GUI panel',(m/'in_game/gui/panels/situation/hbe_banquet.gui').is_file())

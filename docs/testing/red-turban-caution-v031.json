@@ -1,0 +1,7 @@
+{
+  "version": "0.3.1",
+  "file": "in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt",
+  "multiplier": 0.65,
+  "combined_with_existing_external_caution": 0.585,
+  "scope": "Released Red Turban factions, including dynamic cultural countries and later China-formers; targets must currently be HBE members. No war prohibition or global aggression change. Score multiplier is not a direct probability."
+}

@@ -1,0 +1,5 @@
+﻿hbe_civil_institution_below_cap = {
+ custom_tooltip = { text = hbe_civil_institution_below_cap_tt
+  scope:actor = { total_building_levels_including_construction:$type$ < 3 }
+ }
+}

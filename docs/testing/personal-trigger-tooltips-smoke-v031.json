@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "requested_months": 1,
+  "game_reached": "1 May, 1337",
+  "new_hbe_runtime_or_tooltip_diagnostics": [],
+  "existing_advance_registration_warnings": 60,
+  "release_files_unchanged": true,
+  "no_crash_files": true,
+  "graphical_hover_verified": false
+}

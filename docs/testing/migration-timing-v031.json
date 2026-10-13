@@ -1,0 +1,29 @@
+{
+  "start_year": 1345,
+  "chapter_offsets": [
+    0,
+    5,
+    10,
+    16,
+    22,
+    28,
+    34,
+    39,
+    44,
+    49
+  ],
+  "nominal_wait_years": 49,
+  "typical_years": [
+    1345,
+    1350,
+    1355,
+    1361,
+    1367,
+    1373,
+    1379,
+    1384,
+    1389,
+    1394
+  ],
+  "monthly_dispatch": true
+}

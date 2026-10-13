@@ -1,0 +1,82 @@
+{
+  "version": "0.3.0",
+  "active_advance_rename": {
+    "hbe_tech_central_hills_8": "hbe_tech_central_hills_witness_8"
+  },
+  "goods_required_types": 32,
+  "event_metadata_fixed": [
+    "hbe_banquet.1",
+    "hbe_banquet.2",
+    "hbe_banquet.4",
+    "hbe_banquet.5",
+    "hbe_banquet.7",
+    "hbe_civic.1",
+    "hbe_civic.100",
+    "hbe_civic.101",
+    "hbe_civic.102",
+    "hbe_civic.103",
+    "hbe_civic.104",
+    "hbe_civic.105",
+    "hbe_civic.106",
+    "hbe_civic.107",
+    "hbe_civic.108",
+    "hbe_civic.109",
+    "hbe_civic.110",
+    "hbe_civic.111",
+    "hbe_civic.112",
+    "hbe_civic.113",
+    "hbe_civic.2",
+    "hbe_civic.3",
+    "hbe_civic.4",
+    "hbe_civic.5",
+    "hbe_civic.6",
+    "hbe_civic.7",
+    "hbe_opening_family.1"
+  ],
+  "starter_output": {
+    "hbe_shu_embroidery": 0.6,
+    "hbe_well_salt": 0.9,
+    "hbe_shu_paper": 0.625,
+    "hbe_border_tea": 0.6
+  },
+  "starter_advance": {
+    "hbe_shu_embroidery": "hbe_tech_chengdu_plain_2",
+    "hbe_well_salt": "hbe_tech_southern_salt_wine_1",
+    "hbe_shu_paper": "hbe_tech_northern_shudao_6",
+    "hbe_border_tea": "hbe_tech_western_tea_horse_1"
+  },
+  "ordinary_recipe_retained": true,
+  "advanced_era_gates_unchanged": true,
+  "paper_institution_remains_era_two": true,
+  "early_research_ai_weight": 20,
+  "producer_construction_weight": 4,
+  "external_target_score_adjustment": -0.1,
+  "troop_stats_unchanged": true,
+  "changed_files": [
+    "in_game/common/advances/hbe_advances.txt",
+    "in_game/common/advances/hbe_civic_advances.txt",
+    "in_game/common/ai_scripted_expansion_score/hbe_external_caution.txt",
+    "in_game/common/building_types/hbe_civic_buildings.txt",
+    "in_game/common/decisions/hbe_decisions.txt",
+    "in_game/common/goods/hbe_special_goods.txt",
+    "in_game/common/scripted_effects/hbe_effects.txt",
+    "in_game/common/scripted_effects/hbe_native_content_effects.txt",
+    "in_game/common/scripted_effects/hbe_observer_sync.txt",
+    "in_game/events/hbe_banquet_events.txt",
+    "in_game/events/hbe_civic_events.txt",
+    "in_game/events/hbe_opening_family_events.txt",
+    "main_menu/common/modifier_type_definitions/hbe_observer_goods_types.txt",
+    "main_menu/gfx/interface/advance/hbe_tech_central_hills_witness_8.dds",
+    "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_witness_8.dds",
+    "main_menu/localization/english/hbe_l_english.yml",
+    "main_menu/localization/english/hbe_observer_hotfix_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+    "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml"
+  ],
+  "external_target_score_multiplier": 0.9,
+  "additional_goods_diagnostics": "Full-log audit found 24 more native goods modifier types beyond the eight minting types in the first report.",
+  "removed_files": [
+    "in_game/common/advances/hbe_observer_compatibility.txt"
+  ],
+  "legacy_migration": "Already-set old monthly completion flag grants the renamed advance without repeat rewards; old enum-only saves may report the removed identifier when loading."
+}

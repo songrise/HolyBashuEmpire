@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks": {
+    "count": 1025,
+    "failed_rows": [],
+    "detail_in_local_archive": true
+  },
+  "check_count": 1025,
+  "gameplay_validation": "Structural and resource-reference checks; runtime and visual verification reported separately",
+  "version": "0.3.0",
+  "failed_checks": [],
+  "parser_errors": [
+    {
+      "file": "main_menu\\setup\\1337\\10_countries.txt",
+      "error": "Unexpected opening brace at 221080"
+    }
+  ],
+  "variable_identifier_false_positives": [
+    "hbe_member_party_pool",
+    "hbe_member_party_weight",
+    "hbe_start_child_female"
+  ],
+  "validator_maintenance": [
+    "Variable and saved-scope names are identifiers, not text keys.",
+    "Expected feast start is July 1337 per requested three-month advance.",
+    "Supplemental catalogue parser cannot parse an anonymous block in vanilla-derived setup; the original full brace/reference checks still cover this file."
+  ],
+  "raw_detail_archive": {
+    "path": "work/test-report-details-20261014/validation_observe20.json",
+    "bytes": 119050,
+    "sha256": "a658a092a1b5c1d35210057b55d77d2ce4773e07f3aaf60fc773c7f02e5a5501",
+    "tracked": false
+  }
+}

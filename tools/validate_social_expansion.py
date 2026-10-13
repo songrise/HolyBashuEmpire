@@ -2,10 +2,11 @@ import json,re,struct,hashlib
 from pdxscript import blocks
 def validate_social_expansion(mod,root,game,manifest,loc,check):
     data=manifest['social_expansion'];art=json.loads((root/'data/social_art_v020.json').read_text())
+    def resolve(key):return manifest.get('observer_hotfix',{}).get('active_advance_rename',{}).get(key,key)
     def read(p):return (mod/p).read_text(encoding='utf-8-sig')
     buildings=read('in_game/common/building_types/hbe_civic_buildings.txt');units=read('in_game/common/unit_types/hbe_civic_units.txt')
     advances=read('in_game/common/advances/hbe_civic_advances.txt');old=read('in_game/common/advances/hbe_advances.txt')
-    slots=23 if 'technology_rewards' in manifest else 16
+    slots=19 if 'observer_hotfix' in manifest else 23 if 'technology_rewards' in manifest else 16
     check('16 native special buildings with employment and real maintenance',len(blocks(buildings,0))==16 and buildings.count('is_special = yes')==16 and buildings.count('employment_size = 0.15')==16 and buildings.count('unique_production_methods =')==slots)
     check('all buildings unlocked by preexisting native advances',all('unlock_building = '+b['key'] in old for b in data['buildings']))
     check('all buildings have domain or circle location potential',buildings.count('location_potential = { is_in_scripted_geography =')==16)
@@ -23,7 +24,7 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     history=read('in_game/common/customizable_localization/country_history.txt')
     check('agenda country histories selected before vanilla cultural fallback',all('localization_key = country_history_'+c['tag']+' trigger = { has_or_had_tag = '+c['tag']+' }' in history for c in manifest['countries']) and history.index('country_history_BAB')<history.index('country_history_china'))
     check('16 new nodes have icons, localization and year gates',len(blocks(advances,0))==16 and all(k['key'] in loc and k['key']+'_desc' in loc and 'current_year >= '+str(k['year']) in advances for k in data['advances']))
-    check('regional institution advances accept either A or B qualification',all('OR = { has_advance = hbe_tech_'+r[0]+'_4 has_advance = hbe_tech_'+r[0]+'_7 }' in advances and 'OR = { has_advance = hbe_tech_'+r[0]+'_5 has_advance = hbe_tech_'+r[0]+'_8 }' in advances for r in manifest['regions']))
+    check('regional institution advances accept either A or B qualification',all('OR = { has_advance = hbe_tech_'+r[0]+'_4 has_advance = hbe_tech_'+r[0]+'_7 }' in advances and 'OR = { has_advance = hbe_tech_'+r[0]+'_5 has_advance = '+resolve('hbe_tech_'+r[0]+'_8')+' }' in advances for r in manifest['regions']))
     check('no opening free grants of new research',advances.count('starting_technology_level = 99')==16)
     law=read('in_game/common/laws/hbe_civic_law.txt')
     check('native law has exactly three policies and five-year switch lock',all(p+' = {' in law for p in ('hbe_levy_policy','hbe_communal_policy','hbe_paid_policy')) and law.count('years = 5')==3 and 'locked = { has_variable = hbe_policy_lock }' in law and 'type = country' in law)

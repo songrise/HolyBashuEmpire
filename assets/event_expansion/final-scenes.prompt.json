@@ -1,0 +1,140 @@
+{
+  "mode": "built-in image_gen",
+  "intent": "new scenes generated from scratch; reference used only for style",
+  "common_prompt": "Generate a completely new historical EU5 event painting from scratch. Input paintings are style references only, not edit targets. Match their natural painterly realism, coherent light, credible timber, stone and cloth, restrained palette and atmospheric depth. Directional digital brushwork follows each material and form rather than a uniform texture. No artificial impasto, embossed paint, stippling, pointillist dots, filter or stylization conversion. Moderate detail with a legible focal activity and space around it. Characters may act naturally in the environment, with no portrait framing. Make the immediate subject clear, but leave its outcome and full significance unresolved. Soft natural daylight or subdued blue-grey dusk, as appropriate to the scene. No harsh contrast, decorative frames, captions, UI or version number. Single wide landscape. Important subjects remain readable in a panoramic game crop. NEW SCENE: ",
+  "scenes": [
+    {
+      "key": "fossils",
+      "title": "石层巨骨",
+      "themes": [
+        "archaeology"
+      ],
+      "scene": "Southern Sichuan salt-well quarry: workers carefully uncover a partial enormous fossilized vertebra still embedded in stone; two scholars compare fragments and a sketch nearby. One timber drilling tower and distant hills establish the setting. The find is visibly unusual but its full shape remains unknown. No complete skeleton, living dinosaur, dragon or modern tools."
+    },
+    {
+      "key": "observatory",
+      "title": "山壁星历",
+      "themes": [
+        "astronomy"
+      ],
+      "scene": "Mountain observation terrace near Jianmen: two scholars compare a bronze armillary sphere and a star record, one pointing towards the evening sky. A simple water clock, distant mountain gate and misty Shu road establish the setting. Ordinary stars and subdued dusk, no supernatural spectacle or modern telescope."
+    },
+    {
+      "key": "veterinary",
+      "title": "茶路医马",
+      "themes": [
+        "veterinary",
+        "caravan"
+      ],
+      "scene": "Mountain tea-caravan resting place: a healer and a travelling horse handler examine the foreleg of a tired pack horse beside a plain timber shelter. Tea bales and a winding mountain path suggest a journey interrupted. Their work is clear, but whether the horse can continue is left uncertain."
+    },
+    {
+      "key": "bridge",
+      "title": "谷中桥约",
+      "themes": [
+        "bridge"
+      ],
+      "scene": "Two Sichuan mountain communities meet at the head of an old rope-and-plank bridge. A carpenter checks a worn anchor while representatives look at a new rope and a simple repair sketch. The bridge crosses a wooded stream and the far path is partly hidden. Show a practical repair discussion, without resolving who will pay."
+    },
+    {
+      "key": "migration_journey",
+      "title": "入蜀行路",
+      "themes": [
+        "migration_journey"
+      ],
+      "scene": "A small group of families arriving along a Sichuan mountain road, carrying bedding and baskets. They pause at a plain roadside shelter to ask a local guide about the route into the valley. Mountains and a quiet river lie beyond. A readable journey and uncertainty about where they will be accepted; no vast procession or melodramatic suffering."
+    },
+    {
+      "key": "settlement",
+      "title": "落脚新乡",
+      "themes": [
+        "migration",
+        "land",
+        "labor"
+      ],
+      "scene": "At a Sichuan village edge, newcomers and a resident farmer inspect an uncultivated field with a local clerk. A few simple homes and tools suggest the possibility of settling. Their attention is on a boundary stake and a folded land record; it is unclear whether an agreement will be reached."
+    },
+    {
+      "key": "craft",
+      "title": "坊中余线",
+      "themes": [
+        "craft",
+        "commerce",
+        "literature"
+      ],
+      "scene": "Sichuan embroidery: a working embroiderer and a female master teaching an apprentice at a stretched wooden embroidery frame.",
+      "custom_prompt_file": "craft-redraw.prompt.json"
+    },
+    {
+      "key": "medicine",
+      "title": "山村药舍",
+      "themes": [
+        "medicine"
+      ],
+      "scene": "A rural Sichuan medicine shelter: a village healer and a visiting practitioner compare a few herbs and a folded case record while a family waits near the doorway. Earthenware and plain timber, soft daylight and restrained detail. Suggest uncertainty over treatment, not a dramatic operation or explicit outcome."
+    },
+    {
+      "key": "festival",
+      "title": "乡社余席",
+      "themes": [
+        "festival",
+        "culture",
+        "faith"
+      ],
+      "scene": "A modest Sichuan spring gathering: villagers prepare a low timber stage and communal benches while a performer speaks with a local official. Two subdued lanterns and a few homes frame the courtyard. The occasion is clear, but the discussion and who may join the seats remain unresolved. No palace, giant feast or saturated spectacle."
+    },
+    {
+      "key": "river",
+      "title": "峡江待渡",
+      "themes": [
+        "navigation",
+        "water",
+        "tax"
+      ],
+      "scene": "At a small ferry landing in a Sichuan gorge, a boatman checks the river level while a merchant and warehouse keeper discuss cargo beside one moored wooden boat. A few bundles, a timber jetty and hazy canyon slopes establish the scene. A readable delay and practical decision, no busy city panorama or storm spectacle."
+    },
+    {
+      "key": "terraces",
+      "title": "雨后坡田",
+      "themes": [
+        "agriculture",
+        "food",
+        "ecology"
+      ],
+      "scene": "After rain on a Sichuan hillside, two farmers and a village elder inspect a damaged terrace bank and the irrigation channel below it. A hoe and a basket of soil, a few broad field strips and distant hills. The damage is readable, and the discussion suggests a choice over repairs without a conclusive rescue tableau."
+    },
+    {
+      "key": "council",
+      "title": "未决乡议",
+      "themes": [
+        "justice",
+        "education",
+        "military"
+      ],
+      "scene": "A modest Sichuan council room: a clerk listens as a village elder and a craftsperson discuss a folded contract across a rough timber table. A witness waits near an open window. Natural body language, readable papers and wood, with an unresolved agreement. No grand palace, giant map, rich gold ornament or leader portrait."
+    },
+    {
+      "key": "bamboo",
+      "title": "山林白熊",
+      "themes": [
+        "ecology"
+      ],
+      "scene": "A quiet Sichuan bamboo grove at Pengzhou. Two village forest keepers cautiously watch a giant panda partly concealed behind bamboo and a mossy rock, near a shallow stream. Its black-and-white head and shoulder are recognizable, but most of its body remains behind the grove. A few freshly bitten bamboo shoots establish why the keepers paused. The people belong naturally to the environment, not posing for a demonstration. Grey-green forest, grey-brown stones and softly receding mountains; restrained detail. Show a plausible encounter with an unfamiliar forest animal, not a zoo, exhibition, fairy tale, cartoon or empty landscape of obscure clues."
+    },
+    {
+      "key": "migration_pact",
+      "title": "乡册之前",
+      "themes": [
+        "migration",
+        "settlement",
+        "justice"
+      ],
+      "scene": "A modest timber village assembly hall opening onto cultivated fields. At a plain table an established village elder and a newly arrived farming couple examine a land deed and a worn household register with a seated clerk. A cloth travel bundle rests beside them and one child waits at the doorway. Quiet uncertainty over entry into the local register; understated gestures, fourteenth-century Sichuan clothing, soft overcast light, central crop-safe action, restrained detail. No captions, frame, UI or version number. Newly generated composition, style reference only."
+    }
+  ],
+  "status": "complete: 11 new scenes plus 2 user-selected reference paintings retained",
+  "references": [
+    "style_reference_quarry.png",
+    "style_reference_observatory.png"
+  ]
+}

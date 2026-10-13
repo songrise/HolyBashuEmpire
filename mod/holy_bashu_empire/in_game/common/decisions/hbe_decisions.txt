@@ -290,7 +290,7 @@ hbe_mission_central_hills_4 = {
     tags = { BBQ BBR BBS BBT }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_mission_central_hills_4 } }
-    allow = { current_year >= 1397 has_variable = hbe_mission_central_hills_3 OR = { has_variable = hbe_tech_central_hills_5 has_variable = hbe_tech_central_hills_8 } var:hbe_grain >= 10 gold >= 8 }
+    allow = { current_year >= 1397 has_variable = hbe_mission_central_hills_3 OR = { has_variable = hbe_tech_central_hills_5 has_variable = hbe_tech_central_hills_witness_8 } var:hbe_grain >= 10 gold >= 8 }
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_central_hills_4.a ai_chance = { value = 100 } effect = { add_gold = -8 set_variable = hbe_mission_central_hills_4 change_variable = { name = hbe_grain subtract = 10 } change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
@@ -298,7 +298,7 @@ hbe_mission_central_hills_5 = {
     tags = { BBQ BBR BBS BBT }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds"
     potential = { hbe_is_prince = yes has_variable = hbe_home_central_hills NOT = { has_variable = hbe_mission_central_hills_5 } }
-    allow = { current_year >= 1437 has_variable = hbe_mission_central_hills_4 OR = { has_variable = hbe_tech_central_hills_5 has_variable = hbe_tech_central_hills_8 } var:hbe_grain >= 10 gold >= 10 }
+    allow = { current_year >= 1437 has_variable = hbe_mission_central_hills_4 OR = { has_variable = hbe_tech_central_hills_5 has_variable = hbe_tech_central_hills_witness_8 } var:hbe_grain >= 10 gold >= 10 }
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_central_hills_5.a ai_chance = { value = 100 } effect = { add_gold = -10 set_variable = hbe_mission_central_hills_5 change_variable = { name = hbe_grain subtract = 10 } change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }

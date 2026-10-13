@@ -1,0 +1,186 @@
+{
+  "countries": {
+    "BAB": {
+      "name": "成都锦官",
+      "surname": "李",
+      "surname_english": "Li"
+    },
+    "BAE": {
+      "name": "汉州",
+      "surname": "陈",
+      "surname_english": "Chen"
+    },
+    "BAF": {
+      "name": "彭州",
+      "surname": "王",
+      "surname_english": "Wang"
+    },
+    "BAJ": {
+      "name": "邛州",
+      "surname": "赵",
+      "surname_english": "Zhao"
+    },
+    "BAL": {
+      "name": "眉州",
+      "surname": "苏",
+      "surname_english": "Su"
+    },
+    "BAO": {
+      "name": "嘉定山门",
+      "surname": "杨",
+      "surname_english": "Yang"
+    },
+    "BAP": {
+      "name": "叙州盐酒",
+      "surname": "罗",
+      "surname_english": "Luo"
+    },
+    "BAQ": {
+      "name": "泸州",
+      "surname": "黄",
+      "surname_english": "Huang"
+    },
+    "BAW": {
+      "name": "长宁",
+      "surname": "何",
+      "surname_english": "He"
+    },
+    "BAX": {
+      "name": "昌州",
+      "surname": "张",
+      "surname_english": "Zhang"
+    },
+    "BAZ": {
+      "name": "重庆山城",
+      "surname": "刘",
+      "surname_english": "Liu"
+    },
+    "BBB": {
+      "name": "涪州",
+      "surname": "周",
+      "surname_english": "Zhou"
+    },
+    "BBC": {
+      "name": "合州",
+      "surname": "冯",
+      "surname_english": "Feng"
+    },
+    "BBE": {
+      "name": "夔州",
+      "surname": "杜",
+      "surname_english": "Du"
+    },
+    "BBF": {
+      "name": "酉阳",
+      "surname": "彭",
+      "surname_english": "Peng"
+    },
+    "BBH": {
+      "name": "忠州",
+      "surname": "吴",
+      "surname_english": "Wu"
+    },
+    "BBI": {
+      "name": "保宁蜀道",
+      "surname": "范",
+      "surname_english": "Fan"
+    },
+    "BBJ": {
+      "name": "巴州",
+      "surname": "任",
+      "surname_english": "Ren"
+    },
+    "BBL": {
+      "name": "广元",
+      "surname": "邓",
+      "surname_english": "Deng"
+    },
+    "BBM": {
+      "name": "剑州",
+      "surname": "蒲",
+      "surname_english": "Pu"
+    },
+    "BBN": {
+      "name": "龙安",
+      "surname": "唐",
+      "surname_english": "Tang"
+    },
+    "BBO": {
+      "name": "达州",
+      "surname": "钟",
+      "surname_english": "Zhong"
+    },
+    "BBP": {
+      "name": "顺庆",
+      "surname": "曹",
+      "surname_english": "Cao"
+    },
+    "BBQ": {
+      "name": "简州",
+      "surname": "魏",
+      "surname_english": "Wei"
+    },
+    "BBR": {
+      "name": "遂宁义仓",
+      "surname": "袁",
+      "surname_english": "Yuan"
+    },
+    "BBS": {
+      "name": "潼川",
+      "surname": "许",
+      "surname_english": "Xu"
+    },
+    "BBT": {
+      "name": "广安",
+      "surname": "高",
+      "surname_english": "Gao"
+    },
+    "BBU": {
+      "name": "雅州茶马",
+      "surname": "马",
+      "surname_english": "Ma"
+    },
+    "BBV": {
+      "name": "茂州",
+      "surname": "董",
+      "surname_english": "Dong"
+    },
+    "BBW": {
+      "name": "松潘",
+      "surname": "郭",
+      "surname_english": "Guo"
+    },
+    "BBX": {
+      "name": "盐源",
+      "surname": "徐",
+      "surname_english": "Xu"
+    },
+    "BBY": {
+      "name": "德昌",
+      "surname": "秦",
+      "surname_english": "Qin"
+    },
+    "BBZ": {
+      "name": "黎州",
+      "surname": "梁",
+      "surname_english": "Liang"
+    },
+    "BCA": {
+      "name": "马湖",
+      "surname": "沈",
+      "surname_english": "Shen"
+    },
+    "BCB": {
+      "name": "建昌共治",
+      "surname": "安",
+      "surname_english": "An"
+    },
+    "BCC": {
+      "name": "永宁",
+      "surname": "龙",
+      "surname_english": "Long"
+    }
+  },
+  "version": "0.3.0",
+  "stable_dynasty_ids": true
+}

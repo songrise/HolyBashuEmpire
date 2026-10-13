@@ -433,7 +433,7 @@
       "year": 1457,
       "parent": "hbe_civic_common_2",
       "logical_parent": "hbe_civic_central_hills_1",
-      "allow": "has_variable = hbe_mission_central_hills_5 OR = { has_advance = hbe_tech_central_hills_5 has_advance = hbe_tech_central_hills_8 } has_advance = hbe_civic_central_hills_1",
+      "allow": "has_variable = hbe_mission_central_hills_5 OR = { has_advance = hbe_tech_central_hills_5 has_advance = hbe_tech_central_hills_witness_8 } has_advance = hbe_civic_central_hills_1",
       "unlocks": []
     },
     {

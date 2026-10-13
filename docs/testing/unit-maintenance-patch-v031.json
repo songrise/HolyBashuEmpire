@@ -1,0 +1,96 @@
+{
+  "version": "0.3.1",
+  "units": [
+    {
+      "unit": "hbe_canal_crossbow",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.5",
+      "strength_delta": "0.0",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_salt_guard",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.5",
+      "strength_delta": "0.0",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_river_garrison",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.5",
+      "strength_delta": "0.0",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_pass_rotation",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.5",
+      "strength_delta": "0.0",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_granary_militia",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.5",
+      "strength_delta": "0.0",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_tea_riders",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.2",
+      "strength_delta": "0.3",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "cavalry_maintenance"
+    },
+    {
+      "unit": "hbe_valley_soldiers",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "0.5",
+      "strength_delta": "0.0",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_trained_river",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "1",
+      "strength_delta": "-0.5",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    },
+    {
+      "unit": "hbe_permanent_pass",
+      "before_max_strength": "0.5",
+      "max_strength": "0.5",
+      "inherited_strength": "1",
+      "strength_delta": "-0.5",
+      "men": 500,
+      "upkeep_factor": 0.9,
+      "original_recipe": "early_infantry_maintenance"
+    }
+  ],
+  "maintenance_factor": 0.9
+}

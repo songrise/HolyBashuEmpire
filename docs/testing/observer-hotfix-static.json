@@ -1,0 +1,2590 @@
+{
+  "checks": [
+    {
+      "name": "Active advance count unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_witness_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_3: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_4: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_5: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_6: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_7: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: remains registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: age unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: research_cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: parent gate unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: allow unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: potential unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_8: existing scalar rewards unchanged",
+      "passed": true
+    },
+    {
+      "name": "All 32 required goods types registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_embroidery_impacts_inflation: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_embroidery_used_for_minting: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_exports_of_hbe_shu_embroidery: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_imports_of_hbe_shu_embroidery: correct kind",
+      "passed": true
+    },
+    {
+      "name": "can_extract_hbe_shu_embroidery: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_shu_embroidery_pop_demand: correct kind",
+      "passed": true
+    },
+    {
+      "name": "local_hbe_shu_embroidery_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_shu_embroidery_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_well_salt_impacts_inflation: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_well_salt_used_for_minting: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_exports_of_hbe_well_salt: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_imports_of_hbe_well_salt: correct kind",
+      "passed": true
+    },
+    {
+      "name": "can_extract_hbe_well_salt: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_well_salt_pop_demand: correct kind",
+      "passed": true
+    },
+    {
+      "name": "local_hbe_well_salt_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_well_salt_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_paper_impacts_inflation: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_shu_paper_used_for_minting: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_exports_of_hbe_shu_paper: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_imports_of_hbe_shu_paper: correct kind",
+      "passed": true
+    },
+    {
+      "name": "can_extract_hbe_shu_paper: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_shu_paper_pop_demand: correct kind",
+      "passed": true
+    },
+    {
+      "name": "local_hbe_shu_paper_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_shu_paper_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_border_tea_impacts_inflation: correct kind",
+      "passed": true
+    },
+    {
+      "name": "hbe_border_tea_used_for_minting: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_exports_of_hbe_border_tea: correct kind",
+      "passed": true
+    },
+    {
+      "name": "ban_imports_of_hbe_border_tea: correct kind",
+      "passed": true
+    },
+    {
+      "name": "can_extract_hbe_border_tea: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_border_tea_pop_demand: correct kind",
+      "passed": true
+    },
+    {
+      "name": "local_hbe_border_tea_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "global_hbe_border_tea_establishment_speed: correct kind",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: colliding description key absent",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_party_points_desc",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_round_desc",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_round_month_desc",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_feast_total_desc",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_completed_projects_desc",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_tech_central_hills_witness_8_desc",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese: hbe_opening_family.1.title",
+      "passed": true
+    },
+    {
+      "name": "english: colliding description key absent",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_party_points_desc",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_round_desc",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_round_month_desc",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_feast_total_desc",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_completed_projects_desc",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_tech_central_hills_witness_8_desc",
+      "passed": true
+    },
+    {
+      "name": "english: hbe_opening_family.1.title",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.1: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.2: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.3: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.4: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.5: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.6: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.7: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.12: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.13: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.14: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.15: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.20: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.21: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.22: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.23: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.100: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.101: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.102: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.103: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.104: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.105: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.106: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.107: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.108: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.109: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.110: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.111: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.112: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.113: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.114: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.115: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.116: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.117: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.118: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.119: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.120: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.200: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.201: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.202: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.203: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.204: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.205: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.206: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.207: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.208: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.209: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.210: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.211: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.212: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.213: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.214: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.215: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.216: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.217: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.218: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.219: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.220: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.221: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.222: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.223: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.224: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.225: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.226: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.227: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.228: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.229: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.230: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.231: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.232: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.233: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.234: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.235: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.30: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.31: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.32: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.33: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.34: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.35: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_banquet.36: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.1: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.2: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.100: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.101: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.102: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.103: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.104: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.105: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.106: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.107: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.108: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.109: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.110: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.111: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.112: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.113: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.3: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.4: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.5: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.6: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic.7: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.100: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.101: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.102: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.103: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.104: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.105: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.106: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.1: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.2: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.3: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.4: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.10: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.11: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.12: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.13: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.14: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe.5: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "hbe_opening_family.1: title and outcome registered",
+      "passed": true
+    },
+    {
+      "name": "Existing event count preserved",
+      "passed": true
+    },
+    {
+      "name": "hbe_brocade_school: one production-method definition",
+      "passed": true
+    },
+    {
+      "name": "hbe_brocade_school: real specialty output",
+      "passed": true
+    },
+    {
+      "name": "hbe_brocade_school: ordinary fallback kept",
+      "passed": true
+    },
+    {
+      "name": "hbe_chengdu_plain_advanced_production: advanced recipe unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_chengdu_plain_paper_production: advanced recipe unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_chengdu_plain_basic_production: original unlock at expected tier",
+      "passed": true
+    },
+    {
+      "name": "hbe_brocade_school: potential/allow untouched",
+      "passed": true
+    },
+    {
+      "name": "hbe_salt_office: one production-method definition",
+      "passed": true
+    },
+    {
+      "name": "hbe_salt_office: real specialty output",
+      "passed": true
+    },
+    {
+      "name": "hbe_salt_office: ordinary fallback kept",
+      "passed": true
+    },
+    {
+      "name": "hbe_southern_salt_wine_advanced_production: advanced recipe unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_southern_salt_wine_basic_production: original unlock at expected tier",
+      "passed": true
+    },
+    {
+      "name": "hbe_salt_office: potential/allow untouched",
+      "passed": true
+    },
+    {
+      "name": "hbe_gate_registry: one production-method definition",
+      "passed": true
+    },
+    {
+      "name": "hbe_gate_registry: real specialty output",
+      "passed": true
+    },
+    {
+      "name": "hbe_gate_registry: ordinary fallback kept",
+      "passed": true
+    },
+    {
+      "name": "hbe_northern_shudao_advanced_production: advanced recipe unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_northern_shudao_basic_production: original unlock at expected tier",
+      "passed": true
+    },
+    {
+      "name": "hbe_gate_registry: potential/allow untouched",
+      "passed": true
+    },
+    {
+      "name": "hbe_tea_exchange: one production-method definition",
+      "passed": true
+    },
+    {
+      "name": "hbe_tea_exchange: real specialty output",
+      "passed": true
+    },
+    {
+      "name": "hbe_tea_exchange: ordinary fallback kept",
+      "passed": true
+    },
+    {
+      "name": "hbe_western_tea_horse_advanced_production: advanced recipe unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_western_tea_horse_paper_production: advanced recipe unchanged",
+      "passed": true
+    },
+    {
+      "name": "hbe_western_tea_horse_basic_production: original unlock at expected tier",
+      "passed": true
+    },
+    {
+      "name": "hbe_tea_exchange: potential/allow untouched",
+      "passed": true
+    },
+    {
+      "name": "Paper institution remains second era",
+      "passed": true
+    },
+    {
+      "name": "Unit statistics and recruitment gates untouched",
+      "passed": true
+    },
+    {
+      "name": "Only external target score adjusted",
+      "passed": true
+    }
+  ],
+  "passed": 646,
+  "failed": 0
+}

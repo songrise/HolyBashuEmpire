@@ -1,0 +1,32 @@
+{
+  "version": "0.3.1",
+  "status": "functional_assertions_passed_with_post_load_localization_fix",
+  "profile": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\eu5-v031-balance-final-20261014",
+  "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_25.eu5",
+  "date": "1337.4.25",
+  "save_sha256": "06b0ec1e97152ca405432b4168deb18d735b90a3630d1a4b34d1a09a5cc3498a",
+  "fixture_flags": {
+    "hbe_fixture_base_cost": 3.95947,
+    "hbe_fixture_large_cost": 11.87841,
+    "hbe_fixture_before_gold": 2044.49941,
+    "hbe_fixture_affordable": true,
+    "hbe_fixture_spent": 11.87841,
+    "hbe_fixture_cost_pass": true,
+    "hbe_fixture_gate_before": true,
+    "hbe_fixture_gate_after": true,
+    "hbe_fixture_cap_two": true,
+    "hbe_fixture_cap_three": true,
+    "hbe_fixture_three_built": true,
+    "hbe_fixture_finished": true
+  },
+  "required_assertions": 8,
+  "hbe_advance_registration_warnings": 0,
+  "new_definition_diagnostics": [
+    "[01:07:23][jomini_trigger.cpp:275]: PostValidate of trigger 'custom_tooltip' returned false at common/scripted_triggers/hbe_advance_gates.txt:62"
+  ],
+  "global_automated_test_result": "Tests:\n[ FAIL ] Error log: 11849 errors\n",
+  "scope": "One-month isolated fixture, test-only grants; no natural-industry or long-term-war probability conclusion.",
+  "initial_attempt": "Initial fixture incorrectly relied on iteration limits updating during every_owned_location; repaired to three sequential individual constructions. First attempt preserved separately. Two leaf prerequisites and two maintenance labels also corrected before final load.",
+  "post_load_copy_changes": "Policy description +4% and seven dynamic-cost option labels corrected; no effect or definition changed after final test.",
+  "post_load_localization_fix": "Added missing hbe_advance_gate_chancery_records_tt in both languages. Static reference verified after native load; native load was not repeated for this text-only repair."
+}

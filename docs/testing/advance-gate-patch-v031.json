@@ -1,0 +1,588 @@
+{
+  "version": "0.3.1",
+  "nodes": 60,
+  "rows": [
+    {
+      "advance": "hbe_tech_common_3",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_common_6",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_common_8",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_chengdu_plain_3",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_chengdu_plain_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_chengdu_plain_3",
+      "parent_after": "hbe_tech_chengdu_plain_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_chengdu_plain_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_chengdu_plain_4",
+      "parent_after": "hbe_tech_chengdu_plain_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_chengdu_plain_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_chengdu_plain_6",
+      "age": "age_2_renaissance",
+      "parent_before": "global_clergy_max_literacy_advance",
+      "parent_after": "global_clergy_max_literacy_advance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_chengdu_plain_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_chengdu_plain_6",
+      "parent_after": "hbe_tech_chengdu_plain_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_chengdu_plain_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_chengdu_plain_7",
+      "parent_after": "hbe_tech_chengdu_plain_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_chengdu_plain_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southern_salt_wine_3",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_southern_salt_wine_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southern_salt_wine_3",
+      "parent_after": "hbe_tech_southern_salt_wine_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southern_salt_wine_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southern_salt_wine_4",
+      "parent_after": "hbe_tech_southern_salt_wine_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_southern_salt_wine_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southern_salt_wine_6",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_urbanisation",
+      "parent_after": "renaissance_urbanisation",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_southern_salt_wine_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southern_salt_wine_6",
+      "parent_after": "hbe_tech_southern_salt_wine_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southern_salt_wine_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southern_salt_wine_7",
+      "parent_after": "hbe_tech_southern_salt_wine_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_southern_salt_wine_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_eastern_river_3",
+      "age": "age_2_renaissance",
+      "parent_before": "merchants_and_trade",
+      "parent_after": "merchants_and_trade",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_eastern_river_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_eastern_river_3",
+      "parent_after": "hbe_tech_eastern_river_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_eastern_river_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_eastern_river_4",
+      "parent_after": "hbe_tech_eastern_river_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_eastern_river_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_eastern_river_6",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_eastern_river_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_eastern_river_6",
+      "parent_after": "hbe_tech_eastern_river_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_eastern_river_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_eastern_river_7",
+      "parent_after": "hbe_tech_eastern_river_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_eastern_river_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_northern_shudao_3",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_northern_shudao_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_northern_shudao_3",
+      "parent_after": "hbe_tech_northern_shudao_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_northern_shudao_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_northern_shudao_4",
+      "parent_after": "hbe_tech_northern_shudao_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_northern_shudao_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_northern_shudao_6",
+      "age": "age_2_renaissance",
+      "parent_before": "government_size_renaissance",
+      "parent_after": "government_size_renaissance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 3,
+      "leaf_gate_preserved": "chancery_records"
+    },
+    {
+      "advance": "hbe_tech_northern_shudao_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_northern_shudao_6",
+      "parent_after": "hbe_tech_northern_shudao_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_northern_shudao_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_northern_shudao_7",
+      "parent_after": "hbe_tech_northern_shudao_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_northern_shudao_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_central_hills_3",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_central_hills_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_central_hills_3",
+      "parent_after": "hbe_tech_central_hills_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_central_hills_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_central_hills_4",
+      "parent_after": "hbe_tech_central_hills_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_central_hills_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_central_hills_6",
+      "age": "age_2_renaissance",
+      "parent_before": "law_making_renaissance",
+      "parent_after": "law_making_renaissance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_central_hills_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_central_hills_6",
+      "parent_after": "hbe_tech_central_hills_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_central_hills_witness_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_central_hills_7",
+      "parent_after": "hbe_tech_central_hills_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_central_hills_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_western_tea_horse_3",
+      "age": "age_2_renaissance",
+      "parent_before": "trade_range_advance_age_2",
+      "parent_after": "trade_range_advance_age_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_western_tea_horse_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_western_tea_horse_3",
+      "parent_after": "hbe_tech_western_tea_horse_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_western_tea_horse_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_western_tea_horse_4",
+      "parent_after": "hbe_tech_western_tea_horse_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_western_tea_horse_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_western_tea_horse_6",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_western_tea_horse_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_western_tea_horse_6",
+      "parent_after": "hbe_tech_western_tea_horse_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_western_tea_horse_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_western_tea_horse_7",
+      "parent_after": "hbe_tech_western_tea_horse_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_western_tea_horse_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southwestern_valleys_3",
+      "age": "age_2_renaissance",
+      "parent_before": "renaissance_development",
+      "parent_after": "renaissance_development",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_southwestern_valleys_4",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southwestern_valleys_3",
+      "parent_after": "hbe_tech_southwestern_valleys_3",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southwestern_valleys_5",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southwestern_valleys_4",
+      "parent_after": "hbe_tech_southwestern_valleys_4",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_southwestern_valleys_4"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southwestern_valleys_6",
+      "age": "age_2_renaissance",
+      "parent_before": "recruitment_improvements_renaissance",
+      "parent_after": "recruitment_improvements_renaissance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_tech_southwestern_valleys_7",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southwestern_valleys_6",
+      "parent_after": "hbe_tech_southwestern_valleys_6",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_tech_southwestern_valleys_8",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_tech_southwestern_valleys_7",
+      "parent_after": "hbe_tech_southwestern_valleys_7",
+      "redundant_direct_gates_removed": [
+        "hbe_tech_southwestern_valleys_7"
+      ],
+      "compound_gate_count": 1
+    },
+    {
+      "advance": "hbe_civic_common_2",
+      "age": "age_2_renaissance",
+      "parent_before": "government_size_renaissance",
+      "parent_after": "government_size_renaissance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2,
+      "leaf_gate_preserved": "chancery_records"
+    },
+    {
+      "advance": "hbe_civic_chengdu_plain_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_chengdu_plain_2",
+      "parent_after": "hbe_tech_chengdu_plain_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_chengdu_plain_2",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_civic_common_2",
+      "parent_after": "hbe_civic_common_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 3
+    },
+    {
+      "advance": "hbe_civic_southern_salt_wine_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_southern_salt_wine_2",
+      "parent_after": "hbe_tech_southern_salt_wine_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_southern_salt_wine_2",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_civic_common_2",
+      "parent_after": "hbe_civic_common_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 3
+    },
+    {
+      "advance": "hbe_civic_eastern_river_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_eastern_river_2",
+      "parent_after": "hbe_tech_eastern_river_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_eastern_river_2",
+      "age": "age_2_renaissance",
+      "parent_before": "drill_army_advance",
+      "parent_after": "drill_army_advance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 4
+    },
+    {
+      "advance": "hbe_civic_northern_shudao_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_northern_shudao_2",
+      "parent_after": "hbe_tech_northern_shudao_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_northern_shudao_2",
+      "age": "age_2_renaissance",
+      "parent_before": "supply_depot_advance_age_2_renaissance",
+      "parent_after": "supply_depot_advance_age_2_renaissance",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 4
+    },
+    {
+      "advance": "hbe_civic_central_hills_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_central_hills_2",
+      "parent_after": "hbe_tech_central_hills_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_central_hills_2",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_civic_common_2",
+      "parent_after": "hbe_civic_common_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 3
+    },
+    {
+      "advance": "hbe_civic_western_tea_horse_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_western_tea_horse_2",
+      "parent_after": "hbe_tech_western_tea_horse_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_western_tea_horse_2",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_civic_common_2",
+      "parent_after": "hbe_civic_common_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 3
+    },
+    {
+      "advance": "hbe_civic_southwestern_valleys_1",
+      "age": "age_1_traditions",
+      "parent_before": "hbe_tech_southwestern_valleys_2",
+      "parent_after": "hbe_tech_southwestern_valleys_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 2
+    },
+    {
+      "advance": "hbe_civic_southwestern_valleys_2",
+      "age": "age_2_renaissance",
+      "parent_before": "hbe_civic_common_2",
+      "parent_after": "hbe_civic_common_2",
+      "redundant_direct_gates_removed": [],
+      "compound_gate_count": 3
+    }
+  ],
+  "compound_native_conditions": [
+    "hbe_civic_central_hills_1",
+    "hbe_civic_chengdu_plain_1",
+    "hbe_civic_common_2",
+    "hbe_civic_eastern_river_1",
+    "hbe_civic_northern_shudao_1",
+    "hbe_civic_southern_salt_wine_1",
+    "hbe_civic_southwestern_valleys_1",
+    "hbe_civic_western_tea_horse_1",
+    "hbe_tech_central_hills_2",
+    "hbe_tech_central_hills_3",
+    "hbe_tech_central_hills_4",
+    "hbe_tech_central_hills_5",
+    "hbe_tech_central_hills_6",
+    "hbe_tech_central_hills_7",
+    "hbe_tech_central_hills_witness_8",
+    "hbe_tech_chengdu_plain_2",
+    "hbe_tech_chengdu_plain_3",
+    "hbe_tech_chengdu_plain_4",
+    "hbe_tech_chengdu_plain_5",
+    "hbe_tech_chengdu_plain_6",
+    "hbe_tech_chengdu_plain_7",
+    "hbe_tech_chengdu_plain_8",
+    "hbe_tech_common_2",
+    "hbe_tech_common_3",
+    "hbe_tech_common_5",
+    "hbe_tech_common_7",
+    "hbe_tech_eastern_river_2",
+    "hbe_tech_eastern_river_3",
+    "hbe_tech_eastern_river_4",
+    "hbe_tech_eastern_river_5",
+    "hbe_tech_eastern_river_6",
+    "hbe_tech_eastern_river_7",
+    "hbe_tech_eastern_river_8",
+    "hbe_tech_northern_shudao_2",
+    "hbe_tech_northern_shudao_3",
+    "hbe_tech_northern_shudao_4",
+    "hbe_tech_northern_shudao_5",
+    "hbe_tech_northern_shudao_6",
+    "hbe_tech_northern_shudao_7",
+    "hbe_tech_northern_shudao_8",
+    "hbe_tech_southern_salt_wine_2",
+    "hbe_tech_southern_salt_wine_3",
+    "hbe_tech_southern_salt_wine_4",
+    "hbe_tech_southern_salt_wine_5",
+    "hbe_tech_southern_salt_wine_6",
+    "hbe_tech_southern_salt_wine_7",
+    "hbe_tech_southern_salt_wine_8",
+    "hbe_tech_southwestern_valleys_2",
+    "hbe_tech_southwestern_valleys_3",
+    "hbe_tech_southwestern_valleys_4",
+    "hbe_tech_southwestern_valleys_5",
+    "hbe_tech_southwestern_valleys_6",
+    "hbe_tech_southwestern_valleys_7",
+    "hbe_tech_southwestern_valleys_8",
+    "hbe_tech_western_tea_horse_2",
+    "hbe_tech_western_tea_horse_3",
+    "hbe_tech_western_tea_horse_4",
+    "hbe_tech_western_tea_horse_5",
+    "hbe_tech_western_tea_horse_6",
+    "hbe_tech_western_tea_horse_7",
+    "hbe_tech_western_tea_horse_8",
+    "chancery_records"
+  ],
+  "files": [
+    "in_game/common/advances/hbe_advances.txt",
+    "in_game/common/advances/hbe_civic_advances.txt",
+    "in_game/common/scripted_triggers/hbe_advance_gates.txt",
+    "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml",
+    "main_menu/localization/english/hbe_advance_gates_l_english.yml"
+  ],
+  "note": "Same-age implied prerequisites use requires. Cross-age, OR and NOT gates remain immediate native has_advance checks in named triggers, with no monthly flags or delayed synchronization."
+}

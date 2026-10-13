@@ -184,8 +184,8 @@ if = { limit = { has_variable = hbe_tech_central_hills_6_pending NOT = { has_var
 if = { limit = { has_variable = hbe_tech_central_hills_7_pending NOT = { has_variable = hbe_research_timer } }
             remove_variable = hbe_tech_central_hills_7_pending remove_variable = hbe_research_pending set_variable = hbe_tech_central_hills_7
             hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
-if = { limit = { has_variable = hbe_tech_central_hills_8_pending NOT = { has_variable = hbe_research_timer } }
-            remove_variable = hbe_tech_central_hills_8_pending remove_variable = hbe_research_pending set_variable = hbe_tech_central_hills_8
+if = { limit = { has_variable = hbe_tech_central_hills_witness_8_pending NOT = { has_variable = hbe_research_timer } }
+            remove_variable = hbe_tech_central_hills_witness_8_pending remove_variable = hbe_research_pending set_variable = hbe_tech_central_hills_witness_8
             hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
 if = { limit = { has_variable = hbe_tech_western_tea_horse_1_pending NOT = { has_variable = hbe_research_timer } }
             remove_variable = hbe_tech_western_tea_horse_1_pending remove_variable = hbe_research_pending set_variable = hbe_tech_western_tea_horse_1

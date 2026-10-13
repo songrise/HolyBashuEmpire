@@ -1,0 +1,3228 @@
+{
+  "changes": [
+    {
+      "event": "hbe_banquet.4",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.5",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.5",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.5",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.23",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.23",
+      "variable": "hbe_guoqi",
+      "operation": "subtract",
+      "before": "5",
+      "after": "8",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.23",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-6",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-6",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-6",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "10",
+      "after": "15",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-7",
+      "after": "-5",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "10",
+      "after": "15",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-7",
+      "after": "-5",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "10",
+      "after": "15",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-7",
+      "after": "-5",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.107",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.107",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.107",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.107",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.107",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.107",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.108",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.108",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.108",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.108",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.108",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.108",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.109",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.109",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.109",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.109",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.109",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.109",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.110",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.110",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.110",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.110",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.110",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.110",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.111",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.111",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.111",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.111",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.111",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.111",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.112",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.112",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.112",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.112",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.112",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.112",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.113",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.113",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.113",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.113",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.113",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.113",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.114",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.114",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.114",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.114",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.114",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.114",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.115",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.115",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.115",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.115",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.115",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.115",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.116",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.116",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.116",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.116",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.116",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.116",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.117",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.117",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.117",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.117",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.117",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.117",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.118",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.118",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.118",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.118",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.118",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.118",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.119",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.119",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.119",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.119",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.119",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.119",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.120",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.120",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.120",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.120",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.120",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.120",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.200",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.200",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.200",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.201",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.201",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.201",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.202",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.202",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.202",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.203",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.203",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.203",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.204",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.204",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.204",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.205",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.205",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.205",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.206",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.206",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.206",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.207",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.207",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.207",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.208",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.208",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.208",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.209",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.209",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.209",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.210",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.210",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.210",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.211",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.211",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.211",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.212",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.212",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.212",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.213",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.213",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.213",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.214",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.214",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.214",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.215",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.215",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.215",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.216",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.216",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.216",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.217",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.217",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.217",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.218",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.218",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.218",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.219",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.219",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.219",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.220",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.220",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.220",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.221",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.221",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.221",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.222",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.222",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.222",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.223",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.223",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.223",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.224",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.224",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.224",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.225",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.225",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.225",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.226",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.226",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.226",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.227",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.227",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.227",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.228",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.228",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.228",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.229",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.229",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.229",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.230",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.230",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.230",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.231",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.231",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.231",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.232",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.232",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.232",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.233",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.233",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.233",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.234",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.234",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.234",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.235",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.235",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.235",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "2",
+      "after": "3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.30",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.30",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.30",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.31",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.31",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.31",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.32",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.32",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.32",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.33",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.33",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.33",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.34",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.34",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.34",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.35",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.35",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.35",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.36",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_banquet.36",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_banquet.36",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.107",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.107",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.107",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.107",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.107",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.107",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.108",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.108",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.108",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.108",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.108",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.108",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.109",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.109",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.109",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.109",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.109",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.109",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.110",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.110",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.110",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.110",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.110",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.110",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.111",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.111",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.111",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.111",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.111",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.111",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.112",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.112",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.112",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.112",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.112",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.112",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.113",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.113",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.113",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.113",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.113",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.113",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-3",
+      "after": "-5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.5",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-15",
+      "after": "-11",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.5",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-10",
+      "after": "-7",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.5",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "5",
+      "after": "8",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.5",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-5",
+      "after": "-8",
+      "beneficial": false
+    },
+    {
+      "event": "hbe_civic.6",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-8",
+      "after": "-6",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.6",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.7",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-8",
+      "after": "-6",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.7",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.7",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.7",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe_civic.7",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "1",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-6",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.100",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.100",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "10",
+      "after": "15",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-7",
+      "after": "-5",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.101",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.101",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.102",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.102",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-4",
+      "after": "-3",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.103",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.103",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.104",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.104",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "0",
+      "after": "0",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "4",
+      "after": "6",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-2",
+      "after": "-3",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-3",
+      "after": "-2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "3",
+      "after": "2",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.105",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.105",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "8",
+      "after": "12",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-5",
+      "after": "-4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "2",
+      "after": "1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.106",
+      "variable": "hbe_burden",
+      "operation": "add",
+      "before": "-2",
+      "after": "-1",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.106",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "-1",
+      "after": "-2",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.5",
+      "variable": "hbe_guoqi",
+      "operation": "subtract",
+      "before": "10",
+      "after": "15",
+      "beneficial": false
+    },
+    {
+      "event": "hbe.5",
+      "variable": "hbe_yiqi",
+      "operation": "add",
+      "before": "5",
+      "after": "4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.5",
+      "variable": "hbe_guoqi",
+      "operation": "add",
+      "before": "5",
+      "after": "4",
+      "beneficial": true
+    },
+    {
+      "event": "hbe.5",
+      "variable": "hbe_yiqi",
+      "operation": "subtract",
+      "before": "3",
+      "after": "5",
+      "beneficial": false
+    }
+  ]
+}

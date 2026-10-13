@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": {
+    "all_1007_effect_paths_executed": true,
+    "positive_local_ending": true,
+    "negative_local_ending": true,
+    "abandoned_chain_stops": true,
+    "migration_accept_ending": true,
+    "migration_restrict_ending": true,
+    "no_unexpected_hbe_engine_diagnostics": true
+  },
+  "unexpected": [],
+  "version": "0.3.0",
+  "profile": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\eu5-stories-branches-final-20261013",
+  "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_29.eu5",
+  "scope": "Short isolated fixture with direct execution of every new option effect, two opposite local branch finals, both shared migration finals and one abandoned chain. All grants are test-only; not natural AI or balance evidence."
+}

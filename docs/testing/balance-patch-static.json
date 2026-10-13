@@ -1,0 +1,22 @@
+{
+  "version": "0.3.1",
+  "status": "passed",
+  "checks": 2189,
+  "paid_options": 544,
+  "event_definitions": 406,
+  "positive_modifiers": 841,
+  "civilian_buildings": 13,
+  "units": 9,
+  "cost_formula": "scale * (1 + 0.2 * capital_wealth + 0.05 * country_economical_base), bounded to [scale, 5000 * scale]",
+  "rows": {
+    "count": 2189,
+    "failed_rows": [],
+    "detail_in_local_archive": true
+  },
+  "raw_detail_archive": {
+    "path": "work/test-report-details-20261014/balance-patch-static.json",
+    "bytes": 312151,
+    "sha256": "c39d54fb7d3ecbbe1cf89d2d4b7f3265325e7a84125bb5f22fdc9972f0389036",
+    "tracked": false
+  }
+}

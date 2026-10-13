@@ -1,0 +1,414 @@
+{
+  "mode": "built-in image_gen; mechanical DDS export",
+  "style": "natural painterly realism, latest user-selected references",
+  "assets": [
+    {
+      "key": "fossils",
+      "title": "石层巨骨",
+      "themes": [
+        "archaeology"
+      ],
+      "source": "assets/event_expansion/fossils.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "3aad75aadca24bd287e8ca2df7f5afcb1dfeed3ae30129b9257adb7eb560cf70",
+      "texture": "main_menu/gfx/interface/hbe/story_events/fossils.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "fae3d7ec65eb5a605a26eec287c26e175fd94c23327b0a6afc77037a2b4f620f",
+      "scene": "hbe_story_scene_fossils",
+      "illustration_tag": "hbe_story_art_fossils",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": true
+    },
+    {
+      "key": "observatory",
+      "title": "山壁星历",
+      "themes": [
+        "astronomy"
+      ],
+      "source": "assets/event_expansion/observatory.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "affd8aadc14cc24401452002abd6d7e13e60db265c0ac1ecbee8408640ff518e",
+      "texture": "main_menu/gfx/interface/hbe/story_events/observatory.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "b4f8b9ebb9b2ecd2e568954cd83118255eb0701853697240a11f023c938a7b9b",
+      "scene": "hbe_story_scene_observatory",
+      "illustration_tag": "hbe_story_art_observatory",
+      "crop_center": [
+        0.5,
+        0.15
+      ],
+      "retained_reference": true
+    },
+    {
+      "key": "veterinary",
+      "title": "茶路医马",
+      "themes": [
+        "veterinary",
+        "caravan"
+      ],
+      "source": "assets/event_expansion/veterinary.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "6ac642fe2a32fca016cda00e62278350d786a5516ed8b8b973cb790419f18c26",
+      "texture": "main_menu/gfx/interface/hbe/story_events/veterinary.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "ccfb99a6ab3daf011564765f103f7654707d836272c2df2118dd783b6790515d",
+      "scene": "hbe_story_scene_veterinary",
+      "illustration_tag": "hbe_story_art_veterinary",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "bridge",
+      "title": "谷中桥约",
+      "themes": [
+        "bridge"
+      ],
+      "source": "assets/event_expansion/bridge.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "daaea8847f150454cd6adb7a7a7db94f6d77999ac09215a2b0aee9d5bc9bbefa",
+      "texture": "main_menu/gfx/interface/hbe/story_events/bridge.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "3477e2f6609c17c1e17f795d113eb40f21ff14087978aa3b85333daa2fe6e184",
+      "scene": "hbe_story_scene_bridge",
+      "illustration_tag": "hbe_story_art_bridge",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "migration_journey",
+      "title": "入蜀行路",
+      "themes": [
+        "migration_journey"
+      ],
+      "source": "assets/event_expansion/migration_journey.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "8f34b07350a69e67b1f42c4a9b0ac788b27c1925b3ed1e07c7865149a44af91b",
+      "texture": "main_menu/gfx/interface/hbe/story_events/migration_journey.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "11288e7358c81bd16e9e0836f7e55653d707e4238f1422268732b05983cf5b0b",
+      "scene": "hbe_story_scene_migration_journey",
+      "illustration_tag": "hbe_story_art_migration_journey",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "settlement",
+      "title": "落脚新乡",
+      "themes": [
+        "migration",
+        "land",
+        "labor"
+      ],
+      "source": "assets/event_expansion/settlement.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "6cab80ff7ec780c67201e20a6720325ffe604da16ac36e6b4984f735a863f4a7",
+      "texture": "main_menu/gfx/interface/hbe/story_events/settlement.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "f8ea1e46b2cc735069f03182d56d5532d9e0862450527f6f523fac3c0bad0f43",
+      "scene": "hbe_story_scene_settlement",
+      "illustration_tag": "hbe_story_art_settlement",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "craft",
+      "title": "坊中余线",
+      "themes": [
+        "craft",
+        "commerce",
+        "literature"
+      ],
+      "source": "assets/event_expansion/craft.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "39bd5679c9edf1dc1aea006ba7960f721b859b22ff64b1e9572e33d80a0f8ded",
+      "texture": "main_menu/gfx/interface/hbe/story_events/craft.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "df0de26f8425b125be7f8c2d016fea94985ba6b5b0d20f9bcc3c5791bc72371c",
+      "scene": "hbe_story_scene_craft",
+      "illustration_tag": "hbe_story_art_craft",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "medicine",
+      "title": "山村药舍",
+      "themes": [
+        "medicine"
+      ],
+      "source": "assets/event_expansion/medicine.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "2a78ff235b2a069f15a75de167f00eaad25d6fbec77f96f4d82c9137ea1f971b",
+      "texture": "main_menu/gfx/interface/hbe/story_events/medicine.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "44dad1a15a89bb94bc9f32be65ac88c658645cf6c0e20a6bb92a450e80b423d5",
+      "scene": "hbe_story_scene_medicine",
+      "illustration_tag": "hbe_story_art_medicine",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "festival",
+      "title": "乡社余席",
+      "themes": [
+        "festival",
+        "culture",
+        "faith"
+      ],
+      "source": "assets/event_expansion/festival.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "245e99f7087cb3ea17c20c590cb822562938cda4e3b986478d04572981be44f8",
+      "texture": "main_menu/gfx/interface/hbe/story_events/festival.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "aa15735909500cb1803682d56bcd516835607899c3081fb033bb075392bc0c24",
+      "scene": "hbe_story_scene_festival",
+      "illustration_tag": "hbe_story_art_festival",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "river",
+      "title": "峡江待渡",
+      "themes": [
+        "navigation",
+        "water",
+        "tax"
+      ],
+      "source": "assets/event_expansion/river.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "2638294cd64ea512801e92b52f89de70d6487739f6061a5d0ab9644729b226ae",
+      "texture": "main_menu/gfx/interface/hbe/story_events/river.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "cc617e1a03b0744b4fde6ee0daea78563dc30f7c9178dbee7b166ab04ca3ce94",
+      "scene": "hbe_story_scene_river",
+      "illustration_tag": "hbe_story_art_river",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "terraces",
+      "title": "雨后坡田",
+      "themes": [
+        "agriculture",
+        "food",
+        "ecology"
+      ],
+      "source": "assets/event_expansion/terraces.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "f40dbf009ad6ee0694be3c631d72eaaccf0aeff716cd3b84ea0a33781fc91248",
+      "texture": "main_menu/gfx/interface/hbe/story_events/terraces.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "99636c9baad2ca5c4ff865e3e5554e7654750f0afebfb0638e9dc994b1685c8a",
+      "scene": "hbe_story_scene_terraces",
+      "illustration_tag": "hbe_story_art_terraces",
+      "crop_center": [
+        0.5,
+        0
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "council",
+      "title": "未决乡议",
+      "themes": [
+        "justice",
+        "education",
+        "military"
+      ],
+      "source": "assets/event_expansion/council.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "51e02bc3a5a305154d28c9f6d4e0fe3ebdcb7232d0ad6ef447ba16fa5271acbb",
+      "texture": "main_menu/gfx/interface/hbe/story_events/council.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "78b4ae118989e9217c0bf7195aa05091aaa7157a5222e7d86f47e78d816a4c1f",
+      "scene": "hbe_story_scene_council",
+      "illustration_tag": "hbe_story_art_council",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "bamboo",
+      "title": "山林白熊",
+      "themes": [
+        "ecology"
+      ],
+      "source": "assets/event_expansion/bamboo.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "b3bc3be4dc2d5d0d4a7d716c1a9d7e562c3dcdba3ebaf03d41e627c142504e49",
+      "texture": "main_menu/gfx/interface/hbe/story_events/bamboo.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "eb28ed7551bca7b61610e9ddc42767ed1e5dd4f6e7772dd5e585b73f3465ebda",
+      "scene": "hbe_story_scene_bamboo",
+      "illustration_tag": "hbe_story_art_bamboo",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    },
+    {
+      "key": "migration_pact",
+      "title": "乡册之前",
+      "themes": [
+        "migration",
+        "settlement",
+        "justice"
+      ],
+      "source": "assets/event_expansion/migration_pact.png",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "bcf4c17fc211c933486f282405013a62f570e995d63168613c55117dfe1477e0",
+      "texture": "main_menu/gfx/interface/hbe/story_events/migration_pact.dds",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "compression": "DXT5",
+      "bytes": 475328,
+      "sha256": "470655fe01f40f063ec287d4f95f9c19aa757c41d90d70e34f5b5672fa21e631",
+      "scene": "hbe_story_scene_migration_pact",
+      "illustration_tag": "hbe_story_art_migration_pact",
+      "crop_center": [
+        0.5,
+        0.5
+      ],
+      "retained_reference": false
+    }
+  ],
+  "runtime_bytes": 6654592
+}

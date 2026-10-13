@@ -1,4 +1,6 @@
 ﻿hbe_sync_native_research = {
+ hbe_observer_compatibility_sync = yes
+
 if = { limit = { has_variable = hbe_tech_common_1 NOT = { has_advance = hbe_tech_common_1 } } research_advance = advance_type:hbe_tech_common_1 }
     if = { limit = { has_advance = hbe_tech_common_1 NOT = { has_variable = hbe_tech_common_1 } } set_variable = hbe_tech_common_1 hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
 if = { limit = { has_variable = hbe_tech_common_2 NOT = { has_advance = hbe_tech_common_2 } } research_advance = advance_type:hbe_tech_common_2 }
@@ -93,8 +95,8 @@ if = { limit = { has_variable = hbe_tech_central_hills_6 NOT = { has_advance = h
     if = { limit = { has_advance = hbe_tech_central_hills_6 NOT = { has_variable = hbe_tech_central_hills_6 } } set_variable = hbe_tech_central_hills_6 hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
 if = { limit = { has_variable = hbe_tech_central_hills_7 NOT = { has_advance = hbe_tech_central_hills_7 } } research_advance = advance_type:hbe_tech_central_hills_7 }
     if = { limit = { has_advance = hbe_tech_central_hills_7 NOT = { has_variable = hbe_tech_central_hills_7 } } set_variable = hbe_tech_central_hills_7 hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
-if = { limit = { has_variable = hbe_tech_central_hills_8 NOT = { has_advance = hbe_tech_central_hills_8 } } research_advance = advance_type:hbe_tech_central_hills_8 }
-    if = { limit = { has_advance = hbe_tech_central_hills_8 NOT = { has_variable = hbe_tech_central_hills_8 } } set_variable = hbe_tech_central_hills_8 hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
+if = { limit = { has_variable = hbe_tech_central_hills_witness_8 NOT = { has_advance = hbe_tech_central_hills_witness_8 } } research_advance = advance_type:hbe_tech_central_hills_witness_8 }
+    if = { limit = { has_advance = hbe_tech_central_hills_witness_8 NOT = { has_variable = hbe_tech_central_hills_witness_8 } } set_variable = hbe_tech_central_hills_witness_8 hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
 if = { limit = { has_variable = hbe_tech_western_tea_horse_1 NOT = { has_advance = hbe_tech_western_tea_horse_1 } } research_advance = advance_type:hbe_tech_western_tea_horse_1 }
     if = { limit = { has_advance = hbe_tech_western_tea_horse_1 NOT = { has_variable = hbe_tech_western_tea_horse_1 } } set_variable = hbe_tech_western_tea_horse_1 hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
 if = { limit = { has_variable = hbe_tech_western_tea_horse_2 NOT = { has_advance = hbe_tech_western_tea_horse_2 } } research_advance = advance_type:hbe_tech_western_tea_horse_2 }

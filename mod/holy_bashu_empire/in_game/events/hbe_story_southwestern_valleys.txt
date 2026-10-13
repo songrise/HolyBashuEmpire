@@ -1,0 +1,372 @@
+﻿namespace = hbe_story_southwestern_valleys
+
+hbe_story_southwestern_valleys.1 = {
+ type = country_event title = hbe_story_southwestern_valleys.1.title desc = hbe_story_southwestern_valleys.1.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 0 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.1.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_1_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_4_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 1 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 4 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.1.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_1_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_4_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 1 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 4 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.1.c ai_chance = { base = 35 } add_gold = 4
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_1_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_4_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 1 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 4 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.1.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.2 = {
+ type = country_event title = hbe_story_southwestern_valleys.2.title desc = hbe_story_southwestern_valleys.2.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 1 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.2.a ai_chance = { base = 35 } add_prestige = 1
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_2_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_5_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 2 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 5 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.2.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_2_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_5_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 2 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 5 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.2.c ai_chance = { base = 35 } add_prestige = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_2_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_5_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 2 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 5 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.2.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.3 = {
+ type = country_event title = hbe_story_southwestern_valleys.3.title desc = hbe_story_southwestern_valleys.3.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 2 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.3.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_3_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_6_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 3 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 6 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.3.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_3_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_6_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 3 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 6 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.3.c ai_chance = { base = 35 } add_gold = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_3_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_6_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 3 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 6 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.3.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.4 = {
+ type = country_event title = hbe_story_southwestern_valleys.4.title desc = hbe_story_southwestern_valleys.4.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 3 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.4.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_4_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_7_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 4 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 7 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.4.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_research_progress = 0.28
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_4_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_7_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 4 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 7 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.4.c ai_chance = { base = 35 } add_gold = 4
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_4_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_7_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 4 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 7 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.4.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.5 = {
+ type = country_event title = hbe_story_southwestern_valleys.5.title desc = hbe_story_southwestern_valleys.5.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 4 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.5.a ai_chance = { base = 35 } add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_5_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_7_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 5 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 7 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.5.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_5_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_7_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 5 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 7 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.5.c ai_chance = { base = 35 } add_gold = 4
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_5_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_7_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 5 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 7 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.5.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.6 = {
+ type = country_event title = hbe_story_southwestern_valleys.6.title desc = hbe_story_southwestern_valleys.6.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 5 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.6.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_6_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_8_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 6 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 8 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.6.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_6_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_8_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 6 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 8 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.6.c ai_chance = { base = 35 } add_prestige = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_6_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_8_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 6 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 8 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.6.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.7 = {
+ type = country_event title = hbe_story_southwestern_valleys.7.title desc = hbe_story_southwestern_valleys.7.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 6 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.7.a ai_chance = { base = 35 } add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_7_1 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_8_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 7 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 8 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = 1 } option = { name = hbe_story_southwestern_valleys.7.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_7_2 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_1_tt
+custom_tooltip = hbe_story_next_8_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = 1 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 7 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 8 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.7.c ai_chance = { base = 35 } add_prestige = 3
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_7_3 years = 3 mode = replace }
+custom_tooltip = hbe_story_southwestern_valleys_branch_2_tt
+custom_tooltip = hbe_story_next_8_tt
+hidden_effect = { change_variable = { name = hbe_story_southwestern_valleys_direction add = -2 } set_variable = { name = hbe_story_southwestern_valleys_phase value = 7 } set_variable = { name = hbe_story_southwestern_valleys_clock value = yes years = 8 } remove_variable = hbe_story_southwestern_valleys_pending } } option = { name = hbe_story_southwestern_valleys.7.d ai_chance = { base = 4 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = hbe_story_southwestern_valleys_abandoned remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.201 = {
+ type = country_event title = hbe_story_southwestern_valleys.201.title desc = hbe_story_southwestern_valleys.201.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } has_variable = hbe_story_southwestern_valleys_closed NOT = { has_variable = hbe_story_southwestern_valleys_ending_1 } NOT = { has_variable = hbe_story_southwestern_valleys_ending_2 } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.201.a ai_chance = { base = 100 } add_prestige = 4
+add_country_modifier = { modifier = hbe_story_ending_southwestern_valleys_1 years = -1 mode = replace }
+set_variable = hbe_story_southwestern_valleys_ending_1 }
+}
+
+hbe_story_southwestern_valleys.202 = {
+ type = country_event title = hbe_story_southwestern_valleys.202.title desc = hbe_story_southwestern_valleys.202.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } has_variable = hbe_story_southwestern_valleys_closed NOT = { has_variable = hbe_story_southwestern_valleys_ending_1 } NOT = { has_variable = hbe_story_southwestern_valleys_ending_2 } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.202.a ai_chance = { base = 100 } add_prestige = 4
+add_country_modifier = { modifier = hbe_story_ending_southwestern_valleys_2 years = -1 mode = replace }
+set_variable = hbe_story_southwestern_valleys_ending_2 }
+}
+
+hbe_story_southwestern_valleys.8 = {
+ type = country_event title = hbe_story_southwestern_valleys.8.title desc = hbe_story_southwestern_valleys.8.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_bridge }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 7 NOT = { has_variable = hbe_story_southwestern_valleys_closed } }
+ immediate = {  }
+ option = { name = hbe_story_southwestern_valleys.8.a trigger = { custom_tooltip = { text = hbe_story_southwestern_valleys_ready_1_tt var:hbe_story_southwestern_valleys_direction >= 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = { name = hbe_story_southwestern_valleys_phase value = 8 } remove_variable = hbe_story_southwestern_valleys_pending }
+trigger_event_non_silently = { id = hbe_story_southwestern_valleys.201 days = 1 } } option = { name = hbe_story_southwestern_valleys.8.b trigger = { custom_tooltip = { text = hbe_story_southwestern_valleys_ready_2_tt var:hbe_story_southwestern_valleys_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = { name = hbe_story_southwestern_valleys_phase value = 8 } remove_variable = hbe_story_southwestern_valleys_pending }
+trigger_event_non_silently = { id = hbe_story_southwestern_valleys.202 days = 1 } } option = { name = hbe_story_southwestern_valleys.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_southwestern_valleys_stop_tt
+hidden_effect = { set_variable = hbe_story_southwestern_valleys_closed set_variable = { name = hbe_story_southwestern_valleys_phase value = 8 } remove_variable = hbe_story_southwestern_valleys_pending }
+add_prestige = -3 }
+}
+
+hbe_story_southwestern_valleys.101 = {
+ type = country_event title = hbe_story_southwestern_valleys.101.title desc = hbe_story_southwestern_valleys.101.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_craft }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_101 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_101 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.101.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_101_1 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.101.b ai_chance = { base = 30 } add_prestige = 1
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_101_2 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.101.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_prestige = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_101_3 years = 4 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.102 = {
+ type = country_event title = hbe_story_southwestern_valleys.102.title desc = hbe_story_southwestern_valleys.102.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_terraces }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_102 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_102 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.102.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_102_1 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.102.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_102_2 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.102.c ai_chance = { base = 30 } add_prestige = 2
+add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_102_3 years = 2 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.103 = {
+ type = country_event title = hbe_story_southwestern_valleys.103.title desc = hbe_story_southwestern_valleys.103.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_terraces }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBY } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_103 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_103 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.103.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_research_progress = 0.175
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_103_1 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.103.b ai_chance = { base = 30 } add_gold = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_103_2 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.103.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_103_3 years = 3 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.104 = {
+ type = country_event title = hbe_story_southwestern_valleys.104.title desc = hbe_story_southwestern_valleys.104.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_medicine }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBY } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_104 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_104 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.104.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_104_1 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.104.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_104_2 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.104.c ai_chance = { base = 30 } add_gold = 4
+add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_104_3 years = 4 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.105 = {
+ type = country_event title = hbe_story_southwestern_valleys.105.title desc = hbe_story_southwestern_valleys.105.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_council }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBZ } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_105 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_105 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.105.a ai_chance = { base = 30 } add_prestige = 1
+add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_105_1 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.105.b ai_chance = { base = 30 } add_prestige = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_105_2 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.105.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_105_3 years = 2 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.106 = {
+ type = country_event title = hbe_story_southwestern_valleys.106.title desc = hbe_story_southwestern_valleys.106.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_terraces }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBZ } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_106 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_106 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.106.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_106_1 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.106.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_106_2 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.106.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_prestige = 3
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_106_3 years = 3 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.107 = {
+ type = country_event title = hbe_story_southwestern_valleys.107.title desc = hbe_story_southwestern_valleys.107.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_festival }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCA } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_107 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_107 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.107.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_107_1 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.107.b ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_107_2 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.107.c ai_chance = { base = 30 } add_prestige = 2
+add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_107_3 years = 4 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.108 = {
+ type = country_event title = hbe_story_southwestern_valleys.108.title desc = hbe_story_southwestern_valleys.108.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_craft }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCA } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_108 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_108 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.108.a ai_chance = { base = 30 } add_prestige = 1
+add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_108_1 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.108.b ai_chance = { base = 30 } add_prestige = 2
+add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_108_2 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.108.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_108_3 years = 2 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.109 = {
+ type = country_event title = hbe_story_southwestern_valleys.109.title desc = hbe_story_southwestern_valleys.109.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_observatory }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCB } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_109 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_109 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.109.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_109_1 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.109.b ai_chance = { base = 30 } add_prestige = 1
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_109_2 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.109.c ai_chance = { base = 30 } add_prestige = 3
+add_estate_satisfaction = { type = estate_type:tribes_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_109_3 years = 3 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.110 = {
+ type = country_event title = hbe_story_southwestern_valleys.110.title desc = hbe_story_southwestern_valleys.110.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_festival }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCB } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_110 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_110 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.110.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_110_1 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.110.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_prestige = 2
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_110_2 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.110.c ai_chance = { base = 30 } add_prestige = 3
+add_estate_satisfaction = { type = estate_type:tribes_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_110_3 years = 4 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.111 = {
+ type = country_event title = hbe_story_southwestern_valleys.111.title desc = hbe_story_southwestern_valleys.111.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_council }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCC } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_111 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_111 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.111.a ai_chance = { base = 30 } add_prestige = 1
+add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_111_1 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.111.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_111_2 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.111.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_111_3 years = 2 mode = replace } }
+}
+
+hbe_story_southwestern_valleys.112 = {
+ type = country_event title = hbe_story_southwestern_valleys.112.title desc = hbe_story_southwestern_valleys.112.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_craft }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCB } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_112 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_112 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.112.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_112_1 years = 4 mode = replace } } option = { name = hbe_story_southwestern_valleys.112.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_research_progress = 0.21
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_112_2 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.112.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_112_3 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.112.d ai_chance = { base = 2 } add_prestige = -2 }
+}
+
+hbe_story_southwestern_valleys.113 = {
+ type = country_event title = hbe_story_southwestern_valleys.113.title desc = hbe_story_southwestern_valleys.113.desc outcome = neutral
+ illustration_tags = { 1000 = hbe_story_art_festival }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } current_year >= 1339 NOT = { has_variable = hbe_story_seen_southwestern_valleys_113 } NOT = { has_variable = hbe_story_solo_cooldown } }
+ immediate = { set_variable = hbe_story_seen_southwestern_valleys_113 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
+ option = { name = hbe_story_southwestern_valleys.113.a ai_chance = { base = 30 } add_prestige = 1
+add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_113_1 years = 2 mode = replace } } option = { name = hbe_story_southwestern_valleys.113.b ai_chance = { base = 30 } add_prestige = 3
+add_estate_satisfaction = { type = estate_type:tribes_estate value = -0.05 }
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_113_2 years = 3 mode = replace } } option = { name = hbe_story_southwestern_valleys.113.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_research_progress = 0.175
+add_country_modifier = { modifier = hbe_story_choice_southwestern_valleys_113_3 years = 4 mode = replace } }
+}

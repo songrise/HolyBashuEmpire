@@ -1,6 +1,6 @@
-﻿hbe_tianfu = { local_monthly_food_modifier = 0.10 local_construction_speed = 0.10 }
+﻿hbe_tianfu = { local_monthly_food_modifier = 0.07 local_construction_speed = 0.07  local_disease_resistance = 0.05 }
 hbe_project_food = { local_monthly_food_modifier = 0.05 }
-hbe_project_build = { local_construction_speed = 0.05 }
+hbe_project_build = { local_construction_speed = 0.04 }
 
 hbe_banquet_success = { local_monthly_food_modifier = 0.05 local_construction_speed = 0.05 }
 

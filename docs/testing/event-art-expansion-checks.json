@@ -1,0 +1,866 @@
+{
+  "checks": [
+    {
+      "name": "in_game/gfx/images/hbe_story_backgrounds.txt: balanced native definitions",
+      "passed": true
+    },
+    {
+      "name": "in_game/gfx/scenes/hbe_story_scenes.txt: balanced native definitions",
+      "passed": true
+    },
+    {
+      "name": "loading_screen/gfx/illustrations/database/hbe_story_illustrations.txt: balanced native definitions",
+      "passed": true
+    },
+    {
+      "name": "fossils: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "fossils: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "fossils: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "fossils: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "fossils: source preserved",
+      "passed": true
+    },
+    {
+      "name": "observatory: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "observatory: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "observatory: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "observatory: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "observatory: source preserved",
+      "passed": true
+    },
+    {
+      "name": "veterinary: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "veterinary: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "veterinary: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "veterinary: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "veterinary: source preserved",
+      "passed": true
+    },
+    {
+      "name": "bridge: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "bridge: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "bridge: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "bridge: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "bridge: source preserved",
+      "passed": true
+    },
+    {
+      "name": "migration_journey: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "migration_journey: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "migration_journey: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "migration_journey: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "migration_journey: source preserved",
+      "passed": true
+    },
+    {
+      "name": "settlement: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "settlement: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "settlement: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "settlement: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "settlement: source preserved",
+      "passed": true
+    },
+    {
+      "name": "craft: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "craft: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "craft: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "craft: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "craft: source preserved",
+      "passed": true
+    },
+    {
+      "name": "medicine: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "medicine: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "medicine: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "medicine: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "medicine: source preserved",
+      "passed": true
+    },
+    {
+      "name": "festival: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "festival: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "festival: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "festival: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "festival: source preserved",
+      "passed": true
+    },
+    {
+      "name": "river: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "river: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "river: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "river: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "river: source preserved",
+      "passed": true
+    },
+    {
+      "name": "terraces: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "terraces: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "terraces: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "terraces: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "terraces: source preserved",
+      "passed": true
+    },
+    {
+      "name": "council: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "council: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "council: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "council: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "council: source preserved",
+      "passed": true
+    },
+    {
+      "name": "bamboo: texture exists and hash matches",
+      "passed": true
+    },
+    {
+      "name": "bamboo: decoded dimensions",
+      "passed": true
+    },
+    {
+      "name": "bamboo: compressed DDS",
+      "passed": true
+    },
+    {
+      "name": "bamboo: scene/texture registration",
+      "passed": true
+    },
+    {
+      "name": "bamboo: source preserved",
+      "passed": true
+    },
+    {
+      "name": "锦城夜市的灯钱: selected art available",
+      "passed": true
+    },
+    {
+      "name": "府学借出的孤本: selected art available",
+      "passed": true
+    },
+    {
+      "name": "汉州田边的白鹭: selected art available",
+      "passed": true
+    },
+    {
+      "name": "绵竹酒坊的清曲: selected art available",
+      "passed": true
+    },
+    {
+      "name": "彭州山门的药篓: selected art available",
+      "passed": true
+    },
+    {
+      "name": "唐昌田里的水碓: selected art available",
+      "passed": true
+    },
+    {
+      "name": "邛州窑口的颜色: selected art available",
+      "passed": true
+    },
+    {
+      "name": "临邛客栈的女账房: selected art available",
+      "passed": true
+    },
+    {
+      "name": "蒲江茶园的旧坟: selected art available",
+      "passed": true
+    },
+    {
+      "name": "眉州旧宅的诗稿: selected art available",
+      "passed": true
+    },
+    {
+      "name": "青神竹纸的销路: selected art available",
+      "passed": true
+    },
+    {
+      "name": "春社的戏台: selected art available",
+      "passed": true
+    },
+    {
+      "name": "府医的两张药方: selected art available",
+      "passed": true
+    },
+    {
+      "name": "嘉定寺门的石工: selected art available",
+      "passed": true
+    },
+    {
+      "name": "峨眉山下的柴路: selected art available",
+      "passed": true
+    },
+    {
+      "name": "富顺井绳的赔钱: selected art available",
+      "passed": true
+    },
+    {
+      "name": "叙州酒宴的空座: selected art available",
+      "passed": true
+    },
+    {
+      "name": "宜宾江口的转秤: selected art available",
+      "passed": true
+    },
+    {
+      "name": "泸州城外的火窖: selected art available",
+      "passed": true
+    },
+    {
+      "name": "合江船上的歌: selected art available",
+      "passed": true
+    },
+    {
+      "name": "长宁竹海的租界: selected art available",
+      "passed": true
+    },
+    {
+      "name": "荣县小井的官价: selected art available",
+      "passed": true
+    },
+    {
+      "name": "嘉州桥头的施粥: selected art available",
+      "passed": true
+    },
+    {
+      "name": "夜里多开的一口灶: selected art available",
+      "passed": true
+    },
+    {
+      "name": "盐引背面的字: selected art available",
+      "passed": true
+    },
+    {
+      "name": "酒坊留给学徒的席位: selected art available",
+      "passed": true
+    },
+    {
+      "name": "大足石壁上的姓名: selected art available",
+      "passed": true
+    },
+    {
+      "name": "重庆城梯上的担夫: selected art available",
+      "passed": true
+    },
+    {
+      "name": "两江会流的鱼网: selected art available",
+      "passed": true
+    },
+    {
+      "name": "涪州渡口的婚礼: selected art available",
+      "passed": true
+    },
+    {
+      "name": "武隆山中的蜂蜜: selected art available",
+      "passed": true
+    },
+    {
+      "name": "合州铁匠的练炉: selected art available",
+      "passed": true
+    },
+    {
+      "name": "夔州峡口的旧棺: selected art available",
+      "passed": true
+    },
+    {
+      "name": "云阳江边的木排: selected art available",
+      "passed": true
+    },
+    {
+      "name": "酉阳山市的两种话: selected art available",
+      "passed": true
+    },
+    {
+      "name": "丰都庙前的诉状: selected art available",
+      "passed": true
+    },
+    {
+      "name": "忠州果园的新枝: selected art available",
+      "passed": true
+    },
+    {
+      "name": "河灯照着的渡口: selected art available",
+      "passed": true
+    },
+    {
+      "name": "码头收下的外乡徒弟: selected art available",
+      "passed": true
+    },
+    {
+      "name": "阆中城门的更鼓: selected art available",
+      "passed": true
+    },
+    {
+      "name": "保宁药铺的借书人: selected art available",
+      "passed": true
+    },
+    {
+      "name": "巴州雨夜的灯油: selected art available",
+      "passed": true
+    },
+    {
+      "name": "通江山里的木活字: selected art available",
+      "passed": true
+    },
+    {
+      "name": "广元江岸的纤路: selected art available",
+      "passed": true
+    },
+    {
+      "name": "昭化驿馆的木地图: selected art available",
+      "passed": true
+    },
+    {
+      "name": "剑门关下的葬地: selected art available",
+      "passed": true
+    },
+    {
+      "name": "梓潼书生的路费: selected art available",
+      "passed": true
+    },
+    {
+      "name": "龙安山中的兽患: selected art available",
+      "passed": true
+    },
+    {
+      "name": "平武矿口的水: selected art available",
+      "passed": true
+    },
+    {
+      "name": "达州关外的空仓: selected art available",
+      "passed": true
+    },
+    {
+      "name": "顺庆的两份族谱: selected art available",
+      "passed": true
+    },
+    {
+      "name": "驿路上的失物袋: selected art available",
+      "passed": true
+    },
+    {
+      "name": "简州织户的春假: selected art available",
+      "passed": true
+    },
+    {
+      "name": "内江糖灶的新手: selected art available",
+      "passed": true
+    },
+    {
+      "name": "仁寿地契上的红线: selected art available",
+      "passed": true
+    },
+    {
+      "name": "遂宁义仓的钥匙: selected art available",
+      "passed": true
+    },
+    {
+      "name": "安岳石窟的拓片: selected art available",
+      "passed": true
+    },
+    {
+      "name": "潼川春市的草席: selected art available",
+      "passed": true
+    },
+    {
+      "name": "射洪书生与酒户: selected art available",
+      "passed": true
+    },
+    {
+      "name": "盐亭桑园的围墙: selected art available",
+      "passed": true
+    },
+    {
+      "name": "广安山村的染缸: selected art available",
+      "passed": true
+    },
+    {
+      "name": "华蓥山下的炭钱: selected art available",
+      "passed": true
+    },
+    {
+      "name": "岳池农户的早种: selected art available",
+      "passed": true
+    },
+    {
+      "name": "义仓门前的婚事: selected art available",
+      "passed": true
+    },
+    {
+      "name": "乡兵教头的田租: selected art available",
+      "passed": true
+    },
+    {
+      "name": "雅州茶篓上的名字: selected art available",
+      "passed": true
+    },
+    {
+      "name": "名山茶园里的客师: selected art available",
+      "passed": true
+    },
+    {
+      "name": "荥经桥头的病马: selected art available",
+      "passed": true
+    },
+    {
+      "name": "汶川水边的织毯: selected art available",
+      "passed": true
+    },
+    {
+      "name": "茂州冬市的水井: selected art available",
+      "passed": true
+    },
+    {
+      "name": "石泉的陌生药方: selected art available",
+      "passed": true
+    },
+    {
+      "name": "松潘雪后的行期: selected art available",
+      "passed": true
+    },
+    {
+      "name": "松州织毯人的学徒: selected art available",
+      "passed": true
+    },
+    {
+      "name": "河曲草场的界标: selected art available",
+      "passed": true
+    },
+    {
+      "name": "茶市中的婚约: selected art available",
+      "passed": true
+    },
+    {
+      "name": "牧人给寺院的羊毛: selected art available",
+      "passed": true
+    },
+    {
+      "name": "边市留下的马铃: selected art available",
+      "passed": true
+    },
+    {
+      "name": "山口的两支歌: selected art available",
+      "passed": true
+    },
+    {
+      "name": "盐源湖边的旧船: selected art available",
+      "passed": true
+    },
+    {
+      "name": "盐源盐池的水口: selected art available",
+      "passed": true
+    },
+    {
+      "name": "德昌果园的嫁接人: selected art available",
+      "passed": true
+    },
+    {
+      "name": "会川路上的红土: selected art available",
+      "passed": true
+    },
+    {
+      "name": "黎州渡口的木契: selected art available",
+      "passed": true
+    },
+    {
+      "name": "汉源山里的梨树: selected art available",
+      "passed": true
+    },
+    {
+      "name": "马湖渡船上的鼓: selected art available",
+      "passed": true
+    },
+    {
+      "name": "雷波山寨的铁锁: selected art available",
+      "passed": true
+    },
+    {
+      "name": "建昌议事堂的翻译: selected art available",
+      "passed": true
+    },
+    {
+      "name": "普格谷中的铜鼓: selected art available",
+      "passed": true
+    },
+    {
+      "name": "永宁谷口的宿账: selected art available",
+      "passed": true
+    },
+    {
+      "name": "谷中铁坊的烟: selected art available",
+      "passed": true
+    },
+    {
+      "name": "诸谷相逢的婚宴: selected art available",
+      "passed": true
+    },
+    {
+      "name": "竹林中的黑白足迹: selected art available",
+      "passed": true
+    },
+    {
+      "name": "一只受伤的幼兽: selected art available",
+      "passed": true
+    },
+    {
+      "name": "山界上的新田: selected art available",
+      "passed": true
+    },
+    {
+      "name": "瑞兽是否应当远送: selected art available",
+      "passed": true
+    },
+    {
+      "name": "竹花之年: selected art available",
+      "passed": true
+    },
+    {
+      "name": "画册中的习性: selected art available",
+      "passed": true
+    },
+    {
+      "name": "下一代巡山人: selected art available",
+      "passed": true
+    },
+    {
+      "name": "山林与城苑的约定: selected art available",
+      "passed": true
+    },
+    {
+      "name": "石层里的巨骨: selected art available",
+      "passed": true
+    },
+    {
+      "name": "拼不回去的骨架: selected art available",
+      "passed": true
+    },
+    {
+      "name": "一笔龙骨药钱: selected art available",
+      "passed": true
+    },
+    {
+      "name": "石层的先后: selected art available",
+      "passed": true
+    },
+    {
+      "name": "巨兽的足印: selected art available",
+      "passed": true
+    },
+    {
+      "name": "龙骨与旧说: selected art available",
+      "passed": true
+    },
+    {
+      "name": "代代相传的井谱: selected art available",
+      "passed": true
+    },
+    {
+      "name": "给巨兽留下名字: selected art available",
+      "passed": true
+    },
+    {
+      "name": "老船夫的滩记: selected art available",
+      "passed": true
+    },
+    {
+      "name": "汛期与枯水: selected art available",
+      "passed": true
+    },
+    {
+      "name": "有人冒领引水牌: selected art available",
+      "passed": true
+    },
+    {
+      "name": "峡中夜号: selected art available",
+      "passed": true
+    },
+    {
+      "name": "修船木料的去处: selected art available",
+      "passed": true
+    },
+    {
+      "name": "两府各收一遍: selected art available",
+      "passed": true
+    },
+    {
+      "name": "纸谱与新船: selected art available",
+      "passed": true
+    },
+    {
+      "name": "百滩共用的船约: selected art available",
+      "passed": true
+    },
+    {
+      "name": "山口的日影: selected art available",
+      "passed": true
+    },
+    {
+      "name": "阴云下的驿刻: selected art available",
+      "passed": true
+    },
+    {
+      "name": "一次未中的月食: selected art available",
+      "passed": true
+    },
+    {
+      "name": "星台建在哪里: selected art available",
+      "passed": true
+    },
+    {
+      "name": "送不齐的观测簿: selected art available",
+      "passed": true
+    },
+    {
+      "name": "异乡的仪器: selected art available",
+      "passed": true
+    },
+    {
+      "name": "历书换了主持者: selected art available",
+      "passed": true
+    },
+    {
+      "name": "山路上的同一时刻: selected art available",
+      "passed": true
+    },
+    {
+      "name": "雨后露出的红土: selected art available",
+      "passed": true
+    },
+    {
+      "name": "新埂挡住旧路: selected art available",
+      "passed": true
+    },
+    {
+      "name": "一座小坝的归属: selected art available",
+      "passed": true
+    },
+    {
+      "name": "绿肥与旧收成: selected art available",
+      "passed": true
+    },
+    {
+      "name": "仓册中的旱年: selected art available",
+      "passed": true
+    },
+    {
+      "name": "坡地上的新作物: selected art available",
+      "passed": true
+    },
+    {
+      "name": "堤埂谁来维修: selected art available",
+      "passed": true
+    },
+    {
+      "name": "留给后人的坡田: selected art available",
+      "passed": true
+    },
+    {
+      "name": "走不动的驮马: selected art available",
+      "passed": true
+    },
+    {
+      "name": "药草与马价: selected art available",
+      "passed": true
+    },
+    {
+      "name": "冬季草场: selected art available",
+      "passed": true
+    },
+    {
+      "name": "一场马疫: selected art available",
+      "passed": true
+    },
+    {
+      "name": "小马驹的去处: selected art available",
+      "passed": true
+    },
+    {
+      "name": "两种马的脚程: selected art available",
+      "passed": true
+    },
+    {
+      "name": "医马人的学生: selected art available",
+      "passed": true
+    },
+    {
+      "name": "接续的马路: selected art available",
+      "passed": true
+    },
+    {
+      "name": "两岸不同的绳桥: selected art available",
+      "passed": true
+    },
+    {
+      "name": "木契与桥工: selected art available",
+      "passed": true
+    },
+    {
+      "name": "雨中断了一股绳: selected art available",
+      "passed": true
+    },
+    {
+      "name": "从绳桥到铁索: selected art available",
+      "passed": true
+    },
+    {
+      "name": "桥上带来的争执: selected art available",
+      "passed": true
+    },
+    {
+      "name": "相邻两谷的水势: selected art available",
+      "passed": true
+    },
+    {
+      "name": "旧桥约的继承者: selected art available",
+      "passed": true
+    },
+    {
+      "name": "连起诸谷的道路: selected art available",
+      "passed": true
+    }
+  ],
+  "passed": 215,
+  "failed": 0
+}

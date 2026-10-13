@@ -1,0 +1,7 @@
+﻿hbe_observer_compatibility_sync = {
+ if = { limit = { has_variable = hbe_tech_central_hills_8 NOT = { has_variable = hbe_tech_central_hills_witness_8 } }
+  set_variable = hbe_tech_central_hills_8
+  set_variable = hbe_tech_central_hills_witness_8
+  if = { limit = { NOT = { has_advance = hbe_tech_central_hills_witness_8 } } research_advance = advance_type:hbe_tech_central_hills_witness_8 }
+ }
+}

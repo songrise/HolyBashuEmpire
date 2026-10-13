@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": {
+    "count": 1118,
+    "failed_rows": [],
+    "detail_in_local_archive": true
+  },
+  "check_count": 1118,
+  "gameplay_validation": "Structural and resource-reference checks; runtime and visual verification reported separately",
+  "version": "0.3.0",
+  "raw_detail_archive": {
+    "path": "work/test-report-details-20261014/validation-stories-full.json",
+    "bytes": 130864,
+    "sha256": "fa3bf0f05757059a47e4b6934d9b882a8b64861952231c530f4e2cfbd6815628",
+    "tracked": false
+  }
+}

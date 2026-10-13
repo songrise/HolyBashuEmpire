@@ -1,0 +1,7 @@
+﻿l_english:
+ hbe_salt_industry: "Salt Industry"
+ hbe_salt_industry_desc: "Salt extraction, refining and distribution. Promotion increases ordinary and well-salt output in the area and domestic population demand."
+ beverages: "Brewing and Tea Processing"
+ beverages_desc: "Brewing and tea processing. Supports local beverages and border tea production and expands domestic demand."
+ hbe_civil_institution_below_cap_tt: "Fewer than three institutions of this type nationwide, including construction; one level per location."
+ hbe_levy_policy_desc: "Compulsory public works: construction speed +8%, gravel-road cost −8%, peasants target satisfaction −3%. Each local undertaking delivered adds 6 burden. Delivery also grants +5% construction speed for two years, once every five years."

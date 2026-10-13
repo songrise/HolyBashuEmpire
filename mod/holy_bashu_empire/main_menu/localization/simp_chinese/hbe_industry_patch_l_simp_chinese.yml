@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ hbe_salt_industry: "盐业"
+ hbe_salt_industry_desc: "从取卤煎盐到封装运销。扶持盐业，提高本地区普通盐与井盐产出，并扩大国内采办需求。"
+ beverages: "酿造与茶饮业"
+ beverages_desc: "酒坊酿造与茶货加工。扶持本地酒饮与边茶生产，扩大国内饮用和采办需求。"
+ hbe_civil_institution_below_cap_tt: "全国同类机构不足三座（含在建）；每个地点最多一级。"
+ hbe_levy_policy_desc: "按府额征集工程人手。常驻建设速度+8%、碎石道路建造花费−8%，农民满意度均衡点−3%。每次地方事业交付役负+6；交付后另得两年建设速度+5%，这项临时奖励五年内只触发一次。"

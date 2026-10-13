@@ -1,0 +1,14 @@
+﻿hbe_story_illustration_fossils = { scene = "hbe_story_scene_fossils" tags = { 1000 = hbe_story_art_fossils } }
+hbe_story_illustration_observatory = { scene = "hbe_story_scene_observatory" tags = { 1000 = hbe_story_art_observatory } }
+hbe_story_illustration_veterinary = { scene = "hbe_story_scene_veterinary" tags = { 1000 = hbe_story_art_veterinary } }
+hbe_story_illustration_bridge = { scene = "hbe_story_scene_bridge" tags = { 1000 = hbe_story_art_bridge } }
+hbe_story_illustration_migration_journey = { scene = "hbe_story_scene_migration_journey" tags = { 1000 = hbe_story_art_migration_journey } }
+hbe_story_illustration_settlement = { scene = "hbe_story_scene_settlement" tags = { 1000 = hbe_story_art_settlement } }
+hbe_story_illustration_craft = { scene = "hbe_story_scene_craft" tags = { 1000 = hbe_story_art_craft } }
+hbe_story_illustration_medicine = { scene = "hbe_story_scene_medicine" tags = { 1000 = hbe_story_art_medicine } }
+hbe_story_illustration_festival = { scene = "hbe_story_scene_festival" tags = { 1000 = hbe_story_art_festival } }
+hbe_story_illustration_river = { scene = "hbe_story_scene_river" tags = { 1000 = hbe_story_art_river } }
+hbe_story_illustration_terraces = { scene = "hbe_story_scene_terraces" tags = { 1000 = hbe_story_art_terraces } }
+hbe_story_illustration_council = { scene = "hbe_story_scene_council" tags = { 1000 = hbe_story_art_council } }
+hbe_story_illustration_bamboo = { scene = "hbe_story_scene_bamboo" tags = { 1000 = hbe_story_art_bamboo } }
+hbe_story_illustration_migration_pact = { scene = "hbe_story_scene_migration_pact" tags = { 1000 = hbe_story_art_migration_pact } }

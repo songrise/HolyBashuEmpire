@@ -499,7 +499,7 @@
       "link": "取得本圈旧约重审验收的课题资格。\n解锁“乡社清算”：运行公信券馆、近五年完成本圈事业、役负低于70，且义气至少60时获得额外联动收益；条件不满足时暂停。"
     },
     {
-      "key": "hbe_tech_central_hills_8",
+      "key": "hbe_tech_central_hills_witness_8",
       "name": "诸侯公信会馆",
       "modifiers": {
         "global_merchant_capacity_modifier": 0.2,

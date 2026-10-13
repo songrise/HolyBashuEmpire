@@ -1,0 +1,80 @@
+[
+  {
+    "key": "fossils",
+    "source": "fossils.png",
+    "generated_path": null,
+    "retained_reference": true
+  },
+  {
+    "key": "observatory",
+    "source": "observatory.png",
+    "generated_path": null,
+    "retained_reference": true
+  },
+  {
+    "key": "veterinary",
+    "source": "veterinary.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-836f42f2-ae05-4ad7-931e-08be6db2ba87.png",
+    "retained_reference": false
+  },
+  {
+    "key": "bridge",
+    "source": "bridge.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-83716626-8a4b-4459-ad3b-ce829456a40e.png",
+    "retained_reference": false
+  },
+  {
+    "key": "migration_journey",
+    "source": "migration_journey.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-80cfbbaa-af09-4c00-83db-b7d065664a0f.png",
+    "retained_reference": false
+  },
+  {
+    "key": "settlement",
+    "source": "settlement.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-c48b18dc-743e-479e-844a-518e6714c50b.png",
+    "retained_reference": false
+  },
+  {
+    "key": "craft",
+    "source": "craft.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-6b4e6be0-ea46-4819-a8a7-529768b2342d.png",
+    "retained_reference": false
+  },
+  {
+    "key": "medicine",
+    "source": "medicine.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-36be280f-bc6e-4ad3-a087-1cea759a19c1.png",
+    "retained_reference": false
+  },
+  {
+    "key": "festival",
+    "source": "festival.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-04f4c827-b5ad-4a08-8177-7c0c7f397739.png",
+    "retained_reference": false
+  },
+  {
+    "key": "river",
+    "source": "river.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-4d509ca3-168a-4b3e-a933-4c32c18d6c3e.png",
+    "retained_reference": false
+  },
+  {
+    "key": "terraces",
+    "source": "terraces.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-39e88cf9-08c6-4fa5-af48-8a1dd50a5a98.png",
+    "retained_reference": false
+  },
+  {
+    "key": "council",
+    "source": "council.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-ef4d6ccb-971d-4f3a-ae0d-d397db46ea8a.png",
+    "retained_reference": false
+  },
+  {
+    "key": "bamboo",
+    "source": "bamboo.png",
+    "generated_path": "C:/Users/songrise/.codex/generated_images/01a129dd-a72e-7b31-993e-47affb5a2415/exec-5d3f0e37-4260-4cc2-906e-d8a98e9be958.png",
+    "retained_reference": false
+  }
+]

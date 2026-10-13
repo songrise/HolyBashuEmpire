@@ -1,0 +1,152 @@
+{
+  "version": "0.3.1",
+  "local_only": true,
+  "unit_frames": [
+    {
+      "unit": "hbe_canal_crossbow",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "007b6782433cd4622a549d623074584c8efe6548705b80dc7237c7fbf0345867"
+    },
+    {
+      "unit": "hbe_salt_guard",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "2093d8b06bf83ea9e8556b9a9d000296f49c4e46483bfb5605ede1ecea57974c"
+    },
+    {
+      "unit": "hbe_river_garrison",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "bede2eea5a1f7ab8157f5b6b0ad7a07dc00eb3ba02bbd1942fab59723f0e5d06"
+    },
+    {
+      "unit": "hbe_pass_rotation",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "8703a092a1346c41474748b8fe4976dc9625b4810fe6ffc002baa5b4a15606be"
+    },
+    {
+      "unit": "hbe_granary_militia",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "6f015ea0ae5a5e68adb3947ca923a01e2de302dbce3c9b48ec80cf025c595f04"
+    },
+    {
+      "unit": "hbe_tea_riders",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "2443521a50ae3728fa23388ed1d22bb4f40e5e16f307f4278864ab97fa4c863c"
+    },
+    {
+      "unit": "hbe_valley_soldiers",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "d62f080ab3804a0eff0283d73f86bb2c8fce71295ecfe23783fff0bee56cf313"
+    },
+    {
+      "unit": "hbe_trained_river",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "d8c4cb934a3c889761561b62521f885256eb07f827960b284aefaf731e35aded"
+    },
+    {
+      "unit": "hbe_permanent_pass",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "grid": [
+        3,
+        1
+      ],
+      "portrait": [
+        360,
+        440
+      ],
+      "sha256": "f769f8b6bdb05389bd5429854a12f9e76acb930a87d391c5a5a42237bbfb38f2"
+    }
+  ],
+  "tianfu_local_disease_resistance": 0.05,
+  "preview": "C:\\github\\holy-bashu-empire\\assets\\unit_thumbnail_alignment_preview.png"
+}

@@ -1,0 +1,5 @@
+﻿hbe_external_caution = {
+ attacker_potential = { NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
+ target_trigger = { is_member_of_international_organization = international_organization:hbe_empire }
+ multiplier = { value = 0.90 }
+}

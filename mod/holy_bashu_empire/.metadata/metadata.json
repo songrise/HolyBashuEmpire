@@ -1,9 +1,9 @@
 {
   "name": "神圣巴蜀帝国 Holy Bashu Empire",
   "id": "",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "supported_game_version": "1.4.*",
-  "short_description": "架空巴蜀：七个帝国圈、三十六诸侯，天府加成、选举、地区经营与百年传承。",
+  "short_description": "七圈三十六府：405个事件、分支地方长线与湖广填四川；产业、文教、乡议与百年传承。",
   "tags": [
     "Alternative History",
     "Gameplay"

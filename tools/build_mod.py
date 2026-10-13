@@ -120,7 +120,7 @@ def main():
         write(out/rel,text,bom or (rel.endswith('.txt') and not rel.startswith('main_menu/setup/')))
     # Same fields as the game's -mod_stubber output; do not depend on a scratch directory.
     metadata=dict(name='',id='',version='',supported_game_version='',short_description='',tags=[],relationships=[],game_custom_data={})
-    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.3.0',supported_game_version='1.4.*',
+    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.3.1',supported_game_version='1.4.*',
                     short_description='架空巴蜀：七个帝国圈、三十六诸侯，天府加成、选举、地区经营与百年传承。',
                     tags=['Alternative History','Gameplay'])
     put('.metadata/metadata.json',json.dumps(metadata,ensure_ascii=False,indent=2))
@@ -565,7 +565,7 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     assignments=[dict(location=r['location_id'],country=loc_to_tag[r['location_id']],circle=r['circle_design_key'],province=r['original_province_id']) for r in rows]
     csv_write(ROOT/'data/locations_v001.csv',assignments)
     write(ROOT/'data/technology_v001.json',json.dumps(catalog,ensure_ascii=False,indent=2))
-    manifest=dict(version='0.3.0',quality_hotfix=quality_hotfix,opening_pacts=opening_pacts,countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
+    manifest=dict(version='0.3.1',quality_hotfix=quality_hotfix,opening_pacts=opening_pacts,countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
                   source_setup_sha256=sha(original_path),removed_domain_tokens=len(removed),
                   research_nodes=len(catalog)+len(social_expansion['advances']),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events']+len(social_expansion['events']),
                   decisions=70+len(social_expansion['decisions']),social_expansion=social_expansion,expansion=expansion,native_content=native_content,
@@ -576,6 +576,34 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
                   event_prose=event_prose,player_guides=player_guides,
                   files={str(f.relative_to(out)).replace(chr(92),'/'):sha(f) for f in sorted(out.rglob('*')) if f.is_file() and f.name!='build_manifest.json'})
     put('build_manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))
+    # Final observer diagnostics/AI correction pass; retain current art and setup.
+    from apply_observer_hotfix import apply as apply_observer_hotfix
+    apply_observer_hotfix(out, ROOT)
+    from apply_name_hotfix import apply as apply_name_hotfix
+    apply_name_hotfix(out, ROOT)
+    from export_goods_modifier_icons import apply as export_goods_modifier_icons
+    export_goods_modifier_icons(out, ROOT)
+    from build_playable_stories import build as build_playable_stories
+    build_playable_stories(out, ROOT)
+    import export_story_art
+    export_story_art.OUT = out
+    export_story_art.export()
+    from apply_industry_balance_patch import apply as apply_industry_balance
+    from apply_advance_gate_patch import apply as apply_advance_gates
+    from apply_event_balance_patch import apply as apply_event_balance
+    from apply_red_turban_caution import apply as apply_red_turban_caution
+    apply_industry_balance(out, ROOT)
+    apply_advance_gates(out, ROOT)
+    apply_event_balance(out, ROOT)
+    apply_red_turban_caution(out, ROOT)
+    from apply_unit_maintenance_patch import apply as apply_unit_maintenance
+    apply_unit_maintenance(out, ROOT)
+    from apply_local_ui_patch import apply as apply_local_ui_patch
+    apply_local_ui_patch(out, ROOT)
+    manifest_path = out / "build_manifest.json"
+    final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    final_manifest["files"] = {p.relative_to(out).as_posix():sha(p) for p in out.rglob("*") if p.is_file() and p.name != "build_manifest.json"}
+    manifest_path.write_text(json.dumps(final_manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({k:manifest[k] for k in ('version','research_nodes','regional_missions','recurring_services','events','decisions')},ensure_ascii=False))
     print(f'Built {len(countries)} countries / {len(locs)} locations / {len(REGIONS)} circles at {out}')
 

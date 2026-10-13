@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": {
+    "count": 3984,
+    "failed_rows": [],
+    "detail_in_local_archive": true
+  },
+  "check_count": 3984,
+  "visible_events": 405,
+  "new_events": 288,
+  "new_options": 1007,
+  "reward_modifier_types": 32,
+  "version": "0.3.0",
+  "limits": [
+    "Engine and natural AI observation are separate checks.",
+    "New English entries currently retain authored Chinese text as a fallback."
+  ],
+  "raw_detail_archive": {
+    "path": "work/test-report-details-20261014/playable-stories-static.json",
+    "bytes": 456275,
+    "sha256": "cb85db948956d71370e8e9e7daffae58071fc273197d8b61116f95c99b2ac632",
+    "tracked": false
+  }
+}

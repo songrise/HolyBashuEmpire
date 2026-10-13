@@ -358,7 +358,8 @@ def export_art(out,root,catalogue,put):
             sprite=fit(atlas.crop(box),size)
             if kind=='units':
                 from PIL import ImageOps
-                cell=atlas.crop(box);bounds=cell.getchannel('A').point(lambda x:255 if x>16 else 0).getbbox();sprite=ImageOps.fit(cell.crop(bounds),(1080,440),Image.Resampling.LANCZOS)
+                from apply_local_ui_patch import framed_portrait, source_cell
+                sprite=framed_portrait(source_cell(atlas,i))
             png=root/'assets/civic_icons'/f'{k}.png';png.parent.mkdir(parents=True,exist_ok=True);sprite.save(png)
             p=out/target/f'{k}.dds';save_dds(p,sprite);exports.append(dict(key=k,kind=kind,path=p.relative_to(out).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),source=registry[kind]['source'],cell=i,dimensions=list(sprite.size)))
             if kind=='buildings':
@@ -378,7 +379,7 @@ def export_art(out,root,catalogue,put):
             if kind=='units':
                 # Unit selection is explicit, not guessed from the illustration filename.
                 illustration.append(f'{k}_illustration = {{ texture = "gfx/interface/illustrations/units/{k}.dds" priority = 950000 trigger = {{ is_unit_type = {k} }} }}')
-                save_dds(out/'main_menu/gfx/interface/illustrations/units/masks'/f'{k}.dds',Image.new('RGBA',(1080,440),(255,255,255,255)))
+                save_dds(out/'main_menu/gfx/interface/illustrations/units/masks'/f'{k}.dds',Image.new('RGBA',(1080,440),(0,0,0,255)))
                 save_dds(out/'main_menu/gfx/interface/icons/unit_types'/f'{k}.dds',fit(sprite,128))
     put('in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt','\n'.join(illustration))
     proof.save(root/'assets/civic_buildings_tech_preview.png')

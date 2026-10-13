@@ -421,10 +421,11 @@ hbe_banquet_clamp = {
     personal_ids=[]
     for i,c in enumerate(countries):
         eid=200+i;title,story=personal[i];key=f'hbe_personal_{c["tag"].lower()}'
+        L(key+"_not_seen_tt",f"本府尚未经历「$hbe_banquet.{eid}.title$」")
         event(eid,title,story+'\n这是本府的第一次共同机构试办；选择会留下履约与信任记录。',
             [('出二金，把本府试办写成可验收的契约。',f'add_gold = -2 {yiqi(3)} {cv("hbe_contribution",1)} {pot(1)} every_owned_location = {{ limit = {{ is_in_scripted_geography = scripted_geography:hbe_domain }} add_location_modifier = {{ modifier = hbe_project_build years = 3 mode = replace }} }}','gold >= 2',75),
              ('守旧例，暂不承诺共担。',f'{yiqi(-2)} {dispute(1)}','',25)],
-            trigger=f'has_or_had_tag = {c["tag"]} NOT = {{ has_variable = {key} }}',immediate=f'set_variable = {key}',category=c['name'])
+            trigger=f'has_or_had_tag = {c["tag"]} custom_tooltip = {{ text = {key}_not_seen_tt NOT = {{ has_variable = {key} }} }}',immediate=f'set_variable = {key}',category=c['name'])
         personal_ids.append((c['tag'],eid,key))
     # Shared flavor dilemmas refresh each generation, and late content has distinct year gates.
     shared=[

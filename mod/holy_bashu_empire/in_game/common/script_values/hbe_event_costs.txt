@@ -1,0 +1,6 @@
+﻿# Same economic scaling and bounds as vanilla scaled_gold_for_effect.
+hbe_event_economic_base = { value = 1 add = { value = capital_wealth multiply = 0.2 } add = { value = country_economical_base multiply = 0.05 } }
+hbe_event_cost_1 = { value = hbe_event_economic_base multiply = 1 min = 1 max = { value = 5000 multiply = 1 } }
+hbe_event_cost_1_5 = { value = hbe_event_economic_base multiply = 1.5 min = 1.5 max = { value = 5000 multiply = 1.5 } }
+hbe_event_cost_2 = { value = hbe_event_economic_base multiply = 2 min = 2 max = { value = 5000 multiply = 2 } }
+hbe_event_cost_3 = { value = hbe_event_economic_base multiply = 3 min = 3 max = { value = 5000 multiply = 3 } }

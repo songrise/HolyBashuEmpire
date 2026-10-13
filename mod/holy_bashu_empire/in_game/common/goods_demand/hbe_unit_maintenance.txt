@@ -1,0 +1,14 @@
+﻿# Private recipes; vanilla maintenance definitions remain unchanged.
+hbe_discount_early_infantry_maintenance = {
+	weaponry = 0.09
+	leather = 0.054
+	category = regiment_maintenance
+}
+
+hbe_discount_cavalry_maintenance = {
+	leather = 0.072
+	cloth = 0.072
+	horses = 0.45
+	weaponry = 0.09
+	category = regiment_maintenance
+}
