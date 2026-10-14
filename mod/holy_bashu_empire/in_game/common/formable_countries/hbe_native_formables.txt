@@ -1,0 +1,24 @@
+﻿HQS_f = {
+ level = 2 required_locations_fraction = 0.67 rule = historical potential_requires_own = no
+ potential = { NOT = { has_variable = hbe_formed_regional_state } NOT = { has_variable = hbe_formed_bashu } any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_domain } }
+ allow = { hbe_can_form_sichuan = yes }
+ name = HQS flag = HQS adjective = HQS_ADJ tag = HQS color = map_HQS
+ locations = { anyue anzhou baoning_maozhou beishe cangxi changning_changning chengdu danleng dayi dazhasi dazhu dechang deyang diaomen dongxiang_dazhou emei fushun fuzhou_songpan guanzhou guihua gulin gurkyang hanyuan heishui hejiang hongyuan huacheng huaying huichuan_dechang huili jiachuan jiajiang jianchang_sichuan jiangan jiangyou jianzhou jingyan jintang jinyuan kuozhou langzhong leibo lezhi linshui liujiang lizhou_mahu longyou_jiading lugu luoji luojiao lushan_yazhou luzhou mabian maerkang mahu mala mangbu meizhou miangu mianzhou mianzhu mingshan mingtong mingyi muchuan muge nanbu nanchong nanjiang nanxi naxi neijiang pengshan pengxi pengzhou pingchuan pingwu pixian puan puge pujiang_qiongzhou qianwei qingchuan qingfu qingshen qiongbu qiongxi qiongzhou qixian_tongchuan qujiang_guangan renshou rinpung rongjing rongxian rongzhou runyan shehong shifang shimian shiquan_maozhou shuangliu songzhou_songpan suining suzhou taiping tongchuan_dazhou tongjiang weiyuan_jiading wenchuan wenshan xiangru xiaoxi xichong xindu xinning_dazhou xuanhua yandao yanting yibin yilong yingshan_shunqing yongning yuechi yunlian zengkou zhangming zhaohua zhenxi_lizhou zhongjiang zitong zixian ziyang_zizhong zuosuo }
+ form_effect = { hbe_found_sichuan = yes }
+}
+HQC_f = {
+ level = 2 required_locations_fraction = 0.67 rule = historical potential_requires_own = no
+ potential = { NOT = { has_variable = hbe_formed_regional_state } NOT = { has_variable = hbe_formed_bashu } any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_domain } }
+ allow = { hbe_can_form_chongqing = yes }
+ name = HQC flag = HQC adjective = HQC_ADJ tag = HQC color = map_HQC
+ locations = { dazu rongchang yongchuan banan baxian bishan jiangjin nanchuan qijiang changshou_changshou fuzhou_sichuan wulong dingyuan shizhao tongliang daning_kuizhou fengjie jianshi kaizhou liangshan wanzhou wushan yunyang pengshui qianjiang_shaoqing xiushan youyang dianjiang fengdu linjiang shizhu }
+ form_effect = { hbe_found_chongqing = yes }
+}
+HQB_f = {
+ level = 4 required_locations_fraction = 0.90 rule = historical potential_requires_own = no
+ potential = { NOT = { has_variable = hbe_formed_bashu } any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_domain } }
+ allow = { hbe_can_form_bashu = yes }
+ name = HQB flag = HQB adjective = HQB_ADJ tag = HQB color = map_HQB
+ locations = { anyue anzhou banan baoning_maozhou baxian beishe bishan cangxi changning_changning changshou_changshou chengdu daning_kuizhou danleng dayi dazhasi dazhu dazu dechang deyang dianjiang diaomen dingyuan dongxiang_dazhou emei fengdu fengjie fushun fuzhou_sichuan fuzhou_songpan guanzhou guihua gulin gurkyang hanyuan heishui hejiang hongyuan huacheng huaying huichuan_dechang huili jiachuan jiajiang jianchang_sichuan jiangan jiangjin jiangyou jianshi jianzhou jingyan jintang jinyuan kaizhou kuozhou langzhong leibo lezhi liangshan linjiang linshui liujiang lizhou_mahu longyou_jiading lugu luoji luojiao lushan_yazhou luzhou mabian maerkang mahu mala mangbu meizhou miangu mianzhou mianzhu mingshan mingtong mingyi muchuan muge nanbu nanchong nanchuan nanjiang nanxi naxi neijiang pengshan pengshui pengxi pengzhou pingchuan pingwu pixian puan puge pujiang_qiongzhou qianjiang_shaoqing qianwei qijiang qingchuan qingfu qingshen qiongbu qiongxi qiongzhou qixian_tongchuan qujiang_guangan renshou rinpung rongchang rongjing rongxian rongzhou runyan shehong shifang shimian shiquan_maozhou shizhao shizhu shuangliu songzhou_songpan suining suzhou taiping tongchuan_dazhou tongjiang tongliang wanzhou weiyuan_jiading wenchuan wenshan wulong wushan xiangru xiaoxi xichong xindu xinning_dazhou xiushan xuanhua yandao yanting yibin yilong yingshan_shunqing yongchuan yongning youyang yuechi yunlian yunyang zengkou zhangming zhaohua zhenxi_lizhou zhongjiang zitong zixian ziyang_zizhong zuosuo }
+ form_effect = { hbe_found_bashu = yes }
+}

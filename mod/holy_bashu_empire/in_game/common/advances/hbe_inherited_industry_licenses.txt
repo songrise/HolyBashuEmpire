@@ -1,0 +1,42 @@
+﻿hbe_inherited_industry_license_chengdu_plain = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_chengdu_plain_1
+ potential = { has_variable = hbe_inherited_industry_chengdu_plain } allow = { always = no }
+ unlock_building = hbe_canal_office unlock_building = hbe_brocade_school
+ unlock_production_method = hbe_chengdu_plain_basic_production unlock_production_method = hbe_chengdu_plain_ordinary_production
+}
+hbe_inherited_industry_license_southern_salt_wine = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_southern_salt_wine_1
+ potential = { has_variable = hbe_inherited_industry_southern_salt_wine } allow = { always = no }
+ unlock_building = hbe_salt_office unlock_building = hbe_salt_contract_house
+ unlock_production_method = hbe_southern_salt_wine_basic_production unlock_production_method = hbe_southern_salt_wine_ordinary_production
+}
+hbe_inherited_industry_license_eastern_river = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_eastern_river_1
+ potential = { has_variable = hbe_inherited_industry_eastern_river } allow = { always = no }
+ unlock_building = hbe_river_warehouse unlock_building = hbe_cliff_stockade
+ unlock_production_method = hbe_eastern_river_basic_production
+}
+hbe_inherited_industry_license_northern_shudao = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_northern_shudao_1
+ potential = { has_variable = hbe_inherited_industry_northern_shudao } allow = { always = no }
+ unlock_building = hbe_plank_fort unlock_building = hbe_gate_registry
+ unlock_production_method = hbe_northern_shudao_basic_production unlock_production_method = hbe_northern_shudao_ordinary_production
+}
+hbe_inherited_industry_license_central_hills = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_central_hills_1
+ potential = { has_variable = hbe_inherited_industry_central_hills } allow = { always = no }
+ unlock_building = hbe_community_granary unlock_building = hbe_witness_house
+ unlock_production_method = hbe_central_hills_basic_production
+}
+hbe_inherited_industry_license_western_tea_horse = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_western_tea_horse_1
+ potential = { has_variable = hbe_inherited_industry_western_tea_horse } allow = { always = no }
+ unlock_building = hbe_tea_exchange unlock_building = hbe_guide_station
+ unlock_production_method = hbe_western_tea_horse_basic_production unlock_production_method = hbe_western_tea_horse_ordinary_production
+}
+hbe_inherited_industry_license_southwestern_valleys = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = hbe_civic_southwestern_valleys_1
+ potential = { has_variable = hbe_inherited_industry_southwestern_valleys } allow = { always = no }
+ unlock_building = hbe_valley_inn unlock_building = hbe_covenant_stockade
+ unlock_production_method = hbe_southwestern_valleys_basic_production
+}

@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "check_count": 1221,
+  "gameplay_validation": "Structural and resource-reference checks; runtime and visual verification reported separately",
+  "version": "0.3.1",
+  "full_report_sha256": "f47f4088caff12b3e26b228a9ae14a6af62e2f8d36cbf163e025c4aaf88cfdbb",
+  "failed_checks": [],
+  "annex_and_native_ui_checks": [
+    {
+      "check": "industry inheritance subscribes only to whole-country annex completion",
+      "passed": true
+    },
+    {
+      "check": "seven automatic civilian industry receipts are registered",
+      "passed": true
+    },
+    {
+      "check": "inheritance grants fourteen buildings and eleven starter recipes",
+      "passed": true
+    },
+    {
+      "check": "inherited receipts grant no units advanced recipes or stat modifiers",
+      "passed": true
+    },
+    {
+      "check": "inheritance does not require prior guest compact or common research",
+      "passed": true
+    },
+    {
+      "check": "inheritance only researches its seven receipt advances",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_canal_office recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_canal_office retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_brocade_school recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_brocade_school retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_office recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_office retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_contract_house recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_contract_house retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "eastern_river inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_river_warehouse recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_river_warehouse retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_cliff_stockade recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_cliff_stockade retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_plank_fort recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_plank_fort retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_gate_registry recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_gate_registry retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "central_hills inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_community_granary recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_community_granary retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_witness_house recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_witness_house retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_tea_exchange recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_tea_exchange retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_guide_station recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_guide_station retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys inherited permission localized",
+      "passed": true
+    },
+    {
+      "check": "hbe_valley_inn recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_valley_inn retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "hbe_covenant_stockade recognizes inherited permission in both potential and allow",
+      "passed": true
+    },
+    {
+      "check": "hbe_covenant_stockade retains original geographic construction restriction",
+      "passed": true
+    },
+    {
+      "check": "three real native formables are registered for the Formable tab",
+      "passed": true
+    },
+    {
+      "check": "HQS_f has native identity conditions effects and UI text",
+      "passed": true
+    },
+    {
+      "check": "HQS_f flag texture registered",
+      "passed": true
+    },
+    {
+      "check": "HQC_f has native identity conditions effects and UI text",
+      "passed": true
+    },
+    {
+      "check": "HQC_f flag texture registered",
+      "passed": true
+    },
+    {
+      "check": "HQB_f has native identity conditions effects and UI text",
+      "passed": true
+    },
+    {
+      "check": "HQB_f flag texture registered",
+      "passed": true
+    },
+    {
+      "check": "formed tags retain access to existing country-specific decisions",
+      "passed": true
+    }
+  ]
+}

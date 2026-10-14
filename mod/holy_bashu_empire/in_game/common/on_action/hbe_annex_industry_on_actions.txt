@@ -1,0 +1,2 @@
+﻿on_annexed = { on_actions = { hbe_annex_industry_completed } }
+hbe_annex_industry_completed = { effect = { hbe_inherit_annexed_industry = yes } }

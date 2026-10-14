@@ -204,6 +204,8 @@ def main():
     check('ledger narratives preserve dynamic state readouts',"GetVariable('hbe_yiqi')" in loc_text and "GetVariable('hbe_contribution')" in loc_text)
     from validate_social_expansion import validate_social_expansion
     validate_social_expansion(m,ROOT,game,manifest,loc_keys,check)
+    from validate_annex_industry import validate_annex_industry
+    validate_annex_industry(m,manifest,loc_keys,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 80 research nodes.')

@@ -1,0 +1,37 @@
+﻿hbe_inherit_annexed_industry = {
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_advance = hbe_guest_license_chengdu_plain has_advance = hbe_inherited_industry_license_chengdu_plain has_variable = hbe_inherited_industry_chengdu_plain } } }
+ set_variable = hbe_inherited_industry_chengdu_plain
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_chengdu_plain } } research_advance = advance_type:hbe_inherited_industry_license_chengdu_plain }
+}
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_advance = hbe_guest_license_southern_salt_wine has_advance = hbe_inherited_industry_license_southern_salt_wine has_variable = hbe_inherited_industry_southern_salt_wine } } }
+ set_variable = hbe_inherited_industry_southern_salt_wine
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_southern_salt_wine } } research_advance = advance_type:hbe_inherited_industry_license_southern_salt_wine }
+}
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_advance = hbe_guest_license_eastern_river has_advance = hbe_inherited_industry_license_eastern_river has_variable = hbe_inherited_industry_eastern_river } } }
+ set_variable = hbe_inherited_industry_eastern_river
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_eastern_river } } research_advance = advance_type:hbe_inherited_industry_license_eastern_river }
+}
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_advance = hbe_guest_license_northern_shudao has_advance = hbe_inherited_industry_license_northern_shudao has_variable = hbe_inherited_industry_northern_shudao } } }
+ set_variable = hbe_inherited_industry_northern_shudao
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_northern_shudao } } research_advance = advance_type:hbe_inherited_industry_license_northern_shudao }
+}
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_advance = hbe_guest_license_central_hills has_advance = hbe_inherited_industry_license_central_hills has_variable = hbe_inherited_industry_central_hills } } }
+ set_variable = hbe_inherited_industry_central_hills
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_central_hills } } research_advance = advance_type:hbe_inherited_industry_license_central_hills }
+}
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_advance = hbe_guest_license_western_tea_horse has_advance = hbe_inherited_industry_license_western_tea_horse has_variable = hbe_inherited_industry_western_tea_horse } } }
+ set_variable = hbe_inherited_industry_western_tea_horse
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_western_tea_horse } } research_advance = advance_type:hbe_inherited_industry_license_western_tea_horse }
+}
+if = {
+ limit = { scope:target = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC has_advance = hbe_guest_license_southwestern_valleys has_advance = hbe_inherited_industry_license_southwestern_valleys has_variable = hbe_inherited_industry_southwestern_valleys } } }
+ set_variable = hbe_inherited_industry_southwestern_valleys
+ if = { limit = { NOT = { has_advance = hbe_inherited_industry_license_southwestern_valleys } } research_advance = advance_type:hbe_inherited_industry_license_southwestern_valleys }
+}
+}

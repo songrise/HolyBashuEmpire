@@ -1,0 +1,182 @@
+{
+  "status": "passed",
+  "version": "0.3.1",
+  "check_count": 27,
+  "checks": [
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5 partial land transfer does not unlock industry",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5 complete military annexation grants the receipt",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5 inheritance needs no guest compact or prior advance",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5 inherited country and location building checks pass",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5 preexisting workshop is retained",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5 Sichuan and Bashu visible in native formable eligibility",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 partial land transfer does not unlock industry",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 complete military annexation grants the receipt",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 inheritance needs no guest compact or prior advance",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 inherited country and location building checks pass",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 preexisting workshop is retained",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 Sichuan and Bashu visible in native formable eligibility",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 complete diplomatic annexation transfers earlier inherited rights",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 foreign annexer may construct inherited local institutions",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5 Chongqing is visible for a Chongqing-region country",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 partial land transfer does not unlock industry",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 complete military annexation grants the receipt",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 inheritance needs no guest compact or prior advance",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 inherited country and location building checks pass",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 preexisting workshop is retained",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 Sichuan and Bashu visible in native formable eligibility",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 complete diplomatic annexation transfers earlier inherited rights",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 foreign annexer may construct inherited local institutions",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 Chongqing is visible for a Chongqing-region country",
+      "passed": true
+    },
+    {
+      "check": "inherited workshop remains owned by original BAB and selects well-salt method",
+      "passed": true
+    },
+    {
+      "check": "new annex and native formable files have no registration or runtime errors",
+      "passed": true
+    },
+    {
+      "check": "annex and UI patch is idempotent",
+      "passed": true
+    }
+  ],
+  "save_evidence": [
+    {
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_07.eu5",
+      "sha256": "36656c47b67dd49fd50de90521283d6cdda209c058e66ac035860821b5e3a82b",
+      "bab_probes": [
+        "hbe_probe_existing_factory_retained",
+        "hbe_probe_full_annex_granted",
+        "hbe_probe_no_extra_prerequisites",
+        "hbe_probe_partial_no_grant",
+        "hbe_probe_salt_country_buildable",
+        "hbe_probe_salt_location_buildable",
+        "hbe_probe_visible_bashu",
+        "hbe_probe_visible_sichuan"
+      ],
+      "chi_probes": [],
+      "native_scripted_form_country_executed": false
+    },
+    {
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_15.eu5",
+      "sha256": "b7c84b3f18965e5f48b09549e8ec2cea3144fcca2e01101fb24ba7474965d315",
+      "bab_probes": [
+        "hbe_probe_existing_factory_retained",
+        "hbe_probe_full_annex_granted",
+        "hbe_probe_native_can_form",
+        "hbe_probe_no_extra_prerequisites",
+        "hbe_probe_partial_no_grant",
+        "hbe_probe_salt_country_buildable",
+        "hbe_probe_salt_location_buildable",
+        "hbe_probe_visible_bashu",
+        "hbe_probe_visible_sichuan"
+      ],
+      "chi_probes": [
+        "hbe_probe_chongqing_entry_registered",
+        "hbe_probe_diplomatic_and_chain_granted",
+        "hbe_probe_foreign_annexer",
+        "hbe_probe_foreign_country_buildable"
+      ],
+      "native_scripted_form_country_executed": false
+    },
+    {
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5",
+      "sha256": "52e5cd51db1fea08aa79eeef58449f4488e7e4b911ee61ea24a2777818cbdd8c",
+      "bab_probes": [
+        "hbe_probe_existing_factory_retained",
+        "hbe_probe_full_annex_granted",
+        "hbe_probe_native_can_form",
+        "hbe_probe_no_extra_prerequisites",
+        "hbe_probe_partial_no_grant",
+        "hbe_probe_salt_country_buildable",
+        "hbe_probe_salt_location_buildable",
+        "hbe_probe_visible_bashu",
+        "hbe_probe_visible_sichuan"
+      ],
+      "chi_probes": [
+        "hbe_probe_chongqing_entry_registered",
+        "hbe_probe_diplomatic_and_chain_granted",
+        "hbe_probe_foreign_annexer",
+        "hbe_probe_foreign_country_buildable"
+      ],
+      "native_scripted_form_country_executed": false
+    }
+  ],
+  "new_engine_errors": [],
+  "scope": "Two-month deterministic engine fixture. Actual MilitaryConquest and Diplomatic annex_country effects; partial location transfer negative test; civilian construction eligibility and retained workshop/method; native is_formable_visible checks.",
+  "ui_limit": "Native entries and visibility are verified. A scripted form_country call did not execute in the headless fixture; an actual click of NewCountryCandidate.FormCountry was not tested. The previously verified national-decision identity effect remains available as an alternative.",
+  "production_limit": "The inherited workshop selected the well-salt recipe, but lacked tools in the test market. No positive output claim is made from that checkpoint.",
+  "cloud_upload": false
+}
