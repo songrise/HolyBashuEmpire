@@ -147,8 +147,7 @@ def apply(out,root):
  allow = { has_advance = hbe_tech_common_1 }
  years = 5
  country_modifier = {
-  potential_trigger = { is_member_of_international_organization = international_organization:hbe_empire }
-  global_monthly_control = 0.01 global_monthly_literacy = 0.005
+  global_monthly_control = 0.01 global_monthly_literacy = 0.01
   burghers_estate_target_satisfaction = 0.02 nobles_estate_target_satisfaction = -0.02
  }
  ai_will_do = { value = 4 }
@@ -159,7 +158,6 @@ hbe_mountain_river_dispatch = {
  allow = { has_advance = hbe_tech_common_2 }
  years = 5
  country_modifier = {
-  potential_trigger = { is_member_of_international_organization = international_organization:hbe_empire }
   global_merchant_capacity_modifier = 0.10 merchant_maintenance_efficiency = 0.05 tax_income_efficiency = -0.02
  }
  ai_will_do = { value = 3 }

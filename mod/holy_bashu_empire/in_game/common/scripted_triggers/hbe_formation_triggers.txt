@@ -1,0 +1,23 @@
+﻿hbe_can_form_sichuan = {
+ is_subject = no at_war = no any_owned_location = { count >= 90 is_in_scripted_geography = scripted_geography:hbe_sichuan_core controller = root }
+location:chengdu = { owner = root controller = root }
+location:yibin = { owner = root controller = root }
+location:langzhong = { owner = root controller = root }
+location:yandao = { owner = root controller = root }
+}
+hbe_can_form_chongqing = {
+ is_subject = no at_war = no any_owned_location = { count >= 21 is_in_scripted_geography = scripted_geography:hbe_chongqing_core controller = root }
+location:baxian = { owner = root controller = root }
+location:fuzhou_sichuan = { owner = root controller = root }
+location:wanzhou = { owner = root controller = root }
+}
+hbe_can_form_bashu = {
+ is_subject = no at_war = no any_owned_location = { count >= 148 is_in_scripted_geography = scripted_geography:hbe_domain controller = root }
+location:chengdu = { owner = root controller = root }
+location:baxian = { owner = root controller = root }
+location:yibin = { owner = root controller = root }
+location:langzhong = { owner = root controller = root }
+location:yandao = { owner = root controller = root }
+location:jianchang_sichuan = { owner = root controller = root }
+location:suining = { owner = root controller = root }
+}

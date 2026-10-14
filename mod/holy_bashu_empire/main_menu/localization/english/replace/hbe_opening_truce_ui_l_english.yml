@@ -1,0 +1,2 @@
+﻿l_english:
+ TRUCE_WITH_COUNTRY_UNTIL: "[Select_CString(And(GetPlayer.MakeScope.GetVariable(Concatenate('hbe_opening_truce_', Country.GetTag)).IsSet, Country.MakeScope.GetVariable(Concatenate('hbe_opening_truce_', GetPlayer.GetTag)).IsSet), Localize('hbe_opening_truce_until'), Localize('hbe_native_truce_until'))]"

@@ -1,0 +1,150 @@
+{
+  "version": "0.3.1",
+  "checks": {
+    "opening_truce_present": true,
+    "expired_after_one_year": true,
+    "all_36_expired_april_1": true,
+    "broken_pair_exempt": true,
+    "replacement_peace_preserved": true,
+    "fully_implemented_reform_monthly_literacy": true,
+    "population_95000_in_bookmark": true,
+    "no_hbe_engine_diagnostics": true,
+    "all_40_modifier_icons_registered": true
+  },
+  "source_manifest_sha256": "3de9a6ca0236e712555b965f7fe70328c5b57b6a52b56c126991b93429ac9df2",
+  "snapshots": [
+    {
+      "date": "1337.4.6",
+      "population_k": 95.0,
+      "probe": {
+        "hbe_probe_opening_truce_present": true,
+        "hbe_probe_literacy_before": 0.04,
+        "hbe_probe_literacy_delta": 0.01,
+        "hbe_probe_literacy_passed": true,
+        "hbe_probe_broken_pair_exempt": true
+      },
+      "opening_pair_flags": 1258,
+      "expiry_completed": 0
+    },
+    {
+      "date": "1338.3.20",
+      "population_k": 95.31052,
+      "probe": {
+        "hbe_probe_opening_truce_present": true,
+        "hbe_probe_literacy_before": 0.04,
+        "hbe_probe_literacy_delta": 0.01,
+        "hbe_probe_literacy_passed": true,
+        "hbe_probe_broken_pair_exempt": true
+      },
+      "opening_pair_flags": 1258,
+      "expiry_completed": 0
+    },
+    {
+      "date": "1338.4.1",
+      "population_k": 95.33187,
+      "probe": {
+        "hbe_probe_opening_truce_present": true,
+        "hbe_probe_broken_pair_exempt": true,
+        "hbe_probe_literacy_passed": true,
+        "hbe_probe_literacy_delta": 0.01,
+        "hbe_probe_literacy_before": 0.04
+      },
+      "opening_pair_flags": 0,
+      "expiry_completed": 36
+    },
+    {
+      "date": "1338.4.3",
+      "population_k": 95.33187,
+      "probe": {
+        "hbe_probe_opening_truce_present": true,
+        "hbe_probe_broken_pair_exempt": true,
+        "hbe_probe_literacy_passed": true,
+        "hbe_probe_literacy_delta": 0.01,
+        "hbe_probe_literacy_before": 0.04,
+        "hbe_probe_one_year_truce_ended": true,
+        "hbe_probe_new_peace_preserved": true,
+        "hbe_probe_expiry_check_fired": true
+      },
+      "opening_pair_flags": 0,
+      "expiry_completed": 36
+    },
+    {
+      "date": "1338.5.2",
+      "population_k": 95.35719,
+      "probe": {
+        "hbe_probe_opening_truce_present": true,
+        "hbe_probe_broken_pair_exempt": true,
+        "hbe_probe_literacy_passed": true,
+        "hbe_probe_literacy_delta": 0.01,
+        "hbe_probe_literacy_before": 0.04,
+        "hbe_probe_one_year_truce_ended": true,
+        "hbe_probe_new_peace_preserved": true,
+        "hbe_probe_expiry_check_fired": true
+      },
+      "opening_pair_flags": 0,
+      "expiry_completed": 36
+    }
+  ],
+  "engine_diagnostics": [],
+  "compatibility_warning_count": 194,
+  "fixture_only": [
+    "Common advance 1 and immediate implementation of Prefectural Council; shipped implementation stays five years",
+    "A replacement truce after clearing the opening pair flags, to verify it is preserved"
+  ],
+  "opening_population": {
+    "country": "BAP",
+    "name": "叙州盐酒",
+    "before_people": 182756,
+    "after_people": 95000,
+    "locations": [
+      {
+        "location": "yibin",
+        "before_k": 43.72,
+        "after_k": 22.726
+      },
+      {
+        "location": "fushun",
+        "before_k": 58.468,
+        "after_k": 30.392
+      },
+      {
+        "location": "nanxi",
+        "before_k": 14.43,
+        "after_k": 7.5
+      },
+      {
+        "location": "qingfu",
+        "before_k": 22.097,
+        "after_k": 11.486
+      },
+      {
+        "location": "xuanhua",
+        "before_k": 44.041,
+        "after_k": 22.896
+      }
+    ],
+    "native_locations": 28570,
+    "method": "Bookmark setup data; no game-start population effect",
+    "other_locations_unchanged": true
+  },
+  "armistice": {
+    "years": 1,
+    "expires": "1338.4.1",
+    "pairs": 630,
+    "mechanism": "Opening-only scheduled expiry; native default truce years remain unchanged",
+    "broken_pairs_exempt": true,
+    "initialization_before_first_tick": true,
+    "ui_pair_flags": true
+  },
+  "icons": {
+    "registered_modifier_types": 40,
+    "files": 48,
+    "size": [
+      64,
+      64
+    ],
+    "source": "Approved specialty goods artwork with mechanically isolated original output plus/minus and demand badges",
+    "native_icon_registration": "main_menu/common/modifier_icons/hbe_goods_icons.txt",
+    "version": "0.3.1"
+  }
+}

@@ -46,637 +46,638 @@ hbe_repair_opening_child_abilities = {
 hbe_apply_opening_pacts = {
  if = { limit = { current_date >= 1337.4.1 current_date < 1337.4.3 }
   if = { limit = { c:BAB = { NOT = { has_variable = hbe_opening_truce_done } } }
-c:BAB ?= { add_truce_with = { target = c:BAE mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAF mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAJ mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAB ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAF mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAJ mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAE ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAJ mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAF ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAJ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAL ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAO ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAP ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAQ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAW ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAX ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BAZ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBB ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBC ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBE ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBF ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBH ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBI ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBJ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBL ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBM ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBN ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBO ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBP ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBQ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBR ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBS ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBT ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBU ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBV ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBW ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } }
-c:BBW ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBW ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBW ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBW ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBW ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBX ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } }
-c:BBX ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBX ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBX ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBX ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBY ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } }
-c:BBY ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBY ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBY ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BBZ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } }
-c:BBZ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BBZ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BCA ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } }
-c:BCA ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
-c:BCB ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } }
+c:BAB ?= { add_truce_with = { target = c:BAE mutual = yes years = 1 } set_variable = hbe_opening_truce_BAE c:BAE ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAF mutual = yes years = 1 } set_variable = hbe_opening_truce_BAF c:BAF ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAJ c:BAJ ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } set_variable = hbe_opening_truce_BAL c:BAL ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } set_variable = hbe_opening_truce_BAO c:BAO ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } set_variable = hbe_opening_truce_BAP c:BAP ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAB ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAB } }
+c:BAE ?= { add_truce_with = { target = c:BAF mutual = yes years = 1 } set_variable = hbe_opening_truce_BAF c:BAF ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAJ c:BAJ ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } set_variable = hbe_opening_truce_BAL c:BAL ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } set_variable = hbe_opening_truce_BAO c:BAO ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } set_variable = hbe_opening_truce_BAP c:BAP ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAE ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAE } }
+c:BAF ?= { add_truce_with = { target = c:BAJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAJ c:BAJ ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } set_variable = hbe_opening_truce_BAL c:BAL ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } set_variable = hbe_opening_truce_BAO c:BAO ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } set_variable = hbe_opening_truce_BAP c:BAP ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAF ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAF } }
+c:BAJ ?= { add_truce_with = { target = c:BAL mutual = yes years = 1 } set_variable = hbe_opening_truce_BAL c:BAL ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } set_variable = hbe_opening_truce_BAO c:BAO ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } set_variable = hbe_opening_truce_BAP c:BAP ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAJ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAJ } }
+c:BAL ?= { add_truce_with = { target = c:BAO mutual = yes years = 1 } set_variable = hbe_opening_truce_BAO c:BAO ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } set_variable = hbe_opening_truce_BAP c:BAP ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAL ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAL } }
+c:BAO ?= { add_truce_with = { target = c:BAP mutual = yes years = 1 } set_variable = hbe_opening_truce_BAP c:BAP ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAO ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAO } }
+c:BAP ?= { add_truce_with = { target = c:BAQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAQ c:BAQ ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAP ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAP } }
+c:BAQ ?= { add_truce_with = { target = c:BAW mutual = yes years = 1 } set_variable = hbe_opening_truce_BAW c:BAW ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAQ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAQ } }
+c:BAW ?= { add_truce_with = { target = c:BAX mutual = yes years = 1 } set_variable = hbe_opening_truce_BAX c:BAX ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAW ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAW } }
+c:BAX ?= { add_truce_with = { target = c:BAZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BAZ c:BAZ ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAX ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAX } }
+c:BAZ ?= { add_truce_with = { target = c:BBB mutual = yes years = 1 } set_variable = hbe_opening_truce_BBB c:BBB ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BAZ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BAZ } }
+c:BBB ?= { add_truce_with = { target = c:BBC mutual = yes years = 1 } set_variable = hbe_opening_truce_BBC c:BBC ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBB ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBB } }
+c:BBC ?= { add_truce_with = { target = c:BBE mutual = yes years = 1 } set_variable = hbe_opening_truce_BBE c:BBE ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBC ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBC } }
+c:BBE ?= { add_truce_with = { target = c:BBF mutual = yes years = 1 } set_variable = hbe_opening_truce_BBF c:BBF ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBE ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBE } }
+c:BBF ?= { add_truce_with = { target = c:BBH mutual = yes years = 1 } set_variable = hbe_opening_truce_BBH c:BBH ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBF ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBF } }
+c:BBH ?= { add_truce_with = { target = c:BBI mutual = yes years = 1 } set_variable = hbe_opening_truce_BBI c:BBI ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBH ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBH } }
+c:BBI ?= { add_truce_with = { target = c:BBJ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBJ c:BBJ ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBI ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBI } }
+c:BBJ ?= { add_truce_with = { target = c:BBL mutual = yes years = 1 } set_variable = hbe_opening_truce_BBL c:BBL ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBJ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBJ } }
+c:BBL ?= { add_truce_with = { target = c:BBM mutual = yes years = 1 } set_variable = hbe_opening_truce_BBM c:BBM ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBL ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBL } }
+c:BBM ?= { add_truce_with = { target = c:BBN mutual = yes years = 1 } set_variable = hbe_opening_truce_BBN c:BBN ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBM ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBM } }
+c:BBN ?= { add_truce_with = { target = c:BBO mutual = yes years = 1 } set_variable = hbe_opening_truce_BBO c:BBO ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBN ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBN } }
+c:BBO ?= { add_truce_with = { target = c:BBP mutual = yes years = 1 } set_variable = hbe_opening_truce_BBP c:BBP ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBO ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBO } }
+c:BBP ?= { add_truce_with = { target = c:BBQ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBQ c:BBQ ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBP ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBP } }
+c:BBQ ?= { add_truce_with = { target = c:BBR mutual = yes years = 1 } set_variable = hbe_opening_truce_BBR c:BBR ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBQ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBQ } }
+c:BBR ?= { add_truce_with = { target = c:BBS mutual = yes years = 1 } set_variable = hbe_opening_truce_BBS c:BBS ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBR ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBR } }
+c:BBS ?= { add_truce_with = { target = c:BBT mutual = yes years = 1 } set_variable = hbe_opening_truce_BBT c:BBT ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBS ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBS } }
+c:BBT ?= { add_truce_with = { target = c:BBU mutual = yes years = 1 } set_variable = hbe_opening_truce_BBU c:BBU ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBT ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBT } }
+c:BBU ?= { add_truce_with = { target = c:BBV mutual = yes years = 1 } set_variable = hbe_opening_truce_BBV c:BBV ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBU ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBU } }
+c:BBV ?= { add_truce_with = { target = c:BBW mutual = yes years = 1 } set_variable = hbe_opening_truce_BBW c:BBW ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBV ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBV ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBV ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBV ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBV ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBV ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBV } }
+c:BBW ?= { add_truce_with = { target = c:BBX mutual = yes years = 1 } set_variable = hbe_opening_truce_BBX c:BBX ?= { set_variable = hbe_opening_truce_BBW } }
+c:BBW ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBW } }
+c:BBW ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBW } }
+c:BBW ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBW } }
+c:BBW ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBW } }
+c:BBW ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBW } }
+c:BBX ?= { add_truce_with = { target = c:BBY mutual = yes years = 1 } set_variable = hbe_opening_truce_BBY c:BBY ?= { set_variable = hbe_opening_truce_BBX } }
+c:BBX ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBX } }
+c:BBX ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBX } }
+c:BBX ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBX } }
+c:BBX ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBX } }
+c:BBY ?= { add_truce_with = { target = c:BBZ mutual = yes years = 1 } set_variable = hbe_opening_truce_BBZ c:BBZ ?= { set_variable = hbe_opening_truce_BBY } }
+c:BBY ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBY } }
+c:BBY ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBY } }
+c:BBY ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBY } }
+c:BBZ ?= { add_truce_with = { target = c:BCA mutual = yes years = 1 } set_variable = hbe_opening_truce_BCA c:BCA ?= { set_variable = hbe_opening_truce_BBZ } }
+c:BBZ ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BBZ } }
+c:BBZ ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BBZ } }
+c:BCA ?= { add_truce_with = { target = c:BCB mutual = yes years = 1 } set_variable = hbe_opening_truce_BCB c:BCB ?= { set_variable = hbe_opening_truce_BCA } }
+c:BCA ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BCA } }
+c:BCB ?= { add_truce_with = { target = c:BCC mutual = yes years = 1 } set_variable = hbe_opening_truce_BCC c:BCC ?= { set_variable = hbe_opening_truce_BCB } }
    every_country = { limit = { hbe_is_prince = yes } set_variable = hbe_opening_truce_done }
+   every_country = { limit = { hbe_is_prince = yes } hbe_schedule_opening_expiry = yes }
   }
   every_country = { limit = { hbe_is_prince = yes has_ruler = yes NOT = { has_variable = hbe_opening_family_done } }
    hbe_generate_opening_family = yes

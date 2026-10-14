@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ hbe_opening_family.2.title: "开局停战期满"
+ hbe_opening_truce_until: "[Country.GetName]与[GetPlayer.GetName]的开局停战于#V 1338年4月1日#!到期（一年）。"
+ hbe_opening_truce_map_tt: "[Country.GetName]与[GetSelectedCountryOrByLocation.GetName]的开局停战于#V 1338年4月1日#!到期（一年）。"
+ hbe_native_truce_until: "[Country.GetName]与[GetPlayer.GetName]的停战协议持续到[Country.GetDiplomacy.GetRelation(GetPlayer.Self).GetTruceExpirationDate|V]"

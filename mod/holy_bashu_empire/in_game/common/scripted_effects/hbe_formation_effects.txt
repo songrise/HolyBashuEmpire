@@ -1,0 +1,27 @@
+﻿hbe_found_sichuan = {
+ change_country_name = HQS
+ change_country_adjective = HQS_ADJ
+ change_country_flag = HQS
+ change_country_color = map_HQS
+ if = { limit = { country_rank_level < 3 } set_country_rank = country_rank:rank_kingdom }
+ set_variable = hbe_formed_sichuan
+ set_variable = hbe_formed_regional_state
+}
+hbe_found_chongqing = {
+ change_country_name = HQC
+ change_country_adjective = HQC_ADJ
+ change_country_flag = HQC
+ change_country_color = map_HQC
+ if = { limit = { country_rank_level < 3 } set_country_rank = country_rank:rank_kingdom }
+ set_variable = hbe_formed_chongqing
+ set_variable = hbe_formed_regional_state
+}
+hbe_found_bashu = {
+ change_country_name = HQB
+ change_country_adjective = HQB_ADJ
+ change_country_flag = HQB
+ change_country_color = map_HQB
+ if = { limit = { country_rank_level < 4 } set_country_rank = country_rank:rank_empire }
+ set_variable = hbe_formed_bashu
+
+}

@@ -1,0 +1,5 @@
+﻿l_english:
+ hbe_opening_family.2.title: "Opening Armistice Expires"
+ hbe_opening_truce_until: "[Country.GetName] and [GetPlayer.GetName] have an opening armistice until #V 1 April 1338#! (one year)."
+ hbe_opening_truce_map_tt: "[Country.GetName] and [GetSelectedCountryOrByLocation.GetName] have an opening armistice until #V 1 April 1338#! (one year)."
+ hbe_native_truce_until: "[Country.GetName] has a truce with [GetPlayer.GetName] until [Country.GetDiplomacy.GetRelation(GetPlayer.Self).GetTruceExpirationDate|V]."

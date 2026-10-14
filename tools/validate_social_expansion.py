@@ -15,7 +15,7 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     check('unit family shares supply-scaled 20 percent capacity','limit = hbe_civic_special_limit' in read('in_game/common/unit_families/hbe_civic_families.txt') and 'multiply = 0.2 divide = 0.5' in read('in_game/common/script_values/hbe_civic_values.txt'))
     check('all nine unit types use real supply and geographic recruitment',units.count('construction_demand =')==9 and units.count('maintenance_demand =')==9 and units.count('is_in_scripted_geography = scripted_geography:hbe_geo_')==9)
     check('early and late unit unlocking ties to actual advances',all('unlock_unit = '+u['key'] in old+advances for u in data['units']))
-    check('two late types replace their base troops', 'upgrades_to = hbe_trained_river' in units and 'upgrades_to = hbe_permanent_pass' in units and units.count('current_year >= 1457')==2)
+    check('two late types replace their base troops', 'upgrades_to = hbe_trained_river' in units and 'upgrades_to = hbe_permanent_pass' in units and ('current_year' not in units if 'formables_units_v031' in manifest else units.count('current_year >= 1457')==2))
     check('native research catalogue now has 80 nodes',len(blocks(old,0))+len(blocks(advances,0))==manifest['research_nodes']==80)
     allnodes={k:(old+advances)[a:b] for k,_,a,b,_ in blocks(old+advances,0)}
     ages={k:re.search(r'age = (\w+)',body)[1] for k,body in allnodes.items()}
@@ -23,7 +23,7 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     check('late original and civic courses appear in the second era',sum(v=='age_2_renaissance' for v in ages.values())>=22)
     history=read('in_game/common/customizable_localization/country_history.txt')
     check('agenda country histories selected before vanilla cultural fallback',all('localization_key = country_history_'+c['tag']+' trigger = { has_or_had_tag = '+c['tag']+' }' in history for c in manifest['countries']) and history.index('country_history_BAB')<history.index('country_history_china'))
-    check('16 new nodes have icons, localization and year gates',len(blocks(advances,0))==16 and all(k['key'] in loc and k['key']+'_desc' in loc and 'current_year >= '+str(k['year']) in advances for k in data['advances']))
+    check('16 new nodes have icons, localization and correct progression gates',len(blocks(advances,0))==16 and all(k['key'] in loc and k['key']+'_desc' in loc for k in data['advances']) and ('current_year' not in advances+old if 'formables_units_v031' in manifest else all('current_year >= '+str(k['year']) in advances for k in data['advances'])))
     advances=re.sub(r'hbe_advance_gate_(\w+)\s*=\s*yes',r'has_advance = \1',advances)
     check('regional institution advances accept either A or B qualification',all('OR = { has_advance = hbe_tech_'+r[0]+'_4 has_advance = hbe_tech_'+r[0]+'_7 }' in advances and 'OR = { has_advance = hbe_tech_'+r[0]+'_5 has_advance = '+resolve('hbe_tech_'+r[0]+'_8')+' }' in advances for r in manifest['regions']))
     check('no opening free grants of new research',advances.count('starting_technology_level = 99')==16)

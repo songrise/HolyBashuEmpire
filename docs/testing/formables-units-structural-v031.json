@@ -1,0 +1,4672 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "36 selectable princes",
+      "passed": true
+    },
+    {
+      "check": "7 circles and 7 distinct electors",
+      "passed": true
+    },
+    {
+      "check": "164 unique domain locations",
+      "passed": true
+    },
+    {
+      "check": "all countries have 3 to 10 locations",
+      "passed": true
+    },
+    {
+      "check": "country capitals belong to their countries",
+      "passed": true
+    },
+    {
+      "check": "all source-owned locations were removed",
+      "passed": true
+    },
+    {
+      "check": "file hash .metadata/metadata.json",
+      "passed": true
+    },
+    {
+      "check": "file hash .metadata/thumbnail.png",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_banquet_events.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_civic_events.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_events.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_migration_events.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_opening_family_events.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_central_hills.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_chengdu_plain.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_eastern_river.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_northern_shudao.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_shared.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_southern_salt_wine.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_southwestern_valleys.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_short_western_tea_horse.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_central_hills.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_chengdu_plain.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_eastern_river.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_northern_shudao.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_southern_salt_wine.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_southwestern_valleys.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/events/hbe_story_western_tea_horse.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gui/cooltip.gui",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/advances/hbe_advances.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/advances/hbe_civic_advances.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/advances/hbe_guest_licenses.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/ai_scripted_expansion_score/hbe_external_caution.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/biases/hbe_faction_departure.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/biases/hbe_feast_opinions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/biases/hbe_opinions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/building_types/hbe_civic_buildings.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/country_description_categories/hbe_profiles.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/customizable_localization/country_history.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/decisions/hbe_banquet_decisions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/decisions/hbe_civic_decisions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/decisions/hbe_decisions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/decisions/hbe_formable_decisions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/estate_privileges/hbe_civic_privileges.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/generic_actions/hbe_feast_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/goods/hbe_special_goods.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/goods_demand/hbe_civic_construction.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/goods_demand/hbe_unit_maintenance.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/goods_demand/pop_demands.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/government_reforms/hbe_shared_reforms.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/industry_types/01_industries.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organizations/hbe_empire.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organizations/hbe_feast_parties.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organization_land_ownership_rules/hbe_land.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/international_organization_special_statuses/hbe_statuses.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/join_war_rules/hbe_isolation.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/laws/hbe_civic_law.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_ai_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_banquet_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_civic_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_deep_balance_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_guest_license_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_native_content_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_opening_armistice_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_opening_pacts_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_simple_banquet_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_story_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/on_action/hbe_technology_on_actions.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/parliament_issues/hbe_civic_issues.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/resolutions/hbe_election.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_ai_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_banquet_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_civic_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_feast_dividend_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_formation_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_guest_license_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_native_content_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_observer_sync.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_opening_armistice_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_opening_pacts_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_output_support_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_simple_banquet_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_story_scheduler.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_effects/hbe_technology_effects.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_geography/hbe_formable_geography.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_geography/hbe_geography.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_triggers/hbe_advance_gates.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_triggers/hbe_civic_triggers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_triggers/hbe_formation_triggers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_triggers/hbe_industry_patch_triggers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/scripted_triggers/hbe_triggers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/script_values/hbe_civic_values.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/script_values/hbe_deep_balance_values.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/script_values/hbe_event_costs.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/script_values/hbe_feast_dividend_values.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/script_values/hbe_feast_values.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/situations/hbe_banquet.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/unit_families/hbe_civic_families.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/common/unit_types/hbe_civic_units.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/images/hbe_civic_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/images/hbe_event_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/images/hbe_story_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/images/hbe_v021_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/scenes/hbe_civic_scenes.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/scenes/hbe_event_scenes.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/scenes/hbe_story_scenes.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/scenes/hbe_v021_scenes.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/gui/panels/situation/hbe_banquet.gui",
+      "passed": true
+    },
+    {
+      "check": "file hash in_game/setup/countries/hbe_countries.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash loading_screen/gfx/illustrations/database/hbe_story_illustrations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash loading_screen/gfx/interface/hbe/placeholder.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gui/messagetypes.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/game_concepts/hbe_concepts.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_icons/hbe_goods_icons.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_icons/hbe_icons.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_type_definitions/hbe_observer_goods_types.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/modifier_type_definitions/hbe_types.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/named_colors/hbe_flags.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/named_colors/hbe_formable_colors.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/scenarios/hbe_scenarios.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_ai_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_civic_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_deep_support_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_feast_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_legacy_output_flags.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_story_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/static_modifiers/hbe_technology_modifiers.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/coat_of_arms/coat_of_arms/hbe_formables.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bab.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bae.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baf.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baj.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bal.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bao.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bap.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baq.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baw.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bax.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baz.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbb.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbc.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbe.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbf.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbh.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbi.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbj.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbl.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbm.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbn.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbo.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbp.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbq.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbr.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbs.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbu.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbv.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbw.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbx.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bby.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbz.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bca.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bcb.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bcc.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_bashu.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_chongqing.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_sichuan.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_common_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_common_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_central_hills_witness_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_common_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_eastern_river_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_northern_shudao_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/decisions/hbe_status.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/academy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/banquet.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/civic_council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/civic_market.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/civic_training.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/crisis.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/feast_two_parties_v021.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/grain.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/ledger.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/roads.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/valleys.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/events/water.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/formables/bashu.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/formables/chongqing.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/formables/sichuan.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/panels/hbe_banquet.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/bamboo.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/bridge.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/craft.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/festival.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/fossils.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/medicine.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/migration_journey.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/migration_pact.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/observatory.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/settlement.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/terraces.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/story_events/veterinary.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_witness_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_common_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_audit.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_civil_ledger.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_communal_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_guest_compact.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_levy_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_0.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_office_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_paid_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/civic/decisions/hbe_revision.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/v021/decisions/hbe_project_fund.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_assembly_hall.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_brocade_school.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_canal_office.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_cliff_stockade.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_community_granary.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_covenant_stockade.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_gate_registry.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_guide_station.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_plank_fort.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_river_warehouse.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_salt_contract_house.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_salt_office.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_tea_exchange.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_valley_inn.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_witness_house.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/buildings/hbe_works_archive.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/generic_actions/hbe_feast_common_action.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/generic_actions/hbe_feast_fund_action.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/generic_actions/hbe_feast_local_action.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/government_reforms/hbe_mountain_river_dispatch.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/government_reforms/hbe_prefectural_council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_audit.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_civil_ledger.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_communal_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_guest_compact.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_levy_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_0.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_office_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_paid_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/hbe_civic/hbe_revision.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_central_hills.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_circle_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_empire.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/laws/hbe_civil_service_law.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_ai_internal_ambition.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_feast_common_reward.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_feast_cooperation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_feast_local_reward.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_feast_success.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_7.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_border_tea_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_border_tea_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_border_tea_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_paper_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_paper_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_paper_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_positive.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_positive.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_negative.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_positive.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_negative.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_positive.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_border_tea_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_border_tea_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_embroidery_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_embroidery_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_paper_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_paper_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_well_salt_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/modifier_types/local_hbe_well_salt_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_audit.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_civil_ledger.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_communal_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_council.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_guest_compact.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_levy_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_0.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_1.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_2.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_3.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_4.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_5.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_office_6.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_paid_policy.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/policies/hbe_revision.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/privileges/hbe_guild_payment_guarantee.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/privileges/hbe_village_witnesses.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/situations/hbe_banquet.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_dispute.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_grain.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_guoqi.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_roads.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_valleys.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_water.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/text_icons/hbe_yiqi.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_canal_crossbow.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_granary_militia.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_pass_rotation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_permanent_pass.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_river_garrison.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_salt_guard.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_tea_riders.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_trained_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/unit_types/hbe_valley_soldiers.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_central_hills.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/international_organization_types/hbe_empire.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_pass_rotation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_permanent_pass.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_river_garrison.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_trained_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_canal_crossbow.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_granary_militia.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_pass_rotation.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_permanent_pass.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_river_garrison.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_salt_guard.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_tea_riders.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_trained_river.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gfx/interface/illustrations/units/masks/hbe_valley_soldiers.dds",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gui/shared/hbe_civic_font_icons.gui",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/gui/shared/hbe_font_icons.gui",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_advance_gates_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_deep_balance_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_formables_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_industry_patch_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_observer_hotfix_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_opening_armistice_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_personal_tooltips_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_story_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/hbe_unit_maintenance_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_deep_balance_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_personal_tooltips_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/hbe_unit_maintenance_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/english/replace/hbe_opening_truce_ui_l_english.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/localization/simp_chinese/replace/hbe_opening_truce_ui_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/04_hbe_dynasties.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/05_hbe_characters.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/06_pops.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/10_countries.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/1337/99_hbe_organizations.txt",
+      "passed": true
+    },
+    {
+      "check": "file hash main_menu/setup/templates/hbe_monarchy.txt",
+      "passed": true
+    },
+    {
+      "check": "bookmark files are UTF8 without BOM",
+      "passed": true
+    },
+    {
+      "check": "database scripts use UTF8 BOM",
+      "passed": true
+    },
+    {
+      "check": "all script braces and custom definitions are valid",
+      "passed": true
+    },
+    {
+      "check": "every domain location has exactly one new owner",
+      "passed": true
+    },
+    {
+      "check": "ownership matches manifest",
+      "passed": true
+    },
+    {
+      "check": "all capital cultures and religions exist",
+      "passed": true
+    },
+    {
+      "check": "Chinese localization has UTF8 BOM",
+      "passed": true
+    },
+    {
+      "check": "all custom text references localized",
+      "passed": true
+    },
+    {
+      "check": "native numeric literals include a leading zero",
+      "passed": true
+    },
+    {
+      "check": "36 distinct starting rulers exist",
+      "passed": true
+    },
+    {
+      "check": "7 seat election requires a strict majority",
+      "passed": true
+    },
+    {
+      "check": "Tianfu has 7% food/construction and 5% disease resistance",
+      "passed": true
+    },
+    {
+      "check": "Tianfu is permanent and idempotent",
+      "passed": true
+    },
+    {
+      "check": "external owners have the Tianfu modifier removed",
+      "passed": true
+    },
+    {
+      "check": "current decisions and 80 native research nodes",
+      "passed": true
+    },
+    {
+      "check": "35 regional milestone missions and repeatable services",
+      "passed": true
+    },
+    {
+      "check": "centennial content and repeatable pulse persist",
+      "passed": true
+    },
+    {
+      "check": "war declarations use the isolation gate",
+      "passed": true
+    },
+    {
+      "check": "war calls have a cross-boundary gate",
+      "passed": true
+    },
+    {
+      "check": "IO members precede leaders in the persistent reader",
+      "passed": true
+    },
+    {
+      "check": "release metadata and manifest version match",
+      "passed": true
+    },
+    {
+      "check": "custom effect and trigger references resolve",
+      "passed": true
+    },
+    {
+      "check": "native situation starts deterministically within first year",
+      "passed": true
+    },
+    {
+      "check": "native spawn chance is 100 percent",
+      "passed": true
+    },
+    {
+      "check": "participation includes all IO members and subjects",
+      "passed": true
+    },
+    {
+      "check": "monthly registration does not filter emperor or subjects",
+      "passed": true
+    },
+    {
+      "check": "situation persists after charters and 1457",
+      "passed": true
+    },
+    {
+      "check": "two-year accounts are once per situation",
+      "passed": true
+    },
+    {
+      "check": "cooperative settlement uses adaptive contribution target",
+      "passed": true
+    },
+    {
+      "check": "funding requires real scaled payment",
+      "passed": true
+    },
+    {
+      "check": "obsolete promises hidden",
+      "passed": true
+    },
+    {
+      "check": "centennial arrangement needs a century and actual successes",
+      "passed": true
+    },
+    {
+      "check": "exactly 36 historical capital seats are counted",
+      "passed": true
+    },
+    {
+      "check": "each of seven circles needs strict local majority",
+      "passed": true
+    },
+    {
+      "check": "79 inherited banquet events plus authored story expansion",
+      "passed": true
+    },
+    {
+      "check": "all 36 princes have personal events",
+      "passed": true
+    },
+    {
+      "check": "regional researched options and late recurring events exist",
+      "passed": true
+    },
+    {
+      "check": "situation has native GUI panel",
+      "passed": true
+    },
+    {
+      "check": "all 36 flag tag definitions exist exactly once",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAB",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAB",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAE",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAE",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAF",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAF",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAJ",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAJ",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAL",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAL",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAO",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAO",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAP",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAP",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAQ",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAQ",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAW",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAW",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAX",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAX",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BAZ",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BAZ",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBB",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBB",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBC",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBC",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBE",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBE",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBF",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBF",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBH",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBH",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBI",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBI",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBJ",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBJ",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBL",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBL",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBM",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBM",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBN",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBN",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBO",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBO",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBP",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBP",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBQ",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBQ",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBR",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBR",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBS",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBS",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBT",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBT",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBU",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBU",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBV",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBV",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBW",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBW",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBX",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBX",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBY",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBY",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BBZ",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BBZ",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BCA",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BCA",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BCB",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BCB",
+      "passed": true
+    },
+    {
+      "check": "DDS heraldic charge BCC",
+      "passed": true
+    },
+    {
+      "check": "native flag textures exist BCC",
+      "passed": true
+    },
+    {
+      "check": "all 36 inscription textures are unique",
+      "passed": true
+    },
+    {
+      "check": "all 36 native heraldic definitions are unique",
+      "passed": true
+    },
+    {
+      "check": "country event AI choices use native MTTH base syntax",
+      "passed": true
+    },
+    {
+      "check": "eight sprite atlases map exactly 64 unique research icons",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_common_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_chengdu_plain_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southern_salt_wine_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_eastern_river_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_northern_shudao_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_central_hills_witness_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_western_tea_horse_8",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_4",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_5",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_6",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_7",
+      "passed": true
+    },
+    {
+      "check": "painted research icon hbe_tech_southwestern_valleys_8",
+      "passed": true
+    },
+    {
+      "check": "ten point icons and one native situation icon",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_guoqi",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_yiqi",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_dispute",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_water",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_salt",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_river",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_roads",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_grain",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_tea",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_valleys",
+      "passed": true
+    },
+    {
+      "check": "painted specialty icon hbe_banquet",
+      "passed": true
+    },
+    {
+      "check": "native font icons registered",
+      "passed": true
+    },
+    {
+      "check": "12 painted event backgrounds serve all 96 events",
+      "passed": true
+    },
+    {
+      "check": "event scene mapping resolves",
+      "passed": true
+    },
+    {
+      "check": "painted event background council",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene council",
+      "passed": true
+    },
+    {
+      "check": "painted event background banquet",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene banquet",
+      "passed": true
+    },
+    {
+      "check": "painted event background ledger",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene ledger",
+      "passed": true
+    },
+    {
+      "check": "painted event background water",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene water",
+      "passed": true
+    },
+    {
+      "check": "painted event background salt",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene salt",
+      "passed": true
+    },
+    {
+      "check": "painted event background river",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene river",
+      "passed": true
+    },
+    {
+      "check": "painted event background roads",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene roads",
+      "passed": true
+    },
+    {
+      "check": "painted event background grain",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene grain",
+      "passed": true
+    },
+    {
+      "check": "painted event background tea",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene tea",
+      "passed": true
+    },
+    {
+      "check": "painted event background valleys",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene valleys",
+      "passed": true
+    },
+    {
+      "check": "painted event background academy",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene academy",
+      "passed": true
+    },
+    {
+      "check": "painted event background crisis",
+      "passed": true
+    },
+    {
+      "check": "private native illustration scene crisis",
+      "passed": true
+    },
+    {
+      "check": "96 event illustration tags link private scenes",
+      "passed": true
+    },
+    {
+      "check": "native portrait layers retained and native scene database not overridden",
+      "passed": true
+    },
+    {
+      "check": "eight organization emblems and dedicated panel files",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_empire",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_empire",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_eastern_river",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_eastern_river",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_central_hills",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_central_hills",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "organization emblem hbe_circle_southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "organization panel hbe_circle_southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "painted banquet panel",
+      "passed": true
+    },
+    {
+      "check": "banquet GUI uses painted panel",
+      "passed": true
+    },
+    {
+      "check": "seven atlases supply 70 unique non-research pictures",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_stance_change_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_stance_change_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_stance_change_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_stance_change_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_stance_change_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_stance_change_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_project_fund",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_project_fund",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_project_pledge",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_project_pledge",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_project_reconsider",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_project_reconsider",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_project_select_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_project_select_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_project_select_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_project_select_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_propose_charter_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_propose_charter_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_ballot_vote_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_ballot_vote_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_propose_charter_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_propose_charter_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_ballot_vote_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_ballot_vote_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_chengdu_plain_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_chengdu_plain_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_chengdu_plain_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_chengdu_plain_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southern_salt_wine_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southern_salt_wine_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southern_salt_wine_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southern_salt_wine_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_eastern_river",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_eastern_river",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_eastern_river",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_eastern_river",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_central_hills",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_central_hills",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_role_southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_role_southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_project_subsidize",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_project_subsidize",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_audit_accounts",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_audit_accounts",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_banquet_ledger",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_banquet_ledger",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_propose_charter_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_propose_charter_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_ballot_vote_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_ballot_vote_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_eastern_river_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_eastern_river_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_eastern_river_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_eastern_river_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_northern_shudao_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_northern_shudao_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_northern_shudao_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_northern_shudao_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_central_hills",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_central_hills",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_central_hills_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_central_hills_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_central_hills_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_central_hills_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_western_tea_horse_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_western_tea_horse_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_western_tea_horse_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_western_tea_horse_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_service_southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_service_southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southwestern_valleys_4",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southwestern_valleys_4",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_mission_southwestern_valleys_5",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_mission_southwestern_valleys_5",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_salt_loan",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_salt_loan",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_salt_repay",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_salt_repay",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_status",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_status",
+      "passed": true
+    },
+    {
+      "check": "painted non-research decision hbe_assembly",
+      "passed": true
+    },
+    {
+      "check": "decision picture linked hbe_assembly",
+      "passed": true
+    },
+    {
+      "check": "all current decision images exist and no active checker placeholders",
+      "passed": true
+    },
+    {
+      "check": "all implicit decision titles and catalogue entries localized",
+      "passed": true
+    },
+    {
+      "check": "all visible decisions registered in native country category",
+      "passed": true
+    },
+    {
+      "check": "64 research icons belong to native advance nodes only",
+      "passed": true
+    },
+    {
+      "check": "all native research nodes have requested progression gates and explicit tag potentials",
+      "passed": true
+    },
+    {
+      "check": "native starting technology does not pregrant regional research",
+      "passed": true
+    },
+    {
+      "check": "seven pairs of research branches are mutually exclusive",
+      "passed": true
+    },
+    {
+      "check": "36 single-country events indexed without new autonomous event rolls",
+      "passed": true
+    },
+    {
+      "check": "60 shared or recurring events keep their original dispatch",
+      "passed": true
+    },
+    {
+      "check": "36 distinct native country histories and lobby profiles localized",
+      "passed": true
+    },
+    {
+      "check": "36 redesigned flags contain no text or nameplates",
+      "passed": true
+    },
+    {
+      "check": "70 decisions have full flavor prose separate from mechanics",
+      "passed": true
+    },
+    {
+      "check": "all 96 events have independent two-paragraph Bashu narratives",
+      "passed": true
+    },
+    {
+      "check": "rewritten event narratives omit HRE jokes",
+      "passed": true
+    },
+    {
+      "check": "native glossary definitions have localized names and descriptions",
+      "passed": true
+    },
+    {
+      "check": "all inline hover links resolve to private native game concepts",
+      "passed": true
+    },
+    {
+      "check": "mechanic and historical hover guides are present",
+      "passed": true
+    },
+    {
+      "check": "all narrative descriptions include valid hover links",
+      "passed": true
+    },
+    {
+      "check": "guide icon textures exist",
+      "passed": true
+    },
+    {
+      "check": "ledger narratives preserve dynamic state readouts",
+      "passed": true
+    },
+    {
+      "check": "16 native special buildings with employment and real maintenance",
+      "passed": true
+    },
+    {
+      "check": "all buildings unlocked by preexisting native advances",
+      "passed": true
+    },
+    {
+      "check": "all buildings have domain or circle location potential",
+      "passed": true
+    },
+    {
+      "check": "thirteen civilian institution caps include unfinished construction",
+      "passed": true
+    },
+    {
+      "check": "9 native special recruitable unit types in one shared family",
+      "passed": true
+    },
+    {
+      "check": "unit family shares supply-scaled 20 percent capacity",
+      "passed": true
+    },
+    {
+      "check": "all nine unit types use real supply and geographic recruitment",
+      "passed": true
+    },
+    {
+      "check": "early and late unit unlocking ties to actual advances",
+      "passed": true
+    },
+    {
+      "check": "two late types replace their base troops",
+      "passed": true
+    },
+    {
+      "check": "native research catalogue now has 80 nodes",
+      "passed": true
+    },
+    {
+      "check": "native visual prerequisite edges stay inside their era",
+      "passed": true
+    },
+    {
+      "check": "late original and civic courses appear in the second era",
+      "passed": true
+    },
+    {
+      "check": "agenda country histories selected before vanilla cultural fallback",
+      "passed": true
+    },
+    {
+      "check": "16 new nodes have icons, localization and correct progression gates",
+      "passed": true
+    },
+    {
+      "check": "regional institution advances accept either A or B qualification",
+      "passed": true
+    },
+    {
+      "check": "no opening free grants of new research",
+      "passed": true
+    },
+    {
+      "check": "native law has exactly three policies and five-year switch lock",
+      "passed": true
+    },
+    {
+      "check": "two native estate privileges and seven parliamentary topics",
+      "passed": true
+    },
+    {
+      "check": "clamped burden with three-year relief and yearly recovery",
+      "passed": true
+    },
+    {
+      "check": "seven offices have real-delivery eligibility, five-year terms and 2-office cap",
+      "passed": true
+    },
+    {
+      "check": "old service markers are updated at completion rather than commitment",
+      "passed": true
+    },
+    {
+      "check": "service starts account for policy-specific affordability",
+      "passed": true
+    },
+    {
+      "check": "existing regiments persist when over supply limit",
+      "passed": true
+    },
+    {
+      "check": "all three charter outcomes continue after 1457",
+      "passed": true
+    },
+    {
+      "check": "21 new events localized with repeat-safe dispatch",
+      "passed": true
+    },
+    {
+      "check": "27 native country decisions have multi-paragraph narrative",
+      "passed": true
+    },
+    {
+      "check": "57 distinct new icon/illustration cells plus 3 event scenes",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_assembly_hall",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_works_archive",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_canal_office",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_brocade_school",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_salt_office",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_salt_contract_house",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_river_warehouse",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_cliff_stockade",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_plank_fort",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_gate_registry",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_community_granary",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_witness_house",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_tea_exchange",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_guide_station",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_valley_inn",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_covenant_stockade",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_common_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_common_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civic_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_canal_crossbow",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_canal_crossbow",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_salt_guard",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_salt_guard",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_river_garrison",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_river_garrison",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_pass_rotation",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_pass_rotation",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_granary_militia",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_granary_militia",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_tea_riders",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_tea_riders",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_valley_soldiers",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_valley_soldiers",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_trained_river",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_trained_river",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_permanent_pass",
+      "passed": true
+    },
+    {
+      "check": "explicit unit illustration selector hbe_permanent_pass",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_levy_policy",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_communal_policy",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_paid_policy",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_burden",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_council",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_audit",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_revision",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_civil_ledger",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_0",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_1",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_2",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_3",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_4",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_5",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_office_6",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork hbe_guest_compact",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork civic_council",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork civic_training",
+      "passed": true
+    },
+    {
+      "check": "expansion artwork civic_market",
+      "passed": true
+    },
+    {
+      "check": "all five new mechanics have native hover concepts",
+      "passed": true
+    },
+    {
+      "check": "unit and building construction/maintenance IDs resolve",
+      "passed": true
+    }
+  ],
+  "check_count": 1166,
+  "gameplay_validation": "Structural and resource-reference checks; runtime and visual verification reported separately",
+  "version": "0.3.1"
+}

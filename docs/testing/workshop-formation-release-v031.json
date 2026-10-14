@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "version": "0.3.1",
+  "workshop_item": 3818491932,
+  "payload_bytes": 106208361,
+  "payload_files": 590,
+  "local_install_files": 663,
+  "local_mismatches": [],
+  "languages": {
+    "schinese": {
+      "title": "神圣巴蜀帝国 Holy Bashu Empire",
+      "description_sha256": "49281c5d9ce5e01ac161e1d46e77f1e56c7a88a0553908f996ff2aeed3b7dae9",
+      "bytes": 106208361,
+      "gallery": 5
+    },
+    "english": {
+      "title": "Holy Bashu Empire",
+      "description_sha256": "23d9fea8d1c10cceb555d080c36b413799696288cc0de496c128bd9e897ddf82",
+      "bytes": 106208361,
+      "gallery": 5
+    },
+    "tchinese": {
+      "title": "神圣巴蜀帝国 Holy Bashu Empire",
+      "description_sha256": "49281c5d9ce5e01ac161e1d46e77f1e56c7a88a0553908f996ff2aeed3b7dae9",
+      "bytes": 106208361,
+      "gallery": 5
+    }
+  },
+  "source_manifest_sha256": "b3bf93eba0cad84472892acf7e3352db7ef886af681b27a049e48d1ca2d6e381",
+  "payload_manifest_sha256": "66525cc8d23f7030f10af16217073e74b8fabf659bc177541ae2483db03e7601",
+  "runtime_checks": 49,
+  "structural_checks": 1166
+}

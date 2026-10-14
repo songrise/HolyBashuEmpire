@@ -1,0 +1,369 @@
+{
+  "status": "passed",
+  "version": "0.3.1",
+  "checks": [
+    {
+      "check": "Sichuan actually changes name and flag",
+      "passed": true
+    },
+    {
+      "check": "Sichuan raises rank to kingdom",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_06.eu5 Chongqing actual name flag rank and boundary probes",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_06.eu5 preserves both original identities",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_06.eu5 retains original regional variables",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_10.eu5 Bashu actual name flag and empire rank",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_10.eu5 all Sichuan and Bashu boundary probes",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_10.eu5 Chongqing actual name flag rank and boundary probes",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_10.eu5 preserves both original identities",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_04_10.eu5 retains original regional variables",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 Bashu actual name flag and empire rank",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 all Sichuan and Bashu boundary probes",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 Chongqing actual name flag rank and boundary probes",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 preserves both original identities",
+      "passed": true
+    },
+    {
+      "check": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5 retains original regional variables",
+      "passed": true
+    },
+    {
+      "check": "no new formation or unit registration/runtime errors",
+      "passed": true
+    },
+    {
+      "check": "hbe_canal_crossbow effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_canal_crossbow has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_canal_crossbow has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_guard effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_guard has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_salt_guard has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_river_garrison effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_river_garrison has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_river_garrison has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_pass_rotation effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_pass_rotation has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_pass_rotation has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_granary_militia effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_granary_militia has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_granary_militia has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_tea_riders effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_tea_riders has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_tea_riders has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_valley_soldiers effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_valley_soldiers has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_valley_soldiers has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_trained_river effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_trained_river has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_trained_river has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_permanent_pass effective 500 men",
+      "passed": true
+    },
+    {
+      "check": "hbe_permanent_pass has no movement debuff",
+      "passed": true
+    },
+    {
+      "check": "hbe_permanent_pass has no calendar recruitment gate",
+      "passed": true
+    },
+    {
+      "check": "87 advances including guest licenses have no calendar gates",
+      "passed": true
+    },
+    {
+      "check": "native era and prerequisite progression retained",
+      "passed": true
+    },
+    {
+      "check": "patch is idempotent for every runtime file",
+      "passed": true
+    },
+    {
+      "check": "sichuan alpha emblem registered at 512x512",
+      "passed": true
+    },
+    {
+      "check": "chongqing alpha emblem registered at 512x512",
+      "passed": true
+    },
+    {
+      "check": "bashu alpha emblem registered at 512x512",
+      "passed": true
+    }
+  ],
+  "check_count": 49,
+  "runtime": [
+    {
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_06.eu5",
+      "source_sha256": "cb148110694426f02c6f23f663ff246a5bf30dd925fb0cf205e8e0bf1b092bd9",
+      "original_bab": {
+        "country_name": "\"HQS\"",
+        "flag": "\"HQS\"",
+        "definition": "BAB",
+        "original_tag": "\"BAB\"",
+        "rank": "rank_kingdom",
+        "probe_flags": [
+          "hbe_probe_sichuan_below",
+          "hbe_probe_sichuan_threshold",
+          "hbe_probe_sichuan_city_block",
+          "hbe_probe_sichuan_native_available",
+          "hbe_probe_sichuan_formed"
+        ]
+      },
+      "original_bax": {
+        "country_name": "\"HQC\"",
+        "flag": "\"HQC\"",
+        "definition": "BAX",
+        "original_tag": "\"BAX\"",
+        "rank": "rank_kingdom",
+        "probe_flags": [
+          "hbe_probe_chongqing_below",
+          "hbe_probe_chongqing_threshold",
+          "hbe_probe_chongqing_city_block",
+          "hbe_probe_chongqing_native_available",
+          "hbe_probe_chongqing_formed"
+        ]
+      }
+    },
+    {
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_04_10.eu5",
+      "source_sha256": "68cb7a8b53b013e4f0723cc2a10f2f0803ac55e836a0847abe322dfc34f7e1fe",
+      "original_bab": {
+        "country_name": "\"HQB\"",
+        "flag": "\"HQB\"",
+        "definition": "BAB",
+        "original_tag": "\"BAB\"",
+        "rank": "rank_empire",
+        "probe_flags": [
+          "hbe_probe_sichuan_below",
+          "hbe_probe_sichuan_threshold",
+          "hbe_probe_sichuan_city_block",
+          "hbe_probe_sichuan_native_available",
+          "hbe_probe_sichuan_formed",
+          "hbe_probe_bashu_below",
+          "hbe_probe_bashu_threshold",
+          "hbe_probe_bashu_city_block",
+          "hbe_probe_bashu_native_available",
+          "hbe_probe_bashu_formed"
+        ]
+      },
+      "original_bax": {
+        "country_name": "\"HQC\"",
+        "flag": "\"HQC\"",
+        "definition": "BAX",
+        "original_tag": "\"BAX\"",
+        "rank": "rank_kingdom",
+        "probe_flags": [
+          "hbe_probe_chongqing_below",
+          "hbe_probe_chongqing_threshold",
+          "hbe_probe_chongqing_city_block",
+          "hbe_probe_chongqing_native_available",
+          "hbe_probe_chongqing_formed"
+        ]
+      }
+    },
+    {
+      "save": "scheduled_save_DESKTOP-L1LK2TH_1337_05_02.eu5",
+      "source_sha256": "04e99459403e4f24ac0560037cc1e2e55cacc7ecea470160ee8c5f369293b1b1",
+      "original_bab": {
+        "country_name": "\"HQB\"",
+        "flag": "\"HQB\"",
+        "definition": "BAB",
+        "original_tag": "\"BAB\"",
+        "rank": "rank_empire",
+        "probe_flags": [
+          "hbe_probe_sichuan_below",
+          "hbe_probe_sichuan_threshold",
+          "hbe_probe_sichuan_city_block",
+          "hbe_probe_sichuan_native_available",
+          "hbe_probe_sichuan_formed",
+          "hbe_probe_bashu_below",
+          "hbe_probe_bashu_threshold",
+          "hbe_probe_bashu_city_block",
+          "hbe_probe_bashu_native_available",
+          "hbe_probe_bashu_formed"
+        ]
+      },
+      "original_bax": {
+        "country_name": "\"HQC\"",
+        "flag": "\"HQC\"",
+        "definition": "BAX",
+        "original_tag": "\"BAX\"",
+        "rank": "rank_kingdom",
+        "probe_flags": [
+          "hbe_probe_chongqing_below",
+          "hbe_probe_chongqing_threshold",
+          "hbe_probe_chongqing_city_block",
+          "hbe_probe_chongqing_native_available",
+          "hbe_probe_chongqing_formed"
+        ]
+      }
+    }
+  ],
+  "engine_errors": [],
+  "formations": [
+    {
+      "key": "hbe_form_sichuan",
+      "tag": "HQS",
+      "geography": "hbe_sichuan_core",
+      "total": 133,
+      "minimum": 90,
+      "fraction": 0.67,
+      "cities": [
+        "chengdu",
+        "yibin",
+        "langzhong",
+        "yandao"
+      ],
+      "level": 2,
+      "rank": "rank_kingdom"
+    },
+    {
+      "key": "hbe_form_chongqing",
+      "tag": "HQC",
+      "geography": "hbe_chongqing_core",
+      "total": 31,
+      "minimum": 21,
+      "fraction": 0.67,
+      "cities": [
+        "baxian",
+        "fuzhou_sichuan",
+        "wanzhou"
+      ],
+      "level": 2,
+      "rank": "rank_kingdom"
+    },
+    {
+      "key": "hbe_form_bashu",
+      "tag": "HQB",
+      "geography": "hbe_domain",
+      "total": 164,
+      "minimum": 148,
+      "fraction": 0.9,
+      "cities": [
+        "chengdu",
+        "baxian",
+        "yibin",
+        "langzhong",
+        "yandao",
+        "jianchang_sichuan",
+        "suining"
+      ],
+      "level": 4,
+      "rank": "rank_empire"
+    }
+  ],
+  "scope": "Two-month targeted deterministic engine fixture; granted land tests thresholds and actual cosmetic identity/rank changes. This is not a new long-term natural balance simulation.",
+  "test_only_modifications": [
+    "Three hidden fixture events, start hook, test definition, ownership/controller grants."
+  ],
+  "known_diagnostics": "Existing orphaned compatibility events and unused legacy variable warnings remain separated from new errors."
+}

@@ -1,0 +1,5 @@
+﻿colors = {
+map_HQS = rgb { 50 101 67 }
+map_HQC = rgb { 151 64 48 }
+map_HQB = rgb { 98 60 135 }
+}

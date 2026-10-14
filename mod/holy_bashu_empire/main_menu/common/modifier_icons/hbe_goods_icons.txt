@@ -1,0 +1,40 @@
+﻿global_hbe_shu_embroidery_output_modifier = { positive = "gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds" }
+local_hbe_shu_embroidery_output_modifier = { positive = "gfx/interface/icons/modifier_types/local_hbe_shu_embroidery_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds" }
+hbe_shu_embroidery_impacts_inflation = { positive = "gfx/interface/icons/modifier_types/hbe_shu_embroidery_impacts_inflation.dds" }
+hbe_shu_embroidery_used_for_minting = { positive = "gfx/interface/icons/modifier_types/hbe_shu_embroidery_used_for_minting.dds" }
+ban_exports_of_hbe_shu_embroidery = { positive = "gfx/interface/icons/modifier_types/ban_exports_of_hbe_shu_embroidery.dds" }
+ban_imports_of_hbe_shu_embroidery = { positive = "gfx/interface/icons/modifier_types/ban_imports_of_hbe_shu_embroidery.dds" }
+can_extract_hbe_shu_embroidery = { positive = "gfx/interface/icons/modifier_types/can_extract_hbe_shu_embroidery.dds" }
+global_hbe_shu_embroidery_pop_demand = { positive = "gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_pop_demand.dds" }
+local_hbe_shu_embroidery_establishment_speed = { positive = "gfx/interface/icons/modifier_types/local_hbe_shu_embroidery_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds" }
+global_hbe_shu_embroidery_establishment_speed = { positive = "gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds" }
+global_hbe_well_salt_output_modifier = { positive = "gfx/interface/icons/modifier_types/global_hbe_well_salt_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_well_salt_negative.dds" }
+local_hbe_well_salt_output_modifier = { positive = "gfx/interface/icons/modifier_types/local_hbe_well_salt_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_well_salt_negative.dds" }
+hbe_well_salt_impacts_inflation = { positive = "gfx/interface/icons/modifier_types/hbe_well_salt_impacts_inflation.dds" }
+hbe_well_salt_used_for_minting = { positive = "gfx/interface/icons/modifier_types/hbe_well_salt_used_for_minting.dds" }
+ban_exports_of_hbe_well_salt = { positive = "gfx/interface/icons/modifier_types/ban_exports_of_hbe_well_salt.dds" }
+ban_imports_of_hbe_well_salt = { positive = "gfx/interface/icons/modifier_types/ban_imports_of_hbe_well_salt.dds" }
+can_extract_hbe_well_salt = { positive = "gfx/interface/icons/modifier_types/can_extract_hbe_well_salt.dds" }
+global_hbe_well_salt_pop_demand = { positive = "gfx/interface/icons/modifier_types/global_hbe_well_salt_pop_demand.dds" }
+local_hbe_well_salt_establishment_speed = { positive = "gfx/interface/icons/modifier_types/local_hbe_well_salt_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_well_salt_negative.dds" }
+global_hbe_well_salt_establishment_speed = { positive = "gfx/interface/icons/modifier_types/global_hbe_well_salt_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_well_salt_negative.dds" }
+global_hbe_shu_paper_output_modifier = { positive = "gfx/interface/icons/modifier_types/global_hbe_shu_paper_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_paper_negative.dds" }
+local_hbe_shu_paper_output_modifier = { positive = "gfx/interface/icons/modifier_types/local_hbe_shu_paper_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_paper_negative.dds" }
+hbe_shu_paper_impacts_inflation = { positive = "gfx/interface/icons/modifier_types/hbe_shu_paper_impacts_inflation.dds" }
+hbe_shu_paper_used_for_minting = { positive = "gfx/interface/icons/modifier_types/hbe_shu_paper_used_for_minting.dds" }
+ban_exports_of_hbe_shu_paper = { positive = "gfx/interface/icons/modifier_types/ban_exports_of_hbe_shu_paper.dds" }
+ban_imports_of_hbe_shu_paper = { positive = "gfx/interface/icons/modifier_types/ban_imports_of_hbe_shu_paper.dds" }
+can_extract_hbe_shu_paper = { positive = "gfx/interface/icons/modifier_types/can_extract_hbe_shu_paper.dds" }
+global_hbe_shu_paper_pop_demand = { positive = "gfx/interface/icons/modifier_types/global_hbe_shu_paper_pop_demand.dds" }
+local_hbe_shu_paper_establishment_speed = { positive = "gfx/interface/icons/modifier_types/local_hbe_shu_paper_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_paper_negative.dds" }
+global_hbe_shu_paper_establishment_speed = { positive = "gfx/interface/icons/modifier_types/global_hbe_shu_paper_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_shu_paper_negative.dds" }
+global_hbe_border_tea_output_modifier = { positive = "gfx/interface/icons/modifier_types/global_hbe_border_tea_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds" }
+local_hbe_border_tea_output_modifier = { positive = "gfx/interface/icons/modifier_types/local_hbe_border_tea_output_modifier.dds" negative = "gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds" }
+hbe_border_tea_impacts_inflation = { positive = "gfx/interface/icons/modifier_types/hbe_border_tea_impacts_inflation.dds" }
+hbe_border_tea_used_for_minting = { positive = "gfx/interface/icons/modifier_types/hbe_border_tea_used_for_minting.dds" }
+ban_exports_of_hbe_border_tea = { positive = "gfx/interface/icons/modifier_types/ban_exports_of_hbe_border_tea.dds" }
+ban_imports_of_hbe_border_tea = { positive = "gfx/interface/icons/modifier_types/ban_imports_of_hbe_border_tea.dds" }
+can_extract_hbe_border_tea = { positive = "gfx/interface/icons/modifier_types/can_extract_hbe_border_tea.dds" }
+global_hbe_border_tea_pop_demand = { positive = "gfx/interface/icons/modifier_types/global_hbe_border_tea_pop_demand.dds" }
+local_hbe_border_tea_establishment_speed = { positive = "gfx/interface/icons/modifier_types/local_hbe_border_tea_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds" }
+global_hbe_border_tea_establishment_speed = { positive = "gfx/interface/icons/modifier_types/global_hbe_border_tea_establishment_speed.dds" negative = "gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds" }

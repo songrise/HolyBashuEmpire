@@ -1,0 +1,24 @@
+﻿hbe_form_sichuan = {
+ decision_category = country_specific_decisions
+ image = "gfx/interface/hbe/formables/sichuan.dds"
+ potential = { NOT = { has_variable = hbe_formed_regional_state } NOT = { has_variable = hbe_formed_bashu } any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_sichuan_core } }
+ allow = { hbe_can_form_sichuan = yes }
+ ai_will_do = { value = 1 }
+ option = { name = hbe_form_sichuan.a ai_chance = { value = 100 } effect = { hbe_found_sichuan = yes } }
+}
+hbe_form_chongqing = {
+ decision_category = country_specific_decisions
+ image = "gfx/interface/hbe/formables/chongqing.dds"
+ potential = { NOT = { has_variable = hbe_formed_regional_state } NOT = { has_variable = hbe_formed_bashu } any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_chongqing_core } }
+ allow = { hbe_can_form_chongqing = yes }
+ ai_will_do = { value = 1 }
+ option = { name = hbe_form_chongqing.a ai_chance = { value = 100 } effect = { hbe_found_chongqing = yes } }
+}
+hbe_form_bashu = {
+ decision_category = country_specific_decisions
+ image = "gfx/interface/hbe/formables/bashu.dds"
+ potential = { NOT = { has_variable = hbe_formed_bashu } any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_domain } }
+ allow = { hbe_can_form_bashu = yes }
+ ai_will_do = { value = 1 }
+ option = { name = hbe_form_bashu.a ai_chance = { value = 100 } effect = { hbe_found_bashu = yes } }
+}

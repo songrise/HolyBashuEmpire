@@ -73,7 +73,7 @@ def main():
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
-    check('97 decisions and 80 native research nodes',manifest['decisions']==97 and manifest['research_nodes']==80)
+    check('current decisions and 80 native research nodes',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and manifest['research_nodes']==80)
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
     check('centennial content and repeatable pulse persist','current_year >= 1437' in pulse and 'yearly_country_pulse' in pulse and 'current_year < 1457' not in pulse)
@@ -171,14 +171,14 @@ def main():
     for e in pictures:
         painted_dds('painted non-research decision '+e['key'],e['image'],(440,1080),e['sha256'])
         check('decision picture linked '+e['key'],any(p in decision_blocks[e['key']] for p in [f'gfx/interface/hbe/decisions/{e["key"]}.dds',f'gfx/interface/hbe/v021/decisions/{e["key"]}.dds']))
-    check('all 97 decision images exist and no active checker placeholders',len(decision_blocks)==97 and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
+    check('all current decision images exist and no active checker placeholders',len(decision_blocks)==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
     check('all implicit decision titles and catalogue entries localized',all(k+'.title' in loc_keys and k+'.title.entry' in loc_keys and k+'.desc.entry' in loc_keys for k in decision_blocks))
-    check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and 'tags = {' in b for b in decision_blocks.values()))
+    check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and ('tags = {' in b or k.startswith('hbe_form_')) for k,b in decision_blocks.items()))
     native=json.loads((ROOT/'data/native_content_v011.json').read_text(encoding='utf-8'))
     advances=(m/'in_game/common/advances/hbe_advances.txt').read_text(encoding='utf-8-sig')
     advance_blocks={key:advances[a:b] for key,_,a,b,_ in blocks(advances,0)}
     check('64 research icons belong to native advance nodes only',len(advance_blocks)==64 and not any(k.startswith('hbe_tech_') for k in decision_blocks) and all('icon = '+k in b and k+'_desc' in loc_keys for k,b in advance_blocks.items()))
-    check('all native research nodes have original year gates and explicit tag potentials',all('current_year >= '+str(e['year']) in advance_blocks[e['key']] and all('has_or_had_tag = '+t in advance_blocks[e['key']] for t in e['tags']) for e in native['advances']))
+    check('all native research nodes have requested progression gates and explicit tag potentials',all(('current_year' not in advance_blocks[e['key']] if 'formables_units_v031' in manifest else 'current_year >= '+str(e['year']) in advance_blocks[e['key']]) and all('has_or_had_tag = '+t in advance_blocks[e['key']] for t in e['tags']) for e in native['advances']))
     check('native starting technology does not pregrant regional research',all('starting_technology_level = 99' in b for b in advance_blocks.values()))
     def excludes(body,key):
         return any(re.search(r'(?:has_advance\s*=\s*'+re.escape(key)+r'\b|hbe_advance_gate_'+re.escape(key)+r'\s*=\s*yes)',body[b:e]) for k,_,b,e,_ in blocks(body) if k=='NOT')

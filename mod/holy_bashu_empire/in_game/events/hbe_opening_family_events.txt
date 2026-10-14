@@ -2,3 +2,8 @@
 hbe_opening_family.1 = {
  outcome = neutral title = hbe_opening_family.1.title
  type = country_event hidden = yes immediate = { hbe_apply_opening_pacts = yes every_country = { limit = { hbe_is_prince = yes } hbe_repair_opening_child_abilities = yes } } }
+
+hbe_opening_family.2 = {
+ type = country_event hidden = yes outcome = neutral title = hbe_opening_family.2.title
+ immediate = { hbe_expire_opening_truces = yes }
+}

@@ -1,0 +1,301 @@
+﻿hbe_schedule_opening_expiry = {
+ if = { limit = { NOT = { has_variable = hbe_opening_expiry_scheduled } }
+  set_variable = hbe_opening_expiry_scheduled
+  trigger_event_silently = { id = hbe_opening_family.2 days = 365 }
+ }
+}
+hbe_expire_opening_pair_flags = {
+ if = { limit = { has_variable = hbe_opening_truce_BAB c:BAB ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAB
+  remove_variable = hbe_opening_truce_BAB
+  c:BAB ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAE c:BAE ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAE
+  remove_variable = hbe_opening_truce_BAE
+  c:BAE ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAF c:BAF ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAF
+  remove_variable = hbe_opening_truce_BAF
+  c:BAF ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAJ c:BAJ ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAJ
+  remove_variable = hbe_opening_truce_BAJ
+  c:BAJ ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAL c:BAL ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAL
+  remove_variable = hbe_opening_truce_BAL
+  c:BAL ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAO c:BAO ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAO
+  remove_variable = hbe_opening_truce_BAO
+  c:BAO ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAP c:BAP ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAP
+  remove_variable = hbe_opening_truce_BAP
+  c:BAP ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAQ c:BAQ ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAQ
+  remove_variable = hbe_opening_truce_BAQ
+  c:BAQ ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAW c:BAW ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAW
+  remove_variable = hbe_opening_truce_BAW
+  c:BAW ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAX c:BAX ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAX
+  remove_variable = hbe_opening_truce_BAX
+  c:BAX ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BAZ c:BAZ ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BAZ
+  remove_variable = hbe_opening_truce_BAZ
+  c:BAZ ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBB c:BBB ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBB
+  remove_variable = hbe_opening_truce_BBB
+  c:BBB ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBC c:BBC ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBC
+  remove_variable = hbe_opening_truce_BBC
+  c:BBC ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBE c:BBE ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBE
+  remove_variable = hbe_opening_truce_BBE
+  c:BBE ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBF c:BBF ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBF
+  remove_variable = hbe_opening_truce_BBF
+  c:BBF ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBH c:BBH ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBH
+  remove_variable = hbe_opening_truce_BBH
+  c:BBH ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBI c:BBI ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBI
+  remove_variable = hbe_opening_truce_BBI
+  c:BBI ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBJ c:BBJ ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBJ
+  remove_variable = hbe_opening_truce_BBJ
+  c:BBJ ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBL c:BBL ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBL
+  remove_variable = hbe_opening_truce_BBL
+  c:BBL ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBM c:BBM ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBM
+  remove_variable = hbe_opening_truce_BBM
+  c:BBM ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBN c:BBN ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBN
+  remove_variable = hbe_opening_truce_BBN
+  c:BBN ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBO c:BBO ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBO
+  remove_variable = hbe_opening_truce_BBO
+  c:BBO ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBP c:BBP ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBP
+  remove_variable = hbe_opening_truce_BBP
+  c:BBP ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBQ c:BBQ ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBQ
+  remove_variable = hbe_opening_truce_BBQ
+  c:BBQ ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBR c:BBR ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBR
+  remove_variable = hbe_opening_truce_BBR
+  c:BBR ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBS c:BBS ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBS
+  remove_variable = hbe_opening_truce_BBS
+  c:BBS ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBT c:BBT ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBT
+  remove_variable = hbe_opening_truce_BBT
+  c:BBT ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBU c:BBU ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBU
+  remove_variable = hbe_opening_truce_BBU
+  c:BBU ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBV c:BBV ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBV
+  remove_variable = hbe_opening_truce_BBV
+  c:BBV ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBW c:BBW ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBW
+  remove_variable = hbe_opening_truce_BBW
+  c:BBW ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBX c:BBX ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBX
+  remove_variable = hbe_opening_truce_BBX
+  c:BBX ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBY c:BBY ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBY
+  remove_variable = hbe_opening_truce_BBY
+  c:BBY ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BBZ c:BBZ ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BBZ
+  remove_variable = hbe_opening_truce_BBZ
+  c:BBZ ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BCA c:BCA ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BCA
+  remove_variable = hbe_opening_truce_BCA
+  c:BCA ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BCB c:BCB ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BCB
+  remove_variable = hbe_opening_truce_BCB
+  c:BCB ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+ if = { limit = { has_variable = hbe_opening_truce_BCC c:BCC ?= { has_variable = hbe_opening_truce_$self$ } }
+  remove_truce_with = c:BCC
+  remove_variable = hbe_opening_truce_BCC
+  c:BCC ?= { remove_truce_with = root remove_variable = hbe_opening_truce_$self$ }
+ }
+}
+hbe_expire_opening_truces = {
+ if = { limit = { has_or_had_tag = BAB } hbe_expire_opening_pair_flags = { self = BAB } }
+ else_if = { limit = { has_or_had_tag = BAE } hbe_expire_opening_pair_flags = { self = BAE } }
+ else_if = { limit = { has_or_had_tag = BAF } hbe_expire_opening_pair_flags = { self = BAF } }
+ else_if = { limit = { has_or_had_tag = BAJ } hbe_expire_opening_pair_flags = { self = BAJ } }
+ else_if = { limit = { has_or_had_tag = BAL } hbe_expire_opening_pair_flags = { self = BAL } }
+ else_if = { limit = { has_or_had_tag = BAO } hbe_expire_opening_pair_flags = { self = BAO } }
+ else_if = { limit = { has_or_had_tag = BAP } hbe_expire_opening_pair_flags = { self = BAP } }
+ else_if = { limit = { has_or_had_tag = BAQ } hbe_expire_opening_pair_flags = { self = BAQ } }
+ else_if = { limit = { has_or_had_tag = BAW } hbe_expire_opening_pair_flags = { self = BAW } }
+ else_if = { limit = { has_or_had_tag = BAX } hbe_expire_opening_pair_flags = { self = BAX } }
+ else_if = { limit = { has_or_had_tag = BAZ } hbe_expire_opening_pair_flags = { self = BAZ } }
+ else_if = { limit = { has_or_had_tag = BBB } hbe_expire_opening_pair_flags = { self = BBB } }
+ else_if = { limit = { has_or_had_tag = BBC } hbe_expire_opening_pair_flags = { self = BBC } }
+ else_if = { limit = { has_or_had_tag = BBE } hbe_expire_opening_pair_flags = { self = BBE } }
+ else_if = { limit = { has_or_had_tag = BBF } hbe_expire_opening_pair_flags = { self = BBF } }
+ else_if = { limit = { has_or_had_tag = BBH } hbe_expire_opening_pair_flags = { self = BBH } }
+ else_if = { limit = { has_or_had_tag = BBI } hbe_expire_opening_pair_flags = { self = BBI } }
+ else_if = { limit = { has_or_had_tag = BBJ } hbe_expire_opening_pair_flags = { self = BBJ } }
+ else_if = { limit = { has_or_had_tag = BBL } hbe_expire_opening_pair_flags = { self = BBL } }
+ else_if = { limit = { has_or_had_tag = BBM } hbe_expire_opening_pair_flags = { self = BBM } }
+ else_if = { limit = { has_or_had_tag = BBN } hbe_expire_opening_pair_flags = { self = BBN } }
+ else_if = { limit = { has_or_had_tag = BBO } hbe_expire_opening_pair_flags = { self = BBO } }
+ else_if = { limit = { has_or_had_tag = BBP } hbe_expire_opening_pair_flags = { self = BBP } }
+ else_if = { limit = { has_or_had_tag = BBQ } hbe_expire_opening_pair_flags = { self = BBQ } }
+ else_if = { limit = { has_or_had_tag = BBR } hbe_expire_opening_pair_flags = { self = BBR } }
+ else_if = { limit = { has_or_had_tag = BBS } hbe_expire_opening_pair_flags = { self = BBS } }
+ else_if = { limit = { has_or_had_tag = BBT } hbe_expire_opening_pair_flags = { self = BBT } }
+ else_if = { limit = { has_or_had_tag = BBU } hbe_expire_opening_pair_flags = { self = BBU } }
+ else_if = { limit = { has_or_had_tag = BBV } hbe_expire_opening_pair_flags = { self = BBV } }
+ else_if = { limit = { has_or_had_tag = BBW } hbe_expire_opening_pair_flags = { self = BBW } }
+ else_if = { limit = { has_or_had_tag = BBX } hbe_expire_opening_pair_flags = { self = BBX } }
+ else_if = { limit = { has_or_had_tag = BBY } hbe_expire_opening_pair_flags = { self = BBY } }
+ else_if = { limit = { has_or_had_tag = BBZ } hbe_expire_opening_pair_flags = { self = BBZ } }
+ else_if = { limit = { has_or_had_tag = BCA } hbe_expire_opening_pair_flags = { self = BCA } }
+ else_if = { limit = { has_or_had_tag = BCB } hbe_expire_opening_pair_flags = { self = BCB } }
+ else_if = { limit = { has_or_had_tag = BCC } hbe_expire_opening_pair_flags = { self = BCC } }
+ set_variable = hbe_opening_expiry_completed
+}
+hbe_clear_broken_opening_pair = {
+ if = { limit = { scope:recipient = { has_or_had_tag = BAB } } remove_variable = hbe_opening_truce_BAB }
+ if = { limit = { root = { has_or_had_tag = BAB } } scope:recipient = { remove_variable = hbe_opening_truce_BAB } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAE } } remove_variable = hbe_opening_truce_BAE }
+ if = { limit = { root = { has_or_had_tag = BAE } } scope:recipient = { remove_variable = hbe_opening_truce_BAE } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAF } } remove_variable = hbe_opening_truce_BAF }
+ if = { limit = { root = { has_or_had_tag = BAF } } scope:recipient = { remove_variable = hbe_opening_truce_BAF } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAJ } } remove_variable = hbe_opening_truce_BAJ }
+ if = { limit = { root = { has_or_had_tag = BAJ } } scope:recipient = { remove_variable = hbe_opening_truce_BAJ } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAL } } remove_variable = hbe_opening_truce_BAL }
+ if = { limit = { root = { has_or_had_tag = BAL } } scope:recipient = { remove_variable = hbe_opening_truce_BAL } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAO } } remove_variable = hbe_opening_truce_BAO }
+ if = { limit = { root = { has_or_had_tag = BAO } } scope:recipient = { remove_variable = hbe_opening_truce_BAO } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAP } } remove_variable = hbe_opening_truce_BAP }
+ if = { limit = { root = { has_or_had_tag = BAP } } scope:recipient = { remove_variable = hbe_opening_truce_BAP } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAQ } } remove_variable = hbe_opening_truce_BAQ }
+ if = { limit = { root = { has_or_had_tag = BAQ } } scope:recipient = { remove_variable = hbe_opening_truce_BAQ } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAW } } remove_variable = hbe_opening_truce_BAW }
+ if = { limit = { root = { has_or_had_tag = BAW } } scope:recipient = { remove_variable = hbe_opening_truce_BAW } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAX } } remove_variable = hbe_opening_truce_BAX }
+ if = { limit = { root = { has_or_had_tag = BAX } } scope:recipient = { remove_variable = hbe_opening_truce_BAX } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BAZ } } remove_variable = hbe_opening_truce_BAZ }
+ if = { limit = { root = { has_or_had_tag = BAZ } } scope:recipient = { remove_variable = hbe_opening_truce_BAZ } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBB } } remove_variable = hbe_opening_truce_BBB }
+ if = { limit = { root = { has_or_had_tag = BBB } } scope:recipient = { remove_variable = hbe_opening_truce_BBB } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBC } } remove_variable = hbe_opening_truce_BBC }
+ if = { limit = { root = { has_or_had_tag = BBC } } scope:recipient = { remove_variable = hbe_opening_truce_BBC } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBE } } remove_variable = hbe_opening_truce_BBE }
+ if = { limit = { root = { has_or_had_tag = BBE } } scope:recipient = { remove_variable = hbe_opening_truce_BBE } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBF } } remove_variable = hbe_opening_truce_BBF }
+ if = { limit = { root = { has_or_had_tag = BBF } } scope:recipient = { remove_variable = hbe_opening_truce_BBF } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBH } } remove_variable = hbe_opening_truce_BBH }
+ if = { limit = { root = { has_or_had_tag = BBH } } scope:recipient = { remove_variable = hbe_opening_truce_BBH } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBI } } remove_variable = hbe_opening_truce_BBI }
+ if = { limit = { root = { has_or_had_tag = BBI } } scope:recipient = { remove_variable = hbe_opening_truce_BBI } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBJ } } remove_variable = hbe_opening_truce_BBJ }
+ if = { limit = { root = { has_or_had_tag = BBJ } } scope:recipient = { remove_variable = hbe_opening_truce_BBJ } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBL } } remove_variable = hbe_opening_truce_BBL }
+ if = { limit = { root = { has_or_had_tag = BBL } } scope:recipient = { remove_variable = hbe_opening_truce_BBL } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBM } } remove_variable = hbe_opening_truce_BBM }
+ if = { limit = { root = { has_or_had_tag = BBM } } scope:recipient = { remove_variable = hbe_opening_truce_BBM } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBN } } remove_variable = hbe_opening_truce_BBN }
+ if = { limit = { root = { has_or_had_tag = BBN } } scope:recipient = { remove_variable = hbe_opening_truce_BBN } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBO } } remove_variable = hbe_opening_truce_BBO }
+ if = { limit = { root = { has_or_had_tag = BBO } } scope:recipient = { remove_variable = hbe_opening_truce_BBO } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBP } } remove_variable = hbe_opening_truce_BBP }
+ if = { limit = { root = { has_or_had_tag = BBP } } scope:recipient = { remove_variable = hbe_opening_truce_BBP } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBQ } } remove_variable = hbe_opening_truce_BBQ }
+ if = { limit = { root = { has_or_had_tag = BBQ } } scope:recipient = { remove_variable = hbe_opening_truce_BBQ } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBR } } remove_variable = hbe_opening_truce_BBR }
+ if = { limit = { root = { has_or_had_tag = BBR } } scope:recipient = { remove_variable = hbe_opening_truce_BBR } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBS } } remove_variable = hbe_opening_truce_BBS }
+ if = { limit = { root = { has_or_had_tag = BBS } } scope:recipient = { remove_variable = hbe_opening_truce_BBS } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBT } } remove_variable = hbe_opening_truce_BBT }
+ if = { limit = { root = { has_or_had_tag = BBT } } scope:recipient = { remove_variable = hbe_opening_truce_BBT } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBU } } remove_variable = hbe_opening_truce_BBU }
+ if = { limit = { root = { has_or_had_tag = BBU } } scope:recipient = { remove_variable = hbe_opening_truce_BBU } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBV } } remove_variable = hbe_opening_truce_BBV }
+ if = { limit = { root = { has_or_had_tag = BBV } } scope:recipient = { remove_variable = hbe_opening_truce_BBV } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBW } } remove_variable = hbe_opening_truce_BBW }
+ if = { limit = { root = { has_or_had_tag = BBW } } scope:recipient = { remove_variable = hbe_opening_truce_BBW } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBX } } remove_variable = hbe_opening_truce_BBX }
+ if = { limit = { root = { has_or_had_tag = BBX } } scope:recipient = { remove_variable = hbe_opening_truce_BBX } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBY } } remove_variable = hbe_opening_truce_BBY }
+ if = { limit = { root = { has_or_had_tag = BBY } } scope:recipient = { remove_variable = hbe_opening_truce_BBY } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BBZ } } remove_variable = hbe_opening_truce_BBZ }
+ if = { limit = { root = { has_or_had_tag = BBZ } } scope:recipient = { remove_variable = hbe_opening_truce_BBZ } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BCA } } remove_variable = hbe_opening_truce_BCA }
+ if = { limit = { root = { has_or_had_tag = BCA } } scope:recipient = { remove_variable = hbe_opening_truce_BCA } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BCB } } remove_variable = hbe_opening_truce_BCB }
+ if = { limit = { root = { has_or_had_tag = BCB } } scope:recipient = { remove_variable = hbe_opening_truce_BCB } }
+ if = { limit = { scope:recipient = { has_or_had_tag = BCC } } remove_variable = hbe_opening_truce_BCC }
+ if = { limit = { root = { has_or_had_tag = BCC } } scope:recipient = { remove_variable = hbe_opening_truce_BCC } }
+}

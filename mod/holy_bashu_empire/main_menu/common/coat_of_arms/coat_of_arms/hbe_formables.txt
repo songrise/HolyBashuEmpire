@@ -1,0 +1,3 @@
+﻿HQS = { pattern = "pattern_fringe.dds" color1 = "hbe_pine" color2 = "hbe_gold" textured_emblem = { texture = "te_hbe_form_sichuan.dds" instance = { position = { 0.5 0.5 } scale = { 0.72 0.95 } } } }
+HQC = { pattern = "pattern_fringe.dds" color1 = "hbe_cinnabar" color2 = "hbe_gold" textured_emblem = { texture = "te_hbe_form_chongqing.dds" instance = { position = { 0.5 0.5 } scale = { 0.72 0.95 } } } }
+HQB = { pattern = "pattern_fringe.dds" color1 = "hbe_indigo" color2 = "hbe_gold" textured_emblem = { texture = "te_hbe_form_bashu.dds" instance = { position = { 0.5 0.5 } scale = { 0.72 0.95 } } } }
