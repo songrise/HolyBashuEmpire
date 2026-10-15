@@ -117,6 +117,7 @@ function selectEvent(id,focus=false){
  const tags=[e.category,...e.regions.map(r=>catalog.regions[r]),...e.countries.map(c=>c.name),e.hidden?'隐藏维护':'玩家可见',e.status==='draft'?'新增草稿':'已接入游戏'];
  $('#detail').innerHTML=`<div class="event-head"><div><div class="eyebrow">BASHU / EVENT ARCHIVE</div><h2>${prose(e.title)}</h2><div class="tags">${tags.map(t=>`<span class="tag ${t==='隐藏维护'?'hidden':''}">${esc(t)}</span>`).join('')}</div></div><div class="id-label">${esc(e.id)} <button id="copy-id">复制 ID</button></div></div>
  ${e.status==='draft'?`<section class="draft-notice"><strong>新增故事草稿 · 尚未接入游戏</strong><p>这里展示已写好的正文和选择。效果数值、触发脚本与奖励尚待实现，下面不显示游戏效果。</p>${e.chain?`<p>长线：${esc(e.chain)} · 首章最早 ${e.draftYear} 年 · 本章距首章 ${e.draftOffset} 年（计划时间）</p>`:''}${e.draftEndings?`<p>计划结局：${e.draftEndings.map(esc).join(' / ')} · 永久奖励尚待实现</p>`:''}</section>`:''}
+ ${e.illustrationVariants?`<label class="art-preview-label">差分预览（实机按此前选择显示） <select id="art-variant">${e.illustrationVariants.map((a,i)=>`<option value="${i}">${esc(a.label)}</option>`).join('')}</select></label>`:''}
  ${e.illustration?`<img class="story-image" src="${esc(e.illustration)}" alt="事件配图" loading="lazy">`:''}
  <div class="overview"><div><span>选项</span>${e.options.length} 个${e.options.length>1?' · 有抉择':e.hidden?' · 自动执行':' · 通知'}</div><div><span>调用入口</span>${e.incoming.length} 处脚本引用</div><div><span>事件条件</span>${e.trigger?'设有接收条件':'由调用脚本决定'}</div></div>
  ${e.description?`<section class="story"><div class="eyebrow">事件正文</div><div class="prose">${prose(e.description)}</div>${code(e.description,'查看原始本地化文本')}</section>`:'<p class="note">此隐藏事件没有玩家可见正文。</p>'}
@@ -130,6 +131,7 @@ function selectEvent(id,focus=false){
  ${e.outgoing.length?`<div class="section-title"><h3>后续事件</h3></div>${e.outgoing.map(id=>`<button class="event-link" data-event="${esc(id)}">${esc(id)} · ${prose(catalog.events.find(x=>x.id===id)?.title)}</button>`).join('')}`:''}
  <div class="debug-row"><div class="source">${esc(source)}</div><button id="copy-source">复制路径</button></div>${code(e.script,'完整事件脚本')}${code(e.raw,'源文件原文')}`;
  $('#detail').scrollTop=0;
+ if(e.illustrationVariants)$('#art-variant').onchange=ev=>{$('.story-image').src=e.illustrationVariants[Number(ev.target.value)].src;};
  $('#copy-id').onclick=()=>copy(e.id,$('#copy-id'));
  $('#copy-source').onclick=()=>copy(source,$('#copy-source'));
  if(focus)$('#detail').focus({preventScroll:true});

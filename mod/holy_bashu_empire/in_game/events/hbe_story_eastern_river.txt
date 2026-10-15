@@ -58,7 +58,7 @@ add_prestige = -3 }
 
 hbe_story_eastern_river.3 = {
  type = country_event title = hbe_story_eastern_river.3.title desc = hbe_story_eastern_river.3.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 2 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_eastern_river_clock }
@@ -86,7 +86,7 @@ add_prestige = -3 }
 
 hbe_story_eastern_river.4 = {
  type = country_event title = hbe_story_eastern_river.4.title desc = hbe_story_eastern_river.4.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 3 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_eastern_river_clock }
@@ -114,7 +114,7 @@ add_prestige = -3 }
 
 hbe_story_eastern_river.5 = {
  type = country_event title = hbe_story_eastern_river.5.title desc = hbe_story_eastern_river.5.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 4 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_eastern_river_clock }
@@ -142,7 +142,7 @@ add_prestige = -3 }
 
 hbe_story_eastern_river.6 = {
  type = country_event title = hbe_story_eastern_river.6.title desc = hbe_story_eastern_river.6.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 5 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_eastern_river_clock }
@@ -169,7 +169,7 @@ add_prestige = -3 }
 
 hbe_story_eastern_river.7 = {
  type = country_event title = hbe_story_eastern_river.7.title desc = hbe_story_eastern_river.7.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 6 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_eastern_river_clock }
@@ -225,7 +225,7 @@ set_variable = hbe_story_eastern_river_ending_2 }
 
 hbe_story_eastern_river.8 = {
  type = country_event title = hbe_story_eastern_river.8.title desc = hbe_story_eastern_river.8.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 7 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_eastern_river_clock }

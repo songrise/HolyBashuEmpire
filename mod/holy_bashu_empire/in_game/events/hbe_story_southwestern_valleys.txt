@@ -59,7 +59,7 @@ add_prestige = -3 }
 
 hbe_story_southwestern_valleys.3 = {
  type = country_event title = hbe_story_southwestern_valleys.3.title desc = hbe_story_southwestern_valleys.3.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bridge }
+ illustration_tags = { 1000 = hbe_progress_art_southwestern_valleys }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 2 NOT = { has_variable = hbe_story_southwestern_valleys_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southwestern_valleys_clock }
@@ -87,7 +87,7 @@ add_prestige = -3 }
 
 hbe_story_southwestern_valleys.4 = {
  type = country_event title = hbe_story_southwestern_valleys.4.title desc = hbe_story_southwestern_valleys.4.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bridge }
+ illustration_tags = { 1000 = hbe_progress_art_southwestern_valleys }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 3 NOT = { has_variable = hbe_story_southwestern_valleys_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southwestern_valleys_clock }
@@ -115,7 +115,7 @@ add_prestige = -3 }
 
 hbe_story_southwestern_valleys.5 = {
  type = country_event title = hbe_story_southwestern_valleys.5.title desc = hbe_story_southwestern_valleys.5.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bridge }
+ illustration_tags = { 1000 = hbe_progress_art_southwestern_valleys }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 4 NOT = { has_variable = hbe_story_southwestern_valleys_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southwestern_valleys_clock }
@@ -142,7 +142,7 @@ add_prestige = -3 }
 
 hbe_story_southwestern_valleys.6 = {
  type = country_event title = hbe_story_southwestern_valleys.6.title desc = hbe_story_southwestern_valleys.6.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bridge }
+ illustration_tags = { 1000 = hbe_progress_art_southwestern_valleys }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 5 NOT = { has_variable = hbe_story_southwestern_valleys_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southwestern_valleys_clock }
@@ -170,7 +170,7 @@ add_prestige = -3 }
 
 hbe_story_southwestern_valleys.7 = {
  type = country_event title = hbe_story_southwestern_valleys.7.title desc = hbe_story_southwestern_valleys.7.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bridge }
+ illustration_tags = { 1000 = hbe_progress_art_southwestern_valleys }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 6 NOT = { has_variable = hbe_story_southwestern_valleys_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southwestern_valleys_clock }
@@ -225,7 +225,7 @@ set_variable = hbe_story_southwestern_valleys_ending_2 }
 
 hbe_story_southwestern_valleys.8 = {
  type = country_event title = hbe_story_southwestern_valleys.8.title desc = hbe_story_southwestern_valleys.8.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bridge }
+ illustration_tags = { 1000 = hbe_progress_art_southwestern_valleys }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_story_southwestern_valleys_phase = 7 NOT = { has_variable = hbe_story_southwestern_valleys_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southwestern_valleys_clock }

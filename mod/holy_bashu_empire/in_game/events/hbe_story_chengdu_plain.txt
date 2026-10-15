@@ -61,7 +61,7 @@ add_prestige = -3 }
 
 hbe_story_chengdu_plain.3 = {
  type = country_event title = hbe_story_chengdu_plain.3.title desc = hbe_story_chengdu_plain.3.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_progress_art_chengdu_plain }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 2 NOT = { has_variable = hbe_story_chengdu_plain_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_chengdu_plain_clock }
@@ -90,7 +90,7 @@ add_prestige = -3 }
 
 hbe_story_chengdu_plain.4 = {
  type = country_event title = hbe_story_chengdu_plain.4.title desc = hbe_story_chengdu_plain.4.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_progress_art_chengdu_plain }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 3 NOT = { has_variable = hbe_story_chengdu_plain_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_chengdu_plain_clock }
@@ -119,7 +119,7 @@ add_prestige = -3 }
 
 hbe_story_chengdu_plain.5 = {
  type = country_event title = hbe_story_chengdu_plain.5.title desc = hbe_story_chengdu_plain.5.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_progress_art_chengdu_plain }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 4 NOT = { has_variable = hbe_story_chengdu_plain_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_chengdu_plain_clock }
@@ -148,7 +148,7 @@ add_prestige = -3 }
 
 hbe_story_chengdu_plain.6 = {
  type = country_event title = hbe_story_chengdu_plain.6.title desc = hbe_story_chengdu_plain.6.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_progress_art_chengdu_plain }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 5 NOT = { has_variable = hbe_story_chengdu_plain_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_chengdu_plain_clock }
@@ -176,7 +176,7 @@ add_prestige = -3 }
 
 hbe_story_chengdu_plain.7 = {
  type = country_event title = hbe_story_chengdu_plain.7.title desc = hbe_story_chengdu_plain.7.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_progress_art_chengdu_plain }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 6 NOT = { has_variable = hbe_story_chengdu_plain_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_chengdu_plain_clock }
@@ -233,7 +233,7 @@ set_variable = hbe_story_chengdu_plain_ending_2 }
 
 hbe_story_chengdu_plain.8 = {
  type = country_event title = hbe_story_chengdu_plain.8.title desc = hbe_story_chengdu_plain.8.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_progress_art_chengdu_plain }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 7 NOT = { has_variable = hbe_story_chengdu_plain_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_chengdu_plain_clock }

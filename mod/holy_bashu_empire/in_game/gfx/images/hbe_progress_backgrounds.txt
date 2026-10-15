@@ -1,0 +1,278 @@
+﻿hbe_progress_background_chengdu_plain = { tag = "hbe_progress_background_chengdu_plain"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/bamboo.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/panda_sanctuary.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_chengdu_plain_direction var:hbe_story_chengdu_plain_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/panda_garden.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_chengdu_plain_direction var:hbe_story_chengdu_plain_direction < 0 } }
+}
+
+hbe_progress_background_southern_salt_wine = { tag = "hbe_progress_background_southern_salt_wine"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/fossils.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/fossil_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_southern_salt_wine_direction var:hbe_story_southern_salt_wine_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/fossil_gallery.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_southern_salt_wine_direction var:hbe_story_southern_salt_wine_direction < 0 } }
+}
+
+hbe_progress_background_eastern_river = { tag = "hbe_progress_background_eastern_river"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/river.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_eastern_river_direction var:hbe_story_eastern_river_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_convoy.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_eastern_river_direction var:hbe_story_eastern_river_direction < 0 } }
+}
+
+hbe_progress_background_northern_shudao = { tag = "hbe_progress_background_northern_shudao"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/observatory.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/observatory_school.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_northern_shudao_direction var:hbe_story_northern_shudao_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/gate_time.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_northern_shudao_direction var:hbe_story_northern_shudao_direction < 0 } }
+}
+
+hbe_progress_background_central_hills = { tag = "hbe_progress_background_central_hills"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/terraces.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/terrace_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_central_hills_direction var:hbe_story_central_hills_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/land_registry.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_central_hills_direction var:hbe_story_central_hills_direction < 0 } }
+}
+
+hbe_progress_background_western_tea_horse = { tag = "hbe_progress_background_western_tea_horse"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/veterinary.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/veterinary_school.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_western_tea_horse_direction var:hbe_story_western_tea_horse_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/stud_farm.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_western_tea_horse_direction var:hbe_story_western_tea_horse_direction < 0 } }
+}
+
+hbe_progress_background_southwestern_valleys = { tag = "hbe_progress_background_southwestern_valleys"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/bridge.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_southwestern_valleys_direction var:hbe_story_southwestern_valleys_direction > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_bureau.dds" priority = 100 scope = country trigger = { has_variable = hbe_story_southwestern_valleys_direction var:hbe_story_southwestern_valleys_direction < 0 } }
+}
+
+hbe_progress_background_short_chengdu_plain_1 = { tag = "hbe_progress_background_short_chengdu_plain_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_1_art_route var:hbe_short_chengdu_plain_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_guild.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_1_art_route var:hbe_short_chengdu_plain_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_1_art_route var:hbe_short_chengdu_plain_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_chengdu_plain_2 = { tag = "hbe_progress_background_short_chengdu_plain_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_2_art_route var:hbe_short_chengdu_plain_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_private.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_2_art_route var:hbe_short_chengdu_plain_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_2_art_route var:hbe_short_chengdu_plain_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_chengdu_plain_3 = { tag = "hbe_progress_background_short_chengdu_plain_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/bamboo.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/terrace_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_3_art_route var:hbe_short_chengdu_plain_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/land_registry.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_3_art_route var:hbe_short_chengdu_plain_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_chengdu_plain_3_art_route var:hbe_short_chengdu_plain_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_southern_salt_wine_1 = { tag = "hbe_progress_background_short_southern_salt_wine_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/salt_workshop.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_1_art_route var:hbe_short_southern_salt_wine_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_regulated.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_1_art_route var:hbe_short_southern_salt_wine_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/land_registry.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_1_art_route var:hbe_short_southern_salt_wine_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_southern_salt_wine_2 = { tag = "hbe_progress_background_short_southern_salt_wine_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_2_art_route var:hbe_short_southern_salt_wine_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_regulated.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_2_art_route var:hbe_short_southern_salt_wine_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_2_art_route var:hbe_short_southern_salt_wine_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_southern_salt_wine_3 = { tag = "hbe_progress_background_short_southern_salt_wine_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/fossils.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/memorial_common.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_3_art_route var:hbe_short_southern_salt_wine_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_private.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_3_art_route var:hbe_short_southern_salt_wine_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southern_salt_wine_3_art_route var:hbe_short_southern_salt_wine_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_eastern_river_1 = { tag = "hbe_progress_background_short_eastern_river_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/river.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_convoy.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_eastern_river_2 = { tag = "hbe_progress_background_short_eastern_river_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/shipyard.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_convoy.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_eastern_river_3 = { tag = "hbe_progress_background_short_eastern_river_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/fossils.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/memorial_common.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/stone_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_northern_shudao_1 = { tag = "hbe_progress_background_short_northern_shudao_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/observatory.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/observatory_school.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_1_art_route var:hbe_short_northern_shudao_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/gate_time.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_1_art_route var:hbe_short_northern_shudao_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_1_art_route var:hbe_short_northern_shudao_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_northern_shudao_2 = { tag = "hbe_progress_background_short_northern_shudao_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/bridge.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/terrace_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_2_art_route var:hbe_short_northern_shudao_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/gate_time.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_2_art_route var:hbe_short_northern_shudao_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_2_art_route var:hbe_short_northern_shudao_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_northern_shudao_3 = { tag = "hbe_progress_background_short_northern_shudao_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_3_art_route var:hbe_short_northern_shudao_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_bureau.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_3_art_route var:hbe_short_northern_shudao_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_northern_shudao_3_art_route var:hbe_short_northern_shudao_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_central_hills_1 = { tag = "hbe_progress_background_short_central_hills_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/terraces.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/granary_common.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_1_art_route var:hbe_short_central_hills_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_regulated.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_1_art_route var:hbe_short_central_hills_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_1_art_route var:hbe_short_central_hills_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_central_hills_2 = { tag = "hbe_progress_background_short_central_hills_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_2_art_route var:hbe_short_central_hills_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_guild.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_2_art_route var:hbe_short_central_hills_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_2_art_route var:hbe_short_central_hills_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_central_hills_3 = { tag = "hbe_progress_background_short_central_hills_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/council.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_3_art_route var:hbe_short_central_hills_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_bureau.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_3_art_route var:hbe_short_central_hills_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/terrace_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_central_hills_3_art_route var:hbe_short_central_hills_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_western_tea_horse_1 = { tag = "hbe_progress_background_short_western_tea_horse_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_1_art_route var:hbe_short_western_tea_horse_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_regulated.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_1_art_route var:hbe_short_western_tea_horse_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_1_art_route var:hbe_short_western_tea_horse_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_western_tea_horse_2 = { tag = "hbe_progress_background_short_western_tea_horse_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/veterinary.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/veterinary_school.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_2_art_route var:hbe_short_western_tea_horse_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/stud_farm.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_2_art_route var:hbe_short_western_tea_horse_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/veterinary.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_2_art_route var:hbe_short_western_tea_horse_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_western_tea_horse_3 = { tag = "hbe_progress_background_short_western_tea_horse_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/bridge.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_3_art_route var:hbe_short_western_tea_horse_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/gate_time.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_3_art_route var:hbe_short_western_tea_horse_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_open.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_western_tea_horse_3_art_route var:hbe_short_western_tea_horse_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_southwestern_valleys_1 = { tag = "hbe_progress_background_short_southwestern_valleys_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/river.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_convoy.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_southwestern_valleys_2 = { tag = "hbe_progress_background_short_southwestern_valleys_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/granary_common.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_sponsored.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_southwestern_valleys_3 = { tag = "hbe_progress_background_short_southwestern_valleys_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/observatory.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_private.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_1 = { tag = "hbe_progress_background_short_shared_1"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/festival.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_open.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_regulated.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_2 = { tag = "hbe_progress_background_short_shared_2"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/settlement.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_open.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_sponsored.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_3 = { tag = "hbe_progress_background_short_shared_3"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/medicine.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/shipyard.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/market_regulated.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/medicine_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_4 = { tag = "hbe_progress_background_short_shared_4"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/observatory.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_private.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_5 = { tag = "hbe_progress_background_short_shared_5"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/festival.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/festival.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_office.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/terrace_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_6 = { tag = "hbe_progress_background_short_shared_6"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/medicine.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/medicine_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/medicine_guild.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/medicine.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_7 = { tag = "hbe_progress_background_short_shared_7"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/terraces.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/granary_common.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/land_registry.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_8 = { tag = "hbe_progress_background_short_shared_8"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/craft.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_guild.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/craft_archive.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_9 = { tag = "hbe_progress_background_short_shared_9"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/settlement.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_open.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_sponsored.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_10 = { tag = "hbe_progress_background_short_shared_10"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/council.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/council_public.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_private.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/bridge_bureau.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_11 = { tag = "hbe_progress_background_short_shared_11"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/river.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_commons.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/river_convoy.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/shipyard.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 3 } }
+}
+
+hbe_progress_background_short_shared_12 = { tag = "hbe_progress_background_short_shared_12"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/festival.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/memorial_common.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 1 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/reading_private.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 2 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/festival.dds" priority = 100 scope = country trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 3 } }
+}
+
+hbe_progress_background_migration = { tag = "hbe_progress_background_migration"
+ illustration_image = { texture_file = "gfx/interface/hbe/story_events/migration_pact.dds" priority = 1 scope = country trigger = { always = yes } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_open.dds" priority = 100 scope = country trigger = { has_variable = hbe_migration_acceptance var:hbe_migration_acceptance > 0 } }
+ illustration_image = { texture_file = "gfx/interface/hbe/ending_events/migration_sponsored.dds" priority = 100 scope = country trigger = { has_variable = hbe_migration_acceptance var:hbe_migration_acceptance < 0 } }
+}

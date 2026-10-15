@@ -1,0 +1,1955 @@
+{
+  "status": "passed",
+  "check_count": 485,
+  "checks": [
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_migration_events.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_central_hills.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_chengdu_plain.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_eastern_river.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_northern_shudao.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_shared.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_southern_salt_wine.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_southwestern_valleys.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_short_western_tea_horse.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_central_hills.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_chengdu_plain.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_eastern_river.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_northern_shudao.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_southern_salt_wine.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_southwestern_valleys.txt",
+      "passed": true
+    },
+    {
+      "check": "gameplay token preservation: in_game/events/hbe_story_western_tea_horse.txt",
+      "passed": true
+    },
+    {
+      "check": "115 intermediate events use dynamic art",
+      "passed": true
+    },
+    {
+      "check": "198 presentation-only choice markers",
+      "passed": true
+    },
+    {
+      "check": "art exists: chengdu_plain/panda_sanctuary",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "art exists: chengdu_plain/panda_garden",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: chengdu_plain",
+      "passed": true
+    },
+    {
+      "check": "art exists: southern_salt_wine/fossil_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "art exists: southern_salt_wine/fossil_gallery",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: southern_salt_wine",
+      "passed": true
+    },
+    {
+      "check": "art exists: eastern_river/river_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: eastern_river",
+      "passed": true
+    },
+    {
+      "check": "art exists: eastern_river/river_convoy",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: eastern_river",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: eastern_river",
+      "passed": true
+    },
+    {
+      "check": "art exists: northern_shudao/observatory_school",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "art exists: northern_shudao/gate_time",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: northern_shudao",
+      "passed": true
+    },
+    {
+      "check": "art exists: central_hills/terrace_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: central_hills",
+      "passed": true
+    },
+    {
+      "check": "art exists: central_hills/land_registry",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: central_hills",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: central_hills",
+      "passed": true
+    },
+    {
+      "check": "art exists: western_tea_horse/veterinary_school",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "art exists: western_tea_horse/stud_farm",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: western_tea_horse",
+      "passed": true
+    },
+    {
+      "check": "art exists: southwestern_valleys/bridge_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "art exists: southwestern_valleys/bridge_bureau",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: southwestern_valleys",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_1/craft_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_1/craft_guild",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_1/craft_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_chengdu_plain_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_2/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_2/reading_private",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_2/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_chengdu_plain_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_3/terrace_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_3/land_registry",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_chengdu_plain_3/craft_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_chengdu_plain_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_1/salt_workshop",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_1/market_regulated",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_1/land_registry",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_southern_salt_wine_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_2/craft_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_2/market_regulated",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_2/craft_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_southern_salt_wine_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_3/memorial_common",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_3/reading_private",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southern_salt_wine_3/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_southern_salt_wine_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_1/river_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_1/river_convoy",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_1/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_eastern_river_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_2/shipyard",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_2/river_convoy",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_2/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_eastern_river_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_3/memorial_common",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_3/stone_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_eastern_river_3/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_eastern_river_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_1/observatory_school",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_1/gate_time",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_1/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_northern_shudao_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_2/terrace_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_2/gate_time",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_2/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_northern_shudao_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_3/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_3/bridge_bureau",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_northern_shudao_3/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_northern_shudao_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_1/granary_common",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_1/market_regulated",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_1/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_central_hills_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_2/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_2/craft_guild",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_2/craft_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_central_hills_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_3/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_3/bridge_bureau",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_central_hills_3/terrace_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_central_hills_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_1/craft_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_1/market_regulated",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_1/craft_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_western_tea_horse_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_2/veterinary_school",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_2/stud_farm",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_2/veterinary",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_western_tea_horse_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_3/bridge_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_3/gate_time",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_western_tea_horse_3/market_open",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_western_tea_horse_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_1/river_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_1/river_convoy",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_1/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_southwestern_valleys_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_2/granary_common",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_2/migration_sponsored",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_2/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_southwestern_valleys_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_3/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_3/reading_private",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_southwestern_valleys_3/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_southwestern_valleys_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_1/market_open",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_1/market_regulated",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_1/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_1",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_1",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_2/migration_open",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_2/migration_sponsored",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_2/bridge_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_2",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_2",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_3/shipyard",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_3/market_regulated",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_3/medicine_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_3",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_3",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_4/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_4",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_4/reading_private",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_4",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_4/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_4",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_4",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_5/festival",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_5",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_5/council_office",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_5",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_5/terrace_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_5",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_5",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_6/medicine_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_6",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_6/medicine_guild",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_6",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_6/medicine",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_6",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_6",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_7/granary_common",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_7",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_7/land_registry",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_7",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_7/reading_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_7",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_7",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_8/craft_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_8",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_8/craft_guild",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_8",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_8/craft_archive",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_8",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_8",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_9/migration_open",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_9",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_9/migration_sponsored",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_9",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_9/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_9",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_9",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_10/council_public",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_10",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_10/reading_private",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_10",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_10/bridge_bureau",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_10",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_10",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_11/river_commons",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_11",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_11/river_convoy",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_11",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_11/shipyard",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_11",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_11",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_12/memorial_common",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_12",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_12/reading_private",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_12",
+      "passed": true
+    },
+    {
+      "check": "art exists: short_shared_12/festival",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: short_shared_12",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: short_shared_12",
+      "passed": true
+    },
+    {
+      "check": "art exists: migration/migration_open",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: migration",
+      "passed": true
+    },
+    {
+      "check": "art exists: migration/migration_sponsored",
+      "passed": true
+    },
+    {
+      "check": "unset variable guarded: migration",
+      "passed": true
+    },
+    {
+      "check": "neutral/old-save fallback exists: migration",
+      "passed": true
+    },
+    {
+      "check": "browser exposes all 115 changing illustrations",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.9",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_migration.10",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_central_hills.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_central_hills.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_central_hills.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_central_hills.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_central_hills.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_central_hills.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_chengdu_plain.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_chengdu_plain.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_chengdu_plain.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_chengdu_plain.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_chengdu_plain.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_chengdu_plain.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_eastern_river.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_eastern_river.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_eastern_river.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_eastern_river.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_eastern_river.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_eastern_river.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_northern_shudao.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_northern_shudao.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_northern_shudao.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_northern_shudao.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_northern_shudao.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_northern_shudao.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.32",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.33",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.42",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.43",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.52",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.53",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.62",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.63",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.72",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.73",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.82",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.83",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.92",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.93",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.102",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.103",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.112",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_shared.113",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southern_salt_wine.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southern_salt_wine.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southern_salt_wine.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southern_salt_wine.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southern_salt_wine.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southern_salt_wine.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southwestern_valleys.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southwestern_valleys.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southwestern_valleys.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southwestern_valleys.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southwestern_valleys.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_southwestern_valleys.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_western_tea_horse.2",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_western_tea_horse.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_western_tea_horse.12",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_western_tea_horse.13",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_western_tea_horse.22",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_short_western_tea_horse.23",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_central_hills.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_central_hills.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_central_hills.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_central_hills.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_central_hills.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_central_hills.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_chengdu_plain.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_chengdu_plain.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_chengdu_plain.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_chengdu_plain.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_chengdu_plain.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_chengdu_plain.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_eastern_river.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_eastern_river.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_eastern_river.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_eastern_river.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_eastern_river.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_eastern_river.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_northern_shudao.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_northern_shudao.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_northern_shudao.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_northern_shudao.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_northern_shudao.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_northern_shudao.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southern_salt_wine.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southern_salt_wine.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southern_salt_wine.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southern_salt_wine.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southern_salt_wine.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southern_salt_wine.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southwestern_valleys.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southwestern_valleys.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southwestern_valleys.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southwestern_valleys.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southwestern_valleys.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_southwestern_valleys.8",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_western_tea_horse.3",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_western_tea_horse.4",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_western_tea_horse.5",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_western_tea_horse.6",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_western_tea_horse.7",
+      "passed": true
+    },
+    {
+      "check": "browser default is the chosen branch image: hbe_story_western_tea_horse.8",
+      "passed": true
+    },
+    {
+      "check": "exactly four static selections",
+      "passed": true
+    },
+    {
+      "check": "pandas replace the terrace selection",
+      "passed": true
+    },
+    {
+      "check": "four single-plane static scenes",
+      "passed": true
+    },
+    {
+      "check": "no parallax animation or UV motion",
+      "passed": true
+    },
+    {
+      "check": "craft exact vanilla canvas",
+      "passed": true
+    },
+    {
+      "check": "craft opaque canvas",
+      "passed": true
+    },
+    {
+      "check": "craft native BC3/DXT5 texture",
+      "passed": true
+    },
+    {
+      "check": "craft texture hash",
+      "passed": true
+    },
+    {
+      "check": "craft approved source hash",
+      "passed": true
+    },
+    {
+      "check": "craft native scene and image link",
+      "passed": true
+    },
+    {
+      "check": "river exact vanilla canvas",
+      "passed": true
+    },
+    {
+      "check": "river opaque canvas",
+      "passed": true
+    },
+    {
+      "check": "river native BC3/DXT5 texture",
+      "passed": true
+    },
+    {
+      "check": "river texture hash",
+      "passed": true
+    },
+    {
+      "check": "river approved source hash",
+      "passed": true
+    },
+    {
+      "check": "river native scene and image link",
+      "passed": true
+    },
+    {
+      "check": "observatory exact vanilla canvas",
+      "passed": true
+    },
+    {
+      "check": "observatory opaque canvas",
+      "passed": true
+    },
+    {
+      "check": "observatory native BC3/DXT5 texture",
+      "passed": true
+    },
+    {
+      "check": "observatory texture hash",
+      "passed": true
+    },
+    {
+      "check": "observatory approved source hash",
+      "passed": true
+    },
+    {
+      "check": "observatory native scene and image link",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary exact vanilla canvas",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary opaque canvas",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary native BC3/DXT5 texture",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary texture hash",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary approved source hash",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary native scene and image link",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese four native quote slots",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese native title and attribution formatting",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese four credited excerpts",
+      "passed": true
+    },
+    {
+      "check": "english four native quote slots",
+      "passed": true
+    },
+    {
+      "check": "english native title and attribution formatting",
+      "passed": true
+    },
+    {
+      "check": "english four credited excerpts",
+      "passed": true
+    },
+    {
+      "check": "native loading GUI is not overridden",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/migration_open.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/veterinary_school.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/reading_public.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/observatory_school.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/craft_guild.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/bamboo.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/bridge_bureau.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/observatory.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/veterinary.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/migration_sponsored.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/stud_farm.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/fossil_archive.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/fossils.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/reading_private.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/craft_archive.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/settlement.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/panda_garden.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/panda_sanctuary.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/terrace_commons.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/river.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/bridge.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/medicine.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/fossil_gallery.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/memorial_common.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/council.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/medicine_public.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/council_office.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/migration_pact.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/market_open.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/shipyard.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/granary_common.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/craft_public.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/craft.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/salt_workshop.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/market_regulated.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/council_public.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/river_commons.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/bridge_commons.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/river_convoy.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/terraces.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/stone_archive.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/gate_time.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/story_events/festival.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/medicine_guild.dds",
+      "passed": true
+    },
+    {
+      "check": "progress texture resolves: gfx/interface/hbe/ending_events/land_registry.dds",
+      "passed": true
+    }
+  ],
+  "intermediate_events": 115,
+  "art_markers": 198,
+  "static_loading_scenes": 4,
+  "dimensions": [
+    3840,
+    2160
+  ],
+  "gameplay_effects_changed": false,
+  "baseline": "df5c2c6"
+}

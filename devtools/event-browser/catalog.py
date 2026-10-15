@@ -221,7 +221,16 @@ def build_catalog(mod):
         for tag in sorted(set(tags)):
             if not any(c['tag'] == tag for c in event['countries']):
                 event['countries'].append({'tag': tag, 'name': loc.get(tag, tag)})
+    progress_file = mod.resolve().parents[1] / 'data/progress_art_v031.json'
+    progress_routes = {r['key']: r for r in json.loads(progress_file.read_text(encoding='utf-8')).get('routes', [])} if progress_file.exists() else {}
     for event in events:
+        progress = re.search(r'hbe_progress_art_(\w+)', event['raw'])
+        if progress and progress[1] in progress_routes:
+            route = progress_routes[progress[1]]
+            prefix = '上一章选项 ' if route.get('presentation_variable') else '当前路线 '
+            event['illustrationVariants'] = [dict(src=('/ending-art/' if (mod.resolve().parents[1]/'assets/event_endings_v031'/(art+'.png')).exists() else '/art/')+art+'.png', label=prefix+chr(65+n), condition=condition) for n,(art,condition) in enumerate(route['variants'])]
+            event['illustrationVariants'].append(dict(src='/art/'+route['neutral_fallback']+'.png', label='开篇 / 尚未分流 / 旧存档回退', condition='fallback'))
+            event['illustration'] = event['illustrationVariants'][0]['src']
         match=re.search(r'hbe_story_art_(\w+)',event['raw'])
         if match:event['illustration']='/art/'+match[1]+'.png'
         ending=re.search(r'hbe_ending_art_(\w+)',event['raw'])

@@ -10,22 +10,34 @@ add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_short_choice_shared_1_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_1_phase value = 1 }
 remove_variable = hbe_short_shared_1_pending
-set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 } } option = { name = hbe_short_shared.1.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_1_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.1.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_1_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_shared_1_phase value = 1 }
 remove_variable = hbe_short_shared_1_pending
-set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 } } option = { name = hbe_short_shared.1.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_1_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.1.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_1_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_1_phase value = 1 }
 remove_variable = hbe_short_shared_1_pending
-set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 } } option = { name = hbe_short_shared.1.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_1_phase value = 3 }
+set_variable = { name = hbe_short_shared_1_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_1_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.1.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_1_phase value = 3 }
 remove_variable = hbe_short_shared_1_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.2 = {
  type = country_event title = hbe_short_shared.2.title desc = hbe_short_shared.2.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_festival }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_1 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_1_phase = 1 NOT = { has_variable = hbe_short_shared_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_1_seen
@@ -36,22 +48,34 @@ hbe_short_shared.2 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_1_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_1_phase value = 2 }
 remove_variable = hbe_short_shared_1_pending
-set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 } } option = { name = hbe_short_shared.2.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_1_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.2.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_1_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_1_phase value = 2 }
 remove_variable = hbe_short_shared_1_pending
-set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 } } option = { name = hbe_short_shared.2.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_1_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.2.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_1_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_1_phase value = 2 }
 remove_variable = hbe_short_shared_1_pending
-set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 } } option = { name = hbe_short_shared.2.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_1_phase value = 3 }
+set_variable = { name = hbe_short_shared_1_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_1_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.2.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_1_phase value = 3 }
 remove_variable = hbe_short_shared_1_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.3 = {
  type = country_event title = hbe_short_shared.3.title desc = hbe_short_shared.3.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_festival }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_1 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_1_phase = 2 NOT = { has_variable = hbe_short_shared_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_1_seen
@@ -95,22 +119,34 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_short_choice_shared_2_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_2_phase value = 1 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 6 } } option = { name = hbe_short_shared.11.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_2_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.11.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_2_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_2_phase value = 1 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 6 } } option = { name = hbe_short_shared.11.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_2_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.11.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_2_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_2_phase value = 1 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 6 } } option = { name = hbe_short_shared.11.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_2_phase value = 3 }
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_2_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.11.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_2_phase value = 3 }
 remove_variable = hbe_short_shared_2_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.12 = {
  type = country_event title = hbe_short_shared.12.title desc = hbe_short_shared.12.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_settlement }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_2 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_2_phase = 1 NOT = { has_variable = hbe_short_shared_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_2_seen
@@ -121,22 +157,34 @@ hbe_short_shared.12 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_2_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_2_phase value = 2 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 } } option = { name = hbe_short_shared.12.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_2_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.12.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
 add_country_modifier = { modifier = hbe_short_choice_shared_2_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 set_variable = { name = hbe_short_shared_2_phase value = 2 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 } } option = { name = hbe_short_shared.12.c trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_2_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.12.c trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_2_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_2_phase value = 2 }
 remove_variable = hbe_short_shared_2_pending
-set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 } } option = { name = hbe_short_shared.12.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_2_phase value = 3 }
+set_variable = { name = hbe_short_shared_2_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_2_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.12.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_2_phase value = 3 }
 remove_variable = hbe_short_shared_2_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.13 = {
  type = country_event title = hbe_short_shared.13.title desc = hbe_short_shared.13.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_settlement }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_2 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_2_phase = 2 NOT = { has_variable = hbe_short_shared_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_2_seen
@@ -179,22 +227,34 @@ hbe_short_shared.21 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_3_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_3_phase value = 1 }
 remove_variable = hbe_short_shared_3_pending
-set_variable = { name = hbe_short_shared_3_clock value = yes months = 6 } } option = { name = hbe_short_shared.21.b ai_chance = { base = 30 } add_prestige = 1
+set_variable = { name = hbe_short_shared_3_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_3_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.21.b ai_chance = { base = 30 } add_prestige = 1
 add_country_modifier = { modifier = hbe_short_choice_shared_3_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_3_phase value = 1 }
 remove_variable = hbe_short_shared_3_pending
-set_variable = { name = hbe_short_shared_3_clock value = yes months = 6 } } option = { name = hbe_short_shared.21.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_3_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_3_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.21.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_3_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_3_phase value = 1 }
 remove_variable = hbe_short_shared_3_pending
-set_variable = { name = hbe_short_shared_3_clock value = yes months = 6 } } option = { name = hbe_short_shared.21.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_3_phase value = 3 }
+set_variable = { name = hbe_short_shared_3_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_3_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.21.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_3_phase value = 3 }
 remove_variable = hbe_short_shared_3_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.22 = {
  type = country_event title = hbe_short_shared.22.title desc = hbe_short_shared.22.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_medicine }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_3 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_3_phase = 1 NOT = { has_variable = hbe_short_shared_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_3_seen
@@ -205,22 +265,34 @@ hbe_short_shared.22 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_3_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_3_phase value = 2 }
 remove_variable = hbe_short_shared_3_pending
-set_variable = { name = hbe_short_shared_3_clock value = yes months = 12 } } option = { name = hbe_short_shared.22.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_3_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_3_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.22.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_3_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_3_phase value = 2 }
 remove_variable = hbe_short_shared_3_pending
-set_variable = { name = hbe_short_shared_3_clock value = yes months = 12 } } option = { name = hbe_short_shared.22.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_3_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_3_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.22.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_3_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_3_phase value = 2 }
 remove_variable = hbe_short_shared_3_pending
-set_variable = { name = hbe_short_shared_3_clock value = yes months = 12 } } option = { name = hbe_short_shared.22.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_3_phase value = 3 }
+set_variable = { name = hbe_short_shared_3_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_3_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.22.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_3_phase value = 3 }
 remove_variable = hbe_short_shared_3_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.23 = {
  type = country_event title = hbe_short_shared.23.title desc = hbe_short_shared.23.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_medicine }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_3 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_3_phase = 2 NOT = { has_variable = hbe_short_shared_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_3_seen
@@ -266,23 +338,35 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_short_choice_shared_4_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_4_phase value = 1 }
 remove_variable = hbe_short_shared_4_pending
-set_variable = { name = hbe_short_shared_4_clock value = yes months = 6 } } option = { name = hbe_short_shared.31.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_4_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_4_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.31.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_4_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_4_phase value = 1 }
 remove_variable = hbe_short_shared_4_pending
-set_variable = { name = hbe_short_shared_4_clock value = yes months = 6 } } option = { name = hbe_short_shared.31.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_4_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_4_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.31.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_4_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_4_phase value = 1 }
 remove_variable = hbe_short_shared_4_pending
-set_variable = { name = hbe_short_shared_4_clock value = yes months = 6 } } option = { name = hbe_short_shared.31.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_4_phase value = 3 }
+set_variable = { name = hbe_short_shared_4_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_4_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.31.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_4_phase value = 3 }
 remove_variable = hbe_short_shared_4_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.32 = {
  type = country_event title = hbe_short_shared.32.title desc = hbe_short_shared.32.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_observatory }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_4 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_4_phase = 1 NOT = { has_variable = hbe_short_shared_4_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_4_seen
@@ -294,23 +378,35 @@ add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_short_choice_shared_4_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_4_phase value = 2 }
 remove_variable = hbe_short_shared_4_pending
-set_variable = { name = hbe_short_shared_4_clock value = yes months = 12 } } option = { name = hbe_short_shared.32.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_4_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_4_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.32.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_4_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_4_phase value = 2 }
 remove_variable = hbe_short_shared_4_pending
-set_variable = { name = hbe_short_shared_4_clock value = yes months = 12 } } option = { name = hbe_short_shared.32.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_4_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_4_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.32.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_shared_4_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_4_phase value = 2 }
 remove_variable = hbe_short_shared_4_pending
-set_variable = { name = hbe_short_shared_4_clock value = yes months = 12 } } option = { name = hbe_short_shared.32.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_4_phase value = 3 }
+set_variable = { name = hbe_short_shared_4_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_4_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.32.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_4_phase value = 3 }
 remove_variable = hbe_short_shared_4_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.33 = {
  type = country_event title = hbe_short_shared.33.title desc = hbe_short_shared.33.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_observatory }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_4 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_4_phase = 2 NOT = { has_variable = hbe_short_shared_4_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_4_seen
@@ -355,23 +451,35 @@ hbe_short_shared.41 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_5_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_5_phase value = 1 }
 remove_variable = hbe_short_shared_5_pending
-set_variable = { name = hbe_short_shared_5_clock value = yes months = 6 } } option = { name = hbe_short_shared.41.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_5_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_5_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.41.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_5_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_5_phase value = 1 }
 remove_variable = hbe_short_shared_5_pending
-set_variable = { name = hbe_short_shared_5_clock value = yes months = 6 } } option = { name = hbe_short_shared.41.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+set_variable = { name = hbe_short_shared_5_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_5_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.41.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_5_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_5_phase value = 1 }
 remove_variable = hbe_short_shared_5_pending
-set_variable = { name = hbe_short_shared_5_clock value = yes months = 6 } } option = { name = hbe_short_shared.41.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_5_phase value = 3 }
+set_variable = { name = hbe_short_shared_5_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_5_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.41.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_5_phase value = 3 }
 remove_variable = hbe_short_shared_5_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.42 = {
  type = country_event title = hbe_short_shared.42.title desc = hbe_short_shared.42.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_festival }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_5 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_5_phase = 1 NOT = { has_variable = hbe_short_shared_5_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_5_seen
@@ -382,22 +490,34 @@ hbe_short_shared.42 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_5_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_5_phase value = 2 }
 remove_variable = hbe_short_shared_5_pending
-set_variable = { name = hbe_short_shared_5_clock value = yes months = 12 } } option = { name = hbe_short_shared.42.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_5_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_5_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.42.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_5_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_5_phase value = 2 }
 remove_variable = hbe_short_shared_5_pending
-set_variable = { name = hbe_short_shared_5_clock value = yes months = 12 } } option = { name = hbe_short_shared.42.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_5_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_5_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.42.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_5_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_5_phase value = 2 }
 remove_variable = hbe_short_shared_5_pending
-set_variable = { name = hbe_short_shared_5_clock value = yes months = 12 } } option = { name = hbe_short_shared.42.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_5_phase value = 3 }
+set_variable = { name = hbe_short_shared_5_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_5_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.42.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_5_phase value = 3 }
 remove_variable = hbe_short_shared_5_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.43 = {
  type = country_event title = hbe_short_shared.43.title desc = hbe_short_shared.43.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_festival }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_5 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_5_phase = 2 NOT = { has_variable = hbe_short_shared_5_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_5_seen
@@ -441,24 +561,36 @@ add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_short_choice_shared_6_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_6_phase value = 1 }
 remove_variable = hbe_short_shared_6_pending
-set_variable = { name = hbe_short_shared_6_clock value = yes months = 6 } } option = { name = hbe_short_shared.51.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_6_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_6_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.51.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_6_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_6_phase value = 1 }
 remove_variable = hbe_short_shared_6_pending
-set_variable = { name = hbe_short_shared_6_clock value = yes months = 6 } } option = { name = hbe_short_shared.51.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+set_variable = { name = hbe_short_shared_6_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_6_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.51.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_shared_6_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_6_phase value = 1 }
 remove_variable = hbe_short_shared_6_pending
-set_variable = { name = hbe_short_shared_6_clock value = yes months = 6 } } option = { name = hbe_short_shared.51.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_6_phase value = 3 }
+set_variable = { name = hbe_short_shared_6_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_6_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.51.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_6_phase value = 3 }
 remove_variable = hbe_short_shared_6_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.52 = {
  type = country_event title = hbe_short_shared.52.title desc = hbe_short_shared.52.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_medicine }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_6 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_6_phase = 1 NOT = { has_variable = hbe_short_shared_6_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_6_seen
@@ -469,23 +601,35 @@ hbe_short_shared.52 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_6_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_6_phase value = 2 }
 remove_variable = hbe_short_shared_6_pending
-set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 } } option = { name = hbe_short_shared.52.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_6_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.52.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_6_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_6_phase value = 2 }
 remove_variable = hbe_short_shared_6_pending
-set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 } } option = { name = hbe_short_shared.52.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_6_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.52.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_shared_6_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_6_phase value = 2 }
 remove_variable = hbe_short_shared_6_pending
-set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 } } option = { name = hbe_short_shared.52.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_6_phase value = 3 }
+set_variable = { name = hbe_short_shared_6_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_6_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.52.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_6_phase value = 3 }
 remove_variable = hbe_short_shared_6_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.53 = {
  type = country_event title = hbe_short_shared.53.title desc = hbe_short_shared.53.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_medicine }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_6 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_6_phase = 2 NOT = { has_variable = hbe_short_shared_6_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_6_seen
@@ -529,22 +673,34 @@ hbe_short_shared.61 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_7_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_7_phase value = 1 }
 remove_variable = hbe_short_shared_7_pending
-set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 } } option = { name = hbe_short_shared.61.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_7_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.61.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_7_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_7_phase value = 1 }
 remove_variable = hbe_short_shared_7_pending
-set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 } } option = { name = hbe_short_shared.61.c trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_7_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.61.c trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_7_1_3 years = 2 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 2 }
 set_variable = { name = hbe_short_shared_7_phase value = 1 }
 remove_variable = hbe_short_shared_7_pending
-set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 } } option = { name = hbe_short_shared.61.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_7_phase value = 3 }
+set_variable = { name = hbe_short_shared_7_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_7_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.61.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_7_phase value = 3 }
 remove_variable = hbe_short_shared_7_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.62 = {
  type = country_event title = hbe_short_shared.62.title desc = hbe_short_shared.62.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_terraces }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_7 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_7_phase = 1 NOT = { has_variable = hbe_short_shared_7_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_7_seen
@@ -555,23 +711,35 @@ hbe_short_shared.62 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_7_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
 set_variable = { name = hbe_short_shared_7_phase value = 2 }
 remove_variable = hbe_short_shared_7_pending
-set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 } } option = { name = hbe_short_shared.62.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_7_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.62.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_7_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_7_phase value = 2 }
 remove_variable = hbe_short_shared_7_pending
-set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 } } option = { name = hbe_short_shared.62.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_7_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.62.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_short_choice_shared_7_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_7_phase value = 2 }
 remove_variable = hbe_short_shared_7_pending
-set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 } } option = { name = hbe_short_shared.62.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_7_phase value = 3 }
+set_variable = { name = hbe_short_shared_7_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_7_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.62.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_7_phase value = 3 }
 remove_variable = hbe_short_shared_7_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.63 = {
  type = country_event title = hbe_short_shared.63.title desc = hbe_short_shared.63.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_terraces }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_7 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_7_phase = 2 NOT = { has_variable = hbe_short_shared_7_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_7_seen
@@ -615,22 +783,34 @@ hbe_short_shared.71 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_8_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_8_phase value = 1 }
 remove_variable = hbe_short_shared_8_pending
-set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 } } option = { name = hbe_short_shared.71.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_8_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.71.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_8_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 2 }
 set_variable = { name = hbe_short_shared_8_phase value = 1 }
 remove_variable = hbe_short_shared_8_pending
-set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 } } option = { name = hbe_short_shared.71.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_8_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.71.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_8_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_8_phase value = 1 }
 remove_variable = hbe_short_shared_8_pending
-set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 } } option = { name = hbe_short_shared.71.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_8_phase value = 3 }
+set_variable = { name = hbe_short_shared_8_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_8_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.71.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_8_phase value = 3 }
 remove_variable = hbe_short_shared_8_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.72 = {
  type = country_event title = hbe_short_shared.72.title desc = hbe_short_shared.72.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_craft }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_8 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_8_phase = 1 NOT = { has_variable = hbe_short_shared_8_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_8_seen
@@ -641,23 +821,35 @@ hbe_short_shared.72 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_8_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_8_phase value = 2 }
 remove_variable = hbe_short_shared_8_pending
-set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 } } option = { name = hbe_short_shared.72.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_8_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.72.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_8_2_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 3 }
 set_variable = { name = hbe_short_shared_8_phase value = 2 }
 remove_variable = hbe_short_shared_8_pending
-set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 } } option = { name = hbe_short_shared.72.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_8_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.72.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_short_choice_shared_8_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 set_variable = { name = hbe_short_shared_8_phase value = 2 }
 remove_variable = hbe_short_shared_8_pending
-set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 } } option = { name = hbe_short_shared.72.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_8_phase value = 3 }
+set_variable = { name = hbe_short_shared_8_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_8_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.72.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_8_phase value = 3 }
 remove_variable = hbe_short_shared_8_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.73 = {
  type = country_event title = hbe_short_shared.73.title desc = hbe_short_shared.73.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_craft }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_8 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_8_phase = 2 NOT = { has_variable = hbe_short_shared_8_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_8_seen
@@ -703,22 +895,34 @@ hbe_short_shared.81 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_9_1_1 years = 2 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 2 }
 set_variable = { name = hbe_short_shared_9_phase value = 1 }
 remove_variable = hbe_short_shared_9_pending
-set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 } } option = { name = hbe_short_shared.81.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_9_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.81.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_9_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_9_phase value = 1 }
 remove_variable = hbe_short_shared_9_pending
-set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 } } option = { name = hbe_short_shared.81.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_9_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.81.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_9_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_9_phase value = 1 }
 remove_variable = hbe_short_shared_9_pending
-set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 } } option = { name = hbe_short_shared.81.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_9_phase value = 3 }
+set_variable = { name = hbe_short_shared_9_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_9_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.81.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_9_phase value = 3 }
 remove_variable = hbe_short_shared_9_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.82 = {
  type = country_event title = hbe_short_shared.82.title desc = hbe_short_shared.82.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_settlement }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_9 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_9_phase = 1 NOT = { has_variable = hbe_short_shared_9_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_9_seen
@@ -729,23 +933,35 @@ hbe_short_shared.82 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_9_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_9_phase value = 2 }
 remove_variable = hbe_short_shared_9_pending
-set_variable = { name = hbe_short_shared_9_clock value = yes months = 12 } } option = { name = hbe_short_shared.82.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_9_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_9_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.82.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_9_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_9_phase value = 2 }
 remove_variable = hbe_short_shared_9_pending
-set_variable = { name = hbe_short_shared_9_clock value = yes months = 12 } } option = { name = hbe_short_shared.82.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_9_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_9_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.82.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_short_choice_shared_9_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_9_phase value = 2 }
 remove_variable = hbe_short_shared_9_pending
-set_variable = { name = hbe_short_shared_9_clock value = yes months = 12 } } option = { name = hbe_short_shared.82.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_9_phase value = 3 }
+set_variable = { name = hbe_short_shared_9_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_9_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.82.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_9_phase value = 3 }
 remove_variable = hbe_short_shared_9_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.83 = {
  type = country_event title = hbe_short_shared.83.title desc = hbe_short_shared.83.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_settlement }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_9 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_9_phase = 2 NOT = { has_variable = hbe_short_shared_9_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_9_seen
@@ -790,22 +1006,34 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_short_choice_shared_10_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 1 }
 remove_variable = hbe_short_shared_10_pending
-set_variable = { name = hbe_short_shared_10_clock value = yes months = 6 } } option = { name = hbe_short_shared.91.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_10_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_10_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.91.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_10_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 1 }
 remove_variable = hbe_short_shared_10_pending
-set_variable = { name = hbe_short_shared_10_clock value = yes months = 6 } } option = { name = hbe_short_shared.91.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_10_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_10_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.91.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_10_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 1 }
 remove_variable = hbe_short_shared_10_pending
-set_variable = { name = hbe_short_shared_10_clock value = yes months = 6 } } option = { name = hbe_short_shared.91.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_10_phase value = 3 }
+set_variable = { name = hbe_short_shared_10_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_10_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.91.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_10_phase value = 3 }
 remove_variable = hbe_short_shared_10_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.92 = {
  type = country_event title = hbe_short_shared.92.title desc = hbe_short_shared.92.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_council }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_10 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_10_phase = 1 NOT = { has_variable = hbe_short_shared_10_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_10_seen
@@ -816,22 +1044,34 @@ hbe_short_shared.92 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_10_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 2 }
 remove_variable = hbe_short_shared_10_pending
-set_variable = { name = hbe_short_shared_10_clock value = yes months = 12 } } option = { name = hbe_short_shared.92.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_10_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_10_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.92.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_10_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 2 }
 remove_variable = hbe_short_shared_10_pending
-set_variable = { name = hbe_short_shared_10_clock value = yes months = 12 } } option = { name = hbe_short_shared.92.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_10_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_10_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.92.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_10_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_10_phase value = 2 }
 remove_variable = hbe_short_shared_10_pending
-set_variable = { name = hbe_short_shared_10_clock value = yes months = 12 } } option = { name = hbe_short_shared.92.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_10_phase value = 3 }
+set_variable = { name = hbe_short_shared_10_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_10_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.92.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_10_phase value = 3 }
 remove_variable = hbe_short_shared_10_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.93 = {
  type = country_event title = hbe_short_shared.93.title desc = hbe_short_shared.93.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_council }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_10 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_10_phase = 2 NOT = { has_variable = hbe_short_shared_10_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_10_seen
@@ -875,23 +1115,35 @@ add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_short_choice_shared_11_1_1 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 2 }
 set_variable = { name = hbe_short_shared_11_phase value = 1 }
 remove_variable = hbe_short_shared_11_pending
-set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 } } option = { name = hbe_short_shared.101.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_11_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.101.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_11_1_2 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 2 }
 set_variable = { name = hbe_short_shared_11_phase value = 1 }
 remove_variable = hbe_short_shared_11_pending
-set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 } } option = { name = hbe_short_shared.101.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
+set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_11_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.101.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
 add_country_modifier = { modifier = hbe_short_choice_shared_11_1_3 years = 2 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 2 }
 set_variable = { name = hbe_short_shared_11_phase value = 1 }
 remove_variable = hbe_short_shared_11_pending
-set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 } } option = { name = hbe_short_shared.101.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_11_phase value = 3 }
+set_variable = { name = hbe_short_shared_11_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_11_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.101.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_11_phase value = 3 }
 remove_variable = hbe_short_shared_11_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.102 = {
  type = country_event title = hbe_short_shared.102.title desc = hbe_short_shared.102.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_11 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_11_phase = 1 NOT = { has_variable = hbe_short_shared_11_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_11_seen
@@ -902,22 +1154,34 @@ hbe_short_shared.102 = {
 add_country_modifier = { modifier = hbe_short_choice_shared_11_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_11_phase value = 2 }
 remove_variable = hbe_short_shared_11_pending
-set_variable = { name = hbe_short_shared_11_clock value = yes months = 12 } } option = { name = hbe_short_shared.102.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_11_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_11_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.102.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_11_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_11_phase value = 2 }
 remove_variable = hbe_short_shared_11_pending
-set_variable = { name = hbe_short_shared_11_clock value = yes months = 12 } } option = { name = hbe_short_shared.102.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_11_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_11_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.102.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_11_2_3 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_11_phase value = 2 }
 remove_variable = hbe_short_shared_11_pending
-set_variable = { name = hbe_short_shared_11_clock value = yes months = 12 } } option = { name = hbe_short_shared.102.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_11_phase value = 3 }
+set_variable = { name = hbe_short_shared_11_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_11_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.102.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_11_phase value = 3 }
 remove_variable = hbe_short_shared_11_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.103 = {
  type = country_event title = hbe_short_shared.103.title desc = hbe_short_shared.103.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_11 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_11_phase = 2 NOT = { has_variable = hbe_short_shared_11_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_11_seen
@@ -962,22 +1226,34 @@ add_prestige = -2
 add_country_modifier = { modifier = hbe_short_choice_shared_12_1_1 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_12_phase value = 1 }
 remove_variable = hbe_short_shared_12_pending
-set_variable = { name = hbe_short_shared_12_clock value = yes months = 6 } } option = { name = hbe_short_shared.111.b ai_chance = { base = 30 } add_prestige = 2
+set_variable = { name = hbe_short_shared_12_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_12_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.111.b ai_chance = { base = 30 } add_prestige = 2
 add_country_modifier = { modifier = hbe_short_choice_shared_12_1_2 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_12_phase value = 1 }
 remove_variable = hbe_short_shared_12_pending
-set_variable = { name = hbe_short_shared_12_clock value = yes months = 6 } } option = { name = hbe_short_shared.111.c ai_chance = { base = 30 } add_prestige = 1
+set_variable = { name = hbe_short_shared_12_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_12_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.111.c ai_chance = { base = 30 } add_prestige = 1
 add_country_modifier = { modifier = hbe_short_choice_shared_12_1_3 years = 2 mode = replace }
 set_variable = { name = hbe_short_shared_12_phase value = 1 }
 remove_variable = hbe_short_shared_12_pending
-set_variable = { name = hbe_short_shared_12_clock value = yes months = 6 } } option = { name = hbe_short_shared.111.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_12_phase value = 3 }
+set_variable = { name = hbe_short_shared_12_clock value = yes months = 6 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_12_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.111.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_12_phase value = 3 }
 remove_variable = hbe_short_shared_12_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.112 = {
  type = country_event title = hbe_short_shared.112.title desc = hbe_short_shared.112.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_festival }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_12 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_12_phase = 1 NOT = { has_variable = hbe_short_shared_12_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_12_seen
@@ -989,22 +1265,34 @@ add_prestige = -3
 add_country_modifier = { modifier = hbe_short_choice_shared_12_2_1 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_12_phase value = 2 }
 remove_variable = hbe_short_shared_12_pending
-set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 } } option = { name = hbe_short_shared.112.b ai_chance = { base = 30 } add_prestige = 3
+set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_12_art_route value = 1 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.112.b ai_chance = { base = 30 } add_prestige = 3
 add_country_modifier = { modifier = hbe_short_choice_shared_12_2_2 years = 3 mode = replace }
 set_variable = { name = hbe_short_shared_12_phase value = 2 }
 remove_variable = hbe_short_shared_12_pending
-set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 } } option = { name = hbe_short_shared.112.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_12_art_route value = 2 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.112.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_shared_12_2_3 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 set_variable = { name = hbe_short_shared_12_phase value = 2 }
 remove_variable = hbe_short_shared_12_pending
-set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 } } option = { name = hbe_short_shared.112.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_12_phase value = 3 }
+set_variable = { name = hbe_short_shared_12_clock value = yes months = 12 }
+ # HBE_PROGRESS_ART_BEGIN
+ hidden_effect = { set_variable = { name = hbe_short_shared_12_art_route value = 3 } }
+ # HBE_PROGRESS_ART_END
+ } option = { name = hbe_short_shared.112.d ai_chance = { base = 3 } set_variable = { name = hbe_short_shared_12_phase value = 3 }
 remove_variable = hbe_short_shared_12_pending
 add_prestige = -2 }
 }
 
 hbe_short_shared.113 = {
  type = country_event title = hbe_short_shared.113.title desc = hbe_short_shared.113.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_festival }
+ illustration_tags = { 1000 = hbe_progress_art_short_shared_12 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_12_phase = 2 NOT = { has_variable = hbe_short_shared_12_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  has_variable = hbe_short_shared_12_seen

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-15",
+  "version": "0.3.1",
+  "loading_mode": "static",
+  "fourth_scene": "panda_sanctuary",
+  "static_checks": {
+    "status": "passed",
+    "count": 485
+  },
+  "structural_checks": {
+    "status": "passed",
+    "count": 1944
+  },
+  "native_fixture": {
+    "predicate_checks": 559,
+    "flags_observed": 560,
+    "missing": [],
+    "all_pass_flag": true,
+    "related_errors": [],
+    "global_harness": "Tests:\n[ FAIL ] Error log: 11834 errors",
+    "save_sha256": "af58b60438dcee19e07e689d3caa489e939b79540edb563bd52f095578cd981f",
+    "checkpoint": "1337.5.2",
+    "scope": "Forced native predicate fixture in a headless two-month run; no rendered loading-screen visual test.",
+    "status": "passed"
+  },
+  "rebuild": {
+    "status": "passed",
+    "byte_identical_files": [
+      "in_game/events/hbe_migration_events.txt",
+      "in_game/events/hbe_short_central_hills.txt",
+      "in_game/events/hbe_short_chengdu_plain.txt",
+      "in_game/events/hbe_short_eastern_river.txt",
+      "in_game/events/hbe_short_northern_shudao.txt",
+      "in_game/events/hbe_short_shared.txt",
+      "in_game/events/hbe_short_southern_salt_wine.txt",
+      "in_game/events/hbe_short_southwestern_valleys.txt",
+      "in_game/events/hbe_short_western_tea_horse.txt",
+      "in_game/events/hbe_story_central_hills.txt",
+      "in_game/events/hbe_story_chengdu_plain.txt",
+      "in_game/events/hbe_story_eastern_river.txt",
+      "in_game/events/hbe_story_northern_shudao.txt",
+      "in_game/events/hbe_story_southern_salt_wine.txt",
+      "in_game/events/hbe_story_southwestern_valleys.txt",
+      "in_game/events/hbe_story_western_tea_horse.txt",
+      "in_game/gfx/images/hbe_progress_backgrounds.txt",
+      "in_game/gfx/scenes/hbe_progress_scenes.txt",
+      "loading_screen/gfx/illustrations/database/hbe_progress_illustrations.txt",
+      "loading_screen/gfx/images/hbe_loading_images.txt",
+      "loading_screen/gfx/loading_screen_assets/hbe/craft_metadata_os3840x2160_d0x0.dds",
+      "loading_screen/gfx/loading_screen_assets/hbe/observatory_metadata_os3840x2160_d0x0.dds",
+      "loading_screen/gfx/loading_screen_assets/hbe/panda_sanctuary_metadata_os3840x2160_d0x0.dds",
+      "loading_screen/gfx/loading_screen_assets/hbe/river_metadata_os3840x2160_d0x0.dds",
+      "loading_screen/gfx/scenes/hbe_loading_scenes.txt",
+      "loading_screen/localization/english/hbe_load_tips_l_english.yml",
+      "loading_screen/localization/simp_chinese/hbe_load_tips_l_simp_chinese.yml"
+    ],
+    "format_normalization": "One pre-existing doubled space in the migration start condition normalized to full-build output."
+  },
+  "browser": {
+    "status": "passed",
+    "tests": 7,
+    "live_check": "hbe_short_eastern_river.13: selected B shows /ending-art/river_convoy.png; legacy fallback shows /art/craft.png; both loaded.",
+    "screenshot": "C:/Users/songrise/Documents/Codex/2026-10-11/ni-k/work/loading_art_v031/browser-preview.png"
+  },
+  "manifest_sha256": "d750ef2eed696bfeea1ae12ed02f55ca3989e3b15884621c8d28d157d8189f3e",
+  "visual_scope": "Approved source paintings and 4K DDS opacity/canvas inspected; new loading scenes have not been individually rendered and visually accepted inside the game.",
+  "global_diagnostics_scope": "The global engine harness failed on 11834 diagnostics. None referenced the new art definitions or fixture. This report claims the scoped predicate checks passed, not a clean global game run.",
+  "remote_published": false,
+  "local_install": {
+    "status": "passed",
+    "file_count": 723,
+    "path": "C:\\Users\\songrise\\OneDrive\\文档\\Paradox Interactive\\Europa Universalis V\\mod\\holy_bashu_empire",
+    "all_manifest_hashes_match": true
+  }
+}

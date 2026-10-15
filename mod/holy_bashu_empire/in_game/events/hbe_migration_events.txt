@@ -3,7 +3,7 @@
 hbe_migration.1 = {
  type = country_event title = hbe_migration.1.title desc = hbe_migration.1.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_migration_journey }
- trigger = { hbe_is_prince = yes var:hbe_migration_phase = 0 NOT = { has_variable = hbe_migration_closed }  current_year >= 1345
+ trigger = { hbe_is_prince = yes var:hbe_migration_phase = 0 NOT = { has_variable = hbe_migration_closed } current_year >= 1345
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_END
@@ -99,7 +99,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.4 = {
  type = country_event title = hbe_migration.4.title desc = hbe_migration.4.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_terraces }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 3 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
@@ -126,7 +126,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.5 = {
  type = country_event title = hbe_migration.5.title desc = hbe_migration.5.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_craft }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 4 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
@@ -154,7 +154,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.6 = {
  type = country_event title = hbe_migration.6.title desc = hbe_migration.6.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_medicine }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 5 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
@@ -181,7 +181,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.7 = {
  type = country_event title = hbe_migration.7.title desc = hbe_migration.7.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_council }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 6 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
@@ -209,7 +209,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.8 = {
  type = country_event title = hbe_migration.8.title desc = hbe_migration.8.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_settlement }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 7 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
@@ -236,7 +236,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.9 = {
  type = country_event title = hbe_migration.9.title desc = hbe_migration.9.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_migration_pact }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 8 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }
@@ -263,7 +263,7 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
 
 hbe_migration.10 = {
  type = country_event title = hbe_migration.10.title desc = hbe_migration.10.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_migration_pact }
+ illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 9 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_migration_clock }

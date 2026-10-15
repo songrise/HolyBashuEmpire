@@ -1,0 +1,1680 @@
+﻿hbe_progress_scene_chengdu_plain = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_chengdu_plain"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_southern_salt_wine = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_southern_salt_wine"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_eastern_river = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_eastern_river"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_northern_shudao = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_northern_shudao"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_central_hills = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_central_hills"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_western_tea_horse = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_western_tea_horse"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_southwestern_valleys = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_southwestern_valleys"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_chengdu_plain_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_chengdu_plain_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_chengdu_plain_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_chengdu_plain_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_chengdu_plain_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_chengdu_plain_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_southern_salt_wine_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_southern_salt_wine_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_southern_salt_wine_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_southern_salt_wine_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_southern_salt_wine_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_southern_salt_wine_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_eastern_river_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_eastern_river_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_eastern_river_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_eastern_river_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_eastern_river_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_eastern_river_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_northern_shudao_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_northern_shudao_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_northern_shudao_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_northern_shudao_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_northern_shudao_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_northern_shudao_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_central_hills_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_central_hills_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_central_hills_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_central_hills_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_central_hills_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_central_hills_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_western_tea_horse_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_western_tea_horse_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_western_tea_horse_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_western_tea_horse_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_western_tea_horse_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_western_tea_horse_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_southwestern_valleys_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_southwestern_valleys_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_southwestern_valleys_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_southwestern_valleys_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_southwestern_valleys_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_southwestern_valleys_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_1 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_1"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_2 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_2"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_3 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_3"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_4 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_4"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_5 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_5"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_6 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_6"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_7 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_7"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_8 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_8"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_9 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_9"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_10 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_10"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_11 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_11"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_short_shared_12 = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_short_shared_12"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}
+
+hbe_progress_scene_migration = {
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground1_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "foreground2_mesh"
+       list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "midground1_mesh"
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims" #schematic
+        pdxmesh = "midground2_mesh" #mesh
+        list = "hbe_story_empty"
+    }
+    ecs_illustration_image = {
+        name = "illustration_override_anims"
+        pdxmesh = "background1_mesh"
+        list = "hbe_story_empty"
+        uv_move_speed = { -0.01 0.01 0 0 } # X min, X max, Y min, Y max
+    }
+    ecs_illustration_image = {
+        name = "illustration_override"
+        pdxmesh = "background2_mesh"
+        list = "hbe_progress_background_migration"
+    }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = {0.14 100000} #xyz
+        camera_position = {12 -10 0}
+        camera_look_at = {0 -10 0}
+        camera_fov_y_degrees = 79
+    }
+}

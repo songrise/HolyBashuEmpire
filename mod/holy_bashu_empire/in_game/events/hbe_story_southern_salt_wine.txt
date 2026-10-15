@@ -58,7 +58,7 @@ add_prestige = -3 }
 
 hbe_story_southern_salt_wine.3 = {
  type = country_event title = hbe_story_southern_salt_wine.3.title desc = hbe_story_southern_salt_wine.3.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_progress_art_southern_salt_wine }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } var:hbe_story_southern_salt_wine_phase = 2 NOT = { has_variable = hbe_story_southern_salt_wine_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southern_salt_wine_clock }
@@ -86,7 +86,7 @@ add_prestige = -3 }
 
 hbe_story_southern_salt_wine.4 = {
  type = country_event title = hbe_story_southern_salt_wine.4.title desc = hbe_story_southern_salt_wine.4.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_progress_art_southern_salt_wine }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } var:hbe_story_southern_salt_wine_phase = 3 NOT = { has_variable = hbe_story_southern_salt_wine_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southern_salt_wine_clock }
@@ -114,7 +114,7 @@ add_prestige = -3 }
 
 hbe_story_southern_salt_wine.5 = {
  type = country_event title = hbe_story_southern_salt_wine.5.title desc = hbe_story_southern_salt_wine.5.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_progress_art_southern_salt_wine }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } var:hbe_story_southern_salt_wine_phase = 4 NOT = { has_variable = hbe_story_southern_salt_wine_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southern_salt_wine_clock }
@@ -144,7 +144,7 @@ add_prestige = -3 }
 
 hbe_story_southern_salt_wine.6 = {
  type = country_event title = hbe_story_southern_salt_wine.6.title desc = hbe_story_southern_salt_wine.6.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_progress_art_southern_salt_wine }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } var:hbe_story_southern_salt_wine_phase = 5 NOT = { has_variable = hbe_story_southern_salt_wine_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southern_salt_wine_clock }
@@ -172,7 +172,7 @@ add_prestige = -3 }
 
 hbe_story_southern_salt_wine.7 = {
  type = country_event title = hbe_story_southern_salt_wine.7.title desc = hbe_story_southern_salt_wine.7.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_progress_art_southern_salt_wine }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } var:hbe_story_southern_salt_wine_phase = 6 NOT = { has_variable = hbe_story_southern_salt_wine_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southern_salt_wine_clock }
@@ -228,7 +228,7 @@ set_variable = hbe_story_southern_salt_wine_ending_2 }
 
 hbe_story_southern_salt_wine.8 = {
  type = country_event title = hbe_story_southern_salt_wine.8.title desc = hbe_story_southern_salt_wine.8.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_progress_art_southern_salt_wine }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } var:hbe_story_southern_salt_wine_phase = 7 NOT = { has_variable = hbe_story_southern_salt_wine_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
  NOT = { has_variable = hbe_story_southern_salt_wine_clock }
