@@ -5,19 +5,23 @@ from PIL import Image
 from pdxscript import blocks, apply_edits
 
 UNIT_STATS = {
- 'hbe_canal_crossbow': {'strength_damage_done':0.12},
- 'hbe_salt_guard': {'flanking_ability': 0.2, 'strength_damage_taken': 0.03, 'morale_damage_taken': -0.1},
- 'hbe_river_garrison': {'morale_damage_taken':-0.12,'supply_weight':0.10},
- 'hbe_pass_rotation': {'strength_damage_taken':-0.12},
- 'hbe_granary_militia': {'strength_damage_done': -0.04, 'supply_weight': -0.2, 'food_consumption_per_strength': -0.03},
- 'hbe_tea_riders': {'flanking_ability':0.20,'strength_damage_done':-0.05,'movement_speed':0.15},
- 'hbe_valley_soldiers': {'initiative': 0.5, 'strength_damage_taken': 0.03},
- 'hbe_trained_river': {'combat_power':0.20,'morale_damage_taken':-0.16,'strength_damage_done':0.12,'supply_weight':0.20},
- 'hbe_permanent_pass': {'combat_power':0.15,'strength_damage_taken':-0.18,'morale_damage_taken':-0.10,'supply_weight':0.20},
+ 'hbe_canal_crossbow': {'strength_damage_done': 0.16, 'initiative': 1.0},
+ 'hbe_salt_guard': {'flanking_ability': 0.3, 'strength_damage_taken': 0.03, 'morale_damage_taken': -0.12},
+ 'hbe_river_garrison': {'morale_damage_taken': -0.16, 'strength_damage_taken': -0.03, 'supply_weight': 0.1},
+ 'hbe_pass_rotation': {'strength_damage_taken': -0.15, 'morale_damage_taken': -0.04},
+ 'hbe_granary_militia': {'strength_damage_done': 0.02, 'morale_damage_taken': -0.06, 'supply_weight': -0.2, 'food_consumption_per_strength': -0.03},
+ 'hbe_tea_riders': {'flanking_ability': 0.3, 'strength_damage_done': 0.0, 'movement_speed': 0.45, 'initiative': 1.5, 'morale_damage_done': 0.1},
+ 'hbe_valley_soldiers': {'initiative': 1.5, 'strength_damage_taken': 0.02, 'morale_damage_taken': -0.04},
+ 'hbe_trained_river': {'combat_power': 0.25, 'morale_damage_taken': -0.18, 'strength_damage_done': 0.14, 'strength_damage_taken': -0.03, 'supply_weight': 0.2, 'combat_speed': 0.25},
+ 'hbe_permanent_pass': {'combat_power': 0.2, 'strength_damage_taken': -0.2, 'morale_damage_taken': -0.12, 'supply_weight': 0.2, 'combat_speed': 0.25},
 }
-TERRAIN = {'hbe_river_garrison':{'river':0.10},'hbe_trained_river':{'river':0.15},
- 'hbe_pass_rotation':{'mountains':0.10},'hbe_permanent_pass':{'mountains':0.15},
- 'hbe_valley_soldiers':{'mountains':0.15,'hills':0.10}}
+TERRAIN = {
+ 'hbe_river_garrison': {'river': 0.12},
+ 'hbe_trained_river': {'river': 0.18},
+ 'hbe_pass_rotation': {'mountains': 0.12},
+ 'hbe_permanent_pass': {'mountains': 0.18},
+ 'hbe_valley_soldiers': {'mountains': 0.18, 'hills': 0.12},
+}
 FORMS = [('sichuan','HQS','蜀','Shu','hbe_sichuan_core',0.67,
           ['chengdu','yibin','langzhong','yandao'],2,'rank_kingdom',(50,101,67),'hbe_pine'),
          ('chongqing','HQC','渝','Yu','hbe_chongqing_core',0.67,
@@ -49,15 +53,15 @@ def apply(out,root,game):
   edits.append((b,e,'\n'+body.strip('\n')+'\n'))
  put(unitpath.relative_to(out),apply_edits(text,edits))
  descriptions={
- 'hbe_canal_crossbow':('渠乡弩手依托水利村社训练，以齐射杀伤见长。杀伤加成提高至12%，取消移速惩罚。','Canal crossbowmen draw on village irrigation networks. Their strength damage bonus is 12%, with no movement penalty.'),
- 'hbe_salt_guard':('井灶护运兵沿盐路护送货队，侧翼能力加成0.20，士气承伤修正−10%，抵消轻步兵的基础弱点；轻装仍增加3%的兵力承伤。','Salt convoy guards gain 0.20 flanking ability and a -10% morale-damage-taken modifier, cancelling the light-infantry baseline penalty. Their light protection still increases strength damage taken by 3%.'),
- 'hbe_river_garrison':('川江寨兵依岸扎营，士气损失降低12%，河流战斗加成10%；补给负担增加10%。','River garrisons take 12% less morale damage and gain a 10% river combat bonus, at 10% greater supply weight.'),
- 'hbe_pass_rotation':('关隘轮戍兵依山守险，兵力损失降低12%，山地战斗加成10%，取消移速惩罚。','Pass rotation troops take 12% less strength damage and gain a 10% mountain combat bonus, with no movement penalty.'),
- 'hbe_granary_militia':('义仓团练擅长久驻与粮秣调度，补给负担修正−0.20，粮食消耗修正−0.03（较同类约低9%）；特色杀伤修正−4%（计入轻步兵基础后为−14%）。','Granary militia gain -0.20 supply weight and -0.03 food consumption (about 9% below the category baseline). Their specialty strength-damage modifier is -4%, giving -14% with the light-infantry baseline.'),
- 'hbe_tea_riders':('茶路护骑以接应与包抄见长，侧翼能力加成提高至0.20，移速加成0.15；杀伤仍降低5%。','Tea-road riders gain 0.20 flanking ability and 0.15 movement speed, while dealing 5% less strength damage.'),
- 'hbe_valley_soldiers':('联寨山卒熟悉山道，主动性加成0.50，山地战斗加成15%、丘陵加成10%；轻装仍增加3%的兵力承伤。','Valley soldiers gain 0.50 initiative, 15% mountain combat and 10% hills combat, while taking 3% more strength damage.'),
- 'hbe_trained_river':('江防精练寨兵延续川江驻守军制，基础战斗力1.20，杀伤加成12%，士气损失降低16%，河流战斗加成15%；补给负担增加20%。','Trained river troops have 1.20 base combat power, 12% extra strength damage, 16% less morale damage taken and 15% river combat, at 20% greater supply weight.'),
- 'hbe_permanent_pass':('关镇长值兵改轮戍为常备，基础战斗力1.15，兵力损失降低18%、士气损失降低10%，山地战斗加成15%；补给负担增加20%。','Permanent pass troops have 1.15 base combat power, 18% less strength damage taken, 10% less morale damage taken and 15% mountain combat, at 20% greater supply weight.'),
+ 'hbe_canal_crossbow':('渠乡弩手依托水利村社训练，以齐射压制敌阵。兵力伤害修正+16%（计入轻步兵基础后为+6%），主动性+1.00。','Canal crossbowmen gain +16% strength damage (+6% with the light-infantry baseline) and +1.00 initiative.'),
+ 'hbe_salt_guard':('井灶护运兵沿盐路护送货队，侧翼能力+0.30，士气承伤修正−12%（计入轻步兵基础后为−2%）；轻装仍增加3%的兵力承伤。','Salt convoy guards gain +0.30 flanking ability and -12% morale damage taken (-2% with the light-infantry baseline), while taking 3% more strength damage.'),
+ 'hbe_river_garrison':('川江寨兵依岸扎营，兵力承伤−3%、士气承伤−16%，河流作战+12%；补给权重+0.10。','River garrisons take 3% less strength damage and 16% less morale damage, with +12% river combat and +0.10 supply weight.'),
+ 'hbe_pass_rotation':('关隘轮戍兵依山守险，兵力承伤−15%、士气承伤−4%，山地作战+12%。','Pass rotation troops take 15% less strength damage and 4% less morale damage, with +12% mountain combat.'),
+ 'hbe_granary_militia':('义仓团练擅长久驻与粮秣调度，补给权重−0.20，粮食消耗修正−0.03（较同类约低9%）；兵力伤害修正+2%（计入轻步兵基础后为−8%），士气承伤修正−6%（计入基础后为+4%）。','Granary militia gain -0.20 supply weight and -0.03 food consumption (about 9% below the category baseline), +2% strength damage (-8% with the light-infantry baseline) and -6% morale damage taken (+4% with the baseline).'),
+ 'hbe_tea_riders':('茶路护骑以接应与包抄见长，侧翼能力+0.30、主动性+1.50、移速+0.45、士气伤害+10%；兵力伤害沿用轻骑兵基础修正−10%。','Tea-road riders gain +0.30 flanking ability, +1.50 initiative, +0.45 movement speed and +10% morale damage. Their strength damage retains the light-cavalry baseline modifier of -10%.'),
+ 'hbe_valley_soldiers':('联寨山卒熟悉山道，主动性+1.50，山地作战+18%、丘陵+12%，士气承伤修正−4%（计入轻步兵基础后为+6%）；轻装仍增加2%的兵力承伤。','Valley soldiers gain +1.50 initiative, +18% mountain combat, +12% hills combat and -4% morale damage taken (+6% with the light-infantry baseline), while taking 2% more strength damage.'),
+ 'hbe_trained_river':('江防精练寨兵延续川江驻守军制，基础战斗力1.25，兵力伤害+14%，兵力承伤−3%、士气承伤−18%，战斗速度+0.25，河流作战+18%；补给权重+0.20。','Trained river troops have 1.25 base combat power, +14% strength damage, -3% strength damage taken, -18% morale damage taken, +0.25 combat speed and +18% river combat, at +0.20 supply weight.'),
+ 'hbe_permanent_pass':('关镇长值兵改轮戍为常备，基础战斗力1.20，兵力承伤−20%、士气承伤−12%，战斗速度+0.25，山地作战+18%；补给权重+0.20。','Permanent pass troops have 1.20 base combat power, -20% strength damage taken, -12% morale damage taken, +0.25 combat speed and +18% mountain combat, at +0.20 supply weight.'),
  }
  for lang,index in [('simp_chinese',0),('english',1)]:
   p=out/f'main_menu/localization/{lang}/hbe_l_{lang}.yml';t=p.read_text(encoding='utf-8-sig')

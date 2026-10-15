@@ -1,0 +1,586 @@
+{
+  "version": "0.3.1",
+  "baseline_commit": "451376f",
+  "scope": "Static, per-strength specialty profiles against installed vanilla elite reference values; no battle win-rate claim.",
+  "checks": [
+    "All nine improve at least one effective stat",
+    "No effective stat or terrain modifier worsens",
+    "All nine remain 500 men",
+    "Construction and maintenance recipes unchanged",
+    "Supply weights and food consumption unchanged",
+    "Recruitment constraints preserved by the patch shell check",
+    "Monthly net recruitment burden remains 2 per regiment"
+  ],
+  "units": {
+    "hbe_canal_crossbow": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "strength_damage_done": 0.02,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 5.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "strength_damage_done": 0.06,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 6.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0
+      },
+      "terrain_before": {},
+      "terrain_after": {}
+    },
+    "hbe_salt_guard": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.0,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 5.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.3,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": 0.03
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": -0.02,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 5.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.4,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": 0.03
+      },
+      "terrain_before": {},
+      "terrain_after": {}
+    },
+    "hbe_river_garrison": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "supply_weight": 1.1,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "morale_damage_taken": -0.12
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "supply_weight": 1.1,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.03,
+        "morale_damage_taken": -0.16
+      },
+      "terrain_before": {
+        "river": 0.1
+      },
+      "terrain_after": {
+        "river": 0.12
+      }
+    },
+    "hbe_pass_rotation": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.12
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.15,
+        "morale_damage_taken": -0.04
+      },
+      "terrain_before": {
+        "mountains": 0.1
+      },
+      "terrain_after": {
+        "mountains": 0.12
+      }
+    },
+    "hbe_granary_militia": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.14,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 0.8,
+        "food_consumption_per_strength": 0.3,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 5.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.08,
+        "morale_damage_taken": 0.04,
+        "supply_weight": 0.8,
+        "food_consumption_per_strength": 0.3,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 5.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0
+      },
+      "terrain_before": {},
+      "terrain_after": {}
+    },
+    "hbe_tea_riders": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.15,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 1.32,
+        "combat_speed": 5.0,
+        "movement_speed": 3.15,
+        "initiative": 5.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.8,
+        "attrition_loss": 0.25,
+        "maintenance_demand": "hbe_discount_cavalry_maintenance",
+        "construction_demand": "cavalry_construction",
+        "combat_power": 2.6
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 1.32,
+        "combat_speed": 5.0,
+        "movement_speed": 3.45,
+        "initiative": 6.5,
+        "frontage": 1.0,
+        "flanking_ability": 1.9,
+        "attrition_loss": 0.25,
+        "maintenance_demand": "hbe_discount_cavalry_maintenance",
+        "construction_demand": "cavalry_construction",
+        "combat_power": 2.6,
+        "morale_damage_done": 0.1
+      },
+      "terrain_before": {
+        "jungle": -0.1,
+        "wetlands": -0.1,
+        "mountains": -0.1
+      },
+      "terrain_after": {
+        "jungle": -0.1,
+        "wetlands": -0.1,
+        "mountains": -0.1
+      }
+    },
+    "hbe_valley_soldiers": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 5.5,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": 0.03
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.06,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 6.5,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": 0.02
+      },
+      "terrain_before": {
+        "mountains": 0.15,
+        "hills": 0.1
+      },
+      "terrain_after": {
+        "mountains": 0.18,
+        "hills": 0.12
+      }
+    },
+    "hbe_trained_river": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "supply_weight": 1.2,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.2,
+        "strength_damage_done": 0.12,
+        "morale_damage_taken": -0.16
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "supply_weight": 1.2,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.25,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.25,
+        "strength_damage_done": 0.14,
+        "strength_damage_taken": -0.03,
+        "morale_damage_taken": -0.18
+      },
+      "terrain_before": {
+        "river": 0.15
+      },
+      "terrain_after": {
+        "river": 0.18
+      }
+    },
+    "hbe_permanent_pass": {
+      "effective_before": {
+        "max_strength": 0.5,
+        "supply_weight": 1.2,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.15,
+        "strength_damage_taken": -0.18,
+        "morale_damage_taken": -0.1
+      },
+      "effective_after": {
+        "max_strength": 0.5,
+        "supply_weight": 1.2,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.25,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "hbe_discount_early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.2,
+        "strength_damage_taken": -0.2,
+        "morale_damage_taken": -0.12
+      },
+      "terrain_before": {
+        "mountains": 0.15
+      },
+      "terrain_after": {
+        "mountains": 0.18
+      }
+    }
+  },
+  "vanilla_references": {
+    "a_navarrese_crossbowmen": {
+      "effective_stats": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.05,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.25,
+        "movement_speed": 2.5,
+        "initiative": 7.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "archer_infantry_maintenance",
+        "construction_demand": "archer_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.05
+      },
+      "terrain": {}
+    },
+    "a_gallowglass": {
+      "effective_stats": {
+        "max_strength": 0.5,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 3.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.05,
+        "morale_damage_taken": -0.1
+      },
+      "terrain": {
+        "coastal": 0.1
+      }
+    },
+    "a_early_paik_infantry": {
+      "effective_stats": {
+        "max_strength": 0.5,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 3.0,
+        "movement_speed": 2.5,
+        "initiative": 7.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.1,
+        "maintenance_demand": "early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.1
+      },
+      "terrain": {}
+    },
+    "a_varangians": {
+      "effective_stats": {
+        "max_strength": 0.6,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_done": 0.2,
+        "morale_damage_done": 0.2
+      },
+      "terrain": {
+        "coastal": 0.1,
+        "river": 0.15
+      }
+    },
+    "a_iberian_jinetes": {
+      "effective_stats": {
+        "max_strength": 0.2,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 1.32,
+        "combat_speed": 5.0,
+        "movement_speed": 3.75,
+        "initiative": 7.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.8,
+        "attrition_loss": 0.25,
+        "maintenance_demand": "tornadizos_maintenance",
+        "construction_demand": "cavalry_construction",
+        "combat_power": 2.6
+      },
+      "terrain": {
+        "jungle": -0.1,
+        "wetlands": -0.1,
+        "mountains": -0.1,
+        "grasslands": 0.15,
+        "hills": 0.1,
+        "sparse": 0.1
+      }
+    },
+    "a_steppe_horse_archers": {
+      "effective_stats": {
+        "max_strength": 0.6,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 1.32,
+        "combat_speed": 5.0,
+        "movement_speed": 4.0,
+        "initiative": 8.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.6,
+        "attrition_loss": 0.25,
+        "maintenance_demand": "steppe_horse_archers_maintenance",
+        "construction_demand": "steppe_horse_archers_construction",
+        "combat_power": 2.6,
+        "morale_damage_done": 0.2
+      },
+      "terrain": {
+        "jungle": -0.1,
+        "wetlands": -0.1,
+        "mountains": -0.1,
+        "grasslands": 0.2,
+        "sparse": 0.2,
+        "inland": 0.1,
+        "coastal": -0.15
+      }
+    },
+    "a_reformed_gallowglass": {
+      "effective_stats": {
+        "max_strength": 1.0,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 3.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.05,
+        "morale_damage_taken": -0.1
+      },
+      "terrain": {}
+    },
+    "a_wagenburg": {
+      "effective_stats": {
+        "max_strength": 1.0,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_taken": -0.1,
+        "morale_damage_taken": -0.1
+      },
+      "terrain": {}
+    },
+    "a_tuareg_veiled_cavalry": {
+      "effective_stats": {
+        "max_strength": 0.4,
+        "strength_damage_done": -0.1,
+        "morale_damage_taken": 0.1,
+        "supply_weight": 0.75,
+        "food_consumption_per_strength": 1.32,
+        "combat_speed": 5.0,
+        "movement_speed": 4.0,
+        "initiative": 8.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.9,
+        "attrition_loss": 0.25,
+        "maintenance_demand": "cavalry_maintenance",
+        "construction_demand": "cavalry_construction",
+        "combat_power": 2.6,
+        "morale_damage_done": 0.1
+      },
+      "terrain": {
+        "jungle": -0.1,
+        "wetlands": -0.3,
+        "mountains": -0.1,
+        "sparse": 0.2,
+        "grasslands": 0.1,
+        "forest": -0.2
+      }
+    },
+    "a_varangians_2": {
+      "effective_stats": {
+        "max_strength": 1.1,
+        "supply_weight": 1.0,
+        "food_consumption_per_strength": 0.33,
+        "combat_speed": 2.0,
+        "movement_speed": 2.0,
+        "initiative": 1.0,
+        "frontage": 1.0,
+        "flanking_ability": 1.0,
+        "maintenance_demand": "early_infantry_maintenance",
+        "construction_demand": "early_infantry_construction",
+        "combat_power": 1.0,
+        "strength_damage_done": 0.2,
+        "morale_damage_done": 0.2
+      },
+      "terrain": {
+        "coastal": 0.1,
+        "river": 0.15
+      }
+    }
+  },
+  "native_source_hashes": {
+    "in_game/common/unit_types/00_age_templates_land.txt": "0dee03df71c8fc89fbbf9dcefb1cc65238a091d5ccee0d0e28c90d675a4e4516",
+    "in_game/common/unit_types/1_uniques_for_age_1_traditions.txt": "a3f641099b641b3531155c880e48f157cb46d19b8055e7abc020bdeeff92f3be",
+    "in_game/common/unit_types/1_uniques_for_age_2_renaissance.txt": "ee8776c10b5afc2b6afb84c3ab0ed1a021d9cb323db5a95b805070ca90ac9b3f",
+    "in_game/common/unit_types/D008_byzantine_unit_types.txt": "f169071e4f46b52e48e7b3bb9d0bb25f4b4508a385ece8e385be933aa1c555fc",
+    "in_game/common/unit_categories/00_army_light_infantry.txt": "5c52bc462805119dd5fc5dc834412acc6bdb0f3a4108695e24547cdd17b88064",
+    "in_game/common/unit_categories/01_army_heavy_infantry.txt": "e66367446cd502be0d9f673b3f5732e34e07f9573a3d141de9d18fe6a714d084",
+    "in_game/common/unit_categories/02_army_light_cavalry.txt": "c44f852b6de61b2859209191d9c82555087e9f9889c6375de15b1553ca283a99"
+  }
+}

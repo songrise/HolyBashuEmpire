@@ -10,7 +10,7 @@
  OR = { has_advance = hbe_tech_chengdu_plain_2 AND = { has_variable = hbe_guest_chengdu_plain has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { crossbow_tag light_tag }
- strength_damage_done = 0.12
+ strength_damage_done = 0.16 initiative = 1.00
 }
 hbe_salt_guard = {
  copy_from = a_age_1_traditions_light_infantry
@@ -24,7 +24,7 @@ hbe_salt_guard = {
  OR = { has_advance = hbe_tech_southern_salt_wine_2 AND = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag sword_tag }
- flanking_ability = 0.20 strength_damage_taken = 0.03 morale_damage_taken = -0.10
+ flanking_ability = 0.30 strength_damage_taken = 0.03 morale_damage_taken = -0.12
 }
 hbe_river_garrison = {
  copy_from = a_age_1_traditions_heavy_infantry
@@ -38,8 +38,8 @@ hbe_river_garrison = {
  OR = { has_advance = hbe_tech_eastern_river_2 AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { heavy_tag sword_tag }
- morale_damage_taken = -0.12 supply_weight = 0.10
- combat = { river = 0.10 }
+ morale_damage_taken = -0.16 strength_damage_taken = -0.03 supply_weight = 0.10
+ combat = { river = 0.12 }
 }
 hbe_pass_rotation = {
  copy_from = a_age_1_traditions_heavy_infantry
@@ -53,8 +53,8 @@ hbe_pass_rotation = {
  OR = { has_advance = hbe_tech_northern_shudao_2 AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { heavy_tag pike_tag }
- strength_damage_taken = -0.12
- combat = { mountains = 0.10 }
+ strength_damage_taken = -0.15 morale_damage_taken = -0.04
+ combat = { mountains = 0.12 }
 }
 hbe_granary_militia = {
  copy_from = a_age_1_traditions_light_infantry
@@ -68,7 +68,7 @@ hbe_granary_militia = {
  OR = { has_advance = hbe_tech_central_hills_2 AND = { has_variable = hbe_guest_central_hills has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag pike_tag }
- strength_damage_done = -0.04 supply_weight = -0.20 food_consumption_per_strength = -0.03
+ strength_damage_done = 0.02 morale_damage_taken = -0.06 supply_weight = -0.20 food_consumption_per_strength = -0.03
 }
 hbe_tea_riders = {
  copy_from = a_age_1_traditions_light_cavalry
@@ -82,7 +82,7 @@ hbe_tea_riders = {
  OR = { has_advance = hbe_tech_western_tea_horse_2 AND = { has_variable = hbe_guest_western_tea_horse has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag cavalry_tag }
- flanking_ability = 0.20 strength_damage_done = -0.05 movement_speed = 0.15
+ flanking_ability = 0.30 strength_damage_done = 0.00 movement_speed = 0.45 initiative = 1.50 morale_damage_done = 0.10
 }
 hbe_valley_soldiers = {
  copy_from = a_age_1_traditions_light_infantry
@@ -96,8 +96,8 @@ hbe_valley_soldiers = {
  OR = { has_advance = hbe_tech_southwestern_valleys_2 AND = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag sword_tag }
- initiative = 0.50 strength_damage_taken = 0.03
- combat = { mountains = 0.15 hills = 0.10 }
+ initiative = 1.50 strength_damage_taken = 0.02 morale_damage_taken = -0.04
+ combat = { mountains = 0.18 hills = 0.12 }
 }
 hbe_trained_river = {
  copy_from = a_age_2_renaissance_heavy_infantry
@@ -111,8 +111,8 @@ hbe_trained_river = {
  OR = { has_advance = hbe_civic_eastern_river_2 AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_tech_common_4 } }
  has_variable = hbe_mission_eastern_river_5 } }
  gfx_tags = { heavy_tag sword_tag }
- combat_power = 0.20 morale_damage_taken = -0.16 strength_damage_done = 0.12 supply_weight = 0.20
- combat = { river = 0.15 }
+ combat_power = 0.25 morale_damage_taken = -0.18 strength_damage_done = 0.14 strength_damage_taken = -0.03 supply_weight = 0.20 combat_speed = 0.25
+ combat = { river = 0.18 }
 }
 hbe_permanent_pass = {
  copy_from = a_age_2_renaissance_heavy_infantry
@@ -126,6 +126,6 @@ hbe_permanent_pass = {
  OR = { has_advance = hbe_civic_northern_shudao_2 AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_tech_common_4 } }
  has_variable = hbe_mission_northern_shudao_5 } }
  gfx_tags = { heavy_tag pike_tag }
- combat_power = 0.15 strength_damage_taken = -0.18 morale_damage_taken = -0.10 supply_weight = 0.20
- combat = { mountains = 0.15 }
+ combat_power = 0.20 strength_damage_taken = -0.20 morale_damage_taken = -0.12 supply_weight = 0.20 combat_speed = 0.25
+ combat = { mountains = 0.18 }
 }

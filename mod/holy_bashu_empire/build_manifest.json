@@ -6693,7 +6693,7 @@
     "in_game/common/script_values/hbe_feast_values.txt": "958dcf9e40882edd6f3e1d291b714e65a2afaeecaf74d93d59ebba209a1ecf68",
     "in_game/common/situations/hbe_banquet.txt": "9112a9997192b856ad73b20019a4204ea92cdfd76f88e00a8a5b1f7d69c54e5b",
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
-    "in_game/common/unit_types/hbe_civic_units.txt": "62d9fd3884f56478635198bf9a2b07da81a76a7e0f8c08eecf56dfe22fcec887",
+    "in_game/common/unit_types/hbe_civic_units.txt": "8f990ebc3e74ceda6319bd3be9e0738038172fb06a958f9779de309c38127ec1",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
     "in_game/gfx/images/hbe_ending_backgrounds.txt": "051097ed519b3aaa5fe713c057f9f3cd77aa3e1927b563699ca7c74e9c932dda",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
@@ -7289,7 +7289,7 @@
     "main_menu/localization/english/hbe_formables_l_english.yml": "55ee7c7b7c4f283ede0fcb6c9371e5d5383d20887520097774f2b13a0b13e186",
     "main_menu/localization/english/hbe_history_v031_l_english.yml": "ee58fb1b39a3c179cd199afedbd856c92e7b4cbe66b1e44b6c8f648fed51758f",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
-    "main_menu/localization/english/hbe_l_english.yml": "1d69c133cbeb84015a2974367549663775ef004d241659bd5c584be031c7b0b3",
+    "main_menu/localization/english/hbe_l_english.yml": "179acc83d178e6ffe50fca8324a42f05c1a18750570bd717f1a3b77d7ffc1b8a",
     "main_menu/localization/english/hbe_observer_hotfix_l_english.yml": "72fce30a3cda30a7d8fc33d55e7299116d289d4e7c4f535f4e011b1c6c2308ef",
     "main_menu/localization/english/hbe_opening_armistice_l_english.yml": "6e0f9e356b92bbcffd8545552d9d9a11352d5c6c2b5d3b65cf5bcf83d51178a2",
     "main_menu/localization/english/hbe_personal_tooltips_l_english.yml": "83225c91e770a2085c769d8095e44ce40600cb2f59a3ce1a8ac7687e2f115695",
@@ -7302,7 +7302,7 @@
     "main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml": "a13ee827d96e35261a78297d24d075c84bea425864211f7617773ecc1a4c55e9",
     "main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml": "337de3e1d7be32f517b21dd5af5b2499949f22ec2d36d005050b82aeb3db2265",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "a8cb5361874f141b73bc041cbe18eeff3050eeeeff04b6e6e328204183113395",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "f5dde122ba997f69cbd8529c55b3c1cc0b52f2ddfaa71d1c08a70a0670753d5f",
     "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml": "91fefc537d19a0a0a9ec5d31ba7c30ec5e4066ed80da970cfb20f223b0c323e7",
     "main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml": "6cc1363cf4b41e5f7d428d4725dc17e68a2fe71bef885046d731efa3232dac13",
     "main_menu/localization/simp_chinese/hbe_personal_tooltips_l_simp_chinese.yml": "cb02540cd7d6a60340809673214a06f7cf8552575f0ed48e5d0c8e34e23b67f4",
@@ -36404,63 +36404,73 @@
     "version": "0.3.1",
     "units": {
       "hbe_canal_crossbow": {
-        "strength_damage_done": 0.12
+        "strength_damage_done": 0.16,
+        "initiative": 1.0
       },
       "hbe_salt_guard": {
-        "flanking_ability": 0.2,
+        "flanking_ability": 0.3,
         "strength_damage_taken": 0.03,
-        "morale_damage_taken": -0.1
+        "morale_damage_taken": -0.12
       },
       "hbe_river_garrison": {
-        "morale_damage_taken": -0.12,
+        "morale_damage_taken": -0.16,
+        "strength_damage_taken": -0.03,
         "supply_weight": 0.1
       },
       "hbe_pass_rotation": {
-        "strength_damage_taken": -0.12
+        "strength_damage_taken": -0.15,
+        "morale_damage_taken": -0.04
       },
       "hbe_granary_militia": {
-        "strength_damage_done": -0.04,
+        "strength_damage_done": 0.02,
+        "morale_damage_taken": -0.06,
         "supply_weight": -0.2,
         "food_consumption_per_strength": -0.03
       },
       "hbe_tea_riders": {
-        "flanking_ability": 0.2,
-        "strength_damage_done": -0.05,
-        "movement_speed": 0.15
+        "flanking_ability": 0.3,
+        "strength_damage_done": 0.0,
+        "movement_speed": 0.45,
+        "initiative": 1.5,
+        "morale_damage_done": 0.1
       },
       "hbe_valley_soldiers": {
-        "initiative": 0.5,
-        "strength_damage_taken": 0.03
+        "initiative": 1.5,
+        "strength_damage_taken": 0.02,
+        "morale_damage_taken": -0.04
       },
       "hbe_trained_river": {
-        "combat_power": 0.2,
-        "morale_damage_taken": -0.16,
-        "strength_damage_done": 0.12,
-        "supply_weight": 0.2
+        "combat_power": 0.25,
+        "morale_damage_taken": -0.18,
+        "strength_damage_done": 0.14,
+        "strength_damage_taken": -0.03,
+        "supply_weight": 0.2,
+        "combat_speed": 0.25
       },
       "hbe_permanent_pass": {
-        "combat_power": 0.15,
-        "strength_damage_taken": -0.18,
-        "morale_damage_taken": -0.1,
-        "supply_weight": 0.2
+        "combat_power": 0.2,
+        "strength_damage_taken": -0.2,
+        "morale_damage_taken": -0.12,
+        "supply_weight": 0.2,
+        "combat_speed": 0.25
       }
     },
     "terrain": {
       "hbe_river_garrison": {
-        "river": 0.1
+        "river": 0.12
       },
       "hbe_trained_river": {
-        "river": 0.15
+        "river": 0.18
       },
       "hbe_pass_rotation": {
-        "mountains": 0.1
+        "mountains": 0.12
       },
       "hbe_permanent_pass": {
-        "mountains": 0.15
+        "mountains": 0.18
       },
       "hbe_valley_soldiers": {
-        "mountains": 0.15,
-        "hills": 0.1
+        "mountains": 0.18,
+        "hills": 0.12
       }
     },
     "formations": [
