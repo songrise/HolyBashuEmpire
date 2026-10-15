@@ -1,5 +1,5 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "countries": [
     {
       "tag": "BAB",
@@ -6590,7 +6590,7 @@
     "source_registry": "data/player_guides_v01.json"
   },
   "files": {
-    ".metadata/metadata.json": "0009799f494debbaf2f6520cfb7faa4c560adb6a1099bb30a86943de67b08ed9",
+    ".metadata/metadata.json": "9c0bb017b1606f6aa3a5bb3fd1411b0176dbf10c1fa599b01fb9e8fc864fd904",
     ".metadata/thumbnail.png": "5202607af092d6c05c08ef7a1162943392bf7e86daa6ea57a54212c0ef3c8481",
     "in_game/events/hbe_banquet_events.txt": "60e6b696135cc63a74cce1063288ff580c3014c799714de7564c87471492ff74",
     "in_game/events/hbe_civic_events.txt": "1a857fc9f5433dd6722d8a1413f2b1170f809cc073bfb9620bdfd7f89dea2a8c",
@@ -6651,6 +6651,7 @@
     "in_game/common/on_action/hbe_ai_on_actions.txt": "71e87bad553e39e8885adfd7ae52772f085735e26bda81b249a03430cc36e96b",
     "in_game/common/on_action/hbe_annex_industry_on_actions.txt": "c72b7dbd9cc829369c7078cb058ae0cad31435a0683ae0ac99b9bc671852613a",
     "in_game/common/on_action/hbe_banquet_on_actions.txt": "4ac0eea5b0f7517abc8ee3ac3f0b59671db5a2dfca0cfe6afae85deb34fb6bbc",
+    "in_game/common/on_action/hbe_capital_recruitment.txt": "c28e5951b6776e0e5800897911785c19b30825b007eee247e8573d2322b33ddd",
     "in_game/common/on_action/hbe_civic_on_actions.txt": "3ddd608cfa502762e8a0c6eb1efb45f6f9ae61a2be9d5f0c9a7cfb059c367431",
     "in_game/common/on_action/hbe_deep_balance_on_actions.txt": "1c09047deb9c1a03597bdd98f426fa4ca35abdca2fbd5fcbe5bb87cfde729b8f",
     "in_game/common/on_action/hbe_guest_license_on_actions.txt": "059b77fc4e26aa5083887dfe71e6518397b75e4c54e848b11706a5d00be18608",
@@ -6666,6 +6667,7 @@
     "in_game/common/scripted_effects/hbe_ai_effects.txt": "f158733dccf6d238d0da5455538d8672d950c6cc16697c2dac8d516a8bad501e",
     "in_game/common/scripted_effects/hbe_annex_industry_effects.txt": "061105fd4e15c1d2af04b6798125a7d0931953253517d8e425a4b24d466c9665",
     "in_game/common/scripted_effects/hbe_banquet_effects.txt": "32754ac4f075dd63f029d74b6cbcd0d17a3df4f04081ac69a601452623242915",
+    "in_game/common/scripted_effects/hbe_capital_recruitment.txt": "e290555f341321135ca59706c31e171bcc3e6d8ed172a910051f14f20c35c101",
     "in_game/common/scripted_effects/hbe_civic_effects.txt": "900a9a54b19a21aa3cafd693f0a43bfb9bb9da8a9de1292412e8583653552234",
     "in_game/common/scripted_effects/hbe_effects.txt": "35aed53faad9e2f83991f13607297f5e682057e5ea6f5cfa34677d4f4686a1bd",
     "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "79512cedb773f91ac133fada19748de391b4bc53243073907da38eed6728b6b7",
@@ -6730,6 +6732,7 @@
     "main_menu/common/named_colors/hbe_formable_colors.txt": "f3ab5ee78ff80d4c7ff63515431c7de3b2e6aaab52932339cf26d8329f85fc8e",
     "main_menu/common/scenarios/hbe_scenarios.txt": "a1721fee702056ca5fc956c12382a376ddacebcb6af70fc765def6878648f3c5",
     "main_menu/common/static_modifiers/hbe_ai_modifiers.txt": "2f1f9367d42553bc4403f029870238c172f229a686dbdced11a51cbed8f826ba",
+    "main_menu/common/static_modifiers/hbe_capital_recruitment.txt": "67b245dc9fa228c16aff59522d5ea611df20e7d2e394fdfe78e752b45f590403",
     "main_menu/common/static_modifiers/hbe_civic_modifiers.txt": "bf398254356dd9244640451eea31015e6c27c296956450a4816267d4016e68d4",
     "main_menu/common/static_modifiers/hbe_deep_support_modifiers.txt": "2fd48e26bb7bd2be4f7b39a95e1ac99cff642bfaa6189c639be0e018080ed59a",
     "main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt": "95b0bd763b7809c68dc2fed6e8ad99b537879db1a4372afc733c4b8ce622c2df",
@@ -7284,6 +7287,7 @@
     "main_menu/gui/shared/hbe_font_icons.gui": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374",
     "main_menu/localization/english/hbe_advance_gates_l_english.yml": "f3269dffe49e59c959821aa3e74f725fa199fa0231ad11d970777af2cc99b902",
     "main_menu/localization/english/hbe_annex_industry_l_english.yml": "1d35870b3d1b600146156070210f1447198e84cb9024b8af5aedb12e6613cab0",
+    "main_menu/localization/english/hbe_capital_recruitment_l_english.yml": "23f7ce675e81273d11cc046ea25aaaafc09518a4259fed7f48f236c7a5a6a5c1",
     "main_menu/localization/english/hbe_deep_balance_l_english.yml": "5069450c803a882bc203da8d96d31eb2b7f2885aea1a4f0deffb4aab4b920f23",
     "main_menu/localization/english/hbe_ending_l_english.yml": "eba3a83f64d5a96aae8f08cc8f7324b4a1059f4d0e152c94918e816f88eb2c93",
     "main_menu/localization/english/hbe_formables_l_english.yml": "55ee7c7b7c4f283ede0fcb6c9371e5d5383d20887520097774f2b13a0b13e186",
@@ -7297,6 +7301,7 @@
     "main_menu/localization/english/hbe_unit_maintenance_l_english.yml": "0a8bea12daa2dbc825bce9561add5a71c11a0e970e65fd4c5d91ecfd42b46eb9",
     "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml": "07e87fafc60103f5e72e6e0874853f44a81415f108e44e8f7aab5244363eb251",
     "main_menu/localization/simp_chinese/hbe_annex_industry_l_simp_chinese.yml": "dc19aeaee00af10802dd9309e441ff434f33684991b0b16f1ad0afa0d35999b6",
+    "main_menu/localization/simp_chinese/hbe_capital_recruitment_l_simp_chinese.yml": "734090b1d02e2d0a01aa4c7ccf3bce5fa7b84f77f591407fb297c73f7aba2a8a",
     "main_menu/localization/simp_chinese/hbe_deep_balance_l_simp_chinese.yml": "ebd7e78fc90635c811d7feeeffadb81acd515f2c9a554afdb972a314f8f58dfc",
     "main_menu/localization/simp_chinese/hbe_ending_l_simp_chinese.yml": "8f0000223bd13a531725a7ce61a8d0ad0988bb5ab8de42f83cd6203e896ac186",
     "main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml": "a13ee827d96e35261a78297d24d075c84bea425864211f7617773ecc1a4c55e9",
@@ -37133,5 +37138,29 @@
         "thumbnail_sha256": "f769f8b6bdb05389bd5429854a12f9e76acb930a87d391c5a5a42237bbfb38f2"
       }
     ]
+  },
+  "capital_recruitment_v031": {
+    "version": "0.3.2",
+    "scope": "All current HBE members, including formed countries and later members.",
+    "rule": "If the country has no regular recruitment location, give its capital native recruitment permission.",
+    "refresh": "Game start and monthly country pulse; old saves receive it on their next pulse.",
+    "expiration_months": 2,
+    "extra_recruitment_queue": 0,
+    "army_capacity_or_stat_bonus": 0,
+    "files": [
+      "in_game/common/scripted_effects/hbe_capital_recruitment.txt",
+      "in_game/common/on_action/hbe_capital_recruitment.txt",
+      "main_menu/common/static_modifiers/hbe_capital_recruitment.txt",
+      "main_menu/localization/simp_chinese/hbe_capital_recruitment_l_simp_chinese.yml",
+      "main_menu/localization/english/hbe_capital_recruitment_l_english.yml"
+    ]
+  },
+  "release_v032": {
+    "version": "0.3.2",
+    "visible_events": 506,
+    "capital_recruitment_fallback": true,
+    "special_regiment_strength": 500,
+    "burden_per_net_new_special_regiment": 2,
+    "loading_art_enabled": false
   }
 }

@@ -1,0 +1,2335 @@
+{
+  "scope": "One natural AI campaign; original 36 prince definitions counted separately from actual organization membership.",
+  "checkpoints": [
+    {
+      "date": "1337.4.2",
+      "active": [
+        "BAB",
+        "BAE",
+        "BAF",
+        "BAJ",
+        "BAL",
+        "BAO",
+        "BAP",
+        "BAQ",
+        "BAW",
+        "BAX",
+        "BAZ",
+        "BBB",
+        "BBC",
+        "BBE",
+        "BBF",
+        "BBH",
+        "BBI",
+        "BBJ",
+        "BBL",
+        "BBM",
+        "BBN",
+        "BBO",
+        "BBP",
+        "BBQ",
+        "BBR",
+        "BBS",
+        "BBT",
+        "BBU",
+        "BBV",
+        "BBW",
+        "BBX",
+        "BBY",
+        "BBZ",
+        "BCA",
+        "BCB",
+        "BCC"
+      ],
+      "organizations": [
+        {
+          "id": 53,
+          "members": [
+            "BAB",
+            "BCB",
+            "BBU",
+            "BBR",
+            "BBI",
+            "BAZ",
+            "BAP",
+            "BCC",
+            "BCA",
+            "BBZ",
+            "BBY",
+            "BBX",
+            "BBW",
+            "BBV",
+            "BBT",
+            "BBS",
+            "BBQ",
+            "BBP",
+            "BBO",
+            "BBN",
+            "BBM",
+            "BBL",
+            "BBJ",
+            "BBH",
+            "BBF",
+            "BBE",
+            "BBC",
+            "BBB",
+            "BAX",
+            "BAW",
+            "BAQ",
+            "BAO",
+            "BAL",
+            "BAJ",
+            "BAF",
+            "BAE"
+          ],
+          "leader": null
+        }
+      ],
+      "opening_territory_owners": {
+        "BAB": 5,
+        "BAE": 4,
+        "BAF": 3,
+        "BAJ": 3,
+        "BAL": 4,
+        "BAO": 6,
+        "BAP": 5,
+        "BAQ": 4,
+        "BAW": 4,
+        "BAX": 3,
+        "BAZ": 6,
+        "BBB": 3,
+        "BBC": 3,
+        "BBE": 8,
+        "BBF": 4,
+        "BBH": 4,
+        "BBI": 3,
+        "BBJ": 4,
+        "BBL": 3,
+        "BBM": 4,
+        "BBN": 3,
+        "BBO": 5,
+        "BBP": 5,
+        "BBQ": 6,
+        "BBR": 5,
+        "BBS": 4,
+        "BBT": 6,
+        "BBU": 5,
+        "BBV": 4,
+        "BBW": 10,
+        "BBX": 4,
+        "BBY": 4,
+        "BBZ": 6,
+        "BCA": 5,
+        "BCB": 4,
+        "BCC": 5
+      }
+    },
+    {
+      "date": "1342.4.1",
+      "active": [
+        "BAB",
+        "BAE",
+        "BAF",
+        "BAJ",
+        "BAL",
+        "BAP",
+        "BAQ",
+        "BAW",
+        "BAX",
+        "BAZ",
+        "BBB",
+        "BBC",
+        "BBE",
+        "BBF",
+        "BBH",
+        "BBI",
+        "BBJ",
+        "BBL",
+        "BBM",
+        "BBO",
+        "BBP",
+        "BBQ",
+        "BBR",
+        "BBS",
+        "BBT",
+        "BBU",
+        "BBW",
+        "BBX",
+        "BBY",
+        "BBZ"
+      ],
+      "organizations": [
+        {
+          "id": 53,
+          "members": [
+            "BAB",
+            "BBZ",
+            "BBY",
+            "BBX",
+            "BBW",
+            "BBU",
+            "BBT",
+            "BBS",
+            "BBR",
+            "BBQ",
+            "BBP",
+            "BBO",
+            "BBM",
+            "BBL",
+            "BBJ",
+            "BBI",
+            "BBH",
+            "BBF",
+            "BBE",
+            "BBC",
+            "BBB",
+            "BAZ",
+            "BAQ",
+            "BAP",
+            "BAL",
+            "BAJ",
+            "BAF",
+            "BAE",
+            "BAX",
+            "BAW"
+          ],
+          "leader": null
+        }
+      ],
+      "opening_territory_owners": {
+        "BAB": 5,
+        "BAE": 4,
+        "BAF": 3,
+        "BAJ": 3,
+        "BAL": 4,
+        "BAP": 19,
+        "BBU": 6,
+        "BAQ": 9,
+        "BAW": 4,
+        "BAX": 3,
+        "BAZ": 6,
+        "BBB": 3,
+        "BBC": 3,
+        "BBE": 8,
+        "BBF": 4,
+        "BBH": 4,
+        "BBI": 3,
+        "BBJ": 4,
+        "BBL": 3,
+        "BBM": 7,
+        "BBO": 5,
+        "BBP": 5,
+        "BBQ": 6,
+        "BBR": 5,
+        "BBS": 4,
+        "BBT": 6,
+        "BBW": 14,
+        "BBX": 4,
+        "BBY": 4,
+        "BBZ": 2,
+        "lizhou_sichuan_province": 4
+      }
+    },
+    {
+      "date": "1347.4.1",
+      "active": [
+        "BAB",
+        "BAE",
+        "BAF",
+        "BAL",
+        "BAP",
+        "BAQ",
+        "BAW",
+        "BAX",
+        "BAZ",
+        "BBB",
+        "BBC",
+        "BBE",
+        "BBF",
+        "BBH",
+        "BBI",
+        "BBJ",
+        "BBL",
+        "BBM",
+        "BBO",
+        "BBP",
+        "BBQ",
+        "BBR",
+        "BBS",
+        "BBT",
+        "BBU",
+        "BBW",
+        "BBY",
+        "BBZ"
+      ],
+      "organizations": [
+        {
+          "id": 53,
+          "members": [
+            "BAB",
+            "BBF",
+            "BBZ",
+            "BBY",
+            "BBW",
+            "BBU",
+            "BBT",
+            "BBS",
+            "BBR",
+            "BBQ",
+            "BBP",
+            "BBO",
+            "BBM",
+            "BBL",
+            "BBJ",
+            "BBI",
+            "BBH",
+            "BBE",
+            "BBC",
+            "BBB",
+            "BAZ",
+            "BAQ",
+            "BAP",
+            "BAL",
+            "BAF",
+            "BAE",
+            "BAX",
+            "BAW"
+          ],
+          "leader": null
+        }
+      ],
+      "opening_territory_owners": {
+        "BAB": 5,
+        "BAE": 4,
+        "BAF": 3,
+        "BBU": 9,
+        "BAL": 4,
+        "BAP": 19,
+        "BAQ": 9,
+        "BAW": 4,
+        "BAX": 3,
+        "BAZ": 6,
+        "BBB": 3,
+        "BBC": 3,
+        "BBE": 8,
+        "BBF": 4,
+        "BBH": 4,
+        "BBI": 3,
+        "BBJ": 4,
+        "BBL": 3,
+        "BBM": 7,
+        "BBO": 5,
+        "BBP": 5,
+        "BBQ": 6,
+        "BBR": 5,
+        "BBS": 4,
+        "BBT": 6,
+        "BBW": 14,
+        "BBY": 8,
+        "BBZ": 2,
+        "lizhou_sichuan_province": 4
+      }
+    },
+    {
+      "date": "1352.4.1",
+      "active": [
+        "BAB",
+        "BAE",
+        "BAF",
+        "BAL",
+        "BAP",
+        "BAQ",
+        "BAW",
+        "BAX",
+        "BAZ",
+        "BBB",
+        "BBC",
+        "BBE",
+        "BBF",
+        "BBH",
+        "BBI",
+        "BBJ",
+        "BBL",
+        "BBM",
+        "BBO",
+        "BBP",
+        "BBQ",
+        "BBR",
+        "BBS",
+        "BBT",
+        "BBU",
+        "BBY",
+        "BBZ"
+      ],
+      "organizations": [
+        {
+          "id": 53,
+          "members": [
+            "BAP",
+            "BBF",
+            "BBZ",
+            "BBY",
+            "BBU",
+            "BBT",
+            "BBS",
+            "BBR",
+            "BBQ",
+            "BBP",
+            "BBO",
+            "BBM",
+            "BBL",
+            "BBJ",
+            "BBI",
+            "BBH",
+            "BBE",
+            "BBC",
+            "BBB",
+            "BAZ",
+            "BAQ",
+            "BAL",
+            "BAF",
+            "BAE",
+            "BAB",
+            "BAX",
+            "BAW"
+          ],
+          "leader": null
+        }
+      ],
+      "opening_territory_owners": {
+        "BAB": 5,
+        "BAE": 4,
+        "BAF": 3,
+        "BBU": 9,
+        "BAL": 4,
+        "BAP": 19,
+        "BAQ": 9,
+        "BAW": 4,
+        "BAX": 3,
+        "BAZ": 6,
+        "BBB": 3,
+        "BBC": 3,
+        "BBE": 8,
+        "BBF": 4,
+        "BBH": 4,
+        "BBI": 3,
+        "BBJ": 4,
+        "BBL": 3,
+        "BBM": 21,
+        "BBO": 5,
+        "BBP": 5,
+        "BBQ": 6,
+        "BBR": 5,
+        "BBS": 4,
+        "BBT": 6,
+        "BBY": 8,
+        "BBZ": 2,
+        "lizhou_sichuan_province": 4
+      }
+    },
+    {
+      "date": "1357.4.1",
+      "active": [
+        "BAB",
+        "BAE",
+        "BAF",
+        "BAL",
+        "BAP",
+        "BAQ",
+        "BAX",
+        "BAZ",
+        "BBB",
+        "BBE",
+        "BBF",
+        "BBH",
+        "BBI",
+        "BBJ",
+        "BBL",
+        "BBM",
+        "BBO",
+        "BBP",
+        "BBQ",
+        "BBS",
+        "BBT",
+        "BBU",
+        "BBY",
+        "BBZ"
+      ],
+      "organizations": [
+        {
+          "id": 53,
+          "members": [
+            "BAP",
+            "BBZ",
+            "BBF",
+            "BBZ",
+            "BBY",
+            "BBU",
+            "BBT",
+            "BBS",
+            "BBQ",
+            "BBP",
+            "BBO",
+            "BBM",
+            "BBL",
+            "BBJ",
+            "BBI",
+            "BBH",
+            "BBE",
+            "BBB",
+            "BAZ",
+            "BAQ",
+            "BAL",
+            "BAF",
+            "BAE",
+            "BAB",
+            "BAX"
+          ],
+          "leader": null
+        }
+      ],
+      "opening_territory_owners": {
+        "BAB": 5,
+        "BAE": 4,
+        "BAF": 3,
+        "BBU": 9,
+        "BAL": 4,
+        "BAP": 19,
+        "BAQ": 13,
+        "BAX": 6,
+        "BAZ": 6,
+        "BBB": 3,
+        "BBE": 8,
+        "BBF": 4,
+        "BBH": 4,
+        "BBI": 3,
+        "BBJ": 4,
+        "BBL": 3,
+        "BBM": 21,
+        "BBO": 5,
+        "BBP": 5,
+        "BBQ": 11,
+        "BBS": 4,
+        "BBT": 1,
+        "guangan_province": 5,
+        "BBY": 8,
+        "BBZ": 2,
+        "lizhou_sichuan_province": 4
+      }
+    },
+    {
+      "date": "1362.4.1",
+      "active": [
+        "BAB",
+        "BAE",
+        "BAP",
+        "BAQ",
+        "BAZ",
+        "BBB",
+        "BBL",
+        "BBM",
+        "BBQ",
+        "BBZ"
+      ],
+      "organizations": [
+        {
+          "id": 53,
+          "members": [
+            "BAP",
+            "BBZ",
+            "BBQ",
+            "BBM",
+            "BBL",
+            "BBB",
+            "BAZ",
+            "BAQ",
+            "BAE",
+            "BAB"
+          ],
+          "leader": null
+        }
+      ],
+      "opening_territory_owners": {
+        "BAB": 5,
+        "BAE": 7,
+        "BAP": 40,
+        "BAQ": 13,
+        "BBQ": 17,
+        "BAZ": 6,
+        "BBB": 3,
+        "CHE": 34,
+        "BBL": 3,
+        "BBM": 25,
+        "guangan_province": 5,
+        "BBZ": 2,
+        "lizhou_sichuan_province": 4
+      }
+    }
+  ],
+  "loss_summary": {
+    "internal": 18,
+    "external": 8
+  },
+  "last_five_years_losses": [
+    {
+      "tag": "BAF",
+      "name": "彭州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BAE": 3
+      },
+      "last_recorded_territory_loss_date": "1360.1.1",
+      "recipients_on_last_loss": {
+        "BAE": 3
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAL",
+      "name": "眉州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "last_recorded_territory_loss_date": "1359.8.12",
+      "recipients_on_last_loss": {
+        "BAP": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAX",
+      "name": "昌州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BBQ": 3
+      },
+      "last_recorded_territory_loss_date": "1362.2.1",
+      "recipients_on_last_loss": {
+        "BBQ": 6
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBE",
+      "name": "夔州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 8,
+      "final_owners": {
+        "CHE": 8
+      },
+      "last_recorded_territory_loss_date": "1357.9.30",
+      "recipients_on_last_loss": {
+        "CHE": 8
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBF",
+      "name": "酉阳",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "CHE": 4
+      },
+      "last_recorded_territory_loss_date": "1359.10.19",
+      "recipients_on_last_loss": {
+        "CHE": 4
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBH",
+      "name": "忠州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "CHE": 4
+      },
+      "last_recorded_territory_loss_date": "1359.8.15",
+      "recipients_on_last_loss": {
+        "CHE": 4
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBI",
+      "name": "保宁蜀道",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "CHE": 3
+      },
+      "last_recorded_territory_loss_date": "1359.11.20",
+      "recipients_on_last_loss": {
+        "CHE": 3
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBJ",
+      "name": "巴州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "CHE": 4
+      },
+      "last_recorded_territory_loss_date": "1359.10.16",
+      "recipients_on_last_loss": {
+        "CHE": 4
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBO",
+      "name": "达州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "CHE": 5
+      },
+      "last_recorded_territory_loss_date": "1357.9.30",
+      "recipients_on_last_loss": {
+        "CHE": 5
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBP",
+      "name": "顺庆",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "CHE": 5
+      },
+      "last_recorded_territory_loss_date": "1359.11.20",
+      "recipients_on_last_loss": {
+        "CHE": 5
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBS",
+      "name": "潼川",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BBM": 4
+      },
+      "last_recorded_territory_loss_date": "1362.1.1",
+      "recipients_on_last_loss": {
+        "BBM": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBT",
+      "name": "广安",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 6,
+      "final_owners": {
+        "CHE": 1,
+        "guangan_province": 5
+      },
+      "last_recorded_territory_loss_date": "1357.12.4",
+      "recipients_on_last_loss": {
+        "CHE": 1
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBU",
+      "name": "雅州茶马",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "BAP": 5
+      },
+      "last_recorded_territory_loss_date": "1360.3.1",
+      "recipients_on_last_loss": {
+        "BAP": 9
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBY",
+      "name": "德昌",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "last_recorded_territory_loss_date": "1359.12.7",
+      "recipients_on_last_loss": {
+        "BAP": 8
+      },
+      "elimination_class": "internal"
+    }
+  ],
+  "declared_hbe_wars": [
+    {
+      "year": 1339,
+      "line": "[21:32:43][diplomatic_action_war.cpp:475]: WAR: 眉州 declared war on 嘉定山门 "
+    },
+    {
+      "year": 1339,
+      "line": "[21:32:46][diplomatic_action_war.cpp:475]: WAR: 叙州盐酒 declared war on 嘉定山门 "
+    },
+    {
+      "year": 1339,
+      "line": "[21:32:46][diplomatic_action_war.cpp:475]: WAR: 雅州茶马 declared war on 嘉定山门 "
+    },
+    {
+      "year": 1340,
+      "line": "[21:33:22][diplomatic_action_war.cpp:475]: WAR: 泸州 declared war on 永宁 "
+    },
+    {
+      "year": 1341,
+      "line": "[21:33:25][diplomatic_action_war.cpp:475]: WAR: 叙州盐酒 declared war on 马湖 "
+    },
+    {
+      "year": 1341,
+      "line": "[21:33:31][diplomatic_action_war.cpp:475]: WAR: 松潘 declared war on 茂州 "
+    },
+    {
+      "year": 1341,
+      "line": "[21:33:37][diplomatic_action_war.cpp:475]: WAR: 剑州 declared war on 龙安 "
+    },
+    {
+      "year": 1342,
+      "line": "[21:33:59][diplomatic_action_war.cpp:475]: WAR: 德昌 declared war on 盐源 "
+    },
+    {
+      "year": 1342,
+      "line": "[21:34:02][diplomatic_action_war.cpp:475]: WAR: 邛州 declared war on 雅州茶马 "
+    },
+    {
+      "year": 1347,
+      "line": "[21:35:41][diplomatic_action_war.cpp:475]: WAR: 剑州 declared war on 松潘 "
+    },
+    {
+      "year": 1351,
+      "line": "[21:37:13][diplomatic_action_war.cpp:475]: WAR: Tiānwán declared war on 夔州 "
+    },
+    {
+      "year": 1352,
+      "line": "[21:37:42][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 夔州 "
+    },
+    {
+      "year": 1352,
+      "line": "[21:37:46][diplomatic_action_war.cpp:475]: WAR: 简州 declared war on 合州 "
+    },
+    {
+      "year": 1356,
+      "line": "[21:38:58][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 黎州 "
+    },
+    {
+      "year": 1356,
+      "line": "[21:39:08][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 酉阳 "
+    },
+    {
+      "year": 1357,
+      "line": "[21:39:13][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 广安 "
+    },
+    {
+      "year": 1357,
+      "line": "[21:39:29][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 潼川 "
+    },
+    {
+      "year": 1358,
+      "line": "[21:39:38][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 巴州 "
+    },
+    {
+      "year": 1358,
+      "line": "[21:39:45][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 忠州 "
+    },
+    {
+      "year": 1359,
+      "line": "[21:39:59][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 保宁蜀道 "
+    },
+    {
+      "year": 1359,
+      "line": "[21:40:01][diplomatic_action_war.cpp:475]: WAR: 叙州盐酒 declared war on 德昌 "
+    },
+    {
+      "year": 1359,
+      "line": "[21:40:06][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 广元 "
+    },
+    {
+      "year": 1359,
+      "line": "[21:40:18][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 涪州 "
+    },
+    {
+      "year": 1360,
+      "line": "[21:40:23][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 重庆山城 "
+    },
+    {
+      "year": 1360,
+      "line": "[21:40:35][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 泸州 "
+    },
+    {
+      "year": 1360,
+      "line": "[21:40:40][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 叙州盐酒 "
+    },
+    {
+      "year": 1361,
+      "line": "[21:41:01][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 成都锦官 "
+    }
+  ],
+  "territory_transfers": [
+    {
+      "location": 11738,
+      "date": "1362.2.1",
+      "from": "BAX",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11739,
+      "date": "1362.2.1",
+      "from": "BAX",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11740,
+      "date": "1362.2.1",
+      "from": "BAX",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11747,
+      "date": "1357.9.30",
+      "from": "BBO",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11748,
+      "date": "1357.9.30",
+      "from": "BBO",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11749,
+      "date": "1357.9.30",
+      "from": "BBO",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11750,
+      "date": "1357.9.30",
+      "from": "BBO",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11751,
+      "date": "1357.9.30",
+      "from": "BBO",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11755,
+      "date": "1353.3.30",
+      "from": "BBC",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11755,
+      "date": "1354.3.20",
+      "from": "BBQ",
+      "to": "BAX",
+      "to_current_definition": "BAX"
+    },
+    {
+      "location": 11755,
+      "date": "1362.2.1",
+      "from": "BAX",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11756,
+      "date": "1353.3.30",
+      "from": "BBC",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11756,
+      "date": "1354.3.20",
+      "from": "BBQ",
+      "to": "BAX",
+      "to_current_definition": "BAX"
+    },
+    {
+      "location": 11756,
+      "date": "1362.2.1",
+      "from": "BAX",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11757,
+      "date": "1353.3.30",
+      "from": "BBC",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11757,
+      "date": "1354.3.20",
+      "from": "BBQ",
+      "to": "BAX",
+      "to_current_definition": "BAX"
+    },
+    {
+      "location": 11757,
+      "date": "1362.2.1",
+      "from": "BAX",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11758,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11759,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11760,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11761,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11762,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11763,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11764,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11765,
+      "date": "1357.9.30",
+      "from": "BBE",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11772,
+      "date": "1344.3.12",
+      "from": "BBF",
+      "to": "BBF",
+      "to_current_definition": "BBF"
+    },
+    {
+      "location": 11772,
+      "date": "1359.10.19",
+      "from": "BBF",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11773,
+      "date": "1344.3.12",
+      "from": "BBF",
+      "to": "BBF",
+      "to_current_definition": "BBF"
+    },
+    {
+      "location": 11773,
+      "date": "1359.10.19",
+      "from": "BBF",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11774,
+      "date": "1344.3.12",
+      "from": "BBF",
+      "to": "BBF",
+      "to_current_definition": "BBF"
+    },
+    {
+      "location": 11774,
+      "date": "1359.10.19",
+      "from": "BBF",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11775,
+      "date": "1344.3.12",
+      "from": "BBF",
+      "to": "BBF",
+      "to_current_definition": "BBF"
+    },
+    {
+      "location": 11775,
+      "date": "1359.10.19",
+      "from": "BBF",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11776,
+      "date": "1359.8.15",
+      "from": "BBH",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11777,
+      "date": "1359.8.15",
+      "from": "BBH",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11778,
+      "date": "1359.8.15",
+      "from": "BBH",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11779,
+      "date": "1359.8.15",
+      "from": "BBH",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11780,
+      "date": "1343.8.3",
+      "from": "BBX",
+      "to": "BBY",
+      "to_current_definition": "BBY"
+    },
+    {
+      "location": 11780,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11781,
+      "date": "1343.8.3",
+      "from": "BBX",
+      "to": "BBY",
+      "to_current_definition": "BBY"
+    },
+    {
+      "location": 11781,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11782,
+      "date": "1343.8.3",
+      "from": "BBX",
+      "to": "BBY",
+      "to_current_definition": "BBY"
+    },
+    {
+      "location": 11782,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11783,
+      "date": "1343.8.3",
+      "from": "BBX",
+      "to": "BBY",
+      "to_current_definition": "BBY"
+    },
+    {
+      "location": 11783,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11785,
+      "date": "1353.11.1",
+      "from": "BAW",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11786,
+      "date": "1353.11.1",
+      "from": "BAW",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11787,
+      "date": "1353.11.1",
+      "from": "BAW",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11788,
+      "date": "1353.11.1",
+      "from": "BAW",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11789,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11790,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11791,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11792,
+      "date": "1359.12.7",
+      "from": "BBY",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11798,
+      "date": "1339.6.24",
+      "from": "BAO",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11799,
+      "date": "1339.6.24",
+      "from": "BAO",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11800,
+      "date": "1339.7.15",
+      "from": "BAO",
+      "to": "BBU",
+      "to_current_definition": "BBU"
+    },
+    {
+      "location": 11800,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11801,
+      "date": "1339.6.24",
+      "from": "BAO",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11802,
+      "date": "1339.6.24",
+      "from": "BAO",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11803,
+      "date": "1339.6.24",
+      "from": "BAO",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11811,
+      "date": "1341.9.10",
+      "from": "BCA",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11812,
+      "date": "1341.9.10",
+      "from": "BCA",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11813,
+      "date": "1341.9.10",
+      "from": "BCA",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11814,
+      "date": "1341.9.10",
+      "from": "BCA",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11815,
+      "date": "1341.9.10",
+      "from": "BCA",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11816,
+      "date": "1359.8.12",
+      "from": "BAL",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11817,
+      "date": "1359.8.12",
+      "from": "BAL",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11818,
+      "date": "1359.8.12",
+      "from": "BAL",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11819,
+      "date": "1359.8.12",
+      "from": "BAL",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11820,
+      "date": "1342.11.25",
+      "from": "BAJ",
+      "to": "BBU",
+      "to_current_definition": "BBU"
+    },
+    {
+      "location": 11820,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11821,
+      "date": "1342.11.25",
+      "from": "BAJ",
+      "to": "BBU",
+      "to_current_definition": "BBU"
+    },
+    {
+      "location": 11821,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11822,
+      "date": "1342.11.25",
+      "from": "BAJ",
+      "to": "BBU",
+      "to_current_definition": "BBU"
+    },
+    {
+      "location": 11822,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11823,
+      "date": "1341.9.10",
+      "from": "BCB",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11824,
+      "date": "1341.9.10",
+      "from": "BCB",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11825,
+      "date": "1341.9.10",
+      "from": "BCB",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11826,
+      "date": "1341.9.10",
+      "from": "BCB",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11839,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11840,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11841,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11842,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11843,
+      "date": "1360.3.1",
+      "from": "BBU",
+      "to": "BAP",
+      "to_current_definition": "BAP"
+    },
+    {
+      "location": 11844,
+      "date": "1341.6.25",
+      "from": "BCC",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11845,
+      "date": "1341.6.25",
+      "from": "BCC",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11846,
+      "date": "1341.6.25",
+      "from": "BCC",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11847,
+      "date": "1341.6.25",
+      "from": "BCC",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11848,
+      "date": "1341.6.25",
+      "from": "BCC",
+      "to": "BAQ",
+      "to_current_definition": "BAQ"
+    },
+    {
+      "location": 11849,
+      "date": "1359.11.20",
+      "from": "BBI",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11850,
+      "date": "1359.11.20",
+      "from": "BBI",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11851,
+      "date": "1359.11.20",
+      "from": "BBI",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11852,
+      "date": "1359.10.16",
+      "from": "BBJ",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11853,
+      "date": "1359.10.16",
+      "from": "BBJ",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11854,
+      "date": "1359.10.16",
+      "from": "BBJ",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11855,
+      "date": "1359.10.16",
+      "from": "BBJ",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11862,
+      "date": "1353.5.13",
+      "from": "BBT",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11862,
+      "date": "1354.5.8",
+      "from": "BBQ",
+      "to": "AAA58",
+      "to_current_definition": "guangan_province"
+    },
+    {
+      "location": 11863,
+      "date": "1353.5.13",
+      "from": "BBT",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11863,
+      "date": "1354.5.8",
+      "from": "BBQ",
+      "to": "AAA58",
+      "to_current_definition": "guangan_province"
+    },
+    {
+      "location": 11864,
+      "date": "1353.5.13",
+      "from": "BBT",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11864,
+      "date": "1354.5.8",
+      "from": "BBQ",
+      "to": "AAA58",
+      "to_current_definition": "guangan_province"
+    },
+    {
+      "location": 11865,
+      "date": "1353.5.13",
+      "from": "BBT",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11865,
+      "date": "1354.5.8",
+      "from": "BBQ",
+      "to": "AAA58",
+      "to_current_definition": "guangan_province"
+    },
+    {
+      "location": 11866,
+      "date": "1353.5.13",
+      "from": "BBT",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11866,
+      "date": "1354.5.8",
+      "from": "BBQ",
+      "to": "AAA58",
+      "to_current_definition": "guangan_province"
+    },
+    {
+      "location": 11867,
+      "date": "1357.12.4",
+      "from": "BBT",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11885,
+      "date": "1341.11.19",
+      "from": "BBN",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11886,
+      "date": "1341.11.19",
+      "from": "BBN",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11887,
+      "date": "1341.11.19",
+      "from": "BBN",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11888,
+      "date": "1341.8.19",
+      "from": "BBV",
+      "to": "BBW",
+      "to_current_definition": "BBW"
+    },
+    {
+      "location": 11888,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11889,
+      "date": "1341.8.19",
+      "from": "BBV",
+      "to": "BBW",
+      "to_current_definition": "BBW"
+    },
+    {
+      "location": 11889,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11890,
+      "date": "1341.8.19",
+      "from": "BBV",
+      "to": "BBW",
+      "to_current_definition": "BBW"
+    },
+    {
+      "location": 11890,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11891,
+      "date": "1341.8.19",
+      "from": "BBV",
+      "to": "BBW",
+      "to_current_definition": "BBW"
+    },
+    {
+      "location": 11891,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11892,
+      "date": "1360.1.1",
+      "from": "BAF",
+      "to": "BAE",
+      "to_current_definition": "BAE"
+    },
+    {
+      "location": 11893,
+      "date": "1360.1.1",
+      "from": "BAF",
+      "to": "BAE",
+      "to_current_definition": "BAE"
+    },
+    {
+      "location": 11894,
+      "date": "1360.1.1",
+      "from": "BAF",
+      "to": "BAE",
+      "to_current_definition": "BAE"
+    },
+    {
+      "location": 11895,
+      "date": "1354.9.1",
+      "from": "BBR",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11896,
+      "date": "1354.9.1",
+      "from": "BBR",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11897,
+      "date": "1354.9.1",
+      "from": "BBR",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11898,
+      "date": "1354.9.1",
+      "from": "BBR",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11899,
+      "date": "1354.9.1",
+      "from": "BBR",
+      "to": "BBQ",
+      "to_current_definition": "BBQ"
+    },
+    {
+      "location": 11900,
+      "date": "1359.11.20",
+      "from": "BBP",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11901,
+      "date": "1359.11.20",
+      "from": "BBP",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11902,
+      "date": "1359.11.20",
+      "from": "BBP",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11903,
+      "date": "1359.11.20",
+      "from": "BBP",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11904,
+      "date": "1359.11.20",
+      "from": "BBP",
+      "to": "CHE",
+      "to_current_definition": "CHE"
+    },
+    {
+      "location": 11905,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11906,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11907,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11908,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11909,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11910,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11911,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11912,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11913,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11914,
+      "date": "1349.1.22",
+      "from": "BBW",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11915,
+      "date": "1362.1.1",
+      "from": "BBS",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11916,
+      "date": "1362.1.1",
+      "from": "BBS",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11917,
+      "date": "1362.1.1",
+      "from": "BBS",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    },
+    {
+      "location": 11918,
+      "date": "1362.1.1",
+      "from": "BBS",
+      "to": "BBM",
+      "to_current_definition": "BBM"
+    }
+  ],
+  "final_hbe_wars": [
+    {
+      "id": 134217761,
+      "countries": [
+        "BAQ",
+        "BAZ"
+      ],
+      "foreign_participants": [
+        767
+      ],
+      "start": "1360.1.31",
+      "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+    },
+    {
+      "id": 100663363,
+      "countries": [
+        "BAB",
+        "BAE",
+        "BBZ"
+      ],
+      "foreign_participants": [
+        767
+      ],
+      "start": "1361.10.19",
+      "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+    },
+    {
+      "id": 67108940,
+      "countries": [
+        "BAZ",
+        "BBB"
+      ],
+      "foreign_participants": [
+        767,
+        829
+      ],
+      "start": "1359.11.2",
+      "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+    },
+    {
+      "id": 134217815,
+      "countries": [
+        "BAP",
+        "BBM"
+      ],
+      "foreign_participants": [
+        767
+      ],
+      "start": "1360.10.28",
+      "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+    },
+    {
+      "id": 201326700,
+      "countries": [
+        "BAP",
+        "BAQ"
+      ],
+      "foreign_participants": [
+        767
+      ],
+      "start": "1360.7.30",
+      "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+    }
+  ],
+  "final_foreign_paper_producer": {
+    "id": 767,
+    "tag": "CHE",
+    "inherited_paper_license": true
+  },
+  "eliminated": [
+    {
+      "tag": "BAF",
+      "name": "彭州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BAE": 3
+      },
+      "last_recorded_territory_loss_date": "1360.1.1",
+      "recipients_on_last_loss": {
+        "BAE": 3
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAJ",
+      "name": "邛州",
+      "first_absent_checkpoint": "1347.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BAP": 3
+      },
+      "last_recorded_territory_loss_date": "1342.11.25",
+      "recipients_on_last_loss": {
+        "BBU": 3
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAL",
+      "name": "眉州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "last_recorded_territory_loss_date": "1359.8.12",
+      "recipients_on_last_loss": {
+        "BAP": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAO",
+      "name": "嘉定山门",
+      "first_absent_checkpoint": "1342.4.1",
+      "opening_lands": 6,
+      "final_owners": {
+        "BAP": 6
+      },
+      "last_recorded_territory_loss_date": "1339.7.15",
+      "recipients_on_last_loss": {
+        "BBU": 1
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAW",
+      "name": "长宁",
+      "first_absent_checkpoint": "1357.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAQ": 4
+      },
+      "last_recorded_territory_loss_date": "1353.11.1",
+      "recipients_on_last_loss": {
+        "BAQ": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BAX",
+      "name": "昌州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BBQ": 3
+      },
+      "last_recorded_territory_loss_date": "1362.2.1",
+      "recipients_on_last_loss": {
+        "BBQ": 6
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBC",
+      "name": "合州",
+      "first_absent_checkpoint": "1357.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BBQ": 3
+      },
+      "last_recorded_territory_loss_date": "1353.3.30",
+      "recipients_on_last_loss": {
+        "BBQ": 3
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBE",
+      "name": "夔州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 8,
+      "final_owners": {
+        "CHE": 8
+      },
+      "last_recorded_territory_loss_date": "1357.9.30",
+      "recipients_on_last_loss": {
+        "CHE": 8
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBF",
+      "name": "酉阳",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "CHE": 4
+      },
+      "last_recorded_territory_loss_date": "1359.10.19",
+      "recipients_on_last_loss": {
+        "CHE": 4
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBH",
+      "name": "忠州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "CHE": 4
+      },
+      "last_recorded_territory_loss_date": "1359.8.15",
+      "recipients_on_last_loss": {
+        "CHE": 4
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBI",
+      "name": "保宁蜀道",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "CHE": 3
+      },
+      "last_recorded_territory_loss_date": "1359.11.20",
+      "recipients_on_last_loss": {
+        "CHE": 3
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBJ",
+      "name": "巴州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "CHE": 4
+      },
+      "last_recorded_territory_loss_date": "1359.10.16",
+      "recipients_on_last_loss": {
+        "CHE": 4
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBN",
+      "name": "龙安",
+      "first_absent_checkpoint": "1342.4.1",
+      "opening_lands": 3,
+      "final_owners": {
+        "BBM": 3
+      },
+      "last_recorded_territory_loss_date": "1341.11.19",
+      "recipients_on_last_loss": {
+        "BBM": 3
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBO",
+      "name": "达州",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "CHE": 5
+      },
+      "last_recorded_territory_loss_date": "1357.9.30",
+      "recipients_on_last_loss": {
+        "CHE": 5
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBP",
+      "name": "顺庆",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "CHE": 5
+      },
+      "last_recorded_territory_loss_date": "1359.11.20",
+      "recipients_on_last_loss": {
+        "CHE": 5
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBR",
+      "name": "遂宁义仓",
+      "first_absent_checkpoint": "1357.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "BBQ": 5
+      },
+      "last_recorded_territory_loss_date": "1354.9.1",
+      "recipients_on_last_loss": {
+        "BBQ": 5
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBS",
+      "name": "潼川",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BBM": 4
+      },
+      "last_recorded_territory_loss_date": "1362.1.1",
+      "recipients_on_last_loss": {
+        "BBM": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBT",
+      "name": "广安",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 6,
+      "final_owners": {
+        "CHE": 1,
+        "guangan_province": 5
+      },
+      "last_recorded_territory_loss_date": "1357.12.4",
+      "recipients_on_last_loss": {
+        "CHE": 1
+      },
+      "elimination_class": "external"
+    },
+    {
+      "tag": "BBU",
+      "name": "雅州茶马",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "BAP": 5
+      },
+      "last_recorded_territory_loss_date": "1360.3.1",
+      "recipients_on_last_loss": {
+        "BAP": 9
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBV",
+      "name": "茂州",
+      "first_absent_checkpoint": "1342.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BBM": 4
+      },
+      "last_recorded_territory_loss_date": "1341.8.19",
+      "recipients_on_last_loss": {
+        "BBW": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBW",
+      "name": "松潘",
+      "first_absent_checkpoint": "1352.4.1",
+      "opening_lands": 10,
+      "final_owners": {
+        "BBM": 10
+      },
+      "last_recorded_territory_loss_date": "1349.1.22",
+      "recipients_on_last_loss": {
+        "BBM": 14
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBX",
+      "name": "盐源",
+      "first_absent_checkpoint": "1347.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "last_recorded_territory_loss_date": "1343.8.3",
+      "recipients_on_last_loss": {
+        "BBY": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BBY",
+      "name": "德昌",
+      "first_absent_checkpoint": "1362.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "last_recorded_territory_loss_date": "1359.12.7",
+      "recipients_on_last_loss": {
+        "BAP": 8
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BCA",
+      "name": "马湖",
+      "first_absent_checkpoint": "1342.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "BAP": 5
+      },
+      "last_recorded_territory_loss_date": "1341.9.10",
+      "recipients_on_last_loss": {
+        "BAP": 5
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BCB",
+      "name": "建昌共治",
+      "first_absent_checkpoint": "1342.4.1",
+      "opening_lands": 4,
+      "final_owners": {
+        "BAP": 4
+      },
+      "last_recorded_territory_loss_date": "1341.9.10",
+      "recipients_on_last_loss": {
+        "BAP": 4
+      },
+      "elimination_class": "internal"
+    },
+    {
+      "tag": "BCC",
+      "name": "永宁",
+      "first_absent_checkpoint": "1342.4.1",
+      "opening_lands": 5,
+      "final_owners": {
+        "BAQ": 5
+      },
+      "last_recorded_territory_loss_date": "1341.6.25",
+      "recipients_on_last_loss": {
+        "BAQ": 5
+      },
+      "elimination_class": "internal"
+    }
+  ]
+}

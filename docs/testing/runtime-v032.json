@@ -1,0 +1,517 @@
+{
+  "version": "0.3.2",
+  "source_manifest_sha256": "1bdad8999c84db9a35e54d4d7f06127c2dd10fad2a16bfac10c173bd7cc81364",
+  "structural_checks": {
+    "source": {
+      "status": "passed",
+      "checks": 1984
+    },
+    "independent_rebuild": {
+      "status": "passed",
+      "checks": 1984,
+      "byte_identical_to_release": false,
+      "release_uses_tested_canonical_source": true
+    }
+  },
+  "controlled_units": {
+    "date": "1337.4.12",
+    "checks": {
+      "hbe_units_probe_one_adds_two": true,
+      "hbe_units_probe_three_add_six": true,
+      "hbe_units_probe_unchanged_not_recharged": true,
+      "hbe_units_probe_five_add_ten": true,
+      "hbe_units_probe_nine_types_counted": true,
+      "hbe_units_probe_hbe_canal_crossbow": true,
+      "hbe_units_probe_hbe_salt_guard": true,
+      "hbe_units_probe_hbe_river_garrison": true,
+      "hbe_units_probe_hbe_pass_rotation": true,
+      "hbe_units_probe_hbe_granary_militia": true,
+      "hbe_units_probe_hbe_tea_riders": true,
+      "hbe_units_probe_hbe_valley_soldiers": true,
+      "hbe_units_probe_hbe_trained_river": true,
+      "hbe_units_probe_hbe_permanent_pass": true,
+      "hbe_units_probe_record_updated": true,
+      "hbe_units_probe_strained_at_40": true,
+      "hbe_units_probe_cross_70_stops_capacity": true,
+      "hbe_units_probe_clamped_at_100": true,
+      "hbe_units_probe_recovery_clears_penalties": true,
+      "hbe_units_probe_over_capacity_cost": true
+    },
+    "all_pass_flag": true,
+    "all_nine_types_at_500_strength": true
+  },
+  "capital_recruitment": {
+    "capital-fresh": [
+      {
+        "date": "1337.4.6",
+        "members": 36,
+        "fallback_capitals": 34,
+        "fallback_only_on_current_capital": true,
+        "all_have_original_or_fallback": true,
+        "all_native_permission_probes_pass": null
+      },
+      {
+        "date": "1337.5.2",
+        "members": 36,
+        "fallback_capitals": 34,
+        "fallback_only_on_current_capital": true,
+        "all_have_original_or_fallback": true,
+        "all_native_permission_probes_pass": null
+      }
+    ],
+    "capital-resume": [
+      {
+        "date": "1362.5.2",
+        "members": 19,
+        "fallback_capitals": 9,
+        "fallback_only_on_current_capital": true,
+        "all_have_original_or_fallback": null,
+        "all_native_permission_probes_pass": false
+      },
+      {
+        "date": "1362.6.2",
+        "members": 19,
+        "fallback_capitals": 9,
+        "fallback_only_on_current_capital": true,
+        "all_have_original_or_fallback": null,
+        "all_native_permission_probes_pass": true
+      }
+    ]
+  },
+  "natural_25_year": {
+    "kind": "25-year natural AI; no grants or forced events, research, buildings or units",
+    "complete": true,
+    "snapshots": [
+      {
+        "date": "1337.4.2",
+        "summary": {
+          "active_princes": 36,
+          "domain_locations": 164,
+          "treasury_total": 1553.63,
+          "treasury_median": 36.38,
+          "population_total": 1776.73,
+          "negative_treasuries": [],
+          "specialty_tech_total": 0,
+          "specialty_tech_median": 0.0,
+          "ruler_changes": 36,
+          "missing_rulers": [],
+          "regencies": {},
+          "governments_without_head": [],
+          "buildings": 0,
+          "building_levels": 0,
+          "operating_buildings": 0,
+          "units": 0,
+          "active_bashu_wars": 0,
+          "contribution_total": 0,
+          "burden_mean": 20.0,
+          "yiqi_mean": 40.0,
+          "last_dividend_total": 0,
+          "last_prestige_total": 0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_well_salt": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          }
+        },
+        "units": []
+      },
+      {
+        "date": "1342.4.1",
+        "summary": {
+          "active_princes": 30,
+          "domain_locations": 160,
+          "treasury_total": 1248.14,
+          "treasury_median": 39.87,
+          "population_total": 2083.94,
+          "negative_treasuries": [],
+          "specialty_tech_total": 103,
+          "specialty_tech_median": 3.0,
+          "ruler_changes": 36,
+          "missing_rulers": [],
+          "regencies": {},
+          "governments_without_head": [],
+          "buildings": 5,
+          "building_levels": 1.0,
+          "operating_buildings": 1,
+          "units": 0,
+          "active_bashu_wars": 1,
+          "contribution_total": 113.0,
+          "burden_mean": 4.17,
+          "yiqi_mean": 58.23,
+          "last_dividend_total": 259.22,
+          "last_prestige_total": 5.24
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_well_salt": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          }
+        },
+        "units": []
+      },
+      {
+        "date": "1347.4.1",
+        "summary": {
+          "active_princes": 28,
+          "domain_locations": 160,
+          "treasury_total": 855.71,
+          "treasury_median": 3.96,
+          "population_total": 2163.59,
+          "negative_treasuries": [],
+          "specialty_tech_total": 103,
+          "specialty_tech_median": 3.0,
+          "ruler_changes": 38,
+          "missing_rulers": [
+            "BAF",
+            "BBH"
+          ],
+          "regencies": {
+            "nobles_estate_regency": 1,
+            "interregnum": 1
+          },
+          "governments_without_head": [],
+          "buildings": 13,
+          "building_levels": 9.0,
+          "operating_buildings": 9,
+          "units": 0,
+          "active_bashu_wars": 0,
+          "contribution_total": 182.0,
+          "burden_mean": 4.25,
+          "yiqi_mean": 72.54,
+          "last_dividend_total": 258.95,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0.64719,
+            "max_pop_demand": 6.12856,
+            "max_industrial_demand": 0,
+            "max_price": 24.96962
+          },
+          "hbe_well_salt": {
+            "production": 3.17636,
+            "max_pop_demand": 15.97886,
+            "max_industrial_demand": 0,
+            "max_price": 14.20104
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.42864,
+            "max_pop_demand": 77.63601,
+            "max_industrial_demand": 0,
+            "max_price": 12.72634
+          }
+        },
+        "units": []
+      },
+      {
+        "date": "1352.4.1",
+        "summary": {
+          "active_princes": 27,
+          "domain_locations": 160,
+          "treasury_total": 2865.28,
+          "treasury_median": 29.13,
+          "population_total": 1814.91,
+          "negative_treasuries": [],
+          "specialty_tech_total": 102,
+          "specialty_tech_median": 3,
+          "ruler_changes": 45,
+          "missing_rulers": [
+            "BAB"
+          ],
+          "regencies": {
+            "interregnum": 1
+          },
+          "governments_without_head": [],
+          "buildings": 24,
+          "building_levels": 20.0,
+          "operating_buildings": 19,
+          "units": 0,
+          "active_bashu_wars": 1,
+          "contribution_total": 275.0,
+          "burden_mean": 3.96,
+          "yiqi_mean": 94.56,
+          "last_dividend_total": 259.73,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 1.28969,
+            "max_pop_demand": 5.34351,
+            "max_industrial_demand": 0,
+            "max_price": 21.04041
+          },
+          "hbe_well_salt": {
+            "production": 6.16881,
+            "max_pop_demand": 14.93337,
+            "max_industrial_demand": 0,
+            "max_price": 10.86263
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.82866,
+            "max_pop_demand": 49.01433,
+            "max_industrial_demand": 0,
+            "max_price": 14.89516
+          }
+        },
+        "units": []
+      },
+      {
+        "date": "1357.4.1",
+        "summary": {
+          "active_princes": 24,
+          "domain_locations": 154,
+          "treasury_total": 1866.03,
+          "treasury_median": 41.39,
+          "population_total": 1860.5,
+          "negative_treasuries": [],
+          "specialty_tech_total": 90,
+          "specialty_tech_median": 3.5,
+          "ruler_changes": 51,
+          "missing_rulers": [
+            "BBY"
+          ],
+          "regencies": {
+            "interregnum": 1
+          },
+          "governments_without_head": [],
+          "buildings": 35,
+          "building_levels": 35.0,
+          "operating_buildings": 35,
+          "units": 0,
+          "active_bashu_wars": 5,
+          "contribution_total": 303.0,
+          "burden_mean": 4.5,
+          "yiqi_mean": 96.12,
+          "last_dividend_total": 233.49,
+          "last_prestige_total": 5.77
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 1.82964,
+            "max_pop_demand": 9.11048,
+            "max_industrial_demand": 0,
+            "max_price": 20.04899
+          },
+          "hbe_well_salt": {
+            "production": 5.92191,
+            "max_pop_demand": 20.35963,
+            "max_industrial_demand": 0,
+            "max_price": 10.83582
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.93289,
+            "max_pop_demand": 51.97198,
+            "max_industrial_demand": 0,
+            "max_price": 14.99508
+          }
+        },
+        "units": []
+      },
+      {
+        "date": "1362.4.1",
+        "summary": {
+          "active_princes": 10,
+          "domain_locations": 121,
+          "treasury_total": 2042.05,
+          "treasury_median": 62.5,
+          "population_total": 1550.57,
+          "negative_treasuries": [],
+          "specialty_tech_total": 43,
+          "specialty_tech_median": 4.0,
+          "ruler_changes": 55,
+          "missing_rulers": [
+            "BAB"
+          ],
+          "regencies": {
+            "interregnum": 1
+          },
+          "governments_without_head": [],
+          "buildings": 48,
+          "building_levels": 46.0,
+          "operating_buildings": 46,
+          "units": 0,
+          "active_bashu_wars": 5,
+          "contribution_total": 181.0,
+          "burden_mean": 5.8,
+          "yiqi_mean": 99.2,
+          "last_dividend_total": 132.72,
+          "last_prestige_total": 5.25
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 2.49789,
+            "max_pop_demand": 6.36868,
+            "max_industrial_demand": 0,
+            "max_price": 20.27379
+          },
+          "hbe_well_salt": {
+            "production": 5.94446,
+            "max_pop_demand": 15.04127,
+            "max_industrial_demand": 0,
+            "max_price": 11.07951
+          },
+          "hbe_shu_paper": {
+            "production": 0.4207,
+            "max_pop_demand": 7.67697,
+            "max_industrial_demand": 0,
+            "max_price": 10.22673
+          },
+          "hbe_border_tea": {
+            "production": 0.8293,
+            "max_pop_demand": 50.56645,
+            "max_industrial_demand": 0,
+            "max_price": 14.99967
+          }
+        },
+        "units": []
+      }
+    ],
+    "checks": {
+      "six_checkpoints": true,
+      "same_campaign": true,
+      "government_heads_valid": true,
+      "bounded_burden_yiqi": true,
+      "no_hbe_noncompatibility_diagnostics": true
+    },
+    "provenance": {
+      "source_files_checked": 732,
+      "source_files_changed": [],
+      "commit": "0.3.2 release worktree based on 74ec5f2"
+    },
+    "diagnostics": {
+      "total_log_lines": 11851,
+      "hbe_noncompatibility": [],
+      "hbe_compatibility_count": 168,
+      "new_diagnostic_lines_vs_archived_fixture": [
+        "[expedition_effects.cpp:352]: resume_expedition called on an expedition that is not stalled",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'AMP' ran out of waypoints at location id 21993 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'AMT' ran out of waypoints at location id 21825 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'FBG' ran out of waypoints at location id 1356 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'LAC' ran out of waypoints at location id 22056 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'LCA' ran out of waypoints at location id 3146 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'MNN' ran out of waypoints at location id 1739 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'RAG' ran out of waypoints at location id 5673 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'SWH' ran out of waypoints at location id 1437 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[expedition_manager.cpp:671]: Expedition 'mining_survey_expedition' owned by 'TNT' ran out of waypoints at location id 1261 without ending: on_arrive_to_waypoint added no waypoint and did not call end_expedition. Failing it",
+        "[jomini_custom_text.h:108]: Object of type 'sub_unit' is not valid for 'subunit_structure_army_levy'",
+        "[jomini_custom_text.h:93]: Object of type 'sub_unit' is not valid for 'subunit_prefix'",
+        "[jomini_custom_text.h:93]: Object of type 'sub_unit' is not valid for 'subunit_type_'",
+        "[jomini_effect.cpp:1207]:  Possible match: 'hbe_afterword_chengdu_plain_2_3'",
+        "[jomini_scriptvalue.cpp:275]: Div/0 at common/ai_scripted_expansion_target/attack_neighbors.txt:40",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/automation_lateralview.gui:775",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/government_lateralview.gui:3927",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/panels/organization/crusade.gui:565",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/panels/situation/guelphs_and_ghibellines.gui:562",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/panels/situation/italian_wars.gui:79",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/recruit_location_lateralview.gui:769",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/single_unit_window.gui:3934",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/single_unit_window.gui:3943",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/trade_details_lateral_view.gui:18",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/trade_order_lateral_view.gui:337",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/trade_order_lateral_view.gui:545",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/trade_order_lateral_view.gui:553",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/trade_order_lateral_view.gui:569",
+        "[pdx_gui_factory.cpp:290]: failed reading property, at gui/trade_order_lateral_view.gui:577",
+        "[pdx_gui_localize.cpp:302]: gui/automation_lateralview.gui:775 - Failed parsing localized text: [loan|e]",
+        "[pdx_gui_localize.cpp:302]: gui/government_lateralview.gui:3927 - Failed parsing localized text: [reforms|e]",
+        "[pdx_gui_localize.cpp:302]: gui/panels/organization/crusade.gui:565 - Failed parsing localized text: [members|e]",
+        "[pdx_gui_localize.cpp:302]: gui/panels/situation/guelphs_and_ghibellines.gui:562 - Failed parsing localized text: SITUATION_MEMBERS_TT_TEXT",
+        "[pdx_gui_localize.cpp:302]: gui/panels/situation/italian_wars.gui:79 - Failed parsing localized text: [action|E]",
+        "[pdx_gui_localize.cpp:302]: gui/recruit_location_lateralview.gui:769 - Failed parsing localized text: [levies|e]",
+        "[pdx_gui_localize.cpp:302]: gui/single_unit_window.gui:3934 - Failed parsing localized text: REMOVE_COMMANDER_TT",
+        "[pdx_gui_localize.cpp:302]: gui/single_unit_window.gui:3943 - Failed parsing localized text: REMOVE_ALMIRANT_TT",
+        "[pdx_gui_localize.cpp:302]: gui/trade_details_lateral_view.gui:18 - Failed parsing localized text: [trade_profit|e]",
+        "[pdx_gui_localize.cpp:302]: gui/trade_order_lateral_view.gui:337 - Failed parsing localized text: TRADE_ORDER_PRIORITY_INFO",
+        "[pdx_gui_localize.cpp:302]: gui/trade_order_lateral_view.gui:545 - Failed parsing localized text: TRADE_ORDER_MOVE_UP_TT",
+        "[pdx_gui_localize.cpp:302]: gui/trade_order_lateral_view.gui:553 - Failed parsing localized text: TRADE_ORDER_MOVE_TO_TOP_TT",
+        "[pdx_gui_localize.cpp:302]: gui/trade_order_lateral_view.gui:569 - Failed parsing localized text: TRADE_ORDER_MOVE_DOWN_TT",
+        "[pdx_gui_localize.cpp:302]: gui/trade_order_lateral_view.gui:577 - Failed parsing localized text: TRADE_ORDER_MOVE_TO_BOTTOM_TT"
+      ],
+      "engine_test_summary": "Tests:\n[ FAIL ] Error log: 11833 errors\n"
+    }
+  },
+  "decline_summary": {
+    "internal": 18,
+    "external": 8
+  },
+  "paper_producer": {
+    "id": 767,
+    "tag": "CHE",
+    "inherited_paper_license": true
+  },
+  "local_install": {
+    "version": "0.3.2",
+    "installed_files_verified": 732,
+    "changed_or_added": [
+      "build_manifest.json",
+      ".metadata/metadata.json",
+      "in_game/common/on_action/hbe_capital_recruitment.txt",
+      "in_game/common/scripted_effects/hbe_capital_recruitment.txt",
+      "main_menu/common/static_modifiers/hbe_capital_recruitment.txt",
+      "main_menu/localization/english/hbe_capital_recruitment_l_english.yml",
+      "main_menu/localization/simp_chinese/hbe_capital_recruitment_l_simp_chinese.yml"
+    ],
+    "backup": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\units-runtime-20261015\\local-pre-v032-files.zip",
+    "destination": "C:\\Users\\songrise\\OneDrive\\文档\\Paradox Interactive\\Europa Universalis V\\mod\\holy_bashu_empire",
+    "installed_manifest_sha256": "1bdad8999c84db9a35e54d4d7f06127c2dd10fad2a16bfac10c173bd7cc81364"
+  }
+}

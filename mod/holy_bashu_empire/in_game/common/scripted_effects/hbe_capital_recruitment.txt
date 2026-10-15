@@ -1,0 +1,23 @@
+﻿hbe_ensure_capital_recruitment = {
+    every_owned_location = {
+        limit = { is_capital = no has_location_modifier = hbe_capital_muster }
+        remove_location_modifier = hbe_capital_muster
+    }
+    if = {
+        limit = { is_member_of_international_organization = international_organization:hbe_empire }
+        if = {
+            limit = { NOT = { any_owned_location = { modifier:can_recruit_regiment_in_this_location = yes } } }
+            capital = { add_location_modifier = { modifier = hbe_capital_muster months = 2 mode = replace } }
+        }
+        else_if = {
+            limit = { capital = { has_location_modifier = hbe_capital_muster } }
+            capital = { add_location_modifier = { modifier = hbe_capital_muster months = 2 mode = replace } }
+        }
+    }
+    else = {
+        every_owned_location = {
+            limit = { has_location_modifier = hbe_capital_muster }
+            remove_location_modifier = hbe_capital_muster
+        }
+    }
+}

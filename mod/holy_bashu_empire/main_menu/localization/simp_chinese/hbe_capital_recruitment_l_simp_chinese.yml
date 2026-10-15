@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ hbe_capital_muster: "府都点兵处"
+ STATIC_MODIFIER_NAME_hbe_capital_muster: "$hbe_capital_muster$"
+ STATIC_MODIFIER_DESC_hbe_capital_muster: "$hbe_capital_muster_desc$"
+ hbe_capital_muster_desc: "本府尚无常备军征募地点，暂以府都办理点兵。兵种科技、机构与兵额限制仍须满足。"

@@ -120,7 +120,7 @@ def main():
         write(out/rel,text,bom or (rel.endswith('.txt') and not rel.startswith('main_menu/setup/')))
     # Same fields as the game's -mod_stubber output; do not depend on a scratch directory.
     metadata=dict(name='',id='',version='',supported_game_version='',short_description='',tags=[],relationships=[],game_custom_data={})
-    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.3.1',supported_game_version='1.4.*',
+    metadata.update(name='神圣巴蜀帝国 Holy Bashu Empire',version='0.3.2',supported_game_version='1.4.*',
                     short_description='架空巴蜀：七个帝国圈、三十六诸侯，天府加成、选举、地区经营与百年传承。',
                     tags=['Alternative History','Gameplay'])
     put('.metadata/metadata.json',json.dumps(metadata,ensure_ascii=False,indent=2))
@@ -565,7 +565,7 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     assignments=[dict(location=r['location_id'],country=loc_to_tag[r['location_id']],circle=r['circle_design_key'],province=r['original_province_id']) for r in rows]
     csv_write(ROOT/'data/locations_v001.csv',assignments)
     write(ROOT/'data/technology_v001.json',json.dumps(catalog,ensure_ascii=False,indent=2))
-    manifest=dict(version='0.3.1',quality_hotfix=quality_hotfix,opening_pacts=opening_pacts,countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
+    manifest=dict(version='0.3.2',quality_hotfix=quality_hotfix,opening_pacts=opening_pacts,countries=countries,electors=electors,regions=[list(r) for r in REGIONS],
                   source_setup_sha256=sha(original_path),removed_domain_tokens=len(removed),
                   research_nodes=len(catalog)+len(social_expansion['advances']),regional_missions=35,recurring_services=7,events=len(events)+expansion['new_events']+len(social_expansion['events']),
                   decisions=70+len(social_expansion['decisions']),social_expansion=social_expansion,expansion=expansion,native_content=native_content,
@@ -626,6 +626,10 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_loading_art(out, ROOT, game)
     from apply_unit_detail_art_v031 import apply as apply_unit_detail_art
     apply_unit_detail_art(out, ROOT, game)
+    from apply_capital_recruitment_v031 import apply as apply_capital_recruitment
+    apply_capital_recruitment(out, ROOT, game)
+    from finalize_release_v032 import apply as finalize_release_v032
+    finalize_release_v032(out, ROOT, game)
     manifest_path = out / "build_manifest.json"
     final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     final_manifest["deep_balance_v031"] = {"version":"0.3.1", "local_only":True, "decision_prices":len(deep_balance_report["decision_prices"]), "event_receipts":len(deep_balance_report["event_receipts"]), "national_output_caps":deep_balance_report["national_output_caps"], "reforms":deep_balance_report["reforms"], "support_duration_rule":deep_balance_report["support_duration_rule"]}

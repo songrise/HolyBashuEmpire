@@ -1,0 +1,19 @@
+﻿on_game_start = { on_actions = { hbe_capital_recruitment_start } }
+hbe_capital_recruitment_start = {
+    effect = {
+        every_country = {
+            limit = { is_member_of_international_organization = international_organization:hbe_empire }
+            hbe_ensure_capital_recruitment = yes
+        }
+    }
+}
+monthly_country_pulse = { on_actions = { hbe_capital_recruitment_monthly } }
+hbe_capital_recruitment_monthly = {
+    trigger = {
+        OR = {
+            is_member_of_international_organization = international_organization:hbe_empire
+            any_owned_location = { has_location_modifier = hbe_capital_muster }
+        }
+    }
+    effect = { hbe_ensure_capital_recruitment = yes }
+}

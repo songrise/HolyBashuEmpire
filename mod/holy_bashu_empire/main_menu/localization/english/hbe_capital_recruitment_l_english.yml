@@ -1,0 +1,5 @@
+﻿l_english:
+ hbe_capital_muster: "Capital Muster Point"
+ STATIC_MODIFIER_NAME_hbe_capital_muster: "$hbe_capital_muster$"
+ STATIC_MODIFIER_DESC_hbe_capital_muster: "$hbe_capital_muster_desc$"
+ hbe_capital_muster_desc: "With no regular recruitment site elsewhere in the realm, the capital serves as a muster point. Unit technology, institution and regiment limits still apply."
