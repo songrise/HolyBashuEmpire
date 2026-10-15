@@ -1,0 +1,4709 @@
+{
+  "chains": [
+    {
+      "key": "chengdu_plain",
+      "name": "竹林中的白熊",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_chengdu_plain.1",
+        "hbe_story_chengdu_plain.2",
+        "hbe_story_chengdu_plain.3",
+        "hbe_story_chengdu_plain.4",
+        "hbe_story_chengdu_plain.5",
+        "hbe_story_chengdu_plain.6",
+        "hbe_story_chengdu_plain.7",
+        "hbe_story_chengdu_plain.8"
+      ],
+      "endings": [
+        "hbe_story_chengdu_plain.201",
+        "hbe_story_chengdu_plain.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_chengdu_plain_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_chengdu_plain.1.d",
+        "hbe_story_chengdu_plain.2.d",
+        "hbe_story_chengdu_plain.3.d",
+        "hbe_story_chengdu_plain.4.d",
+        "hbe_story_chengdu_plain.5.d",
+        "hbe_story_chengdu_plain.6.d",
+        "hbe_story_chengdu_plain.7.d",
+        "hbe_story_chengdu_plain.8.c"
+      ]
+    },
+    {
+      "key": "southern_salt_wine",
+      "name": "井下巨骨",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_southern_salt_wine.1",
+        "hbe_story_southern_salt_wine.2",
+        "hbe_story_southern_salt_wine.3",
+        "hbe_story_southern_salt_wine.4",
+        "hbe_story_southern_salt_wine.5",
+        "hbe_story_southern_salt_wine.6",
+        "hbe_story_southern_salt_wine.7",
+        "hbe_story_southern_salt_wine.8"
+      ],
+      "endings": [
+        "hbe_story_southern_salt_wine.201",
+        "hbe_story_southern_salt_wine.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_southern_salt_wine_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_southern_salt_wine.1.d",
+        "hbe_story_southern_salt_wine.2.d",
+        "hbe_story_southern_salt_wine.3.d",
+        "hbe_story_southern_salt_wine.4.d",
+        "hbe_story_southern_salt_wine.5.d",
+        "hbe_story_southern_salt_wine.6.d",
+        "hbe_story_southern_salt_wine.7.d",
+        "hbe_story_southern_salt_wine.8.c"
+      ]
+    },
+    {
+      "key": "eastern_river",
+      "name": "峡江引水谱",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_eastern_river.1",
+        "hbe_story_eastern_river.2",
+        "hbe_story_eastern_river.3",
+        "hbe_story_eastern_river.4",
+        "hbe_story_eastern_river.5",
+        "hbe_story_eastern_river.6",
+        "hbe_story_eastern_river.7",
+        "hbe_story_eastern_river.8"
+      ],
+      "endings": [
+        "hbe_story_eastern_river.201",
+        "hbe_story_eastern_river.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_eastern_river_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_eastern_river.1.d",
+        "hbe_story_eastern_river.2.d",
+        "hbe_story_eastern_river.3.d",
+        "hbe_story_eastern_river.4.d",
+        "hbe_story_eastern_river.5.d",
+        "hbe_story_eastern_river.6.d",
+        "hbe_story_eastern_river.7.d",
+        "hbe_story_eastern_river.8.c"
+      ]
+    },
+    {
+      "key": "northern_shudao",
+      "name": "山壁上的星历",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_northern_shudao.1",
+        "hbe_story_northern_shudao.2",
+        "hbe_story_northern_shudao.3",
+        "hbe_story_northern_shudao.4",
+        "hbe_story_northern_shudao.5",
+        "hbe_story_northern_shudao.6",
+        "hbe_story_northern_shudao.7",
+        "hbe_story_northern_shudao.8"
+      ],
+      "endings": [
+        "hbe_story_northern_shudao.201",
+        "hbe_story_northern_shudao.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_northern_shudao_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_northern_shudao.1.d",
+        "hbe_story_northern_shudao.2.d",
+        "hbe_story_northern_shudao.3.d",
+        "hbe_story_northern_shudao.4.d",
+        "hbe_story_northern_shudao.5.d",
+        "hbe_story_northern_shudao.6.d",
+        "hbe_story_northern_shudao.7.d",
+        "hbe_story_northern_shudao.8.c"
+      ]
+    },
+    {
+      "key": "central_hills",
+      "name": "坡田与水土",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_central_hills.1",
+        "hbe_story_central_hills.2",
+        "hbe_story_central_hills.3",
+        "hbe_story_central_hills.4",
+        "hbe_story_central_hills.5",
+        "hbe_story_central_hills.6",
+        "hbe_story_central_hills.7",
+        "hbe_story_central_hills.8"
+      ],
+      "endings": [
+        "hbe_story_central_hills.201",
+        "hbe_story_central_hills.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_central_hills_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_central_hills.1.d",
+        "hbe_story_central_hills.2.d",
+        "hbe_story_central_hills.3.d",
+        "hbe_story_central_hills.4.d",
+        "hbe_story_central_hills.5.d",
+        "hbe_story_central_hills.6.d",
+        "hbe_story_central_hills.7.d",
+        "hbe_story_central_hills.8.c"
+      ]
+    },
+    {
+      "key": "western_tea_horse",
+      "name": "山路上的医马人",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_western_tea_horse.1",
+        "hbe_story_western_tea_horse.2",
+        "hbe_story_western_tea_horse.3",
+        "hbe_story_western_tea_horse.4",
+        "hbe_story_western_tea_horse.5",
+        "hbe_story_western_tea_horse.6",
+        "hbe_story_western_tea_horse.7",
+        "hbe_story_western_tea_horse.8"
+      ],
+      "endings": [
+        "hbe_story_western_tea_horse.201",
+        "hbe_story_western_tea_horse.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_western_tea_horse_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_western_tea_horse.1.d",
+        "hbe_story_western_tea_horse.2.d",
+        "hbe_story_western_tea_horse.3.d",
+        "hbe_story_western_tea_horse.4.d",
+        "hbe_story_western_tea_horse.5.d",
+        "hbe_story_western_tea_horse.6.d",
+        "hbe_story_western_tea_horse.7.d",
+        "hbe_story_western_tea_horse.8.c"
+      ]
+    },
+    {
+      "key": "southwestern_valleys",
+      "name": "谷中桥约",
+      "kind": "regional",
+      "nodes": [
+        "hbe_story_southwestern_valleys.1",
+        "hbe_story_southwestern_valleys.2",
+        "hbe_story_southwestern_valleys.3",
+        "hbe_story_southwestern_valleys.4",
+        "hbe_story_southwestern_valleys.5",
+        "hbe_story_southwestern_valleys.6",
+        "hbe_story_southwestern_valleys.7",
+        "hbe_story_southwestern_valleys.8"
+      ],
+      "endings": [
+        "hbe_story_southwestern_valleys.201",
+        "hbe_story_southwestern_valleys.202"
+      ],
+      "wait_years": [
+        0,
+        4,
+        9,
+        15,
+        22,
+        29,
+        37,
+        45
+      ],
+      "branch_variable": "hbe_story_southwestern_valleys_direction",
+      "ending_gate": [
+        ">= 0",
+        "< 0"
+      ],
+      "abort_choices": [
+        "hbe_story_southwestern_valleys.1.d",
+        "hbe_story_southwestern_valleys.2.d",
+        "hbe_story_southwestern_valleys.3.d",
+        "hbe_story_southwestern_valleys.4.d",
+        "hbe_story_southwestern_valleys.5.d",
+        "hbe_story_southwestern_valleys.6.d",
+        "hbe_story_southwestern_valleys.7.d",
+        "hbe_story_southwestern_valleys.8.c"
+      ]
+    },
+    {
+      "key": "short_chengdu_plain_1",
+      "name": "失色的锦样",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_chengdu_plain.1",
+        "hbe_short_chengdu_plain.2",
+        "hbe_short_chengdu_plain.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_chengdu_plain_1_art_route",
+      "abort_choices": [
+        "hbe_short_chengdu_plain.1.d",
+        "hbe_short_chengdu_plain.2.d",
+        "hbe_short_chengdu_plain.3.d"
+      ]
+    },
+    {
+      "key": "short_chengdu_plain_2",
+      "name": "借来的诗卷",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_chengdu_plain.11",
+        "hbe_short_chengdu_plain.12",
+        "hbe_short_chengdu_plain.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_chengdu_plain_2_art_route",
+      "abort_choices": [
+        "hbe_short_chengdu_plain.11.d",
+        "hbe_short_chengdu_plain.12.d",
+        "hbe_short_chengdu_plain.13.d"
+      ]
+    },
+    {
+      "key": "short_chengdu_plain_3",
+      "name": "竹山的两张界图",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_chengdu_plain.21",
+        "hbe_short_chengdu_plain.22",
+        "hbe_short_chengdu_plain.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_chengdu_plain_3_art_route",
+      "abort_choices": [
+        "hbe_short_chengdu_plain.21.d",
+        "hbe_short_chengdu_plain.22.d",
+        "hbe_short_chengdu_plain.23.d"
+      ]
+    },
+    {
+      "key": "short_southern_salt_wine_1",
+      "name": "盐灶上的新铜管",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_southern_salt_wine.1",
+        "hbe_short_southern_salt_wine.2",
+        "hbe_short_southern_salt_wine.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_southern_salt_wine_1_art_route",
+      "abort_choices": [
+        "hbe_short_southern_salt_wine.1.d",
+        "hbe_short_southern_salt_wine.2.d",
+        "hbe_short_southern_salt_wine.3.d"
+      ]
+    },
+    {
+      "key": "short_southern_salt_wine_2",
+      "name": "顺流而下的酒瓮",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_southern_salt_wine.11",
+        "hbe_short_southern_salt_wine.12",
+        "hbe_short_southern_salt_wine.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_southern_salt_wine_2_art_route",
+      "abort_choices": [
+        "hbe_short_southern_salt_wine.11.d",
+        "hbe_short_southern_salt_wine.12.d",
+        "hbe_short_southern_salt_wine.13.d"
+      ]
+    },
+    {
+      "key": "short_southern_salt_wine_3",
+      "name": "井旁的旧墓",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_southern_salt_wine.21",
+        "hbe_short_southern_salt_wine.22",
+        "hbe_short_southern_salt_wine.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_southern_salt_wine_3_art_route",
+      "abort_choices": [
+        "hbe_short_southern_salt_wine.21.d",
+        "hbe_short_southern_salt_wine.22.d",
+        "hbe_short_southern_salt_wine.23.d"
+      ]
+    },
+    {
+      "key": "short_eastern_river_1",
+      "name": "夜里听不见的江号",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_eastern_river.1",
+        "hbe_short_eastern_river.2",
+        "hbe_short_eastern_river.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_eastern_river_1_art_route",
+      "abort_choices": [
+        "hbe_short_eastern_river.1.d",
+        "hbe_short_eastern_river.2.d",
+        "hbe_short_eastern_river.3.d"
+      ]
+    },
+    {
+      "key": "short_eastern_river_2",
+      "name": "岸边的旧船坞",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_eastern_river.11",
+        "hbe_short_eastern_river.12",
+        "hbe_short_eastern_river.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_eastern_river_2_art_route",
+      "abort_choices": [
+        "hbe_short_eastern_river.11.d",
+        "hbe_short_eastern_river.12.d",
+        "hbe_short_eastern_river.13.d"
+      ]
+    },
+    {
+      "key": "short_eastern_river_3",
+      "name": "峡中留下的拓本",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_eastern_river.21",
+        "hbe_short_eastern_river.22",
+        "hbe_short_eastern_river.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_eastern_river_3_art_route",
+      "abort_choices": [
+        "hbe_short_eastern_river.21.d",
+        "hbe_short_eastern_river.22.d",
+        "hbe_short_eastern_river.23.d"
+      ]
+    },
+    {
+      "key": "short_northern_shudao_1",
+      "name": "驿站里的沙漏",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_northern_shudao.1",
+        "hbe_short_northern_shudao.2",
+        "hbe_short_northern_shudao.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_northern_shudao_1_art_route",
+      "abort_choices": [
+        "hbe_short_northern_shudao.1.d",
+        "hbe_short_northern_shudao.2.d",
+        "hbe_short_northern_shudao.3.d"
+      ]
+    },
+    {
+      "key": "short_northern_shudao_2",
+      "name": "轮戍人的两册工钱",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_northern_shudao.11",
+        "hbe_short_northern_shudao.12",
+        "hbe_short_northern_shudao.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_northern_shudao_2_art_route",
+      "abort_choices": [
+        "hbe_short_northern_shudao.11.d",
+        "hbe_short_northern_shudao.12.d",
+        "hbe_short_northern_shudao.13.d"
+      ]
+    },
+    {
+      "key": "short_northern_shudao_3",
+      "name": "山路上的书箱",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_northern_shudao.21",
+        "hbe_short_northern_shudao.22",
+        "hbe_short_northern_shudao.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_northern_shudao_3_art_route",
+      "abort_choices": [
+        "hbe_short_northern_shudao.21.d",
+        "hbe_short_northern_shudao.22.d",
+        "hbe_short_northern_shudao.23.d"
+      ]
+    },
+    {
+      "key": "short_central_hills_1",
+      "name": "仓中的两种谷子",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_central_hills.1",
+        "hbe_short_central_hills.2",
+        "hbe_short_central_hills.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_central_hills_1_art_route",
+      "abort_choices": [
+        "hbe_short_central_hills.1.d",
+        "hbe_short_central_hills.2.d",
+        "hbe_short_central_hills.3.d"
+      ]
+    },
+    {
+      "key": "short_central_hills_2",
+      "name": "寄来的种桑信",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_central_hills.11",
+        "hbe_short_central_hills.12",
+        "hbe_short_central_hills.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_central_hills_2_art_route",
+      "abort_choices": [
+        "hbe_short_central_hills.11.d",
+        "hbe_short_central_hills.12.d",
+        "hbe_short_central_hills.13.d"
+      ]
+    },
+    {
+      "key": "short_central_hills_3",
+      "name": "桥边的债簿",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_central_hills.21",
+        "hbe_short_central_hills.22",
+        "hbe_short_central_hills.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_central_hills_3_art_route",
+      "abort_choices": [
+        "hbe_short_central_hills.21.d",
+        "hbe_short_central_hills.22.d",
+        "hbe_short_central_hills.23.d"
+      ]
+    },
+    {
+      "key": "short_western_tea_horse_1",
+      "name": "被雨打湿的茶砖",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_western_tea_horse.1",
+        "hbe_short_western_tea_horse.2",
+        "hbe_short_western_tea_horse.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_western_tea_horse_1_art_route",
+      "abort_choices": [
+        "hbe_short_western_tea_horse.1.d",
+        "hbe_short_western_tea_horse.2.d",
+        "hbe_short_western_tea_horse.3.d"
+      ]
+    },
+    {
+      "key": "short_western_tea_horse_2",
+      "name": "马群中的旧烙印",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_western_tea_horse.11",
+        "hbe_short_western_tea_horse.12",
+        "hbe_short_western_tea_horse.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_western_tea_horse_2_art_route",
+      "abort_choices": [
+        "hbe_short_western_tea_horse.11.d",
+        "hbe_short_western_tea_horse.12.d",
+        "hbe_short_western_tea_horse.13.d"
+      ]
+    },
+    {
+      "key": "short_western_tea_horse_3",
+      "name": "雪路上的歇脚屋",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_western_tea_horse.21",
+        "hbe_short_western_tea_horse.22",
+        "hbe_short_western_tea_horse.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_western_tea_horse_3_art_route",
+      "abort_choices": [
+        "hbe_short_western_tea_horse.21.d",
+        "hbe_short_western_tea_horse.22.d",
+        "hbe_short_western_tea_horse.23.d"
+      ]
+    },
+    {
+      "key": "short_southwestern_valleys_1",
+      "name": "湖上两家的渔船",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_southwestern_valleys.1",
+        "hbe_short_southwestern_valleys.2",
+        "hbe_short_southwestern_valleys.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_southwestern_valleys_1_art_route",
+      "abort_choices": [
+        "hbe_short_southwestern_valleys.1.d",
+        "hbe_short_southwestern_valleys.2.d",
+        "hbe_short_southwestern_valleys.3.d"
+      ]
+    },
+    {
+      "key": "short_southwestern_valleys_2",
+      "name": "山寨门前的铁门",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_southwestern_valleys.11",
+        "hbe_short_southwestern_valleys.12",
+        "hbe_short_southwestern_valleys.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_southwestern_valleys_2_art_route",
+      "abort_choices": [
+        "hbe_short_southwestern_valleys.11.d",
+        "hbe_short_southwestern_valleys.12.d",
+        "hbe_short_southwestern_valleys.13.d"
+      ]
+    },
+    {
+      "key": "short_southwestern_valleys_3",
+      "name": "议事时的座次",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_southwestern_valleys.21",
+        "hbe_short_southwestern_valleys.22",
+        "hbe_short_southwestern_valleys.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_southwestern_valleys_3_art_route",
+      "abort_choices": [
+        "hbe_short_southwestern_valleys.21.d",
+        "hbe_short_southwestern_valleys.22.d",
+        "hbe_short_southwestern_valleys.23.d"
+      ]
+    },
+    {
+      "key": "short_shared_1",
+      "name": "第一口乡音",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.1",
+        "hbe_short_shared.2",
+        "hbe_short_shared.3"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_1_art_route",
+      "abort_choices": [
+        "hbe_short_shared.1.d",
+        "hbe_short_shared.2.d",
+        "hbe_short_shared.3.d"
+      ]
+    },
+    {
+      "key": "short_shared_2",
+      "name": "借住的院落",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.11",
+        "hbe_short_shared.12",
+        "hbe_short_shared.13"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_2_art_route",
+      "abort_choices": [
+        "hbe_short_shared.11.d",
+        "hbe_short_shared.12.d",
+        "hbe_short_shared.13.d"
+      ]
+    },
+    {
+      "key": "short_shared_3",
+      "name": "渡口的两个孩子",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.21",
+        "hbe_short_shared.22",
+        "hbe_short_shared.23"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_3_art_route",
+      "abort_choices": [
+        "hbe_short_shared.21.d",
+        "hbe_short_shared.22.d",
+        "hbe_short_shared.23.d"
+      ]
+    },
+    {
+      "key": "short_shared_4",
+      "name": "由谁教孩子读书",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.31",
+        "hbe_short_shared.32",
+        "hbe_short_shared.33"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_4_art_route",
+      "abort_choices": [
+        "hbe_short_shared.31.d",
+        "hbe_short_shared.32.d",
+        "hbe_short_shared.33.d"
+      ]
+    },
+    {
+      "key": "short_shared_5",
+      "name": "迁来的祭日",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.41",
+        "hbe_short_shared.42",
+        "hbe_short_shared.43"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_5_art_route",
+      "abort_choices": [
+        "hbe_short_shared.41.d",
+        "hbe_short_shared.42.d",
+        "hbe_short_shared.43.d"
+      ]
+    },
+    {
+      "key": "short_shared_6",
+      "name": "一间新药铺",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.51",
+        "hbe_short_shared.52",
+        "hbe_short_shared.53"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_6_art_route",
+      "abort_choices": [
+        "hbe_short_shared.51.d",
+        "hbe_short_shared.52.d",
+        "hbe_short_shared.53.d"
+      ]
+    },
+    {
+      "key": "short_shared_7",
+      "name": "荒地上的借种",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.61",
+        "hbe_short_shared.62",
+        "hbe_short_shared.63"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_7_art_route",
+      "abort_choices": [
+        "hbe_short_shared.61.d",
+        "hbe_short_shared.62.d",
+        "hbe_short_shared.63.d"
+      ]
+    },
+    {
+      "key": "short_shared_8",
+      "name": "合开的染坊",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.71",
+        "hbe_short_shared.72",
+        "hbe_short_shared.73"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_8_art_route",
+      "abort_choices": [
+        "hbe_short_shared.71.d",
+        "hbe_short_shared.72.d",
+        "hbe_short_shared.73.d"
+      ]
+    },
+    {
+      "key": "short_shared_9",
+      "name": "同住一坡的山民",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.81",
+        "hbe_short_shared.82",
+        "hbe_short_shared.83"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_9_art_route",
+      "abort_choices": [
+        "hbe_short_shared.81.d",
+        "hbe_short_shared.82.d",
+        "hbe_short_shared.83.d"
+      ]
+    },
+    {
+      "key": "short_shared_10",
+      "name": "递到府署的合姓诉状",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.91",
+        "hbe_short_shared.92",
+        "hbe_short_shared.93"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_10_art_route",
+      "abort_choices": [
+        "hbe_short_shared.91.d",
+        "hbe_short_shared.92.d",
+        "hbe_short_shared.93.d"
+      ]
+    },
+    {
+      "key": "short_shared_11",
+      "name": "新来的船工",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.101",
+        "hbe_short_shared.102",
+        "hbe_short_shared.103"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_11_art_route",
+      "abort_choices": [
+        "hbe_short_shared.101.d",
+        "hbe_short_shared.102.d",
+        "hbe_short_shared.103.d"
+      ]
+    },
+    {
+      "key": "short_shared_12",
+      "name": "返回旧乡的长者",
+      "kind": "short",
+      "nodes": [
+        "hbe_short_shared.111",
+        "hbe_short_shared.112",
+        "hbe_short_shared.113"
+      ],
+      "wait_months": [
+        0,
+        6,
+        18
+      ],
+      "recap_variable": "hbe_short_shared_12_art_route",
+      "abort_choices": [
+        "hbe_short_shared.111.d",
+        "hbe_short_shared.112.d",
+        "hbe_short_shared.113.d"
+      ]
+    },
+    {
+      "key": "migration",
+      "name": "湖广填四川",
+      "kind": "migration",
+      "nodes": [
+        "hbe_migration.1",
+        "hbe_migration.2",
+        "hbe_migration.3",
+        "hbe_migration.4",
+        "hbe_migration.5",
+        "hbe_migration.6",
+        "hbe_migration.7",
+        "hbe_migration.8",
+        "hbe_migration.9",
+        "hbe_migration.10"
+      ],
+      "endings": [
+        "hbe_ending.2001",
+        "hbe_ending.2002"
+      ],
+      "wait_years": [
+        0,
+        5,
+        10,
+        16,
+        22,
+        28,
+        34,
+        39,
+        44,
+        49
+      ],
+      "branch_variable": "hbe_migration_acceptance",
+      "ending_gate": [
+        ">= 6",
+        "< 6"
+      ],
+      "abort_choices": [
+        "hbe_migration.10.c"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "hbe_story_chengdu_plain.1",
+      "chain": "chengdu_plain",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_chengdu_plain.1.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.2",
+      "chain": "chengdu_plain",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.1",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.2.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.2.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.2.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.1.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.2.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.3",
+      "chain": "chengdu_plain",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.2",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.3.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.3.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.3.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.2.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.3.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.4",
+      "chain": "chengdu_plain",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.3",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.4.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.4.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.4.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.3.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.4.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.5",
+      "chain": "chengdu_plain",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.4",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.5.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.5.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.5.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.4.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.5.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.6",
+      "chain": "chengdu_plain",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.5",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.6.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.6.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.6.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.5.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.6.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.7",
+      "chain": "chengdu_plain",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.6",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.7.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.7.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.7.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.6.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.7.desc"
+    },
+    {
+      "id": "hbe_story_chengdu_plain.8",
+      "chain": "chengdu_plain",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_chengdu_plain.txt",
+      "previous": "hbe_story_chengdu_plain.7",
+      "recap_variable": "hbe_story_chengdu_plain_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_chengdu_plain.8.desc.after_a",
+          "previous_option": "hbe_story_chengdu_plain.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_chengdu_plain.8.desc.after_b",
+          "previous_option": "hbe_story_chengdu_plain.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_chengdu_plain.8.desc.after_c",
+          "previous_option": "hbe_story_chengdu_plain.7.c"
+        }
+      ],
+      "fallback": "hbe_story_chengdu_plain.8.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.1",
+      "chain": "southern_salt_wine",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_southern_salt_wine.1.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.2",
+      "chain": "southern_salt_wine",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.1",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.2.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.2.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.2.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.1.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.2.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.3",
+      "chain": "southern_salt_wine",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.2",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.3.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.3.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.3.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.2.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.3.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.4",
+      "chain": "southern_salt_wine",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.3",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.4.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.4.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.4.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.3.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.4.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.5",
+      "chain": "southern_salt_wine",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.4",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.5.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.5.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.5.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.4.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.5.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.6",
+      "chain": "southern_salt_wine",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.5",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.6.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.6.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.6.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.5.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.6.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.7",
+      "chain": "southern_salt_wine",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.6",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.7.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.7.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.7.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.6.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.7.desc"
+    },
+    {
+      "id": "hbe_story_southern_salt_wine.8",
+      "chain": "southern_salt_wine",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_southern_salt_wine.txt",
+      "previous": "hbe_story_southern_salt_wine.7",
+      "recap_variable": "hbe_story_southern_salt_wine_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southern_salt_wine.8.desc.after_a",
+          "previous_option": "hbe_story_southern_salt_wine.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southern_salt_wine.8.desc.after_b",
+          "previous_option": "hbe_story_southern_salt_wine.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southern_salt_wine.8.desc.after_c",
+          "previous_option": "hbe_story_southern_salt_wine.7.c"
+        }
+      ],
+      "fallback": "hbe_story_southern_salt_wine.8.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.1",
+      "chain": "eastern_river",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_eastern_river.1.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.2",
+      "chain": "eastern_river",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.1",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.2.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.2.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.2.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.1.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.2.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.3",
+      "chain": "eastern_river",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.2",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.3.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.3.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.3.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.2.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.3.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.4",
+      "chain": "eastern_river",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.3",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.4.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.4.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.4.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.3.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.4.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.5",
+      "chain": "eastern_river",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.4",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.5.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.5.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.5.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.4.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.5.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.6",
+      "chain": "eastern_river",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.5",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.6.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.6.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.6.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.5.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.6.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.7",
+      "chain": "eastern_river",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.6",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.7.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.7.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.7.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.6.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.7.desc"
+    },
+    {
+      "id": "hbe_story_eastern_river.8",
+      "chain": "eastern_river",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_eastern_river.txt",
+      "previous": "hbe_story_eastern_river.7",
+      "recap_variable": "hbe_story_eastern_river_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_eastern_river.8.desc.after_a",
+          "previous_option": "hbe_story_eastern_river.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_eastern_river.8.desc.after_b",
+          "previous_option": "hbe_story_eastern_river.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_eastern_river.8.desc.after_c",
+          "previous_option": "hbe_story_eastern_river.7.c"
+        }
+      ],
+      "fallback": "hbe_story_eastern_river.8.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.1",
+      "chain": "northern_shudao",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_northern_shudao.1.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.2",
+      "chain": "northern_shudao",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.1",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.2.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.2.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.2.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.1.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.2.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.3",
+      "chain": "northern_shudao",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.2",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.3.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.3.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.3.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.2.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.3.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.4",
+      "chain": "northern_shudao",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.3",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.4.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.4.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.4.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.3.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.4.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.5",
+      "chain": "northern_shudao",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.4",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.5.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.5.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.5.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.4.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.5.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.6",
+      "chain": "northern_shudao",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.5",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.6.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.6.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.6.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.5.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.6.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.7",
+      "chain": "northern_shudao",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.6",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.7.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.7.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.7.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.6.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.7.desc"
+    },
+    {
+      "id": "hbe_story_northern_shudao.8",
+      "chain": "northern_shudao",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_northern_shudao.txt",
+      "previous": "hbe_story_northern_shudao.7",
+      "recap_variable": "hbe_story_northern_shudao_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_northern_shudao.8.desc.after_a",
+          "previous_option": "hbe_story_northern_shudao.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_northern_shudao.8.desc.after_b",
+          "previous_option": "hbe_story_northern_shudao.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_northern_shudao.8.desc.after_c",
+          "previous_option": "hbe_story_northern_shudao.7.c"
+        }
+      ],
+      "fallback": "hbe_story_northern_shudao.8.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.1",
+      "chain": "central_hills",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_central_hills.1.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.2",
+      "chain": "central_hills",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.1",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.2.desc.after_a",
+          "previous_option": "hbe_story_central_hills.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.2.desc.after_b",
+          "previous_option": "hbe_story_central_hills.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.2.desc.after_c",
+          "previous_option": "hbe_story_central_hills.1.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.2.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.3",
+      "chain": "central_hills",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.2",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.3.desc.after_a",
+          "previous_option": "hbe_story_central_hills.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.3.desc.after_b",
+          "previous_option": "hbe_story_central_hills.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.3.desc.after_c",
+          "previous_option": "hbe_story_central_hills.2.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.3.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.4",
+      "chain": "central_hills",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.3",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.4.desc.after_a",
+          "previous_option": "hbe_story_central_hills.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.4.desc.after_b",
+          "previous_option": "hbe_story_central_hills.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.4.desc.after_c",
+          "previous_option": "hbe_story_central_hills.3.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.4.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.5",
+      "chain": "central_hills",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.4",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.5.desc.after_a",
+          "previous_option": "hbe_story_central_hills.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.5.desc.after_b",
+          "previous_option": "hbe_story_central_hills.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.5.desc.after_c",
+          "previous_option": "hbe_story_central_hills.4.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.5.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.6",
+      "chain": "central_hills",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.5",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.6.desc.after_a",
+          "previous_option": "hbe_story_central_hills.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.6.desc.after_b",
+          "previous_option": "hbe_story_central_hills.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.6.desc.after_c",
+          "previous_option": "hbe_story_central_hills.5.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.6.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.7",
+      "chain": "central_hills",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.6",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.7.desc.after_a",
+          "previous_option": "hbe_story_central_hills.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.7.desc.after_b",
+          "previous_option": "hbe_story_central_hills.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.7.desc.after_c",
+          "previous_option": "hbe_story_central_hills.6.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.7.desc"
+    },
+    {
+      "id": "hbe_story_central_hills.8",
+      "chain": "central_hills",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_central_hills.txt",
+      "previous": "hbe_story_central_hills.7",
+      "recap_variable": "hbe_story_central_hills_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_central_hills.8.desc.after_a",
+          "previous_option": "hbe_story_central_hills.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_central_hills.8.desc.after_b",
+          "previous_option": "hbe_story_central_hills.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_central_hills.8.desc.after_c",
+          "previous_option": "hbe_story_central_hills.7.c"
+        }
+      ],
+      "fallback": "hbe_story_central_hills.8.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.1",
+      "chain": "western_tea_horse",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_western_tea_horse.1.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.2",
+      "chain": "western_tea_horse",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.1",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.2.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.2.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.2.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.1.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.2.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.3",
+      "chain": "western_tea_horse",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.2",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.3.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.3.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.3.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.2.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.3.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.4",
+      "chain": "western_tea_horse",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.3",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.4.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.4.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.4.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.3.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.4.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.5",
+      "chain": "western_tea_horse",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.4",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.5.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.5.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.5.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.4.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.5.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.6",
+      "chain": "western_tea_horse",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.5",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.6.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.6.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.6.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.5.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.6.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.7",
+      "chain": "western_tea_horse",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.6",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.7.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.7.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.7.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.6.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.7.desc"
+    },
+    {
+      "id": "hbe_story_western_tea_horse.8",
+      "chain": "western_tea_horse",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_western_tea_horse.txt",
+      "previous": "hbe_story_western_tea_horse.7",
+      "recap_variable": "hbe_story_western_tea_horse_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_western_tea_horse.8.desc.after_a",
+          "previous_option": "hbe_story_western_tea_horse.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_western_tea_horse.8.desc.after_b",
+          "previous_option": "hbe_story_western_tea_horse.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_western_tea_horse.8.desc.after_c",
+          "previous_option": "hbe_story_western_tea_horse.7.c"
+        }
+      ],
+      "fallback": "hbe_story_western_tea_horse.8.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.1",
+      "chain": "southwestern_valleys",
+      "chapter": 1,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_story_southwestern_valleys.1.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.2",
+      "chain": "southwestern_valleys",
+      "chapter": 2,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.1",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.2.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.2.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.2.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.1.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.2.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.3",
+      "chain": "southwestern_valleys",
+      "chapter": 3,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.2",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.3.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.3.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.3.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.2.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.3.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.4",
+      "chain": "southwestern_valleys",
+      "chapter": 4,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.3",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.4.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.4.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.4.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.3.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.4.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.5",
+      "chain": "southwestern_valleys",
+      "chapter": 5,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.4",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.5.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.5.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.5.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.4.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.5.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.6",
+      "chain": "southwestern_valleys",
+      "chapter": 6,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.5",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.6.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.6.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.6.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.5.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.6.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.7",
+      "chain": "southwestern_valleys",
+      "chapter": 7,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.6",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.7.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.7.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.7.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.6.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.7.desc"
+    },
+    {
+      "id": "hbe_story_southwestern_valleys.8",
+      "chain": "southwestern_valleys",
+      "chapter": 8,
+      "source": "in_game/events/hbe_story_southwestern_valleys.txt",
+      "previous": "hbe_story_southwestern_valleys.7",
+      "recap_variable": "hbe_story_southwestern_valleys_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_story_southwestern_valleys.8.desc.after_a",
+          "previous_option": "hbe_story_southwestern_valleys.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_story_southwestern_valleys.8.desc.after_b",
+          "previous_option": "hbe_story_southwestern_valleys.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_story_southwestern_valleys.8.desc.after_c",
+          "previous_option": "hbe_story_southwestern_valleys.7.c"
+        }
+      ],
+      "fallback": "hbe_story_southwestern_valleys.8.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.1",
+      "chain": "short_chengdu_plain_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_chengdu_plain.1.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.2",
+      "chain": "short_chengdu_plain_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": "hbe_short_chengdu_plain.1",
+      "recap_variable": "hbe_short_chengdu_plain_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_chengdu_plain.2.desc.after_a",
+          "previous_option": "hbe_short_chengdu_plain.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_chengdu_plain.2.desc.after_b",
+          "previous_option": "hbe_short_chengdu_plain.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_chengdu_plain.2.desc.after_c",
+          "previous_option": "hbe_short_chengdu_plain.1.c"
+        }
+      ],
+      "fallback": "hbe_short_chengdu_plain.2.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.3",
+      "chain": "short_chengdu_plain_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": "hbe_short_chengdu_plain.2",
+      "recap_variable": "hbe_short_chengdu_plain_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_chengdu_plain.3.desc.after_a",
+          "previous_option": "hbe_short_chengdu_plain.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_chengdu_plain.3.desc.after_b",
+          "previous_option": "hbe_short_chengdu_plain.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_chengdu_plain.3.desc.after_c",
+          "previous_option": "hbe_short_chengdu_plain.2.c"
+        }
+      ],
+      "fallback": "hbe_short_chengdu_plain.3.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.11",
+      "chain": "short_chengdu_plain_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_chengdu_plain.11.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.12",
+      "chain": "short_chengdu_plain_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": "hbe_short_chengdu_plain.11",
+      "recap_variable": "hbe_short_chengdu_plain_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_chengdu_plain.12.desc.after_a",
+          "previous_option": "hbe_short_chengdu_plain.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_chengdu_plain.12.desc.after_b",
+          "previous_option": "hbe_short_chengdu_plain.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_chengdu_plain.12.desc.after_c",
+          "previous_option": "hbe_short_chengdu_plain.11.c"
+        }
+      ],
+      "fallback": "hbe_short_chengdu_plain.12.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.13",
+      "chain": "short_chengdu_plain_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": "hbe_short_chengdu_plain.12",
+      "recap_variable": "hbe_short_chengdu_plain_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_chengdu_plain.13.desc.after_a",
+          "previous_option": "hbe_short_chengdu_plain.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_chengdu_plain.13.desc.after_b",
+          "previous_option": "hbe_short_chengdu_plain.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_chengdu_plain.13.desc.after_c",
+          "previous_option": "hbe_short_chengdu_plain.12.c"
+        }
+      ],
+      "fallback": "hbe_short_chengdu_plain.13.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.21",
+      "chain": "short_chengdu_plain_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_chengdu_plain.21.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.22",
+      "chain": "short_chengdu_plain_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": "hbe_short_chengdu_plain.21",
+      "recap_variable": "hbe_short_chengdu_plain_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_chengdu_plain.22.desc.after_a",
+          "previous_option": "hbe_short_chengdu_plain.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_chengdu_plain.22.desc.after_b",
+          "previous_option": "hbe_short_chengdu_plain.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_chengdu_plain.22.desc.after_c",
+          "previous_option": "hbe_short_chengdu_plain.21.c"
+        }
+      ],
+      "fallback": "hbe_short_chengdu_plain.22.desc"
+    },
+    {
+      "id": "hbe_short_chengdu_plain.23",
+      "chain": "short_chengdu_plain_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_chengdu_plain.txt",
+      "previous": "hbe_short_chengdu_plain.22",
+      "recap_variable": "hbe_short_chengdu_plain_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_chengdu_plain.23.desc.after_a",
+          "previous_option": "hbe_short_chengdu_plain.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_chengdu_plain.23.desc.after_b",
+          "previous_option": "hbe_short_chengdu_plain.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_chengdu_plain.23.desc.after_c",
+          "previous_option": "hbe_short_chengdu_plain.22.c"
+        }
+      ],
+      "fallback": "hbe_short_chengdu_plain.23.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.1",
+      "chain": "short_southern_salt_wine_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_southern_salt_wine.1.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.2",
+      "chain": "short_southern_salt_wine_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": "hbe_short_southern_salt_wine.1",
+      "recap_variable": "hbe_short_southern_salt_wine_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southern_salt_wine.2.desc.after_a",
+          "previous_option": "hbe_short_southern_salt_wine.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southern_salt_wine.2.desc.after_b",
+          "previous_option": "hbe_short_southern_salt_wine.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southern_salt_wine.2.desc.after_c",
+          "previous_option": "hbe_short_southern_salt_wine.1.c"
+        }
+      ],
+      "fallback": "hbe_short_southern_salt_wine.2.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.3",
+      "chain": "short_southern_salt_wine_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": "hbe_short_southern_salt_wine.2",
+      "recap_variable": "hbe_short_southern_salt_wine_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southern_salt_wine.3.desc.after_a",
+          "previous_option": "hbe_short_southern_salt_wine.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southern_salt_wine.3.desc.after_b",
+          "previous_option": "hbe_short_southern_salt_wine.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southern_salt_wine.3.desc.after_c",
+          "previous_option": "hbe_short_southern_salt_wine.2.c"
+        }
+      ],
+      "fallback": "hbe_short_southern_salt_wine.3.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.11",
+      "chain": "short_southern_salt_wine_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_southern_salt_wine.11.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.12",
+      "chain": "short_southern_salt_wine_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": "hbe_short_southern_salt_wine.11",
+      "recap_variable": "hbe_short_southern_salt_wine_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southern_salt_wine.12.desc.after_a",
+          "previous_option": "hbe_short_southern_salt_wine.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southern_salt_wine.12.desc.after_b",
+          "previous_option": "hbe_short_southern_salt_wine.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southern_salt_wine.12.desc.after_c",
+          "previous_option": "hbe_short_southern_salt_wine.11.c"
+        }
+      ],
+      "fallback": "hbe_short_southern_salt_wine.12.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.13",
+      "chain": "short_southern_salt_wine_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": "hbe_short_southern_salt_wine.12",
+      "recap_variable": "hbe_short_southern_salt_wine_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southern_salt_wine.13.desc.after_a",
+          "previous_option": "hbe_short_southern_salt_wine.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southern_salt_wine.13.desc.after_b",
+          "previous_option": "hbe_short_southern_salt_wine.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southern_salt_wine.13.desc.after_c",
+          "previous_option": "hbe_short_southern_salt_wine.12.c"
+        }
+      ],
+      "fallback": "hbe_short_southern_salt_wine.13.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.21",
+      "chain": "short_southern_salt_wine_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_southern_salt_wine.21.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.22",
+      "chain": "short_southern_salt_wine_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": "hbe_short_southern_salt_wine.21",
+      "recap_variable": "hbe_short_southern_salt_wine_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southern_salt_wine.22.desc.after_a",
+          "previous_option": "hbe_short_southern_salt_wine.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southern_salt_wine.22.desc.after_b",
+          "previous_option": "hbe_short_southern_salt_wine.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southern_salt_wine.22.desc.after_c",
+          "previous_option": "hbe_short_southern_salt_wine.21.c"
+        }
+      ],
+      "fallback": "hbe_short_southern_salt_wine.22.desc"
+    },
+    {
+      "id": "hbe_short_southern_salt_wine.23",
+      "chain": "short_southern_salt_wine_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_southern_salt_wine.txt",
+      "previous": "hbe_short_southern_salt_wine.22",
+      "recap_variable": "hbe_short_southern_salt_wine_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southern_salt_wine.23.desc.after_a",
+          "previous_option": "hbe_short_southern_salt_wine.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southern_salt_wine.23.desc.after_b",
+          "previous_option": "hbe_short_southern_salt_wine.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southern_salt_wine.23.desc.after_c",
+          "previous_option": "hbe_short_southern_salt_wine.22.c"
+        }
+      ],
+      "fallback": "hbe_short_southern_salt_wine.23.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.1",
+      "chain": "short_eastern_river_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_eastern_river.1.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.2",
+      "chain": "short_eastern_river_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": "hbe_short_eastern_river.1",
+      "recap_variable": "hbe_short_eastern_river_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_eastern_river.2.desc.after_a",
+          "previous_option": "hbe_short_eastern_river.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_eastern_river.2.desc.after_b",
+          "previous_option": "hbe_short_eastern_river.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_eastern_river.2.desc.after_c",
+          "previous_option": "hbe_short_eastern_river.1.c"
+        }
+      ],
+      "fallback": "hbe_short_eastern_river.2.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.3",
+      "chain": "short_eastern_river_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": "hbe_short_eastern_river.2",
+      "recap_variable": "hbe_short_eastern_river_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_eastern_river.3.desc.after_a",
+          "previous_option": "hbe_short_eastern_river.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_eastern_river.3.desc.after_b",
+          "previous_option": "hbe_short_eastern_river.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_eastern_river.3.desc.after_c",
+          "previous_option": "hbe_short_eastern_river.2.c"
+        }
+      ],
+      "fallback": "hbe_short_eastern_river.3.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.11",
+      "chain": "short_eastern_river_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_eastern_river.11.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.12",
+      "chain": "short_eastern_river_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": "hbe_short_eastern_river.11",
+      "recap_variable": "hbe_short_eastern_river_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_eastern_river.12.desc.after_a",
+          "previous_option": "hbe_short_eastern_river.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_eastern_river.12.desc.after_b",
+          "previous_option": "hbe_short_eastern_river.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_eastern_river.12.desc.after_c",
+          "previous_option": "hbe_short_eastern_river.11.c"
+        }
+      ],
+      "fallback": "hbe_short_eastern_river.12.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.13",
+      "chain": "short_eastern_river_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": "hbe_short_eastern_river.12",
+      "recap_variable": "hbe_short_eastern_river_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_eastern_river.13.desc.after_a",
+          "previous_option": "hbe_short_eastern_river.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_eastern_river.13.desc.after_b",
+          "previous_option": "hbe_short_eastern_river.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_eastern_river.13.desc.after_c",
+          "previous_option": "hbe_short_eastern_river.12.c"
+        }
+      ],
+      "fallback": "hbe_short_eastern_river.13.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.21",
+      "chain": "short_eastern_river_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_eastern_river.21.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.22",
+      "chain": "short_eastern_river_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": "hbe_short_eastern_river.21",
+      "recap_variable": "hbe_short_eastern_river_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_eastern_river.22.desc.after_a",
+          "previous_option": "hbe_short_eastern_river.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_eastern_river.22.desc.after_b",
+          "previous_option": "hbe_short_eastern_river.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_eastern_river.22.desc.after_c",
+          "previous_option": "hbe_short_eastern_river.21.c"
+        }
+      ],
+      "fallback": "hbe_short_eastern_river.22.desc"
+    },
+    {
+      "id": "hbe_short_eastern_river.23",
+      "chain": "short_eastern_river_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_eastern_river.txt",
+      "previous": "hbe_short_eastern_river.22",
+      "recap_variable": "hbe_short_eastern_river_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_eastern_river.23.desc.after_a",
+          "previous_option": "hbe_short_eastern_river.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_eastern_river.23.desc.after_b",
+          "previous_option": "hbe_short_eastern_river.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_eastern_river.23.desc.after_c",
+          "previous_option": "hbe_short_eastern_river.22.c"
+        }
+      ],
+      "fallback": "hbe_short_eastern_river.23.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.1",
+      "chain": "short_northern_shudao_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_northern_shudao.1.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.2",
+      "chain": "short_northern_shudao_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": "hbe_short_northern_shudao.1",
+      "recap_variable": "hbe_short_northern_shudao_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_northern_shudao.2.desc.after_a",
+          "previous_option": "hbe_short_northern_shudao.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_northern_shudao.2.desc.after_b",
+          "previous_option": "hbe_short_northern_shudao.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_northern_shudao.2.desc.after_c",
+          "previous_option": "hbe_short_northern_shudao.1.c"
+        }
+      ],
+      "fallback": "hbe_short_northern_shudao.2.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.3",
+      "chain": "short_northern_shudao_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": "hbe_short_northern_shudao.2",
+      "recap_variable": "hbe_short_northern_shudao_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_northern_shudao.3.desc.after_a",
+          "previous_option": "hbe_short_northern_shudao.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_northern_shudao.3.desc.after_b",
+          "previous_option": "hbe_short_northern_shudao.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_northern_shudao.3.desc.after_c",
+          "previous_option": "hbe_short_northern_shudao.2.c"
+        }
+      ],
+      "fallback": "hbe_short_northern_shudao.3.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.11",
+      "chain": "short_northern_shudao_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_northern_shudao.11.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.12",
+      "chain": "short_northern_shudao_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": "hbe_short_northern_shudao.11",
+      "recap_variable": "hbe_short_northern_shudao_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_northern_shudao.12.desc.after_a",
+          "previous_option": "hbe_short_northern_shudao.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_northern_shudao.12.desc.after_b",
+          "previous_option": "hbe_short_northern_shudao.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_northern_shudao.12.desc.after_c",
+          "previous_option": "hbe_short_northern_shudao.11.c"
+        }
+      ],
+      "fallback": "hbe_short_northern_shudao.12.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.13",
+      "chain": "short_northern_shudao_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": "hbe_short_northern_shudao.12",
+      "recap_variable": "hbe_short_northern_shudao_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_northern_shudao.13.desc.after_a",
+          "previous_option": "hbe_short_northern_shudao.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_northern_shudao.13.desc.after_b",
+          "previous_option": "hbe_short_northern_shudao.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_northern_shudao.13.desc.after_c",
+          "previous_option": "hbe_short_northern_shudao.12.c"
+        }
+      ],
+      "fallback": "hbe_short_northern_shudao.13.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.21",
+      "chain": "short_northern_shudao_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_northern_shudao.21.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.22",
+      "chain": "short_northern_shudao_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": "hbe_short_northern_shudao.21",
+      "recap_variable": "hbe_short_northern_shudao_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_northern_shudao.22.desc.after_a",
+          "previous_option": "hbe_short_northern_shudao.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_northern_shudao.22.desc.after_b",
+          "previous_option": "hbe_short_northern_shudao.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_northern_shudao.22.desc.after_c",
+          "previous_option": "hbe_short_northern_shudao.21.c"
+        }
+      ],
+      "fallback": "hbe_short_northern_shudao.22.desc"
+    },
+    {
+      "id": "hbe_short_northern_shudao.23",
+      "chain": "short_northern_shudao_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_northern_shudao.txt",
+      "previous": "hbe_short_northern_shudao.22",
+      "recap_variable": "hbe_short_northern_shudao_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_northern_shudao.23.desc.after_a",
+          "previous_option": "hbe_short_northern_shudao.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_northern_shudao.23.desc.after_b",
+          "previous_option": "hbe_short_northern_shudao.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_northern_shudao.23.desc.after_c",
+          "previous_option": "hbe_short_northern_shudao.22.c"
+        }
+      ],
+      "fallback": "hbe_short_northern_shudao.23.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.1",
+      "chain": "short_central_hills_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_central_hills.1.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.2",
+      "chain": "short_central_hills_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": "hbe_short_central_hills.1",
+      "recap_variable": "hbe_short_central_hills_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_central_hills.2.desc.after_a",
+          "previous_option": "hbe_short_central_hills.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_central_hills.2.desc.after_b",
+          "previous_option": "hbe_short_central_hills.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_central_hills.2.desc.after_c",
+          "previous_option": "hbe_short_central_hills.1.c"
+        }
+      ],
+      "fallback": "hbe_short_central_hills.2.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.3",
+      "chain": "short_central_hills_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": "hbe_short_central_hills.2",
+      "recap_variable": "hbe_short_central_hills_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_central_hills.3.desc.after_a",
+          "previous_option": "hbe_short_central_hills.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_central_hills.3.desc.after_b",
+          "previous_option": "hbe_short_central_hills.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_central_hills.3.desc.after_c",
+          "previous_option": "hbe_short_central_hills.2.c"
+        }
+      ],
+      "fallback": "hbe_short_central_hills.3.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.11",
+      "chain": "short_central_hills_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_central_hills.11.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.12",
+      "chain": "short_central_hills_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": "hbe_short_central_hills.11",
+      "recap_variable": "hbe_short_central_hills_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_central_hills.12.desc.after_a",
+          "previous_option": "hbe_short_central_hills.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_central_hills.12.desc.after_b",
+          "previous_option": "hbe_short_central_hills.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_central_hills.12.desc.after_c",
+          "previous_option": "hbe_short_central_hills.11.c"
+        }
+      ],
+      "fallback": "hbe_short_central_hills.12.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.13",
+      "chain": "short_central_hills_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": "hbe_short_central_hills.12",
+      "recap_variable": "hbe_short_central_hills_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_central_hills.13.desc.after_a",
+          "previous_option": "hbe_short_central_hills.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_central_hills.13.desc.after_b",
+          "previous_option": "hbe_short_central_hills.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_central_hills.13.desc.after_c",
+          "previous_option": "hbe_short_central_hills.12.c"
+        }
+      ],
+      "fallback": "hbe_short_central_hills.13.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.21",
+      "chain": "short_central_hills_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_central_hills.21.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.22",
+      "chain": "short_central_hills_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": "hbe_short_central_hills.21",
+      "recap_variable": "hbe_short_central_hills_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_central_hills.22.desc.after_a",
+          "previous_option": "hbe_short_central_hills.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_central_hills.22.desc.after_b",
+          "previous_option": "hbe_short_central_hills.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_central_hills.22.desc.after_c",
+          "previous_option": "hbe_short_central_hills.21.c"
+        }
+      ],
+      "fallback": "hbe_short_central_hills.22.desc"
+    },
+    {
+      "id": "hbe_short_central_hills.23",
+      "chain": "short_central_hills_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_central_hills.txt",
+      "previous": "hbe_short_central_hills.22",
+      "recap_variable": "hbe_short_central_hills_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_central_hills.23.desc.after_a",
+          "previous_option": "hbe_short_central_hills.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_central_hills.23.desc.after_b",
+          "previous_option": "hbe_short_central_hills.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_central_hills.23.desc.after_c",
+          "previous_option": "hbe_short_central_hills.22.c"
+        }
+      ],
+      "fallback": "hbe_short_central_hills.23.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.1",
+      "chain": "short_western_tea_horse_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_western_tea_horse.1.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.2",
+      "chain": "short_western_tea_horse_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": "hbe_short_western_tea_horse.1",
+      "recap_variable": "hbe_short_western_tea_horse_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_western_tea_horse.2.desc.after_a",
+          "previous_option": "hbe_short_western_tea_horse.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_western_tea_horse.2.desc.after_b",
+          "previous_option": "hbe_short_western_tea_horse.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_western_tea_horse.2.desc.after_c",
+          "previous_option": "hbe_short_western_tea_horse.1.c"
+        }
+      ],
+      "fallback": "hbe_short_western_tea_horse.2.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.3",
+      "chain": "short_western_tea_horse_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": "hbe_short_western_tea_horse.2",
+      "recap_variable": "hbe_short_western_tea_horse_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_western_tea_horse.3.desc.after_a",
+          "previous_option": "hbe_short_western_tea_horse.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_western_tea_horse.3.desc.after_b",
+          "previous_option": "hbe_short_western_tea_horse.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_western_tea_horse.3.desc.after_c",
+          "previous_option": "hbe_short_western_tea_horse.2.c"
+        }
+      ],
+      "fallback": "hbe_short_western_tea_horse.3.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.11",
+      "chain": "short_western_tea_horse_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_western_tea_horse.11.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.12",
+      "chain": "short_western_tea_horse_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": "hbe_short_western_tea_horse.11",
+      "recap_variable": "hbe_short_western_tea_horse_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_western_tea_horse.12.desc.after_a",
+          "previous_option": "hbe_short_western_tea_horse.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_western_tea_horse.12.desc.after_b",
+          "previous_option": "hbe_short_western_tea_horse.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_western_tea_horse.12.desc.after_c",
+          "previous_option": "hbe_short_western_tea_horse.11.c"
+        }
+      ],
+      "fallback": "hbe_short_western_tea_horse.12.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.13",
+      "chain": "short_western_tea_horse_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": "hbe_short_western_tea_horse.12",
+      "recap_variable": "hbe_short_western_tea_horse_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_western_tea_horse.13.desc.after_a",
+          "previous_option": "hbe_short_western_tea_horse.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_western_tea_horse.13.desc.after_b",
+          "previous_option": "hbe_short_western_tea_horse.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_western_tea_horse.13.desc.after_c",
+          "previous_option": "hbe_short_western_tea_horse.12.c"
+        }
+      ],
+      "fallback": "hbe_short_western_tea_horse.13.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.21",
+      "chain": "short_western_tea_horse_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_western_tea_horse.21.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.22",
+      "chain": "short_western_tea_horse_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": "hbe_short_western_tea_horse.21",
+      "recap_variable": "hbe_short_western_tea_horse_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_western_tea_horse.22.desc.after_a",
+          "previous_option": "hbe_short_western_tea_horse.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_western_tea_horse.22.desc.after_b",
+          "previous_option": "hbe_short_western_tea_horse.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_western_tea_horse.22.desc.after_c",
+          "previous_option": "hbe_short_western_tea_horse.21.c"
+        }
+      ],
+      "fallback": "hbe_short_western_tea_horse.22.desc"
+    },
+    {
+      "id": "hbe_short_western_tea_horse.23",
+      "chain": "short_western_tea_horse_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_western_tea_horse.txt",
+      "previous": "hbe_short_western_tea_horse.22",
+      "recap_variable": "hbe_short_western_tea_horse_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_western_tea_horse.23.desc.after_a",
+          "previous_option": "hbe_short_western_tea_horse.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_western_tea_horse.23.desc.after_b",
+          "previous_option": "hbe_short_western_tea_horse.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_western_tea_horse.23.desc.after_c",
+          "previous_option": "hbe_short_western_tea_horse.22.c"
+        }
+      ],
+      "fallback": "hbe_short_western_tea_horse.23.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.1",
+      "chain": "short_southwestern_valleys_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_southwestern_valleys.1.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.2",
+      "chain": "short_southwestern_valleys_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": "hbe_short_southwestern_valleys.1",
+      "recap_variable": "hbe_short_southwestern_valleys_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southwestern_valleys.2.desc.after_a",
+          "previous_option": "hbe_short_southwestern_valleys.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southwestern_valleys.2.desc.after_b",
+          "previous_option": "hbe_short_southwestern_valleys.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southwestern_valleys.2.desc.after_c",
+          "previous_option": "hbe_short_southwestern_valleys.1.c"
+        }
+      ],
+      "fallback": "hbe_short_southwestern_valleys.2.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.3",
+      "chain": "short_southwestern_valleys_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": "hbe_short_southwestern_valleys.2",
+      "recap_variable": "hbe_short_southwestern_valleys_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southwestern_valleys.3.desc.after_a",
+          "previous_option": "hbe_short_southwestern_valleys.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southwestern_valleys.3.desc.after_b",
+          "previous_option": "hbe_short_southwestern_valleys.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southwestern_valleys.3.desc.after_c",
+          "previous_option": "hbe_short_southwestern_valleys.2.c"
+        }
+      ],
+      "fallback": "hbe_short_southwestern_valleys.3.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.11",
+      "chain": "short_southwestern_valleys_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_southwestern_valleys.11.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.12",
+      "chain": "short_southwestern_valleys_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": "hbe_short_southwestern_valleys.11",
+      "recap_variable": "hbe_short_southwestern_valleys_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southwestern_valleys.12.desc.after_a",
+          "previous_option": "hbe_short_southwestern_valleys.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southwestern_valleys.12.desc.after_b",
+          "previous_option": "hbe_short_southwestern_valleys.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southwestern_valleys.12.desc.after_c",
+          "previous_option": "hbe_short_southwestern_valleys.11.c"
+        }
+      ],
+      "fallback": "hbe_short_southwestern_valleys.12.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.13",
+      "chain": "short_southwestern_valleys_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": "hbe_short_southwestern_valleys.12",
+      "recap_variable": "hbe_short_southwestern_valleys_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southwestern_valleys.13.desc.after_a",
+          "previous_option": "hbe_short_southwestern_valleys.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southwestern_valleys.13.desc.after_b",
+          "previous_option": "hbe_short_southwestern_valleys.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southwestern_valleys.13.desc.after_c",
+          "previous_option": "hbe_short_southwestern_valleys.12.c"
+        }
+      ],
+      "fallback": "hbe_short_southwestern_valleys.13.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.21",
+      "chain": "short_southwestern_valleys_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_southwestern_valleys.21.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.22",
+      "chain": "short_southwestern_valleys_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": "hbe_short_southwestern_valleys.21",
+      "recap_variable": "hbe_short_southwestern_valleys_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southwestern_valleys.22.desc.after_a",
+          "previous_option": "hbe_short_southwestern_valleys.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southwestern_valleys.22.desc.after_b",
+          "previous_option": "hbe_short_southwestern_valleys.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southwestern_valleys.22.desc.after_c",
+          "previous_option": "hbe_short_southwestern_valleys.21.c"
+        }
+      ],
+      "fallback": "hbe_short_southwestern_valleys.22.desc"
+    },
+    {
+      "id": "hbe_short_southwestern_valleys.23",
+      "chain": "short_southwestern_valleys_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_southwestern_valleys.txt",
+      "previous": "hbe_short_southwestern_valleys.22",
+      "recap_variable": "hbe_short_southwestern_valleys_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_southwestern_valleys.23.desc.after_a",
+          "previous_option": "hbe_short_southwestern_valleys.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_southwestern_valleys.23.desc.after_b",
+          "previous_option": "hbe_short_southwestern_valleys.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_southwestern_valleys.23.desc.after_c",
+          "previous_option": "hbe_short_southwestern_valleys.22.c"
+        }
+      ],
+      "fallback": "hbe_short_southwestern_valleys.23.desc"
+    },
+    {
+      "id": "hbe_short_shared.1",
+      "chain": "short_shared_1",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.1.desc"
+    },
+    {
+      "id": "hbe_short_shared.2",
+      "chain": "short_shared_1",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.1",
+      "recap_variable": "hbe_short_shared_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.2.desc.after_a",
+          "previous_option": "hbe_short_shared.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.2.desc.after_b",
+          "previous_option": "hbe_short_shared.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.2.desc.after_c",
+          "previous_option": "hbe_short_shared.1.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.2.desc"
+    },
+    {
+      "id": "hbe_short_shared.3",
+      "chain": "short_shared_1",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.2",
+      "recap_variable": "hbe_short_shared_1_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.3.desc.after_a",
+          "previous_option": "hbe_short_shared.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.3.desc.after_b",
+          "previous_option": "hbe_short_shared.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.3.desc.after_c",
+          "previous_option": "hbe_short_shared.2.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.3.desc"
+    },
+    {
+      "id": "hbe_short_shared.11",
+      "chain": "short_shared_2",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.11.desc"
+    },
+    {
+      "id": "hbe_short_shared.12",
+      "chain": "short_shared_2",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.11",
+      "recap_variable": "hbe_short_shared_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.12.desc.after_a",
+          "previous_option": "hbe_short_shared.11.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.12.desc.after_b",
+          "previous_option": "hbe_short_shared.11.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.12.desc.after_c",
+          "previous_option": "hbe_short_shared.11.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.12.desc"
+    },
+    {
+      "id": "hbe_short_shared.13",
+      "chain": "short_shared_2",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.12",
+      "recap_variable": "hbe_short_shared_2_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.13.desc.after_a",
+          "previous_option": "hbe_short_shared.12.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.13.desc.after_b",
+          "previous_option": "hbe_short_shared.12.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.13.desc.after_c",
+          "previous_option": "hbe_short_shared.12.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.13.desc"
+    },
+    {
+      "id": "hbe_short_shared.21",
+      "chain": "short_shared_3",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.21.desc"
+    },
+    {
+      "id": "hbe_short_shared.22",
+      "chain": "short_shared_3",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.21",
+      "recap_variable": "hbe_short_shared_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.22.desc.after_a",
+          "previous_option": "hbe_short_shared.21.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.22.desc.after_b",
+          "previous_option": "hbe_short_shared.21.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.22.desc.after_c",
+          "previous_option": "hbe_short_shared.21.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.22.desc"
+    },
+    {
+      "id": "hbe_short_shared.23",
+      "chain": "short_shared_3",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.22",
+      "recap_variable": "hbe_short_shared_3_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.23.desc.after_a",
+          "previous_option": "hbe_short_shared.22.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.23.desc.after_b",
+          "previous_option": "hbe_short_shared.22.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.23.desc.after_c",
+          "previous_option": "hbe_short_shared.22.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.23.desc"
+    },
+    {
+      "id": "hbe_short_shared.31",
+      "chain": "short_shared_4",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.31.desc"
+    },
+    {
+      "id": "hbe_short_shared.32",
+      "chain": "short_shared_4",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.31",
+      "recap_variable": "hbe_short_shared_4_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.32.desc.after_a",
+          "previous_option": "hbe_short_shared.31.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.32.desc.after_b",
+          "previous_option": "hbe_short_shared.31.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.32.desc.after_c",
+          "previous_option": "hbe_short_shared.31.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.32.desc"
+    },
+    {
+      "id": "hbe_short_shared.33",
+      "chain": "short_shared_4",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.32",
+      "recap_variable": "hbe_short_shared_4_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.33.desc.after_a",
+          "previous_option": "hbe_short_shared.32.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.33.desc.after_b",
+          "previous_option": "hbe_short_shared.32.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.33.desc.after_c",
+          "previous_option": "hbe_short_shared.32.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.33.desc"
+    },
+    {
+      "id": "hbe_short_shared.41",
+      "chain": "short_shared_5",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.41.desc"
+    },
+    {
+      "id": "hbe_short_shared.42",
+      "chain": "short_shared_5",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.41",
+      "recap_variable": "hbe_short_shared_5_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.42.desc.after_a",
+          "previous_option": "hbe_short_shared.41.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.42.desc.after_b",
+          "previous_option": "hbe_short_shared.41.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.42.desc.after_c",
+          "previous_option": "hbe_short_shared.41.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.42.desc"
+    },
+    {
+      "id": "hbe_short_shared.43",
+      "chain": "short_shared_5",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.42",
+      "recap_variable": "hbe_short_shared_5_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.43.desc.after_a",
+          "previous_option": "hbe_short_shared.42.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.43.desc.after_b",
+          "previous_option": "hbe_short_shared.42.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.43.desc.after_c",
+          "previous_option": "hbe_short_shared.42.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.43.desc"
+    },
+    {
+      "id": "hbe_short_shared.51",
+      "chain": "short_shared_6",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.51.desc"
+    },
+    {
+      "id": "hbe_short_shared.52",
+      "chain": "short_shared_6",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.51",
+      "recap_variable": "hbe_short_shared_6_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.52.desc.after_a",
+          "previous_option": "hbe_short_shared.51.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.52.desc.after_b",
+          "previous_option": "hbe_short_shared.51.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.52.desc.after_c",
+          "previous_option": "hbe_short_shared.51.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.52.desc"
+    },
+    {
+      "id": "hbe_short_shared.53",
+      "chain": "short_shared_6",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.52",
+      "recap_variable": "hbe_short_shared_6_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.53.desc.after_a",
+          "previous_option": "hbe_short_shared.52.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.53.desc.after_b",
+          "previous_option": "hbe_short_shared.52.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.53.desc.after_c",
+          "previous_option": "hbe_short_shared.52.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.53.desc"
+    },
+    {
+      "id": "hbe_short_shared.61",
+      "chain": "short_shared_7",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.61.desc"
+    },
+    {
+      "id": "hbe_short_shared.62",
+      "chain": "short_shared_7",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.61",
+      "recap_variable": "hbe_short_shared_7_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.62.desc.after_a",
+          "previous_option": "hbe_short_shared.61.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.62.desc.after_b",
+          "previous_option": "hbe_short_shared.61.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.62.desc.after_c",
+          "previous_option": "hbe_short_shared.61.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.62.desc"
+    },
+    {
+      "id": "hbe_short_shared.63",
+      "chain": "short_shared_7",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.62",
+      "recap_variable": "hbe_short_shared_7_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.63.desc.after_a",
+          "previous_option": "hbe_short_shared.62.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.63.desc.after_b",
+          "previous_option": "hbe_short_shared.62.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.63.desc.after_c",
+          "previous_option": "hbe_short_shared.62.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.63.desc"
+    },
+    {
+      "id": "hbe_short_shared.71",
+      "chain": "short_shared_8",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.71.desc"
+    },
+    {
+      "id": "hbe_short_shared.72",
+      "chain": "short_shared_8",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.71",
+      "recap_variable": "hbe_short_shared_8_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.72.desc.after_a",
+          "previous_option": "hbe_short_shared.71.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.72.desc.after_b",
+          "previous_option": "hbe_short_shared.71.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.72.desc.after_c",
+          "previous_option": "hbe_short_shared.71.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.72.desc"
+    },
+    {
+      "id": "hbe_short_shared.73",
+      "chain": "short_shared_8",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.72",
+      "recap_variable": "hbe_short_shared_8_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.73.desc.after_a",
+          "previous_option": "hbe_short_shared.72.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.73.desc.after_b",
+          "previous_option": "hbe_short_shared.72.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.73.desc.after_c",
+          "previous_option": "hbe_short_shared.72.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.73.desc"
+    },
+    {
+      "id": "hbe_short_shared.81",
+      "chain": "short_shared_9",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.81.desc"
+    },
+    {
+      "id": "hbe_short_shared.82",
+      "chain": "short_shared_9",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.81",
+      "recap_variable": "hbe_short_shared_9_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.82.desc.after_a",
+          "previous_option": "hbe_short_shared.81.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.82.desc.after_b",
+          "previous_option": "hbe_short_shared.81.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.82.desc.after_c",
+          "previous_option": "hbe_short_shared.81.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.82.desc"
+    },
+    {
+      "id": "hbe_short_shared.83",
+      "chain": "short_shared_9",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.82",
+      "recap_variable": "hbe_short_shared_9_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.83.desc.after_a",
+          "previous_option": "hbe_short_shared.82.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.83.desc.after_b",
+          "previous_option": "hbe_short_shared.82.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.83.desc.after_c",
+          "previous_option": "hbe_short_shared.82.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.83.desc"
+    },
+    {
+      "id": "hbe_short_shared.91",
+      "chain": "short_shared_10",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.91.desc"
+    },
+    {
+      "id": "hbe_short_shared.92",
+      "chain": "short_shared_10",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.91",
+      "recap_variable": "hbe_short_shared_10_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.92.desc.after_a",
+          "previous_option": "hbe_short_shared.91.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.92.desc.after_b",
+          "previous_option": "hbe_short_shared.91.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.92.desc.after_c",
+          "previous_option": "hbe_short_shared.91.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.92.desc"
+    },
+    {
+      "id": "hbe_short_shared.93",
+      "chain": "short_shared_10",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.92",
+      "recap_variable": "hbe_short_shared_10_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.93.desc.after_a",
+          "previous_option": "hbe_short_shared.92.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.93.desc.after_b",
+          "previous_option": "hbe_short_shared.92.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.93.desc.after_c",
+          "previous_option": "hbe_short_shared.92.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.93.desc"
+    },
+    {
+      "id": "hbe_short_shared.101",
+      "chain": "short_shared_11",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.101.desc"
+    },
+    {
+      "id": "hbe_short_shared.102",
+      "chain": "short_shared_11",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.101",
+      "recap_variable": "hbe_short_shared_11_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.102.desc.after_a",
+          "previous_option": "hbe_short_shared.101.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.102.desc.after_b",
+          "previous_option": "hbe_short_shared.101.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.102.desc.after_c",
+          "previous_option": "hbe_short_shared.101.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.102.desc"
+    },
+    {
+      "id": "hbe_short_shared.103",
+      "chain": "short_shared_11",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.102",
+      "recap_variable": "hbe_short_shared_11_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.103.desc.after_a",
+          "previous_option": "hbe_short_shared.102.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.103.desc.after_b",
+          "previous_option": "hbe_short_shared.102.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.103.desc.after_c",
+          "previous_option": "hbe_short_shared.102.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.103.desc"
+    },
+    {
+      "id": "hbe_short_shared.111",
+      "chain": "short_shared_12",
+      "chapter": 1,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_short_shared.111.desc"
+    },
+    {
+      "id": "hbe_short_shared.112",
+      "chain": "short_shared_12",
+      "chapter": 2,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.111",
+      "recap_variable": "hbe_short_shared_12_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.112.desc.after_a",
+          "previous_option": "hbe_short_shared.111.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.112.desc.after_b",
+          "previous_option": "hbe_short_shared.111.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.112.desc.after_c",
+          "previous_option": "hbe_short_shared.111.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.112.desc"
+    },
+    {
+      "id": "hbe_short_shared.113",
+      "chain": "short_shared_12",
+      "chapter": 3,
+      "source": "in_game/events/hbe_short_shared.txt",
+      "previous": "hbe_short_shared.112",
+      "recap_variable": "hbe_short_shared_12_art_route",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_short_shared.113.desc.after_a",
+          "previous_option": "hbe_short_shared.112.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_short_shared.113.desc.after_b",
+          "previous_option": "hbe_short_shared.112.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_short_shared.113.desc.after_c",
+          "previous_option": "hbe_short_shared.112.c"
+        }
+      ],
+      "fallback": "hbe_short_shared.113.desc"
+    },
+    {
+      "id": "hbe_migration.1",
+      "chain": "migration",
+      "chapter": 1,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": null,
+      "recap_variable": null,
+      "variants": [],
+      "fallback": "hbe_migration.1.desc"
+    },
+    {
+      "id": "hbe_migration.2",
+      "chain": "migration",
+      "chapter": 2,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.1",
+      "recap_variable": "hbe_migration_first_policy",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.2.desc.after_a",
+          "previous_option": "hbe_migration.1.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.2.desc.after_b",
+          "previous_option": "hbe_migration.1.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.2.desc.after_c",
+          "previous_option": "hbe_migration.1.c"
+        }
+      ],
+      "fallback": "hbe_migration.2.desc"
+    },
+    {
+      "id": "hbe_migration.3",
+      "chain": "migration",
+      "chapter": 3,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.2",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.3.desc.after_a",
+          "previous_option": "hbe_migration.2.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.3.desc.after_b",
+          "previous_option": "hbe_migration.2.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.3.desc.after_c",
+          "previous_option": "hbe_migration.2.c"
+        }
+      ],
+      "fallback": "hbe_migration.3.desc"
+    },
+    {
+      "id": "hbe_migration.4",
+      "chain": "migration",
+      "chapter": 4,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.3",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.4.desc.after_a",
+          "previous_option": "hbe_migration.3.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.4.desc.after_b",
+          "previous_option": "hbe_migration.3.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.4.desc.after_c",
+          "previous_option": "hbe_migration.3.c"
+        }
+      ],
+      "fallback": "hbe_migration.4.desc"
+    },
+    {
+      "id": "hbe_migration.5",
+      "chain": "migration",
+      "chapter": 5,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.4",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.5.desc.after_a",
+          "previous_option": "hbe_migration.4.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.5.desc.after_b",
+          "previous_option": "hbe_migration.4.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.5.desc.after_c",
+          "previous_option": "hbe_migration.4.c"
+        }
+      ],
+      "fallback": "hbe_migration.5.desc"
+    },
+    {
+      "id": "hbe_migration.6",
+      "chain": "migration",
+      "chapter": 6,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.5",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.6.desc.after_a",
+          "previous_option": "hbe_migration.5.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.6.desc.after_b",
+          "previous_option": "hbe_migration.5.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.6.desc.after_c",
+          "previous_option": "hbe_migration.5.c"
+        }
+      ],
+      "fallback": "hbe_migration.6.desc"
+    },
+    {
+      "id": "hbe_migration.7",
+      "chain": "migration",
+      "chapter": 7,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.6",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.7.desc.after_a",
+          "previous_option": "hbe_migration.6.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.7.desc.after_b",
+          "previous_option": "hbe_migration.6.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.7.desc.after_c",
+          "previous_option": "hbe_migration.6.c"
+        }
+      ],
+      "fallback": "hbe_migration.7.desc"
+    },
+    {
+      "id": "hbe_migration.8",
+      "chain": "migration",
+      "chapter": 8,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.7",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.8.desc.after_a",
+          "previous_option": "hbe_migration.7.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.8.desc.after_b",
+          "previous_option": "hbe_migration.7.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.8.desc.after_c",
+          "previous_option": "hbe_migration.7.c"
+        }
+      ],
+      "fallback": "hbe_migration.8.desc"
+    },
+    {
+      "id": "hbe_migration.9",
+      "chain": "migration",
+      "chapter": 9,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.8",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.9.desc.after_a",
+          "previous_option": "hbe_migration.8.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.9.desc.after_b",
+          "previous_option": "hbe_migration.8.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.9.desc.after_c",
+          "previous_option": "hbe_migration.8.c"
+        }
+      ],
+      "fallback": "hbe_migration.9.desc"
+    },
+    {
+      "id": "hbe_migration.10",
+      "chain": "migration",
+      "chapter": 10,
+      "source": "in_game/events/hbe_migration_events.txt",
+      "previous": "hbe_migration.9",
+      "recap_variable": "hbe_migration_recap_choice",
+      "variants": [
+        {
+          "value": 1,
+          "key": "hbe_migration.10.desc.after_a",
+          "previous_option": "hbe_migration.9.a"
+        },
+        {
+          "value": 2,
+          "key": "hbe_migration.10.desc.after_b",
+          "previous_option": "hbe_migration.9.b"
+        },
+        {
+          "value": 3,
+          "key": "hbe_migration.10.desc.after_c",
+          "previous_option": "hbe_migration.9.c"
+        }
+      ],
+      "fallback": "hbe_migration.10.desc"
+    }
+  ],
+  "chain_count": 41,
+  "stage_events": 165,
+  "dynamic_recaps": 124,
+  "unique_long_epilogues": 14,
+  "new_hidden_choice_records": 174,
+  "gameplay_effects_changed": false,
+  "english_status": "Existing Chinese fallback policy retained for this authored story batch.",
+  "files": [
+    "in_game/events/hbe_migration_events.txt",
+    "in_game/events/hbe_short_central_hills.txt",
+    "in_game/events/hbe_short_chengdu_plain.txt",
+    "in_game/events/hbe_short_eastern_river.txt",
+    "in_game/events/hbe_short_northern_shudao.txt",
+    "in_game/events/hbe_short_shared.txt",
+    "in_game/events/hbe_short_southern_salt_wine.txt",
+    "in_game/events/hbe_short_southwestern_valleys.txt",
+    "in_game/events/hbe_short_western_tea_horse.txt",
+    "in_game/events/hbe_story_central_hills.txt",
+    "in_game/events/hbe_story_chengdu_plain.txt",
+    "in_game/events/hbe_story_eastern_river.txt",
+    "in_game/events/hbe_story_northern_shudao.txt",
+    "in_game/events/hbe_story_southern_salt_wine.txt",
+    "in_game/events/hbe_story_southwestern_valleys.txt",
+    "in_game/events/hbe_story_western_tea_horse.txt",
+    "main_menu/localization/english/hbe_story_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml"
+  ]
+}

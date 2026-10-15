@@ -14,22 +14,34 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_1_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_4_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 1 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 4 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.1.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.1.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_1_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_4_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 1 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 4 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.1.c ai_chance = { base = 35 } add_prestige = 2
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 1 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 4 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.1.c ai_chance = { base = 35 } add_prestige = 2
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_1_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_4_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 1 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 4 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.1.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 1 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 4 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.1.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
 
 hbe_story_eastern_river.2 = {
- type = country_event title = hbe_story_eastern_river.2.title desc = hbe_story_eastern_river.2.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.2.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.2.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.2.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.2.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.2.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 1 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -42,22 +54,34 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_2_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_5_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 2 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 5 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.2.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.2.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.28
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_2_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 2 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 5 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.2.c ai_chance = { base = 35 } add_prestige = 2
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 2 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 5 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.2.c ai_chance = { base = 35 } add_prestige = 2
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_2_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 2 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 5 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.2.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 2 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 5 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.2.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
 
 hbe_story_eastern_river.3 = {
- type = country_event title = hbe_story_eastern_river.3.title desc = hbe_story_eastern_river.3.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.3.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.3.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.3.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.3.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.3.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 2 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -70,22 +94,34 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_3_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_6_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.3.b ai_chance = { base = 35 } add_prestige = -3
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.3.b ai_chance = { base = 35 } add_prestige = -3
 add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_3_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.3.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_4 }
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.3.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_4 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_3_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.3.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 3 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 6 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.3.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
 
 hbe_story_eastern_river.4 = {
- type = country_event title = hbe_story_eastern_river.4.title desc = hbe_story_eastern_river.4.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.4.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.4.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.4.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.4.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.4.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 3 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -98,22 +134,34 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_4_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.4.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.4.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_4_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.4.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_2 }
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.4.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_2 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_4_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.4.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 4 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.4.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
 
 hbe_story_eastern_river.5 = {
- type = country_event title = hbe_story_eastern_river.5.title desc = hbe_story_eastern_river.5.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.5.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.5.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.5.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.5.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.5.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 4 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -126,22 +174,34 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.5.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.5.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.5.c ai_chance = { base = 35 } add_prestige = 2
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.5.c ai_chance = { base = 35 } add_prestige = 2
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_5_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_7_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.5.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 5 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 7 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.5.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
 
 hbe_story_eastern_river.6 = {
- type = country_event title = hbe_story_eastern_river.6.title desc = hbe_story_eastern_river.6.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.6.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.6.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.6.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.6.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.6.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 5 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -154,21 +214,33 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_6_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.6.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.6.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_6_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.6.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_5 }
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.6.c ai_chance = { base = 35 } add_gold = { value = hbe_event_receipt_5 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_toll_6_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.6.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 6 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.6.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
 
 hbe_story_eastern_river.7 = {
- type = country_event title = hbe_story_eastern_river.7.title desc = hbe_story_eastern_river.7.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.7.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.7.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.7.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.7.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.7.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 6 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -181,16 +253,28 @@ add_country_modifier = { modifier = hbe_story_choice_eastern_river_7_1 years = 3
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
 hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 2 } set_variable = { name = hbe_story_eastern_river_phase value = 7 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending }
-add_prestige = 1 } option = { name = hbe_story_eastern_river.7.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_prestige = 1
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.7.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_research_progress = 0.28
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_7_2 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_1_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 7 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.7.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = 1 } set_variable = { name = hbe_story_eastern_river_phase value = 7 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.7.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_eastern_river_7_3 years = 3 mode = replace }
 custom_tooltip = hbe_story_eastern_river_branch_2_tt
 custom_tooltip = hbe_story_next_8_tt
-hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 7 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending } } option = { name = hbe_story_eastern_river.7.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
+hidden_effect = { change_variable = { name = hbe_story_eastern_river_direction add = -2 } set_variable = { name = hbe_story_eastern_river_phase value = 7 } set_variable = { name = hbe_story_eastern_river_clock value = yes years = 8 } remove_variable = hbe_story_eastern_river_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_eastern_river_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_story_eastern_river.7.d ai_chance = { base = 4 } custom_tooltip = hbe_story_eastern_river_stop_tt
 hidden_effect = { set_variable = hbe_story_eastern_river_closed set_variable = hbe_story_eastern_river_abandoned remove_variable = hbe_story_eastern_river_pending }
 add_prestige = -3 }
 }
@@ -224,7 +308,7 @@ set_variable = hbe_story_eastern_river_ending_2 }
 }
 
 hbe_story_eastern_river.8 = {
- type = country_event title = hbe_story_eastern_river.8.title desc = hbe_story_eastern_river.8.desc outcome = neutral
+ type = country_event title = hbe_story_eastern_river.8.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 1 } desc = hbe_story_eastern_river.8.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 2 } desc = hbe_story_eastern_river.8.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_story_eastern_river_recap_choice var:hbe_story_eastern_river_recap_choice = 3 } desc = hbe_story_eastern_river.8.desc.after_c } triggered_desc = { desc = hbe_story_eastern_river.8.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_eastern_river }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } var:hbe_story_eastern_river_phase = 7 NOT = { has_variable = hbe_story_eastern_river_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN

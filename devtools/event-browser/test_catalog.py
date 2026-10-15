@@ -41,7 +41,10 @@ class CatalogueTests(unittest.TestCase):
 
     def test_migration_conditional_description_keeps_readable_fallback(self):
         e = self.events['hbe_migration.2']
-        self.assertIn('渡口仍有等待田地的人家', e['description'])
+        self.assertIn('等着田地', e['description'])
+        self.assertEqual(len(e['description'].split('\n\n')), 2)
+        self.assertEqual(len(e['descriptionVariants']), 4)
+        self.assertTrue(any('继续赶路' in v['text'] for v in e['descriptionVariants']))
         self.assertIn('hbe_migration_first_policy', e['raw'])
 
     def test_maintenance_and_notification_remain_distinct(self):

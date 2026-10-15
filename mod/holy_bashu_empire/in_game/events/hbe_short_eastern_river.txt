@@ -36,7 +36,7 @@ add_prestige = -2 }
 }
 
 hbe_short_eastern_river.2 = {
- type = country_event title = hbe_short_eastern_river.2.title desc = hbe_short_eastern_river.2.desc outcome = neutral
+ type = country_event title = hbe_short_eastern_river.2.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 1 } desc = hbe_short_eastern_river.2.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 2 } desc = hbe_short_eastern_river.2.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 3 } desc = hbe_short_eastern_river.2.desc.after_c } triggered_desc = { desc = hbe_short_eastern_river.2.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_eastern_river_1 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB } var:hbe_short_eastern_river_1_phase = 1 NOT = { has_variable = hbe_short_eastern_river_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -75,7 +75,7 @@ add_prestige = -2 }
 }
 
 hbe_short_eastern_river.3 = {
- type = country_event title = hbe_short_eastern_river.3.title desc = hbe_short_eastern_river.3.desc outcome = neutral
+ type = country_event title = hbe_short_eastern_river.3.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 1 } desc = hbe_short_eastern_river.3.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 2 } desc = hbe_short_eastern_river.3.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_1_art_route var:hbe_short_eastern_river_1_art_route = 3 } desc = hbe_short_eastern_river.3.desc.after_c } triggered_desc = { desc = hbe_short_eastern_river.3.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_eastern_river_1 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB } var:hbe_short_eastern_river_1_phase = 2 NOT = { has_variable = hbe_short_eastern_river_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -146,7 +146,7 @@ add_prestige = -2 }
 }
 
 hbe_short_eastern_river.12 = {
- type = country_event title = hbe_short_eastern_river.12.title desc = hbe_short_eastern_river.12.desc outcome = neutral
+ type = country_event title = hbe_short_eastern_river.12.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 1 } desc = hbe_short_eastern_river.12.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 2 } desc = hbe_short_eastern_river.12.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 3 } desc = hbe_short_eastern_river.12.desc.after_c } triggered_desc = { desc = hbe_short_eastern_river.12.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_eastern_river_2 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBC has_or_had_tag = BBH } var:hbe_short_eastern_river_2_phase = 1 NOT = { has_variable = hbe_short_eastern_river_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -186,7 +186,7 @@ add_prestige = -2 }
 }
 
 hbe_short_eastern_river.13 = {
- type = country_event title = hbe_short_eastern_river.13.title desc = hbe_short_eastern_river.13.desc outcome = neutral
+ type = country_event title = hbe_short_eastern_river.13.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 1 } desc = hbe_short_eastern_river.13.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 2 } desc = hbe_short_eastern_river.13.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_2_art_route var:hbe_short_eastern_river_2_art_route = 3 } desc = hbe_short_eastern_river.13.desc.after_c } triggered_desc = { desc = hbe_short_eastern_river.13.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_eastern_river_2 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBC has_or_had_tag = BBH } var:hbe_short_eastern_river_2_phase = 2 NOT = { has_variable = hbe_short_eastern_river_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -259,7 +259,7 @@ add_prestige = -2 }
 }
 
 hbe_short_eastern_river.22 = {
- type = country_event title = hbe_short_eastern_river.22.title desc = hbe_short_eastern_river.22.desc outcome = neutral
+ type = country_event title = hbe_short_eastern_river.22.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 1 } desc = hbe_short_eastern_river.22.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 2 } desc = hbe_short_eastern_river.22.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 3 } desc = hbe_short_eastern_river.22.desc.after_c } triggered_desc = { desc = hbe_short_eastern_river.22.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_eastern_river_3 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBE has_or_had_tag = BBF } var:hbe_short_eastern_river_3_phase = 1 NOT = { has_variable = hbe_short_eastern_river_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -298,7 +298,7 @@ add_prestige = -2 }
 }
 
 hbe_short_eastern_river.23 = {
- type = country_event title = hbe_short_eastern_river.23.title desc = hbe_short_eastern_river.23.desc outcome = neutral
+ type = country_event title = hbe_short_eastern_river.23.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 1 } desc = hbe_short_eastern_river.23.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 2 } desc = hbe_short_eastern_river.23.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_eastern_river_3_art_route var:hbe_short_eastern_river_3_art_route = 3 } desc = hbe_short_eastern_river.23.desc.after_c } triggered_desc = { desc = hbe_short_eastern_river.23.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_eastern_river_3 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBE has_or_had_tag = BBF } var:hbe_short_eastern_river_3_phase = 2 NOT = { has_variable = hbe_short_eastern_river_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN

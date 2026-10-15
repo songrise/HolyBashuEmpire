@@ -20,6 +20,9 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } 
  # HBE_CHAIN_CHOICE_BEGIN
  hidden_effect = { set_variable = { name = hbe_migration_first_policy value = 1 } }
  # HBE_CHAIN_CHOICE_END
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
  } option = { name = hbe_migration.1.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_migration_choice_1_2 years = 3 mode = replace }
@@ -29,6 +32,9 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } 
  # HBE_CHAIN_CHOICE_BEGIN
  hidden_effect = { set_variable = { name = hbe_migration_first_policy value = 2 } }
  # HBE_CHAIN_CHOICE_END
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
  } option = { name = hbe_migration.1.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_migration_choice_1_3 years = 4 mode = replace }
@@ -38,11 +44,14 @@ hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 }
  # HBE_CHAIN_CHOICE_BEGIN
  hidden_effect = { set_variable = { name = hbe_migration_first_policy value = 3 } }
  # HBE_CHAIN_CHOICE_END
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
  }
 }
 
 hbe_migration.2 = {
- type = country_event title = hbe_migration.2.title desc = { first_valid = { triggered_desc = { trigger = { var:hbe_migration_first_policy = 1 } desc = hbe_migration.2.desc.open } triggered_desc = { trigger = { var:hbe_migration_first_policy = 2 } desc = hbe_migration.2.desc.sponsored } triggered_desc = { trigger = { var:hbe_migration_first_policy = 3 } desc = hbe_migration.2.desc.transit } triggered_desc = { desc = hbe_migration.2.desc } } } outcome = neutral
+ type = country_event title = hbe_migration.2.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_first_policy var:hbe_migration_first_policy = 1 } desc = hbe_migration.2.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_first_policy var:hbe_migration_first_policy = 2 } desc = hbe_migration.2.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_first_policy var:hbe_migration_first_policy = 3 } desc = hbe_migration.2.desc.after_c } triggered_desc = { desc = hbe_migration.2.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_settlement }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 1 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -56,21 +65,33 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_migration_choice_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.2.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.2.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.01 }
 add_country_modifier = { modifier = hbe_migration_choice_2_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.2.c ai_chance = { base = 35 } add_prestige = 2
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.2.c ai_chance = { base = 35 } add_prestige = 2
 add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }
 add_country_modifier = { modifier = hbe_migration_choice_2_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.3 = {
- type = country_event title = hbe_migration.3.title desc = hbe_migration.3.desc outcome = neutral
+ type = country_event title = hbe_migration.3.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.3.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.3.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.3.desc.after_c } triggered_desc = { desc = hbe_migration.3.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_council }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 2 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -84,21 +105,33 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.06 }
 add_country_modifier = { modifier = hbe_migration_choice_3_1 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.3.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.3.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_prestige = 1
 add_country_modifier = { modifier = hbe_migration_choice_3_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.3.c ai_chance = { base = 35 } add_prestige = 3
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.3.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_migration_choice_3_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.4 = {
- type = country_event title = hbe_migration.4.title desc = hbe_migration.4.desc outcome = neutral
+ type = country_event title = hbe_migration.4.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.4.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.4.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.4.desc.after_c } triggered_desc = { desc = hbe_migration.4.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 3 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -112,20 +145,32 @@ add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_migration_choice_4_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.4.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.4.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_migration_choice_4_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.4.c ai_chance = { base = 35 } add_prestige = 2
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.4.c ai_chance = { base = 35 } add_prestige = 2
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_migration_choice_4_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.5 = {
- type = country_event title = hbe_migration.5.title desc = hbe_migration.5.desc outcome = neutral
+ type = country_event title = hbe_migration.5.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.5.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.5.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.5.desc.after_c } triggered_desc = { desc = hbe_migration.5.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 4 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -139,21 +184,33 @@ add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_migration_choice_5_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.5.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.5.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.01 }
 add_country_modifier = { modifier = hbe_migration_choice_5_2 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 3 }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.5.c ai_chance = { base = 35 } add_prestige = 3
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.5.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.03 }
 add_country_modifier = { modifier = hbe_migration_choice_5_3 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.6 = {
- type = country_event title = hbe_migration.6.title desc = hbe_migration.6.desc outcome = neutral
+ type = country_event title = hbe_migration.6.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.6.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.6.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.6.desc.after_c } triggered_desc = { desc = hbe_migration.6.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 5 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -167,20 +224,32 @@ add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }
 add_country_modifier = { modifier = hbe_migration_choice_6_1 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.6.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.6.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_migration_choice_6_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.6.c ai_chance = { base = 35 } add_prestige = 2
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.6.c ai_chance = { base = 35 } add_prestige = 2
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.03 }
 add_country_modifier = { modifier = hbe_migration_choice_6_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_6_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.7 = {
- type = country_event title = hbe_migration.7.title desc = hbe_migration.7.desc outcome = neutral
+ type = country_event title = hbe_migration.7.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.7.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.7.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.7.desc.after_c } triggered_desc = { desc = hbe_migration.7.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 6 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -194,21 +263,33 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_migration_choice_7_1 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.7.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.7.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
 add_country_modifier = { modifier = hbe_migration_choice_7_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.7.c ai_chance = { base = 35 } add_prestige = 3
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.7.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_migration_choice_7_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.8 = {
- type = country_event title = hbe_migration.8.title desc = hbe_migration.8.desc outcome = neutral
+ type = country_event title = hbe_migration.8.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.8.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.8.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.8.desc.after_c } triggered_desc = { desc = hbe_migration.8.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 7 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -222,20 +303,32 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.06 }
 add_country_modifier = { modifier = hbe_migration_choice_8_1 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.8.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.8.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_migration_choice_8_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.8.c ai_chance = { base = 35 } add_prestige = 3
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.8.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }
 add_country_modifier = { modifier = hbe_migration_choice_8_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.9 = {
- type = country_event title = hbe_migration.9.title desc = hbe_migration.9.desc outcome = neutral
+ type = country_event title = hbe_migration.9.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.9.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.9.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.9.desc.after_c } triggered_desc = { desc = hbe_migration.9.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 8 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -249,20 +342,32 @@ add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_migration_choice_9_1 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.9.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 1 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.9.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_migration_choice_9_2 years = 3 mode = replace }
 custom_tooltip = hbe_migration_accept_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.9.c ai_chance = { base = 35 } add_prestige = 3
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 2 } }
+ # HBE_RECAP_CHOICE_END
+ } option = { name = hbe_migration.9.c ai_chance = { base = 35 } add_prestige = 3
 add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_migration_choice_9_3 years = 4 mode = replace }
 custom_tooltip = hbe_migration_limit_tt
 custom_tooltip = hbe_story_next_5_tt
-hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending } }
+hidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }
+ # HBE_RECAP_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_migration_recap_choice value = 3 } }
+ # HBE_RECAP_CHOICE_END
+ }
 }
 
 hbe_migration.10 = {
- type = country_event title = hbe_migration.10.title desc = hbe_migration.10.desc outcome = neutral
+ type = country_event title = hbe_migration.10.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 1 } desc = hbe_migration.10.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 2 } desc = hbe_migration.10.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_migration_recap_choice var:hbe_migration_recap_choice = 3 } desc = hbe_migration.10.desc.after_c } triggered_desc = { desc = hbe_migration.10.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_migration }
  trigger = { hbe_is_prince = yes var:hbe_migration_phase = 9 NOT = { has_variable = hbe_migration_closed }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN

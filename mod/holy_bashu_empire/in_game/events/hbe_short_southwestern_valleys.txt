@@ -35,7 +35,7 @@ add_prestige = -2 }
 }
 
 hbe_short_southwestern_valleys.2 = {
- type = country_event title = hbe_short_southwestern_valleys.2.title desc = hbe_short_southwestern_valleys.2.desc outcome = neutral
+ type = country_event title = hbe_short_southwestern_valleys.2.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 1 } desc = hbe_short_southwestern_valleys.2.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 2 } desc = hbe_short_southwestern_valleys.2.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 3 } desc = hbe_short_southwestern_valleys.2.desc.after_c } triggered_desc = { desc = hbe_short_southwestern_valleys.2.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_southwestern_valleys_1 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY } var:hbe_short_southwestern_valleys_1_phase = 1 NOT = { has_variable = hbe_short_southwestern_valleys_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -74,7 +74,7 @@ add_prestige = -2 }
 }
 
 hbe_short_southwestern_valleys.3 = {
- type = country_event title = hbe_short_southwestern_valleys.3.title desc = hbe_short_southwestern_valleys.3.desc outcome = neutral
+ type = country_event title = hbe_short_southwestern_valleys.3.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 1 } desc = hbe_short_southwestern_valleys.3.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 2 } desc = hbe_short_southwestern_valleys.3.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_1_art_route var:hbe_short_southwestern_valleys_1_art_route = 3 } desc = hbe_short_southwestern_valleys.3.desc.after_c } triggered_desc = { desc = hbe_short_southwestern_valleys.3.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_southwestern_valleys_1 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBX has_or_had_tag = BBY } var:hbe_short_southwestern_valleys_1_phase = 2 NOT = { has_variable = hbe_short_southwestern_valleys_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -145,7 +145,7 @@ add_prestige = -2 }
 }
 
 hbe_short_southwestern_valleys.12 = {
- type = country_event title = hbe_short_southwestern_valleys.12.title desc = hbe_short_southwestern_valleys.12.desc outcome = neutral
+ type = country_event title = hbe_short_southwestern_valleys.12.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 1 } desc = hbe_short_southwestern_valleys.12.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 2 } desc = hbe_short_southwestern_valleys.12.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 3 } desc = hbe_short_southwestern_valleys.12.desc.after_c } triggered_desc = { desc = hbe_short_southwestern_valleys.12.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_southwestern_valleys_2 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBZ has_or_had_tag = BCA } var:hbe_short_southwestern_valleys_2_phase = 1 NOT = { has_variable = hbe_short_southwestern_valleys_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -183,7 +183,7 @@ add_prestige = -2 }
 }
 
 hbe_short_southwestern_valleys.13 = {
- type = country_event title = hbe_short_southwestern_valleys.13.title desc = hbe_short_southwestern_valleys.13.desc outcome = neutral
+ type = country_event title = hbe_short_southwestern_valleys.13.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 1 } desc = hbe_short_southwestern_valleys.13.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 2 } desc = hbe_short_southwestern_valleys.13.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_2_art_route var:hbe_short_southwestern_valleys_2_art_route = 3 } desc = hbe_short_southwestern_valleys.13.desc.after_c } triggered_desc = { desc = hbe_short_southwestern_valleys.13.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_southwestern_valleys_2 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBZ has_or_had_tag = BCA } var:hbe_short_southwestern_valleys_2_phase = 2 NOT = { has_variable = hbe_short_southwestern_valleys_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -256,7 +256,7 @@ add_prestige = -2 }
 }
 
 hbe_short_southwestern_valleys.22 = {
- type = country_event title = hbe_short_southwestern_valleys.22.title desc = hbe_short_southwestern_valleys.22.desc outcome = neutral
+ type = country_event title = hbe_short_southwestern_valleys.22.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 1 } desc = hbe_short_southwestern_valleys.22.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 2 } desc = hbe_short_southwestern_valleys.22.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 3 } desc = hbe_short_southwestern_valleys.22.desc.after_c } triggered_desc = { desc = hbe_short_southwestern_valleys.22.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_southwestern_valleys_3 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_short_southwestern_valleys_3_phase = 1 NOT = { has_variable = hbe_short_southwestern_valleys_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -296,7 +296,7 @@ add_prestige = -2 }
 }
 
 hbe_short_southwestern_valleys.23 = {
- type = country_event title = hbe_short_southwestern_valleys.23.title desc = hbe_short_southwestern_valleys.23.desc outcome = neutral
+ type = country_event title = hbe_short_southwestern_valleys.23.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 1 } desc = hbe_short_southwestern_valleys.23.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 2 } desc = hbe_short_southwestern_valleys.23.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_southwestern_valleys_3_art_route var:hbe_short_southwestern_valleys_3_art_route = 3 } desc = hbe_short_southwestern_valleys.23.desc.after_c } triggered_desc = { desc = hbe_short_southwestern_valleys.23.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_southwestern_valleys_3 }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BCB has_or_had_tag = BCC } var:hbe_short_southwestern_valleys_3_phase = 2 NOT = { has_variable = hbe_short_southwestern_valleys_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN

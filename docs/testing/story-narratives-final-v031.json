@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-15",
+  "version": "0.3.1",
+  "baseline": "86df6d5",
+  "scope": "Seven regional arcs, 33 short arcs and one migration arc; 165 stages and 14 individual regional epilogues.",
+  "static": {
+    "status": "passed",
+    "check_count": 4108,
+    "baseline": "86df6d5",
+    "chains": 41,
+    "stage_events": 165,
+    "conditional_stages": 124,
+    "previous_option_links": 372,
+    "gameplay_changed": false
+  },
+  "static_report_sha256": "3fc2ec145972991828928b8765786cc96c9dccdccda73cd763152c2c21cffdc4",
+  "structural": {
+    "status": "passed",
+    "check_count": 1944,
+    "story_paths": {
+      "regional_complete_paths": 15309,
+      "migration_complete_paths": 19683,
+      "short_complete_paths": 891,
+      "abort_cases": 45316,
+      "scheduler_cases": 120,
+      "afterword_cases": 101,
+      "zero_gold_cases": 55157
+    },
+    "gameplay_validation": "Structural and resource-reference checks; runtime and visual verification reported separately",
+    "version": "0.3.1"
+  },
+  "runtime": {
+    "status": "passed",
+    "predicate_checks": 1860,
+    "passed_predicates": 1860,
+    "all_pass_flag": true,
+    "related_errors": [],
+    "global_harness": "Tests:\n[ FAIL ] Error log: 11833 errors",
+    "save_sha256": "53ba5dee244d6adc5e9a5b26c77e020be403848997fd0386e99c896c649e0d42",
+    "checkpoint": "1337.5.2",
+    "final_event_scripts_match_fixture": true,
+    "scope": "Native conditional-description guards for values 1, 2, 3, 0 and unset; text-only polish after the probe did not change any event script. Headless fixture, not a natural long campaign."
+  },
+  "rebuild": {
+    "status": "passed",
+    "byte_identical_files": [
+      "in_game/events/hbe_migration_events.txt",
+      "in_game/events/hbe_short_central_hills.txt",
+      "in_game/events/hbe_short_chengdu_plain.txt",
+      "in_game/events/hbe_short_eastern_river.txt",
+      "in_game/events/hbe_short_northern_shudao.txt",
+      "in_game/events/hbe_short_shared.txt",
+      "in_game/events/hbe_short_southern_salt_wine.txt",
+      "in_game/events/hbe_short_southwestern_valleys.txt",
+      "in_game/events/hbe_short_western_tea_horse.txt",
+      "in_game/events/hbe_story_central_hills.txt",
+      "in_game/events/hbe_story_chengdu_plain.txt",
+      "in_game/events/hbe_story_eastern_river.txt",
+      "in_game/events/hbe_story_northern_shudao.txt",
+      "in_game/events/hbe_story_southern_salt_wine.txt",
+      "in_game/events/hbe_story_southwestern_valleys.txt",
+      "in_game/events/hbe_story_western_tea_horse.txt",
+      "main_menu/localization/english/hbe_story_l_english.yml",
+      "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml"
+    ]
+  },
+  "browser": {
+    "unit_tests": 7,
+    "syntax_check": "passed",
+    "live_test": "Changing prior option A/B changes the recollection and short-chain painting together; default/unknown choice displays the neutral recollection.",
+    "screenshot": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\narrative_rewrite_v031\\narrative-preview.png"
+  },
+  "local_install": {
+    "status": "passed",
+    "file_count": 723,
+    "all_hashes_match": true,
+    "path": "C:\\Users\\songrise\\OneDrive\\文档\\Paradox Interactive\\Europa Universalis V\\mod\\holy_bashu_empire"
+  },
+  "manifest_sha256": "f2e401daa31c5f1d681e9204cb1e2c6a3d8ac22ea0a24fa65745a7c0af77d9a9",
+  "english_status": "Existing Chinese fallback policy retained for this authored story batch.",
+  "diagnostic_scope": "The global harness reports 11833 diagnostics and is not recorded as a clean global game run. The 1860 scoped predicate checks passed with no related engine errors. No new natural fifty-year campaign was run for this prose-only patch.",
+  "remote_published": false
+}

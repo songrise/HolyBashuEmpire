@@ -620,6 +620,8 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_progress_art(out, ROOT, game)
     from apply_history_guides_v031 import apply as apply_history_guides
     apply_history_guides(out, ROOT, game)
+    from apply_story_narratives_v031 import apply as apply_story_narratives
+    apply_story_narratives(out, ROOT, game)
     from apply_loading_art_v031 import apply as apply_loading_art
     apply_loading_art(out, ROOT, game)
     manifest_path = out / "build_manifest.json"

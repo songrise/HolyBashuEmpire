@@ -157,6 +157,18 @@ def build_catalog(mod):
                         'aiBase': scalar(field(field(children, 'ai_chance', []), 'base')),
                         'effects': [public(n) for n in effects], 'script': pretty(children),
                     })
+                narrative_variants = []
+                desc_node = field(body, 'desc')
+                if isinstance(desc_node, list):
+                    for candidate in field(desc_node, 'first_valid', []):
+                        if candidate['key'] != 'triggered_desc':
+                            continue
+                        key = scalar(field(candidate['value'], 'desc'))
+                        match = re.search(r'\.after_([abc])$', key)
+                        if match or key == event_id + '.desc':
+                            narrative_variants.append({'key': key, 'letter': match[1] if match else '',
+                                                       'text': loc.get(key, key),
+                                                       'label': '上一章选项 ' + match[1].upper() if match else '旧存档 / 未记录选择'})
                 raw = text[root['start']:root['end']]
                 regions = [key for key in REGIONS if key in raw]
                 tags = sorted(set(re.findall(r'\b(?:has_or_had_tag|tag)\s*=\s*(B[A-Z]{2})\b', raw)))
@@ -172,6 +184,7 @@ def build_catalog(mod):
                     'id': event_id, 'namespace': event_id.split('.')[0], 'category': category,
                     'title': loc.get(title_key, title_key or ('开局协议与子女能力修复' if hidden else event_id)),
                     'description': loc.get(desc_key, desc_key), 'titleKey': title_key, 'descriptionKey': desc_key,
+                    'descriptionVariants': narrative_variants if any(v['letter'] for v in narrative_variants) else [],
                     'hidden': hidden, 'type': scalar(field(body, 'type')),
                     'regions': regions, 'countries': [{'tag': t, 'name': loc.get(t, t)} for t in tags],
                     'source': relative, 'line': text.count('\n', 0, root['start']) + 1,
@@ -183,6 +196,16 @@ def build_catalog(mod):
                     'incoming': [], 'outgoing': [],
                 })
     by_id = {e['id']: e for e in events}
+    for event in events:
+        if not event.get('descriptionVariants'):
+            continue
+        namespace, number = event['id'].rsplit('.', 1)
+        previous = by_id.get(namespace + '.' + str(int(number)-1), {})
+        for variant in event['descriptionVariants']:
+            if variant['letter']:
+                option = next((o for o in previous.get('options', []) if o['key'].endswith('.'+variant['letter'])), None)
+                if option:
+                    variant['label'] += '：' + option['name']
     if len(by_id) != len(events):
         raise ValueError('Duplicate event identifiers')
     # Traverse actual script tokens rather than prose or localization-key substrings.

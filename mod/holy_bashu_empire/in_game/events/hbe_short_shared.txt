@@ -36,7 +36,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.2 = {
- type = country_event title = hbe_short_shared.2.title desc = hbe_short_shared.2.desc outcome = neutral
+ type = country_event title = hbe_short_shared.2.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 1 } desc = hbe_short_shared.2.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 2 } desc = hbe_short_shared.2.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 3 } desc = hbe_short_shared.2.desc.after_c } triggered_desc = { desc = hbe_short_shared.2.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_1 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_1_phase = 1 NOT = { has_variable = hbe_short_shared_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -74,7 +74,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.3 = {
- type = country_event title = hbe_short_shared.3.title desc = hbe_short_shared.3.desc outcome = neutral
+ type = country_event title = hbe_short_shared.3.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 1 } desc = hbe_short_shared.3.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 2 } desc = hbe_short_shared.3.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_1_art_route var:hbe_short_shared_1_art_route = 3 } desc = hbe_short_shared.3.desc.after_c } triggered_desc = { desc = hbe_short_shared.3.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_1 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_1_phase = 2 NOT = { has_variable = hbe_short_shared_1_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -145,7 +145,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.12 = {
- type = country_event title = hbe_short_shared.12.title desc = hbe_short_shared.12.desc outcome = neutral
+ type = country_event title = hbe_short_shared.12.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 1 } desc = hbe_short_shared.12.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 2 } desc = hbe_short_shared.12.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 3 } desc = hbe_short_shared.12.desc.after_c } triggered_desc = { desc = hbe_short_shared.12.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_2 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_2_phase = 1 NOT = { has_variable = hbe_short_shared_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -183,7 +183,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.13 = {
- type = country_event title = hbe_short_shared.13.title desc = hbe_short_shared.13.desc outcome = neutral
+ type = country_event title = hbe_short_shared.13.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 1 } desc = hbe_short_shared.13.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 2 } desc = hbe_short_shared.13.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_2_art_route var:hbe_short_shared_2_art_route = 3 } desc = hbe_short_shared.13.desc.after_c } triggered_desc = { desc = hbe_short_shared.13.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_2 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_2_phase = 2 NOT = { has_variable = hbe_short_shared_2_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -253,7 +253,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.22 = {
- type = country_event title = hbe_short_shared.22.title desc = hbe_short_shared.22.desc outcome = neutral
+ type = country_event title = hbe_short_shared.22.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 1 } desc = hbe_short_shared.22.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 2 } desc = hbe_short_shared.22.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 3 } desc = hbe_short_shared.22.desc.after_c } triggered_desc = { desc = hbe_short_shared.22.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_3 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_3_phase = 1 NOT = { has_variable = hbe_short_shared_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -291,7 +291,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.23 = {
- type = country_event title = hbe_short_shared.23.title desc = hbe_short_shared.23.desc outcome = neutral
+ type = country_event title = hbe_short_shared.23.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 1 } desc = hbe_short_shared.23.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 2 } desc = hbe_short_shared.23.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_3_art_route var:hbe_short_shared_3_art_route = 3 } desc = hbe_short_shared.23.desc.after_c } triggered_desc = { desc = hbe_short_shared.23.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_3 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_3_phase = 2 NOT = { has_variable = hbe_short_shared_3_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -365,7 +365,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.32 = {
- type = country_event title = hbe_short_shared.32.title desc = hbe_short_shared.32.desc outcome = neutral
+ type = country_event title = hbe_short_shared.32.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 1 } desc = hbe_short_shared.32.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 2 } desc = hbe_short_shared.32.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 3 } desc = hbe_short_shared.32.desc.after_c } triggered_desc = { desc = hbe_short_shared.32.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_4 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_4_phase = 1 NOT = { has_variable = hbe_short_shared_4_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -405,7 +405,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.33 = {
- type = country_event title = hbe_short_shared.33.title desc = hbe_short_shared.33.desc outcome = neutral
+ type = country_event title = hbe_short_shared.33.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 1 } desc = hbe_short_shared.33.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 2 } desc = hbe_short_shared.33.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_4_art_route var:hbe_short_shared_4_art_route = 3 } desc = hbe_short_shared.33.desc.after_c } triggered_desc = { desc = hbe_short_shared.33.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_4 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_4_phase = 2 NOT = { has_variable = hbe_short_shared_4_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -478,7 +478,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.42 = {
- type = country_event title = hbe_short_shared.42.title desc = hbe_short_shared.42.desc outcome = neutral
+ type = country_event title = hbe_short_shared.42.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 1 } desc = hbe_short_shared.42.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 2 } desc = hbe_short_shared.42.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 3 } desc = hbe_short_shared.42.desc.after_c } triggered_desc = { desc = hbe_short_shared.42.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_5 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_5_phase = 1 NOT = { has_variable = hbe_short_shared_5_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -516,7 +516,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.43 = {
- type = country_event title = hbe_short_shared.43.title desc = hbe_short_shared.43.desc outcome = neutral
+ type = country_event title = hbe_short_shared.43.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 1 } desc = hbe_short_shared.43.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 2 } desc = hbe_short_shared.43.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_5_art_route var:hbe_short_shared_5_art_route = 3 } desc = hbe_short_shared.43.desc.after_c } triggered_desc = { desc = hbe_short_shared.43.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_5 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_5_phase = 2 NOT = { has_variable = hbe_short_shared_5_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -589,7 +589,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.52 = {
- type = country_event title = hbe_short_shared.52.title desc = hbe_short_shared.52.desc outcome = neutral
+ type = country_event title = hbe_short_shared.52.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 1 } desc = hbe_short_shared.52.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 2 } desc = hbe_short_shared.52.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 3 } desc = hbe_short_shared.52.desc.after_c } triggered_desc = { desc = hbe_short_shared.52.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_6 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_6_phase = 1 NOT = { has_variable = hbe_short_shared_6_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -628,7 +628,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.53 = {
- type = country_event title = hbe_short_shared.53.title desc = hbe_short_shared.53.desc outcome = neutral
+ type = country_event title = hbe_short_shared.53.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 1 } desc = hbe_short_shared.53.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 2 } desc = hbe_short_shared.53.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_6_art_route var:hbe_short_shared_6_art_route = 3 } desc = hbe_short_shared.53.desc.after_c } triggered_desc = { desc = hbe_short_shared.53.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_6 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_6_phase = 2 NOT = { has_variable = hbe_short_shared_6_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -699,7 +699,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.62 = {
- type = country_event title = hbe_short_shared.62.title desc = hbe_short_shared.62.desc outcome = neutral
+ type = country_event title = hbe_short_shared.62.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 1 } desc = hbe_short_shared.62.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 2 } desc = hbe_short_shared.62.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 3 } desc = hbe_short_shared.62.desc.after_c } triggered_desc = { desc = hbe_short_shared.62.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_7 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_7_phase = 1 NOT = { has_variable = hbe_short_shared_7_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -738,7 +738,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.63 = {
- type = country_event title = hbe_short_shared.63.title desc = hbe_short_shared.63.desc outcome = neutral
+ type = country_event title = hbe_short_shared.63.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 1 } desc = hbe_short_shared.63.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 2 } desc = hbe_short_shared.63.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_7_art_route var:hbe_short_shared_7_art_route = 3 } desc = hbe_short_shared.63.desc.after_c } triggered_desc = { desc = hbe_short_shared.63.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_7 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_7_phase = 2 NOT = { has_variable = hbe_short_shared_7_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -809,7 +809,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.72 = {
- type = country_event title = hbe_short_shared.72.title desc = hbe_short_shared.72.desc outcome = neutral
+ type = country_event title = hbe_short_shared.72.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 1 } desc = hbe_short_shared.72.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 2 } desc = hbe_short_shared.72.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 3 } desc = hbe_short_shared.72.desc.after_c } triggered_desc = { desc = hbe_short_shared.72.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_8 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_8_phase = 1 NOT = { has_variable = hbe_short_shared_8_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -848,7 +848,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.73 = {
- type = country_event title = hbe_short_shared.73.title desc = hbe_short_shared.73.desc outcome = neutral
+ type = country_event title = hbe_short_shared.73.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 1 } desc = hbe_short_shared.73.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 2 } desc = hbe_short_shared.73.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_8_art_route var:hbe_short_shared_8_art_route = 3 } desc = hbe_short_shared.73.desc.after_c } triggered_desc = { desc = hbe_short_shared.73.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_8 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_8_phase = 2 NOT = { has_variable = hbe_short_shared_8_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -921,7 +921,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.82 = {
- type = country_event title = hbe_short_shared.82.title desc = hbe_short_shared.82.desc outcome = neutral
+ type = country_event title = hbe_short_shared.82.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 1 } desc = hbe_short_shared.82.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 2 } desc = hbe_short_shared.82.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 3 } desc = hbe_short_shared.82.desc.after_c } triggered_desc = { desc = hbe_short_shared.82.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_9 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_9_phase = 1 NOT = { has_variable = hbe_short_shared_9_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -960,7 +960,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.83 = {
- type = country_event title = hbe_short_shared.83.title desc = hbe_short_shared.83.desc outcome = neutral
+ type = country_event title = hbe_short_shared.83.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 1 } desc = hbe_short_shared.83.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 2 } desc = hbe_short_shared.83.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_9_art_route var:hbe_short_shared_9_art_route = 3 } desc = hbe_short_shared.83.desc.after_c } triggered_desc = { desc = hbe_short_shared.83.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_9 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_9_phase = 2 NOT = { has_variable = hbe_short_shared_9_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -1032,7 +1032,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.92 = {
- type = country_event title = hbe_short_shared.92.title desc = hbe_short_shared.92.desc outcome = neutral
+ type = country_event title = hbe_short_shared.92.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 1 } desc = hbe_short_shared.92.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 2 } desc = hbe_short_shared.92.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 3 } desc = hbe_short_shared.92.desc.after_c } triggered_desc = { desc = hbe_short_shared.92.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_10 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_10_phase = 1 NOT = { has_variable = hbe_short_shared_10_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -1070,7 +1070,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.93 = {
- type = country_event title = hbe_short_shared.93.title desc = hbe_short_shared.93.desc outcome = neutral
+ type = country_event title = hbe_short_shared.93.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 1 } desc = hbe_short_shared.93.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 2 } desc = hbe_short_shared.93.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_10_art_route var:hbe_short_shared_10_art_route = 3 } desc = hbe_short_shared.93.desc.after_c } triggered_desc = { desc = hbe_short_shared.93.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_10 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_10_phase = 2 NOT = { has_variable = hbe_short_shared_10_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -1142,7 +1142,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.102 = {
- type = country_event title = hbe_short_shared.102.title desc = hbe_short_shared.102.desc outcome = neutral
+ type = country_event title = hbe_short_shared.102.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 1 } desc = hbe_short_shared.102.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 2 } desc = hbe_short_shared.102.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 3 } desc = hbe_short_shared.102.desc.after_c } triggered_desc = { desc = hbe_short_shared.102.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_11 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_11_phase = 1 NOT = { has_variable = hbe_short_shared_11_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -1180,7 +1180,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.103 = {
- type = country_event title = hbe_short_shared.103.title desc = hbe_short_shared.103.desc outcome = neutral
+ type = country_event title = hbe_short_shared.103.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 1 } desc = hbe_short_shared.103.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 2 } desc = hbe_short_shared.103.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_11_art_route var:hbe_short_shared_11_art_route = 3 } desc = hbe_short_shared.103.desc.after_c } triggered_desc = { desc = hbe_short_shared.103.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_11 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_11_phase = 2 NOT = { has_variable = hbe_short_shared_11_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -1252,7 +1252,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.112 = {
- type = country_event title = hbe_short_shared.112.title desc = hbe_short_shared.112.desc outcome = neutral
+ type = country_event title = hbe_short_shared.112.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 1 } desc = hbe_short_shared.112.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 2 } desc = hbe_short_shared.112.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 3 } desc = hbe_short_shared.112.desc.after_c } triggered_desc = { desc = hbe_short_shared.112.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_12 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_12_phase = 1 NOT = { has_variable = hbe_short_shared_12_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
@@ -1291,7 +1291,7 @@ add_prestige = -2 }
 }
 
 hbe_short_shared.113 = {
- type = country_event title = hbe_short_shared.113.title desc = hbe_short_shared.113.desc outcome = neutral
+ type = country_event title = hbe_short_shared.113.title desc = { first_valid = { triggered_desc = { trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 1 } desc = hbe_short_shared.113.desc.after_a } triggered_desc = { trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 2 } desc = hbe_short_shared.113.desc.after_b } triggered_desc = { trigger = { has_variable = hbe_short_shared_12_art_route var:hbe_short_shared_12_art_route = 3 } desc = hbe_short_shared.113.desc.after_c } triggered_desc = { desc = hbe_short_shared.113.desc } } } outcome = neutral
  illustration_tags = { 1000 = hbe_progress_art_short_shared_12 }
  trigger = { hbe_is_prince = yes always = yes var:hbe_short_shared_12_phase = 2 NOT = { has_variable = hbe_short_shared_12_clock }
  # HBE_CHAIN_LOGIC_TRIGGER_BEGIN

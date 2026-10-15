@@ -120,6 +120,7 @@ function selectEvent(id,focus=false){
  ${e.illustrationVariants?`<label class="art-preview-label">差分预览（实机按此前选择显示） <select id="art-variant">${e.illustrationVariants.map((a,i)=>`<option value="${i}">${esc(a.label)}</option>`).join('')}</select></label>`:''}
  ${e.illustration?`<img class="story-image" src="${esc(e.illustration)}" alt="事件配图" loading="lazy">`:''}
  <div class="overview"><div><span>选项</span>${e.options.length} 个${e.options.length>1?' · 有抉择':e.hidden?' · 自动执行':' · 通知'}</div><div><span>调用入口</span>${e.incoming.length} 处脚本引用</div><div><span>事件条件</span>${e.trigger?'设有接收条件':'由调用脚本决定'}</div></div>
+ ${e.descriptionVariants?.length?`<label class="art-preview-label">前情回顾（按上一章选择） <select id="narrative-variant">${e.descriptionVariants.map((v,i)=>`<option value="${i}" ${v.key===e.descriptionKey?'selected':''}>${esc(v.label)}</option>`).join('')}</select></label>`:''}
  ${e.description?`<section class="story"><div class="eyebrow">事件正文</div><div class="prose">${prose(e.description)}</div>${code(e.description,'查看原始本地化文本')}</section>`:'<p class="note">此隐藏事件没有玩家可见正文。</p>'}
  ${e.trigger?`<details><summary>事件接收条件</summary><div class="condition">${esc(conditions(e.conditions))}</div><pre>${esc(e.trigger)}</pre></details>`:''}
  ${e.immediate.length?`<details><summary>预先执行 · 选择选项前已发生</summary>${effects(e.immediate)}</details>`:''}
@@ -131,7 +132,8 @@ function selectEvent(id,focus=false){
  ${e.outgoing.length?`<div class="section-title"><h3>后续事件</h3></div>${e.outgoing.map(id=>`<button class="event-link" data-event="${esc(id)}">${esc(id)} · ${prose(catalog.events.find(x=>x.id===id)?.title)}</button>`).join('')}`:''}
  <div class="debug-row"><div class="source">${esc(source)}</div><button id="copy-source">复制路径</button></div>${code(e.script,'完整事件脚本')}${code(e.raw,'源文件原文')}`;
  $('#detail').scrollTop=0;
- if(e.illustrationVariants)$('#art-variant').onchange=ev=>{$('.story-image').src=e.illustrationVariants[Number(ev.target.value)].src;};
+ if(e.descriptionVariants?.length)$('#narrative-variant').onchange=ev=>{const i=Number(ev.target.value),v=e.descriptionVariants[i];$('.story .prose').innerHTML=prose(v.text);$('.story pre').textContent=v.text;if(e.namespace.startsWith('hbe_short_')&&e.illustrationVariants){$('#art-variant').value=String(i);$('.story-image').src=e.illustrationVariants[i].src;}};
+ if(e.illustrationVariants)$('#art-variant').onchange=ev=>{const i=Number(ev.target.value);$('.story-image').src=e.illustrationVariants[i].src;if(e.namespace.startsWith('hbe_short_')&&e.descriptionVariants?.length){$('#narrative-variant').value=String(i);const v=e.descriptionVariants[i];$('.story .prose').innerHTML=prose(v.text);$('.story pre').textContent=v.text;}};
  $('#copy-id').onclick=()=>copy(e.id,$('#copy-id'));
  $('#copy-source').onclick=()=>copy(source,$('#copy-source'));
  if(focus)$('#detail').focus({preventScroll:true});
@@ -151,7 +153,7 @@ async function load(refresh=false){
  $('#refresh').disabled=true;$('#status').textContent=refresh?'正在重新读取源码…':'正在读取事件…';
  try{
  const response=await fetch(refresh?'/api/refresh':'/api/catalog');const data=await response.json();if(!response.ok)throw Error(data.error||response.statusText);catalog=data;
- catalog.events.forEach(e=>e.search=resolveText([e.id,e.title,e.description,e.category,...e.regions.map(r=>catalog.regions[r]),...e.countries.map(c=>c.name+' '+c.tag),...e.options.flatMap(o=>[o.name,o.key,o.script])].join('\n')).toLowerCase());
+ catalog.events.forEach(e=>e.search=resolveText([e.id,e.title,e.description,...(e.descriptionVariants||[]).map(v=>v.text),e.category,...e.regions.map(r=>catalog.regions[r]),...e.countries.map(c=>c.name+' '+c.tag),...e.options.flatMap(o=>[o.name,o.key,o.script])].join('\n')).toLowerCase());
  const oldCategory=$('#category').value,oldRegion=$('#region').value;
  $('#category').innerHTML='<option value="">全部系列</option>'+[...new Set(catalog.events.map(e=>e.category))].map(c=>`<option>${esc(c)}</option>`).join('');$('#category').value=oldCategory;
  $('#region').innerHTML='<option value="">全部地区</option>'+Object.entries(catalog.regions).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');$('#region').value=oldRegion;
@@ -165,6 +167,6 @@ async function load(refresh=false){
 document.addEventListener('click',e=>{const b=e.target.closest('[data-event]');if(b){const id=b.dataset.event;if(!filtered.some(x=>x.id===id))reset();selectEvent(id,b.classList.contains('event-link'));}});
 $('#search').addEventListener('input',filterEvents);['category','region','visibility','choices','implementation'].forEach(id=>$('#'+id).addEventListener('change',filterEvents));
 $('#reset').onclick=reset;$('#refresh').onclick=()=>load(true);$('#close-error').onclick=()=>$('#error-dialog').close();
-$('#export').onclick=()=>{if(!catalog)return;const rows=catalog.events.map(({id,title,description,hidden,category,regions,options,source,line,status,chain,draftOffset})=>({id,title,description,hidden,category,regions,options,source,line,status,chain,draftOffset}));const blob=new Blob([JSON.stringify({generatedAt:catalog.generatedAt,modPath:catalog.modPath,events:rows},null,2)],{type:'application/json'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='bashu-events.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);};
+$('#export').onclick=()=>{if(!catalog)return;const rows=catalog.events.map(({id,title,description,descriptionVariants,hidden,category,regions,options,source,line,status,chain,draftOffset})=>({id,title,description,descriptionVariants,hidden,category,regions,options,source,line,status,chain,draftOffset}));const blob=new Blob([JSON.stringify({generatedAt:catalog.generatedAt,modPath:catalog.modPath,events:rows},null,2)],{type:'application/json'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='bashu-events.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);};
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}if(['ArrowDown','ArrowUp'].includes(e.key)&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){const i=filtered.findIndex(x=>x.id===selected);const n=filtered[i+(e.key==='ArrowDown'?1:-1)];if(n){e.preventDefault();selectEvent(n.id);document.querySelector('.event-row.active')?.scrollIntoView({block:'nearest'});}}});
 load();

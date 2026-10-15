@@ -140,7 +140,8 @@ def validate_story_logic(mod,root,manifest,loc,check):
  for n,key in enumerate(('open','sponsored','transit'),1):
   s=State();s.v['hbe_migration_first_policy']=n
   selected=next(field(x['value'],'desc') for x in variants if cond(field(x['value'],'trigger',[]),s))
-  assert selected=='hbe_migration.2.desc.'+key
+  expected='hbe_migration.2.desc.'+('after_'+'abc'[n-1] if 'story_narratives_v031' in manifest else key)
+  assert selected==expected
  check('migration second chapter follows admission sponsorship or transit, with old-save fallback',bool(cat.scalar(field(events['hbe_migration.2'],'desc'))=='hbe_migration.2.desc'))
  counts={}
  for story in SHORT+SHARED:

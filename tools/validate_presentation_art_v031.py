@@ -11,7 +11,7 @@ args = parser.parse_args()
 R = args.root.resolve()
 M = R/'mod/holy_bashu_empire'
 sys.path.insert(0, str(R/'tools'))
-from pdxscript import tokens, blocks
+from pdxscript import tokens, blocks, apply_edits
 report=json.loads((R/'data/progress_art_v031.json').read_text(encoding='utf-8'))
 checks=[]
 def check(label,value):
@@ -19,6 +19,9 @@ def check(label,value):
  assert value,label
 def clean(t):
  t=re.sub(r'\s*# HBE_PROGRESS_ART_BEGIN.*?# HBE_PROGRESS_ART_END\s*','\n',t,flags=re.S)
+ t=re.sub(r'\s*# HBE_RECAP_CHOICE_BEGIN.*?# HBE_RECAP_CHOICE_END\s*','\n',t,flags=re.S)
+ t=apply_edits(t,[(a,z,'') for k,a,_,_,z in blocks(t) if k=='desc'])
+ t=re.sub(r'\bdesc\s*=\s*[^\s{}]+','',t)
  return re.sub(r'illustration_tags\s*=\s*\{[^}]*\}','',t)
 affected=0;markers=0
 for rel in report['files']:
