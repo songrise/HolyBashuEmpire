@@ -3,7 +3,11 @@
 hbe_story_western_tea_horse.1 = {
  type = country_event title = hbe_story_western_tea_horse.1.title desc = hbe_story_western_tea_horse.1.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 0 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 0 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock } current_year >= 1343
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.1.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
@@ -28,7 +32,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.2 = {
  type = country_event title = hbe_story_western_tea_horse.2.title desc = hbe_story_western_tea_horse.2.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 1 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 1 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.2.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
@@ -53,7 +61,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.3 = {
  type = country_event title = hbe_story_western_tea_horse.3.title desc = hbe_story_western_tea_horse.3.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 2 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 2 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.3.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
@@ -78,7 +90,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.4 = {
  type = country_event title = hbe_story_western_tea_horse.4.title desc = hbe_story_western_tea_horse.4.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 3 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 3 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.4.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_western_tea_horse_4_1 years = 3 mode = replace }
@@ -102,7 +118,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.5 = {
  type = country_event title = hbe_story_western_tea_horse.5.title desc = hbe_story_western_tea_horse.5.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 4 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 4 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.5.a ai_chance = { base = 35 } add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_story_choice_western_tea_horse_5_1 years = 3 mode = replace }
@@ -126,7 +146,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.6 = {
  type = country_event title = hbe_story_western_tea_horse.6.title desc = hbe_story_western_tea_horse.6.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 5 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 5 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.6.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_western_tea_horse_6_1 years = 3 mode = replace }
@@ -150,7 +174,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.7 = {
  type = country_event title = hbe_story_western_tea_horse.7.title desc = hbe_story_western_tea_horse.7.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 6 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 6 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.7.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:tribes_estate value = 0.02 }
@@ -175,7 +203,11 @@ add_prestige = -3 }
 hbe_story_western_tea_horse.201 = {
  type = country_event title = hbe_story_western_tea_horse.201.title desc = hbe_story_western_tea_horse.201.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_veterinary_school }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_variable = hbe_story_western_tea_horse_closed NOT = { has_variable = hbe_story_western_tea_horse_ending_1 } NOT = { has_variable = hbe_story_western_tea_horse_ending_2 } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_variable = hbe_story_western_tea_horse_closed NOT = { has_variable = hbe_story_western_tea_horse_ending_1 } NOT = { has_variable = hbe_story_western_tea_horse_ending_2 }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ var:hbe_story_western_tea_horse_phase = 8 NOT = { has_variable = hbe_story_western_tea_horse_abandoned } OR = { var:hbe_story_western_tea_horse_selected_ending = 1 AND = { NOT = { has_variable = hbe_story_western_tea_horse_selected_ending } var:hbe_story_western_tea_horse_direction >= 0 } }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.201.a ai_chance = { base = 100 } add_prestige = 4
 add_country_modifier = { modifier = hbe_story_ending_western_tea_horse_1 years = -1 mode = replace }
@@ -185,7 +217,11 @@ set_variable = hbe_story_western_tea_horse_ending_1 }
 hbe_story_western_tea_horse.202 = {
  type = country_event title = hbe_story_western_tea_horse.202.title desc = hbe_story_western_tea_horse.202.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_stud_farm }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_variable = hbe_story_western_tea_horse_closed NOT = { has_variable = hbe_story_western_tea_horse_ending_1 } NOT = { has_variable = hbe_story_western_tea_horse_ending_2 } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_variable = hbe_story_western_tea_horse_closed NOT = { has_variable = hbe_story_western_tea_horse_ending_1 } NOT = { has_variable = hbe_story_western_tea_horse_ending_2 }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ var:hbe_story_western_tea_horse_phase = 8 NOT = { has_variable = hbe_story_western_tea_horse_abandoned } OR = { var:hbe_story_western_tea_horse_selected_ending = 2 AND = { NOT = { has_variable = hbe_story_western_tea_horse_selected_ending } var:hbe_story_western_tea_horse_direction < 0 } }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.202.a ai_chance = { base = 100 } add_prestige = 4
 add_country_modifier = { modifier = hbe_story_ending_western_tea_horse_2 years = -1 mode = replace }
@@ -195,13 +231,29 @@ set_variable = hbe_story_western_tea_horse_ending_2 }
 hbe_story_western_tea_horse.8 = {
  type = country_event title = hbe_story_western_tea_horse.8.title desc = hbe_story_western_tea_horse.8.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 7 NOT = { has_variable = hbe_story_western_tea_horse_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } var:hbe_story_western_tea_horse_phase = 7 NOT = { has_variable = hbe_story_western_tea_horse_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_western_tea_horse_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.8.a trigger = { custom_tooltip = { text = hbe_story_western_tea_horse_ready_1_tt var:hbe_story_western_tea_horse_direction >= 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_western_tea_horse_closed set_variable = { name = hbe_story_western_tea_horse_phase value = 8 } remove_variable = hbe_story_western_tea_horse_pending }
-trigger_event_non_silently = { id = hbe_story_western_tea_horse.201 days = 1 } } option = { name = hbe_story_western_tea_horse.8.b trigger = { custom_tooltip = { text = hbe_story_western_tea_horse_ready_2_tt var:hbe_story_western_tea_horse_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_western_tea_horse_closed set_variable = { name = hbe_story_western_tea_horse_phase value = 8 } remove_variable = hbe_story_western_tea_horse_pending }
-trigger_event_non_silently = { id = hbe_story_western_tea_horse.202 days = 1 } } option = { name = hbe_story_western_tea_horse.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_western_tea_horse_stop_tt
+trigger_event_non_silently = { id = hbe_story_western_tea_horse.201 days = 1 }
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_western_tea_horse_selected_ending value = 1 } }
+ # HBE_CHAIN_CHOICE_END
+ } option = { name = hbe_story_western_tea_horse.8.b trigger = { custom_tooltip = { text = hbe_story_western_tea_horse_ready_2_tt var:hbe_story_western_tea_horse_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_western_tea_horse_closed set_variable = { name = hbe_story_western_tea_horse_phase value = 8 } remove_variable = hbe_story_western_tea_horse_pending }
+trigger_event_non_silently = { id = hbe_story_western_tea_horse.202 days = 1 }
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_western_tea_horse_selected_ending value = 2 } }
+ # HBE_CHAIN_CHOICE_END
+ } option = { name = hbe_story_western_tea_horse.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_western_tea_horse_stop_tt
 hidden_effect = { set_variable = hbe_story_western_tea_horse_closed set_variable = { name = hbe_story_western_tea_horse_phase value = 8 } remove_variable = hbe_story_western_tea_horse_pending }
-add_prestige = -3 }
+add_prestige = -3
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = hbe_story_western_tea_horse_abandoned }
+ # HBE_CHAIN_CHOICE_END
+ }
 }
 
 hbe_story_western_tea_horse.101 = {

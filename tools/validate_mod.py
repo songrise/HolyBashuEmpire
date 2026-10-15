@@ -208,7 +208,9 @@ def main():
     validate_annex_industry(m,manifest,loc_keys,check)
     from validate_ending_art_v031 import validate_ending_art
     validate_ending_art(m,ROOT,manifest,loc_keys,check)
-    report=dict(status='passed',checks=checks,check_count=len(checks),gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
+    from validate_story_logic_v031 import validate_story_logic
+    story_paths=validate_story_logic(m,ROOT,manifest,loc_keys,check)
+    report=dict(status='passed',checks=checks,check_count=len(checks),story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 80 research nodes.')
 

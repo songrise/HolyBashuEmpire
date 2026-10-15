@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "event_count": 288,
   "regions": {
     "chengdu_plain": 32,
@@ -14,7 +14,7 @@
   "region_chapters": 8,
   "region_endings": 2,
   "regional_duration_years": 45,
-  "shared_duration_years": 48,
+  "shared_duration_years": 49,
   "country_modifiers": 814,
   "events": [
     {
@@ -1310,7 +1310,7 @@
       "title": "峡口来的船",
       "art": "migration_journey",
       "category": "共同移民长线",
-      "trigger": "var:hbe_migration_phase = 0 NOT = { has_variable = hbe_migration_closed }",
+      "trigger": "var:hbe_migration_phase = 0 NOT = { has_variable = hbe_migration_closed } current_year >= 1345",
       "options": 3
     },
     {
@@ -1563,7 +1563,7 @@
     },
     {
       "id": "hbe_short_eastern_river.12",
-      "title": "搬来的工具",
+      "title": "归拢的旧工具",
       "art": "craft",
       "category": "地区短链",
       "trigger": "OR = { has_or_had_tag = BBC has_or_had_tag = BBH } var:hbe_short_eastern_river_2_phase = 1 NOT = { has_variable = hbe_short_eastern_river_2_clock }",
@@ -1811,7 +1811,7 @@
     },
     {
       "id": "hbe_short_western_tea_horse.23",
-      "title": "春来以后的小屋",
+      "title": "再一季的小屋",
       "art": "bridge",
       "category": "地区短链",
       "trigger": "OR = { has_or_had_tag = BBU has_or_had_tag = BBW } var:hbe_short_western_tea_horse_3_phase = 2 NOT = { has_variable = hbe_short_western_tea_horse_3_clock }",
@@ -1851,7 +1851,7 @@
     },
     {
       "id": "hbe_short_southwestern_valleys.12",
-      "title": "公仓里的两把钥匙",
+      "title": "寨仓里的两把钥匙",
       "art": "craft",
       "category": "地区短链",
       "trigger": "OR = { has_or_had_tag = BBZ has_or_had_tag = BCA } var:hbe_short_southwestern_valleys_2_phase = 1 NOT = { has_variable = hbe_short_southwestern_valleys_2_clock }",
@@ -2043,7 +2043,7 @@
     },
     {
       "id": "hbe_short_shared.62",
-      "title": "试田里的虫",
+      "title": "田里的虫",
       "art": "terraces",
       "category": "移民短链",
       "trigger": "always = yes var:hbe_short_shared_7_phase = 1 NOT = { has_variable = hbe_short_shared_7_clock }",
@@ -2139,7 +2139,7 @@
     },
     {
       "id": "hbe_short_shared.102",
-      "title": "船上缺的一顿饭",
+      "title": "短工缺的一顿饭",
       "art": "river",
       "category": "移民短链",
       "trigger": "always = yes var:hbe_short_shared_11_phase = 1 NOT = { has_variable = hbe_short_shared_11_clock }",
@@ -2434,7 +2434,7 @@
     {
       "event": "hbe_story_chengdu_plain.4",
       "letter": "a",
-      "label": "守住旧约，以兽图代替活兽。",
+      "label": "尊重山契，以兽图代替活兽。",
       "effects": "add_prestige = -2\nadd_country_modifier = { modifier = hbe_story_choice_chengdu_plain_4_1 years = 3 mode = replace }\ncustom_tooltip = hbe_story_chengdu_plain_branch_1_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_story_chengdu_plain_direction add = 2 } set_variable = { name = hbe_story_chengdu_plain_phase value = 4 } set_variable = { name = hbe_story_chengdu_plain_clock value = yes years = 7 } remove_variable = hbe_story_chengdu_plain_pending }\nadd_prestige = 1",
       "condition": "",
       "profile": "nature p-2",
@@ -6908,7 +6908,7 @@
       "event": "hbe_migration.1",
       "letter": "a",
       "label": "开簿收户，先给渡口口粮。",
-      "effects": "add_gold = -8\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_1_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_4_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 1 } set_variable = { name = hbe_migration_clock value = yes years = 4 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -8\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_1_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 1 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 8",
       "profile": "open_register grain g-8 p-2 peasants-.03 nobles-.03",
       "years": 3
@@ -6917,7 +6917,7 @@
       "event": "hbe_migration.1",
       "letter": "b",
       "label": "按工种与担保分批留下。",
-      "effects": "add_gold = -4\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_1_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_4_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 1 } set_variable = { name = hbe_migration_clock value = yes years = 4 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -4\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_1_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 1 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 4",
       "profile": "trade g-4 burghers.03",
       "years": 3
@@ -6926,7 +6926,7 @@
       "event": "hbe_migration.1",
       "letter": "c",
       "label": "只准过境，维护本府旧户的名额。",
-      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_1_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_4_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 1 } set_variable = { name = hbe_migration_clock value = yes years = 4 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_1_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 1 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "closed_register p4 nobles.03",
       "years": 3
@@ -6935,7 +6935,7 @@
       "event": "hbe_migration.2",
       "letter": "a",
       "label": "给新户立小契，另补旧牧路。",
-      "effects": "add_gold = -9\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_2_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_4_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 4 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -9\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_2_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 9",
       "profile": "settlement public_land g-9 p-2 nobles-.03",
       "years": 3
@@ -6944,7 +6944,7 @@
       "event": "hbe_migration.2",
       "letter": "b",
       "label": "由田主出租，限制前三年的租额。",
-      "effects": "add_gold = -4\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }\nadd_country_modifier = { modifier = hbe_migration_choice_2_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_4_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 4 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -4\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }\nadd_country_modifier = { modifier = hbe_migration_choice_2_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 4",
       "profile": "estate_land g-4 peasants.02",
       "years": 3
@@ -6953,7 +6953,7 @@
       "event": "hbe_migration.2",
       "letter": "c",
       "label": "暂停新垦，先确认旧庄的地界。",
-      "effects": "add_prestige = 3\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_2_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_4_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 4 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 3\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_2_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 2 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "closed_register p3 nobles.04",
       "years": 3
@@ -6962,7 +6962,7 @@
       "event": "hbe_migration.3",
       "letter": "a",
       "label": "承认共同入籍，另议祭席。",
-      "effects": "add_gold = -5\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_3_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -5\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_3_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 5",
       "profile": "integration g-5 p-2 nobles-.04",
       "years": 3
@@ -6971,7 +6971,7 @@
       "event": "hbe_migration.3",
       "letter": "b",
       "label": "设两份谱册，允许共同修桥。",
-      "effects": "add_gold = -3\nadd_prestige = 1\nadd_country_modifier = { modifier = hbe_migration_choice_3_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -3\nadd_prestige = 1\nadd_country_modifier = { modifier = hbe_migration_choice_3_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 3",
       "profile": "witness g-3 p1",
       "years": 3
@@ -6980,7 +6980,7 @@
       "event": "hbe_migration.3",
       "letter": "c",
       "label": "保留旧族主持，要求新户另立祠堂。",
-      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:clergy_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_3_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:clergy_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_3_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 3 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "custom closed_register p4 clergy.03",
       "years": 3
@@ -6989,7 +6989,7 @@
       "event": "hbe_migration.4",
       "letter": "a",
       "label": "准新村用水，按受益田亩重订渠约。",
-      "effects": "add_gold = -7\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_4_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -7\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_4_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 7",
       "profile": "seed open_register g-7 p-2 peasants-.03",
       "years": 3
@@ -6998,7 +6998,7 @@
       "event": "hbe_migration.4",
       "letter": "b",
       "label": "暂限水额，分三年补清旧账。",
-      "effects": "add_gold = -4\nadd_country_modifier = { modifier = hbe_migration_choice_4_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -4\nadd_country_modifier = { modifier = hbe_migration_choice_4_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 4",
       "profile": "audit g-4",
       "years": 3
@@ -7007,7 +7007,7 @@
       "event": "hbe_migration.4",
       "letter": "c",
       "label": "守住旧水额，新村另寻水源。",
-      "effects": "add_prestige = 3\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_4_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 3\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_4_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 4 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "closed_register p3 peasants.03",
       "years": 3
@@ -7016,7 +7016,7 @@
       "event": "hbe_migration.5",
       "letter": "a",
       "label": "按手艺发工牌，不以籍贯限徒。",
-      "effects": "add_gold = -7\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_5_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -7\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_5_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 7",
       "profile": "school craft g-7 p-2 burghers-.03",
       "years": 3
@@ -7025,7 +7025,7 @@
       "event": "hbe_migration.5",
       "letter": "b",
       "label": "准限期客作，明定工钱与货期。",
-      "effects": "add_gold = -3\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }\nadd_country_modifier = { modifier = hbe_migration_choice_5_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -3\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }\nadd_country_modifier = { modifier = hbe_migration_choice_5_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 3",
       "profile": "contract g-3 burghers.02",
       "years": 3
@@ -7034,7 +7034,7 @@
       "event": "hbe_migration.5",
       "letter": "c",
       "label": "保护旧行会，只收购所需成品。",
-      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_5_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:burghers_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_5_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 5 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "guild closed_register p4 burghers.04",
       "years": 3
@@ -7043,7 +7043,7 @@
       "event": "hbe_migration.6",
       "letter": "a",
       "label": "增购口粮，新旧穷户共领。",
-      "effects": "add_gold = -10\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = -0.02 }\nadd_country_modifier = { modifier = hbe_migration_choice_6_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -10\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = -0.02 }\nadd_country_modifier = { modifier = hbe_migration_choice_6_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 10",
       "profile": "grain settlement g-10 p-2 peasants-.02",
       "years": 3
@@ -7052,7 +7052,7 @@
       "event": "hbe_migration.6",
       "letter": "b",
       "label": "府署担保借粮，分季归还。",
-      "effects": "add_gold = -6\nadd_country_modifier = { modifier = hbe_migration_choice_6_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -6\nadd_country_modifier = { modifier = hbe_migration_choice_6_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 6",
       "profile": "audit g-6",
       "years": 3
@@ -7061,7 +7061,7 @@
       "event": "hbe_migration.6",
       "letter": "c",
       "label": "按旧缴粮册发放，保留仓户权益。",
-      "effects": "add_prestige = 3\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_6_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 3\nadd_estate_satisfaction = { type = estate_type:peasants_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_6_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 6 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "closed_register p3 peasants.04",
       "years": 3
@@ -7070,7 +7070,7 @@
       "event": "hbe_migration.7",
       "letter": "a",
       "label": "设互译教读，让新旧户共同查契。",
-      "effects": "add_gold = -8\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_7_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -8\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_7_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 8",
       "profile": "translation integration g-8 p-2 nobles-.03",
       "years": 3
@@ -7079,7 +7079,7 @@
       "event": "hbe_migration.7",
       "letter": "b",
       "label": "保留统一册式，附上乡里称谓。",
-      "effects": "add_gold = -4\nadd_research_progress = 0.2\nadd_country_modifier = { modifier = hbe_migration_choice_7_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -4\nadd_research_progress = 0.2\nadd_country_modifier = { modifier = hbe_migration_choice_7_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 4",
       "profile": "school g-4 r.2",
       "years": 3
@@ -7088,7 +7088,7 @@
       "event": "hbe_migration.7",
       "letter": "c",
       "label": "只用府城册式，维护官署的规矩。",
-      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_7_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_6_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 6 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_7_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 7 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "censor closed_register p4 nobles.03",
       "years": 3
@@ -7097,7 +7097,7 @@
       "event": "hbe_migration.8",
       "letter": "a",
       "label": "按居住与纳税记录转为正户。",
-      "effects": "add_gold = -6\nadd_prestige = -3\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_8_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 7 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -6\nadd_prestige = -3\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_8_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 6",
       "profile": "open_register g-6 p-3 nobles-.04",
       "years": 3
@@ -7106,7 +7106,7 @@
       "event": "hbe_migration.8",
       "letter": "b",
       "label": "给长期租户续约，保留分册。",
-      "effects": "add_gold = -3\nadd_country_modifier = { modifier = hbe_migration_choice_8_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 7 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -3\nadd_country_modifier = { modifier = hbe_migration_choice_8_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 3",
       "profile": "estate_land integration g-3",
       "years": 3
@@ -7115,7 +7115,7 @@
       "event": "hbe_migration.8",
       "letter": "c",
       "label": "仍须旧族担保，维持正户名额。",
-      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_8_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 7 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.04 }\nadd_country_modifier = { modifier = hbe_migration_choice_8_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 8 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "closed_register p4 nobles.04",
       "years": 3
@@ -7124,7 +7124,7 @@
       "event": "hbe_migration.9",
       "letter": "a",
       "label": "准共同见证，把修桥出资写进乡约。",
-      "effects": "add_gold = -6\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_9_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 7 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -6\nadd_prestige = -2\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = -0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_9_1 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 2 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 6",
       "profile": "witness open_register g-6 p-2 nobles-.03",
       "years": 3
@@ -7133,7 +7133,7 @@
       "event": "hbe_migration.9",
       "letter": "b",
       "label": "准办会馆，但账目由府署核验。",
-      "effects": "add_gold = -4\nadd_country_modifier = { modifier = hbe_migration_choice_9_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 7 } remove_variable = hbe_migration_pending }",
+      "effects": "add_gold = -4\nadd_country_modifier = { modifier = hbe_migration_choice_9_2 years = 3 mode = replace }\ncustom_tooltip = hbe_migration_accept_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = 1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "gold >= 4",
       "profile": "audit sponsor g-4",
       "years": 3
@@ -7142,7 +7142,7 @@
       "event": "hbe_migration.9",
       "letter": "c",
       "label": "只准施济，乡议仍由旧户主持。",
-      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_9_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_7_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 7 } remove_variable = hbe_migration_pending }",
+      "effects": "add_prestige = 4\nadd_estate_satisfaction = { type = estate_type:nobles_estate value = 0.03 }\nadd_country_modifier = { modifier = hbe_migration_choice_9_3 years = 4 mode = replace }\ncustom_tooltip = hbe_migration_limit_tt\ncustom_tooltip = hbe_story_next_5_tt\nhidden_effect = { change_variable = { name = hbe_migration_acceptance add = -1 } set_variable = { name = hbe_migration_phase value = 9 } set_variable = { name = hbe_migration_clock value = yes years = 5 } remove_variable = hbe_migration_pending }",
       "condition": "",
       "profile": "temple closed_register p4 nobles.03",
       "years": 3
@@ -9985,7 +9985,7 @@
     {
       "event": "hbe_short_shared.51",
       "letter": "a",
-      "label": "准限期診治，登记病程。",
+      "label": "准限期诊治，登记病程。",
       "effects": "add_gold = -5\nadd_research_progress = 0.2\nadd_country_modifier = { modifier = hbe_short_choice_shared_6_1_1 years = 2 mode = replace }\nset_variable = { name = hbe_short_shared_6_phase value = 1 }\nremove_variable = hbe_short_shared_6_pending\nset_variable = { name = hbe_short_shared_6_clock value = yes months = 6 }",
       "condition": "gold >= 5",
       "profile": "medicine g-5 r.2",
@@ -10273,7 +10273,7 @@
     {
       "event": "hbe_short_shared.73",
       "letter": "a",
-      "label": "准跨坊传习，明定工钱。",
+      "label": "准轮随两师传习，明定工钱。",
       "effects": "add_gold = -5\nadd_research_progress = 0.3\nadd_country_modifier = { modifier = hbe_short_choice_shared_8_3_1 years = 4 mode = replace }\nset_variable = { name = hbe_short_shared_8_phase value = 3 }\nremove_variable = hbe_short_shared_8_pending\nadd_prestige = 2",
       "condition": "gold >= 5",
       "profile": "school g-5 r.3",

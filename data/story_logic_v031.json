@@ -1,0 +1,31 @@
+{
+  "regional_chains": 7,
+  "migration_chains": 1,
+  "short_chains": 33,
+  "guarded_chapters": 132,
+  "guarded_regional_endings": 14,
+  "legacy_ending_fallback": true,
+  "migration_first_policy_variants": 3,
+  "narrative_replacements": 28,
+  "economic_rewards_changed": false,
+  "files": [
+    "in_game/events/hbe_migration_events.txt",
+    "in_game/events/hbe_short_central_hills.txt",
+    "in_game/events/hbe_short_chengdu_plain.txt",
+    "in_game/events/hbe_short_eastern_river.txt",
+    "in_game/events/hbe_short_northern_shudao.txt",
+    "in_game/events/hbe_short_shared.txt",
+    "in_game/events/hbe_short_southern_salt_wine.txt",
+    "in_game/events/hbe_short_southwestern_valleys.txt",
+    "in_game/events/hbe_short_western_tea_horse.txt",
+    "in_game/events/hbe_story_central_hills.txt",
+    "in_game/events/hbe_story_chengdu_plain.txt",
+    "in_game/events/hbe_story_eastern_river.txt",
+    "in_game/events/hbe_story_northern_shudao.txt",
+    "in_game/events/hbe_story_southern_salt_wine.txt",
+    "in_game/events/hbe_story_southwestern_valleys.txt",
+    "in_game/events/hbe_story_western_tea_horse.txt",
+    "main_menu/localization/english/hbe_story_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml"
+  ]
+}

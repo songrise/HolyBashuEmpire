@@ -3,807 +3,807 @@
 hbe_ending.1001 = {
  type = country_event title = hbe_ending.1001.title desc = hbe_ending.1001.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_public }
- trigger = { has_variable = hbe_afterword_chengdu_plain_1_1 NOT = { has_variable = hbe_afterword_chengdu_plain_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_1_1 set_variable = hbe_afterword_chengdu_plain_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_1_1 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_1_completed has_variable = hbe_afterword_chengdu_plain_1_1_seen has_variable = hbe_afterword_chengdu_plain_1_2_seen has_variable = hbe_afterword_chengdu_plain_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_1_1 remove_variable = hbe_afterword_chengdu_plain_1_2 remove_variable = hbe_afterword_chengdu_plain_1_3 set_variable = hbe_afterword_chengdu_plain_1_completed set_variable = hbe_afterword_chengdu_plain_1_1_seen } }
  option = { name = hbe_ending.1001.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1002 = {
  type = country_event title = hbe_ending.1002.title desc = hbe_ending.1002.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_guild }
- trigger = { has_variable = hbe_afterword_chengdu_plain_1_2 NOT = { has_variable = hbe_afterword_chengdu_plain_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_1_2 set_variable = hbe_afterword_chengdu_plain_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_1_2 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_1_completed has_variable = hbe_afterword_chengdu_plain_1_1_seen has_variable = hbe_afterword_chengdu_plain_1_2_seen has_variable = hbe_afterword_chengdu_plain_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_1_1 remove_variable = hbe_afterword_chengdu_plain_1_2 remove_variable = hbe_afterword_chengdu_plain_1_3 set_variable = hbe_afterword_chengdu_plain_1_completed set_variable = hbe_afterword_chengdu_plain_1_2_seen } }
  option = { name = hbe_ending.1002.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1003 = {
  type = country_event title = hbe_ending.1003.title desc = hbe_ending.1003.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_archive }
- trigger = { has_variable = hbe_afterword_chengdu_plain_1_3 NOT = { has_variable = hbe_afterword_chengdu_plain_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_1_3 set_variable = hbe_afterword_chengdu_plain_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_1_3 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_1_completed has_variable = hbe_afterword_chengdu_plain_1_1_seen has_variable = hbe_afterword_chengdu_plain_1_2_seen has_variable = hbe_afterword_chengdu_plain_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_1_1 remove_variable = hbe_afterword_chengdu_plain_1_2 remove_variable = hbe_afterword_chengdu_plain_1_3 set_variable = hbe_afterword_chengdu_plain_1_completed set_variable = hbe_afterword_chengdu_plain_1_3_seen } }
  option = { name = hbe_ending.1003.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1004 = {
  type = country_event title = hbe_ending.1004.title desc = hbe_ending.1004.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_chengdu_plain_2_1 NOT = { has_variable = hbe_afterword_chengdu_plain_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_2_1 set_variable = hbe_afterword_chengdu_plain_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_2_1 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_2_completed has_variable = hbe_afterword_chengdu_plain_2_1_seen has_variable = hbe_afterword_chengdu_plain_2_2_seen has_variable = hbe_afterword_chengdu_plain_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_2_1 remove_variable = hbe_afterword_chengdu_plain_2_2 remove_variable = hbe_afterword_chengdu_plain_2_3 set_variable = hbe_afterword_chengdu_plain_2_completed set_variable = hbe_afterword_chengdu_plain_2_1_seen } }
  option = { name = hbe_ending.1004.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1005 = {
  type = country_event title = hbe_ending.1005.title desc = hbe_ending.1005.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_private }
- trigger = { has_variable = hbe_afterword_chengdu_plain_2_2 NOT = { has_variable = hbe_afterword_chengdu_plain_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_2_2 set_variable = hbe_afterword_chengdu_plain_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_2_2 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_2_completed has_variable = hbe_afterword_chengdu_plain_2_1_seen has_variable = hbe_afterword_chengdu_plain_2_2_seen has_variable = hbe_afterword_chengdu_plain_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_2_1 remove_variable = hbe_afterword_chengdu_plain_2_2 remove_variable = hbe_afterword_chengdu_plain_2_3 set_variable = hbe_afterword_chengdu_plain_2_completed set_variable = hbe_afterword_chengdu_plain_2_2_seen } }
  option = { name = hbe_ending.1005.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1006 = {
  type = country_event title = hbe_ending.1006.title desc = hbe_ending.1006.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_chengdu_plain_2_3 NOT = { has_variable = hbe_afterword_chengdu_plain_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_2_3 set_variable = hbe_afterword_chengdu_plain_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_2_3 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_2_completed has_variable = hbe_afterword_chengdu_plain_2_1_seen has_variable = hbe_afterword_chengdu_plain_2_2_seen has_variable = hbe_afterword_chengdu_plain_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_2_1 remove_variable = hbe_afterword_chengdu_plain_2_2 remove_variable = hbe_afterword_chengdu_plain_2_3 set_variable = hbe_afterword_chengdu_plain_2_completed set_variable = hbe_afterword_chengdu_plain_2_3_seen } }
  option = { name = hbe_ending.1006.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1007 = {
  type = country_event title = hbe_ending.1007.title desc = hbe_ending.1007.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_terrace_commons }
- trigger = { has_variable = hbe_afterword_chengdu_plain_3_1 NOT = { has_variable = hbe_afterword_chengdu_plain_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_3_1 set_variable = hbe_afterword_chengdu_plain_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_3_1 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_3_completed has_variable = hbe_afterword_chengdu_plain_3_1_seen has_variable = hbe_afterword_chengdu_plain_3_2_seen has_variable = hbe_afterword_chengdu_plain_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_3_1 remove_variable = hbe_afterword_chengdu_plain_3_2 remove_variable = hbe_afterword_chengdu_plain_3_3 set_variable = hbe_afterword_chengdu_plain_3_completed set_variable = hbe_afterword_chengdu_plain_3_1_seen } }
  option = { name = hbe_ending.1007.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1008 = {
  type = country_event title = hbe_ending.1008.title desc = hbe_ending.1008.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_land_registry }
- trigger = { has_variable = hbe_afterword_chengdu_plain_3_2 NOT = { has_variable = hbe_afterword_chengdu_plain_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_3_2 set_variable = hbe_afterword_chengdu_plain_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_3_2 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_3_completed has_variable = hbe_afterword_chengdu_plain_3_1_seen has_variable = hbe_afterword_chengdu_plain_3_2_seen has_variable = hbe_afterword_chengdu_plain_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_3_1 remove_variable = hbe_afterword_chengdu_plain_3_2 remove_variable = hbe_afterword_chengdu_plain_3_3 set_variable = hbe_afterword_chengdu_plain_3_completed set_variable = hbe_afterword_chengdu_plain_3_2_seen } }
  option = { name = hbe_ending.1008.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1009 = {
  type = country_event title = hbe_ending.1009.title desc = hbe_ending.1009.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_archive }
- trigger = { has_variable = hbe_afterword_chengdu_plain_3_3 NOT = { has_variable = hbe_afterword_chengdu_plain_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_3_3 set_variable = hbe_afterword_chengdu_plain_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_chengdu_plain_3_3 NOT = { OR = { has_variable = hbe_afterword_chengdu_plain_3_completed has_variable = hbe_afterword_chengdu_plain_3_1_seen has_variable = hbe_afterword_chengdu_plain_3_2_seen has_variable = hbe_afterword_chengdu_plain_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_chengdu_plain_3_1 remove_variable = hbe_afterword_chengdu_plain_3_2 remove_variable = hbe_afterword_chengdu_plain_3_3 set_variable = hbe_afterword_chengdu_plain_3_completed set_variable = hbe_afterword_chengdu_plain_3_3_seen } }
  option = { name = hbe_ending.1009.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1010 = {
  type = country_event title = hbe_ending.1010.title desc = hbe_ending.1010.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_salt_workshop }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_1_1 NOT = { has_variable = hbe_afterword_southern_salt_wine_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_1_1 set_variable = hbe_afterword_southern_salt_wine_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_1_1 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_1_completed has_variable = hbe_afterword_southern_salt_wine_1_1_seen has_variable = hbe_afterword_southern_salt_wine_1_2_seen has_variable = hbe_afterword_southern_salt_wine_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_1_1 remove_variable = hbe_afterword_southern_salt_wine_1_2 remove_variable = hbe_afterword_southern_salt_wine_1_3 set_variable = hbe_afterword_southern_salt_wine_1_completed set_variable = hbe_afterword_southern_salt_wine_1_1_seen } }
  option = { name = hbe_ending.1010.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1011 = {
  type = country_event title = hbe_ending.1011.title desc = hbe_ending.1011.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_regulated }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_1_2 NOT = { has_variable = hbe_afterword_southern_salt_wine_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_1_2 set_variable = hbe_afterword_southern_salt_wine_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_1_2 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_1_completed has_variable = hbe_afterword_southern_salt_wine_1_1_seen has_variable = hbe_afterword_southern_salt_wine_1_2_seen has_variable = hbe_afterword_southern_salt_wine_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_1_1 remove_variable = hbe_afterword_southern_salt_wine_1_2 remove_variable = hbe_afterword_southern_salt_wine_1_3 set_variable = hbe_afterword_southern_salt_wine_1_completed set_variable = hbe_afterword_southern_salt_wine_1_2_seen } }
  option = { name = hbe_ending.1011.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1012 = {
  type = country_event title = hbe_ending.1012.title desc = hbe_ending.1012.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_land_registry }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_1_3 NOT = { has_variable = hbe_afterword_southern_salt_wine_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_1_3 set_variable = hbe_afterword_southern_salt_wine_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_1_3 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_1_completed has_variable = hbe_afterword_southern_salt_wine_1_1_seen has_variable = hbe_afterword_southern_salt_wine_1_2_seen has_variable = hbe_afterword_southern_salt_wine_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_1_1 remove_variable = hbe_afterword_southern_salt_wine_1_2 remove_variable = hbe_afterword_southern_salt_wine_1_3 set_variable = hbe_afterword_southern_salt_wine_1_completed set_variable = hbe_afterword_southern_salt_wine_1_3_seen } }
  option = { name = hbe_ending.1012.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1013 = {
  type = country_event title = hbe_ending.1013.title desc = hbe_ending.1013.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_archive }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_2_1 NOT = { has_variable = hbe_afterword_southern_salt_wine_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_2_1 set_variable = hbe_afterword_southern_salt_wine_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_2_1 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_2_completed has_variable = hbe_afterword_southern_salt_wine_2_1_seen has_variable = hbe_afterword_southern_salt_wine_2_2_seen has_variable = hbe_afterword_southern_salt_wine_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_2_1 remove_variable = hbe_afterword_southern_salt_wine_2_2 remove_variable = hbe_afterword_southern_salt_wine_2_3 set_variable = hbe_afterword_southern_salt_wine_2_completed set_variable = hbe_afterword_southern_salt_wine_2_1_seen } }
  option = { name = hbe_ending.1013.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1014 = {
  type = country_event title = hbe_ending.1014.title desc = hbe_ending.1014.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_regulated }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_2_2 NOT = { has_variable = hbe_afterword_southern_salt_wine_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_2_2 set_variable = hbe_afterword_southern_salt_wine_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_2_2 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_2_completed has_variable = hbe_afterword_southern_salt_wine_2_1_seen has_variable = hbe_afterword_southern_salt_wine_2_2_seen has_variable = hbe_afterword_southern_salt_wine_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_2_1 remove_variable = hbe_afterword_southern_salt_wine_2_2 remove_variable = hbe_afterword_southern_salt_wine_2_3 set_variable = hbe_afterword_southern_salt_wine_2_completed set_variable = hbe_afterword_southern_salt_wine_2_2_seen } }
  option = { name = hbe_ending.1014.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1015 = {
  type = country_event title = hbe_ending.1015.title desc = hbe_ending.1015.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_public }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_2_3 NOT = { has_variable = hbe_afterword_southern_salt_wine_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_2_3 set_variable = hbe_afterword_southern_salt_wine_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_2_3 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_2_completed has_variable = hbe_afterword_southern_salt_wine_2_1_seen has_variable = hbe_afterword_southern_salt_wine_2_2_seen has_variable = hbe_afterword_southern_salt_wine_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_2_1 remove_variable = hbe_afterword_southern_salt_wine_2_2 remove_variable = hbe_afterword_southern_salt_wine_2_3 set_variable = hbe_afterword_southern_salt_wine_2_completed set_variable = hbe_afterword_southern_salt_wine_2_3_seen } }
  option = { name = hbe_ending.1015.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1016 = {
  type = country_event title = hbe_ending.1016.title desc = hbe_ending.1016.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_memorial_common }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_3_1 NOT = { has_variable = hbe_afterword_southern_salt_wine_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_3_1 set_variable = hbe_afterword_southern_salt_wine_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_3_1 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_3_completed has_variable = hbe_afterword_southern_salt_wine_3_1_seen has_variable = hbe_afterword_southern_salt_wine_3_2_seen has_variable = hbe_afterword_southern_salt_wine_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_3_1 remove_variable = hbe_afterword_southern_salt_wine_3_2 remove_variable = hbe_afterword_southern_salt_wine_3_3 set_variable = hbe_afterword_southern_salt_wine_3_completed set_variable = hbe_afterword_southern_salt_wine_3_1_seen } }
  option = { name = hbe_ending.1016.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1017 = {
  type = country_event title = hbe_ending.1017.title desc = hbe_ending.1017.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_private }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_3_2 NOT = { has_variable = hbe_afterword_southern_salt_wine_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_3_2 set_variable = hbe_afterword_southern_salt_wine_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_3_2 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_3_completed has_variable = hbe_afterword_southern_salt_wine_3_1_seen has_variable = hbe_afterword_southern_salt_wine_3_2_seen has_variable = hbe_afterword_southern_salt_wine_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_3_1 remove_variable = hbe_afterword_southern_salt_wine_3_2 remove_variable = hbe_afterword_southern_salt_wine_3_3 set_variable = hbe_afterword_southern_salt_wine_3_completed set_variable = hbe_afterword_southern_salt_wine_3_2_seen } }
  option = { name = hbe_ending.1017.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1018 = {
  type = country_event title = hbe_ending.1018.title desc = hbe_ending.1018.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_southern_salt_wine_3_3 NOT = { has_variable = hbe_afterword_southern_salt_wine_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_3_3 set_variable = hbe_afterword_southern_salt_wine_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_southern_salt_wine_3_3 NOT = { OR = { has_variable = hbe_afterword_southern_salt_wine_3_completed has_variable = hbe_afterword_southern_salt_wine_3_1_seen has_variable = hbe_afterword_southern_salt_wine_3_2_seen has_variable = hbe_afterword_southern_salt_wine_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southern_salt_wine_3_1 remove_variable = hbe_afterword_southern_salt_wine_3_2 remove_variable = hbe_afterword_southern_salt_wine_3_3 set_variable = hbe_afterword_southern_salt_wine_3_completed set_variable = hbe_afterword_southern_salt_wine_3_3_seen } }
  option = { name = hbe_ending.1018.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1019 = {
  type = country_event title = hbe_ending.1019.title desc = hbe_ending.1019.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_commons }
- trigger = { has_variable = hbe_afterword_eastern_river_1_1 NOT = { has_variable = hbe_afterword_eastern_river_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_1_1 set_variable = hbe_afterword_eastern_river_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_1_1 NOT = { OR = { has_variable = hbe_afterword_eastern_river_1_completed has_variable = hbe_afterword_eastern_river_1_1_seen has_variable = hbe_afterword_eastern_river_1_2_seen has_variable = hbe_afterword_eastern_river_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_1_1 remove_variable = hbe_afterword_eastern_river_1_2 remove_variable = hbe_afterword_eastern_river_1_3 set_variable = hbe_afterword_eastern_river_1_completed set_variable = hbe_afterword_eastern_river_1_1_seen } }
  option = { name = hbe_ending.1019.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1020 = {
  type = country_event title = hbe_ending.1020.title desc = hbe_ending.1020.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_convoy }
- trigger = { has_variable = hbe_afterword_eastern_river_1_2 NOT = { has_variable = hbe_afterword_eastern_river_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_1_2 set_variable = hbe_afterword_eastern_river_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_1_2 NOT = { OR = { has_variable = hbe_afterword_eastern_river_1_completed has_variable = hbe_afterword_eastern_river_1_1_seen has_variable = hbe_afterword_eastern_river_1_2_seen has_variable = hbe_afterword_eastern_river_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_1_1 remove_variable = hbe_afterword_eastern_river_1_2 remove_variable = hbe_afterword_eastern_river_1_3 set_variable = hbe_afterword_eastern_river_1_completed set_variable = hbe_afterword_eastern_river_1_2_seen } }
  option = { name = hbe_ending.1020.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1021 = {
  type = country_event title = hbe_ending.1021.title desc = hbe_ending.1021.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_eastern_river_1_3 NOT = { has_variable = hbe_afterword_eastern_river_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_1_3 set_variable = hbe_afterword_eastern_river_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_1_3 NOT = { OR = { has_variable = hbe_afterword_eastern_river_1_completed has_variable = hbe_afterword_eastern_river_1_1_seen has_variable = hbe_afterword_eastern_river_1_2_seen has_variable = hbe_afterword_eastern_river_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_1_1 remove_variable = hbe_afterword_eastern_river_1_2 remove_variable = hbe_afterword_eastern_river_1_3 set_variable = hbe_afterword_eastern_river_1_completed set_variable = hbe_afterword_eastern_river_1_3_seen } }
  option = { name = hbe_ending.1021.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1022 = {
  type = country_event title = hbe_ending.1022.title desc = hbe_ending.1022.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_shipyard }
- trigger = { has_variable = hbe_afterword_eastern_river_2_1 NOT = { has_variable = hbe_afterword_eastern_river_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_2_1 set_variable = hbe_afterword_eastern_river_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_2_1 NOT = { OR = { has_variable = hbe_afterword_eastern_river_2_completed has_variable = hbe_afterword_eastern_river_2_1_seen has_variable = hbe_afterword_eastern_river_2_2_seen has_variable = hbe_afterword_eastern_river_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_2_1 remove_variable = hbe_afterword_eastern_river_2_2 remove_variable = hbe_afterword_eastern_river_2_3 set_variable = hbe_afterword_eastern_river_2_completed set_variable = hbe_afterword_eastern_river_2_1_seen } }
  option = { name = hbe_ending.1022.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1023 = {
  type = country_event title = hbe_ending.1023.title desc = hbe_ending.1023.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_convoy }
- trigger = { has_variable = hbe_afterword_eastern_river_2_2 NOT = { has_variable = hbe_afterword_eastern_river_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_2_2 set_variable = hbe_afterword_eastern_river_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_2_2 NOT = { OR = { has_variable = hbe_afterword_eastern_river_2_completed has_variable = hbe_afterword_eastern_river_2_1_seen has_variable = hbe_afterword_eastern_river_2_2_seen has_variable = hbe_afterword_eastern_river_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_2_1 remove_variable = hbe_afterword_eastern_river_2_2 remove_variable = hbe_afterword_eastern_river_2_3 set_variable = hbe_afterword_eastern_river_2_completed set_variable = hbe_afterword_eastern_river_2_2_seen } }
  option = { name = hbe_ending.1023.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1024 = {
  type = country_event title = hbe_ending.1024.title desc = hbe_ending.1024.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_eastern_river_2_3 NOT = { has_variable = hbe_afterword_eastern_river_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_2_3 set_variable = hbe_afterword_eastern_river_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_2_3 NOT = { OR = { has_variable = hbe_afterword_eastern_river_2_completed has_variable = hbe_afterword_eastern_river_2_1_seen has_variable = hbe_afterword_eastern_river_2_2_seen has_variable = hbe_afterword_eastern_river_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_2_1 remove_variable = hbe_afterword_eastern_river_2_2 remove_variable = hbe_afterword_eastern_river_2_3 set_variable = hbe_afterword_eastern_river_2_completed set_variable = hbe_afterword_eastern_river_2_3_seen } }
  option = { name = hbe_ending.1024.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1025 = {
  type = country_event title = hbe_ending.1025.title desc = hbe_ending.1025.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_memorial_common }
- trigger = { has_variable = hbe_afterword_eastern_river_3_1 NOT = { has_variable = hbe_afterword_eastern_river_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_3_1 set_variable = hbe_afterword_eastern_river_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_3_1 NOT = { OR = { has_variable = hbe_afterword_eastern_river_3_completed has_variable = hbe_afterword_eastern_river_3_1_seen has_variable = hbe_afterword_eastern_river_3_2_seen has_variable = hbe_afterword_eastern_river_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_3_1 remove_variable = hbe_afterword_eastern_river_3_2 remove_variable = hbe_afterword_eastern_river_3_3 set_variable = hbe_afterword_eastern_river_3_completed set_variable = hbe_afterword_eastern_river_3_1_seen } }
  option = { name = hbe_ending.1025.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1026 = {
  type = country_event title = hbe_ending.1026.title desc = hbe_ending.1026.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_stone_archive }
- trigger = { has_variable = hbe_afterword_eastern_river_3_2 NOT = { has_variable = hbe_afterword_eastern_river_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_3_2 set_variable = hbe_afterword_eastern_river_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_3_2 NOT = { OR = { has_variable = hbe_afterword_eastern_river_3_completed has_variable = hbe_afterword_eastern_river_3_1_seen has_variable = hbe_afterword_eastern_river_3_2_seen has_variable = hbe_afterword_eastern_river_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_3_1 remove_variable = hbe_afterword_eastern_river_3_2 remove_variable = hbe_afterword_eastern_river_3_3 set_variable = hbe_afterword_eastern_river_3_completed set_variable = hbe_afterword_eastern_river_3_2_seen } }
  option = { name = hbe_ending.1026.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1027 = {
  type = country_event title = hbe_ending.1027.title desc = hbe_ending.1027.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_eastern_river_3_3 NOT = { has_variable = hbe_afterword_eastern_river_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_3_3 set_variable = hbe_afterword_eastern_river_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_eastern_river_3_3 NOT = { OR = { has_variable = hbe_afterword_eastern_river_3_completed has_variable = hbe_afterword_eastern_river_3_1_seen has_variable = hbe_afterword_eastern_river_3_2_seen has_variable = hbe_afterword_eastern_river_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_eastern_river_3_1 remove_variable = hbe_afterword_eastern_river_3_2 remove_variable = hbe_afterword_eastern_river_3_3 set_variable = hbe_afterword_eastern_river_3_completed set_variable = hbe_afterword_eastern_river_3_3_seen } }
  option = { name = hbe_ending.1027.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1028 = {
  type = country_event title = hbe_ending.1028.title desc = hbe_ending.1028.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_observatory_school }
- trigger = { has_variable = hbe_afterword_northern_shudao_1_1 NOT = { has_variable = hbe_afterword_northern_shudao_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_1_1 set_variable = hbe_afterword_northern_shudao_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_1_1 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_1_completed has_variable = hbe_afterword_northern_shudao_1_1_seen has_variable = hbe_afterword_northern_shudao_1_2_seen has_variable = hbe_afterword_northern_shudao_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_1_1 remove_variable = hbe_afterword_northern_shudao_1_2 remove_variable = hbe_afterword_northern_shudao_1_3 set_variable = hbe_afterword_northern_shudao_1_completed set_variable = hbe_afterword_northern_shudao_1_1_seen } }
  option = { name = hbe_ending.1028.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1029 = {
  type = country_event title = hbe_ending.1029.title desc = hbe_ending.1029.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_gate_time }
- trigger = { has_variable = hbe_afterword_northern_shudao_1_2 NOT = { has_variable = hbe_afterword_northern_shudao_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_1_2 set_variable = hbe_afterword_northern_shudao_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_1_2 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_1_completed has_variable = hbe_afterword_northern_shudao_1_1_seen has_variable = hbe_afterword_northern_shudao_1_2_seen has_variable = hbe_afterword_northern_shudao_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_1_1 remove_variable = hbe_afterword_northern_shudao_1_2 remove_variable = hbe_afterword_northern_shudao_1_3 set_variable = hbe_afterword_northern_shudao_1_completed set_variable = hbe_afterword_northern_shudao_1_2_seen } }
  option = { name = hbe_ending.1029.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1030 = {
  type = country_event title = hbe_ending.1030.title desc = hbe_ending.1030.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_northern_shudao_1_3 NOT = { has_variable = hbe_afterword_northern_shudao_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_1_3 set_variable = hbe_afterword_northern_shudao_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_1_3 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_1_completed has_variable = hbe_afterword_northern_shudao_1_1_seen has_variable = hbe_afterword_northern_shudao_1_2_seen has_variable = hbe_afterword_northern_shudao_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_1_1 remove_variable = hbe_afterword_northern_shudao_1_2 remove_variable = hbe_afterword_northern_shudao_1_3 set_variable = hbe_afterword_northern_shudao_1_completed set_variable = hbe_afterword_northern_shudao_1_3_seen } }
  option = { name = hbe_ending.1030.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1031 = {
  type = country_event title = hbe_ending.1031.title desc = hbe_ending.1031.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_terrace_commons }
- trigger = { has_variable = hbe_afterword_northern_shudao_2_1 NOT = { has_variable = hbe_afterword_northern_shudao_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_2_1 set_variable = hbe_afterword_northern_shudao_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_2_1 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_2_completed has_variable = hbe_afterword_northern_shudao_2_1_seen has_variable = hbe_afterword_northern_shudao_2_2_seen has_variable = hbe_afterword_northern_shudao_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_2_1 remove_variable = hbe_afterword_northern_shudao_2_2 remove_variable = hbe_afterword_northern_shudao_2_3 set_variable = hbe_afterword_northern_shudao_2_completed set_variable = hbe_afterword_northern_shudao_2_1_seen } }
  option = { name = hbe_ending.1031.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1032 = {
  type = country_event title = hbe_ending.1032.title desc = hbe_ending.1032.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_gate_time }
- trigger = { has_variable = hbe_afterword_northern_shudao_2_2 NOT = { has_variable = hbe_afterword_northern_shudao_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_2_2 set_variable = hbe_afterword_northern_shudao_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_2_2 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_2_completed has_variable = hbe_afterword_northern_shudao_2_1_seen has_variable = hbe_afterword_northern_shudao_2_2_seen has_variable = hbe_afterword_northern_shudao_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_2_1 remove_variable = hbe_afterword_northern_shudao_2_2 remove_variable = hbe_afterword_northern_shudao_2_3 set_variable = hbe_afterword_northern_shudao_2_completed set_variable = hbe_afterword_northern_shudao_2_2_seen } }
  option = { name = hbe_ending.1032.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1033 = {
  type = country_event title = hbe_ending.1033.title desc = hbe_ending.1033.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_northern_shudao_2_3 NOT = { has_variable = hbe_afterword_northern_shudao_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_2_3 set_variable = hbe_afterword_northern_shudao_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_2_3 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_2_completed has_variable = hbe_afterword_northern_shudao_2_1_seen has_variable = hbe_afterword_northern_shudao_2_2_seen has_variable = hbe_afterword_northern_shudao_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_2_1 remove_variable = hbe_afterword_northern_shudao_2_2 remove_variable = hbe_afterword_northern_shudao_2_3 set_variable = hbe_afterword_northern_shudao_2_completed set_variable = hbe_afterword_northern_shudao_2_3_seen } }
  option = { name = hbe_ending.1033.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1034 = {
  type = country_event title = hbe_ending.1034.title desc = hbe_ending.1034.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_northern_shudao_3_1 NOT = { has_variable = hbe_afterword_northern_shudao_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_3_1 set_variable = hbe_afterword_northern_shudao_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_3_1 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_3_completed has_variable = hbe_afterword_northern_shudao_3_1_seen has_variable = hbe_afterword_northern_shudao_3_2_seen has_variable = hbe_afterword_northern_shudao_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_3_1 remove_variable = hbe_afterword_northern_shudao_3_2 remove_variable = hbe_afterword_northern_shudao_3_3 set_variable = hbe_afterword_northern_shudao_3_completed set_variable = hbe_afterword_northern_shudao_3_1_seen } }
  option = { name = hbe_ending.1034.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1035 = {
  type = country_event title = hbe_ending.1035.title desc = hbe_ending.1035.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_bridge_bureau }
- trigger = { has_variable = hbe_afterword_northern_shudao_3_2 NOT = { has_variable = hbe_afterword_northern_shudao_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_3_2 set_variable = hbe_afterword_northern_shudao_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_3_2 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_3_completed has_variable = hbe_afterword_northern_shudao_3_1_seen has_variable = hbe_afterword_northern_shudao_3_2_seen has_variable = hbe_afterword_northern_shudao_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_3_1 remove_variable = hbe_afterword_northern_shudao_3_2 remove_variable = hbe_afterword_northern_shudao_3_3 set_variable = hbe_afterword_northern_shudao_3_completed set_variable = hbe_afterword_northern_shudao_3_2_seen } }
  option = { name = hbe_ending.1035.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1036 = {
  type = country_event title = hbe_ending.1036.title desc = hbe_ending.1036.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_northern_shudao_3_3 NOT = { has_variable = hbe_afterword_northern_shudao_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_3_3 set_variable = hbe_afterword_northern_shudao_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_northern_shudao_3_3 NOT = { OR = { has_variable = hbe_afterword_northern_shudao_3_completed has_variable = hbe_afterword_northern_shudao_3_1_seen has_variable = hbe_afterword_northern_shudao_3_2_seen has_variable = hbe_afterword_northern_shudao_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_northern_shudao_3_1 remove_variable = hbe_afterword_northern_shudao_3_2 remove_variable = hbe_afterword_northern_shudao_3_3 set_variable = hbe_afterword_northern_shudao_3_completed set_variable = hbe_afterword_northern_shudao_3_3_seen } }
  option = { name = hbe_ending.1036.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1037 = {
  type = country_event title = hbe_ending.1037.title desc = hbe_ending.1037.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_granary_common }
- trigger = { has_variable = hbe_afterword_central_hills_1_1 NOT = { has_variable = hbe_afterword_central_hills_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_1_1 set_variable = hbe_afterword_central_hills_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_1_1 NOT = { OR = { has_variable = hbe_afterword_central_hills_1_completed has_variable = hbe_afterword_central_hills_1_1_seen has_variable = hbe_afterword_central_hills_1_2_seen has_variable = hbe_afterword_central_hills_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_1_1 remove_variable = hbe_afterword_central_hills_1_2 remove_variable = hbe_afterword_central_hills_1_3 set_variable = hbe_afterword_central_hills_1_completed set_variable = hbe_afterword_central_hills_1_1_seen } }
  option = { name = hbe_ending.1037.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1038 = {
  type = country_event title = hbe_ending.1038.title desc = hbe_ending.1038.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_regulated }
- trigger = { has_variable = hbe_afterword_central_hills_1_2 NOT = { has_variable = hbe_afterword_central_hills_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_1_2 set_variable = hbe_afterword_central_hills_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_1_2 NOT = { OR = { has_variable = hbe_afterword_central_hills_1_completed has_variable = hbe_afterword_central_hills_1_1_seen has_variable = hbe_afterword_central_hills_1_2_seen has_variable = hbe_afterword_central_hills_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_1_1 remove_variable = hbe_afterword_central_hills_1_2 remove_variable = hbe_afterword_central_hills_1_3 set_variable = hbe_afterword_central_hills_1_completed set_variable = hbe_afterword_central_hills_1_2_seen } }
  option = { name = hbe_ending.1038.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1039 = {
  type = country_event title = hbe_ending.1039.title desc = hbe_ending.1039.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_central_hills_1_3 NOT = { has_variable = hbe_afterword_central_hills_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_1_3 set_variable = hbe_afterword_central_hills_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_1_3 NOT = { OR = { has_variable = hbe_afterword_central_hills_1_completed has_variable = hbe_afterword_central_hills_1_1_seen has_variable = hbe_afterword_central_hills_1_2_seen has_variable = hbe_afterword_central_hills_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_1_1 remove_variable = hbe_afterword_central_hills_1_2 remove_variable = hbe_afterword_central_hills_1_3 set_variable = hbe_afterword_central_hills_1_completed set_variable = hbe_afterword_central_hills_1_3_seen } }
  option = { name = hbe_ending.1039.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1040 = {
  type = country_event title = hbe_ending.1040.title desc = hbe_ending.1040.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_central_hills_2_1 NOT = { has_variable = hbe_afterword_central_hills_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_2_1 set_variable = hbe_afterword_central_hills_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_2_1 NOT = { OR = { has_variable = hbe_afterword_central_hills_2_completed has_variable = hbe_afterword_central_hills_2_1_seen has_variable = hbe_afterword_central_hills_2_2_seen has_variable = hbe_afterword_central_hills_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_2_1 remove_variable = hbe_afterword_central_hills_2_2 remove_variable = hbe_afterword_central_hills_2_3 set_variable = hbe_afterword_central_hills_2_completed set_variable = hbe_afterword_central_hills_2_1_seen } }
  option = { name = hbe_ending.1040.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1041 = {
  type = country_event title = hbe_ending.1041.title desc = hbe_ending.1041.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_guild }
- trigger = { has_variable = hbe_afterword_central_hills_2_2 NOT = { has_variable = hbe_afterword_central_hills_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_2_2 set_variable = hbe_afterword_central_hills_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_2_2 NOT = { OR = { has_variable = hbe_afterword_central_hills_2_completed has_variable = hbe_afterword_central_hills_2_1_seen has_variable = hbe_afterword_central_hills_2_2_seen has_variable = hbe_afterword_central_hills_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_2_1 remove_variable = hbe_afterword_central_hills_2_2 remove_variable = hbe_afterword_central_hills_2_3 set_variable = hbe_afterword_central_hills_2_completed set_variable = hbe_afterword_central_hills_2_2_seen } }
  option = { name = hbe_ending.1041.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1042 = {
  type = country_event title = hbe_ending.1042.title desc = hbe_ending.1042.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_archive }
- trigger = { has_variable = hbe_afterword_central_hills_2_3 NOT = { has_variable = hbe_afterword_central_hills_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_2_3 set_variable = hbe_afterword_central_hills_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_2_3 NOT = { OR = { has_variable = hbe_afterword_central_hills_2_completed has_variable = hbe_afterword_central_hills_2_1_seen has_variable = hbe_afterword_central_hills_2_2_seen has_variable = hbe_afterword_central_hills_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_2_1 remove_variable = hbe_afterword_central_hills_2_2 remove_variable = hbe_afterword_central_hills_2_3 set_variable = hbe_afterword_central_hills_2_completed set_variable = hbe_afterword_central_hills_2_3_seen } }
  option = { name = hbe_ending.1042.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1043 = {
  type = country_event title = hbe_ending.1043.title desc = hbe_ending.1043.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_central_hills_3_1 NOT = { has_variable = hbe_afterword_central_hills_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_3_1 set_variable = hbe_afterword_central_hills_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_3_1 NOT = { OR = { has_variable = hbe_afterword_central_hills_3_completed has_variable = hbe_afterword_central_hills_3_1_seen has_variable = hbe_afterword_central_hills_3_2_seen has_variable = hbe_afterword_central_hills_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_3_1 remove_variable = hbe_afterword_central_hills_3_2 remove_variable = hbe_afterword_central_hills_3_3 set_variable = hbe_afterword_central_hills_3_completed set_variable = hbe_afterword_central_hills_3_1_seen } }
  option = { name = hbe_ending.1043.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1044 = {
  type = country_event title = hbe_ending.1044.title desc = hbe_ending.1044.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_bridge_bureau }
- trigger = { has_variable = hbe_afterword_central_hills_3_2 NOT = { has_variable = hbe_afterword_central_hills_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_3_2 set_variable = hbe_afterword_central_hills_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_3_2 NOT = { OR = { has_variable = hbe_afterword_central_hills_3_completed has_variable = hbe_afterword_central_hills_3_1_seen has_variable = hbe_afterword_central_hills_3_2_seen has_variable = hbe_afterword_central_hills_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_3_1 remove_variable = hbe_afterword_central_hills_3_2 remove_variable = hbe_afterword_central_hills_3_3 set_variable = hbe_afterword_central_hills_3_completed set_variable = hbe_afterword_central_hills_3_2_seen } }
  option = { name = hbe_ending.1044.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1045 = {
  type = country_event title = hbe_ending.1045.title desc = hbe_ending.1045.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_terrace_commons }
- trigger = { has_variable = hbe_afterword_central_hills_3_3 NOT = { has_variable = hbe_afterword_central_hills_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_3_3 set_variable = hbe_afterword_central_hills_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_central_hills_3_3 NOT = { OR = { has_variable = hbe_afterword_central_hills_3_completed has_variable = hbe_afterword_central_hills_3_1_seen has_variable = hbe_afterword_central_hills_3_2_seen has_variable = hbe_afterword_central_hills_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_central_hills_3_1 remove_variable = hbe_afterword_central_hills_3_2 remove_variable = hbe_afterword_central_hills_3_3 set_variable = hbe_afterword_central_hills_3_completed set_variable = hbe_afterword_central_hills_3_3_seen } }
  option = { name = hbe_ending.1045.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1046 = {
  type = country_event title = hbe_ending.1046.title desc = hbe_ending.1046.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_public }
- trigger = { has_variable = hbe_afterword_western_tea_horse_1_1 NOT = { has_variable = hbe_afterword_western_tea_horse_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_1_1 set_variable = hbe_afterword_western_tea_horse_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_1_1 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_1_completed has_variable = hbe_afterword_western_tea_horse_1_1_seen has_variable = hbe_afterword_western_tea_horse_1_2_seen has_variable = hbe_afterword_western_tea_horse_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_1_1 remove_variable = hbe_afterword_western_tea_horse_1_2 remove_variable = hbe_afterword_western_tea_horse_1_3 set_variable = hbe_afterword_western_tea_horse_1_completed set_variable = hbe_afterword_western_tea_horse_1_1_seen } }
  option = { name = hbe_ending.1046.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1047 = {
  type = country_event title = hbe_ending.1047.title desc = hbe_ending.1047.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_regulated }
- trigger = { has_variable = hbe_afterword_western_tea_horse_1_2 NOT = { has_variable = hbe_afterword_western_tea_horse_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_1_2 set_variable = hbe_afterword_western_tea_horse_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_1_2 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_1_completed has_variable = hbe_afterword_western_tea_horse_1_1_seen has_variable = hbe_afterword_western_tea_horse_1_2_seen has_variable = hbe_afterword_western_tea_horse_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_1_1 remove_variable = hbe_afterword_western_tea_horse_1_2 remove_variable = hbe_afterword_western_tea_horse_1_3 set_variable = hbe_afterword_western_tea_horse_1_completed set_variable = hbe_afterword_western_tea_horse_1_2_seen } }
  option = { name = hbe_ending.1047.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1048 = {
  type = country_event title = hbe_ending.1048.title desc = hbe_ending.1048.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_archive }
- trigger = { has_variable = hbe_afterword_western_tea_horse_1_3 NOT = { has_variable = hbe_afterword_western_tea_horse_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_1_3 set_variable = hbe_afterword_western_tea_horse_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_1_3 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_1_completed has_variable = hbe_afterword_western_tea_horse_1_1_seen has_variable = hbe_afterword_western_tea_horse_1_2_seen has_variable = hbe_afterword_western_tea_horse_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_1_1 remove_variable = hbe_afterword_western_tea_horse_1_2 remove_variable = hbe_afterword_western_tea_horse_1_3 set_variable = hbe_afterword_western_tea_horse_1_completed set_variable = hbe_afterword_western_tea_horse_1_3_seen } }
  option = { name = hbe_ending.1048.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1049 = {
  type = country_event title = hbe_ending.1049.title desc = hbe_ending.1049.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_veterinary_school }
- trigger = { has_variable = hbe_afterword_western_tea_horse_2_1 NOT = { has_variable = hbe_afterword_western_tea_horse_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_2_1 set_variable = hbe_afterword_western_tea_horse_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_2_1 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_2_completed has_variable = hbe_afterword_western_tea_horse_2_1_seen has_variable = hbe_afterword_western_tea_horse_2_2_seen has_variable = hbe_afterword_western_tea_horse_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_2_1 remove_variable = hbe_afterword_western_tea_horse_2_2 remove_variable = hbe_afterword_western_tea_horse_2_3 set_variable = hbe_afterword_western_tea_horse_2_completed set_variable = hbe_afterword_western_tea_horse_2_1_seen } }
  option = { name = hbe_ending.1049.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1050 = {
  type = country_event title = hbe_ending.1050.title desc = hbe_ending.1050.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_stud_farm }
- trigger = { has_variable = hbe_afterword_western_tea_horse_2_2 NOT = { has_variable = hbe_afterword_western_tea_horse_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_2_2 set_variable = hbe_afterword_western_tea_horse_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_2_2 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_2_completed has_variable = hbe_afterword_western_tea_horse_2_1_seen has_variable = hbe_afterword_western_tea_horse_2_2_seen has_variable = hbe_afterword_western_tea_horse_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_2_1 remove_variable = hbe_afterword_western_tea_horse_2_2 remove_variable = hbe_afterword_western_tea_horse_2_3 set_variable = hbe_afterword_western_tea_horse_2_completed set_variable = hbe_afterword_western_tea_horse_2_2_seen } }
  option = { name = hbe_ending.1050.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1051 = {
  type = country_event title = hbe_ending.1051.title desc = hbe_ending.1051.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_veterinary }
- trigger = { has_variable = hbe_afterword_western_tea_horse_2_3 NOT = { has_variable = hbe_afterword_western_tea_horse_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_2_3 set_variable = hbe_afterword_western_tea_horse_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_2_3 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_2_completed has_variable = hbe_afterword_western_tea_horse_2_1_seen has_variable = hbe_afterword_western_tea_horse_2_2_seen has_variable = hbe_afterword_western_tea_horse_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_2_1 remove_variable = hbe_afterword_western_tea_horse_2_2 remove_variable = hbe_afterword_western_tea_horse_2_3 set_variable = hbe_afterword_western_tea_horse_2_completed set_variable = hbe_afterword_western_tea_horse_2_3_seen } }
  option = { name = hbe_ending.1051.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1052 = {
  type = country_event title = hbe_ending.1052.title desc = hbe_ending.1052.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_bridge_commons }
- trigger = { has_variable = hbe_afterword_western_tea_horse_3_1 NOT = { has_variable = hbe_afterword_western_tea_horse_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_3_1 set_variable = hbe_afterword_western_tea_horse_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_3_1 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_3_completed has_variable = hbe_afterword_western_tea_horse_3_1_seen has_variable = hbe_afterword_western_tea_horse_3_2_seen has_variable = hbe_afterword_western_tea_horse_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_3_1 remove_variable = hbe_afterword_western_tea_horse_3_2 remove_variable = hbe_afterword_western_tea_horse_3_3 set_variable = hbe_afterword_western_tea_horse_3_completed set_variable = hbe_afterword_western_tea_horse_3_1_seen } }
  option = { name = hbe_ending.1052.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1053 = {
  type = country_event title = hbe_ending.1053.title desc = hbe_ending.1053.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_gate_time }
- trigger = { has_variable = hbe_afterword_western_tea_horse_3_2 NOT = { has_variable = hbe_afterword_western_tea_horse_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_3_2 set_variable = hbe_afterword_western_tea_horse_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_3_2 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_3_completed has_variable = hbe_afterword_western_tea_horse_3_1_seen has_variable = hbe_afterword_western_tea_horse_3_2_seen has_variable = hbe_afterword_western_tea_horse_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_3_1 remove_variable = hbe_afterword_western_tea_horse_3_2 remove_variable = hbe_afterword_western_tea_horse_3_3 set_variable = hbe_afterword_western_tea_horse_3_completed set_variable = hbe_afterword_western_tea_horse_3_2_seen } }
  option = { name = hbe_ending.1053.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1054 = {
  type = country_event title = hbe_ending.1054.title desc = hbe_ending.1054.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_open }
- trigger = { has_variable = hbe_afterword_western_tea_horse_3_3 NOT = { has_variable = hbe_afterword_western_tea_horse_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_3_3 set_variable = hbe_afterword_western_tea_horse_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_western_tea_horse_3_3 NOT = { OR = { has_variable = hbe_afterword_western_tea_horse_3_completed has_variable = hbe_afterword_western_tea_horse_3_1_seen has_variable = hbe_afterword_western_tea_horse_3_2_seen has_variable = hbe_afterword_western_tea_horse_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_western_tea_horse_3_1 remove_variable = hbe_afterword_western_tea_horse_3_2 remove_variable = hbe_afterword_western_tea_horse_3_3 set_variable = hbe_afterword_western_tea_horse_3_completed set_variable = hbe_afterword_western_tea_horse_3_3_seen } }
  option = { name = hbe_ending.1054.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1055 = {
  type = country_event title = hbe_ending.1055.title desc = hbe_ending.1055.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_commons }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_1_1 NOT = { has_variable = hbe_afterword_southwestern_valleys_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_1_1 set_variable = hbe_afterword_southwestern_valleys_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_1_1 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_1_completed has_variable = hbe_afterword_southwestern_valleys_1_1_seen has_variable = hbe_afterword_southwestern_valleys_1_2_seen has_variable = hbe_afterword_southwestern_valleys_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_1_1 remove_variable = hbe_afterword_southwestern_valleys_1_2 remove_variable = hbe_afterword_southwestern_valleys_1_3 set_variable = hbe_afterword_southwestern_valleys_1_completed set_variable = hbe_afterword_southwestern_valleys_1_1_seen } }
  option = { name = hbe_ending.1055.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1056 = {
  type = country_event title = hbe_ending.1056.title desc = hbe_ending.1056.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_convoy }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_1_2 NOT = { has_variable = hbe_afterword_southwestern_valleys_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_1_2 set_variable = hbe_afterword_southwestern_valleys_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_1_2 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_1_completed has_variable = hbe_afterword_southwestern_valleys_1_1_seen has_variable = hbe_afterword_southwestern_valleys_1_2_seen has_variable = hbe_afterword_southwestern_valleys_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_1_1 remove_variable = hbe_afterword_southwestern_valleys_1_2 remove_variable = hbe_afterword_southwestern_valleys_1_3 set_variable = hbe_afterword_southwestern_valleys_1_completed set_variable = hbe_afterword_southwestern_valleys_1_2_seen } }
  option = { name = hbe_ending.1056.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1057 = {
  type = country_event title = hbe_ending.1057.title desc = hbe_ending.1057.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_1_3 NOT = { has_variable = hbe_afterword_southwestern_valleys_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_1_3 set_variable = hbe_afterword_southwestern_valleys_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_1_3 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_1_completed has_variable = hbe_afterword_southwestern_valleys_1_1_seen has_variable = hbe_afterword_southwestern_valleys_1_2_seen has_variable = hbe_afterword_southwestern_valleys_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_1_1 remove_variable = hbe_afterword_southwestern_valleys_1_2 remove_variable = hbe_afterword_southwestern_valleys_1_3 set_variable = hbe_afterword_southwestern_valleys_1_completed set_variable = hbe_afterword_southwestern_valleys_1_3_seen } }
  option = { name = hbe_ending.1057.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1058 = {
  type = country_event title = hbe_ending.1058.title desc = hbe_ending.1058.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_granary_common }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_2_1 NOT = { has_variable = hbe_afterword_southwestern_valleys_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_2_1 set_variable = hbe_afterword_southwestern_valleys_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_2_1 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_2_completed has_variable = hbe_afterword_southwestern_valleys_2_1_seen has_variable = hbe_afterword_southwestern_valleys_2_2_seen has_variable = hbe_afterword_southwestern_valleys_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_2_1 remove_variable = hbe_afterword_southwestern_valleys_2_2 remove_variable = hbe_afterword_southwestern_valleys_2_3 set_variable = hbe_afterword_southwestern_valleys_2_completed set_variable = hbe_afterword_southwestern_valleys_2_1_seen } }
  option = { name = hbe_ending.1058.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1059 = {
  type = country_event title = hbe_ending.1059.title desc = hbe_ending.1059.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_sponsored }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_2_2 NOT = { has_variable = hbe_afterword_southwestern_valleys_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_2_2 set_variable = hbe_afterword_southwestern_valleys_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_2_2 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_2_completed has_variable = hbe_afterword_southwestern_valleys_2_1_seen has_variable = hbe_afterword_southwestern_valleys_2_2_seen has_variable = hbe_afterword_southwestern_valleys_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_2_1 remove_variable = hbe_afterword_southwestern_valleys_2_2 remove_variable = hbe_afterword_southwestern_valleys_2_3 set_variable = hbe_afterword_southwestern_valleys_2_completed set_variable = hbe_afterword_southwestern_valleys_2_2_seen } }
  option = { name = hbe_ending.1059.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1060 = {
  type = country_event title = hbe_ending.1060.title desc = hbe_ending.1060.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_2_3 NOT = { has_variable = hbe_afterword_southwestern_valleys_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_2_3 set_variable = hbe_afterword_southwestern_valleys_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_2_3 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_2_completed has_variable = hbe_afterword_southwestern_valleys_2_1_seen has_variable = hbe_afterword_southwestern_valleys_2_2_seen has_variable = hbe_afterword_southwestern_valleys_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_2_1 remove_variable = hbe_afterword_southwestern_valleys_2_2 remove_variable = hbe_afterword_southwestern_valleys_2_3 set_variable = hbe_afterword_southwestern_valleys_2_completed set_variable = hbe_afterword_southwestern_valleys_2_3_seen } }
  option = { name = hbe_ending.1060.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1061 = {
  type = country_event title = hbe_ending.1061.title desc = hbe_ending.1061.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_3_1 NOT = { has_variable = hbe_afterword_southwestern_valleys_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_3_1 set_variable = hbe_afterword_southwestern_valleys_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_3_1 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_3_completed has_variable = hbe_afterword_southwestern_valleys_3_1_seen has_variable = hbe_afterword_southwestern_valleys_3_2_seen has_variable = hbe_afterword_southwestern_valleys_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_3_1 remove_variable = hbe_afterword_southwestern_valleys_3_2 remove_variable = hbe_afterword_southwestern_valleys_3_3 set_variable = hbe_afterword_southwestern_valleys_3_completed set_variable = hbe_afterword_southwestern_valleys_3_1_seen } }
  option = { name = hbe_ending.1061.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1062 = {
  type = country_event title = hbe_ending.1062.title desc = hbe_ending.1062.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_private }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_3_2 NOT = { has_variable = hbe_afterword_southwestern_valleys_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_3_2 set_variable = hbe_afterword_southwestern_valleys_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_3_2 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_3_completed has_variable = hbe_afterword_southwestern_valleys_3_1_seen has_variable = hbe_afterword_southwestern_valleys_3_2_seen has_variable = hbe_afterword_southwestern_valleys_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_3_1 remove_variable = hbe_afterword_southwestern_valleys_3_2 remove_variable = hbe_afterword_southwestern_valleys_3_3 set_variable = hbe_afterword_southwestern_valleys_3_completed set_variable = hbe_afterword_southwestern_valleys_3_2_seen } }
  option = { name = hbe_ending.1062.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1063 = {
  type = country_event title = hbe_ending.1063.title desc = hbe_ending.1063.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_southwestern_valleys_3_3 NOT = { has_variable = hbe_afterword_southwestern_valleys_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_3_3 set_variable = hbe_afterword_southwestern_valleys_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_southwestern_valleys_3_3 NOT = { OR = { has_variable = hbe_afterword_southwestern_valleys_3_completed has_variable = hbe_afterword_southwestern_valleys_3_1_seen has_variable = hbe_afterword_southwestern_valleys_3_2_seen has_variable = hbe_afterword_southwestern_valleys_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_southwestern_valleys_3_1 remove_variable = hbe_afterword_southwestern_valleys_3_2 remove_variable = hbe_afterword_southwestern_valleys_3_3 set_variable = hbe_afterword_southwestern_valleys_3_completed set_variable = hbe_afterword_southwestern_valleys_3_3_seen } }
  option = { name = hbe_ending.1063.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1064 = {
  type = country_event title = hbe_ending.1064.title desc = hbe_ending.1064.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_open }
- trigger = { has_variable = hbe_afterword_shared_1_1 NOT = { has_variable = hbe_afterword_shared_1_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_1_1 set_variable = hbe_afterword_shared_1_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_1_1 NOT = { OR = { has_variable = hbe_afterword_shared_1_completed has_variable = hbe_afterword_shared_1_1_seen has_variable = hbe_afterword_shared_1_2_seen has_variable = hbe_afterword_shared_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_1_1 remove_variable = hbe_afterword_shared_1_2 remove_variable = hbe_afterword_shared_1_3 set_variable = hbe_afterword_shared_1_completed set_variable = hbe_afterword_shared_1_1_seen } }
  option = { name = hbe_ending.1064.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1065 = {
  type = country_event title = hbe_ending.1065.title desc = hbe_ending.1065.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_regulated }
- trigger = { has_variable = hbe_afterword_shared_1_2 NOT = { has_variable = hbe_afterword_shared_1_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_1_2 set_variable = hbe_afterword_shared_1_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_1_2 NOT = { OR = { has_variable = hbe_afterword_shared_1_completed has_variable = hbe_afterword_shared_1_1_seen has_variable = hbe_afterword_shared_1_2_seen has_variable = hbe_afterword_shared_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_1_1 remove_variable = hbe_afterword_shared_1_2 remove_variable = hbe_afterword_shared_1_3 set_variable = hbe_afterword_shared_1_completed set_variable = hbe_afterword_shared_1_2_seen } }
  option = { name = hbe_ending.1065.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1066 = {
  type = country_event title = hbe_ending.1066.title desc = hbe_ending.1066.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_shared_1_3 NOT = { has_variable = hbe_afterword_shared_1_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_1_3 set_variable = hbe_afterword_shared_1_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_1_3 NOT = { OR = { has_variable = hbe_afterword_shared_1_completed has_variable = hbe_afterword_shared_1_1_seen has_variable = hbe_afterword_shared_1_2_seen has_variable = hbe_afterword_shared_1_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_1_1 remove_variable = hbe_afterword_shared_1_2 remove_variable = hbe_afterword_shared_1_3 set_variable = hbe_afterword_shared_1_completed set_variable = hbe_afterword_shared_1_3_seen } }
  option = { name = hbe_ending.1066.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1067 = {
  type = country_event title = hbe_ending.1067.title desc = hbe_ending.1067.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_open }
- trigger = { has_variable = hbe_afterword_shared_2_1 NOT = { has_variable = hbe_afterword_shared_2_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_2_1 set_variable = hbe_afterword_shared_2_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_2_1 NOT = { OR = { has_variable = hbe_afterword_shared_2_completed has_variable = hbe_afterword_shared_2_1_seen has_variable = hbe_afterword_shared_2_2_seen has_variable = hbe_afterword_shared_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_2_1 remove_variable = hbe_afterword_shared_2_2 remove_variable = hbe_afterword_shared_2_3 set_variable = hbe_afterword_shared_2_completed set_variable = hbe_afterword_shared_2_1_seen } }
  option = { name = hbe_ending.1067.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1068 = {
  type = country_event title = hbe_ending.1068.title desc = hbe_ending.1068.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_sponsored }
- trigger = { has_variable = hbe_afterword_shared_2_2 NOT = { has_variable = hbe_afterword_shared_2_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_2_2 set_variable = hbe_afterword_shared_2_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_2_2 NOT = { OR = { has_variable = hbe_afterword_shared_2_completed has_variable = hbe_afterword_shared_2_1_seen has_variable = hbe_afterword_shared_2_2_seen has_variable = hbe_afterword_shared_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_2_1 remove_variable = hbe_afterword_shared_2_2 remove_variable = hbe_afterword_shared_2_3 set_variable = hbe_afterword_shared_2_completed set_variable = hbe_afterword_shared_2_2_seen } }
  option = { name = hbe_ending.1068.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1069 = {
  type = country_event title = hbe_ending.1069.title desc = hbe_ending.1069.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_bridge_commons }
- trigger = { has_variable = hbe_afterword_shared_2_3 NOT = { has_variable = hbe_afterword_shared_2_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_2_3 set_variable = hbe_afterword_shared_2_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_2_3 NOT = { OR = { has_variable = hbe_afterword_shared_2_completed has_variable = hbe_afterword_shared_2_1_seen has_variable = hbe_afterword_shared_2_2_seen has_variable = hbe_afterword_shared_2_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_2_1 remove_variable = hbe_afterword_shared_2_2 remove_variable = hbe_afterword_shared_2_3 set_variable = hbe_afterword_shared_2_completed set_variable = hbe_afterword_shared_2_3_seen } }
  option = { name = hbe_ending.1069.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1070 = {
  type = country_event title = hbe_ending.1070.title desc = hbe_ending.1070.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_shipyard }
- trigger = { has_variable = hbe_afterword_shared_3_1 NOT = { has_variable = hbe_afterword_shared_3_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_3_1 set_variable = hbe_afterword_shared_3_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_3_1 NOT = { OR = { has_variable = hbe_afterword_shared_3_completed has_variable = hbe_afterword_shared_3_1_seen has_variable = hbe_afterword_shared_3_2_seen has_variable = hbe_afterword_shared_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_3_1 remove_variable = hbe_afterword_shared_3_2 remove_variable = hbe_afterword_shared_3_3 set_variable = hbe_afterword_shared_3_completed set_variable = hbe_afterword_shared_3_1_seen } }
  option = { name = hbe_ending.1070.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1071 = {
  type = country_event title = hbe_ending.1071.title desc = hbe_ending.1071.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_market_regulated }
- trigger = { has_variable = hbe_afterword_shared_3_2 NOT = { has_variable = hbe_afterword_shared_3_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_3_2 set_variable = hbe_afterword_shared_3_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_3_2 NOT = { OR = { has_variable = hbe_afterword_shared_3_completed has_variable = hbe_afterword_shared_3_1_seen has_variable = hbe_afterword_shared_3_2_seen has_variable = hbe_afterword_shared_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_3_1 remove_variable = hbe_afterword_shared_3_2 remove_variable = hbe_afterword_shared_3_3 set_variable = hbe_afterword_shared_3_completed set_variable = hbe_afterword_shared_3_2_seen } }
  option = { name = hbe_ending.1071.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1072 = {
  type = country_event title = hbe_ending.1072.title desc = hbe_ending.1072.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_medicine_public }
- trigger = { has_variable = hbe_afterword_shared_3_3 NOT = { has_variable = hbe_afterword_shared_3_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_3_3 set_variable = hbe_afterword_shared_3_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_3_3 NOT = { OR = { has_variable = hbe_afterword_shared_3_completed has_variable = hbe_afterword_shared_3_1_seen has_variable = hbe_afterword_shared_3_2_seen has_variable = hbe_afterword_shared_3_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_3_1 remove_variable = hbe_afterword_shared_3_2 remove_variable = hbe_afterword_shared_3_3 set_variable = hbe_afterword_shared_3_completed set_variable = hbe_afterword_shared_3_3_seen } }
  option = { name = hbe_ending.1072.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1073 = {
  type = country_event title = hbe_ending.1073.title desc = hbe_ending.1073.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_shared_4_1 NOT = { has_variable = hbe_afterword_shared_4_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_4_1 set_variable = hbe_afterword_shared_4_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_4_1 NOT = { OR = { has_variable = hbe_afterword_shared_4_completed has_variable = hbe_afterword_shared_4_1_seen has_variable = hbe_afterword_shared_4_2_seen has_variable = hbe_afterword_shared_4_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_4_1 remove_variable = hbe_afterword_shared_4_2 remove_variable = hbe_afterword_shared_4_3 set_variable = hbe_afterword_shared_4_completed set_variable = hbe_afterword_shared_4_1_seen } }
  option = { name = hbe_ending.1073.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1074 = {
  type = country_event title = hbe_ending.1074.title desc = hbe_ending.1074.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_private }
- trigger = { has_variable = hbe_afterword_shared_4_2 NOT = { has_variable = hbe_afterword_shared_4_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_4_2 set_variable = hbe_afterword_shared_4_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_4_2 NOT = { OR = { has_variable = hbe_afterword_shared_4_completed has_variable = hbe_afterword_shared_4_1_seen has_variable = hbe_afterword_shared_4_2_seen has_variable = hbe_afterword_shared_4_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_4_1 remove_variable = hbe_afterword_shared_4_2 remove_variable = hbe_afterword_shared_4_3 set_variable = hbe_afterword_shared_4_completed set_variable = hbe_afterword_shared_4_2_seen } }
  option = { name = hbe_ending.1074.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1075 = {
  type = country_event title = hbe_ending.1075.title desc = hbe_ending.1075.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_shared_4_3 NOT = { has_variable = hbe_afterword_shared_4_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_4_3 set_variable = hbe_afterword_shared_4_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_4_3 NOT = { OR = { has_variable = hbe_afterword_shared_4_completed has_variable = hbe_afterword_shared_4_1_seen has_variable = hbe_afterword_shared_4_2_seen has_variable = hbe_afterword_shared_4_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_4_1 remove_variable = hbe_afterword_shared_4_2 remove_variable = hbe_afterword_shared_4_3 set_variable = hbe_afterword_shared_4_completed set_variable = hbe_afterword_shared_4_3_seen } }
  option = { name = hbe_ending.1075.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1076 = {
  type = country_event title = hbe_ending.1076.title desc = hbe_ending.1076.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_festival }
- trigger = { has_variable = hbe_afterword_shared_5_1 NOT = { has_variable = hbe_afterword_shared_5_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_5_1 set_variable = hbe_afterword_shared_5_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_5_1 NOT = { OR = { has_variable = hbe_afterword_shared_5_completed has_variable = hbe_afterword_shared_5_1_seen has_variable = hbe_afterword_shared_5_2_seen has_variable = hbe_afterword_shared_5_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_5_1 remove_variable = hbe_afterword_shared_5_2 remove_variable = hbe_afterword_shared_5_3 set_variable = hbe_afterword_shared_5_completed set_variable = hbe_afterword_shared_5_1_seen } }
  option = { name = hbe_ending.1076.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1077 = {
  type = country_event title = hbe_ending.1077.title desc = hbe_ending.1077.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_office }
- trigger = { has_variable = hbe_afterword_shared_5_2 NOT = { has_variable = hbe_afterword_shared_5_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_5_2 set_variable = hbe_afterword_shared_5_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_5_2 NOT = { OR = { has_variable = hbe_afterword_shared_5_completed has_variable = hbe_afterword_shared_5_1_seen has_variable = hbe_afterword_shared_5_2_seen has_variable = hbe_afterword_shared_5_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_5_1 remove_variable = hbe_afterword_shared_5_2 remove_variable = hbe_afterword_shared_5_3 set_variable = hbe_afterword_shared_5_completed set_variable = hbe_afterword_shared_5_2_seen } }
  option = { name = hbe_ending.1077.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1078 = {
  type = country_event title = hbe_ending.1078.title desc = hbe_ending.1078.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_terrace_commons }
- trigger = { has_variable = hbe_afterword_shared_5_3 NOT = { has_variable = hbe_afterword_shared_5_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_5_3 set_variable = hbe_afterword_shared_5_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_5_3 NOT = { OR = { has_variable = hbe_afterword_shared_5_completed has_variable = hbe_afterword_shared_5_1_seen has_variable = hbe_afterword_shared_5_2_seen has_variable = hbe_afterword_shared_5_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_5_1 remove_variable = hbe_afterword_shared_5_2 remove_variable = hbe_afterword_shared_5_3 set_variable = hbe_afterword_shared_5_completed set_variable = hbe_afterword_shared_5_3_seen } }
  option = { name = hbe_ending.1078.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1079 = {
  type = country_event title = hbe_ending.1079.title desc = hbe_ending.1079.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_medicine_public }
- trigger = { has_variable = hbe_afterword_shared_6_1 NOT = { has_variable = hbe_afterword_shared_6_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_6_1 set_variable = hbe_afterword_shared_6_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_6_1 NOT = { OR = { has_variable = hbe_afterword_shared_6_completed has_variable = hbe_afterword_shared_6_1_seen has_variable = hbe_afterword_shared_6_2_seen has_variable = hbe_afterword_shared_6_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_6_1 remove_variable = hbe_afterword_shared_6_2 remove_variable = hbe_afterword_shared_6_3 set_variable = hbe_afterword_shared_6_completed set_variable = hbe_afterword_shared_6_1_seen } }
  option = { name = hbe_ending.1079.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1080 = {
  type = country_event title = hbe_ending.1080.title desc = hbe_ending.1080.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_medicine_guild }
- trigger = { has_variable = hbe_afterword_shared_6_2 NOT = { has_variable = hbe_afterword_shared_6_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_6_2 set_variable = hbe_afterword_shared_6_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_6_2 NOT = { OR = { has_variable = hbe_afterword_shared_6_completed has_variable = hbe_afterword_shared_6_1_seen has_variable = hbe_afterword_shared_6_2_seen has_variable = hbe_afterword_shared_6_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_6_1 remove_variable = hbe_afterword_shared_6_2 remove_variable = hbe_afterword_shared_6_3 set_variable = hbe_afterword_shared_6_completed set_variable = hbe_afterword_shared_6_2_seen } }
  option = { name = hbe_ending.1080.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1081 = {
  type = country_event title = hbe_ending.1081.title desc = hbe_ending.1081.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_medicine }
- trigger = { has_variable = hbe_afterword_shared_6_3 NOT = { has_variable = hbe_afterword_shared_6_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_6_3 set_variable = hbe_afterword_shared_6_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_6_3 NOT = { OR = { has_variable = hbe_afterword_shared_6_completed has_variable = hbe_afterword_shared_6_1_seen has_variable = hbe_afterword_shared_6_2_seen has_variable = hbe_afterword_shared_6_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_6_1 remove_variable = hbe_afterword_shared_6_2 remove_variable = hbe_afterword_shared_6_3 set_variable = hbe_afterword_shared_6_completed set_variable = hbe_afterword_shared_6_3_seen } }
  option = { name = hbe_ending.1081.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1082 = {
  type = country_event title = hbe_ending.1082.title desc = hbe_ending.1082.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_granary_common }
- trigger = { has_variable = hbe_afterword_shared_7_1 NOT = { has_variable = hbe_afterword_shared_7_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_7_1 set_variable = hbe_afterword_shared_7_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_7_1 NOT = { OR = { has_variable = hbe_afterword_shared_7_completed has_variable = hbe_afterword_shared_7_1_seen has_variable = hbe_afterword_shared_7_2_seen has_variable = hbe_afterword_shared_7_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_7_1 remove_variable = hbe_afterword_shared_7_2 remove_variable = hbe_afterword_shared_7_3 set_variable = hbe_afterword_shared_7_completed set_variable = hbe_afterword_shared_7_1_seen } }
  option = { name = hbe_ending.1082.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1083 = {
  type = country_event title = hbe_ending.1083.title desc = hbe_ending.1083.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_land_registry }
- trigger = { has_variable = hbe_afterword_shared_7_2 NOT = { has_variable = hbe_afterword_shared_7_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_7_2 set_variable = hbe_afterword_shared_7_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_7_2 NOT = { OR = { has_variable = hbe_afterword_shared_7_completed has_variable = hbe_afterword_shared_7_1_seen has_variable = hbe_afterword_shared_7_2_seen has_variable = hbe_afterword_shared_7_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_7_1 remove_variable = hbe_afterword_shared_7_2 remove_variable = hbe_afterword_shared_7_3 set_variable = hbe_afterword_shared_7_completed set_variable = hbe_afterword_shared_7_2_seen } }
  option = { name = hbe_ending.1083.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1084 = {
  type = country_event title = hbe_ending.1084.title desc = hbe_ending.1084.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_public }
- trigger = { has_variable = hbe_afterword_shared_7_3 NOT = { has_variable = hbe_afterword_shared_7_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_7_3 set_variable = hbe_afterword_shared_7_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_7_3 NOT = { OR = { has_variable = hbe_afterword_shared_7_completed has_variable = hbe_afterword_shared_7_1_seen has_variable = hbe_afterword_shared_7_2_seen has_variable = hbe_afterword_shared_7_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_7_1 remove_variable = hbe_afterword_shared_7_2 remove_variable = hbe_afterword_shared_7_3 set_variable = hbe_afterword_shared_7_completed set_variable = hbe_afterword_shared_7_3_seen } }
  option = { name = hbe_ending.1084.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1085 = {
  type = country_event title = hbe_ending.1085.title desc = hbe_ending.1085.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_public }
- trigger = { has_variable = hbe_afterword_shared_8_1 NOT = { has_variable = hbe_afterword_shared_8_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_8_1 set_variable = hbe_afterword_shared_8_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_8_1 NOT = { OR = { has_variable = hbe_afterword_shared_8_completed has_variable = hbe_afterword_shared_8_1_seen has_variable = hbe_afterword_shared_8_2_seen has_variable = hbe_afterword_shared_8_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_8_1 remove_variable = hbe_afterword_shared_8_2 remove_variable = hbe_afterword_shared_8_3 set_variable = hbe_afterword_shared_8_completed set_variable = hbe_afterword_shared_8_1_seen } }
  option = { name = hbe_ending.1085.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1086 = {
  type = country_event title = hbe_ending.1086.title desc = hbe_ending.1086.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_guild }
- trigger = { has_variable = hbe_afterword_shared_8_2 NOT = { has_variable = hbe_afterword_shared_8_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_8_2 set_variable = hbe_afterword_shared_8_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_8_2 NOT = { OR = { has_variable = hbe_afterword_shared_8_completed has_variable = hbe_afterword_shared_8_1_seen has_variable = hbe_afterword_shared_8_2_seen has_variable = hbe_afterword_shared_8_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_8_1 remove_variable = hbe_afterword_shared_8_2 remove_variable = hbe_afterword_shared_8_3 set_variable = hbe_afterword_shared_8_completed set_variable = hbe_afterword_shared_8_2_seen } }
  option = { name = hbe_ending.1086.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1087 = {
  type = country_event title = hbe_ending.1087.title desc = hbe_ending.1087.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_craft_archive }
- trigger = { has_variable = hbe_afterword_shared_8_3 NOT = { has_variable = hbe_afterword_shared_8_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_8_3 set_variable = hbe_afterword_shared_8_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_8_3 NOT = { OR = { has_variable = hbe_afterword_shared_8_completed has_variable = hbe_afterword_shared_8_1_seen has_variable = hbe_afterword_shared_8_2_seen has_variable = hbe_afterword_shared_8_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_8_1 remove_variable = hbe_afterword_shared_8_2 remove_variable = hbe_afterword_shared_8_3 set_variable = hbe_afterword_shared_8_completed set_variable = hbe_afterword_shared_8_3_seen } }
  option = { name = hbe_ending.1087.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1088 = {
  type = country_event title = hbe_ending.1088.title desc = hbe_ending.1088.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_open }
- trigger = { has_variable = hbe_afterword_shared_9_1 NOT = { has_variable = hbe_afterword_shared_9_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_9_1 set_variable = hbe_afterword_shared_9_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_9_1 NOT = { OR = { has_variable = hbe_afterword_shared_9_completed has_variable = hbe_afterword_shared_9_1_seen has_variable = hbe_afterword_shared_9_2_seen has_variable = hbe_afterword_shared_9_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_9_1 remove_variable = hbe_afterword_shared_9_2 remove_variable = hbe_afterword_shared_9_3 set_variable = hbe_afterword_shared_9_completed set_variable = hbe_afterword_shared_9_1_seen } }
  option = { name = hbe_ending.1088.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1089 = {
  type = country_event title = hbe_ending.1089.title desc = hbe_ending.1089.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_sponsored }
- trigger = { has_variable = hbe_afterword_shared_9_2 NOT = { has_variable = hbe_afterword_shared_9_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_9_2 set_variable = hbe_afterword_shared_9_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_9_2 NOT = { OR = { has_variable = hbe_afterword_shared_9_completed has_variable = hbe_afterword_shared_9_1_seen has_variable = hbe_afterword_shared_9_2_seen has_variable = hbe_afterword_shared_9_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_9_1 remove_variable = hbe_afterword_shared_9_2 remove_variable = hbe_afterword_shared_9_3 set_variable = hbe_afterword_shared_9_completed set_variable = hbe_afterword_shared_9_2_seen } }
  option = { name = hbe_ending.1089.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1090 = {
  type = country_event title = hbe_ending.1090.title desc = hbe_ending.1090.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_shared_9_3 NOT = { has_variable = hbe_afterword_shared_9_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_9_3 set_variable = hbe_afterword_shared_9_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_9_3 NOT = { OR = { has_variable = hbe_afterword_shared_9_completed has_variable = hbe_afterword_shared_9_1_seen has_variable = hbe_afterword_shared_9_2_seen has_variable = hbe_afterword_shared_9_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_9_1 remove_variable = hbe_afterword_shared_9_2 remove_variable = hbe_afterword_shared_9_3 set_variable = hbe_afterword_shared_9_completed set_variable = hbe_afterword_shared_9_3_seen } }
  option = { name = hbe_ending.1090.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1091 = {
  type = country_event title = hbe_ending.1091.title desc = hbe_ending.1091.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_council_public }
- trigger = { has_variable = hbe_afterword_shared_10_1 NOT = { has_variable = hbe_afterword_shared_10_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_10_1 set_variable = hbe_afterword_shared_10_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_10_1 NOT = { OR = { has_variable = hbe_afterword_shared_10_completed has_variable = hbe_afterword_shared_10_1_seen has_variable = hbe_afterword_shared_10_2_seen has_variable = hbe_afterword_shared_10_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_10_1 remove_variable = hbe_afterword_shared_10_2 remove_variable = hbe_afterword_shared_10_3 set_variable = hbe_afterword_shared_10_completed set_variable = hbe_afterword_shared_10_1_seen } }
  option = { name = hbe_ending.1091.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1092 = {
  type = country_event title = hbe_ending.1092.title desc = hbe_ending.1092.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_private }
- trigger = { has_variable = hbe_afterword_shared_10_2 NOT = { has_variable = hbe_afterword_shared_10_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_10_2 set_variable = hbe_afterword_shared_10_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_10_2 NOT = { OR = { has_variable = hbe_afterword_shared_10_completed has_variable = hbe_afterword_shared_10_1_seen has_variable = hbe_afterword_shared_10_2_seen has_variable = hbe_afterword_shared_10_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_10_1 remove_variable = hbe_afterword_shared_10_2 remove_variable = hbe_afterword_shared_10_3 set_variable = hbe_afterword_shared_10_completed set_variable = hbe_afterword_shared_10_2_seen } }
  option = { name = hbe_ending.1092.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1093 = {
  type = country_event title = hbe_ending.1093.title desc = hbe_ending.1093.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_bridge_bureau }
- trigger = { has_variable = hbe_afterword_shared_10_3 NOT = { has_variable = hbe_afterword_shared_10_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_10_3 set_variable = hbe_afterword_shared_10_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_10_3 NOT = { OR = { has_variable = hbe_afterword_shared_10_completed has_variable = hbe_afterword_shared_10_1_seen has_variable = hbe_afterword_shared_10_2_seen has_variable = hbe_afterword_shared_10_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_10_1 remove_variable = hbe_afterword_shared_10_2 remove_variable = hbe_afterword_shared_10_3 set_variable = hbe_afterword_shared_10_completed set_variable = hbe_afterword_shared_10_3_seen } }
  option = { name = hbe_ending.1093.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1094 = {
  type = country_event title = hbe_ending.1094.title desc = hbe_ending.1094.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_commons }
- trigger = { has_variable = hbe_afterword_shared_11_1 NOT = { has_variable = hbe_afterword_shared_11_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_11_1 set_variable = hbe_afterword_shared_11_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_11_1 NOT = { OR = { has_variable = hbe_afterword_shared_11_completed has_variable = hbe_afterword_shared_11_1_seen has_variable = hbe_afterword_shared_11_2_seen has_variable = hbe_afterword_shared_11_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_11_1 remove_variable = hbe_afterword_shared_11_2 remove_variable = hbe_afterword_shared_11_3 set_variable = hbe_afterword_shared_11_completed set_variable = hbe_afterword_shared_11_1_seen } }
  option = { name = hbe_ending.1094.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1095 = {
  type = country_event title = hbe_ending.1095.title desc = hbe_ending.1095.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_river_convoy }
- trigger = { has_variable = hbe_afterword_shared_11_2 NOT = { has_variable = hbe_afterword_shared_11_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_11_2 set_variable = hbe_afterword_shared_11_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_11_2 NOT = { OR = { has_variable = hbe_afterword_shared_11_completed has_variable = hbe_afterword_shared_11_1_seen has_variable = hbe_afterword_shared_11_2_seen has_variable = hbe_afterword_shared_11_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_11_1 remove_variable = hbe_afterword_shared_11_2 remove_variable = hbe_afterword_shared_11_3 set_variable = hbe_afterword_shared_11_completed set_variable = hbe_afterword_shared_11_2_seen } }
  option = { name = hbe_ending.1095.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1096 = {
  type = country_event title = hbe_ending.1096.title desc = hbe_ending.1096.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_shipyard }
- trigger = { has_variable = hbe_afterword_shared_11_3 NOT = { has_variable = hbe_afterword_shared_11_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_11_3 set_variable = hbe_afterword_shared_11_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_11_3 NOT = { OR = { has_variable = hbe_afterword_shared_11_completed has_variable = hbe_afterword_shared_11_1_seen has_variable = hbe_afterword_shared_11_2_seen has_variable = hbe_afterword_shared_11_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_11_1 remove_variable = hbe_afterword_shared_11_2 remove_variable = hbe_afterword_shared_11_3 set_variable = hbe_afterword_shared_11_completed set_variable = hbe_afterword_shared_11_3_seen } }
  option = { name = hbe_ending.1096.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1097 = {
  type = country_event title = hbe_ending.1097.title desc = hbe_ending.1097.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_memorial_common }
- trigger = { has_variable = hbe_afterword_shared_12_1 NOT = { has_variable = hbe_afterword_shared_12_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_12_1 set_variable = hbe_afterword_shared_12_1_seen } }
+ trigger = { has_variable = hbe_afterword_shared_12_1 NOT = { OR = { has_variable = hbe_afterword_shared_12_completed has_variable = hbe_afterword_shared_12_1_seen has_variable = hbe_afterword_shared_12_2_seen has_variable = hbe_afterword_shared_12_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_12_1 remove_variable = hbe_afterword_shared_12_2 remove_variable = hbe_afterword_shared_12_3 set_variable = hbe_afterword_shared_12_completed set_variable = hbe_afterword_shared_12_1_seen } }
  option = { name = hbe_ending.1097.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1098 = {
  type = country_event title = hbe_ending.1098.title desc = hbe_ending.1098.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_reading_private }
- trigger = { has_variable = hbe_afterword_shared_12_2 NOT = { has_variable = hbe_afterword_shared_12_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_12_2 set_variable = hbe_afterword_shared_12_2_seen } }
+ trigger = { has_variable = hbe_afterword_shared_12_2 NOT = { OR = { has_variable = hbe_afterword_shared_12_completed has_variable = hbe_afterword_shared_12_1_seen has_variable = hbe_afterword_shared_12_2_seen has_variable = hbe_afterword_shared_12_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_12_1 remove_variable = hbe_afterword_shared_12_2 remove_variable = hbe_afterword_shared_12_3 set_variable = hbe_afterword_shared_12_completed set_variable = hbe_afterword_shared_12_2_seen } }
  option = { name = hbe_ending.1098.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.1099 = {
  type = country_event title = hbe_ending.1099.title desc = hbe_ending.1099.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_festival }
- trigger = { has_variable = hbe_afterword_shared_12_3 NOT = { has_variable = hbe_afterword_shared_12_3_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_12_3 set_variable = hbe_afterword_shared_12_3_seen } }
+ trigger = { has_variable = hbe_afterword_shared_12_3 NOT = { OR = { has_variable = hbe_afterword_shared_12_completed has_variable = hbe_afterword_shared_12_1_seen has_variable = hbe_afterword_shared_12_2_seen has_variable = hbe_afterword_shared_12_3_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_shared_12_1 remove_variable = hbe_afterword_shared_12_2 remove_variable = hbe_afterword_shared_12_3 set_variable = hbe_afterword_shared_12_completed set_variable = hbe_afterword_shared_12_3_seen } }
  option = { name = hbe_ending.1099.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.2001 = {
  type = country_event title = hbe_ending.2001.title desc = hbe_ending.2001.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_open }
- trigger = { has_variable = hbe_afterword_migration_1 NOT = { has_variable = hbe_afterword_migration_1_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_migration_1 set_variable = hbe_afterword_migration_1_seen } }
+ trigger = { has_variable = hbe_afterword_migration_1 NOT = { OR = { has_variable = hbe_afterword_migration_completed has_variable = hbe_afterword_migration_1_seen has_variable = hbe_afterword_migration_2_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_migration_1 remove_variable = hbe_afterword_migration_2 set_variable = hbe_afterword_migration_completed set_variable = hbe_afterword_migration_1_seen } }
  option = { name = hbe_ending.2001.a ai_chance = { base = 100 } }
 }
 
 hbe_ending.2002 = {
  type = country_event title = hbe_ending.2002.title desc = hbe_ending.2002.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_migration_sponsored }
- trigger = { has_variable = hbe_afterword_migration_2 NOT = { has_variable = hbe_afterword_migration_2_seen } }
- immediate = { hidden_effect = { remove_variable = hbe_afterword_migration_2 set_variable = hbe_afterword_migration_2_seen } }
+ trigger = { has_variable = hbe_afterword_migration_2 NOT = { OR = { has_variable = hbe_afterword_migration_completed has_variable = hbe_afterword_migration_1_seen has_variable = hbe_afterword_migration_2_seen } } }
+ immediate = { hidden_effect = { remove_variable = hbe_afterword_migration_1 remove_variable = hbe_afterword_migration_2 set_variable = hbe_afterword_migration_completed set_variable = hbe_afterword_migration_2_seen } }
  option = { name = hbe_ending.2002.a ai_chance = { base = 100 } }
 }

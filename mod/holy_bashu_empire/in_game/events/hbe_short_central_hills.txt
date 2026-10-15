@@ -26,7 +26,11 @@ add_prestige = -2 }
 hbe_short_central_hills.2 = {
  type = country_event title = hbe_short_central_hills.2.title desc = hbe_short_central_hills.2.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_terraces }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS } var:hbe_short_central_hills_1_phase = 1 NOT = { has_variable = hbe_short_central_hills_1_clock } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS } var:hbe_short_central_hills_1_phase = 1 NOT = { has_variable = hbe_short_central_hills_1_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ has_variable = hbe_short_central_hills_1_seen
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_short_central_hills.2.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_1_2_1 years = 3 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 3 }
@@ -48,7 +52,11 @@ add_prestige = -2 }
 hbe_short_central_hills.3 = {
  type = country_event title = hbe_short_central_hills.3.title desc = hbe_short_central_hills.3.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_terraces }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS } var:hbe_short_central_hills_1_phase = 2 NOT = { has_variable = hbe_short_central_hills_1_clock } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS } var:hbe_short_central_hills_1_phase = 2 NOT = { has_variable = hbe_short_central_hills_1_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ has_variable = hbe_short_central_hills_1_seen
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_short_central_hills.3.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_1 years = 4 mode = replace } hbe_grant_food_support_years = { strength = 6 duration = 4 }
@@ -56,7 +64,7 @@ set_variable = { name = hbe_short_central_hills_1_phase value = 3 }
 remove_variable = hbe_short_central_hills_1_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_1_1 trigger_event_non_silently = { id = hbe_ending.1037 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_1_completed has_variable = hbe_afterword_central_hills_1_1_seen has_variable = hbe_afterword_central_hills_1_2_seen has_variable = hbe_afterword_central_hills_1_3_seen has_variable = hbe_afterword_central_hills_1_1 has_variable = hbe_afterword_central_hills_1_2 has_variable = hbe_afterword_central_hills_1_3 } } } set_variable = hbe_afterword_central_hills_1_1 trigger_event_non_silently = { id = hbe_ending.1037 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.3.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_3 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
@@ -64,7 +72,7 @@ set_variable = { name = hbe_short_central_hills_1_phase value = 3 }
 remove_variable = hbe_short_central_hills_1_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_1_2 trigger_event_non_silently = { id = hbe_ending.1038 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_1_completed has_variable = hbe_afterword_central_hills_1_1_seen has_variable = hbe_afterword_central_hills_1_2_seen has_variable = hbe_afterword_central_hills_1_3_seen has_variable = hbe_afterword_central_hills_1_1 has_variable = hbe_afterword_central_hills_1_2 has_variable = hbe_afterword_central_hills_1_3 } } } set_variable = hbe_afterword_central_hills_1_2 trigger_event_non_silently = { id = hbe_ending.1038 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.3.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_1_3_3 years = 4 mode = replace }
@@ -72,7 +80,7 @@ set_variable = { name = hbe_short_central_hills_1_phase value = 3 }
 remove_variable = hbe_short_central_hills_1_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_1_3 trigger_event_non_silently = { id = hbe_ending.1039 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_1_completed has_variable = hbe_afterword_central_hills_1_1_seen has_variable = hbe_afterword_central_hills_1_2_seen has_variable = hbe_afterword_central_hills_1_3_seen has_variable = hbe_afterword_central_hills_1_1 has_variable = hbe_afterword_central_hills_1_2 has_variable = hbe_afterword_central_hills_1_3 } } } set_variable = hbe_afterword_central_hills_1_3 trigger_event_non_silently = { id = hbe_ending.1039 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_central_hills_1_phase value = 3 }
 remove_variable = hbe_short_central_hills_1_pending
@@ -105,7 +113,11 @@ add_prestige = -2 }
 hbe_short_central_hills.12 = {
  type = country_event title = hbe_short_central_hills.12.title desc = hbe_short_central_hills.12.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_craft }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBT } var:hbe_short_central_hills_2_phase = 1 NOT = { has_variable = hbe_short_central_hills_2_clock } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBT } var:hbe_short_central_hills_2_phase = 1 NOT = { has_variable = hbe_short_central_hills_2_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ has_variable = hbe_short_central_hills_2_seen
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_short_central_hills.12.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.21
@@ -129,7 +141,11 @@ add_prestige = -2 }
 hbe_short_central_hills.13 = {
  type = country_event title = hbe_short_central_hills.13.title desc = hbe_short_central_hills.13.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_craft }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBT } var:hbe_short_central_hills_2_phase = 2 NOT = { has_variable = hbe_short_central_hills_2_clock } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBT } var:hbe_short_central_hills_2_phase = 2 NOT = { has_variable = hbe_short_central_hills_2_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ has_variable = hbe_short_central_hills_2_seen
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_short_central_hills.13.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_research_progress = 0.28
@@ -138,14 +154,14 @@ set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
 remove_variable = hbe_short_central_hills_2_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_2_1 trigger_event_non_silently = { id = hbe_ending.1040 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_2_completed has_variable = hbe_afterword_central_hills_2_1_seen has_variable = hbe_afterword_central_hills_2_2_seen has_variable = hbe_afterword_central_hills_2_3_seen has_variable = hbe_afterword_central_hills_2_1 has_variable = hbe_afterword_central_hills_2_2 has_variable = hbe_afterword_central_hills_2_3 } } } set_variable = hbe_afterword_central_hills_2_1 trigger_event_non_silently = { id = hbe_ending.1040 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.13.b ai_chance = { base = 30 } add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_central_hills_2_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
 remove_variable = hbe_short_central_hills_2_pending
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_2_2 trigger_event_non_silently = { id = hbe_ending.1041 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_2_completed has_variable = hbe_afterword_central_hills_2_1_seen has_variable = hbe_afterword_central_hills_2_2_seen has_variable = hbe_afterword_central_hills_2_3_seen has_variable = hbe_afterword_central_hills_2_1 has_variable = hbe_afterword_central_hills_2_2 has_variable = hbe_afterword_central_hills_2_3 } } } set_variable = hbe_afterword_central_hills_2_2 trigger_event_non_silently = { id = hbe_ending.1041 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.14
@@ -154,7 +170,7 @@ set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
 remove_variable = hbe_short_central_hills_2_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_2_3 trigger_event_non_silently = { id = hbe_ending.1042 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_2_completed has_variable = hbe_afterword_central_hills_2_1_seen has_variable = hbe_afterword_central_hills_2_2_seen has_variable = hbe_afterword_central_hills_2_3_seen has_variable = hbe_afterword_central_hills_2_1 has_variable = hbe_afterword_central_hills_2_2 has_variable = hbe_afterword_central_hills_2_3 } } } set_variable = hbe_afterword_central_hills_2_3 trigger_event_non_silently = { id = hbe_ending.1042 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_central_hills_2_phase value = 3 }
 remove_variable = hbe_short_central_hills_2_pending
@@ -187,7 +203,11 @@ add_prestige = -2 }
 hbe_short_central_hills.22 = {
  type = country_event title = hbe_short_central_hills.22.title desc = hbe_short_central_hills.22.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_council }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } var:hbe_short_central_hills_3_phase = 1 NOT = { has_variable = hbe_short_central_hills_3_clock } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } var:hbe_short_central_hills_3_phase = 1 NOT = { has_variable = hbe_short_central_hills_3_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ has_variable = hbe_short_central_hills_3_seen
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_short_central_hills.22.a ai_chance = { base = 30 } add_prestige = -2
 add_country_modifier = { modifier = hbe_short_choice_central_hills_3_2_1 years = 3 mode = replace }
@@ -209,7 +229,11 @@ add_prestige = -2 }
 hbe_short_central_hills.23 = {
  type = country_event title = hbe_short_central_hills.23.title desc = hbe_short_central_hills.23.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_council }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } var:hbe_short_central_hills_3_phase = 2 NOT = { has_variable = hbe_short_central_hills_3_clock } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } var:hbe_short_central_hills_3_phase = 2 NOT = { has_variable = hbe_short_central_hills_3_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ has_variable = hbe_short_central_hills_3_seen
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_short_central_hills.23.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_3_3_1 years = 4 mode = replace }
@@ -217,7 +241,7 @@ set_variable = { name = hbe_short_central_hills_3_phase value = 3 }
 remove_variable = hbe_short_central_hills_3_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_3_1 trigger_event_non_silently = { id = hbe_ending.1043 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_3_completed has_variable = hbe_afterword_central_hills_3_1_seen has_variable = hbe_afterword_central_hills_3_2_seen has_variable = hbe_afterword_central_hills_3_3_seen has_variable = hbe_afterword_central_hills_3_1 has_variable = hbe_afterword_central_hills_3_2 has_variable = hbe_afterword_central_hills_3_3 } } } set_variable = hbe_afterword_central_hills_3_1 trigger_event_non_silently = { id = hbe_ending.1043 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.23.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_3_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
@@ -225,7 +249,7 @@ set_variable = { name = hbe_short_central_hills_3_phase value = 3 }
 remove_variable = hbe_short_central_hills_3_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_3_2 trigger_event_non_silently = { id = hbe_ending.1044 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_3_completed has_variable = hbe_afterword_central_hills_3_1_seen has_variable = hbe_afterword_central_hills_3_2_seen has_variable = hbe_afterword_central_hills_3_3_seen has_variable = hbe_afterword_central_hills_3_1 has_variable = hbe_afterword_central_hills_3_2 has_variable = hbe_afterword_central_hills_3_3 } } } set_variable = hbe_afterword_central_hills_3_2 trigger_event_non_silently = { id = hbe_ending.1044 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.23.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_central_hills_3_3_3 years = 4 mode = replace }
@@ -233,7 +257,7 @@ set_variable = { name = hbe_short_central_hills_3_phase value = 3 }
 remove_variable = hbe_short_central_hills_3_pending
 add_prestige = 1
  # HBE_ENDING_PRESENTATION_BEGIN
- hidden_effect = { set_variable = hbe_afterword_central_hills_3_3 trigger_event_non_silently = { id = hbe_ending.1045 days = 1 } }
+ hidden_effect = { if = { limit = { NOT = { OR = { has_variable = hbe_afterword_central_hills_3_completed has_variable = hbe_afterword_central_hills_3_1_seen has_variable = hbe_afterword_central_hills_3_2_seen has_variable = hbe_afterword_central_hills_3_3_seen has_variable = hbe_afterword_central_hills_3_1 has_variable = hbe_afterword_central_hills_3_2 has_variable = hbe_afterword_central_hills_3_3 } } } set_variable = hbe_afterword_central_hills_3_3 trigger_event_non_silently = { id = hbe_ending.1045 days = 1 } } }
  # HBE_ENDING_PRESENTATION_END
 } option = { name = hbe_short_central_hills.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_central_hills_3_phase value = 3 }
 remove_variable = hbe_short_central_hills_3_pending

@@ -60,7 +60,13 @@ def field(nodes, key, default=''):
 
 def scalar(value):
     if isinstance(value, list):
-        return field(value, 'text', field(value, 'desc', field(value, 'name', '')))
+        # The browser has no live country state: show the native fallback text.
+        first_valid = field(value, 'first_valid', None)
+        if first_valid is not None:
+            choices = [n['value'] for n in first_valid if n['key'] == 'triggered_desc']
+            fallback = next((n for n in choices if not field(n, 'trigger', None)), choices[-1] if choices else [])
+            return scalar(field(fallback, 'desc', ''))
+        return scalar(field(value, 'text', field(value, 'desc', field(value, 'name', ''))))
     return str(value).strip('"')
 
 def public(node):

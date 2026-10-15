@@ -31,11 +31,18 @@ class CatalogueTests(unittest.TestCase):
         e = self.events['hbe.100']
         self.assertEqual(e['title'], '争水')
         self.assertEqual(len(e['options']), 3)
-        self.assertEqual(field(e['options'][1]['effects'], 'add_gold'), '-6')
-        self.assertIn('gold >= 6', e['options'][1]['trigger'])
+        cost = field(e['options'][1]['effects'], 'add_gold')
+        self.assertEqual(field(cost, 'value'), 'hbe_event_cost_2')
+        self.assertEqual(field(cost, 'multiply'), '-1')
+        self.assertIn('gold >= hbe_event_cost_2', e['options'][1]['trigger'])
         self.assertIn('hbe_choice_chengdu_plain_2', self.data['definitions'])
         self.assertEqual(e['regions'], ['chengdu_plain'])
         self.assertTrue(e['incoming'])
+
+    def test_migration_conditional_description_keeps_readable_fallback(self):
+        e = self.events['hbe_migration.2']
+        self.assertIn('渡口仍有等待田地的人家', e['description'])
+        self.assertIn('hbe_migration_first_policy', e['raw'])
 
     def test_maintenance_and_notification_remain_distinct(self):
         e = self.events['hbe_opening_family.1']

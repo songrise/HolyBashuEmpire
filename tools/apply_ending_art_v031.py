@@ -60,15 +60,25 @@ def apply(out,root,game=None):
  put(reforms,t)
  epilogues=[];hooks=[];loc={};seen_names=set()
  def tag_for(art):return ('hbe_ending_art_' if art in {a['key'] for a in assets} else 'hbe_story_art_')+art
+ def group_flags(flag):
+  base=flag.rsplit('_',1)[0]
+  branches=[base+'_'+str(n) for n in range(1,3 if base=='hbe_afterword_migration' else 4)]
+  return base+'_completed',branches
+ def fresh_guard(flag,include_pending=False):
+  complete,branches=group_flags(flag)
+  keys=[complete]+[b+'_seen' for b in branches]+(branches if include_pending else [])
+  return 'NOT = { OR = { '+' '.join('has_variable = '+k for k in keys)+' } }'
  def epilogue(event_id,title,context,aftermath,art,flag):
+  complete,branches=group_flags(flag)
+  cleanup=' '.join('remove_variable = '+b for b in branches)
   loc[event_id+'.title']=title
   loc[event_id+'.desc']=context+'\n\n'+aftermath
   loc[event_id+'.a']='让这段往事留在本府的记忆里。'
   return f'''{event_id} = {{
  type = country_event title = {event_id}.title desc = {event_id}.desc outcome = neutral
  illustration_tags = {{ 1000 = {tag_for(art)} }}
- trigger = {{ has_variable = {flag} NOT = {{ has_variable = {flag}_seen }} }}
- immediate = {{ hidden_effect = {{ remove_variable = {flag} set_variable = {flag}_seen }} }}
+ trigger = {{ has_variable = {flag} {fresh_guard(flag)} }}
+ immediate = {{ hidden_effect = {{ {cleanup} set_variable = {complete} set_variable = {flag}_seen }} }}
  option = {{ name = {event_id}.a ai_chance = {{ base = 100 }} }}
 }}'''
  def append_hook(event,option_name,follow,flag):
@@ -78,7 +88,7 @@ def apply(out,root,game=None):
   match=next((b,e) for b,e in options if re.search(r'\bname\s*=\s*'+re.escape(option_name)+r'\b',event[b:e]))
   b,e=match;before=event[b:e]
   clean=re.sub(r'\n?\s*'+re.escape(begin)+r'.*?'+re.escape(end)+r'\s*','\n',before,flags=re.S)
-  hook='\n '+begin+'\n hidden_effect = { set_variable = '+flag+' trigger_event_non_silently = { id = '+follow+' days = 1 } }\n '+end+'\n'
+  hook='\n '+begin+'\n hidden_effect = { if = { limit = { '+fresh_guard(flag,True)+' } set_variable = '+flag+' trigger_event_non_silently = { id = '+follow+' days = 1 } } }\n '+end+'\n'
   after=clean.rstrip()+hook
   hooks.append(dict(source_option=option_name,event=follow,pending=flag,original_option_sha256=hashlib.sha256(normalized(clean).encode()).hexdigest()))
   return event[:b]+after+event[e:]

@@ -1,0 +1,93 @@
+{
+  "idempotent": true,
+  "rebuild_matches_generated_chains": true,
+  "compared_files": [
+    "in_game/events/hbe_ending_afterwords.txt",
+    "in_game/events/hbe_migration_events.txt",
+    "in_game/events/hbe_short_central_hills.txt",
+    "in_game/events/hbe_short_chengdu_plain.txt",
+    "in_game/events/hbe_short_eastern_river.txt",
+    "in_game/events/hbe_short_northern_shudao.txt",
+    "in_game/events/hbe_short_shared.txt",
+    "in_game/events/hbe_short_southern_salt_wine.txt",
+    "in_game/events/hbe_short_southwestern_valleys.txt",
+    "in_game/events/hbe_short_western_tea_horse.txt",
+    "in_game/events/hbe_story_central_hills.txt",
+    "in_game/events/hbe_story_chengdu_plain.txt",
+    "in_game/events/hbe_story_eastern_river.txt",
+    "in_game/events/hbe_story_northern_shudao.txt",
+    "in_game/events/hbe_story_southern_salt_wine.txt",
+    "in_game/events/hbe_story_southwestern_valleys.txt",
+    "in_game/events/hbe_story_western_tea_horse.txt",
+    "main_menu/localization/english/hbe_ending_l_english.yml",
+    "main_menu/localization/english/hbe_story_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_ending_l_simp_chinese.yml",
+    "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml"
+  ],
+  "economic_comparison": {
+    "baseline": "951256b",
+    "files": [
+      "hbe_migration_events.txt",
+      "hbe_short_central_hills.txt",
+      "hbe_short_chengdu_plain.txt",
+      "hbe_short_eastern_river.txt",
+      "hbe_short_northern_shudao.txt",
+      "hbe_short_shared.txt",
+      "hbe_short_southern_salt_wine.txt",
+      "hbe_short_southwestern_valleys.txt",
+      "hbe_short_western_tea_horse.txt",
+      "hbe_story_central_hills.txt",
+      "hbe_story_chengdu_plain.txt",
+      "hbe_story_eastern_river.txt",
+      "hbe_story_northern_shudao.txt",
+      "hbe_story_southern_salt_wine.txt",
+      "hbe_story_southwestern_valleys.txt",
+      "hbe_story_western_tea_horse.txt"
+    ],
+    "original_choices_economically_identical": true,
+    "scope": "Every original option trigger and effect token is unchanged after removing the delimited sequencing and presentation blocks."
+  },
+  "scope": "Full rebuild compared against the incremental patch; runtime and independent engine test reported separately.",
+  "engine_fixture_matches_final_chain_tokens": true,
+  "engine_compared_files": [
+    "in_game/events/hbe_ending_afterwords.txt",
+    "in_game/events/hbe_migration_events.txt",
+    "in_game/events/hbe_short_central_hills.txt",
+    "in_game/events/hbe_short_chengdu_plain.txt",
+    "in_game/events/hbe_short_eastern_river.txt",
+    "in_game/events/hbe_short_northern_shudao.txt",
+    "in_game/events/hbe_short_shared.txt",
+    "in_game/events/hbe_short_southern_salt_wine.txt",
+    "in_game/events/hbe_short_southwestern_valleys.txt",
+    "in_game/events/hbe_short_western_tea_horse.txt",
+    "in_game/events/hbe_story_central_hills.txt",
+    "in_game/events/hbe_story_chengdu_plain.txt",
+    "in_game/events/hbe_story_eastern_river.txt",
+    "in_game/events/hbe_story_northern_shudao.txt",
+    "in_game/events/hbe_story_southern_salt_wine.txt",
+    "in_game/events/hbe_story_southwestern_valleys.txt",
+    "in_game/events/hbe_story_western_tea_horse.txt",
+    "main_menu/localization/english/hbe_ending_l_english.yml",
+    "main_menu/localization/english/hbe_story_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_ending_l_simp_chinese.yml",
+    "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml"
+  ],
+  "local_install": {
+    "path": "C:\\Users\\songrise\\OneDrive\\文档\\Paradox Interactive\\Europa Universalis V\\mod\\holy_bashu_empire",
+    "source_files_identical": 709,
+    "backup": "holy_bashu_empire.20261015154459895"
+  },
+  "event_browser": {
+    "url": "http://127.0.0.1:8765/#hbe_migration.2",
+    "stats": {
+      "events": 508,
+      "visible": 506,
+      "hidden": 2,
+      "options": 1373,
+      "files": 21,
+      "implemented": 508,
+      "drafts": 0
+    },
+    "conditional_description_readable": true
+  }
+}

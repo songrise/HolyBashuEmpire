@@ -3,7 +3,11 @@
 hbe_story_chengdu_plain.1 = {
  type = country_event title = hbe_story_chengdu_plain.1.title desc = hbe_story_chengdu_plain.1.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 0 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 0 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock } current_year >= 1340
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.1.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.01 }
@@ -29,7 +33,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.2 = {
  type = country_event title = hbe_story_chengdu_plain.2.title desc = hbe_story_chengdu_plain.2.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 1 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 1 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.2.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
@@ -54,7 +62,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.3 = {
  type = country_event title = hbe_story_chengdu_plain.3.title desc = hbe_story_chengdu_plain.3.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 2 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 2 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.3.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.05 }
@@ -79,7 +91,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.4 = {
  type = country_event title = hbe_story_chengdu_plain.4.title desc = hbe_story_chengdu_plain.4.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 3 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 3 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.4.a ai_chance = { base = 35 } add_prestige = -3
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_4_1 years = 3 mode = replace }
@@ -104,7 +120,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.5 = {
  type = country_event title = hbe_story_chengdu_plain.5.title desc = hbe_story_chengdu_plain.5.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 4 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 4 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.5.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_5_1 years = 3 mode = replace }
@@ -129,7 +149,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.6 = {
  type = country_event title = hbe_story_chengdu_plain.6.title desc = hbe_story_chengdu_plain.6.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 5 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 5 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.6.a ai_chance = { base = 35 } add_prestige = 1
 add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_6_1 years = 3 mode = replace }
@@ -153,7 +177,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.7 = {
  type = country_event title = hbe_story_chengdu_plain.7.title desc = hbe_story_chengdu_plain.7.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 6 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 6 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.7.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }
@@ -178,7 +206,11 @@ add_prestige = -3 }
 hbe_story_chengdu_plain.201 = {
  type = country_event title = hbe_story_chengdu_plain.201.title desc = hbe_story_chengdu_plain.201.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_panda_sanctuary }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } has_variable = hbe_story_chengdu_plain_closed NOT = { has_variable = hbe_story_chengdu_plain_ending_1 } NOT = { has_variable = hbe_story_chengdu_plain_ending_2 } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } has_variable = hbe_story_chengdu_plain_closed NOT = { has_variable = hbe_story_chengdu_plain_ending_1 } NOT = { has_variable = hbe_story_chengdu_plain_ending_2 }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ var:hbe_story_chengdu_plain_phase = 8 NOT = { has_variable = hbe_story_chengdu_plain_abandoned } OR = { var:hbe_story_chengdu_plain_selected_ending = 1 AND = { NOT = { has_variable = hbe_story_chengdu_plain_selected_ending } var:hbe_story_chengdu_plain_direction >= 0 } }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.201.a ai_chance = { base = 100 } add_prestige = 4
 add_country_modifier = { modifier = hbe_story_ending_chengdu_plain_1 years = -1 mode = replace }
@@ -188,7 +220,11 @@ set_variable = hbe_story_chengdu_plain_ending_1 }
 hbe_story_chengdu_plain.202 = {
  type = country_event title = hbe_story_chengdu_plain.202.title desc = hbe_story_chengdu_plain.202.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_panda_garden }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } has_variable = hbe_story_chengdu_plain_closed NOT = { has_variable = hbe_story_chengdu_plain_ending_1 } NOT = { has_variable = hbe_story_chengdu_plain_ending_2 } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } has_variable = hbe_story_chengdu_plain_closed NOT = { has_variable = hbe_story_chengdu_plain_ending_1 } NOT = { has_variable = hbe_story_chengdu_plain_ending_2 }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ var:hbe_story_chengdu_plain_phase = 8 NOT = { has_variable = hbe_story_chengdu_plain_abandoned } OR = { var:hbe_story_chengdu_plain_selected_ending = 2 AND = { NOT = { has_variable = hbe_story_chengdu_plain_selected_ending } var:hbe_story_chengdu_plain_direction < 0 } }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.202.a ai_chance = { base = 100 } add_prestige = 4
 add_country_modifier = { modifier = hbe_story_ending_chengdu_plain_2 years = -1 mode = replace }
@@ -198,13 +234,29 @@ set_variable = hbe_story_chengdu_plain_ending_2 }
 hbe_story_chengdu_plain.8 = {
  type = country_event title = hbe_story_chengdu_plain.8.title desc = hbe_story_chengdu_plain.8.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_bamboo }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 7 NOT = { has_variable = hbe_story_chengdu_plain_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAJ } var:hbe_story_chengdu_plain_phase = 7 NOT = { has_variable = hbe_story_chengdu_plain_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_chengdu_plain_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_chengdu_plain.8.a trigger = { custom_tooltip = { text = hbe_story_chengdu_plain_ready_1_tt var:hbe_story_chengdu_plain_direction >= 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_chengdu_plain_closed set_variable = { name = hbe_story_chengdu_plain_phase value = 8 } remove_variable = hbe_story_chengdu_plain_pending }
-trigger_event_non_silently = { id = hbe_story_chengdu_plain.201 days = 1 } } option = { name = hbe_story_chengdu_plain.8.b trigger = { custom_tooltip = { text = hbe_story_chengdu_plain_ready_2_tt var:hbe_story_chengdu_plain_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_chengdu_plain_closed set_variable = { name = hbe_story_chengdu_plain_phase value = 8 } remove_variable = hbe_story_chengdu_plain_pending }
-trigger_event_non_silently = { id = hbe_story_chengdu_plain.202 days = 1 } } option = { name = hbe_story_chengdu_plain.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_chengdu_plain_stop_tt
+trigger_event_non_silently = { id = hbe_story_chengdu_plain.201 days = 1 }
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_chengdu_plain_selected_ending value = 1 } }
+ # HBE_CHAIN_CHOICE_END
+ } option = { name = hbe_story_chengdu_plain.8.b trigger = { custom_tooltip = { text = hbe_story_chengdu_plain_ready_2_tt var:hbe_story_chengdu_plain_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_chengdu_plain_closed set_variable = { name = hbe_story_chengdu_plain_phase value = 8 } remove_variable = hbe_story_chengdu_plain_pending }
+trigger_event_non_silently = { id = hbe_story_chengdu_plain.202 days = 1 }
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_chengdu_plain_selected_ending value = 2 } }
+ # HBE_CHAIN_CHOICE_END
+ } option = { name = hbe_story_chengdu_plain.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_chengdu_plain_stop_tt
 hidden_effect = { set_variable = hbe_story_chengdu_plain_closed set_variable = { name = hbe_story_chengdu_plain_phase value = 8 } remove_variable = hbe_story_chengdu_plain_pending }
-add_prestige = -3 }
+add_prestige = -3
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = hbe_story_chengdu_plain_abandoned }
+ # HBE_CHAIN_CHOICE_END
+ }
 }
 
 hbe_story_chengdu_plain.101 = {

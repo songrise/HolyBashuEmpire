@@ -1,0 +1,1921 @@
+{
+  "status": "passed",
+  "check_count": 477,
+  "checks": [
+    {
+      "check": "chengdu_plain cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "eastern_river cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "eastern_river valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "eastern_river abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "eastern_river selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "eastern_river opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "eastern_river selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "eastern_river opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "central_hills cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "central_hills valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "central_hills abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "central_hills selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "central_hills opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "central_hills selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "central_hills opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys cooldown blocks actual chapter trigger",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys valid next stage accepted",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys abandoned cannot receive permanent ending",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys selected branch 1 allowed",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys selected branch 2 allowed",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys opposite branch rejected",
+      "passed": true
+    },
+    {
+      "check": "失色的锦样 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "失色的锦样 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "失色的锦样 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "失色的锦样 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "失色的锦样 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "失色的锦样 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "借来的诗卷 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "借来的诗卷 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "借来的诗卷 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "借来的诗卷 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "借来的诗卷 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "借来的诗卷 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "竹山的两张界图 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "竹山的两张界图 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "竹山的两张界图 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "竹山的两张界图 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "竹山的两张界图 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "竹山的两张界图 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "盐灶上的新铜管 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "盐灶上的新铜管 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "盐灶上的新铜管 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "盐灶上的新铜管 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "盐灶上的新铜管 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "盐灶上的新铜管 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "顺流而下的酒瓮 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "顺流而下的酒瓮 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "顺流而下的酒瓮 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "顺流而下的酒瓮 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "顺流而下的酒瓮 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "顺流而下的酒瓮 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "井旁的旧墓 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "井旁的旧墓 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "井旁的旧墓 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "井旁的旧墓 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "井旁的旧墓 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "井旁的旧墓 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "夜里听不见的江号 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "夜里听不见的江号 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "夜里听不见的江号 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "夜里听不见的江号 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "夜里听不见的江号 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "夜里听不见的江号 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "岸边的旧船坞 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "岸边的旧船坞 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "岸边的旧船坞 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "岸边的旧船坞 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "岸边的旧船坞 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "岸边的旧船坞 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "峡中留下的拓本 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "峡中留下的拓本 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "峡中留下的拓本 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "峡中留下的拓本 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "峡中留下的拓本 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "峡中留下的拓本 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "驿站里的沙漏 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "驿站里的沙漏 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "驿站里的沙漏 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "驿站里的沙漏 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "驿站里的沙漏 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "驿站里的沙漏 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "轮戍人的两册工钱 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "轮戍人的两册工钱 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "轮戍人的两册工钱 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "轮戍人的两册工钱 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "轮戍人的两册工钱 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "轮戍人的两册工钱 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "山路上的书箱 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "山路上的书箱 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "山路上的书箱 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "山路上的书箱 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "山路上的书箱 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "山路上的书箱 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "仓中的两种谷子 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "仓中的两种谷子 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "仓中的两种谷子 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "仓中的两种谷子 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "仓中的两种谷子 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "仓中的两种谷子 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "寄来的种桑信 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "寄来的种桑信 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "寄来的种桑信 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "寄来的种桑信 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "寄来的种桑信 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "寄来的种桑信 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "桥边的债簿 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "桥边的债簿 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "桥边的债簿 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "桥边的债簿 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "桥边的债簿 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "桥边的债簿 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "被雨打湿的茶砖 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "被雨打湿的茶砖 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "被雨打湿的茶砖 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "被雨打湿的茶砖 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "被雨打湿的茶砖 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "被雨打湿的茶砖 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "马群中的旧烙印 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "马群中的旧烙印 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "马群中的旧烙印 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "马群中的旧烙印 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "马群中的旧烙印 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "马群中的旧烙印 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "雪路上的歇脚屋 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "雪路上的歇脚屋 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "雪路上的歇脚屋 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "雪路上的歇脚屋 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "雪路上的歇脚屋 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "雪路上的歇脚屋 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "湖上两家的渔船 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "湖上两家的渔船 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "湖上两家的渔船 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "湖上两家的渔船 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "湖上两家的渔船 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "湖上两家的渔船 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "山寨门前的铁门 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "山寨门前的铁门 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "山寨门前的铁门 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "山寨门前的铁门 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "山寨门前的铁门 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "山寨门前的铁门 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "议事时的座次 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "议事时的座次 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "议事时的座次 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "议事时的座次 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "议事时的座次 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "议事时的座次 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "第一口乡音 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "第一口乡音 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "第一口乡音 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "第一口乡音 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "第一口乡音 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "第一口乡音 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "借住的院落 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "借住的院落 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "借住的院落 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "借住的院落 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "借住的院落 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "借住的院落 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "渡口的两个孩子 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "渡口的两个孩子 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "渡口的两个孩子 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "渡口的两个孩子 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "渡口的两个孩子 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "渡口的两个孩子 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "由谁教孩子读书 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "由谁教孩子读书 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "由谁教孩子读书 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "由谁教孩子读书 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "由谁教孩子读书 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "由谁教孩子读书 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "迁来的祭日 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "迁来的祭日 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "迁来的祭日 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "迁来的祭日 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "迁来的祭日 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "迁来的祭日 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "一间新药铺 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "一间新药铺 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "一间新药铺 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "一间新药铺 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "一间新药铺 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "一间新药铺 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "荒地上的借种 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "荒地上的借种 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "荒地上的借种 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "荒地上的借种 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "荒地上的借种 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "荒地上的借种 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "合开的染坊 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "合开的染坊 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "合开的染坊 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "合开的染坊 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "合开的染坊 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "合开的染坊 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "同住一坡的山民 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "同住一坡的山民 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "同住一坡的山民 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "同住一坡的山民 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "同住一坡的山民 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "同住一坡的山民 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "递到府署的合姓诉状 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "递到府署的合姓诉状 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "递到府署的合姓诉状 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "递到府署的合姓诉状 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "递到府署的合姓诉状 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "递到府署的合姓诉状 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "新来的船工 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "新来的船工 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "新来的船工 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "新来的船工 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "新来的船工 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "新来的船工 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "返回旧乡的长者 unseen later chapter rejected",
+      "passed": true
+    },
+    {
+      "check": "返回旧乡的长者 timer blocks next stage 2",
+      "passed": true
+    },
+    {
+      "check": "返回旧乡的长者 stage 2 accepted",
+      "passed": true
+    },
+    {
+      "check": "返回旧乡的长者 timer blocks next stage 3",
+      "passed": true
+    },
+    {
+      "check": "返回旧乡的长者 stage 3 accepted",
+      "passed": true
+    },
+    {
+      "check": "返回旧乡的长者 completed chapter cannot reopen",
+      "passed": true
+    },
+    {
+      "check": "migration first policy 1 recorded",
+      "passed": true
+    },
+    {
+      "check": "migration cooldown blocks stage two",
+      "passed": true
+    },
+    {
+      "check": "migration stage two valid after cooldown",
+      "passed": true
+    },
+    {
+      "check": "migration first policy 2 recorded",
+      "passed": true
+    },
+    {
+      "check": "migration cooldown blocks stage two",
+      "passed": true
+    },
+    {
+      "check": "migration stage two valid after cooldown",
+      "passed": true
+    },
+    {
+      "check": "migration first policy 3 recorded",
+      "passed": true
+    },
+    {
+      "check": "migration cooldown blocks stage two",
+      "passed": true
+    },
+    {
+      "check": "migration stage two valid after cooldown",
+      "passed": true
+    },
+    {
+      "check": "BAB all assigned afterwords consumed once",
+      "passed": true
+    },
+    {
+      "check": "BAF all assigned afterwords consumed once",
+      "passed": true
+    },
+    {
+      "check": "BAJ all assigned afterwords consumed once",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "chengdu_plain engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "southern_salt_wine engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "eastern_river engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "eastern_river engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "northern_shudao engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "central_hills engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "central_hills engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "western_tea_horse engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys engine applied exactly permanent ending 1",
+      "passed": true
+    },
+    {
+      "check": "southwestern_valleys engine applied exactly permanent ending 2",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1001 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1001 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1002 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1002 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1003 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1003 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1004 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1004 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1005 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1005 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1006 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1006 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1007 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1007 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1008 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1008 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1009 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1009 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1010 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1010 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1011 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1011 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1012 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1012 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1013 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1013 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1014 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1014 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1015 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1015 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1016 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1016 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1017 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1017 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1018 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1018 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1019 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1019 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1020 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1020 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1021 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1021 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1022 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1022 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1023 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1023 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1024 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1024 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1025 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1025 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1026 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1026 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1027 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1027 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1028 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1028 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1029 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1029 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1030 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1030 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1031 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1031 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1032 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1032 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1033 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1033 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1034 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1034 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1035 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1035 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1036 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1036 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1037 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1037 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1038 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1038 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1039 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1039 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1040 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1040 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1041 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1041 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1042 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1042 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1043 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1043 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1044 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1044 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1045 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1045 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1046 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1046 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1047 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1047 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1048 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1048 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1049 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1049 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1050 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1050 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1051 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1051 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1052 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1052 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1053 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1053 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1054 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1054 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1055 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1055 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1056 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1056 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1057 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1057 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1058 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1058 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1059 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1059 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1060 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1060 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1061 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1061 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1062 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1062 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1063 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1063 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1064 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1064 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1065 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1065 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1066 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1066 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1067 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1067 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1068 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1068 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1069 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1069 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1070 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1070 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1071 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1071 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1072 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1072 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1073 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1073 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1074 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1074 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1075 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1075 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1076 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1076 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1077 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1077 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1078 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1078 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1079 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1079 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1080 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1080 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1081 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1081 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1082 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1082 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1083 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1083 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1084 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1084 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1085 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1085 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1086 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1086 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1087 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1087 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1088 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1088 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1089 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1089 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1090 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1090 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1091 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1091 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1092 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1092 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1093 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1093 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1094 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1094 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1095 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1095 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1096 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1096 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1097 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1097 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1098 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1098 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1099 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1099 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2001 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2001 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2002 callback seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2002 pending consumed",
+      "passed": true
+    },
+    {
+      "check": "all native guard cases and callbacks settled",
+      "passed": true
+    },
+    {
+      "check": "no engine diagnostics against changed chain scripts or fixture",
+      "passed": true
+    }
+  ],
+  "checkpoint": "1337.5.2",
+  "callbacks": 101,
+  "new_related_errors": [],
+  "global_harness_result": "Tests:\n[ FAIL ] Error log: 11833 errors",
+  "save_sha256": "02dff41e15cee266efce7a0c34415922e137f3a3232a4bd4b3d5dc0835ec8e8a",
+  "manifest_sha256": "1c248fa99746b562e7a3ba9a8659f15653efd4b457aedfef142530adb4619476",
+  "scope": "Two-month headless test using actual source option effects, triggers and 101 callbacks. Timers were deliberately cleared to probe transitions; this is not a natural fifty-year campaign or a rendered UI test."
+}

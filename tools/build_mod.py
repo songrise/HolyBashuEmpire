@@ -612,6 +612,8 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_formables_units(out, ROOT, game)
     from apply_annex_industry_v031 import apply as apply_annex_industry
     apply_annex_industry(out, ROOT, game)
+    from apply_story_logic_v031 import apply as apply_story_logic
+    apply_story_logic(out, ROOT, game)
     from apply_ending_art_v031 import apply as apply_ending_art
     apply_ending_art(out, ROOT, game)
     manifest_path = out / "build_manifest.json"

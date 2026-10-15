@@ -3,7 +3,11 @@
 hbe_story_northern_shudao.1 = {
  type = country_event title = hbe_story_northern_shudao.1.title desc = hbe_story_northern_shudao.1.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 0 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 0 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock } current_year >= 1340
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.1.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_1_1 years = 3 mode = replace }
@@ -27,7 +31,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.2 = {
  type = country_event title = hbe_story_northern_shudao.2.title desc = hbe_story_northern_shudao.2.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 1 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 1 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.2.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_2_1 years = 3 mode = replace }
@@ -51,7 +59,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.3 = {
  type = country_event title = hbe_story_northern_shudao.3.title desc = hbe_story_northern_shudao.3.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 2 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 2 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.3.a ai_chance = { base = 35 } add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.05 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_3_1 years = 3 mode = replace }
@@ -77,7 +89,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.4 = {
  type = country_event title = hbe_story_northern_shudao.4.title desc = hbe_story_northern_shudao.4.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 3 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 3 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.4.a trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_4_1 years = 3 mode = replace }
@@ -101,7 +117,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.5 = {
  type = country_event title = hbe_story_northern_shudao.5.title desc = hbe_story_northern_shudao.5.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 4 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 4 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.5.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_5_1 years = 3 mode = replace }
@@ -125,7 +145,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.6 = {
  type = country_event title = hbe_story_northern_shudao.6.title desc = hbe_story_northern_shudao.6.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 5 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 5 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.6.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_6_1 years = 3 mode = replace } hbe_grant_production_support_years = { strength = 4 duration = 3 }
@@ -149,7 +173,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.7 = {
  type = country_event title = hbe_story_northern_shudao.7.title desc = hbe_story_northern_shudao.7.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 6 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 6 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.7.a trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 35 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_story_choice_northern_shudao_7_1 years = 3 mode = replace }
@@ -174,7 +202,11 @@ add_prestige = -3 }
 hbe_story_northern_shudao.201 = {
  type = country_event title = hbe_story_northern_shudao.201.title desc = hbe_story_northern_shudao.201.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_observatory_school }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } has_variable = hbe_story_northern_shudao_closed NOT = { has_variable = hbe_story_northern_shudao_ending_1 } NOT = { has_variable = hbe_story_northern_shudao_ending_2 } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } has_variable = hbe_story_northern_shudao_closed NOT = { has_variable = hbe_story_northern_shudao_ending_1 } NOT = { has_variable = hbe_story_northern_shudao_ending_2 }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ var:hbe_story_northern_shudao_phase = 8 NOT = { has_variable = hbe_story_northern_shudao_abandoned } OR = { var:hbe_story_northern_shudao_selected_ending = 1 AND = { NOT = { has_variable = hbe_story_northern_shudao_selected_ending } var:hbe_story_northern_shudao_direction >= 0 } }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.201.a ai_chance = { base = 100 } add_prestige = 4
 add_country_modifier = { modifier = hbe_story_ending_northern_shudao_1 years = -1 mode = replace }
@@ -184,7 +216,11 @@ set_variable = hbe_story_northern_shudao_ending_1 }
 hbe_story_northern_shudao.202 = {
  type = country_event title = hbe_story_northern_shudao.202.title desc = hbe_story_northern_shudao.202.desc outcome = neutral
  illustration_tags = { 1000 = hbe_ending_art_gate_time }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } has_variable = hbe_story_northern_shudao_closed NOT = { has_variable = hbe_story_northern_shudao_ending_1 } NOT = { has_variable = hbe_story_northern_shudao_ending_2 } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } has_variable = hbe_story_northern_shudao_closed NOT = { has_variable = hbe_story_northern_shudao_ending_1 } NOT = { has_variable = hbe_story_northern_shudao_ending_2 }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ var:hbe_story_northern_shudao_phase = 8 NOT = { has_variable = hbe_story_northern_shudao_abandoned } OR = { var:hbe_story_northern_shudao_selected_ending = 2 AND = { NOT = { has_variable = hbe_story_northern_shudao_selected_ending } var:hbe_story_northern_shudao_direction < 0 } }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.202.a ai_chance = { base = 100 } add_prestige = 4
 add_country_modifier = { modifier = hbe_story_ending_northern_shudao_2 years = -1 mode = replace }
@@ -194,13 +230,29 @@ set_variable = hbe_story_northern_shudao_ending_2 }
 hbe_story_northern_shudao.8 = {
  type = country_event title = hbe_story_northern_shudao.8.title desc = hbe_story_northern_shudao.8.desc outcome = neutral
  illustration_tags = { 1000 = hbe_story_art_observatory }
- trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 7 NOT = { has_variable = hbe_story_northern_shudao_closed } }
+ trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } var:hbe_story_northern_shudao_phase = 7 NOT = { has_variable = hbe_story_northern_shudao_closed }
+ # HBE_CHAIN_LOGIC_TRIGGER_BEGIN
+ NOT = { has_variable = hbe_story_northern_shudao_clock }
+ # HBE_CHAIN_LOGIC_TRIGGER_END
+ }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.8.a trigger = { custom_tooltip = { text = hbe_story_northern_shudao_ready_1_tt var:hbe_story_northern_shudao_direction >= 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_northern_shudao_closed set_variable = { name = hbe_story_northern_shudao_phase value = 8 } remove_variable = hbe_story_northern_shudao_pending }
-trigger_event_non_silently = { id = hbe_story_northern_shudao.201 days = 1 } } option = { name = hbe_story_northern_shudao.8.b trigger = { custom_tooltip = { text = hbe_story_northern_shudao_ready_2_tt var:hbe_story_northern_shudao_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_northern_shudao_closed set_variable = { name = hbe_story_northern_shudao_phase value = 8 } remove_variable = hbe_story_northern_shudao_pending }
-trigger_event_non_silently = { id = hbe_story_northern_shudao.202 days = 1 } } option = { name = hbe_story_northern_shudao.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_northern_shudao_stop_tt
+trigger_event_non_silently = { id = hbe_story_northern_shudao.201 days = 1 }
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_northern_shudao_selected_ending value = 1 } }
+ # HBE_CHAIN_CHOICE_END
+ } option = { name = hbe_story_northern_shudao.8.b trigger = { custom_tooltip = { text = hbe_story_northern_shudao_ready_2_tt var:hbe_story_northern_shudao_direction < 0 } } ai_chance = { base = 50 } hidden_effect = { set_variable = hbe_story_northern_shudao_closed set_variable = { name = hbe_story_northern_shudao_phase value = 8 } remove_variable = hbe_story_northern_shudao_pending }
+trigger_event_non_silently = { id = hbe_story_northern_shudao.202 days = 1 }
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = { name = hbe_story_northern_shudao_selected_ending value = 2 } }
+ # HBE_CHAIN_CHOICE_END
+ } option = { name = hbe_story_northern_shudao.8.c ai_chance = { base = 0 } custom_tooltip = hbe_story_northern_shudao_stop_tt
 hidden_effect = { set_variable = hbe_story_northern_shudao_closed set_variable = { name = hbe_story_northern_shudao_phase value = 8 } remove_variable = hbe_story_northern_shudao_pending }
-add_prestige = -3 }
+add_prestige = -3
+ # HBE_CHAIN_CHOICE_BEGIN
+ hidden_effect = { set_variable = hbe_story_northern_shudao_abandoned }
+ # HBE_CHAIN_CHOICE_END
+ }
 }
 
 hbe_story_northern_shudao.101 = {
