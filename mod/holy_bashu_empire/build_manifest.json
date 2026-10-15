@@ -6709,8 +6709,6 @@
     "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "00205abfc446974e38b49ad84742bb1137cc0e850d84d7cb9219e0e930f290c6",
     "in_game/gui/panels/situation/hbe_banquet.gui": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
     "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
-    "loading_screen/gfx/images/hbe_loading_images.txt": "326377b6706bea76442b44798f332480666ea1020a26a0323597e4e08d315095",
-    "loading_screen/gfx/scenes/hbe_loading_scenes.txt": "241d71f000c140ddb37e5150d92ffa85209462e7d691c1f3e4388f145e202832",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
     "loading_screen/gfx/illustrations/database/hbe_ending_illustrations.txt": "668020af36e3e7e4ae5d37694482472c98e9f5eaf0a223766d8269e659e51497",
     "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa",
@@ -6718,10 +6716,6 @@
     "loading_screen/gfx/illustrations/database/hbe_story_illustrations.txt": "bdec591395f04add88cf20156b2833bb441692b14c7497e76f15f2aa3e26ff7f",
     "loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt": "4094274778343be9e6caee5857cc9bd2406c012525d8d64084e70b9b83d65c02",
     "loading_screen/gfx/interface/hbe/placeholder.dds": "226cfe7ca22f750e3bdf461bbfdffd389559dfe62fe393b2fe73ba9d1d536c41",
-    "loading_screen/gfx/loading_screen_assets/hbe/craft_metadata_os3840x2160_d0x0.dds": "8e694c6c08a356497ff933c146842ddfeb3f17787d9b36bfe345c2c61bf20e32",
-    "loading_screen/gfx/loading_screen_assets/hbe/observatory_metadata_os3840x2160_d0x0.dds": "51e4cf47d893b6decd6e53887b60175cc5bda5534cc4b32be443812e74113149",
-    "loading_screen/gfx/loading_screen_assets/hbe/panda_sanctuary_metadata_os3840x2160_d0x0.dds": "d4c31fd356364271993a8d07e18b0e54c2544272612454b845f4ac0ea88d564b",
-    "loading_screen/gfx/loading_screen_assets/hbe/river_metadata_os3840x2160_d0x0.dds": "ddca6383da85129b7d7d4a17db4d94a6f7794707a69db6f3e7ef0ba29a8921d6",
     "loading_screen/localization/english/hbe_load_tips_l_english.yml": "98ab23c01fe99fca03cd2845f68118eec11e0652b7a4375de1f27a0074a13e10",
     "loading_screen/localization/simp_chinese/hbe_load_tips_l_simp_chinese.yml": "837510a640e1e22a7b5bb93d2cce2be344ac92165abdc1280d4014e001d56ada",
     "main_menu/gui/messagetypes.txt": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c",
@@ -36909,17 +36903,10 @@
     ]
   },
   "loading_art_v031": {
-    "mode": "static",
-    "canvas": [
-      3840,
-      2160
-    ],
-    "aspect_ratio": "16:9",
-    "scenes": 4,
-    "planes_per_scene": 1,
-    "native_animation_binding": "illustration_override",
-    "parallax": false,
-    "loading_scene_prefix": "loading_screen_scene_",
+    "enabled": false,
+    "mode": "vanilla",
+    "scenes": 0,
+    "staged_scenes": 4,
     "native_text_binding": "GetLoadingScreenLoadTip",
     "native_quote_slots": [
       0,
@@ -36927,29 +36914,7 @@
       2,
       3
     ],
-    "quote_sources": [
-      {
-        "quote": "晓看红湿处，花重锦官城。",
-        "author": "杜甫《春夜喜雨》",
-        "url": "https://zh.wikisource.org/zh-hans/春夜喜雨"
-      },
-      {
-        "quote": "朝辞白帝彩云间，千里江陵一日还。",
-        "author": "李白《早发白帝城》",
-        "url": "https://zh.wikisource.org/zh-hans/早發白帝城"
-      },
-      {
-        "quote": "此身合是诗人未？细雨骑驴入剑门。",
-        "author": "陆游《剑门道中遇微雨》",
-        "url": "https://zh.wikisource.org/zh-hans/劍門道中遇微雨"
-      },
-      {
-        "quote": "时无荒年，天下谓之天府。",
-        "author": "《华阳国志·蜀志》引《蜀记》",
-        "url": "https://zh.wikisource.org/zh-hans/華陽國志/卷三"
-      }
-    ],
-    "source_resolution_note": "Approved original paintings mechanically fitted and resampled to the exact vanilla 3840x2160 canvas; no style change or generated detail."
+    "source_catalog": "data/loading_art_v031.json"
   },
   "story_narratives_v031": {
     "chain_count": 41,

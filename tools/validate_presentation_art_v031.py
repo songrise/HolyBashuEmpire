@@ -46,18 +46,27 @@ for e in items:check('browser default is the chosen branch image: '+e['id'],e['i
 report=json.loads((R/'data/loading_art_v031.json').read_text(encoding='utf-8'))
 check('exactly four static selections',len(report['assets'])==4 and report['mode']=='static' and report['parallax'] is False)
 check('pandas replace the terrace selection',{x['key'] for x in report['assets']}=={'craft','river','observatory','panda_sanctuary'})
-t=(M/'loading_screen/gfx/scenes/hbe_loading_scenes.txt').read_text(encoding='utf-8-sig')
-check('four single-plane static scenes',t.count('ecs_illustration_image')==4 and t.count('name = "illustration_override"')==4)
-check('no parallax animation or UV motion','illustration_override_anims' not in t and 'uv_move_speed' not in t and 'animation' not in t)
-images=(M/'loading_screen/gfx/images/hbe_loading_images.txt').read_text(encoding='utf-8-sig')
-for row in report['assets']:
- p=M/row['texture']
- with Image.open(p) as im:
-  im.load();check(row['key']+' exact vanilla canvas',im.size==(3840,2160));check(row['key']+' opaque canvas',im.convert('RGBA').getchannel('A').getextrema()==(255,255))
- check(row['key']+' native BC3/DXT5 texture',p.read_bytes()[84:88]==b'DXT5')
- check(row['key']+' texture hash',hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'])
- check(row['key']+' approved source hash',hashlib.sha256((R/row['source']).read_bytes()).hexdigest()==row['source_sha256'])
- check(row['key']+' native scene and image link','loading_screen_scene_hbe_'+row['key']+' = {' in t and row['texture'].removeprefix('loading_screen/') in images)
+runtime=json.loads((M/'build_manifest.json').read_text(encoding='utf-8'))['loading_art_v031']
+if runtime.get('enabled',True):
+ t=(M/'loading_screen/gfx/scenes/hbe_loading_scenes.txt').read_text(encoding='utf-8-sig')
+ check('four single-plane static scenes',t.count('ecs_illustration_image')==4 and t.count('name = "illustration_override"')==4)
+ check('no parallax animation or UV motion','illustration_override_anims' not in t and 'uv_move_speed' not in t and 'animation' not in t)
+ images=(M/'loading_screen/gfx/images/hbe_loading_images.txt').read_text(encoding='utf-8-sig')
+ for row in report['assets']:
+  p=M/row['texture']
+  with Image.open(p) as im:
+   im.load();check(row['key']+' exact vanilla canvas',im.size==(3840,2160));check(row['key']+' opaque canvas',im.convert('RGBA').getchannel('A').getextrema()==(255,255))
+  check(row['key']+' native BC3/DXT5 texture',p.read_bytes()[84:88]==b'DXT5')
+  check(row['key']+' texture hash',hashlib.sha256(p.read_bytes()).hexdigest()==row['sha256'])
+  check(row['key']+' approved source hash',hashlib.sha256((R/row['source']).read_bytes()).hexdigest()==row['source_sha256'])
+  check(row['key']+' native scene and image link','loading_screen_scene_hbe_'+row['key']+' = {' in t and row['texture'].removeprefix('loading_screen/') in images)
+else:
+ check('custom loading scene registry disabled',not (M/'loading_screen/gfx/scenes/hbe_loading_scenes.txt').exists())
+ check('custom loading image registry disabled',not (M/'loading_screen/gfx/images/hbe_loading_images.txt').exists())
+ for row in report['assets']:
+  check(row['key']+' loading DDS removed',not (M/row['texture']).exists())
+  check(row['key']+' original art retained',(R/row['source']).is_file())
+ check('vanilla loading mode recorded',runtime['mode']=='vanilla' and runtime['scenes']==0)
 for lang in ('simp_chinese','english'):
  loc=(M/f'loading_screen/localization/{lang}/hbe_load_tips_l_{lang}.yml').read_text(encoding='utf-8-sig')
  check(lang+' four native quote slots',set(re.findall(r'LOADING_TIP_(\d+):',loc))=={'0','1','2','3'})
@@ -70,7 +79,7 @@ for texture in set(re.findall(r'texture_file\s*=\s*"([^"]+)"',progress)):
 
 result = dict(status='passed', check_count=len(checks), checks=checks,
               intermediate_events=affected, art_markers=markers,
-              static_loading_scenes=4, dimensions=[3840,2160],
+              static_loading_scenes=runtime['scenes'], dimensions=[3840,2160],
               gameplay_effects_changed=False, baseline=args.baseline)
 if args.report:
     args.report.parent.mkdir(parents=True, exist_ok=True)

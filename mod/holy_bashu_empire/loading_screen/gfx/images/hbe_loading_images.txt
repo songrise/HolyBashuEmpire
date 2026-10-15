@@ -1,7 +1,0 @@
-﻿hbe_loading_craft = { illustration_image = { texture_file = "gfx/loading_screen_assets/hbe/craft_metadata_os3840x2160_d0x0.dds" priority = 1 weight = 1 } tag = "hbe_loading_craft" }
-
-hbe_loading_river = { illustration_image = { texture_file = "gfx/loading_screen_assets/hbe/river_metadata_os3840x2160_d0x0.dds" priority = 1 weight = 1 } tag = "hbe_loading_river" }
-
-hbe_loading_observatory = { illustration_image = { texture_file = "gfx/loading_screen_assets/hbe/observatory_metadata_os3840x2160_d0x0.dds" priority = 1 weight = 1 } tag = "hbe_loading_observatory" }
-
-hbe_loading_panda_sanctuary = { illustration_image = { texture_file = "gfx/loading_screen_assets/hbe/panda_sanctuary_metadata_os3840x2160_d0x0.dds" priority = 1 weight = 1 } tag = "hbe_loading_panda_sanctuary" }

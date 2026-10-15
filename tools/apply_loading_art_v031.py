@@ -24,7 +24,21 @@ QUOTES=[
 ]
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
-def apply(out,root,game=None):
+def export_quotes(out):
+ def put(rel,t):
+  p=out/rel;p.parent.mkdir(parents=True,exist_ok=True)
+  p.write_text(t.rstrip()+"\n",encoding="utf-8-sig",newline="\r\n")
+ # Four known native slots guarantee inclusion in GetLoadingScreenLoadTip. All
+ # other vanilla quotations and the native GUI / progress / concept UI remain.
+ for lang in ('simp_chinese','english'):
+  lines=['l_'+lang+':']
+  for n,(cn,by,en,eby,url) in enumerate(QUOTES):
+   quote,author=(cn,by) if lang=='simp_chinese' else (en,eby)
+   text=f' #T {quote}#! \\n #tooltip_subheading — {author}#!'
+   lines.append(' LOADING_TIP_'+str(n)+': '+json.dumps(text,ensure_ascii=False).replace('\\\\n','\\n'))
+  put(f'loading_screen/localization/{lang}/hbe_load_tips_l_{lang}.yml','\n'.join(lines))
+
+def export_loading_art(out,root,game=None):
  out,root=Path(out),Path(root);src=root/'assets/event_expansion'
  image_defs=[];scene_defs=[];assets=[]
  def put(rel,t):
@@ -50,21 +64,35 @@ def apply(out,root,game=None):
   draw.text((i%2*800+18,i//2*490+455),title,font=font,fill='#e7dcc5')
  put('loading_screen/gfx/images/hbe_loading_images.txt','\n\n'.join(image_defs))
  put('loading_screen/gfx/scenes/hbe_loading_scenes.txt','\n\n'.join(scene_defs))
- # Four known native slots guarantee inclusion in GetLoadingScreenLoadTip. All
- # other vanilla quotations and the native GUI / progress / concept UI remain.
- for lang in ('simp_chinese','english'):
-  lines=['l_'+lang+':']
-  for n,(cn,by,en,eby,url) in enumerate(QUOTES):
-   quote,author=(cn,by) if lang=='simp_chinese' else (en,eby)
-   text=f' #T {quote}#! \\n #tooltip_subheading — {author}#!'
-   lines.append(' LOADING_TIP_'+str(n)+': '+json.dumps(text,ensure_ascii=False).replace('\\\\n','\\n'))
-  put(f'loading_screen/localization/{lang}/hbe_load_tips_l_{lang}.yml','\n'.join(lines))
+ export_quotes(out)
  preview_path=root/'assets/loading_art_v031/preview.jpg';preview_path.parent.mkdir(parents=True,exist_ok=True);preview.save(preview_path,quality=93)
  result=dict(mode='static',canvas=[3840,2160],aspect_ratio='16:9',scenes=4,planes_per_scene=1,native_animation_binding='illustration_override',parallax=False,loading_scene_prefix='loading_screen_scene_',native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(4)),quote_sources=[dict(quote=q[0],author=q[1],url=q[4]) for q in QUOTES],assets=assets,source_resolution_note='Approved original paintings mechanically fitted and resampled to the exact vanilla 3840x2160 canvas; no style change or generated detail.')
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'));m['loading_art_v031']={k:v for k,v in result.items() if k!='assets'}
  m['files']={p.relative_to(out).as_posix():digest(p) for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');(root/'data/loading_art_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps({k:v for k,v in result.items() if k not in ('assets','quote_sources')},ensure_ascii=False));return result
+
+
+def apply(out,root,game=None,enabled=False):
+ """Keep custom loading paintings off until explicitly re-enabled."""
+ if enabled:return export_loading_art(out,root,game)
+ out,root=Path(out),Path(root)
+ owned=['loading_screen/gfx/images/hbe_loading_images.txt',
+        'loading_screen/gfx/scenes/hbe_loading_scenes.txt']
+ owned += [f'loading_screen/gfx/loading_screen_assets/hbe/{key}_metadata_os3840x2160_d0x0.dds' for key in SCENES]
+ for rel in owned:
+  p=(out/rel).resolve()
+  assert p.is_relative_to(out.resolve()),'Unsafe loading-art target'
+  p.unlink(missing_ok=True)
+ export_quotes(out)
+ result=dict(enabled=False,mode='vanilla',scenes=0,staged_scenes=len(SCENES),
+             native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(4)),
+             source_catalog='data/loading_art_v031.json')
+ mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'))
+ m['loading_art_v031']=result
+ m['files']={p.relative_to(out).as_posix():digest(p) for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(json.dumps(result,ensure_ascii=False));return result
 
 if __name__=='__main__':
  ap=argparse.ArgumentParser();ap.add_argument('--root',type=Path,required=True);a=ap.parse_args();apply(a.root/'mod/holy_bashu_empire',a.root)
