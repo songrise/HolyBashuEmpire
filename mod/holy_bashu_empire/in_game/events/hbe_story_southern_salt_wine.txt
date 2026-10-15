@@ -172,7 +172,7 @@ add_prestige = -3 }
 
 hbe_story_southern_salt_wine.201 = {
  type = country_event title = hbe_story_southern_salt_wine.201.title desc = hbe_story_southern_salt_wine.201.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_ending_art_fossil_archive }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } has_variable = hbe_story_southern_salt_wine_closed NOT = { has_variable = hbe_story_southern_salt_wine_ending_1 } NOT = { has_variable = hbe_story_southern_salt_wine_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_southern_salt_wine.201.a ai_chance = { base = 100 } add_prestige = 4
@@ -182,7 +182,7 @@ set_variable = hbe_story_southern_salt_wine_ending_1 }
 
 hbe_story_southern_salt_wine.202 = {
  type = country_event title = hbe_story_southern_salt_wine.202.title desc = hbe_story_southern_salt_wine.202.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_fossils }
+ illustration_tags = { 1000 = hbe_ending_art_fossil_gallery }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAW } has_variable = hbe_story_southern_salt_wine_closed NOT = { has_variable = hbe_story_southern_salt_wine_ending_1 } NOT = { has_variable = hbe_story_southern_salt_wine_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_southern_salt_wine.202.a ai_chance = { base = 100 } add_prestige = 4

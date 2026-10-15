@@ -169,7 +169,7 @@ add_prestige = -3 }
 
 hbe_story_eastern_river.201 = {
  type = country_event title = hbe_story_eastern_river.201.title desc = hbe_story_eastern_river.201.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_ending_art_river_commons }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } has_variable = hbe_story_eastern_river_closed NOT = { has_variable = hbe_story_eastern_river_ending_1 } NOT = { has_variable = hbe_story_eastern_river_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_eastern_river.201.a ai_chance = { base = 100 } add_prestige = 4
@@ -179,7 +179,7 @@ set_variable = hbe_story_eastern_river_ending_1 }
 
 hbe_story_eastern_river.202 = {
  type = country_event title = hbe_story_eastern_river.202.title desc = hbe_story_eastern_river.202.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_river }
+ illustration_tags = { 1000 = hbe_ending_art_river_convoy }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBE has_or_had_tag = BBH } has_variable = hbe_story_eastern_river_closed NOT = { has_variable = hbe_story_eastern_river_ending_1 } NOT = { has_variable = hbe_story_eastern_river_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_eastern_river.202.a ai_chance = { base = 100 } add_prestige = 4

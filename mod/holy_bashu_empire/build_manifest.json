@@ -677,7 +677,7 @@
   "research_nodes": 80,
   "regional_missions": 35,
   "recurring_services": 7,
-  "events": 405,
+  "events": 506,
   "decisions": 100,
   "social_expansion": {
     "buildings": [
@@ -6594,24 +6594,25 @@
     ".metadata/thumbnail.png": "5202607af092d6c05c08ef7a1162943392bf7e86daa6ea57a54212c0ef3c8481",
     "in_game/events/hbe_banquet_events.txt": "60e6b696135cc63a74cce1063288ff580c3014c799714de7564c87471492ff74",
     "in_game/events/hbe_civic_events.txt": "1a857fc9f5433dd6722d8a1413f2b1170f809cc073bfb9620bdfd7f89dea2a8c",
+    "in_game/events/hbe_ending_afterwords.txt": "d88be2f6ce090017da654ce330399c81878ea9037f45ccb67a26443dd0d7960c",
     "in_game/events/hbe_events.txt": "f1a8a6698f4946090cfb7a1c97f22eb9211bfe76d1f5fab36f975e4c1e3bcfd9",
-    "in_game/events/hbe_migration_events.txt": "3f04aac6c12e168a58ced8541773f7315e703ae00e23e0e23c70faf43d815f54",
+    "in_game/events/hbe_migration_events.txt": "8dbcfdd4f6c5609300a1c58e35ed78e5ddb37856a323077faa593d62f9c621d4",
     "in_game/events/hbe_opening_family_events.txt": "756af6aa17f65bcf21ca0e963af504819ed8004e8f01adad8bde522abe09adc7",
-    "in_game/events/hbe_short_central_hills.txt": "3e747f48a10394bd589186aaf2fdb87944e0bb51206b1e34f593bc74b90330ef",
-    "in_game/events/hbe_short_chengdu_plain.txt": "d06c07a118d5ef183472b655841a74be8dca2d037c277f72e5312127809db8fb",
-    "in_game/events/hbe_short_eastern_river.txt": "23a750001ac5a992b837e485f07f51932d10d0de353aabfa6be85218f891fab8",
-    "in_game/events/hbe_short_northern_shudao.txt": "9f48737ad674a43c07d26c12453f921942d4c3cc20587146e754feebf6f2e3e7",
-    "in_game/events/hbe_short_shared.txt": "301821fe67602aa7aa6f67cd3f3a665b804b92e4dfc7d95c88f9388c4a002a4c",
-    "in_game/events/hbe_short_southern_salt_wine.txt": "81c2580faee691fb5d8e09fdb8acaaad3bda008ed54947fcc488790e0bdc8ec4",
-    "in_game/events/hbe_short_southwestern_valleys.txt": "3f7d50387a77eed971cac678a7b2e2421b91e34354b6e1d6ecc253c28d96d975",
-    "in_game/events/hbe_short_western_tea_horse.txt": "732b38e95a74502f4f26981517fc4fcae0c4bc122e6e3a82f76a84bc92dd2984",
-    "in_game/events/hbe_story_central_hills.txt": "d7ce9e3b4584f70f78ca89ef67fafc9bcd3aac1de7d86cb6bf925a41de7e02a9",
-    "in_game/events/hbe_story_chengdu_plain.txt": "73b2251d9ca8c29642d2a58099af8eabbc50feedeb5b0d367c1a963003b50469",
-    "in_game/events/hbe_story_eastern_river.txt": "dbd6e08114944dc29b77cae4c52a9dd62dbb05283bc348006d5df23a124a1915",
-    "in_game/events/hbe_story_northern_shudao.txt": "a2e4dd0b7bed3f3936a0056d5e75ec3432f62e2d036353792e458fd9972ab929",
-    "in_game/events/hbe_story_southern_salt_wine.txt": "c45661e894308a48847fb5acac5a86ac463297d89f9e83ecca573390f7fb6c73",
-    "in_game/events/hbe_story_southwestern_valleys.txt": "218d7cb473a013e6ad34d659ec4b03a082b676939aabd6714c14ea0056b513cb",
-    "in_game/events/hbe_story_western_tea_horse.txt": "c2ee799da8052f92a929cfad665868e8828936ec906b5a3d41fca984a405e183",
+    "in_game/events/hbe_short_central_hills.txt": "6a9e4202995b9b86f638e2e990f387629009afbed33479e7694c292fbf83c6d3",
+    "in_game/events/hbe_short_chengdu_plain.txt": "421ee3f7adf8cec9cc9f849564c83f5663ecf1f630dc09f635273ed0fffca4d4",
+    "in_game/events/hbe_short_eastern_river.txt": "96df989b63ed666868f703434c2aa0a62d581ae2b0516cb140309577ded5f1b0",
+    "in_game/events/hbe_short_northern_shudao.txt": "3875907a999ebdea1a1c924f6c73d9ae82a39031b3db15eb6bc87623545a34d8",
+    "in_game/events/hbe_short_shared.txt": "d6be116dc241b049f8637d0fde3634a909495c28a1a8d58434c0feaa070b902f",
+    "in_game/events/hbe_short_southern_salt_wine.txt": "ad7875ad7410cc32e7f68160b0ec9fc1e26db888081e0f92ba06f846c148798a",
+    "in_game/events/hbe_short_southwestern_valleys.txt": "636161db41a291e1c437bc4e087624fe95876576307bfac8414b7cd49b405934",
+    "in_game/events/hbe_short_western_tea_horse.txt": "26c40157366b8800ec1fd32d02d904bab0833ca94e45a0f1b21f71ea18cd45dc",
+    "in_game/events/hbe_story_central_hills.txt": "6c16647cbb6fc48b9b73307895ca41859724b609f7dcc55b031e88df3d0beb6c",
+    "in_game/events/hbe_story_chengdu_plain.txt": "4d5d778f15d53e0ff112e426a25f074fef4a3e248424e4b1b24b8f2563e3e8e1",
+    "in_game/events/hbe_story_eastern_river.txt": "635d687e406e12304d255598ee47fc134d92c27a1b92c017e7137604e3c3147b",
+    "in_game/events/hbe_story_northern_shudao.txt": "023ad4b2b75d2b42bcbb13c3b5e9a7314bc4b7a372443c181b59ba9b8c19f5d1",
+    "in_game/events/hbe_story_southern_salt_wine.txt": "263da8510ac07d10c02766728b056f2128e823d5e6c47ad7d1d6a0b767b42c2d",
+    "in_game/events/hbe_story_southwestern_valleys.txt": "5ef6250b8f66676f6312b5259073e6bfe64e29483e351fd3e89dd451a9fa6380",
+    "in_game/events/hbe_story_western_tea_horse.txt": "28283a4ec8339b07932930f26b796d971be4d0d997637d3809afbd34a9242342",
     "in_game/gui/cooltip.gui": "96d619292a0d2bdf6d7f7c38dcac49d584c54d33429818a8d0ed397a1a07a082",
     "in_game/common/advances/hbe_advances.txt": "09649328853800eeefce72d8240ca06e9b21b65c549687fe853e602bec99abb1",
     "in_game/common/advances/hbe_civic_advances.txt": "e475b80341d1d2c0927ce0daa920844a91a2536a105bd0c5c67a83224e1c545c",
@@ -6638,7 +6639,7 @@
     "in_game/common/goods_demand/hbe_civic_construction.txt": "01d69e30adc1bc40500adbfbbe43567219ec8f45c6ce150ae854f85f9f1018e1",
     "in_game/common/goods_demand/hbe_unit_maintenance.txt": "58b98fa1f9c2b532330442801cd70eff46c0eeec7137e592aa718ebc8ee56dc1",
     "in_game/common/goods_demand/pop_demands.txt": "8efe07e9940d6db51da49c5e9ec27e6dbe3f15523f60c1fe3c92af0ccd4bfffb",
-    "in_game/common/government_reforms/hbe_shared_reforms.txt": "f134f15993accac882385313509a8e3b0e00d14b2bc29c2784b954bfff8a219a",
+    "in_game/common/government_reforms/hbe_shared_reforms.txt": "d1e7c4928e29b6dbb60821a52c9481660bb3e5b1d9f6fd1b3a8aa6d2ede21422",
     "in_game/common/industry_types/01_industries.txt": "2f157e9c8ef4a44d028517596205634dfcb3ed00f485324bb8798bcc36db1064",
     "in_game/common/international_organizations/hbe_empire.txt": "377d48b1389001713e893cb93cdb0256b783cab82ec1111f688c818dd80df170",
     "in_game/common/international_organizations/hbe_feast_parties.txt": "2894bd9d3affca0af4699700c1da6ae0883fcf15502f21d279e01add17396e68",
@@ -6693,10 +6694,12 @@
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
     "in_game/common/unit_types/hbe_civic_units.txt": "298cc5f6b0d861d5c5eafeab570400ae3b65de6eab9fab597367d6f50f155806",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
+    "in_game/gfx/images/hbe_ending_backgrounds.txt": "051097ed519b3aaa5fe713c057f9f3cd77aa3e1927b563699ca7c74e9c932dda",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
     "in_game/gfx/images/hbe_story_backgrounds.txt": "0a92322392eaa45c129d639afd9391d5e2797485f5846c671a206df3098cf08e",
     "in_game/gfx/images/hbe_v021_backgrounds.txt": "9fdc73f4484385dabe78baa1f1a7e7be2c4d9b0a9005955cb05c9ad2a55ba944",
     "in_game/gfx/scenes/hbe_civic_scenes.txt": "a395f832ca7d26270af884c3d5f5757a211534fc8c2c692a94daec2b42d1d7e4",
+    "in_game/gfx/scenes/hbe_ending_scenes.txt": "55786c90ac476cf0cc11cb7926d512ba93da9d81c4038b855958f79fd6c9c2e8",
     "in_game/gfx/scenes/hbe_event_scenes.txt": "5c626fe9edf4338fdeb1c4713d44d552d1ecd4a388c6270add23c29d5ac04ee2",
     "in_game/gfx/scenes/hbe_story_scenes.txt": "57cb79799138c6c93586bd8cd82b4fe3c303d3308a0f141516e8e0883ad83fb6",
     "in_game/gfx/scenes/hbe_v021_scenes.txt": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856",
@@ -6704,6 +6707,7 @@
     "in_game/gui/panels/situation/hbe_banquet.gui": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
     "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
+    "loading_screen/gfx/illustrations/database/hbe_ending_illustrations.txt": "668020af36e3e7e4ae5d37694482472c98e9f5eaf0a223766d8269e659e51497",
     "loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt": "81071f8c23b162574abd3ba8e22614f523f8cad0a5eb1072aa25376c474c02aa",
     "loading_screen/gfx/illustrations/database/hbe_story_illustrations.txt": "bdec591395f04add88cf20156b2833bb441692b14c7497e76f15f2aa3e26ff7f",
     "loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt": "4094274778343be9e6caee5857cc9bd2406c012525d8d64084e70b9b83d65c02",
@@ -6919,6 +6923,38 @@
     "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds": "184481aa4b043ec58782f7b89cd5edff23e97b9a3e2563d89d2ece3ab9a5fec7",
     "main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds": "a322516b8926b8684e4ea8d8e0d79a5be4ce79c5400c28399971ae24e0798f11",
     "main_menu/gfx/interface/hbe/decisions/hbe_status.dds": "871f11c3272a1cea2c6d9cfbe2487a96677beee13435f50f01cd12fedd85bf30",
+    "main_menu/gfx/interface/hbe/ending_events/bridge_bureau.dds": "5b894c8c6d36fa358912664cbb15698d326f0fcf8d068230d51287c763dbfd6a",
+    "main_menu/gfx/interface/hbe/ending_events/bridge_commons.dds": "e8891fed4183919bcf65a9160dfed98a90e8fea5d442fec2b9be6cba5a3acf3f",
+    "main_menu/gfx/interface/hbe/ending_events/council_office.dds": "20f6409122e3f7782b7130f86e327922309c13646a617d2d654c43b142060503",
+    "main_menu/gfx/interface/hbe/ending_events/council_public.dds": "e8f66c8f1b83f5e722dfde68e0fd5d06ccbac6a9c2b7f7d4363ed41737a20e3c",
+    "main_menu/gfx/interface/hbe/ending_events/craft_archive.dds": "55c3801f359dde58e784460223f8833b1e09cae45ae58a04e9c4a1287c8c23cd",
+    "main_menu/gfx/interface/hbe/ending_events/craft_guild.dds": "04ca949a68e7c01823b8f3c5d8c6b198c6f575d8f8216eea263b3648850bb835",
+    "main_menu/gfx/interface/hbe/ending_events/craft_public.dds": "4046f0f899691bf6c6f38d97d30f62d33ef64dd572f5ef163ccecf2473572b0a",
+    "main_menu/gfx/interface/hbe/ending_events/fossil_archive.dds": "d5f5d7fef5cb6359164a6a713bc8a5817f157b01a88cb980c8fb0d8f784312a2",
+    "main_menu/gfx/interface/hbe/ending_events/fossil_gallery.dds": "438734f110da28509545034920c643a86c7d5b6f39e2e40c5cdcf241b0395098",
+    "main_menu/gfx/interface/hbe/ending_events/gate_time.dds": "821a4c6420349ade79952c0f1f2563524768040a45c0667ad3c7a1c29fc57866",
+    "main_menu/gfx/interface/hbe/ending_events/granary_common.dds": "c1160402d8ad89fb45aa3a6100145e3bc7edd7ba347a9ba54610b50cd4dd5822",
+    "main_menu/gfx/interface/hbe/ending_events/land_registry.dds": "7532078dcfc5ea80a43231a4b0a955b14a9ab6e48106924bef31337082f3a443",
+    "main_menu/gfx/interface/hbe/ending_events/market_open.dds": "9cb9856661d160ba5fcc5c018817a40b78941bc3f50ef50b96748d2f35e06d48",
+    "main_menu/gfx/interface/hbe/ending_events/market_regulated.dds": "b6f1ad12dafc140ee6eacd83feae788d53b0fcf5ebd01e4f5d1db031c2461df6",
+    "main_menu/gfx/interface/hbe/ending_events/medicine_guild.dds": "12f7cad00e7872830431c4b463e41f0050ec586c679f356b6d15a77ab1d4d72e",
+    "main_menu/gfx/interface/hbe/ending_events/medicine_public.dds": "9a4a3ec2a8164f24896712c37c86e4e59561bf17aedd7749bb6cac97631e5d43",
+    "main_menu/gfx/interface/hbe/ending_events/memorial_common.dds": "8775fc247268ec5e22a75ae372ae54e701d2fd252a847aeb4699a2cc7e4b7d13",
+    "main_menu/gfx/interface/hbe/ending_events/migration_open.dds": "63a321872a250f93f6c4209b5437b65ad6ae9d121ad809a3bf2efcaa69a89fd1",
+    "main_menu/gfx/interface/hbe/ending_events/migration_sponsored.dds": "58c4f895d836babcdc04ca38ef6061784727afc863c610cbbaa7cd098a3e0c0a",
+    "main_menu/gfx/interface/hbe/ending_events/observatory_school.dds": "4b2c5759e805d282f17f87212f5a1fc645a3d27bc1b97669816d7318a281ca62",
+    "main_menu/gfx/interface/hbe/ending_events/panda_garden.dds": "5752cf403ab24355a4720425282385023171b7ee0f1709b6e63d141ca6e1aaf3",
+    "main_menu/gfx/interface/hbe/ending_events/panda_sanctuary.dds": "0e5ae7bd0085158635fcefcafa0ca6e71b00fda6e33b6c672962a4c343dc3af6",
+    "main_menu/gfx/interface/hbe/ending_events/reading_private.dds": "b10d6ea0229afda35cb82ed722c79d1b0f322f2f38c1f4a4552a59f78e70f848",
+    "main_menu/gfx/interface/hbe/ending_events/reading_public.dds": "d8020a8aabaa855ee46eee1f7a53e2bfc0def3cb5098100bc0f46367d656b337",
+    "main_menu/gfx/interface/hbe/ending_events/river_commons.dds": "2bc35d6d5132d54904bb6c45f2ee494c48c76a43460f9aac6d3d6481b9044571",
+    "main_menu/gfx/interface/hbe/ending_events/river_convoy.dds": "02c819ffee65d856b3bf8a31bb8b79c9f77b1d14c55569be2b3e726c1e496db7",
+    "main_menu/gfx/interface/hbe/ending_events/salt_workshop.dds": "c4cf9752cbb8c3ce9a609a85450c3e58b22d0cd6b16c86a840d14e4dbba00346",
+    "main_menu/gfx/interface/hbe/ending_events/shipyard.dds": "cb51077438d05785732d4154f0aa8b1fe000e26a6ff999ddf64fc53c8ee916ac",
+    "main_menu/gfx/interface/hbe/ending_events/stone_archive.dds": "9a0d2422b323311057cec94e4baddc712ec95b229996857443217be39dabb1ad",
+    "main_menu/gfx/interface/hbe/ending_events/stud_farm.dds": "ee7411eabde985ef932201639d6c1c5301112223d94d3469fac7ab31b1c06612",
+    "main_menu/gfx/interface/hbe/ending_events/terrace_commons.dds": "3c75161da4a2eb65061918f940e8d52854d0bec8048b0292bf8476dde246a02d",
+    "main_menu/gfx/interface/hbe/ending_events/veterinary_school.dds": "c569485e646231b8dbacfb0866fcabe7a9822441994135b9291ab9876d0d70b0",
     "main_menu/gfx/interface/hbe/events/academy.dds": "67a35b43e40507ef9587b4a0d404a2bf17a29c1bf04e922ad3c60d13582271c9",
     "main_menu/gfx/interface/hbe/events/banquet.dds": "39e93b6454031013f2c48ae193ee5518e618c6e9bdb5d0e7bec1a273b52aecf7",
     "main_menu/gfx/interface/hbe/events/civic_council.dds": "9770c15080b80c3ef27730e19092759bd331923d6488c49237fbf7e712b90127",
@@ -7196,6 +7232,8 @@
     "main_menu/gfx/interface/icons/unit_types/hbe_tea_riders.dds": "0f42887f7e08f06bffbc8e7afe3a1a8e48a84401499dfa99aff0aa1be3a4fb44",
     "main_menu/gfx/interface/icons/unit_types/hbe_trained_river.dds": "261d3733b31e4326afe38d565187ac725adeda4e06d8fec226264520f7a3c8d3",
     "main_menu/gfx/interface/icons/unit_types/hbe_valley_soldiers.dds": "7dca7ca3575b1c06254baccc341af8b6a70af0933c75199c592bca88bcf8ca64",
+    "main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_mountain_river_dispatch.dds": "3618c9a6495b504e7dd09285217bd09d6acfff3fd4d8a401c0e5a29b83adca8c",
+    "main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_prefectural_council.dds": "bf322937eb7fb0a6d6a9258b1ee74d4ff1254e421ec0980b19f4b3909b16ea78",
     "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_border_tea.dds": "0594dc5346280ccb37972cce7d85dfa0fb19f8a5e07e6ee5876d218ceef09e69",
     "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_embroidery.dds": "862ddeb068438563266f4da67a3c0f00ae77fab8aab13a7c87cfc781b14ca6fb",
     "main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_paper.dds": "d25ff6bdb7eccf84ff0494c1b4feac306888cebad0edeb49a0d755fb5dba4620",
@@ -7231,6 +7269,7 @@
     "main_menu/localization/english/hbe_advance_gates_l_english.yml": "f3269dffe49e59c959821aa3e74f725fa199fa0231ad11d970777af2cc99b902",
     "main_menu/localization/english/hbe_annex_industry_l_english.yml": "e2123c7920265ecee3d15f0e687562bc09acae6d0d1241ceffa09fdd548c9ca2",
     "main_menu/localization/english/hbe_deep_balance_l_english.yml": "5069450c803a882bc203da8d96d31eb2b7f2885aea1a4f0deffb4aab4b920f23",
+    "main_menu/localization/english/hbe_ending_l_english.yml": "798b305f5099c723a50a07fb0dbf1954c97de68050230bc4516030541b208399",
     "main_menu/localization/english/hbe_formables_l_english.yml": "f0bdb4a95f1ed6ca460e08e96b25ed63481441f737a2a41d4e0ef98dd390f3da",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
     "main_menu/localization/english/hbe_l_english.yml": "e60049284474e53e620c2313917341cadb3eac1c9e94a1ced18118e78e310f17",
@@ -7242,6 +7281,7 @@
     "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml": "07e87fafc60103f5e72e6e0874853f44a81415f108e44e8f7aab5244363eb251",
     "main_menu/localization/simp_chinese/hbe_annex_industry_l_simp_chinese.yml": "a8362c5d74fd5d9fee54abdf17f316e6ed3fabdc64e1310d656cfb1f36986e2d",
     "main_menu/localization/simp_chinese/hbe_deep_balance_l_simp_chinese.yml": "ebd7e78fc90635c811d7feeeffadb81acd515f2c9a554afdb972a314f8f58dfc",
+    "main_menu/localization/simp_chinese/hbe_ending_l_simp_chinese.yml": "d7f78dd5ecad077ecdddc6a9ee574ab8db61c97426cd72d57258c6b5ae28b48e",
     "main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml": "dd14576f96dfeaa8c15157eb6ef259cc0c293ba96c0f53f9e3099d2f0ab61306",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
     "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "f5b1cb1f28c5c5889ca1a56737a996bc3f0a75728f59bc81cbfd2ea5295b3f66",
@@ -36711,5 +36751,66 @@
     "recipient_scope": "Any annexer; inherited civilian institutions retain geographic constraints.",
     "no_unit_or_advanced_recipe_grants": true,
     "no_partial_or_startup_grants": true
+  },
+  "ending_art_v031": {
+    "version": "0.3.1",
+    "mode": "built-in image_gen; new paintings, mechanical crop and DDS export",
+    "new_scenes": 32,
+    "reform_icons": [
+      {
+        "key": "hbe_prefectural_council",
+        "source": "assets/event_endings_v031/reform_prefectural_council.png",
+        "texture": "main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_prefectural_council.dds",
+        "dimensions": [
+          64,
+          90
+        ],
+        "sha256": "bf322937eb7fb0a6d6a9258b1ee74d4ff1254e421ec0980b19f4b3909b16ea78"
+      },
+      {
+        "key": "hbe_mountain_river_dispatch",
+        "source": "assets/event_endings_v031/reform_mountain_river_dispatch.png",
+        "texture": "main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_mountain_river_dispatch.dds",
+        "dimensions": [
+          64,
+          90
+        ],
+        "sha256": "3618c9a6495b504e7dd09285217bd09d6acfff3fd4d8a401c0e5a29b83adca8c"
+      }
+    ],
+    "long_branches": {
+      "chengdu_plain": [
+        "panda_sanctuary",
+        "panda_garden"
+      ],
+      "southern_salt_wine": [
+        "fossil_archive",
+        "fossil_gallery"
+      ],
+      "eastern_river": [
+        "river_commons",
+        "river_convoy"
+      ],
+      "northern_shudao": [
+        "observatory_school",
+        "gate_time"
+      ],
+      "central_hills": [
+        "terrace_commons",
+        "land_registry"
+      ],
+      "western_tea_horse": [
+        "veterinary_school",
+        "stud_farm"
+      ],
+      "southwestern_valleys": [
+        "bridge_commons",
+        "bridge_bureau"
+      ]
+    },
+    "short_chains": 33,
+    "new_afterwords": 101,
+    "english_status": "Complete Chinese fallback, consistent with existing authored story batch",
+    "gameplay_effects_changed": false
   }
 }

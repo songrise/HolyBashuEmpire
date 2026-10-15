@@ -173,7 +173,7 @@ add_prestige = -3 }
 
 hbe_story_northern_shudao.201 = {
  type = country_event title = hbe_story_northern_shudao.201.title desc = hbe_story_northern_shudao.201.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_observatory }
+ illustration_tags = { 1000 = hbe_ending_art_observatory_school }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } has_variable = hbe_story_northern_shudao_closed NOT = { has_variable = hbe_story_northern_shudao_ending_1 } NOT = { has_variable = hbe_story_northern_shudao_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.201.a ai_chance = { base = 100 } add_prestige = 4
@@ -183,7 +183,7 @@ set_variable = hbe_story_northern_shudao_ending_1 }
 
 hbe_story_northern_shudao.202 = {
  type = country_event title = hbe_story_northern_shudao.202.title desc = hbe_story_northern_shudao.202.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_observatory }
+ illustration_tags = { 1000 = hbe_ending_art_gate_time }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBI has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBL } has_variable = hbe_story_northern_shudao_closed NOT = { has_variable = hbe_story_northern_shudao_ending_1 } NOT = { has_variable = hbe_story_northern_shudao_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_northern_shudao.202.a ai_chance = { base = 100 } add_prestige = 4

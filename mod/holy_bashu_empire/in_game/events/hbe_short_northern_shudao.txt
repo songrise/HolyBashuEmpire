@@ -57,15 +57,26 @@ hbe_short_northern_shudao.3 = {
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_1_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_1_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_1_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.3.b ai_chance = { base = 30 } add_prestige = 4
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_1_1 trigger_event_non_silently = { id = hbe_ending.1028 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.3.b ai_chance = { base = 30 } add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_1_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_1_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_1_pending
- } option = { name = hbe_short_northern_shudao.3.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_1_2 trigger_event_non_silently = { id = hbe_ending.1029 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.3.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_1_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_1_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_1_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_northern_shudao_1_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_1_3 trigger_event_non_silently = { id = hbe_ending.1030 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_northern_shudao_1_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_1_pending
 add_prestige = -2 }
 }
@@ -124,15 +135,27 @@ hbe_short_northern_shudao.13 = {
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_2_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_2_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_2_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.13.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_2_1 trigger_event_non_silently = { id = hbe_ending.1031 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.13.b trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_2_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_2_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_2_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_2_2 trigger_event_non_silently = { id = hbe_ending.1032 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_2_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_2_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_2_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_northern_shudao_2_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_2_3 trigger_event_non_silently = { id = hbe_ending.1033 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_northern_shudao_2_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_2_pending
 add_prestige = -2 }
 }
@@ -191,15 +214,26 @@ hbe_short_northern_shudao.23 = {
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_3_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_3_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_3_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.23.b ai_chance = { base = 30 } add_prestige = 4
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_3_1 trigger_event_non_silently = { id = hbe_ending.1034 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.23.b ai_chance = { base = 30 } add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_3_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_3_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_3_pending
- } option = { name = hbe_short_northern_shudao.23.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_3_2 trigger_event_non_silently = { id = hbe_ending.1035 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.23.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_northern_shudao_3_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_northern_shudao_3_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_3_pending
-add_prestige = 1 } option = { name = hbe_short_northern_shudao.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_northern_shudao_3_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_northern_shudao_3_3 trigger_event_non_silently = { id = hbe_ending.1036 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_northern_shudao.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_northern_shudao_3_phase value = 3 }
 remove_variable = hbe_short_northern_shudao_3_pending
 add_prestige = -2 }
 }

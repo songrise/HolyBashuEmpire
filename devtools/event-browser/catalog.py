@@ -218,6 +218,8 @@ def build_catalog(mod):
     for event in events:
         match=re.search(r'hbe_story_art_(\w+)',event['raw'])
         if match:event['illustration']='/art/'+match[1]+'.png'
+        ending=re.search(r'hbe_ending_art_(\w+)',event['raw'])
+        if ending:event['illustration']='/ending-art/'+ending[1]+'.png'
         if event['namespace'].startswith('hbe_story_') and 1 <= int(event['id'].rsplit('.',1)[1]) < 8:
             target=event['namespace']+'.'+str(int(event['id'].rsplit('.',1)[1])+1)
             if target in by_id and target not in event['outgoing']:event['outgoing'].append(target)

@@ -1,0 +1,1998 @@
+{
+  "version": "0.3.1",
+  "mode": "built-in image_gen; new paintings, mechanical crop and DDS export",
+  "new_scenes": 32,
+  "reform_icons": [
+    {
+      "key": "hbe_prefectural_council",
+      "source": "assets/event_endings_v031/reform_prefectural_council.png",
+      "texture": "main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_prefectural_council.dds",
+      "dimensions": [
+        64,
+        90
+      ],
+      "sha256": "bf322937eb7fb0a6d6a9258b1ee74d4ff1254e421ec0980b19f4b3909b16ea78"
+    },
+    {
+      "key": "hbe_mountain_river_dispatch",
+      "source": "assets/event_endings_v031/reform_mountain_river_dispatch.png",
+      "texture": "main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_mountain_river_dispatch.dds",
+      "dimensions": [
+        64,
+        90
+      ],
+      "sha256": "3618c9a6495b504e7dd09285217bd09d6acfff3fd4d8a401c0e5a29b83adca8c"
+    }
+  ],
+  "assets": [
+    {
+      "key": "panda_sanctuary",
+      "source": "assets/event_endings_v031/panda_sanctuary.png",
+      "source_sha256": "be67ae45010ac31fcf7ce4d44f4ad0bc87fa325e066754d7012bb5d6436d690c",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/panda_sanctuary.dds",
+      "sha256": "0e5ae7bd0085158635fcefcafa0ca6e71b00fda6e33b6c672962a4c343dc3af6",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_panda_sanctuary",
+      "tag": "hbe_ending_art_panda_sanctuary"
+    },
+    {
+      "key": "panda_garden",
+      "source": "assets/event_endings_v031/panda_garden.png",
+      "source_sha256": "de9a09cd28744ab940551304c48155f34d5d1373b18d2c49e6d9ee8d668486cc",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/panda_garden.dds",
+      "sha256": "5752cf403ab24355a4720425282385023171b7ee0f1709b6e63d141ca6e1aaf3",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_panda_garden",
+      "tag": "hbe_ending_art_panda_garden"
+    },
+    {
+      "key": "fossil_archive",
+      "source": "assets/event_endings_v031/fossil_archive.png",
+      "source_sha256": "4dc7c2160c955b839e5d71931af54ff9529d3bdbfa941e58d9a7b4c11b7cdb4e",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/fossil_archive.dds",
+      "sha256": "d5f5d7fef5cb6359164a6a713bc8a5817f157b01a88cb980c8fb0d8f784312a2",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_fossil_archive",
+      "tag": "hbe_ending_art_fossil_archive"
+    },
+    {
+      "key": "fossil_gallery",
+      "source": "assets/event_endings_v031/fossil_gallery.png",
+      "source_sha256": "f1f1cb3b9e979169a964dfb93815c74c53af383c84ebe1a005e8856cdbe4d8c9",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/fossil_gallery.dds",
+      "sha256": "438734f110da28509545034920c643a86c7d5b6f39e2e40c5cdcf241b0395098",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_fossil_gallery",
+      "tag": "hbe_ending_art_fossil_gallery"
+    },
+    {
+      "key": "river_commons",
+      "source": "assets/event_endings_v031/river_commons.png",
+      "source_sha256": "081f914e0f22b40b77aae554d707e34b021cbe8167b90da91b9114ce4b115500",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/river_commons.dds",
+      "sha256": "2bc35d6d5132d54904bb6c45f2ee494c48c76a43460f9aac6d3d6481b9044571",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_river_commons",
+      "tag": "hbe_ending_art_river_commons"
+    },
+    {
+      "key": "river_convoy",
+      "source": "assets/event_endings_v031/river_convoy.png",
+      "source_sha256": "8ff463e42cc03d5766e8221ecb059e2530f55b3b7a64b9430639d1d66a2ee54d",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/river_convoy.dds",
+      "sha256": "02c819ffee65d856b3bf8a31bb8b79c9f77b1d14c55569be2b3e726c1e496db7",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_river_convoy",
+      "tag": "hbe_ending_art_river_convoy"
+    },
+    {
+      "key": "observatory_school",
+      "source": "assets/event_endings_v031/observatory_school.png",
+      "source_sha256": "c6d09c598d3aee923d45bf73b6bfb9d7d759e2a6bde0ba9e3ff0ac5149283d99",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/observatory_school.dds",
+      "sha256": "4b2c5759e805d282f17f87212f5a1fc645a3d27bc1b97669816d7318a281ca62",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_observatory_school",
+      "tag": "hbe_ending_art_observatory_school"
+    },
+    {
+      "key": "gate_time",
+      "source": "assets/event_endings_v031/gate_time.png",
+      "source_sha256": "4f600d9dca92b8295016f8d632d1cb7f891bd980218199c9f6ee3fbd553ab44d",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/gate_time.dds",
+      "sha256": "821a4c6420349ade79952c0f1f2563524768040a45c0667ad3c7a1c29fc57866",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_gate_time",
+      "tag": "hbe_ending_art_gate_time"
+    },
+    {
+      "key": "terrace_commons",
+      "source": "assets/event_endings_v031/terrace_commons.png",
+      "source_sha256": "e2500899e20c40ede7c0ba4ee442dd6bc47c5b36b108c20ec0cdbb26b85b2608",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/terrace_commons.dds",
+      "sha256": "3c75161da4a2eb65061918f940e8d52854d0bec8048b0292bf8476dde246a02d",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_terrace_commons",
+      "tag": "hbe_ending_art_terrace_commons"
+    },
+    {
+      "key": "land_registry",
+      "source": "assets/event_endings_v031/land_registry.png",
+      "source_sha256": "fe2552329634e84161150cf8a8dd093520a979afadca317a1f0d459177dee184",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/land_registry.dds",
+      "sha256": "7532078dcfc5ea80a43231a4b0a955b14a9ab6e48106924bef31337082f3a443",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_land_registry",
+      "tag": "hbe_ending_art_land_registry"
+    },
+    {
+      "key": "veterinary_school",
+      "source": "assets/event_endings_v031/veterinary_school.png",
+      "source_sha256": "5d5ac47c6628f0037b0221a7723ba8e6ab4d24b6f082fed5c66229339ebff74f",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/veterinary_school.dds",
+      "sha256": "c569485e646231b8dbacfb0866fcabe7a9822441994135b9291ab9876d0d70b0",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_veterinary_school",
+      "tag": "hbe_ending_art_veterinary_school"
+    },
+    {
+      "key": "stud_farm",
+      "source": "assets/event_endings_v031/stud_farm.png",
+      "source_sha256": "fbba9128c820ba4d931ae5a3c13fab062441dc4fe7ba3277301a35f8371661f8",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/stud_farm.dds",
+      "sha256": "ee7411eabde985ef932201639d6c1c5301112223d94d3469fac7ab31b1c06612",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_stud_farm",
+      "tag": "hbe_ending_art_stud_farm"
+    },
+    {
+      "key": "bridge_commons",
+      "source": "assets/event_endings_v031/bridge_commons.png",
+      "source_sha256": "f4c73b02ee9f36b51c304898d9d3d65088b8951de5dd501d926473920a24e34c",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/bridge_commons.dds",
+      "sha256": "e8891fed4183919bcf65a9160dfed98a90e8fea5d442fec2b9be6cba5a3acf3f",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_bridge_commons",
+      "tag": "hbe_ending_art_bridge_commons"
+    },
+    {
+      "key": "bridge_bureau",
+      "source": "assets/event_endings_v031/bridge_bureau.png",
+      "source_sha256": "524191fc48200cf361e8b37a802be067916e390d8e7ed533414970f62a5bab24",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/bridge_bureau.dds",
+      "sha256": "5b894c8c6d36fa358912664cbb15698d326f0fcf8d068230d51287c763dbfd6a",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_bridge_bureau",
+      "tag": "hbe_ending_art_bridge_bureau"
+    },
+    {
+      "key": "migration_open",
+      "source": "assets/event_endings_v031/migration_open.png",
+      "source_sha256": "f79eaf188ebc9a7cb105094020ee526675ab60bb238a118bba5cc1cb4dda7818",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/migration_open.dds",
+      "sha256": "63a321872a250f93f6c4209b5437b65ad6ae9d121ad809a3bf2efcaa69a89fd1",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_migration_open",
+      "tag": "hbe_ending_art_migration_open"
+    },
+    {
+      "key": "migration_sponsored",
+      "source": "assets/event_endings_v031/migration_sponsored.png",
+      "source_sha256": "e021220540e2cf3f4405a0b744dd8031a3cf76058c671a6fc1d0bc1903150f1d",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/migration_sponsored.dds",
+      "sha256": "58c4f895d836babcdc04ca38ef6061784727afc863c610cbbaa7cd098a3e0c0a",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_migration_sponsored",
+      "tag": "hbe_ending_art_migration_sponsored"
+    },
+    {
+      "key": "craft_public",
+      "source": "assets/event_endings_v031/craft_public.png",
+      "source_sha256": "d041adfbae4034d8b8c358d35b623db898fef640962d7fcd49d802a1fbe1fadf",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/craft_public.dds",
+      "sha256": "4046f0f899691bf6c6f38d97d30f62d33ef64dd572f5ef163ccecf2473572b0a",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_craft_public",
+      "tag": "hbe_ending_art_craft_public"
+    },
+    {
+      "key": "craft_guild",
+      "source": "assets/event_endings_v031/craft_guild.png",
+      "source_sha256": "fe96a10e09418c7d6d7e43ed48c0ad1377e6d06ef6cb600285a2ae2defcd256e",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/craft_guild.dds",
+      "sha256": "04ca949a68e7c01823b8f3c5d8c6b198c6f575d8f8216eea263b3648850bb835",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_craft_guild",
+      "tag": "hbe_ending_art_craft_guild"
+    },
+    {
+      "key": "craft_archive",
+      "source": "assets/event_endings_v031/craft_archive.png",
+      "source_sha256": "93e289c99036c5628855affb5990478d85bed1274740e633c802d7670bed330b",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/craft_archive.dds",
+      "sha256": "55c3801f359dde58e784460223f8833b1e09cae45ae58a04e9c4a1287c8c23cd",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_craft_archive",
+      "tag": "hbe_ending_art_craft_archive"
+    },
+    {
+      "key": "reading_public",
+      "source": "assets/event_endings_v031/reading_public.png",
+      "source_sha256": "7a53fe2599ce6965823d51fd39453fb198e8b4d41de59c8bf251d0900b19fa97",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/reading_public.dds",
+      "sha256": "d8020a8aabaa855ee46eee1f7a53e2bfc0def3cb5098100bc0f46367d656b337",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_reading_public",
+      "tag": "hbe_ending_art_reading_public"
+    },
+    {
+      "key": "reading_private",
+      "source": "assets/event_endings_v031/reading_private.png",
+      "source_sha256": "92afb66ab68155f158b1cf075d973eaf2aa335da88cf7f4361137633d855f31c",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/reading_private.dds",
+      "sha256": "b10d6ea0229afda35cb82ed722c79d1b0f322f2f38c1f4a4552a59f78e70f848",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_reading_private",
+      "tag": "hbe_ending_art_reading_private"
+    },
+    {
+      "key": "memorial_common",
+      "source": "assets/event_endings_v031/memorial_common.png",
+      "source_sha256": "2c0ba6e0a7bec076d62a226d70054c0c2c293a0a13ac4c0513e10a7318e1e588",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/memorial_common.dds",
+      "sha256": "8775fc247268ec5e22a75ae372ae54e701d2fd252a847aeb4699a2cc7e4b7d13",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_memorial_common",
+      "tag": "hbe_ending_art_memorial_common"
+    },
+    {
+      "key": "granary_common",
+      "source": "assets/event_endings_v031/granary_common.png",
+      "source_sha256": "c1789da3e047a0dd5a22acd2eae8244d4ce8a35bc266ec89e81a1df3fabc3aa7",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/granary_common.dds",
+      "sha256": "c1160402d8ad89fb45aa3a6100145e3bc7edd7ba347a9ba54610b50cd4dd5822",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_granary_common",
+      "tag": "hbe_ending_art_granary_common"
+    },
+    {
+      "key": "shipyard",
+      "source": "assets/event_endings_v031/shipyard.png",
+      "source_sha256": "75796ccae39a0920e69fad1b3732deb1977dfbfb35c7e2ff88ef6feda385b875",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/shipyard.dds",
+      "sha256": "cb51077438d05785732d4154f0aa8b1fe000e26a6ff999ddf64fc53c8ee916ac",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_shipyard",
+      "tag": "hbe_ending_art_shipyard"
+    },
+    {
+      "key": "medicine_public",
+      "source": "assets/event_endings_v031/medicine_public.png",
+      "source_sha256": "68a33bf61bbb203b8d75d6bcec78707c82ae0600583e4c50aa5b9d9d4749852c",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/medicine_public.dds",
+      "sha256": "9a4a3ec2a8164f24896712c37c86e4e59561bf17aedd7749bb6cac97631e5d43",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_medicine_public",
+      "tag": "hbe_ending_art_medicine_public"
+    },
+    {
+      "key": "medicine_guild",
+      "source": "assets/event_endings_v031/medicine_guild.png",
+      "source_sha256": "b483da86dcdb7704183ff9f0c641c5b3250c5a6463f58228ab178b0db7b1f062",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/medicine_guild.dds",
+      "sha256": "12f7cad00e7872830431c4b463e41f0050ec586c679f356b6d15a77ab1d4d72e",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_medicine_guild",
+      "tag": "hbe_ending_art_medicine_guild"
+    },
+    {
+      "key": "council_public",
+      "source": "assets/event_endings_v031/council_public.png",
+      "source_sha256": "73bf53db2941b19fc2c57fb6219871b2cf33e60adf30cbbd476b8199d737f8a8",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/council_public.dds",
+      "sha256": "e8f66c8f1b83f5e722dfde68e0fd5d06ccbac6a9c2b7f7d4363ed41737a20e3c",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_council_public",
+      "tag": "hbe_ending_art_council_public"
+    },
+    {
+      "key": "council_office",
+      "source": "assets/event_endings_v031/council_office.png",
+      "source_sha256": "358cd47a2fa4d08e1f4d6cd894b4585a68d0e9da68725e11346252af41fc5fdd",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/council_office.dds",
+      "sha256": "20f6409122e3f7782b7130f86e327922309c13646a617d2d654c43b142060503",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_council_office",
+      "tag": "hbe_ending_art_council_office"
+    },
+    {
+      "key": "salt_workshop",
+      "source": "assets/event_endings_v031/salt_workshop.png",
+      "source_sha256": "209cf3caf3ab7a638eb382b223244bb3087125323be804af59657267f6485143",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/salt_workshop.dds",
+      "sha256": "c4cf9752cbb8c3ce9a609a85450c3e58b22d0cd6b16c86a840d14e4dbba00346",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_salt_workshop",
+      "tag": "hbe_ending_art_salt_workshop"
+    },
+    {
+      "key": "market_open",
+      "source": "assets/event_endings_v031/market_open.png",
+      "source_sha256": "0a49437ef1deac1e7dd2beeba1945dcc226b2de8e981ae1d25c4fe8db4f5cf8b",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/market_open.dds",
+      "sha256": "9cb9856661d160ba5fcc5c018817a40b78941bc3f50ef50b96748d2f35e06d48",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_market_open",
+      "tag": "hbe_ending_art_market_open"
+    },
+    {
+      "key": "market_regulated",
+      "source": "assets/event_endings_v031/market_regulated.png",
+      "source_sha256": "be7c02e4028303244251bd32de477666b57638831586d3b0400f6d2804bfaf04",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/market_regulated.dds",
+      "sha256": "b6f1ad12dafc140ee6eacd83feae788d53b0fcf5ebd01e4f5d1db031c2461df6",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_market_regulated",
+      "tag": "hbe_ending_art_market_regulated"
+    },
+    {
+      "key": "stone_archive",
+      "source": "assets/event_endings_v031/stone_archive.png",
+      "source_sha256": "06e8b27f0666e2c78d65013f00807d377fa4bd614723ea36c6b5be120e4984b0",
+      "texture": "main_menu/gfx/interface/hbe/ending_events/stone_archive.dds",
+      "sha256": "9a0d2422b323311057cec94e4baddc712ec95b229996857443217be39dabb1ad",
+      "dimensions": [
+        1080,
+        440
+      ],
+      "scene": "hbe_ending_scene_stone_archive",
+      "tag": "hbe_ending_art_stone_archive"
+    }
+  ],
+  "long_branches": {
+    "chengdu_plain": [
+      "panda_sanctuary",
+      "panda_garden"
+    ],
+    "southern_salt_wine": [
+      "fossil_archive",
+      "fossil_gallery"
+    ],
+    "eastern_river": [
+      "river_commons",
+      "river_convoy"
+    ],
+    "northern_shudao": [
+      "observatory_school",
+      "gate_time"
+    ],
+    "central_hills": [
+      "terrace_commons",
+      "land_registry"
+    ],
+    "western_tea_horse": [
+      "veterinary_school",
+      "stud_farm"
+    ],
+    "southwestern_valleys": [
+      "bridge_commons",
+      "bridge_bureau"
+    ]
+  },
+  "short_chains": 33,
+  "new_afterwords": 101,
+  "hooks": [
+    {
+      "source_option": "hbe_short_chengdu_plain.3.a",
+      "event": "hbe_ending.1001",
+      "pending": "hbe_afterword_chengdu_plain_1_1",
+      "original_option_sha256": "c5e6b0c552f8eb8e2029073b18b3f755d41249cfb07f684105a94b47608ce762"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.3.b",
+      "event": "hbe_ending.1002",
+      "pending": "hbe_afterword_chengdu_plain_1_2",
+      "original_option_sha256": "84c06812c8b68e7a9694ea2e47b9678b31638615d4346e15337410e4c4b2ff53"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.3.c",
+      "event": "hbe_ending.1003",
+      "pending": "hbe_afterword_chengdu_plain_1_3",
+      "original_option_sha256": "2da1841ff8426655485cb95412b826ffdae88405cc2704559293da86c40300b6"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.13.a",
+      "event": "hbe_ending.1004",
+      "pending": "hbe_afterword_chengdu_plain_2_1",
+      "original_option_sha256": "0457f092bc4caa52855d15b3f95bf183d6a4341f66b39fd81dd82c30dada56bd"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.13.b",
+      "event": "hbe_ending.1005",
+      "pending": "hbe_afterword_chengdu_plain_2_2",
+      "original_option_sha256": "40e48d0d67eb56bfe9bf1ac1c2510ad369d6fcbccf6cf0720552b9955af1fd99"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.13.c",
+      "event": "hbe_ending.1006",
+      "pending": "hbe_afterword_chengdu_plain_2_3",
+      "original_option_sha256": "980b3916a50f928a9614b11a0c1573e0b320b0aa027832d6d14c2608d0cff4e4"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.23.a",
+      "event": "hbe_ending.1007",
+      "pending": "hbe_afterword_chengdu_plain_3_1",
+      "original_option_sha256": "554aa5ddb1010586e091b7e30961c894f825ede18309dfedb594afddfb19cad6"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.23.b",
+      "event": "hbe_ending.1008",
+      "pending": "hbe_afterword_chengdu_plain_3_2",
+      "original_option_sha256": "3d2304c1c43267de94f629d7f2e16471dbc58cd871424dd2bd38322155c5e58d"
+    },
+    {
+      "source_option": "hbe_short_chengdu_plain.23.c",
+      "event": "hbe_ending.1009",
+      "pending": "hbe_afterword_chengdu_plain_3_3",
+      "original_option_sha256": "869d4fbc9edc245cfaea69fe6efb35bbe6164e90c1ad9af38e0599332c308e0e"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.3.a",
+      "event": "hbe_ending.1010",
+      "pending": "hbe_afterword_southern_salt_wine_1_1",
+      "original_option_sha256": "d8240aaece75d7b6869a71b0a70b07e301171b576079a20f618af7a002b7a726"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.3.b",
+      "event": "hbe_ending.1011",
+      "pending": "hbe_afterword_southern_salt_wine_1_2",
+      "original_option_sha256": "2ef8fbeb0af44ed2cbf30e7d88a07be16a196fa9ce81929767f5d0f0572ef947"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.3.c",
+      "event": "hbe_ending.1012",
+      "pending": "hbe_afterword_southern_salt_wine_1_3",
+      "original_option_sha256": "2ab027574ec79f02192f2057453ea9c3af08bce36eca6b41b246e71064a39ac4"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.13.a",
+      "event": "hbe_ending.1013",
+      "pending": "hbe_afterword_southern_salt_wine_2_1",
+      "original_option_sha256": "ce7c4608d94f4b5451c5c139bcbee1ee643e8388435ea8c886cf34e3245e2184"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.13.b",
+      "event": "hbe_ending.1014",
+      "pending": "hbe_afterword_southern_salt_wine_2_2",
+      "original_option_sha256": "ee2658ec7cd17a4b71fd04a42cda35c21ac121e3feeaa33aef280e19ea532ae8"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.13.c",
+      "event": "hbe_ending.1015",
+      "pending": "hbe_afterword_southern_salt_wine_2_3",
+      "original_option_sha256": "4c10abda43320d093993fbd35534f383003b999b5fc1dc9b24310064d5f53856"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.23.a",
+      "event": "hbe_ending.1016",
+      "pending": "hbe_afterword_southern_salt_wine_3_1",
+      "original_option_sha256": "1c5c0274de237612ba88cf324b8a055cfeb4269531620bda4c0e50cc6bfd64fe"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.23.b",
+      "event": "hbe_ending.1017",
+      "pending": "hbe_afterword_southern_salt_wine_3_2",
+      "original_option_sha256": "7bd9bc014edd58015ed64f0c181c71b832205dd92c83882551b619f1aaf5504c"
+    },
+    {
+      "source_option": "hbe_short_southern_salt_wine.23.c",
+      "event": "hbe_ending.1018",
+      "pending": "hbe_afterword_southern_salt_wine_3_3",
+      "original_option_sha256": "0a54e9298c2be799fb4ade8ea588eb6e7fbc749c6269b83fa2fc88346eb27670"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.3.a",
+      "event": "hbe_ending.1019",
+      "pending": "hbe_afterword_eastern_river_1_1",
+      "original_option_sha256": "0e6965bae9469fbaa517b78522324c48293e2ed1978dd1a73f9c9af1f6d1a91b"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.3.b",
+      "event": "hbe_ending.1020",
+      "pending": "hbe_afterword_eastern_river_1_2",
+      "original_option_sha256": "94175dae402cd2341bad2e240dd5f31a45113638c514780b4c4326b5be991b7d"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.3.c",
+      "event": "hbe_ending.1021",
+      "pending": "hbe_afterword_eastern_river_1_3",
+      "original_option_sha256": "effbc39d7db46039fddd3d5a131f6e6a4f524f9237235fbb2016d47c3aa0f9ba"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.13.a",
+      "event": "hbe_ending.1022",
+      "pending": "hbe_afterword_eastern_river_2_1",
+      "original_option_sha256": "b00625e0ede5f69224053cf0ee81e5c36ec48e58eaca4ac0b182643c662884fd"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.13.b",
+      "event": "hbe_ending.1023",
+      "pending": "hbe_afterword_eastern_river_2_2",
+      "original_option_sha256": "31126c368fc5c77236d8771bbedfce4b7868972ee878b3d680b6348c1128f5e2"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.13.c",
+      "event": "hbe_ending.1024",
+      "pending": "hbe_afterword_eastern_river_2_3",
+      "original_option_sha256": "7f74dd438549fe3389815fadb33eaf3e5dda0d99076e5c82e9c78149adcc32d7"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.23.a",
+      "event": "hbe_ending.1025",
+      "pending": "hbe_afterword_eastern_river_3_1",
+      "original_option_sha256": "fc96500e3ef65e7f0fc7b7a0e2635e065b7f4e3b24a7a1dd8ec349c1aaffd125"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.23.b",
+      "event": "hbe_ending.1026",
+      "pending": "hbe_afterword_eastern_river_3_2",
+      "original_option_sha256": "c9401bf81c5522fbe7fb353168094e438f980cd9978bc54e9f192e34edf3b3c0"
+    },
+    {
+      "source_option": "hbe_short_eastern_river.23.c",
+      "event": "hbe_ending.1027",
+      "pending": "hbe_afterword_eastern_river_3_3",
+      "original_option_sha256": "285ac6ea1a29c2cd5ea9ca777192b2432ceb3f200158762942f57fbd1cfc9901"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.3.a",
+      "event": "hbe_ending.1028",
+      "pending": "hbe_afterword_northern_shudao_1_1",
+      "original_option_sha256": "6050c8ca277086ac97d79f5ab7e5e6663cd0e018b010b9c01ef8845e07a1eebb"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.3.b",
+      "event": "hbe_ending.1029",
+      "pending": "hbe_afterword_northern_shudao_1_2",
+      "original_option_sha256": "56820ffc5c7b5ff482322d618b5f3277fb82a96002e3f97425ce49e77adf0a41"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.3.c",
+      "event": "hbe_ending.1030",
+      "pending": "hbe_afterword_northern_shudao_1_3",
+      "original_option_sha256": "6abcb8cdf6d54c41d41d7360b81fa045bad45321c27da1cf9f9fa0bdb580e936"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.13.a",
+      "event": "hbe_ending.1031",
+      "pending": "hbe_afterword_northern_shudao_2_1",
+      "original_option_sha256": "cb6a4b7badc5af3629a7868df7eb0ce2e7764b77a75f2d842f33f759ba13e47d"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.13.b",
+      "event": "hbe_ending.1032",
+      "pending": "hbe_afterword_northern_shudao_2_2",
+      "original_option_sha256": "46f8c187be342e630b03ccdbfe20eeff6d2b0c6a3a50f17ca68cea96315926c0"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.13.c",
+      "event": "hbe_ending.1033",
+      "pending": "hbe_afterword_northern_shudao_2_3",
+      "original_option_sha256": "7d74255b39d1cfd3070803c9a46b7d976ed45c1dc84df4c224e25dad9ba05122"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.23.a",
+      "event": "hbe_ending.1034",
+      "pending": "hbe_afterword_northern_shudao_3_1",
+      "original_option_sha256": "308c8c10cdaf67d6c2154024315db4d7d2a89da5298a79daa1f5122741b2f76e"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.23.b",
+      "event": "hbe_ending.1035",
+      "pending": "hbe_afterword_northern_shudao_3_2",
+      "original_option_sha256": "1ac3bfc4b9caf61fc57f1a5c7495985f4f7acbf49e58abf6af770afb8f05f91e"
+    },
+    {
+      "source_option": "hbe_short_northern_shudao.23.c",
+      "event": "hbe_ending.1036",
+      "pending": "hbe_afterword_northern_shudao_3_3",
+      "original_option_sha256": "e67c7e81d54597c6259fcb1ab012f4259864d376f1c7afc07cfd77a2bd0ac933"
+    },
+    {
+      "source_option": "hbe_short_central_hills.3.a",
+      "event": "hbe_ending.1037",
+      "pending": "hbe_afterword_central_hills_1_1",
+      "original_option_sha256": "d829614caadb255c7cc536dfd59d4db8513b9c509915334cf5ff40fd5a3288b3"
+    },
+    {
+      "source_option": "hbe_short_central_hills.3.b",
+      "event": "hbe_ending.1038",
+      "pending": "hbe_afterword_central_hills_1_2",
+      "original_option_sha256": "46cf9c6af6126d26b5b1f7b5a8dda21c29bdb8250039983ad688c1787050d908"
+    },
+    {
+      "source_option": "hbe_short_central_hills.3.c",
+      "event": "hbe_ending.1039",
+      "pending": "hbe_afterword_central_hills_1_3",
+      "original_option_sha256": "2954f0f9849cd153d754ab4c02b7613bdcce29efc39f90a49ab54691d61fa116"
+    },
+    {
+      "source_option": "hbe_short_central_hills.13.a",
+      "event": "hbe_ending.1040",
+      "pending": "hbe_afterword_central_hills_2_1",
+      "original_option_sha256": "8859ba2f04926dca730e19a2b2b0963b7493dce38daaf2a468bc1a0b80755dea"
+    },
+    {
+      "source_option": "hbe_short_central_hills.13.b",
+      "event": "hbe_ending.1041",
+      "pending": "hbe_afterword_central_hills_2_2",
+      "original_option_sha256": "faf09f12660e0fcd9acb577bdac4b360c4d1a3628c162905c75f1fc0ccda77dc"
+    },
+    {
+      "source_option": "hbe_short_central_hills.13.c",
+      "event": "hbe_ending.1042",
+      "pending": "hbe_afterword_central_hills_2_3",
+      "original_option_sha256": "8f141cda432ca9f5789cceaa36c5547216866c25907f3482e1e1b1b98c27dabe"
+    },
+    {
+      "source_option": "hbe_short_central_hills.23.a",
+      "event": "hbe_ending.1043",
+      "pending": "hbe_afterword_central_hills_3_1",
+      "original_option_sha256": "2cc685c5198bece6b6b1ed67cef14c53bdb74bf7c8894066db4038874ccd7319"
+    },
+    {
+      "source_option": "hbe_short_central_hills.23.b",
+      "event": "hbe_ending.1044",
+      "pending": "hbe_afterword_central_hills_3_2",
+      "original_option_sha256": "1ea0e92ea2f9d46e155b0e44f97952ee5030a21ada8265bc7179f3c904b536e7"
+    },
+    {
+      "source_option": "hbe_short_central_hills.23.c",
+      "event": "hbe_ending.1045",
+      "pending": "hbe_afterword_central_hills_3_3",
+      "original_option_sha256": "efe85cb28aacf79475a30c91c710f499464edf34eddb84a4902d1b88493dcbcd"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.3.a",
+      "event": "hbe_ending.1046",
+      "pending": "hbe_afterword_western_tea_horse_1_1",
+      "original_option_sha256": "4f3cf23487b90889b2b7746958ae0d602c3ac10da985cdcc2c78c9567b9f44f1"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.3.b",
+      "event": "hbe_ending.1047",
+      "pending": "hbe_afterword_western_tea_horse_1_2",
+      "original_option_sha256": "cce53b0f6f9b8de5df9cd188cba3f7322dce42e62ff7db5fc53647343ce4a232"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.3.c",
+      "event": "hbe_ending.1048",
+      "pending": "hbe_afterword_western_tea_horse_1_3",
+      "original_option_sha256": "dd73510a2e4ecb49d5900dfcc3b423c2b19956471eacdc90e3bbc65051482b7f"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.13.a",
+      "event": "hbe_ending.1049",
+      "pending": "hbe_afterword_western_tea_horse_2_1",
+      "original_option_sha256": "f1557e72ee38d17b837c0826be8f884025b51e24bf8a44ddb28f51e69de62c67"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.13.b",
+      "event": "hbe_ending.1050",
+      "pending": "hbe_afterword_western_tea_horse_2_2",
+      "original_option_sha256": "0345584a43a7ed5e80598a9ca72092ad70082e20d819a7d7832396ee589cf93d"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.13.c",
+      "event": "hbe_ending.1051",
+      "pending": "hbe_afterword_western_tea_horse_2_3",
+      "original_option_sha256": "6fe2a9ad19cdc9dda8785d63e3dce3a8652f1d90b2378a38ac54c0fc95493d53"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.23.a",
+      "event": "hbe_ending.1052",
+      "pending": "hbe_afterword_western_tea_horse_3_1",
+      "original_option_sha256": "23d5e6aeaa763d1922337159b0ec1afde5fb7a5b54e16e4b0ebd8514294d813c"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.23.b",
+      "event": "hbe_ending.1053",
+      "pending": "hbe_afterword_western_tea_horse_3_2",
+      "original_option_sha256": "188545c7ac1364938f882a80953d6ecb8ce940c958d49986747db20e3ff6ac04"
+    },
+    {
+      "source_option": "hbe_short_western_tea_horse.23.c",
+      "event": "hbe_ending.1054",
+      "pending": "hbe_afterword_western_tea_horse_3_3",
+      "original_option_sha256": "6a0c1ea328e764a25e0b47888e25dca0b3c1e09799e5dcbcd47e86a843b30e09"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.3.a",
+      "event": "hbe_ending.1055",
+      "pending": "hbe_afterword_southwestern_valleys_1_1",
+      "original_option_sha256": "f38177b825d43b1e209a725952e9cd0cfcf3dbe52a16a0894f12a4721f1faa55"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.3.b",
+      "event": "hbe_ending.1056",
+      "pending": "hbe_afterword_southwestern_valleys_1_2",
+      "original_option_sha256": "0dffa7a2f82fcf32b9e344f5ab35dfc4d50c3a38dfff03354539c146a26a0eba"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.3.c",
+      "event": "hbe_ending.1057",
+      "pending": "hbe_afterword_southwestern_valleys_1_3",
+      "original_option_sha256": "5b9bce327acd960247aec9464c07bf1b82a14552a1be53f7d69062dffd7c43f9"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.13.a",
+      "event": "hbe_ending.1058",
+      "pending": "hbe_afterword_southwestern_valleys_2_1",
+      "original_option_sha256": "4cf05c120c5acc329aae51d79b2f8f6e5ae604390c7bf1c3cd260ed7c158700f"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.13.b",
+      "event": "hbe_ending.1059",
+      "pending": "hbe_afterword_southwestern_valleys_2_2",
+      "original_option_sha256": "716f17de5713c69c4c5feb267d0436b0ecb5356d750ad981c6d04f499391c492"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.13.c",
+      "event": "hbe_ending.1060",
+      "pending": "hbe_afterword_southwestern_valleys_2_3",
+      "original_option_sha256": "a26c02c5b8ddc05d72fcd11d3dcc8c34ed42661bf9cc43a471cf212e0096973b"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.23.a",
+      "event": "hbe_ending.1061",
+      "pending": "hbe_afterword_southwestern_valleys_3_1",
+      "original_option_sha256": "31821f08b059ae2cc3a0da456e0a6c5b2b43884e4310467e4392ea6cfa6bbf85"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.23.b",
+      "event": "hbe_ending.1062",
+      "pending": "hbe_afterword_southwestern_valleys_3_2",
+      "original_option_sha256": "9f3a1549967cb09858e520db7e29eff82f7f004a162eea3d035da848171e24b3"
+    },
+    {
+      "source_option": "hbe_short_southwestern_valleys.23.c",
+      "event": "hbe_ending.1063",
+      "pending": "hbe_afterword_southwestern_valleys_3_3",
+      "original_option_sha256": "4805f9984b9fb0f1ebb72416af057f81a70b3e3994b5a991880c5c2b4ab36473"
+    },
+    {
+      "source_option": "hbe_short_shared.3.a",
+      "event": "hbe_ending.1064",
+      "pending": "hbe_afterword_shared_1_1",
+      "original_option_sha256": "7b91dda5baf72b34a70cb2687981c2d4cf05eb5e437b80caf19c4fd5677af4a3"
+    },
+    {
+      "source_option": "hbe_short_shared.3.b",
+      "event": "hbe_ending.1065",
+      "pending": "hbe_afterword_shared_1_2",
+      "original_option_sha256": "17bf39387776662c3fcb5849fff2745043c3de79b64ad16f55abfdb9d3bb498c"
+    },
+    {
+      "source_option": "hbe_short_shared.3.c",
+      "event": "hbe_ending.1066",
+      "pending": "hbe_afterword_shared_1_3",
+      "original_option_sha256": "df5bedec6e8d3d25c78428e0dd024a05bbe661903b5484afa3a88fd18ab26d59"
+    },
+    {
+      "source_option": "hbe_short_shared.13.a",
+      "event": "hbe_ending.1067",
+      "pending": "hbe_afterword_shared_2_1",
+      "original_option_sha256": "bdaa30b965bba9faf7e6fefc21b21ef21963fde5c430f24a33fc0ac3c7044230"
+    },
+    {
+      "source_option": "hbe_short_shared.13.b",
+      "event": "hbe_ending.1068",
+      "pending": "hbe_afterword_shared_2_2",
+      "original_option_sha256": "5a8f0bb421a71da11d398649e19cb407f45c11223a2bac14d9450599e4982ab9"
+    },
+    {
+      "source_option": "hbe_short_shared.13.c",
+      "event": "hbe_ending.1069",
+      "pending": "hbe_afterword_shared_2_3",
+      "original_option_sha256": "ae05ce0dc8a2df8d5d2ecaa185e1ada55981f100e1147608cef17d43900f5b20"
+    },
+    {
+      "source_option": "hbe_short_shared.23.a",
+      "event": "hbe_ending.1070",
+      "pending": "hbe_afterword_shared_3_1",
+      "original_option_sha256": "fe565775f660febf515051fa3f973a3242afae8fc9ecb18a8caaf2b966456f8b"
+    },
+    {
+      "source_option": "hbe_short_shared.23.b",
+      "event": "hbe_ending.1071",
+      "pending": "hbe_afterword_shared_3_2",
+      "original_option_sha256": "967bc7e3f4429d37404efe89cb3052f7cd792f9ff553ae642407c60fcff64b66"
+    },
+    {
+      "source_option": "hbe_short_shared.23.c",
+      "event": "hbe_ending.1072",
+      "pending": "hbe_afterword_shared_3_3",
+      "original_option_sha256": "7297d9aaa24623f483c0e9ad306a3e5413f7d177b1af911832dbc2456d3297fb"
+    },
+    {
+      "source_option": "hbe_short_shared.33.a",
+      "event": "hbe_ending.1073",
+      "pending": "hbe_afterword_shared_4_1",
+      "original_option_sha256": "d93edd740bed749a2a916b32b21ff99e44403632149bed1b8990f1e37749afb1"
+    },
+    {
+      "source_option": "hbe_short_shared.33.b",
+      "event": "hbe_ending.1074",
+      "pending": "hbe_afterword_shared_4_2",
+      "original_option_sha256": "1102040abaa1fb4e8162ea379da2e6dbbd592599f32c34c2037ee2d216a6d909"
+    },
+    {
+      "source_option": "hbe_short_shared.33.c",
+      "event": "hbe_ending.1075",
+      "pending": "hbe_afterword_shared_4_3",
+      "original_option_sha256": "19fec1d29969d8fe551b01516c74f4067a2a5f003465b7045b48999834650ccc"
+    },
+    {
+      "source_option": "hbe_short_shared.43.a",
+      "event": "hbe_ending.1076",
+      "pending": "hbe_afterword_shared_5_1",
+      "original_option_sha256": "e56e2f05b5466e45c1057448140390b3c470eab504c3ce6276a8c2d823a8e619"
+    },
+    {
+      "source_option": "hbe_short_shared.43.b",
+      "event": "hbe_ending.1077",
+      "pending": "hbe_afterword_shared_5_2",
+      "original_option_sha256": "71194ea46fceea6926e9e7cf5b8646725cb0624a4a3afb220c65b024e90841bf"
+    },
+    {
+      "source_option": "hbe_short_shared.43.c",
+      "event": "hbe_ending.1078",
+      "pending": "hbe_afterword_shared_5_3",
+      "original_option_sha256": "ab5fb2eb74c32922fe97db7dc7e3d18dc446148441f00a65362d00134399bc23"
+    },
+    {
+      "source_option": "hbe_short_shared.53.a",
+      "event": "hbe_ending.1079",
+      "pending": "hbe_afterword_shared_6_1",
+      "original_option_sha256": "58d12c3b90dc83a526bfcb7b170422f40bd0458861a697979547cd3718e259e1"
+    },
+    {
+      "source_option": "hbe_short_shared.53.b",
+      "event": "hbe_ending.1080",
+      "pending": "hbe_afterword_shared_6_2",
+      "original_option_sha256": "a257d4571421b23ecd6b64e8ee72a20d24fa277bd26286ead11f48e532af8ba9"
+    },
+    {
+      "source_option": "hbe_short_shared.53.c",
+      "event": "hbe_ending.1081",
+      "pending": "hbe_afterword_shared_6_3",
+      "original_option_sha256": "a1c36b2a029c22da6e420e43d9158d443d344585a50b15eccb9d336d0ba4c1ba"
+    },
+    {
+      "source_option": "hbe_short_shared.63.a",
+      "event": "hbe_ending.1082",
+      "pending": "hbe_afterword_shared_7_1",
+      "original_option_sha256": "c626ec712277d3815e650b5e7de373a9a807bb0fd709c4d9970b4ec119d3ea18"
+    },
+    {
+      "source_option": "hbe_short_shared.63.b",
+      "event": "hbe_ending.1083",
+      "pending": "hbe_afterword_shared_7_2",
+      "original_option_sha256": "7682af60076e668e2228f5c095caceba2fe819c7d7b27da68dcd97807a6163aa"
+    },
+    {
+      "source_option": "hbe_short_shared.63.c",
+      "event": "hbe_ending.1084",
+      "pending": "hbe_afterword_shared_7_3",
+      "original_option_sha256": "2a4d8927d0dd08281892b5d755752d9156c910bd828eea3f641c1f387d1d041e"
+    },
+    {
+      "source_option": "hbe_short_shared.73.a",
+      "event": "hbe_ending.1085",
+      "pending": "hbe_afterword_shared_8_1",
+      "original_option_sha256": "3e3ce3ee7deab13af2206730723923c345da79452f1ea6579150d81eb5700044"
+    },
+    {
+      "source_option": "hbe_short_shared.73.b",
+      "event": "hbe_ending.1086",
+      "pending": "hbe_afterword_shared_8_2",
+      "original_option_sha256": "19ae95c32e5627c2fdf7739417c8e6ec896413e5b3a4ec708e2d0317fa908b51"
+    },
+    {
+      "source_option": "hbe_short_shared.73.c",
+      "event": "hbe_ending.1087",
+      "pending": "hbe_afterword_shared_8_3",
+      "original_option_sha256": "1cedab9eb15515c1b830d106894b885477a2dc08d0e590251bbdc2aa6f6b8752"
+    },
+    {
+      "source_option": "hbe_short_shared.83.a",
+      "event": "hbe_ending.1088",
+      "pending": "hbe_afterword_shared_9_1",
+      "original_option_sha256": "2b08884b16f50698dfb64912030e0d6e9ef30064064e9f6819f581869f5caabf"
+    },
+    {
+      "source_option": "hbe_short_shared.83.b",
+      "event": "hbe_ending.1089",
+      "pending": "hbe_afterword_shared_9_2",
+      "original_option_sha256": "c898f5eca4ba9b2570fc9ec8b3ac67149cbf3ac9507a85605c878e97a63a4789"
+    },
+    {
+      "source_option": "hbe_short_shared.83.c",
+      "event": "hbe_ending.1090",
+      "pending": "hbe_afterword_shared_9_3",
+      "original_option_sha256": "690436e0e93c43e78ea3406c5a18632dcb59a16a72cd8b50dda2438141ecb2c1"
+    },
+    {
+      "source_option": "hbe_short_shared.93.a",
+      "event": "hbe_ending.1091",
+      "pending": "hbe_afterword_shared_10_1",
+      "original_option_sha256": "d0f6a623234d243743b5b3c94065351d62913a3d052a04568ee560df80b87b61"
+    },
+    {
+      "source_option": "hbe_short_shared.93.b",
+      "event": "hbe_ending.1092",
+      "pending": "hbe_afterword_shared_10_2",
+      "original_option_sha256": "97333c121624d70cdce24f1e3102e59cf9bb1c4cf3885bf09ffd3b34d57e1c5c"
+    },
+    {
+      "source_option": "hbe_short_shared.93.c",
+      "event": "hbe_ending.1093",
+      "pending": "hbe_afterword_shared_10_3",
+      "original_option_sha256": "c1c90ffbf1ccb224a93255c77c89feb6ea5113d7deb7e0e90ff1cbffcb56befa"
+    },
+    {
+      "source_option": "hbe_short_shared.103.a",
+      "event": "hbe_ending.1094",
+      "pending": "hbe_afterword_shared_11_1",
+      "original_option_sha256": "164a58ac042bb96dd8b8025610eab6acb034b9aef145c57d6d1a5a6173dfe38f"
+    },
+    {
+      "source_option": "hbe_short_shared.103.b",
+      "event": "hbe_ending.1095",
+      "pending": "hbe_afterword_shared_11_2",
+      "original_option_sha256": "59e5021a7baf1676c577c23ac413f2db2290ff49c2042ebd58fee8d46accfa30"
+    },
+    {
+      "source_option": "hbe_short_shared.103.c",
+      "event": "hbe_ending.1096",
+      "pending": "hbe_afterword_shared_11_3",
+      "original_option_sha256": "ffe12e19940bfa5ed7be0d593d81adb6923f1aabedfdf0ef794b5adb4259dc2a"
+    },
+    {
+      "source_option": "hbe_short_shared.113.a",
+      "event": "hbe_ending.1097",
+      "pending": "hbe_afterword_shared_12_1",
+      "original_option_sha256": "76c9eb23863e4e2954d6d5b950326777a2d0c8bf5976ae3025e2c1afc42feea9"
+    },
+    {
+      "source_option": "hbe_short_shared.113.b",
+      "event": "hbe_ending.1098",
+      "pending": "hbe_afterword_shared_12_2",
+      "original_option_sha256": "d643b59140c1d3e266dab9d7dde96a2e67b2184ee976e72ee3d5485d7bbead21"
+    },
+    {
+      "source_option": "hbe_short_shared.113.c",
+      "event": "hbe_ending.1099",
+      "pending": "hbe_afterword_shared_12_3",
+      "original_option_sha256": "ddaa3ec0cdfaa73ef301a0cab45ae517916a9b1ef7aaba430c56a44989f1248a"
+    },
+    {
+      "source_option": "hbe_migration.10.a",
+      "event": "hbe_ending.2001",
+      "pending": "hbe_afterword_migration_1",
+      "original_option_sha256": "d1081ac08697d6bbfea6bc2f7cbcb6d20c9360b2c1382f5eb9c9667fbb11f600"
+    },
+    {
+      "source_option": "hbe_migration.10.b",
+      "event": "hbe_ending.2002",
+      "pending": "hbe_afterword_migration_2",
+      "original_option_sha256": "824ef7741595b8f6e30dff428ebc42da67ed4b665938d36a6f1329cfcd5491f3"
+    }
+  ],
+  "epilogues": [
+    {
+      "id": "hbe_ending.1001",
+      "source": "hbe_short_chengdu_plain.3",
+      "option": "a",
+      "chain": "失色的锦样",
+      "art": "craft_public",
+      "title": "失色的锦样 · 公开验色，允许新坊接单",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1002",
+      "source": "hbe_short_chengdu_plain.3",
+      "option": "b",
+      "chain": "失色的锦样",
+      "art": "craft_guild",
+      "title": "失色的锦样 · 由旧行会作保，维持稳定交货",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1003",
+      "source": "hbe_short_chengdu_plain.3",
+      "option": "c",
+      "chain": "失色的锦样",
+      "art": "craft_archive",
+      "title": "失色的锦样 · 在府学留样，按用途分发订单",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1004",
+      "source": "hbe_short_chengdu_plain.13",
+      "option": "a",
+      "chain": "借来的诗卷",
+      "art": "reading_public",
+      "title": "借来的诗卷 · 供公共讲读，留穷户席位",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1005",
+      "source": "hbe_short_chengdu_plain.13",
+      "option": "b",
+      "chain": "借来的诗卷",
+      "art": "reading_private",
+      "title": "借来的诗卷 · 准主人邀客，以礼物补修屋",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1006",
+      "source": "hbe_short_chengdu_plain.13",
+      "option": "c",
+      "chain": "借来的诗卷",
+      "art": "council_office",
+      "title": "借来的诗卷 · 让书坊办读本，馆中按日限客",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1007",
+      "source": "hbe_short_chengdu_plain.23",
+      "option": "a",
+      "chain": "竹山的两张界图",
+      "art": "terrace_commons",
+      "title": "竹山的两张界图 · 按季议价，由两村共管",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1008",
+      "source": "hbe_short_chengdu_plain.23",
+      "option": "b",
+      "chain": "竹山的两张界图",
+      "art": "land_registry",
+      "title": "竹山的两张界图 · 固定官价，换取长期订单",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1009",
+      "source": "hbe_short_chengdu_plain.23",
+      "option": "c",
+      "chain": "竹山的两张界图",
+      "art": "craft_archive",
+      "title": "竹山的两张界图 · 准作坊预订，公开轮伐记录",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1010",
+      "source": "hbe_short_southern_salt_wine.3",
+      "option": "a",
+      "chain": "盐灶上的新铜管",
+      "art": "salt_workshop",
+      "title": "盐灶上的新铜管 · 给转学煎盐的名额",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1011",
+      "source": "hbe_short_southern_salt_wine.3",
+      "option": "b",
+      "chain": "盐灶上的新铜管",
+      "art": "market_regulated",
+      "title": "盐灶上的新铜管 · 付一次工钱，准井主自定雇用",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1012",
+      "source": "hbe_short_southern_salt_wine.3",
+      "option": "c",
+      "chain": "盐灶上的新铜管",
+      "art": "land_registry",
+      "title": "盐灶上的新铜管 · 让盐署雇他们巡查各井管道",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1013",
+      "source": "hbe_short_southern_salt_wine.13",
+      "option": "a",
+      "chain": "顺流而下的酒瓮",
+      "art": "craft_archive",
+      "title": "顺流而下的酒瓮 · 并刻烧造与装载记号",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1014",
+      "source": "hbe_short_southern_salt_wine.13",
+      "option": "b",
+      "chain": "顺流而下的酒瓮",
+      "art": "market_regulated",
+      "title": "顺流而下的酒瓮 · 由商铺统一担保",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1015",
+      "source": "hbe_short_southern_salt_wine.13",
+      "option": "c",
+      "chain": "顺流而下的酒瓮",
+      "art": "craft_public",
+      "title": "顺流而下的酒瓮 · 设公用验瓮，让新窑也能供货",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1016",
+      "source": "hbe_short_southern_salt_wine.23",
+      "option": "a",
+      "chain": "井旁的旧墓",
+      "art": "memorial_common",
+      "title": "井旁的旧墓 · 留原处石记，准村民祭礼",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1017",
+      "source": "hbe_short_southern_salt_wine.23",
+      "option": "b",
+      "chain": "井旁的旧墓",
+      "art": "reading_private",
+      "title": "井旁的旧墓 · 移碑村口，以盐利供养",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1018",
+      "source": "hbe_short_southern_salt_wine.23",
+      "option": "c",
+      "chain": "井旁的旧墓",
+      "art": "reading_public",
+      "title": "井旁的旧墓 · 府学留图，公布开井时的约定",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1019",
+      "source": "hbe_short_eastern_river.3",
+      "option": "a",
+      "chain": "夜里听不见的江号",
+      "art": "river_commons",
+      "title": "夜里听不见的江号 · 公开夜行办法，准船帮自查",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1020",
+      "source": "hbe_short_eastern_river.3",
+      "option": "b",
+      "chain": "夜里听不见的江号",
+      "art": "river_convoy",
+      "title": "夜里听不见的江号 · 纳入军用护航，按券放行",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1021",
+      "source": "hbe_short_eastern_river.3",
+      "option": "c",
+      "chain": "夜里听不见的江号",
+      "art": "reading_public",
+      "title": "夜里听不见的江号 · 交码头讲习，收费只补灯油",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1022",
+      "source": "hbe_short_eastern_river.13",
+      "option": "a",
+      "chain": "岸边的旧船坞",
+      "art": "shipyard",
+      "title": "岸边的旧船坞 · 保留小船时段，补短期误工",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1023",
+      "source": "hbe_short_eastern_river.13",
+      "option": "b",
+      "chain": "岸边的旧船坞",
+      "art": "river_convoy",
+      "title": "岸边的旧船坞 · 大船优先，以货利付渔户工钱",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1024",
+      "source": "hbe_short_eastern_river.13",
+      "option": "c",
+      "chain": "岸边的旧船坞",
+      "art": "council_office",
+      "title": "岸边的旧船坞 · 按船型公开排期，设共同账房",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1025",
+      "source": "hbe_short_eastern_river.23",
+      "option": "a",
+      "chain": "峡中留下的拓本",
+      "art": "memorial_common",
+      "title": "峡中留下的拓本 · 供木搭棚，留石在原处",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1026",
+      "source": "hbe_short_eastern_river.23",
+      "option": "b",
+      "chain": "峡中留下的拓本",
+      "art": "stone_archive",
+      "title": "峡中留下的拓本 · 迁入陈馆，补村寨运输钱",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1027",
+      "source": "hbe_short_eastern_river.23",
+      "option": "c",
+      "chain": "峡中留下的拓本",
+      "art": "reading_public",
+      "title": "峡中留下的拓本 · 保存拓本，停止扩大石面开凿",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1028",
+      "source": "hbe_short_northern_shudao.3",
+      "option": "a",
+      "chain": "驿站里的沙漏",
+      "art": "observatory_school",
+      "title": "驿站里的沙漏 · 公开器具改法，隐去守军行期",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1029",
+      "source": "hbe_short_northern_shudao.3",
+      "option": "b",
+      "chain": "驿站里的沙漏",
+      "art": "gate_time",
+      "title": "驿站里的沙漏 · 把更册全交关军，军用优先",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1030",
+      "source": "hbe_short_northern_shudao.3",
+      "option": "c",
+      "chain": "驿站里的沙漏",
+      "art": "reading_public",
+      "title": "驿站里的沙漏 · 供府学教读，另记城门军册",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1031",
+      "source": "hbe_short_northern_shudao.13",
+      "option": "a",
+      "chain": "轮戍人的两册工钱",
+      "art": "terrace_commons",
+      "title": "轮戍人的两册工钱 · 按实日计役，府库供替岗",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1032",
+      "source": "hbe_short_northern_shudao.13",
+      "option": "b",
+      "chain": "轮戍人的两册工钱",
+      "art": "gate_time",
+      "title": "轮戍人的两册工钱 · 集中供养关军，稳定值守",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1033",
+      "source": "hbe_short_northern_shudao.13",
+      "option": "c",
+      "chain": "轮戍人的两册工钱",
+      "art": "council_public",
+      "title": "轮戍人的两册工钱 · 村寨共议轮值，每季公开工钱",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1034",
+      "source": "hbe_short_northern_shudao.23",
+      "option": "a",
+      "chain": "山路上的书箱",
+      "art": "reading_public",
+      "title": "山路上的书箱 · 按供学用量发券，公开采购",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1035",
+      "source": "hbe_short_northern_shudao.23",
+      "option": "b",
+      "chain": "山路上的书箱",
+      "art": "bridge_bureau",
+      "title": "山路上的书箱 · 关署统一采办，控制免关",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1036",
+      "source": "hbe_short_northern_shudao.23",
+      "option": "c",
+      "chain": "山路上的书箱",
+      "art": "council_office",
+      "title": "山路上的书箱 · 书坊与府学共同订货，逐年查账",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1037",
+      "source": "hbe_short_central_hills.3",
+      "option": "a",
+      "chain": "仓中的两种谷子",
+      "art": "granary_common",
+      "title": "仓中的两种谷子 · 设公共留种，不按出资限借",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1038",
+      "source": "hbe_short_central_hills.3",
+      "option": "b",
+      "chain": "仓中的两种谷子",
+      "art": "market_regulated",
+      "title": "仓中的两种谷子 · 出资者优先，限定借种价格",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1039",
+      "source": "hbe_short_central_hills.3",
+      "option": "c",
+      "chain": "仓中的两种谷子",
+      "art": "council_office",
+      "title": "仓中的两种谷子 · 由仓户推举查种人，公开库存",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1040",
+      "source": "hbe_short_central_hills.13",
+      "option": "a",
+      "chain": "寄来的种桑信",
+      "art": "reading_public",
+      "title": "寄来的种桑信 · 准寄册互学，资助抄印",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1041",
+      "source": "hbe_short_central_hills.13",
+      "option": "b",
+      "chain": "寄来的种桑信",
+      "art": "craft_guild",
+      "title": "寄来的种桑信 · 限本府传习，保护订单",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1042",
+      "source": "hbe_short_central_hills.13",
+      "option": "c",
+      "chain": "寄来的种桑信",
+      "art": "craft_archive",
+      "title": "寄来的种桑信 · 以商人往来交换新种记录",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1043",
+      "source": "hbe_short_central_hills.23",
+      "option": "a",
+      "chain": "桥边的债簿",
+      "art": "council_public",
+      "title": "桥边的债簿 · 按受益分摊，公开借还记录",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1044",
+      "source": "hbe_short_central_hills.23",
+      "option": "b",
+      "chain": "桥边的债簿",
+      "art": "bridge_bureau",
+      "title": "桥边的债簿 · 保留商人垫款，府署定期担保",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1045",
+      "source": "hbe_short_central_hills.23",
+      "option": "c",
+      "chain": "桥边的债簿",
+      "art": "terrace_commons",
+      "title": "桥边的债簿 · 减小工程，乡里自行维护",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1046",
+      "source": "hbe_short_western_tea_horse.3",
+      "option": "a",
+      "chain": "被雨打湿的茶砖",
+      "art": "craft_public",
+      "title": "被雨打湿的茶砖 · 公开包装做法，资助传习",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1047",
+      "source": "hbe_short_western_tea_horse.3",
+      "option": "b",
+      "chain": "被雨打湿的茶砖",
+      "art": "market_regulated",
+      "title": "被雨打湿的茶砖 · 保护限期独供，稳定交割",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1048",
+      "source": "hbe_short_western_tea_horse.3",
+      "option": "c",
+      "chain": "被雨打湿的茶砖",
+      "art": "craft_archive",
+      "title": "被雨打湿的茶砖 · 设公用货样，让买主按路程选择",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1049",
+      "source": "hbe_short_western_tea_horse.13",
+      "option": "a",
+      "chain": "马群中的旧烙印",
+      "art": "veterinary_school",
+      "title": "马群中的旧烙印 · 训练牧人共同验马",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1050",
+      "source": "hbe_short_western_tea_horse.13",
+      "option": "b",
+      "chain": "马群中的旧烙印",
+      "art": "stud_farm",
+      "title": "马群中的旧烙印 · 保留旧验牌，重申担保",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1051",
+      "source": "hbe_short_western_tea_horse.13",
+      "option": "c",
+      "chain": "马群中的旧烙印",
+      "art": "veterinary",
+      "title": "马群中的旧烙印 · 医马舍留病历，市契另记买卖",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1052",
+      "source": "hbe_short_western_tea_horse.23",
+      "option": "a",
+      "chain": "雪路上的歇脚屋",
+      "art": "bridge_commons",
+      "title": "雪路上的歇脚屋 · 村寨养屋，保留冬行救助",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1053",
+      "source": "hbe_short_western_tea_horse.23",
+      "option": "b",
+      "chain": "雪路上的歇脚屋",
+      "art": "gate_time",
+      "title": "雪路上的歇脚屋 · 交军路长期驻守",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1054",
+      "source": "hbe_short_western_tea_horse.23",
+      "option": "c",
+      "chain": "雪路上的歇脚屋",
+      "art": "market_open",
+      "title": "雪路上的歇脚屋 · 准屋旁交易，以货费修顶",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1055",
+      "source": "hbe_short_southwestern_valleys.3",
+      "option": "a",
+      "chain": "湖上两家的渔船",
+      "art": "river_commons",
+      "title": "湖上两家的渔船 · 共记渡人和运货，按时段调船",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1056",
+      "source": "hbe_short_southwestern_valleys.3",
+      "option": "b",
+      "chain": "湖上两家的渔船",
+      "art": "river_convoy",
+      "title": "湖上两家的渔船 · 只保证货约，村寨另雇渡船",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1057",
+      "source": "hbe_short_southwestern_valleys.3",
+      "option": "c",
+      "chain": "湖上两家的渔船",
+      "art": "council_public",
+      "title": "湖上两家的渔船 · 让两家轮派船工，府署每季查账",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1058",
+      "source": "hbe_short_southwestern_valleys.13",
+      "option": "a",
+      "chain": "山寨门前的铁门",
+      "art": "granary_common",
+      "title": "山寨门前的铁门 · 按契查欠，先放还种粮",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1059",
+      "source": "hbe_short_southwestern_valleys.13",
+      "option": "b",
+      "chain": "山寨门前的铁门",
+      "art": "migration_sponsored",
+      "title": "山寨门前的铁门 · 认可旧租，给穷户短期口粮",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1060",
+      "source": "hbe_short_southwestern_valleys.13",
+      "option": "c",
+      "chain": "山寨门前的铁门",
+      "art": "council_office",
+      "title": "山寨门前的铁门 · 重新订公仓规则，不许私锁借粮",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1061",
+      "source": "hbe_short_southwestern_valleys.23",
+      "option": "a",
+      "chain": "议事时的座次",
+      "art": "council_public",
+      "title": "议事时的座次 · 按记录能力推举并传习",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1062",
+      "source": "hbe_short_southwestern_valleys.23",
+      "option": "b",
+      "chain": "议事时的座次",
+      "art": "reading_private",
+      "title": "议事时的座次 · 承认旧席传承，限定职责",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1063",
+      "source": "hbe_short_southwestern_valleys.23",
+      "option": "c",
+      "chain": "议事时的座次",
+      "art": "reading_public",
+      "title": "议事时的座次 · 各寨轮派译写，保留共同查账",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1064",
+      "source": "hbe_short_shared.3",
+      "option": "a",
+      "chain": "第一口乡音",
+      "art": "market_open",
+      "title": "第一口乡音 · 保留各自风味，公开验食",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1065",
+      "source": "hbe_short_shared.3",
+      "option": "b",
+      "chain": "第一口乡音",
+      "art": "market_regulated",
+      "title": "第一口乡音 · 纳入旧行会，统一价目",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1066",
+      "source": "hbe_short_shared.3",
+      "option": "c",
+      "chain": "第一口乡音",
+      "art": "council_office",
+      "title": "第一口乡音 · 按卫生与成色发长期摊牌",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1067",
+      "source": "hbe_short_shared.13",
+      "option": "a",
+      "chain": "借住的院落",
+      "art": "migration_open",
+      "title": "借住的院落 · 按居住记录给门牌",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1068",
+      "source": "hbe_short_shared.13",
+      "option": "b",
+      "chain": "借住的院落",
+      "art": "migration_sponsored",
+      "title": "借住的院落 · 只认买屋，乡议仍由旧户主持",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1069",
+      "source": "hbe_short_shared.13",
+      "option": "c",
+      "chain": "借住的院落",
+      "art": "bridge_commons",
+      "title": "借住的院落 · 以修路出资取得共同见证",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1070",
+      "source": "hbe_short_shared.23",
+      "option": "a",
+      "chain": "渡口的两个孩子",
+      "art": "shipyard",
+      "title": "渡口的两个孩子 · 明定责任，训练护工",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1071",
+      "source": "hbe_short_shared.23",
+      "option": "b",
+      "chain": "渡口的两个孩子",
+      "art": "market_regulated",
+      "title": "渡口的两个孩子 · 给一次补偿，维持旧雇用",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1072",
+      "source": "hbe_short_shared.23",
+      "option": "c",
+      "chain": "渡口的两个孩子",
+      "art": "medicine_public",
+      "title": "渡口的两个孩子 · 药舍定期查伤，船帮分担费用",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1073",
+      "source": "hbe_short_shared.33",
+      "option": "a",
+      "chain": "由谁教孩子读书",
+      "art": "reading_public",
+      "title": "由谁教孩子读书 · 按教学成绩聘任",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1074",
+      "source": "hbe_short_shared.33",
+      "option": "b",
+      "chain": "由谁教孩子读书",
+      "art": "reading_private",
+      "title": "由谁教孩子读书 · 保留旧家主持，明列公共名额",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1075",
+      "source": "hbe_short_shared.33",
+      "option": "c",
+      "chain": "由谁教孩子读书",
+      "art": "council_public",
+      "title": "由谁教孩子读书 · 由住户轮选教读，公账供纸墨",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1076",
+      "source": "hbe_short_shared.43",
+      "option": "a",
+      "chain": "迁来的祭日",
+      "art": "festival",
+      "title": "迁来的祭日 · 承认礼期，按季调役",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1077",
+      "source": "hbe_short_shared.43",
+      "option": "b",
+      "chain": "迁来的祭日",
+      "art": "council_office",
+      "title": "迁来的祭日 · 保留逐案宽免，维护领役",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1078",
+      "source": "hbe_short_shared.43",
+      "option": "c",
+      "chain": "迁来的祭日",
+      "art": "terrace_commons",
+      "title": "迁来的祭日 · 设付酬替役，让乡里自行筹工",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1079",
+      "source": "hbe_short_shared.53",
+      "option": "a",
+      "chain": "一间新药铺",
+      "art": "medicine_public",
+      "title": "一间新药铺 · 承认独立铺号，公开查方",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1080",
+      "source": "hbe_short_shared.53",
+      "option": "b",
+      "chain": "一间新药铺",
+      "art": "medicine_guild",
+      "title": "一间新药铺 · 合入旧药铺，维持行规",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1081",
+      "source": "hbe_short_shared.53",
+      "option": "c",
+      "chain": "一间新药铺",
+      "art": "medicine",
+      "title": "一间新药铺 · 设共同药舍，给两医固定酬钱",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1082",
+      "source": "hbe_short_shared.63",
+      "option": "a",
+      "chain": "荒地上的借种",
+      "art": "granary_common",
+      "title": "荒地上的借种 · 按发芽与收成验还",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1083",
+      "source": "hbe_short_shared.63",
+      "option": "b",
+      "chain": "荒地上的借种",
+      "art": "land_registry",
+      "title": "荒地上的借种 · 按原种验还，保护仓册",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1084",
+      "source": "hbe_short_shared.63",
+      "option": "c",
+      "chain": "荒地上的借种",
+      "art": "reading_public",
+      "title": "荒地上的借种 · 分仓保存，教住户共同记种",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1085",
+      "source": "hbe_short_shared.73",
+      "option": "a",
+      "chain": "合开的染坊",
+      "art": "craft_public",
+      "title": "合开的染坊 · 准跨坊传习，明定工钱",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1086",
+      "source": "hbe_short_shared.73",
+      "option": "b",
+      "chain": "合开的染坊",
+      "art": "craft_guild",
+      "title": "合开的染坊 · 一师一徒，维护行规",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1087",
+      "source": "hbe_short_shared.73",
+      "option": "c",
+      "chain": "合开的染坊",
+      "art": "craft_archive",
+      "title": "合开的染坊 · 设共同试染课，以技艺分工",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1088",
+      "source": "hbe_short_shared.83",
+      "option": "a",
+      "chain": "同住一坡的山民",
+      "art": "migration_open",
+      "title": "同住一坡的山民 · 木牌记双名，认可共同见证",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1089",
+      "source": "hbe_short_shared.83",
+      "option": "b",
+      "chain": "同住一坡的山民",
+      "art": "migration_sponsored",
+      "title": "同住一坡的山民 · 只用官名，维持地册",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1090",
+      "source": "hbe_short_shared.83",
+      "option": "c",
+      "chain": "同住一坡的山民",
+      "art": "council_public",
+      "title": "同住一坡的山民 · 官册附旧名，教两方核对",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1091",
+      "source": "hbe_short_shared.93",
+      "option": "a",
+      "chain": "递到府署的合姓诉状",
+      "art": "council_public",
+      "title": "递到府署的合姓诉状 · 按使用与出资共同推举",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1092",
+      "source": "hbe_short_shared.93",
+      "option": "b",
+      "chain": "递到府署的合姓诉状",
+      "art": "reading_private",
+      "title": "递到府署的合姓诉状 · 保留旧名额，定期公开账本",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1093",
+      "source": "hbe_short_shared.93",
+      "option": "c",
+      "chain": "递到府署的合姓诉状",
+      "art": "bridge_bureau",
+      "title": "递到府署的合姓诉状 · 府署收管，统一路费",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1094",
+      "source": "hbe_short_shared.103",
+      "option": "a",
+      "chain": "新来的船工",
+      "art": "river_commons",
+      "title": "新来的船工 · 准入帮，保留旧师承",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1095",
+      "source": "hbe_short_shared.103",
+      "option": "b",
+      "chain": "新来的船工",
+      "art": "river_convoy",
+      "title": "新来的船工 · 按旧规入帮，维护船帮体面",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1096",
+      "source": "hbe_short_shared.103",
+      "option": "c",
+      "chain": "新来的船工",
+      "art": "shipyard",
+      "title": "新来的船工 · 设公开试船，不按籍贯择人",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1097",
+      "source": "hbe_short_shared.113",
+      "option": "a",
+      "chain": "返回旧乡的长者",
+      "art": "memorial_common",
+      "title": "返回旧乡的长者 · 准自购祭田，承认本府住户",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1098",
+      "source": "hbe_short_shared.113",
+      "option": "b",
+      "chain": "返回旧乡的长者",
+      "art": "reading_private",
+      "title": "返回旧乡的长者 · 保留旧族公地，按旧乡祭扫",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.1099",
+      "source": "hbe_short_shared.113",
+      "option": "c",
+      "chain": "返回旧乡的长者",
+      "art": "festival",
+      "title": "返回旧乡的长者 · 设共同纪念，不另分族田",
+      "category": "短链结局回顾"
+    },
+    {
+      "id": "hbe_ending.2001",
+      "source": "hbe_migration.10",
+      "option": "a",
+      "chain": "湖广填四川",
+      "art": "migration_open",
+      "title": "湖广填四川 · 新乡共籍约",
+      "category": "移民结局回顾"
+    },
+    {
+      "id": "hbe_ending.2002",
+      "source": "hbe_migration.10",
+      "option": "b",
+      "chain": "湖广填四川",
+      "art": "migration_sponsored",
+      "title": "湖广填四川 · 旧户担保制",
+      "category": "移民结局回顾"
+    }
+  ],
+  "english_status": "Complete Chinese fallback, consistent with existing authored story batch",
+  "gameplay_effects_changed": false
+}

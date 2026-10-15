@@ -55,15 +55,27 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_1_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.3.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_1_1 trigger_event_non_silently = { id = hbe_ending.1046 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.3.b ai_chance = { base = 30 } add_gold = { value = hbe_event_receipt_2 }
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_1_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.3.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_1_2 trigger_event_non_silently = { id = hbe_ending.1047 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.3.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_1_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_1_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_1_3 trigger_event_non_silently = { id = hbe_ending.1048 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_1_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_1_pending
 add_prestige = -2 }
 }
@@ -122,15 +134,26 @@ add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_2_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_2_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.13.b ai_chance = { base = 30 } add_prestige = 4
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_2_1 trigger_event_non_silently = { id = hbe_ending.1049 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.13.b ai_chance = { base = 30 } add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_2_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 3 duration = 4 }
 set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_2_pending
- } option = { name = hbe_short_western_tea_horse.13.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_2_2 trigger_event_non_silently = { id = hbe_ending.1050 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.13.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_2_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_2_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_2_3 trigger_event_non_silently = { id = hbe_ending.1051 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_2_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_2_pending
 add_prestige = -2 }
 }
@@ -188,15 +211,26 @@ hbe_short_western_tea_horse.23 = {
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_3_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_3_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.23.b ai_chance = { base = 30 } add_prestige = 4
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_3_1 trigger_event_non_silently = { id = hbe_ending.1052 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.23.b ai_chance = { base = 30 } add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_3_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_3_pending
- } option = { name = hbe_short_western_tea_horse.23.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_3_2 trigger_event_non_silently = { id = hbe_ending.1053 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.23.c ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:burghers_estate value = 0.02 }
 add_country_modifier = { modifier = hbe_short_choice_western_tea_horse_3_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_western_tea_horse_3_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_3_pending
-add_prestige = 1 } option = { name = hbe_short_western_tea_horse.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_3_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_western_tea_horse_3_3 trigger_event_non_silently = { id = hbe_ending.1054 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_western_tea_horse.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_western_tea_horse_3_phase value = 3 }
 remove_variable = hbe_short_western_tea_horse_3_pending
 add_prestige = -2 }
 }

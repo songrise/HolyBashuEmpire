@@ -174,7 +174,7 @@ add_prestige = -3 }
 
 hbe_story_western_tea_horse.201 = {
  type = country_event title = hbe_story_western_tea_horse.201.title desc = hbe_story_western_tea_horse.201.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_veterinary }
+ illustration_tags = { 1000 = hbe_ending_art_veterinary_school }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_variable = hbe_story_western_tea_horse_closed NOT = { has_variable = hbe_story_western_tea_horse_ending_1 } NOT = { has_variable = hbe_story_western_tea_horse_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.201.a ai_chance = { base = 100 } add_prestige = 4
@@ -184,7 +184,7 @@ set_variable = hbe_story_western_tea_horse_ending_1 }
 
 hbe_story_western_tea_horse.202 = {
  type = country_event title = hbe_story_western_tea_horse.202.title desc = hbe_story_western_tea_horse.202.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_veterinary }
+ illustration_tags = { 1000 = hbe_ending_art_stud_farm }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_variable = hbe_story_western_tea_horse_closed NOT = { has_variable = hbe_story_western_tea_horse_ending_1 } NOT = { has_variable = hbe_story_western_tea_horse_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_western_tea_horse.202.a ai_chance = { base = 100 } add_prestige = 4

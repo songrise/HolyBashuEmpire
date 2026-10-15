@@ -1,0 +1,839 @@
+{
+  "status": "targeted checks passed",
+  "checks": [
+    {
+      "check": "hbe_ending.1001 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1001 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1002 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1002 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1003 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1003 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1004 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1004 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1005 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1005 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1006 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1006 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1007 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1007 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1008 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1008 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1009 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1009 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1010 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1010 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1011 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1011 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1012 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1012 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1013 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1013 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1014 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1014 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1015 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1015 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1016 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1016 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1017 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1017 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1018 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1018 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1019 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1019 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1020 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1020 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1021 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1021 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1022 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1022 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1023 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1023 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1024 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1024 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1025 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1025 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1026 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1026 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1027 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1027 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1028 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1028 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1029 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1029 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1030 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1030 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1031 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1031 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1032 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1032 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1033 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1033 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1034 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1034 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1035 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1035 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1036 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1036 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1037 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1037 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1038 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1038 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1039 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1039 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1040 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1040 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1041 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1041 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1042 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1042 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1043 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1043 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1044 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1044 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1045 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1045 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1046 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1046 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1047 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1047 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1048 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1048 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1049 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1049 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1050 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1050 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1051 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1051 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1052 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1052 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1053 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1053 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1054 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1054 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1055 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1055 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1056 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1056 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1057 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1057 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1058 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1058 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1059 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1059 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1060 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1060 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1061 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1061 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1062 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1062 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1063 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1063 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1064 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1064 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1065 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1065 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1066 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1066 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1067 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1067 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1068 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1068 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1069 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1069 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1070 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1070 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1071 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1071 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1072 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1072 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1073 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1073 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1074 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1074 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1075 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1075 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1076 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1076 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1077 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1077 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1078 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1078 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1079 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1079 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1080 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1080 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1081 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1081 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1082 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1082 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1083 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1083 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1084 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1084 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1085 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1085 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1086 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1086 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1087 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1087 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1088 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1088 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1089 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1089 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1090 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1090 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1091 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1091 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1092 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1092 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1093 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1093 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1094 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1094 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1095 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1095 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1096 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1096 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1097 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1097 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1098 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1098 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1099 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.1099 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2001 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2001 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2002 consumed queued state",
+      "passed": true
+    },
+    {
+      "check": "hbe_ending.2002 executed and marked seen",
+      "passed": true
+    },
+    {
+      "check": "all 101 callbacks confirmed by first checkpoint",
+      "passed": true
+    },
+    {
+      "check": "afterword state remains settled 10 days later",
+      "passed": true
+    },
+    {
+      "check": "new events art scenes and reform definitions have no relevant engine errors",
+      "passed": true
+    },
+    {
+      "check": "engine registered all 101 new afterwords",
+      "passed": true
+    }
+  ],
+  "check_count": 206,
+  "save_sha256": "eec0f6113fabad3a74f4c1ac36cb0f1b3f86ae730514065cfeb3709ebcd8a8e6",
+  "checkpoint": "1337.5.2",
+  "observed_callbacks": 101,
+  "consumed_pending": 101,
+  "unrelated_engine_diagnostics_separate": true,
+  "new_related_errors": [],
+  "global_harness_result": "Tests:\n[ FAIL ] Error log: 11850 errors",
+  "scope": "Two-month headless fixture; all 101 exact hidden presentation hooks executed. No manual option selection or rendered in-game screenshot was tested. Static comparisons verify original choice effects remain unchanged.",
+  "source_manifest_sha256": "535dbfb164b41098ee5a35624b6a8a8787b8635f0eb402d788e662cf0e1818d3"
+}

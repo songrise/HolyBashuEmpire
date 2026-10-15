@@ -44,11 +44,12 @@ def serve(mod, port):
                 self.end_headers()
                 self.wfile.write(payload)
                 return
-            if path.startswith('/art/'):
-                name = path.removeprefix('/art/')
+            if path.startswith(('/art/', '/ending-art/')):
+                is_ending = path.startswith('/ending-art/')
+                name = path.split('/', 2)[2]
                 if not name.endswith('.png') or '/' in name or '\\' in name or '..' in name:
                     self.send_error(404); return
-                image = root / 'assets/event_expansion' / name
+                image = root / ('assets/event_endings_v031' if is_ending else 'assets/event_expansion') / name
                 if not image.is_file():
                     self.send_error(404); return
                 payload = image.read_bytes()

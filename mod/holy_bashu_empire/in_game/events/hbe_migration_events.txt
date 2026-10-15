@@ -220,8 +220,16 @@ hbe_migration.10 = {
  immediate = {  }
  option = { name = hbe_migration.10.a trigger = { custom_tooltip = { text = hbe_migration_ready_open_tt var:hbe_migration_acceptance >= 6 } } ai_chance = { base = 50 } add_country_modifier = { modifier = hbe_migration_ending_1 years = -1 mode = replace }
 add_prestige = 4
-hidden_effect = { set_variable = hbe_migration_closed set_variable = { name = hbe_migration_phase value = 10 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.10.b trigger = { custom_tooltip = { text = hbe_migration_ready_closed_tt var:hbe_migration_acceptance < 6 } } ai_chance = { base = 50 } add_country_modifier = { modifier = hbe_migration_ending_2 years = -1 mode = replace }
+hidden_effect = { set_variable = hbe_migration_closed set_variable = { name = hbe_migration_phase value = 10 } remove_variable = hbe_migration_pending }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_migration_1 trigger_event_non_silently = { id = hbe_ending.2001 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_migration.10.b trigger = { custom_tooltip = { text = hbe_migration_ready_closed_tt var:hbe_migration_acceptance < 6 } } ai_chance = { base = 50 } add_country_modifier = { modifier = hbe_migration_ending_2 years = -1 mode = replace }
 add_prestige = 4
-hidden_effect = { set_variable = hbe_migration_closed set_variable = { name = hbe_migration_phase value = 10 } remove_variable = hbe_migration_pending } } option = { name = hbe_migration.10.c ai_chance = { base = 0 } hidden_effect = { set_variable = hbe_migration_closed set_variable = { name = hbe_migration_phase value = 10 } remove_variable = hbe_migration_pending }
+hidden_effect = { set_variable = hbe_migration_closed set_variable = { name = hbe_migration_phase value = 10 } remove_variable = hbe_migration_pending }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_migration_2 trigger_event_non_silently = { id = hbe_ending.2002 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_migration.10.c ai_chance = { base = 0 } hidden_effect = { set_variable = hbe_migration_closed set_variable = { name = hbe_migration_phase value = 10 } remove_variable = hbe_migration_pending }
 add_prestige = -2 }
 }

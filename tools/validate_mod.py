@@ -114,7 +114,7 @@ def main():
         check('centennial charter needs 100 years and real projects','current_year >= 1437' in new_decisions and 'var:hbe_completed_projects >= 30' in new_decisions)
     check('exactly 36 historical capital seats are counted',sum(banquet.count('location:'+c['capital']+'.owner ?=') for c in countries)==36)
     check('each of seven circles needs strict local majority',banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
-    check('79 inherited banquet events plus authored story expansion',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117+manifest.get('playable_stories',{}).get('event_count',0))
+    check('79 inherited banquet events plus authored story expansion',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117+manifest.get('playable_stories',{}).get('event_count',0)+manifest.get('ending_art_v031',{}).get('new_afterwords',0))
     check('all 36 princes have personal events',sum('has_or_had_tag = '+c['tag'] in new_events for c in countries)==36)
     check('regional researched options and late recurring events exist',('hbe_choice_western_tea_horse_1' in new_events if 'event_choices' in manifest else 'hbe_tech_western_tea_horse_3' in new_events) and 'current_year >= 1457' in new_events)
     check('situation has native GUI panel',(m/'in_game/gui/panels/situation/hbe_banquet.gui').is_file())
@@ -206,6 +206,8 @@ def main():
     validate_social_expansion(m,ROOT,game,manifest,loc_keys,check)
     from validate_annex_industry import validate_annex_industry
     validate_annex_industry(m,manifest,loc_keys,check)
+    from validate_ending_art_v031 import validate_ending_art
+    validate_ending_art(m,ROOT,manifest,loc_keys,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 80 research nodes.')

@@ -1,0 +1,252 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "mod/holy_bashu_empire/in_game/common/government_reforms/hbe_shared_reforms.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_migration_events.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_central_hills.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_chengdu_plain.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_eastern_river.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_northern_shudao.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_shared.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_southern_salt_wine.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_southwestern_valleys.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_short_western_tea_horse.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_central_hills.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_chengdu_plain.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_eastern_river.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_northern_shudao.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_southern_salt_wine.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_southwestern_valleys.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "mod/holy_bashu_empire/in_game/events/hbe_story_western_tea_horse.txt all original gameplay tokens identical",
+      "passed": true
+    },
+    {
+      "check": "local install file set and every byte match source",
+      "passed": true
+    },
+    {
+      "check": "browser indexes all 101 afterwords",
+      "passed": true
+    },
+    {
+      "check": "browser links all afterwords to correct art",
+      "passed": true
+    },
+    {
+      "check": "panda_sanctuary browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "panda_garden browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "fossil_archive browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "fossil_gallery browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "river_commons browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "river_convoy browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "observatory_school browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "gate_time browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "terrace_commons browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "land_registry browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "veterinary_school browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "stud_farm browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "bridge_commons browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "bridge_bureau browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "migration_open browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "migration_sponsored browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "craft_public browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "craft_guild browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "craft_archive browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "reading_public browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "reading_private browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "memorial_common browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "granary_common browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "shipyard browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "medicine_public browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "medicine_guild browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "council_public browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "council_office browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "salt_workshop browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "market_open browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "market_regulated browser serves preserved source painting",
+      "passed": true
+    },
+    {
+      "check": "stone_archive browser serves preserved source painting",
+      "passed": true
+    }
+  ],
+  "check_count": 52,
+  "structural_checks": 1885,
+  "clean_rebuild_checks": 1883,
+  "source_files": 709,
+  "source_manifest_sha256": "0828ffe9671c8dd1a63f95292ec2d6b829de51208e39779c0668e6f0f26dd100",
+  "browser_stats": {
+    "events": 508,
+    "visible": 506,
+    "hidden": 2,
+    "options": 1373,
+    "files": 21,
+    "implemented": 508,
+    "drafts": 0
+  },
+  "original_gameplay_files_unchanged": [
+    "mod/holy_bashu_empire/in_game/common/government_reforms/hbe_shared_reforms.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_migration_events.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_central_hills.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_chengdu_plain.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_eastern_river.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_northern_shudao.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_shared.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_southern_salt_wine.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_southwestern_valleys.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_short_western_tea_horse.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_central_hills.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_chengdu_plain.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_eastern_river.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_northern_shudao.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_southern_salt_wine.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_southwestern_valleys.txt",
+    "mod/holy_bashu_empire/in_game/events/hbe_story_western_tea_horse.txt"
+  ],
+  "cloud_upload": false,
+  "generated_paintings": 34,
+  "new_event_scenes": 32,
+  "reform_icons": 2,
+  "short_chains": 33,
+  "new_presentation_events": 101
+}

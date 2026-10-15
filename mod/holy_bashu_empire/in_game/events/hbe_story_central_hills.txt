@@ -169,7 +169,7 @@ add_prestige = -3 }
 
 hbe_story_central_hills.201 = {
  type = country_event title = hbe_story_central_hills.201.title desc = hbe_story_central_hills.201.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_terraces }
+ illustration_tags = { 1000 = hbe_ending_art_terrace_commons }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } has_variable = hbe_story_central_hills_closed NOT = { has_variable = hbe_story_central_hills_ending_1 } NOT = { has_variable = hbe_story_central_hills_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_central_hills.201.a ai_chance = { base = 100 } add_prestige = 4
@@ -179,7 +179,7 @@ set_variable = hbe_story_central_hills_ending_1 }
 
 hbe_story_central_hills.202 = {
  type = country_event title = hbe_story_central_hills.202.title desc = hbe_story_central_hills.202.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_terraces }
+ illustration_tags = { 1000 = hbe_ending_art_land_registry }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } has_variable = hbe_story_central_hills_closed NOT = { has_variable = hbe_story_central_hills_ending_1 } NOT = { has_variable = hbe_story_central_hills_ending_2 } }
  immediate = {  }
  option = { name = hbe_story_central_hills.202.a ai_chance = { base = 100 } add_prestige = 4

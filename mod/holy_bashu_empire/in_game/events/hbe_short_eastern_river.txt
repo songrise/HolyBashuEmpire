@@ -55,15 +55,26 @@ hbe_short_eastern_river.3 = {
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_1_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_1_phase value = 3 }
 remove_variable = hbe_short_eastern_river_1_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.3.b ai_chance = { base = 30 } add_prestige = 4
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_1_1 trigger_event_non_silently = { id = hbe_ending.1019 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.3.b ai_chance = { base = 30 } add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_1_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_1_phase value = 3 }
 remove_variable = hbe_short_eastern_river_1_pending
- } option = { name = hbe_short_eastern_river.3.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_1_2 trigger_event_non_silently = { id = hbe_ending.1020 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.3.c trigger = { gold >= hbe_event_cost_2 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_2 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_1_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_1_phase value = 3 }
 remove_variable = hbe_short_eastern_river_1_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_eastern_river_1_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_1_3 trigger_event_non_silently = { id = hbe_ending.1021 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.3.d ai_chance = { base = 3 } set_variable = { name = hbe_short_eastern_river_1_phase value = 3 }
 remove_variable = hbe_short_eastern_river_1_pending
 add_prestige = -2 }
 }
@@ -123,15 +134,27 @@ hbe_short_eastern_river.13 = {
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_2_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_2_phase value = 3 }
 remove_variable = hbe_short_eastern_river_2_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.13.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_2_1 trigger_event_non_silently = { id = hbe_ending.1022 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.13.b trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_2_3_2 years = 4 mode = replace } hbe_grant_production_support_years = { strength = 5 duration = 4 }
 set_variable = { name = hbe_short_eastern_river_2_phase value = 3 }
 remove_variable = hbe_short_eastern_river_2_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_2_2 trigger_event_non_silently = { id = hbe_ending.1023 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.13.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_2_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_2_phase value = 3 }
 remove_variable = hbe_short_eastern_river_2_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_eastern_river_2_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_2_3 trigger_event_non_silently = { id = hbe_ending.1024 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.13.d ai_chance = { base = 3 } set_variable = { name = hbe_short_eastern_river_2_phase value = 3 }
 remove_variable = hbe_short_eastern_river_2_pending
 add_prestige = -2 }
 }
@@ -191,17 +214,28 @@ hbe_short_eastern_river.23 = {
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_3_3_1 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_3_phase value = 3 }
 remove_variable = hbe_short_eastern_river_3_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.23.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_3_1 trigger_event_non_silently = { id = hbe_ending.1025 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.23.b trigger = { gold >= hbe_event_cost_3 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_3 multiply = -1 }
 add_prestige = 4
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_3_3_2 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_3_phase value = 3 }
 remove_variable = hbe_short_eastern_river_3_pending
- } option = { name = hbe_short_eastern_river.23.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_3_2 trigger_event_non_silently = { id = hbe_ending.1026 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.23.c trigger = { gold >= hbe_event_cost_1_5 } ai_chance = { base = 30 } add_gold = { value = hbe_event_cost_1_5 multiply = -1 }
 add_research_progress = 0.21
 add_country_modifier = { modifier = hbe_short_choice_eastern_river_3_3_3 years = 4 mode = replace }
 set_variable = { name = hbe_short_eastern_river_3_phase value = 3 }
 remove_variable = hbe_short_eastern_river_3_pending
-add_prestige = 1 } option = { name = hbe_short_eastern_river.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_eastern_river_3_phase value = 3 }
+add_prestige = 1
+ # HBE_ENDING_PRESENTATION_BEGIN
+ hidden_effect = { set_variable = hbe_afterword_eastern_river_3_3 trigger_event_non_silently = { id = hbe_ending.1027 days = 1 } }
+ # HBE_ENDING_PRESENTATION_END
+} option = { name = hbe_short_eastern_river.23.d ai_chance = { base = 3 } set_variable = { name = hbe_short_eastern_river_3_phase value = 3 }
 remove_variable = hbe_short_eastern_river_3_pending
 add_prestige = -2 }
 }
