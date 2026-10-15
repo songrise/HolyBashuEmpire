@@ -1,0 +1,430 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "second export is byte-identical",
+      "passed": true
+    },
+    {
+      "check": "no duplicate native concepts",
+      "passed": true
+    },
+    {
+      "check": "eight new history concepts, preserving twelve existing ones",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_huguang_migration complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_huguang_migration factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_huguang_migration has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_huiguan complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_huiguan factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_huiguan has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_embroidery complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_embroidery factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_embroidery has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_bamboo_paper complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_bamboo_paper factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_bamboo_paper has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_panda complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_panda factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_panda has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_zigong_fossils complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_zigong_fossils factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_zigong_fossils has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_timekeeping complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_timekeeping factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_timekeeping has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_dazu complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_history_dazu factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_dazu has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese every HBE inline concept resolves",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_migration.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_migration.9.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_short_shared.217.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_chengdu_plain.101.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_shu_embroidery_desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_chengdu_plain.111.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_shu_paper_desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_chengdu_plain.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_chengdu_plain.6.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_southern_salt_wine.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_southern_salt_wine.8.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_northern_shudao.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_northern_shudao.2.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_northern_shudao.6.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_eastern_river.101.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_chengdu_plain.107.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_short_northern_shudao.21.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_eastern_river.2.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese hbe_story_northern_shudao.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese base pre-existing visible prose unchanged",
+      "passed": true
+    },
+    {
+      "check": "simp_chinese story pre-existing visible prose unchanged",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_huguang_migration complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_huguang_migration factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_huguang_migration has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_huiguan complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_huiguan factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_huiguan has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_embroidery complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_embroidery factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_embroidery has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_bamboo_paper complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_bamboo_paper factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_bamboo_paper has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_panda complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_panda factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_panda has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_zigong_fossils complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_zigong_fossils factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_zigong_fossils has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_timekeeping complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_timekeeping factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_timekeeping has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_dazu complete and uniquely localized",
+      "passed": true
+    },
+    {
+      "check": "english hbe_history_dazu factual background only",
+      "passed": true
+    },
+    {
+      "check": "hbe_history_dazu has verified primary or specialist sources",
+      "passed": true
+    },
+    {
+      "check": "english every HBE inline concept resolves",
+      "passed": true
+    },
+    {
+      "check": "english hbe_migration.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_migration.9.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_short_shared.217.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_chengdu_plain.101.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_shu_embroidery_desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_chengdu_plain.111.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_shu_paper_desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_chengdu_plain.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_chengdu_plain.6.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_southern_salt_wine.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_southern_salt_wine.8.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_northern_shudao.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_northern_shudao.2.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_northern_shudao.6.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_eastern_river.101.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_chengdu_plain.107.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_short_northern_shudao.21.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_eastern_river.2.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english hbe_story_northern_shudao.1.desc links only the requested phrase",
+      "passed": true
+    },
+    {
+      "check": "english base pre-existing visible prose unchanged",
+      "passed": true
+    },
+    {
+      "check": "english story pre-existing visible prose unchanged",
+      "passed": true
+    },
+    {
+      "check": "gameplay scripts and all existing concepts unchanged",
+      "passed": true
+    },
+    {
+      "check": "browser retains complete 508-event catalogue",
+      "passed": true
+    },
+    {
+      "check": "browser history descriptions are available",
+      "passed": true
+    },
+    {
+      "check": "browser has no missing or duplicate localization warnings",
+      "passed": true
+    }
+  ],
+  "check_count": 99,
+  "concepts": 8,
+  "links_per_language": 19,
+  "entries_per_language": 18,
+  "existing_concepts_reused": 4,
+  "gameplay_files_unchanged": 146,
+  "idempotent": true,
+  "baseline": "ef3af6a",
+  "version": "0.3.1",
+  "scope": "Localization and native concept/reference checks; no new campaign simulation.",
+  "fresh_build": {
+    "status": "passed",
+    "compared_localization_entries_per_language": 34,
+    "new_concept_definitions_identical": true,
+    "scope": "Factual descriptions, visible text and all new hover anchors match; existing mechanical links may differ between a clean rebuild and the preceding runtime."
+  },
+  "structural_checks": 1933,
+  "browser_tests": 7,
+  "renderer_checks": "New and existing history guides, dynamic expressions and HTML escaping passed.",
+  "browser_ui": {
+    "verified": true,
+    "event": "hbe_migration.1",
+    "label": "湖广填四川",
+    "historical_title_text_present": true
+  },
+  "local_install": {
+    "source_files_identical": 712,
+    "backup": "holy_bashu_empire.20261015160815691"
+  }
+}

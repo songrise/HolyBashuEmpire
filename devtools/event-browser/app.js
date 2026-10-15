@@ -39,10 +39,17 @@ function resolveText(text, depth=0) {
 }
 function name(key) {if(String(key).startsWith('hbe_home_'))return (catalog.regions[String(key).slice(9)]||key)+'圈身份';return resolveText(labels[key] || catalog.localization[key] || catalog.definitions[key]?.name || key);}
 function prose(text) {
+ const hints=[];
  let value=resolveText(text);
- value=value.replace(/\[Concept\([^,]+,\s*'([^']+)'\)(?:\|[^\]]+)?\]/g,'$1');
+ value=value.replace(/\[Concept\('([^']+)',\s*'([^']+)'\)(?:\|[^\]]+)?\]/g,(match,id,label)=>{
+  const background=catalog?.localization['game_concept_'+id+'_desc'];
+  if(!id.startsWith('hbe_history_')||!background)return label;
+  const plain=resolveText(background).replace(/\[Concept\([^,]+,\s*'([^']+)'\)(?:\|[^\]]+)?\]/g,'$1').replace(/#[A-Za-z_]+\s?/g,'').replace(/#!/g,'');
+  hints.push(`<abbr class="history-guide" title="${esc(plain)}">${esc(label)}</abbr>`);
+  return '\uE000'+(hints.length-1)+'\uE001';
+ });
  value=value.replace(/#[A-Za-z_]+\s?/g,'').replace(/#!/g,'').replace(/@([\w]+)!/g,'[$1]');
- return esc(value).replace(/\[([^\]]+)\]/g, '<span class="dynamic" title="游戏运行时计算的文本">[$1]</span>');
+ return esc(value).replace(/\[([^\]]+)\]/g, '<span class="dynamic" title="游戏运行时计算的文本">[$1]</span>').replace(/\uE000(\d+)\uE001/g,(match,i)=>hints[Number(i)]||'');
 }
 function f(nodes,k,fallback=''){return nodes?.find(n=>n.key===k)?.value ?? fallback;}
 function fmt(nodes,depth=0){return nodes.map(n=>'    '.repeat(depth)+n.key+(n.op?' '+n.op+' ':'')+(Array.isArray(n.value)?'{\n'+fmt(n.value,depth+1)+'\n'+'    '.repeat(depth)+'}':n.value)).join('\n');}

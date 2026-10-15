@@ -1,0 +1,287 @@
+{
+  "verified_on": "2026-10-15",
+  "new_concepts": 8,
+  "new_links_per_language": 15,
+  "reused_links_per_language": 4,
+  "linked_entries_per_language": 18,
+  "source_count": 14,
+  "english_concepts_translated": true,
+  "linked": [
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "key": "hbe_shu_embroidery_desc",
+      "label": "彩线施针",
+      "concept": "hbe_history_embroidery"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "key": "hbe_shu_paper_desc",
+      "label": "竹麻",
+      "concept": "hbe_history_bamboo_paper"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_migration.1.desc",
+      "label": "湖广填四川",
+      "concept": "hbe_history_huguang_migration"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_migration.9.desc",
+      "label": "会馆",
+      "concept": "hbe_history_huiguan"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_short_shared.217.desc",
+      "label": "同乡会馆",
+      "concept": "hbe_history_huiguan"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_chengdu_plain.101.desc",
+      "label": "细绣",
+      "concept": "hbe_history_embroidery"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_chengdu_plain.111.desc",
+      "label": "细竹制出的纸张",
+      "concept": "hbe_history_bamboo_paper"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_chengdu_plain.1.desc",
+      "label": "黑白相间的兽皮",
+      "concept": "hbe_history_panda"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_chengdu_plain.6.desc",
+      "label": "白熊",
+      "concept": "hbe_history_panda"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_southern_salt_wine.1.desc",
+      "label": "龙骨",
+      "concept": "hbe_history_zigong_fossils"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_southern_salt_wine.8.desc",
+      "label": "巨兽",
+      "concept": "hbe_history_zigong_fossils"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_northern_shudao.1.desc",
+      "label": "日影",
+      "concept": "hbe_history_timekeeping"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_northern_shudao.2.desc",
+      "label": "漏壶",
+      "concept": "hbe_history_timekeeping"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_northern_shudao.6.desc",
+      "label": "观测器",
+      "concept": "hbe_history_timekeeping"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_eastern_river.101.desc",
+      "label": "大足",
+      "concept": "hbe_history_dazu"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_chengdu_plain.107.desc",
+      "label": "邛州窑工",
+      "concept": "hbe_history_qiong"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_short_northern_shudao.21.desc",
+      "label": "蜀道",
+      "concept": "hbe_history_shudao"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_eastern_river.2.desc",
+      "label": "江滩",
+      "concept": "hbe_history_river"
+    },
+    {
+      "language": "simp_chinese",
+      "file": "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "key": "hbe_story_northern_shudao.1.desc",
+      "label": "剑门",
+      "concept": "hbe_history_jianmen"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_l_english.yml",
+      "key": "hbe_shu_embroidery_desc",
+      "label": "彩线施针",
+      "concept": "hbe_history_embroidery"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_l_english.yml",
+      "key": "hbe_shu_paper_desc",
+      "label": "竹麻",
+      "concept": "hbe_history_bamboo_paper"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_migration.1.desc",
+      "label": "湖广填四川",
+      "concept": "hbe_history_huguang_migration"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_migration.9.desc",
+      "label": "会馆",
+      "concept": "hbe_history_huiguan"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_short_shared.217.desc",
+      "label": "同乡会馆",
+      "concept": "hbe_history_huiguan"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_chengdu_plain.101.desc",
+      "label": "细绣",
+      "concept": "hbe_history_embroidery"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_chengdu_plain.111.desc",
+      "label": "细竹制出的纸张",
+      "concept": "hbe_history_bamboo_paper"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_chengdu_plain.1.desc",
+      "label": "黑白相间的兽皮",
+      "concept": "hbe_history_panda"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_chengdu_plain.6.desc",
+      "label": "白熊",
+      "concept": "hbe_history_panda"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_southern_salt_wine.1.desc",
+      "label": "龙骨",
+      "concept": "hbe_history_zigong_fossils"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_southern_salt_wine.8.desc",
+      "label": "巨兽",
+      "concept": "hbe_history_zigong_fossils"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_northern_shudao.1.desc",
+      "label": "日影",
+      "concept": "hbe_history_timekeeping"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_northern_shudao.2.desc",
+      "label": "漏壶",
+      "concept": "hbe_history_timekeeping"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_northern_shudao.6.desc",
+      "label": "观测器",
+      "concept": "hbe_history_timekeeping"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_eastern_river.101.desc",
+      "label": "大足",
+      "concept": "hbe_history_dazu"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_chengdu_plain.107.desc",
+      "label": "邛州窑工",
+      "concept": "hbe_history_qiong"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_short_northern_shudao.21.desc",
+      "label": "蜀道",
+      "concept": "hbe_history_shudao"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_eastern_river.2.desc",
+      "label": "江滩",
+      "concept": "hbe_history_river"
+    },
+    {
+      "language": "english",
+      "file": "main_menu/localization/english/hbe_story_l_english.yml",
+      "key": "hbe_story_northern_shudao.1.desc",
+      "label": "剑门",
+      "concept": "hbe_history_jianmen"
+    }
+  ],
+  "files": [
+    "main_menu/common/game_concepts/hbe_history_v031.txt",
+    "main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+    "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+    "main_menu/localization/english/hbe_history_v031_l_english.yml",
+    "main_menu/localization/english/hbe_l_english.yml",
+    "main_menu/localization/english/hbe_story_l_english.yml"
+  ],
+  "gameplay_changes": false
+}
