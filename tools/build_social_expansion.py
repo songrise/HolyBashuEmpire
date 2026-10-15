@@ -259,7 +259,7 @@ hbe_civic_initialize = {
  '''+'\n'.join(monthly)+'''
  if = { limit = { hbe_civic_special_count > var:hbe_special_record }
  set_variable = { name = hbe_new_special value = hbe_civic_special_count } change_variable = { name = hbe_new_special subtract = var:hbe_special_record }
- change_variable = { name = hbe_burden add = var:hbe_new_special } hbe_clamp_burden = yes }
+ change_variable = { name = hbe_burden add = { value = var:hbe_new_special multiply = 2 } } hbe_clamp_burden = yes }
  set_variable = { name = hbe_special_record value = hbe_civic_special_count }
  if = { limit = { hbe_civic_special_count > hbe_civic_special_limit } add_country_modifier = { modifier = hbe_civic_over_supply months = 2 mode = replace } }
  else = { remove_country_modifier = hbe_civic_over_supply }
@@ -322,7 +322,7 @@ hbe_civic_year = {{ trigger = {{ {allid} {MEMBER} }} effect = {{ hbe_civic_yearl
     for k,(name,_) in mods.items():loc['STATIC_MODIFIER_NAME_'+k]=name;loc[k]=name;loc[k+'_desc']=name+'持续期间按所列数值生效；重复维护只替换期限，不叠加。'
     put('main_menu/common/static_modifiers/hbe_civic_modifiers.txt','\n'.join(k+' = { '+v[1]+' }' for k,v in mods.items()))
     concepts={
-      'hbe_term_burden':('役负','全国0—100的徭役和驻地压力，初始20。事业征办+6、议办+2、雇办不增加；新募议约军每队+1。和平且近年无急征时每年-3，付费减役可另降10。40起影响农民支持，70起暂停事业和新募，并触发有五年间隔的请愿。'),
+      'hbe_term_burden':('役负','全国0—100的徭役和驻地压力，初始20。事业征办+6、议办+2、雇办不增加；议约军按月度净增结算，每队役负+2。和平且近年无急征时每年-3，付费减役可另降10。40起影响农民支持，70起暂停事业和新募，并触发有五年间隔的请愿。'),
       'hbe_term_civic_office':('圈署委任','须委任科技、成长验收、有效机构与最近五年真实交付。一个圈同时一位主持，每国至多两任，任期五年；断供、失去会盟或役负70以上提前退任。请任按空缺和明确资格办理，不增加皇帝选票或帝国旧席。'),
       'hbe_term_operating':('机构供养','本府拥有机构，有效建筑等级至少0.25，且有同类机构实际雇用至少50人。原版有效等级随供养变化；不满足则暂停相应招募和委任。原版建筑本身的效果亦依就业与商品获取缩放。'),
       'hbe_term_civic_army':('议约军额','九种军种共用一个原版unit family。以潜在陆军人数20%折算500人单位，并以有效地区机构总等级取较小值；能供养500人时至少容许一队，前提是机构容量达一队。役负70时容量归零，新募停止；现有部队不删除，超过容量时全军维护效率-10%。'),

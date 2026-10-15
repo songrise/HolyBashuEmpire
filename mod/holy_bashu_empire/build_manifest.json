@@ -6666,7 +6666,7 @@
     "in_game/common/scripted_effects/hbe_ai_effects.txt": "f158733dccf6d238d0da5455538d8672d950c6cc16697c2dac8d516a8bad501e",
     "in_game/common/scripted_effects/hbe_annex_industry_effects.txt": "061105fd4e15c1d2af04b6798125a7d0931953253517d8e425a4b24d466c9665",
     "in_game/common/scripted_effects/hbe_banquet_effects.txt": "32754ac4f075dd63f029d74b6cbcd0d17a3df4f04081ac69a601452623242915",
-    "in_game/common/scripted_effects/hbe_civic_effects.txt": "f882938e7c3f7d1917ff005ff308930538bfc0ba99527089546c11787459a2f5",
+    "in_game/common/scripted_effects/hbe_civic_effects.txt": "900a9a54b19a21aa3cafd693f0a43bfb9bb9da8a9de1292412e8583653552234",
     "in_game/common/scripted_effects/hbe_effects.txt": "35aed53faad9e2f83991f13607297f5e682057e5ea6f5cfa34677d4f4686a1bd",
     "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "79512cedb773f91ac133fada19748de391b4bc53243073907da38eed6728b6b7",
     "in_game/common/scripted_effects/hbe_formation_effects.txt": "b0fdf0bef68adbb371d8a97efdf27b956d8625da61c7e7e4d163a9fb47e37e2e",
@@ -6693,7 +6693,7 @@
     "in_game/common/script_values/hbe_feast_values.txt": "958dcf9e40882edd6f3e1d291b714e65a2afaeecaf74d93d59ebba209a1ecf68",
     "in_game/common/situations/hbe_banquet.txt": "9112a9997192b856ad73b20019a4204ea92cdfd76f88e00a8a5b1f7d69c54e5b",
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
-    "in_game/common/unit_types/hbe_civic_units.txt": "298cc5f6b0d861d5c5eafeab570400ae3b65de6eab9fab597367d6f50f155806",
+    "in_game/common/unit_types/hbe_civic_units.txt": "62d9fd3884f56478635198bf9a2b07da81a76a7e0f8c08eecf56dfe22fcec887",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
     "in_game/gfx/images/hbe_ending_backgrounds.txt": "051097ed519b3aaa5fe713c057f9f3cd77aa3e1927b563699ca7c74e9c932dda",
     "in_game/gfx/images/hbe_event_backgrounds.txt": "537cce1829b8d244a7e082ba0b26675757d3e24c643c8215abc4698ea3c5ec9e",
@@ -7289,7 +7289,7 @@
     "main_menu/localization/english/hbe_formables_l_english.yml": "55ee7c7b7c4f283ede0fcb6c9371e5d5383d20887520097774f2b13a0b13e186",
     "main_menu/localization/english/hbe_history_v031_l_english.yml": "ee58fb1b39a3c179cd199afedbd856c92e7b4cbe66b1e44b6c8f648fed51758f",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
-    "main_menu/localization/english/hbe_l_english.yml": "abfdbd4faa46cb09f63f1f1b535c737ed0f1a0491fd19c22bcd70626d89b22a4",
+    "main_menu/localization/english/hbe_l_english.yml": "1d69c133cbeb84015a2974367549663775ef004d241659bd5c584be031c7b0b3",
     "main_menu/localization/english/hbe_observer_hotfix_l_english.yml": "72fce30a3cda30a7d8fc33d55e7299116d289d4e7c4f535f4e011b1c6c2308ef",
     "main_menu/localization/english/hbe_opening_armistice_l_english.yml": "6e0f9e356b92bbcffd8545552d9d9a11352d5c6c2b5d3b65cf5bcf83d51178a2",
     "main_menu/localization/english/hbe_personal_tooltips_l_english.yml": "83225c91e770a2085c769d8095e44ce40600cb2f59a3ce1a8ac7687e2f115695",
@@ -7302,7 +7302,7 @@
     "main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml": "a13ee827d96e35261a78297d24d075c84bea425864211f7617773ecc1a4c55e9",
     "main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml": "337de3e1d7be32f517b21dd5af5b2499949f22ec2d36d005050b82aeb3db2265",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "2573c0050544465894d7a3ac67de6ec1561c0411af11f2ffdc9a663a54e6d9ce",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "a8cb5361874f141b73bc041cbe18eeff3050eeeeff04b6e6e328204183113395",
     "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml": "91fefc537d19a0a0a9ec5d31ba7c30ec5e4066ed80da970cfb20f223b0c323e7",
     "main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml": "6cc1363cf4b41e5f7d428d4725dc17e68a2fe71bef885046d731efa3232dac13",
     "main_menu/localization/simp_chinese/hbe_personal_tooltips_l_simp_chinese.yml": "cb02540cd7d6a60340809673214a06f7cf8552575f0ed48e5d0c8e34e23b67f4",
@@ -36408,8 +36408,8 @@
       },
       "hbe_salt_guard": {
         "flanking_ability": 0.2,
-        "strength_damage_taken": 0.05,
-        "morale_damage_taken": -0.08
+        "strength_damage_taken": 0.03,
+        "morale_damage_taken": -0.1
       },
       "hbe_river_garrison": {
         "morale_damage_taken": -0.12,
@@ -36419,7 +36419,7 @@
         "strength_damage_taken": -0.12
       },
       "hbe_granary_militia": {
-        "strength_damage_done": -0.08,
+        "strength_damage_done": -0.04,
         "supply_weight": -0.2,
         "food_consumption_per_strength": -0.03
       },
@@ -36429,8 +36429,8 @@
         "movement_speed": 0.15
       },
       "hbe_valley_soldiers": {
-        "initiative": 0.2,
-        "strength_damage_taken": 0.05
+        "initiative": 0.5,
+        "strength_damage_taken": 0.03
       },
       "hbe_trained_river": {
         "combat_power": 0.2,

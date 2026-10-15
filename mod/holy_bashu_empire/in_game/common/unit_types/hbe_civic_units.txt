@@ -24,7 +24,7 @@ hbe_salt_guard = {
  OR = { has_advance = hbe_tech_southern_salt_wine_2 AND = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag sword_tag }
- flanking_ability = 0.20 strength_damage_taken = 0.05 morale_damage_taken = -0.08
+ flanking_ability = 0.20 strength_damage_taken = 0.03 morale_damage_taken = -0.10
 }
 hbe_river_garrison = {
  copy_from = a_age_1_traditions_heavy_infantry
@@ -68,7 +68,7 @@ hbe_granary_militia = {
  OR = { has_advance = hbe_tech_central_hills_2 AND = { has_variable = hbe_guest_central_hills has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag pike_tag }
- strength_damage_done = -0.08 supply_weight = -0.20 food_consumption_per_strength = -0.03
+ strength_damage_done = -0.04 supply_weight = -0.20 food_consumption_per_strength = -0.03
 }
 hbe_tea_riders = {
  copy_from = a_age_1_traditions_light_cavalry
@@ -96,7 +96,7 @@ hbe_valley_soldiers = {
  OR = { has_advance = hbe_tech_southwestern_valleys_2 AND = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_tech_common_4 } }
   } }
  gfx_tags = { light_tag sword_tag }
- initiative = 0.20 strength_damage_taken = 0.05
+ initiative = 0.50 strength_damage_taken = 0.03
  combat = { mountains = 0.15 hills = 0.10 }
 }
 hbe_trained_river = {

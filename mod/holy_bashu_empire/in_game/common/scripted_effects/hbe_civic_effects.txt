@@ -181,7 +181,7 @@ if = { limit = { var:hbe_office_southwestern_valleys = 1 OR = { NOT = { has_vari
 if = { limit = { var:hbe_office_southwestern_valleys = 1 } change_variable = { name = hbe_office_count add = 1 } }
  if = { limit = { hbe_civic_special_count > var:hbe_special_record }
  set_variable = { name = hbe_new_special value = hbe_civic_special_count } change_variable = { name = hbe_new_special subtract = var:hbe_special_record }
- change_variable = { name = hbe_burden add = var:hbe_new_special } hbe_clamp_burden = yes }
+ change_variable = { name = hbe_burden add = { value = var:hbe_new_special multiply = 2 } } hbe_clamp_burden = yes }
  set_variable = { name = hbe_special_record value = hbe_civic_special_count }
  if = { limit = { hbe_civic_special_count > hbe_civic_special_limit } add_country_modifier = { modifier = hbe_civic_over_supply months = 2 mode = replace } }
  else = { remove_country_modifier = hbe_civic_over_supply }
