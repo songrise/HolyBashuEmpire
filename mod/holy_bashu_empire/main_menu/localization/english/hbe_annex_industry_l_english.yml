@@ -20,6 +20,6 @@
  hbe_inherited_industry_license_southwestern_valleys: "Southwestern Valleys Industrial Inheritance"
  hbe_inherited_industry_southwestern_valleys: "Southwestern Valleys Industrial Inheritance"
  hbe_inherited_industry_license_southwestern_valleys_desc: "A complete national annexation passes on local workshops and basic industrial institutions. Starter recipes and building permissions are inherited automatically, without a guest compact. Geographic construction limits remain. Advanced crafts and specialty military access retain their own requirements."
- HQS_f: "Sichuan"
- HQC_f: "Chongqing"
+ HQS_f: "Shu"
+ HQC_f: "Yu"
  HQB_f: "Bashu Empire"

@@ -18,9 +18,9 @@ UNIT_STATS = {
 TERRAIN = {'hbe_river_garrison':{'river':0.10},'hbe_trained_river':{'river':0.15},
  'hbe_pass_rotation':{'mountains':0.10},'hbe_permanent_pass':{'mountains':0.15},
  'hbe_valley_soldiers':{'mountains':0.15,'hills':0.10}}
-FORMS = [('sichuan','HQS','四川','Sichuan','hbe_sichuan_core',0.67,
+FORMS = [('sichuan','HQS','蜀','Shu','hbe_sichuan_core',0.67,
           ['chengdu','yibin','langzhong','yandao'],2,'rank_kingdom',(50,101,67),'hbe_pine'),
-         ('chongqing','HQC','重庆','Chongqing','hbe_chongqing_core',0.67,
+         ('chongqing','HQC','渝','Yu','hbe_chongqing_core',0.67,
           ['baxian','fuzhou_sichuan','wanzhou'],2,'rank_kingdom',(151,64,48),'hbe_cinnabar'),
          ('bashu','HQB','巴蜀','Bashu','hbe_domain',0.90,
           ['chengdu','baxian','yibin','langzhong','yandao','jianchang_sichuan','suining'],4,'rank_empire',(98,60,135),'hbe_indigo')]
@@ -145,7 +145,7 @@ def apply(out,root,game):
  result=dict(version='0.3.1',units=UNIT_STATS,terrain=TERRAIN,formations=summary,formation_method='National decisions using native name, adjective, flag, map color and rank effects. Preserve original tag and all regional eligibility.',unit_calendar_gates_removed=True,date_free_advances=date_free,flags='Built-in imagegen; three transparent gold emblems; native heraldic flag composition')
  manifestp=out/'build_manifest.json';m=json.loads(manifestp.read_text(encoding='utf-8'));m['formables_units_v031']=result
  m['decisions']=sum(len(blocks(p.read_text(encoding='utf-8-sig'),0)) for p in (out/'in_game/common/decisions').glob('*.txt'))
- meta=out/'.metadata/metadata.json';d=json.loads(meta.read_text(encoding='utf-8'));d['short_description']='七圈三十六府：405个事件、分支长线与湖广填四川；特色产业、政府改革及四川、重庆、巴蜀帝国成立路线。'
+ meta=out/'.metadata/metadata.json';d=json.loads(meta.read_text(encoding='utf-8'));d['short_description']='七圈三十六府：405个事件、分支长线与湖广填四川；特色产业、政府改革及蜀、渝、巴蜀帝国成立路线。'
  meta.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
  manifestp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
