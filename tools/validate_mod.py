@@ -202,6 +202,8 @@ def main():
     check('all narrative descriptions include valid hover links',all('Concept(' in event_blocks[e['id']] or f'{e["id"]}.desc:' in loc_text and 'Concept(' in next(line for line in loc_text.splitlines() if line.lstrip().startswith(e['id']+'.desc:')) for e in prose))
     check('guide icon textures exist',all((m/'main_menu/gfx/interface/icons'/str(p+'.dds')).exists() for p in re.findall(r'texture\s*=\s*"([^"]+)"',concepts)))
     check('ledger narratives preserve dynamic state readouts',"GetVariable('hbe_yiqi')" in loc_text and "GetVariable('hbe_contribution')" in loc_text)
+    from validate_unit_detail_art_v031 import validate_unit_detail_art
+    validate_unit_detail_art(m,ROOT,game,manifest,check)
     from validate_social_expansion import validate_social_expansion
     validate_social_expansion(m,ROOT,game,manifest,loc_keys,check)
     from validate_annex_industry import validate_annex_industry

@@ -1,0 +1,28 @@
+{
+  "version": "0.3.1",
+  "scope": "Unit detail banner regression; local only",
+  "cause": "Three identical portrait frames intended for native recruitment were also displayed uncropped in the unit detail panel.",
+  "fix": "Separate nine coherent wide scenes; change only the unit detail texture binding. Preserve original sprite sheets and vanilla fallback.",
+  "full_banners": 9,
+  "dimensions": [
+    1080,
+    440
+  ],
+  "unchanged_recruitment_sheets": 9,
+  "native_gui_bindings_changed": 1,
+  "structural_checks": 1985,
+  "structural_status": "passed",
+  "native_gui_registration": {
+    "related_binding_errors": 0,
+    "baseline_diagnostics_unchanged": true,
+    "baseline_gui_warning": "unit_type_lateralview.gui:28 [topography|e]",
+    "automated_harness": "Aborted by the same 11833 global baseline diagnostics as the preceding test; this is not a campaign or visual rendering test."
+  },
+  "visual_review": "All nine exported banners and their preserved portraits reviewed in a contact sheet; headless startup does not establish in-game rendering.",
+  "installed_files_verified": 732,
+  "installed_hash_mismatches": [],
+  "preview": "assets/unit_detail_alignment_preview.jpg",
+  "native_gui_source_sha256": "08f14754c322997f19ff20b69d62424b984310db7e6549ae91293d7da60fec52",
+  "remote_push": false,
+  "steam_publish": false
+}

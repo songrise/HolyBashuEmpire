@@ -6614,6 +6614,7 @@
     "in_game/events/hbe_story_southwestern_valleys.txt": "918ef7145f02dc438062f47c8364f58ecfedd3f05b3f9136f41c3f9506b39466",
     "in_game/events/hbe_story_western_tea_horse.txt": "263840dbd5479d61f27d1d288d5216be71d8dea817bcd8baf7258dadc76682ae",
     "in_game/gui/cooltip.gui": "96d619292a0d2bdf6d7f7c38dcac49d584c54d33429818a8d0ed397a1a07a082",
+    "in_game/gui/unit_type_lateralview.gui": "190c2599e4f0554c202f3ccfeabff264fac59b5897ea044cfcbbd7fab0785459",
     "in_game/common/advances/hbe_advances.txt": "09649328853800eeefce72d8240ca06e9b21b65c549687fe853e602bec99abb1",
     "in_game/common/advances/hbe_civic_advances.txt": "e475b80341d1d2c0927ce0daa920844a91a2536a105bd0c5c67a83224e1c545c",
     "in_game/common/advances/hbe_guest_licenses.txt": "0aea84e029d71fcede2b54430c72c449643a9aff8677adba37fc1b5edd1afe03",
@@ -7067,6 +7068,15 @@
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds": "90e91569bed0cb93e131599f546b379792f36ec7b1f558c9f751da1ce4a2a7ed",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds": "92044e416602676ad072f876c59c0e4c8e37ce864d4a77a6c59218dfc2d168ed",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds": "5fa32fd6d973cf4af64943488a46b4d064bf49ce5832387e0bfc02efd4113db0",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_canal_crossbow.dds": "d8af803dcdc79d54bf3ec9fcf965e48a9d6d0715c6cb894d64a2ee294210dcd2",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_granary_militia.dds": "370b1295c7998182f7ea31f0560b2766aeb0f5c984034eb5d8ea60c71cb20a64",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_pass_rotation.dds": "84dbbf431fe0b9e9994431fd015d5d49b534158944111ac1c82a5d9554281c18",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_permanent_pass.dds": "467bd213838b75f2fbddcd69d154fa06bf49ab46031d7f62ce3cc68b9ecb2a6b",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_river_garrison.dds": "0cc5dc10f79e4655b8a864441b6e6b316eef9b44c7abf52d316fc1c1fb9c18b5",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_salt_guard.dds": "c47af94e2f003da01c462d7db552f1a8dda3354618d546fdb8e9f6810bbff1ef",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_tea_riders.dds": "db5952eebca5f4a8cda0bff3304084e91676019e637e2f72c29119a63c7a88b7",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_trained_river.dds": "cced20926f10754c8a3f62ba0bed2a7cf474e7f37a62d2aa98a6344e336a4356",
+    "main_menu/gfx/interface/hbe/unit_banners/hbe_valley_soldiers.dds": "bbfb4281eec3a2814956f335f70cca81b1e59a2f860a2aa9ddda807cfdb59006",
     "main_menu/gfx/interface/hbe/civic/decisions/hbe_audit.dds": "c39b0d18811028a62f1df01d6e864ae88d1b9d71217f94ddb4d99c6c3e08ed15",
     "main_menu/gfx/interface/hbe/civic/decisions/hbe_burden.dds": "1c83f989971801a02b45d36a8871c24d3519c716cf99188710bb1028d5ac5d18",
     "main_menu/gfx/interface/hbe/civic/decisions/hbe_civil_ledger.dds": "0d4c53b1877c7a087cd3824a7a39b506a76c26370410bd26dd3083f33ffbc6e7",
@@ -36968,6 +36978,185 @@
       "in_game/events/hbe_story_western_tea_horse.txt",
       "main_menu/localization/english/hbe_story_l_english.yml",
       "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml"
+    ]
+  },
+  "unit_detail_art_v031": {
+    "version": "0.3.1",
+    "units": 9,
+    "dimensions": [
+      1080,
+      440
+    ],
+    "thumbnail_sheets_preserved": true,
+    "native_fallback": true,
+    "gui_override": "in_game/gui/unit_type_lateralview.gui",
+    "native_gui_sha256": "08f14754c322997f19ff20b69d62424b984310db7e6549ae91293d7da60fec52",
+    "changed_native_bindings": 1,
+    "atlas": "assets/civic_atlases/units.png",
+    "atlas_sha256": "66675e537affaa337de8cbf1a779c041d24269086962eaddcb5b9c537a7a52e9",
+    "assets": [
+      {
+        "unit": "hbe_canal_crossbow",
+        "source_cell": 0,
+        "source_bounds": [
+          5,
+          15,
+          621,
+          236
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_canal_crossbow.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "d8af803dcdc79d54bf3ec9fcf965e48a9d6d0715c6cb894d64a2ee294210dcd2",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
+        "thumbnail_sha256": "007b6782433cd4622a549d623074584c8efe6548705b80dc7237c7fbf0345867"
+      },
+      {
+        "unit": "hbe_salt_guard",
+        "source_cell": 1,
+        "source_bounds": [
+          5,
+          15,
+          627,
+          236
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_salt_guard.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "c47af94e2f003da01c462d7db552f1a8dda3354618d546fdb8e9f6810bbff1ef",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
+        "thumbnail_sha256": "2093d8b06bf83ea9e8556b9a9d000296f49c4e46483bfb5605ede1ecea57974c"
+      },
+      {
+        "unit": "hbe_river_garrison",
+        "source_cell": 2,
+        "source_bounds": [
+          3,
+          16,
+          623,
+          236
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_river_garrison.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "0cc5dc10f79e4655b8a864441b6e6b316eef9b44c7abf52d316fc1c1fb9c18b5",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_river_garrison.dds",
+        "thumbnail_sha256": "bede2eea5a1f7ab8157f5b6b0ad7a07dc00eb3ba02bbd1942fab59723f0e5d06"
+      },
+      {
+        "unit": "hbe_pass_rotation",
+        "source_cell": 3,
+        "source_bounds": [
+          5,
+          4,
+          625,
+          227
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_pass_rotation.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "84dbbf431fe0b9e9994431fd015d5d49b534158944111ac1c82a5d9554281c18",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_pass_rotation.dds",
+        "thumbnail_sha256": "8703a092a1346c41474748b8fe4976dc9625b4810fe6ffc002baa5b4a15606be"
+      },
+      {
+        "unit": "hbe_granary_militia",
+        "source_cell": 4,
+        "source_bounds": [
+          5,
+          4,
+          626,
+          225
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_granary_militia.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "370b1295c7998182f7ea31f0560b2766aeb0f5c984034eb5d8ea60c71cb20a64",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
+        "thumbnail_sha256": "6f015ea0ae5a5e68adb3947ca923a01e2de302dbce3c9b48ec80cf025c595f04"
+      },
+      {
+        "unit": "hbe_tea_riders",
+        "source_cell": 5,
+        "source_bounds": [
+          3,
+          4,
+          619,
+          227
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_tea_riders.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "db5952eebca5f4a8cda0bff3304084e91676019e637e2f72c29119a63c7a88b7",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
+        "thumbnail_sha256": "2443521a50ae3728fa23388ed1d22bb4f40e5e16f307f4278864ab97fa4c863c"
+      },
+      {
+        "unit": "hbe_valley_soldiers",
+        "source_cell": 6,
+        "source_bounds": [
+          5,
+          9,
+          625,
+          238
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_valley_soldiers.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "bbfb4281eec3a2814956f335f70cca81b1e59a2f860a2aa9ddda807cfdb59006",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
+        "thumbnail_sha256": "d62f080ab3804a0eff0283d73f86bb2c8fce71295ecfe23783fff0bee56cf313"
+      },
+      {
+        "unit": "hbe_trained_river",
+        "source_cell": 7,
+        "source_bounds": [
+          5,
+          8,
+          626,
+          238
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_trained_river.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "cced20926f10754c8a3f62ba0bed2a7cf474e7f37a62d2aa98a6344e336a4356",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_trained_river.dds",
+        "thumbnail_sha256": "d8c4cb934a3c889761561b62521f885256eb07f827960b284aefaf731e35aded"
+      },
+      {
+        "unit": "hbe_permanent_pass",
+        "source_cell": 8,
+        "source_bounds": [
+          2,
+          9,
+          623,
+          238
+        ],
+        "texture": "main_menu/gfx/interface/hbe/unit_banners/hbe_permanent_pass.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "467bd213838b75f2fbddcd69d154fa06bf49ab46031d7f62ce3cc68b9ecb2a6b",
+        "thumbnail": "main_menu/gfx/interface/illustrations/units/hbe_permanent_pass.dds",
+        "thumbnail_sha256": "f769f8b6bdb05389bd5429854a12f9e76acb930a87d391c5a5a42237bbfb38f2"
+      }
     ]
   }
 }
