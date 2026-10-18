@@ -40,4 +40,4 @@ def validate_ending_art(mod,root,manifest,loc,check):
   check(row['id']+' one acknowledgement without effects',len(options)==1 and re.fullmatch(r'\s*name\s*=\s*\S+\s+ai_chance\s*=\s*\{\s*base\s*=\s*100\s*\}\s*',options[0]) is not None)
  reforms=(mod/'in_game/common/government_reforms/hbe_shared_reforms.txt').read_text(encoding='utf-8-sig')
  check('both government reform icon keys explicitly registered',all('icon = '+row['key'] in reforms for row in data['reform_icons']))
- check('new events included once in manifest count',manifest['events']==117+manifest['playable_stories']['event_count']+101)
+ check('new events included once in manifest count',manifest['events']==117+manifest['playable_stories']['event_count']+101+manifest.get('common_defense_v032',{}).get('visible_events',0))

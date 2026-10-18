@@ -34,7 +34,7 @@ def validate(root):
  aifiles=[read('in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt'),ai,read('in_game/common/scripted_effects/hbe_ai_effects.txt')]
  check('AI makes no forced wars or truce bypasses',not re.search(r'\b(declare_war|start_war|remove_truce|ignore_antagonism)\s*=', '\n'.join(aifiles)))
  party=read('in_game/common/international_organizations/hbe_feast_parties.txt')
- check('exactly two non-military parties',len(blocks(party,0))==2 and party.count('join_offensive_wars = Never')==2 and party.count('hbe_war_is_internal = yes')==2)
+ check('exactly two non-military parties',len(blocks(party,0))==2 and party.count('join_offensive_wars = Never')==2 and 'can_declare_war' not in party)
  feast=read('in_game/common/scripted_effects/hbe_banquet_effects.txt');helpers=read('in_game/common/scripted_effects/hbe_simple_banquet_effects.txt')
  fb={k:feast[s:e] for k,_,s,e,_ in blocks(feast,0)}
  check('funding has a once-per-round effect guard and real scaled payment','NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee' in fb['hbe_fund_project'] and 'multiply = -1' in fb['hbe_fund_project'])

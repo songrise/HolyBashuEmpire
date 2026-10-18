@@ -5,9 +5,4 @@
 hbe_is_domain_polity = {
     OR = { hbe_is_prince = yes AND = { is_rebel_country = yes capital ?= { is_in_scripted_geography = scripted_geography:hbe_domain } } }
 }
-hbe_war_is_internal = {
-    OR = {
-        AND = { scope:attacker = { hbe_is_domain_polity = yes } scope:defender = { hbe_is_domain_polity = yes } }
-        AND = { scope:attacker = { hbe_is_domain_polity = no } scope:defender = { hbe_is_domain_polity = no } }
-    }
-}
+

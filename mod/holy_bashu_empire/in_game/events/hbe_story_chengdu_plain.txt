@@ -374,7 +374,7 @@ add_country_modifier = { modifier = hbe_story_choice_chengdu_plain_102_3 years =
 
 hbe_story_chengdu_plain.103 = {
  type = country_event title = hbe_story_chengdu_plain.103.title desc = hbe_story_chengdu_plain.103.desc outcome = neutral
- illustration_tags = { 1000 = hbe_story_art_bamboo }
+ illustration_tags = { 1000 = hbe_egret_art }
  trigger = { hbe_is_prince = yes OR = { has_or_had_tag = BAE } current_year >= 1339 NOT = { has_variable = hbe_story_seen_chengdu_plain_103 } NOT = { has_variable = hbe_story_solo_cooldown } }
  immediate = { set_variable = hbe_story_seen_chengdu_plain_103 set_variable = { name = hbe_story_solo_cooldown value = yes years = 2 } }
  option = { name = hbe_story_chengdu_plain.103.a ai_chance = { base = 30 } add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.02 }

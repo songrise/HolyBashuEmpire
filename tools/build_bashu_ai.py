@@ -4,29 +4,29 @@ def build_bashu_ai(out,root,loc,put,game):
  attacker_potential = {
   hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire
   current_year >= 1342 at_war = no var:hbe_burden < 70
-  OR = { months_since_war >= 144 AND = { months_since_war >= 96 OR = { ai_personality = ai_personality:ai_aggressive ai_personality = ai_personality:ai_expansionist } } }
+  OR = { months_since_war >= 180 AND = { months_since_war >= 120 OR = { ai_personality = ai_personality:ai_aggressive ai_personality = ai_personality:ai_expansionist } } }
  }
  candidate_list = { every_neighbor_country = { limit = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire NOT = { this = root } } add_to_list = source } }
- score = { add = scope:target.country_tax_base multiply = 4 add = 4 }
+ score = { add = scope:target.country_tax_base multiply = 3 add = 2 }
 }''')
  put('in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt','''hbe_internal_rivalry = {
  attacker_potential = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 }
  target_trigger = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire is_neighbor_of = scope:attacker }
- score = { add = 2 }
+ score = { add = 1 }
  multiplier = {
-  value = 0.95
-  if = { limit = { OR = { AND = { scope:attacker = { var:hbe_stance = 1 } scope:target = { var:hbe_stance = 2 } } AND = { scope:attacker = { var:hbe_stance = 2 } scope:target = { var:hbe_stance = 1 } } } } add = 0.02 }
+  value = 0.85
+  if = { limit = { OR = { AND = { scope:attacker = { var:hbe_stance = 1 } scope:target = { var:hbe_stance = 2 } } AND = { scope:attacker = { var:hbe_stance = 2 } scope:target = { var:hbe_stance = 1 } } } } add = 0.01 }
  }
  never_attack = { OR = { scope:attacker = { var:hbe_burden >= 70 } scope:target = { is_allied_with = { target = scope:attacker } } } }
 }''')
  # Applied only to eligible AI princes; regular military-risk and CB checks remain native.
- put('main_menu/common/static_modifiers/hbe_ai_modifiers.txt','hbe_ai_internal_ambition = { aggressiveness_modifier = 0.05 ai_months_between_wars = -3 }')
+ put('main_menu/common/static_modifiers/hbe_ai_modifiers.txt','hbe_ai_internal_ambition = { aggressiveness_modifier = 0.02 ai_months_between_wars = 3 }')
  loc['hbe_ai_internal_ambition']='府州竞逐'
  loc['hbe_ai_internal_ambition_desc']='休养充足的巴蜀诸侯更愿意争取邻府权益；原版宣战理由、实力判断、盟约与停战仍有效。'
  loc['STATIC_MODIFIER_NAME_hbe_ai_internal_ambition']=loc['hbe_ai_internal_ambition']
  loc['STATIC_MODIFIER_DESC_hbe_ai_internal_ambition']=loc['hbe_ai_internal_ambition_desc']
  put('in_game/common/scripted_effects/hbe_ai_effects.txt','''hbe_ai_internal_update = {
- if = { limit = { is_ai = yes hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 months_since_war >= 96 }
+ if = { limit = { is_ai = yes hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire current_year >= 1342 at_war = no var:hbe_burden < 70 months_since_war >= 120 }
   if = { limit = { NOT = { has_country_modifier = hbe_ai_internal_ambition } } add_country_modifier = { modifier = hbe_ai_internal_ambition years = -1 } }
  } else = { remove_country_modifier = hbe_ai_internal_ambition }
 }''')
@@ -35,12 +35,12 @@ hbe_ai_pulse = { trigger = { OR = { hbe_is_prince = yes has_country_modifier = h
 ''')
  (root/'docs/ai_internal_wars_v021.md').write_text('''# 0.3.0 帝国内部 AI
 
-1342年起，已休养的AI更容易选择邻府为扩张目标。一般国家须和平十二年，扩张/好战性格须八年；正常宣战理由、实力评估、停战与盟友关系继续由原版处理。
+1342年起，已休养的AI更容易选择邻府为扩张目标。一般国家须和平十五年，扩张/好战性格须十年；正常宣战理由、实力评估、停战与盟友关系继续由原版处理。
 
-内部目标评估加2分、总分权重0.95；异派相邻国家权重0.97。和平八年以上、役负低于70的AI获得5%进取倾向，原版战争间隔缩短3个月。处于战争、役负过高、退盟或玩家控制时撤销。邻府候选评分系数也从8降为4。
+内部目标评估加1分、总分权重0.85；异派相邻国家权重0.86。和平十年以上、役负低于70的AI获得2%进取倾向，原版战争间隔增加3个月。处于战争、役负过高、退盟或玩家控制时撤销。邻府候选评分系数由4降为3，固定加分由4降为2。
 
-没有自动宣战事件，没有移除停战、盟约或外围军事隔离，也没有全局改动原版AI性格。两派不组成自动参战的军事集团。
+没有自动宣战事件，没有跳过停战、盟约或实力判断，也没有全局改动原版AI性格。以上休养期只影响模组额外推荐的内部目标，不是禁止原版 AI 提前宣战的硬性冷却。两派不组成自动参战的军事集团。
 
 依据原版ai_scripted_expansion_target/attack_neighbors.txt及ai_scripted_expansion_score/readme.txt。
 ''',encoding='utf-8')
- return dict(start_year=1342,score_bonus=2,base_multiplier=.95,opposed_faction_extra=.02,aggressiveness=.05,war_interval_months=-3,peace_months_normal=144,peace_months_aggressive=96)
+ return dict(start_year=1342,score_bonus=1,base_multiplier=.85,opposed_faction_extra=.01,aggressiveness=.02,war_interval_months=3,peace_months_normal=180,peace_months_aggressive=120)

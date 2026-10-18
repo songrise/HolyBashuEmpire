@@ -13,7 +13,7 @@ REWARDS = {
   M(country_cabinet_efficiency=.10, global_monthly_control=.05),
   M(global_merchant_capacity_modifier=.15, merchant_maintenance_efficiency=.10),
   M(global_construction_speed=.20, global_build_buildings_efficiency=.10),
-  M(research_speed_modifier=.15, global_institution_growth_modifier=.20),
+  M(global_institution_growth_modifier=.20),
   M(global_production_efficiency=.10, global_burghers_max_literacy=10),
   M(research_speed_modifier=.15, global_books_output_modifier=.20),
   M(global_road_building_time=-.15, build_gravel_road_cost_modifier=-.15),
@@ -252,7 +252,7 @@ def build_technology_rewards(out,root,loc,put,game):
     else:effects.append('续办地方事业时额外获得1.6义气；须维持本圈机构运行。')
    if key=='hbe_civic_common_2':effects.append('开放公账审计与逐圈客籍议约。签订某圈议约后授予该圈机构及基础兵种资格；仍需当地领土和实际供养，不一次开放全部七圈。')
    if not effects:effects.append('本课题的永久加成立即生效，并推进后续地区课题与验收。')
-   if key=='hbe_tech_common_4':effects.append('配合锦江讲会和跨区工艺学堂，加快技术与制度传播。')
+   if key=='hbe_tech_common_4':effects=['开放跨圈经营：满足条件并签订客籍议约后，可在目标圈建造机构并经营基础产业。']
    if key=='hbe_tech_common_5':effects.append('提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。')
    if key=='hbe_tech_common_7':effects.append('降低原版道路工期与碎石路成本；可与蜀道接递叠加。')
    text='\n'.join(dict.fromkeys(effects))

@@ -1,0 +1,3941 @@
+{
+  "version": "0.3.2",
+  "hotfix": "red_turban_actions_45",
+  "structural_checks": 2021,
+  "independent_regeneration": {
+    "in_game/common/scripted_triggers/hbe_red_turban_actions.txt": true,
+    "in_game/common/generic_actions/red_turban_rebellions.txt": true,
+    "in_game/common/country_interactions/rtr_demand_annexation.txt": true,
+    "in_game/common/script_values/hbe_red_turban_actions.txt": true,
+    "main_menu/localization/simp_chinese/hbe_red_turban_actions_l_simp_chinese.yml": true,
+    "main_menu/localization/english/hbe_red_turban_actions_l_english.yml": true,
+    "in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt": true
+  },
+  "controlled": {
+    "version": "0.3.2 local follow-up",
+    "scope": "Controlled 1362 save continuation, temporary actor flags only in isolated test copy. Not a natural expansion frequency test.",
+    "checks": {
+      "hbe_rtr_probe_han_scope": true,
+      "hbe_rtr_probe_han_war": true,
+      "hbe_rtr_probe_han_annex": true,
+      "hbe_rtr_probe_han_acceptance": true,
+      "hbe_rtr_probe_han_neighbor_scope": true,
+      "hbe_rtr_probe_han_neighbor_war": true,
+      "hbe_rtr_probe_han_neighbor_annex": true,
+      "hbe_rtr_probe_han_neighbor_acceptance": true,
+      "hbe_rtr_probe_positive_annex_scaled": true,
+      "hbe_rtr_probe_wu_scope": true,
+      "hbe_rtr_probe_wu_war": true,
+      "hbe_rtr_probe_wu_annex": true,
+      "hbe_rtr_probe_wu_acceptance": true,
+      "hbe_rtr_probe_non_hbe_target_scope": true,
+      "hbe_rtr_probe_non_hbe_target_war": true,
+      "hbe_rtr_probe_non_hbe_target_annex": true,
+      "hbe_rtr_probe_non_hbe_target_acceptance": true,
+      "hbe_rtr_probe_ordinary_foreigner_scope": true,
+      "hbe_rtr_probe_ordinary_foreigner_war": true,
+      "hbe_rtr_probe_ordinary_foreigner_annex": true,
+      "hbe_rtr_probe_ordinary_foreigner_acceptance": true,
+      "hbe_rtr_probe_dynamic_zero_flag_scope": true,
+      "hbe_rtr_probe_dynamic_zero_flag_war": true,
+      "hbe_rtr_probe_dynamic_zero_flag_annex": true,
+      "hbe_rtr_probe_dynamic_zero_flag_acceptance": true,
+      "hbe_rtr_probe_formed_china_flag_scope": true,
+      "hbe_rtr_probe_formed_china_flag_war": true,
+      "hbe_rtr_probe_formed_china_flag_annex": true,
+      "hbe_rtr_probe_formed_china_flag_acceptance": true,
+      "hbe_rtr_probe_hbe_actor_scope": true,
+      "hbe_rtr_probe_hbe_actor_war": true,
+      "hbe_rtr_probe_hbe_actor_annex": true,
+      "hbe_rtr_probe_hbe_actor_acceptance": true,
+      "hbe_rtr_probe_negative_scope": true,
+      "hbe_rtr_probe_negative_war": true,
+      "hbe_rtr_probe_negative_annex": true,
+      "hbe_rtr_probe_negative_acceptance": true,
+      "hbe_rtr_probe_negative_war_preserved": true
+    },
+    "passed": 38,
+    "total": 38,
+    "all_pass": true,
+    "samples": {
+      "hbe_rtr_sample_han_war_native": 6680.49781,
+      "hbe_rtr_sample_han_war_actual": 3006.22401,
+      "hbe_rtr_sample_han_war_expected": 0.0,
+      "hbe_rtr_sample_han_annex_native": -573.83622,
+      "hbe_rtr_sample_han_annex_actual": -573.83622,
+      "hbe_rtr_sample_han_annex_expected": 0.0,
+      "hbe_rtr_sample_han_neighbor_war_native": 7580.83267,
+      "hbe_rtr_sample_han_neighbor_war_actual": 3411.3747,
+      "hbe_rtr_sample_han_neighbor_war_expected": 0.0,
+      "hbe_rtr_sample_han_neighbor_annex_native": 300.89679,
+      "hbe_rtr_sample_han_neighbor_annex_actual": 135.40355,
+      "hbe_rtr_sample_han_neighbor_annex_expected": 0.0,
+      "hbe_rtr_sample_wu_war_native": -912.51297,
+      "hbe_rtr_sample_wu_war_actual": -912.51297,
+      "hbe_rtr_sample_wu_war_expected": 0.0,
+      "hbe_rtr_sample_wu_annex_native": -841.57431,
+      "hbe_rtr_sample_wu_annex_actual": -841.57431,
+      "hbe_rtr_sample_wu_annex_expected": 0.0,
+      "hbe_rtr_sample_non_hbe_target_war_native": 6432.86451,
+      "hbe_rtr_sample_non_hbe_target_war_actual": 6432.86451,
+      "hbe_rtr_sample_non_hbe_target_war_expected": 0.0,
+      "hbe_rtr_sample_non_hbe_target_annex_native": -581.97037,
+      "hbe_rtr_sample_non_hbe_target_annex_actual": -581.97037,
+      "hbe_rtr_sample_non_hbe_target_annex_expected": 0.0,
+      "hbe_rtr_sample_ordinary_foreigner_war_native": -540.49003,
+      "hbe_rtr_sample_ordinary_foreigner_war_actual": -540.49003,
+      "hbe_rtr_sample_ordinary_foreigner_war_expected": 0.0,
+      "hbe_rtr_sample_ordinary_foreigner_annex_native": -700.15613,
+      "hbe_rtr_sample_ordinary_foreigner_annex_actual": -700.15613,
+      "hbe_rtr_sample_ordinary_foreigner_annex_expected": 0.0,
+      "hbe_rtr_sample_dynamic_zero_flag_war_native": -540.49003,
+      "hbe_rtr_sample_dynamic_zero_flag_war_actual": -540.49003,
+      "hbe_rtr_sample_dynamic_zero_flag_war_expected": 0.0,
+      "hbe_rtr_sample_dynamic_zero_flag_annex_native": -700.15613,
+      "hbe_rtr_sample_dynamic_zero_flag_annex_actual": -700.15613,
+      "hbe_rtr_sample_dynamic_zero_flag_annex_expected": 0.0,
+      "hbe_rtr_sample_formed_china_flag_war_native": -540.49003,
+      "hbe_rtr_sample_formed_china_flag_war_actual": -540.49003,
+      "hbe_rtr_sample_formed_china_flag_war_expected": 0.0,
+      "hbe_rtr_sample_formed_china_flag_annex_native": -700.15613,
+      "hbe_rtr_sample_formed_china_flag_annex_actual": -700.15613,
+      "hbe_rtr_sample_formed_china_flag_annex_expected": 0.0,
+      "hbe_rtr_sample_hbe_actor_war_native": 243.92017,
+      "hbe_rtr_sample_hbe_actor_war_actual": 243.92017,
+      "hbe_rtr_sample_hbe_actor_war_expected": 0.0,
+      "hbe_rtr_sample_hbe_actor_annex_native": 187.97339,
+      "hbe_rtr_sample_hbe_actor_annex_actual": 187.97339,
+      "hbe_rtr_sample_hbe_actor_annex_expected": 0.0,
+      "hbe_rtr_sample_negative_war_native": -730.77489,
+      "hbe_rtr_sample_negative_war_actual": -730.77489,
+      "hbe_rtr_sample_negative_war_expected": 0.0,
+      "hbe_rtr_sample_negative_annex_native": -765.71995,
+      "hbe_rtr_sample_negative_annex_actual": -765.71995,
+      "hbe_rtr_sample_negative_annex_expected": 0.0
+    },
+    "source_files_changed": [],
+    "save": "scheduled_save_DESKTOP-L1LK2TH_1362_06_03.eu5",
+    "global_diagnostic_lines": 23797,
+    "diagnostics": {
+      "new_related_errors": [],
+      "test_variable_registration_warnings": 190,
+      "note": "Unused sample-variable and possible-match diagnostics belong to the private fixture."
+    }
+  },
+  "natural40": {
+    "version": "0.3.2",
+    "hotfix": "red_turban_actions_45",
+    "scope": "One natural 40-year AI campaign; no forced buildings, units, research or events. Private date-only automated test.",
+    "complete": true,
+    "checks": {
+      "nine_checkpoint_saves": true,
+      "full_40_years": true,
+      "single_campaign": true,
+      "release_files_unchanged": true,
+      "government_heads_valid": true,
+      "resource_bounds": true,
+      "no_unexpected_hbe_diagnostics": true
+    },
+    "provenance": {
+      "source_files_checked": 738,
+      "changed": [],
+      "source_manifest_sha256": "88d98453d959da3e5ddb8caec768c203855cd1d6d633e3f3b8ef92916826f426"
+    },
+    "snapshots": [
+      {
+        "date": "1337.4.2",
+        "summary": {
+          "active_princes": 36,
+          "domain_locations": 164,
+          "treasury_total": 1553.63,
+          "treasury_median": 36.38,
+          "population_total": 1776.73,
+          "negative_treasuries": [],
+          "specialty_tech_total": 0,
+          "specialty_tech_median": 0.0,
+          "ruler_changes": 36,
+          "missing_rulers": [],
+          "regencies": {},
+          "governments_without_head": [],
+          "buildings": 0,
+          "building_levels": 0,
+          "operating_buildings": 0,
+          "units": 0,
+          "active_bashu_wars": 0,
+          "contribution_total": 0,
+          "burden_mean": 20.0,
+          "yiqi_mean": 40.0,
+          "last_dividend_total": 0,
+          "last_prestige_total": 0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_well_salt": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          }
+        },
+        "units": [],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BAB",
+              "BCB",
+              "BBU",
+              "BBR",
+              "BBI",
+              "BAZ",
+              "BAP",
+              "BCC",
+              "BCA",
+              "BBZ",
+              "BBY",
+              "BBX",
+              "BBW",
+              "BBV",
+              "BBT",
+              "BBS",
+              "BBQ",
+              "BBP",
+              "BBO",
+              "BBN",
+              "BBM",
+              "BBL",
+              "BBJ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX",
+              "BAW",
+              "BAQ",
+              "BAO",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 40.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAW",
+              "BAQ",
+              "BAO"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBI",
+              "BBP",
+              "BBO",
+              "BBN",
+              "BBM",
+              "BBL",
+              "BBJ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBR",
+              "BBT",
+              "BBS",
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [
+              "BBU",
+              "BBW",
+              "BBV"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BCB",
+              "BCC",
+              "BCA",
+              "BBZ",
+              "BBY",
+              "BBX"
+            ],
+            "leader": -1,
+            "variables": {}
+          }
+        ],
+        "active_bashu_wars": []
+      },
+      {
+        "date": "1342.4.1",
+        "summary": {
+          "active_princes": 29,
+          "domain_locations": 160,
+          "treasury_total": 1694.75,
+          "treasury_median": 35.85,
+          "population_total": 2080.16,
+          "negative_treasuries": [],
+          "specialty_tech_total": 100,
+          "specialty_tech_median": 3,
+          "ruler_changes": 36,
+          "missing_rulers": [
+            "BAB"
+          ],
+          "regencies": {
+            "consort_regency": 1
+          },
+          "governments_without_head": [],
+          "buildings": 4,
+          "building_levels": 1.0,
+          "operating_buildings": 1,
+          "units": 0,
+          "active_bashu_wars": 1,
+          "contribution_total": 108.0,
+          "burden_mean": 2.45,
+          "yiqi_mean": 62.83,
+          "last_dividend_total": 259.69,
+          "last_prestige_total": 5.61
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_well_salt": {
+            "production": 0.62671,
+            "max_pop_demand": 8.89517,
+            "max_industrial_demand": 0,
+            "max_price": 8.34601
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          }
+        },
+        "units": [],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BBQ",
+              "BBZ",
+              "BBY",
+              "BBX",
+              "BBW",
+              "BBU",
+              "BBT",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL",
+              "BBJ",
+              "BBI",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE",
+              "BAB",
+              "BAX",
+              "BAW"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAW",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBI",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL",
+              "BBJ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBT",
+              "BBS",
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [
+              "BBU",
+              "BBW"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY",
+              "BBX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BBU",
+              "BBZ",
+              "BBY",
+              "BBX",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBJ",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX",
+              "BAQ",
+              "BAJ",
+              "BAB"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 20.0,
+              "hbe_party_dividend_pool": 149.01577,
+              "hbe_party_dividend_weight": 11.78355
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BAP",
+              "BBW",
+              "BBT",
+              "BBQ",
+              "BBL",
+              "BBI",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAW",
+              "BAL",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 15.0,
+              "hbe_party_dividend_pool": 128.6571,
+              "hbe_party_dividend_weight": 9.7041
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 50331702,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              2449
+            ],
+            "start": "1341.12.1",
+            "name": "INDEPENDENCE_WAR_NAME"
+          }
+        ]
+      },
+      {
+        "date": "1347.4.1",
+        "summary": {
+          "active_princes": 29,
+          "domain_locations": 160,
+          "treasury_total": 1157.05,
+          "treasury_median": 4.48,
+          "population_total": 2163.59,
+          "negative_treasuries": [],
+          "specialty_tech_total": 109,
+          "specialty_tech_median": 4,
+          "ruler_changes": 37,
+          "missing_rulers": [
+            "BAB"
+          ],
+          "regencies": {
+            "consort_regency": 1
+          },
+          "governments_without_head": [],
+          "buildings": 15,
+          "building_levels": 13.0,
+          "operating_buildings": 12,
+          "units": 0,
+          "active_bashu_wars": 0,
+          "contribution_total": 192.0,
+          "burden_mean": 2.72,
+          "yiqi_mean": 69.83,
+          "last_dividend_total": 269.86,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0.55355,
+            "max_pop_demand": 5.27771,
+            "max_industrial_demand": 0,
+            "max_price": 23.44489
+          },
+          "hbe_well_salt": {
+            "production": 4.50197,
+            "max_pop_demand": 19.757,
+            "max_industrial_demand": 0,
+            "max_price": 11.9447
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.49952,
+            "max_pop_demand": 113.69575,
+            "max_industrial_demand": 0,
+            "max_price": 10.78239
+          }
+        },
+        "units": [],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BBQ",
+              "BBZ",
+              "BBY",
+              "BBX",
+              "BBW",
+              "BBU",
+              "BBT",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL",
+              "BBJ",
+              "BBI",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE",
+              "BAB",
+              "BAX",
+              "BAW"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAW",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBI",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL",
+              "BBJ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBT",
+              "BBS",
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [
+              "BBU",
+              "BBW"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY",
+              "BBX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BBX",
+              "BBZ",
+              "BBY",
+              "BBU",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBJ",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX",
+              "BAQ",
+              "BAJ",
+              "BAB"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 21.0,
+              "hbe_party_dividend_pool": 143.22811,
+              "hbe_party_dividend_weight": 13.16982
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BAP",
+              "BBW",
+              "BBT",
+              "BBQ",
+              "BBL",
+              "BBI",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAW",
+              "BAL",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 15.0,
+              "hbe_party_dividend_pool": 126.6443,
+              "hbe_party_dividend_weight": 12.47665
+            }
+          }
+        ],
+        "active_bashu_wars": []
+      },
+      {
+        "date": "1352.4.1",
+        "summary": {
+          "active_princes": 27,
+          "domain_locations": 160,
+          "treasury_total": 2485.86,
+          "treasury_median": 43.13,
+          "population_total": 1935.3,
+          "negative_treasuries": [],
+          "specialty_tech_total": 105,
+          "specialty_tech_median": 4,
+          "ruler_changes": 40,
+          "missing_rulers": [
+            "BAB",
+            "BAF",
+            "BAX",
+            "BBH",
+            "BBX"
+          ],
+          "regencies": {
+            "consort_regency": 3,
+            "interregnum": 2
+          },
+          "governments_without_head": [],
+          "buildings": 20,
+          "building_levels": 17.0,
+          "operating_buildings": 16,
+          "units": 0,
+          "active_bashu_wars": 3,
+          "contribution_total": 281.0,
+          "burden_mean": 2.52,
+          "yiqi_mean": 84.26,
+          "last_dividend_total": 255.46,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0.56616,
+            "max_pop_demand": 3.63842,
+            "max_industrial_demand": 0,
+            "max_price": 15.45357
+          },
+          "hbe_well_salt": {
+            "production": 5.19236,
+            "max_pop_demand": 11.97417,
+            "max_industrial_demand": 0,
+            "max_price": 10.41749
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.80861,
+            "max_pop_demand": 41.33583,
+            "max_industrial_demand": 0,
+            "max_price": 14.80561
+          }
+        },
+        "units": [],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BBQ",
+              "BBZ",
+              "BBY",
+              "BBX",
+              "BBW",
+              "BBU",
+              "BBT",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE",
+              "BAB",
+              "BAX",
+              "BAW"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAW",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBT",
+              "BBS",
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [
+              "BBU",
+              "BBW"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY",
+              "BBX"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BAQ",
+              "BBZ",
+              "BBY",
+              "BBX",
+              "BBU",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAX",
+              "BAJ",
+              "BAB"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 21.0,
+              "hbe_party_dividend_pool": 138.39335,
+              "hbe_party_dividend_weight": 11.09039
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BAP",
+              "BBW",
+              "BBT",
+              "BBQ",
+              "BBL",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAW",
+              "BAL",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 16.0,
+              "hbe_party_dividend_pool": 117.07521,
+              "hbe_party_dividend_weight": 9.01094
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 117440524,
+            "countries": [
+              "BBE",
+              "BBL",
+              "BBM",
+              "BBO",
+              "BBP"
+            ],
+            "foreign_participants": [
+              766
+            ],
+            "start": "1352.1.31",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 83886107,
+            "countries": [
+              "BBX",
+              "BBY",
+              "BBZ"
+            ],
+            "foreign_participants": [],
+            "start": "1351.12.25",
+            "name": "AGRESSION_WAR_NAME"
+          },
+          {
+            "id": 100663376,
+            "countries": [
+              "BAP",
+              "BAQ",
+              "BBX",
+              "BBY",
+              "BBZ"
+            ],
+            "foreign_participants": [],
+            "start": "1351.12.5",
+            "name": "AGRESSION_WAR_NAME"
+          }
+        ]
+      },
+      {
+        "date": "1357.4.1",
+        "summary": {
+          "active_princes": 22,
+          "domain_locations": 160,
+          "treasury_total": 3236.64,
+          "treasury_median": 54.08,
+          "population_total": 2010.82,
+          "negative_treasuries": [],
+          "specialty_tech_total": 89,
+          "specialty_tech_median": 3.5,
+          "ruler_changes": 47,
+          "missing_rulers": [
+            "BAF",
+            "BAP",
+            "BBM",
+            "BBO",
+            "BBP"
+          ],
+          "regencies": {
+            "consort_regency": 4,
+            "subject_regency": 1
+          },
+          "governments_without_head": [],
+          "buildings": 28,
+          "building_levels": 28.0,
+          "operating_buildings": 27,
+          "units": 0,
+          "active_bashu_wars": 17,
+          "contribution_total": 288.0,
+          "burden_mean": 1.82,
+          "yiqi_mean": 91.36,
+          "last_dividend_total": 223.1,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0.58965,
+            "max_pop_demand": 5.5054,
+            "max_industrial_demand": 0,
+            "max_price": 23.84165
+          },
+          "hbe_well_salt": {
+            "production": 6.72842,
+            "max_pop_demand": 21.14283,
+            "max_industrial_demand": 0,
+            "max_price": 10.82982
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.8177,
+            "max_pop_demand": 56.2433,
+            "max_industrial_demand": 0,
+            "max_price": 14.99097
+          }
+        },
+        "units": [],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BBQ",
+              "BBZ",
+              "BBY",
+              "BBT",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE",
+              "BAB"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBL"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBT",
+              "BBS",
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAQ",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 16.0,
+              "hbe_party_dividend_pool": 121.32031,
+              "hbe_party_dividend_weight": 10.39722
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BBQ",
+              "BBT",
+              "BBL",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAP",
+              "BAL",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 12.0,
+              "hbe_party_dividend_pool": 101.79594,
+              "hbe_party_dividend_weight": 7.62464
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 167772162,
+            "countries": [
+              "BAP",
+              "BBY"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1355.11.3",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217734,
+            "countries": [
+              "BAB",
+              "BAE"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1356.5.1",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 117440519,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1356.7.28",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 251658251,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBH",
+              "BBM"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1356.10.28",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772175,
+            "countries": [
+              "BAB",
+              "BAE",
+              "BAF",
+              "BAJ",
+              "BAL",
+              "BBL",
+              "BBP",
+              "BBZ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1354.2.12",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217751,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              767,
+              779,
+              823,
+              847,
+              849,
+              884,
+              885,
+              888,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1022,
+              1024,
+              1025,
+              1026,
+              1027,
+              2171
+            ],
+            "start": "1355.10.5",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 251658264,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBT"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1357.1.24",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217756,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1356.7.30",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 100663327,
+            "countries": [
+              "BBL",
+              "BBM",
+              "BBO",
+              "BBP"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1355.2.4",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 184549412,
+            "countries": [
+              "BAB",
+              "BAE",
+              "BAF",
+              "BAJ",
+              "BAL"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1356.5.3",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 50331699,
+            "countries": [
+              "BAB",
+              "BAE",
+              "BAF",
+              "BAJ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1354.8.9",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 117440564,
+            "countries": [
+              "BBC",
+              "BBM",
+              "BBO",
+              "BBP"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1355.8.4",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 150995000,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBH",
+              "BBM"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1356.10.26",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 83886142,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              779,
+              875,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2136,
+              2171
+            ],
+            "start": "1356.12.2",
+            "name": "AGRESSION_WAR_NAME"
+          },
+          {
+            "id": 218103883,
+            "countries": [
+              "BAP",
+              "BAZ",
+              "BBE",
+              "BBM",
+              "BBO"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1356.2.4",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217808,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBC",
+              "BBT"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1357.1.26",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772241,
+            "countries": [
+              "BAP",
+              "BAZ",
+              "BBE",
+              "BBM",
+              "BBO"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1356.2.2",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          }
+        ]
+      },
+      {
+        "date": "1362.4.1",
+        "summary": {
+          "active_princes": 21,
+          "domain_locations": 157,
+          "treasury_total": 1740.28,
+          "treasury_median": 45.21,
+          "population_total": 2119.25,
+          "negative_treasuries": [],
+          "specialty_tech_total": 99,
+          "specialty_tech_median": 4,
+          "ruler_changes": 49,
+          "missing_rulers": [
+            "BAF",
+            "BAP",
+            "BBM",
+            "BBO",
+            "BBP",
+            "BBS"
+          ],
+          "regencies": {
+            "consort_regency": 5,
+            "subject_regency": 1
+          },
+          "governments_without_head": [],
+          "buildings": 42,
+          "building_levels": 37.0,
+          "operating_buildings": 37,
+          "units": 0,
+          "active_bashu_wars": 13,
+          "contribution_total": 350.0,
+          "burden_mean": 2.19,
+          "yiqi_mean": 99.14,
+          "last_dividend_total": 224.38,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 0.58908,
+            "max_pop_demand": 5.2685,
+            "max_industrial_demand": 0,
+            "max_price": 25.75854
+          },
+          "hbe_well_salt": {
+            "production": 7.40799,
+            "max_pop_demand": 19.96046,
+            "max_industrial_demand": 0,
+            "max_price": 10.53654
+          },
+          "hbe_shu_paper": {
+            "production": 0,
+            "max_pop_demand": 0,
+            "max_industrial_demand": 0,
+            "max_price": 0
+          },
+          "hbe_border_tea": {
+            "production": 0.82897,
+            "max_pop_demand": 58.8659,
+            "max_industrial_demand": 0,
+            "max_price": 14.99949
+          }
+        },
+        "units": [],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBT",
+              "BBS",
+              "BBQ",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBP",
+              "BBO",
+              "BBM"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBT",
+              "BBS",
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBS",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAQ",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 16.0,
+              "hbe_party_dividend_pool": 123.39555,
+              "hbe_party_dividend_weight": 9.70408
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BBQ",
+              "BBT",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAP",
+              "BAL",
+              "BAF",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 11.0,
+              "hbe_party_dividend_pool": 101.00213,
+              "hbe_party_dividend_weight": 6.23835
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 134217728,
+            "countries": [
+              "BBF"
+            ],
+            "foreign_participants": [
+              771,
+              846,
+              855,
+              856
+            ],
+            "start": "1361.3.18",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 117440513,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              765,
+              779,
+              870,
+              871,
+              876,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2136,
+              2171
+            ],
+            "start": "1358.2.15",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 117440516,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBC",
+              "BBH",
+              "BBM"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1361.12.9",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 100663301,
+            "countries": [
+              "BAP",
+              "BAQ",
+              "BAZ",
+              "BBC"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1358.11.9",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217750,
+            "countries": [
+              "BAQ",
+              "BBL",
+              "BBM"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1358.8.11",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217751,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              767,
+              779,
+              823,
+              847,
+              849,
+              876,
+              884,
+              885,
+              888,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1022,
+              1024,
+              1025,
+              1026,
+              1027,
+              2136,
+              2155,
+              2171,
+              2576,
+              16779783,
+              83888554
+            ],
+            "start": "1355.10.5",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772189,
+            "countries": [
+              "BAB",
+              "BAP",
+              "BBM",
+              "BBQ",
+              "BBS",
+              "BBT"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1362.3.9",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 234881060,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              609,
+              761,
+              779,
+              780,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2148,
+              2149,
+              2151,
+              2161,
+              2162,
+              2169,
+              2171,
+              2179,
+              2571,
+              2573,
+              50334090
+            ],
+            "start": "1361.3.5",
+            "name": "AGRESSION_WAR_NAME"
+          },
+          {
+            "id": 218103845,
+            "countries": [
+              "BAQ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1359.8.4",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 251658287,
+            "countries": [
+              "BAP",
+              "BAZ",
+              "BBE",
+              "BBM",
+              "BBO",
+              "BBP"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1361.3.17",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772213,
+            "countries": [
+              "BAB",
+              "BAF",
+              "BAJ",
+              "BAL"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1359.2.7",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 251658294,
+            "countries": [
+              "BAP",
+              "BAQ",
+              "BBO",
+              "BBY"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1359.5.8",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 184549460,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBC",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              855,
+              856,
+              884,
+              885,
+              888
+            ],
+            "start": "1361.9.11",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          }
+        ]
+      },
+      {
+        "date": "1367.4.1",
+        "summary": {
+          "active_princes": 18,
+          "domain_locations": 157,
+          "treasury_total": 5195.89,
+          "treasury_median": 75.14,
+          "population_total": 2176.66,
+          "negative_treasuries": [],
+          "specialty_tech_total": 98,
+          "specialty_tech_median": 5.0,
+          "ruler_changes": 54,
+          "missing_rulers": [
+            "BBM",
+            "BBP"
+          ],
+          "regencies": {
+            "consort_regency": 2
+          },
+          "governments_without_head": [],
+          "buildings": 52,
+          "building_levels": 52.0,
+          "operating_buildings": 48,
+          "units": 1,
+          "active_bashu_wars": 27,
+          "contribution_total": 362.0,
+          "burden_mean": 5.06,
+          "yiqi_mean": 99.28,
+          "last_dividend_total": 210.32,
+          "last_prestige_total": 5.45
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 1.66848,
+            "max_pop_demand": 6.3005,
+            "max_industrial_demand": 0,
+            "max_price": 22.70982
+          },
+          "hbe_well_salt": {
+            "production": 15.5361,
+            "max_pop_demand": 23.56351,
+            "max_industrial_demand": 0,
+            "max_price": 7.79472
+          },
+          "hbe_shu_paper": {
+            "production": 0.93803,
+            "max_pop_demand": 6.66375,
+            "max_industrial_demand": 0,
+            "max_price": 11.14179
+          },
+          "hbe_border_tea": {
+            "production": 1.09761,
+            "max_pop_demand": 59.31037,
+            "max_industrial_demand": 0,
+            "max_price": 14.99981
+          }
+        },
+        "units": [
+          {
+            "id": 335547762,
+            "type": "hbe_salt_guard",
+            "owner": "BAQ"
+          }
+        ],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBQ",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 92.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBP",
+              "BBO",
+              "BBM"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAQ",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 17.0,
+              "hbe_party_dividend_pool": 135.06034,
+              "hbe_party_dividend_weight": 10.39721
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BAP",
+              "BBQ",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAL",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 9.0,
+              "hbe_party_dividend_pool": 92.00176,
+              "hbe_party_dividend_weight": 7.62462
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 117440513,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              765,
+              779,
+              870,
+              871,
+              876,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2136,
+              2171
+            ],
+            "start": "1358.2.15",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772163,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBC",
+              "BBT"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1362.6.7",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 184549386,
+            "countries": [
+              "BBC",
+              "BBM",
+              "BBO",
+              "BBP"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1363.8.27",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 335544331,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1364.2.20",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 117440529,
+            "countries": [
+              "BAP",
+              "BBY"
+            ],
+            "foreign_participants": [
+              765,
+              814
+            ],
+            "start": "1363.11.22",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 301989908,
+            "countries": [
+              "BAP",
+              "BAQ",
+              "BAZ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1365.2.10",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 134217751,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              767,
+              779,
+              823,
+              847,
+              848,
+              849,
+              876,
+              884,
+              885,
+              888,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1022,
+              1024,
+              1025,
+              1026,
+              1027,
+              2136,
+              2155,
+              2171,
+              2576,
+              16779783,
+              83888554
+            ],
+            "start": "1355.10.5",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 184549405,
+            "countries": [
+              "BAB",
+              "BAP",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1366.7.31",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 50331683,
+            "countries": [
+              "BAZ",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              771,
+              855,
+              856
+            ],
+            "start": "1364.11.15",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 251658280,
+            "countries": [
+              "BAB",
+              "BAP",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1366.2.4",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 50331691,
+            "countries": [
+              "BAZ",
+              "BBH",
+              "BBM"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1364.8.15",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 285212726,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBH",
+              "BBT"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1364.5.19",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 234881079,
+            "countries": [
+              "BAP",
+              "BAQ",
+              "BAZ",
+              "BBC",
+              "BBE",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1367.2.26",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 385876027,
+            "countries": [
+              "BAQ",
+              "BBM",
+              "BBO",
+              "BBP",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              767,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1366.11.28",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 117440572,
+            "countries": [
+              "BAB",
+              "BAL"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1365.5.10",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 16777279,
+            "countries": [
+              "BBY"
+            ],
+            "foreign_participants": [
+              767,
+              814,
+              815,
+              847,
+              884,
+              885,
+              888
+            ],
+            "start": "1364.8.16",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 16777281,
+            "countries": [
+              "BAP",
+              "BBY"
+            ],
+            "foreign_participants": [
+              771,
+              814
+            ],
+            "start": "1364.8.17",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 184549443,
+            "countries": [
+              "BAB",
+              "BAE",
+              "BAL"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1363.5.28",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 234881092,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              609,
+              761,
+              779,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              953,
+              955,
+              961,
+              963,
+              964,
+              965,
+              967,
+              968,
+              970,
+              971,
+              974,
+              975,
+              976,
+              977,
+              978,
+              979,
+              980,
+              981,
+              982,
+              983,
+              985,
+              986,
+              987,
+              988,
+              993,
+              994,
+              996,
+              998,
+              1004,
+              1006,
+              1008,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2171,
+              2511,
+              33557004
+            ],
+            "start": "1365.1.22",
+            "name": "NORMAL_WAR_NAME"
+          },
+          {
+            "id": 150995015,
+            "countries": [
+              "BAQ",
+              "BBM",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1364.11.13",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 201326664,
+            "countries": [
+              "BAP",
+              "BAZ",
+              "BBE",
+              "BBM",
+              "BBO"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1363.11.24",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 16777295,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBF",
+              "BBH",
+              "BBT"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1364.5.21",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 16777304,
+            "countries": [
+              "BAQ",
+              "BBM",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1365.8.10",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 90,
+            "countries": [
+              "BAZ",
+              "BBH",
+              "BBM"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1365.2.12",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 94,
+            "countries": [
+              "BAB",
+              "BAJ"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1365.5.12",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 96,
+            "countries": [
+              "BBY"
+            ],
+            "foreign_participants": [
+              247,
+              1013,
+              1014,
+              1015,
+              1016,
+              2148,
+              2149,
+              2151,
+              2158,
+              2160,
+              2161,
+              2162,
+              2169,
+              2172,
+              2173,
+              2174,
+              2177,
+              2179,
+              2190,
+              2495,
+              2571,
+              2573,
+              16779793,
+              50334090
+            ],
+            "start": "1365.5.16",
+            "name": "COALITION_WAR_NAME"
+          },
+          {
+            "id": 100,
+            "countries": [
+              "BAP",
+              "BAQ",
+              "BAZ"
+            ],
+            "foreign_participants": [
+              771
+            ],
+            "start": "1365.11.7",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          }
+        ]
+      },
+      {
+        "date": "1372.4.1",
+        "summary": {
+          "active_princes": 18,
+          "domain_locations": 157,
+          "treasury_total": 4726.88,
+          "treasury_median": 123.23,
+          "population_total": 2263.91,
+          "negative_treasuries": [],
+          "specialty_tech_total": 110,
+          "specialty_tech_median": 6.0,
+          "ruler_changes": 58,
+          "missing_rulers": [],
+          "regencies": {},
+          "governments_without_head": [],
+          "buildings": 67,
+          "building_levels": 64.0,
+          "operating_buildings": 61,
+          "units": 1,
+          "active_bashu_wars": 6,
+          "contribution_total": 444.0,
+          "burden_mean": 3.67,
+          "yiqi_mean": 98.56,
+          "last_dividend_total": 251.1,
+          "last_prestige_total": 6.0
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 4.02729,
+            "max_pop_demand": 10.36642,
+            "max_industrial_demand": 0,
+            "max_price": 18.5342
+          },
+          "hbe_well_salt": {
+            "production": 19.36858,
+            "max_pop_demand": 34.72684,
+            "max_industrial_demand": 0,
+            "max_price": 7.74082
+          },
+          "hbe_shu_paper": {
+            "production": 0.95487,
+            "max_pop_demand": 6.92651,
+            "max_industrial_demand": 0,
+            "max_price": 11.5146
+          },
+          "hbe_border_tea": {
+            "production": 1.3618,
+            "max_pop_demand": 65.8611,
+            "max_industrial_demand": 0,
+            "max_price": 14.99981
+          }
+        },
+        "units": [
+          {
+            "id": 335547762,
+            "type": "hbe_salt_guard",
+            "owner": "BAQ"
+          }
+        ],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBQ",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_civic_holder": 1216
+            }
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBH",
+              "BBF",
+              "BBE",
+              "BBC",
+              "BBB"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBP",
+              "BBO",
+              "BBM"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBP",
+              "BBO",
+              "BBM",
+              "BBE",
+              "BBC",
+              "BBB",
+              "BAQ",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 17.0,
+              "hbe_party_dividend_pool": 148.49699,
+              "hbe_party_dividend_weight": 11.09035
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BAP",
+              "BBQ",
+              "BBH",
+              "BBF",
+              "BAZ",
+              "BAL",
+              "BAE"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 9.0,
+              "hbe_party_dividend_pool": 102.61378,
+              "hbe_party_dividend_weight": 5.54519
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 117440513,
+            "countries": [
+              "BBZ"
+            ],
+            "foreign_participants": [
+              606,
+              609,
+              761,
+              765,
+              779,
+              870,
+              871,
+              876,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2136,
+              2171
+            ],
+            "start": "1358.2.15",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 184549405,
+            "countries": [
+              "BAB",
+              "BAP",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1366.7.31",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 268435509,
+            "countries": [
+              "BAQ",
+              "BAZ"
+            ],
+            "foreign_participants": [
+              765,
+              767
+            ],
+            "start": "1368.4.19",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 201326658,
+            "countries": [
+              "BAZ",
+              "BBB",
+              "BBC",
+              "BBE",
+              "BBF",
+              "BBH"
+            ],
+            "foreign_participants": [
+              767
+            ],
+            "start": "1371.7.23",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772231,
+            "countries": [
+              "BAL",
+              "BBC",
+              "BBM",
+              "BBO",
+              "BBP"
+            ],
+            "foreign_participants": [
+              765
+            ],
+            "start": "1368.10.13",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 33554524,
+            "countries": [
+              "BBY"
+            ],
+            "foreign_participants": [
+              765,
+              814,
+              818
+            ],
+            "start": "1369.4.10",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          }
+        ]
+      },
+      {
+        "date": "1377.4.1",
+        "summary": {
+          "active_princes": 11,
+          "domain_locations": 107,
+          "treasury_total": 5958.64,
+          "treasury_median": 119.8,
+          "population_total": 1630.72,
+          "negative_treasuries": [],
+          "specialty_tech_total": 74,
+          "specialty_tech_median": 6,
+          "ruler_changes": 58,
+          "missing_rulers": [],
+          "regencies": {},
+          "governments_without_head": [],
+          "buildings": 86,
+          "building_levels": 76.0,
+          "operating_buildings": 74,
+          "units": 1,
+          "active_bashu_wars": 7,
+          "contribution_total": 325.0,
+          "burden_mean": 5.45,
+          "yiqi_mean": 94.91,
+          "last_dividend_total": 174.1,
+          "last_prestige_total": 5.5
+        },
+        "goods": {
+          "hbe_shu_embroidery": {
+            "production": 4.86264,
+            "max_pop_demand": 12.95696,
+            "max_industrial_demand": 0,
+            "max_price": 17.72111
+          },
+          "hbe_well_salt": {
+            "production": 19.42835,
+            "max_pop_demand": 31.22288,
+            "max_industrial_demand": 0,
+            "max_price": 8.24871
+          },
+          "hbe_shu_paper": {
+            "production": 2.06204,
+            "max_pop_demand": 8.75072,
+            "max_industrial_demand": 0,
+            "max_price": 10.84279
+          },
+          "hbe_border_tea": {
+            "production": 1.88107,
+            "max_pop_demand": 66.59748,
+            "max_industrial_demand": 0,
+            "max_price": 14.99981
+          }
+        },
+        "units": [
+          {
+            "id": 335547762,
+            "type": "hbe_salt_guard",
+            "owner": "BAQ"
+          }
+        ],
+        "organizations": [
+          {
+            "id": 53,
+            "type": "hbe_empire",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBQ",
+              "BBM",
+              "BBB",
+              "BAZ",
+              "BAQ",
+              "BAP",
+              "BAL",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_guoqi": 100.0
+            }
+          },
+          {
+            "id": 54,
+            "type": "hbe_circle_chengdu_plain",
+            "members": [
+              "BAB",
+              "BAL",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 55,
+            "type": "hbe_circle_southern_salt_wine",
+            "members": [
+              "BAP",
+              "BAQ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_civic_holder": 1216
+            }
+          },
+          {
+            "id": 56,
+            "type": "hbe_circle_eastern_river",
+            "members": [
+              "BAZ",
+              "BBB"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 57,
+            "type": "hbe_circle_northern_shudao",
+            "members": [
+              "BBM"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 58,
+            "type": "hbe_circle_central_hills",
+            "members": [
+              "BBQ"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 59,
+            "type": "hbe_circle_western_tea_horse",
+            "members": [],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 60,
+            "type": "hbe_circle_southwestern_valleys",
+            "members": [
+              "BBZ",
+              "BBY"
+            ],
+            "leader": -1,
+            "variables": {}
+          },
+          {
+            "id": 143,
+            "type": "hbe_common_party",
+            "members": [
+              "BAB",
+              "BBZ",
+              "BBY",
+              "BBM",
+              "BBB",
+              "BAQ",
+              "BAJ"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 13.0,
+              "hbe_party_dividend_pool": 102.23815,
+              "hbe_party_dividend_weight": 6.93147
+            }
+          },
+          {
+            "id": 144,
+            "type": "hbe_local_party",
+            "members": [
+              "BAP",
+              "BBQ",
+              "BAZ",
+              "BAL"
+            ],
+            "leader": -1,
+            "variables": {
+              "hbe_party_points": 6.0,
+              "hbe_party_dividend_pool": 86.23935,
+              "hbe_party_dividend_weight": 4.15889
+            }
+          }
+        ],
+        "active_bashu_wars": [
+          {
+            "id": 117440533,
+            "countries": [
+              "BBQ"
+            ],
+            "foreign_participants": [
+              2589,
+              50334045
+            ],
+            "start": "1377.4.1",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 301989921,
+            "countries": [
+              "BBQ"
+            ],
+            "foreign_participants": [
+              609,
+              761,
+              765,
+              779,
+              798,
+              889,
+              890,
+              918,
+              920,
+              921,
+              923,
+              924,
+              972,
+              1018,
+              1019,
+              1020,
+              1021,
+              1024,
+              1025,
+              1026,
+              1027,
+              2171,
+              2589
+            ],
+            "start": "1376.12.6",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 167772205,
+            "countries": [
+              "BAB",
+              "BAL"
+            ],
+            "foreign_participants": [
+              50334045
+            ],
+            "start": "1377.1.3",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 234881090,
+            "countries": [
+              "BAB",
+              "BAJ",
+              "BAL"
+            ],
+            "foreign_participants": [
+              50334045
+            ],
+            "start": "1376.10.10",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 352321617,
+            "countries": [
+              "BAB",
+              "BAP",
+              "BAZ",
+              "BBB",
+              "BBM"
+            ],
+            "foreign_participants": [
+              50334045
+            ],
+            "start": "1376.1.23",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 100663385,
+            "countries": [
+              "BAB",
+              "BBM"
+            ],
+            "foreign_participants": [
+              50334045
+            ],
+            "start": "1376.4.22",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          },
+          {
+            "id": 50331744,
+            "countries": [
+              "BAB",
+              "BAP",
+              "BAQ",
+              "BAZ",
+              "BBQ"
+            ],
+            "foreign_participants": [
+              50334045
+            ],
+            "start": "1376.7.17",
+            "name": "red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+          }
+        ]
+      }
+    ],
+    "hbe_war_declarations": [
+      {
+        "year": 1338,
+        "line": "[22:29:04][diplomatic_action_war.cpp:475]: WAR: 简州 declared war on 嘉定山门 "
+      },
+      {
+        "year": 1338,
+        "line": "[22:29:05][diplomatic_action_war.cpp:475]: WAR: 叙州盐酒 declared war on 马湖 "
+      },
+      {
+        "year": 1339,
+        "line": "[22:29:06][diplomatic_action_war.cpp:475]: WAR: 眉州 declared war on 嘉定山门 "
+      },
+      {
+        "year": 1339,
+        "line": "[22:29:06][diplomatic_action_war.cpp:475]: WAR: 泸州 declared war on 永宁 "
+      },
+      {
+        "year": 1341,
+        "line": "[22:29:44][diplomatic_action_war.cpp:475]: WAR: 简州 declared war on 遂宁义仓 "
+      },
+      {
+        "year": 1341,
+        "line": "[22:29:52][diplomatic_action_war.cpp:475]: WAR: 松潘 declared war on 茂州 "
+      },
+      {
+        "year": 1341,
+        "line": "[22:29:57][diplomatic_action_war.cpp:475]: WAR: 剑州 declared war on 龙安 "
+      },
+      {
+        "year": 1347,
+        "line": "[22:31:58][diplomatic_action_war.cpp:475]: WAR: 简州 declared war on 保宁蜀道 "
+      },
+      {
+        "year": 1351,
+        "line": "[22:33:31][diplomatic_action_war.cpp:475]: WAR: 叙州盐酒 declared war on 盐源 "
+      },
+      {
+        "year": 1351,
+        "line": "[22:33:31][diplomatic_action_war.cpp:475]: WAR: 德昌 declared war on 盐源 "
+      },
+      {
+        "year": 1352,
+        "line": "[22:33:33][diplomatic_action_war.cpp:475]: WAR: Tiānwán declared war on 夔州 "
+      },
+      {
+        "year": 1353,
+        "line": "[22:34:08][diplomatic_action_war.cpp:475]: WAR: 眉州 declared war on 雅州茶马 "
+      },
+      {
+        "year": 1353,
+        "line": "[22:34:08][diplomatic_action_war.cpp:475]: WAR: 剑州 declared war on 松潘 "
+      },
+      {
+        "year": 1354,
+        "line": "[22:34:21][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 黎州 "
+      },
+      {
+        "year": 1354,
+        "line": "[22:34:21][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 黎州 "
+      },
+      {
+        "year": 1354,
+        "line": "[22:34:32][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 彭州 "
+      },
+      {
+        "year": 1354,
+        "line": "[22:34:32][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 彭州 "
+      },
+      {
+        "year": 1355,
+        "line": "[22:34:41][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 广元 "
+      },
+      {
+        "year": 1355,
+        "line": "[22:34:41][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 广元 "
+      },
+      {
+        "year": 1355,
+        "line": "[22:34:53][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 合州 "
+      },
+      {
+        "year": 1355,
+        "line": "[22:34:53][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 合州 "
+      },
+      {
+        "year": 1355,
+        "line": "[22:34:57][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 德昌 "
+      },
+      {
+        "year": 1355,
+        "line": "[22:34:57][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 德昌 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:02][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 夔州 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:02][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 夔州 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:09][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 汉州 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:09][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 汉州 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:12][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 酉阳 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:12][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 酉阳 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:17][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 忠州 "
+      },
+      {
+        "year": 1356,
+        "line": "[22:35:17][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 忠州 "
+      },
+      {
+        "year": 1357,
+        "line": "[22:35:21][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 广安 "
+      },
+      {
+        "year": 1357,
+        "line": "[22:35:22][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 广安 "
+      },
+      {
+        "year": 1357,
+        "line": "[22:35:30][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 潼川 "
+      },
+      {
+        "year": 1357,
+        "line": "[22:35:30][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 潼川 "
+      },
+      {
+        "year": 1357,
+        "line": "[22:35:39][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 剑州 "
+      },
+      {
+        "year": 1358,
+        "line": "[22:35:43][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 重庆山城 "
+      },
+      {
+        "year": 1358,
+        "line": "[22:35:50][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 成都锦官 "
+      },
+      {
+        "year": 1358,
+        "line": "[22:35:54][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 泸州 "
+      },
+      {
+        "year": 1358,
+        "line": "[22:35:56][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 剑州 "
+      },
+      {
+        "year": 1358,
+        "line": "[22:35:59][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 叙州盐酒 "
+      },
+      {
+        "year": 1358,
+        "line": "[22:36:00][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 重庆山城 "
+      },
+      {
+        "year": 1359,
+        "line": "[22:36:05][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 成都锦官 "
+      },
+      {
+        "year": 1359,
+        "line": "[22:36:12][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 叙州盐酒 "
+      },
+      {
+        "year": 1359,
+        "line": "[22:36:16][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 泸州 "
+      },
+      {
+        "year": 1360,
+        "line": "[22:36:28][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 广元 "
+      },
+      {
+        "year": 1361,
+        "line": "[22:36:48][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 夔州 "
+      },
+      {
+        "year": 1361,
+        "line": "[22:36:59][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 酉阳 "
+      },
+      {
+        "year": 1361,
+        "line": "[22:37:03][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 忠州 "
+      },
+      {
+        "year": 1362,
+        "line": "[22:37:07][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 潼川 "
+      },
+      {
+        "year": 1362,
+        "line": "[22:37:15][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 彭州 "
+      },
+      {
+        "year": 1362,
+        "line": "[22:37:16][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 涪州 "
+      },
+      {
+        "year": 1362,
+        "line": "[22:37:24][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 夔州 "
+      },
+      {
+        "year": 1362,
+        "line": "[22:37:25][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 黎州 "
+      },
+      {
+        "year": 1363,
+        "line": "[22:37:28][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 合州 "
+      },
+      {
+        "year": 1363,
+        "line": "[22:37:29][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 汉州 "
+      },
+      {
+        "year": 1363,
+        "line": "[22:37:35][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 汉州 "
+      },
+      {
+        "year": 1363,
+        "line": "[22:37:39][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 合州 "
+      },
+      {
+        "year": 1363,
+        "line": "[22:37:43][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 德昌 "
+      },
+      {
+        "year": 1363,
+        "line": "[22:37:43][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 夔州 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:37:47][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 酉阳 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:37:54][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 广安 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:37:54][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 广安 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:37:58][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 忠州 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:37:58][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 德昌 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:38:03][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 剑州 "
+      },
+      {
+        "year": 1364,
+        "line": "[22:38:03][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 酉阳 "
+      },
+      {
+        "year": 1365,
+        "line": "[22:38:07][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 重庆山城 "
+      },
+      {
+        "year": 1365,
+        "line": "[22:38:07][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 忠州 "
+      },
+      {
+        "year": 1365,
+        "line": "[22:38:14][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 眉州 "
+      },
+      {
+        "year": 1365,
+        "line": "[22:38:14][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 邛州 "
+      },
+      {
+        "year": 1365,
+        "line": "[22:38:18][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 剑州 "
+      },
+      {
+        "year": 1365,
+        "line": "[22:38:22][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 重庆山城 "
+      },
+      {
+        "year": 1366,
+        "line": "[22:38:27][diplomatic_action_war.cpp:475]: WAR: Fāng declared war on 简州 "
+      },
+      {
+        "year": 1366,
+        "line": "[22:38:37][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 简州 "
+      },
+      {
+        "year": 1366,
+        "line": "[22:38:44][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 剑州 "
+      },
+      {
+        "year": 1367,
+        "line": "[22:38:48][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 重庆山城 "
+      },
+      {
+        "year": 1367,
+        "line": "[22:39:00][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 成都锦官 "
+      },
+      {
+        "year": 1368,
+        "line": "[22:39:09][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 叙州盐酒 "
+      },
+      {
+        "year": 1368,
+        "line": "[22:39:15][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 泸州 "
+      },
+      {
+        "year": 1368,
+        "line": "[22:39:23][diplomatic_action_war.cpp:475]: WAR: Wú declared war on 合州 "
+      },
+      {
+        "year": 1371,
+        "line": "[22:40:20][diplomatic_action_war.cpp:475]: WAR: Chén declared war on 酉阳 "
+      },
+      {
+        "year": 1372,
+        "line": "[22:40:45][diplomatic_action_war.cpp:475]: WAR: Jǔzhōu declared war on 简州 "
+      },
+      {
+        "year": 1372,
+        "line": "[22:40:45][diplomatic_action_war.cpp:475]: WAR: Píngyáng declared war on 简州 "
+      },
+      {
+        "year": 1372,
+        "line": "[22:40:50][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 简州 "
+      },
+      {
+        "year": 1373,
+        "line": "[22:41:08][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 合州 "
+      },
+      {
+        "year": 1374,
+        "line": "[22:41:12][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 达州 "
+      },
+      {
+        "year": 1374,
+        "line": "[22:41:19][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 夔州 "
+      },
+      {
+        "year": 1374,
+        "line": "[22:41:23][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 忠州 "
+      },
+      {
+        "year": 1374,
+        "line": "[22:41:27][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 酉阳 "
+      },
+      {
+        "year": 1375,
+        "line": "[22:41:42][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 汉州 "
+      },
+      {
+        "year": 1376,
+        "line": "[22:41:50][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 涪州 "
+      },
+      {
+        "year": 1376,
+        "line": "[22:41:56][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 剑州 "
+      },
+      {
+        "year": 1376,
+        "line": "[22:42:00][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 重庆山城 "
+      },
+      {
+        "year": 1376,
+        "line": "[22:42:04][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 邛州 "
+      },
+      {
+        "year": 1377,
+        "line": "[22:42:08][diplomatic_action_war.cpp:475]: WAR: Fǔzhōu declared war on 成都锦官 "
+      }
+    ],
+    "diagnostics": {
+      "global_log_lines": 11862,
+      "unexpected_hbe": [],
+      "compatibility_count": 209,
+      "engine_tests": "Tests:\n[ FAIL ] Error log: 11833 errors\n"
+    },
+    "first_observed_special_units": {
+      "date": "1367.4.1",
+      "units": [
+        {
+          "id": 335547762,
+          "type": "hbe_salt_guard",
+          "owner": "BAQ"
+        }
+      ]
+    },
+    "final_paper_buildings": [
+      {
+        "id": 16783510,
+        "type": "hbe_gate_registry",
+        "owner": "BBM",
+        "level": 1.0,
+        "employed": 0.15,
+        "profit": 4.07391,
+        "owner_definition": "BBM"
+      },
+      {
+        "id": 16784998,
+        "type": "hbe_gate_registry",
+        "owner": 761,
+        "level": 1.0,
+        "employed": 0.15,
+        "profit": 3.36652,
+        "owner_definition": "CHI"
+      },
+      {
+        "id": 16791736,
+        "type": "hbe_gate_registry",
+        "owner": 50334045,
+        "level": 1.0,
+        "employed": 0.00721,
+        "profit": 0.07629,
+        "owner_definition": "fuzhou_jiangxi_province"
+      },
+      {
+        "id": 16808395,
+        "type": "hbe_gate_registry",
+        "owner": 50334045,
+        "level": 1.0,
+        "employed": 0.03442,
+        "profit": 0.59673,
+        "owner_definition": "fuzhou_jiangxi_province"
+      },
+      {
+        "id": 16818305,
+        "type": "hbe_gate_registry",
+        "owner": "BBM",
+        "level": 1.0,
+        "employed": 0.15,
+        "profit": 4.87461,
+        "owner_definition": "BBM"
+      },
+      {
+        "id": 43414,
+        "type": "hbe_gate_registry",
+        "owner": 761,
+        "level": 1.0,
+        "employed": 0.15,
+        "profit": 3.46005,
+        "owner_definition": "CHI"
+      },
+      {
+        "id": 43415,
+        "type": "hbe_gate_registry",
+        "owner": 761,
+        "level": 1.0,
+        "employed": 0.15,
+        "profit": 3.74568,
+        "owner_definition": "CHI"
+      },
+      {
+        "id": 16821299,
+        "type": "hbe_gate_registry",
+        "owner": 50334045,
+        "level": 1.0,
+        "employed": 0.01785,
+        "profit": 0.03194,
+        "owner_definition": "fuzhou_jiangxi_province"
+      }
+    ],
+    "final_actual_empire": {
+      "members": [
+        "BAB",
+        "BAJ",
+        "BAL",
+        "BAP",
+        "BAQ",
+        "BAZ",
+        "BBB",
+        "BBM",
+        "BBQ",
+        "BBY",
+        "BBZ"
+      ],
+      "locations": 107
+    }
+  }
+}

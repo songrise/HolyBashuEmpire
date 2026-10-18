@@ -1,29 +1,28 @@
-"""Regression checks for wide unit banners and preserved recruitment portraits."""
+"""Check the native shared banner/portrait texture contract for all HBE units."""
 import hashlib
-import json
+import re
 from PIL import Image
-from apply_unit_detail_art_v031 import route_scene, scene_path, thumbnail_path
+from pdxscript import blocks
+from apply_unit_detail_art_v031 import GUI_OVERRIDES, thumbnail_path
 
-
-def validate_unit_detail_art(mod, root, game, manifest, check):
-    report = manifest['unit_detail_art_v031']
-    previous = json.loads((root/'docs/testing/unit-thumbnail-tianfu-local-v031.json').read_text(encoding='utf8'))
-    expected = {r['unit']:r['sha256'] for r in previous['unit_frames']}
-    keys = [a['unit'] for a in report['assets']]
-    check('nine distinct unit banners preserve the original unit roster', len(keys) == 9 and set(keys) == set(expected))
+def validate_unit_detail_art(mod,root,game,manifest,check):
+    report=manifest['unit_detail_art_v031']
+    definitions=(mod/'in_game/common/unit_types/hbe_civic_units.txt').read_text(encoding='utf-8-sig')
+    expected={b[0] for b in blocks(definitions,0)}
+    keys=[a['unit'] for a in report['assets']]
+    registry=(mod/'in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt').read_text(encoding='utf-8-sig')
+    check('all nine unit definitions have native continuous artwork',len(keys)==9 and set(keys)==expected)
     for row in report['assets']:
-        key = row['unit']
-        portrait = mod/'main_menu'/thumbnail_path(key)
-        check('unchanged recruitment portrait '+key, hashlib.sha256(portrait.read_bytes()).hexdigest() == expected[key] == row['thumbnail_sha256'])
-        with Image.open(mod/'main_menu'/scene_path(key)) as banner:
-            check('opaque 1080x440 full banner '+key, banner.size == (1080,440) and banner.getchannel('A').getextrema() == (255,255))
-            check('full scene is not three repeated portraits '+key, len({banner.crop((x,0,x+360,440)).tobytes() for x in (0,360,720)}) == 3)
-    relative = report['gui_override']
-    native = (game/relative).read_text(encoding='utf-8-sig')
-    modified = (mod/relative).read_text(encoding='utf-8-sig')
-    getter = 'GetSubunitTypeIllustration(UnitTypeLateralView.GetUnitType, UnitTypeLateralView.GetPlayer.GetCulture)'
-    old = 'texture = "['+getter+']"'
-    new = 'texture = "['+route_scene(getter, keys)+']"'
-    check('detail GUI changes exactly one native texture binding', native.count(old) == modified.count(new) == 1 and modified.replace(new,old) == native)
-    check('all nine detail textures and native fallback are selected explicitly', new.count('Select_CString(') == 9 and new.endswith(getter+')'*9+']"'))
-    check('native army builder is not overridden', not (mod/'in_game/gui/army_builder.gui').exists())
+        key=row['unit']; path=mod/'main_menu'/thumbnail_path(key)
+        check('unit registry resolves canonical art '+key,thumbnail_path(key) in registry)
+        check('canonical art digest '+key,hashlib.sha256(path.read_bytes()).hexdigest()==row['sha256'])
+        with Image.open(path) as im:
+            check('opaque native 1080x440 texture '+key,im.size==(1080,440) and im.getchannel('A').getextrema()==(255,255))
+            check('three distinct scene thirds '+key,len({im.crop((x,0,x+360,440)).tobytes() for x in (0,360,720)})==3)
+        with Image.open(mod/'main_menu/gfx/interface/illustrations/units/masks'/f'{key}.dds') as mask:
+            check('native opaque no-recolor mask '+key,mask.size==(1080,440) and mask.getextrema()==((0,0),(0,0),(0,0),(255,255)))
+    check('native rendering without scripted overlays',report['native_rendering'] and report['gui_overrides']==[])
+    for relative in (*GUI_OVERRIDES,'in_game/gui/army_builder.gui'):
+        check('native GUI remains unmodified '+relative,not (mod/relative).exists() and (game/relative).is_file())
+    native=(game/'in_game/gui/army_builder.gui').read_text(encoding='utf-8-sig')
+    check('installed native builder uses three-column portrait cropping',bool(re.search(r'frame_grid\s*=\s*\{\s*3\s+1\s*\}',native)))

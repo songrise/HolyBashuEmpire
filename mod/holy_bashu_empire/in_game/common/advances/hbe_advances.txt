@@ -71,7 +71,7 @@ hbe_tech_common_4 = {
     requires = hbe_tech_common_1
     pure_tooltip_entry = hbe_tech_common_4_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    research_speed_modifier = 0.12
+
     global_institution_growth_modifier = 0.16
 }
 hbe_tech_common_5 = {

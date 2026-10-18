@@ -1,0 +1,6 @@
+﻿# Same scale as vanilla's extreme_bonus example: +100, -4/year, 25 years.
+hbe_yuan_opening_goodwill = {
+ value = 100
+ max = 100
+ yearly_decay = 4
+}

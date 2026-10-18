@@ -1,0 +1,1 @@
+﻿hbe_egret_illustration = { scene = "hbe_egret_scene" tags = { 1000 = hbe_egret_art } }

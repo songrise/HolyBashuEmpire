@@ -1,0 +1,6 @@
+﻿hbe_common_defense_choice_valid = {
+ is_member_of_international_organization = international_organization:hbe_empire
+ is_leader_of_international_organization = international_organization:hbe_empire
+ international_organization:hbe_empire = { NOT = { has_variable = hbe_common_defense_decided } }
+}
+

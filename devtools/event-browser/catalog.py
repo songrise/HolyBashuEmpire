@@ -256,6 +256,7 @@ def build_catalog(mod):
             event['illustration'] = event['illustrationVariants'][0]['src']
         match=re.search(r'hbe_story_art_(\w+)',event['raw'])
         if match:event['illustration']='/art/'+match[1]+'.png'
+        if 'hbe_egret_art' in event['raw']:event['illustration']='/art/hanzhou_egrets.png'
         ending=re.search(r'hbe_ending_art_(\w+)',event['raw'])
         if ending:event['illustration']='/ending-art/'+ending[1]+'.png'
         if event['namespace'].startswith('hbe_story_') and 1 <= int(event['id'].rsplit('.',1)[1]) < 8:

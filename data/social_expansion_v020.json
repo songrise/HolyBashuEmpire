@@ -308,29 +308,7 @@
       "parent": "renaissance_development",
       "logical_parent": "hbe_tech_common_3",
       "allow": " has_advance = hbe_tech_common_3",
-      "unlocks": [
-        "unlock_building = hbe_canal_office",
-        "unlock_building = hbe_brocade_school",
-        "unlock_building = hbe_salt_office",
-        "unlock_building = hbe_salt_contract_house",
-        "unlock_building = hbe_river_warehouse",
-        "unlock_building = hbe_cliff_stockade",
-        "unlock_building = hbe_plank_fort",
-        "unlock_building = hbe_gate_registry",
-        "unlock_building = hbe_community_granary",
-        "unlock_building = hbe_witness_house",
-        "unlock_building = hbe_tea_exchange",
-        "unlock_building = hbe_guide_station",
-        "unlock_building = hbe_valley_inn",
-        "unlock_building = hbe_covenant_stockade",
-        "unlock_unit = hbe_canal_crossbow",
-        "unlock_unit = hbe_salt_guard",
-        "unlock_unit = hbe_river_garrison",
-        "unlock_unit = hbe_pass_rotation",
-        "unlock_unit = hbe_granary_militia",
-        "unlock_unit = hbe_tea_riders",
-        "unlock_unit = hbe_valley_soldiers"
-      ]
+      "unlocks": []
     },
     {
       "key": "hbe_civic_chengdu_plain_1",
@@ -1825,7 +1803,7 @@
   "concepts": {
     "hbe_term_burden": [
       "役负",
-      "全国0—100的徭役和驻地压力，初始20。事业征办+6、议办+2、雇办不增加；新募议约军每队+1。和平且近年无急征时每年-3，付费减役可另降10。40起影响农民支持，70起暂停事业和新募，并触发有五年间隔的请愿。"
+      "全国0—100的徭役和驻地压力，初始20。事业征办+6、议办+2、雇办不增加；议约军按月度净增结算，每队役负+2。和平且近年无急征时每年-3，付费减役可另降10。40起影响农民支持，70起暂停事业和新募，并触发有五年间隔的请愿。"
     ],
     "hbe_term_civic_office": [
       "圈署委任",

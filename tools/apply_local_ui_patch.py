@@ -13,15 +13,44 @@ def source_cell(atlas,index):
     x0,x1=xs[index%3];y0,y1=ys[index//3]
     return atlas.crop((x0,y0,x1,y1))
 
+def opaque_rectangle(cell):
+    """Largest solid rectangle inside the source sheet's irregular alpha edge.
+
+    The authored painting interiors have alpha around 250-253, rather than 255.
+    A 245 cutoff removes only their feathered atlas border before RGB export.
+    """
+    width, height = cell.size
+    alpha = cell.getchannel('A').load()
+    heights = [0]*width
+    best_area, best = 0, None
+    for y in range(height):
+        heights = [heights[x]+1 if alpha[x,y] >= 245 else 0 for x in range(width)]
+        stack = []
+        for x, h in enumerate(heights+[0]):
+            left = x
+            while stack and stack[-1][1] > h:
+                start, previous = stack.pop()
+                area = previous*(x-start)
+                if area > best_area:
+                    best_area, best = area, (start, y+1-previous, x, y+1)
+                left = start
+            if h and (not stack or stack[-1][1] < h):
+                stack.append((left,h))
+    assert best and best_area > width*height*.6
+    assert cell.crop(best).getchannel('A').getextrema()[0] >= 245
+    return best
+
+
 def framed_portrait(cell):
-    bounds=cell.getchannel('A').point(lambda x:255 if x>16 else 0).getbbox()
-    assert bounds
-    # Native army recruitment reads frame 1 from a 3x1 sheet, not the full scene.
-    # Original atlas protagonists sit slightly left of the center of each scene.
-    panel=ImageOps.fit(cell.crop(bounds),(360,440),Image.Resampling.LANCZOS,centering=(0.38,0.5))
-    sheet=Image.new('RGBA',(1080,440))
-    for x in (0,360,720):sheet.paste(panel,(x,0))
-    return sheet
+    """Native continuous painting; infantry portrait reads its left third.
+
+    Reframe the original scene, never repeat a portrait across the banner.
+    Keep the top of the painting so hats and faces remain inside the crop.
+    """
+    scene=ImageOps.fit(cell.crop(opaque_rectangle(cell)).convert('RGB'),
+                       (1080,440),Image.Resampling.LANCZOS)
+    scene=scene.crop((259,0,1080,334))
+    return scene.resize((1080,440),Image.Resampling.LANCZOS).convert('RGBA')
 
 def apply(out,root):
     out,root=Path(out),Path(root);registry=json.loads((root/'assets/social_art_generation.json').read_text(encoding='utf-8'))
@@ -40,8 +69,8 @@ def apply(out,root):
         thumb=sheet.crop((0,0,360,440)).resize((100,156),Image.Resampling.LANCZOS)
         preview.paste(thumb,(i*150+25,28),thumb);draw.rectangle((i*150+22,25,i*150+127,187),outline='#b9a061',width=3)
         draw.text((i*150+5,200),key.replace('hbe_','').replace('_','\n'),font=font,fill='#eee0b4')
-        with Image.open(p) as decoded:assert decoded.size==(1080,440);assert decoded.crop((0,0,360,440)).tobytes()==decoded.crop((360,0,720,440)).tobytes()
-        rows.append(dict(unit=key,dimensions=[1080,440],grid=[3,1],portrait=[360,440],sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+        with Image.open(p) as decoded:assert decoded.size==(1080,440);assert len({decoded.crop((x,0,x+360,440)).tobytes() for x in (0,360,720)})==3
+        rows.append(dict(unit=key,dimensions=[1080,440],grid=[3,1],portrait=[360,440],layout='continuous native scene',sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
     preview_path=root/'assets/unit_thumbnail_alignment_preview.png';preview.save(preview_path)
     p=out/'main_menu/common/static_modifiers/hbe_modifiers.txt';t=p.read_text(encoding='utf-8-sig');b=next(b for b in blocks(t,0) if b[0]=='hbe_tianfu');body=t[b[2]:b[3]]
     if 'local_disease_resistance' not in body:body+=' local_disease_resistance = 0.05 '

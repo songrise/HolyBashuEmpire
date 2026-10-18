@@ -1,0 +1,15 @@
+﻿hbe_rtr_hbe_attacker_enthusiasm_adjustment = {
+ value = 0
+ if = {
+  limit = {
+   exists = scope:attacker
+   exists = scope:defender
+   is_ai = yes
+   this = scope:attacker
+   hbe_is_red_turban_successor = yes
+   NOT = { is_member_of_international_organization = international_organization:hbe_empire }
+   scope:defender = { is_member_of_international_organization = international_organization:hbe_empire }
+  }
+  subtract = 0.05
+ }
+}

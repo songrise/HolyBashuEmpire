@@ -7,7 +7,7 @@
 |蜀绣|锦户讲习院|联渠灌溉|silk 0.6, dyes 0.12, tools 0.06, paper 0.04|1.2|9|nobles 0.22, burghers 0.1, clergy 0.08|
 |井盐|井灶公廨|井灶改良|lumber 0.45, tools 0.15|1.8|5|nobles 0.08, burghers 0.07, clergy 0.05, peasants 0.02|
 |蜀纸|关市券所|公文分驿|lumber 0.6, tools 0.08|1.25|4|nobles 0.1, burghers 0.09, clergy 0.12|
-|边茶|茶马交割场|@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]|tea 0.65, tools 0.08, paper 0.03|1.2|5|nobles 0.08, burghers 0.12, clergy 0.1, tribesmen 0.05|
+|边茶|茶马交割场|商队互保|tea 0.65, tools 0.08, paper 0.03|1.2|5|nobles 0.08, burghers 0.12, clergy 0.1, tribesmen 0.05|
 
 基础生产方式仍供应普通商品；高阶方式改产名贵成品，在同一生产槽中二选一。锦坊绣作、井灶精煎、蜀纸精抄和边茶压砖保留原科技门槛。绣坊与茶坊另可选用蜀纸描样和蜀纸包茶，须先完成公共印刷课题，基础产出再提高25%；蜀纸缺货时可退回普通纸生产。生产科技提供25–30%特色产出，建筑提供25%，满足地区合作条件后再获30%；盛会的生产效率奖励也会提高实际经营收益。
 

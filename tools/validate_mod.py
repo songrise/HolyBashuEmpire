@@ -77,8 +77,8 @@ def main():
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
     check('centennial content and repeatable pulse persist','current_year >= 1437' in pulse and 'yearly_country_pulse' in pulse and 'current_year < 1457' not in pulse)
-    check('war declarations use the isolation gate','hbe_war_is_internal = yes' in (m/'in_game/common/international_organizations/hbe_empire.txt').read_text(encoding="utf-8-sig"))
-    check('war calls have a cross-boundary gate','join_war_disabled_trigger' in (m/'in_game/common/join_war_rules/hbe_isolation.txt').read_text(encoding="utf-8-sig"))
+    from validate_open_diplomacy_v032 import validate as validate_open_diplomacy
+    validate_open_diplomacy(m,manifest,check)
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
     check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0','0.3.1','0.3.2') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
@@ -114,7 +114,7 @@ def main():
         check('centennial charter needs 100 years and real projects','current_year >= 1437' in new_decisions and 'var:hbe_completed_projects >= 30' in new_decisions)
     check('exactly 36 historical capital seats are counted',sum(banquet.count('location:'+c['capital']+'.owner ?=') for c in countries)==36)
     check('each of seven circles needs strict local majority',banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
-    check('79 inherited banquet events plus authored story expansion',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117+manifest.get('playable_stories',{}).get('event_count',0)+manifest.get('ending_art_v031',{}).get('new_afterwords',0))
+    check('79 inherited banquet events plus authored story expansion',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117+manifest.get('playable_stories',{}).get('event_count',0)+manifest.get('ending_art_v031',{}).get('new_afterwords',0)+manifest.get('common_defense_v032',{}).get('visible_events',0))
     check('all 36 princes have personal events',sum('has_or_had_tag = '+c['tag'] in new_events for c in countries)==36)
     check('regional researched options and late recurring events exist',('hbe_choice_western_tea_horse_1' in new_events if 'event_choices' in manifest else 'hbe_tech_western_tea_horse_3' in new_events) and 'current_year >= 1457' in new_events)
     check('situation has native GUI panel',(m/'in_game/gui/panels/situation/hbe_banquet.gui').is_file())
@@ -212,6 +212,14 @@ def main():
     validate_ending_art(m,ROOT,manifest,loc_keys,check)
     from validate_story_logic_v031 import validate_story_logic
     story_paths=validate_story_logic(m,ROOT,manifest,loc_keys,check)
+    from validate_red_turban_actions_v032 import validate as validate_red_turban_actions
+    validate_red_turban_actions(m,game,manifest,check)
+    from validate_common_defense_v032 import validate as validate_common_defense
+    validate_common_defense(m,manifest,check)
+    from validate_western_tributes_v032 import validate as validate_western_tributes
+    validate_western_tributes(m,game,manifest,check)
+    from validate_diplomacy_restraint_v032 import validate as validate_diplomacy_restraint
+    validate_diplomacy_restraint(m,game,manifest,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 80 research nodes.')

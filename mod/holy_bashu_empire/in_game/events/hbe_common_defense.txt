@@ -1,0 +1,46 @@
+﻿namespace = hbe_common_defense
+hbe_common_defense.1 = {
+ type = country_event
+ outcome = neutral
+ title = hbe_common_defense.1.title
+ desc = hbe_common_defense.1.desc
+ illustration_tags = { 1000 = hbe_story_art_council }
+ trigger = { hbe_common_defense_choice_valid = yes }
+ immediate = { set_variable = hbe_common_defense_offer_seen }
+ option = {
+  name = hbe_common_defense.1.a
+  ai_chance = { base = 100 }
+  custom_tooltip = hbe_common_defense_accept_tt
+  hidden_effect = { hbe_common_defense_accept = yes }
+ }
+ option = {
+  name = hbe_common_defense.1.b
+  ai_chance = { base = 0 }
+  custom_tooltip = hbe_common_defense_decline_tt
+  hidden_effect = { hbe_common_defense_decline = yes }
+ }
+}
+hbe_common_defense.2 = {
+ type = country_event
+ outcome = neutral
+ title = hbe_common_defense.2.title
+ desc = { first_valid = {
+  triggered_desc = {
+   trigger = { international_organization:hbe_empire = { has_variable = hbe_common_defense_active } }
+   desc = hbe_common_defense.2.desc.accepted
+  }
+  triggered_desc = { desc = hbe_common_defense.2.desc.declined }
+ } }
+ illustration_tags = { 1000 = hbe_story_art_council }
+ trigger = {
+  is_member_of_international_organization = international_organization:hbe_empire
+  international_organization:hbe_empire = { has_variable = hbe_common_defense_decided }
+  NOT = { has_variable = hbe_common_defense_member_notified }
+ }
+ immediate = { set_variable = hbe_common_defense_member_notified }
+ option = {
+  name = hbe_common_defense.2.a
+  ai_chance = { base = 100 }
+  hidden_effect = { set_variable = hbe_common_defense_notice_acknowledged }
+ }
+}

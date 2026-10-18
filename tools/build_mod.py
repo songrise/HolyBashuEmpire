@@ -628,6 +628,18 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_unit_detail_art(out, ROOT, game)
     from apply_capital_recruitment_v031 import apply as apply_capital_recruitment
     apply_capital_recruitment(out, ROOT, game)
+    from apply_red_turban_actions_v032 import apply as apply_red_turban_actions
+    apply_red_turban_actions(out, ROOT, game)
+    from apply_common_defense_v032 import apply as apply_common_defense
+    apply_common_defense(out, ROOT, game)
+    from apply_egret_art_v032 import apply as apply_egret_art
+    apply_egret_art(out, ROOT, game)
+    from apply_open_diplomacy_v032 import apply as apply_open_diplomacy
+    apply_open_diplomacy(out, ROOT, game)
+    from apply_western_tributes_v032 import apply as apply_western_tributes
+    apply_western_tributes(out, ROOT, game)
+    from apply_diplomacy_restraint_v032 import apply as apply_diplomacy_restraint
+    apply_diplomacy_restraint(out, ROOT, game)
     from finalize_release_v032 import apply as finalize_release_v032
     finalize_release_v032(out, ROOT, game)
     manifest_path = out / "build_manifest.json"

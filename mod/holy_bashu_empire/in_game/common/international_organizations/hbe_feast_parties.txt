@@ -7,7 +7,7 @@
  can_join_trigger = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire }
  can_leave_trigger = { always = no } auto_leave_trigger = { OR = { hbe_is_prince = no NOT = { is_member_of_international_organization = international_organization:hbe_empire } } }
  auto_disband_trigger = { always = no } can_lead_trigger = { hbe_is_prince = yes is_subject = no has_ruler = yes }
- join_defensive_wars = Never join_offensive_wars = Never can_declare_war = { hbe_war_is_internal = yes }
+ join_defensive_wars = Never join_offensive_wars = Never 
  variables = { hbe_party_points = { format = HBE_FEAST_TOTAL_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 } }
 }
 hbe_local_party = {
@@ -19,6 +19,6 @@ hbe_local_party = {
  can_join_trigger = { hbe_is_prince = yes is_member_of_international_organization = international_organization:hbe_empire }
  can_leave_trigger = { always = no } auto_leave_trigger = { OR = { hbe_is_prince = no NOT = { is_member_of_international_organization = international_organization:hbe_empire } } }
  auto_disband_trigger = { always = no } can_lead_trigger = { hbe_is_prince = yes is_subject = no has_ruler = yes }
- join_defensive_wars = Never join_offensive_wars = Never can_declare_war = { hbe_war_is_internal = yes }
+ join_defensive_wars = Never join_offensive_wars = Never 
  variables = { hbe_party_points = { format = HBE_FEAST_TOTAL_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 } }
 }

@@ -490,7 +490,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "global_clergy_max_literacy_advance",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_chengdu_plain_2",
       "age": "age_2_renaissance",
       "tags": [
@@ -629,7 +629,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "renaissance_urbanisation",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_southern_salt_wine_2",
       "age": "age_2_renaissance",
       "tags": [
@@ -720,7 +720,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "merchants_and_trade",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_eastern_river_2",
       "age": "age_2_renaissance",
       "tags": [
@@ -940,7 +940,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "government_size_renaissance",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_northern_shudao_2",
       "age": "age_2_renaissance",
       "tags": [
@@ -1085,7 +1085,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "law_making_renaissance",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_central_hills_2",
       "age": "age_2_renaissance",
       "tags": [
@@ -1168,7 +1168,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "trade_range_advance_age_2",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_western_tea_horse_2",
       "age": "age_2_renaissance",
       "tags": [
@@ -1359,7 +1359,7 @@
       "unlock": "完成记录用于本府的地区事件与事业资格；每项课题首次结算时义气增加3、帝国锅气增加1。",
       "year": 1352,
       "native_research_cost": 2.5,
-      "predecessor": "recruitment_improvements_renaissance",
+      "predecessor": "renaissance_development",
       "logical_predecessor": "hbe_tech_southwestern_valleys_2",
       "age": "age_2_renaissance",
       "tags": [

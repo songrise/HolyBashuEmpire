@@ -1,0 +1,18 @@
+﻿monthly_country_pulse = { on_actions = { hbe_common_defense_pulse } }
+on_war_declared = { on_actions = { hbe_common_defense_war_declared } }
+hbe_common_defense_pulse = {
+ trigger = { is_leader_of_international_organization = international_organization:hbe_empire }
+ effect = { hbe_common_defense_monthly = yes }
+}
+hbe_common_defense_war_declared = {
+ trigger = {
+  exists = scope:war
+  exists = scope:actor
+  exists = scope:recipient
+  international_organization:hbe_empire = { has_variable = hbe_common_defense_active }
+  scope:recipient = { is_member_of_international_organization = international_organization:hbe_empire }
+  scope:actor = { NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
+  scope:war = { defender_leader = scope:recipient attacker_leader = scope:actor }
+ }
+ effect = { scope:war = { hbe_common_defense_gather = yes } }
+}

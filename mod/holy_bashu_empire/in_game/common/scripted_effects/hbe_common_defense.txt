@@ -1,0 +1,72 @@
+﻿hbe_common_defense_accept = {
+ if = { limit = { hbe_common_defense_choice_valid = yes }
+  international_organization:hbe_empire = {
+   set_variable = hbe_common_defense_decided
+   set_variable = hbe_common_defense_active
+   every_international_organization_member = {
+    every_current_war = {
+     limit = {
+      defender_leader = { is_member_of_international_organization = international_organization:hbe_empire }
+      attacker_leader = { NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
+     }
+     hbe_common_defense_gather = yes
+    }
+   }
+  }
+  hbe_common_defense_notify_members = yes
+ }
+ else = { remove_variable = hbe_common_defense_offer_seen }
+}
+hbe_common_defense_decline = {
+ if = { limit = { hbe_common_defense_choice_valid = yes }
+  international_organization:hbe_empire = { set_variable = hbe_common_defense_decided }
+  hbe_common_defense_notify_members = yes
+ }
+ else = { remove_variable = hbe_common_defense_offer_seen }
+}
+# War scope. Native eligibility prevents joining both sides or conflicting wars.
+hbe_common_defense_gather = {
+ save_scope_as = hbe_common_defense_war
+ international_organization:hbe_empire = {
+  every_international_organization_member = {
+   limit = {
+    scope:hbe_common_defense_war = {
+     NOT = { is_in_war = prev }
+     can_join_as_defender = prev
+    }
+   }
+   join_war_as_defender = { war = scope:hbe_common_defense_war }
+  }
+ }
+}
+hbe_common_defense_notify_members = {
+ save_scope_as = hbe_common_defense_decider
+ international_organization:hbe_empire = {
+  every_international_organization_member = {
+   limit = {
+    NOT = { this = scope:hbe_common_defense_decider }
+    NOT = { has_variable = hbe_common_defense_member_notified }
+   }
+   trigger_event_silently = { id = hbe_common_defense.2 days = 1 }
+  }
+ }
+}
+hbe_common_defense_monthly = {
+ if = { limit = {
+  is_situation_active = situation:red_turban_rebellions
+  hbe_common_defense_choice_valid = yes
+ }
+  international_organization:hbe_empire = {
+   if = { limit = { NOT = { has_variable = hbe_common_defense_months } }
+    set_variable = { name = hbe_common_defense_months value = 0 }
+   }
+   change_variable = { name = hbe_common_defense_months add = 1 }
+  }
+  if = { limit = {
+   international_organization:hbe_empire = { var:hbe_common_defense_months >= 3 }
+   NOT = { has_variable = hbe_common_defense_offer_seen }
+  }
+   trigger_event_silently = { id = hbe_common_defense.1 days = 1 }
+  }
+ }
+}

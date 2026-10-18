@@ -1,0 +1,149 @@
+{
+  "status": "local candidate only; not committed, installed, pushed or uploaded",
+  "feature": "Seven Circles common defense",
+  "source_manifest_sha256": "941fcce4e603a7be2b6cfafc6881fea7bb457f6084db3d8fa14dba29c098a894",
+  "controlled": {
+    "checks": {
+      "hbe_def_probe_starts_inactive": true,
+      "hbe_def_probe_baseline_war": true,
+      "hbe_def_probe_baseline_not_all_circles": true,
+      "hbe_def_probe_nonleader_cannot_accept": true,
+      "hbe_def_probe_decline_recorded": true,
+      "hbe_def_probe_decline_final": true,
+      "hbe_def_probe_accept_recorded": true,
+      "hbe_def_probe_existing_war_supported": true,
+      "hbe_def_probe_active_war": true,
+      "hbe_def_probe_active_salt_circle": true,
+      "hbe_def_probe_active_eastern_circle": true,
+      "hbe_def_probe_active_north_circle": true,
+      "hbe_def_probe_active_emperor": true,
+      "hbe_def_probe_active_central_circle": true,
+      "hbe_def_probe_active_western_circle": true,
+      "hbe_def_probe_active_southwestern_circle": true,
+      "hbe_def_probe_internal_war": true,
+      "hbe_def_probe_internal_not_all_circles": true,
+      "hbe_def_probe_offensive_war": true,
+      "hbe_def_probe_no_offensive_call": true,
+      "hbe_def_probe_succession_keeps_treaty": true,
+      "hbe_def_probe_after_succession_war": true,
+      "hbe_def_probe_after_succession_defense": true,
+      "hbe_def_probe_all_pass": true
+    },
+    "passed": 24,
+    "total": 24,
+    "all_pass": true,
+    "related_errors": [],
+    "fixture_setup_diagnostics": [
+      "  Script location: common/tests/hbe_def_probe.txt:1"
+    ],
+    "fixture_setup_note": "Unused private automated-test success logger had an invalid scalar test_log field. CLI timed continuation and scripted assertions ran independently; actual saved flags are authoritative. The preparer no longer creates this unused file.",
+    "save": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\common-defense-fixture-v3-20261015\\save games\\scheduled_save_DESKTOP-L1LK2TH_1337_06_14.eu5",
+    "source_files_changed": []
+  },
+  "actual_monthly_schedule": {
+    "scope": "Real monthly continuation of a 1362 save with active Red Turban situation; no manual event dispatch or forced choice. This is a scheduling test, not a new long-term campaign.",
+    "snapshots": [
+      {
+        "date": "1362.5.3",
+        "variables": {
+          "hbe_common_defense_months": 1.0
+        },
+        "seen": []
+      },
+      {
+        "date": "1362.6.3",
+        "variables": {
+          "hbe_common_defense_months": 2.0
+        },
+        "seen": []
+      },
+      {
+        "date": "1362.7.3",
+        "variables": {
+          "hbe_common_defense_months": 3.0,
+          "hbe_common_defense_decided": true,
+          "hbe_common_defense_active": true
+        },
+        "seen": [
+          {
+            "id": 1215,
+            "tag": "BAP",
+            "seen": true
+          }
+        ]
+      },
+      {
+        "date": "1362.8.3",
+        "variables": {
+          "hbe_common_defense_months": 3.0,
+          "hbe_common_defense_decided": true,
+          "hbe_common_defense_active": true
+        },
+        "seen": [
+          {
+            "id": 1215,
+            "tag": "BAP",
+            "seen": true
+          }
+        ]
+      }
+    ],
+    "checks": {
+      "first_month_no_offer": true,
+      "second_month_no_offer": true,
+      "third_month_decided": true,
+      "fourth_month_no_repeat": true,
+      "no_related_script_errors": true
+    },
+    "all_pass": true,
+    "related_errors": [],
+    "release_copy_differs": []
+  },
+  "structure_checks": 2038,
+  "fresh_rebuild_structure_checks": 2038,
+  "feature_rebuild": {
+    "feature_files": {
+      "in_game/common/scripted_triggers/hbe_common_defense.txt": true,
+      "in_game/common/scripted_effects/hbe_common_defense.txt": true,
+      "in_game/common/on_action/hbe_common_defense.txt": true,
+      "in_game/events/hbe_common_defense.txt": true,
+      "in_game/common/international_organizations/hbe_empire.txt": true,
+      "in_game/common/join_war_rules/hbe_isolation.txt": true,
+      "main_menu/localization/english/hbe_common_defense_l_english.yml": true,
+      "main_menu/localization/simp_chinese/hbe_common_defense_l_simp_chinese.yml": true,
+      ".metadata/metadata.json": true
+    },
+    "all_feature_files_identical": true,
+    "other_runtime_differences": [
+      "build_manifest.json",
+      "in_game/common/advances/hbe_advances.txt",
+      "in_game/common/advances/hbe_civic_advances.txt",
+      "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt",
+      "in_game/common/building_types/hbe_civic_buildings.txt",
+      "in_game/common/goods/hbe_special_goods.txt",
+      "in_game/common/scripted_effects/hbe_civic_effects.txt",
+      "in_game/common/scripted_effects/hbe_story_scheduler.txt",
+      "in_game/common/scripted_triggers/hbe_advance_gates.txt",
+      "in_game/common/unit_types/hbe_civic_units.txt",
+      "in_game/gui/panels/situation/hbe_banquet.gui",
+      "main_menu/gui/messagetypes.txt",
+      "main_menu/common/game_concepts/hbe_concepts.txt",
+      "main_menu/gfx/interface/icons/unit_types/hbe_canal_crossbow.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_granary_militia.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_pass_rotation.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_permanent_pass.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_river_garrison.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_salt_guard.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_tea_riders.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_trained_river.dds",
+      "main_menu/gfx/interface/icons/unit_types/hbe_valley_soldiers.dds",
+      "main_menu/localization/english/hbe_advance_gates_l_english.yml",
+      "main_menu/localization/english/hbe_l_english.yml",
+      "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml",
+      "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "main_menu/setup/1337/10_countries.txt"
+    ],
+    "source_manifest_sha256": "941fcce4e603a7be2b6cfafc6881fea7bb457f6084db3d8fa14dba29c098a894"
+  },
+  "scope_limit": "The prior 30 percent 40-year natural campaign did not contain this new treaty. Treaty behavior is covered by these controlled wars and monthly save continuation. Global engine diagnostics include existing unrelated issues; no zero-error claim."
+}

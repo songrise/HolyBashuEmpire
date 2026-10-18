@@ -1,0 +1,122 @@
+﻿hbe_rtr_native_war_score = {
+	#AI will do this more likely if the number of opposers is too high
+		add = 200
+		if = {	#Neutral, will not declare wars really
+			limit = {
+				scope:actor ?= {
+					has_variable = rtr_yuan_allegiance
+				}
+				scope:actor.var:rtr_yuan_allegiance > 0
+				scope:actor.var:rtr_yuan_allegiance < 50
+			}
+			subtract = 150
+		}
+		if = {
+			limit = { exists = scope:target }
+			if = {	#Loyalists should usually not attack each other
+				limit = {
+					scope:actor ?= {
+						has_variable = rtr_yuan_allegiance
+						var:rtr_yuan_allegiance >= 50
+					}
+					scope:target = {
+						has_variable = rtr_yuan_allegiance
+						var:rtr_yuan_allegiance >= 50
+					}
+				}
+				subtract = 200
+			}
+			add = {	# opinion of the target country
+				value = "scope:actor.opinion(scope:target)"
+				divide = -5
+			}
+			add = {	# gp score difference
+				value = "scope:actor.country_economical_base"
+				subtract = "scope:target.country_economical_base"
+				multiply = 3
+			}
+			if = {	#Alliance
+				limit = { scope:target = { is_allied_with = { target = scope:actor } } }
+				subtract = 100
+			}
+			if = {	#Truce
+				limit = { scope:target = { has_truce_with = scope:actor } }
+				subtract = 100
+			}
+			if = {	#Out of reach
+				limit = { scope:target = { NOT = { is_neighbor_of = scope:actor } } }
+				subtract = 1000
+			}
+		}
+	
+}
+
+hbe_rtr_war_score = {
+ value = hbe_rtr_native_war_score
+ if = { limit = { hbe_rtr_war_targets_hbe = yes hbe_rtr_native_war_score > 0 } multiply = 0.3 }
+}
+
+hbe_rtr_native_annex_score = {
+	#AI will do this more likely if the number of opposers is too high
+		add = 200
+		if = {	#Neutral, will not declare wars really
+			limit = {
+				scope:actor ?= {
+					has_variable = rtr_yuan_allegiance
+				}
+				scope:actor.var:rtr_yuan_allegiance > 0
+				scope:actor.var:rtr_yuan_allegiance < 50
+			}
+			subtract = 150
+		}
+		if = {
+			limit = { exists = scope:recipient }
+			if = {	#Loyalists should usually not attack each other
+				limit = {
+					scope:actor ?= {
+						has_variable = rtr_yuan_allegiance
+						var:rtr_yuan_allegiance >= 50
+					}
+					scope:recipient = {
+						has_variable = rtr_yuan_allegiance
+						var:rtr_yuan_allegiance >= 50
+					}
+				}
+				subtract = 200
+			}
+			add = {	# opinion of the recipient country
+				value = "scope:actor.opinion(scope:recipient)"
+				divide = -5
+			}
+			add = {	# gp score difference  (capped)
+				value = "scope:actor.country_economical_base"
+				subtract = "scope:recipient.country_economical_base"
+				multiply = 1
+				min = -200
+				max = 200
+			}
+			if = {	#Alliance
+				limit = { scope:recipient = { is_allied_with = { target = scope:actor } } }
+				subtract = 100
+			}
+			if = {	#Truce
+				limit = { scope:recipient = { has_truce_with = scope:actor } }
+				subtract = 100
+			}
+			if = {	#Out of reach
+				limit = { scope:recipient = { NOT = { is_neighbor_of = scope:actor } } }
+				subtract = 1000
+			}
+		}
+	
+}
+
+hbe_rtr_annex_score = {
+ value = hbe_rtr_native_annex_score
+ if = { limit = { hbe_rtr_annex_targets_hbe = yes hbe_rtr_native_annex_score > 0 } multiply = 0.3 }
+}
+
+hbe_rtr_annex_acceptance_penalty = {
+ value = 0
+ if = { limit = { hbe_rtr_annex_targets_hbe = yes } value = -100 }
+}

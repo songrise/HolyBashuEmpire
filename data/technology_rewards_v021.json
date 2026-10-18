@@ -35,11 +35,10 @@
       "key": "hbe_tech_common_4",
       "name": "匠人互访",
       "modifiers": {
-        "research_speed_modifier": 0.12,
         "global_institution_growth_modifier": 0.16
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n配合锦江讲会和跨区工艺学堂，加快技术与制度传播。"
+      "link": "开放跨圈经营：满足条件并签订客籍议约后，可在目标圈建造机构并经营基础产业。"
     },
     {
       "key": "hbe_tech_common_5",
@@ -94,7 +93,7 @@
     },
     {
       "key": "hbe_tech_chengdu_plain_2",
-      "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
+      "name": "蜀锦作坊分工",
       "modifiers": {
         "global_fine_cloth_output_modifier": 0.2,
         "global_silk_output_modifier": 0.12,
@@ -237,7 +236,7 @@
     },
     {
       "key": "hbe_tech_southern_salt_wine_7",
-      "name": "宴席采购[Concept('hbe_term_contract', '契约')|e]",
+      "name": "宴席采购契约",
       "modifiers": {
         "merchant_maintenance_efficiency": 0.16,
         "global_production_efficiency": 0.08
@@ -289,7 +288,7 @@
     },
     {
       "key": "hbe_tech_eastern_river_4",
-      "name": "@hbe_river! [Concept('hbe_term_river', '江运互保')|e]",
+      "name": "江运互保",
       "modifiers": {
         "global_merchant_capacity_modifier": 0.2,
         "global_food_decay": -0.08
@@ -301,7 +300,7 @@
     },
     {
       "key": "hbe_tech_eastern_river_5",
-      "name": "[Concept('hbe_history_river', '川江')|e]通商总约",
+      "name": "川江通商总约",
       "modifiers": {
         "global_trade_center_power": 0.2,
         "global_production_efficiency": 0.12
@@ -381,7 +380,7 @@
     },
     {
       "key": "hbe_tech_northern_shudao_5",
-      "name": "[Concept('hbe_history_shudao', '蜀道')|e]联防总镇",
+      "name": "蜀道联防总镇",
       "modifiers": {
         "global_defensive": 0.16,
         "global_manpower_modifier": 0.16
@@ -416,7 +415,7 @@
     },
     {
       "key": "hbe_tech_northern_shudao_8",
-      "name": "[Concept('hbe_history_shudao', '蜀道')|e]驿传总局",
+      "name": "蜀道驿传总局",
       "modifiers": {
         "global_institution_growth_modifier": 0.24,
         "global_monthly_control": 0.08
@@ -480,7 +479,7 @@
     },
     {
       "key": "hbe_tech_central_hills_6",
-      "name": "[Concept('hbe_term_contract', '契约')|e]见证",
+      "name": "契约见证",
       "modifiers": {
         "total_loan_capacity_modifier": 0.32,
         "burghers_estate_target_satisfaction": 0.064
@@ -532,7 +531,7 @@
     },
     {
       "key": "hbe_tech_western_tea_horse_3",
-      "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
+      "name": "商队互保",
       "modifiers": {
         "global_leather_output_modifier": 0.2,
         "global_food_decay": -0.08,

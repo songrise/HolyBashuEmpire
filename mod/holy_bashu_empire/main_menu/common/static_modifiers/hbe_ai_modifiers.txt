@@ -1,1 +1,1 @@
-﻿hbe_ai_internal_ambition = { aggressiveness_modifier = 0.05 ai_months_between_wars = -3 }
+﻿hbe_ai_internal_ambition = { aggressiveness_modifier = 0.02 ai_months_between_wars = 3 }

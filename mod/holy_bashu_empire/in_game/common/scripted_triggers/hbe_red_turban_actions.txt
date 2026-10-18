@@ -1,0 +1,39 @@
+﻿hbe_is_red_turban_successor = {
+ OR = {
+  has_variable = rtr_yuan_allegiance
+  has_variable = rtr_is_new_china
+  is_member_of_international_organization = international_organization:red_turban_rebels
+  modifier:can_create_red_turban_rebellions_cb = yes
+  has_or_had_tag = CSO
+  has_or_had_tag = CTW
+  has_or_had_tag = CHE
+  has_or_had_tag = WUU
+  has_or_had_tag = CFN
+  has_or_had_tag = CMO
+  has_or_had_tag = CXI
+  has_or_had_tag = CGU
+  has_or_had_tag = MNG
+  has_or_had_tag = CNP
+  has_or_had_tag = CDN
+  has_or_had_tag = CSI
+  has_or_had_tag = CKO
+  has_or_had_tag = CNA
+ }
+}
+hbe_rtr_external_actor = {
+ exists = scope:actor
+ scope:actor = {
+  NOT = { is_member_of_international_organization = international_organization:hbe_empire }
+  hbe_is_red_turban_successor = yes
+ }
+}
+hbe_rtr_war_targets_hbe = {
+ hbe_rtr_external_actor = yes
+ exists = scope:target
+ scope:target = { is_member_of_international_organization = international_organization:hbe_empire }
+}
+hbe_rtr_annex_targets_hbe = {
+ hbe_rtr_external_actor = yes
+ exists = scope:recipient
+ scope:recipient = { is_member_of_international_organization = international_organization:hbe_empire }
+}

@@ -1,0 +1,150 @@
+{
+  "version": "0.3.2",
+  "hotfix": "red_turban_actions_45",
+  "verified_utc": "2026-10-15T14:47:33.587529+00:00",
+  "languages": {
+    "schinese": {
+      "item_id": 3818491932,
+      "title": "神圣巴蜀帝国 Holy Bashu Empire",
+      "file_size": 126780386,
+      "visibility": 0,
+      "metadata": "{\"version\":\"0.3.2\",\"hotfix\":\"red_turban_actions_45\",\"manifest_sha256\":\"88d98453d959da3e5ddb8caec768c203855cd1d6d633e3f3b8ef92916826f426\",\"package_sha256\":\"7f9f1ff042232be967a4fd9b1a00df7ef7421fd36d83cd663251bbc379222c42\",\"compact_package\":true}",
+      "updated": 1792075520,
+      "preview_url": "https://images.steamusercontent.com/ugc/15060143164378431135/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+      "additional_previews": [
+        {
+          "index": 0,
+          "url": "https://images.steamusercontent.com/ugc/10089394321281458581/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+          "filename": "封面.jpg",
+          "type": 0
+        },
+        {
+          "index": 1,
+          "url": "https://images.steamusercontent.com/ugc/16949371261289276822/6273DE1A7E43C1474AD7501E7BF95E8E8BBB40E3/",
+          "filename": "七圈地图.jpg",
+          "type": 0
+        },
+        {
+          "index": 2,
+          "url": "https://images.steamusercontent.com/ugc/15931706084167562350/EC38A5FB9CBED0FFFFF34CD7AB14671280DF62C4/",
+          "filename": "玩法总览.jpg",
+          "type": 0
+        },
+        {
+          "index": 3,
+          "url": "https://images.steamusercontent.com/ugc/17057584865573562887/B5556F29332D0E42690551C0B16429D8AAC60D79/",
+          "filename": "科技分支.jpg",
+          "type": 0
+        },
+        {
+          "index": 4,
+          "url": "https://images.steamusercontent.com/ugc/17248598049921642797/CC815DB2974E21200EAC7C7C8E53F360C2B0D34C/",
+          "filename": "名产与建筑.jpg",
+          "type": 0
+        }
+      ],
+      "description_sha256": "b52f989f074174f6d78503852c99b737f79cd61ce07f28fe4474dee936b71eac"
+    },
+    "english": {
+      "item_id": 3818491932,
+      "title": "Holy Bashu Empire",
+      "file_size": 126780386,
+      "visibility": 0,
+      "metadata": "{\"version\":\"0.3.2\",\"hotfix\":\"red_turban_actions_45\",\"manifest_sha256\":\"88d98453d959da3e5ddb8caec768c203855cd1d6d633e3f3b8ef92916826f426\",\"package_sha256\":\"7f9f1ff042232be967a4fd9b1a00df7ef7421fd36d83cd663251bbc379222c42\",\"compact_package\":true}",
+      "updated": 1792075520,
+      "preview_url": "https://images.steamusercontent.com/ugc/15060143164378431135/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+      "additional_previews": [
+        {
+          "index": 0,
+          "url": "https://images.steamusercontent.com/ugc/10089394321281458581/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+          "filename": "封面.jpg",
+          "type": 0
+        },
+        {
+          "index": 1,
+          "url": "https://images.steamusercontent.com/ugc/16949371261289276822/6273DE1A7E43C1474AD7501E7BF95E8E8BBB40E3/",
+          "filename": "七圈地图.jpg",
+          "type": 0
+        },
+        {
+          "index": 2,
+          "url": "https://images.steamusercontent.com/ugc/15931706084167562350/EC38A5FB9CBED0FFFFF34CD7AB14671280DF62C4/",
+          "filename": "玩法总览.jpg",
+          "type": 0
+        },
+        {
+          "index": 3,
+          "url": "https://images.steamusercontent.com/ugc/17057584865573562887/B5556F29332D0E42690551C0B16429D8AAC60D79/",
+          "filename": "科技分支.jpg",
+          "type": 0
+        },
+        {
+          "index": 4,
+          "url": "https://images.steamusercontent.com/ugc/17248598049921642797/CC815DB2974E21200EAC7C7C8E53F360C2B0D34C/",
+          "filename": "名产与建筑.jpg",
+          "type": 0
+        }
+      ],
+      "description_sha256": "46fbd4d96da6e5d57526ae055ebf52db9387af8d8083451830d5fc6b65e6563c"
+    },
+    "tchinese": {
+      "item_id": 3818491932,
+      "title": "神圣巴蜀帝国 Holy Bashu Empire",
+      "file_size": 126780386,
+      "visibility": 0,
+      "metadata": "{\"version\":\"0.3.2\",\"hotfix\":\"red_turban_actions_45\",\"manifest_sha256\":\"88d98453d959da3e5ddb8caec768c203855cd1d6d633e3f3b8ef92916826f426\",\"package_sha256\":\"7f9f1ff042232be967a4fd9b1a00df7ef7421fd36d83cd663251bbc379222c42\",\"compact_package\":true}",
+      "updated": 1792075520,
+      "preview_url": "https://images.steamusercontent.com/ugc/15060143164378431135/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+      "additional_previews": [
+        {
+          "index": 0,
+          "url": "https://images.steamusercontent.com/ugc/10089394321281458581/F83AA0978D2C5F5CDC9951FA112EC7774E21A0AB/",
+          "filename": "封面.jpg",
+          "type": 0
+        },
+        {
+          "index": 1,
+          "url": "https://images.steamusercontent.com/ugc/16949371261289276822/6273DE1A7E43C1474AD7501E7BF95E8E8BBB40E3/",
+          "filename": "七圈地图.jpg",
+          "type": 0
+        },
+        {
+          "index": 2,
+          "url": "https://images.steamusercontent.com/ugc/15931706084167562350/EC38A5FB9CBED0FFFFF34CD7AB14671280DF62C4/",
+          "filename": "玩法总览.jpg",
+          "type": 0
+        },
+        {
+          "index": 3,
+          "url": "https://images.steamusercontent.com/ugc/17057584865573562887/B5556F29332D0E42690551C0B16429D8AAC60D79/",
+          "filename": "科技分支.jpg",
+          "type": 0
+        },
+        {
+          "index": 4,
+          "url": "https://images.steamusercontent.com/ugc/17248598049921642797/CC815DB2974E21200EAC7C7C8E53F360C2B0D34C/",
+          "filename": "名产与建筑.jpg",
+          "type": 0
+        }
+      ],
+      "description_sha256": "b52f989f074174f6d78503852c99b737f79cd61ce07f28fe4474dee936b71eac"
+    }
+  },
+  "local_install": {
+    "version": "0.3.2",
+    "hotfix": "red_turban_actions_45",
+    "files_verified": 738,
+    "changed_or_added": [
+      "build_manifest.json",
+      "in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt",
+      "in_game/common/country_interactions/rtr_demand_annexation.txt",
+      "in_game/common/generic_actions/red_turban_rebellions.txt",
+      "in_game/common/scripted_triggers/hbe_red_turban_actions.txt",
+      "in_game/common/script_values/hbe_red_turban_actions.txt",
+      "main_menu/localization/english/hbe_red_turban_actions_l_english.yml",
+      "main_menu/localization/simp_chinese/hbe_red_turban_actions_l_simp_chinese.yml"
+    ],
+    "backup": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\red-turban-hotfix-before-local.zip",
+    "manifest_sha256": "88d98453d959da3e5ddb8caec768c203855cd1d6d633e3f3b8ef92916826f426"
+  }
+}

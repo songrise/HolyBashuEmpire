@@ -1,0 +1,1 @@
+﻿hbe_egret_background = { tag = "hbe_egret_background" illustration_image = { texture_file = "gfx/interface/hbe/story_events/hanzhou_egrets.dds" priority = 100 scope = country trigger = { always = yes } } }
