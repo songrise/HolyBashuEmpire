@@ -1,6 +1,7 @@
 """Append sourced historical concepts and a few explicit inline links."""
+from build_support import snapshot_files
 from pathlib import Path
-import argparse,hashlib,json,re,sys
+import argparse, json, re, sys
 
 def apply(out,root,game=None):
  out,root=Path(out),Path(root);sys.path.insert(0,str(root/'data'))
@@ -37,7 +38,7 @@ def apply(out,root,game=None):
    put(rel,'\n'.join(rows),newline=ending)
  report=dict(verified_on=VERIFIED_ON,new_concepts=len(GUIDES),new_links_per_language=sum(not a[3].startswith('hbe_history_') for a in ANCHORS),reused_links_per_language=sum(a[3].startswith('hbe_history_') for a in ANCHORS),linked_entries_per_language=len({a[1] for a in ANCHORS}),source_count=len(SOURCES),english_concepts_translated=True,linked=linked,files=changed,gameplay_changes=False)
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'));m['history_guides_v031']={k:v for k,v in report.items() if k not in ('linked','files')}
- m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  (root/'data/history_guides_v031.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  doc=['# 0.3 以来新增内容的历史悬浮指南','',f'本轮新增 {len(GUIDES)} 条历史指南，在每种语言中选取 18 处正文与商品说明设置 19 个链接，其中 4 个复用原有指南。只补真实历史背景，不改事件叙事和奖惩。核对日期：{VERIFIED_ON}。','', '## 条目与出处','']

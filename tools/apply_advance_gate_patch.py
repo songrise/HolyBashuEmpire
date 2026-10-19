@@ -1,6 +1,7 @@
 """Use actual same-age tree edges; preserve compound/cross-age conditions."""
+from build_support import snapshot_files
 from pathlib import Path
-import re,json,hashlib,sys
+import re, json, sys
 from pdxscript import blocks,apply_edits,tokens
 GAME=Path('D:/SteamLibrary/steamapps/common/Europa Universalis V/game')
 
@@ -64,5 +65,5 @@ def apply(out,root):
 if __name__=='__main__':
     root=Path(sys.argv[1]);out=root/'mod/holy_bashu_empire';r=apply(out,root)
     (root/'docs/testing/advance-gate-patch-v031.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['advance_gate_patch']=r;m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'};p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['advance_gate_patch']=r;m['files']=snapshot_files(out);p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(nodes=r['nodes'],real_tree_parent_changes=sum(x['parent_before']!=x['parent_after'] for x in r['rows']),compound_conditions=len(r['compound_native_conditions'])),ensure_ascii=False))

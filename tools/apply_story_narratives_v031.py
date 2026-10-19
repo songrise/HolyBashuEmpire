@@ -1,6 +1,7 @@
 """Recollect the actual prior choice, then describe a distinct present conflict."""
+from build_support import snapshot_files
 from pathlib import Path
-import argparse,hashlib,json,re,sys
+import argparse, json, re, sys
 from pdxscript import blocks,apply_edits
 
 def apply(out,root,game=None):
@@ -122,7 +123,7 @@ def apply(out,root,game=None):
     result=dict(chains=chains,chapters=rows,chain_count=41,stage_events=165,dynamic_recaps=124,unique_long_epilogues=14,new_hidden_choice_records=tracked,gameplay_effects_changed=False,english_status='Existing Chinese fallback policy retained for this authored story batch.',files=sorted(files))
     (root/'data/story_narratives_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf8'));m['story_narratives_v031']={k:v for k,v in result.items() if k not in ('chains','chapters')}
-    m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+    m['files']=snapshot_files(out)
     mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     print(json.dumps({k:v for k,v in result.items() if k not in ('chains','chapters','files')},ensure_ascii=False));return result
 

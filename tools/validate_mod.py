@@ -73,7 +73,8 @@ def main():
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
-    check('current decisions and 80 native research nodes',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and manifest['research_nodes']==80)
+    expected_nodes = 80 + manifest.get('industry_transmission', {}).get('advance_count', 0) + manifest.get('early_research_design', {}).get('military_count', 0)
+    check('current decisions and native research node count',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and manifest['research_nodes']==expected_nodes)
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
     check('centennial content and repeatable pulse persist','current_year >= 1437' in pulse and 'yearly_country_pulse' in pulse and 'current_year < 1457' not in pulse)
@@ -81,7 +82,7 @@ def main():
     validate_open_diplomacy(m,manifest,check)
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0','0.3.1','0.3.2') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
+    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0','0.3.1','0.3.2','0.3.3') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -100,7 +101,7 @@ def main():
     check('participation includes all IO members and subjects','visible = { is_member_of_international_organization = international_organization:hbe_empire }' in sit)
     check('monthly registration does not filter emperor or subjects','every_international_organization_member = { hbe_banquet_register = yes' in banquet)
     check('situation persists after charters and 1457','current_year < 1457' not in banquet and 'can_end = { NOT = { exists = international_organization:hbe_empire } }' in sit)
-    if manifest['version'] in ('0.2.1','0.3.0','0.3.1','0.3.2'):
+    if manifest['version'] in ('0.2.1','0.3.0','0.3.1','0.3.2','0.3.3'):
         check('two-year accounts are once per situation','var:hbe_round_month >= 24' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
         check('cooperative settlement uses adaptive contribution target','var:hbe_feast_total >= var:hbe_feast_required' in banquet)
         check('funding requires real scaled payment','gold >= hbe_feast_fee' in new_decisions and 'hbe_fund_project' in banquet)
@@ -220,8 +221,24 @@ def main():
     validate_western_tributes(m,game,manifest,check)
     from validate_diplomacy_restraint_v032 import validate as validate_diplomacy_restraint
     validate_diplomacy_restraint(m,game,manifest,check)
+    from validate_industry_transmission import validate as validate_industry_transmission
+    validate_industry_transmission(m,ROOT,game,manifest,check)
+    from validate_western_opening_v032 import validate as validate_western_opening
+    validate_western_opening(m,game,manifest,check)
+    from apply_production_advance_semantics_v032 import validate as validate_production_semantics
+    validate_production_semantics(m,game,manifest,check)
+    from apply_advance_display_v032 import validate as validate_advance_display
+    validate_advance_display(m,game,manifest,check)
+    from apply_opening_identity_v032 import validate as validate_opening_identity
+    validate_opening_identity(m,game,manifest,check)
+    from apply_population_identity_v032 import validate as validate_population_identity
+    validate_population_identity(m,ROOT,game,manifest,check)
+    from validate_early_research import validate as validate_early_research
+    validate_early_research(m,ROOT,game,manifest,check)
+    from validate_age2_military import validate as validate_age2_military
+    validate_age2_military(m,ROOT,game,manifest,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, 80 research nodes.')
+    print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, {manifest["research_nodes"]} research nodes.')
 
 if __name__=='__main__':main()

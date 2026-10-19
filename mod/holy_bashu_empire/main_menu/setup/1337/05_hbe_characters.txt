@@ -311,8 +311,8 @@ hbe_ruler_bbx = {
 }
 hbe_ruler_bby = {
     first_name = { name = hbe_given_name_7 }
-    culture = shu_culture
-    religion = mahayana
+    culture = yi_culture
+    religion = bimoism
     adm = 56 dip = 58 mil = 42
     birth_date = 1296.1.1
     birth = dechang

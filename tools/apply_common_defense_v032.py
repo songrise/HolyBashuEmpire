@@ -1,6 +1,7 @@
 """Reproducible, opt-in Seven Circles defensive treaty; no offensive calls."""
+from build_support import snapshot_files
 from pathlib import Path
-import json, hashlib
+import json
 
 TRIGGERS = '''hbe_common_defense_choice_valid = {
  is_member_of_international_organization = international_organization:hbe_empire
@@ -263,6 +264,6 @@ hbe_common_defense_war_declared = {
  old=m.get('common_defense_v032',{}).get('visible_events',0)
  m['events']+=2-old
  m['common_defense_v032']={'visible_events':2,'proposal_after_monthly_checks':3,'permanent_if_accepted':True,'art':'hbe_story_art_council','native_io_defensive_calls':True,'offensive_calls':False,'ai_accept_weight':100,'ai_decline_weight':0,'member_notice':'hbe_common_defense.2','notify_both_outcomes':True,'notice_excludes_decider':True}
- m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  return m['common_defense_v032']

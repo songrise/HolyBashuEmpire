@@ -1,10 +1,10 @@
 """Export approved paintings and add presentation-only choice afterwords."""
+from build_support import sha256_file as digest, snapshot_files
 from pathlib import Path
 import argparse,hashlib,json,re,sys
 from PIL import Image,ImageOps,ImageDraw,ImageFont
 from pdxscript import blocks,tokens
 
-def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def normalized(text): return re.sub(r'\s+',' ',text).strip()
 
 def apply(out,root,game=None):
@@ -134,7 +134,7 @@ def apply(out,root,game=None):
  result=dict(version=manifest['version'],mode='built-in image_gen; new paintings, mechanical crop and DDS export',new_scenes=len(assets),reform_icons=icons,assets=assets,long_branches=LONG_ART,short_chains=33,new_afterwords=len(new_events),hooks=hooks,epilogues=epilogues,english_status='Complete Chinese fallback, consistent with existing authored story batch',gameplay_effects_changed=False)
  manifest['ending_art_v031']={k:v for k,v in result.items() if k not in ('assets','epilogues','hooks')}
  manifest['events']=117+manifest['playable_stories']['event_count']+len(new_events)
- manifest['files']={p.relative_to(out).as_posix():digest(p) for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ manifest['files']=snapshot_files(out)
  mp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  (root/'data/ending_art_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps(dict(scenes=len(assets),icons=len(icons),afterwords=len(new_events),gameplay_effects_changed=False)))

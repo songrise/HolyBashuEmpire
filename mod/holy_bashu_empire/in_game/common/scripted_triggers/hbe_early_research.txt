@@ -1,0 +1,8 @@
+﻿hbe_has_regional_military_training = { OR = { has_advance = hbe_military_chengdu_plain has_advance = hbe_military_southern_salt_wine has_advance = hbe_military_eastern_river has_advance = hbe_military_northern_shudao has_advance = hbe_military_central_hills has_advance = hbe_military_western_tea_horse has_advance = hbe_military_southwestern_valleys } }
+hbe_has_military_chengdu_plain = { custom_tooltip = { text = hbe_has_military_chengdu_plain_tt has_advance = hbe_military_chengdu_plain } }
+hbe_has_military_southern_salt_wine = { custom_tooltip = { text = hbe_has_military_southern_salt_wine_tt has_advance = hbe_military_southern_salt_wine } }
+hbe_has_military_eastern_river = { custom_tooltip = { text = hbe_has_military_eastern_river_tt has_advance = hbe_military_eastern_river } }
+hbe_has_military_northern_shudao = { custom_tooltip = { text = hbe_has_military_northern_shudao_tt has_advance = hbe_military_northern_shudao } }
+hbe_has_military_central_hills = { custom_tooltip = { text = hbe_has_military_central_hills_tt has_advance = hbe_military_central_hills } }
+hbe_has_military_western_tea_horse = { custom_tooltip = { text = hbe_has_military_western_tea_horse_tt has_advance = hbe_military_western_tea_horse } }
+hbe_has_military_southwestern_valleys = { custom_tooltip = { text = hbe_has_military_southwestern_valleys_tt has_advance = hbe_military_southwestern_valleys } }

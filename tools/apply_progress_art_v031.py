@@ -1,6 +1,7 @@
 """Select existing branch paintings during a story, without changing its rewards."""
+from build_support import snapshot_files
 from pathlib import Path
-import argparse, hashlib, json, re, sys
+import argparse, json, re, sys
 from pdxscript import blocks
 
 def apply(out, root, game=None):
@@ -75,7 +76,7 @@ def apply(out, root, game=None):
  put('loading_screen/gfx/illustrations/database/hbe_progress_illustrations.txt','\n'.join(database))
  result=dict(regional_chains=7,short_chains=33,migration_chains=1,changed_stage_events=115,choice_art_markers=198,economic_rewards_changed=False,legacy_save_fallback=True,routes=routes,files=sorted(set(changed)))
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'));m['progress_art_v031']={k:v for k,v in result.items() if k!='routes'}
- m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  (root/'data/progress_art_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps({k:v for k,v in result.items() if k not in ('routes','files')},ensure_ascii=False));return result

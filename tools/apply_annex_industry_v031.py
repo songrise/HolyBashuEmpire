@@ -1,6 +1,7 @@
 """Full-country annexation inherits civilian industrial licenses; native formation UI."""
+from build_support import snapshot_files
 from pathlib import Path
-import re,json,hashlib,math
+import re, json, math
 from pdxscript import blocks,apply_edits
 
 def apply(out,root,game):
@@ -97,7 +98,7 @@ hbe_annex_industry_completed = { effect = { hbe_inherit_annexed_industry = yes }
  result=dict(version='0.3.1',trigger='on_annexed: complete national annexation only',receipt_count=7,starter_recipe_unlocks=sum(len(r['recipes']) for r in table),building_unlocks=len(building_map),regions=table,native_formables=['HQS_f','HQC_f','HQB_f'],recipient_scope='Any annexer; inherited civilian institutions retain geographic constraints.',no_unit_or_advanced_recipe_grants=True,no_partial_or_startup_grants=True)
  manifest['annex_industry_patch']=result
  manifest['formables_units_v031']['date_free_advances']=[k for p in (out/'in_game/common/advances').glob('hbe*.txt') for k,*_ in blocks(p.read_text(encoding='utf-8-sig'),0)]
- manifest['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ manifest['files']=snapshot_files(out)
  mp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  return result
 

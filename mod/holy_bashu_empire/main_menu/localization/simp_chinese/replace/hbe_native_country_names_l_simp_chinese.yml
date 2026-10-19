@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+# Distinguish native tags from the thirty-six HBE countries; no tag or territory changes.
+ CGZ: "昌州旧部"
+ YYG: "酉阳旧部"
+ SNP: "松潘诸部"
+ MHU: "马湖旧部"
+ YNG: "云南永宁"

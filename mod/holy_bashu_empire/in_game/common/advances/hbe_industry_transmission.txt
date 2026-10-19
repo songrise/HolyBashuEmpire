@@ -1,0 +1,77 @@
+﻿hbe_transmission_embroidery = {
+    age = age_2_renaissance
+    starting_technology_level = 99
+    research_cost = 3
+    content_priority = 830
+    icon = hbe_transmission_embroidery
+    requires = renaissance_development
+    potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+    allow = {
+        is_member_of_international_organization = international_organization:hbe_empire
+        hbe_transmission_embroidery_license = yes
+        NOT = { has_variable = hbe_research_pending }
+    }
+    pure_tooltip_entry = hbe_transmission_embroidery_effects
+    unlock_production_method = hbe_chengdu_plain_advanced_production
+    unlock_production_method = hbe_chengdu_plain_paper_production
+    unlock_production_method = hbe_transmission_embroidery_sidework
+    ai_weight = { add = 20 }
+}
+
+hbe_transmission_well_salt = {
+    age = age_2_renaissance
+    starting_technology_level = 99
+    research_cost = 3
+    content_priority = 830
+    icon = hbe_transmission_well_salt
+    requires = renaissance_development
+    potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+    allow = {
+        is_member_of_international_organization = international_organization:hbe_empire
+        hbe_transmission_well_salt_license = yes
+        NOT = { has_variable = hbe_research_pending }
+    }
+    pure_tooltip_entry = hbe_transmission_well_salt_effects
+    unlock_production_method = hbe_southern_salt_wine_advanced_production
+    unlock_production_method = hbe_transmission_well_salt_sidework
+    ai_weight = { add = 20 }
+}
+
+hbe_transmission_paper = {
+    age = age_2_renaissance
+    starting_technology_level = 99
+    research_cost = 3
+    content_priority = 830
+    icon = hbe_transmission_paper
+    requires = hbe_tech_northern_shudao_6
+    potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+    allow = {
+        is_member_of_international_organization = international_organization:hbe_empire
+        hbe_transmission_paper_license = yes
+        NOT = { has_variable = hbe_research_pending }
+    }
+    pure_tooltip_entry = hbe_transmission_paper_effects
+    unlock_production_method = hbe_northern_shudao_advanced_production
+    unlock_production_method = hbe_transmission_paper_sidework
+    ai_weight = { add = 20 }
+}
+
+hbe_transmission_border_tea = {
+    age = age_2_renaissance
+    starting_technology_level = 99
+    research_cost = 3
+    content_priority = 830
+    icon = hbe_transmission_border_tea
+    requires = renaissance_development
+    potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+    allow = {
+        is_member_of_international_organization = international_organization:hbe_empire
+        hbe_transmission_border_tea_license = yes
+        NOT = { has_variable = hbe_research_pending }
+    }
+    pure_tooltip_entry = hbe_transmission_border_tea_effects
+    unlock_production_method = hbe_western_tea_horse_advanced_production
+    unlock_production_method = hbe_western_tea_horse_paper_production
+    unlock_production_method = hbe_transmission_border_tea_sidework
+    ai_weight = { add = 20 }
+}

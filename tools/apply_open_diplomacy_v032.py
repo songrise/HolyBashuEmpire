@@ -1,6 +1,6 @@
 """Remove HBE's military border gates and seed native Yuan starting opinions."""
+from build_support import snapshot_files
 from pathlib import Path
-import hashlib
 import json
 import re
 from pdxscript import blocks, apply_edits
@@ -110,8 +110,7 @@ def apply(out, root=None, game=None):
                   natural_decay_years=25, scope='1337 new campaigns only; no on-load or monthly reapplication',
                   common_defense_preserved=True)
     manifest['open_diplomacy_v032'] = report
-    manifest['files'] = {p.relative_to(out).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
-                         for p in out.rglob('*') if p.is_file() and p.name != 'build_manifest.json'}
+    manifest['files'] = snapshot_files(out)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf8')
     return dict(report, touched_files=touched)
 

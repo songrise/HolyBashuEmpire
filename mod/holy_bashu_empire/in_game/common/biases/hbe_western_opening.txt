@@ -1,0 +1,2 @@
+﻿# Native opening goodwill: +100, -4/year, naturally expires after 25 years.
+hbe_western_tributary_goodwill = { value = 100 max = 100 yearly_decay = 4 }

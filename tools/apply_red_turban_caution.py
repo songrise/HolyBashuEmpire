@@ -1,5 +1,6 @@
+from build_support import snapshot_files
 from pathlib import Path
-import json,hashlib,sys
+import json, sys
 def apply(out,root):
     out=Path(out);p=out/'in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt'
     p.parent.mkdir(parents=True,exist_ok=True)
@@ -23,5 +24,5 @@ hbe_red_turban_caution = {
 if __name__=='__main__':
     root=Path(sys.argv[1]);out=root/'mod/holy_bashu_empire';r=apply(out,root)
     (root/'docs/testing/red-turban-caution-v031.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['red_turban_caution_patch']=r;m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'};p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['red_turban_caution_patch']=r;m['files']=snapshot_files(out);p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Red Turban factions receive an additional 0.65 expansion score multiplier against HBE members only.')

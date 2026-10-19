@@ -1,0 +1,1 @@
+﻿hbe_can_cross_circle_industry = { positive = "gfx/interface/icons/modifier_types/hbe_can_cross_circle_industry.dds" negative = "gfx/interface/icons/modifier_types/hbe_can_cross_circle_industry.dds" }

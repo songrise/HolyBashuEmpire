@@ -11,14 +11,21 @@ def apply(out,root=None):
     for key,_,s,e,_ in blocks(t,0):
         body=t[s:e];before=re.search(r'max_strength\s*=\s*(\S+)',body)[1]
         template=re.search(r'copy_from\s*=\s*(\S+)',body)[1]
-        inherited=Decimal('.2') if 'light_cavalry' in template else Decimal('1') if 'age_2' in template else Decimal('.5')
+        age=Decimal(re.search(r'a_age_(\d)_',template)[1])
+        inherited=age*(Decimal('.2') if 'light_cavalry' in template else Decimal('.5'))
         strength_delta=Decimal('.5')-inherited
         body=re.sub(r'max_strength\s*=\s*\S+','max_strength = '+f'{strength_delta.normalize():f}',body)
         recipe=re.search(r'maintenance_demand\s*=\s*(\S+)',body)[1].removeprefix('hbe_discount_')
+        # Later military stages own their equipment surcharge recipes.
+        if recipe not in recipes:
+            assert recipe.startswith('hbe_age2_'),recipe
+            edits.append((s,e,body))
+            rows.append(dict(unit=key,max_strength='0.5',inherited_strength=str(inherited),strength_delta=str(strength_delta),men=500,original_recipe=recipe))
+            continue
         body=re.sub(r'maintenance_demand\s*=\s*\S+','maintenance_demand = hbe_discount_'+recipe,body)
         new[recipe]=re.sub(r'(?m)^(\s*\w+\s*=\s*)(\d+(?:\.\d+)?)',lambda m:m[1]+f'{(Decimal(m[2])*Decimal(".9")).normalize():f}',recipes[recipe])
         edits.append((s,e,body));rows.append(dict(unit=key,before_max_strength=before,max_strength='0.5',inherited_strength=str(inherited),strength_delta=str(strength_delta),men=500,upkeep_factor=.9,original_recipe=recipe))
-    assert len(rows)==9
+    assert len(rows)==len(blocks(t,0))
     p.write_text(apply_edits(t,edits),encoding='utf-8-sig')
     p=out/'in_game/common/goods_demand/hbe_unit_maintenance.txt'
     p.write_text('# Private recipes; vanilla maintenance definitions remain unchanged.\n'+'\n'.join('hbe_discount_'+key+' = {'+body+'}\n' for key,body in new.items()),encoding='utf-8-sig')

@@ -1,0 +1,79 @@
+﻿hbe_transmission_embroidery_license = {
+    custom_tooltip = { text = hbe_transmission_embroidery_license_tt OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } has_advance = hbe_tech_chengdu_plain_2 }
+}
+hbe_transmission_embroidery_ready = {
+    hbe_transmission_embroidery_license = yes
+    custom_tooltip = { text = hbe_transmission_embroidery_researched_tt has_advance = hbe_transmission_embroidery }
+}
+# Location scope, matching the existing building allow/actor convention.
+hbe_transmission_embroidery_below_cap = {
+    custom_tooltip = {
+        text = hbe_transmission_embroidery_cap_tt
+        scope:actor = {
+            OR = {
+                AND = { NOT = { has_advance = hbe_transmission_embroidery } total_building_levels_including_construction:hbe_brocade_school < 2 }
+                AND = { has_advance = hbe_transmission_embroidery total_building_levels_including_construction:hbe_brocade_school < 3 }
+            }
+        }
+    }
+}
+
+hbe_transmission_well_salt_license = {
+    custom_tooltip = { text = hbe_transmission_well_salt_license_tt OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } has_advance = hbe_tech_southern_salt_wine_1 }
+}
+hbe_transmission_well_salt_ready = {
+    hbe_transmission_well_salt_license = yes
+    custom_tooltip = { text = hbe_transmission_well_salt_researched_tt has_advance = hbe_transmission_well_salt }
+}
+# Location scope, matching the existing building allow/actor convention.
+hbe_transmission_well_salt_below_cap = {
+    custom_tooltip = {
+        text = hbe_transmission_well_salt_cap_tt
+        scope:actor = {
+            OR = {
+                AND = { NOT = { has_advance = hbe_transmission_well_salt } total_building_levels_including_construction:hbe_salt_office < 2 }
+                AND = { has_advance = hbe_transmission_well_salt total_building_levels_including_construction:hbe_salt_office < 3 }
+            }
+        }
+    }
+}
+
+hbe_transmission_paper_license = {
+    custom_tooltip = { text = hbe_transmission_paper_license_tt OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } has_advance = hbe_tech_northern_shudao_6 }
+}
+hbe_transmission_paper_ready = {
+    hbe_transmission_paper_license = yes
+    custom_tooltip = { text = hbe_transmission_paper_researched_tt has_advance = hbe_transmission_paper }
+}
+# Location scope, matching the existing building allow/actor convention.
+hbe_transmission_paper_below_cap = {
+    custom_tooltip = {
+        text = hbe_transmission_paper_cap_tt
+        scope:actor = {
+            OR = {
+                AND = { NOT = { has_advance = hbe_transmission_paper } total_building_levels_including_construction:hbe_gate_registry < 2 }
+                AND = { has_advance = hbe_transmission_paper total_building_levels_including_construction:hbe_gate_registry < 3 }
+            }
+        }
+    }
+}
+
+hbe_transmission_border_tea_license = {
+    custom_tooltip = { text = hbe_transmission_border_tea_license_tt OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } has_advance = hbe_tech_western_tea_horse_1 }
+}
+hbe_transmission_border_tea_ready = {
+    hbe_transmission_border_tea_license = yes
+    custom_tooltip = { text = hbe_transmission_border_tea_researched_tt has_advance = hbe_transmission_border_tea }
+}
+# Location scope, matching the existing building allow/actor convention.
+hbe_transmission_border_tea_below_cap = {
+    custom_tooltip = {
+        text = hbe_transmission_border_tea_cap_tt
+        scope:actor = {
+            OR = {
+                AND = { NOT = { has_advance = hbe_transmission_border_tea } total_building_levels_including_construction:hbe_tea_exchange < 2 }
+                AND = { has_advance = hbe_transmission_border_tea total_building_levels_including_construction:hbe_tea_exchange < 3 }
+            }
+        }
+    }
+}

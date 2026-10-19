@@ -52559,10 +52559,10 @@ countries = {
             sime niuwu puri_simao yaozhou dayao juque yongchang_yongchang zhenkang shidian rouyuan
              yuanjiang_yuanjiang talang tongguan_yuanjiang kunming lufeng yiliang songming fumin
              weiyuan mengtong mengban_weiyuan hequ_wuding luquan rende yuanmou runyan mala
-             pingchuan zuosuo bozhou zizhou shaxi yunlian qijiang dechang
-             huili huichuan_dechang mingyi dongchuan qiaojia tangdan zhehai emei muli kheong waerhdje
+             pingchuan zuosuo bozhou zizhou shaxi yunlian qijiang
+                dongchuan qiaojia tangdan zhehai emei muli kheong waerhdje
              hanyuan suzhou lugu qiongbu shimian zhenxi_lizhou mahu lizhou_mahu
-             leibo mabian muchuan jianchang_sichuan kuozhou puge beishe wumeng daguan luozuoguan
+             leibo mabian muchuan     wumeng daguan luozuoguan
              yongshan wusa zhaoban heizhang baurang yongning gulin luojiao mangbu guihua
         }
 

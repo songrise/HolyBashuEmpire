@@ -1,0 +1,373 @@
+{
+  "men_per_regiment": 500,
+  "unit_family": "hbe_civic_special_family",
+  "net_new_regiment_burden": 2,
+  "units": [
+    {
+      "region": "chengdu_plain",
+      "name": "渠乡劲弩",
+      "key": "hbe_canal_crossbow_renaissance",
+      "existing_second_age_type": false,
+      "from_unit": "hbe_canal_crossbow",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 1.1,
+        "initiative": 7,
+        "combat_speed": 3,
+        "movement_speed": 2.5,
+        "strength_damage_done": 0.1,
+        "strength_damage_taken": 0,
+        "morale_damage_done": 0,
+        "morale_damage_taken": 0.05,
+        "flanking_ability": 1.1,
+        "supply_weight": 1,
+        "attrition_loss": 0,
+        "food_consumption_per_strength": 0.33,
+        "combat": {}
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_light_infantry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": -0.5,
+        "combat_power": 0.1,
+        "initiative": 2,
+        "strength_damage_done": 0.2,
+        "morale_damage_taken": -0.05,
+        "construction_demand": "hbe_age2_crossbow_construction",
+        "maintenance_demand": "hbe_age2_infantry_maintenance"
+      },
+      "native_advance": "unlock_crossbowmen_advance",
+      "english": "Canal Veteran Crossbowmen",
+      "description": "渠乡把散练改为成列轮射，弩具、箭料与交接日期分册登记。劲弩仍须依托渠务机构供养，遇敌时以先手射击接应友军。"
+    },
+    {
+      "region": "southern_salt_wine",
+      "name": "井灶护运营",
+      "key": "hbe_salt_guard_renaissance",
+      "existing_second_age_type": false,
+      "from_unit": "hbe_salt_guard",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 1.1,
+        "initiative": 5,
+        "combat_speed": 3,
+        "movement_speed": 2.5,
+        "strength_damage_done": 0,
+        "strength_damage_taken": 0.02,
+        "morale_damage_done": 0.05,
+        "morale_damage_taken": -0.05,
+        "flanking_ability": 1.5,
+        "supply_weight": 1,
+        "attrition_loss": 0,
+        "food_consumption_per_strength": 0.33,
+        "combat": {}
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_light_infantry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": -0.5,
+        "combat_power": 0.1,
+        "strength_damage_done": 0.1,
+        "strength_damage_taken": 0.02,
+        "morale_damage_done": 0.05,
+        "morale_damage_taken": -0.15,
+        "flanking_ability": 0.4,
+        "construction_demand": "early_infantry_construction",
+        "maintenance_demand": "hbe_age2_infantry_maintenance"
+      },
+      "native_advance": "armory_advance",
+      "english": "Salt Convoy Companies",
+      "description": "护运者按路段编成营伍，交接盐货时同时点验兵器与粮额。队列比旧日整齐，仍以侧翼接应和稳住护送队伍为长。"
+    },
+    {
+      "region": "eastern_river",
+      "name": "江防精练寨兵",
+      "key": "hbe_trained_river",
+      "existing_second_age_type": true,
+      "from_unit": "hbe_river_garrison",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 1.25,
+        "initiative": 1.0,
+        "combat_speed": 2.25,
+        "movement_speed": 2.0,
+        "strength_damage_done": 0.14,
+        "strength_damage_taken": -0.03,
+        "morale_damage_done": 0,
+        "morale_damage_taken": -0.18,
+        "flanking_ability": 1.0,
+        "supply_weight": 1.2,
+        "attrition_loss": 0,
+        "food_consumption_per_strength": 0.33,
+        "combat": {
+          "river": 0.18
+        }
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_heavy_infantry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": -0.5,
+        "combat_power": 0.25,
+        "combat_speed": 0.25,
+        "strength_damage_done": 0.14,
+        "strength_damage_taken": -0.03,
+        "morale_damage_taken": -0.18,
+        "supply_weight": 0.2,
+        "combat": {
+          "river": 0.18
+        },
+        "construction_demand": "early_heavy_infantry_construction",
+        "maintenance_demand": "hbe_age2_heavy_maintenance"
+      },
+      "native_advance": "unlock_men_at_arms_advance",
+      "english": "Trained River Garrison",
+      "description": "沿江寨兵改行常训，巡岸、守泊与船上接应各有班次。较重的粮械供给换来稳定的队列，临河作战时尤能发挥所长。"
+    },
+    {
+      "region": "northern_shudao",
+      "name": "关镇长值兵",
+      "key": "hbe_permanent_pass",
+      "existing_second_age_type": true,
+      "from_unit": "hbe_pass_rotation",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 1.2,
+        "initiative": 1.0,
+        "combat_speed": 2.25,
+        "movement_speed": 2.0,
+        "strength_damage_done": 0,
+        "strength_damage_taken": -0.2,
+        "morale_damage_done": 0,
+        "morale_damage_taken": -0.12,
+        "flanking_ability": 1.0,
+        "supply_weight": 1.2,
+        "attrition_loss": 0,
+        "food_consumption_per_strength": 0.33,
+        "combat": {
+          "mountains": 0.18
+        }
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_heavy_infantry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": -0.5,
+        "combat_power": 0.2,
+        "combat_speed": 0.25,
+        "strength_damage_taken": -0.2,
+        "morale_damage_taken": -0.12,
+        "supply_weight": 0.2,
+        "combat": {
+          "mountains": 0.18
+        },
+        "construction_demand": "early_heavy_infantry_construction",
+        "maintenance_demand": "hbe_age2_heavy_maintenance"
+      },
+      "native_advance": "unlock_men_at_arms_advance",
+      "english": "Permanent Pass Guard",
+      "description": "关军由轮戍转为长值，兵器与粮额随营保管。常备队伍善于守住山口，所需供给也高于旧日轮戍兵。"
+    },
+    {
+      "region": "central_hills",
+      "name": "义仓备御兵",
+      "key": "hbe_granary_militia_renaissance",
+      "existing_second_age_type": false,
+      "from_unit": "hbe_granary_militia",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 1.05,
+        "initiative": 5,
+        "combat_speed": 3,
+        "movement_speed": 2.5,
+        "strength_damage_done": -0.05,
+        "strength_damage_taken": 0,
+        "morale_damage_done": 0,
+        "morale_damage_taken": 0,
+        "flanking_ability": 1.1,
+        "supply_weight": 0.75,
+        "attrition_loss": 0,
+        "food_consumption_per_strength": 0.28,
+        "combat": {}
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_light_infantry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": -0.5,
+        "combat_power": 0.05,
+        "strength_damage_done": 0.05,
+        "morale_damage_taken": -0.1,
+        "supply_weight": -0.25,
+        "food_consumption_per_strength": -0.05,
+        "construction_demand": "early_infantry_construction",
+        "maintenance_demand": "hbe_age2_militia_maintenance"
+      },
+      "native_advance": "armory_advance",
+      "english": "Granary Reserve Infantry",
+      "description": "仓社把守仓、护田与应急集结分列名册，常备者分领粮械。队伍轻装节用，适合长期守备，正面杀伤仍逊于专业战兵。"
+    },
+    {
+      "region": "western_tea_horse",
+      "name": "茶路选骑",
+      "key": "hbe_tea_riders_renaissance",
+      "existing_second_age_type": false,
+      "from_unit": "hbe_tea_riders",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 2.7,
+        "initiative": 7,
+        "combat_speed": 5,
+        "movement_speed": 3.6,
+        "strength_damage_done": -0.05,
+        "strength_damage_taken": 0,
+        "morale_damage_done": 0.12,
+        "morale_damage_taken": 0.05,
+        "flanking_ability": 2.0,
+        "supply_weight": 1,
+        "attrition_loss": 0.2,
+        "food_consumption_per_strength": 1.32,
+        "combat": {
+          "mountains": -0.05,
+          "jungle": -0.1,
+          "wetlands": -0.1
+        }
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_light_cavalry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": 0.1,
+        "combat_power": 0.1,
+        "initiative": 2,
+        "movement_speed": 0.6,
+        "strength_damage_done": 0.05,
+        "morale_damage_done": 0.12,
+        "morale_damage_taken": -0.05,
+        "flanking_ability": 0.4,
+        "attrition_loss": -0.05,
+        "combat": {
+          "mountains": 0.05
+        },
+        "construction_demand": "cavalry_construction",
+        "maintenance_demand": "hbe_age2_cavalry_maintenance"
+      },
+      "native_advance": "unlock_cavalry_advance",
+      "english": "Tea Route Selected Cavalry",
+      "description": "茶路护骑按脚程和骑术选补，马料、驮具与交接凭据随队核验。骑手善于绕侧接应，进入密林、湿地或险山时仍须谨慎。"
+    },
+    {
+      "region": "southwestern_valleys",
+      "name": "联寨选锋",
+      "key": "hbe_valley_soldiers_renaissance",
+      "existing_second_age_type": false,
+      "from_unit": "hbe_valley_soldiers",
+      "target_effective_stats": {
+        "max_strength": 0.5,
+        "combat_power": 1.1,
+        "initiative": 7,
+        "combat_speed": 3,
+        "movement_speed": 2.7,
+        "strength_damage_done": -0.05,
+        "strength_damage_taken": 0,
+        "morale_damage_done": 0,
+        "morale_damage_taken": 0.02,
+        "flanking_ability": 1.2,
+        "supply_weight": 0.9,
+        "attrition_loss": 0,
+        "food_consumption_per_strength": 0.33,
+        "combat": {
+          "mountains": 0.2,
+          "hills": 0.15
+        }
+      },
+      "unit_definition_scalars_and_combat": {
+        "copy_from": "a_age_2_renaissance_light_infantry",
+        "hide": "no",
+        "buildable": "yes",
+        "levy": "no",
+        "is_special": "yes",
+        "family": "hbe_civic_special_family",
+        "max_strength": -0.5,
+        "combat_power": 0.1,
+        "initiative": 2,
+        "movement_speed": 0.2,
+        "strength_damage_done": 0.05,
+        "morale_damage_taken": -0.08,
+        "flanking_ability": 0.1,
+        "supply_weight": -0.1,
+        "combat": {
+          "hills": 0.15,
+          "mountains": 0.2
+        },
+        "construction_demand": "early_infantry_construction",
+        "maintenance_demand": "hbe_age2_infantry_maintenance"
+      },
+      "native_advance": "armory_advance",
+      "english": "Allied Valley Vanguard",
+      "description": "各寨从旧有编伍中选出熟识山路的兵员，轻装分队按山口会合。丘陵与山地便于其展开，平地硬战仍非所长。"
+    }
+  ],
+  "recipes": {
+    "hbe_age2_infantry_maintenance": {
+      "weaponry": 0.09,
+      "leather": 0.054,
+      "tools": 0.01,
+      "category": "regiment_maintenance"
+    },
+    "hbe_age2_heavy_maintenance": {
+      "weaponry": 0.09,
+      "leather": 0.054,
+      "tools": 0.02,
+      "category": "regiment_maintenance"
+    },
+    "hbe_age2_militia_maintenance": {
+      "weaponry": 0.09,
+      "leather": 0.054,
+      "tools": 0.005,
+      "category": "regiment_maintenance"
+    },
+    "hbe_age2_cavalry_maintenance": {
+      "weaponry": 0.09,
+      "leather": 0.072,
+      "cloth": 0.072,
+      "horses": 0.45,
+      "tools": 0.01,
+      "category": "regiment_maintenance"
+    },
+    "hbe_age2_crossbow_construction": {
+      "weaponry": 0.2,
+      "leather": 0.1,
+      "lumber": 0.1,
+      "tools": 0.02,
+      "category": "regiment_construction"
+    }
+  },
+  "schema_version": 1,
+  "new_advance_count": 0,
+  "new_unit_types": 5,
+  "tech_files": [
+    "in_game/common/advances/1_building_unlocks.txt",
+    "in_game/common/advances/2_army_unlocks.txt"
+  ]
+}

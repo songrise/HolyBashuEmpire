@@ -1,0 +1,76 @@
+﻿hbe_military_chengdu_plain = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_chengdu_plain content_priority = 875
+ potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_chengdu_plain_1
+ unlock_unit = hbe_canal_crossbow
+ 
+ ai_weight = { add = 20 }
+}
+
+hbe_military_southern_salt_wine = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_southern_salt_wine content_priority = 875
+ potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_southern_salt_wine_1
+ unlock_unit = hbe_salt_guard
+ 
+ ai_weight = { add = 20 }
+}
+
+hbe_military_eastern_river = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_eastern_river content_priority = 875
+ potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_eastern_river_1
+ unlock_unit = hbe_river_garrison
+ 
+ ai_weight = { add = 20 }
+}
+
+hbe_military_northern_shudao = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_northern_shudao content_priority = 875
+ potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_northern_shudao_1
+ unlock_unit = hbe_pass_rotation
+ unlock_building = hbe_plank_fort
+ ai_weight = { add = 20 }
+}
+
+hbe_military_central_hills = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_central_hills content_priority = 875
+ potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_central_hills_1
+ unlock_unit = hbe_granary_militia
+ 
+ ai_weight = { add = 20 }
+}
+
+hbe_military_western_tea_horse = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_western_tea_horse content_priority = 875
+ potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_western_tea_horse_1
+ unlock_unit = hbe_tea_riders
+ unlock_building = hbe_guide_station
+ ai_weight = { add = 20 }
+}
+
+hbe_military_southwestern_valleys = {
+ age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ icon = hbe_military_southwestern_valleys content_priority = 875
+ potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ requires = hbe_tech_southwestern_valleys_1
+ unlock_unit = hbe_valley_soldiers
+ unlock_building = hbe_covenant_stockade
+ ai_weight = { add = 20 }
+}

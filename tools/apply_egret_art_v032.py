@@ -1,4 +1,5 @@
 """Register a dedicated Hanzhou egret painting without changing event choices."""
+from build_support import snapshot_files
 from pathlib import Path
 from PIL import Image,ImageOps
 import re,json,hashlib
@@ -27,6 +28,6 @@ def apply(out,root,game=None):
  put(p.relative_to(out),apply_edits(text,[(block[2],block[3],fixed)]))
  p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf8'))
  m['egret_art_v032']={'event':'hbe_story_chengdu_plain.103','art':'hbe_egret_art','source':source.relative_to(root).as_posix(),'source_dimensions':original,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'runtime_dimensions':[1080,440],'gameplay_effects_changed':False}
- m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  return m['egret_art_v032']

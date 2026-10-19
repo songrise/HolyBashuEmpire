@@ -1,0 +1,69 @@
+﻿# The first option is deliberately free and always available, including before research.
+hbe_transmission_embroidery_off = {
+    icon_type = goods
+    icon = hbe_shu_embroidery
+    category = guild_input
+}
+hbe_transmission_embroidery_sidework = {
+    icon_type = goods
+    icon = hbe_shu_embroidery
+    allow = { hbe_transmission_embroidery_ready = yes }
+    silk = 0.07
+    dyes = 0.02
+    produced = hbe_shu_embroidery
+    output = 0.05
+    category = guild_input
+}
+
+# The first option is deliberately free and always available, including before research.
+hbe_transmission_well_salt_off = {
+    icon_type = goods
+    icon = hbe_well_salt
+    category = building_maintenance
+}
+hbe_transmission_well_salt_sidework = {
+    icon_type = goods
+    icon = hbe_well_salt
+    allow = { hbe_transmission_well_salt_ready = yes }
+    lumber = 0.16
+    tools = 0.05
+    produced = hbe_well_salt
+    output = 0.1
+    category = building_maintenance
+}
+
+# The first option is deliberately free and always available, including before research.
+hbe_transmission_paper_off = {
+    icon_type = goods
+    icon = hbe_shu_paper
+    category = guild_input
+}
+hbe_transmission_paper_sidework = {
+    icon_type = goods
+    icon = hbe_shu_paper
+    allow = { hbe_transmission_paper_ready = yes }
+    fiber_crops = 0.06
+    lumber = 0.02
+    tools = 0.005
+    produced = hbe_shu_paper
+    output = 0.0521
+    category = guild_input
+}
+
+# The first option is deliberately free and always available, including before research.
+hbe_transmission_border_tea_off = {
+    icon_type = goods
+    icon = hbe_border_tea
+    category = building_maintenance
+}
+hbe_transmission_border_tea_sidework = {
+    icon_type = goods
+    icon = hbe_border_tea
+    allow = { hbe_transmission_border_tea_ready = yes }
+    tea = 0.07
+    paper = 0.012
+    tools = 0.006
+    produced = hbe_border_tea
+    output = 0.0667
+    category = building_maintenance
+}

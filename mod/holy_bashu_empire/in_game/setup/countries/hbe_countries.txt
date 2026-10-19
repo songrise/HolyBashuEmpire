@@ -249,8 +249,8 @@ BBX = {
 BBY = {
     color = rgb { 209 205 115 }
     color2 = rgb { 236 216 158 }
-    culture_definition = shu_culture
-    religion_definition = mahayana
+    culture_definition = yi_culture
+    religion_definition = bimoism
     description_category = hbe_profile_bby
     difficulty = 2
 }

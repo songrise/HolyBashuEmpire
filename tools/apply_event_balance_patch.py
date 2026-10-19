@@ -1,7 +1,8 @@
 """Scale event rewards, raise real costs, synchronize affordability and copy."""
+from build_support import snapshot_files
 from pathlib import Path
 from decimal import Decimal,ROUND_HALF_UP,ROUND_CEILING
-import re,json,hashlib,sys
+import re, json, sys
 from pdxscript import blocks,apply_edits
 from event_resource_balance import adjust
 GAME=Path('D:/SteamLibrary/steamapps/common/Europa Universalis V/game')
@@ -115,5 +116,5 @@ def apply(out,root):
 if __name__=='__main__':
     root=Path(sys.argv[1]);out=root/'mod/holy_bashu_empire';r=apply(out,root)
     (root/'docs/testing/event-balance-patch-v031.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['event_balance_patch']=r;m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'};p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['event_balance_patch']=r;m['files']=snapshot_files(out);p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(modifiers=len(r['reward_modifiers']),paid_options=len(r['costs']),resources=len(r['immediate_rewards'])),ensure_ascii=False))

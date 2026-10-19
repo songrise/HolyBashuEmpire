@@ -1,6 +1,7 @@
 """Guard authored chain transitions and preserve the first migration decision in prose."""
+from build_support import snapshot_files
 from pathlib import Path
-import argparse, hashlib, json, re, sys
+import argparse, json, re, sys
 from pdxscript import blocks
 
 def apply(out, root, game=None):
@@ -81,7 +82,7 @@ def apply(out, root, game=None):
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'))
  result=dict(regional_chains=7,migration_chains=1,short_chains=33,guarded_chapters=132,guarded_regional_endings=14,legacy_ending_fallback=True,migration_first_policy_variants=3,narrative_replacements=len(replacements),economic_rewards_changed=False,files=sorted(set(changed)))
  m['story_logic_v031']=result
- m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  (root/'data/story_logic_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps(result,ensure_ascii=False));return result

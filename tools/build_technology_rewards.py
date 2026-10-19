@@ -251,7 +251,6 @@ def build_technology_rewards(out,root,loc,put,game):
      effects.append(f'运行{loc[b]}时，完成本圈地方事业额外获得{amount*.8:g}地区储备'+(f'，役负降低{relief*.8:g}' if relief else '')+'。')
     else:effects.append('续办地方事业时额外获得1.6义气；须维持本圈机构运行。')
    if key=='hbe_civic_common_2':effects.append('开放公账审计与逐圈客籍议约。签订某圈议约后授予该圈机构及基础兵种资格；仍需当地领土和实际供养，不一次开放全部七圈。')
-   if not effects:effects.append('本课题的永久加成立即生效，并推进后续地区课题与验收。')
    if key=='hbe_tech_common_4':effects=['开放跨圈经营：满足条件并签订客籍议约后，可在目标圈建造机构并经营基础产业。']
    if key=='hbe_tech_common_5':effects.append('提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。')
    if key=='hbe_tech_common_7':effects.append('降低原版道路工期与碎石路成本；可与蜀道接递叠加。')

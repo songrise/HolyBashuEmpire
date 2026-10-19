@@ -1,0 +1,37 @@
+﻿hbe_age2_infantry_maintenance = {
+ weaponry = 0.09
+ leather = 0.054
+ tools = 0.01
+ category = regiment_maintenance
+}
+
+hbe_age2_heavy_maintenance = {
+ weaponry = 0.09
+ leather = 0.054
+ tools = 0.02
+ category = regiment_maintenance
+}
+
+hbe_age2_militia_maintenance = {
+ weaponry = 0.09
+ leather = 0.054
+ tools = 0.005
+ category = regiment_maintenance
+}
+
+hbe_age2_cavalry_maintenance = {
+ weaponry = 0.09
+ leather = 0.072
+ cloth = 0.072
+ horses = 0.45
+ tools = 0.01
+ category = regiment_maintenance
+}
+
+hbe_age2_crossbow_construction = {
+ weaponry = 0.2
+ leather = 0.1
+ lumber = 0.1
+ tools = 0.02
+ category = regiment_construction
+}

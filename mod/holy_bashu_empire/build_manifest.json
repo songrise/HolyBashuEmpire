@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2",
+  "version": "0.3.3",
   "countries": [
     {
       "tag": "BAB",
@@ -519,8 +519,8 @@
       "province": "dechang_province",
       "region": "southwestern_valleys",
       "capital": "dechang",
-      "culture": "shu_culture",
-      "religion": "mahayana",
+      "culture": "yi_culture",
+      "religion": "bimoism",
       "locations": [
         "dechang",
         "huichuan_dechang",
@@ -674,7 +674,7 @@
   ],
   "source_setup_sha256": "d893a853b6045c1e9ea9961d92bf38b0228c2524d1ef808e212858da7798d3a1",
   "removed_domain_tokens": 164,
-  "research_nodes": 80,
+  "research_nodes": 91,
   "regional_missions": 35,
   "recurring_services": 7,
   "events": 508,
@@ -717,9 +717,16 @@
         "group": "chengdu_plain",
         "advance": "hbe_tech_chengdu_plain_2",
         "maintenance": "paper = 0.04 silk = 0.04",
-        "unique_country": true,
+        "unique_country": false,
         "employment": 150,
-        "build_days": 540
+        "build_days": 540,
+        "national_cap": {
+          "initial": 2,
+          "researched": 3,
+          "advance": "hbe_transmission_embroidery",
+          "includes_construction": true,
+          "levels_per_location": 1
+        }
       },
       {
         "key": "hbe_salt_office",
@@ -729,7 +736,14 @@
         "maintenance": "lumber = 0.08 tools = 0.04",
         "unique_country": false,
         "employment": 150,
-        "build_days": 540
+        "build_days": 540,
+        "national_cap": {
+          "initial": 2,
+          "researched": 3,
+          "advance": "hbe_transmission_well_salt",
+          "includes_construction": true,
+          "levels_per_location": 1
+        }
       },
       {
         "key": "hbe_salt_contract_house",
@@ -765,7 +779,7 @@
         "key": "hbe_plank_fort",
         "name": "栈道驿堡",
         "group": "northern_shudao",
-        "advance": "hbe_tech_northern_shudao_2",
+        "advance": "hbe_military_northern_shudao",
         "maintenance": "lumber = 0.08 weaponry = 0.06",
         "unique_country": false,
         "employment": 150,
@@ -777,15 +791,22 @@
         "group": "northern_shudao",
         "advance": "hbe_tech_northern_shudao_6",
         "maintenance": "paper = 0.08",
-        "unique_country": true,
+        "unique_country": false,
         "employment": 150,
-        "build_days": 540
+        "build_days": 540,
+        "national_cap": {
+          "initial": 2,
+          "researched": 3,
+          "advance": "hbe_transmission_paper",
+          "includes_construction": true,
+          "levels_per_location": 1
+        }
       },
       {
         "key": "hbe_community_granary",
         "name": "分仓义廪",
         "group": "central_hills",
-        "advance": "hbe_tech_central_hills_3",
+        "advance": "hbe_tech_central_hills_1",
         "maintenance": "lumber = 0.06 cloth = 0.04",
         "unique_country": false,
         "employment": 150,
@@ -809,13 +830,20 @@
         "maintenance": "paper = 0.04 cloth = 0.04",
         "unique_country": false,
         "employment": 150,
-        "build_days": 540
+        "build_days": 540,
+        "national_cap": {
+          "initial": 2,
+          "researched": 3,
+          "advance": "hbe_transmission_border_tea",
+          "includes_construction": true,
+          "levels_per_location": 1
+        }
       },
       {
         "key": "hbe_guide_station",
         "name": "山程护行所",
         "group": "western_tea_horse",
-        "advance": "hbe_tech_western_tea_horse_2",
+        "advance": "hbe_military_western_tea_horse",
         "maintenance": "lumber = 0.06 cloth = 0.04",
         "unique_country": false,
         "employment": 150,
@@ -835,7 +863,7 @@
         "key": "hbe_covenant_stockade",
         "name": "乡寨议约寨",
         "group": "southwestern_valleys",
-        "advance": "hbe_tech_southwestern_valleys_2",
+        "advance": "hbe_military_southwestern_valleys",
         "maintenance": "weaponry = 0.08 lumber = 0.04",
         "unique_country": false,
         "employment": 150,
@@ -941,7 +969,7 @@
         "key": "hbe_trained_river",
         "name": "江防精练寨兵",
         "group": "eastern_river",
-        "advance": "hbe_civic_eastern_river_2",
+        "advance": "unlock_men_at_arms_advance",
         "building": "hbe_river_warehouse",
         "alternate_buildings": [
           "hbe_river_warehouse",
@@ -955,7 +983,7 @@
         "key": "hbe_permanent_pass",
         "name": "关镇长值兵",
         "group": "northern_shudao",
-        "advance": "hbe_civic_northern_shudao_2",
+        "advance": "unlock_men_at_arms_advance",
         "building": "hbe_plank_fort",
         "alternate_buildings": [
           "hbe_plank_fort"
@@ -1018,10 +1046,11 @@
         "name": "岁修与分水公议",
         "group": "chengdu_plain",
         "year": 1397,
-        "parent": "hbe_tech_chengdu_plain_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_chengdu_plain_2",
         "allow": "has_variable = hbe_mission_chengdu_plain_2 OR = { has_advance = hbe_tech_chengdu_plain_4 has_advance = hbe_tech_chengdu_plain_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_chengdu_plain_2",
@@ -1038,10 +1067,11 @@
         "name": "井灶保任章程",
         "group": "southern_salt_wine",
         "year": 1397,
-        "parent": "hbe_tech_southern_salt_wine_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_southern_salt_wine_2",
         "allow": "has_variable = hbe_mission_southern_salt_wine_2 OR = { has_advance = hbe_tech_southern_salt_wine_4 has_advance = hbe_tech_southern_salt_wine_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_southern_salt_wine_2",
@@ -1058,10 +1088,11 @@
         "name": "江岸会防约",
         "group": "eastern_river",
         "year": 1397,
-        "parent": "hbe_tech_eastern_river_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_eastern_river_2",
         "allow": "has_variable = hbe_mission_eastern_river_2 OR = { has_advance = hbe_tech_eastern_river_4 has_advance = hbe_tech_eastern_river_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_eastern_river_2",
@@ -1080,10 +1111,11 @@
         "name": "关驿轮役册",
         "group": "northern_shudao",
         "year": 1397,
-        "parent": "hbe_tech_northern_shudao_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_northern_shudao_2",
         "allow": "has_variable = hbe_mission_northern_shudao_2 OR = { has_advance = hbe_tech_northern_shudao_4 has_advance = hbe_tech_northern_shudao_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_northern_shudao_2",
@@ -1102,10 +1134,11 @@
         "name": "仓社赈借则",
         "group": "central_hills",
         "year": 1397,
-        "parent": "hbe_tech_central_hills_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_central_hills_2",
         "allow": "has_variable = hbe_mission_central_hills_2 OR = { has_advance = hbe_tech_central_hills_4 has_advance = hbe_tech_central_hills_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_central_hills_2",
@@ -1122,10 +1155,11 @@
         "name": "山程互保册",
         "group": "western_tea_horse",
         "year": 1397,
-        "parent": "hbe_tech_western_tea_horse_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_western_tea_horse_2",
         "allow": "has_variable = hbe_mission_western_tea_horse_2 OR = { has_advance = hbe_tech_western_tea_horse_4 has_advance = hbe_tech_western_tea_horse_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_western_tea_horse_2",
@@ -1142,10 +1176,11 @@
         "name": "驻防粮额约",
         "group": "southwestern_valleys",
         "year": 1397,
-        "parent": "hbe_tech_southwestern_valleys_2",
+        "parent": "renaissance_development",
         "logical_parent": "hbe_tech_southwestern_valleys_2",
         "allow": "has_variable = hbe_mission_southwestern_valleys_2 OR = { has_advance = hbe_tech_southwestern_valleys_4 has_advance = hbe_tech_southwestern_valleys_7 }",
-        "unlocks": []
+        "unlocks": [],
+        "age": "age_2_renaissance"
       },
       {
         "key": "hbe_civic_southwestern_valleys_2",
@@ -6590,7 +6625,7 @@
     "source_registry": "data/player_guides_v01.json"
   },
   "files": {
-    ".metadata/metadata.json": "6dfb018370e902ebb6be940155e0cf99df30a1546905c6a900dfcf7f2ef4c2da",
+    ".metadata/metadata.json": "d65d8128f2d99762540fda0681480dcbcf626f0101d5304d708e6818718bb2f7",
     ".metadata/thumbnail.png": "5202607af092d6c05c08ef7a1162943392bf7e86daa6ea57a54212c0ef3c8481",
     "in_game/events/hbe_banquet_events.txt": "60e6b696135cc63a74cce1063288ff580c3014c799714de7564c87471492ff74",
     "in_game/events/hbe_civic_events.txt": "1a857fc9f5433dd6722d8a1413f2b1170f809cc073bfb9620bdfd7f89dea2a8c",
@@ -6615,10 +6650,14 @@
     "in_game/events/hbe_story_southwestern_valleys.txt": "918ef7145f02dc438062f47c8364f58ecfedd3f05b3f9136f41c3f9506b39466",
     "in_game/events/hbe_story_western_tea_horse.txt": "263840dbd5479d61f27d1d288d5216be71d8dea817bcd8baf7258dadc76682ae",
     "in_game/gui/cooltip.gui": "96d619292a0d2bdf6d7f7c38dcac49d584c54d33429818a8d0ed397a1a07a082",
-    "in_game/common/advances/hbe_advances.txt": "37875414da050190a925e930822fe923d8e62374dbd37f233670461bc8028ea6",
-    "in_game/common/advances/hbe_civic_advances.txt": "e475b80341d1d2c0927ce0daa920844a91a2536a105bd0c5c67a83224e1c545c",
+    "in_game/common/advances/1_building_unlocks.txt": "a534bc9968250432a9f7de95260e08f260aea125e059295a41b4250ec2e3e969",
+    "in_game/common/advances/2_army_unlocks.txt": "445927f9f1e88862b627573ce1a1261e36ce2395e90818940c328d40bb92a5c0",
+    "in_game/common/advances/hbe_advances.txt": "4d7e4df985d1a1bf707bae70f714f39c98e035b943a52e801c12065d52c6437f",
+    "in_game/common/advances/hbe_civic_advances.txt": "428cfc6e36ee82db0ef6c35fa6936b05c93c309c41c07a2983b6beb18ef2104f",
     "in_game/common/advances/hbe_guest_licenses.txt": "0aea84e029d71fcede2b54430c72c449643a9aff8677adba37fc1b5edd1afe03",
+    "in_game/common/advances/hbe_industry_transmission.txt": "e3d6e499648f2dde1554645f2a33d1575bb5a07eb856300625a94197e2c89b24",
     "in_game/common/advances/hbe_inherited_industry_licenses.txt": "5e6f415631072ada83a114746826741292c444398774ae541d64801267a1eac3",
+    "in_game/common/advances/hbe_local_military.txt": "08e9b1e3345d312899821bbc25103a67cdd4177452f05d227f8cd836e7783ccd",
     "in_game/common/ai_scripted_expansion_score/hbe_external_caution.txt": "dc07c1d7d15fe9eb45509c7532d7339eaea9d7dc466ba1bb30163d232e8aef83",
     "in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt": "36b4f5bace6306ff85b4e6546262d3a8a71e52420434cbf27dfa70c1264010be",
     "in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt": "58fb812c6011d2ab14e217b365994b544d2e3ce9360fe71da11f42fa79d2f3b7",
@@ -6626,21 +6665,27 @@
     "in_game/common/biases/hbe_faction_departure.txt": "078e8680a83f65b7fa6ca4b1abb243e7a4396d7c8946401baff93f1f8f26c76e",
     "in_game/common/biases/hbe_feast_opinions.txt": "25974a12c74e52075f32821603bd073cd84958dbb5df8edb2e508886e33a9973",
     "in_game/common/biases/hbe_opinions.txt": "5582c070940293c960623d23cdee48938846b399d3038651060319309d18b1b3",
+    "in_game/common/biases/hbe_western_opening.txt": "94516aac0e8954a28a654eec5684a89eaa54f790ac86f45dd0f1b3f22378e78c",
     "in_game/common/biases/hbe_yuan_opening.txt": "c15b2e8b7224598dcc3b20ec70c2579d89d5f1aed8b9ca48e3757eb8d9e23fb4",
-    "in_game/common/building_types/hbe_civic_buildings.txt": "e3cc9e7902437f930b867546f576a2fbdd61b484341b5d7e6004e69a818f93a5",
+    "in_game/common/building_types/common_buildings.txt": "91b09492678273970287ce8e932ee5fa505a2219d6c609d2f3513948bb2123bb",
+    "in_game/common/building_types/hbe_civic_buildings.txt": "b5df7c949d6ea294acb12c6867dd93dd6cd4b1038bdf927a6f67e201458e79fd",
+    "in_game/common/building_types/production_fine_cloth.txt": "f79f100c198ce6c3a33f2a3a6d1ea195fcf4610e6ea4e98f12e033b4276676f1",
+    "in_game/common/building_types/production_paper.txt": "fc2ec552fec0e92df5792ae26d5c9db3947a3d9e83ce362d8226fd488883af98",
+    "in_game/common/building_types/rural_buildings.txt": "c994025bacaf55bfbacb3726e92687e6b0e9cedcdddb868ae36dcc1a7bd40df2",
     "in_game/common/casus_belli/red_turban_rebellions.txt": "450aa0aeb18dd6bb7b05b6deea4431e6b32c06b6e5123ae7473b01860bc43239",
     "in_game/common/country_description_categories/hbe_profiles.txt": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00",
     "in_game/common/country_interactions/rtr_demand_annexation.txt": "cb294df9c12d30f3016ca9c40735200052bc5dd344e9089230e4e7299f23e6c2",
     "in_game/common/customizable_localization/country_history.txt": "a18cce46abee7c833798aab1e24921e8b043eb864941837e9d05b8cf03918310",
     "in_game/common/decisions/hbe_banquet_decisions.txt": "3aec7e9fc84d2fd845eb94a54cb53c999785cafd43cad4fdf3baa85c065b48ea",
-    "in_game/common/decisions/hbe_civic_decisions.txt": "01b42edac2c26ea26361d208f1eccd01c03ba5a7e5ba902234d0ccf7ce404cee",
+    "in_game/common/decisions/hbe_civic_decisions.txt": "0559a094e2f3ee6ef2bfc10994137b95a8a949ec6446cafe4eb78eb30e40b40b",
     "in_game/common/decisions/hbe_decisions.txt": "fad46045b7ba91cd29011c39d60cf808bc3bbad4dceb2ad62a83c76170d599bd",
     "in_game/common/decisions/hbe_formable_decisions.txt": "576616f47ef8d4b6bca286400def645c7f17fba60e52cb151f33b02bcfd13f57",
-    "in_game/common/estate_privileges/hbe_civic_privileges.txt": "ee967323f1a7d06db5682cb3b855e97263e9a501ea5801d7e1c3b01a2fa3818d",
+    "in_game/common/estate_privileges/hbe_civic_privileges.txt": "7e7d6b7ea64d51b99f548e21829437e7005cebefde68debb2ae618925ef3b76f",
     "in_game/common/formable_countries/hbe_native_formables.txt": "0b91c330d242cd1bbee8879d0c5480a72e88a6775ece1c7aacd2db3ef62ce503",
     "in_game/common/generic_actions/hbe_feast_actions.txt": "54565feb164f1c30246279b82e01cb01354c6ae9296b0af83933b6bde24c5df0",
     "in_game/common/generic_actions/red_turban_rebellions.txt": "7d14bd4ec2fb421c9646cb7bb6f3c77abd8f581887015857ec4730e7d1ecfa96",
     "in_game/common/goods/hbe_special_goods.txt": "054b8518dfa3cb3246bff57cf7598dbca0ab7a17a7d8ce928293bde4aaf30bd9",
+    "in_game/common/goods_demand/hbe_age2_military.txt": "22488f09f96764644ab0c2a223b0b0c1e3f64c8f0eb7006ba6279f82dfa2a7ce",
     "in_game/common/goods_demand/hbe_civic_construction.txt": "01d69e30adc1bc40500adbfbbe43567219ec8f45c6ce150ae854f85f9f1018e1",
     "in_game/common/goods_demand/hbe_unit_maintenance.txt": "58b98fa1f9c2b532330442801cd70eff46c0eeec7137e592aa718ebc8ee56dc1",
     "in_game/common/goods_demand/pop_demands.txt": "8efe07e9940d6db51da49c5e9ec27e6dbe3f15523f60c1fe3c92af0ccd4bfffb",
@@ -6668,6 +6713,7 @@
     "in_game/common/on_action/hbe_story_on_actions.txt": "842bed3f627f2ba04c19fa7053bfdcc4c6d38129dcb17eba27a26f27a96c2990",
     "in_game/common/on_action/hbe_technology_on_actions.txt": "643f65190f2c82c95da033b31f4e3cf2d2f32f826925728d4148438b87e7ac7b",
     "in_game/common/parliament_issues/hbe_civic_issues.txt": "d956ff1278417ca38f2eaad596e5886799f100e79313dbd5242d1a1b0195e7ef",
+    "in_game/common/production_methods/hbe_industry_transmission.txt": "be600a41c8ae4cc5416d344c1671a3a89f8c991ee88f0181e58cbd40cf8a6ea9",
     "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
     "in_game/common/scripted_effects/hbe_ai_effects.txt": "95d8ba5a7776ac0c8d88a0ea5fe94c9575285ac3e0e73d3568020a257237adef",
     "in_game/common/scripted_effects/hbe_annex_industry_effects.txt": "061105fd4e15c1d2af04b6798125a7d0931953253517d8e425a4b24d466c9665",
@@ -6678,7 +6724,7 @@
     "in_game/common/scripted_effects/hbe_effects.txt": "35aed53faad9e2f83991f13607297f5e682057e5ea6f5cfa34677d4f4686a1bd",
     "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "79512cedb773f91ac133fada19748de391b4bc53243073907da38eed6728b6b7",
     "in_game/common/scripted_effects/hbe_formation_effects.txt": "b0fdf0bef68adbb371d8a97efdf27b956d8625da61c7e7e4d163a9fb47e37e2e",
-    "in_game/common/scripted_effects/hbe_guest_license_effects.txt": "39efe7565c15390e19115ecc25bf6c16636cc07c68986cb464aeb8b7c5df3aae",
+    "in_game/common/scripted_effects/hbe_guest_license_effects.txt": "5db8c1c4951708aa4a09c6e9f7d7a5a61503a51b3a0949652ce3e26ca0f22734",
     "in_game/common/scripted_effects/hbe_native_content_effects.txt": "914673a3c93ea1a9a8dbd2e0fa4c4832b593b4a3426b9fe7fef2261152dea465",
     "in_game/common/scripted_effects/hbe_observer_sync.txt": "d6ae1135e77eb229de9ffbf5f8817a1b2a3bc0ec8d29dd4c0f66e5cfa859d7d3",
     "in_game/common/scripted_effects/hbe_opening_armistice_effects.txt": "8fe943e152ab53b4384ae0366b3c48f5f8776ee0055a9c1fb3853d67cf0f1e5b",
@@ -6690,13 +6736,16 @@
     "in_game/common/scripted_geography/hbe_formable_geography.txt": "726465649dda8dfd1918a65d9aa0adcfe0fa5c68b486ff7666460521bd3c9e29",
     "in_game/common/scripted_geography/hbe_geography.txt": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f",
     "in_game/common/scripted_triggers/hbe_advance_gates.txt": "8db9b9127a7e4b27bf25a68defacc66d5aef88a020fde55ce2b4e5fcb676d479",
+    "in_game/common/scripted_triggers/hbe_age2_military.txt": "55769d57d64a3d494621b1e234e0be22df4827dc755717c4d01b70dcc44b8b68",
     "in_game/common/scripted_triggers/hbe_civic_triggers.txt": "5069ae83fd819bcfb3e1e5d70584d0955b51ece64b9c8c9302115d3ee4cdacc0",
     "in_game/common/scripted_triggers/hbe_common_defense.txt": "7419bb0527dc40daf5d162904a55f69f386920799f8446b5e5bdd3058ccfe2d9",
+    "in_game/common/scripted_triggers/hbe_early_research.txt": "3be1eb0999751037a6746b7d7ef36d7a7fb79bfb21839f6680edd5d65e7950d4",
     "in_game/common/scripted_triggers/hbe_formation_triggers.txt": "7ae2c51765578303cfca95c1acd678a0ee7e4e6c4f82401cf2334cec1bc7386c",
     "in_game/common/scripted_triggers/hbe_industry_patch_triggers.txt": "b808dce200deb78ae616e9dd71bfc55995a27f51b0d6a0832a57d42e9cbda951",
+    "in_game/common/scripted_triggers/hbe_industry_transmission.txt": "61b01906cc3080e7a5078d2fa351da630c7c8c4c0742113ca0f7aa62a873d1ca",
     "in_game/common/scripted_triggers/hbe_red_turban_actions.txt": "0734bd2d2fe7cd33d990b7346598aa2e2e7f0feaa7ed184e278f854522ad612b",
     "in_game/common/scripted_triggers/hbe_triggers.txt": "b77b27781734f67149dbdb048ea4c707a230956ea48614411bfe7980d9775fdc",
-    "in_game/common/script_values/hbe_civic_values.txt": "7f3943b96c3e6e6e8c1b042a612f8dc8eb2e7c493b7bb6c34d36e8c6eb488a53",
+    "in_game/common/script_values/hbe_civic_values.txt": "55b32aeb5a71b90c377c0feb3490e17a51f518dac8f7bdd4653922d248eb890b",
     "in_game/common/script_values/hbe_deep_balance_values.txt": "f37aac04c490da5e687c8f2413a2f36fcd15c7cfe9952b9154d28bcbf2bfa8c3",
     "in_game/common/script_values/hbe_diplomacy_restraint.txt": "1c7b932feb7ebae279914f06f78a9dd1c80f863c0446035bcab1a408376cbed7",
     "in_game/common/script_values/hbe_event_costs.txt": "b0cdf0048318d449086c2a66da70281af60d296981d34691fcb1d7e9ad0f5e4e",
@@ -6705,7 +6754,7 @@
     "in_game/common/script_values/hbe_red_turban_actions.txt": "c0fa491710797746e8d66cd754e12c3577ad95fdaf766e8bb32cc7081719bbcf",
     "in_game/common/situations/hbe_banquet.txt": "9112a9997192b856ad73b20019a4204ea92cdfd76f88e00a8a5b1f7d69c54e5b",
     "in_game/common/unit_families/hbe_civic_families.txt": "f8e12bc7de682e6ea04b077ab5debae329635fac5ad398c972fc6618ff2e42e7",
-    "in_game/common/unit_types/hbe_civic_units.txt": "8f990ebc3e74ceda6319bd3be9e0738038172fb06a958f9779de309c38127ec1",
+    "in_game/common/unit_types/hbe_civic_units.txt": "e592db382d59cf6ec34da3fe579e5ae35c35f5d0757f11ac0616919fb2c6f3c0",
     "in_game/gfx/images/hbe_civic_backgrounds.txt": "396f71786ff0dbcd9cc22c386f04258321bfc804c59a326e5b9897c40ed3975d",
     "in_game/gfx/images/hbe_egret_background.txt": "594cbb42aea5ca774c5437e5dafce3026ba1258ec7fe1f4a9c5e01eb6b49553b",
     "in_game/gfx/images/hbe_ending_backgrounds.txt": "051097ed519b3aaa5fe713c057f9f3cd77aa3e1927b563699ca7c74e9c932dda",
@@ -6720,9 +6769,9 @@
     "in_game/gfx/scenes/hbe_progress_scenes.txt": "b130a1500b18e0045126e80638fc2270f70cb4cb368c3c8eb90e5a783648794e",
     "in_game/gfx/scenes/hbe_story_scenes.txt": "57cb79799138c6c93586bd8cd82b4fe3c303d3308a0f141516e8e0883ad83fb6",
     "in_game/gfx/scenes/hbe_v021_scenes.txt": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856",
-    "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "00205abfc446974e38b49ad84742bb1137cc0e850d84d7cb9219e0e930f290c6",
+    "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "859b2837c462aa9106ec671926776021f246dfc0eb2af481ed8b5783325d81d7",
     "in_game/gui/panels/situation/hbe_banquet.gui": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
-    "in_game/setup/countries/hbe_countries.txt": "c0600f865c09228e06b5a34424a1e4b94a8a8244f7cd3420e5dcdd4ee71a9ad9",
+    "in_game/setup/countries/hbe_countries.txt": "71d5a2e1daf934027a07d77024a6d1ddfa00154b77a33328acd5285becdc4339",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
     "loading_screen/gfx/illustrations/database/hbe_egret_illustration.txt": "499f5a389932385c9dc2f043bbfa0406a2825e7c60f2537bffbb94a7d92394b6",
     "loading_screen/gfx/illustrations/database/hbe_ending_illustrations.txt": "668020af36e3e7e4ae5d37694482472c98e9f5eaf0a223766d8269e659e51497",
@@ -6736,8 +6785,10 @@
     "main_menu/gui/messagetypes.txt": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c",
     "main_menu/common/game_concepts/hbe_concepts.txt": "ded83a83b18ad141ee2c1fac953bbb813a02d06b44e246f15ba6fe3c51a341b5",
     "main_menu/common/game_concepts/hbe_history_v031.txt": "adfdca893c18a11476960817df0a0b9dc2494e69b6076a0c3f05ee3351199f0e",
+    "main_menu/common/modifier_icons/hbe_early_research.txt": "f8fcbef9fb58ec582665797be955f53ae2ddd9d94083caadb6928758656e78d7",
     "main_menu/common/modifier_icons/hbe_goods_icons.txt": "74ef5846bf8eca93a8ca4e24ef9bc30eb54e16467cdb99b1d45084bb8fd3324e",
     "main_menu/common/modifier_icons/hbe_icons.txt": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978",
+    "main_menu/common/modifier_type_definitions/hbe_early_research.txt": "005065e6e3129b498bece829fae6610559073992273ebb7756c8beda10d9cdc1",
     "main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt": "1bbdb431adcbcddb3838e31af4217fa9144b1f6b326f02a6545d73c352653e46",
     "main_menu/common/modifier_type_definitions/hbe_observer_goods_types.txt": "e3c299f2142205b72accb510684c9795db686df24689bdfaa8fc630ec8726f38",
     "main_menu/common/modifier_type_definitions/hbe_types.txt": "3cb6310b5f2afb958ad0d0f8f6605ae52bcb2e68db61784d7cedcbc8be5ec511",
@@ -6811,6 +6862,13 @@
     "main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_2.dds": "e428941d8c91ad16ed9b2ffa0567856733234d1302b6d753247213b621b68489",
     "main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_1.dds": "f6104922aec1f02f2a765592b69c904af76e7462eddb11452db2d8b0ad20956b",
     "main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_2.dds": "f3ffbd975e5e0308efaedcf75d5a22ff849b66431b3698f09021002ce75be779",
+    "main_menu/gfx/interface/advance/hbe_military_central_hills.dds": "dfb58822b15c80b7f671b7506000d235c6408d729602674923ebe5d188b643cd",
+    "main_menu/gfx/interface/advance/hbe_military_chengdu_plain.dds": "a268e286ca66b3d39020595717423c839e1b04ca032779cf8282eee56a381857",
+    "main_menu/gfx/interface/advance/hbe_military_eastern_river.dds": "961c655683d5192bd172f0bac2df9e83674417449b9b0b71828cb24586f532b3",
+    "main_menu/gfx/interface/advance/hbe_military_northern_shudao.dds": "074bf8d48b70d7b9461ced4feb0acf54f0edbe0cea1b707ce664712061450193",
+    "main_menu/gfx/interface/advance/hbe_military_southern_salt_wine.dds": "e429b41dfd2162423d4ac28f3df367a7f6b9fe9c6d1c8744e30db704627c3402",
+    "main_menu/gfx/interface/advance/hbe_military_southwestern_valleys.dds": "4b20c23bd86da581a385bb0a752c66d7c0dce4225d07a5e25408852bb30bd76e",
+    "main_menu/gfx/interface/advance/hbe_military_western_tea_horse.dds": "2acef7b58315b547c11aa5c0df6a60226c4e9a5ed13a397a2aea56431a57832e",
     "main_menu/gfx/interface/advance/hbe_tech_central_hills_1.dds": "cf7c1f060663ced487b407f6915ea5064cb72dda66dfed04ebab6a78a792effe",
     "main_menu/gfx/interface/advance/hbe_tech_central_hills_2.dds": "ffc4e1ba11821e6c6952b93ab3517c3cffafa3526149ec5accf12ebedc29b572",
     "main_menu/gfx/interface/advance/hbe_tech_central_hills_3.dds": "28e5fd39e3f2012648806e30229ddc5525f0dcf6877a8eaca66c644eff8ec73d",
@@ -6876,6 +6934,10 @@
     "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_6.dds": "90e91569bed0cb93e131599f546b379792f36ec7b1f558c9f751da1ce4a2a7ed",
     "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_7.dds": "92044e416602676ad072f876c59c0e4c8e37ce864d4a77a6c59218dfc2d168ed",
     "main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_8.dds": "5fa32fd6d973cf4af64943488a46b4d064bf49ce5832387e0bfc02efd4113db0",
+    "main_menu/gfx/interface/advance/hbe_transmission_border_tea.dds": "67628d7a27a3b441e9501c8ac4befa6e2710d30c0dd32ca9df0b631c52f12872",
+    "main_menu/gfx/interface/advance/hbe_transmission_embroidery.dds": "f656a72c254075c7ec6d4ddbd6b67f5d57798323833f36d939504f1dfdd7f0f3",
+    "main_menu/gfx/interface/advance/hbe_transmission_paper.dds": "d92ed60b5d639e48789049843a9028274552179694c5952aceb6d7f27e537058",
+    "main_menu/gfx/interface/advance/hbe_transmission_well_salt.dds": "df18e66ce19dbabbf2fe8ea7feca179d7f3b6560cb5af0fdb64962dcece9488a",
     "main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds": "a710275d9f90a010d2ea002c9e131f1cfb94287335b2dc370d7e4ddc01ff2989",
     "main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds": "edac5dfe6e18ce0707089f14257181739e8ac0925fe9fa1d3452c15144f4613f",
     "main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds": "a4ccab12eda9156f7c37de2a1807c6167f4f79d955af5e11edd522213b407426",
@@ -7014,6 +7076,13 @@
     "main_menu/gfx/interface/hbe/story_events/settlement.dds": "f8ea1e46b2cc735069f03182d56d5532d9e0862450527f6f523fac3c0bad0f43",
     "main_menu/gfx/interface/hbe/story_events/terraces.dds": "99636c9baad2ca5c4ff865e3e5554e7654750f0afebfb0638e9dc994b1685c8a",
     "main_menu/gfx/interface/hbe/story_events/veterinary.dds": "ccfb99a6ab3daf011564765f103f7654707d836272c2df2118dd783b6790515d",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_central_hills.dds": "dfb58822b15c80b7f671b7506000d235c6408d729602674923ebe5d188b643cd",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_chengdu_plain.dds": "a268e286ca66b3d39020595717423c839e1b04ca032779cf8282eee56a381857",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_eastern_river.dds": "961c655683d5192bd172f0bac2df9e83674417449b9b0b71828cb24586f532b3",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_northern_shudao.dds": "074bf8d48b70d7b9461ced4feb0acf54f0edbe0cea1b707ce664712061450193",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_southern_salt_wine.dds": "e429b41dfd2162423d4ac28f3df367a7f6b9fe9c6d1c8744e30db704627c3402",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_southwestern_valleys.dds": "4b20c23bd86da581a385bb0a752c66d7c0dce4225d07a5e25408852bb30bd76e",
+    "main_menu/gfx/interface/hbe/technology/hbe_military_western_tea_horse.dds": "2acef7b58315b547c11aa5c0df6a60226c4e9a5ed13a397a2aea56431a57832e",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds": "cf7c1f060663ced487b407f6915ea5064cb72dda66dfed04ebab6a78a792effe",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds": "ffc4e1ba11821e6c6952b93ab3517c3cffafa3526149ec5accf12ebedc29b572",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds": "28e5fd39e3f2012648806e30229ddc5525f0dcf6877a8eaca66c644eff8ec73d",
@@ -7079,6 +7148,10 @@
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds": "90e91569bed0cb93e131599f546b379792f36ec7b1f558c9f751da1ce4a2a7ed",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds": "92044e416602676ad072f876c59c0e4c8e37ce864d4a77a6c59218dfc2d168ed",
     "main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds": "5fa32fd6d973cf4af64943488a46b4d064bf49ce5832387e0bfc02efd4113db0",
+    "main_menu/gfx/interface/hbe/technology/hbe_transmission_border_tea.dds": "67628d7a27a3b441e9501c8ac4befa6e2710d30c0dd32ca9df0b631c52f12872",
+    "main_menu/gfx/interface/hbe/technology/hbe_transmission_embroidery.dds": "f656a72c254075c7ec6d4ddbd6b67f5d57798323833f36d939504f1dfdd7f0f3",
+    "main_menu/gfx/interface/hbe/technology/hbe_transmission_paper.dds": "d92ed60b5d639e48789049843a9028274552179694c5952aceb6d7f27e537058",
+    "main_menu/gfx/interface/hbe/technology/hbe_transmission_well_salt.dds": "df18e66ce19dbabbf2fe8ea7feca179d7f3b6560cb5af0fdb64962dcece9488a",
     "main_menu/gfx/interface/hbe/civic/decisions/hbe_audit.dds": "c39b0d18811028a62f1df01d6e864ae88d1b9d71217f94ddb4d99c6c3e08ed15",
     "main_menu/gfx/interface/hbe/civic/decisions/hbe_burden.dds": "1c83f989971801a02b45d36a8871c24d3519c716cf99188710bb1028d5ac5d18",
     "main_menu/gfx/interface/hbe/civic/decisions/hbe_civil_ledger.dds": "0d4c53b1877c7a087cd3824a7a39b506a76c26370410bd26dd3083f33ffbc6e7",
@@ -7193,6 +7266,7 @@
     "main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds": "19f89dace0e9a188647d9713d4b013d010629d82e1d58fe50943e654bf9a6b5e",
     "main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_positive.dds": "87f5db6f76b7d636e2842d834c96543f291cbeee8e9641e5d9469c8c4279f3b2",
     "main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_used_for_minting.dds": "a3ff9ca3224fdd4d9d4083a6f4d6783f60db06e641fff42357686cd3da12d9a2",
+    "main_menu/gfx/interface/icons/modifier_types/hbe_can_cross_circle_industry.dds": "0191aeb72f25c27160e361987cd203338d0f1133d8ef5a0fb83ffc8b2111283d",
     "main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_impacts_inflation.dds": "92b64ef4c42e572c9d36900c15c7aac6db6d54c2b65b50001ecebcd3c961bd81",
     "main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds": "783ef76b64711f91a2f5f7007a8690a4976bc9260de7a322cbe5ef743d76d73d",
     "main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_positive.dds": "622bc52d45fdfc5d9b03d192766462fa96a9f8f459d811e857f3b07f1ba75e36",
@@ -7291,15 +7365,18 @@
     "main_menu/gui/shared/hbe_civic_font_icons.gui": "1354d7f8070b164590c8e05c052fbe5bd29c63b510b0c30733713339dcbfab77",
     "main_menu/gui/shared/hbe_font_icons.gui": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374",
     "main_menu/localization/english/hbe_advance_gates_l_english.yml": "f3269dffe49e59c959821aa3e74f725fa199fa0231ad11d970777af2cc99b902",
+    "main_menu/localization/english/hbe_age2_military_l_english.yml": "7979af9e4b5a2e7e609f452701d19e9c488ac569d226b902711c0fed5bf11094",
     "main_menu/localization/english/hbe_annex_industry_l_english.yml": "1d35870b3d1b600146156070210f1447198e84cb9024b8af5aedb12e6613cab0",
     "main_menu/localization/english/hbe_capital_recruitment_l_english.yml": "23f7ce675e81273d11cc046ea25aaaafc09518a4259fed7f48f236c7a5a6a5c1",
     "main_menu/localization/english/hbe_common_defense_l_english.yml": "b66a3d5996f975f21c81a03248386c2b782a7be07d72182130f11ef2f33a8500",
     "main_menu/localization/english/hbe_deep_balance_l_english.yml": "5069450c803a882bc203da8d96d31eb2b7f2885aea1a4f0deffb4aab4b920f23",
+    "main_menu/localization/english/hbe_early_research_l_english.yml": "6c2a3e0b5e991d6962fb3fb473e3d5b7f0fc22511fff4419b6f4e8a467faa6ee",
     "main_menu/localization/english/hbe_ending_l_english.yml": "eba3a83f64d5a96aae8f08cc8f7324b4a1059f4d0e152c94918e816f88eb2c93",
     "main_menu/localization/english/hbe_formables_l_english.yml": "55ee7c7b7c4f283ede0fcb6c9371e5d5383d20887520097774f2b13a0b13e186",
     "main_menu/localization/english/hbe_history_v031_l_english.yml": "ee58fb1b39a3c179cd199afedbd856c92e7b4cbe66b1e44b6c8f648fed51758f",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
-    "main_menu/localization/english/hbe_l_english.yml": "e57856b8343f71d0de8df03abe96c7020f8db8c350764dc35cecac6dc209d382",
+    "main_menu/localization/english/hbe_industry_transmission_l_english.yml": "9166dbb236694b28579a4cf459f78f923b6a7ae64d7ebd45d07f7066c9d796c9",
+    "main_menu/localization/english/hbe_l_english.yml": "51507f42955c609c26fbfef8ba6012412d65ece40c758e5b4baa9aea5b0d9810",
     "main_menu/localization/english/hbe_observer_hotfix_l_english.yml": "72fce30a3cda30a7d8fc33d55e7299116d289d4e7c4f535f4e011b1c6c2308ef",
     "main_menu/localization/english/hbe_opening_armistice_l_english.yml": "6e0f9e356b92bbcffd8545552d9d9a11352d5c6c2b5d3b65cf5bcf83d51178a2",
     "main_menu/localization/english/hbe_open_diplomacy_l_english.yml": "5efb750dac13dacc0a245ad08e5dbd0d1a947ec9179b950a0937fd2c55c5f461",
@@ -7307,16 +7384,20 @@
     "main_menu/localization/english/hbe_red_turban_actions_l_english.yml": "51c36b7bf44ee22cac15ad5e3922b5bd5aa67238a3ba707bedc9d2998ca10172",
     "main_menu/localization/english/hbe_story_l_english.yml": "291181c619130521dbd634a93cf85a0c7b83135f0db6dbcb5bf223594958f549",
     "main_menu/localization/english/hbe_unit_maintenance_l_english.yml": "0a8bea12daa2dbc825bce9561add5a71c11a0e970e65fd4c5d91ecfd42b46eb9",
+    "main_menu/localization/english/hbe_western_opening_l_english.yml": "a7c8c144b33fe3373b56e8dcd23619dd403b6dbe82822582ee4eef30f6ed7075",
     "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml": "07e87fafc60103f5e72e6e0874853f44a81415f108e44e8f7aab5244363eb251",
+    "main_menu/localization/simp_chinese/hbe_age2_military_l_simp_chinese.yml": "6709858b8584c5400096d22b287ca2c74699c2c1692e8a3e923d61e0d587ac75",
     "main_menu/localization/simp_chinese/hbe_annex_industry_l_simp_chinese.yml": "dc19aeaee00af10802dd9309e441ff434f33684991b0b16f1ad0afa0d35999b6",
     "main_menu/localization/simp_chinese/hbe_capital_recruitment_l_simp_chinese.yml": "734090b1d02e2d0a01aa4c7ccf3bce5fa7b84f77f591407fb297c73f7aba2a8a",
     "main_menu/localization/simp_chinese/hbe_common_defense_l_simp_chinese.yml": "69de53af830ed6228fca247c4807b4170e2ed0e1d66847778ba54df6013da9f6",
     "main_menu/localization/simp_chinese/hbe_deep_balance_l_simp_chinese.yml": "ebd7e78fc90635c811d7feeeffadb81acd515f2c9a554afdb972a314f8f58dfc",
+    "main_menu/localization/simp_chinese/hbe_early_research_l_simp_chinese.yml": "f846cac09c7effb769aeb7eaeeab8013d6df3fd3906cd9340416b44573838804",
     "main_menu/localization/simp_chinese/hbe_ending_l_simp_chinese.yml": "8f0000223bd13a531725a7ce61a8d0ad0988bb5ab8de42f83cd6203e896ac186",
     "main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml": "a13ee827d96e35261a78297d24d075c84bea425864211f7617773ecc1a4c55e9",
     "main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml": "337de3e1d7be32f517b21dd5af5b2499949f22ec2d36d005050b82aeb3db2265",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "8ac32cb2cda1454149db95d5e181e3bcba21b0493cf5356a31cee446d9e00025",
+    "main_menu/localization/simp_chinese/hbe_industry_transmission_l_simp_chinese.yml": "0b8cafc51c410b8679221ea25ff9e19b9e5d7aba1abfbaed09291d2efec8f9cd",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "cd651a89f0f5774e25f5441db57d6bc3472b763a62f21c4950591de33127520e",
     "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml": "91fefc537d19a0a0a9ec5d31ba7c30ec5e4066ed80da970cfb20f223b0c323e7",
     "main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml": "6cc1363cf4b41e5f7d428d4725dc17e68a2fe71bef885046d731efa3232dac13",
     "main_menu/localization/simp_chinese/hbe_open_diplomacy_l_simp_chinese.yml": "1eae13448494e6d744e1caac24666bf025b6a47b09021a9bf3fb6694e7dfce11",
@@ -7324,16 +7405,20 @@
     "main_menu/localization/simp_chinese/hbe_red_turban_actions_l_simp_chinese.yml": "61ed2795e5411d57eb47996dae538aa8c9915d06dbdb8f90f63df12d1eda2bbd",
     "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml": "7c58ac0bdc09e3a6d4a5b8cda63ec60f91b7694b5a303ddbfdce99fa2acccb33",
     "main_menu/localization/simp_chinese/hbe_unit_maintenance_l_simp_chinese.yml": "72bed647f5496aa69a5c3123a1c6daffdcb06c753279a4321ddf7e25657a2691",
+    "main_menu/localization/simp_chinese/hbe_western_opening_l_simp_chinese.yml": "471d869a7bf5cf50c88b355661ae8e982f828237ec41e7bed464426bd8072e35",
+    "main_menu/localization/english/replace/hbe_native_country_names_l_english.yml": "257fb15721ff0d3297527d04a61523fb02b9dd59fd9e4c1f8003a31246a85aaa",
     "main_menu/localization/english/replace/hbe_opening_truce_ui_l_english.yml": "41bf19d8be9bb572e1de6149c6ff77a5a30e8a84bdaceab472250be19f2ea82f",
+    "main_menu/localization/simp_chinese/replace/hbe_native_country_names_l_simp_chinese.yml": "c36f059343a30b956d1469c45582093e3e5517f4fb30cf8ba3f289957530d2e5",
     "main_menu/localization/simp_chinese/replace/hbe_opening_truce_ui_l_simp_chinese.yml": "65e55451a7f7bf90c75a6a7d09196ed175dfd9a2436c1fa3bbbfdcbb59371820",
     "main_menu/setup/1337/04_hbe_dynasties.txt": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7",
-    "main_menu/setup/1337/05_hbe_characters.txt": "c6d49f5d9f423458308bd495cd12a1a5a501eaf3411c1298814b459db2c8dd84",
-    "main_menu/setup/1337/06_pops.txt": "2c024cdfd9be6d6526605478480f8d97cec4d8be838f00bf13acfb26e895f9a6",
-    "main_menu/setup/1337/10_countries.txt": "4b519e685bb4456ba6690a38c800ea8f86b49328a2e3ed450ecb665dd5471f11",
+    "main_menu/setup/1337/05_hbe_characters.txt": "bd304483989acf5b981ab85f9633e4816de387045b7f62ede8c253a75131313d",
+    "main_menu/setup/1337/06_pops.txt": "fca3e9bec4a8cd69010024025731d4b4d9393936f80859db3daa991c61987b79",
+    "main_menu/setup/1337/10_countries.txt": "bd9624300e25e0241dd54973f1dec1054ad221f464a2ef103641c41053eff89c",
     "main_menu/setup/1337/12_diplomacy.txt": "f0737611168b2c89b54581d174dc6da795973cf6fe4b0e347e5e403c2547d1bb",
+    "main_menu/setup/1337/97_hbe_western_opening.txt": "aef45bb73ee3047b3211aef6a8b59410d1073daeab9a85e20b989c89147a1af3",
     "main_menu/setup/1337/98_hbe_yuan_opinions.txt": "1e7a9b2bf55983073323336f18f6a729318964dc164ffba04d232d305501098a",
     "main_menu/setup/1337/99_hbe_organizations.txt": "7dc4cfe06266a5b4a6478c8f648df47f2c4ca7261f8621fff880688949b0e66c",
-    "main_menu/setup/templates/hbe_monarchy.txt": "0acbd5a337b7097dc9a47bdbd6af163b1d0f07967821db62ec1a48cd1d444432"
+    "main_menu/setup/templates/hbe_monarchy.txt": "f914547b0478794363cd3a81a24cfd1198c77e970d5ace85ecd1fe39ec16ffde"
   },
   "workshop_cover": {
     "source": "assets/workshop/cover_v020.png",
@@ -7351,21 +7436,19 @@
         "key": "hbe_tech_common_1",
         "name": "乡约与账簿",
         "modifiers": {
-          "global_monthly_literacy": 0.02,
-          "global_monthly_control": 0.04
+          "global_monthly_control": 0.01
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+        "link": "开放本府府议；民役政策与军制分别研究。"
       },
       {
         "key": "hbe_tech_common_2",
         "name": "统一度量",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.12,
-          "merchant_maintenance_efficiency": 0.08
+          "global_merchant_capacity_modifier": 0.08
         },
         "unlocks": [],
-        "link": "整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
+        "link": "开放乡社见证权；整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
       },
       {
         "key": "hbe_tech_common_3",
@@ -7390,11 +7473,10 @@
         "key": "hbe_tech_common_5",
         "name": "行会传习",
         "modifiers": {
-          "global_production_efficiency": 0.08,
-          "global_burghers_max_literacy": 8.0
+          "global_burghers_max_literacy": 4
         },
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
+        "link": "开放行会雇价保任；仍须采用行会雇办。"
       },
       {
         "key": "hbe_tech_common_6",
@@ -7431,8 +7513,7 @@
         "key": "hbe_tech_chengdu_plain_1",
         "name": "渠田协作",
         "modifiers": {
-          "global_monthly_food_modifier": 0.12,
-          "global_rice_output_modifier": 0.12
+          "global_monthly_food_modifier": 0.05
         },
         "unlocks": [],
         "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -7441,12 +7522,11 @@
         "key": "hbe_tech_chengdu_plain_2",
         "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
         "modifiers": {
-          "global_fine_cloth_output_modifier": 0.2,
-          "global_silk_output_modifier": 0.12,
-          "global_hbe_shu_embroidery_output_modifier": 0.2
+          "global_hbe_shu_embroidery_output_modifier": 0.1
         },
         "unlocks": [
-          "hbe_chengdu_plain_basic_production"
+          "hbe_chengdu_plain_basic_production",
+          "hbe_chengdu_plain_ordinary_production"
         ],
         "link": "取得本圈成长验收的课题资格。\n解锁机构生产方式：锦坊试织。"
       },
@@ -7467,10 +7547,7 @@
           "global_monthly_food_modifier": 0.16,
           "global_rgo_build_time": -0.16
         },
-        "unlocks": [
-          "hbe_chengdu_plain_advanced_production",
-          "hbe_chengdu_plain_paper_production"
-        ],
+        "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：锦坊绣作。\n解锁机构生产方式：蜀纸描样。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。"
       },
       {
@@ -7518,11 +7595,11 @@
         "key": "hbe_tech_southern_salt_wine_1",
         "name": "井灶公账",
         "modifiers": {
-          "global_salt_output_modifier": 0.16,
-          "burghers_estate_target_satisfaction": 0.048
+          "global_hbe_well_salt_output_modifier": 0.1
         },
         "unlocks": [
-          "hbe_southern_salt_wine_basic_production"
+          "hbe_southern_salt_wine_basic_production",
+          "hbe_southern_salt_wine_ordinary_production"
         ],
         "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：井灶汲卤。"
       },
@@ -7530,8 +7607,7 @@
         "key": "hbe_tech_southern_salt_wine_2",
         "name": "盐酒作坊协作",
         "modifiers": {
-          "global_liquor_output_modifier": 0.2,
-          "global_pottery_output_modifier": 0.12
+          "global_liquor_output_modifier": 0.1
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7544,9 +7620,7 @@
           "global_tools_output_modifier": 0.12,
           "global_hbe_well_salt_output_modifier": 0.24
         },
-        "unlocks": [
-          "hbe_southern_salt_wine_advanced_production"
-        ],
+        "unlocks": [],
         "link": "解锁机构生产方式：井灶精煎。"
       },
       {
@@ -7604,8 +7678,7 @@
         "key": "hbe_tech_eastern_river_1",
         "name": "码头转运",
         "modifiers": {
-          "global_merchant_capacity_modifier": 0.16,
-          "merchant_maintenance_efficiency": 0.08
+          "global_merchant_capacity_modifier": 0.08
         },
         "unlocks": [],
         "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -7614,8 +7687,7 @@
         "key": "hbe_tech_eastern_river_2",
         "name": "纤夫船帮",
         "modifiers": {
-          "global_naval_supplies_output_modifier": 0.2,
-          "ship_build_speed": 0.16
+          "global_naval_supplies_output_modifier": 0.1
         },
         "unlocks": [
           "hbe_eastern_river_basic_production"
@@ -7698,8 +7770,8 @@
         "key": "hbe_tech_northern_shudao_2",
         "name": "驿堡联络",
         "modifiers": {
-          "global_supply_limit_modifier": 0.16,
-          "army_maintenance_efficiency": 0.08
+          "merchant_maintenance_efficiency": 0.05,
+          "global_road_building_time": -0.05
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7742,7 +7814,8 @@
           "global_monthly_literacy": 0.02
         },
         "unlocks": [
-          "hbe_northern_shudao_basic_production"
+          "hbe_northern_shudao_basic_production",
+          "hbe_northern_shudao_ordinary_production"
         ],
         "link": "解锁机构生产方式：关驿抄券。"
       },
@@ -7754,9 +7827,7 @@
           "diplomatic_capacity_modifier": 0.16,
           "global_hbe_shu_paper_output_modifier": 0.2
         },
-        "unlocks": [
-          "hbe_northern_shudao_advanced_production"
-        ],
+        "unlocks": [],
         "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：蜀纸精抄。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
       },
       {
@@ -7773,18 +7844,17 @@
         "key": "hbe_tech_central_hills_1",
         "name": "坡田水塘",
         "modifiers": {
-          "global_monthly_food_modifier": 0.12,
-          "global_max_rgo_size_modifier_in_rural": 0.12
+          "global_monthly_food_modifier": 0.05
         },
         "unlocks": [],
-        "link": "解锁本圈三年地方事业与地方援助资格。"
+        "link": "开放分仓义廪基础建造与维护；农业生产方式仍由第二时代后续科技解锁。"
       },
       {
         "key": "hbe_tech_central_hills_2",
         "name": "市集公账",
         "modifiers": {
-          "stability_cost_efficiency": 0.12,
-          "global_monthly_control": 0.04
+          "global_merchant_capacity_modifier": 0.05,
+          "global_monthly_control": 0.01
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7857,11 +7927,11 @@
         "key": "hbe_tech_western_tea_horse_1",
         "name": "茶马集市",
         "modifiers": {
-          "global_tea_output_modifier": 0.2,
-          "global_merchant_capacity_modifier": 0.12
+          "global_hbe_border_tea_output_modifier": 0.1
         },
         "unlocks": [
-          "hbe_western_tea_horse_basic_production"
+          "hbe_western_tea_horse_basic_production",
+          "hbe_western_tea_horse_ordinary_production"
         ],
         "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：驮具修造。"
       },
@@ -7869,8 +7939,8 @@
         "key": "hbe_tech_western_tea_horse_2",
         "name": "山地向导",
         "modifiers": {
-          "global_supply_limit_modifier": 0.16,
-          "merchant_maintenance_efficiency": 0.12
+          "global_supply_limit_modifier": 0.05,
+          "merchant_maintenance_efficiency": 0.05
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -7883,10 +7953,7 @@
           "global_food_decay": -0.08,
           "global_hbe_border_tea_output_modifier": 0.2
         },
-        "unlocks": [
-          "hbe_western_tea_horse_advanced_production",
-          "hbe_western_tea_horse_paper_production"
-        ],
+        "unlocks": [],
         "link": "解锁机构生产方式：边茶压砖。\n解锁机构生产方式：蜀纸包茶。"
       },
       {
@@ -7944,8 +8011,7 @@
         "key": "hbe_tech_southwestern_valleys_1",
         "name": "山谷市集",
         "modifiers": {
-          "global_production_efficiency": 0.08,
-          "global_trade_center_power": 0.12
+          "global_trade_center_power": 0.08
         },
         "unlocks": [
           "hbe_southwestern_valleys_basic_production"
@@ -7956,8 +8022,8 @@
         "key": "hbe_tech_southwestern_valleys_2",
         "name": "地方盟约",
         "modifiers": {
-          "tribes_estate_target_satisfaction": 0.08,
-          "peasants_estate_target_satisfaction": 0.04
+          "tribes_estate_target_satisfaction": 0.03,
+          "peasants_estate_target_satisfaction": 0.02
         },
         "unlocks": [],
         "link": "取得本圈成长验收的课题资格。"
@@ -8027,12 +8093,9 @@
       {
         "key": "hbe_civic_common_1",
         "name": "府议与民役簿",
-        "modifiers": {
-          "stability_cost_efficiency": 0.12,
-          "global_estate_target_satisfaction": 0.04
-        },
+        "modifiers": {},
         "unlocks": [],
-        "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+        "link": "开放三种互斥的民役政策与减役补偿；驻防粮额与阶层特权分别开放。"
       },
       {
         "key": "hbe_civic_common_2",
@@ -8210,7 +8273,7 @@
           "paper": 0.04
         },
         "output": 1.2,
-        "advance": "hbe_tech_chengdu_plain_4"
+        "advance": "hbe_transmission_embroidery"
       },
       {
         "key": "hbe_chengdu_plain_paper_production",
@@ -8223,7 +8286,7 @@
           "hbe_shu_paper": 0.04
         },
         "output": 1.5,
-        "advance": "hbe_tech_chengdu_plain_4"
+        "advance": "hbe_transmission_embroidery"
       },
       {
         "key": "hbe_southern_salt_wine_basic_production",
@@ -8245,7 +8308,7 @@
           "tools": 0.15
         },
         "output": 1.8,
-        "advance": "hbe_tech_southern_salt_wine_3"
+        "advance": "hbe_transmission_well_salt"
       },
       {
         "key": "hbe_eastern_river_basic_production",
@@ -8290,7 +8353,7 @@
           "tools": 0.08
         },
         "output": 1.25,
-        "advance": "hbe_tech_northern_shudao_7"
+        "advance": "hbe_transmission_paper"
       },
       {
         "key": "hbe_central_hills_basic_production",
@@ -8335,7 +8398,7 @@
           "paper": 0.03
         },
         "output": 1.2,
-        "advance": "hbe_tech_western_tea_horse_3"
+        "advance": "hbe_transmission_border_tea"
       },
       {
         "key": "hbe_western_tea_horse_paper_production",
@@ -8347,7 +8410,7 @@
           "hbe_shu_paper": 0.03
         },
         "output": 1.5,
-        "advance": "hbe_tech_western_tea_horse_3"
+        "advance": "hbe_transmission_border_tea"
       },
       {
         "key": "hbe_southwestern_valleys_basic_production",
@@ -36370,21 +36433,22 @@
     "name": "叙州盐酒",
     "before_people": 182756,
     "after_people": 95000,
+    "delta_people": -87756,
     "locations": [
       {
         "location": "yibin",
         "before_k": 43.72,
-        "after_k": 22.726
+        "after_k": 22.727
       },
       {
         "location": "fushun",
         "before_k": 58.468,
-        "after_k": 30.392
+        "after_k": 30.393
       },
       {
         "location": "nanxi",
         "before_k": 14.43,
-        "after_k": 7.5
+        "after_k": 7.501
       },
       {
         "location": "qingfu",
@@ -36394,11 +36458,229 @@
       {
         "location": "xuanhua",
         "before_k": 44.041,
-        "after_k": 22.896
+        "after_k": 22.893
       }
     ],
+    "adjustments": [
+      {
+        "country": "GYE",
+        "name": "嘉绒",
+        "before_people": 50409,
+        "after_people": 40409,
+        "delta_people": -10000,
+        "locations": [
+          {
+            "location": "durgyeling",
+            "before_k": 16.724,
+            "after_k": 13.407
+          },
+          {
+            "location": "geshitsa",
+            "before_k": 9.303,
+            "after_k": 7.457
+          },
+          {
+            "location": "rahor",
+            "before_k": 14.379,
+            "after_k": 11.526
+          },
+          {
+            "location": "yungdrung",
+            "before_k": 10.003,
+            "after_k": 8.019
+          }
+        ]
+      },
+      {
+        "country": "CKL",
+        "name": "明正",
+        "before_people": 61208,
+        "after_people": 51208,
+        "delta_people": -10000,
+        "locations": [
+          {
+            "location": "dartsedo",
+            "before_k": 4.816,
+            "after_k": 4.029
+          },
+          {
+            "location": "lhagang",
+            "before_k": 13.815,
+            "after_k": 11.557
+          },
+          {
+            "location": "baurang",
+            "before_k": 8.214,
+            "after_k": 6.872
+          },
+          {
+            "location": "zhanggu",
+            "before_k": 11.721,
+            "after_k": 9.805
+          },
+          {
+            "location": "kazhi",
+            "before_k": 12.888,
+            "after_k": 10.784
+          },
+          {
+            "location": "dzogon",
+            "before_k": 9.754,
+            "after_k": 8.161
+          }
+        ]
+      },
+      {
+        "country": "BAB",
+        "name": "成都锦官",
+        "before_people": 86886,
+        "after_people": 106886,
+        "delta_people": 20000,
+        "locations": [
+          {
+            "location": "chengdu",
+            "before_k": 26.188,
+            "after_k": 32.216
+          },
+          {
+            "location": "pixian",
+            "before_k": 9.14,
+            "after_k": 11.244
+          },
+          {
+            "location": "shuangliu",
+            "before_k": 16.759,
+            "after_k": 20.617
+          },
+          {
+            "location": "xindu",
+            "before_k": 12.731,
+            "after_k": 15.661
+          },
+          {
+            "location": "jintang",
+            "before_k": 22.068,
+            "after_k": 27.148
+          }
+        ]
+      },
+      {
+        "country": "BAP",
+        "name": "叙州盐酒",
+        "before_people": 182756,
+        "after_people": 95000,
+        "delta_people": -87756,
+        "locations": [
+          {
+            "location": "yibin",
+            "before_k": 43.72,
+            "after_k": 22.727
+          },
+          {
+            "location": "fushun",
+            "before_k": 58.468,
+            "after_k": 30.393
+          },
+          {
+            "location": "nanxi",
+            "before_k": 14.43,
+            "after_k": 7.501
+          },
+          {
+            "location": "qingfu",
+            "before_k": 22.097,
+            "after_k": 11.486
+          },
+          {
+            "location": "xuanhua",
+            "before_k": 44.041,
+            "after_k": 22.893
+          }
+        ]
+      },
+      {
+        "country": "BBQ",
+        "name": "简州",
+        "before_people": 180108,
+        "after_people": 160108,
+        "delta_people": -20000,
+        "locations": [
+          {
+            "location": "jianzhou",
+            "before_k": 41.711,
+            "after_k": 37.08
+          },
+          {
+            "location": "zixian",
+            "before_k": 34.102,
+            "after_k": 30.316
+          },
+          {
+            "location": "neijiang",
+            "before_k": 31.385,
+            "after_k": 27.9
+          },
+          {
+            "location": "renshou",
+            "before_k": 31.899,
+            "after_k": 28.357
+          },
+          {
+            "location": "jingyan",
+            "before_k": 10.014,
+            "after_k": 8.901
+          },
+          {
+            "location": "ziyang_zizhong",
+            "before_k": 30.997,
+            "after_k": 27.554
+          }
+        ]
+      },
+      {
+        "country": "BBU",
+        "name": "雅州茶马",
+        "before_people": 21073,
+        "after_people": 31073,
+        "delta_people": 10000,
+        "locations": [
+          {
+            "location": "yandao",
+            "before_k": 5.181,
+            "after_k": 7.64
+          },
+          {
+            "location": "rongjing",
+            "before_k": 4.171,
+            "after_k": 6.15
+          },
+          {
+            "location": "diaomen",
+            "before_k": 1.156,
+            "after_k": 1.705
+          },
+          {
+            "location": "lushan_yazhou",
+            "before_k": 9.09,
+            "after_k": 13.403
+          },
+          {
+            "location": "mingshan",
+            "before_k": 1.475,
+            "after_k": 2.175
+          }
+        ]
+      }
+    ],
+    "requested_deltas_people": {
+      "BAB": 20000,
+      "BBU": 10000,
+      "CKL": -10000,
+      "GYE": -10000,
+      "BBQ": -20000
+    },
     "native_locations": 28570,
-    "method": "Bookmark setup data; no game-start population effect",
+    "method": "Bookmark setup data; proportional groups with largest-remainder person rounding; no game-start effect",
     "other_locations_unchanged": true
   },
   "reform_literacy_fix": {
@@ -36623,20 +36905,17 @@
       "hbe_civic_western_tea_horse_2",
       "hbe_civic_southwestern_valleys_1",
       "hbe_civic_southwestern_valleys_2",
-      "hbe_guest_license_chengdu_plain",
-      "hbe_guest_license_southern_salt_wine",
-      "hbe_guest_license_eastern_river",
-      "hbe_guest_license_northern_shudao",
-      "hbe_guest_license_central_hills",
-      "hbe_guest_license_western_tea_horse",
-      "hbe_guest_license_southwestern_valleys",
-      "hbe_inherited_industry_license_chengdu_plain",
-      "hbe_inherited_industry_license_southern_salt_wine",
-      "hbe_inherited_industry_license_eastern_river",
-      "hbe_inherited_industry_license_northern_shudao",
-      "hbe_inherited_industry_license_central_hills",
-      "hbe_inherited_industry_license_western_tea_horse",
-      "hbe_inherited_industry_license_southwestern_valleys"
+      "hbe_military_chengdu_plain",
+      "hbe_military_southern_salt_wine",
+      "hbe_military_eastern_river",
+      "hbe_military_northern_shudao",
+      "hbe_military_central_hills",
+      "hbe_military_western_tea_horse",
+      "hbe_military_southwestern_valleys",
+      "hbe_transmission_embroidery",
+      "hbe_transmission_well_salt",
+      "hbe_transmission_paper",
+      "hbe_transmission_border_tea"
     ],
     "flags": "Built-in imagegen; three transparent gold emblems; native heraldic flag composition"
   },
@@ -36972,7 +37251,7 @@
   },
   "unit_detail_art_v031": {
     "version": "0.3.2",
-    "units": 9,
+    "units": 14,
     "dimensions": [
       1080,
       440
@@ -37081,6 +37360,66 @@
         ],
         "sha256": "8bb370a82070704724a73f29ccee3dfe94f8953c7745f606c0aa8252723548ee",
         "portrait_frame": 1
+      },
+      {
+        "unit": "hbe_canal_crossbow_renaissance",
+        "source_cell": 0,
+        "texture": "main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "15a705354d5110766f825eeb45d9c3a5186417e4dceadb506fd58538b04f7d9e",
+        "portrait_frame": 1,
+        "artwork_from": "hbe_canal_crossbow"
+      },
+      {
+        "unit": "hbe_salt_guard_renaissance",
+        "source_cell": 1,
+        "texture": "main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "9b9d7a34fc9d72c37d74ac4911927da66dbdd02649e7db37a3c48bc8abcc7c78",
+        "portrait_frame": 1,
+        "artwork_from": "hbe_salt_guard"
+      },
+      {
+        "unit": "hbe_granary_militia_renaissance",
+        "source_cell": 4,
+        "texture": "main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "fea456e4788a7207a0351a4c5681fae54547206b248bf01e45e0314f4175c292",
+        "portrait_frame": 1,
+        "artwork_from": "hbe_granary_militia"
+      },
+      {
+        "unit": "hbe_tea_riders_renaissance",
+        "source_cell": 5,
+        "texture": "main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "efa8595c0305c2c233dc7de70fecdf9bf72b2a2f16beac14a3c9f50120ecf953",
+        "portrait_frame": 1,
+        "artwork_from": "hbe_tea_riders"
+      },
+      {
+        "unit": "hbe_valley_soldiers_renaissance",
+        "source_cell": 6,
+        "texture": "main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
+        "dimensions": [
+          1080,
+          440
+        ],
+        "sha256": "1c217826505653e75adfc4c031b01ad11258d2969ee181622f1f23262f14fa95",
+        "portrait_frame": 1,
+        "artwork_from": "hbe_valley_soldiers"
       }
     ],
     "native_gui_sha256": {
@@ -37280,5 +37619,908 @@
     },
     "forced_peace": false,
     "forced_wars": false
+  },
+  "industry_transmission": {
+    "advance_count": 4,
+    "carrier_count": 10,
+    "advances": [
+      "hbe_transmission_embroidery",
+      "hbe_transmission_well_salt",
+      "hbe_transmission_paper",
+      "hbe_transmission_border_tea"
+    ],
+    "active_methods": [
+      "hbe_transmission_embroidery_sidework",
+      "hbe_transmission_well_salt_sidework",
+      "hbe_transmission_paper_sidework",
+      "hbe_transmission_border_tea_sidework"
+    ],
+    "off_methods": [
+      "hbe_transmission_embroidery_off",
+      "hbe_transmission_well_salt_off",
+      "hbe_transmission_paper_off",
+      "hbe_transmission_border_tea_off"
+    ],
+    "age": "age_2_renaissance",
+    "parents": {
+      "hbe_transmission_embroidery": "renaissance_development",
+      "hbe_transmission_well_salt": "renaissance_development",
+      "hbe_transmission_paper": "hbe_tech_northern_shudao_6",
+      "hbe_transmission_border_tea": "renaissance_development"
+    },
+    "institution_caps": {
+      "hbe_brocade_school": {
+        "initial": 2,
+        "researched": 3,
+        "advance": "hbe_transmission_embroidery",
+        "includes_construction": true,
+        "levels_per_location": 1
+      },
+      "hbe_salt_office": {
+        "initial": 2,
+        "researched": 3,
+        "advance": "hbe_transmission_well_salt",
+        "includes_construction": true,
+        "levels_per_location": 1
+      },
+      "hbe_gate_registry": {
+        "initial": 2,
+        "researched": 3,
+        "advance": "hbe_transmission_paper",
+        "includes_construction": true,
+        "levels_per_location": 1
+      },
+      "hbe_tea_exchange": {
+        "initial": 2,
+        "researched": 3,
+        "advance": "hbe_transmission_border_tea",
+        "includes_construction": true,
+        "levels_per_location": 1
+      }
+    },
+    "balance": [
+      {
+        "id": "embroidery",
+        "output": 0.05,
+        "levels": 8,
+        "inputs": {
+          "silk": 0.07,
+          "dyes": 0.02
+        },
+        "reference_input_value": 0.36,
+        "reference_output_value": 0.45,
+        "cost_share": 0.8
+      },
+      {
+        "id": "well_salt",
+        "output": 0.1,
+        "levels": 6,
+        "inputs": {
+          "lumber": 0.16,
+          "tools": 0.05
+        },
+        "reference_input_value": 0.39,
+        "reference_output_value": 0.5,
+        "cost_share": 0.78
+      },
+      {
+        "id": "paper",
+        "output": 0.0521,
+        "levels": 8,
+        "inputs": {
+          "fiber_crops": 0.06,
+          "lumber": 0.02,
+          "tools": 0.005
+        },
+        "reference_input_value": 0.165,
+        "reference_output_value": 0.2084,
+        "cost_share": 0.791747
+      },
+      {
+        "id": "border_tea",
+        "output": 0.0667,
+        "levels": 6,
+        "inputs": {
+          "tea": 0.07,
+          "paper": 0.012,
+          "tools": 0.006
+        },
+        "reference_input_value": 0.252,
+        "reference_output_value": 0.3335,
+        "cost_share": 0.755622
+      }
+    ],
+    "icons": [
+      {
+        "key": "hbe_transmission_embroidery",
+        "cell": 0,
+        "crop": [
+          0,
+          0,
+          627,
+          627
+        ],
+        "image": "main_menu/gfx/interface/advance/hbe_transmission_embroidery.dds",
+        "sha256": "f656a72c254075c7ec6d4ddbd6b67f5d57798323833f36d939504f1dfdd7f0f3"
+      },
+      {
+        "key": "hbe_transmission_well_salt",
+        "cell": 1,
+        "crop": [
+          627,
+          0,
+          1254,
+          627
+        ],
+        "image": "main_menu/gfx/interface/advance/hbe_transmission_well_salt.dds",
+        "sha256": "df18e66ce19dbabbf2fe8ea7feca179d7f3b6560cb5af0fdb64962dcece9488a"
+      },
+      {
+        "key": "hbe_transmission_paper",
+        "cell": 2,
+        "crop": [
+          0,
+          627,
+          627,
+          1254
+        ],
+        "image": "main_menu/gfx/interface/advance/hbe_transmission_paper.dds",
+        "sha256": "d92ed60b5d639e48789049843a9028274552179694c5952aceb6d7f27e537058"
+      },
+      {
+        "key": "hbe_transmission_border_tea",
+        "cell": 3,
+        "crop": [
+          627,
+          627,
+          1254,
+          1254
+        ],
+        "image": "main_menu/gfx/interface/advance/hbe_transmission_border_tea.dds",
+        "sha256": "67628d7a27a3b441e9501c8ac4befa6e2710d30c0dd32ca9df0b631c52f12872"
+      }
+    ],
+    "native_source_hashes": {
+      "in_game/common/building_types/production_fine_cloth.txt": "45a112383aaae1938a61e82ee5e1322b1baaad7e4c4bec1c5cf7a1c08103cc67",
+      "in_game/common/building_types/common_buildings.txt": "4dd9fa9a629dded074c25cad9c6491d05ae617de1be5ff7efa167e0c6c083ce8",
+      "in_game/common/building_types/production_paper.txt": "ebcdbf3810320f8adf30690313e952aae72af828524f84ea35f497d42c000ad5",
+      "in_game/common/building_types/rural_buildings.txt": "57e04a438895e5d573c3008efcbf409ce85520dd266ee8a3518c2453c9b03bb7"
+    },
+    "visibility": "Stable originating-circle tag history; never all HBE tags or earned research in potential.",
+    "visibility_tags": {
+      "hbe_transmission_embroidery": [
+        "BAB",
+        "BAE",
+        "BAF",
+        "BAJ",
+        "BAL"
+      ],
+      "hbe_transmission_well_salt": [
+        "BAO",
+        "BAP",
+        "BAQ",
+        "BAW"
+      ],
+      "hbe_transmission_paper": [
+        "BBI",
+        "BBJ",
+        "BBL",
+        "BBM",
+        "BBN",
+        "BBO",
+        "BBP"
+      ],
+      "hbe_transmission_border_tea": [
+        "BBU",
+        "BBV",
+        "BBW"
+      ]
+    },
+    "qualification": "Originating circle AND actual original building advance. Guest and annexation certificates retain starter industries only.",
+    "reference_price_note": "Reference-price arithmetic only; actual supply, wages, prices and modifiers determine realized profitability."
+  },
+  "western_opening_v032": {
+    "setup_file": "main_menu/setup/1337/97_hbe_western_opening.txt",
+    "assignments": {
+      "GYE": "BAB",
+      "HOR": "BAB",
+      "NYA": "BBW",
+      "CKL": "BBU"
+    },
+    "directed_opinions": 8,
+    "opinion_value": 100,
+    "yearly_decay": 4,
+    "trade_access_provider": "BAB",
+    "trade_access_recipients": [
+      "GYE",
+      "HOR",
+      "NYA",
+      "CKL"
+    ],
+    "native_relation": "trade_access",
+    "market_attraction_bonus": 0.2,
+    "forced_market_membership": false,
+    "no_runtime_effects": true,
+    "note": "Market assignment remains native and is checked after bookmark initialization."
+  },
+  "advance_display_v032": {
+    "gui_file": "main_menu/gui/shared/advances_tooltips.gui",
+    "explicit_picture_keys": [
+      "hbe_tech_chengdu_plain_4",
+      "hbe_transmission_embroidery",
+      "hbe_transmission_well_salt",
+      "hbe_transmission_paper",
+      "hbe_transmission_border_tea"
+    ],
+    "native_gui_sha256": "b2e13541620aa97d1fb5b97d8467769bca3c07d4082cc9e8b3a6186a18ccbba9",
+    "patched_bindings": 0,
+    "global_gui_override": false,
+    "icon_resolver": "native GetAdvanceIcon",
+    "retired_override": "Localized-name conditional texture bindings caused runtime FetchData failures.",
+    "localized_name_match_uses_native_functions": false,
+    "unchanged_vanilla_fallback": true,
+    "tooltip_filler_removed": {
+      "simp_chinese": [],
+      "english": []
+    },
+    "empty_tooltip_entries_removed": [
+      "hbe_civic_common_1_effects",
+      "hbe_tech_central_hills_6_effects",
+      "hbe_tech_chengdu_plain_3_effects",
+      "hbe_tech_chengdu_plain_6_effects",
+      "hbe_tech_common_1_effects",
+      "hbe_tech_common_3_effects",
+      "hbe_tech_common_6_effects",
+      "hbe_tech_common_8_effects",
+      "hbe_tech_eastern_river_3_effects",
+      "hbe_tech_eastern_river_6_effects",
+      "hbe_tech_northern_shudao_3_effects",
+      "hbe_tech_southern_salt_wine_3_effects",
+      "hbe_tech_southern_salt_wine_6_effects",
+      "hbe_tech_southwestern_valleys_3_effects",
+      "hbe_tech_southwestern_valleys_6_effects",
+      "hbe_tech_western_tea_horse_3_effects",
+      "hbe_tech_western_tea_horse_6_effects"
+    ],
+    "gameplay_changed": false
+  },
+  "production_advance_semantics_v032": {
+    "moves": [
+      {
+        "from": "hbe_tech_chengdu_plain_4",
+        "to": "hbe_transmission_embroidery",
+        "methods": [
+          "hbe_chengdu_plain_advanced_production",
+          "hbe_chengdu_plain_paper_production"
+        ]
+      },
+      {
+        "from": "hbe_tech_southern_salt_wine_3",
+        "to": "hbe_transmission_well_salt",
+        "methods": [
+          "hbe_southern_salt_wine_advanced_production"
+        ]
+      },
+      {
+        "from": "hbe_tech_northern_shudao_7",
+        "to": "hbe_transmission_paper",
+        "methods": [
+          "hbe_northern_shudao_advanced_production"
+        ]
+      },
+      {
+        "from": "hbe_tech_western_tea_horse_3",
+        "to": "hbe_transmission_border_tea",
+        "methods": [
+          "hbe_western_tea_horse_advanced_production",
+          "hbe_western_tea_horse_paper_production"
+        ]
+      }
+    ],
+    "moved_methods": [
+      "hbe_chengdu_plain_advanced_production",
+      "hbe_chengdu_plain_paper_production",
+      "hbe_southern_salt_wine_advanced_production",
+      "hbe_northern_shudao_advanced_production",
+      "hbe_western_tea_horse_advanced_production",
+      "hbe_western_tea_horse_paper_production"
+    ],
+    "recipe_values_changed": false,
+    "base_qualifications_changed": false,
+    "research_costs_changed": false,
+    "stat_modifiers_changed": false,
+    "auto_granted_research": false,
+    "advanced_recipe_region_guards": {
+      "hbe_chengdu_plain_advanced_production": "hbe_transmission_embroidery",
+      "hbe_chengdu_plain_paper_production": "hbe_transmission_embroidery",
+      "hbe_southern_salt_wine_advanced_production": "hbe_transmission_well_salt",
+      "hbe_northern_shudao_advanced_production": "hbe_transmission_paper",
+      "hbe_western_tea_horse_advanced_production": "hbe_transmission_border_tea",
+      "hbe_western_tea_horse_paper_production": "hbe_transmission_border_tea"
+    },
+    "note": "Special-building premium production now requires the matching age-two transmission advance. Basic production, original building unlocks and regional modifiers remain in place."
+  },
+  "opening_identity_v032": {
+    "marriage_law": "monogamous_marriage",
+    "native_reference": "main_menu/setup/templates/east_asia_monarchy.txt",
+    "countries_using_shared_template": [
+      "BAB",
+      "BAE",
+      "BAF",
+      "BAJ",
+      "BAL",
+      "BAO",
+      "BAP",
+      "BAQ",
+      "BAW",
+      "BAX",
+      "BAZ",
+      "BBB",
+      "BBC",
+      "BBE",
+      "BBF",
+      "BBH",
+      "BBI",
+      "BBJ",
+      "BBL",
+      "BBM",
+      "BBN",
+      "BBO",
+      "BBP",
+      "BBQ",
+      "BBR",
+      "BBS",
+      "BBT",
+      "BBU",
+      "BBV",
+      "BBW",
+      "BBX",
+      "BBY",
+      "BBZ",
+      "BCA",
+      "BCB",
+      "BCC"
+    ],
+    "heir_selection": "cognatic_primogeniture",
+    "heir_selection_changed": false,
+    "new_campaign_setup_only": true,
+    "no_runtime_law_effects": true,
+    "native_name_disambiguation": [
+      {
+        "native_tag": "CGZ",
+        "hbe_tag": "BAX",
+        "name_simp_chinese": "昌州旧部",
+        "name_english": "Old Changzhou",
+        "native_owned_locations": [],
+        "native_capital": "dechang"
+      },
+      {
+        "native_tag": "YYG",
+        "hbe_tag": "BBF",
+        "name_simp_chinese": "酉阳旧部",
+        "name_english": "Old Youyang",
+        "native_owned_locations": [],
+        "native_capital": "youyang"
+      },
+      {
+        "native_tag": "SNP",
+        "hbe_tag": "BBW",
+        "name_simp_chinese": "松潘诸部",
+        "name_english": "Songpan Tribes",
+        "native_owned_locations": [
+          "tewo"
+        ],
+        "native_capital": "tewo"
+      },
+      {
+        "native_tag": "MHU",
+        "hbe_tag": "BCA",
+        "name_simp_chinese": "马湖旧部",
+        "name_english": "Old Mahu",
+        "native_owned_locations": [],
+        "native_capital": "mabian"
+      },
+      {
+        "native_tag": "YNG",
+        "hbe_tag": "BCC",
+        "name_simp_chinese": "云南永宁",
+        "name_english": "Yunnan Yongning",
+        "native_owned_locations": [
+          "yongning_baisheng",
+          "muli",
+          "langqu",
+          "waerhdje",
+          "kheong"
+        ],
+        "native_capital": "yongning_baisheng"
+      }
+    ],
+    "country_tags_territory_and_cores_changed": false,
+    "hbe_names_changed": false
+  },
+  "population_identity_v032": {
+    "country_overrides": {
+      "BBY": {
+        "culture": "yi_culture",
+        "religion": "bimoism"
+      }
+    },
+    "population_ownership_countries": {
+      "BBY": [
+        "dechang",
+        "huichuan_dechang",
+        "huili",
+        "mingyi"
+      ],
+      "BCB": [
+        "beishe",
+        "jianchang_sichuan",
+        "kuozhou",
+        "puge"
+      ]
+    },
+    "removed_native_pop_state_claims": {
+      "YII": [
+        "dechang",
+        "huili",
+        "huichuan_dechang",
+        "mingyi",
+        "jianchang_sichuan",
+        "kuozhou",
+        "puge",
+        "beishe"
+      ]
+    },
+    "native_pop_states_preserved_outside_target_locations": true,
+    "population_sizes_types_cultures_religions_changed": false,
+    "province_ownership_changed": false,
+    "new_campaign_bookmark_only": true,
+    "runtime_population_grants": false,
+    "population_file_sha256": "fca3e9bec4a8cd69010024025731d4b4d9393936f80859db3daa991c61987b79"
+  },
+  "early_research_design": {
+    "military_count": 7,
+    "military": [
+      {
+        "region": "chengdu_plain",
+        "name": "渠乡习射",
+        "english": "Canal Village Crossbow Training",
+        "unit": "hbe_canal_crossbow",
+        "buildings": [],
+        "description": "渠口各乡轮派壮丁习射，弩具与箭料分册保管。守堰者依水次轮换，农忙时仍须回田，不再把织坊的名册当作军册。",
+        "key": "hbe_military_chengdu_plain"
+      },
+      {
+        "region": "southern_salt_wine",
+        "name": "井灶护运法",
+        "english": "Salt Convoy Guard Ordinance",
+        "unit": "hbe_salt_guard",
+        "buildings": [],
+        "description": "井户与运盐人议定护送的路段，兵器、粮料与误期赔付各记一栏。护运者按程交接，盐场的产额与军中的点名从此分开核算。",
+        "key": "hbe_military_southern_salt_wine"
+      },
+      {
+        "region": "eastern_river",
+        "name": "江岸编伍",
+        "english": "Riverbank Muster Rolls",
+        "unit": "hbe_river_garrison",
+        "buildings": [],
+        "description": "沿江寨户按泊口编伍，守夜、巡岸与船上接应各有班次。船帮仍照常转运，寨兵却须另领粮械，不因船货增多便临时添派乡丁。",
+        "key": "hbe_military_eastern_river"
+      },
+      {
+        "region": "northern_shudao",
+        "name": "关隘轮戍法",
+        "english": "Mountain Pass Rotation Ordinance",
+        "unit": "hbe_pass_rotation",
+        "buildings": [
+          "hbe_plank_fort"
+        ],
+        "description": "驿堡把到岗和归乡的日期分别登记，关军依册交接器械与粮额。道路可以通商，守关的轮次却须另有军令，不再混入驿夫的脚程。",
+        "key": "hbe_military_northern_shudao"
+      },
+      {
+        "region": "central_hills",
+        "name": "义仓团练约",
+        "english": "Granary Militia Compact",
+        "unit": "hbe_granary_militia",
+        "buildings": [],
+        "description": "仓社议定守仓与护田的班次，抽练者领取明列的粮额。丰年仍以耕作为本，遇警方按册集结；开仓赈借不再兼作征兵的口令。",
+        "key": "hbe_military_central_hills"
+      },
+      {
+        "region": "western_tea_horse",
+        "name": "茶路护骑法",
+        "english": "Tea Route Cavalry Ordinance",
+        "unit": "hbe_tea_riders",
+        "buildings": [
+          "hbe_guide_station"
+        ],
+        "description": "商队与护骑在山口验过驮具，按程分领马料与护送凭据。向导负责择路，骑手负责警戒，交割场的茶引不再代替军中的点验。",
+        "key": "hbe_military_western_tea_horse"
+      },
+      {
+        "region": "southwestern_valleys",
+        "name": "联寨编伍",
+        "english": "Allied Valley Muster Rolls",
+        "unit": "hbe_valley_soldiers",
+        "buildings": [
+          "hbe_covenant_stockade"
+        ],
+        "description": "各寨把出人的数额和归还的期限写入共同军册，留守者接续照料田畜。谷市的买卖仍依旧约，驻防则另认粮额与轮替，不把盟约当作无期征令。",
+        "key": "hbe_military_southwestern_valleys"
+      }
+    ],
+    "building_moves": {
+      "hbe_plank_fort": "hbe_military_northern_shudao",
+      "hbe_guide_station": "hbe_military_western_tea_horse",
+      "hbe_covenant_stockade": "hbe_military_southwestern_valleys",
+      "hbe_community_granary": "hbe_tech_central_hills_1"
+    },
+    "modifier_overrides": {
+      "hbe_tech_common_1": {
+        "global_monthly_control": 0.01
+      },
+      "hbe_tech_common_2": {
+        "global_merchant_capacity_modifier": 0.08
+      },
+      "hbe_tech_common_5": {
+        "global_burghers_max_literacy": 4
+      },
+      "hbe_civic_common_1": {},
+      "hbe_tech_chengdu_plain_1": {
+        "global_monthly_food_modifier": 0.05
+      },
+      "hbe_tech_chengdu_plain_2": {
+        "global_hbe_shu_embroidery_output_modifier": 0.1
+      },
+      "hbe_tech_southern_salt_wine_1": {
+        "global_hbe_well_salt_output_modifier": 0.1
+      },
+      "hbe_tech_southern_salt_wine_2": {
+        "global_liquor_output_modifier": 0.1
+      },
+      "hbe_tech_eastern_river_1": {
+        "global_merchant_capacity_modifier": 0.08
+      },
+      "hbe_tech_eastern_river_2": {
+        "global_naval_supplies_output_modifier": 0.1
+      },
+      "hbe_tech_northern_shudao_2": {
+        "merchant_maintenance_efficiency": 0.05,
+        "global_road_building_time": -0.05
+      },
+      "hbe_tech_central_hills_1": {
+        "global_monthly_food_modifier": 0.05
+      },
+      "hbe_tech_central_hills_2": {
+        "global_merchant_capacity_modifier": 0.05,
+        "global_monthly_control": 0.01
+      },
+      "hbe_tech_western_tea_horse_1": {
+        "global_hbe_border_tea_output_modifier": 0.1
+      },
+      "hbe_tech_western_tea_horse_2": {
+        "global_supply_limit_modifier": 0.05,
+        "merchant_maintenance_efficiency": 0.05
+      },
+      "hbe_tech_southwestern_valleys_1": {
+        "global_trade_center_power": 0.08
+      },
+      "hbe_tech_southwestern_valleys_2": {
+        "tribes_estate_target_satisfaction": 0.03,
+        "peasants_estate_target_satisfaction": 0.02
+      }
+    },
+    "permission": "hbe_can_cross_circle_industry",
+    "art": [
+      {
+        "key": "hbe_military_chengdu_plain",
+        "crop": [
+          0,
+          0,
+          423,
+          408
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_chengdu_plain.png",
+        "sprite_sha256": "bd0363959d2dbc8d4218aef19c02182015e316ff6f30dc70389eea1cf65a493c"
+      },
+      {
+        "key": "hbe_military_southern_salt_wine",
+        "crop": [
+          423,
+          0,
+          841,
+          408
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_southern_salt_wine.png",
+        "sprite_sha256": "870676822c842b68b7bbacbff1ac56337291788934c9f38c0d4f9ac000a88009"
+      },
+      {
+        "key": "hbe_military_eastern_river",
+        "crop": [
+          841,
+          0,
+          1254,
+          408
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_eastern_river.png",
+        "sprite_sha256": "2f74cd365a5e2c69981324224926b4ff6bfe36174e0d93242a95054bfa6c02df"
+      },
+      {
+        "key": "hbe_military_northern_shudao",
+        "crop": [
+          0,
+          408,
+          423,
+          804
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_northern_shudao.png",
+        "sprite_sha256": "9e799e782c18a63180718eda9a0986524a5d61d7a3a0f212225af443f5ffebfc"
+      },
+      {
+        "key": "hbe_military_central_hills",
+        "crop": [
+          423,
+          408,
+          841,
+          804
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_central_hills.png",
+        "sprite_sha256": "722218db03f4910341dca91febecf1b81e5c94e92b2657b3a6c1bd66975d834c"
+      },
+      {
+        "key": "hbe_military_western_tea_horse",
+        "crop": [
+          841,
+          408,
+          1254,
+          804
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_western_tea_horse.png",
+        "sprite_sha256": "385226a317e3ea4b337f38f517cefa45f4d33b3a67c06fa0d0338852fd508e3c"
+      },
+      {
+        "key": "hbe_military_southwestern_valleys",
+        "crop": [
+          0,
+          804,
+          423,
+          1254
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_military_southwestern_valleys.png",
+        "sprite_sha256": "0182142c35b30c793f5a301883519eb95ab303d4152714176a830bcac626ebef"
+      },
+      {
+        "key": "hbe_can_cross_circle_industry",
+        "crop": [
+          423,
+          836,
+          841,
+          1254
+        ],
+        "source": "assets/early_research/military_atlas.png",
+        "sprite": "assets/technology_icons/hbe_can_cross_circle_industry.png",
+        "sprite_sha256": "2934e615ac1e00293848b14a32673647a51ab9dd0ebf863133d7db43fbc55f9c"
+      }
+    ],
+    "civic_first_nodes_moved_to_age_two": 7,
+    "automatic_research_grants": false
+  },
+  "current_release": {
+    "version": "0.3.3",
+    "research_nodes": 91,
+    "visible_events": 508
+  },
+  "age2_military": {
+    "unit_count": 14,
+    "new_units": 5,
+    "new_advances": 0,
+    "lines": [
+      {
+        "region": "chengdu_plain",
+        "from_unit": "hbe_canal_crossbow",
+        "key": "hbe_canal_crossbow_renaissance",
+        "name": "渠乡劲弩",
+        "native_advance": "unlock_crossbowmen_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 1.1,
+          "initiative": 7,
+          "combat_speed": 3,
+          "movement_speed": 2.5,
+          "strength_damage_done": 0.1,
+          "strength_damage_taken": 0,
+          "morale_damage_done": 0,
+          "morale_damage_taken": 0.05,
+          "flanking_ability": 1.1,
+          "supply_weight": 1,
+          "attrition_loss": 0,
+          "food_consumption_per_strength": 0.33,
+          "combat": {}
+        }
+      },
+      {
+        "region": "southern_salt_wine",
+        "from_unit": "hbe_salt_guard",
+        "key": "hbe_salt_guard_renaissance",
+        "name": "井灶护运营",
+        "native_advance": "armory_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 1.1,
+          "initiative": 5,
+          "combat_speed": 3,
+          "movement_speed": 2.5,
+          "strength_damage_done": 0,
+          "strength_damage_taken": 0.02,
+          "morale_damage_done": 0.05,
+          "morale_damage_taken": -0.05,
+          "flanking_ability": 1.5,
+          "supply_weight": 1,
+          "attrition_loss": 0,
+          "food_consumption_per_strength": 0.33,
+          "combat": {}
+        }
+      },
+      {
+        "region": "eastern_river",
+        "from_unit": "hbe_river_garrison",
+        "key": "hbe_trained_river",
+        "name": "江防精练寨兵",
+        "native_advance": "unlock_men_at_arms_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 1.25,
+          "initiative": 1.0,
+          "combat_speed": 2.25,
+          "movement_speed": 2.0,
+          "strength_damage_done": 0.14,
+          "strength_damage_taken": -0.03,
+          "morale_damage_done": 0,
+          "morale_damage_taken": -0.18,
+          "flanking_ability": 1.0,
+          "supply_weight": 1.2,
+          "attrition_loss": 0,
+          "food_consumption_per_strength": 0.33,
+          "combat": {
+            "river": 0.18
+          }
+        }
+      },
+      {
+        "region": "northern_shudao",
+        "from_unit": "hbe_pass_rotation",
+        "key": "hbe_permanent_pass",
+        "name": "关镇长值兵",
+        "native_advance": "unlock_men_at_arms_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 1.2,
+          "initiative": 1.0,
+          "combat_speed": 2.25,
+          "movement_speed": 2.0,
+          "strength_damage_done": 0,
+          "strength_damage_taken": -0.2,
+          "morale_damage_done": 0,
+          "morale_damage_taken": -0.12,
+          "flanking_ability": 1.0,
+          "supply_weight": 1.2,
+          "attrition_loss": 0,
+          "food_consumption_per_strength": 0.33,
+          "combat": {
+            "mountains": 0.18
+          }
+        }
+      },
+      {
+        "region": "central_hills",
+        "from_unit": "hbe_granary_militia",
+        "key": "hbe_granary_militia_renaissance",
+        "name": "义仓备御兵",
+        "native_advance": "armory_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 1.05,
+          "initiative": 5,
+          "combat_speed": 3,
+          "movement_speed": 2.5,
+          "strength_damage_done": -0.05,
+          "strength_damage_taken": 0,
+          "morale_damage_done": 0,
+          "morale_damage_taken": 0,
+          "flanking_ability": 1.1,
+          "supply_weight": 0.75,
+          "attrition_loss": 0,
+          "food_consumption_per_strength": 0.28,
+          "combat": {}
+        }
+      },
+      {
+        "region": "western_tea_horse",
+        "from_unit": "hbe_tea_riders",
+        "key": "hbe_tea_riders_renaissance",
+        "name": "茶路选骑",
+        "native_advance": "unlock_cavalry_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 2.7,
+          "initiative": 7,
+          "combat_speed": 5,
+          "movement_speed": 3.6,
+          "strength_damage_done": -0.05,
+          "strength_damage_taken": 0,
+          "morale_damage_done": 0.12,
+          "morale_damage_taken": 0.05,
+          "flanking_ability": 2.0,
+          "supply_weight": 1,
+          "attrition_loss": 0.2,
+          "food_consumption_per_strength": 1.32,
+          "combat": {
+            "mountains": -0.05,
+            "jungle": -0.1,
+            "wetlands": -0.1
+          }
+        }
+      },
+      {
+        "region": "southwestern_valleys",
+        "from_unit": "hbe_valley_soldiers",
+        "key": "hbe_valley_soldiers_renaissance",
+        "name": "联寨选锋",
+        "native_advance": "armory_advance",
+        "target_effective_stats": {
+          "max_strength": 0.5,
+          "combat_power": 1.1,
+          "initiative": 7,
+          "combat_speed": 3,
+          "movement_speed": 2.7,
+          "strength_damage_done": -0.05,
+          "strength_damage_taken": 0,
+          "morale_damage_done": 0,
+          "morale_damage_taken": 0.02,
+          "flanking_ability": 1.2,
+          "supply_weight": 0.9,
+          "attrition_loss": 0,
+          "food_consumption_per_strength": 0.33,
+          "combat": {
+            "mountains": 0.2,
+            "hills": 0.15
+          }
+        }
+      }
+    ],
+    "native_patches": [
+      {
+        "file": "in_game/common/advances/1_building_unlocks.txt",
+        "source_sha256": "16cf96d54d506411b3baeb1c50df322cfb987ffe16244bdfd4a9d864563de16a",
+        "patched_advances": [
+          "armory_advance"
+        ]
+      },
+      {
+        "file": "in_game/common/advances/2_army_unlocks.txt",
+        "source_sha256": "65be55ec1633966e40ffd0bd3e89db29e6d026700e8de25d371a9876cdd70a4a",
+        "patched_advances": [
+          "unlock_men_at_arms_advance",
+          "unlock_crossbowmen_advance",
+          "unlock_cavalry_advance"
+        ]
+      }
+    ],
+    "all_men": 500,
+    "native_upgrade": true,
+    "upgrade_burden": 0,
+    "net_new_regiment_burden": 2,
+    "guest_elites": false,
+    "art_reuse": true,
+    "visual_verified": false
   }
 }

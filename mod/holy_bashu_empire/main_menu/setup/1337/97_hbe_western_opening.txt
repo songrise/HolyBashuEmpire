@@ -1,0 +1,15 @@
+# Bookmark only: reciprocal goodwill and native Chengdu trade access.
+diplomacy_manager = {
+ opinion = { first = GYE second = BAB type = hbe_western_tributary_goodwill }
+ opinion = { first = BAB second = GYE type = hbe_western_tributary_goodwill }
+ opinion = { first = HOR second = BAB type = hbe_western_tributary_goodwill }
+ opinion = { first = BAB second = HOR type = hbe_western_tributary_goodwill }
+ opinion = { first = NYA second = BBW type = hbe_western_tributary_goodwill }
+ opinion = { first = BBW second = NYA type = hbe_western_tributary_goodwill }
+ opinion = { first = CKL second = BBU type = hbe_western_tributary_goodwill }
+ opinion = { first = BBU second = CKL type = hbe_western_tributary_goodwill }
+ scripted_oneway = { first = BAB second = GYE type = trade_access }
+ scripted_oneway = { first = BAB second = HOR type = trade_access }
+ scripted_oneway = { first = BAB second = NYA type = trade_access }
+ scripted_oneway = { first = BAB second = CKL type = trade_access }
+}

@@ -1,10 +1,10 @@
 """Mechanical sprite extraction and DDS export for ImageGen-painted assets."""
-import hashlib,json
+from build_support import sha256_file as sha
+import json
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 from build_flags import save_dds
 
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def fit(im,size=256):
     im=im.convert('RGBA')

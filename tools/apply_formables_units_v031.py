@@ -1,6 +1,7 @@
 """Native formation paths and differentiated specialty regiments; idempotent."""
+from build_support import snapshot_files
 from pathlib import Path
-import json, hashlib, math, re
+import json, math, re
 from PIL import Image
 from pdxscript import blocks, apply_edits
 
@@ -151,7 +152,7 @@ def apply(out,root,game):
  m['decisions']=sum(len(blocks(p.read_text(encoding='utf-8-sig'),0)) for p in (out/'in_game/common/decisions').glob('*.txt'))
  meta=out/'.metadata/metadata.json';d=json.loads(meta.read_text(encoding='utf-8'));d['short_description']='七圈三十六府：405个事件、分支长线与湖广填四川；特色产业、政府改革及蜀、渝、巴蜀帝国成立路线。'
  meta.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
- m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  manifestp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  return result
 

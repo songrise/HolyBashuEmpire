@@ -1,6 +1,7 @@
 """Four static paintings and four sourced excerpts in the vanilla loading UI."""
+from build_support import sha256_file as digest, snapshot_files
 from pathlib import Path
-import argparse, hashlib, json
+import argparse, json
 from PIL import Image,ImageOps,ImageDraw,ImageFont
 
 SCENES={'craft':'坊中蜀绣','river':'峡江待渡','observatory':'山壁星历','panda_sanctuary':'竹林护养'}
@@ -22,7 +23,6 @@ QUOTES=[
   'Records of Shu, quoted in Chang Qu, Records of the Lands South of Mount Hua',
   'https://zh.wikisource.org/zh-hans/華陽國志/卷三'),
 ]
-def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def export_quotes(out):
  def put(rel,t):
@@ -68,7 +68,7 @@ def export_loading_art(out,root,game=None):
  preview_path=root/'assets/loading_art_v031/preview.jpg';preview_path.parent.mkdir(parents=True,exist_ok=True);preview.save(preview_path,quality=93)
  result=dict(mode='static',canvas=[3840,2160],aspect_ratio='16:9',scenes=4,planes_per_scene=1,native_animation_binding='illustration_override',parallax=False,loading_scene_prefix='loading_screen_scene_',native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(4)),quote_sources=[dict(quote=q[0],author=q[1],url=q[4]) for q in QUOTES],assets=assets,source_resolution_note='Approved original paintings mechanically fitted and resampled to the exact vanilla 3840x2160 canvas; no style change or generated detail.')
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'));m['loading_art_v031']={k:v for k,v in result.items() if k!='assets'}
- m['files']={p.relative_to(out).as_posix():digest(p) for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');(root/'data/loading_art_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps({k:v for k,v in result.items() if k not in ('assets','quote_sources')},ensure_ascii=False));return result
 
@@ -90,7 +90,7 @@ def apply(out,root,game=None,enabled=False):
              source_catalog='data/loading_art_v031.json')
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'))
  m['loading_art_v031']=result
- m['files']={p.relative_to(out).as_posix():digest(p) for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+ m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(json.dumps(result,ensure_ascii=False));return result
 

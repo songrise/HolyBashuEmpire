@@ -1,4 +1,5 @@
 """Source-only diplomacy tuning through native CB and organization interfaces."""
+from build_support import snapshot_files
 from pathlib import Path
 import hashlib,json
 from pdxscript import blocks,apply_edits
@@ -59,7 +60,7 @@ def apply(out,root,game):
     report={'version':'0.3.2','source_only':True,'runtime_verified':False,'war_action_score_multiplier':SCALE,'annex_action_score_multiplier':SCALE,'peace_cb':PEACE_CB,'peace_attacker_enthusiasm_delta':-.05,'peace_only_ai_external_rtr_vs_hbe':True,'native_cb_sha256':hashlib.sha256((game/CB_FILE).read_bytes()).hexdigest(),'member_tributary_permission':'allow_tributary_subject','country_tag_exceptions':False,'native_tributary_definition_untouched':True,'internal_ai':ai,'forced_peace':False,'forced_wars':False}
     m['diplomacy_restraint_v032']=report
     if 'western_tributes_v032' in m:m['western_tributes_v032']['overlord_eligibility']='Native allow_tributary_subject permission from HBE member modifier'
-    m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+    m['files']=snapshot_files(out)
     mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     return report
 

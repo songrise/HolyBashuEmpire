@@ -1,6 +1,6 @@
 """Provide a capital muster point when an HBE member has no native recruitment site."""
+from build_support import snapshot_files
 from pathlib import Path
-import hashlib
 import json
 
 
@@ -78,10 +78,7 @@ def apply(out, root=None, game=None):
     path = out / 'build_manifest.json'
     manifest = json.loads(path.read_text(encoding='utf8'))
     manifest['capital_recruitment_v031'] = report
-    manifest['files'] = {
-        p.relative_to(out).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
-        for p in out.rglob('*') if p.is_file() and p.name != 'build_manifest.json'
-    }
+    manifest['files'] = snapshot_files(out)
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf8')
     return report
 

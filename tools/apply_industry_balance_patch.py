@@ -1,7 +1,8 @@
 """Industry integration, limited civilian institutions and focused UI corrections."""
+from build_support import snapshot_files
 from pathlib import Path
 from decimal import Decimal
-import re,json,hashlib,sys
+import re, json, sys
 from pdxscript import blocks,apply_edits
 GAME=Path('D:/SteamLibrary/steamapps/common/Europa Universalis V/game')
 MAPPINGS={'textiles':['hbe_shu_embroidery'],'paper_goods':['hbe_shu_paper'],'beverages':['hbe_border_tea']}
@@ -113,7 +114,7 @@ hbe_salt_industry = {
 if __name__=='__main__':
     root=Path(sys.argv[1]);out=root/'mod/holy_bashu_empire';report=apply(out,root)
     p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['industry_patch']=report
-    m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+    m['files']=snapshot_files(out)
     p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     dest=root/'docs/testing/industry-balance-patch-v031.json';dest.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(institutions=len(report['institutions']),merged_options=len(report['prestige_merged']),goods=report['industries']),ensure_ascii=False))

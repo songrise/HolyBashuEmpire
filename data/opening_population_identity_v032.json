@@ -1,0 +1,6 @@
+{
+  "country_overrides": {
+    "BBY": {"culture": "yi_culture", "religion": "bimoism"}
+  },
+  "population_ownership_countries": ["BBY", "BCB"]
+}

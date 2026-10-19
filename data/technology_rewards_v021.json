@@ -5,21 +5,19 @@
       "key": "hbe_tech_common_1",
       "name": "乡约与账簿",
       "modifiers": {
-        "global_monthly_literacy": 0.02,
-        "global_monthly_control": 0.04
+        "global_monthly_control": 0.01
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": "开放本府府议；民役政策与军制分别研究。"
     },
     {
       "key": "hbe_tech_common_2",
       "name": "统一度量",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.12,
-        "merchant_maintenance_efficiency": 0.08
+        "global_merchant_capacity_modifier": 0.08
       },
       "unlocks": [],
-      "link": "整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
+      "link": "开放乡社见证权；整合其他旧府州后，地方援助可以使用10点义气作替代担保。"
     },
     {
       "key": "hbe_tech_common_3",
@@ -44,11 +42,10 @@
       "key": "hbe_tech_common_5",
       "name": "行会传习",
       "modifiers": {
-        "global_production_efficiency": 0.08,
-        "global_burghers_max_literacy": 8.0
+        "global_burghers_max_literacy": 4
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n提高锦坊、井灶和诸谷作坊的实际产出，支持新生产方式。"
+      "link": "开放行会雇价保任；仍须采用行会雇办。"
     },
     {
       "key": "hbe_tech_common_6",
@@ -85,22 +82,20 @@
       "key": "hbe_tech_chengdu_plain_1",
       "name": "渠田协作",
       "modifiers": {
-        "global_monthly_food_modifier": 0.12,
-        "global_rice_output_modifier": 0.12
+        "global_monthly_food_modifier": 0.05
       },
       "unlocks": [],
       "link": "解锁本圈三年地方事业与地方援助资格。"
     },
     {
       "key": "hbe_tech_chengdu_plain_2",
-      "name": "蜀锦作坊分工",
+      "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
       "modifiers": {
-        "global_fine_cloth_output_modifier": 0.2,
-        "global_silk_output_modifier": 0.12,
-        "global_hbe_shu_embroidery_output_modifier": 0.2
+        "global_hbe_shu_embroidery_output_modifier": 0.1
       },
       "unlocks": [
-        "hbe_chengdu_plain_basic_production"
+        "hbe_chengdu_plain_basic_production",
+        "hbe_chengdu_plain_ordinary_production"
       ],
       "link": "取得本圈成长验收的课题资格。\n解锁机构生产方式：锦坊试织。"
     },
@@ -121,10 +116,7 @@
         "global_monthly_food_modifier": 0.16,
         "global_rgo_build_time": -0.16
       },
-      "unlocks": [
-        "hbe_chengdu_plain_advanced_production",
-        "hbe_chengdu_plain_paper_production"
-      ],
+      "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：锦坊绣作。\n解锁机构生产方式：蜀纸描样。\n解锁“渠田共济”：运行渠务所、近五年完成本圈事业、役负低于70，且水权储备至少30时获得额外联动收益；条件不满足时暂停。"
     },
     {
@@ -172,11 +164,11 @@
       "key": "hbe_tech_southern_salt_wine_1",
       "name": "井灶公账",
       "modifiers": {
-        "global_salt_output_modifier": 0.16,
-        "burghers_estate_target_satisfaction": 0.048
+        "global_hbe_well_salt_output_modifier": 0.1
       },
       "unlocks": [
-        "hbe_southern_salt_wine_basic_production"
+        "hbe_southern_salt_wine_basic_production",
+        "hbe_southern_salt_wine_ordinary_production"
       ],
       "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：井灶汲卤。"
     },
@@ -184,8 +176,7 @@
       "key": "hbe_tech_southern_salt_wine_2",
       "name": "盐酒作坊协作",
       "modifiers": {
-        "global_liquor_output_modifier": 0.2,
-        "global_pottery_output_modifier": 0.12
+        "global_liquor_output_modifier": 0.1
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -198,9 +189,7 @@
         "global_tools_output_modifier": 0.12,
         "global_hbe_well_salt_output_modifier": 0.24
       },
-      "unlocks": [
-        "hbe_southern_salt_wine_advanced_production"
-      ],
+      "unlocks": [],
       "link": "解锁机构生产方式：井灶精煎。"
     },
     {
@@ -236,7 +225,7 @@
     },
     {
       "key": "hbe_tech_southern_salt_wine_7",
-      "name": "宴席采购契约",
+      "name": "宴席采购[Concept('hbe_term_contract', '契约')|e]",
       "modifiers": {
         "merchant_maintenance_efficiency": 0.16,
         "global_production_efficiency": 0.08
@@ -258,8 +247,7 @@
       "key": "hbe_tech_eastern_river_1",
       "name": "码头转运",
       "modifiers": {
-        "global_merchant_capacity_modifier": 0.16,
-        "merchant_maintenance_efficiency": 0.08
+        "global_merchant_capacity_modifier": 0.08
       },
       "unlocks": [],
       "link": "解锁本圈三年地方事业与地方援助资格。"
@@ -268,8 +256,7 @@
       "key": "hbe_tech_eastern_river_2",
       "name": "纤夫船帮",
       "modifiers": {
-        "global_naval_supplies_output_modifier": 0.2,
-        "ship_build_speed": 0.16
+        "global_naval_supplies_output_modifier": 0.1
       },
       "unlocks": [
         "hbe_eastern_river_basic_production"
@@ -288,7 +275,7 @@
     },
     {
       "key": "hbe_tech_eastern_river_4",
-      "name": "江运互保",
+      "name": "@hbe_river! [Concept('hbe_term_river', '江运互保')|e]",
       "modifiers": {
         "global_merchant_capacity_modifier": 0.2,
         "global_food_decay": -0.08
@@ -300,7 +287,7 @@
     },
     {
       "key": "hbe_tech_eastern_river_5",
-      "name": "川江通商总约",
+      "name": "[Concept('hbe_history_river', '川江')|e]通商总约",
       "modifiers": {
         "global_trade_center_power": 0.2,
         "global_production_efficiency": 0.12
@@ -352,8 +339,8 @@
       "key": "hbe_tech_northern_shudao_2",
       "name": "驿堡联络",
       "modifiers": {
-        "global_supply_limit_modifier": 0.16,
-        "army_maintenance_efficiency": 0.08
+        "merchant_maintenance_efficiency": 0.05,
+        "global_road_building_time": -0.05
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -380,7 +367,7 @@
     },
     {
       "key": "hbe_tech_northern_shudao_5",
-      "name": "蜀道联防总镇",
+      "name": "[Concept('hbe_history_shudao', '蜀道')|e]联防总镇",
       "modifiers": {
         "global_defensive": 0.16,
         "global_manpower_modifier": 0.16
@@ -396,7 +383,8 @@
         "global_monthly_literacy": 0.02
       },
       "unlocks": [
-        "hbe_northern_shudao_basic_production"
+        "hbe_northern_shudao_basic_production",
+        "hbe_northern_shudao_ordinary_production"
       ],
       "link": "解锁机构生产方式：关驿抄券。"
     },
@@ -408,14 +396,12 @@
         "diplomatic_capacity_modifier": 0.16,
         "global_hbe_shu_paper_output_modifier": 0.2
       },
-      "unlocks": [
-        "hbe_northern_shudao_advanced_production"
-      ],
+      "unlocks": [],
       "link": "取得本圈旧约重审验收的课题资格。\n解锁机构生产方式：蜀纸精抄。\n解锁“蜀道接递”：运行关市券所、近五年完成本圈事业、役负低于70，且完成本圈成长验收时获得额外联动收益；条件不满足时暂停。"
     },
     {
       "key": "hbe_tech_northern_shudao_8",
-      "name": "蜀道驿传总局",
+      "name": "[Concept('hbe_history_shudao', '蜀道')|e]驿传总局",
       "modifiers": {
         "global_institution_growth_modifier": 0.24,
         "global_monthly_control": 0.08
@@ -427,18 +413,17 @@
       "key": "hbe_tech_central_hills_1",
       "name": "坡田水塘",
       "modifiers": {
-        "global_monthly_food_modifier": 0.12,
-        "global_max_rgo_size_modifier_in_rural": 0.12
+        "global_monthly_food_modifier": 0.05
       },
       "unlocks": [],
-      "link": "解锁本圈三年地方事业与地方援助资格。"
+      "link": "开放分仓义廪基础建造与维护；农业生产方式仍由第二时代后续科技解锁。"
     },
     {
       "key": "hbe_tech_central_hills_2",
       "name": "市集公账",
       "modifiers": {
-        "stability_cost_efficiency": 0.12,
-        "global_monthly_control": 0.04
+        "global_merchant_capacity_modifier": 0.05,
+        "global_monthly_control": 0.01
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -479,7 +464,7 @@
     },
     {
       "key": "hbe_tech_central_hills_6",
-      "name": "契约见证",
+      "name": "[Concept('hbe_term_contract', '契约')|e]见证",
       "modifiers": {
         "total_loan_capacity_modifier": 0.32,
         "burghers_estate_target_satisfaction": 0.064
@@ -511,11 +496,11 @@
       "key": "hbe_tech_western_tea_horse_1",
       "name": "茶马集市",
       "modifiers": {
-        "global_tea_output_modifier": 0.2,
-        "global_merchant_capacity_modifier": 0.12
+        "global_hbe_border_tea_output_modifier": 0.1
       },
       "unlocks": [
-        "hbe_western_tea_horse_basic_production"
+        "hbe_western_tea_horse_basic_production",
+        "hbe_western_tea_horse_ordinary_production"
       ],
       "link": "解锁本圈三年地方事业与地方援助资格。\n解锁机构生产方式：驮具修造。"
     },
@@ -523,24 +508,21 @@
       "key": "hbe_tech_western_tea_horse_2",
       "name": "山地向导",
       "modifiers": {
-        "global_supply_limit_modifier": 0.16,
-        "merchant_maintenance_efficiency": 0.12
+        "global_supply_limit_modifier": 0.05,
+        "merchant_maintenance_efficiency": 0.05
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
     },
     {
       "key": "hbe_tech_western_tea_horse_3",
-      "name": "商队互保",
+      "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
       "modifiers": {
         "global_leather_output_modifier": 0.2,
         "global_food_decay": -0.08,
         "global_hbe_border_tea_output_modifier": 0.2
       },
-      "unlocks": [
-        "hbe_western_tea_horse_advanced_production",
-        "hbe_western_tea_horse_paper_production"
-      ],
+      "unlocks": [],
       "link": "解锁机构生产方式：边茶压砖。\n解锁机构生产方式：蜀纸包茶。"
     },
     {
@@ -598,8 +580,7 @@
       "key": "hbe_tech_southwestern_valleys_1",
       "name": "山谷市集",
       "modifiers": {
-        "global_production_efficiency": 0.08,
-        "global_trade_center_power": 0.12
+        "global_trade_center_power": 0.08
       },
       "unlocks": [
         "hbe_southwestern_valleys_basic_production"
@@ -610,8 +591,8 @@
       "key": "hbe_tech_southwestern_valleys_2",
       "name": "地方盟约",
       "modifiers": {
-        "tribes_estate_target_satisfaction": 0.08,
-        "peasants_estate_target_satisfaction": 0.04
+        "tribes_estate_target_satisfaction": 0.03,
+        "peasants_estate_target_satisfaction": 0.02
       },
       "unlocks": [],
       "link": "取得本圈成长验收的课题资格。"
@@ -681,12 +662,9 @@
     {
       "key": "hbe_civic_common_1",
       "name": "府议与民役簿",
-      "modifiers": {
-        "stability_cost_efficiency": 0.12,
-        "global_estate_target_satisfaction": 0.04
-      },
+      "modifiers": {},
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": "开放三种互斥的民役政策与减役补偿；驻防粮额与阶层特权分别开放。"
     },
     {
       "key": "hbe_civic_common_2",
@@ -864,7 +842,7 @@
         "paper": 0.04
       },
       "output": 1.2,
-      "advance": "hbe_tech_chengdu_plain_4"
+      "advance": "hbe_transmission_embroidery"
     },
     {
       "key": "hbe_chengdu_plain_paper_production",
@@ -877,7 +855,7 @@
         "hbe_shu_paper": 0.04
       },
       "output": 1.5,
-      "advance": "hbe_tech_chengdu_plain_4"
+      "advance": "hbe_transmission_embroidery"
     },
     {
       "key": "hbe_southern_salt_wine_basic_production",
@@ -899,7 +877,7 @@
         "tools": 0.15
       },
       "output": 1.8,
-      "advance": "hbe_tech_southern_salt_wine_3"
+      "advance": "hbe_transmission_well_salt"
     },
     {
       "key": "hbe_eastern_river_basic_production",
@@ -944,7 +922,7 @@
         "tools": 0.08
       },
       "output": 1.25,
-      "advance": "hbe_tech_northern_shudao_7"
+      "advance": "hbe_transmission_paper"
     },
     {
       "key": "hbe_central_hills_basic_production",
@@ -989,7 +967,7 @@
         "paper": 0.03
       },
       "output": 1.2,
-      "advance": "hbe_tech_western_tea_horse_3"
+      "advance": "hbe_transmission_border_tea"
     },
     {
       "key": "hbe_western_tea_horse_paper_production",
@@ -1001,7 +979,7 @@
         "hbe_shu_paper": 0.03
       },
       "output": 1.5,
-      "advance": "hbe_tech_western_tea_horse_3"
+      "advance": "hbe_transmission_border_tea"
     },
     {
       "key": "hbe_southwestern_valleys_basic_production",

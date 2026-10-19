@@ -1,5 +1,6 @@
 """Export painted shared scenes, organization art and decision sprite atlases."""
-import hashlib,json,re
+from build_support import sha256_file as sha
+import json, re
 from PIL import Image,ImageDraw,ImageFont,ImageOps
 from pdxscript import blocks,apply_edits
 from build_flags import save_dds
@@ -7,7 +8,6 @@ from build_icon_assets import fit
 
 REGION_SCENES={'chengdu_plain':'water','southern_salt_wine':'salt','eastern_river':'river','northern_shudao':'roads','central_hills':'grain','western_tea_horse':'tea','southwestern_valleys':'valleys'}
 
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def build_full_art_assets(out,root,countries,regions,put,game):
     registry=json.loads((root/'assets/full_art_generation.json').read_text(encoding='utf-8'))

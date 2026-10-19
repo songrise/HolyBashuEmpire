@@ -3,8 +3,8 @@
 No filters, recolouring, sharpening or creative editing. PNG sources stay in the
 development assets folder; runtime contains only cropped DDS textures and tables.
 """
+from build_support import sha256_file as sha
 import argparse
-import hashlib
 import json
 import re
 import sys
@@ -16,8 +16,6 @@ SOURCES = ROOT / ('assets/event_expansion' if (ROOT / 'assets/event_expansion').
 OUT = ROOT / 'mod/holy_bashu_empire'
 
 
-def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def write(relative, text):

@@ -1,4 +1,5 @@
 """Reduce Red Turban action scores only for external factions targeting HBE."""
+from build_support import snapshot_files
 from pathlib import Path
 import hashlib,json,re
 from pdxscript import blocks,apply_edits
@@ -93,7 +94,7 @@ hbe_rtr_annex_targets_hbe = {
         p=out/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf-8-sig')
     report={'version':'0.3.2','release_channel':'0.3.2 hotfix','scope_revision':2,'positive_action_score_multiplier':SCALE,'negative_scores_unchanged':True,'annex_acceptance_penalty':-100,'historical_faction_tags':list(FACTIONS),'dynamic_factions':'Native Red Turban CB permission, rtr_yuan_allegiance, rtr_is_new_china or Red Turban organization membership','target':'Current HBE members; actor must be outside HBE','native_overrides':native_hashes,'files':list(files),'native_effects_and_eligibility_unchanged':True,'cooldown_added':False}
     p=out/'build_manifest.json';m=json.loads(p.read_text(encoding='utf-8-sig'));m['red_turban_actions_v032']=report
-    m['files']={p.relative_to(out).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='build_manifest.json'}
+    m['files']=snapshot_files(out)
     p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     return report
 

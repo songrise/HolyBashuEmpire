@@ -7,3 +7,8 @@ hbe_tea_riders_illustration = { texture = "gfx/interface/illustrations/units/hbe
 hbe_valley_soldiers_illustration = { texture = "gfx/interface/illustrations/units/hbe_valley_soldiers.dds" priority = 950000 trigger = { is_unit_type = hbe_valley_soldiers } }
 hbe_trained_river_illustration = { texture = "gfx/interface/illustrations/units/hbe_trained_river.dds" priority = 950000 trigger = { is_unit_type = hbe_trained_river } }
 hbe_permanent_pass_illustration = { texture = "gfx/interface/illustrations/units/hbe_permanent_pass.dds" priority = 950000 trigger = { is_unit_type = hbe_permanent_pass } }
+hbe_canal_crossbow_renaissance_illustration = { texture = "gfx/interface/illustrations/units/hbe_canal_crossbow.dds" priority = 950000 trigger = { is_unit_type = hbe_canal_crossbow_renaissance } }
+hbe_salt_guard_renaissance_illustration = { texture = "gfx/interface/illustrations/units/hbe_salt_guard.dds" priority = 950000 trigger = { is_unit_type = hbe_salt_guard_renaissance } }
+hbe_granary_militia_renaissance_illustration = { texture = "gfx/interface/illustrations/units/hbe_granary_militia.dds" priority = 950000 trigger = { is_unit_type = hbe_granary_militia_renaissance } }
+hbe_tea_riders_renaissance_illustration = { texture = "gfx/interface/illustrations/units/hbe_tea_riders.dds" priority = 950000 trigger = { is_unit_type = hbe_tea_riders_renaissance } }
+hbe_valley_soldiers_renaissance_illustration = { texture = "gfx/interface/illustrations/units/hbe_valley_soldiers.dds" priority = 950000 trigger = { is_unit_type = hbe_valley_soldiers_renaissance } }

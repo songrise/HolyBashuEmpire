@@ -3,7 +3,8 @@
 Run with Python 3.10+. No changes are made to the installation. The large setup
 override is generated locally and pinned to the source hash in build_manifest.
 """
-import argparse, colorsys, csv, hashlib, json, re, struct, zlib
+from build_support import sha256_file as sha, snapshot_files
+import argparse, colorsys, csv, json, re, struct, zlib
 from collections import OrderedDict
 from pathlib import Path
 from pdxscript import blocks, tokens, apply_edits
@@ -34,7 +35,6 @@ REGIONS = [
  ('southwestern_valleys','川西南山谷圈','jianchang','地方共治','hbe_valleys','山谷互市','地方议约'),
 ]
 
-def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def write(path, text, bom=False):
     path.parent.mkdir(parents=True, exist_ok=True)
     clean='\n'.join(re.sub(r'^[ \t]+',lambda m:m[0].expandtabs(4),line.rstrip()) for line in text.rstrip().splitlines())+'\n'
@@ -86,6 +86,8 @@ def main():
         existing.update(re.findall(r'^\s+([A-Z]{3}):',f.read_text(encoding='utf-8-sig'),re.M))
     unused=[f'B{a}{b}' for a in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' for b in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
             if f'B{a}{b}' not in existing]
+    identity_source = ROOT/'data/opening_population_identity_v032.json'
+    country_identity_overrides = json.loads(identity_source.read_text(encoding='utf-8-sig'))['country_overrides']
     countries=[];loc_to_tag={};region_to_tags={k:[] for k,*_ in REGIONS};electors={}
     group_names={
         'chengdu_province':'成都锦官公国','xuzhou_sichuan_province':'叙州盐酒商邦',
@@ -106,6 +108,7 @@ def main():
         countries.append(dict(tag=tag,name=name,province=province,region=region,capital=capital['location_id'],
                               culture=capital['original_culture'],religion=capital['original_religion'],
                               locations=[r['location_id'] for r in locations],group=base))
+        countries[-1].update(country_identity_overrides.get(tag, {}))
         loc_to_tag.update({r['location_id']:tag for r in locations});region_to_tags[region].append(tag)
         if province in ('chengdu_province','xuzhou_sichuan_province','chongqing_province','baoning_province',
                         'suining_province','yazhou_province','sichuan_province'):electors[region]=tag
@@ -185,7 +188,8 @@ def main():
     put('main_menu/setup/1337/04_hbe_dynasties.txt','dynasty_manager = {\n'+'\n'.join(dynasties)+'\n}')
     template=(game/'main_menu/setup/templates/chinese_monarchy.txt').read_text(encoding='utf-8-sig')
     template=template.replace('three_departments_system','autocracy')
-    template=re.sub(r'^\s*marriage_law\s*=\s*dishu_system\s*$', '',template,flags=re.M)
+    # Use the native general East Asian marriage policy, valid for every HBE culture.
+    template=template.replace('marriage_law = dishu_system', 'marriage_law = monogamous_marriage')
     put('main_menu/setup/templates/hbe_monarchy.txt',template)
     put('main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt','\n'.join(flags))
     for i,name in enumerate(('守义','承川','维新','景和','允诚','怀远','明理','济民')):L(f'hbe_given_name_{i}',name)
@@ -640,17 +644,33 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_western_tributes(out, ROOT, game)
     from apply_diplomacy_restraint_v032 import apply as apply_diplomacy_restraint
     apply_diplomacy_restraint(out, ROOT, game)
+    from apply_industry_transmission import apply as apply_industry_transmission
+    apply_industry_transmission(out, ROOT, game)
+    from apply_western_opening_v032 import apply as apply_western_opening
+    apply_western_opening(out, ROOT, game)
+    from apply_production_advance_semantics_v032 import apply as apply_production_semantics
+    apply_production_semantics(out, ROOT, game)
+    from apply_advance_display_v032 import apply as apply_advance_display
+    apply_advance_display(out, ROOT, game)
+    from apply_opening_identity_v032 import apply as apply_opening_identity
+    apply_opening_identity(out, ROOT, game)
+    from apply_population_identity_v032 import apply as apply_population_identity
+    apply_population_identity(out, ROOT, game)
+    from build_early_research import apply as build_early_research
+    build_early_research(out, ROOT, game)
     from finalize_release_v032 import apply as finalize_release_v032
     finalize_release_v032(out, ROOT, game)
+    from build_age2_military import apply as build_age2_military
+    build_age2_military(out, ROOT, game)
     manifest_path = out / "build_manifest.json"
     final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     final_manifest["deep_balance_v031"] = {"version":"0.3.1", "local_only":True, "decision_prices":len(deep_balance_report["decision_prices"]), "event_receipts":len(deep_balance_report["event_receipts"]), "national_output_caps":deep_balance_report["national_output_caps"], "reforms":deep_balance_report["reforms"], "support_duration_rule":deep_balance_report["support_duration_rule"]}
     final_manifest["guest_production_patch"] = guest_production_report
     final_manifest["opening_population"] = opening_population_report
     final_manifest["opening_armistice"] = opening_armistice_report
-    final_manifest["files"] = {p.relative_to(out).as_posix():sha(p) for p in out.rglob("*") if p.is_file() and p.name != "build_manifest.json"}
+    final_manifest["files"] = snapshot_files(out)
     manifest_path.write_text(json.dumps(final_manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({k:manifest[k] for k in ('version','research_nodes','regional_missions','recurring_services','events','decisions')},ensure_ascii=False))
+    print(json.dumps({k:final_manifest[k] for k in ('version','research_nodes','regional_missions','recurring_services','events','decisions')},ensure_ascii=False))
     print(f'Built {len(countries)} countries / {len(locs)} locations / {len(REGIONS)} circles at {out}')
 
 if __name__=='__main__':main()

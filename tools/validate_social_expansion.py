@@ -6,18 +6,23 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     def read(p):return (mod/p).read_text(encoding='utf-8-sig')
     buildings=read('in_game/common/building_types/hbe_civic_buildings.txt');units=read('in_game/common/unit_types/hbe_civic_units.txt')
     advances=read('in_game/common/advances/hbe_civic_advances.txt');old=read('in_game/common/advances/hbe_advances.txt')
+    military=read('in_game/common/advances/hbe_local_military.txt') if 'early_research_design' in manifest else ''
     slots=19 if 'observer_hotfix' in manifest else 23 if 'technology_rewards' in manifest else 16
     check('16 native special buildings with employment and real maintenance',len(blocks(buildings,0))==16 and buildings.count('is_special = yes')==16 and buildings.count('employment_size = 0.15')==16 and buildings.count('unique_production_methods =')==slots)
-    check('all buildings unlocked by preexisting native advances',all('unlock_building = '+b['key'] in old for b in data['buildings']))
+    check('all buildings unlocked by preexisting native advances',all('unlock_building = '+b['key'] in old+advances+military for b in data['buildings']))
     check('all buildings have domain or circle location potential',buildings.count('location_potential = { is_in_scripted_geography =')==16)
-    check('thirteen civilian institution caps include unfinished construction',buildings.count('hbe_civil_institution_below_cap =')==13 and 'total_building_levels_including_construction:$type$ < 3' in read('in_game/common/scripted_triggers/hbe_industry_patch_triggers.txt'))
-    check('9 native special recruitable unit types in one shared family',len(blocks(units,0))==9 and units.count('family = hbe_civic_special_family')==9 and units.count('hide = no buildable = yes levy = no is_special = yes')==9)
+    adaptive=manifest.get('industry_transmission',{}).get('institution_caps',{})
+    check('thirteen civilian institution caps include unfinished construction',buildings.count('hbe_civil_institution_below_cap =')+len(adaptive)==13 and 'total_building_levels_including_construction:$type$ < 3' in read('in_game/common/scripted_triggers/hbe_industry_patch_triggers.txt'))
+    unit_count=manifest.get('age2_military',{}).get('unit_count',9)
+    check('all native special recruitable unit types in one shared family',len(blocks(units,0))==unit_count and units.count('family = hbe_civic_special_family')==unit_count and units.count('hide = no buildable = yes levy = no is_special = yes')==unit_count)
     check('unit family shares supply-scaled 20 percent capacity','limit = hbe_civic_special_limit' in read('in_game/common/unit_families/hbe_civic_families.txt') and 'multiply = 0.2 divide = 0.5' in read('in_game/common/script_values/hbe_civic_values.txt'))
-    check('all nine unit types use real supply and geographic recruitment',units.count('construction_demand =')==9 and units.count('maintenance_demand =')==9 and units.count('is_in_scripted_geography = scripted_geography:hbe_geo_')==9)
-    check('early and late unit unlocking ties to actual advances',all('unlock_unit = '+u['key'] in old+advances for u in data['units']))
+    check('all unit types use real supply and geographic recruitment',units.count('construction_demand =')==unit_count and units.count('maintenance_demand =')==unit_count and units.count('is_in_scripted_geography = scripted_geography:hbe_geo_')==unit_count)
+    native_unlocks='\n'.join(read(row['file']) for row in manifest.get('age2_military',{}).get('native_patches',[]))
+    check('early and late unit unlocking ties to actual advances',all('unlock_unit = '+u['key'] in old+advances+military+native_unlocks for u in data['units']))
     check('two late types replace their base troops', 'upgrades_to = hbe_trained_river' in units and 'upgrades_to = hbe_permanent_pass' in units and ('current_year' not in units if 'formables_units_v031' in manifest else units.count('current_year >= 1457')==2))
-    check('native research catalogue now has 80 nodes',len(blocks(old,0))+len(blocks(advances,0))==manifest['research_nodes']==80)
-    allnodes={k:(old+advances)[a:b] for k,_,a,b,_ in blocks(old+advances,0)}
+    additional=manifest.get('industry_transmission',{}).get('advance_count',0)
+    check('80 original research nodes plus separately registered transmission advances',len(blocks(old,0))+len(blocks(advances,0))==80 and manifest['research_nodes']==80+additional+manifest.get('early_research_design',{}).get('military_count',0))
+    allnodes={k:(old+advances+military)[a:b] for k,_,a,b,_ in blocks(old+advances+military,0)}
     ages={k:re.search(r'age = (\w+)',body)[1] for k,body in allnodes.items()}
     check('native visual prerequisite edges stay inside their era',all(ages[k]==ages[p] for k,body in allnodes.items() for p in re.findall(r'requires = (hbe_\w+)',body)))
     check('late original and civic courses appear in the second era',sum(v=='age_2_renaissance' for v in ages.values())>=22)

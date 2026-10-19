@@ -7,11 +7,14 @@
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_canal_office } any_buildings_in_location = { OR = { building_type = building_type:hbe_canal_office } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } var:hbe_burden < 70
- OR = { has_advance = hbe_tech_chengdu_plain_2 AND = { has_variable = hbe_guest_chengdu_plain has_advance = hbe_tech_common_4 } }
-  } }
+ OR = { has_advance = hbe_military_chengdu_plain AND = { has_variable = hbe_guest_chengdu_plain has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_chengdu_plain_qualified = yes }
+ } }
  gfx_tags = { crossbow_tag light_tag }
  strength_damage_done = 0.16 initiative = 1.00
+ upgrades_to = hbe_canal_crossbow_renaissance
 }
+
 hbe_salt_guard = {
  copy_from = a_age_1_traditions_light_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
@@ -21,41 +24,50 @@ hbe_salt_guard = {
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_salt_office has_building_with_at_least_one_level = hbe_salt_contract_house } any_buildings_in_location = { OR = { building_type = building_type:hbe_salt_office building_type = building_type:hbe_salt_contract_house } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } var:hbe_burden < 70 var:hbe_yiqi >= 20
- OR = { has_advance = hbe_tech_southern_salt_wine_2 AND = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_tech_common_4 } }
-  } }
+ OR = { has_advance = hbe_military_southern_salt_wine AND = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_southern_salt_wine_qualified = yes }
+ } }
  gfx_tags = { light_tag sword_tag }
  flanking_ability = 0.30 strength_damage_taken = 0.03 morale_damage_taken = -0.12
+ upgrades_to = hbe_salt_guard_renaissance
 }
+
 hbe_river_garrison = {
  copy_from = a_age_1_traditions_heavy_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
- max_strength = 0 upgrades_to = hbe_trained_river
+ max_strength = 0
  construction_demand = early_infantry_construction maintenance_demand = hbe_discount_early_infantry_maintenance
  country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } OR = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } has_variable = hbe_guest_eastern_river } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_river_warehouse has_building_with_at_least_one_level = hbe_cliff_stockade } any_buildings_in_location = { OR = { building_type = building_type:hbe_river_warehouse building_type = building_type:hbe_cliff_stockade } building_employed_amount >= 0.05 }
- owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } var:hbe_burden < 70  NOT = { has_advance = hbe_civic_eastern_river_2 }
- OR = { has_advance = hbe_tech_eastern_river_2 AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_tech_common_4 } }
-  } }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } var:hbe_burden < 70
+ OR = { has_advance = hbe_military_eastern_river AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_eastern_river_qualified = yes }
+ } }
  gfx_tags = { heavy_tag sword_tag }
  morale_damage_taken = -0.16 strength_damage_taken = -0.03 supply_weight = 0.10
  combat = { river = 0.12 }
+ upgrades_to = hbe_trained_river
 }
+
 hbe_pass_rotation = {
  copy_from = a_age_1_traditions_heavy_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
- max_strength = 0 upgrades_to = hbe_permanent_pass
+ max_strength = 0
  construction_demand = early_infantry_construction maintenance_demand = hbe_discount_early_infantry_maintenance
  country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } OR = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } has_variable = hbe_guest_northern_shudao } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_plank_fort } any_buildings_in_location = { OR = { building_type = building_type:hbe_plank_fort } building_employed_amount >= 0.05 }
- owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } var:hbe_burden < 70  NOT = { has_advance = hbe_civic_northern_shudao_2 }
- OR = { has_advance = hbe_tech_northern_shudao_2 AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_tech_common_4 } }
-  } }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } var:hbe_burden < 70
+ OR = { has_advance = hbe_military_northern_shudao AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_northern_shudao_qualified = yes }
+ } }
  gfx_tags = { heavy_tag pike_tag }
  strength_damage_taken = -0.15 morale_damage_taken = -0.04
  combat = { mountains = 0.12 }
+ upgrades_to = hbe_permanent_pass
 }
+
 hbe_granary_militia = {
  copy_from = a_age_1_traditions_light_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
@@ -64,12 +76,15 @@ hbe_granary_militia = {
  country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } OR = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } has_variable = hbe_guest_central_hills } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_community_granary has_building_with_at_least_one_level = hbe_witness_house } any_buildings_in_location = { OR = { building_type = building_type:hbe_community_granary building_type = building_type:hbe_witness_house } building_employed_amount >= 0.05 }
- owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } var:hbe_burden < 70  has_variable = hbe_garrison_compact
- OR = { has_advance = hbe_tech_central_hills_2 AND = { has_variable = hbe_guest_central_hills has_advance = hbe_tech_common_4 } }
-  } }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } var:hbe_burden < 70 has_variable = hbe_garrison_compact
+ OR = { has_advance = hbe_military_central_hills AND = { has_variable = hbe_guest_central_hills has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_central_hills_qualified = yes }
+ } }
  gfx_tags = { light_tag pike_tag }
  strength_damage_done = 0.02 morale_damage_taken = -0.06 supply_weight = -0.20 food_consumption_per_strength = -0.03
+ upgrades_to = hbe_granary_militia_renaissance
 }
+
 hbe_tea_riders = {
  copy_from = a_age_1_traditions_light_cavalry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
@@ -79,11 +94,14 @@ hbe_tea_riders = {
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_guide_station } any_buildings_in_location = { OR = { building_type = building_type:hbe_guide_station } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } var:hbe_burden < 70
- OR = { has_advance = hbe_tech_western_tea_horse_2 AND = { has_variable = hbe_guest_western_tea_horse has_advance = hbe_tech_common_4 } }
-  } }
+ OR = { has_advance = hbe_military_western_tea_horse AND = { has_variable = hbe_guest_western_tea_horse has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_western_tea_horse_qualified = yes }
+ } }
  gfx_tags = { light_tag cavalry_tag }
  flanking_ability = 0.30 strength_damage_done = 0.00 movement_speed = 0.45 initiative = 1.50 morale_damage_done = 0.10
+ upgrades_to = hbe_tea_riders_renaissance
 }
+
 hbe_valley_soldiers = {
  copy_from = a_age_1_traditions_light_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
@@ -92,40 +110,162 @@ hbe_valley_soldiers = {
  country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } OR = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } has_variable = hbe_guest_southwestern_valleys } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_covenant_stockade } any_buildings_in_location = { OR = { building_type = building_type:hbe_covenant_stockade } building_employed_amount >= 0.05 }
- owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } var:hbe_burden < 70  has_variable = hbe_garrison_compact
- OR = { has_advance = hbe_tech_southwestern_valleys_2 AND = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_tech_common_4 } }
-  } }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } var:hbe_burden < 70 has_variable = hbe_garrison_compact
+ OR = { has_advance = hbe_military_southwestern_valleys AND = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_tech_common_4 hbe_has_regional_military_training = yes } }
+ NOT = { hbe_age2_southwestern_valleys_qualified = yes }
+ } }
  gfx_tags = { light_tag sword_tag }
  initiative = 1.50 strength_damage_taken = 0.02 morale_damage_taken = -0.04
  combat = { mountains = 0.18 hills = 0.12 }
+ upgrades_to = hbe_valley_soldiers_renaissance
 }
+
 hbe_trained_river = {
  copy_from = a_age_2_renaissance_heavy_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
  max_strength = -0.5
- construction_demand = early_infantry_construction maintenance_demand = hbe_discount_early_infantry_maintenance
- country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } OR = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } has_variable = hbe_guest_eastern_river } }
+ combat_power = 0.25
+ combat_speed = 0.25
+ strength_damage_done = 0.14
+ strength_damage_taken = -0.03
+ morale_damage_taken = -0.18
+ supply_weight = 0.2
+ combat = { river = 0.18 }
+ construction_demand = early_heavy_infantry_construction
+ maintenance_demand = hbe_age2_heavy_maintenance
+ country_potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_river_warehouse has_building_with_at_least_one_level = hbe_cliff_stockade } any_buildings_in_location = { OR = { building_type = building_type:hbe_river_warehouse building_type = building_type:hbe_cliff_stockade } building_employed_amount >= 0.05 }
- owner = { is_member_of_international_organization = international_organization:hbe_empire  OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } var:hbe_burden < 70
- OR = { has_advance = hbe_civic_eastern_river_2 AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_tech_common_4 } }
- has_variable = hbe_mission_eastern_river_5 } }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } var:hbe_burden < 70
+ hbe_age2_eastern_river_qualified = yes
+ } }
  gfx_tags = { heavy_tag sword_tag }
- combat_power = 0.25 morale_damage_taken = -0.18 strength_damage_done = 0.14 strength_damage_taken = -0.03 supply_weight = 0.20 combat_speed = 0.25
- combat = { river = 0.18 }
 }
+
 hbe_permanent_pass = {
  copy_from = a_age_2_renaissance_heavy_infantry
  hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
  max_strength = -0.5
- construction_demand = early_infantry_construction maintenance_demand = hbe_discount_early_infantry_maintenance
- country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } OR = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } has_variable = hbe_guest_northern_shudao } }
+ combat_power = 0.2
+ combat_speed = 0.25
+ strength_damage_taken = -0.2
+ morale_damage_taken = -0.12
+ supply_weight = 0.2
+ combat = { mountains = 0.18 }
+ construction_demand = early_heavy_infantry_construction
+ maintenance_demand = hbe_age2_heavy_maintenance
+ country_potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_plank_fort } any_buildings_in_location = { OR = { building_type = building_type:hbe_plank_fort } building_employed_amount >= 0.05 }
- owner = { is_member_of_international_organization = international_organization:hbe_empire  OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } var:hbe_burden < 70
- OR = { has_advance = hbe_civic_northern_shudao_2 AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_tech_common_4 } }
- has_variable = hbe_mission_northern_shudao_5 } }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } var:hbe_burden < 70
+ hbe_age2_northern_shudao_qualified = yes
+ } }
  gfx_tags = { heavy_tag pike_tag }
- combat_power = 0.20 strength_damage_taken = -0.20 morale_damage_taken = -0.12 supply_weight = 0.20 combat_speed = 0.25
- combat = { mountains = 0.18 }
+}
+
+hbe_canal_crossbow_renaissance = {
+ copy_from = a_age_2_renaissance_light_infantry
+ hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
+ max_strength = -0.5
+ combat_power = 0.1
+ initiative = 2
+ strength_damage_done = 0.2
+ morale_damage_taken = -0.05
+ construction_demand = hbe_age2_crossbow_construction
+ maintenance_demand = hbe_age2_infantry_maintenance
+ country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+ location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
+ location_trigger = { OR = { has_building_with_at_least_one_level = hbe_canal_office } any_buildings_in_location = { OR = { building_type = building_type:hbe_canal_office } building_employed_amount >= 0.05 }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } var:hbe_burden < 70
+ hbe_age2_chengdu_plain_qualified = yes
+ } }
+ gfx_tags = { crossbow_tag light_tag }
+}
+
+hbe_salt_guard_renaissance = {
+ copy_from = a_age_2_renaissance_light_infantry
+ hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
+ max_strength = -0.5
+ combat_power = 0.1
+ strength_damage_done = 0.1
+ strength_damage_taken = 0.02
+ morale_damage_done = 0.05
+ morale_damage_taken = -0.15
+ flanking_ability = 0.4
+ construction_demand = early_infantry_construction
+ maintenance_demand = hbe_age2_infantry_maintenance
+ country_potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+ location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
+ location_trigger = { OR = { has_building_with_at_least_one_level = hbe_salt_office has_building_with_at_least_one_level = hbe_salt_contract_house } any_buildings_in_location = { OR = { building_type = building_type:hbe_salt_office building_type = building_type:hbe_salt_contract_house } building_employed_amount >= 0.05 }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } var:hbe_burden < 70 var:hbe_yiqi >= 20
+ hbe_age2_southern_salt_wine_qualified = yes
+ } }
+ gfx_tags = { light_tag sword_tag }
+}
+
+hbe_granary_militia_renaissance = {
+ copy_from = a_age_2_renaissance_light_infantry
+ hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
+ max_strength = -0.5
+ combat_power = 0.05
+ strength_damage_done = 0.05
+ morale_damage_taken = -0.1
+ supply_weight = -0.25
+ food_consumption_per_strength = -0.05
+ construction_demand = early_infantry_construction
+ maintenance_demand = hbe_age2_militia_maintenance
+ country_potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
+ location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
+ location_trigger = { OR = { has_building_with_at_least_one_level = hbe_community_granary has_building_with_at_least_one_level = hbe_witness_house } any_buildings_in_location = { OR = { building_type = building_type:hbe_community_granary building_type = building_type:hbe_witness_house } building_employed_amount >= 0.05 }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } var:hbe_burden < 70 has_variable = hbe_garrison_compact
+ hbe_age2_central_hills_qualified = yes
+ } }
+ gfx_tags = { light_tag pike_tag }
+}
+
+hbe_tea_riders_renaissance = {
+ copy_from = a_age_2_renaissance_light_cavalry
+ hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
+ max_strength = 0.1
+ combat_power = 0.1
+ initiative = 2
+ movement_speed = 0.6
+ strength_damage_done = 0.05
+ morale_damage_done = 0.12
+ morale_damage_taken = -0.05
+ flanking_ability = 0.4
+ attrition_loss = -0.05
+ combat = { mountains = 0.05 }
+ construction_demand = cavalry_construction
+ maintenance_demand = hbe_age2_cavalry_maintenance
+ country_potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+ location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
+ location_trigger = { OR = { has_building_with_at_least_one_level = hbe_guide_station } any_buildings_in_location = { OR = { building_type = building_type:hbe_guide_station } building_employed_amount >= 0.05 }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } var:hbe_burden < 70
+ hbe_age2_western_tea_horse_qualified = yes
+ } }
+ gfx_tags = { light_tag cavalry_tag }
+}
+
+hbe_valley_soldiers_renaissance = {
+ copy_from = a_age_2_renaissance_light_infantry
+ hide = no buildable = yes levy = no is_special = yes family = hbe_civic_special_family
+ max_strength = -0.5
+ combat_power = 0.1
+ initiative = 2
+ movement_speed = 0.2
+ strength_damage_done = 0.05
+ morale_damage_taken = -0.08
+ flanking_ability = 0.1
+ supply_weight = -0.1
+ combat = { hills = 0.15 mountains = 0.2 }
+ construction_demand = early_infantry_construction
+ maintenance_demand = hbe_age2_infantry_maintenance
+ country_potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
+ location_trigger = { OR = { has_building_with_at_least_one_level = hbe_covenant_stockade } any_buildings_in_location = { OR = { building_type = building_type:hbe_covenant_stockade } building_employed_amount >= 0.05 }
+ owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } var:hbe_burden < 70 has_variable = hbe_garrison_compact
+ hbe_age2_southwestern_valleys_qualified = yes
+ } }
+ gfx_tags = { light_tag sword_tag }
 }

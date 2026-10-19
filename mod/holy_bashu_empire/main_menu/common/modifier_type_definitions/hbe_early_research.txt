@@ -1,0 +1,1 @@
+﻿hbe_can_cross_circle_industry = { boolean = yes game_data = { category = country } }
