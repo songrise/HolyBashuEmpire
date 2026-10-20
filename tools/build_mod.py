@@ -3,7 +3,7 @@
 Run with Python 3.10+. No changes are made to the installation. The large setup
 override is generated locally and pinned to the source hash in build_manifest.
 """
-from build_support import sha256_file as sha, snapshot_files
+from build_support import sha256_file as sha, snapshot_files, defer_file_snapshots
 import argparse, colorsys, csv, json, re, struct, zlib
 from collections import OrderedDict
 from pathlib import Path
@@ -72,6 +72,11 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--game-dir',type=Path,required=True)
     ap.add_argument('--output',type=Path,default=ROOT/'mod/holy_bashu_empire')
     args=ap.parse_args();game=args.game_dir/'game';out=args.output
+    with defer_file_snapshots(out):
+        build(game, out)
+
+
+def build(game, out):
     rows=list(csv.DictReader((ROOT/'data/prince_locations.csv').open(encoding='utf-8-sig')))
     assert len(rows)==164 and len({r['location_id'] for r in rows})==164
     # Match the current 36 province groups, preserving all location IDs.
@@ -671,7 +676,7 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     final_manifest["guest_production_patch"] = guest_production_report
     final_manifest["opening_population"] = opening_population_report
     final_manifest["opening_armistice"] = opening_armistice_report
-    final_manifest["files"] = snapshot_files(out)
+    final_manifest["files"] = snapshot_files(out, force=True)
     manifest_path.write_text(json.dumps(final_manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({k:final_manifest[k] for k in ('version','research_nodes','regional_missions','recurring_services','events','decisions')},ensure_ascii=False))
     print(f'Built {len(countries)} countries / {len(locs)} locations / {len(REGIONS)} circles at {out}')
