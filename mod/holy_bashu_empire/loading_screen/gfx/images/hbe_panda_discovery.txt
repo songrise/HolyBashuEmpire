@@ -1,0 +1,2 @@
+﻿hbe_panda_discovery_near = { illustration_image = { texture_file = "gfx/loading_screen_assets/hbe_panda_discovery/near_metadata_os3840x2160_d0x0.dds" priority = 1 weight = 1 } tag = "hbe_panda_discovery_near" }
+hbe_panda_discovery_far = { illustration_image = { texture_file = "gfx/loading_screen_assets/hbe_panda_discovery/far_metadata_os3840x2160_d0x0.dds" priority = 1 weight = 1 } tag = "hbe_panda_discovery_far" }

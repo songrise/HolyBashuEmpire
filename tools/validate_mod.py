@@ -237,6 +237,12 @@ def main():
     validate_early_research(m,ROOT,game,manifest,check)
     from validate_age2_military import validate as validate_age2_military
     validate_age2_military(m,ROOT,game,manifest,check)
+    if 'panda_loading' in manifest:
+        from apply_panda_loading import validate as validate_panda_loading
+        validate_panda_loading(m,ROOT,game,manifest,check)
+    if 'opening_territory' in manifest:
+        from apply_opening_territory import validate as validate_opening_territory
+        validate_opening_territory(m,ROOT,manifest,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, {manifest["research_nodes"]} research nodes.')

@@ -1,0 +1,6 @@
+{
+  "transfers": [
+    {"location": "renshou", "from": "BBQ", "to": "BAL"},
+    {"location": "jingyan", "from": "BBQ", "to": "BAO"}
+  ]
+}

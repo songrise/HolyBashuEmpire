@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+COUNTRY_BASE_NAME_OVERRIDES = {'BCB': '建昌'}
 SURNAMES = [
     ('李','Li'),('陈','Chen'),('王','Wang'),('赵','Zhao'),('苏','Su'),
     ('杨','Yang'),('罗','Luo'),('黄','Huang'),('何','He'),('张','Zhang'),
@@ -24,7 +25,7 @@ def apply(out, root=None):
     assert len(countries) == len(SURNAMES) == 36
     mapping = {}
     for country, (cn, en) in zip(countries, SURNAMES):
-        base = re.sub(r'(公国|侯国|商邦)$', '', country['name'])
+        base = COUNTRY_BASE_NAME_OVERRIDES.get(country['tag'], re.sub(r'(公国|侯国|商邦)$', '', country['name']))
         country['name'] = base
         mapping[country['tag']] = {'name': base, 'surname': cn, 'surname_english': en}
     changed = []
@@ -40,6 +41,7 @@ def apply(out, root=None):
             surname = values['surname' if language == 'simp_chinese' else 'surname_english']
             text, count = re.subn(r'(?m)^ '+key+r':\s*"[^\n]*"$', lambda m:' '+key+': '+json.dumps(surname,ensure_ascii=False), text)
             assert count == 1, (language, key, count)
+        text = re.sub(r'(?m)^( hbe_BCB_scenario:\s*")建昌共治', r'\1建昌', text)
         path.write_text(text, encoding='utf-8-sig', newline='\n')
         changed.append(path.relative_to(out).as_posix())
     # The roster is an authoring index; avoid changing mechanics or saved family identities.

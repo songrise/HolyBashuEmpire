@@ -63432,14 +63432,14 @@ BAJ = {
     government = { type = monarchy ruler = hbe_ruler_baj }
 }
 BAL = {
-    own_control_core = { danleng meizhou pengshan qingshen }
+    own_control_core = { danleng meizhou pengshan qingshen renshou }
     include = "hbe_monarchy"
     country_rank = rank_duchy
     capital = danleng
     government = { type = monarchy ruler = hbe_ruler_bal }
 }
 BAO = {
-    own_control_core = { emei jiajiang longyou_jiading qianwei rongzhou weiyuan_jiading }
+    own_control_core = { emei jiajiang longyou_jiading qianwei rongzhou weiyuan_jiading jingyan }
     include = "hbe_monarchy"
     country_rank = rank_duchy
     capital = emei
@@ -63565,7 +63565,7 @@ BBP = {
     government = { type = monarchy ruler = hbe_ruler_bbp }
 }
 BBQ = {
-    own_control_core = { jianzhou jingyan neijiang renshou zixian ziyang_zizhong }
+    own_control_core = { jianzhou neijiang zixian ziyang_zizhong }
     include = "hbe_monarchy"
     country_rank = rank_duchy
     capital = jianzhou

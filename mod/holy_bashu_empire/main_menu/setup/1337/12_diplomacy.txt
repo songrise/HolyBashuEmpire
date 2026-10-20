@@ -615,8 +615,8 @@ diplomacy_manager = {
     dependency = { first = LNG second = PCD subject_type = tusi }
     dependency = { first = LNG second = YYG subject_type = tusi }
     dependency = { first = LNG second = DWG subject_type = tusi }
-    dependency = { first = LNG second = TGY subject_type = tusi }
-    dependency = { first = LNG second = ZGL subject_type = tusi }
+    dependency = { first = BBF second = TGY subject_type = tributary }
+    dependency = { first = BBH second = ZGL subject_type = tributary }
     dependency = { first = LNG second = SZU subject_type = tusi }
     dependency = { first = LNG second = GLU subject_type = tusi }
     dependency = { first = LNG second = SGZ subject_type = tusi }
@@ -634,7 +634,7 @@ diplomacy_manager = {
     dependency = { first = GGX second = MLE subject_type = tusi }
     dependency = { first = YGS second = BJG subject_type = tusi }
     dependency = { first = BZU second = NPG subject_type = tusi }
-    dependency = { first = BZU second = ZNZ subject_type = tusi }
+    dependency = { first = BAZ second = ZNZ subject_type = tributary }
     dependency = { first = BZU second = RGS subject_type = tusi }
     dependency = { first = BZU second = BNI subject_type = tusi }
     dependency = { first = BZU second = COG subject_type = tusi }

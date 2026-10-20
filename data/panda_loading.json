@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "sources": {
+    "far": "assets/loading_panda_v1/far.png",
+    "near": "assets/loading_panda_v1/near.png"
+  },
+  "canvas": [
+    3840,
+    2160
+  ],
+  "generation_source_dimensions": {
+    "far": [
+      1672,
+      940
+    ],
+    "near": [
+      1672,
+      941
+    ]
+  },
+  "resolution_note": "Generated layers resampled with Lanczos to the native canvas, not native 4K generation.",
+  "native_scene_prefix": "loading_screen_scene_",
+  "flavor_tip_slots": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "legacy_four_paintings_enabled": false
+}

@@ -93,7 +93,7 @@ def main():
         'chengdu_province':'成都锦官公国','xuzhou_sichuan_province':'叙州盐酒商邦',
         'chongqing_province':'重庆山城公国','baoning_province':'保宁蜀道侯国',
         'suining_province':'遂宁义仓侯国','yazhou_province':'雅州茶马侯国',
-        'sichuan_province':'建昌共治侯国','jiading_province':'嘉定山门侯国'}
+        'sichuan_province':'建昌侯国','jiading_province':'嘉定山门侯国'}
     for index,(province,locations) in enumerate(groups.items()):
         region=locations[0]['circle_design_key'];tag=unused[index]
         preferred=next((cap for key,_,cap,*_ in REGIONS if key==region and any(r['location_id']==cap for r in locations)),None)
@@ -662,6 +662,9 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     finalize_release_v032(out, ROOT, game)
     from build_age2_military import apply as build_age2_military
     build_age2_military(out, ROOT, game)
+    # Allocate the earlier population changes before moving their resident places.
+    from apply_opening_territory import apply as apply_opening_territory
+    apply_opening_territory(out, ROOT, game)
     manifest_path = out / "build_manifest.json"
     final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     final_manifest["deep_balance_v031"] = {"version":"0.3.1", "local_only":True, "decision_prices":len(deep_balance_report["decision_prices"]), "event_receipts":len(deep_balance_report["event_receipts"]), "national_output_caps":deep_balance_report["national_output_caps"], "reforms":deep_balance_report["reforms"], "support_duration_rule":deep_balance_report["support_duration_rule"]}

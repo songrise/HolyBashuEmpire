@@ -25,6 +25,7 @@ def apply(out, root=None, game=None):
             target.write_text('\n'.join(lines)+'\n',encoding='utf-8-sig')
     m['release_v032']={'version':'0.3.2','visible_events':event_count,'capital_recruitment_fallback':True,'special_regiment_strength':500,'burden_per_net_new_special_regiment':2,'loading_art_enabled':False}
     m['current_release']={'version':version,'research_nodes':m['research_nodes'],'visible_events':event_count}
+    m['current_release']['loading_art_enabled']=bool(m.get('panda_loading',{}).get('enabled'))
     m['files']=snapshot_files(out)
     p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     return m['release_v032']

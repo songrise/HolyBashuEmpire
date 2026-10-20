@@ -67,11 +67,12 @@ else:
   check(row['key']+' loading DDS removed',not (M/row['texture']).exists())
   check(row['key']+' original art retained',(R/row['source']).is_file())
  check('vanilla loading mode recorded',runtime['mode']=='vanilla' and runtime['scenes']==0)
+from apply_loading_art_v031 import QUOTES
 for lang in ('simp_chinese','english'):
- loc=(M/f'loading_screen/localization/{lang}/hbe_load_tips_l_{lang}.yml').read_text(encoding='utf-8-sig')
- check(lang+' four native quote slots',set(re.findall(r'LOADING_TIP_(\d+):',loc))=={'0','1','2','3'})
- check(lang+' native title and attribution formatting',loc.count('#T ')==4 and loc.count('#tooltip_subheading')==4 and loc.count('\\n')==4 and '\\\\n' not in loc)
- check(lang+' four credited excerpts',loc.count('— ')==4)
+ loc=(M/f'loading_screen/localization/{lang}/replace/hbe_load_tips_l_{lang}.yml').read_text(encoding='utf-8-sig')
+ check(lang+' native quote slots',set(re.findall(r'LOADING_TIP_(\d+):',loc))=={str(n) for n in range(len(QUOTES))})
+ check(lang+' native title and attribution formatting',loc.count('#T ')==len(QUOTES) and loc.count('#tooltip_subheading')==len(QUOTES) and loc.count('\\n')==len(QUOTES) and '\\\\n' not in loc)
+ check(lang+' credited excerpts',loc.count('— ')==len(QUOTES))
 check('native loading GUI is not overridden',not (M/'loading_screen/gui/loading_screen.gui').exists())
 progress=(M/'in_game/gfx/images/hbe_progress_backgrounds.txt').read_text(encoding='utf-8-sig')
 for texture in set(re.findall(r'texture_file\s*=\s*"([^"]+)"',progress)):

@@ -1,0 +1,11 @@
+﻿loading_screen_scene_hbe_panda_discovery = {
+ecs_illustration_image = { list = "hbe_panda_discovery_near" pdxmesh = "layer_1_mesh" name = "illustration_override_anims" }
+ecs_illustration_image = { list = "hbe_panda_discovery_far" pdxmesh = "layer_8_mesh" name = "illustration_override_anims" }
+    gfx_environment_file = "gfx/illustrations/environment2.txt"
+    camera = {
+        camera_near_far = { 0.11 100000 }
+        camera_fov_y_degrees = 37.5
+        camera_position = { 0 0 -125 }
+        camera_look_at = { 0 0 1000 }
+    }
+}

@@ -14,6 +14,13 @@ def validate(out, game, manifest, check):
     out, game = map(Path, (out, game))
     wanted = set(COUNTRY_DELTAS) | set(FIXED_POPULATIONS)
     places = owned_locations((out / 'main_menu/setup/1337/10_countries.txt').read_text(encoding='utf-8-sig'), wanted)
+    # The requested population deltas were allocated before later border changes.
+    # Reconstruct that allocation territory so a land transfer does not deduct people again.
+    for row in manifest.get('opening_territory', {}).get('transfers', []):
+        if row['to'] in places:
+            places[row['to']].remove(row['location'])
+        if row['from'] in places:
+            places[row['from']].append(row['location'])
     owner = {location: tag for tag, locations in places.items() for location in locations}
     tables = []
     for path in (game / 'main_menu/setup/1337/06_pops.txt', out / 'main_menu/setup/1337/06_pops.txt'):

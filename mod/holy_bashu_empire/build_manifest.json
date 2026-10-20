@@ -76,7 +76,8 @@
         "danleng",
         "meizhou",
         "pengshan",
-        "qingshen"
+        "qingshen",
+        "renshou"
       ],
       "group": "眉州"
     },
@@ -94,7 +95,8 @@
         "longyou_jiading",
         "qianwei",
         "rongzhou",
-        "weiyuan_jiading"
+        "weiyuan_jiading",
+        "jingyan"
       ],
       "group": "嘉定"
     },
@@ -383,9 +385,7 @@
       "religion": "mahayana",
       "locations": [
         "jianzhou",
-        "jingyan",
         "neijiang",
-        "renshou",
         "zixian",
         "ziyang_zizhong"
       ],
@@ -566,7 +566,7 @@
     },
     {
       "tag": "BCB",
-      "name": "建昌共治",
+      "name": "建昌",
       "province": "sichuan_province",
       "region": "southwestern_valleys",
       "capital": "beishe",
@@ -3587,7 +3587,7 @@
       },
       {
         "tag": "BCB",
-        "country": "建昌共治侯国",
+        "country": "建昌侯国",
         "region": "southwestern_valleys",
         "inscription": "",
         "font": null,
@@ -6772,6 +6772,10 @@
     "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "859b2837c462aa9106ec671926776021f246dfc0eb2af481ed8b5783325d81d7",
     "in_game/gui/panels/situation/hbe_banquet.gui": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
     "in_game/setup/countries/hbe_countries.txt": "71d5a2e1daf934027a07d77024a6d1ddfa00154b77a33328acd5285becdc4339",
+    "loading_screen/gfx/images/hbe_panda_discovery.txt": "923a279fa0ff9dc11e64c5136edaa5df2a8b7a08525d88b92700ef4cc41c80df",
+    "loading_screen/gfx/images/hbe_saltworks.txt": "c2089891b3732403cad0601879aa54025344b163a6cd4cbeb4d5a39850f940d3",
+    "loading_screen/gfx/scenes/hbe_panda_discovery.txt": "12e76b96ca1bd0ad7a1b06cbb0c91aaf9012201a503cefc4464b81c4773e9b67",
+    "loading_screen/gfx/scenes/hbe_saltworks.txt": "231720834828332736292bedba5556261223127396069ac94f2bd6e67080d91c",
     "loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt": "e095974442ecba1ed93ddef97cecfe77b897414493f42dd00b66abc106daa4b7",
     "loading_screen/gfx/illustrations/database/hbe_egret_illustration.txt": "499f5a389932385c9dc2f043bbfa0406a2825e7c60f2537bffbb94a7d92394b6",
     "loading_screen/gfx/illustrations/database/hbe_ending_illustrations.txt": "668020af36e3e7e4ae5d37694482472c98e9f5eaf0a223766d8269e659e51497",
@@ -6780,8 +6784,12 @@
     "loading_screen/gfx/illustrations/database/hbe_story_illustrations.txt": "bdec591395f04add88cf20156b2833bb441692b14c7497e76f15f2aa3e26ff7f",
     "loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt": "4094274778343be9e6caee5857cc9bd2406c012525d8d64084e70b9b83d65c02",
     "loading_screen/gfx/interface/hbe/placeholder.dds": "226cfe7ca22f750e3bdf461bbfdffd389559dfe62fe393b2fe73ba9d1d536c41",
-    "loading_screen/localization/english/hbe_load_tips_l_english.yml": "98ab23c01fe99fca03cd2845f68118eec11e0652b7a4375de1f27a0074a13e10",
-    "loading_screen/localization/simp_chinese/hbe_load_tips_l_simp_chinese.yml": "837510a640e1e22a7b5bb93d2cce2be344ac92165abdc1280d4014e001d56ada",
+    "loading_screen/gfx/loading_screen_assets/hbe_panda_discovery/far_metadata_os3840x2160_d0x0.dds": "45b1fc4f2927a40c88ccd71793e5c1c7bf8df9d2e331ef68f3222f4c7763c7bf",
+    "loading_screen/gfx/loading_screen_assets/hbe_panda_discovery/near_metadata_os3840x2160_d0x0.dds": "eef09991a3a8459c26719af4a68bbe8bdeb903e736dd706084004239bd520066",
+    "loading_screen/gfx/loading_screen_assets/hbe_saltworks/far_metadata_os3840x2160_d0x0.dds": "9e26f8ebf5531834fdd233e4a7568f8257f9b2e65d38f51c3458743c9ccd81a6",
+    "loading_screen/gfx/loading_screen_assets/hbe_saltworks/near_metadata_os3840x2160_d0x0.dds": "eb353173a95b4aeef6f0242322fd347fb05b9c2a268741270d5c0db1f735b644",
+    "loading_screen/localization/english/replace/hbe_load_tips_l_english.yml": "af6a6579c4f37e086d1756da7efe068c9a55555aae863bc13acc775a9f859e59",
+    "loading_screen/localization/simp_chinese/replace/hbe_load_tips_l_simp_chinese.yml": "43784b5e8a3848af56fd169786bf11e6f6a3afcb57d767fd0695257d09482183",
     "main_menu/gui/messagetypes.txt": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c",
     "main_menu/common/game_concepts/hbe_concepts.txt": "ded83a83b18ad141ee2c1fac953bbb813a02d06b44e246f15ba6fe3c51a341b5",
     "main_menu/common/game_concepts/hbe_history_v031.txt": "adfdca893c18a11476960817df0a0b9dc2494e69b6076a0c3f05ee3351199f0e",
@@ -7376,7 +7384,7 @@
     "main_menu/localization/english/hbe_history_v031_l_english.yml": "ee58fb1b39a3c179cd199afedbd856c92e7b4cbe66b1e44b6c8f648fed51758f",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
     "main_menu/localization/english/hbe_industry_transmission_l_english.yml": "9166dbb236694b28579a4cf459f78f923b6a7ae64d7ebd45d07f7066c9d796c9",
-    "main_menu/localization/english/hbe_l_english.yml": "51507f42955c609c26fbfef8ba6012412d65ece40c758e5b4baa9aea5b0d9810",
+    "main_menu/localization/english/hbe_l_english.yml": "25615acc687a46457cc889a37b256f235e1eec343efbf1d53814a06fbc7fc2a6",
     "main_menu/localization/english/hbe_observer_hotfix_l_english.yml": "72fce30a3cda30a7d8fc33d55e7299116d289d4e7c4f535f4e011b1c6c2308ef",
     "main_menu/localization/english/hbe_opening_armistice_l_english.yml": "6e0f9e356b92bbcffd8545552d9d9a11352d5c6c2b5d3b65cf5bcf83d51178a2",
     "main_menu/localization/english/hbe_open_diplomacy_l_english.yml": "5efb750dac13dacc0a245ad08e5dbd0d1a947ec9179b950a0937fd2c55c5f461",
@@ -7397,7 +7405,7 @@
     "main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml": "337de3e1d7be32f517b21dd5af5b2499949f22ec2d36d005050b82aeb3db2265",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
     "main_menu/localization/simp_chinese/hbe_industry_transmission_l_simp_chinese.yml": "0b8cafc51c410b8679221ea25ff9e19b9e5d7aba1abfbaed09291d2efec8f9cd",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "cd651a89f0f5774e25f5441db57d6bc3472b763a62f21c4950591de33127520e",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "2ea3e64cb2760350d1472db0581051397637a78a126c544add2638e84fdc6ca4",
     "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml": "91fefc537d19a0a0a9ec5d31ba7c30ec5e4066ed80da970cfb20f223b0c323e7",
     "main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml": "6cc1363cf4b41e5f7d428d4725dc17e68a2fe71bef885046d731efa3232dac13",
     "main_menu/localization/simp_chinese/hbe_open_diplomacy_l_simp_chinese.yml": "1eae13448494e6d744e1caac24666bf025b6a47b09021a9bf3fb6694e7dfce11",
@@ -7413,8 +7421,8 @@
     "main_menu/setup/1337/04_hbe_dynasties.txt": "a1126b771ea3a7f58676f659ac6bf5d0b3d45d8c3f4a21d123ad5e4f28f679b7",
     "main_menu/setup/1337/05_hbe_characters.txt": "bd304483989acf5b981ab85f9633e4816de387045b7f62ede8c253a75131313d",
     "main_menu/setup/1337/06_pops.txt": "fca3e9bec4a8cd69010024025731d4b4d9393936f80859db3daa991c61987b79",
-    "main_menu/setup/1337/10_countries.txt": "bd9624300e25e0241dd54973f1dec1054ad221f464a2ef103641c41053eff89c",
-    "main_menu/setup/1337/12_diplomacy.txt": "f0737611168b2c89b54581d174dc6da795973cf6fe4b0e347e5e403c2547d1bb",
+    "main_menu/setup/1337/10_countries.txt": "46c471530955265944eed49b477ae948c4f67bd4eb5acd9a731ffe5d3cc0ad7a",
+    "main_menu/setup/1337/12_diplomacy.txt": "96639a75e368033c7f5ac818367e1a23109a4fe12742a81e4b36c877fdceaf01",
     "main_menu/setup/1337/97_hbe_western_opening.txt": "aef45bb73ee3047b3211aef6a8b59410d1073daeab9a85e20b989c89147a1af3",
     "main_menu/setup/1337/98_hbe_yuan_opinions.txt": "1e7a9b2bf55983073323336f18f6a729318964dc164ffba04d232d305501098a",
     "main_menu/setup/1337/99_hbe_organizations.txt": "7dc4cfe06266a5b4a6478c8f648df47f2c4ca7261f8621fff880688949b0e66c",
@@ -9802,7 +9810,7 @@
         "surname_english": "Shen"
       },
       "BCB": {
-        "name": "建昌共治",
+        "name": "建昌",
         "surname": "安",
         "surname_english": "An"
       },
@@ -37216,7 +37224,11 @@
       0,
       1,
       2,
-      3
+      3,
+      4,
+      5,
+      6,
+      7
     ],
     "source_catalog": "data/loading_art_v031.json"
   },
@@ -37587,12 +37599,11 @@
     },
     "countries": 4,
     "locations": 17,
-    "liang_and_its_subjects_unchanged": true,
+    "liang_and_its_subjects_unchanged": false,
     "hbe_membership_unchanged": true,
     "native_tributary_rules_unchanged": true,
     "runtime_transfer_events": false,
-    "native_diplomacy_sha256": "5b817a56fe72093b0c0a18f8d0e946b859b92ee6fb46347ae84940046ef68c20",
-    "overlord_eligibility": "Native allow_tributary_subject permission from HBE member modifier"
+    "native_diplomacy_sha256": "5b817a56fe72093b0c0a18f8d0e946b859b92ee6fb46347ae84940046ef68c20"
   },
   "diplomacy_restraint_v032": {
     "version": "0.3.2",
@@ -38317,7 +38328,8 @@
   "current_release": {
     "version": "0.3.3",
     "research_nodes": 91,
-    "visible_events": 508
+    "visible_events": 508,
+    "loading_art_enabled": true
   },
   "age2_military": {
     "unit_count": 14,
@@ -38522,5 +38534,144 @@
     "guest_elites": false,
     "art_reuse": true,
     "visual_verified": false
+  },
+  "panda_loading": {
+    "enabled": true,
+    "mode": "native_two_plane_parallax",
+    "scene": "loading_screen_scene_hbe_panda_discovery",
+    "canvas": [
+      3840,
+      2160
+    ],
+    "planes_per_scene": 2,
+    "assets": [
+      {
+        "layer": "near",
+        "source": "assets/loading_panda_v1/near.png",
+        "source_sha256": "938c7d54b9d22b88af605db678f8ab68d8c010cbbd036a85fc098f4d925f4a69",
+        "texture": "loading_screen/gfx/loading_screen_assets/hbe_panda_discovery/near_metadata_os3840x2160_d0x0.dds",
+        "sha256": "eef09991a3a8459c26719af4a68bbe8bdeb903e736dd706084004239bd520066",
+        "mesh": "layer_1_mesh"
+      },
+      {
+        "layer": "far",
+        "source": "assets/loading_panda_v1/far.png",
+        "source_sha256": "be773399d8a5c1c31ae3e7df6bcba51b3c51bb805159ebef5f6bdcf1c38fa9ce",
+        "texture": "loading_screen/gfx/loading_screen_assets/hbe_panda_discovery/far_metadata_os3840x2160_d0x0.dds",
+        "sha256": "45b1fc4f2927a40c88ccd71793e5c1c7bf8df9d2e331ef68f3222f4c7763c7bf",
+        "mesh": "layer_8_mesh"
+      }
+    ],
+    "native_animation_binding": "illustration_override_anims",
+    "flavor_tips_enabled": true,
+    "quote_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "game_visual_verified": false,
+    "legacy_four_paintings_enabled": false
+  },
+  "saltworks_loading": {
+    "enabled": true,
+    "mode": "native_two_plane_parallax",
+    "scene": "loading_screen_scene_hbe_saltworks",
+    "canvas": [
+      3840,
+      2160
+    ],
+    "planes_per_scene": 2,
+    "assets": [
+      {
+        "layer": "near",
+        "source": "assets/loading_saltworks_v1/near.png",
+        "source_sha256": "decd527cd4a7b3c1e649f0e5bb592c7f86e6efc7abb3771dbe01f1de666c8cac",
+        "texture": "loading_screen/gfx/loading_screen_assets/hbe_saltworks/near_metadata_os3840x2160_d0x0.dds",
+        "sha256": "eb353173a95b4aeef6f0242322fd347fb05b9c2a268741270d5c0db1f735b644",
+        "mesh": "layer_1_mesh"
+      },
+      {
+        "layer": "far",
+        "source": "assets/loading_saltworks_v1/far.png",
+        "source_sha256": "c8ccbf1c89e356ec6ed30d0acf10d263e21b4515b590a80f36b6321d7ff18394",
+        "texture": "loading_screen/gfx/loading_screen_assets/hbe_saltworks/far_metadata_os3840x2160_d0x0.dds",
+        "sha256": "9e26f8ebf5531834fdd233e4a7568f8257f9b2e65d38f51c3458743c9ccd81a6",
+        "mesh": "layer_8_mesh"
+      }
+    ],
+    "native_animation_binding": "illustration_override_anims",
+    "flavor_tips_enabled": true,
+    "quote_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "game_visual_verified": false,
+    "legacy_four_paintings_enabled": false
+  },
+  "zhenzhou_tribute": {
+    "subject": "ZNZ",
+    "overlord": "BAZ",
+    "subject_type": "tributary",
+    "original_overlord": "BZU",
+    "original_subject_type": "tusi",
+    "setup_file": "main_menu/setup/1337/12_diplomacy.txt",
+    "new_campaign_only": true,
+    "runtime_transfer_events": false,
+    "hbe_membership_unchanged": true,
+    "territory_government_and_opinions_unchanged": true
+  },
+  "opening_territory": {
+    "transfers": [
+      {
+        "location": "renshou",
+        "from": "BBQ",
+        "to": "BAL"
+      },
+      {
+        "location": "jingyan",
+        "from": "BBQ",
+        "to": "BAO"
+      }
+    ],
+    "bookmark_only": true,
+    "runtime_transfer_events": false,
+    "ownership_control_and_core_transferred": true,
+    "residents_unchanged": true,
+    "population_file_sha256": "fca3e9bec4a8cd69010024025731d4b4d9393936f80859db3daa991c61987b79",
+    "population_allocation_before_transfers": true,
+    "country_circles_and_geographical_circles_unchanged": true,
+    "country_location_counts": {
+      "BAL": 5,
+      "BAO": 7,
+      "BBQ": 4
+    }
+  },
+  "eastern_tributes": {
+    "assignments": {
+      "ZNZ": "BAZ",
+      "ZGL": "BBH",
+      "TGY": "BBF"
+    },
+    "subject_type": "tributary",
+    "setup_file": "main_menu/setup/1337/12_diplomacy.txt",
+    "new_campaign_only": true,
+    "runtime_transfer_events": false,
+    "hbe_membership_unchanged": true,
+    "territory_government_and_opinions_unchanged": true,
+    "liang_direct_subjects_transferred": [
+      "ZGL",
+      "TGY"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-"""Four static paintings and four sourced excerpts in the vanilla loading UI."""
+"""Retired static paintings, active parallax art and sourced loading excerpts."""
 from build_support import sha256_file as digest, snapshot_files
 from pathlib import Path
 import argparse, json
@@ -22,13 +22,29 @@ QUOTES=[
   'The harvests do not fail; the world calls it the Heavenly Storehouse.',
   'Records of Shu, quoted in Chang Qu, Records of the Lands South of Mount Hua',
   'https://zh.wikisource.org/zh-hans/華陽國志/卷三'),
+ ('凡蜀中石山去河不远者，多可造井取盐。','宋应星《天工开物·井盐》',
+  'In the rocky hills of Shu, places near rivers often allow wells to be dug for salt.',
+  'Song Yingxing, The Exploitation of the Works of Nature: Well Salt',
+  'https://zh.wikisource.org/zh-hans/天工開物/井鹽'),
+ ('剑阁峥嵘而崔嵬，一夫当关，万夫莫开。','李白《蜀道难》',
+  'Sword Gate rises steep and towering; one man holds the pass, ten thousand cannot break through.',
+  'Li Bai, The Hard Road to Shu',
+  'https://zh.wikisource.org/zh-hans/蜀道難_(李白)'),
+ ('万里桥边多酒家，游人爱向谁家宿。','张籍《成都曲》',
+  'Many taverns line the Bridge of Ten Thousand Li; which one will the traveler choose for the night?',
+  'Zhang Ji, Song of Chengdu',
+  'https://zh.wikisource.org/zh-hans/成都曲'),
+ ('琴里知闻唯渌水，茶中故旧是蒙山。','白居易《琴茶》',
+  'Among zither tunes, only Green Waters is familiar; among teas, my old friend is Mengshan.',
+  'Bai Juyi, Zither and Tea',
+  'https://zh.wikisource.org/zh-hans/琴茶'),
 ]
 
 def export_quotes(out):
  def put(rel,t):
   p=out/rel;p.parent.mkdir(parents=True,exist_ok=True)
   p.write_text(t.rstrip()+"\n",encoding="utf-8-sig",newline="\r\n")
- # Four known native slots guarantee inclusion in GetLoadingScreenLoadTip. All
+ # Known native slots guarantee inclusion in GetLoadingScreenLoadTip. All
  # other vanilla quotations and the native GUI / progress / concept UI remain.
  for lang in ('simp_chinese','english'):
   lines=['l_'+lang+':']
@@ -36,7 +52,8 @@ def export_quotes(out):
    quote,author=(cn,by) if lang=='simp_chinese' else (en,eby)
    text=f' #T {quote}#! \\n #tooltip_subheading — {author}#!'
    lines.append(' LOADING_TIP_'+str(n)+': '+json.dumps(text,ensure_ascii=False).replace('\\\\n','\\n'))
-  put(f'loading_screen/localization/{lang}/hbe_load_tips_l_{lang}.yml','\n'.join(lines))
+  (out/f'loading_screen/localization/{lang}/hbe_load_tips_l_{lang}.yml').unlink(missing_ok=True)
+  put(f'loading_screen/localization/{lang}/replace/hbe_load_tips_l_{lang}.yml','\n'.join(lines))
 
 def export_loading_art(out,root,game=None):
  out,root=Path(out),Path(root);src=root/'assets/event_expansion'
@@ -66,7 +83,7 @@ def export_loading_art(out,root,game=None):
  put('loading_screen/gfx/scenes/hbe_loading_scenes.txt','\n\n'.join(scene_defs))
  export_quotes(out)
  preview_path=root/'assets/loading_art_v031/preview.jpg';preview_path.parent.mkdir(parents=True,exist_ok=True);preview.save(preview_path,quality=93)
- result=dict(mode='static',canvas=[3840,2160],aspect_ratio='16:9',scenes=4,planes_per_scene=1,native_animation_binding='illustration_override',parallax=False,loading_scene_prefix='loading_screen_scene_',native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(4)),quote_sources=[dict(quote=q[0],author=q[1],url=q[4]) for q in QUOTES],assets=assets,source_resolution_note='Approved original paintings mechanically fitted and resampled to the exact vanilla 3840x2160 canvas; no style change or generated detail.')
+ result=dict(mode='static',canvas=[3840,2160],aspect_ratio='16:9',scenes=4,planes_per_scene=1,native_animation_binding='illustration_override',parallax=False,loading_scene_prefix='loading_screen_scene_',native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(len(QUOTES))),quote_sources=[dict(quote=q[0],author=q[1],url=q[4]) for q in QUOTES],assets=assets,source_resolution_note='Approved original paintings mechanically fitted and resampled to the exact vanilla 3840x2160 canvas; no style change or generated detail.')
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'));m['loading_art_v031']={k:v for k,v in result.items() if k!='assets'}
  m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');(root/'data/loading_art_v031.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -74,7 +91,7 @@ def export_loading_art(out,root,game=None):
 
 
 def apply(out,root,game=None,enabled=False):
- """Keep custom loading paintings off until explicitly re-enabled."""
+ """Keep the old four paintings off; optionally add the approved panda scene."""
  if enabled:return export_loading_art(out,root,game)
  out,root=Path(out),Path(root)
  owned=['loading_screen/gfx/images/hbe_loading_images.txt',
@@ -86,12 +103,16 @@ def apply(out,root,game=None,enabled=False):
   p.unlink(missing_ok=True)
  export_quotes(out)
  result=dict(enabled=False,mode='vanilla',scenes=0,staged_scenes=len(SCENES),
-             native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(4)),
+             native_text_binding='GetLoadingScreenLoadTip',native_quote_slots=list(range(len(QUOTES))),
              source_catalog='data/loading_art_v031.json')
  mp=out/'build_manifest.json';m=json.loads(mp.read_text(encoding='utf-8'))
  m['loading_art_v031']=result
  m['files']=snapshot_files(out)
  mp.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ if (root/'data/panda_loading.json').is_file():
+  from apply_panda_loading import apply as apply_panda_loading
+  panda=apply_panda_loading(out,root,game)
+  print(json.dumps({k:v for k,v in panda.items() if k!='assets'},ensure_ascii=False));return panda
  print(json.dumps(result,ensure_ascii=False));return result
 
 if __name__=='__main__':

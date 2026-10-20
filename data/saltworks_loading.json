@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "sources": {
+    "far": "assets/loading_saltworks_v1/far.png",
+    "near": "assets/loading_saltworks_v1/near.png"
+  },
+  "canvas": [
+    3840,
+    2160
+  ],
+  "generation_source_dimensions": {
+    "far": [
+      1672,
+      941
+    ],
+    "near": [
+      1672,
+      941
+    ]
+  },
+  "resolution_note": "Generated layers resampled to the native canvas, not native 4K generation.",
+  "historical_inspiration": "Preindustrial Zigong salt works, late Ming inspiration; brine hoisting, bamboo conveyance, boiling and packing.",
+  "historical_sources": [
+    "https://www.zgm.cn/content/659faf2d2917e",
+    "https://zh.wikisource.org/zh-hans/天工開物/井鹽"
+  ],
+  "flavor_tip_slots": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}
