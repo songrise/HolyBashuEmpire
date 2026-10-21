@@ -1,0 +1,47 @@
+﻿# Native AutomationCard/AutomationCheckbox, scoped to the economy filter.
+types HbeAffairsAutomation {
+type hbe_af_automation_card = AutomationCard {
+datacontext = "[FilteredSortedList.GetSearchBar]"
+visible = "[And(GetScriptedGui('hbe_af_ui_access').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), Or(Not(AutomationLateralView.IsSearchActive), SearchBar.IsFilterEnabledByKey('automation_filter_economy')))]"
+blockoverride "header_button" {
+action_tooltip = { click_type = left title = "HBE_AF_DETAIL"
+on_action = "[GetScriptedGui('hbe_af_ui_prepare').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+on_action = "[GetVariableSystem.Toggle('hbe_af_auto_details')]" } }
+blockoverride "bg_card_header_01_bg" { background = { using = bg_card_header_01_default blockoverride "header_color" { using = color_economy_texture } } }
+blockoverride "header_content" { hbox = { layoutpolicy_horizontal = expanding margin = { 10 5 } spacing = 10
+AutomationCheckbox = {
+down = "[GetScriptedGui('hbe_af_ui_auto_state').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+tooltip = "HBE_AF_COG_TT"
+action_tooltip = { click_type = left title = "HBE_AF_AUTO_TOGGLE" on_action = "[GetScriptedGui('hbe_af_ui_auto').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+action_tooltip = { click_type = right title = "HBE_AF_AUTO_TOGGLE" on_action = "[GetScriptedGui('hbe_af_ui_auto').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+tooltipwidget = { BasicFunctionalTooltip = {} }
+}
+text_single = { layoutpolicy_horizontal = expanding align = left|nobaseline using = Font_Type_Headers text = "HBE_AF_AUTOMATION" }
+button_minimize = { size = { 25 25 } blockoverride "button_texture" { texture = "gfx/interface/buttons/flats/goto.dds" texture_density = 2 }
+action_tooltip = { title = "HBE_AF_DETAIL" on_action = "[GetScriptedGui('hbe_af_ui_prepare').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" on_action = "[GetVariableSystem.Toggle('hbe_af_auto_details')]" } } } }
+blockoverride "footer_content" { vbox = { layoutpolicy_horizontal = expanding spacing = 5 margin = { 8 10 }
+visible = "[GetVariableSystem.Exists('hbe_af_auto_details')]"
+vbox = { layoutpolicy_horizontal = expanding using = bg_dynasty_header hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 6 }
+text_single = { size = { -1 26 } layoutpolicy_horizontal = expanding autoresize = no text = "HBE_AF_RESERVE" align = left|nobaseline }
+button_regular = { size = { 28 26 } text = "HBE_AF_MINUS" onclick = "[GetScriptedGui('hbe_af_reserve_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+text_single = { size = { 54 26 } autoresize = no text = "HBE_AF_SETTING_reserve" }
+button_regular = { size = { 28 26 } text = "HBE_AF_PLUS" onclick = "[GetScriptedGui('hbe_af_reserve_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 6 }
+text_single = { size = { -1 26 } layoutpolicy_horizontal = expanding autoresize = no text = "HBE_AF_BUDGET" align = left|nobaseline }
+button_regular = { size = { 28 26 } text = "HBE_AF_MINUS" onclick = "[GetScriptedGui('hbe_af_budget_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+text_single = { size = { 54 26 } autoresize = no text = "HBE_AF_SETTING_budget" }
+button_regular = { size = { 28 26 } text = "HBE_AF_PLUS" onclick = "[GetScriptedGui('hbe_af_budget_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 6 }
+text_single = { size = { -1 26 } layoutpolicy_horizontal = expanding autoresize = no text = "HBE_AF_LIMIT" align = left|nobaseline }
+button_regular = { size = { 28 26 } text = "HBE_AF_MINUS" onclick = "[GetScriptedGui('hbe_af_limit_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+text_single = { size = { 54 26 } autoresize = no text = "HBE_AF_SETTING_limit" }
+button_regular = { size = { 28 26 } text = "HBE_AF_PLUS" onclick = "[GetScriptedGui('hbe_af_limit_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } }
+vbox = { layoutpolicy_horizontal = expanding using = bg_dynasty_header hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 4 }
+checkbox_square_alt = { down = "[GetScriptedGui('hbe_af_allow_national').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetScriptedGui('hbe_af_allow_national').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+text_single = { size = { -1 28 } layoutpolicy_horizontal = expanding autoresize = no align = left|nobaseline text = "HBE_AF_ALLOW_NATIONAL" } } hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 4 }
+checkbox_square_alt = { down = "[GetScriptedGui('hbe_af_allow_local').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetScriptedGui('hbe_af_allow_local').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+text_single = { size = { -1 28 } layoutpolicy_horizontal = expanding autoresize = no align = left|nobaseline text = "HBE_AF_ALLOW_LOCAL" } } hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 4 }
+checkbox_square_alt = { down = "[GetScriptedGui('hbe_af_allow_large').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetScriptedGui('hbe_af_allow_large').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+text_single = { size = { -1 28 } layoutpolicy_horizontal = expanding autoresize = no align = left|nobaseline text = "HBE_AF_ALLOW_LARGE" } } }
+text_multi = { layoutpolicy_horizontal = expanding size = { -1 42 } autoresize = no text = "HBE_AF_AUTO_STATUS" tooltip = "HBE_AF_AUTO_RULES" }
+} }
+}
+}

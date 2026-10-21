@@ -1,0 +1,5393 @@
+{
+  "local_affairs_checks": 124,
+  "checks": [
+    {
+      "name": "affairs GUI type has exactly one live HUD instance",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD override only wraps the native alert row and adds its mount",
+      "passed": true
+    },
+    {
+      "name": "affairs entry is anchored to screen bottom right",
+      "passed": true
+    },
+    {
+      "name": "affairs one window for ready running and waiting",
+      "passed": true
+    },
+    {
+      "name": "affairs visibility does not read a valueless country flag",
+      "passed": true
+    },
+    {
+      "name": "affairs keeps situation layout with only authorized row accounting changes",
+      "passed": true
+    },
+    {
+      "name": "affairs credits completion once before immutable receipt",
+      "passed": true
+    },
+    {
+      "name": "affairs round contribution cap is shared with prior service credit",
+      "passed": true
+    },
+    {
+      "name": "affairs credit uses realized rewards and net cost",
+      "passed": true
+    },
+    {
+      "name": "affairs member scores display fractions without deprecated source",
+      "passed": true
+    },
+    {
+      "name": "affairs dividends use continuous fractional weights",
+      "passed": true
+    },
+    {
+      "name": "affairs contribution has its own deduplication guard",
+      "passed": true
+    },
+    {
+      "name": "affairs member hover itemizes every credited project",
+      "passed": true
+    },
+    {
+      "name": "affairs automation keeps rules in hover and compact state only",
+      "passed": true
+    },
+    {
+      "name": "affairs sixteen independent project definitions",
+      "passed": true
+    },
+    {
+      "name": "affairs guarded selections for both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs large investment uses its boolean permission for all projects",
+      "passed": true
+    },
+    {
+      "name": "affairs persistent draws not GUI randomization",
+      "passed": true
+    },
+    {
+      "name": "affairs auto checks all budget boundaries",
+      "passed": true
+    },
+    {
+      "name": "affairs monthly progress bounded and paused on lost control",
+      "passed": true
+    },
+    {
+      "name": "affairs population and building use native outcomes",
+      "passed": true
+    },
+    {
+      "name": "affairs fixed compact dual cards and all guarded choices",
+      "passed": true
+    },
+    {
+      "name": "affairs tall rewards and two masked illustrated headers",
+      "passed": true
+    },
+    {
+      "name": "affairs cards leave padding and only local card has a refresh button",
+      "passed": true
+    },
+    {
+      "name": "affairs panel initializes old saves before opening",
+      "passed": true
+    },
+    {
+      "name": "affairs uses treasury rather than monthly balance",
+      "passed": true
+    },
+    {
+      "name": "affairs automation host only adds one economy entry",
+      "passed": true
+    },
+    {
+      "name": "affairs automation uses native economy filter and controls",
+      "passed": true
+    },
+    {
+      "name": "affairs automation explicitly supplies native search context",
+      "passed": true
+    },
+    {
+      "name": "affairs native circular refresh remains inside dual-card window",
+      "passed": true
+    },
+    {
+      "name": "affairs global investment preview changes both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs active card shows paid cost date and remaining months",
+      "passed": true
+    },
+    {
+      "name": "affairs availability mounts a native top ribbon",
+      "passed": true
+    },
+    {
+      "name": "affairs outcomes locked once at guarded start",
+      "passed": true
+    },
+    {
+      "name": "affairs two native completion receipts per project",
+      "passed": true
+    },
+    {
+      "name": "affairs receipts snapshot actual gains before clearing active project",
+      "passed": true
+    },
+    {
+      "name": "affairs settlement is guarded against duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "affairs target loss still pauses and dates update",
+      "passed": true
+    },
+    {
+      "name": "affairs main panel only has a status cog, with right-click toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs auto respects national local and large preferences",
+      "passed": true
+    },
+    {
+      "name": "affairs descriptive grades use explicit vanilla colors",
+      "passed": true
+    },
+    {
+      "name": "affairs outcome weights and greatness are bounded",
+      "passed": true
+    },
+    {
+      "name": "affairs construction has no progress meter or elapsed counter",
+      "passed": true
+    },
+    {
+      "name": "affairs project titles have distinct visual hierarchy",
+      "passed": true
+    },
+    {
+      "name": "affairs event modifiers expose native description keys",
+      "passed": true
+    },
+    {
+      "name": "affairs title status and panel use the same center",
+      "passed": true
+    },
+    {
+      "name": "affairs time uses the native clock icon",
+      "passed": true
+    },
+    {
+      "name": "affairs only two pool header textures",
+      "passed": true
+    },
+    {
+      "name": "affairs manual skip removed and auto preserves current offers",
+      "passed": true
+    },
+    {
+      "name": "affairs every candidate has a bounded persisted random expiry",
+      "passed": true
+    },
+    {
+      "name": "affairs expiry labels sit below both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs opening old saves migrates missing expiry only",
+      "passed": true
+    },
+    {
+      "name": "affairs all projects have two to four reward types",
+      "passed": true
+    },
+    {
+      "name": "affairs preview hides great success amounts and removes probability lecture",
+      "passed": true
+    },
+    {
+      "name": "affairs no project both charges and reduces burden",
+      "passed": true
+    },
+    {
+      "name": "affairs primary secondary and minor grades differ in both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs independent random rewards are locked on project start",
+      "passed": true
+    },
+    {
+      "name": "affairs real population remains distinct from conservative manpower",
+      "passed": true
+    },
+    {
+      "name": "affairs manpower has no fixed headcount floor and caps apply after random factor",
+      "passed": true
+    },
+    {
+      "name": "affairs all population and native currency rewards use their declared bases",
+      "passed": true
+    },
+    {
+      "name": "affairs resource hover values are live and hide implementation details",
+      "passed": true
+    },
+    {
+      "name": "affairs four additional native resource rewards have measured deltas",
+      "passed": true
+    },
+    {
+      "name": "affairs each component has its own ordinary range",
+      "passed": true
+    },
+    {
+      "name": "affairs shared cost multipliers match latest balance",
+      "passed": true
+    },
+    {
+      "name": "affairs every generated cost and burden applies the shared multipliers",
+      "passed": true
+    },
+    {
+      "name": "affairs fallback plus cash rewards cannot exceed paid cost",
+      "passed": true
+    },
+    {
+      "name": "affairs relief draws favor high burden without changing costs",
+      "passed": true
+    },
+    {
+      "name": "affairs native research road and varied buildings supported",
+      "passed": true
+    },
+    {
+      "name": "affairs targets prefer suitable workers and infrastructure",
+      "passed": true
+    },
+    {
+      "name": "affairs modifier names and descriptions are complete",
+      "passed": true
+    },
+    {
+      "name": "affairs all scripted GUI references exist",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card registers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card fair",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card materials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card settlers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card granary",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card canal",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card copyists",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card paid_crews",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card old_services",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card deliveries",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card land_books",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_roads",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card seek_artisans",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_clinics",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card restore_market",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card rest_crews",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_water",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_salt",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_river",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_roads",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_grain",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_tea",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_valleys",
+      "passed": true
+    },
+    {
+      "name": "seven old service decisions retired",
+      "passed": true
+    },
+    {
+      "name": "seven regional coordination decisions are temporarily hidden",
+      "passed": true
+    },
+    {
+      "name": "retired service dependencies are removed outright",
+      "passed": true
+    },
+    {
+      "name": "retired pending orders cannot finish or trigger rewards",
+      "passed": true
+    },
+    {
+      "name": "retired callbacks only perform marker cleanup",
+      "passed": true
+    },
+    {
+      "name": "one-time legacy cleanup preserves new projects and already earned state",
+      "passed": true
+    },
+    {
+      "name": "regional mission descriptions no longer charge retired resources",
+      "passed": true
+    },
+    {
+      "name": "affairs exactly two new permission technologies",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_allow_large_investment has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_allow_local_refresh has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "name": "affairs removes superseded age-one capability hint",
+      "passed": true
+    },
+    {
+      "name": "affairs small investment remains free of the new research gate",
+      "passed": true
+    },
+    {
+      "name": "affairs local redraw requires permission idle cooldown and alternative",
+      "passed": true
+    },
+    {
+      "name": "affairs redraw effect rechecks gate and only redraws local offer",
+      "passed": true
+    },
+    {
+      "name": "affairs refresh uses native round button and native change arrows",
+      "passed": true
+    },
+    {
+      "name": "affairs both boolean names are present in every shipped locale",
+      "passed": true
+    },
+    {
+      "name": "91 base research nodes plus later local-affairs additions",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_chengdu_plain_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_chengdu_plain hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_southern_salt_wine_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southern_salt_wine hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_eastern_river_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_eastern_river hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_plank_fort is unlocked only by its military technology",
+      "passed": true
+    },
+    {
+      "name": "hbe_plank_fort actual construction reads the same military technology",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_northern_shudao_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_northern_shudao hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_central_hills_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_central_hills hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_guide_station is unlocked only by its military technology",
+      "passed": true
+    },
+    {
+      "name": "hbe_guide_station actual construction reads the same military technology",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_western_tea_horse_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_western_tea_horse hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys retains stable originating-circle visibility",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BAZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBE native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBF native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBH native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBI native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBJ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBL native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBM native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBN native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBO native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBP native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBQ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBR native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBS native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBT native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBU native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBV native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBW native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBX native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBY native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BBZ native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BCA native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BCB native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys visible only to BCC native circle",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys researched separately in age one after the regional foundation",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys grants only its own base unit",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys no national army buffs automatic research or calendar gates",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys industry node no longer grants an army",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys local recruitment reads its actual military research",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys guest military still requires studied local military training",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys keeps 500-man inherited strength and unchanged maintenance interface",
+      "passed": true
+    },
+    {
+      "name": "hbe_covenant_stockade is unlocked only by its military technology",
+      "passed": true
+    },
+    {
+      "name": "hbe_covenant_stockade actual construction reads the same military technology",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_southwestern_valleys_1 is honestly a second-age administrative node",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys complete 256px icon has transparent margins",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys advance uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_military_southwestern_valleys hbe/technology uses exact exported sprite",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_common_5 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_civic_common_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_chengdu_plain_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southern_salt_wine_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_eastern_river_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_northern_shudao_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_central_hills_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_western_tea_horse_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_1 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "hbe_tech_southwestern_valleys_2 has only its budgeted permanent modifiers",
+      "passed": true
+    },
+    {
+      "name": "granary begins in age one while its agricultural production remains later",
+      "passed": true
+    },
+    {
+      "name": "eastern_river advanced military requires its actual base military training",
+      "passed": true
+    },
+    {
+      "name": "northern_shudao advanced military requires its actual base military training",
+      "passed": true
+    },
+    {
+      "name": "military qualification registry contains exactly seven military technologies",
+      "passed": true
+    },
+    {
+      "name": "craftsmen exchanges owns a registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "cross-circle permission uses ordinary native modifier icons",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_chengdu_plain reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_southern_salt_wine reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_eastern_river reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_northern_shudao reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_central_hills reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_western_tea_horse reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "hbe_guest_southwestern_valleys reads the real cross-circle boolean and preserves actual prerequisites",
+      "passed": true
+    },
+    {
+      "name": "guest receipt synchronization also reads the boolean",
+      "passed": true
+    },
+    {
+      "name": "local council belongs to the original ledger foundation",
+      "passed": true
+    },
+    {
+      "name": "garrison provisioning belongs to studied military organization",
+      "passed": true
+    },
+    {
+      "name": "estate guarantees moved to their own thematic civilian research",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese has all military labels descriptions and native modifier labels",
+      "passed": true
+    },
+    {
+      "name": "english has all military labels descriptions and native modifier labels",
+      "passed": true
+    },
+    {
+      "name": "new research never overrides the global advance GUI",
+      "passed": true
+    },
+    {
+      "name": "manifest .metadata/metadata.json",
+      "passed": true
+    },
+    {
+      "name": "manifest .metadata/thumbnail.png",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_af_results.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_banquet_events.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_civic_events.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_common_defense.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_ending_afterwords.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_events.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_migration_events.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_opening_family_events.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_central_hills.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_chengdu_plain.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_eastern_river.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_northern_shudao.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_shared.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_southern_salt_wine.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_southwestern_valleys.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_short_western_tea_horse.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_central_hills.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_chengdu_plain.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_eastern_river.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_northern_shudao.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_southern_salt_wine.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_southwestern_valleys.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/events/hbe_story_western_tea_horse.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gui/automation_lateralview.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gui/cooltip.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gui/hbe_local_affairs.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gui/hbe_local_affairs_automation.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gui/ingame_topbar.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/1_building_unlocks.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/2_army_unlocks.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_advances.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_af_advances.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_civic_advances.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_guest_licenses.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_industry_transmission.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_inherited_industry_licenses.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/advances/hbe_local_military.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/ai_scripted_expansion_score/hbe_external_caution.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/ai_scripted_expansion_score/hbe_internal_rivalry.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/ai_scripted_expansion_score/hbe_red_turban_caution.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/ai_scripted_expansion_target/hbe_neighbors.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/biases/hbe_faction_departure.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/biases/hbe_feast_opinions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/biases/hbe_opinions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/biases/hbe_western_opening.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/biases/hbe_yuan_opening.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/building_types/common_buildings.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/building_types/hbe_civic_buildings.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/building_types/production_fine_cloth.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/building_types/production_paper.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/building_types/rural_buildings.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/casus_belli/red_turban_rebellions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/country_description_categories/hbe_profiles.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/country_interactions/rtr_demand_annexation.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/customizable_localization/country_history.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/customizable_localization/hbe_af_contribution_custom.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/customizable_localization/hbe_af_custom.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/decisions/hbe_banquet_decisions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/decisions/hbe_civic_decisions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/decisions/hbe_decisions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/decisions/hbe_formable_decisions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/estate_privileges/hbe_civic_privileges.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/formable_countries/hbe_native_formables.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/generic_actions/hbe_feast_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/generic_actions/red_turban_rebellions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/goods/hbe_special_goods.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/goods_demand/hbe_age2_military.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/goods_demand/hbe_civic_construction.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/goods_demand/hbe_unit_maintenance.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/goods_demand/pop_demands.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/government_reforms/hbe_shared_reforms.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/industry_types/01_industries.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/international_organizations/hbe_empire.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/international_organizations/hbe_feast_parties.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/international_organization_land_ownership_rules/hbe_land.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/international_organization_special_statuses/hbe_statuses.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/join_war_rules/hbe_isolation.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/laws/hbe_civic_law.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_af_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_ai_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_annex_industry_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_banquet_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_capital_recruitment.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_civic_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_common_defense.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_deep_balance_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_guest_license_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_native_content_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_opening_armistice_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_opening_pacts_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_simple_banquet_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_story_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/on_action/hbe_technology_on_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/parliament_issues/hbe_civic_issues.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/production_methods/hbe_industry_transmission.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/resolutions/hbe_election.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_af_contribution_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_af_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_af_legacy_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_ai_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_annex_industry_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_banquet_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_capital_recruitment.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_civic_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_common_defense.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_feast_dividend_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_formation_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_guest_license_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_native_content_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_observer_sync.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_opening_armistice_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_opening_pacts_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_output_support_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_simple_banquet_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_story_scheduler.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_effects/hbe_technology_effects.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_geography/hbe_formable_geography.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_geography/hbe_geography.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_guis/hbe_af_gui.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_advance_gates.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_af_triggers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_age2_military.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_civic_triggers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_common_defense.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_early_research.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_formation_triggers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_industry_patch_triggers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_industry_transmission.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_red_turban_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/scripted_triggers/hbe_triggers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_af_contribution_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_af_reward_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_af_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_civic_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_deep_balance_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_diplomacy_restraint.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_event_costs.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_feast_dividend_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_feast_values.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/script_values/hbe_red_turban_actions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/situations/hbe_banquet.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/unit_families/hbe_civic_families.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/common/unit_types/hbe_civic_units.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_civic_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_egret_background.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_ending_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_event_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_progress_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_story_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/images/hbe_v021_backgrounds.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_civic_scenes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_egret_scene.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_ending_scenes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_event_scenes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_progress_scenes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_story_scenes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/scenes/hbe_v021_scenes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/gui/panels/situation/hbe_banquet.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest in_game/setup/countries/hbe_countries.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/images/hbe_panda_discovery.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/images/hbe_saltworks.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/scenes/hbe_panda_discovery.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/scenes/hbe_saltworks.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_civic_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_egret_illustration.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_ending_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_progress_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_story_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/illustrations/database/hbe_v021_illustrations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/interface/hbe/placeholder.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/loading_screen_assets/hbe_panda_discovery/far_metadata_os3840x2160_d0x0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/loading_screen_assets/hbe_panda_discovery/near_metadata_os3840x2160_d0x0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/loading_screen_assets/hbe_saltworks/far_metadata_os3840x2160_d0x0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/gfx/loading_screen_assets/hbe_saltworks/near_metadata_os3840x2160_d0x0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/localization/english/replace/hbe_load_tips_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest loading_screen/localization/simp_chinese/replace/hbe_load_tips_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gui/messagetypes.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/game_concepts/hbe_concepts.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/game_concepts/hbe_history_v031.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_icons/hbe_af_permissions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_icons/hbe_early_research.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_icons/hbe_goods_icons.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_icons/hbe_icons.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_type_definitions/hbe_af_permissions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_type_definitions/hbe_early_research.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_type_definitions/hbe_observer_goods_types.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/modifier_type_definitions/hbe_types.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/named_colors/hbe_flags.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/named_colors/hbe_formable_colors.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/scenarios/hbe_scenarios.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_af_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_ai_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_capital_recruitment.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_civic_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_deep_support_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_event_choice_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_feast_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_legacy_output_flags.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_story_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/static_modifiers/hbe_technology_modifiers.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/coat_of_arms/coat_of_arms/hbe_formables.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bab.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bae.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baf.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baj.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bal.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bap.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baq.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baw.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bax.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_baz.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbb.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbc.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbe.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbf.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbh.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbi.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbj.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbl.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbm.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbn.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbo.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbp.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbq.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbr.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbs.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbu.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbv.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbw.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbx.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bby.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bbz.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bca.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bcb.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_crest_bcc.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_bashu.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_chongqing.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_sichuan.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_af_local_proposals.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_af_public_funding.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_common_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_common_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_civic_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_central_hills.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_military_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_central_hills_witness_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_chengdu_plain_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_common_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_eastern_river_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_northern_shudao_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southern_salt_wine_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_southwestern_valleys_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_tech_western_tea_horse_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_transmission_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_transmission_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_transmission_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/advance/hbe_transmission_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_assembly.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_audit_accounts.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_ballot_vote_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_banquet_ledger.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_central_hills_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_eastern_river_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_northern_shudao_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_project_fund.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_project_pledge.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_project_reconsider.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_project_select_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_project_select_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_project_subsidize.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_propose_charter_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_central_hills.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_role_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_salt_loan.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_salt_repay.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_central_hills.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_stance_change_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_stance_change_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_stance_change_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/decisions/hbe_status.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/bridge_bureau.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/bridge_commons.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/council_office.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/council_public.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/craft_archive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/craft_guild.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/craft_public.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/fossil_archive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/fossil_gallery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/gate_time.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/granary_common.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/land_registry.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/market_open.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/market_regulated.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/medicine_guild.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/medicine_public.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/memorial_common.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/migration_open.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/migration_sponsored.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/observatory_school.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/panda_garden.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/panda_sanctuary.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/reading_private.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/reading_public.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/river_commons.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/river_convoy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/salt_workshop.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/shipyard.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/stone_archive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/stud_farm.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/terrace_commons.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/ending_events/veterinary_school.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/academy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/banquet.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/civic_council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/civic_market.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/civic_training.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/crisis.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/feast_two_parties_v021.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/grain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/ledger.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/roads.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/events/water.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/formables/bashu.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/formables/chongqing.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/formables/sichuan.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/local_affairs/local_header.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/local_affairs/national_header.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/local_affairs/placeholder.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/panels/hbe_banquet.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/bamboo.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/bridge.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/craft.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/festival.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/fossils.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/hanzhou_egrets.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/medicine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/migration_journey.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/migration_pact.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/observatory.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/settlement.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/terraces.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/story_events/veterinary.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_af_local_proposals.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_af_public_funding.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_central_hills.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_military_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_central_hills_witness_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_chengdu_plain_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_common_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_eastern_river_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_northern_shudao_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southern_salt_wine_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_southwestern_valleys_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_tech_western_tea_horse_8.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_transmission_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_transmission_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_transmission_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/technology/hbe_transmission_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_audit.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_civil_ledger.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_communal_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_guest_compact.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_levy_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_office_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_paid_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/civic/decisions/hbe_revision.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/v021/decisions/hbe_project_fund.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/hbe/v021/decisions/hbe_stance_change_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_assembly_hall.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_brocade_school.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_canal_office.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_cliff_stockade.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_community_granary.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_covenant_stockade.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_gate_registry.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_guide_station.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_plank_fort.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_river_warehouse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_salt_contract_house.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_salt_office.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_tea_exchange.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_valley_inn.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_witness_house.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/buildings/hbe_works_archive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/generic_actions/hbe_feast_common_action.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/generic_actions/hbe_feast_fund_action.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/generic_actions/hbe_feast_local_action.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/government_reforms/hbe_mountain_river_dispatch.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/government_reforms/hbe_prefectural_council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_audit.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_civil_ledger.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_communal_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_guest_compact.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_levy_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_office_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_paid_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/hbe_civic/hbe_revision.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_central_hills.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_circle_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_common_party.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_empire.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/international_organizations/hbe_local_party.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/laws/hbe_civil_service_law.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_ai_internal_ambition.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_feast_common_reward.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_feast_cooperation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_feast_local_reward.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_feast_success.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_central_hills_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_chengdu_plain_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_eastern_river_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_northern_shudao_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_southern_salt_wine_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_southwestern_valleys_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifiers/hbe_network_western_tea_horse_7.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_exports_of_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/ban_imports_of_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/can_extract_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_border_tea_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_border_tea_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_border_tea_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_embroidery_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_paper_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_paper_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_shu_paper_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_pop_demand.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_af_allow_large_investment.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_af_allow_local_refresh.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_positive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_can_cross_circle_industry.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_negative.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_positive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_embroidery_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_negative.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_positive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_shu_paper_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_impacts_inflation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_negative.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_positive.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/hbe_well_salt_used_for_minting.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_border_tea_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_border_tea_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_embroidery_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_embroidery_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_paper_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_shu_paper_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_well_salt_establishment_speed.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/modifier_types/local_hbe_well_salt_output_modifier.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_audit.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_civil_ledger.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_communal_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_guest_compact.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_levy_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_0.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_1.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_2.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_3.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_4.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_5.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_office_6.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_paid_policy.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/policies/hbe_revision.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/privileges/hbe_guild_payment_guarantee.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/privileges/hbe_village_witnesses.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/situations/hbe_banquet.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_burden.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_dispute.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_grain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_guoqi.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_roads.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_water.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/text_icons/hbe_yiqi.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/icon_goods_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_canal_crossbow.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_granary_militia.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_pass_rotation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_permanent_pass.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_river_garrison.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_salt_guard.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_tea_riders.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_trained_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/unit_types/hbe_valley_soldiers.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_mountain_river_dispatch.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/government_reforms/illustrations/hbe_prefectural_council.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_border_tea.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_embroidery.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_shu_paper.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/icons/trade_goods/illustrations/icon_goods_hbe_well_salt.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_central_hills.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_chengdu_plain.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_eastern_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_northern_shudao.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southern_salt_wine.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_southwestern_valleys.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_circle_western_tea_horse.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/international_organization_types/hbe_empire.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_pass_rotation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_permanent_pass.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_river_garrison.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_trained_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_canal_crossbow.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_granary_militia.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_pass_rotation.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_permanent_pass.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_river_garrison.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_salt_guard.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_tea_riders.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_trained_river.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gfx/interface/illustrations/units/masks/hbe_valley_soldiers.dds",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gui/shared/hbe_civic_font_icons.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/gui/shared/hbe_font_icons.gui",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_advance_gates_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_af_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_age2_military_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_annex_industry_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_capital_recruitment_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_common_defense_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_deep_balance_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_early_research_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_ending_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_formables_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_history_v031_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_industry_patch_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_industry_transmission_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_observer_hotfix_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_opening_armistice_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_open_diplomacy_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_personal_tooltips_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_red_turban_actions_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_story_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_unit_maintenance_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/hbe_western_opening_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_age2_military_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_annex_industry_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_capital_recruitment_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_common_defense_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_deep_balance_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_early_research_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_ending_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_formables_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_industry_transmission_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_open_diplomacy_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_personal_tooltips_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_red_turban_actions_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_unit_maintenance_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/hbe_western_opening_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/traditional_chinese/hbe_af_l_traditional_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/replace/hbe_native_country_names_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/english/replace/hbe_opening_truce_ui_l_english.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/replace/hbe_native_country_names_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/localization/simp_chinese/replace/hbe_opening_truce_ui_l_simp_chinese.yml",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/04_hbe_dynasties.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/05_hbe_characters.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/06_pops.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/10_countries.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/12_diplomacy.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/97_hbe_western_opening.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/98_hbe_yuan_opinions.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/1337/99_hbe_organizations.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest main_menu/setup/templates/hbe_monarchy.txt",
+      "passed": true
+    },
+    {
+      "name": "new research changes no existing setup situation panel or base art",
+      "passed": true
+    },
+    {
+      "name": "no package files removed",
+      "passed": true
+    }
+  ],
+  "failed": [],
+  "changed_files": [
+    "in_game/gui/hbe_local_affairs.gui",
+    "in_game/common/advances/hbe_advances.txt",
+    "in_game/common/advances/hbe_af_advances.txt",
+    "in_game/common/scripted_effects/hbe_af_effects.txt",
+    "in_game/common/scripted_guis/hbe_af_gui.txt",
+    "in_game/common/scripted_triggers/hbe_af_triggers.txt",
+    "main_menu/common/modifier_icons/hbe_af_permissions.txt",
+    "main_menu/common/modifier_type_definitions/hbe_af_permissions.txt",
+    "main_menu/gfx/interface/advance/hbe_af_local_proposals.dds",
+    "main_menu/gfx/interface/advance/hbe_af_public_funding.dds",
+    "main_menu/gfx/interface/hbe/technology/hbe_af_local_proposals.dds",
+    "main_menu/gfx/interface/hbe/technology/hbe_af_public_funding.dds",
+    "main_menu/gfx/interface/icons/modifier_types/hbe_af_allow_large_investment.dds",
+    "main_menu/gfx/interface/icons/modifier_types/hbe_af_allow_local_refresh.dds",
+    "main_menu/localization/english/hbe_af_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml",
+    "main_menu/localization/traditional_chinese/hbe_af_l_traditional_chinese.yml"
+  ],
+  "removed_files": [],
+  "research_nodes": 93,
+  "runtime_verified": false,
+  "visual_verified": false,
+  "installed": false,
+  "repeated_build_byte_identical": true,
+  "repeated_build_differences": [],
+  "python_parse_files": 7
+}

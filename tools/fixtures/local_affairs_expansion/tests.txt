@@ -1,0 +1,1 @@
+hbe_affairs_expansion = { year = 1337 end_year = 1338 fail_on_end_year = yes success = { c:BAB = { has_variable = hbe_af_expansion_pass } } success_effect = { test_log = AF_EXP_TEST_PASS } }

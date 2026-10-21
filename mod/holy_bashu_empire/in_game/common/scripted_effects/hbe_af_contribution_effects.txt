@@ -1,0 +1,26 @@
+﻿hbe_af_record_contribution = {
+ if = { limit = { has_variable = hbe_af_active NOT = { has_variable = hbe_af_credit_recorded } }
+ set_variable = hbe_af_credit_recorded
+ set_variable = { name = hbe_af_credit_last value = 0 }
+ if = { limit = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire }
+  hbe_banquet_register = yes
+  set_variable = { name = hbe_af_credit_last_project value = var:hbe_af_active }
+  if = { limit = { OR = { NOT = { has_variable = hbe_af_credit_round } NOT = { var:hbe_af_credit_round = situation:hbe_banquet.var:hbe_round } } }
+   set_variable = { name = hbe_af_credit_round value = situation:hbe_banquet.var:hbe_round }
+   set_variable = { name = hbe_af_round_points value = 0 } set_variable = { name = hbe_af_round_credit_1 value = 0 } set_variable = { name = hbe_af_round_credit_2 value = 0 } set_variable = { name = hbe_af_round_credit_3 value = 0 } set_variable = { name = hbe_af_round_credit_4 value = 0 } set_variable = { name = hbe_af_round_credit_5 value = 0 } set_variable = { name = hbe_af_round_credit_6 value = 0 } set_variable = { name = hbe_af_round_credit_7 value = 0 } set_variable = { name = hbe_af_round_credit_8 value = 0 } set_variable = { name = hbe_af_round_credit_9 value = 0 } set_variable = { name = hbe_af_round_credit_10 value = 0 } set_variable = { name = hbe_af_round_credit_11 value = 0 } set_variable = { name = hbe_af_round_credit_12 value = 0 } set_variable = { name = hbe_af_round_credit_13 value = 0 } set_variable = { name = hbe_af_round_credit_14 value = 0 } set_variable = { name = hbe_af_round_credit_15 value = 0 } set_variable = { name = hbe_af_round_credit_16 value = 0 }
+   set_variable = { name = hbe_af_round_completions value = 0 }
+  }
+  if = { limit = { NOT = { has_variable = hbe_af_credit_economic } } set_variable = { name = hbe_af_credit_economic value = hbe_event_economic_base } }
+  set_variable = { name = hbe_af_credit_last value = hbe_af_feast_credit }
+  if = { limit = { var:hbe_af_credit_last > 0 }
+   change_variable = { name = hbe_af_round_points add = var:hbe_af_credit_last }
+   change_variable = { name = hbe_af_round_completions add = 1 } if = { limit = { var:hbe_af_active = 1 } change_variable = { name = hbe_af_round_credit_1 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 2 } change_variable = { name = hbe_af_round_credit_2 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 3 } change_variable = { name = hbe_af_round_credit_3 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 4 } change_variable = { name = hbe_af_round_credit_4 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 5 } change_variable = { name = hbe_af_round_credit_5 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 6 } change_variable = { name = hbe_af_round_credit_6 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 7 } change_variable = { name = hbe_af_round_credit_7 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 8 } change_variable = { name = hbe_af_round_credit_8 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 9 } change_variable = { name = hbe_af_round_credit_9 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 10 } change_variable = { name = hbe_af_round_credit_10 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 11 } change_variable = { name = hbe_af_round_credit_11 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 12 } change_variable = { name = hbe_af_round_credit_12 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 13 } change_variable = { name = hbe_af_round_credit_13 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 14 } change_variable = { name = hbe_af_round_credit_14 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 15 } change_variable = { name = hbe_af_round_credit_15 add = var:hbe_af_credit_last } } if = { limit = { var:hbe_af_active = 16 } change_variable = { name = hbe_af_round_credit_16 add = var:hbe_af_credit_last } }
+   change_variable = { name = hbe_feast_points add = var:hbe_af_credit_last }
+   change_variable = { name = hbe_contribution add = var:hbe_af_credit_last }
+   set_variable = { name = hbe_af_credit_last_project value = var:hbe_af_active }
+   set_variable = hbe_feast_helped set_variable = hbe_round_delivered
+   hbe_feast_recount = yes
+  }
+ }
+ }
+}

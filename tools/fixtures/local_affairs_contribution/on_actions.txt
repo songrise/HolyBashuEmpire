@@ -1,0 +1,1 @@
+on_game_start = { on_actions = { hbe_af_credit_test_start } } hbe_af_credit_test_start = { effect = { c:BAB = { trigger_event_silently = { id = hbe_af_credit_test.1 days = 6 } } } }

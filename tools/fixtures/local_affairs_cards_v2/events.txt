@@ -1,0 +1,20 @@
+﻿namespace = hbe_af_probe
+hbe_af_probe.1 = { type = country_event hidden = yes title = hbe_af_project_1 immediate = {
+hbe_af_initialize = yes hbe_af_migrate_expiry = yes hbe_af_migrate_cards = yes add_gold = 10000 remove_variable = hbe_af_wait set_variable = { name = hbe_burden value = 50 } set_variable = { name = hbe_af_national value = 1 } hbe_af_start_1_small = yes
+if = { limit = { var:hbe_af_national = 1 has_variable = hbe_af_outcome has_variable = hbe_af_eta_year var:hbe_af_eta_month >= 1 var:hbe_af_eta_month <= 12 } test_log = AF_V2_RETAIN_OFFERS } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_RETAIN_OFFERS_FAIL }
+set_variable = { name = hbe_af_factor value = 1.5 } set_variable = { name = hbe_af_factor_0 value = 1.5 } set_variable = { name = hbe_af_factor_1 value = 1.5 } set_variable = { name = hbe_af_factor_2 value = 1.5 } set_variable = { name = hbe_af_factor_3 value = 1.5 } set_variable = { name = hbe_af_outcome value = 4 } hbe_af_complete = yes
+if = { limit = { var:hbe_burden = 44 var:hbe_af_actual_0 = 6 var:hbe_af_completed = 1 } test_log = AF_V2_GREAT_BURDEN } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_GREAT_BURDEN_FAIL }
+hbe_af_complete = yes
+if = { limit = { var:hbe_burden = 44 var:hbe_af_completed = 1 } test_log = AF_V2_NO_DOUBLE_PAY } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_NO_DOUBLE_PAY_FAIL }
+hbe_af_begin_wait = yes
+if = { limit = { has_variable = hbe_af_wait var:hbe_af_wait_left = 3 var:hbe_af_wait_progress = 0 } test_log = AF_V2_WAIT } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_WAIT_FAIL }
+remove_variable = hbe_af_wait set_variable = { name = hbe_af_local value = 4 } capital = { save_scope_as = af_probe_target } set_variable = { name = hbe_af_candidate_target value = scope:af_probe_target } set_variable = { name = af_probe_population value = scope:af_probe_target.population } hbe_af_start_4_small = yes set_variable = { name = hbe_af_factor value = 1.5 } set_variable = { name = hbe_af_factor_0 value = 1.5 } set_variable = { name = hbe_af_factor_1 value = 1.5 } set_variable = { name = hbe_af_factor_2 value = 1.5 } set_variable = { name = hbe_af_factor_3 value = 1.5 } set_variable = { name = hbe_af_outcome value = 4 } hbe_af_complete = yes
+if = { limit = { var:hbe_af_actual_0 = 450 scope:af_probe_target = { population >= { value = root.var:af_probe_population add = 0.449 } } } test_log = AF_V2_GREAT_POP } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_GREAT_POP_FAIL }
+set_variable = { name = hbe_af_national value = 3 } hbe_af_start_3_small = yes set_variable = { name = hbe_af_factor value = 0.85 } set_variable = { name = hbe_af_factor_0 value = 0.85 } set_variable = { name = hbe_af_factor_1 value = 0.85 } set_variable = { name = hbe_af_factor_2 value = 0.85 } set_variable = { name = hbe_af_factor_3 value = 0.85 } set_variable = { name = hbe_af_outcome value = 1 } hbe_af_complete = yes
+if = { limit = { var:hbe_af_actual_0 = 20 has_country_modifier = hbe_af_materials } test_log = AF_V2_MODIFIER_DURATION } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_MODIFIER_DURATION_FAIL }
+set_variable = { name = hbe_af_no_national value = yes } set_variable = { name = hbe_af_no_local value = yes } set_variable = { name = af_probe_round value = var:hbe_af_round } hbe_af_begin_wait = yes hbe_af_monthly = yes hbe_af_monthly = yes
+if = { limit = { has_variable = hbe_af_wait var:hbe_af_wait_left = 1 var:hbe_af_wait_progress > 0.66 } test_log = AF_V2_RING_PROGRESS } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_RING_PROGRESS_FAIL }
+hbe_af_monthly = yes
+if = { limit = { var:hbe_af_round > var:af_probe_round } test_log = AF_V2_REFRESH } else = { set_variable = hbe_af_v2_fail test_log = AF_V2_REFRESH_FAIL }
+if = { limit = { NOT = { has_variable = hbe_af_v2_fail } } set_variable = hbe_af_v2_pass }
+} }

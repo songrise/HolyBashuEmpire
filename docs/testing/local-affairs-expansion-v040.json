@@ -1,0 +1,407 @@
+{
+  "version": "0.4.0 pending",
+  "game_version": "1.4.2",
+  "projects": 16,
+  "pools": {
+    "national": 8,
+    "local": 8
+  },
+  "rewards_per_project": [
+    2,
+    3
+  ],
+  "expiry_months": [
+    12,
+    24
+  ],
+  "gold_cost_multiplier": 0.7,
+  "burden_cost_multiplier": 1.2,
+  "relief_draw_weights": {
+    "below_40": 1,
+    "40_to_59": 2,
+    "60_plus": 3
+  },
+  "manual_skip_removed": true,
+  "preview_great_success_amounts_hidden": true,
+  "checks": [
+    {
+      "name": "affairs GUI type has exactly one live HUD instance",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD override only wraps the native alert row and adds its mount",
+      "passed": true
+    },
+    {
+      "name": "affairs entry is anchored to screen bottom right",
+      "passed": true
+    },
+    {
+      "name": "affairs one window for ready running and waiting",
+      "passed": true
+    },
+    {
+      "name": "affairs visibility does not read a valueless country flag",
+      "passed": true
+    },
+    {
+      "name": "affairs leaves accepted situation GUI unchanged",
+      "passed": true
+    },
+    {
+      "name": "affairs sixteen independent project definitions",
+      "passed": true
+    },
+    {
+      "name": "affairs guarded selections for both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs large investment research gate",
+      "passed": true
+    },
+    {
+      "name": "affairs persistent draws not GUI randomization",
+      "passed": true
+    },
+    {
+      "name": "affairs auto checks all budget boundaries",
+      "passed": true
+    },
+    {
+      "name": "affairs monthly progress bounded and paused on lost control",
+      "passed": true
+    },
+    {
+      "name": "affairs population and building use native outcomes",
+      "passed": true
+    },
+    {
+      "name": "affairs fixed compact dual cards and all guarded choices",
+      "passed": true
+    },
+    {
+      "name": "affairs tall rewards and two masked illustrated headers",
+      "passed": true
+    },
+    {
+      "name": "affairs cards leave side padding and a future refresh slot",
+      "passed": true
+    },
+    {
+      "name": "affairs panel initializes old saves before opening",
+      "passed": true
+    },
+    {
+      "name": "affairs uses treasury rather than monthly balance",
+      "passed": true
+    },
+    {
+      "name": "affairs automation host only adds one economy entry",
+      "passed": true
+    },
+    {
+      "name": "affairs automation uses native economy filter and controls",
+      "passed": true
+    },
+    {
+      "name": "affairs automation explicitly supplies native search context",
+      "passed": true
+    },
+    {
+      "name": "affairs native circular refresh remains inside dual-card window",
+      "passed": true
+    },
+    {
+      "name": "affairs global investment preview changes both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs active card shows paid cost date and remaining months",
+      "passed": true
+    },
+    {
+      "name": "affairs availability mounts a native top ribbon",
+      "passed": true
+    },
+    {
+      "name": "affairs outcomes locked once at guarded start",
+      "passed": true
+    },
+    {
+      "name": "affairs two native completion receipts per project",
+      "passed": true
+    },
+    {
+      "name": "affairs receipts snapshot actual gains before clearing active project",
+      "passed": true
+    },
+    {
+      "name": "affairs settlement is guarded against duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "affairs target loss still pauses and dates update",
+      "passed": true
+    },
+    {
+      "name": "affairs main panel only has a status cog, with right-click toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs auto respects national local and large preferences",
+      "passed": true
+    },
+    {
+      "name": "affairs descriptive grades use explicit vanilla colors",
+      "passed": true
+    },
+    {
+      "name": "affairs outcome weights and greatness are bounded",
+      "passed": true
+    },
+    {
+      "name": "affairs construction has no progress meter or elapsed counter",
+      "passed": true
+    },
+    {
+      "name": "affairs project titles have distinct visual hierarchy",
+      "passed": true
+    },
+    {
+      "name": "affairs event modifiers expose native description keys",
+      "passed": true
+    },
+    {
+      "name": "affairs title status and panel use the same center",
+      "passed": true
+    },
+    {
+      "name": "affairs time uses the native clock icon",
+      "passed": true
+    },
+    {
+      "name": "affairs only two pool header textures",
+      "passed": true
+    },
+    {
+      "name": "affairs manual skip removed and auto preserves current offers",
+      "passed": true
+    },
+    {
+      "name": "affairs every candidate has a bounded persisted random expiry",
+      "passed": true
+    },
+    {
+      "name": "affairs expiry labels sit below both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs opening old saves migrates missing expiry only",
+      "passed": true
+    },
+    {
+      "name": "affairs all projects have two to four reward types",
+      "passed": true
+    },
+    {
+      "name": "affairs preview hides great success amounts and removes probability lecture",
+      "passed": true
+    },
+    {
+      "name": "affairs shared cost multipliers match latest balance",
+      "passed": true
+    },
+    {
+      "name": "affairs every generated cost and burden applies the shared multipliers",
+      "passed": true
+    },
+    {
+      "name": "affairs fallback plus cash rewards cannot exceed paid cost",
+      "passed": true
+    },
+    {
+      "name": "affairs relief draws favor high burden without changing costs",
+      "passed": true
+    },
+    {
+      "name": "affairs native research road and varied buildings supported",
+      "passed": true
+    },
+    {
+      "name": "affairs targets prefer suitable workers and infrastructure",
+      "passed": true
+    },
+    {
+      "name": "affairs modifier names and descriptions are complete",
+      "passed": true
+    },
+    {
+      "name": "affairs all scripted GUI references exist",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card registers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card fair",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card materials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card settlers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card granary",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card canal",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card copyists",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card paid_crews",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card old_services",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card deliveries",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card land_books",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_roads",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card seek_artisans",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_clinics",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card restore_market",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card rest_crews",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_water",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_salt",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_river",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_roads",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_grain",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_tea",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_valleys",
+      "passed": true
+    },
+    {
+      "name": "seven old service decisions retired",
+      "passed": true
+    }
+  ],
+  "controlled_engine": {
+    "flags": [
+      "af_exp_pass_active_freeze",
+      "af_exp_pass_all",
+      "af_exp_pass_composite_settlement",
+      "af_exp_pass_cost_scale",
+      "af_exp_pass_expiry_range",
+      "af_exp_pass_independent_refresh",
+      "af_exp_pass_load_scale",
+      "af_exp_pass_no_double_settle",
+      "af_exp_pass_open_stable",
+      "af_exp_pass_population_modifier",
+      "af_exp_pass_random_building",
+      "af_exp_pass_road_fallback",
+      "af_exp_pass_road_reward",
+      "af_exp_pass_single_pay",
+      "hbe_af_expansion_pass"
+    ],
+    "passed_assertions": 13,
+    "failed_assertions": [],
+    "all_pass": true,
+    "save_sha256": "cd54fcab6b6a4b4f021fdb5385778a43a3b8176435b9ed693952e1bd77a5eaf2",
+    "diagnostics_archive": "outputs/affairs-expansion-engine-diagnostics.zip"
+  },
+  "installation": {
+    "changed": [
+      "build_manifest.json",
+      "in_game/events/hbe_af_results.txt",
+      "in_game/gui/hbe_local_affairs.gui",
+      "in_game/common/customizable_localization/hbe_af_custom.txt",
+      "in_game/common/scripted_effects/hbe_af_effects.txt",
+      "in_game/common/scripted_guis/hbe_af_gui.txt",
+      "in_game/common/scripted_triggers/hbe_af_triggers.txt",
+      "in_game/common/script_values/hbe_af_values.txt",
+      "main_menu/common/static_modifiers/hbe_af_modifiers.txt",
+      "main_menu/localization/english/hbe_af_l_english.yml",
+      "main_menu/localization/english/hbe_l_english.yml",
+      "main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml",
+      "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml",
+      "main_menu/localization/traditional_chinese/hbe_af_l_traditional_chinese.yml"
+    ],
+    "matching_files": 821,
+    "fixture_not_installed": true,
+    "visual_verified": true
+  },
+  "visual_verified": true,
+  "engine_global_error_log_zero": false,
+  "limitations": [
+    "Isolated forced assertions, not long balance simulation.",
+    "Existing global/vanilla registration diagnostics still present.",
+    "Worker shortage ranking uses existing laborer/peasant buildings with capacity at least 100 and employment under 50, not a full profitability forecast."
+  ],
+  "checksum": "86e8",
+  "live_checks": [
+    "Candidate expiry labels visible below left and right cards: 16 and 24 months",
+    "Manual skip button removed",
+    "Two and three reward bullets fit the existing cards",
+    "Native reward hover shows ordinary ranges and description, no probability lecture or great-success numbers",
+    "Investment toggle updates both cards and leaves expiry values unchanged",
+    "Gold preview reduced to 70 percent; burden preview increased to 120 percent"
+  ],
+  "player_date": "1356.4.23 paused",
+  "player_gold": 219.7,
+  "player_burden": 34.5,
+  "player_save_sha256": "3761e3c4a0528e52f126a08ed9ec39e9555947b15c833f0a4143b5d2235aa644",
+  "player_save_bytes_unchanged": true,
+  "scratch_cleanup_mib": 1351.9
+}

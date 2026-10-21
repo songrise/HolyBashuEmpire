@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-21",
+  "mod_version": "0.4.0",
+  "game_version": "1.4.2",
+  "initial_normal_launch": "0 mods; metadata open failed at LocalAppData path despite files present",
+  "comparisons": {
+    "release": {
+      "metadata_open_failures": 0,
+      "native_scan_root_mounted": false,
+      "in_game_mounted": true,
+      "fopen_errors": 0,
+      "hbe_gui_errors": []
+    },
+    "中文": {
+      "metadata_open_failures": 0,
+      "native_scan_root_mounted": false,
+      "in_game_mounted": true,
+      "fopen_errors": 0,
+      "hbe_gui_errors": []
+    },
+    "normal": {
+      "metadata_open_failures": 0,
+      "native_scan_root_mounted": false,
+      "in_game_mounted": true,
+      "fopen_errors": 0,
+      "hbe_gui_errors": []
+    },
+    "native": {
+      "metadata_open_failures": 0,
+      "native_scan_root_mounted": true,
+      "in_game_mounted": true,
+      "fopen_errors": 0,
+      "hbe_gui_errors": []
+    }
+  },
+  "installed_path": "D:\\SteamLibrary\\steamapps\\common\\Europa Universalis V\\game\\mod\\holy_bashu_empire",
+  "installed_file_count": 816,
+  "hash_mismatches": [],
+  "active_playset": "神圣巴蜀帝国 v0.2.0",
+  "active_mods": [
+    {
+      "path": "D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/",
+      "isEnabled": true
+    }
+  ],
+  "player_saves_modified": false,
+  "live_ui_verified": false,
+  "caveat": "Real normal launch with no CLI arguments mounted all three mod phases; GUI interaction and project gameplay remain for player manual testing.",
+  "normal_launch_verified": true,
+  "normal_launch_local_time": "2026-10-21 03:15:34",
+  "normal_launch_log_evidence": [
+    "[03:15:34][game_commandline.cpp:130]: CommandLine arguments: ",
+    "[03:15:36][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod",
+    "[03:15:36][dlc_reloadable.cpp:403]: Switching to playset index 2, Name: 神圣巴蜀帝国 v0.2.0",
+    "[03:15:36][dlc_reloadable.cpp:358]: Mod 神圣巴蜀帝国 Holy Bashu Empire () version 1.4.* successfully matched game version 1.4.2.",
+    "[03:15:36][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/loading_screen",
+    "[03:15:40][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/loading_screen",
+    "[03:15:40][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/main_menu",
+    "[03:15:42][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/loading_screen",
+    "[03:15:42][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/main_menu",
+    "[03:15:42][virtualfilesystem_physfs.cpp:596]: Mounted Data: D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire/in_game"
+  ],
+  "normal_launch_metadata_errors": 0,
+  "normal_launch_fopen_errors": 0
+}

@@ -73,7 +73,7 @@ def main():
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
-    expected_nodes = 80 + manifest.get('industry_transmission', {}).get('advance_count', 0) + manifest.get('early_research_design', {}).get('military_count', 0)
+    expected_nodes = 80 + manifest.get('industry_transmission', {}).get('advance_count', 0) + manifest.get('early_research_design', {}).get('military_count', 0) + manifest.get('local_affairs_research', {}).get('advance_count', 0)
     check('current decisions and native research node count',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and manifest['research_nodes']==expected_nodes)
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
@@ -82,7 +82,7 @@ def main():
     validate_open_diplomacy(m,manifest,check)
     io_setup=(m/'main_menu/setup/1337/99_hbe_organizations.txt').read_text(encoding='utf-8')
     check('IO members precede leaders in the persistent reader',all(s.index('members =')<s.index('leader =') for k,_,b,e,_ in blocks(io_setup,1) for s in [io_setup[b:e]]))
-    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0','0.3.1','0.3.2','0.3.3') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
+    check('release metadata and manifest version match',manifest['version'] in ('0.2.0','0.2.1','0.3.0','0.3.1','0.3.2','0.3.3','0.4.0') and json.loads((m/'.metadata/metadata.json').read_text(encoding='utf-8'))['version']==manifest['version'])
     # Detect accidentally unlinked references to our own effects, events or variables.
     hbe_refs=set()
     variable_refs=set()
@@ -101,7 +101,7 @@ def main():
     check('participation includes all IO members and subjects','visible = { is_member_of_international_organization = international_organization:hbe_empire }' in sit)
     check('monthly registration does not filter emperor or subjects','every_international_organization_member = { hbe_banquet_register = yes' in banquet)
     check('situation persists after charters and 1457','current_year < 1457' not in banquet and 'can_end = { NOT = { exists = international_organization:hbe_empire } }' in sit)
-    if manifest['version'] in ('0.2.1','0.3.0','0.3.1','0.3.2','0.3.3'):
+    if manifest['version'] in ('0.2.1','0.3.0','0.3.1','0.3.2','0.3.3','0.4.0'):
         check('two-year accounts are once per situation','var:hbe_round_month >= 24' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
         check('cooperative settlement uses adaptive contribution target','var:hbe_feast_total >= var:hbe_feast_required' in banquet)
         check('funding requires real scaled payment','gold >= hbe_feast_fee' in new_decisions and 'hbe_fund_project' in banquet)
@@ -172,7 +172,8 @@ def main():
     for e in pictures:
         painted_dds('painted non-research decision '+e['key'],e['image'],(440,1080),e['sha256'])
         check('decision picture linked '+e['key'],any(p in decision_blocks[e['key']] for p in [f'gfx/interface/hbe/decisions/{e["key"]}.dds',f'gfx/interface/hbe/v021/decisions/{e["key"]}.dds']))
-    check('all current decision images exist and no active checker placeholders',len(decision_blocks)==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in (m/'in_game/gui').rglob('*.gui')))
+    legacy_gui_files=[f for f in (m/'in_game/gui').rglob('*.gui') if not ('local_affairs' in manifest and f.name=='hbe_local_affairs.gui')]
+    check('all current decision images exist and no active checker placeholders outside the explicit affairs prototype',len(decision_blocks)==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in legacy_gui_files))
     check('all implicit decision titles and catalogue entries localized',all(k+'.title' in loc_keys and k+'.title.entry' in loc_keys and k+'.desc.entry' in loc_keys for k in decision_blocks))
     check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and ('tags = {' in b or k.startswith('hbe_form_')) for k,b in decision_blocks.items()))
     native=json.loads((ROOT/'data/native_content_v011.json').read_text(encoding='utf-8'))
@@ -243,6 +244,8 @@ def main():
     if 'opening_territory' in manifest:
         from apply_opening_territory import validate as validate_opening_territory
         validate_opening_territory(m,ROOT,manifest,check)
+    from validate_local_affairs import validate as validate_local_affairs
+    validate_local_affairs(m,ROOT,game,manifest,check)
     report=dict(status='passed',checks=checks,check_count=len(checks),story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, {manifest["research_nodes"]} research nodes.')

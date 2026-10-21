@@ -1,0 +1,28 @@
+namespace = hbe_af_credit_test
+hbe_af_credit_test.1 = { type = country_event hidden = yes title = hbe_af_project_1 immediate = { if = { limit = { is_situation_active = situation:hbe_banquet } hbe_af_initialize = yes hbe_banquet_register = yes remove_variable = hbe_round_contributed set_variable = { name = hbe_feast_points value = 0 } set_variable = { name = hbe_af_months value = 6 } set_variable = { name = hbe_af_credit_economic value = 1 } set_variable = { name = hbe_af_credit_net_cost value = 1 } set_variable = { name = hbe_af_credit_quality value = 1 }
+if = { limit = { hbe_af_feast_credit >= 0.699 hbe_af_feast_credit <= 0.701 } set_variable = af_credit_pass_small_fraction } else = { set_variable = af_credit_fail_small_fraction set_variable = af_credit_failed }
+set_variable = { name = hbe_af_months value = 12 } set_variable = { name = hbe_af_credit_net_cost value = 2 }
+if = { limit = { hbe_af_feast_credit >= 1.199 hbe_af_feast_credit <= 1.201 } set_variable = af_credit_pass_large_fraction } else = { set_variable = af_credit_fail_large_fraction set_variable = af_credit_failed }
+set_variable = { name = hbe_af_credit_quality value = 100 }
+if = { limit = { hbe_af_feast_credit = 1.5 } set_variable = af_credit_pass_project_cap } else = { set_variable = af_credit_fail_project_cap set_variable = af_credit_failed }
+set_variable = { name = hbe_af_credit_quality value = 1 } set_variable = { name = hbe_af_months value = 6 } set_variable = { name = hbe_af_credit_net_cost value = 1 } set_variable = { name = hbe_af_credit_round value = -1 } set_variable = { name = hbe_af_round_points value = 0.9 } set_variable = { name = hbe_af_active value = 1 } remove_variable = hbe_af_credit_recorded hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points >= 0.699 var:hbe_feast_points <= 0.701 var:hbe_af_round_points >= 0.699 var:hbe_af_round_points <= 0.701 var:hbe_af_round_credit_1 >= 0.699 } set_variable = af_credit_pass_first_credit } else = { set_variable = af_credit_fail_first_credit set_variable = af_credit_failed }
+hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points >= 0.699 var:hbe_feast_points <= 0.701 } set_variable = af_credit_pass_no_duplicate } else = { set_variable = af_credit_fail_no_duplicate set_variable = af_credit_failed }
+set_variable = { name = hbe_af_active value = 2 } set_variable = { name = hbe_af_months value = 12 } set_variable = { name = hbe_af_credit_net_cost value = 2 } remove_variable = hbe_af_credit_recorded hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points >= 1.899 var:hbe_feast_points <= 1.901 var:hbe_af_round_credit_2 >= 1.199 } set_variable = af_credit_pass_second_credit } else = { set_variable = af_credit_fail_second_credit set_variable = af_credit_failed }
+set_variable = { name = hbe_af_active value = 12 } set_variable = { name = hbe_af_months value = 6 } set_variable = { name = hbe_af_credit_net_cost value = 1 } remove_variable = hbe_af_credit_recorded hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points >= 1.999 var:hbe_feast_points <= 2.001 var:hbe_af_round_points >= 1.999 var:hbe_af_round_points <= 2.001 var:hbe_af_credit_last <= 0.101 } set_variable = af_credit_pass_round_cap } else = { set_variable = af_credit_fail_round_cap set_variable = af_credit_failed }
+set_variable = hbe_round_contributed change_variable = { name = hbe_feast_points add = 1 } remove_variable = hbe_af_credit_recorded hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points >= 2.999 var:hbe_feast_points <= 3.001 hbe_af_feast_funding = 1 hbe_af_feast_projects >= 1.999 hbe_af_feast_prior <= 0.001 var:hbe_af_credit_last = 0 } set_variable = af_credit_pass_funding_distinct } else = { set_variable = af_credit_fail_funding_distinct set_variable = af_credit_failed }
+set_variable = { name = hbe_feast_points value = 0.1 }
+if = { limit = { hbe_af_feast_dividend_weight >= 0.0692 hbe_af_feast_dividend_weight <= 0.0694 } set_variable = af_credit_pass_fractional_dividend } else = { set_variable = af_credit_fail_fractional_dividend set_variable = af_credit_failed }
+set_variable = { name = hbe_feast_points value = 3 }
+if = { limit = { hbe_af_feast_dividend_weight >= 1.3862 hbe_af_feast_dividend_weight <= 1.3864 } set_variable = af_credit_pass_integer_anchor } else = { set_variable = af_credit_fail_integer_anchor set_variable = af_credit_failed }
+remove_variable = hbe_af_active remove_variable = hbe_af_credit_recorded hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points = 3 NOT = { has_variable = hbe_af_credit_recorded } } set_variable = af_credit_pass_no_active_no_credit } else = { set_variable = af_credit_fail_no_active_no_credit set_variable = af_credit_failed }
+situation:hbe_banquet = { hbe_open_accounts = yes }
+if = { limit = { var:hbe_feast_points = 0 var:hbe_af_round_points = 0 var:hbe_af_round_credit_1 = 0 var:hbe_af_round_credit_2 = 0 var:hbe_af_round_credit_12 = 0 hbe_af_feast_funding = 0 } set_variable = af_credit_pass_new_round_reset } else = { set_variable = af_credit_fail_new_round_reset set_variable = af_credit_failed }
+set_variable = { name = hbe_feast_points value = 2 } set_variable = { name = hbe_af_active value = 1 } remove_variable = hbe_af_credit_recorded hbe_af_record_contribution = yes
+if = { limit = { var:hbe_feast_points = 2 var:hbe_af_credit_last = 0 } set_variable = af_credit_pass_prior_credit_shared_cap } else = { set_variable = af_credit_fail_prior_credit_shared_cap set_variable = af_credit_failed }
+if = { limit = { NOT = { has_variable = af_credit_failed } } set_variable = af_credit_all_pass } } else = { trigger_event_silently = { id = hbe_af_credit_test.1 days = 1 } } } }

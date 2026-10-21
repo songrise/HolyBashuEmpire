@@ -1,0 +1,2 @@
+﻿hbe_af_allow_large_investment = { boolean = yes game_data = { category = country } }
+hbe_af_allow_local_refresh = { boolean = yes game_data = { category = country } }

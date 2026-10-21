@@ -38,7 +38,11 @@ def validate(root):
  feast=read('in_game/common/scripted_effects/hbe_banquet_effects.txt');helpers=read('in_game/common/scripted_effects/hbe_simple_banquet_effects.txt')
  fb={k:feast[s:e] for k,_,s,e,_ in blocks(feast,0)}
  check('funding has a once-per-round effect guard and real scaled payment','NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee' in fb['hbe_fund_project'] and 'multiply = -1' in fb['hbe_fund_project'])
- check('completed service cannot double count','NOT = { has_variable = hbe_feast_helped }' in helpers and 'name = hbe_feast_points add = 2' in helpers)
+ if manifest.get('local_affairs',{}).get('legacy_retired'):
+  old_help=next(helpers[a:b] for k,_,a,b,_ in blocks(helpers,0) if k=='hbe_feast_help')
+  check('retired service cannot award contribution',old_help.strip()=='hbe_af_retire_legacy_country = yes')
+ else:
+  check('completed service cannot double count','NOT = { has_variable = hbe_feast_helped }' in helpers and 'name = hbe_feast_points add = 2' in helpers)
  check('only contributors receive end rewards','var:hbe_feast_points > 0' in fb['hbe_settle_accounts'] and 'add_gold = 6' in fb['hbe_settle_accounts'])
  check('ties reward both factions','hbe_common_party.var:hbe_party_points >= international_organization:hbe_local_party.var:hbe_party_points' in feast and 'hbe_local_party.var:hbe_party_points >= international_organization:hbe_common_party.var:hbe_party_points' in feast)
  check('failure keeps participation rewards without penalty','hbe_banquet.5' in fb['hbe_settle_accounts'] and 'subtract' not in fb['hbe_settle_accounts'])

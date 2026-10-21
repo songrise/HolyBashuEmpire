@@ -1,0 +1,37 @@
+﻿namespace = hbe_af_test
+hbe_af_test.1 = { type = country_event hidden = yes title = hbe_af_project_1 immediate = {
+ hbe_af_initialize = yes hbe_af_migrate_expiry = yes add_gold = 1000
+ set_variable = { name = hbe_burden value = 20 }
+ remove_variable = hbe_af_active remove_variable = hbe_af_wait
+ set_variable = { name = hbe_af_national value = 1 }
+ hbe_af_start_1_small = yes
+ if = { limit = { var:hbe_af_active = 1 } test_log = HBE_AF_START_OK } else = { set_variable = hbe_af_test_fail }
+ set_variable = { name = hbe_af_gold_after value = gold }
+ hbe_af_start_2_small = yes
+ if = { limit = { var:hbe_af_active = 1 gold = var:hbe_af_gold_after } test_log = HBE_AF_SINGLE_CHOICE_OK } else = { set_variable = hbe_af_test_fail }
+ set_variable = { name = hbe_af_factor_0 value = 1 } set_variable = { name = hbe_af_factor_1 value = 1 } set_variable = { name = hbe_af_factor_2 value = 1 } set_variable = { name = hbe_af_factor_3 value = 1 } hbe_af_complete = yes
+ if = { limit = { var:hbe_burden = 16 var:hbe_af_completed = 1 } test_log = HBE_AF_SETTLE_OK } else = { set_variable = hbe_af_test_fail }
+ hbe_af_begin_wait = yes
+ if = { limit = { has_variable = hbe_af_wait var:hbe_af_wait_left = 3 } test_log = HBE_AF_REROLL_OK } else = { set_variable = hbe_af_test_fail }
+
+ remove_variable = hbe_af_wait
+ set_variable = { name = hbe_af_local value = 4 }
+ capital = { save_scope_as = af_pop_target }
+ set_variable = { name = hbe_af_candidate_target value = scope:af_pop_target }
+ set_variable = { name = hbe_af_pop_before value = scope:af_pop_target.population }
+ hbe_af_start_4_small = yes
+ if = { limit = { var:hbe_af_active = 4 } test_log = HBE_AF_POP_START_OK } else = { set_variable = hbe_af_test_fail }
+ set_variable = { name = hbe_af_factor_0 value = 1 } set_variable = { name = hbe_af_factor_1 value = 1 } set_variable = { name = hbe_af_factor_2 value = 1 } set_variable = { name = hbe_af_factor_3 value = 1 } hbe_af_complete = yes
+ if = { limit = { scope:af_pop_target = { population > root.var:hbe_af_pop_before } } test_log = HBE_AF_POP_REWARD_OK } else = { set_variable = hbe_af_test_fail }
+ set_variable = { name = hbe_af_national value = 2 }
+ if = { limit = { NOT = { hbe_af_can_2_large = yes } } test_log = HBE_AF_LARGE_LOCK_OK } else = { set_variable = hbe_af_test_fail }
+ research_advance = advance_type:hbe_tech_common_2
+ if = { limit = { NOT = { hbe_af_can_2_large = yes } } test_log = HBE_AF_OLD_TECH_NO_LONGER_UNLOCKS } else = { set_variable = hbe_af_test_fail }
+ research_advance = advance_type:hbe_af_public_funding
+ if = { limit = { hbe_af_can_2_large = yes } test_log = HBE_AF_LARGE_UNLOCK_OK } else = { set_variable = hbe_af_test_fail }
+ set_variable = { name = hbe_af_budget value = 0 }
+ hbe_af_auto_choose = yes
+ if = { limit = { NOT = { has_variable = hbe_af_active } } test_log = HBE_AF_BUDGET_OK } else = { set_variable = hbe_af_test_fail }
+ if = { limit = { NOT = { has_variable = hbe_af_test_fail } } set_variable = hbe_af_test_pass }
+
+} }

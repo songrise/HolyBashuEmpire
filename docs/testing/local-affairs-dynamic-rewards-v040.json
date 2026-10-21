@@ -1,0 +1,82 @@
+{
+  "static_check_count": 87,
+  "all_static_checks_pass": true,
+  "engine": {
+    "flags": [
+      "af_exp_pass_active_freeze",
+      "af_exp_pass_all",
+      "af_exp_pass_army_tradition",
+      "af_exp_pass_composite_settlement",
+      "af_exp_pass_cost_scale",
+      "af_exp_pass_expiry_range",
+      "af_exp_pass_independent_components",
+      "af_exp_pass_independent_refresh",
+      "af_exp_pass_load_scale",
+      "af_exp_pass_manpower",
+      "af_exp_pass_manpower_cap",
+      "af_exp_pass_no_double_settle",
+      "af_exp_pass_open_stable",
+      "af_exp_pass_population_modifier",
+      "af_exp_pass_prestige",
+      "af_exp_pass_random_building",
+      "af_exp_pass_reopen_preserves_roll",
+      "af_exp_pass_road_fallback",
+      "af_exp_pass_road_reward",
+      "af_exp_pass_rolled_range",
+      "af_exp_pass_single_pay",
+      "af_exp_pass_stability",
+      "af_exp_pass_stability_cap",
+      "hbe_af_expansion_pass"
+    ],
+    "passed_assertions": 22,
+    "all_pass": true,
+    "scope": "Two-month isolated native settlement probe, not a long-run balance test",
+    "native_resource_basis_revision": "dynamic monthly recovery, target population, vanilla weak bonus values",
+    "preview_only_revision_after_probe": true
+  },
+  "changed": [
+    "build_manifest.json",
+    "in_game/common/scripted_effects/hbe_af_effects.txt",
+    "in_game/common/script_values/hbe_af_reward_values.txt",
+    "main_menu/localization/english/hbe_af_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml",
+    "main_menu/localization/traditional_chinese/hbe_af_l_traditional_chinese.yml"
+  ],
+  "matching_files": 822,
+  "fixture_not_installed": true,
+  "visual_verified": true,
+  "manpower_baseline_months": [
+    0.025,
+    0.05
+  ],
+  "manpower_caps": {
+    "monthly_recovery": 0.1,
+    "capacity_fraction": 0.001
+  },
+  "population_basis": "target_location_population",
+  "vanilla_sources": [
+    "in_game/events/government/steppe_horde.txt:979",
+    "main_menu/common/script_values/default_values.txt:17",
+    "main_menu/common/script_values/default_values.txt:32",
+    "main_menu/common/script_values/default_values.txt:174",
+    "main_menu/common/script_values/default_values.txt:398"
+  ],
+  "visual_scope": [
+    "existing active and dimmed cards preserve layout and mixed grades",
+    "live native research range shows 0.65-1.35",
+    "live native stability range shows 0.84-1.75",
+    "relief candidate burden cost zero",
+    "no great-success numbers or implementation formulas in hover"
+  ],
+  "visual_limit": "Current campaign cards do not include manpower or population; those settlement bases were validated in isolated engine assertions.",
+  "checksum": "a687",
+  "player_save": {
+    "path": "C:\\Users\\songrise\\OneDrive\\文档\\Paradox Interactive\\Europa Universalis V\\save games\\SP_BAB_1356_07_09_016205c0-6e05-4448-bb79-ba01b6398c0e.eu5",
+    "sha256": "3c32d5f67c6043062357fe3fc619556d84a9e1f5e3747ecd9eb79eb0f2a9eff0",
+    "date": "1356.7.9",
+    "gold": 229.33
+  },
+  "player_date_not_advanced": true,
+  "player_project_not_started_or_cancelled": true,
+  "isolated_profile_removed_mib": 409.5
+}

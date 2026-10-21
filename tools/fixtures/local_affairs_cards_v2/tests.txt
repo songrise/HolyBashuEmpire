@@ -1,0 +1,1 @@
+﻿hbe_af_cards_v2 = { year = 1337 end_year = 1338 fail_on_end_year = yes success = { c:BAB = { has_variable = hbe_af_v2_pass } } success_effect = { test_log = HBE_AF_V2_PASS } }

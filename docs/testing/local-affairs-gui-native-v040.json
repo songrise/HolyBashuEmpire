@@ -1,0 +1,193 @@
+{
+  "changed_outputs": [
+    "in_game/gui/automation_lateralview.gui",
+    "in_game/gui/hbe_local_affairs.gui",
+    "in_game/gui/hbe_local_affairs_automation.gui",
+    "in_game/common/scripted_effects/hbe_af_effects.txt",
+    "in_game/common/scripted_guis/hbe_af_gui.txt",
+    "main_menu/localization/english/hbe_af_l_english.yml",
+    "main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml",
+    "main_menu/localization/traditional_chinese/hbe_af_l_traditional_chinese.yml"
+  ],
+  "checks": [
+    {
+      "name": "affairs GUI type has exactly one live HUD instance",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD override only adds its mount",
+      "passed": true
+    },
+    {
+      "name": "affairs entry is anchored to screen bottom right",
+      "passed": true
+    },
+    {
+      "name": "affairs open and close use the same native local GUI toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs visibility does not read a valueless country flag",
+      "passed": true
+    },
+    {
+      "name": "affairs leaves accepted situation GUI unchanged",
+      "passed": true
+    },
+    {
+      "name": "affairs six independent project definitions",
+      "passed": true
+    },
+    {
+      "name": "affairs twelve guarded selections",
+      "passed": true
+    },
+    {
+      "name": "affairs large investment research gate",
+      "passed": true
+    },
+    {
+      "name": "affairs persistent draws not GUI randomization",
+      "passed": true
+    },
+    {
+      "name": "affairs auto checks all budget boundaries",
+      "passed": true
+    },
+    {
+      "name": "affairs monthly progress bounded and paused on lost control",
+      "passed": true
+    },
+    {
+      "name": "affairs population and building use native outcomes",
+      "passed": true
+    },
+    {
+      "name": "affairs fixed compact dual cards and four choices",
+      "passed": true
+    },
+    {
+      "name": "affairs panel initializes old saves before opening",
+      "passed": true
+    },
+    {
+      "name": "affairs uses treasury rather than monthly balance",
+      "passed": true
+    },
+    {
+      "name": "affairs automation host only adds one economy entry",
+      "passed": true
+    },
+    {
+      "name": "affairs automation uses native economy filter and controls",
+      "passed": true
+    },
+    {
+      "name": "affairs automation explicitly supplies native search context",
+      "passed": true
+    },
+    {
+      "name": "affairs waiting and running frames shrink to their content",
+      "passed": true
+    },
+    {
+      "name": "affairs running rewards bind directly to twelve selected tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs main panel only has a status cog, with right-click toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs auto respects national local and large preferences",
+      "passed": true
+    },
+    {
+      "name": "affairs all scripted GUI references exist",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card registers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card fair",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card materials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card settlers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card granary",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card canal",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_water",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_salt",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_river",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_roads",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_grain",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_tea",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_valleys",
+      "passed": true
+    },
+    {
+      "name": "seven old service decisions retired",
+      "passed": true
+    }
+  ],
+  "visual_verified": true,
+  "full_validation_blocker": "EU5 1.4.2: rural_buildings.txt native baseline fingerprint differs from the pre-update manifest. GUI-targeted checks are independent; full validation did not pass.",
+  "game_version": "1.4.2",
+  "checksum": "7c22",
+  "protected_save_count": 9,
+  "protected_saves_changed": [],
+  "installed_file_count": 818,
+  "install_mismatches": [],
+  "restored_date": "1355.4.16",
+  "test_fixture_removed": true,
+  "live_checks": [
+    "compact waiting window",
+    "two parallel project cards",
+    "manual small investment paid 16.76 gold and 2.5 burden",
+    "running page shows 6 months and correct two-year reward",
+    "economy filter shows entry and diplomacy filter hides it",
+    "native settings expand and align labels and values",
+    "budget 104 to 114 and project preference toggle",
+    "main cog left click does not navigate or toggle; right click toggles auto",
+    "original paused campaign restored to 1355.4.16"
+  ],
+  "limitations": [
+    "Native economy bulk toggle does not manage this script-backed automation card.",
+    "Full validation stopped at EU5 1.4.2 rural_buildings.txt baseline fingerprint mismatch.",
+    "No long-term automation or balance simulation in this GUI review.",
+    "Bottom-right map entry may be covered by the native right sidebar while that sidebar is open."
+  ]
+}

@@ -19,30 +19,30 @@ hbe_add_credit = {
 hbe_initialize = {
 if = { limit = { NOT = { has_variable = hbe_initialized } } set_variable = hbe_initialized set_variable = { name = hbe_yiqi value = 40 } add_gold = 5 trigger_event_non_silently = { id = hbe.1 days = 1 } }
 if = { limit = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } NOT = { has_variable = hbe_home_chengdu_plain } }
-            set_variable = hbe_home_chengdu_plain set_variable = { name = hbe_water value = 20 } }
+            set_variable = hbe_home_chengdu_plain  }
 if = { limit = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } NOT = { has_variable = hbe_home_southern_salt_wine } }
-            set_variable = hbe_home_southern_salt_wine set_variable = { name = hbe_salt value = 20 } }
+            set_variable = hbe_home_southern_salt_wine  }
 if = { limit = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } NOT = { has_variable = hbe_home_eastern_river } }
-            set_variable = hbe_home_eastern_river set_variable = { name = hbe_river value = 20 } }
+            set_variable = hbe_home_eastern_river  }
 if = { limit = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } NOT = { has_variable = hbe_home_northern_shudao } }
-            set_variable = hbe_home_northern_shudao set_variable = { name = hbe_roads value = 20 } }
+            set_variable = hbe_home_northern_shudao  }
 if = { limit = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } NOT = { has_variable = hbe_home_central_hills } }
-            set_variable = hbe_home_central_hills set_variable = { name = hbe_grain value = 20 } }
+            set_variable = hbe_home_central_hills  }
 if = { limit = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } NOT = { has_variable = hbe_home_western_tea_horse } }
-            set_variable = hbe_home_western_tea_horse set_variable = { name = hbe_tea value = 20 } }
+            set_variable = hbe_home_western_tea_horse  }
 if = { limit = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } NOT = { has_variable = hbe_home_southwestern_valleys } }
-            set_variable = hbe_home_southwestern_valleys set_variable = { name = hbe_valleys value = 20 } }
+            set_variable = hbe_home_southwestern_valleys  }
 hbe_apply_tianfu = yes
 }
 hbe_country_monthly = {
 if = { limit = { hbe_is_prince = yes } hbe_initialize = yes
-if = { limit = { is_situation_active = situation:hbe_banquet } if = { limit = { has_variable = hbe_service_chengdu_plain_pending NOT = { has_variable = hbe_service_chengdu_plain_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
-if = { limit = { has_variable = hbe_service_southern_salt_wine_pending NOT = { has_variable = hbe_service_southern_salt_wine_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
-if = { limit = { has_variable = hbe_service_eastern_river_pending NOT = { has_variable = hbe_service_eastern_river_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
-if = { limit = { has_variable = hbe_service_northern_shudao_pending NOT = { has_variable = hbe_service_northern_shudao_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
-if = { limit = { has_variable = hbe_service_central_hills_pending NOT = { has_variable = hbe_service_central_hills_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
-if = { limit = { has_variable = hbe_service_western_tea_horse_pending NOT = { has_variable = hbe_service_western_tea_horse_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 }
-if = { limit = { has_variable = hbe_service_southwestern_valleys_pending NOT = { has_variable = hbe_service_southwestern_valleys_timer } situation:hbe_banquet = { var:hbe_charter = 2 } } add_prestige = 2 } }
+if = { limit = { is_situation_active = situation:hbe_banquet } 
+
+
+
+
+
+ }
 if = { limit = { has_variable = hbe_tech_common_1_pending NOT = { has_variable = hbe_research_timer } }
             remove_variable = hbe_tech_common_1_pending remove_variable = hbe_research_pending set_variable = hbe_tech_common_1
             hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
@@ -235,55 +235,20 @@ if = { limit = { has_variable = hbe_tech_southwestern_valleys_7_pending NOT = { 
 if = { limit = { has_variable = hbe_tech_southwestern_valleys_8_pending NOT = { has_variable = hbe_research_timer } }
             remove_variable = hbe_tech_southwestern_valleys_8_pending remove_variable = hbe_research_pending set_variable = hbe_tech_southwestern_valleys_8
             hbe_add_credit = yes trigger_event_non_silently = { id = hbe.2 } }
-if = { limit = { has_variable = hbe_service_chengdu_plain_pending NOT = { has_variable = hbe_service_chengdu_plain_timer } }
-            hbe_record_service_chengdu_plain = yes remove_variable = hbe_service_chengdu_plain_pending change_variable = { name = hbe_water add = 10 }
-            if = { limit = { var:hbe_water > 100 } set_variable = { name = hbe_water value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
-                add_location_modifier = { modifier = hbe_project_food years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_service_southern_salt_wine_pending NOT = { has_variable = hbe_service_southern_salt_wine_timer } }
-            hbe_record_service_southern_salt_wine = yes remove_variable = hbe_service_southern_salt_wine_pending change_variable = { name = hbe_salt add = 10 }
-            if = { limit = { var:hbe_salt > 100 } set_variable = { name = hbe_salt value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
-                add_location_modifier = { modifier = hbe_project_build years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_service_eastern_river_pending NOT = { has_variable = hbe_service_eastern_river_timer } }
-            hbe_record_service_eastern_river = yes remove_variable = hbe_service_eastern_river_pending change_variable = { name = hbe_river add = 10 }
-            if = { limit = { var:hbe_river > 100 } set_variable = { name = hbe_river value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river }
-                add_location_modifier = { modifier = hbe_project_build years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_service_northern_shudao_pending NOT = { has_variable = hbe_service_northern_shudao_timer } }
-            hbe_record_service_northern_shudao = yes remove_variable = hbe_service_northern_shudao_pending change_variable = { name = hbe_roads add = 10 }
-            if = { limit = { var:hbe_roads > 100 } set_variable = { name = hbe_roads value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
-                add_location_modifier = { modifier = hbe_project_build years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_service_central_hills_pending NOT = { has_variable = hbe_service_central_hills_timer } }
-            hbe_record_service_central_hills = yes remove_variable = hbe_service_central_hills_pending change_variable = { name = hbe_grain add = 10 }
-            if = { limit = { var:hbe_grain > 100 } set_variable = { name = hbe_grain value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
-                add_location_modifier = { modifier = hbe_project_food years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_service_western_tea_horse_pending NOT = { has_variable = hbe_service_western_tea_horse_timer } }
-            hbe_record_service_western_tea_horse = yes remove_variable = hbe_service_western_tea_horse_pending change_variable = { name = hbe_tea add = 10 }
-            if = { limit = { var:hbe_tea > 100 } set_variable = { name = hbe_tea value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
-                add_location_modifier = { modifier = hbe_project_build years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_service_southwestern_valleys_pending NOT = { has_variable = hbe_service_southwestern_valleys_timer } }
-            hbe_record_service_southwestern_valleys = yes remove_variable = hbe_service_southwestern_valleys_pending change_variable = { name = hbe_valleys add = 10 }
-            if = { limit = { var:hbe_valleys > 100 } set_variable = { name = hbe_valleys value = 100 } }
-            hbe_add_credit = yes every_owned_location = { limit = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
-                add_location_modifier = { modifier = hbe_project_build years = 5 mode = replace } }
-            trigger_event_non_silently = { id = hbe.3 } }
-if = { limit = { has_variable = hbe_water var:hbe_water > 100 } set_variable = { name = hbe_water value = 100 } }
-if = { limit = { has_variable = hbe_salt var:hbe_salt > 100 } set_variable = { name = hbe_salt value = 100 } }
-if = { limit = { has_variable = hbe_river var:hbe_river > 100 } set_variable = { name = hbe_river value = 100 } }
-if = { limit = { has_variable = hbe_roads var:hbe_roads > 100 } set_variable = { name = hbe_roads value = 100 } }
-if = { limit = { has_variable = hbe_grain var:hbe_grain > 100 } set_variable = { name = hbe_grain value = 100 } }
-if = { limit = { has_variable = hbe_tea var:hbe_tea > 100 } set_variable = { name = hbe_tea value = 100 } }
-if = { limit = { has_variable = hbe_valleys var:hbe_valleys > 100 } set_variable = { name = hbe_valleys value = 100 } }
+
+
+
+
+
+
+
+if = { limit = { always = yes always = no }  }
+if = { limit = { always = yes always = no }  }
+if = { limit = { always = yes always = no }  }
+if = { limit = { always = yes always = no }  }
+if = { limit = { always = yes always = no }  }
+if = { limit = { always = yes always = no }  }
+if = { limit = { always = yes always = no }  }
 }
 else = { every_owned_location = { limit = { has_location_modifier = hbe_tianfu } remove_location_modifier = hbe_tianfu } }
 }

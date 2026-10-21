@@ -1,0 +1,10 @@
+﻿hbe_af_fair = { global_merchant_capacity_modifier = 0.05 }
+hbe_af_materials = { global_construction_speed = 0.04 }
+hbe_af_copyists = { research_speed_modifier = 0.03 }
+hbe_af_paid_crews = { global_construction_speed = 0.02 }
+hbe_af_food_small = { local_monthly_food_modifier = 0.06 }
+hbe_af_food_large = { local_monthly_food_modifier = 0.08 }
+hbe_af_settlement = { local_monthly_food_modifier = 0.03 }
+hbe_af_local_works = { local_construction_speed = 0.05 }
+hbe_af_road_market = { local_merchant_capacity = 0.5 }
+hbe_af_clinics = { local_disease_resistance = 0.05 }

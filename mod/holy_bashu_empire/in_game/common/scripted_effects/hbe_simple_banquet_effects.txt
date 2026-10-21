@@ -33,12 +33,4 @@ hbe_feast_recount = {
   if = { limit = { var:hbe_feast_required < 3 } set_variable = { name = hbe_feast_required value = 3 } }
  }
 }
-hbe_feast_help = {
- if = { limit = { is_situation_active = situation:hbe_banquet NOT = { has_variable = hbe_feast_helped } }
-  hbe_banquet_register = yes
-  set_variable = hbe_feast_helped set_variable = hbe_round_delivered
-  change_variable = { name = hbe_feast_points add = 2 } change_variable = { name = hbe_contribution add = 2 }
-  add_country_modifier = { modifier = hbe_feast_cooperation years = 2 mode = replace }
-  hbe_feast_recount = yes
- }
-}
+hbe_feast_help = { hbe_af_retire_legacy_country = yes }

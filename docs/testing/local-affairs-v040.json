@@ -1,0 +1,44 @@
+{
+  "version": "0.4.0",
+  "status": "controlled assertions passed; manual GUI verification pending",
+  "checks": 9,
+  "controlled_save_pass": true,
+  "controlled_save_fail": false,
+  "scope": [
+    "start and payment",
+    "single-choice guard",
+    "burden settlement",
+    "reroll cooldown",
+    "population start and growth",
+    "large tier locked and unlocked by advance",
+    "automatic budget refusal"
+  ],
+  "tested_fixture_save_sha256": "42588cb1758e7b0c359313e87b85109dd9b5e1da0e8448c2592895bc307c09be",
+  "scenario": "isolated early 1337 fixture, not long simulation",
+  "visual_verified": false,
+  "existing_situation_gui_sha256": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
+  "existing_situation_gui_preserved": true,
+  "engine_global_error_log_zero": false,
+  "note": "Vanilla/registration diagnostics persist; GUI display is delegated to user. Final minor layout, version and tooltip edits were structurally checked.",
+  "installation": {
+    "version": "0.4.0",
+    "file_count": 815,
+    "exact_source_match": true,
+    "existing_situation_gui_unchanged": true,
+    "fixture_not_installed": true,
+    "gui_visual_verified": false,
+    "installed_path": "C:/Users/songrise/AppData/Local/HolyBashuEmpire/mod/holy_bashu_empire"
+  },
+  "static_check_count": 4739,
+  "gui_entry_fix": {
+    "version": "0.4.0",
+    "gui_specific_checks": 27,
+    "installed_hashes_match": true,
+    "original_situation_gui_unchanged": true,
+    "entry_anchor": "bottom right",
+    "entry_mount": "ingame_topbar instance of hbe_af_overlay",
+    "visual_verified": false,
+    "manual_retest_required": true
+  },
+  "compatibility_142": "eu5-142-path-compatibility.json"
+}

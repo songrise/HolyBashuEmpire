@@ -670,6 +670,8 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     # Allocate the earlier population changes before moving their resident places.
     from apply_opening_territory import apply as apply_opening_territory
     apply_opening_territory(out, ROOT, game)
+    from build_local_affairs import apply as build_local_affairs
+    build_local_affairs(out, ROOT, game)
     manifest_path = out / "build_manifest.json"
     final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     final_manifest["deep_balance_v031"] = {"version":"0.3.1", "local_only":True, "decision_prices":len(deep_balance_report["decision_prices"]), "event_receipts":len(deep_balance_report["event_receipts"]), "national_output_caps":deep_balance_report["national_output_caps"], "reforms":deep_balance_report["reforms"], "support_duration_rule":deep_balance_report["support_duration_rule"]}

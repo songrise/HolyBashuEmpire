@@ -1,0 +1,6 @@
+﻿on_game_start = { on_actions = { hbe_af_start } }
+hbe_af_start = { effect = { every_country = { limit = { hbe_af_access = yes } hbe_af_initialize = yes } } }
+monthly_country_pulse = { on_actions = { hbe_af_pulse } }
+hbe_af_pulse = { trigger = { hbe_af_access = yes } effect = { hbe_af_monthly = yes } }
+yearly_country_pulse = { on_actions = { hbe_af_year } }
+hbe_af_year = { trigger = { hbe_af_access = yes } effect = { set_variable = { name = hbe_af_spent value = 0 } } }

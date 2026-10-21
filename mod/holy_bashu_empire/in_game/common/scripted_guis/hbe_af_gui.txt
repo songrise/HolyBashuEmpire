@@ -1,0 +1,56 @@
+﻿hbe_af_choose_1_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_1_small = yes } effect = { hbe_af_start_1_small = yes } }
+hbe_af_choose_1_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_1_large = yes } effect = { hbe_af_start_1_large = yes } }
+hbe_af_choose_2_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_2_small = yes } effect = { hbe_af_start_2_small = yes } }
+hbe_af_choose_2_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_2_large = yes } effect = { hbe_af_start_2_large = yes } }
+hbe_af_choose_3_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_3_small = yes } effect = { hbe_af_start_3_small = yes } }
+hbe_af_choose_3_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_3_large = yes } effect = { hbe_af_start_3_large = yes } }
+hbe_af_choose_4_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_4_small = yes } effect = { hbe_af_start_4_small = yes } }
+hbe_af_choose_4_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_4_large = yes } effect = { hbe_af_start_4_large = yes } }
+hbe_af_choose_5_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_5_small = yes } effect = { hbe_af_start_5_small = yes } }
+hbe_af_choose_5_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_5_large = yes } effect = { hbe_af_start_5_large = yes } }
+hbe_af_choose_6_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_6_small = yes } effect = { hbe_af_start_6_small = yes } }
+hbe_af_choose_6_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_6_large = yes } effect = { hbe_af_start_6_large = yes } }
+hbe_af_choose_7_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_7_small = yes } effect = { hbe_af_start_7_small = yes } }
+hbe_af_choose_7_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_7_large = yes } effect = { hbe_af_start_7_large = yes } }
+hbe_af_choose_8_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_8_small = yes } effect = { hbe_af_start_8_small = yes } }
+hbe_af_choose_8_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_8_large = yes } effect = { hbe_af_start_8_large = yes } }
+hbe_af_choose_9_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_9_small = yes } effect = { hbe_af_start_9_small = yes } }
+hbe_af_choose_9_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_9_large = yes } effect = { hbe_af_start_9_large = yes } }
+hbe_af_choose_10_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_10_small = yes } effect = { hbe_af_start_10_small = yes } }
+hbe_af_choose_10_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_10_large = yes } effect = { hbe_af_start_10_large = yes } }
+hbe_af_choose_11_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_11_small = yes } effect = { hbe_af_start_11_small = yes } }
+hbe_af_choose_11_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_11_large = yes } effect = { hbe_af_start_11_large = yes } }
+hbe_af_choose_12_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_12_small = yes } effect = { hbe_af_start_12_small = yes } }
+hbe_af_choose_12_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_12_large = yes } effect = { hbe_af_start_12_large = yes } }
+hbe_af_choose_13_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_13_small = yes } effect = { hbe_af_start_13_small = yes } }
+hbe_af_choose_13_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_13_large = yes } effect = { hbe_af_start_13_large = yes } }
+hbe_af_choose_14_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_14_small = yes } effect = { hbe_af_start_14_small = yes } }
+hbe_af_choose_14_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_14_large = yes } effect = { hbe_af_start_14_large = yes } }
+hbe_af_choose_15_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_15_small = yes } effect = { hbe_af_start_15_small = yes } }
+hbe_af_choose_15_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_15_large = yes } effect = { hbe_af_start_15_large = yes } }
+hbe_af_choose_16_small = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_16_small = yes } effect = { hbe_af_start_16_small = yes } }
+hbe_af_choose_16_large = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_can_16_large = yes } effect = { hbe_af_start_16_large = yes } }
+hbe_af_ui_refresh_local = { scope = country
+ is_shown = { hbe_af_access = yes modifier:hbe_af_allow_local_refresh = yes }
+ is_valid = { hbe_af_can_refresh_local = yes }
+ effect = { hbe_af_refresh_local = yes }
+}
+hbe_af_ui_access = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = {  } }
+hbe_af_ui_prepare = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes hbe_af_migrate_cards = yes hbe_af_migrate_expiry = yes } }
+hbe_af_ui_auto = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes if = { limit = { has_variable = hbe_af_auto } remove_variable = hbe_af_auto } else = { set_variable = hbe_af_auto } } }
+hbe_af_ui_cancel = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes has_variable = hbe_af_active } effect = { hbe_af_initialize = yes hbe_af_cancel = yes } }
+hbe_af_ui_dismiss_notice = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_available = yes } effect = { hbe_af_initialize = yes set_variable = hbe_af_notice_dismissed } }
+hbe_af_ui_ready = { scope = country is_shown = { hbe_af_access = yes hbe_af_idle = yes } is_valid = { hbe_af_access = yes } effect = { } }
+hbe_af_ui_running = { scope = country is_shown = { hbe_af_access = yes has_variable = hbe_af_active } is_valid = { hbe_af_access = yes } effect = { } }
+hbe_af_ui_waiting = { scope = country is_shown = { hbe_af_access = yes has_variable = hbe_af_wait } is_valid = { hbe_af_access = yes } effect = { } }
+hbe_af_ui_auto_state = { scope = country is_shown = { hbe_af_access = yes has_variable = hbe_af_auto } is_valid = { hbe_af_access = yes } effect = { } }
+hbe_af_ui_available = { scope = country is_shown = { hbe_af_access = yes hbe_af_available = yes NOT = { has_variable = hbe_af_notice_dismissed } } is_valid = { hbe_af_access = yes } effect = { } }
+hbe_af_allow_national = { scope = country is_shown = { hbe_af_access = yes NOT = { has_variable = hbe_af_no_national } } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes if = { limit = { has_variable = hbe_af_no_national } remove_variable = hbe_af_no_national } else = { set_variable = hbe_af_no_national } } }
+hbe_af_allow_local = { scope = country is_shown = { hbe_af_access = yes NOT = { has_variable = hbe_af_no_local } } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes if = { limit = { has_variable = hbe_af_no_local } remove_variable = hbe_af_no_local } else = { set_variable = hbe_af_no_local } } }
+hbe_af_allow_large = { scope = country is_shown = { hbe_af_access = yes NOT = { has_variable = hbe_af_no_large } } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes if = { limit = { has_variable = hbe_af_no_large } remove_variable = hbe_af_no_large } else = { set_variable = hbe_af_no_large } } }
+hbe_af_reserve_minus = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes set_variable = { name = hbe_af_reserve value = { value = var:hbe_af_reserve add = -10 min = 0 max = 1000 } } } }
+hbe_af_reserve_plus = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes set_variable = { name = hbe_af_reserve value = { value = var:hbe_af_reserve add = 10 min = 0 max = 1000 } } } }
+hbe_af_budget_minus = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes set_variable = { name = hbe_af_budget value = { value = var:hbe_af_budget add = -10 min = 0 max = 5000 } } } }
+hbe_af_budget_plus = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes set_variable = { name = hbe_af_budget value = { value = var:hbe_af_budget add = 10 min = 0 max = 5000 } } } }
+hbe_af_limit_minus = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes set_variable = { name = hbe_af_limit value = { value = var:hbe_af_limit add = -5 min = 20 max = 70 } } } }
+hbe_af_limit_plus = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { hbe_af_initialize = yes set_variable = { name = hbe_af_limit value = { value = var:hbe_af_limit add = 5 min = 20 max = 70 } } } }

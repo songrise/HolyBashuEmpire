@@ -12,7 +12,7 @@ def validate(mod,root,game,manifest,check):
     definitions={}
     for rel in ('in_game/common/advances/hbe_advances.txt','in_game/common/advances/hbe_civic_advances.txt',MIL_FILE,'in_game/common/advances/hbe_industry_transmission.txt'):
         text=read(rel);definitions.update({key:text[a:b] for key,_,a,b,_ in blocks(text,0)})
-    check('91 active research nodes include exactly seven new military nodes',len(definitions)==91==manifest['research_nodes'] and len(blocks(read(MIL_FILE),0))==7)
+    check('91 base research nodes plus later local-affairs additions',len(definitions)==91 and manifest['research_nodes']==91+manifest.get('local_affairs_research',{}).get('advance_count',0) and len(blocks(read(MIL_FILE),0))==7)
     units=read('in_game/common/unit_types/hbe_civic_units.txt');unit_defs={key:units[a:b] for key,_,a,b,_ in blocks(units,0)}
     buildings=read('in_game/common/building_types/hbe_civic_buildings.txt');building_defs={key:buildings[a:b] for key,_,a,b,_ in blocks(buildings,0)}
     unit_unlocks={unit:[key for key,body in definitions.items() if re.search(r'\bunlock_unit\s*=\s*'+re.escape(unit)+r'\b',body)] for unit in unit_defs}

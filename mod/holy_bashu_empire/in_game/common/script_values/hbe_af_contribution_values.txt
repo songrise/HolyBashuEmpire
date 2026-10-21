@@ -1,0 +1,16 @@
+﻿
+hbe_af_feast_funding = { value = 0 if = { limit = { has_variable = hbe_round_contributed } add = 1 } }
+hbe_af_feast_projects = { value = 0 if = { limit = { has_variable = hbe_af_credit_round is_situation_active = situation:hbe_banquet var:hbe_af_credit_round = situation:hbe_banquet.var:hbe_round } add = var:hbe_af_round_points } }
+hbe_af_feast_prior = { value = var:hbe_feast_points subtract = hbe_af_feast_funding subtract = hbe_af_feast_projects min = 0 }
+hbe_af_feast_capacity = { value = 2 subtract = var:hbe_feast_points add = hbe_af_feast_funding min = 0 max = 2 }
+hbe_af_feast_last = { value = 0 if = { limit = { hbe_af_feast_projects > 0 } add = var:hbe_af_credit_last } }
+hbe_af_feast_time = { value = var:hbe_af_months divide = 12 min = 0 max = 1.5 multiply = 0.6 }
+hbe_af_feast_effort = { value = var:hbe_af_credit_net_cost divide = var:hbe_af_credit_economic min = 0 max = 3 multiply = 0.2 }
+hbe_af_feast_credit = { value = 0.2 add = hbe_af_feast_time add = hbe_af_feast_effort multiply = var:hbe_af_credit_quality min = 0 max = 1.5 max = hbe_af_feast_capacity }
+# Continuous interpolation through the existing ln(1+points) anchors, capped at 3.
+hbe_af_feast_dividend_weight = {
+ value = 0
+ if = { limit = { var:hbe_feast_points > 0 } add = { value = var:hbe_feast_points max = 1 multiply = 0.69315 } }
+ if = { limit = { var:hbe_feast_points > 1 } add = { value = var:hbe_feast_points subtract = 1 max = 1 multiply = 0.40546 } }
+ if = { limit = { var:hbe_feast_points > 2 } add = { value = var:hbe_feast_points subtract = 2 max = 1 multiply = 0.28768 } }
+}

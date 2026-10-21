@@ -1,0 +1,229 @@
+{
+  "version": "0.4.0",
+  "static_checks": [
+    {
+      "name": "affairs GUI type has exactly one live HUD instance",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD override only wraps the native alert row and adds its mount",
+      "passed": true
+    },
+    {
+      "name": "affairs entry is anchored to screen bottom right",
+      "passed": true
+    },
+    {
+      "name": "affairs one window for ready running and waiting",
+      "passed": true
+    },
+    {
+      "name": "affairs visibility does not read a valueless country flag",
+      "passed": true
+    },
+    {
+      "name": "affairs leaves accepted situation GUI unchanged",
+      "passed": true
+    },
+    {
+      "name": "affairs six independent project definitions",
+      "passed": true
+    },
+    {
+      "name": "affairs twelve guarded selections",
+      "passed": true
+    },
+    {
+      "name": "affairs large investment research gate",
+      "passed": true
+    },
+    {
+      "name": "affairs persistent draws not GUI randomization",
+      "passed": true
+    },
+    {
+      "name": "affairs auto checks all budget boundaries",
+      "passed": true
+    },
+    {
+      "name": "affairs monthly progress bounded and paused on lost control",
+      "passed": true
+    },
+    {
+      "name": "affairs population and building use native outcomes",
+      "passed": true
+    },
+    {
+      "name": "affairs fixed compact dual cards and four choices",
+      "passed": true
+    },
+    {
+      "name": "affairs panel initializes old saves before opening",
+      "passed": true
+    },
+    {
+      "name": "affairs uses treasury rather than monthly balance",
+      "passed": true
+    },
+    {
+      "name": "affairs automation host only adds one economy entry",
+      "passed": true
+    },
+    {
+      "name": "affairs automation uses native economy filter and controls",
+      "passed": true
+    },
+    {
+      "name": "affairs automation explicitly supplies native search context",
+      "passed": true
+    },
+    {
+      "name": "affairs native circular refresh remains inside dual-card window",
+      "passed": true
+    },
+    {
+      "name": "affairs global investment preview changes both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs active card shows paid cost date and progress",
+      "passed": true
+    },
+    {
+      "name": "affairs availability mounts a native top ribbon",
+      "passed": true
+    },
+    {
+      "name": "affairs outcomes locked once at guarded start",
+      "passed": true
+    },
+    {
+      "name": "affairs twelve native completion receipts",
+      "passed": true
+    },
+    {
+      "name": "affairs receipts snapshot actual gains before clearing active project",
+      "passed": true
+    },
+    {
+      "name": "affairs settlement is guarded against duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "affairs target loss still pauses and dates update",
+      "passed": true
+    },
+    {
+      "name": "affairs main panel only has a status cog, with right-click toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs auto respects national local and large preferences",
+      "passed": true
+    },
+    {
+      "name": "affairs descriptive grades use explicit vanilla colors",
+      "passed": true
+    },
+    {
+      "name": "affairs outcome weights and greatness are bounded",
+      "passed": true
+    },
+    {
+      "name": "affairs progressbar uses the correct zero-to-one scale",
+      "passed": true
+    },
+    {
+      "name": "affairs all scripted GUI references exist",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card registers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card fair",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card materials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card settlers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card granary",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card canal",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_water",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_salt",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_river",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_roads",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_grain",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_tea",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_valleys",
+      "passed": true
+    },
+    {
+      "name": "seven old service decisions retired",
+      "passed": true
+    }
+  ],
+  "controlled_assertions": 8,
+  "controlled_save_pass": true,
+  "controlled_save_fail": false,
+  "save_sha256": "63a3ad65613bd8142a817ce39fba5c4dd45894901704d8f3ac8f9a3223aebbf0",
+  "visual_verified": true,
+  "full_engine_test_framework_pass": false,
+  "engine_diagnostics_note": "Engine error-log check fails on pre-existing global diagnostics; controlled save carries pass with no failure flag.",
+  "scope": "isolated forced early-game assertions, not long simulation",
+  "game_version": "1.4.2",
+  "checksum": "79ad",
+  "protected_saves": 9,
+  "original_save_bytes_restored": true,
+  "installed_files": 819,
+  "install_mismatches": [],
+  "restored_date": "1355.4.16",
+  "remote_published": false,
+  "live_checks": [
+    "native dual-card layout and shared small/large toggle updates costs rewards months simultaneously",
+    "explicit native gray green gold reward grades and exact hover ranges",
+    "active card golden frame other card dim and disabled",
+    "paid costs and projected completion year/month shown correctly",
+    "native refresh ring advances across three monthly pulses and retains cards",
+    "native green top ribbon opens panel and right-click dismisses this round",
+    "normal completion popup shows actual construction speed +4% for 27 months",
+    "receipt acknowledgement does not award a second time",
+    "original player campaign restored and temporary test save removed"
+  ],
+  "limitations": [
+    "Full project validation remains blocked by pre-existing EU5 1.4.2 rural_buildings.txt baseline mismatch.",
+    "Native economy bulk automation switch does not manage the script-backed affairs item.",
+    "No long-term balance simulation; great-success numerical outcome checked in controlled engine assertions, normal popup checked visually."
+  ]
+}

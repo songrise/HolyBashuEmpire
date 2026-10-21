@@ -1,5 +1,5 @@
 {
-  "version": "0.3.3",
+  "version": "0.4.0",
   "countries": [
     {
       "tag": "BAB",
@@ -674,7 +674,7 @@
   ],
   "source_setup_sha256": "d893a853b6045c1e9ea9961d92bf38b0228c2524d1ef808e212858da7798d3a1",
   "removed_domain_tokens": 164,
-  "research_nodes": 91,
+  "research_nodes": 93,
   "regional_missions": 35,
   "recurring_services": 7,
   "events": 508,
@@ -6625,10 +6625,11 @@
     "source_registry": "data/player_guides_v01.json"
   },
   "files": {
-    ".metadata/metadata.json": "d65d8128f2d99762540fda0681480dcbcf626f0101d5304d708e6818718bb2f7",
+    ".metadata/metadata.json": "4d79d1d68d1b7a7c146ea4414ad54b810019e70b6b347bfcf3990b4e687d0763",
     ".metadata/thumbnail.png": "5202607af092d6c05c08ef7a1162943392bf7e86daa6ea57a54212c0ef3c8481",
+    "in_game/events/hbe_af_results.txt": "d96ba212030db698cfb3aee562393b1f10ff88e2fa511b795d0fef4706c01aad",
     "in_game/events/hbe_banquet_events.txt": "60e6b696135cc63a74cce1063288ff580c3014c799714de7564c87471492ff74",
-    "in_game/events/hbe_civic_events.txt": "1a857fc9f5433dd6722d8a1413f2b1170f809cc073bfb9620bdfd7f89dea2a8c",
+    "in_game/events/hbe_civic_events.txt": "e67231009629a49d48d012ebc1c542820f109f632518d91ce366433688640232",
     "in_game/events/hbe_common_defense.txt": "64d398013f65c473011c7a82ffab87d07cfb01e0791a711ae60d0a8f3059b22b",
     "in_game/events/hbe_ending_afterwords.txt": "f2ce5ad3584a845f8feb6d6d7477006b2d80f84c5a6624deb326056429355e58",
     "in_game/events/hbe_events.txt": "f1a8a6698f4946090cfb7a1c97f22eb9211bfe76d1f5fab36f975e4c1e3bcfd9",
@@ -6649,11 +6650,16 @@
     "in_game/events/hbe_story_southern_salt_wine.txt": "67ea7549b391256aa805c017e2f1305cf11ea3c86e372a4162b6530f6310eb55",
     "in_game/events/hbe_story_southwestern_valleys.txt": "918ef7145f02dc438062f47c8364f58ecfedd3f05b3f9136f41c3f9506b39466",
     "in_game/events/hbe_story_western_tea_horse.txt": "263840dbd5479d61f27d1d288d5216be71d8dea817bcd8baf7258dadc76682ae",
+    "in_game/gui/automation_lateralview.gui": "81862256da7561a2dcc9bdf804e6062cf65af6499ee8296f48ae02128862356f",
     "in_game/gui/cooltip.gui": "96d619292a0d2bdf6d7f7c38dcac49d584c54d33429818a8d0ed397a1a07a082",
+    "in_game/gui/hbe_local_affairs.gui": "481bee003817a13849e1456ffa5df84036e076f682fb81eb4d59ee62c46dd8ee",
+    "in_game/gui/hbe_local_affairs_automation.gui": "2733a2d4e6f4ee66031f75f49d17dc8ac20d2d31fb1400d9984cb9c584758e31",
+    "in_game/gui/ingame_topbar.gui": "627b95515d3623838c36bba31f29e00cef709a3806d200bccdaa7f1cc6621c43",
     "in_game/common/advances/1_building_unlocks.txt": "a534bc9968250432a9f7de95260e08f260aea125e059295a41b4250ec2e3e969",
     "in_game/common/advances/2_army_unlocks.txt": "445927f9f1e88862b627573ce1a1261e36ce2395e90818940c328d40bb92a5c0",
-    "in_game/common/advances/hbe_advances.txt": "4d7e4df985d1a1bf707bae70f714f39c98e035b943a52e801c12065d52c6437f",
-    "in_game/common/advances/hbe_civic_advances.txt": "428cfc6e36ee82db0ef6c35fa6936b05c93c309c41c07a2983b6beb18ef2104f",
+    "in_game/common/advances/hbe_advances.txt": "c1fc4567b4af335e0d396bd4589fa83216638fa0b8179bdca76dcb73c54f2683",
+    "in_game/common/advances/hbe_af_advances.txt": "c8948f7f501ceaf5be529929cb075a11cdb01b39cc13b5e527bae4897b427fa7",
+    "in_game/common/advances/hbe_civic_advances.txt": "00d731a1feb44ce818e1abee3d8f4862e5f0e516e515a2ba9a1b7729f8141bea",
     "in_game/common/advances/hbe_guest_licenses.txt": "0aea84e029d71fcede2b54430c72c449643a9aff8677adba37fc1b5edd1afe03",
     "in_game/common/advances/hbe_industry_transmission.txt": "e3d6e499648f2dde1554645f2a33d1575bb5a07eb856300625a94197e2c89b24",
     "in_game/common/advances/hbe_inherited_industry_licenses.txt": "5e6f415631072ada83a114746826741292c444398774ae541d64801267a1eac3",
@@ -6676,11 +6682,13 @@
     "in_game/common/country_description_categories/hbe_profiles.txt": "8aaebc8dd299590f77845a34282b14d0c46e85b256fb211aee7a3c12aaba3e00",
     "in_game/common/country_interactions/rtr_demand_annexation.txt": "cb294df9c12d30f3016ca9c40735200052bc5dd344e9089230e4e7299f23e6c2",
     "in_game/common/customizable_localization/country_history.txt": "a18cce46abee7c833798aab1e24921e8b043eb864941837e9d05b8cf03918310",
-    "in_game/common/decisions/hbe_banquet_decisions.txt": "3aec7e9fc84d2fd845eb94a54cb53c999785cafd43cad4fdf3baa85c065b48ea",
-    "in_game/common/decisions/hbe_civic_decisions.txt": "0559a094e2f3ee6ef2bfc10994137b95a8a949ec6446cafe4eb78eb30e40b40b",
-    "in_game/common/decisions/hbe_decisions.txt": "fad46045b7ba91cd29011c39d60cf808bc3bbad4dceb2ad62a83c76170d599bd",
+    "in_game/common/customizable_localization/hbe_af_contribution_custom.txt": "431e071b73e52a03591f1e4f638d17fab4a541e67e40e69032d9f1fd89527769",
+    "in_game/common/customizable_localization/hbe_af_custom.txt": "bbdf2f5593f6afa27b77cd367e0da92672874696a8fac7ba82a86399e33dc6d1",
+    "in_game/common/decisions/hbe_banquet_decisions.txt": "36be12e23bf0bd59fae83464761167a48739348c24bf906208f9db385dc78274",
+    "in_game/common/decisions/hbe_civic_decisions.txt": "d5d696769dd523d3f2bf750409815f9028cf083b566d26ec79110c621d875285",
+    "in_game/common/decisions/hbe_decisions.txt": "8230776695890b6b558918d077ec159a310c28febb9c45caf4c8fe9208fdc8c8",
     "in_game/common/decisions/hbe_formable_decisions.txt": "576616f47ef8d4b6bca286400def645c7f17fba60e52cb151f33b02bcfd13f57",
-    "in_game/common/estate_privileges/hbe_civic_privileges.txt": "7e7d6b7ea64d51b99f548e21829437e7005cebefde68debb2ae618925ef3b76f",
+    "in_game/common/estate_privileges/hbe_civic_privileges.txt": "eda98b09703496dd21a6be513d157045a733ccc446feb756e5e7c357fc26cf29",
     "in_game/common/formable_countries/hbe_native_formables.txt": "0b91c330d242cd1bbee8879d0c5480a72e88a6775ece1c7aacd2db3ef62ce503",
     "in_game/common/generic_actions/hbe_feast_actions.txt": "54565feb164f1c30246279b82e01cb01354c6ae9296b0af83933b6bde24c5df0",
     "in_game/common/generic_actions/red_turban_rebellions.txt": "7d14bd4ec2fb421c9646cb7bb6f3c77abd8f581887015857ec4730e7d1ecfa96",
@@ -6697,6 +6705,7 @@
     "in_game/common/international_organization_special_statuses/hbe_statuses.txt": "ac82df70c67828890cad12553b6aeaf11d762b6843ceaf52eb54a1f6338869c9",
     "in_game/common/join_war_rules/hbe_isolation.txt": "2345e03c21818c3ec6a64d929929ac7b511f87473301df5c447427019d973da4",
     "in_game/common/laws/hbe_civic_law.txt": "f650568107f2c7977f61f2156d4afe9f0cbf6886fb347627bb177e5b2fcf09dc",
+    "in_game/common/on_action/hbe_af_on_actions.txt": "c3a04c4194b03a100b38f7420145d64ba484d9c2344e96238d50047e3070eb4b",
     "in_game/common/on_action/hbe_ai_on_actions.txt": "619bf51851a147e1f162c182c3b8ce56089eded3298f4b6588c8e454d0b867af",
     "in_game/common/on_action/hbe_annex_industry_on_actions.txt": "c72b7dbd9cc829369c7078cb058ae0cad31435a0683ae0ac99b9bc671852613a",
     "in_game/common/on_action/hbe_banquet_on_actions.txt": "4ac0eea5b0f7517abc8ee3ac3f0b59671db5a2dfca0cfe6afae85deb34fb6bbc",
@@ -6709,20 +6718,23 @@
     "in_game/common/on_action/hbe_on_actions.txt": "340507837a04f692839901754def88c93b4bb174d17aec13f4eebaf427543a4d",
     "in_game/common/on_action/hbe_opening_armistice_on_actions.txt": "952405ae17c80ad600868bf9fc5248037eb3f0ed5cde123d6339fa9c3cde2eaa",
     "in_game/common/on_action/hbe_opening_pacts_on_actions.txt": "a7a35bc713917a609ae24cfd71dbbaa481044ce15b5aa20976bfbab3855c543d",
-    "in_game/common/on_action/hbe_simple_banquet_on_actions.txt": "2b4fbefb81bb48d55160a24338603af189631e62fac30f4e9f39d5a4be4b3d2e",
+    "in_game/common/on_action/hbe_simple_banquet_on_actions.txt": "fe74254420a6c8fa50b863a4d123eb18388dacb6e4401f6769d4fa31276110b3",
     "in_game/common/on_action/hbe_story_on_actions.txt": "842bed3f627f2ba04c19fa7053bfdcc4c6d38129dcb17eba27a26f27a96c2990",
     "in_game/common/on_action/hbe_technology_on_actions.txt": "643f65190f2c82c95da033b31f4e3cf2d2f32f826925728d4148438b87e7ac7b",
     "in_game/common/parliament_issues/hbe_civic_issues.txt": "d956ff1278417ca38f2eaad596e5886799f100e79313dbd5242d1a1b0195e7ef",
     "in_game/common/production_methods/hbe_industry_transmission.txt": "be600a41c8ae4cc5416d344c1671a3a89f8c991ee88f0181e58cbd40cf8a6ea9",
     "in_game/common/resolutions/hbe_election.txt": "b3fb90f1491e09522bc0095cf8f4fa95d190767f2495f8b7aa98870f5f180ec2",
+    "in_game/common/scripted_effects/hbe_af_contribution_effects.txt": "c52f583071edecc5f4f42af80214f04cb60c05081f0d7a43d08bce24118aba54",
+    "in_game/common/scripted_effects/hbe_af_effects.txt": "e2a6369f0c77399a0c4d935ccd4e3b0066d6a8a4807965b03b9e0cba406b56ae",
+    "in_game/common/scripted_effects/hbe_af_legacy_effects.txt": "37381655d814e2fb08acae6bddab1f6e9872c3aa124f5fdf767dc55cd40d1561",
     "in_game/common/scripted_effects/hbe_ai_effects.txt": "95d8ba5a7776ac0c8d88a0ea5fe94c9575285ac3e0e73d3568020a257237adef",
     "in_game/common/scripted_effects/hbe_annex_industry_effects.txt": "061105fd4e15c1d2af04b6798125a7d0931953253517d8e425a4b24d466c9665",
-    "in_game/common/scripted_effects/hbe_banquet_effects.txt": "32754ac4f075dd63f029d74b6cbcd0d17a3df4f04081ac69a601452623242915",
+    "in_game/common/scripted_effects/hbe_banquet_effects.txt": "2ecef62651cf59a1556c7c7ac046793f93d1c1808ca0ac5e4cf32077d87b9335",
     "in_game/common/scripted_effects/hbe_capital_recruitment.txt": "e290555f341321135ca59706c31e171bcc3e6d8ed172a910051f14f20c35c101",
-    "in_game/common/scripted_effects/hbe_civic_effects.txt": "900a9a54b19a21aa3cafd693f0a43bfb9bb9da8a9de1292412e8583653552234",
+    "in_game/common/scripted_effects/hbe_civic_effects.txt": "17d79447fdf7d51018a9ee6ed6cf2a7925bc838630df705034435f5f7d025008",
     "in_game/common/scripted_effects/hbe_common_defense.txt": "435112f4871b0207f641ee9c03922f330cabc64ce1018cfcde2c634a25127982",
-    "in_game/common/scripted_effects/hbe_effects.txt": "35aed53faad9e2f83991f13607297f5e682057e5ea6f5cfa34677d4f4686a1bd",
-    "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "79512cedb773f91ac133fada19748de391b4bc53243073907da38eed6728b6b7",
+    "in_game/common/scripted_effects/hbe_effects.txt": "4e5d9061e6361d7ae8111db7afe8d73153480b5706029e50b735e8dc67bd2aba",
+    "in_game/common/scripted_effects/hbe_feast_dividend_effects.txt": "0b39ea146abdaa096f7ac0a736cd6dc01edecf61c01c7b1fe20d173510c9d6a4",
     "in_game/common/scripted_effects/hbe_formation_effects.txt": "b0fdf0bef68adbb371d8a97efdf27b956d8625da61c7e7e4d163a9fb47e37e2e",
     "in_game/common/scripted_effects/hbe_guest_license_effects.txt": "5db8c1c4951708aa4a09c6e9f7d7a5a61503a51b3a0949652ce3e26ca0f22734",
     "in_game/common/scripted_effects/hbe_native_content_effects.txt": "914673a3c93ea1a9a8dbd2e0fa4c4832b593b4a3426b9fe7fef2261152dea465",
@@ -6730,12 +6742,14 @@
     "in_game/common/scripted_effects/hbe_opening_armistice_effects.txt": "8fe943e152ab53b4384ae0366b3c48f5f8776ee0055a9c1fb3853d67cf0f1e5b",
     "in_game/common/scripted_effects/hbe_opening_pacts_effects.txt": "96d1fa442324e6fe011717ba1152d44848272d3425e522d2887bb8cd00d943c6",
     "in_game/common/scripted_effects/hbe_output_support_effects.txt": "94447169b222544506182c7a7c52836ea8ae0e58e959c9856cfee88d86da3d73",
-    "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt": "66c1693c7d6d2f5ea5f1f83ac17770498c390272512d92cc930e83bd648eb5f6",
+    "in_game/common/scripted_effects/hbe_simple_banquet_effects.txt": "68c7c30d92b1e5bd1239e211f94933b0d49cad221697fb8af678d2dbaa9b036c",
     "in_game/common/scripted_effects/hbe_story_scheduler.txt": "fa7520acff905ffc3f8169541fc82b22ca49c9c8196c6bee6fee5f5e325629f1",
-    "in_game/common/scripted_effects/hbe_technology_effects.txt": "98436c41935890d591d4cda9d2df0cfc1e130368739321bf6cbd27c66ec12f96",
+    "in_game/common/scripted_effects/hbe_technology_effects.txt": "0f130cd986323b551db3e09debe57fc615f3bcedf31466234a9994f532e13963",
     "in_game/common/scripted_geography/hbe_formable_geography.txt": "726465649dda8dfd1918a65d9aa0adcfe0fa5c68b486ff7666460521bd3c9e29",
     "in_game/common/scripted_geography/hbe_geography.txt": "305bd1e479ba0c658052f86d3a6d958c8b28c0369101db868df0c038e4eb922f",
+    "in_game/common/scripted_guis/hbe_af_gui.txt": "7e8a06b81fa18b56aa3fc6504448bf3de813c1d7021aec1c41de2956da4fd949",
     "in_game/common/scripted_triggers/hbe_advance_gates.txt": "8db9b9127a7e4b27bf25a68defacc66d5aef88a020fde55ce2b4e5fcb676d479",
+    "in_game/common/scripted_triggers/hbe_af_triggers.txt": "0efc9eca41ae54f71c8a6f5deeeb125128e6f24c57c43ac2a6d40cb0d222da95",
     "in_game/common/scripted_triggers/hbe_age2_military.txt": "55769d57d64a3d494621b1e234e0be22df4827dc755717c4d01b70dcc44b8b68",
     "in_game/common/scripted_triggers/hbe_civic_triggers.txt": "5069ae83fd819bcfb3e1e5d70584d0955b51ece64b9c8c9302115d3ee4cdacc0",
     "in_game/common/scripted_triggers/hbe_common_defense.txt": "7419bb0527dc40daf5d162904a55f69f386920799f8446b5e5bdd3058ccfe2d9",
@@ -6745,6 +6759,9 @@
     "in_game/common/scripted_triggers/hbe_industry_transmission.txt": "61b01906cc3080e7a5078d2fa351da630c7c8c4c0742113ca0f7aa62a873d1ca",
     "in_game/common/scripted_triggers/hbe_red_turban_actions.txt": "0734bd2d2fe7cd33d990b7346598aa2e2e7f0feaa7ed184e278f854522ad612b",
     "in_game/common/scripted_triggers/hbe_triggers.txt": "b77b27781734f67149dbdb048ea4c707a230956ea48614411bfe7980d9775fdc",
+    "in_game/common/script_values/hbe_af_contribution_values.txt": "021aaf2159a039273d75dd15d78a1ce3797dcd330d405692dc8d1653756c0d9a",
+    "in_game/common/script_values/hbe_af_reward_values.txt": "00baf05e6b0e44373694c6f09dcfb29ad5c01411a49bd7267dae2f06b2201fb6",
+    "in_game/common/script_values/hbe_af_values.txt": "3ddf4776f14450a6173722974c434f64b7891b3af5bd97a8987568108146254d",
     "in_game/common/script_values/hbe_civic_values.txt": "55b32aeb5a71b90c377c0feb3490e17a51f518dac8f7bdd4653922d248eb890b",
     "in_game/common/script_values/hbe_deep_balance_values.txt": "f37aac04c490da5e687c8f2413a2f36fcd15c7cfe9952b9154d28bcbf2bfa8c3",
     "in_game/common/script_values/hbe_diplomacy_restraint.txt": "1c7b932feb7ebae279914f06f78a9dd1c80f863c0446035bcab1a408376cbed7",
@@ -6770,7 +6787,7 @@
     "in_game/gfx/scenes/hbe_story_scenes.txt": "57cb79799138c6c93586bd8cd82b4fe3c303d3308a0f141516e8e0883ad83fb6",
     "in_game/gfx/scenes/hbe_v021_scenes.txt": "e97053aa7df1c40e18ec620529ac245f614c5ea1c021f9ff90c523e027f2b856",
     "in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt": "859b2837c462aa9106ec671926776021f246dfc0eb2af481ed8b5783325d81d7",
-    "in_game/gui/panels/situation/hbe_banquet.gui": "4fcb928ce0f336c8085c593c04bab17704ec59b42ca0cf3dbe1fbe65baed85df",
+    "in_game/gui/panels/situation/hbe_banquet.gui": "bfc3703b0707dcf231b0b0467fff8265bb3e50ba5721650f9e37387ee9b3db8a",
     "in_game/setup/countries/hbe_countries.txt": "71d5a2e1daf934027a07d77024a6d1ddfa00154b77a33328acd5285becdc4339",
     "loading_screen/gfx/images/hbe_panda_discovery.txt": "923a279fa0ff9dc11e64c5136edaa5df2a8b7a08525d88b92700ef4cc41c80df",
     "loading_screen/gfx/images/hbe_saltworks.txt": "c2089891b3732403cad0601879aa54025344b163a6cd4cbeb4d5a39850f940d3",
@@ -6793,9 +6810,11 @@
     "main_menu/gui/messagetypes.txt": "ed1d29ac01e5369fa9ca9d8e3a30407186cc8b62fdb9fbd93c2b44442de96c9c",
     "main_menu/common/game_concepts/hbe_concepts.txt": "ded83a83b18ad141ee2c1fac953bbb813a02d06b44e246f15ba6fe3c51a341b5",
     "main_menu/common/game_concepts/hbe_history_v031.txt": "adfdca893c18a11476960817df0a0b9dc2494e69b6076a0c3f05ee3351199f0e",
+    "main_menu/common/modifier_icons/hbe_af_permissions.txt": "f6a074d34b19cb3c0eefc9eba18f2db71f74ab1d9dcd8e40aa4b724f404bcd75",
     "main_menu/common/modifier_icons/hbe_early_research.txt": "f8fcbef9fb58ec582665797be955f53ae2ddd9d94083caadb6928758656e78d7",
     "main_menu/common/modifier_icons/hbe_goods_icons.txt": "74ef5846bf8eca93a8ca4e24ef9bc30eb54e16467cdb99b1d45084bb8fd3324e",
     "main_menu/common/modifier_icons/hbe_icons.txt": "dd2eeca7c6233e9c86531c6679b671166ee5d0ca5299f8b3afecdf0692b03978",
+    "main_menu/common/modifier_type_definitions/hbe_af_permissions.txt": "5d1212e8667937e0678aefb58b9d5615d2c0d5c53fef82617ad7a4316e6402a3",
     "main_menu/common/modifier_type_definitions/hbe_early_research.txt": "005065e6e3129b498bece829fae6610559073992273ebb7756c8beda10d9cdc1",
     "main_menu/common/modifier_type_definitions/hbe_goods_modifiers.txt": "1bbdb431adcbcddb3838e31af4217fa9144b1f6b326f02a6545d73c352653e46",
     "main_menu/common/modifier_type_definitions/hbe_observer_goods_types.txt": "e3c299f2142205b72accb510684c9795db686df24689bdfaa8fc630ec8726f38",
@@ -6803,6 +6822,7 @@
     "main_menu/common/named_colors/hbe_flags.txt": "513cbb0779c9fc42ee447024670f41e18e0cd01d182e2a968be63b343abf3862",
     "main_menu/common/named_colors/hbe_formable_colors.txt": "f3ab5ee78ff80d4c7ff63515431c7de3b2e6aaab52932339cf26d8329f85fc8e",
     "main_menu/common/scenarios/hbe_scenarios.txt": "a1721fee702056ca5fc956c12382a376ddacebcb6af70fc765def6878648f3c5",
+    "main_menu/common/static_modifiers/hbe_af_modifiers.txt": "8aebf7b04093c6375ef4e365d2a7c527d14ac9c34eea34cd4e7c66bc2df6d6fa",
     "main_menu/common/static_modifiers/hbe_ai_modifiers.txt": "7375bf29c9e44f6ce5134563669333b67e8333628867de77864834cb8a1982a1",
     "main_menu/common/static_modifiers/hbe_capital_recruitment.txt": "67b245dc9fa228c16aff59522d5ea611df20e7d2e394fdfe78e752b45f590403",
     "main_menu/common/static_modifiers/hbe_civic_modifiers.txt": "bf398254356dd9244640451eea31015e6c27c296956450a4816267d4016e68d4",
@@ -6854,6 +6874,8 @@
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_bashu.dds": "5502e18fb9c58dd1b7573025501926ddfcd971c37e763bb98a22ebe255d7b5ba",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_chongqing.dds": "b014c6216f186f6b34a9f8b49836ed984804ffbf80c39111b6f093cbf292ddf4",
     "main_menu/gfx/coat_of_arms/textured_emblems/te_hbe_form_sichuan.dds": "2178078d74ae112a7a5c8d8c8649c0a72873c6e933d2a4156ed6eec03d61a206",
+    "main_menu/gfx/interface/advance/hbe_af_local_proposals.dds": "91d86d2b9893eca4b5f8dfca0e46cf0d0404dd60ddfd49ce28d1ccbb3542cf2b",
+    "main_menu/gfx/interface/advance/hbe_af_public_funding.dds": "6ca641eb4052508dc3c7238a0925a05d4d197cd87dca179fcba29b186d0156d0",
     "main_menu/gfx/interface/advance/hbe_civic_central_hills_1.dds": "76f9053fc6e2ccc8afd8783d1cbba0885d0e0944743f17a6f8032d3d9fc65483",
     "main_menu/gfx/interface/advance/hbe_civic_central_hills_2.dds": "99c2595d58eee106b9732b2a798a673f3e618549297f8f72327721f25f4b4fb9",
     "main_menu/gfx/interface/advance/hbe_civic_chengdu_plain_1.dds": "d2235c8a980482488cae0a007a0386d6bf2ef366ff63b2ea1a0e22a62077a30c",
@@ -7067,6 +7089,9 @@
     "main_menu/gfx/interface/hbe/formables/bashu.dds": "06bd6a007569962aa4f3b528917de43860c1c0d63b928d48c4f06aa29589f9b3",
     "main_menu/gfx/interface/hbe/formables/chongqing.dds": "a06ba33fd80693ea07b2f0bce3220641358387acc4c2a61bd9fec259cdd11281",
     "main_menu/gfx/interface/hbe/formables/sichuan.dds": "2b7d86c63dbd892b045d14b62f8c5a0df9f98cb07c3be68f806eaab4990282a7",
+    "main_menu/gfx/interface/hbe/local_affairs/local_header.dds": "0fcf1b40251785057f6bbe79912095500f161eab5c9b217d8286ae9ac11ecc05",
+    "main_menu/gfx/interface/hbe/local_affairs/national_header.dds": "13c9f6836f4475f9fc452a48450a0876801d5ee579ede61d31db001559275d64",
+    "main_menu/gfx/interface/hbe/local_affairs/placeholder.dds": "746630a6740e80cb89fdce9b240306afa5098f62d80b9b0ca30e6a2a0e10d8a1",
     "main_menu/gfx/interface/hbe/panels/hbe_banquet.dds": "dc9663b399b7e8f46c4bdaa213795e6c214a93b4f75d979eb54e4ddfaae1cf61",
     "main_menu/gfx/interface/hbe/panels/hbe_feast_two_parties_v021.dds": "9cd3386e71afdc065a540d737323ce52b9a3e5b205f658b791dd88296e391626",
     "main_menu/gfx/interface/hbe/story_events/bamboo.dds": "eb28ed7551bca7b61610e9ddc42767ed1e5dd4f6e7772dd5e585b73f3465ebda",
@@ -7084,6 +7109,8 @@
     "main_menu/gfx/interface/hbe/story_events/settlement.dds": "f8ea1e46b2cc735069f03182d56d5532d9e0862450527f6f523fac3c0bad0f43",
     "main_menu/gfx/interface/hbe/story_events/terraces.dds": "99636c9baad2ca5c4ff865e3e5554e7654750f0afebfb0638e9dc994b1685c8a",
     "main_menu/gfx/interface/hbe/story_events/veterinary.dds": "ccfb99a6ab3daf011564765f103f7654707d836272c2df2118dd783b6790515d",
+    "main_menu/gfx/interface/hbe/technology/hbe_af_local_proposals.dds": "91d86d2b9893eca4b5f8dfca0e46cf0d0404dd60ddfd49ce28d1ccbb3542cf2b",
+    "main_menu/gfx/interface/hbe/technology/hbe_af_public_funding.dds": "6ca641eb4052508dc3c7238a0925a05d4d197cd87dca179fcba29b186d0156d0",
     "main_menu/gfx/interface/hbe/technology/hbe_military_central_hills.dds": "dfb58822b15c80b7f671b7506000d235c6408d729602674923ebe5d188b643cd",
     "main_menu/gfx/interface/hbe/technology/hbe_military_chengdu_plain.dds": "a268e286ca66b3d39020595717423c839e1b04ca032779cf8282eee56a381857",
     "main_menu/gfx/interface/hbe/technology/hbe_military_eastern_river.dds": "961c655683d5192bd172f0bac2df9e83674417449b9b0b71828cb24586f532b3",
@@ -7270,6 +7297,8 @@
     "main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_establishment_speed.dds": "98a73e281b62d72a50d32a3aa47356819a7c447b2f4019cc284f3fa5e593d53e",
     "main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_output_modifier.dds": "98a73e281b62d72a50d32a3aa47356819a7c447b2f4019cc284f3fa5e593d53e",
     "main_menu/gfx/interface/icons/modifier_types/global_hbe_well_salt_pop_demand.dds": "676ff30edd2d0239fc873f30d41a933a7cb83ceda99d646961a5be31a5f4493a",
+    "main_menu/gfx/interface/icons/modifier_types/hbe_af_allow_large_investment.dds": "7ecdd0c7466348f03c8538121aea4fc189fac45c9ae0f7d8df88b876eaf5b4e3",
+    "main_menu/gfx/interface/icons/modifier_types/hbe_af_allow_local_refresh.dds": "67e2da51474600f4006c2cc465e4bd11529917c455f6599c1208cb0ac294192b",
     "main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_impacts_inflation.dds": "a3ff9ca3224fdd4d9d4083a6f4d6783f60db06e641fff42357686cd3da12d9a2",
     "main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_negative.dds": "19f89dace0e9a188647d9713d4b013d010629d82e1d58fe50943e654bf9a6b5e",
     "main_menu/gfx/interface/icons/modifier_types/hbe_border_tea_positive.dds": "87f5db6f76b7d636e2842d834c96543f291cbeee8e9641e5d9469c8c4279f3b2",
@@ -7373,6 +7402,7 @@
     "main_menu/gui/shared/hbe_civic_font_icons.gui": "1354d7f8070b164590c8e05c052fbe5bd29c63b510b0c30733713339dcbfab77",
     "main_menu/gui/shared/hbe_font_icons.gui": "0a6df530cf1c29b4526c96a22db2ae2fa754ed5870ac5649d7be81a50a18e374",
     "main_menu/localization/english/hbe_advance_gates_l_english.yml": "f3269dffe49e59c959821aa3e74f725fa199fa0231ad11d970777af2cc99b902",
+    "main_menu/localization/english/hbe_af_l_english.yml": "74a8da1ca46f894ed4442b2e12ff197a7ae0ae05081269ef49d8ff742dd1fee5",
     "main_menu/localization/english/hbe_age2_military_l_english.yml": "7979af9e4b5a2e7e609f452701d19e9c488ac569d226b902711c0fed5bf11094",
     "main_menu/localization/english/hbe_annex_industry_l_english.yml": "1d35870b3d1b600146156070210f1447198e84cb9024b8af5aedb12e6613cab0",
     "main_menu/localization/english/hbe_capital_recruitment_l_english.yml": "23f7ce675e81273d11cc046ea25aaaafc09518a4259fed7f48f236c7a5a6a5c1",
@@ -7384,7 +7414,7 @@
     "main_menu/localization/english/hbe_history_v031_l_english.yml": "ee58fb1b39a3c179cd199afedbd856c92e7b4cbe66b1e44b6c8f648fed51758f",
     "main_menu/localization/english/hbe_industry_patch_l_english.yml": "6a19d3b7c75479c072dba3fe717560c706c10b10607c49490ca3e10ca44a3fad",
     "main_menu/localization/english/hbe_industry_transmission_l_english.yml": "9166dbb236694b28579a4cf459f78f923b6a7ae64d7ebd45d07f7066c9d796c9",
-    "main_menu/localization/english/hbe_l_english.yml": "25615acc687a46457cc889a37b256f235e1eec343efbf1d53814a06fbc7fc2a6",
+    "main_menu/localization/english/hbe_l_english.yml": "00156376b69e122088a1800df5f92f5b2a26d41cf2dc2b6ff2afd1f09b5cf50d",
     "main_menu/localization/english/hbe_observer_hotfix_l_english.yml": "72fce30a3cda30a7d8fc33d55e7299116d289d4e7c4f535f4e011b1c6c2308ef",
     "main_menu/localization/english/hbe_opening_armistice_l_english.yml": "6e0f9e356b92bbcffd8545552d9d9a11352d5c6c2b5d3b65cf5bcf83d51178a2",
     "main_menu/localization/english/hbe_open_diplomacy_l_english.yml": "5efb750dac13dacc0a245ad08e5dbd0d1a947ec9179b950a0937fd2c55c5f461",
@@ -7394,6 +7424,7 @@
     "main_menu/localization/english/hbe_unit_maintenance_l_english.yml": "0a8bea12daa2dbc825bce9561add5a71c11a0e970e65fd4c5d91ecfd42b46eb9",
     "main_menu/localization/english/hbe_western_opening_l_english.yml": "a7c8c144b33fe3373b56e8dcd23619dd403b6dbe82822582ee4eef30f6ed7075",
     "main_menu/localization/simp_chinese/hbe_advance_gates_l_simp_chinese.yml": "07e87fafc60103f5e72e6e0874853f44a81415f108e44e8f7aab5244363eb251",
+    "main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml": "6a1d93312afbcfdaae5b9f9c8e4256051b1c7badf14de5939790881c964bd676",
     "main_menu/localization/simp_chinese/hbe_age2_military_l_simp_chinese.yml": "6709858b8584c5400096d22b287ca2c74699c2c1692e8a3e923d61e0d587ac75",
     "main_menu/localization/simp_chinese/hbe_annex_industry_l_simp_chinese.yml": "dc19aeaee00af10802dd9309e441ff434f33684991b0b16f1ad0afa0d35999b6",
     "main_menu/localization/simp_chinese/hbe_capital_recruitment_l_simp_chinese.yml": "734090b1d02e2d0a01aa4c7ccf3bce5fa7b84f77f591407fb297c73f7aba2a8a",
@@ -7405,7 +7436,7 @@
     "main_menu/localization/simp_chinese/hbe_history_v031_l_simp_chinese.yml": "337de3e1d7be32f517b21dd5af5b2499949f22ec2d36d005050b82aeb3db2265",
     "main_menu/localization/simp_chinese/hbe_industry_patch_l_simp_chinese.yml": "3f0823d09139ad6b09f622bd466815d522113f4aa8d197a69193c8aae480aea2",
     "main_menu/localization/simp_chinese/hbe_industry_transmission_l_simp_chinese.yml": "0b8cafc51c410b8679221ea25ff9e19b9e5d7aba1abfbaed09291d2efec8f9cd",
-    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "2ea3e64cb2760350d1472db0581051397637a78a126c544add2638e84fdc6ca4",
+    "main_menu/localization/simp_chinese/hbe_l_simp_chinese.yml": "42375457c9e61a89947f22235a1eeee42c2cae8944ff8cbffd8cbc93e5f8c10d",
     "main_menu/localization/simp_chinese/hbe_observer_hotfix_l_simp_chinese.yml": "91fefc537d19a0a0a9ec5d31ba7c30ec5e4066ed80da970cfb20f223b0c323e7",
     "main_menu/localization/simp_chinese/hbe_opening_armistice_l_simp_chinese.yml": "6cc1363cf4b41e5f7d428d4725dc17e68a2fe71bef885046d731efa3232dac13",
     "main_menu/localization/simp_chinese/hbe_open_diplomacy_l_simp_chinese.yml": "1eae13448494e6d744e1caac24666bf025b6a47b09021a9bf3fb6694e7dfce11",
@@ -7414,6 +7445,7 @@
     "main_menu/localization/simp_chinese/hbe_story_l_simp_chinese.yml": "7c58ac0bdc09e3a6d4a5b8cda63ec60f91b7694b5a303ddbfdce99fa2acccb33",
     "main_menu/localization/simp_chinese/hbe_unit_maintenance_l_simp_chinese.yml": "72bed647f5496aa69a5c3123a1c6daffdcb06c753279a4321ddf7e25657a2691",
     "main_menu/localization/simp_chinese/hbe_western_opening_l_simp_chinese.yml": "471d869a7bf5cf50c88b355661ae8e982f828237ec41e7bed464426bd8072e35",
+    "main_menu/localization/traditional_chinese/hbe_af_l_traditional_chinese.yml": "fa4b5258479b78fc91aeb7489893cdddadedd1b3227aa79a6e53bfa2f24acfaa",
     "main_menu/localization/english/replace/hbe_native_country_names_l_english.yml": "257fb15721ff0d3297527d04a61523fb02b9dd59fd9e4c1f8003a31246a85aaa",
     "main_menu/localization/english/replace/hbe_opening_truce_ui_l_english.yml": "41bf19d8be9bb572e1de6149c6ff77a5a30e8a84bdaceab472250be19f2ea82f",
     "main_menu/localization/simp_chinese/replace/hbe_native_country_names_l_simp_chinese.yml": "c36f059343a30b956d1469c45582093e3e5517f4fb30cf8ba3f289957530d2e5",
@@ -36923,7 +36955,9 @@
       "hbe_transmission_embroidery",
       "hbe_transmission_well_salt",
       "hbe_transmission_paper",
-      "hbe_transmission_border_tea"
+      "hbe_transmission_border_tea",
+      "hbe_af_public_funding",
+      "hbe_af_local_proposals"
     ],
     "flags": "Built-in imagegen; three transparent gold emblems; native heraldic flag composition"
   },
@@ -38326,7 +38360,7 @@
     "automatic_research_grants": false
   },
   "current_release": {
-    "version": "0.3.3",
+    "version": "0.4.0",
     "research_nodes": 91,
     "visible_events": 508,
     "loading_art_enabled": true
@@ -38673,5 +38707,95 @@
       "ZGL",
       "TGY"
     ]
+  },
+  "local_affairs": {
+    "schema_version": 1,
+    "projects": 16,
+    "categories": {
+      "administration": {
+        "requires": []
+      },
+      "commerce": {
+        "requires": []
+      },
+      "works": {
+        "requires": []
+      },
+      "settlement": {
+        "requires": []
+      }
+    },
+    "tiers": [
+      {
+        "key": "small",
+        "name": "少量投入",
+        "requires": [],
+        "cost_multiplier": 1
+      },
+      {
+        "key": "large",
+        "name": "大量投入",
+        "requires": [],
+        "requires_modifiers": [
+          "hbe_af_allow_large_investment"
+        ],
+        "cost_multiplier": 2.25
+      }
+    ],
+    "old_counter_files": [],
+    "legacy_retired": true,
+    "hidden_regional_coordination": 7,
+    "placeholder_art": true,
+    "runtime_verified": false,
+    "visual_verified": false,
+    "release_status": "pending",
+    "independent_gui": "in_game/gui/hbe_local_affairs.gui",
+    "gui_host": "in_game/gui/ingame_topbar.gui"
+  },
+  "local_affairs_research": {
+    "advance_count": 2,
+    "advances": [
+      {
+        "key": "hbe_af_public_funding",
+        "name": "公帑筹办",
+        "parent": "renaissance_development",
+        "research_cost": 2.5,
+        "permission": "hbe_af_allow_large_investment",
+        "permission_name": "允许大量投入",
+        "description": "各府将工料、雇价与拨款合记一册，按工程所需分期调集公帑。大项营办从此有据可核，不再临时向一乡一户摊派。",
+        "permission_description": "地方事业可以选择大量投入；仍须支付项目所列金币与役负。",
+        "source": "assets/local_affairs_research/public_funding.png"
+      },
+      {
+        "key": "hbe_af_local_proposals",
+        "name": "地方采议",
+        "parent": "hbe_af_public_funding",
+        "research_cost": 2.5,
+        "permission": "hbe_af_allow_local_refresh",
+        "permission_name": "允许刷新地区事件",
+        "description": "乡社与府署定期递交工程、招徕与修治的议案，记明地点及所需工料。旧议未定时，可以另取新案比较，再择一项筹办。",
+        "permission_description": "空闲时可以刷新地区项目，每三个月一次；全国项目及进行中的工程不变。",
+        "source": "assets/local_affairs_research/local_proposals.png"
+      }
+    ],
+    "age": "age_2_renaissance",
+    "refresh_cooldown_months": 3,
+    "native_boolean": true,
+    "art": [
+      {
+        "key": "hbe_af_public_funding",
+        "source": "assets/local_affairs_research/public_funding.png",
+        "source_sha256": "c2f63da10d2e139c2442fa6cf438ac05674914869ca5141bd731c6b439bdf9f5",
+        "sprite": "assets/technology_icons/hbe_af_public_funding.png"
+      },
+      {
+        "key": "hbe_af_local_proposals",
+        "source": "assets/local_affairs_research/local_proposals.png",
+        "source_sha256": "ad13269a23b2d27e3ed019e93ae46cc29029acae118494a6f1918eb7d36e2a21",
+        "sprite": "assets/technology_icons/hbe_af_local_proposals.png"
+      }
+    ],
+    "runtime_verified": false,
+    "visual_verified": false
   }
 }

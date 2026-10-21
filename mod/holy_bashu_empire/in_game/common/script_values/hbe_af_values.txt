@@ -1,0 +1,67 @@
+﻿hbe_af_reserve = { value = 10 }
+hbe_af_budget = { value = hbe_event_economic_base multiply = 8 min = 20 }
+hbe_af_remaining = { value = var:hbe_af_months subtract = var:hbe_af_elapsed min = 0 }
+hbe_af_cost_1_small = { value = hbe_event_economic_base multiply = 0.875 min = 3.5 }
+hbe_af_load_1_small = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_1_large = { value = hbe_event_economic_base multiply = 1.96875 min = 7.875 }
+hbe_af_load_1_large = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_2_small = { value = hbe_event_economic_base multiply = 1.05 min = 4.2 }
+hbe_af_load_2_small = { value = 1.2 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_2_large = { value = hbe_event_economic_base multiply = 2.3625 min = 9.45 }
+hbe_af_load_2_large = { value = 3.6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_3_small = { value = hbe_event_economic_base multiply = 1.05 min = 4.2 }
+hbe_af_load_3_small = { value = 2.4 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_3_large = { value = hbe_event_economic_base multiply = 2.3625 min = 9.45 }
+hbe_af_load_3_large = { value = 4.8 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_4_small = { value = hbe_event_economic_base multiply = 1.225 min = 4.9 }
+hbe_af_load_4_small = { value = 3.6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_4_large = { value = hbe_event_economic_base multiply = 2.75625 min = 11.025 }
+hbe_af_load_4_large = { value = 7.2 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_5_small = { value = hbe_event_economic_base multiply = 1.75 min = 7 }
+hbe_af_load_5_small = { value = 4.8 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_5_large = { value = hbe_event_economic_base multiply = 3.9375 min = 15.75 }
+hbe_af_load_5_large = { value = 7.2 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_6_small = { value = hbe_event_economic_base multiply = 0.875 min = 3.5 }
+hbe_af_load_6_small = { value = 3.6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_6_large = { value = hbe_event_economic_base multiply = 1.96875 min = 7.875 }
+hbe_af_load_6_large = { value = 7.2 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_7_small = { value = hbe_event_economic_base multiply = 1.05 min = 4.2 }
+hbe_af_load_7_small = { value = 1.2 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_7_large = { value = hbe_event_economic_base multiply = 2.3625 min = 9.45 }
+hbe_af_load_7_large = { value = 2.4 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_8_small = { value = hbe_event_economic_base multiply = 1.225 min = 4.9 }
+hbe_af_load_8_small = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_8_large = { value = hbe_event_economic_base multiply = 2.75625 min = 11.025 }
+hbe_af_load_8_large = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_9_small = { value = hbe_event_economic_base multiply = 1.05 min = 4.2 }
+hbe_af_load_9_small = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_9_large = { value = hbe_event_economic_base multiply = 2.3625 min = 9.45 }
+hbe_af_load_9_large = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_10_small = { value = hbe_event_economic_base multiply = 1.05 min = 4.2 }
+hbe_af_load_10_small = { value = 1.2 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_10_large = { value = hbe_event_economic_base multiply = 2.3625 min = 9.45 }
+hbe_af_load_10_large = { value = 2.4 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_11_small = { value = hbe_event_economic_base multiply = 1.05 min = 4.2 }
+hbe_af_load_11_small = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_11_large = { value = hbe_event_economic_base multiply = 2.3625 min = 9.45 }
+hbe_af_load_11_large = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_12_small = { value = hbe_event_economic_base multiply = 1.575 min = 6.3 }
+hbe_af_load_12_small = { value = 3.6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_12_large = { value = hbe_event_economic_base multiply = 3.54375 min = 14.175 }
+hbe_af_load_12_large = { value = 6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_13_small = { value = hbe_event_economic_base multiply = 1.225 min = 4.9 }
+hbe_af_load_13_small = { value = 2.4 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_13_large = { value = hbe_event_economic_base multiply = 2.75625 min = 11.025 }
+hbe_af_load_13_large = { value = 4.8 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_14_small = { value = hbe_event_economic_base multiply = 1.225 min = 4.9 }
+hbe_af_load_14_small = { value = 2.4 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_14_large = { value = hbe_event_economic_base multiply = 2.75625 min = 11.025 }
+hbe_af_load_14_large = { value = 4.8 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_15_small = { value = hbe_event_economic_base multiply = 1.75 min = 7 }
+hbe_af_load_15_small = { value = 3.6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_15_large = { value = hbe_event_economic_base multiply = 3.9375 min = 15.75 }
+hbe_af_load_15_large = { value = 6 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_16_small = { value = hbe_event_economic_base multiply = 1.225 min = 4.9 }
+hbe_af_load_16_small = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }
+hbe_af_cost_16_large = { value = hbe_event_economic_base multiply = 2.75625 min = 11.025 }
+hbe_af_load_16_large = { value = 0 if = { limit = { has_policy = hbe_paid_policy } multiply = 0.5 } else_if = { limit = { has_policy = hbe_levy_policy } multiply = 1.25 } }

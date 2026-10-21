@@ -1,0 +1,2 @@
+﻿hbe_af_allow_large_investment = { positive = "gfx/interface/icons/modifier_types/hbe_af_allow_large_investment.dds" negative = "gfx/interface/icons/modifier_types/hbe_af_allow_large_investment.dds" }
+hbe_af_allow_local_refresh = { positive = "gfx/interface/icons/modifier_types/hbe_af_allow_local_refresh.dds" negative = "gfx/interface/icons/modifier_types/hbe_af_allow_local_refresh.dds" }

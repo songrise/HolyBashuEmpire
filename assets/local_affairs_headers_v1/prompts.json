@@ -1,0 +1,8 @@
+{
+  "tool": "built-in ImageGen",
+  "reference": "approved affairs concept v3",
+  "style": "restrained historical oil painting, earth browns, olive greens, slate-blue haze; no text or UI; calm left and lower text area",
+  "national": "14th-century Sichuan river-market quay, timber warehouses, merchants checking cloth bales, moored cargo boats, hazy mountains; subjects center and right",
+  "local": "14th-century Sichuan irrigated fields, clear canal, farming households, thatched farmhouse, bamboo hills; subjects center and right",
+  "runtime_mask": "native vertical alpha fade plus left darkening overlay, no baked shadow"
+}

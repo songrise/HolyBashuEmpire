@@ -2,7 +2,7 @@
 hbe_simple_feast_country = { trigger = { hbe_is_prince = yes } effect = {
  if = { limit = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire }
   hbe_banquet_register = yes
-  if = { limit = { has_variable = hbe_project_pending NOT = { has_variable = hbe_project_timer } } hbe_deliver_contract = yes }
+  
  } else = {
   international_organization:hbe_common_party ?= { remove_country_from_international_organization = prev }
   international_organization:hbe_local_party ?= { remove_country_from_international_organization = prev }

@@ -19,7 +19,7 @@ hbe_civic_chengdu_plain_1 = {  starting_technology_level = 99
  icon = hbe_civic_chengdu_plain_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_chengdu_plain_2 OR = { hbe_advance_gate_hbe_tech_chengdu_plain_4 = yes hbe_advance_gate_hbe_tech_chengdu_plain_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_chengdu_plain_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_monthly_food_modifier = 0.08
     global_fine_cloth_output_modifier = 0.12
@@ -31,7 +31,7 @@ hbe_civic_chengdu_plain_2 = { age = age_2_renaissance starting_technology_level 
  icon = hbe_civic_chengdu_plain_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_chengdu_plain_5 OR = { hbe_advance_gate_hbe_tech_chengdu_plain_5 = yes hbe_advance_gate_hbe_tech_chengdu_plain_8 = yes } hbe_advance_gate_hbe_civic_chengdu_plain_1 = yes NOT = { has_variable = hbe_research_pending } }
- requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_chengdu_plain_2_effects
+ requires = hbe_civic_common_2 
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_books_output_modifier = 0.24
     cultural_tradition_modifier = 0.16
@@ -40,7 +40,7 @@ hbe_civic_southern_salt_wine_1 = {  starting_technology_level = 99
  icon = hbe_civic_southern_salt_wine_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southern_salt_wine_2 OR = { hbe_advance_gate_hbe_tech_southern_salt_wine_4 = yes hbe_advance_gate_hbe_tech_southern_salt_wine_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_southern_salt_wine_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_salt_output_modifier = 0.16
     burghers_estate_target_satisfaction = 0.08
@@ -52,7 +52,7 @@ hbe_civic_southern_salt_wine_2 = { age = age_2_renaissance starting_technology_l
  icon = hbe_civic_southern_salt_wine_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southern_salt_wine_5 OR = { hbe_advance_gate_hbe_tech_southern_salt_wine_5 = yes hbe_advance_gate_hbe_tech_southern_salt_wine_8 = yes } hbe_advance_gate_hbe_civic_southern_salt_wine_1 = yes NOT = { has_variable = hbe_research_pending } }
- requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_southern_salt_wine_2_effects
+ requires = hbe_civic_common_2 
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     bank_interest = -0.004
     total_loan_capacity_modifier = 0.4
@@ -61,7 +61,7 @@ hbe_civic_eastern_river_1 = {  starting_technology_level = 99
  icon = hbe_civic_eastern_river_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_eastern_river_2 OR = { hbe_advance_gate_hbe_tech_eastern_river_4 = yes hbe_advance_gate_hbe_tech_eastern_river_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_eastern_river_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     burghers_estate_target_satisfaction = 0.064
     global_monthly_control = 0.08
@@ -72,7 +72,7 @@ hbe_civic_eastern_river_2 = { age = age_2_renaissance starting_technology_level 
  icon = hbe_civic_eastern_river_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_eastern_river_5 OR = { hbe_advance_gate_hbe_tech_eastern_river_5 = yes hbe_advance_gate_hbe_tech_eastern_river_8 = yes } hbe_has_military_eastern_river = yes NOT = { has_variable = hbe_research_pending }  hbe_advance_gate_hbe_civic_common_2 = yes }
-  pure_tooltip_entry = hbe_civic_eastern_river_2_effects 
+   
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     army_initiative = 0.16
     army_maintenance_efficiency = 0.12
@@ -82,7 +82,7 @@ hbe_civic_northern_shudao_1 = {  starting_technology_level = 99
  icon = hbe_civic_northern_shudao_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_northern_shudao_2 OR = { hbe_advance_gate_hbe_tech_northern_shudao_4 = yes hbe_advance_gate_hbe_tech_northern_shudao_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_northern_shudao_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_supply_limit_modifier = 0.2
     global_institution_growth_modifier = 0.12
@@ -93,7 +93,7 @@ hbe_civic_northern_shudao_2 = { age = age_2_renaissance starting_technology_leve
  icon = hbe_civic_northern_shudao_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_northern_shudao_5 OR = { hbe_advance_gate_hbe_tech_northern_shudao_5 = yes hbe_advance_gate_hbe_tech_northern_shudao_8 = yes } hbe_has_military_northern_shudao = yes NOT = { has_variable = hbe_research_pending }  hbe_advance_gate_hbe_civic_common_2 = yes }
-  pure_tooltip_entry = hbe_civic_northern_shudao_2_effects 
+   
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_defensive = 0.2
     global_manpower_modifier = 0.12
@@ -103,7 +103,7 @@ hbe_civic_central_hills_1 = {  starting_technology_level = 99
  icon = hbe_civic_central_hills_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_central_hills_2 OR = { hbe_advance_gate_hbe_tech_central_hills_4 = yes hbe_advance_gate_hbe_tech_central_hills_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_central_hills_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_food_decay = -0.12
     peasants_estate_target_satisfaction = 0.08
@@ -114,7 +114,7 @@ hbe_civic_central_hills_2 = { age = age_2_renaissance starting_technology_level 
  icon = hbe_civic_central_hills_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_central_hills_5 OR = { hbe_advance_gate_hbe_tech_central_hills_5 = yes hbe_advance_gate_hbe_tech_central_hills_witness_8 = yes } hbe_advance_gate_hbe_civic_central_hills_1 = yes NOT = { has_variable = hbe_research_pending } }
- requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_central_hills_2_effects
+ requires = hbe_civic_common_2 
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_monthly_prosperity = 0.064
     global_estate_target_satisfaction = 0.064
@@ -123,7 +123,7 @@ hbe_civic_western_tea_horse_1 = {  starting_technology_level = 99
  icon = hbe_civic_western_tea_horse_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_western_tea_horse_2 OR = { hbe_advance_gate_hbe_tech_western_tea_horse_4 = yes hbe_advance_gate_hbe_tech_western_tea_horse_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_western_tea_horse_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_tea_output_modifier = 0.16
     merchant_maintenance_efficiency = 0.12
@@ -134,7 +134,7 @@ hbe_civic_western_tea_horse_2 = { age = age_2_renaissance starting_technology_le
  icon = hbe_civic_western_tea_horse_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_western_tea_horse_5 OR = { hbe_advance_gate_hbe_tech_western_tea_horse_5 = yes hbe_advance_gate_hbe_tech_western_tea_horse_8 = yes } hbe_advance_gate_hbe_civic_western_tea_horse_1 = yes NOT = { has_variable = hbe_research_pending } }
- requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_western_tea_horse_2_effects
+ requires = hbe_civic_common_2 
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     tolerance_heathen = 0.8
     diplomatic_capacity_modifier = 0.16
@@ -143,7 +143,7 @@ hbe_civic_southwestern_valleys_1 = {  starting_technology_level = 99
  icon = hbe_civic_southwestern_valleys_1 content_priority = 880 research_cost = 3
  potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southwestern_valleys_2 OR = { hbe_advance_gate_hbe_tech_southwestern_valleys_4 = yes hbe_advance_gate_hbe_tech_southwestern_valleys_7 = yes } NOT = { has_variable = hbe_research_pending } }
-  pure_tooltip_entry = hbe_civic_southwestern_valleys_1_effects
+  
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_supply_limit_modifier = 0.16
     tribes_estate_target_satisfaction = 0.08
@@ -154,7 +154,7 @@ hbe_civic_southwestern_valleys_2 = { age = age_2_renaissance starting_technology
  icon = hbe_civic_southwestern_valleys_2 content_priority = 880 research_cost = 4
  potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southwestern_valleys_5 OR = { hbe_advance_gate_hbe_tech_southwestern_valleys_5 = yes hbe_advance_gate_hbe_tech_southwestern_valleys_8 = yes } hbe_advance_gate_hbe_civic_southwestern_valleys_1 = yes NOT = { has_variable = hbe_research_pending } }
- requires = hbe_civic_common_2 pure_tooltip_entry = hbe_civic_southwestern_valleys_2_effects
+ requires = hbe_civic_common_2 
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     cultures_capacity_modifier = 0.16
     tribes_estate_target_satisfaction = 0.08

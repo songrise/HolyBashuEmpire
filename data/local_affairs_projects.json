@@ -1,0 +1,1618 @@
+{
+  "schema_version": 2,
+  "categories": {
+    "administration": {
+      "requires": []
+    },
+    "commerce": {
+      "requires": []
+    },
+    "works": {
+      "requires": []
+    },
+    "settlement": {
+      "requires": []
+    }
+  },
+  "tiers": [
+    {
+      "key": "small",
+      "name": "少量投入",
+      "requires": [],
+      "cost_multiplier": 1
+    },
+    {
+      "key": "large",
+      "name": "大量投入",
+      "requires": [],
+      "requires_modifiers": ["hbe_af_allow_large_investment"],
+      "cost_multiplier": 2.25
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "key": "registers",
+      "pool": "national",
+      "category": "administration",
+      "name": "清理役簿",
+      "description": "核对各处役簿，注销重复征调，厘清尚未交接的责任。",
+      "requires": [],
+      "cost": 5,
+      "burden": [
+        0,
+        0
+      ],
+      "months": [
+        6,
+        12
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "burden",
+          "amount": [
+            4,
+            7
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.4,
+            0.8
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ],
+          "basis": "research_progress_weak_bonus"
+        },
+        {
+          "type": "manpower",
+          "amount": [
+            0.025,
+            0.05
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "monthly_manpower"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "减役收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "兵员储备",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": true
+    },
+    {
+      "id": 2,
+      "key": "fair",
+      "pool": "national",
+      "category": "commerce",
+      "name": "邀集行商",
+      "description": "备妥货栈与交割凭据，邀请行商携货赴会。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        1,
+        3
+      ],
+      "months": [
+        6,
+        9
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "modifier",
+          "modifier": "fair",
+          "months": [
+            24,
+            48
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.1,
+            0.15
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.16,
+            0.36
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "prestige_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "全国修正",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "金币收益",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 3,
+      "key": "materials",
+      "pool": "national",
+      "category": "works",
+      "name": "统筹采料",
+      "description": "合并各处采料订单，约定交货与运输，供后续工程调用。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        2,
+        4
+      ],
+      "months": [
+        6,
+        9
+      ],
+      "score": 7,
+      "rewards": [
+        {
+          "type": "modifier",
+          "modifier": "materials",
+          "months": [
+            24,
+            48
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.08,
+            0.16
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "全国修正",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "金币收益",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 4,
+      "key": "settlers",
+      "pool": "local",
+      "category": "settlement",
+      "name": "招徕农户",
+      "description": "备置农具与住处，接纳愿在本地落籍耕作的来户。",
+      "requires": [],
+      "cost": 7,
+      "burden": [
+        3,
+        6
+      ],
+      "months": [
+        12,
+        18
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "population",
+          "amount": [
+            0.015,
+            0.04
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ],
+          "basis": "target_population"
+        },
+        {
+          "type": "modifier",
+          "modifier": "settlement",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.12,
+            0.24
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "prestige_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "人口收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 5,
+      "key": "granary",
+      "pool": "local",
+      "category": "works",
+      "name": "合建公廨",
+      "description": "按本地建造资格抽定一项公共建筑，备料修筑，并安排乡匠接续经营。",
+      "requires": [],
+      "cost": 10,
+      "burden": [
+        4,
+        6
+      ],
+      "months": [
+        18,
+        12
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "building",
+          "choices": [
+            "granary",
+            "marketplace",
+            "temple"
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "local_works",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.1,
+            0.2
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "公共建筑等级",
+          "grades": [
+            "大量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "金币收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 6,
+      "key": "canal",
+      "pool": "local",
+      "category": "works",
+      "name": "疏浚支渠",
+      "description": "清理田间水道与淤段，恢复支渠输水，使田亩得以按时受水。",
+      "requires": [],
+      "cost": 5,
+      "burden": [
+        3,
+        6
+      ],
+      "months": [
+        9,
+        15
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "modifier",
+          "modifiers": [
+            "food_small",
+            "food_large"
+          ],
+          "months": [
+            48,
+            72
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "population",
+          "amount": [
+            0.005,
+            0.0125
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ],
+          "basis": "target_population"
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.05,
+            0.12
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "地区修正",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "人口收益",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "金币收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 7,
+      "key": "copyists",
+      "pool": "national",
+      "category": "administration",
+      "name": "会抄工艺",
+      "description": "请各坊师傅互校工艺抄本，编目后分送学舍。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        1,
+        2
+      ],
+      "months": [
+        6,
+        10
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "research",
+          "amount": [
+            1.0,
+            2.0
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ],
+          "basis": "research_progress_weak_bonus"
+        },
+        {
+          "type": "modifier",
+          "modifier": "copyists",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.12,
+            0.28
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "prestige_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "研究进度",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "全国修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 8,
+      "key": "paid_crews",
+      "pool": "national",
+      "category": "works",
+      "name": "雇役代征",
+      "description": "以公款招募短工，替换催征中的劳役，使人户得以归耕。",
+      "requires": [],
+      "cost": 7,
+      "burden": [
+        0,
+        0
+      ],
+      "months": [
+        6,
+        9
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "burden",
+          "amount": [
+            5,
+            9
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "paid_crews",
+          "months": [
+            18,
+            30
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "stability",
+          "amount": [
+            0.24,
+            0.52
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "stability_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "减役收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "全国修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "稳定度收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": true
+    },
+    {
+      "id": 9,
+      "key": "old_services",
+      "pool": "national",
+      "category": "administration",
+      "name": "清偿旧役",
+      "description": "清点积欠工钱，补给凭据，将已经履行的旧役逐项销账。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        0,
+        0
+      ],
+      "months": [
+        5,
+        8
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "burden",
+          "amount": [
+            4,
+            8
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.1,
+            0.2
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.2,
+            0.4
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "research_progress_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "减役收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "金币收益",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": true
+    },
+    {
+      "id": 10,
+      "key": "deliveries",
+      "pool": "national",
+      "category": "commerce",
+      "name": "整顿交割",
+      "description": "核对商运交货与仓单，收回积欠货款，把交割办法传给各栈。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        1,
+        2
+      ],
+      "months": [
+        6,
+        10
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "gold",
+          "amount": [
+            0.3,
+            0.45
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "fair",
+          "months": [
+            18,
+            30
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.4,
+            0.8
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "research_progress_weak_bonus"
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.2,
+            0.48
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "prestige_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "金币收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "全国修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 25
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 11,
+      "key": "land_books",
+      "pool": "national",
+      "category": "administration",
+      "name": "合校地籍",
+      "description": "合校田籍、水册与差役簿，删去重记户名，将核定办法留作成例。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        0,
+        0
+      ],
+      "months": [
+        8,
+        12
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "burden",
+          "amount": [
+            3,
+            5
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.8,
+            1.6
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ],
+          "basis": "research_progress_weak_bonus"
+        },
+        {
+          "type": "modifier",
+          "modifier": "copyists",
+          "months": [
+            18,
+            30
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.24,
+            0.52
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "prestige_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "减役收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "全国修正",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 25
+        }
+      ],
+      "relief_weight": true
+    },
+    {
+      "id": 12,
+      "key": "village_roads",
+      "pool": "local",
+      "category": "works",
+      "name": "修通乡道",
+      "description": "从有集市往来而尚未通路的邻地中择段，铺设碎石，另定赶集交割日。",
+      "requires": [],
+      "cost": 9,
+      "burden": [
+        3,
+        5
+      ],
+      "months": [
+        9,
+        12
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "road",
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "road_market",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.1,
+            0.2
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.12,
+            0.28
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "prestige_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "道路建设",
+          "grades": [
+            "大量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "金币收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 25
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 13,
+      "key": "seek_artisans",
+      "pool": "local",
+      "category": "settlement",
+      "name": "访求乡匠",
+      "description": "访求散居工匠，备置住处与工具，抄录其惯用工法。",
+      "requires": [],
+      "cost": 7,
+      "burden": [
+        2,
+        4
+      ],
+      "months": [
+        8,
+        12
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "research",
+          "amount": [
+            0.6,
+            1.2
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ],
+          "basis": "research_progress_weak_bonus"
+        },
+        {
+          "type": "modifier",
+          "modifier": "local_works",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "population",
+          "amount": [
+            0.005,
+            0.0125
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "target_population"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "研究进度",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "人口收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 14,
+      "key": "village_clinics",
+      "pool": "local",
+      "category": "settlement",
+      "name": "义诊收户",
+      "description": "延医巡村，接济病户，并将愿意留居的人家编入乡里。",
+      "requires": [],
+      "cost": 7,
+      "burden": [
+        2,
+        4
+      ],
+      "months": [
+        9,
+        12
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "population",
+          "amount": [
+            0.01,
+            0.025
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ],
+          "basis": "target_population"
+        },
+        {
+          "type": "modifier",
+          "modifier": "clinics",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "stability",
+          "amount": [
+            0.32,
+            0.64
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "stability_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "人口收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "稳定度收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 15,
+      "key": "restore_market",
+      "pool": "local",
+      "category": "commerce",
+      "name": "修复集廛",
+      "description": "从尚有扩建余地的公共设施中抽定一项，修复集廛，留工法供后续营建。",
+      "requires": [],
+      "cost": 10,
+      "burden": [
+        3,
+        5
+      ],
+      "months": [
+        12,
+        15
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "building",
+          "choices": [
+            "marketplace",
+            "granary",
+            "library"
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "road_market",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.2,
+            0.4
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "research_progress_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "公共建筑等级",
+          "grades": [
+            "大量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false
+    },
+    {
+      "id": 16,
+      "key": "rest_crews",
+      "pool": "local",
+      "category": "administration",
+      "name": "募工轮歇",
+      "description": "雇人接替疲敝役户，让归乡军户轮歇并传授操练，帮助少量新户落脚。",
+      "requires": [],
+      "cost": 7,
+      "burden": [
+        0,
+        0
+      ],
+      "months": [
+        6,
+        9
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "burden",
+          "amount": [
+            3,
+            6
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "local_works",
+          "months": [
+            24,
+            36
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "population",
+          "amount": [
+            0.005,
+            0.01
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "target_population"
+        },
+        {
+          "type": "army_tradition",
+          "amount": [
+            0.28,
+            0.64
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ],
+          "basis": "army_tradition_weak_bonus"
+        }
+      ],
+      "benefits": [
+        {
+          "label": "减役收益",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区修正",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "人口收益",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        },
+        {
+          "label": "陆军传统",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 25
+        }
+      ],
+      "relief_weight": true
+    }
+  ],
+  "outcomes": [
+    {
+      "weight": 20,
+      "factor": 0.85
+    },
+    {
+      "weight": 60,
+      "factor": 1
+    },
+    {
+      "weight": 15,
+      "factor": 1.15
+    },
+    {
+      "weight": 5,
+      "factor": 1.5,
+      "great_success": true
+    }
+  ],
+  "offer_lifetime_months": [
+    12,
+    24
+  ],
+  "gold_cost_multiplier": 0.7,
+  "burden_cost_multiplier": 1.2,
+  "modifiers": {
+    "fair": {
+      "scope": "country",
+      "name": "行商货会",
+      "description": "交割凭据与货栈已备，商旅循约赴会。",
+      "effects": {
+        "global_merchant_capacity_modifier": 0.05
+      },
+      "summary": "全国贸易容量 +5%"
+    },
+    "materials": {
+      "scope": "country",
+      "name": "统筹采料",
+      "description": "各处物料合并订购，交货与运输已有定约。",
+      "effects": {
+        "global_construction_speed": 0.04
+      },
+      "summary": "全国建设速度 +4%"
+    },
+    "copyists": {
+      "scope": "country",
+      "name": "工艺会抄",
+      "description": "各坊工艺经过比勘，抄本交由学舍传习。",
+      "effects": {
+        "research_speed_modifier": 0.03
+      },
+      "summary": "全国研究速度 +3%"
+    },
+    "paid_crews": {
+      "scope": "country",
+      "name": "雇役轮替",
+      "description": "以雇募替代临时征调，各处工程得以接续用工。",
+      "effects": {
+        "global_construction_speed": 0.02
+      },
+      "summary": "全国建设速度 +2%"
+    },
+    "food_small": {
+      "scope": "location",
+      "name": "支渠清淤",
+      "description": "淤段已清，田间水口恢复输水。",
+      "effects": {
+        "local_monthly_food_modifier": 0.06
+      },
+      "summary": "当地粮食产出 +6%"
+    },
+    "food_large": {
+      "scope": "location",
+      "name": "支渠整修",
+      "description": "支渠与水口经过整修，田亩受水有序。",
+      "effects": {
+        "local_monthly_food_modifier": 0.08
+      },
+      "summary": "当地粮食产出 +8%"
+    },
+    "settlement": {
+      "scope": "location",
+      "name": "新户安业",
+      "description": "农具与住处已备，新户逐步恢复耕作。",
+      "effects": {
+        "local_monthly_food_modifier": 0.03
+      },
+      "summary": "当地粮食产出 +3%"
+    },
+    "local_works": {
+      "scope": "location",
+      "name": "乡匠协作",
+      "description": "乡匠分工备料，邻里轮班接续修造。",
+      "effects": {
+        "local_construction_speed": 0.05
+      },
+      "summary": "当地建设速度 +5%"
+    },
+    "road_market": {
+      "scope": "location",
+      "name": "通路交割",
+      "description": "乡道接通，赶集与交货不再绕行。",
+      "effects": {
+        "local_merchant_capacity": 0.5
+      },
+      "summary": "当地贸易容量 +0.5"
+    },
+    "clinics": {
+      "scope": "location",
+      "name": "义诊留方",
+      "description": "医者巡诊留下药方，里社接续照护病户。",
+      "effects": {
+        "local_disease_resistance": 0.05
+      },
+      "summary": "当地疾病抵抗 +5%"
+    }
+  },
+  "great_reward_factors": [
+    1.5,
+    1.65,
+    1.8
+  ],
+  "reward_randomization": "independent_components_locked_on_start",
+  "manpower_limits": {
+    "monthly_recovery": 0.1,
+    "capacity_fraction": 0.001
+  },
+  "contribution": {
+    "base": 0.2,
+    "time_weight": 0.6,
+    "time_reference_months": 12,
+    "time_ratio_cap": 1.5,
+    "effort_weight": 0.2,
+    "effort_ratio_cap": 3,
+    "quality_cap": 1.2,
+    "project_cap": 1.5,
+    "round_cap": 2,
+    "role_weights": {
+      "primary": 0.6,
+      "secondary": 0.3,
+      "minor": 0.1
+    }
+  }
+}

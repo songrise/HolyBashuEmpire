@@ -1,0 +1,1 @@
+﻿on_game_start = { on_actions = { hbe_af_probe_start } } hbe_af_probe_start = { effect = { c:BAB = { trigger_event_silently = { id = hbe_af_probe.1 days = 3 } } } }

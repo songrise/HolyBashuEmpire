@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "version_before": "1.4.1",
+  "version_after": "1.4.2",
+  "steam_buildid": "26043558",
+  "binary_updated_local": "2026-10-21 02:53:41",
+  "crash_local": "2026-10-21 02:55:12",
+  "method": "Identical package bytes, independent ASCII user profiles, only active mod path differs; isolated startup, no player save loaded",
+  "results": {
+    "compat-142-ascii": {
+      "fopen_errors": 0,
+      "missing_topbar_widgets": 0,
+      "gui_lexer_failures": 0,
+      "town_setup_token_errors": 0
+    },
+    "compat-142-unicode-mod": {
+      "fopen_errors": 386,
+      "missing_topbar_widgets": 0,
+      "gui_lexer_failures": 8,
+      "town_setup_token_errors": 210
+    }
+  },
+  "installed_version": "0.4.0",
+  "installed_ascii_path": "D:/SteamLibrary/steamapps/common/Europa Universalis V/game/mod/holy_bashu_empire",
+  "installed_hashes_match": true,
+  "playset_changes_only": 1,
+  "original_install_retained": true,
+  "player_saves_modified": false,
+  "live_gui_verified": false,
+  "normal_launch_followup": "LocalAppData install was not found by the normal launch. Reinstalled into native game/mod scan root; see mod-discovery-v040.json; live UI confirmation pending."
+}

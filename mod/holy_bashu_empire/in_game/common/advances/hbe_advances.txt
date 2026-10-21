@@ -26,6 +26,7 @@ hbe_tech_common_2 = {
     pure_tooltip_entry = hbe_tech_common_2_effects
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
     global_merchant_capacity_modifier = 0.08
+
 }
 hbe_tech_common_3 = {
     age = age_2_renaissance
