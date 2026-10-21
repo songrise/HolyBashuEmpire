@@ -41,6 +41,19 @@ checkbox_square_alt = { down = "[GetScriptedGui('hbe_af_allow_local').IsShown(Gu
 text_single = { size = { -1 28 } layoutpolicy_horizontal = expanding autoresize = no align = left|nobaseline text = "HBE_AF_ALLOW_LOCAL" } } hbox = { layoutpolicy_horizontal = expanding spacing = 8 margin = { 8 4 }
 checkbox_square_alt = { down = "[GetScriptedGui('hbe_af_allow_large').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetScriptedGui('hbe_af_allow_large').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
 text_single = { size = { -1 28 } layoutpolicy_horizontal = expanding autoresize = no align = left|nobaseline text = "HBE_AF_ALLOW_LARGE" } } }
+vbox = { layoutpolicy_horizontal = expanding spacing = 2 button_regular = { layoutpolicy_horizontal = expanding size = { 300 35 }
+onclick = "[GetScriptedGui('hbe_af_notice_mode_0').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+hbox = { margin = { 10 0 } spacing = 10
+icon = { size = { 22 22 } using = button_checkbox_template frame = "[Select_int32(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_notice_mode').GetValue, '(CFixedPoint)0'), '(int32)2', '(int32)1')]" }
+text_single = { layoutpolicy_horizontal = expanding text = "hbe_af_notice_mode_0" } } } button_regular = { layoutpolicy_horizontal = expanding size = { 300 35 }
+onclick = "[GetScriptedGui('hbe_af_notice_mode_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+hbox = { margin = { 10 0 } spacing = 10
+icon = { size = { 22 22 } using = button_checkbox_template frame = "[Select_int32(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_notice_mode').GetValue, '(CFixedPoint)1'), '(int32)2', '(int32)1')]" }
+text_single = { layoutpolicy_horizontal = expanding text = "hbe_af_notice_mode_1" } } } button_regular = { layoutpolicy_horizontal = expanding size = { 300 35 }
+onclick = "[GetScriptedGui('hbe_af_notice_mode_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+hbox = { margin = { 10 0 } spacing = 10
+icon = { size = { 22 22 } using = button_checkbox_template frame = "[Select_int32(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_notice_mode').GetValue, '(CFixedPoint)2'), '(int32)2', '(int32)1')]" }
+text_single = { layoutpolicy_horizontal = expanding text = "hbe_af_notice_mode_2" } } } }
 text_multi = { layoutpolicy_horizontal = expanding size = { -1 42 } autoresize = no text = "HBE_AF_AUTO_STATUS" tooltip = "HBE_AF_AUTO_RULES" }
 } }
 }

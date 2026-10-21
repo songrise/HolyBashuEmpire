@@ -1,0 +1,10 @@
+{
+  "tool": "built-in ImageGen",
+  "transparent": true,
+  "technology_prompt": "Vanilla EU5 technology object icon reference: two pale glazed Sichuan tea bowls with amber tea on a low wooden tray beside an unlettered folded paper ledger; muted hand-painted realistic item art; upper-left lighting; no UI/frame/text.",
+  "building_prompt": "Vanilla EU5 building icon reference: one modest 14th-century Sichuan public teahouse, frontal three-quarter miniature, grey tile roof, timber and plaster, open tables and tea stand; muted colors; no people/landscape/frame/text.",
+  "references": [
+    "work/teahouse-art-references/technology.png",
+    "work/teahouse-art-references/building.png"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "affairs exactly two new permission technologies",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_public_funding hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_allow_large_investment has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_local_proposals hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "check": "hbe_af_allow_local_refresh has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "check": "affairs removes superseded age-one capability hint",
+      "passed": true
+    },
+    {
+      "check": "affairs small investment remains free of the new research gate",
+      "passed": true
+    },
+    {
+      "check": "affairs local redraw requires permission idle cooldown and alternative",
+      "passed": true
+    },
+    {
+      "check": "affairs redraw effect rechecks gate and only redraws local offer",
+      "passed": true
+    },
+    {
+      "check": "affairs manual local refresh has a two-year cooldown and matching descriptions",
+      "passed": true
+    },
+    {
+      "check": "affairs refresh uses native round button and native change arrows",
+      "passed": true
+    },
+    {
+      "check": "affairs both boolean names are present in every shipped locale",
+      "passed": true
+    }
+  ],
+  "installed": false,
+  "runtime_verified": false,
+  "visual_verified": false
+}

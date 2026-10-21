@@ -417,7 +417,7 @@ hbe_salt_repay = {
 hbe_status = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_status.dds"
-    potential = { hbe_is_prince = yes  }
+    potential = { always = no }
     allow = { always = yes  }
     ai_will_do = { value = 0 }
     option = { name = hbe_status.a ai_chance = { value = 100 } effect = {  trigger_event_non_silently = { id = hbe.4 } } }

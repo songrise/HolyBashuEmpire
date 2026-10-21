@@ -1,6 +1,6 @@
 ﻿hbe_feast_sync_party = {
 
- if = { limit = { OR = { NOT = { has_variable = hbe_stance } var:hbe_stance > 2 } } set_variable = { name = hbe_stance value = 2 } }
+ if = { limit = { has_variable = hbe_stance var:hbe_stance > 2 } set_variable = { name = hbe_stance value = 2 } }
  if = { limit = { NOT = { has_variable = hbe_feast_points } } set_variable = { name = hbe_feast_points value = 0 } }
 if = { limit = { var:hbe_stance = 1 }
    if = { limit = { is_member_of_international_organization = international_organization:hbe_local_party } international_organization:hbe_local_party = { remove_country_from_international_organization = prev } }

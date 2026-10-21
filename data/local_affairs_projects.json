@@ -1,5 +1,21 @@
 {
   "schema_version": 2,
+  "ai_participation": {
+    "personalities": [
+      {
+        "id": 1,
+        "key": "active",
+        "weight": 50,
+        "chance": 70
+      },
+      {
+        "id": 2,
+        "key": "cautious",
+        "weight": 50,
+        "chance": 40
+      }
+    ]
+  },
   "categories": {
     "administration": {
       "requires": []
@@ -25,7 +41,9 @@
       "key": "large",
       "name": "大量投入",
       "requires": [],
-      "requires_modifiers": ["hbe_af_allow_large_investment"],
+      "requires_modifiers": [
+        "hbe_af_allow_large_investment"
+      ],
       "cost_multiplier": 2.25
     }
   ],
@@ -207,8 +225,8 @@
       "key": "materials",
       "pool": "national",
       "category": "works",
-      "name": "统筹采料",
-      "description": "合并各处采料订单，约定交货与运输，供后续工程调用。",
+      "name": "行会备料",
+      "description": "各行会合订木料、铁器与染料，分批交货，减少各坊争料误工。",
       "requires": [],
       "cost": 6,
       "burden": [
@@ -232,7 +250,8 @@
           "ordinary_factors": [
             0.8,
             1.2
-          ]
+          ],
+          "guild_variant": true
         },
         {
           "type": "gold",
@@ -249,7 +268,7 @@
       ],
       "benefits": [
         {
-          "label": "全国修正",
+          "label": "营建收益",
           "grades": [
             "中量",
             "大量"
@@ -265,7 +284,11 @@
           "priority": 70
         }
       ],
-      "relief_weight": false
+      "relief_weight": false,
+      "guild_role": "materials",
+      "requires_modifiers": [
+        "hbe_af_allow_guild_projects"
+      ]
     },
     {
       "id": 4,
@@ -534,8 +557,8 @@
       "key": "copyists",
       "pool": "national",
       "category": "administration",
-      "name": "会抄工艺",
-      "description": "请各坊师傅互校工艺抄本，编目后分送学舍。",
+      "name": "合抄工法",
+      "description": "师傅与学徒比勘工法，记下用料、火候与失败的缘由，交各坊传习。",
       "requires": [],
       "cost": 6,
       "burden": [
@@ -572,7 +595,8 @@
           "ordinary_factors": [
             0.75,
             1.25
-          ]
+          ],
+          "guild_variant": true
         },
         {
           "type": "prestige",
@@ -614,7 +638,11 @@
           "priority": 40
         }
       ],
-      "relief_weight": false
+      "relief_weight": false,
+      "guild_role": "knowledge",
+      "requires_modifiers": [
+        "hbe_af_allow_guild_projects"
+      ]
     },
     {
       "id": 8,
@@ -792,8 +820,8 @@
       "key": "deliveries",
       "pool": "national",
       "category": "commerce",
-      "name": "整顿交割",
-      "description": "核对商运交货与仓单，收回积欠货款，把交割办法传给各栈。",
+      "name": "验货定样",
+      "description": "各坊议定尺寸、成色与验收办法，减少退货和交割争执。",
       "requires": [],
       "cost": 6,
       "burden": [
@@ -820,7 +848,7 @@
         },
         {
           "type": "modifier",
-          "modifier": "fair",
+          "modifier": "guild_standards",
           "months": [
             18,
             30
@@ -829,7 +857,8 @@
           "ordinary_factors": [
             0.75,
             1.25
-          ]
+          ],
+          "guild_variant": true
         },
         {
           "type": "research",
@@ -868,7 +897,7 @@
           "priority": 100
         },
         {
-          "label": "全国修正",
+          "label": "交割收益",
           "grades": [
             "少量",
             "中量"
@@ -892,7 +921,11 @@
           "priority": 25
         }
       ],
-      "relief_weight": false
+      "relief_weight": false,
+      "guild_role": "standards",
+      "requires_modifiers": [
+        "hbe_af_allow_guild_projects"
+      ]
     },
     {
       "id": 11,
@@ -1108,8 +1141,8 @@
       "key": "seek_artisans",
       "pool": "local",
       "category": "settlement",
-      "name": "访求乡匠",
-      "description": "访求散居工匠，备置住处与工具，抄录其惯用工法。",
+      "name": "招收学徒",
+      "description": "作坊备好工具与住处，招收新户随师学艺，逐步补足当地人手。",
       "requires": [],
       "cost": 7,
       "burden": [
@@ -1123,21 +1156,22 @@
       "score": 8,
       "rewards": [
         {
-          "type": "research",
+          "type": "population",
           "amount": [
-            0.6,
-            1.2
+            0.0075,
+            0.0175
           ],
           "role": "primary",
           "ordinary_factors": [
             0.8,
             1.2
           ],
-          "basis": "research_progress_weak_bonus"
+          "basis": "target_population",
+          "pop_type": "burghers"
         },
         {
           "type": "modifier",
-          "modifier": "local_works",
+          "modifier": "apprentices",
           "months": [
             24,
             36
@@ -1146,25 +1180,26 @@
           "ordinary_factors": [
             0.75,
             1.25
-          ]
+          ],
+          "guild_variant": true
         },
         {
-          "type": "population",
+          "type": "research",
           "amount": [
-            0.005,
-            0.0125
+            0.3,
+            0.6
           ],
           "role": "minor",
           "ordinary_factors": [
             0.65,
             1.35
           ],
-          "basis": "target_population"
+          "basis": "research_progress_weak_bonus"
         }
       ],
       "benefits": [
         {
-          "label": "研究进度",
+          "label": "人口收益",
           "grades": [
             "中量",
             "大量"
@@ -1172,7 +1207,7 @@
           "priority": 100
         },
         {
-          "label": "地区修正",
+          "label": "地区产出",
           "grades": [
             "少量",
             "中量"
@@ -1180,7 +1215,7 @@
           "priority": 70
         },
         {
-          "label": "人口收益",
+          "label": "研究进度",
           "grades": [
             "少量",
             "少量"
@@ -1188,7 +1223,33 @@
           "priority": 40
         }
       ],
-      "relief_weight": false
+      "relief_weight": false,
+      "guild_role": "apprentices",
+      "requires_modifiers": [
+        "hbe_af_allow_guild_projects"
+      ],
+      "target_industry": [
+        "cloth_guild",
+        "cloth_workshop",
+        "cloth_manufactory",
+        "textile_mill",
+        "fine_cloth_guild",
+        "fine_cloth_workshop",
+        "fine_cloth_manufactory",
+        "fine_cloth_mill",
+        "paper_guild",
+        "paper_workshop",
+        "paper_manufactory",
+        "paper_mill",
+        "pottery_guild",
+        "pottery_workshop",
+        "pottery_manufactory",
+        "pottery_mill",
+        "tools_guild",
+        "tools_workshop",
+        "iron_foundry",
+        "iron_mill"
+      ]
     },
     {
       "id": 14,
@@ -1470,6 +1531,251 @@
         }
       ],
       "relief_weight": true
+    },
+    {
+      "id": 17,
+      "key": "guild_workshops",
+      "pool": "local",
+      "category": "works",
+      "name": "整备作坊",
+      "description": "选有工料与人手的地点添置作坊，扩大现有行业的生产规模。",
+      "requires": [],
+      "cost": 11,
+      "burden": [
+        3,
+        5
+      ],
+      "months": [
+        16,
+        12
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "building",
+          "choices": [
+            "cloth_guild",
+            "cloth_workshop",
+            "cloth_manufactory",
+            "textile_mill",
+            "fine_cloth_guild",
+            "fine_cloth_workshop",
+            "fine_cloth_manufactory",
+            "fine_cloth_mill",
+            "paper_guild",
+            "paper_workshop",
+            "paper_manufactory",
+            "paper_mill",
+            "pottery_guild",
+            "pottery_workshop",
+            "pottery_manufactory",
+            "pottery_mill",
+            "tools_guild",
+            "tools_workshop",
+            "iron_foundry",
+            "iron_mill"
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ]
+        },
+        {
+          "type": "modifier",
+          "modifier": "workshop_setup",
+          "months": [
+            18,
+            30
+          ],
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ],
+          "guild_variant": true
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.2,
+            0.4
+          ],
+          "basis": "research_progress_weak_bonus",
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "产业建筑",
+          "grades": [
+            "大量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "地区营建",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false,
+      "guild_role": "capacity",
+      "requires_modifiers": [
+        "hbe_af_allow_guild_projects"
+      ],
+      "target_industry": [
+        "cloth_guild",
+        "cloth_workshop",
+        "cloth_manufactory",
+        "textile_mill",
+        "fine_cloth_guild",
+        "fine_cloth_workshop",
+        "fine_cloth_manufactory",
+        "fine_cloth_mill",
+        "paper_guild",
+        "paper_workshop",
+        "paper_manufactory",
+        "paper_mill",
+        "pottery_guild",
+        "pottery_workshop",
+        "pottery_manufactory",
+        "pottery_mill",
+        "tools_guild",
+        "tools_workshop",
+        "iron_foundry",
+        "iron_mill"
+      ]
+    },
+    {
+      "id": 18,
+      "key": "guild_trials",
+      "pool": "local",
+      "category": "commerce",
+      "name": "试作新法",
+      "description": "选一处已有生产的作坊，试验工具与工序，确认能稳定出货后再行推广。",
+      "requires": [],
+      "cost": 7,
+      "burden": [
+        2,
+        4
+      ],
+      "months": [
+        8,
+        12
+      ],
+      "score": 8,
+      "rewards": [
+        {
+          "type": "modifier",
+          "modifier": "guild_trials",
+          "months": [
+            24,
+            36
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            0.8,
+            1.2
+          ],
+          "guild_variant": true
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.4,
+            0.8
+          ],
+          "basis": "research_progress_weak_bonus",
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "gold",
+          "amount": [
+            0.08,
+            0.16
+          ],
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "地区产出",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "金币回收",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ],
+      "relief_weight": false,
+      "guild_role": "production",
+      "requires_modifiers": [
+        "hbe_af_allow_guild_projects"
+      ],
+      "target_industry": [
+        "cloth_guild",
+        "cloth_workshop",
+        "cloth_manufactory",
+        "textile_mill",
+        "fine_cloth_guild",
+        "fine_cloth_workshop",
+        "fine_cloth_manufactory",
+        "fine_cloth_mill",
+        "paper_guild",
+        "paper_workshop",
+        "paper_manufactory",
+        "paper_mill",
+        "pottery_guild",
+        "pottery_workshop",
+        "pottery_manufactory",
+        "pottery_mill",
+        "tools_guild",
+        "tools_workshop",
+        "iron_foundry",
+        "iron_mill"
+      ],
+      "target_active_industry": true
     }
   ],
   "outcomes": [
@@ -1587,6 +1893,42 @@
         "local_disease_resistance": 0.05
       },
       "summary": "当地疾病抵抗 +5%"
+    },
+    "apprentices": {
+      "scope": "location",
+      "name": "师徒协作",
+      "description": "新户随师学习，作坊分工渐熟，现有生产更为顺畅。",
+      "effects": {
+        "local_production_efficiency": 0.03
+      },
+      "summary": "当地生产效率 +3%"
+    },
+    "guild_standards": {
+      "scope": "country",
+      "name": "验货有据",
+      "description": "尺寸、成色与交割凭据已有定式，各坊货物较易售出。",
+      "effects": {
+        "global_merchant_capacity_modifier": 0.03
+      },
+      "summary": "全国贸易容量 +3%"
+    },
+    "workshop_setup": {
+      "scope": "location",
+      "name": "作坊备工",
+      "description": "工具与工料就位，后续扩建可依现成分工接续。",
+      "effects": {
+        "local_construction_speed": 0.05
+      },
+      "summary": "当地建设速度 +5%"
+    },
+    "guild_trials": {
+      "scope": "location",
+      "name": "新法试成",
+      "description": "新工序已经试作，工匠依记录调整用料与次序。",
+      "effects": {
+        "local_production_efficiency": 0.05
+      },
+      "summary": "当地生产效率 +5%"
     }
   },
   "great_reward_factors": [
@@ -1613,6 +1955,42 @@
       "primary": 0.6,
       "secondary": 0.3,
       "minor": 0.1
+    }
+  },
+  "guilds": {
+    "permission_advance": "hbe_tech_common_5",
+    "sponsor_discount": 0.2,
+    "sponsor_buildings": [
+      "hbe_brocade_school",
+      "hbe_salt_office",
+      "hbe_gate_registry",
+      "hbe_tea_exchange"
+    ],
+    "special_output": {
+      "country": 0.08,
+      "location": 0.1
+    },
+    "goods_names": {
+      "hbe_shu_embroidery": "蜀绣",
+      "hbe_well_salt": "井盐",
+      "hbe_shu_paper": "蜀纸",
+      "hbe_border_tea": "边茶"
+    },
+    "modifier_scopes": {
+      "fair": "country",
+      "materials": "country",
+      "copyists": "country",
+      "paid_crews": "country",
+      "food_small": "location",
+      "food_large": "location",
+      "settlement": "location",
+      "local_works": "location",
+      "road_market": "location",
+      "clinics": "location",
+      "apprentices": "location",
+      "guild_standards": "country",
+      "workshop_setup": "location",
+      "guild_trials": "location"
     }
   }
 }

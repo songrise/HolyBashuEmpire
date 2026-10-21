@@ -1,0 +1,786 @@
+{
+  "version": "0.4.0 pending",
+  "date": "2026-10-21",
+  "installed": false,
+  "visual_verified": false,
+  "changes": {
+    "compact_research_potentials": 93,
+    "icon_concept_gaps_removed": 508,
+    "guarded_arrangement_options": 126,
+    "initial_factions": "Undecided until first choice; no membership cleanup before feast.",
+    "initial_ai_weights": {
+      "west_common": 70,
+      "east_enterprise": 70,
+      "other": 30,
+      "north_common": 50,
+      "north_enterprise": 50
+    },
+    "refresh_cooldown_months": 24
+  },
+  "static_validation": {
+    "status": "passed",
+    "checks": 5189,
+    "failed": []
+  },
+  "python_tests": 10,
+  "repeat_application_byte_identical": true,
+  "controlled": {
+    "date": "1337.5.1",
+    "flags": {
+      "hbe_ui_fresh_choice_pass": true,
+      "hbe_ui_replacement_pass": true,
+      "hbe_ui_repeat_choice_pass": true,
+      "hbe_ui_persistent_origin_pass": true,
+      "hbe_ui_test_pass": true
+    },
+    "status": "passed"
+  },
+  "startup": {
+    "status": "passed",
+    "snapshots": [
+      {
+        "date": "1337.4.2",
+        "summary": {
+          "stance_0": 36,
+          "removals": 0
+        },
+        "sides": {
+          "west": {
+            "0": 14
+          },
+          "east": {
+            "0": 15
+          },
+          "north": {
+            "0": 7
+          }
+        },
+        "countries": [
+          {
+            "tag": "BAB",
+            "region": "chengdu_plain",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAE",
+            "region": "chengdu_plain",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAF",
+            "region": "chengdu_plain",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAJ",
+            "region": "chengdu_plain",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAL",
+            "region": "chengdu_plain",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAO",
+            "region": "southern_salt_wine",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAP",
+            "region": "southern_salt_wine",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAQ",
+            "region": "southern_salt_wine",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAW",
+            "region": "southern_salt_wine",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAX",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BAZ",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBB",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBC",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBE",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBF",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBH",
+            "region": "eastern_river",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBI",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBJ",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBL",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBM",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBN",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBO",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBP",
+            "region": "northern_shudao",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBQ",
+            "region": "central_hills",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBR",
+            "region": "central_hills",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBS",
+            "region": "central_hills",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBT",
+            "region": "central_hills",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBU",
+            "region": "western_tea_horse",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBV",
+            "region": "western_tea_horse",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBW",
+            "region": "western_tea_horse",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBX",
+            "region": "southwestern_valleys",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBY",
+            "region": "southwestern_valleys",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BBZ",
+            "region": "southwestern_valleys",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BCA",
+            "region": "southwestern_valleys",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BCB",
+            "region": "southwestern_valleys",
+            "stance": 0,
+            "removals": 0
+          },
+          {
+            "tag": "BCC",
+            "region": "southwestern_valleys",
+            "stance": 0,
+            "removals": 0
+          }
+        ]
+      },
+      {
+        "date": "1337.7.2",
+        "summary": {
+          "stance_1": 15,
+          "removals": 0,
+          "stance_2": 21
+        },
+        "sides": {
+          "west": {
+            "1": 8,
+            "2": 6
+          },
+          "east": {
+            "2": 9,
+            "1": 6
+          },
+          "north": {
+            "2": 6,
+            "1": 1
+          }
+        },
+        "countries": [
+          {
+            "tag": "BAB",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAE",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAF",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAJ",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAL",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAO",
+            "region": "southern_salt_wine",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAP",
+            "region": "southern_salt_wine",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAQ",
+            "region": "southern_salt_wine",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAW",
+            "region": "southern_salt_wine",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAX",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAZ",
+            "region": "eastern_river",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBB",
+            "region": "eastern_river",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBC",
+            "region": "eastern_river",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBE",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBF",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBH",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBI",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBJ",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBL",
+            "region": "northern_shudao",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBM",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBN",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBO",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBP",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBQ",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBR",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBS",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBT",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBU",
+            "region": "western_tea_horse",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBV",
+            "region": "western_tea_horse",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBW",
+            "region": "western_tea_horse",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBX",
+            "region": "southwestern_valleys",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBY",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBZ",
+            "region": "southwestern_valleys",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BCA",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BCB",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BCC",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          }
+        ]
+      },
+      {
+        "date": "1337.8.2",
+        "summary": {
+          "stance_1": 15,
+          "removals": 0,
+          "stance_2": 21
+        },
+        "sides": {
+          "west": {
+            "1": 8,
+            "2": 6
+          },
+          "east": {
+            "2": 9,
+            "1": 6
+          },
+          "north": {
+            "2": 6,
+            "1": 1
+          }
+        },
+        "countries": [
+          {
+            "tag": "BAB",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAE",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAF",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAJ",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAL",
+            "region": "chengdu_plain",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAO",
+            "region": "southern_salt_wine",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAP",
+            "region": "southern_salt_wine",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAQ",
+            "region": "southern_salt_wine",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAW",
+            "region": "southern_salt_wine",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAX",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BAZ",
+            "region": "eastern_river",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBB",
+            "region": "eastern_river",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBC",
+            "region": "eastern_river",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBE",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBF",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBH",
+            "region": "eastern_river",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBI",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBJ",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBL",
+            "region": "northern_shudao",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBM",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBN",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBO",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBP",
+            "region": "northern_shudao",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBQ",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBR",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBS",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBT",
+            "region": "central_hills",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBU",
+            "region": "western_tea_horse",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBV",
+            "region": "western_tea_horse",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBW",
+            "region": "western_tea_horse",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBX",
+            "region": "southwestern_valleys",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBY",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BBZ",
+            "region": "southwestern_valleys",
+            "stance": 1.0,
+            "removals": 0
+          },
+          {
+            "tag": "BCA",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BCB",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          },
+          {
+            "tag": "BCC",
+            "region": "southwestern_valleys",
+            "stance": 2.0,
+            "removals": 0
+          }
+        ]
+      }
+    ]
+  },
+  "runtime": {
+    "controlled-regression": {
+      "exit_code": 0,
+      "unexpected": [],
+      "global_engine_gate": "Tests:\n[ FAIL ] Error log: 13926 errors"
+    },
+    "natural-startup": {
+      "exit_code": 0,
+      "unexpected": [],
+      "global_engine_gate": "Tests:\n[ FAIL ] Error log: 12182 errors"
+    }
+  },
+  "notes": [
+    "No visual rendering claim; source icon/name word gaps and arrangement labels were normalized, pending manual client verification.",
+    "Natural startup has no resource grants or forced faction selections. Removal telemetry is passive and counts executed scripted faction-removal effects.",
+    "Controlled fixture checks all 36 countries against 8 origin predicates, foreign guest exclusion, persistent origin after circle removal, and three actual native event-option executions.",
+    "Existing selected factions in old saves are preserved. Already queued native notifications are not erased.",
+    "Global engine error-log gates still report existing registration diagnostics; passing scoped assertions does not mean global zero-error engine status."
+  ],
+  "source_manifest_sha256": "cedc43da2b9758a245c7e99ec499119e356574eca1c304bf45fc85464294346d",
+  "evidence": {
+    "archive": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\v040-presentation-20261021\\engine-evidence.zip",
+    "archive_bytes": 123841626,
+    "verified_files": 630,
+    "verified_saves": 4,
+    "removed_scratch_logical_bytes": 1921112466
+  }
+}

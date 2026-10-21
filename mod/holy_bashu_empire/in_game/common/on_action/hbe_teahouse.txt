@@ -1,0 +1,2 @@
+﻿monthly_country_pulse = { on_actions = { hbe_teahouse_pulse } }
+hbe_teahouse_pulse = { trigger = { is_member_of_international_organization = international_organization:hbe_empire } effect = { hbe_teahouse_relieve_burden = yes } }

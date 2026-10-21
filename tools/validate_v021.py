@@ -98,7 +98,7 @@ def validate(root):
    check(r['id']+' three distinct effect choices',len(opts)==3 and len({re.sub(r'name = \S+|ai_chance = \{[^}]*\}', '',x).strip() for x in opts})==3)
   check('21 regional arrangements and two spending bonuses resolve',len(sb)==23 and all(k in sb for k in re.findall(r'modifier = (hbe_choice_\w+|hbe_event_\w+)',events)))
   check('no negative gold choice lacks an affordability check',all('gold >=' in body for k,body in eb.items() if (k in {r['id'] for r in catalogue} and re.search(r'add_gold = -[1-9]',body))))
-  check('long-term choices explicitly exclude each other',all(eb[f'hbe_banquet.{100+n}'].count('remove_country_modifier = hbe_choice_')==9 for n in range(21)))
+  check('long-term choices explicitly exclude only existing alternatives',all(eb[f'hbe_banquet.{100+n}'].count('remove_country_modifier = hbe_choice_')==(6 if 'presentation_v040' in manifest else 9) for n in range(21)))
   check('choice modifiers have balanced native syntax',bool(blocks(static)))
  if 'art_v021' in manifest:
   import struct

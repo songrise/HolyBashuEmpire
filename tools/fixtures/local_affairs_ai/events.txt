@@ -1,0 +1,50 @@
+namespace = hbe_af_ai_test
+hbe_af_ai_test.1 = { type = country_event hidden = yes title = hbe_af_project_1 immediate = {
+ hbe_af_initialize = yes hbe_af_migrate_expiry = yes
+ remove_variable = hbe_af_active remove_variable = hbe_af_wait
+ remove_variable = hbe_af_ai_last_month remove_variable = hbe_af_ai_personality
+ set_variable = hbe_af_no_national set_variable = hbe_af_no_local
+ hbe_af_auto_choose = yes
+ if = { limit = { NOT = { has_variable = hbe_af_ai_last_month } NOT = { has_variable = hbe_af_ai_personality } }
+  set_variable = hbe_af_ai_no_candidate_pass
+ } else = { set_variable = hbe_af_ai_test_fail }
+ add_gold = 1000
+ set_variable = { name = hbe_af_budget value = 10000 }
+ set_variable = { name = hbe_af_spent value = 0 }
+ set_variable = { name = hbe_af_reserve value = 0 }
+ set_variable = { name = hbe_af_limit value = 70 }
+ set_variable = { name = hbe_burden value = 20 }
+ set_variable = { name = hbe_af_national value = 1 }
+ remove_variable = hbe_af_no_national
+ set_variable = { name = hbe_af_budget value = 0 }
+ hbe_af_auto_choose = yes
+ if = { limit = { NOT = { has_variable = hbe_af_ai_last_month } NOT = { has_variable = hbe_af_ai_personality } }
+  set_variable = hbe_af_ai_unaffordable_pass
+ } else = { set_variable = hbe_af_ai_test_fail }
+ set_variable = { name = hbe_af_budget value = 10000 }
+ hbe_af_auto_choose = yes
+ if = { limit = { has_variable = hbe_af_ai_last_month OR = { var:hbe_af_ai_personality = 1 var:hbe_af_ai_personality = 2 } }
+  set_variable = hbe_af_ai_eligible_pass
+ } else = { set_variable = hbe_af_ai_test_fail }
+ set_variable = { name = hbe_af_ai_saved_month value = var:hbe_af_ai_last_month }
+ set_variable = { name = hbe_af_ai_saved_personality value = var:hbe_af_ai_personality }
+ # Release the round only in this fixture, then verify there is no same-month reroll.
+ remove_variable = hbe_af_active
+ set_variable = { name = hbe_af_ai_saved_gold value = gold }
+ set_variable = { name = hbe_af_ai_saved_burden value = var:hbe_burden }
+ hbe_af_auto_choose = yes hbe_af_auto_choose = yes
+ if = { limit = { NOT = { has_variable = hbe_af_active } gold = var:hbe_af_ai_saved_gold var:hbe_burden = var:hbe_af_ai_saved_burden var:hbe_af_ai_last_month = var:hbe_af_ai_saved_month }
+  set_variable = hbe_af_ai_same_month_pass
+ } else = { set_variable = hbe_af_ai_test_fail }
+ set_variable = hbe_af_no_national
+ trigger_event_silently = { id = hbe_af_ai_test.2 days = 35 }
+} }
+hbe_af_ai_test.2 = { type = country_event hidden = yes title = hbe_af_project_1 immediate = {
+ remove_variable = hbe_af_no_national
+ set_variable = { name = hbe_af_national value = 1 }
+ hbe_af_auto_choose = yes
+ if = { limit = { var:hbe_af_ai_last_month > var:hbe_af_ai_saved_month var:hbe_af_ai_personality = var:hbe_af_ai_saved_personality }
+  set_variable = hbe_af_ai_next_month_pass
+ } else = { set_variable = hbe_af_ai_test_fail }
+ if = { limit = { NOT = { has_variable = hbe_af_ai_test_fail } } set_variable = hbe_af_ai_test_pass }
+} }

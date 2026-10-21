@@ -30,7 +30,7 @@ def direct_values(text):
     return result
 
 
-def evaluate(text, advances, member=True, pending=False, tag_history=()):
+def evaluate(text, advances, member=True, pending=False, tag_history=(), origin=None, definitions=None):
     """Evaluate the qualification subset without discarding repeated predicates."""
     def terms(source):
         result=[]
@@ -48,8 +48,11 @@ def evaluate(text, advances, member=True, pending=False, tag_history=()):
                 key,value=token.value,stream[i+2].value
                 if key=='has_advance':result.append(value in advances)
                 elif key=='has_or_had_tag':result.append(value in tag_history)
-                elif key=='is_member_of_international_organization':result.append(member)
+                elif key=='is_member_of_international_organization':result.append(member if value=='international_organization:hbe_empire' else value=='international_organization:hbe_circle_'+str(origin))
                 elif key=='has_variable' and value=='hbe_research_pending':result.append(pending)
+                elif key=='has_variable' and value.startswith('hbe_home_'):result.append(value=='hbe_home_'+str(origin))
+                elif key=='has_variable' and value=='hbe_initialized':result.append(origin is not None)
+                elif definitions and key in definitions:result.append(all(terms(definitions[key])))
                 elif key=='always':result.append(value=='yes')
                 elif key!='text':raise AssertionError('Unrecognized trigger scalar: '+key)
         return result
@@ -142,7 +145,11 @@ def validate(mod, root, game, manifest, check):
         potential=next(advances[stem][a:b] for key,_,a,b,_ in blocks(advances[stem],0) if key=='potential')
         expected_tags={country['tag'] for country in manifest['countries'] if country['region']==row['region']}
         actual_tags=set(re.findall(r'has_or_had_tag\s*=\s*(\w+)',potential))
-        check(stem+' is visible only to its originating circle before any research',actual_tags==expected_tags and
+        origin_definitions={}
+        if 'presentation_v040' in manifest:
+            origin_text=(mod/'in_game/common/scripted_triggers/hbe_research_origins.txt').read_text(encoding='utf-8-sig')
+            origin_definitions={k:origin_text[a:b] for k,_,a,b,_ in blocks(origin_text,0)}
+        check(stem+' is visible only to its originating circle before any research',(('hbe_research_origin_'+row['region']+' = yes' in potential) if origin_definitions else actual_tags==expected_tags) and
               not any(word in potential for word in ('has_advance','has_variable',licensed,'is_member_of_international_organization')))
         check(stem+' actual industry eligibility also enforces origin and its original building advance',
               set(re.findall(r'has_or_had_tag\s*=\s*(\w+)',triggers[licensed]))==expected_tags and
@@ -152,7 +159,7 @@ def validate(mod, root, game, manifest, check):
         all_licenses={row['building_advance'],'hbe_guest_license_'+row['region'],'hbe_inherited_industry_license_'+row['region']}
         for country in manifest['countries']:
             history={country['tag']};native=country['region']==row['region'];label=stem+' '+country['tag']
-            check(label+' tree visibility matches originating circle',evaluate(potential,set(),tag_history=history)==native)
+            check(label+' tree visibility matches originating circle',evaluate(potential,set(),tag_history=history,origin=country['region'],definitions=origin_definitions)==native)
             check(label+' researched industry eligibility matches originating circle',evaluate(triggers[licensed],all_licenses,tag_history=history)==native)
             check(label+' industry qualification without transmission cannot operate sidework',not evaluate(expanded_ready,all_licenses,tag_history=history))
             check(label+' transmission without original industry research cannot operate sidework',not evaluate(expanded_ready,{stem},tag_history=history))
@@ -163,7 +170,7 @@ def validate(mod, root, game, manifest, check):
             keys=[row['building_advance'],'hbe_guest_license_'+row['region'],'hbe_inherited_industry_license_'+row['region']]
             held={key for key,selected in zip(keys,bits) if selected}
             check(stem+' only original industry research qualifies '+str(bits),evaluate(triggers[licensed],held,tag_history={native_tag})==bits[0])
-        check(stem+' keeps its originating right after forming a new tag',evaluate(potential,set(),tag_history={native_tag,'HQS'}))
+        check(stem+' keeps its originating right after forming a new tag',evaluate(potential,set(),tag_history={native_tag,'HQS'},origin=row['region'],definitions=origin_definitions))
         for member,pending in itertools.product((False,True),repeat=2):
             check(stem+f' research guard member={member} pending={pending}',evaluate(expanded_allow,{row['building_advance']},member,pending,{native_tag})==(member and not pending))
         inputs = {g: float(direct_values(methods[active])[g]) for g in row['inputs']}

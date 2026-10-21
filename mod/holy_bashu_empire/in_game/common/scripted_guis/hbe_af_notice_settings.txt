@@ -1,0 +1,3 @@
+﻿hbe_af_notice_mode_0 = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { set_variable = { name = hbe_af_notice_mode value = 0 } } }
+hbe_af_notice_mode_1 = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { set_variable = { name = hbe_af_notice_mode value = 1 } } }
+hbe_af_notice_mode_2 = { scope = country is_shown = { hbe_af_access = yes } is_valid = { hbe_af_access = yes } effect = { set_variable = { name = hbe_af_notice_mode value = 2 } } }

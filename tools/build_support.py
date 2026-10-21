@@ -3,6 +3,9 @@ from pathlib import Path
 import hashlib
 from contextlib import contextmanager
 from contextvars import ContextVar
+from io import BytesIO
+import os
+import tempfile
 
 
 _deferred_root = ContextVar("deferred_snapshot_root", default=None)
@@ -45,3 +48,26 @@ def write_preserving_format(path, text):
         return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(content)
+
+
+def save_png(path, image):
+    """Keep Pillow's PNG bytes, skip equal content, replace through a closed temporary file.
+
+    Reopening a recently read PNG with Pillow's w+b mode can fail on Windows.
+    The destination is never truncated if encoding or replacement fails.
+    """
+    path = Path(path)
+    buffer = BytesIO()
+    image.save(buffer, format='PNG')
+    content = buffer.getvalue()
+    if path.exists() and path.read_bytes() == content:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, temporary = tempfile.mkstemp(prefix=path.stem+'-', suffix='.tmp', dir=path.parent)
+    try:
+        with os.fdopen(fd, 'wb') as stream:
+            stream.write(content)
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)

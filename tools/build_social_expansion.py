@@ -15,6 +15,13 @@ MEMBER='is_member_of_international_organization = international_organization:hbe
 def identity(tags):return 'OR = { '+' '.join('has_or_had_tag = '+t for t in tags)+' }'
 def tech(g,i):return f'hbe_civic_{g}_{i}'
 def dv(k):return f"[ROOT.GetVariable('{k}').GetValue|0]"
+CIVIC_INTRO = {
+    'title': '地方事业待办',
+    'body': '府署收到了几份新提议：有的希望招来商人、筹措工料，有的请求修路、清渠或安置农户。办这些事需要钱，也需要人手，由本府决定先办哪一项。\n\n点击屏幕右下角的「地方事业」，可查看全国和地方两个候选项目，每次选择一个。卡片上会列出金币、役负、预计收益和所需时间。开工后自动推进，完工时会弹窗告知实际收益；未选择的项目到期后会自动换新。',
+    'button': '知道了。',
+}
+
+
 def burden(n):return f'change_variable = {{ name = hbe_burden add = {n} }} hbe_clamp_burden = yes'
 def yiqi(n):return f'change_variable = {{ name = hbe_yiqi add = {n} }} hbe_clamp_yiqi = yes'
 def pay(value='hbe_public_bill'):return f'add_gold = {{ value = {value} multiply = -1 }}'
@@ -169,7 +176,7 @@ hbe_civic_special_limit = {{
             loc[k]=name;loc[k+'_desc']=desc+'\n\n'+unlock;loc[k+'_effects']=unlock
             advances.append(f'''{k} = {{ age = {'age_1_traditions' if year<1437 else 'age_2_renaissance'} starting_technology_level = 99
  icon = {k} content_priority = 880 research_cost = {3 if i==1 else 4}
- potential = {{ {identity(tags if g=='common' else bygroup[g])} }}
+ potential = {{ hbe_research_origin_{g} = yes }}
  allow = {{ {MEMBER} current_year >= {year} {gate} NOT = {{ has_variable = hbe_research_pending }} }}
  requires = {parent} pure_tooltip_entry = {k}_effects {' '.join(unlocks[k])} }}''')
             advancedata.append(dict(key=k,name=name,group=g,year=year,parent=parent,logical_parent=logical_parent,allow=gate,unlocks=unlocks[k]))
@@ -190,7 +197,7 @@ hbe_civic_initialize = {
 }
 ''')
     loc['hbe_burden']='役负';loc['hbe_labor_policy']='民役议约';loc['hbe_office_count']='有效委任数'
-    event(1,'案房之外，还有乡里','一项渠工、一段栈道或一批岸仓货物，都需要有人实际承担。府库的案房能记下支出，却不能替乡里决定谁来服役，也不能使一道征令变成各方认可的议约。\n\n从今以后，本府将把地方事业所留的役负一并入册。府議公所、行会与乡社可以采取不同办法；将来圈署的委任，也须以真实交付而非一纸名号取得。',[('先看清本府能够承担什么。','', '',100)],scene='civic_council')
+    event(1,CIVIC_INTRO['title'],CIVIC_INTRO['body'],[(CIVIC_INTRO['button'],'', '',100)],scene='civic_council')
     ledgerbody='府议簿不只记录完成了什么，也记载由谁承办、由谁付费，以及未能随一次交付清除的负担。历任主持者应在旧约旁留下新签押，使乡里不必在每次换任后重新证明自己的责任。\n\n'+f"#T 本府公账#!\n@hbe_burden! [Concept('hbe_term_burden','役负')|e]：{dv('hbe_burden')} / 100。民役政策：{dv('hbe_labor_policy')}（0未立、1征办、2议办、3雇办）。\n有效圈署委任：{dv('hbe_office_count')} / 2。特色军现额：{dv('hbe_special_record')}。\n"+'\n'.join(OFFICES[i]+'：'+dv('hbe_office_'+r[0])+'（1在任、0未任）' for i,r in enumerate(regions))+'\n原版招募列表显示当前有效军额；役负70以上暂停新募。'
     event(2,'本府民役与委任簿',ledgerbody,[('合上簿册。','', '',100)],scene='civic_council')
     decision('hbe_civic_ledger','查看民役与委任簿',ledgerbody,'always = yes','trigger_event_non_silently = { id = hbe_civic.2 }',art='hbe_civil_ledger')

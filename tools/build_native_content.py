@@ -6,6 +6,7 @@ variable and its completion reward exactly once. DHE catalogue registration has
 zero autonomous chance, so existing event dispatch and cooldowns stay authoritative.
 """
 import hashlib,json,re
+from build_support import save_png
 from PIL import Image,ImageDraw,ImageFont
 from pdxscript import blocks,apply_edits
 from build_flags import save_dds
@@ -191,7 +192,7 @@ def build_native_content(out,root,countries,regions,nodes,loc,put,full_art,game)
     icon = {key}
     content_priority = {900-idx*10}
     research_cost = {1.5 if idx<2 else 2.5 if idx in (2,5) else 4.0}
-    potential = {{ OR = {{ {' '.join('has_or_had_tag = '+t for t in tags)} }} }}
+    potential = {{ hbe_research_origin_{group} = yes }}
     allow = {{ is_member_of_international_organization = international_organization:hbe_empire current_year >= {n['year']} {branch} NOT = {{ has_variable = hbe_research_pending }} }}
     requires = {parent}
     pure_tooltip_entry = {key}_effects
@@ -297,9 +298,11 @@ hbe_native_content_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_
     picture_rows=[];proof=Image.new('RGB',(1800,7*210+65),'#302a23');d=ImageDraw.Draw(proof);font=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',16)
     d.text((15,10),'70 项决议配图 · 原版 540:220 比例 / 科技图标仅用于科技树',font=font,fill='#ead59b')
     for i,e in enumerate(full_art['decision_pictures']):
-        sprite=fit(Image.open(root/'assets/decision_pictures'/f'{e["key"]}.png'),380)
+        # Close the PNG input before replacing that same generated source file on Windows.
+        with Image.open(root/'assets/decision_pictures'/f'{e["key"]}.png') as source:
+            sprite=fit(source,380).copy()
         card=Image.new('RGBA',(1080,440));card.alpha_composite(sprite,((1080-380)//2,(440-380)//2))
-        target=out/e['image'];save_dds(target,card);card.save(root/'assets/decision_pictures'/f'{e["key"]}.png')
+        target=out/e['image'];save_dds(target,card);save_png(root/'assets/decision_pictures'/f'{e["key"]}.png',card)
         e['sha256']=hashlib.sha256(target.read_bytes()).hexdigest();e['dimensions']=[1080,440]
         thumb=card.resize((180,74),Image.Resampling.LANCZOS);x=(i%10)*180;y=(i//10)*210+55
         proof.paste(thumb,(x,y),thumb);d.text((x+3,y+90),e['name'][:10],font=font,fill='#ead59b')

@@ -7,29 +7,31 @@ hbe_banquet_clamp = {
     if = { limit = { var:hbe_dispute < 0 } set_variable = { name = hbe_dispute value = 0 } }
 }
 
-hbe_banquet_register = {
- if = { limit = { NOT = { has_variable = hbe_banquet_joined } }
-  hbe_initialize = yes set_variable = hbe_banquet_joined set_variable = { name = hbe_contribution value = 0 }
-  if = { limit = { OR = { has_or_had_tag = BAB has_or_had_tag = BAF has_or_had_tag = BAL has_or_had_tag = BAP has_or_had_tag = BAW has_or_had_tag = BAZ has_or_had_tag = BBC has_or_had_tag = BBF has_or_had_tag = BBI has_or_had_tag = BBL has_or_had_tag = BBN has_or_had_tag = BBP has_or_had_tag = BBR has_or_had_tag = BBT has_or_had_tag = BBV has_or_had_tag = BBX has_or_had_tag = BBZ has_or_had_tag = BCB } } set_variable = { name = hbe_stance value = 1 } } else = { set_variable = { name = hbe_stance value = 2 } }
-  trigger_event_non_silently = { id = hbe_banquet.1 days = 1 }
- } hbe_feast_sync_party = yes
-}
+hbe_banquet_register = {if = { limit = { NOT = { has_variable = hbe_banquet_joined } }
+ hbe_initialize = yes set_variable = hbe_banquet_joined set_variable = { name = hbe_contribution value = 0 }
+ set_variable = { name = hbe_stance value = 0 }
+ trigger_event_non_silently = { id = hbe_banquet.1 days = 1 }
+} hbe_feast_sync_party = yes}
 hbe_choose_stance_1 = {if = { limit = { NOT = { var:hbe_stance = 1 } NOT = { has_variable = hbe_stance_cooldown } }
  save_scope_as = hbe_party_departing
- international_organization:hbe_local_party ?= { every_international_organization_member = {
-  limit = { NOT = { this = scope:hbe_party_departing } }
-  add_opinion = { modifier = hbe_left_feast_party target = scope:hbe_party_departing }
- } }
+ if = { limit = { is_member_of_international_organization = international_organization:hbe_local_party }
+  international_organization:hbe_local_party = { every_international_organization_member = {
+   limit = { NOT = { this = scope:hbe_party_departing } }
+   add_opinion = { modifier = hbe_left_feast_party target = scope:hbe_party_departing }
+  } }
+ }
  set_variable = { name = hbe_stance value = 1 }
  set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
  hbe_feast_sync_party = yes
 }}
 hbe_choose_stance_2 = {if = { limit = { NOT = { var:hbe_stance = 2 } NOT = { has_variable = hbe_stance_cooldown } }
  save_scope_as = hbe_party_departing
- international_organization:hbe_common_party ?= { every_international_organization_member = {
-  limit = { NOT = { this = scope:hbe_party_departing } }
-  add_opinion = { modifier = hbe_left_feast_party target = scope:hbe_party_departing }
- } }
+ if = { limit = { is_member_of_international_organization = international_organization:hbe_common_party }
+  international_organization:hbe_common_party = { every_international_organization_member = {
+   limit = { NOT = { this = scope:hbe_party_departing } }
+   add_opinion = { modifier = hbe_left_feast_party target = scope:hbe_party_departing }
+  } }
+ }
  set_variable = { name = hbe_stance value = 2 }
  set_variable = { name = hbe_stance_cooldown value = yes years = 5 }
  hbe_feast_sync_party = yes

@@ -1,0 +1,56 @@
+{
+  "version": "0.4.0",
+  "source_manifest_sha256": "6930b33c9e62f9659b65228b3c0cb3bf0081d907184e479c519797222ad90fea",
+  "static_check_count": 5373,
+  "controlled_engine_flags": [
+    "guild_pass_locked",
+    "guild_pass_permission",
+    "guild_pass_sponsor",
+    "guild_pass_origin",
+    "guild_pass_local_bonus",
+    "guild_pass_no_double",
+    "guild_pass_locked_variant",
+    "guild_pass_local_target",
+    "guild_pass_special_reward",
+    "guild_pass_apprentice_pop",
+    "guild_pass_teahouse_unlock",
+    "guild_pass_teahouse_cap",
+    "guild_pass_teahouse_relief",
+    "guild_pass_burden_clamp"
+  ],
+  "controlled_sponsor_fixture": true,
+  "native_research_test_steps": "grants and modifier assertions on separate dates",
+  "relevant_engine_errors": [],
+  "engine_global_gate": "Existing registration diagnostics remain; native fixture read from saved markers",
+  "visual_verified": false,
+  "profile": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\guild-affairs-engine-20261022",
+  "new_guild_roles": {
+    "national": 3,
+    "local": 3
+  },
+  "merged_project_ids": [
+    3,
+    7,
+    10,
+    13
+  ],
+  "new_project_ids": [
+    17,
+    18
+  ],
+  "teahouse": {
+    "parent": "hbe_tech_common_3",
+    "cap": 5,
+    "monthly_relief_per_effective_level": 0.5,
+    "local_assimilation_per_level": 0.1
+  },
+  "notice_settings": {
+    "native_widgets": true,
+    "completion_only": true,
+    "modes": [
+      "all",
+      "great_only",
+      "none"
+    ]
+  }
+}

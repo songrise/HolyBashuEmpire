@@ -1,0 +1,21 @@
+﻿types HbeAffairsNoticeSettings {
+type HbeAffairsNoticeSettingsMenu = ContextMenuBase {
+blockoverride "contextmenu_content" {
+ContextMenuSection = {
+blockoverride "title_icon" {}
+blockoverride "title_text" { text = "HBE_AF_NOTICE_SETTINGS" }
+blockoverride "contextmenu_entries" { vbox = { spacing = 3 button_regular = { layoutpolicy_horizontal = expanding size = { 300 35 }
+onclick = "[GetScriptedGui('hbe_af_notice_mode_0').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+hbox = { margin = { 10 0 } spacing = 10
+icon = { size = { 22 22 } using = button_checkbox_template frame = "[Select_int32(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_notice_mode').GetValue, '(CFixedPoint)0'), '(int32)2', '(int32)1')]" }
+text_single = { layoutpolicy_horizontal = expanding text = "hbe_af_notice_mode_0" } } } button_regular = { layoutpolicy_horizontal = expanding size = { 300 35 }
+onclick = "[GetScriptedGui('hbe_af_notice_mode_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+hbox = { margin = { 10 0 } spacing = 10
+icon = { size = { 22 22 } using = button_checkbox_template frame = "[Select_int32(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_notice_mode').GetValue, '(CFixedPoint)1'), '(int32)2', '(int32)1')]" }
+text_single = { layoutpolicy_horizontal = expanding text = "hbe_af_notice_mode_1" } } } button_regular = { layoutpolicy_horizontal = expanding size = { 300 35 }
+onclick = "[GetScriptedGui('hbe_af_notice_mode_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+hbox = { margin = { 10 0 } spacing = 10
+icon = { size = { 22 22 } using = button_checkbox_template frame = "[Select_int32(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_notice_mode').GetValue, '(CFixedPoint)2'), '(int32)2', '(int32)1')]" }
+text_single = { layoutpolicy_horizontal = expanding text = "hbe_af_notice_mode_2" } } } } }
+} } }
+}

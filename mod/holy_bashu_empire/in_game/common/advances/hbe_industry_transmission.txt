@@ -5,7 +5,7 @@
     content_priority = 830
     icon = hbe_transmission_embroidery
     requires = renaissance_development
-    potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+    potential = { hbe_research_origin_chengdu_plain = yes }
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_embroidery_license = yes
@@ -25,7 +25,7 @@ hbe_transmission_well_salt = {
     content_priority = 830
     icon = hbe_transmission_well_salt
     requires = renaissance_development
-    potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+    potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_well_salt_license = yes
@@ -44,7 +44,7 @@ hbe_transmission_paper = {
     content_priority = 830
     icon = hbe_transmission_paper
     requires = hbe_tech_northern_shudao_6
-    potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+    potential = { hbe_research_origin_northern_shudao = yes }
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_paper_license = yes
@@ -63,7 +63,7 @@ hbe_transmission_border_tea = {
     content_priority = 830
     icon = hbe_transmission_border_tea
     requires = renaissance_development
-    potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+    potential = { hbe_research_origin_western_tea_horse = yes }
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_border_tea_license = yes

@@ -12,15 +12,20 @@ def validate(mod,root,game,manifest,check):
     definitions={}
     for rel in ('in_game/common/advances/hbe_advances.txt','in_game/common/advances/hbe_civic_advances.txt',MIL_FILE,'in_game/common/advances/hbe_industry_transmission.txt'):
         text=read(rel);definitions.update({key:text[a:b] for key,_,a,b,_ in blocks(text,0)})
-    check('91 base research nodes plus later local-affairs additions',len(definitions)==91 and manifest['research_nodes']==91+manifest.get('local_affairs_research',{}).get('advance_count',0) and len(blocks(read(MIL_FILE),0))==7)
+    check('91 base research nodes plus later local-affairs additions',len(definitions)==91 and manifest['research_nodes']==91+manifest.get('local_affairs_research',{}).get('advance_count',0)+manifest.get('civic_teahouse',{}).get('advance_count',0) and len(blocks(read(MIL_FILE),0))==7)
     units=read('in_game/common/unit_types/hbe_civic_units.txt');unit_defs={key:units[a:b] for key,_,a,b,_ in blocks(units,0)}
     buildings=read('in_game/common/building_types/hbe_civic_buildings.txt');building_defs={key:buildings[a:b] for key,_,a,b,_ in blocks(buildings,0)}
     unit_unlocks={unit:[key for key,body in definitions.items() if re.search(r'\bunlock_unit\s*=\s*'+re.escape(unit)+r'\b',body)] for unit in unit_defs}
     for row in config['military']:
         key=military_key(row);body=definitions[key];values={k:v for k,v,_,_ in scalars(body)};region=row['region']
         expected={c['tag'] for c in manifest['countries'] if c['region']==region}
-        tags=set(re.findall(r'has_or_had_tag\s*=\s*(\w+)',body))
-        check(key+' retains stable originating-circle visibility',tags==expected and 'has_variable = hbe_home' not in body)
+        if 'presentation_v040' in manifest:
+            origin=manifest['presentation_v040']['research_origins'][key]
+            tags={c['tag'] for c in manifest['countries'] if c['region']==origin}
+            check(key+' retains stable originating-circle visibility',origin==region and 'hbe_research_origin_'+region+' = yes' in body and 'has_or_had_tag' not in body)
+        else:
+            tags=set(re.findall(r'has_or_had_tag\s*=\s*(\w+)',body))
+            check(key+' retains stable originating-circle visibility',tags==expected and 'has_variable = hbe_home' not in body)
         for country in manifest['countries']:
             check(key+' visible only to '+country['tag']+' native circle',(country['tag'] in tags)==(country['region']==region))
         check(key+' researched separately in age one after the regional foundation',values['age']=='age_1_traditions' and values['requires']=='hbe_tech_'+region+'_1' and values['starting_technology_level']=='99' and float(values['research_cost'])==config['military_cost'])
@@ -62,6 +67,6 @@ def validate(mod,root,game,manifest,check):
     privileges=read('in_game/common/estate_privileges/hbe_civic_privileges.txt');priv_defs={key:privileges[a:b] for key,_,a,b,_ in blocks(privileges,0)}
     check('estate guarantees moved to their own thematic civilian research','has_advance = hbe_tech_common_2' in priv_defs['hbe_village_witnesses'] and 'has_advance = hbe_tech_common_5' in priv_defs['hbe_guild_payment_guarantee'])
     for lang in ('simp_chinese','english'):
-        text=read(f'main_menu/localization/{lang}/hbe_early_research_l_{lang}.yml')
+        text=read(f'main_menu/localization/{lang}/hbe_early_research_l_{lang}.yml')+read(f'main_menu/localization/{lang}/hbe_permission_descriptions_l_{lang}.yml')
         check(lang+' has all military labels descriptions and native modifier labels',all(k in text for k in ['MODIFIER_TYPE_NAME_'+permission,'MODIFIER_TYPE_DESC_'+permission]+[military_key(row)+'_desc' for row in config['military']]))
     check('new research never overrides the global advance GUI',not (mod/'main_menu/gui/shared/advances_tooltips.gui').exists())

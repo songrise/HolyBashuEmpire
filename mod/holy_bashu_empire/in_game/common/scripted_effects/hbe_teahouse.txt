@@ -1,0 +1,6 @@
+﻿hbe_teahouse_relieve_burden = {
+ if = { limit = { is_member_of_international_organization = international_organization:hbe_empire hbe_teahouse_monthly_relief > 0 }
+ change_variable = { name = hbe_burden subtract = hbe_teahouse_monthly_relief }
+ hbe_clamp_burden = yes
+ }
+}

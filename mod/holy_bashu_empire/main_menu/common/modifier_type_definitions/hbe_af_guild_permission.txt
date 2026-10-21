@@ -1,0 +1,1 @@
+﻿hbe_af_allow_guild_projects = { boolean = yes game_data = { category = country } }

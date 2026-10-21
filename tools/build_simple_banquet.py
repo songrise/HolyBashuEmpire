@@ -71,10 +71,8 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  for key,source in [('hbe_common_party','hbe_circle_chengdu_plain'),('hbe_local_party','hbe_circle_southern_salt_wine')]:
   target=icon/(key+'.dds');original=icon/(source+'.dds');assert original.exists(),original
   shutil.copyfile(original,target)
- majority={c['tag'] for n,c in enumerate(countries) if n%2==0}
- initial='OR = { '+' '.join('has_or_had_tag = '+t for t in sorted(majority))+' }'
  sync='''
- if = { limit = { OR = { NOT = { has_variable = hbe_stance } var:hbe_stance > 2 } } set_variable = { name = hbe_stance value = 2 } }
+ if = { limit = { has_variable = hbe_stance var:hbe_stance > 2 } set_variable = { name = hbe_stance value = 2 } }
  if = { limit = { NOT = { has_variable = hbe_feast_points } } set_variable = { name = hbe_feast_points value = 0 } }
 '''
  for i,(key,name) in names.items():
@@ -88,7 +86,7 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  replacements['hbe_banquet_register']=f'''
  if = {{ limit = {{ NOT = {{ has_variable = hbe_banquet_joined }} }}
   hbe_initialize = yes set_variable = hbe_banquet_joined set_variable = {{ name = hbe_contribution value = 0 }}
-  if = {{ limit = {{ {initial} }} set_variable = {{ name = hbe_stance value = 1 }} }} else = {{ set_variable = {{ name = hbe_stance value = 2 }} }}
+  set_variable = {{ name = hbe_stance value = 0 }}
   trigger_event_non_silently = {{ id = hbe_banquet.1 days = 1 }}
  }} hbe_feast_sync_party = yes
 '''
@@ -201,9 +199,9 @@ hbe_simple_feast_country = { trigger = { hbe_is_prince = yes } effect = {
  if = { limit = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire }
   hbe_banquet_register = yes
   if = { limit = { has_variable = hbe_project_pending NOT = { has_variable = hbe_project_timer } } hbe_deliver_contract = yes }
- } else = {
-  international_organization:hbe_common_party ?= { remove_country_from_international_organization = prev }
-  international_organization:hbe_local_party ?= { remove_country_from_international_organization = prev }
+ } else_if = { limit = { NOT = { is_member_of_international_organization = international_organization:hbe_empire } }
+  if = { limit = { is_member_of_international_organization = international_organization:hbe_common_party } international_organization:hbe_common_party = { remove_country_from_international_organization = prev } }
+  if = { limit = { is_member_of_international_organization = international_organization:hbe_local_party } international_organization:hbe_local_party = { remove_country_from_international_organization = prev } }
  }
 } }
 ''')

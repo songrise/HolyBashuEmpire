@@ -11,6 +11,7 @@ CONFIG = 'data/local_affairs_research.json'
 ADVANCES = 'in_game/common/advances/hbe_af_advances.txt'
 LARGE = 'hbe_af_allow_large_investment'
 REFRESH = 'hbe_af_allow_local_refresh'
+LOCAL_REWARDS = 'hbe_af_local_reward_modifier'
 
 
 def build(out, root, put, loc, manifest):
@@ -36,6 +37,7 @@ def build(out, root, put, loc, manifest):
  allow = {{ is_member_of_international_organization = international_organization:hbe_empire NOT = {{ has_variable = hbe_research_pending }} }}
  requires = {row['parent']}
  {permission} = yes
+ {LOCAL_REWARDS+' = '+str(row['local_reward_bonus']) if 'local_reward_bonus' in row else ''}
  ai_weight = {{ add = 20 }}
 }}''')
         types.append(f'{permission} = {{ boolean = yes game_data = {{ category = country }} }}')
@@ -53,6 +55,11 @@ def build(out, root, put, loc, manifest):
         save_dds(out / ('main_menu/'+icon), fit(sprite, 128))
         art.append(dict(key=key, source=row['source'], source_sha256=sha256_file(root/row['source']),
                         sprite=sprite_path.relative_to(root).as_posix()))
+        if 'local_reward_bonus' in row:
+            types.append(f'{LOCAL_REWARDS} = {{ percent = yes game_data = {{ category = country }} }}')
+            icons.append(f'{LOCAL_REWARDS} = {{ positive = "{icon}" negative = "{icon}" }}')
+            loc[LOCAL_REWARDS]=loc['MODIFIER_TYPE_NAME_'+LOCAL_REWARDS]='地方事业收益'
+            loc['MODIFIER_TYPE_DESC_'+LOCAL_REWARDS]='提高地方候选项目的人口、研究、金币等数量型奖励，并延长其限时修正。建筑等级和道路仍按完整一项结算；全国项目、费用与工期不变。'
     put(ADVANCES, '\n\n'.join(advances)+'\n')
     put('main_menu/common/modifier_type_definitions/hbe_af_permissions.txt', '\n'.join(types)+'\n')
     put('main_menu/common/modifier_icons/hbe_af_permissions.txt', '\n'.join(icons)+'\n')

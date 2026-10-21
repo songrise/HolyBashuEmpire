@@ -98,8 +98,8 @@ def apply(out,root,game):
     building_moves={b:military_key(row) for row in military for b in row['buildings']};building_moves['hbe_community_granary']='hbe_tech_central_hills_1'
     military_nodes=[];triggers=[];entries={lang:{} for lang in ('simp_chinese','english')}
     for row in military:
-        region=row['region'];key=military_key(row);tags=[c['tag'] for c in manifest['countries'] if c['region']==region]
-        identity='OR = { '+' '.join('has_or_had_tag = '+tag for tag in tags)+' }'
+        region=row['region'];key=military_key(row)
+        identity='hbe_research_origin_'+region+' = yes'
         military_nodes.append(f'''{key} = {{
  age = age_1_traditions starting_technology_level = 99 research_cost = {config['military_cost']:g}
  icon = {key} content_priority = 875

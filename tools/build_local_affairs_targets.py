@@ -24,6 +24,10 @@ def condition(p):
     for r in p['rewards']:
         if r['type']=='building': base+='OR = { '+' '.join('AND = { '+building_condition(b)+' }' for b in r['choices'])+' } '
         if r['type']=='road': base+='any_neighbor_location = { owner = root controller = root is_connected_to = prev NOT = { has_road_to = prev } } '
+    if p.get('target_industry') and not has_reward(p,'building'):
+        kinds=' '.join('building_type = building_type:'+b for b in p['target_industry'])
+        active=' building_employed_amount >= 0.05' if p.get('target_active_industry') else ''
+        base+='any_buildings_in_location = { OR = { '+kinds+' }'+active+' } '
     return base
 
 
@@ -36,6 +40,13 @@ def choose(p):
     elif has_reward(p,'population'):
         preferences=['hbe_af_short_workers = yes','population < 20']
     else: preferences=['population >= 15']
+    if p.get('guild_role')=='apprentices':
+        kinds=' '.join('building_type = building_type:'+b for b in p['target_industry'])
+        preferences=['any_buildings_in_location = { OR = { '+kinds+' } building_employed_amount < 0.05 }','population < 20']
+    if p.get('guild_role'):
+        from build_local_affairs_guilds import local_sponsor, config
+        supplied='OR = { '+' '.join('AND = { '+local_sponsor(b)+' }' for b in config()['sponsor_buildings'])+' }'
+        preferences=[supplied+' '+preferences[0],preferences[0],supplied]+preferences[1:]
     parts=[]
     for i,pref in enumerate(preferences):
         parts.append(('if' if i==0 else 'else_if')+' = { limit = { any_owned_location = { '+base+pref+' } } random_owned_location = { limit = { '+base+pref+' } save_scope_as = hbe_af_draw_location } }')

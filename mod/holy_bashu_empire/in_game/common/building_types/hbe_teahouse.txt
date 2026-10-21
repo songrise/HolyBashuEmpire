@@ -1,0 +1,12 @@
+﻿hbe_public_teahouse = {
+ is_special = yes is_foreign = no forbidden_for_estates = yes
+ category = government_category pop_type = burghers employment_size = 0.1
+ max_levels = 5 build_time = 360 construction_demand = hbe_institution_construction
+ town = yes city = yes megalopolis = yes
+ country_potential = { is_member_of_international_organization = international_organization:hbe_empire }
+ location_potential = { is_in_scripted_geography = scripted_geography:hbe_domain }
+ allow = { scope:actor = { has_advance = hbe_teahouse_public_deliberation total_building_levels_including_construction:hbe_public_teahouse < 5 } }
+ modifier = { hbe_teahouse_monthly_burden_relief = 0.5 local_pop_assimilation_speed_modifier = 0.1 }
+ unique_production_methods = { hbe_public_teahouse_maintenance = { icon_type = building_type icon = hbe_public_teahouse tea = 0.1 paper = 0.02 category = building_maintenance } }
+ ai_construct_weight = { value = 0.5 if = { limit = { scope:owner = { var:hbe_burden >= 40 } } add = 1 } }
+}

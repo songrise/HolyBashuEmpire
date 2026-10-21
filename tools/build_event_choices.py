@@ -57,6 +57,8 @@ REGIONS=[
 
 def build_event_choices(out,root,loc,put,game):
  static=[];catalog=[]
+ def replace_arrangement(group,selected):
+  return ' '.join(f'if = {{ limit = {{ has_country_modifier = hbe_choice_{group}_{x} }} remove_country_modifier = hbe_choice_{group}_{x} }}' for x in range(1,4) if f'hbe_choice_{group}_{x}'!=selected)
  def guided(prose,group):
   term,words={'chengdu_plain':('water',['渠工','分水','岁修']), 'southern_salt_wine':('salt',['盐井','盐引','井灶']), 'eastern_river':('river',['船帮','江防','商运']), 'northern_shudao':('roads',['驿役','驿站','轮戍']), 'central_hills':('grain',['粮食','义仓','仓廒']), 'western_tea_horse':('tea',['茶市','护行','互市']), 'southwestern_valleys':('valleys',['乡寨','乡约','谷市'])}[group]
   word=next((w for w in words if w in prose),None)
@@ -83,11 +85,11 @@ def build_event_choices(out,root,loc,put,game):
     key=f'hbe_choice_{group}_{ci+1}'
     if stage==0:
      static.append(key+' = { '+' '.join(f'{k} = {v:g}' for k,v in mods.items())+' }')
-     loc[key]=['官府督办','府库出资','地方自理'][ci]+'：'+title
+     loc[key]=['官府督办','府库出资','地方自理'][ci]+'·'+title
      loc['STATIC_MODIFIER_NAME_'+key]=loc[key];loc['STATIC_MODIFIER_DESC_'+key]='此项安排维持三年，同名效果刷新期限。'
     effects=f'add_gold = {gold} change_variable = {{ name = hbe_burden add = {burden} }} hbe_clamp_burden = yes change_variable = {{ name = hbe_yiqi add = {credit} }} hbe_clamp_yiqi = yes add_country_modifier = {{ modifier = {key} years = 3 mode = replace }}'
     # Switching arrangements replaces the earlier choice, preventing parallel stacking.
-    effects=' '.join(f'remove_country_modifier = hbe_choice_{group}_{x}' for x in range(1,4))+ ' '+effects
+    effects=replace_arrangement(group,key)+' '+effects
     opts.append(option(event,chr(97+ci),label,effects,'gold >= '+str(-gold) if gold<0 else '',[35,40,25][ci]))
    changes[event]=opts;catalog.append(dict(id=event,title=title,choices=[dict(label=c[0],modifiers=c[1],gold=c[2],burden=c[3],credit=c[4],years=3) for c in choices]))
   # Seven recurrent regional incidents now offer the same region's full policy
@@ -108,8 +110,9 @@ def build_event_choices(out,root,loc,put,game):
    for ci,(k,_,s,e,_) in enumerate(z for z in blocks(body,0) if z[0]=='option'):
     original=body[s:e];key=f'hbe_choice_{group}_{[2,3,1][ci]}'
     # Remove only the previous generated part when rebuilding.
+    original=apply_edits(original,[(a,z,'') for k,a,c,d,z in blocks(original,0) if k=='if' and re.search(r'remove_country_modifier = hbe_choice_\w+',original[c:d])])
     original=re.sub(r'remove_country_modifier = hbe_choice_\w+|add_country_modifier = \{ modifier = hbe_choice_\w+ years = 3 mode = replace \}','',original)
-    extra=' '.join(f'remove_country_modifier = hbe_choice_{group}_{x}' for x in range(1,4))+f' add_country_modifier = {{ modifier = {key} years = 3 mode = replace }}'
+    extra=replace_arrangement(group,key)+f' add_country_modifier = {{ modifier = {key} years = 3 mode = replace }}'
     opts.append('option = {'+original.strip()+' '+extra+' }')
     loc[event+'.'+chr(97+ci)]=['府库付钱，给乡里减役。','动用地方储备，由乡社主持。','增征民役，加紧办完。'][ci]
    social_changes[event]=opts;catalog.append(dict(id=event,title=title,council_guards_preserved=True))

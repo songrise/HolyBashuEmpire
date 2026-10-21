@@ -1,5 +1,5 @@
 """Export painted shared scenes, organization art and decision sprite atlases."""
-from build_support import sha256_file as sha
+from build_support import sha256_file as sha, save_png
 import json, re
 from PIL import Image,ImageDraw,ImageFont,ImageOps
 from pdxscript import blocks,apply_edits
@@ -91,7 +91,7 @@ def build_full_art_assets(out,root,countries,regions,put,game):
             key=cell['key'];box=(round(i%5*atlas.width/5),round(i//5*atlas.height/2),round((i%5+1)*atlas.width/5),round((i//5+1)*atlas.height/2))
             sprite=fit(atlas.crop(box),192);card=Image.new('RGBA',(384,192));card.alpha_composite(sprite,(96,0))
             target=out/'main_menu/gfx/interface/hbe/decisions'/f'{key}.dds';save_dds(target,card)
-            png=root/'assets/decision_pictures'/f'{key}.png';png.parent.mkdir(parents=True,exist_ok=True);card.save(png)
+            png=root/'assets/decision_pictures'/f'{key}.png';save_png(png,card)
             decisions.append(dict(key=key,name=cell['name'],image=target.relative_to(out).as_posix(),sha256=sha(target),atlas=sheet['source'],cell=i,crop=list(box)))
             thumb=sprite.resize((130,130),Image.Resampling.LANCZOS);decision_proof.paste(thumb,(i*150+10,row*210+24),thumb)
             dd.text((i*150+5,row*210+160),cell['name'][:11],font=label,fill='#ead59b');dd.text((i*150+5,row*210+178),cell['name'][11:22],font=label,fill='#ead59b')

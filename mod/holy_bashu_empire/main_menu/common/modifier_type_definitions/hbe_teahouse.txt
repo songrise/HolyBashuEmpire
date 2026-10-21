@@ -1,0 +1,1 @@
+﻿hbe_teahouse_monthly_burden_relief = { game_data = { category = location } }

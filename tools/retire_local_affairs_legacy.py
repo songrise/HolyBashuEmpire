@@ -1,4 +1,5 @@
 """Remove the retired service loop after legacy content generators have run."""
+import json
 import re
 
 from build_support import write_preserving_format
@@ -122,3 +123,104 @@ def apply(out, put, regions):
                 line=re.sub(r'撤销前必须降低乡里压力，并终止尚未结算的(?:\[Concept\([^\]]+\)\|e\]|地方事业)','撤销时役负须低于40',line)
             lines.append(line)
         write_preserving_format(path,'\n'.join(lines)+'\n')
+    clean_descriptions(out)
+
+
+def clean_descriptions(out):
+    """Current rules only: no retired resource, timed-service or decision research guide."""
+    from build_technology_rewards import NETWORKS
+    replacements = {
+        'hbe_tech_common_5_effects': '可授予行会雇价保任；须采用行会雇办。',
+        'hbe_civic_common_2_effects': '可取得其他圈的产业建筑及基础兵种资格；须在目标圈拥有土地，满足政策、义气与费用条件，再分别办理准入。',
+        'game_concept_hbe_term_research_desc': '在革新树中选择科技并投入研究进度。前置科技与时代要求由科技卡列示；建筑、兵种、生产方式和经营权限以卡片实际效果为准。',
+        'game_concept_hbe_term_contribution_desc': '本国对会盟的累计贡献，不随领主更替清零。每届出资计1分；地方项目完工按投入、工期和实际成果计入小数贡献，每届项目贡献至多2分。大开席成员行悬浮显示本届构成。',
+        'game_concept_hbe_term_contract_desc': '共同事务应写明谁承担钱粮、如何交割以及所得成果。地方项目在右下角面板筹办，政治合作在大开席面板办理；具体费用、工期和收益以对应行动列示为准。',
+        'game_concept_hbe_term_saltproject_desc': '诸府围绕盐货与江运开展合作，会盟按实际出资和地方项目完工贡献结算。',
+        'game_concept_hbe_term_teaproject_desc': '诸府围绕茶货、商路与山谷贸易开展合作，会盟按实际出资和地方项目完工贡献结算。',
+        'game_concept_hbe_term_subsidy_desc': '会盟出资在大开席面板办理，每国每届一次，实际费用与贡献由按钮列示。',
+        'game_concept_hbe_term_audit_desc': '当前地方项目的费用与实际成果在项目卡和完工通知列示，本届贡献可在大开席面板查看。',
+        'game_concept_hbe_term_yiqi_desc': '本国合作信誉，范围0—100。用于部分政治、产业合作与经营资格；具体增减以行动效果列示为准。',
+        'game_concept_hbe_term_civic_policy_desc': '全国选择一种民役政策，五年内不能改换。地方项目按卡片费用办理：征办使役负增加25%，雇办使役负减少50%，议办按原数承担。',
+        'hbe.4.desc': '本府的义气：[ROOT.GetVariable(\'hbe_yiqi\').GetValue|0] / 100。\n帝国锅气：[GetUniqueInternationalOrganization(\'hbe_empire\').MakeScope.GetVariable(\'hbe_guoqi\').GetValue|0] / 100。\n\n地方项目请在右下角地方事业面板查看；会盟贡献与奖励在大开席面板查看，科技在革新树中研究。',
+        'hbe_civic.4.desc': '本届圈署委任已经到期，或本府不再满足机构运转、成员身份与役负条件。恢复相关条件后，可按委任决议列示的要求重新申请。',
+        'hbe_civic_audit.desc': '役负与工法整理可通过地方事业项目办理。',
+        'hbe_civic_revision.desc': '地方项目统一在地方事业面板筹办。',
+    }
+    for group,index,building,title,_,requirement,trigger in NETWORKS:
+        if re.search(r'var:hbe_(?:water|salt|river|roads|grain|tea|valleys)\b',trigger):
+            requirement='拥有运转中的本圈机构，或已完成本圈地方项目'
+        replacements[f'hbe_network_{group}_{index}_desc'] = f'{title}由本圈机构维持，须满足相关科技、机构运转、役负及卡片所列经营条件。'
+        # Replace just the network sentence, preserving unrelated unlocks and caps.
+        replacements[f'NETWORK:{group}:{index}'] = f'解锁“{title}”：${building}$正常运转、役负低于70，且{requirement}时生效；条件不满足时暂停。'
+    legacy_terms = {'water':'水利经营','salt':'盐业经营','river':'江运经营','roads':'关驿经营','grain':'仓粮经营','tea':'茶马经营','valleys':'山谷经营'}
+    replacements['hbe.4.desc']=replacements['hbe.4.desc'].replace('义气',"[Concept('hbe_term_yiqi', '义气')|e]",1)
+    replacements['hbe_civic.4.desc']=replacements['hbe_civic.4.desc'].replace('圈署委任',"[Concept('hbe_term_civic_office', '圈署委任')|e]",1)
+    total=0
+    for path in (out/'main_menu/localization').rglob('hbe*.yml'):
+        lines=[]
+        for line in path.read_text(encoding='utf-8-sig').splitlines():
+            m=re.match(r' (\S+):\s*(".*")\s*$',line)
+            if not m:lines.append(line);continue
+            key=m[1]
+            try:value=json.loads(m[2])
+            except ValueError:lines.append(line);continue
+            before=value
+            base=key.removesuffix('.entry')
+            if base in replacements:value=replacements[base]
+            if key.startswith('hbe_tech_') and key.endswith('_effects'):
+                value=re.sub(r'解锁本圈三年(?:\[Concept\([^\]]*\)\|e\]|地方事业)与地方援助资格。\n?', '',value)
+                match=re.match(r'hbe_tech_(\w+)_([47])_effects',key)
+                if match:
+                    sentence=replacements.get('NETWORK:'+match[1]+':'+match[2])
+                    if sentence:value=re.sub(r'解锁“[^”]+”：[^\n]+',lambda _:sentence,value)
+            if re.fullmatch(r'hbe_tech_\w+(?:_desc|\.desc)(?:\.entry)?',key):
+                value=re.sub(r'\n费用[^\n]+研究[^\n]+年[^\n]*','',value)
+            if key.startswith(('country_history_','country_description_category_desc_')):
+                value=re.sub(r'@hbe_(?:water|salt|river|roads|grain|tea|valleys)!','',value)
+                for term,label in legacy_terms.items():
+                    value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]",label,value)
+            if key in ('hbe_term_'+t for t in legacy_terms) or key in ('game_concept_hbe_term_'+t for t in legacy_terms):
+                term=key.rsplit('_',1)[1];value=legacy_terms[term]
+            value=value.replace('近五年完成本圈事业、','').replace('三年分账循环','两年会盟结算')
+            if key.startswith(('hbe_service_','hbe_coordinate_')) and '.desc' in key:value='地方项目统一在右下角地方事业面板筹办。'
+            if key.startswith(('hbe_role_','hbe_project_pledge','hbe_project_reconsider','hbe_project_subsidize','hbe_audit_accounts')) and '.desc' in key:
+                value='请在大开席面板查看本届出资与地方项目贡献，并办理相关操作。'
+            if key.endswith('_desc') and '全国同类最多一所' in value:
+                value=value.replace('全国同类最多一所','全国同类总等级上限3（含在建），每地点上限1')
+            if value!=before:line=' '+key+': '+json.dumps(value,ensure_ascii=False);total+=1
+            lines.append(line)
+        write_preserving_format(path,'\n'.join(lines)+'\n')
+    clarify_booleans(out)
+    return total
+
+
+def clarify_booleans(out):
+    """Give every mod-defined boolean one concrete, authoritative description."""
+    keys=[]
+    for path in (out/'main_menu/common/modifier_type_definitions').glob('hbe*.txt'):
+        text=path.read_text(encoding='utf-8-sig')
+        keys += [key for key,_,a,b,_ in blocks(text,0) if re.search(r'\bboolean\s*=\s*yes',text[a:b])]
+    fixed={
+        'hbe_can_cross_circle_industry': ('可在本圈之外的直属领土建造对应产业建筑，生产当地特色产物。须先在目标圈拥有土地，采用乡社议办，义气达到60，再支付金币和10点义气办理准入；各建筑仍受当地地域和数量限制。', 'Allows regional industry buildings and specialty production outside the home circle. Own land in that circle, use communal labor policy, reach 60 fraternity, then pay the listed gold and 10 fraternity to establish access. Local geography and building caps still apply.'),
+        'hbe_af_allow_large_investment': ('地方事业可选择大量投入，支付更多金币与役负，获得该档列示的收益；工期以卡片为准。切换投入档次会同时更新两张候选卡。', 'Enables the large-investment tier in local affairs. Pay its listed gold and labor burden for its listed rewards and duration. Switching tiers updates both candidate cards.'),
+        'hbe_af_allow_local_refresh': ('空闲时可点击地方项目卡右上角的圆形按钮，更换这张候选卡。每两年一次；全国候选和正在施工的项目不变。', 'While idle, use the round button at the upper right of the local project card to replace that offer. Available once every two years; the national offer and active construction stay unchanged.'),
+        'hbe_af_allow_guild_projects': ('地方事业可抽到整理工法、准备工料、验货定样、招收学徒、扩建作坊和试作新法六类项目。正常运转的特色产业机构可使这些项目役负减少20%；本地项目须由目标地点的机构承办。', 'Adds six guild project roles to local affairs: craft records, materials, quality standards, apprentices, workshops and trial production. Operating specialty institutions reduce their labor burden by 20%; local projects require an institution at the target location.'),
+        'hbe_elector_can_participate_in_parliament': ('允许本组织选侯参与议会事务；具体可用操作仍由组织规则和议会条件决定。', 'Allows this organization’s electors to participate in parliament, subject to the organization rules and parliament requirements.'),
+    }
+    goods={'hbe_shu_embroidery':('蜀绣','Shu embroidery'),'hbe_well_salt':('井盐','well salt'),'hbe_shu_paper':('蜀纸','Shu paper'),'hbe_border_tea':('边茶','border tea')}
+    for good,(cn,en) in goods.items():
+        fixed[good+'_used_for_minting']=(f'允许把{cn}用于铸币；实际铸币收入及通胀影响仍按原版规则计算。',f'Allows {en} to be used for minting. Minting income and inflation follow the base-game rules.')
+        fixed['ban_exports_of_'+good]=(f'禁止从本国市场出口{cn}。',f'Bans exports of {en} from the country’s markets.')
+        fixed['ban_imports_of_'+good]=(f'禁止向本国市场进口{cn}。',f'Bans imports of {en} into the country’s markets.')
+        fixed['can_extract_'+good]=(f'允许在具备{cn}原料产地的地点开采该货物；不会凭空增加产地，也不替代特色建筑和生产方式的解锁要求。',f'Allows extraction where a location already has {en} as its raw material. Does not create deposits or unlock specialty buildings and production methods.')
+    assert set(keys)<=fixed.keys(),set(keys)-fixed.keys()
+    for lang in ('simp_chinese','english','traditional_chinese'):
+        directory=out/'main_menu/localization'/lang
+        for path in directory.glob('hbe*.yml'):
+            text=path.read_text(encoding='utf-8-sig')
+            text=re.sub(r'(?m)^ (?:'+'|'.join(re.escape('MODIFIER_TYPE_DESC_'+key) for key in keys)+r'):.*\n?', '',text)
+            write_preserving_format(path,text)
+        path=directory/f'hbe_permission_descriptions_l_{lang}.yml'
+        text='l_'+lang+':\n'+'\n'.join(' MODIFIER_TYPE_DESC_'+key+': '+json.dumps(fixed[key][lang=='english'],ensure_ascii=False) for key in sorted(keys))+'\n'
+        if path.exists():write_preserving_format(path,text)
+        else:path.write_text(text,encoding='utf-8-sig')

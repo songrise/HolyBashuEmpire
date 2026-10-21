@@ -12,10 +12,45 @@ background = { using = tile_frame_squared_texture modify_texture = { using = col
 types HbeLocalAffairs {
 type hbe_af_overlay = widget { name = "hbe_local_affairs" size = { 100% 100% } alwaystransparent = yes
 visible = "[And(Not(IsPauseMenuShown),GetScriptedGui('hbe_af_ui_access').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
-button_regular = { parentanchor = bottom|right widgetanchor = bottom|right position = { -24 -96 } size = { 130 30 } text = "HBE_AF_OPEN"
-onclick = "[GetScriptedGui('hbe_af_ui_prepare').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetVariableSystem.Toggle('hbe_af_panel_open')]" }
+# Same circle background, 89% ring, 65% icon and cultural frame as vanilla research.
+widget = { name = "hbe_af_hud_entry" parentanchor = bottom|right widgetanchor = bottom|right
+position = { -24 -96 } size = { 64 64 }
+alwaystransparent = yes filter_mouse = none
+icon = { texture = "gfx/interface/component_tiles/hud_corners/circle_background.dds" size = { 100% 100% } alwaystransparent = yes }
+icon = { texture = "gfx/interface/component_tiles/hud_corners/circle_progress_bg.dds" size = { 100% 100% } alwaystransparent = yes }
+piechart = { name = "hbe_af_hud_hbe_af_progress_ring" parentanchor = center size = { 89% 89% }
+visible = "[GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" using = piechart_angles alwaystransparent = yes
+pieslice = { texture = "gfx/interface/pie_charts/pie_chart_blue_progress.dds" value = "[FixedPointToFloat(GetPlayer.MakeScope.GetVariable('hbe_af_progress').GetValue)]" color = { 1 1 1 1 } }
+pieslice = { texture = "gfx/interface/pie_charts/pie_chart_blue_progress.dds" value = "[Subtract_float('(float)1.0',FixedPointToFloat(GetPlayer.MakeScope.GetVariable('hbe_af_progress').GetValue))]" color = { 1 1 1 0 } }
+}
+piechart = { name = "hbe_af_hud_hbe_af_wait_progress_ring" parentanchor = center size = { 89% 89% }
+visible = "[And(GetScriptedGui('hbe_af_ui_waiting').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),Not(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)))]" using = piechart_angles alwaystransparent = yes
+pieslice = { texture = "gfx/interface/pie_charts/pie_chart_blue_progress.dds" value = "[FixedPointToFloat(GetPlayer.MakeScope.GetVariable('hbe_af_wait_progress').GetValue)]" color = { 1 1 1 1 } }
+pieslice = { texture = "gfx/interface/pie_charts/pie_chart_blue_progress.dds" value = "[Subtract_float('(float)1.0',FixedPointToFloat(GetPlayer.MakeScope.GetVariable('hbe_af_wait_progress').GetValue))]" color = { 1 1 1 0 } }
+}
+icon = { name = "hbe_af_hud_tint_idle" parentanchor = center size = { 70% 70% }
+visible = "[GetScriptedGui('hbe_af_ui_hud_idle').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" texture = "gfx/interface/component_tiles/hud_corners/circle_background.dds"
+modify_texture = { using = color_white_texture color = { 0.18 0.22 0.26 1 } } alwaystransparent = yes }
+icon = { name = "hbe_af_hud_icon_idle" parentanchor = center size = { 65% 65% }
+visible = "[GetScriptedGui('hbe_af_ui_hud_idle').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" texture = "gfx/interface/hbe/local_affairs/hud_idle.dds" alwaystransparent = yes }
+icon = { name = "hbe_af_hud_tint_local" parentanchor = center size = { 70% 70% }
+visible = "[GetScriptedGui('hbe_af_ui_hud_local').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" texture = "gfx/interface/component_tiles/hud_corners/circle_background.dds"
+modify_texture = { using = color_white_texture color = { 0.17 0.22 0.18 1 } } alwaystransparent = yes }
+icon = { name = "hbe_af_hud_icon_local" parentanchor = center size = { 65% 65% }
+visible = "[GetScriptedGui('hbe_af_ui_hud_local').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" texture = "gfx/interface/hbe/local_affairs/hud_local.dds" alwaystransparent = yes }
+icon = { name = "hbe_af_hud_tint_national" parentanchor = center size = { 70% 70% }
+visible = "[GetScriptedGui('hbe_af_ui_hud_national').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" texture = "gfx/interface/component_tiles/hud_corners/circle_background.dds"
+modify_texture = { using = color_white_texture color = { 0.26 0.17 0.16 1 } } alwaystransparent = yes }
+icon = { name = "hbe_af_hud_icon_national" parentanchor = center size = { 65% 65% }
+visible = "[GetScriptedGui('hbe_af_ui_hud_national').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" texture = "gfx/interface/hbe/local_affairs/hud_national.dds" alwaystransparent = yes }
+icon = { texture = "[GetGraphicalCultureTexture('circle_frame')]" texture_density = 2 size = { 100% 100% } alwaystransparent = yes }
+# Last sibling owns the click; visual layers do not contain or overlap its children.
+button_regular = { name = "hbe_af_hud_hitbox" size = { 100% 100% } alpha = 0.001
+using = snd_UI_forward tooltip = "HBE_AF_HUD_TT"
+onclick = "[GetScriptedGui('hbe_af_ui_panel_open').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+}
 window = { name = "hbe_af_window" size = { 840 628 } position = { 0 0 } parentanchor = center widgetanchor = center movable = yes using = hbe_af_panel_surface
-visible = "[GetVariableSystem.Exists('hbe_af_panel_open')]"
+visible = "[GetScriptedGui('hbe_af_ui_panel_visible').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 window_header_alt = { size = { 840 42 } blockoverride "header_text_object" { widget = { size = { 0 0 } } } }
 text_single = { position = { 0 5 } size = { 840 32 } autoresize = no align = center using = Font_Type_Headers fontsize = 24 text = "HBE_AF_TITLE" color = { 0.94 0.90 0.80 1 } }
 widget = { position = { -78 8 } parentanchor = top|right widgetanchor = top|right size = { 30 30 } AutomationCheckbox = {
@@ -25,7 +60,7 @@ tooltip = "HBE_AF_COG_TT"
 action_tooltip = { click_type = right title = "HBE_AF_AUTO_TOGGLE" on_action = "[GetScriptedGui('hbe_af_ui_auto').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
 tooltipwidget = { BasicFunctionalTooltip = {} }
 } }
-button_close = { position = { -10 8 } parentanchor = top|right widgetanchor = top|right onclick = "[GetVariableSystem.Toggle('hbe_af_panel_open')]" }
+button_close = { position = { -10 8 } parentanchor = top|right widgetanchor = top|right onclick = "[GetScriptedGui('hbe_af_ui_panel_close').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
 text_multi = { position = { 32 53 } size = { 776 30 }
 autoresize = no align = center text = "HBE_AF_PANEL_STATUS" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }
 widget = { position = { 235 87 } size = { 180 30 }
@@ -376,7 +411,49 @@ autoresize = no align = left|top text = "HBE_AF_ETA" using = Font_Type_Headers f
 autoresize = no align = left|top text = "HBE_AF_PAUSED" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } } }icon = { size = { 376 420 } alwaystransparent = yes using = bg_selected_law_frame
 blockoverride "bg_selected_law_visible" { visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)16')]" } }
 
-icon = { size = { 376 420 } alwaystransparent = yes using = color_black_texture alpha = 0.45 visible = "[Or(GetScriptedGui('hbe_af_ui_waiting').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)16'))))]" } } widget = { size = { 376 420 } visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_local').GetValue, '(CFixedPoint)0')]" text_multi = { position = { 16 195 } size = { 344 138 }
+icon = { size = { 376 420 } alwaystransparent = yes using = color_black_texture alpha = 0.45 visible = "[Or(GetScriptedGui('hbe_af_ui_waiting').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)16'))))]" } } widget = { size = { 376 420 } visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_local').GetValue, '(CFixedPoint)17')]" text_multi = { position = { 16 57 } size = { 292 42 }
+autoresize = no align = left|top text = "hbe_af_project_17" using = Font_Type_Headers fontsize = 22 color = { 0.94 0.90 0.80 1 } }text_multi = { position = { 16 153 } size = { 200 25 }
+autoresize = no align = left|top text = "HBE_AF_TARGET" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }icon = { position = { 16 181 } size = { 344 1 } alwaystransparent = yes using = color_new_gold_texture alpha = 0.35 }icon = { position = { 16 336 } size = { 344 1 } alwaystransparent = yes using = color_new_gold_texture alpha = 0.35 }widget = { size = { 376 420 } visible = "[Or(And(Not(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)),Not(GetVariableSystem.Exists('hbe_af_preview_large'))),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_tier').GetValue, '(CFixedPoint)1')))]" widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17'))]" text_multi = { position = { 16 121 } size = { 344 30 }
+autoresize = no align = left|top text = "hbe_af_costline_17_small" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } }text_multi = { position = { 16 195 } size = { 344 138 } autoresize = no align = left|top using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 }
+text = "hbe_af_bullets_17_small" tooltip = "hbe_af_exact_17_small" }widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17'))]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 28 }
+autoresize = no align = left|top text = "hbe_af_time_17_small" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }button_regular = { position = { 16 380 } size = { 344 36 } text = "HBE_AF_ADOPT"
+using = Font_Type_Headers fontsize = 16
+enabled = "[GetScriptedGui('hbe_af_choose_17_small').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+onclick = "[GetScriptedGui('hbe_af_choose_17_small').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } }widget = { size = { 376 420 } visible = "[Or(And(Not(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)),GetVariableSystem.Exists('hbe_af_preview_large')),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_tier').GetValue, '(CFixedPoint)2')))]" widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17'))]" text_multi = { position = { 16 121 } size = { 344 30 }
+autoresize = no align = left|top text = "hbe_af_costline_17_large" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } }text_multi = { position = { 16 195 } size = { 344 138 } autoresize = no align = left|top using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 }
+text = "hbe_af_bullets_17_large" tooltip = "hbe_af_exact_17_large" }widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17'))]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 28 }
+autoresize = no align = left|top text = "hbe_af_time_17_large" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }button_regular = { position = { 16 380 } size = { 344 36 } text = "HBE_AF_ADOPT"
+using = Font_Type_Headers fontsize = 16
+enabled = "[GetScriptedGui('hbe_af_choose_17_large').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+onclick = "[GetScriptedGui('hbe_af_choose_17_large').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } }widget = { size = { 376 420 } visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17')]" text_multi = { position = { 224 153 } size = { 136 25 }
+autoresize = no align = left|top text = "HBE_AF_ACTIVE" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }text_multi = { position = { 16 121 } size = { 344 30 }
+autoresize = no align = left|top text = "HBE_AF_PAID" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }widget = { size = { 376 420 } visible = "[Not(GreaterThan_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_pause').GetValue, '(CFixedPoint)0'))]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 60 }
+autoresize = no align = left|top text = "HBE_AF_ETA" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } }widget = { size = { 376 420 } visible = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_pause').GetValue, '(CFixedPoint)0')]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 60 }
+autoresize = no align = left|top text = "HBE_AF_PAUSED" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } } }icon = { size = { 376 420 } alwaystransparent = yes using = bg_selected_law_frame
+blockoverride "bg_selected_law_visible" { visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17')]" } }
+
+icon = { size = { 376 420 } alwaystransparent = yes using = color_black_texture alpha = 0.45 visible = "[Or(GetScriptedGui('hbe_af_ui_waiting').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)17'))))]" } } widget = { size = { 376 420 } visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_local').GetValue, '(CFixedPoint)18')]" text_multi = { position = { 16 57 } size = { 292 42 }
+autoresize = no align = left|top text = "hbe_af_project_18" using = Font_Type_Headers fontsize = 22 color = { 0.94 0.90 0.80 1 } }text_multi = { position = { 16 153 } size = { 200 25 }
+autoresize = no align = left|top text = "HBE_AF_TARGET" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }icon = { position = { 16 181 } size = { 344 1 } alwaystransparent = yes using = color_new_gold_texture alpha = 0.35 }icon = { position = { 16 336 } size = { 344 1 } alwaystransparent = yes using = color_new_gold_texture alpha = 0.35 }widget = { size = { 376 420 } visible = "[Or(And(Not(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)),Not(GetVariableSystem.Exists('hbe_af_preview_large'))),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_tier').GetValue, '(CFixedPoint)1')))]" widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18'))]" text_multi = { position = { 16 121 } size = { 344 30 }
+autoresize = no align = left|top text = "hbe_af_costline_18_small" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } }text_multi = { position = { 16 195 } size = { 344 138 } autoresize = no align = left|top using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 }
+text = "hbe_af_bullets_18_small" tooltip = "hbe_af_exact_18_small" }widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18'))]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 28 }
+autoresize = no align = left|top text = "hbe_af_time_18_small" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }button_regular = { position = { 16 380 } size = { 344 36 } text = "HBE_AF_ADOPT"
+using = Font_Type_Headers fontsize = 16
+enabled = "[GetScriptedGui('hbe_af_choose_18_small').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+onclick = "[GetScriptedGui('hbe_af_choose_18_small').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } }widget = { size = { 376 420 } visible = "[Or(And(Not(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)),GetVariableSystem.Exists('hbe_af_preview_large')),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_tier').GetValue, '(CFixedPoint)2')))]" widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18'))]" text_multi = { position = { 16 121 } size = { 344 30 }
+autoresize = no align = left|top text = "hbe_af_costline_18_large" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } }text_multi = { position = { 16 195 } size = { 344 138 } autoresize = no align = left|top using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 }
+text = "hbe_af_bullets_18_large" tooltip = "hbe_af_exact_18_large" }widget = { size = { 376 420 } visible = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18'))]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 28 }
+autoresize = no align = left|top text = "hbe_af_time_18_large" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }button_regular = { position = { 16 380 } size = { 344 36 } text = "HBE_AF_ADOPT"
+using = Font_Type_Headers fontsize = 16
+enabled = "[GetScriptedGui('hbe_af_choose_18_large').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+onclick = "[GetScriptedGui('hbe_af_choose_18_large').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" } } }widget = { size = { 376 420 } visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18')]" text_multi = { position = { 224 153 } size = { 136 25 }
+autoresize = no align = left|top text = "HBE_AF_ACTIVE" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }text_multi = { position = { 16 121 } size = { 344 30 }
+autoresize = no align = left|top text = "HBE_AF_PAID" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } }widget = { size = { 376 420 } visible = "[Not(GreaterThan_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_pause').GetValue, '(CFixedPoint)0'))]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 60 }
+autoresize = no align = left|top text = "HBE_AF_ETA" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } }widget = { size = { 376 420 } visible = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_pause').GetValue, '(CFixedPoint)0')]" icon = { position = { 16 346 } size = { 32 32 } texture = "gfx/interface/icons/text_icons/time.dds" alwaystransparent = yes }text_multi = { position = { 58 349 } size = { 302 60 }
+autoresize = no align = left|top text = "HBE_AF_PAUSED" using = Font_Type_Headers fontsize = 16 color = { 0.94 0.90 0.80 1 } } } }icon = { size = { 376 420 } alwaystransparent = yes using = bg_selected_law_frame
+blockoverride "bg_selected_law_visible" { visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18')]" } }
+
+icon = { size = { 376 420 } alwaystransparent = yes using = color_black_texture alpha = 0.45 visible = "[Or(GetScriptedGui('hbe_af_ui_waiting').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),And(GetScriptedGui('hbe_af_ui_running').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_active').GetValue, '(CFixedPoint)18'))))]" } } widget = { size = { 376 420 } visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.GetVariable('hbe_af_local').GetValue, '(CFixedPoint)0')]" text_multi = { position = { 16 195 } size = { 344 138 }
 autoresize = no align = left|top text = "HBE_AF_EMPTY" using = Font_Type_Headers fontsize = 20 color = { 0.94 0.90 0.80 1 } } }button_round_shortcut = { name = "hbe_af_refresh_local" position = { 326 12 } size = { 36 36 }
 visible = "[GetScriptedGui('hbe_af_ui_refresh_local').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 enabled = "[GetScriptedGui('hbe_af_ui_refresh_local').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -399,7 +476,7 @@ using = alert_banner_setup using = green_alert
 blockoverride "icon_texture" { texture = "gfx/interface/icons/alerts_icons/decisions.dds" }
 blockoverride "alert_is_new_padding_visible" { visible = no }
 tooltip = "HBE_AF_NOTICE_TT"
-action_tooltip = { title = "HBE_AF_NOTICE" on_action = "[GetScriptedGui('hbe_af_ui_prepare').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" on_action = "[GetVariableSystem.Set('hbe_af_panel_open','yes')]" }
+action_tooltip = { title = "HBE_AF_NOTICE" on_action = "[GetScriptedGui('hbe_af_ui_panel_open').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
 action_tooltip = { click_type = right title = "HBE_AF_NOTICE_HIDE" on_action = "[GetScriptedGui('hbe_af_ui_dismiss_notice').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
 tooltipwidget = { BasicFunctionalTooltip = {} }
 }

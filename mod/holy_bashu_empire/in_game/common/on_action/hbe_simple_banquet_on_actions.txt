@@ -1,10 +1,9 @@
 ﻿monthly_country_pulse = { on_actions = { hbe_simple_feast_country } }
 hbe_simple_feast_country = { trigger = { hbe_is_prince = yes } effect = {
- if = { limit = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire }
-  hbe_banquet_register = yes
-  
+ if = { limit = { is_member_of_international_organization = international_organization:hbe_empire }
+  if = { limit = { is_situation_active = situation:hbe_banquet } hbe_banquet_register = yes }
  } else = {
-  international_organization:hbe_common_party ?= { remove_country_from_international_organization = prev }
-  international_organization:hbe_local_party ?= { remove_country_from_international_organization = prev }
+  if = { limit = { is_member_of_international_organization = international_organization:hbe_common_party } international_organization:hbe_common_party = { remove_country_from_international_organization = prev } }
+  if = { limit = { is_member_of_international_organization = international_organization:hbe_local_party } international_organization:hbe_local_party = { remove_country_from_international_organization = prev } }
  }
 } }

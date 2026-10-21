@@ -118,10 +118,10 @@ hbe_guest_license_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_s
         key='hbe_choose_stance_'+str(i);entry=next(x for x in blocks(text,0) if x[0]==key)
         body=f'''if = {{ limit = {{ NOT = {{ var:hbe_stance = {i} }} NOT = {{ has_variable = hbe_stance_cooldown }} }}
  save_scope_as = hbe_party_departing
- international_organization:{old_party} ?= {{ every_international_organization_member = {{
+ if = {{ limit = {{ is_member_of_international_organization = international_organization:{old_party} }} international_organization:{old_party} = {{ every_international_organization_member = {{
   limit = {{ NOT = {{ this = scope:hbe_party_departing }} }}
   add_opinion = {{ modifier = hbe_left_feast_party target = scope:hbe_party_departing }}
- }} }}
+ }} }} }}
  set_variable = {{ name = hbe_stance value = {i} }}
  set_variable = {{ name = hbe_stance_cooldown value = yes years = 5 }}
  hbe_feast_sync_party = yes

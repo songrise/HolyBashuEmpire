@@ -1,0 +1,599 @@
+{
+  "checks_count": 140,
+  "failed": [],
+  "checks": [
+    {
+      "name": "affairs GUI type has exactly one live HUD instance",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD override only wraps the native alert row and adds its mount",
+      "passed": true
+    },
+    {
+      "name": "affairs entry is anchored to screen bottom right",
+      "passed": true
+    },
+    {
+      "name": "affairs one window for ready running and waiting",
+      "passed": true
+    },
+    {
+      "name": "affairs visibility does not read a valueless country flag",
+      "passed": true
+    },
+    {
+      "name": "affairs keeps situation layout with only authorized row accounting changes",
+      "passed": true
+    },
+    {
+      "name": "affairs credits completion once before immutable receipt",
+      "passed": true
+    },
+    {
+      "name": "affairs round contribution cap is shared with prior service credit",
+      "passed": true
+    },
+    {
+      "name": "affairs credit uses realized rewards and net cost",
+      "passed": true
+    },
+    {
+      "name": "affairs member scores display fractions without deprecated source",
+      "passed": true
+    },
+    {
+      "name": "affairs dividends use continuous fractional weights",
+      "passed": true
+    },
+    {
+      "name": "affairs contribution has its own deduplication guard",
+      "passed": true
+    },
+    {
+      "name": "affairs member hover itemizes every credited project",
+      "passed": true
+    },
+    {
+      "name": "affairs automation keeps rules in hover and compact state only",
+      "passed": true
+    },
+    {
+      "name": "affairs sixteen independent project definitions",
+      "passed": true
+    },
+    {
+      "name": "affairs guarded selections for both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs large investment uses its boolean permission for all projects",
+      "passed": true
+    },
+    {
+      "name": "affairs persistent draws not GUI randomization",
+      "passed": true
+    },
+    {
+      "name": "affairs auto checks all budget boundaries",
+      "passed": true
+    },
+    {
+      "name": "affairs monthly progress bounded and paused on lost control",
+      "passed": true
+    },
+    {
+      "name": "affairs population and building use native outcomes",
+      "passed": true
+    },
+    {
+      "name": "affairs fixed compact dual cards and all guarded choices",
+      "passed": true
+    },
+    {
+      "name": "affairs tall rewards and two masked illustrated headers",
+      "passed": true
+    },
+    {
+      "name": "affairs cards leave padding and only local card has a refresh button",
+      "passed": true
+    },
+    {
+      "name": "affairs panel initializes old saves before opening",
+      "passed": true
+    },
+    {
+      "name": "affairs uses treasury rather than monthly balance",
+      "passed": true
+    },
+    {
+      "name": "affairs automation host only adds one economy entry",
+      "passed": true
+    },
+    {
+      "name": "affairs automation uses native economy filter and controls",
+      "passed": true
+    },
+    {
+      "name": "affairs automation explicitly supplies native search context",
+      "passed": true
+    },
+    {
+      "name": "affairs native circular refresh remains inside dual-card window",
+      "passed": true
+    },
+    {
+      "name": "affairs global investment preview changes both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs active card shows paid cost date and remaining months",
+      "passed": true
+    },
+    {
+      "name": "affairs availability mounts a native top ribbon",
+      "passed": true
+    },
+    {
+      "name": "affairs outcomes locked once at guarded start",
+      "passed": true
+    },
+    {
+      "name": "affairs two native completion receipts per project",
+      "passed": true
+    },
+    {
+      "name": "affairs receipts snapshot actual gains before clearing active project",
+      "passed": true
+    },
+    {
+      "name": "affairs settlement is guarded against duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "affairs target loss still pauses and dates update",
+      "passed": true
+    },
+    {
+      "name": "affairs main panel only has a status cog, with right-click toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs auto respects national local and large preferences",
+      "passed": true
+    },
+    {
+      "name": "affairs descriptive grades use explicit vanilla colors",
+      "passed": true
+    },
+    {
+      "name": "affairs outcome weights and greatness are bounded",
+      "passed": true
+    },
+    {
+      "name": "affairs project cards keep ETA rather than a progress meter",
+      "passed": true
+    },
+    {
+      "name": "affairs project titles have distinct visual hierarchy",
+      "passed": true
+    },
+    {
+      "name": "affairs event modifiers expose native description keys",
+      "passed": true
+    },
+    {
+      "name": "affairs title status and panel use the same center",
+      "passed": true
+    },
+    {
+      "name": "affairs time uses the native clock icon",
+      "passed": true
+    },
+    {
+      "name": "affairs only two pool header textures",
+      "passed": true
+    },
+    {
+      "name": "affairs manual skip removed and auto preserves current offers",
+      "passed": true
+    },
+    {
+      "name": "affairs every candidate has a bounded persisted random expiry",
+      "passed": true
+    },
+    {
+      "name": "affairs expiry labels sit below both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs opening old saves migrates missing expiry only",
+      "passed": true
+    },
+    {
+      "name": "affairs all projects have two to four reward types",
+      "passed": true
+    },
+    {
+      "name": "affairs preview hides great success amounts and removes probability lecture",
+      "passed": true
+    },
+    {
+      "name": "affairs no project both charges and reduces burden",
+      "passed": true
+    },
+    {
+      "name": "affairs primary secondary and minor grades differ in both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs independent random rewards are locked on project start",
+      "passed": true
+    },
+    {
+      "name": "affairs real population remains distinct from conservative manpower",
+      "passed": true
+    },
+    {
+      "name": "affairs manpower has no fixed headcount floor and caps apply after random factor",
+      "passed": true
+    },
+    {
+      "name": "affairs all population and native currency rewards use their declared bases",
+      "passed": true
+    },
+    {
+      "name": "affairs resource hover values are live and hide implementation details",
+      "passed": true
+    },
+    {
+      "name": "affairs four additional native resource rewards have measured deltas",
+      "passed": true
+    },
+    {
+      "name": "affairs each component has its own ordinary range",
+      "passed": true
+    },
+    {
+      "name": "affairs shared cost multipliers match latest balance",
+      "passed": true
+    },
+    {
+      "name": "affairs every generated cost and burden applies the shared multipliers",
+      "passed": true
+    },
+    {
+      "name": "affairs fallback plus cash rewards cannot exceed paid cost",
+      "passed": true
+    },
+    {
+      "name": "affairs relief draws favor high burden without changing costs",
+      "passed": true
+    },
+    {
+      "name": "affairs native research road and varied buildings supported",
+      "passed": true
+    },
+    {
+      "name": "affairs targets prefer suitable workers and infrastructure",
+      "passed": true
+    },
+    {
+      "name": "affairs modifier names and descriptions are complete",
+      "passed": true
+    },
+    {
+      "name": "affairs all scripted GUI references exist",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card registers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card fair",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card materials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card settlers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card granary",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card canal",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card copyists",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card paid_crews",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card old_services",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card deliveries",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card land_books",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_roads",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card seek_artisans",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_clinics",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card restore_market",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card rest_crews",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_water",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_salt",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_river",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_roads",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_grain",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_tea",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_valleys",
+      "passed": true
+    },
+    {
+      "name": "seven old service decisions retired",
+      "passed": true
+    },
+    {
+      "name": "seven regional coordination decisions are temporarily hidden",
+      "passed": true
+    },
+    {
+      "name": "retired service dependencies are removed outright",
+      "passed": true
+    },
+    {
+      "name": "retired pending orders cannot finish or trigger rewards",
+      "passed": true
+    },
+    {
+      "name": "retired callbacks only perform marker cleanup",
+      "passed": true
+    },
+    {
+      "name": "one-time legacy cleanup preserves new projects and already earned state",
+      "passed": true
+    },
+    {
+      "name": "regional mission descriptions no longer charge retired resources",
+      "passed": true
+    },
+    {
+      "name": "affairs exactly two new permission technologies",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_allow_large_investment has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_allow_local_refresh has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "name": "affairs removes superseded age-one capability hint",
+      "passed": true
+    },
+    {
+      "name": "affairs small investment remains free of the new research gate",
+      "passed": true
+    },
+    {
+      "name": "affairs local redraw requires permission idle cooldown and alternative",
+      "passed": true
+    },
+    {
+      "name": "affairs redraw effect rechecks gate and only redraws local offer",
+      "passed": true
+    },
+    {
+      "name": "affairs refresh uses native round button and native change arrows",
+      "passed": true
+    },
+    {
+      "name": "affairs both boolean names are present in every shipped locale",
+      "passed": true
+    },
+    {
+      "name": "affairs one circular 64px HUD entry replaces old text button",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD follows native research circle and cultural frame",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD has three independently painted state icons",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD uses muted slate moss and cinnabar state backplates",
+      "passed": true
+    },
+    {
+      "name": "affairs idle HUD transparent 128px art exports exactly",
+      "passed": true
+    },
+    {
+      "name": "affairs local HUD transparent 128px art exports exactly",
+      "passed": true
+    },
+    {
+      "name": "affairs national HUD transparent 128px art exports exactly",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD idle icon also covers cancellation wait",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD local state covers exactly its catalogue projects",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD national state covers exactly its catalogue projects",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD ring uses running progress with transparent remainder",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD wait ring is separate from construction",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD decoration cannot intercept clicks",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD uses native separate hit surface and explicit open action",
+      "passed": true
+    },
+    {
+      "name": "affairs window and close button read same explicit boolean marker",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD tooltip names actual project and ETA",
+      "passed": true
+    }
+  ],
+  "manifest_file_count": 837,
+  "runtime_checked": true,
+  "live_visual_verified": true,
+  "live_scope": [
+    "local active icon",
+    "entry click opens panel",
+    "close button closes panel",
+    "entry click reopens panel",
+    "hover shows project name and ETA"
+  ],
+  "not_live_checked": [
+    "idle and national icons",
+    "advancing progress ring over multiple months"
+  ],
+  "installation": {
+    "source_files": 838,
+    "all_installed_hashes_match": true,
+    "temporary_diagnostics_removed": true
+  },
+  "runtime": {
+    "game_version": "1.4.2",
+    "mod_version": "0.4.0",
+    "checksum": "2571",
+    "save_date": "1356.7.9",
+    "paused": true,
+    "gold": 229.33,
+    "project": "修复集廛",
+    "date_advanced": false,
+    "original_save_count": 98,
+    "original_save_hashes_unchanged": true,
+    "exited_after_check_without_saving": true,
+    "camera_moved_during_check": true
+  }
+}

@@ -4,10 +4,27 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from build_support import defer_file_snapshots, snapshot_files, write_preserving_format
+from build_support import defer_file_snapshots, snapshot_files, write_preserving_format, save_png
 
 
 class BuildSupportTests(unittest.TestCase):
+    def test_png_bytes_match_pillow_and_equal_write_is_skipped(self):
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            actual, reference = Path(tmp)/'actual.png', Path(tmp)/'reference.png'
+            image = Image.new('RGBA', (7, 9), (24, 48, 96, 128))
+            image.save(reference)
+            save_png(actual, image)
+            self.assertEqual(actual.read_bytes(), reference.read_bytes())
+            modified = actual.stat().st_mtime_ns
+            with patch('build_support.os.replace', side_effect=AssertionError):
+                save_png(actual, image)
+            self.assertEqual(actual.stat().st_mtime_ns, modified)
+            image.putpixel((0, 0), (0, 0, 0, 0))
+            save_png(actual, image)
+            image.save(reference)
+            self.assertEqual(actual.read_bytes(), reference.read_bytes())
+
     def test_deferred_snapshots_are_scoped_and_restore_after_exception(self):
         with tempfile.TemporaryDirectory() as tmp:
             a, b = Path(tmp) / "a", Path(tmp) / "b"

@@ -1,0 +1,1 @@
+﻿hbe_teahouse_monthly_burden_relief = { positive = "gfx/interface/icons/text_icons/hbe_burden.dds" negative = "gfx/interface/icons/text_icons/hbe_burden.dds" }

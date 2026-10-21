@@ -167,8 +167,8 @@ onclick = "{execute('hbe_af_ui_refresh_local')}"
         toggle.append(f'''widget = {{ position = {{ {235+i*190} 87 }} size = {{ 180 30 }}
 checkbox_round_alt = {{ down = "[{sel}]" enabled = "[And({ready},Not({sel}))]" onclick = "[GetVariableSystem.Toggle('hbe_af_preview_large')]" }}
 text_single = {{ position = {{ 38 0 }} size = {{ 140 30 }} autoresize = no using = Font_Type_Headers fontsize = 16 align = left|nobaseline text = "HBE_AF_{'LARGE' if i else 'SMALL'}" {'tooltip = "HBE_AF_LARGE_TT"' if i else ''} }} }}''')
-    open_button=f'''button_regular = {{ parentanchor = bottom|right widgetanchor = bottom|right position = {{ -24 -96 }} size = {{ 130 30 }} text = "HBE_AF_OPEN"
-onclick = "{execute('hbe_af_ui_prepare')}" onclick = "[GetVariableSystem.Toggle('hbe_af_panel_open')]" }}'''
+    from build_local_affairs_hud import render as hud_entry
+    open_button = hud_entry(loc, out)
     cooldown=f'widget = {{ size = {{ 840 628 }} visible = "[{waiting}]" '+ring('hbe_af_wait_progress',306,564,48)+text('HBE_AF_WAIT_RING',368,564,300,48,fontsize=18)+' }'
     footer=f'widget = {{ size = {{ 840 628 }} visible = "[{running}]" '+button('hbe_af_ui_cancel','HBE_AF_CANCEL',32,571,776)+' }'
     gui=f'''# Native dual cards persist during construction and refresh cooldown.
@@ -187,11 +187,11 @@ type hbe_af_overlay = widget {{ name = "hbe_local_affairs" size = {{ 100% 100% }
 visible = "[And(Not(IsPauseMenuShown),{shown('hbe_af_ui_access')[1:-1]})]"
 {open_button}
 window = {{ name = "hbe_af_window" size = {{ 840 628 }} position = {{ 0 0 }} parentanchor = center widgetanchor = center movable = yes using = hbe_af_panel_surface
-visible = "[GetVariableSystem.Exists('hbe_af_panel_open')]"
+visible = "{shown('hbe_af_ui_panel_visible')}"
 window_header_alt = {{ size = {{ 840 42 }} blockoverride "header_text_object" {{ widget = {{ size = {{ 0 0 }} }} }} }}
 text_single = {{ position = {{ 0 5 }} size = {{ 840 32 }} autoresize = no align = center using = Font_Type_Headers fontsize = 24 text = "HBE_AF_TITLE" color = {{ 0.94 0.90 0.80 1 }} }}
 widget = {{ position = {{ -78 8 }} parentanchor = top|right widgetanchor = top|right size = {{ 30 30 }} {cog()} }}
-button_close = {{ position = {{ -10 8 }} parentanchor = top|right widgetanchor = top|right onclick = "[GetVariableSystem.Toggle('hbe_af_panel_open')]" }}
+button_close = {{ position = {{ -10 8 }} parentanchor = top|right widgetanchor = top|right onclick = "{execute('hbe_af_ui_panel_close')}" }}
 {text('HBE_AF_PANEL_STATUS',32,53,776,30,fontsize=16).replace('align = left|top', 'align = center')}
 {''.join(toggle)}
 {''.join(cards)} {''.join(expiry_labels)} {cooldown} {footer}
@@ -202,7 +202,7 @@ using = alert_banner_setup using = green_alert
 blockoverride "icon_texture" {{ texture = "gfx/interface/icons/alerts_icons/decisions.dds" }}
 blockoverride "alert_is_new_padding_visible" {{ visible = no }}
 tooltip = "HBE_AF_NOTICE_TT"
-action_tooltip = {{ title = "HBE_AF_NOTICE" on_action = "{execute('hbe_af_ui_prepare')}" on_action = "[GetVariableSystem.Set('hbe_af_panel_open','yes')]" }}
+action_tooltip = {{ title = "HBE_AF_NOTICE" on_action = "{execute('hbe_af_ui_panel_open')}" }}
 action_tooltip = {{ click_type = right title = "HBE_AF_NOTICE_HIDE" on_action = "{execute('hbe_af_ui_dismiss_notice')}" }}
 tooltipwidget = {{ BasicFunctionalTooltip = {{}} }}
 }}

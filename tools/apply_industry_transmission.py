@@ -215,7 +215,7 @@ def apply(out, root, game):
     content_priority = 830
     icon = {stem}
     requires = {row.get('parent', config['parent'])}
-    potential = {{ {visibility} }}
+    potential = {{ hbe_research_origin_{region} = yes }}
     allow = {{
         is_member_of_international_organization = international_organization:hbe_empire
         {license_trigger} = yes

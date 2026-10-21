@@ -54,7 +54,7 @@ def reward(p, i):
         if kind in ('population','manpower'): calc += ' multiply = 1000'
         result.append(f'set_variable = {{ name = hbe_af_nominal value = {{ {calc} }} }}')
 
-        result.append(f'set_variable = {{ name = hbe_af_effective_factor value = var:hbe_af_factor }} if = {{ limit = {{ has_variable = hbe_af_factor_{j} }} set_variable = {{ name = hbe_af_effective_factor value = var:hbe_af_factor_{j} }} }}')
+        result.append(f'set_variable = {{ name = hbe_af_effective_factor value = var:hbe_af_factor }} if = {{ limit = {{ has_variable = hbe_af_factor_{j} }} set_variable = {{ name = hbe_af_effective_factor value = var:hbe_af_factor_{j} }} }} change_variable = {{ name = hbe_af_effective_factor multiply = var:hbe_af_reward_multiplier }}')
         if kind in ('burden', 'population', 'research', 'gold', 'prestige', 'stability', 'manpower', 'army_tradition'):
             calc = reward_expression(r, i)
             result.append(f'set_variable = {{ name = {var} value = {{ {calc} }} }}')
@@ -67,13 +67,14 @@ def reward(p, i):
                 if kind == 'manpower': result.append(f'change_variable = {{ name = {var} multiply = 1000 }}')
 
             if kind == 'population':
-                result.append(f'var:hbe_af_target = {{ add_pop = {{ culture = root.culture religion = root.religion type = pop_type:peasants size = root.var:{var} }} }} change_variable = {{ name = {var} multiply = 1000 }}')
+                pop=r.get('pop_type','peasants')
+                result.append(f'var:hbe_af_target = {{ add_pop = {{ culture = root.culture religion = root.religion type = pop_type:{pop} size = root.var:{var} }} }} change_variable = {{ name = {var} multiply = 1000 }}')
         elif kind == 'modifier':
             key = r.get('modifier') or r['modifiers'][i]
             scope = catalogue()['modifiers'][key]['scope']
             result.append(f'set_variable = {{ name = {var} value = {{ value = {r["months"][i]} multiply = var:hbe_af_effective_factor floor = yes }} }}')
-            eff = f'add_{"country" if scope == "country" else "location"}_modifier = {{ modifier = hbe_af_{key} months = {"root." if scope == "location" else ""}var:{var} mode = replace }}'
-            result.append(f'var:hbe_af_target = {{ {eff} }}' if scope == 'location' else eff)
+            from build_local_affairs_guilds import modifier_effect
+            result.append(modifier_effect(p,r,i,var))
         elif kind == 'building':
             choices = ' '.join(f'100 = {{ trigger = {{ var:hbe_af_target = {{ {building_condition(b)} }} }} var:hbe_af_target = {{ change_building_level_in_location = {{ building = building_type:{b} value = 1 }} }} set_variable = {{ name = {var} value = 1 }} }}' for b in r['choices'])
             result.append('random_list = { '+choices+' }')
@@ -102,7 +103,7 @@ def preview(p, i):
         def displayed(edge):
             key=f'hbe_af_preview_{p["id"]}_{i}_{j}_{edge}'
             return f"[GetPlayer.MakeScope.ScriptValue('{key}')|2]"
-        if kind=='burden': lines.append(f'降低役负 {base*low:g}—{base*high:g}（以现有役负为限）。')
+        if kind=='burden': lines.append(f'降低役负约 {displayed("low")}—{displayed("high")}（以现有役负为限）。')
         elif kind=='research': lines.append(f'研究进度 +{displayed("low")}—{displayed("high")} 点。')
         elif kind in ('prestige','stability','army_tradition'):
             label={'prestige':'威望','stability':'稳定度','army_tradition':'陆军传统'}[kind]
@@ -110,15 +111,24 @@ def preview(p, i):
         elif kind=='manpower':
             lines.append(f'兵员储备约 +{displayed("low")}—{displayed("high")} 人，随月度人力恢复量调整。')
 
-        elif kind=='gold': lines.append(f'金币回收为已付费用的 {base*low*100:g}%—{base*high*100:g}%。')
-        elif kind=='population': lines.append(f'增加相当于目标地点人口 {base*low*100:g}%—{base*high*100:g}% 的本国文化、国教农民。')
+        elif kind=='gold': lines.append(f'约收回 {displayed("low")}—{displayed("high")} @gold!。')
+        elif kind=='population':
+            pop='市民' if r.get('pop_type')=='burghers' else '农民'
+            lines.append(f'增加约 {displayed("low")}—{displayed("high")} 名本国文化、国教{pop}。')
         elif kind=='modifier':
             key=r.get('modifier') or r['modifiers'][i]
-            lines.append(catalogue()['modifiers'][key]['summary']+f'，持续 {int(r["months"][i]*low)}—{int(r["months"][i]*high)} 个月。')
+            lines.append(catalogue()['modifiers'][key]['summary']+f'，持续约 {displayed("low")}—{displayed("high")} 个月。')
+            if r.get('guild_variant'):
+                lines.append('已研究对应产业传习科技且有该产业机构正常运转时，另含对应特色产出加成；全国项目+8%，本地项目+10%（须机构在目标地点）。')
         elif kind=='building':
-            names={'granary':'粮仓','marketplace':'集市','temple':'庙宇','library':'图书馆'}
-            lines.append('合格公共建筑随机 +1 级（'+'／'.join(names[b] for b in r['choices'])+'）；资格改变时返还75%已付金币。')
+            if p.get('guild_role'):
+                lines.append('合格原版产业建筑随机 +1 级（布匹、精纺品、纸、陶器或工具）；不会增加特色机构或越过科技与建造条件，条件改变时返还75%已付金币。')
+            else:
+                names={'granary':'粮仓','marketplace':'集市','temple':'庙宇','library':'图书馆'}
+                lines.append('合格公共建筑随机 +1 级（'+'／'.join(names[b] for b in r['choices'])+'）；资格改变时返还75%已付金币。')
         elif kind=='road': lines.append('接通目标与一处直属相邻地点的碎石道路；已通路或条件改变时返还35%已付金币。')
+    if p.get('guild_role'):
+        lines.append('产业机构承办时役负减少20%，已计入卡片费用；本地项目须机构在目标地点。')
     return '\\n'.join(lines)
 
 
@@ -128,10 +138,15 @@ def build(put, loc, projects):
     range_values=[]
     for project in projects:
         for j,row in enumerate(project['rewards']):
-            if row['type'] not in ('research','prestige','stability','manpower','army_tradition'): continue
+            if row['type'] not in ('research','prestige','stability','manpower','army_tradition','population','modifier','gold','burden'): continue
             for tier in range(2):
                 for edge,factor in zip(('low','high'),row['ordinary_factors']):
                     calc=reward_expression(row,tier,f'{factor:g}')
+                    if row['type']=='population':
+                        calc=calc.replace('var:hbe_af_target.population','var:hbe_af_candidate_target.population')+' multiply = 1000'
+                    if row['type']=='modifier':calc=f'value = {row["months"][tier]} multiply = {factor:g}'
+                    if row['type']=='gold':calc=calc.replace('var:hbe_af_paid',f'hbe_af_cost_{project["id"]}_{"large" if tier else "small"}')
+                    if project['pool']=='local':calc+=' multiply = hbe_af_local_reward_multiplier'
                     if row['type']=='manpower': calc+=' multiply = 1000'
                     range_values.append(f'hbe_af_preview_{project["id"]}_{tier}_{j}_{edge} = {{ {calc} }}')
     put('in_game/common/script_values/hbe_af_reward_values.txt','\n'.join(range_values))
@@ -163,26 +178,46 @@ def build(put, loc, projects):
                 lines.append(f'{label}实际增加 {val} 点。')
             elif kind=='manpower': lines.append(f'兵员储备实际增加 {val} 人。')
 
-            elif kind=='population': lines.append(f"[SCOPE.sLocation('af_location').GetName]实际增加 {val} 名本国文化、国教农民。")
-            elif kind=='building': lines.append(f"[SCOPE.sLocation('af_location').GetName]合格公共建筑实际增加 {val} 级。")
+            elif kind=='population':
+                pop='市民' if r.get('pop_type')=='burghers' else '农民'
+                lines.append(f"[SCOPE.sLocation('af_location').GetName]实际增加 {val} 名本国文化、国教{pop}。")
+            elif kind=='building':
+                label='产业' if p.get('guild_role') else '公共'
+                lines.append(f"[SCOPE.sLocation('af_location').GetName]合格{label}建筑实际增加 {val} 级。")
             elif kind=='road': lines.append(f'实际接通 {val} 段碎石道路。')
             elif kind=='modifier':
                 # Per-tier receipt text is selected below; all amounts are immutable scope values.
                 lines.append(('MODIFIER',r,j))
-        for great in (False,True):
-            eid=p['id']*10+int(great); key=f'hbe_af_result.{eid}'
-            loc[key+'.title']=p['name']+('：#color_yellow 大成功#!' if great else '：工程验收')
-            rows=[]
-            for row in lines:
-                if isinstance(row,str): rows.append(row)
-                else:
-                    _,a,j=row; mk=a.get('modifier') or a['modifiers'][0]
-                    summary=catalogue()['modifiers'][mk]['summary']
-                    if 'modifiers' in a: summary='当地粮食产出增加 '+"[SCOPE.GetValue('af_modifier_strength')|0]%"
-                    rows.append(summary+f"，实际持续 [SCOPE.GetValue('af_actual_{j}')|0] 个月。")
-            loc[key+'.desc']=('各处交割清楚，实得成果超过原先预计。' if great else '工程已按册验收，实际成果如下。')+'\\n\\n'+'\\n'.join(rows)+"\\n\\n本届贡献实际增加 [SCOPE.GetValue('af_contribution')|2]。\\n条件改变时补退金币：[SCOPE.GetValue('af_fallback_gold')|2] @gold!。"
-            events.append(f'{key} = {{ type = country_event outcome = positive title = {key}.title desc = {key}.desc illustration_tags = {{ 1000 = hbe_event_art_civic_council }} option = {{ name = hbe_af_result.accept ai_chance = {{ base = 100 }} }} }}')
+        from build_local_affairs_guilds import industries
+        variants = [(0,None)] + (list(enumerate(industries(),1)) if p.get('guild_role') else [])
+        dispatch=[]
+        for variant,industry in variants:
+            branch=[]
+            for great in (False,True):
+                # Separate result text records the actual specialized effect.
+                eid=p['id']*10+int(great) if variant==0 else p['id']*100+variant*10+int(great)
+                key=f'hbe_af_result.{eid}'
+                loc[key+'.title']=p['name']+('：#color_yellow 大成功#!' if great else '：工程验收')
+                rows=[]
+                for row in lines:
+                    if isinstance(row,str): rows.append(row)
+                    else:
+                        _,a,j=row; mk=a.get('modifier') or a['modifiers'][0]
+                        summary=catalogue()['modifiers'][mk]['summary']
+                        if 'modifiers' in a: summary='当地粮食产出增加 '+"[SCOPE.GetValue('af_modifier_strength')|0]%"
+                        if industry and a.get('guild_variant'):
+                            cfg=catalogue()['guilds'];scope=catalogue()['modifiers'][mk]['scope']
+                            summary+=f'；{"当地" if scope=="location" else "全国"}{cfg["goods_names"][industry["goods"]]}产出 +{cfg["special_output"][scope]*100:g}%'
+                        rows.append(summary+f"，实际持续 [SCOPE.GetValue('af_actual_{j}')|0] 个月。")
+                loc[key+'.desc']=('各处交割清楚，实得成果超过原先预计。' if great else '工程已按册验收，实际成果如下。')+'\\n\\n'+'\\n'.join(rows)+"\\n\\n本届贡献实际增加 [SCOPE.GetValue('af_contribution')|2]。\\n条件改变时补退金币：[SCOPE.GetValue('af_fallback_gold')|2] @gold!。"
+                events.append(f'{key} = {{ type = country_event outcome = positive title = {key}.title desc = {key}.desc illustration_tags = {{ 1000 = hbe_event_art_civic_council }} option = {{ name = hbe_af_result.accept ai_chance = {{ base = 100 }} }} }}')
+                branch.append(f'trigger_event_non_silently = {{ id = {key} }}')
+            dispatch.append((variant,'if = { limit = { var:hbe_af_outcome = 4 } '+branch[1]+' } else = { '+branch[0]+' }'))
         snapshot += ['save_scope_value_as = { name = af_fallback_gold value = var:hbe_af_fallback_gold }','save_scope_value_as = { name = af_modifier_strength value = { value = 6 if = { limit = { var:hbe_af_tier = 2 } add = 2 } } }','if = { limit = { exists = var:hbe_af_target } var:hbe_af_target = { save_scope_as = af_location } }']
-        effects.append(f'hbe_af_receipt_{p["id"]} = {{ if = {{ limit = {{ is_ai = no }} '+ ' '.join(snapshot)+f' if = {{ limit = {{ var:hbe_af_outcome = 4 }} trigger_event_non_silently = {{ id = hbe_af_result.{p["id"]*10+1} }} }} else = {{ trigger_event_non_silently = {{ id = hbe_af_result.{p["id"]*10} }} }} }} }}')
+        # Variant selection happens before event dispatch, so its text is immutable.
+        route=' '.join(('if' if i==0 else 'else_if')+f' = {{ limit = {{ var:hbe_af_guild_variant = {variant} }} '+branch+' }' for i,(variant,branch) in enumerate(dispatch[1:]))
+        if route:route+=' else = { '+dispatch[0][1]+' }'
+        else:route=dispatch[0][1]
+        effects.append(f'hbe_af_receipt_{p["id"]} = {{ if = {{ limit = {{ is_ai = no NOT = {{ var:hbe_af_notice_mode = 2 }} OR = {{ NOT = {{ var:hbe_af_notice_mode = 1 }} var:hbe_af_outcome = 4 }} }} '+ ' '.join(snapshot)+' '+route+' } }')
     put('in_game/events/hbe_af_results.txt','\n'.join(events))
     return effects

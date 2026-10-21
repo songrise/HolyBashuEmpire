@@ -47,7 +47,8 @@ def validate(mod, root, game, manifest, check):
     units = definitions(text)
     triggers = definitions((mod/TRIGGERS).read_text(encoding='utf-8-sig'))
     resolve = resolve_units(mod, game)
-    check('age-two military adds five unit types and no research nodes', len(units) == 14 and manifest['research_nodes'] == 91 and config['new_advance_count'] == 0)
+    expected_nodes=91+manifest.get('local_affairs_research',{}).get('advance_count',0)+manifest.get('civic_teahouse',{}).get('advance_count',0)
+    check('age-two military adds five unit types and no military research nodes', len(units) == 14 and manifest['research_nodes'] == expected_nodes and config['new_advance_count'] == 0)
     check('all fourteen types remain 500 men', all(resolve(key)['max_strength'] == .5 for key in units))
     counter = definitions((mod/'in_game/common/script_values/hbe_civic_values.txt').read_text(encoding='utf-8-sig'))['hbe_civic_special_count']
     counts = Counter(re.findall(r'total_sub_unit_type_count:(\w+)', counter))
@@ -62,7 +63,7 @@ def validate(mod, root, game, manifest, check):
             for field, value, _, _ in scalars(body):
                 if field == 'unlock_unit':
                     actual_unlocks.setdefault(value, []).append(key)
-    check('HBE advance registry stays at 91', hbe_count == 91)
+    check('HBE advance registry matches all declared research modules', hbe_count == expected_nodes)
     for relative in config['tech_files']:
         original = definitions((game/relative).read_text(encoding='utf-8-sig'))
         patched = definitions((mod/relative).read_text(encoding='utf-8-sig'))

@@ -9,10 +9,11 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--mod-dir',type=Path,default=ROOT/'mod/holy_bashu_empire')
     ap.add_argument('--game-dir',type=Path,required=True);ap.add_argument('--report',type=Path)
+    ap.add_argument('--keep-going',action='store_true',help='Report all failed assertions instead of stopping at the first one')
     a=ap.parse_args();m=a.mod_dir;game=a.game_dir/'game';checks=[]
     def check(name,ok):
         checks.append(dict(check=name,passed=bool(ok)))
-        if not ok:raise AssertionError(name)
+        if not ok and not a.keep_going:raise AssertionError(name)
     manifest=json.loads((m/'build_manifest.json').read_text(encoding='utf-8'))
     check('36 selectable princes',len(manifest['countries'])==36)
     check('7 circles and 7 distinct electors',len(manifest['regions'])==7 and len(set(manifest['electors'].values()))==7)
@@ -73,7 +74,7 @@ def main():
     effects=(m/'in_game/common/scripted_effects/hbe_effects.txt').read_text(encoding="utf-8-sig")
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
-    expected_nodes = 80 + manifest.get('industry_transmission', {}).get('advance_count', 0) + manifest.get('early_research_design', {}).get('military_count', 0) + manifest.get('local_affairs_research', {}).get('advance_count', 0)
+    expected_nodes = 80 + manifest.get('industry_transmission', {}).get('advance_count', 0) + manifest.get('early_research_design', {}).get('military_count', 0) + manifest.get('local_affairs_research', {}).get('advance_count', 0) + manifest.get('civic_teahouse', {}).get('advance_count', 0)
     check('current decisions and native research node count',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and manifest['research_nodes']==expected_nodes)
     check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
@@ -105,7 +106,7 @@ def main():
         check('two-year accounts are once per situation','var:hbe_round_month >= 24' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
         check('cooperative settlement uses adaptive contribution target','var:hbe_feast_total >= var:hbe_feast_required' in banquet)
         check('funding requires real scaled payment','gold >= hbe_feast_fee' in new_decisions and 'hbe_fund_project' in banquet)
-        check('obsolete promises hidden', 'hbe_project_pledge = {' in new_decisions and new_decisions.count('potential = { always = no }')==20)
+        check('obsolete promises and duplicate feast decision entrances hidden', 'hbe_project_pledge = {' in new_decisions and new_decisions.count('potential = { always = no }')==24)
         check('centennial arrangement needs a century and actual successes','current_year >= 1437' in banquet and 'var:hbe_completed_projects >= 6' in banquet)
     else:
         check('three-year accounts are once per situation','var:hbe_round_month >= 36' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
@@ -180,7 +181,8 @@ def main():
     advances=(m/'in_game/common/advances/hbe_advances.txt').read_text(encoding='utf-8-sig')
     advance_blocks={key:advances[a:b] for key,_,a,b,_ in blocks(advances,0)}
     check('64 research icons belong to native advance nodes only',len(advance_blocks)==64 and not any(k.startswith('hbe_tech_') for k in decision_blocks) and all('icon = '+k in b and k+'_desc' in loc_keys for k,b in advance_blocks.items()))
-    check('all native research nodes have requested progression gates and explicit tag potentials',all(('current_year' not in advance_blocks[e['key']] if 'formables_units_v031' in manifest else 'current_year >= '+str(e['year']) in advance_blocks[e['key']]) and all('has_or_had_tag = '+t in advance_blocks[e['key']] for t in e['tags']) for e in native['advances']))
+    from apply_presentation_v040 import origin_for_tags
+    check('all native research nodes retain progression gates and originating-circle potentials',all(('current_year' not in advance_blocks[e['key']] if 'formables_units_v031' in manifest else 'current_year >= '+str(e['year']) in advance_blocks[e['key']]) and (('hbe_research_origin_'+origin_for_tags(e['tags'],manifest)+' = yes' in advance_blocks[e['key']]) if 'presentation_v040' in manifest else all('has_or_had_tag = '+t in advance_blocks[e['key']] for t in e['tags'])) for e in native['advances']))
     check('native starting technology does not pregrant regional research',all('starting_technology_level = 99' in b for b in advance_blocks.values()))
     def excludes(body,key):
         return any(re.search(r'(?:has_advance\s*=\s*'+re.escape(key)+r'\b|hbe_advance_gate_'+re.escape(key)+r'\s*=\s*yes)',body[b:e]) for k,_,b,e,_ in blocks(body) if k=='NOT')
@@ -246,8 +248,14 @@ def main():
         validate_opening_territory(m,ROOT,manifest,check)
     from validate_local_affairs import validate as validate_local_affairs
     validate_local_affairs(m,ROOT,game,manifest,check)
-    report=dict(status='passed',checks=checks,check_count=len(checks),story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
+    from apply_presentation_v040 import validate as validate_presentation
+    validate_presentation(m,manifest,check)
+    failed=[row['check'] for row in checks if not row['passed']]
+    report=dict(status='failed' if failed else 'passed',checks=checks,check_count=len(checks),failed=failed,story_paths=story_paths,gameplay_validation='Structural and resource-reference checks; runtime and visual verification reported separately',version=manifest['version'])
     if a.report:a.report.parent.mkdir(parents=True,exist_ok=True);a.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    if failed:
+        print(f'FAIL: {len(failed)} of {len(checks)} checks: '+ '; '.join(failed))
+        raise SystemExit(1)
     print(f'PASS: {len(checks)} checks; 36 princes, 164 locations, 7 circles, {manifest["research_nodes"]} research nodes.')
 
 if __name__=='__main__':main()

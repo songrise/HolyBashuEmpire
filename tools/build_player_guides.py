@@ -107,7 +107,7 @@ def build_player_guides(root,loc,L,put):
         def replacement(match):
             label=match[0];cid=lookup[label]
             if cid==own:return label
-            icon=('@'+icon_by_key[cid]+'! ') if cid in icon_by_key else ''
+            icon=('@'+icon_by_key[cid]+'!') if cid in icon_by_key else ''
             return icon+f"[Concept('{cid}', '{label}')|e]"
         return ''.join(chunk if chunk.startswith('[') else pattern.sub(replacement,chunk) for chunk in re.split(r'(\[[^\]]*\])',text))
     # Concept display names and event titles stay plain. Existing data functions stay intact.
