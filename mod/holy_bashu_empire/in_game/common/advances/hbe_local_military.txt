@@ -1,5 +1,5 @@
 ﻿hbe_military_chengdu_plain = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_chengdu_plain content_priority = 875
  potential = { hbe_research_origin_chengdu_plain = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
@@ -10,7 +10,7 @@
 }
 
 hbe_military_southern_salt_wine = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_southern_salt_wine content_priority = 875
  potential = { hbe_research_origin_southern_salt_wine = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
@@ -21,7 +21,7 @@ hbe_military_southern_salt_wine = {
 }
 
 hbe_military_eastern_river = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_eastern_river content_priority = 875
  potential = { hbe_research_origin_eastern_river = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
@@ -32,7 +32,7 @@ hbe_military_eastern_river = {
 }
 
 hbe_military_northern_shudao = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_northern_shudao content_priority = 875
  potential = { hbe_research_origin_northern_shudao = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
@@ -43,7 +43,7 @@ hbe_military_northern_shudao = {
 }
 
 hbe_military_central_hills = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_central_hills content_priority = 875
  potential = { hbe_research_origin_central_hills = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
@@ -54,7 +54,7 @@ hbe_military_central_hills = {
 }
 
 hbe_military_western_tea_horse = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_western_tea_horse content_priority = 875
  potential = { hbe_research_origin_western_tea_horse = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
@@ -65,7 +65,7 @@ hbe_military_western_tea_horse = {
 }
 
 hbe_military_southwestern_valleys = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_military_southwestern_valleys content_priority = 875
  potential = { hbe_research_origin_southwestern_valleys = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }

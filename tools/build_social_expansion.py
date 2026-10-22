@@ -12,7 +12,14 @@ from build_icon_assets import fit
 from expansion_catalogue import BUILDINGS,TECHS,UNITS,OFFICES,INCIDENTS,POLITICAL_ART
 
 MEMBER='is_member_of_international_organization = international_organization:hbe_empire'
-def identity(tags):return 'OR = { '+' '.join('has_or_had_tag = '+t for t in tags)+' }'
+def identity(group=None, *, negate=False):
+    """Keep native-circle identity distinct from the shared HBE certificate."""
+    if group is None:
+        return 'hbe_is_prince_tag = yes'
+    origin = f'hbe_research_origin_{group} = yes'
+    if negate:
+        return f'custom_tooltip = {{ text = hbe_not_origin_{group}_tt NOT = {{ {origin} }} }}'
+    return origin
 def tech(g,i):return f'hbe_civic_{g}_{i}'
 def dv(k):return f"[ROOT.GetVariable('{k}').GetValue|0]"
 CIVIC_INTRO = {
@@ -28,8 +35,8 @@ def pay(value='hbe_public_bill'):return f'add_gold = {{ value = {value} multiply
 
 def build_social_expansion(out,root,countries,regions,loc,put):
     tags=[c['tag'] for c in countries];bygroup={r[0]:[c['tag'] for c in countries if c['region']==r[0]] for r in regions}
-    R={r[0]:r for r in regions};allid=identity(tags);unlocks=defaultdict(list);effects=[];triggers=[];events=[];decisions=[];eventdata=[];decisiondata=[]
-    def licensed(g):return f'OR = {{ {identity(bygroup[g])} has_variable = hbe_guest_{g} }}'
+    R={r[0]:r for r in regions};allid=identity();unlocks=defaultdict(list);effects=[];triggers=[];events=[];decisions=[];eventdata=[];decisiondata=[]
+    def licensed(g):return f'OR = {{ {identity(g)} has_variable = hbe_guest_{g} }}'
     def active(k):return f'hbe_operating_{k.removeprefix("hbe_")} = yes'
     def regional_active(g):return 'OR = { '+ ' '.join(active(b[0]) for b in BUILDINGS if b[2]==g)+' }'
     def event(eid,title,body,opts,scene='council',immediate='',hidden=False):
@@ -146,7 +153,7 @@ hbe_civic_special_limit = {{
         policies.append(f'''{key} = {{
  potential = {{ {MEMBER} {allid} has_advance = {tech('common',1)} }}
  country_modifier = {{ {mod} }} estate_preferences = {{ {estate} }}
- on_activate = {{ set_variable = {{ name = hbe_labor_policy value = {i} }} set_variable = {{ name = hbe_policy_lock value = yes years = 5 }} }}
+ on_activate = {{ set_variable = {{ name = hbe_policy_lock value = yes years = 5 }} }}
 }}''')
     loc['hbe_civil_service_law']='民役议约';loc['hbe_civil_service_law_desc']='全国择一民役政策，选择后五年不得改换。地方事业、请愿与驻防均依本约办理。'
     put('in_game/common/laws/hbe_civic_law.txt',f'''hbe_civil_service_law = {{ type = country unique = yes law_category = administrative
@@ -175,7 +182,7 @@ hbe_civic_special_limit = {{
             unlock=('解锁三种民役政策、两项阶层特权、府议与驻防粮额；役负影响事业与招募。' if i==1 else '解锁公账审计、客籍议约与1457年的修约议事。') if g=='common' else ('解锁'+OFFICES[list(R).index(g)]+'五年委任与本圈协调事务。' if i==1 else '解锁本圈续约协调与传习减役；川东、蜀道另解锁升级兵种。')
             loc[k]=name;loc[k+'_desc']=desc+'\n\n'+unlock;loc[k+'_effects']=unlock
             advances.append(f'''{k} = {{ age = {'age_1_traditions' if year<1437 else 'age_2_renaissance'} starting_technology_level = 99
- icon = {k} content_priority = 880 research_cost = {3 if i==1 else 4}
+ icon = {k} content_priority = 880
  potential = {{ hbe_research_origin_{g} = yes }}
  allow = {{ {MEMBER} current_year >= {year} {gate} }}
  requires = {parent} pure_tooltip_entry = {k}_effects {' '.join(unlocks[k])} }}''')
@@ -191,7 +198,7 @@ hbe_civic_special_limit = {{
 hbe_civic_initialize = {
  if = { limit = { NOT = { has_variable = hbe_civic_initialized } }
  set_variable = hbe_civic_initialized set_variable = { name = hbe_burden value = 20 }
- set_variable = { name = hbe_labor_policy value = 0 } set_variable = { name = hbe_office_count value = 0 }
+ set_variable = { name = hbe_office_count value = 0 }
  set_variable = { name = hbe_special_record value = hbe_civic_special_count }
  trigger_event_non_silently = { id = hbe_civic.1 days = 30 } }
 }
@@ -209,7 +216,7 @@ hbe_civic_initialize = {
         g,region,_,label,counter,*_=r;bld=next(b[0] for b in BUILDINGS if b[2]==g);home=f'has_variable = hbe_home_{g}'
         k='hbe_fuyi_'+g;loc[k]=['渠工分水','盐引担保','江岸通行','关驿轮役','义仓赈借','商队互保','乡寨驻防'][j];loc[k+'_desc']='将本圈的分摊与维护提交原版议会；通过后进入地方府议事件，沿用五年议事间隔。'
         issues.append(f'''{k} = {{ estate = {'burghers_estate' if j in (1,2,5) else 'peasants_estate'}
- allow = {{ {MEMBER} {identity(bygroup[g])} has_advance = {tech('common',1)} NOT = {{ has_variable = hbe_council_cooldown }} }}
+ allow = {{ {MEMBER} {identity(g)} has_advance = {tech('common',1)} NOT = {{ has_variable = hbe_council_cooldown }} }}
  modifier_when_in_debate = {{ peasants_estate_target_satisfaction = 0.01 }}
  on_debate_passed = {{ set_variable = {{ name = hbe_council_cooldown value = yes years = 5 }} trigger_event_non_silently = {{ id = hbe_civic.{100+j*2} }} }}
  on_debate_failed = {{ {burden(3)} }} chance = 20 }}''')
@@ -245,7 +252,7 @@ hbe_civic_initialize = {
         monthly.append(f'''if = {{ limit = {{ var:{ok} = 1 OR = {{ NOT = {{ has_variable = {ok}_term }} NOT = {{ {MEMBER} }} NOT = {{ {regional_active(g)} }} NOT = {{ international_organization:hbe_circle_{g} = {{ var:hbe_civic_holder = prev }} }} var:hbe_burden >= 70 }} }} {relinquish} trigger_event_non_silently = {{ id = hbe_civic.4 }} }}''')
         monthly.append(f'if = {{ limit = {{ var:{ok} = 1 }} change_variable = {{ name = hbe_office_count add = 1 }} }}')
         decision('hbe_coordinate_'+g,office+'：主持本圈协调',region+'的维护不能全由主持者决定，却可以由他先认下一份费用。我们愿将本届地方储备与会盟信用用于此事，公布分摊，留下后续可查的凭据。\n\n在任且机构正常时，出资办理一次本圈协调，降低役负、取得履约；三年间隔，续约科技可再减轻负担。',f'var:{ok} = 1 {regional_active(g)} NOT = {{ has_variable = {ok}_action_cooldown }} gold >= hbe_public_bill var:{counter} >= 5',pay()+f' change_variable = {{ name = {counter} subtract = 5 }} '+burden(-6)+' '+yiqi(2)+f' change_variable = {{ name = hbe_contribution add = 1 }} set_variable = {{ name = {ok}_action_cooldown value = yes years = 3 }} if = {{ limit = {{ has_advance = {tech(g,2)} }} {burden(-3)} }}',art='hbe_office_'+str(j),potential=licensed(g),ai=15)
-        decision('hbe_guest_'+g,'订立'+region+'客籍议约','整合一处旧府州，并不等于掌握当地所有技艺。本府愿认可旧日见证，承担机构维护，并请当地承办者依原约保留本业。\n\n1437年后，公账审计、共同度量、乡社议办及义气60允许有限客籍资格；支付雇办费并消耗10义气。只开放本圈机构与基础军制，仍须实际建造和供养，不复制全圈科技。',f'has_advance = {tech("common",2)} has_advance = hbe_tech_common_2 has_policy = hbe_communal_policy var:hbe_yiqi >= 60 gold >= hbe_paid_bill any_owned_location = {{ is_in_scripted_geography = scripted_geography:hbe_geo_{g} }} NOT = {{ has_variable = hbe_guest_{g} }}',pay('hbe_paid_bill')+' '+yiqi(-10)+f' set_variable = hbe_guest_{g}',art='hbe_guest_compact',potential=f'NOT = {{ {identity(bygroup[g])} }}',ai=3)
+        decision('hbe_guest_'+g,'订立'+region+'客籍议约','整合一处旧府州，并不等于掌握当地所有技艺。本府愿认可旧日见证，承担机构维护，并请当地承办者依原约保留本业。\n\n1437年后，公账审计、共同度量、乡社议办及义气60允许有限客籍资格；支付雇办费并消耗10义气。只开放本圈机构与基础军制，仍须实际建造和供养，不复制全圈科技。',f'has_advance = {tech("common",2)} has_advance = hbe_tech_common_2 has_policy = hbe_communal_policy var:hbe_yiqi >= 60 gold >= hbe_paid_bill any_owned_location = {{ is_in_scripted_geography = scripted_geography:hbe_geo_{g} }} NOT = {{ has_variable = hbe_guest_{g} }}',pay('hbe_paid_bill')+' '+yiqi(-10)+f' set_variable = hbe_guest_{g}',art='hbe_guest_compact',potential=identity(g, negate=True),ai=3)
         yearly.append(f'''if = {{ limit = {{ {home} current_year >= 1352 NOT = {{ has_variable = hbe_civic_incident_cooldown }} has_advance = {tech('common',1)} OR = {{ var:hbe_burden >= 40 var:{ok} = 1 }} }}
  if = {{ limit = {{ has_variable = hbe_civic_alternate }} remove_variable = hbe_civic_alternate trigger_event_non_silently = {{ id = hbe_civic.{100+j*2} }} }}
  else = {{ set_variable = hbe_civic_alternate trigger_event_non_silently = {{ id = hbe_civic.{101+j*2} }} }} }}''')
@@ -257,7 +264,7 @@ hbe_civic_initialize = {
     event(5,'乡里呈上减役之请','征调的文书接连到来，乡里已经很难在田亩、修路与驻守之间安排人手。府臣仍能列出每道命令的理由，却无法解释为何它们合在一起，就应由同一批人无休止地承担。\n\n见证者请求重新议定期限。我们可以用现钱替代部分劳役，也可以暂缓急办；若继续维持旧额，本府的信用和阶层支持将一并受损。',[('出资补偿，并承诺复核。',pay('hbe_paid_bill')+' '+burden(-15),'gold >= hbe_paid_bill',65),('放缓办理，给乡里留下耕作时日。',burden(-10)+' add_country_modifier = { modifier = hbe_civic_slow_work years = 3 mode = replace }','',30),('仍依旧额，命各乡按期到场。',burden(5)+' '+yiqi(-5)+' add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }','',5)],scene='civic_council',immediate='set_variable = { name = hbe_petition_cooldown value = yes years = 5 }')
     event(6,'共役公账的复核','案房把近年的付费、雇价与轮役分别抄列。旧簿中的总数尚能相合，却有一些支出只记承办人，有些征调只记乡名，继任者难以查明同一份责任是否被记了两次。\n\n复核将花费府库和书记的人手，能使未清的分摊得到处理，也为1457年之后的续约留下可循的凭据。',[('出资复核，公布承担与交付。',pay()+' '+burden(-8)+' '+yiqi(3)+' set_variable = { name = hbe_audit_ready value = yes years = 10 }','gold >= hbe_public_bill',100),('将未清的部分暂存，日后再查。','', '',0)],scene='civic_council')
     decision('hbe_civic_audit','复核共役公账','旧账不应仅因更换主持者就成为无人认领的支出。我们请案房查明实际出资、供养与验收，留下一份各乡能够重新核对的册籍。\n\n完成公账审计课题，维护共役案房；五年一次，出资后役负-8、义气+3，取得十年修约凭据。',f'has_advance = {tech("common",2)} {active("hbe_works_archive")} NOT = {{ has_variable = hbe_civic_audit_cooldown }} gold >= hbe_public_bill','set_variable = { name = hbe_civic_audit_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.6 }',art='hbe_audit',ai=8)
-    event(7,'修约之后，仍须履约','百年章程早已确定了诸侯合作的方式，却没有使每一代人的负担自动相同。新的作坊、岸仓和驻守要用新的粮料，乡社和行会也应有机会指出旧额难以接续之处。\n\n今天的修约沿用已经承认的章程，不另造帝国代表席位。我们将依共锅、分锅或契约安排，明确未来五年的维护与分摊。',[('按现行章程续订维护。',pay()+' '+burden(-8)+' '+yiqi(2)+' if = { limit = { situation:hbe_banquet = { var:hbe_charter = 1 } } international_organization:hbe_empire = { change_variable = { name = hbe_guoqi add = 2 } } } else_if = { limit = { situation:hbe_banquet = { var:hbe_charter = 2 } } '+burden(-2)+' } else = { '+yiqi(1)+' }','gold >= hbe_public_bill',100),('保留旧约，下一届再议。','', '',0)],scene='civic_council')
+    event(7,'修约之后，仍须履约','百年章程早已确定了诸侯合作的方式，却没有使每一代人的负担自动相同。新的作坊、岸仓和驻守要用新的粮料，乡社和行会也应有机会指出旧额难以接续之处。\n\n今天的修约沿用已经承认的章程，不另造帝国代表席位。我们将依共建、兴业或契约安排，明确未来五年的维护与分摊。',[('按现行章程续订维护。',pay()+' '+burden(-8)+' '+yiqi(2)+' if = { limit = { situation:hbe_banquet = { var:hbe_charter = 1 } } international_organization:hbe_empire = { change_variable = { name = hbe_guoqi add = 2 } } } else_if = { limit = { situation:hbe_banquet = { var:hbe_charter = 2 } } '+burden(-2)+' } else = { '+yiqi(1)+' }','gold >= hbe_public_bill',100),('保留旧约，下一届再议。','', '',0)],scene='civic_council')
     decision('hbe_civic_revision','续订维护与驻守之约','旧章程之下的新责任仍须有人出资，也须得到实际承担者认可。我们愿依最近的公账复核，重新签认未来五年的维护，免使长期合作只剩下最初的名号。\n\n1457年后、已有百年章程与公账审计凭据可办理；三种章程均能续约，五年间隔，不改变三十六旧席。',f'current_year >= 1457 has_advance = {tech("common",2)} has_variable = hbe_audit_ready NOT = {{ has_variable = hbe_revision_cooldown }} situation:hbe_banquet = {{ var:hbe_charter > 0 }} gold >= hbe_public_bill','set_variable = { name = hbe_revision_cooldown value = yes years = 5 } trigger_event_non_silently = { id = hbe_civic.7 }',art='hbe_revision',ai=10)
 
     effects.append('''hbe_civic_monthly = {
@@ -275,7 +282,7 @@ hbe_civic_initialize = {
  else = { remove_country_modifier = hbe_civic_strained remove_country_modifier = hbe_civic_exhausted }
  if = { limit = { var:hbe_burden >= 70 NOT = { has_variable = hbe_petition_cooldown } } trigger_event_non_silently = { id = hbe_civic.5 } }
 }''')
-    recovery='NOT = { at_war = yes } NOT = { has_variable = hbe_work_burst_cooldown }'
+    recovery='NOT = { at_war = yes }'
     effects.append('hbe_civic_yearly = { if = { limit = { '+recovery+' } '+burden(-3)+' } '+' '.join(yearly)+' }')
     put('in_game/common/scripted_effects/hbe_civic_effects.txt','\n'.join(effects))
     put('in_game/common/scripted_triggers/hbe_civic_triggers.txt','\n'.join(triggers))

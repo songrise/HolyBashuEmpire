@@ -18,7 +18,7 @@ class RetiredWordingTest(unittest.TestCase):
         self.assertTrue(scan_text(' game_concept_hbe_term_grain_desc: "开局20，上限100。"'))
 
     def test_current_wording_passes(self):
-        self.assertFalse(scan_text(' hbe_BAE_scenario_desc: "以真实渠务办成本圈地方项目。"'))
+        self.assertFalse(scan_text(' hbe_BAE_scenario_desc: "以真实渠务办成本圈地方事业。"'))
 
 
 if __name__ == '__main__':

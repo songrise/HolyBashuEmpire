@@ -1,0 +1,27 @@
+﻿namespace = hbe_balance_smoke
+hbe_balance_smoke.1 = { type = country_event hidden = yes title = hbe_af_project_1 immediate = { hbe_af_initialize = yes add_gold = 10000 set_variable = { name = hbe_af_paid value = 20 } set_variable = { name = hbe_af_reward_multiplier value = 1 } set_variable = { name = hbe_af_factor value = 1 } set_variable = { name = hbe_af_factor_0 value = 1 } set_variable = { name = hbe_af_factor_1 value = 1 } set_variable = { name = hbe_af_factor_2 value = 1 } set_variable = { name = hbe_af_factor_3 value = 1 } 
+set_variable = { name = hbe_burden value = 50 }
+if = { limit = { hbe_af_eligible_1 = no } set_variable = hbe_balance_pass_relief_blocked test_log = HBE_BALANCE_PASS_relief_blocked } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_relief_blocked }
+set_variable = { name = hbe_burden value = 51 }
+if = { limit = { hbe_af_eligible_1 = yes } set_variable = hbe_balance_pass_relief_allowed test_log = HBE_BALANCE_PASS_relief_allowed } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_relief_allowed }
+set_variable = { name = hbe_balance_cost value = { value = hbe_event_economic_base multiply = 2.8 min = 10 } }
+if = { limit = { hbe_af_cost_1_small = var:hbe_balance_cost } set_variable = hbe_balance_pass_cost test_log = HBE_BALANCE_PASS_cost } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_cost }
+set_variable = { name = hbe_burden value = 50 } hbe_af_reward_1_small = yes
+if = { limit = { var:hbe_burden = 42 var:hbe_af_actual_0 = 8 } set_variable = hbe_balance_pass_double_burden test_log = HBE_BALANCE_PASS_double_burden } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_double_burden }
+hbe_af_reward_8_small = yes
+if = { limit = { var:hbe_af_actual_1 = 18 has_country_modifier = hbe_af_paid_crews } set_variable = hbe_balance_pass_duration test_log = HBE_BALANCE_PASS_duration } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_duration }
+set_variable = { name = hbe_af_people_0_0 value = 0 } hbe_af_reward_19_small = yes
+if = { limit = { var:hbe_af_actual_0 = 0 } set_variable = hbe_balance_pass_courtier_miss test_log = HBE_BALANCE_PASS_courtier_miss } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_courtier_miss }
+set_variable = { name = hbe_af_national value = 19 } set_variable = { name = hbe_burden value = 20 } hbe_af_start_19_small = yes set_variable = { name = hbe_af_people_0_0 value = 1 } hbe_af_complete = yes
+if = { limit = { exists = scope:hbe_af_new_courtier var:hbe_af_actual_0 = 1 var:hbe_af_completed = 1 NOT = { has_variable = hbe_af_active } } set_variable = hbe_balance_pass_courtier_success test_log = HBE_BALANCE_PASS_courtier_success } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_courtier_success }
+hbe_af_complete = yes
+if = { limit = { var:hbe_af_completed = 1 } set_variable = hbe_balance_pass_no_double_complete test_log = HBE_BALANCE_PASS_no_double_complete } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_no_double_complete }
+set_variable = { name = hbe_af_people_0_0 value = 0 } hbe_af_reward_20_small = yes
+if = { limit = { var:hbe_af_actual_0 = 0 var:hbe_af_artist_gain = 0 var:hbe_af_art_gain = 0 } set_variable = hbe_balance_pass_art_miss test_log = HBE_BALANCE_PASS_art_miss } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_art_miss }
+set_variable = { name = hbe_af_people_0_0 value = 1 } hbe_af_reward_20_small = yes
+if = { limit = { var:hbe_af_actual_0 = 1 OR = { AND = { var:hbe_af_art_gain = 1 any_work_of_art_in_country = { always = yes } } AND = { var:hbe_af_artist_gain = 1 exists = scope:hbe_af_new_artist } } } set_variable = hbe_balance_pass_art_success test_log = HBE_BALANCE_PASS_art_success } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_art_success }
+set_variable = { name = hbe_burden value = 100 } set_variable = { name = hbe_af_national value = 1 } set_variable = { name = hbe_af_budget value = 10000 } set_variable = { name = hbe_af_spent value = 0 } set_variable = { name = hbe_af_limit value = 50 } set_variable = hbe_af_no_local remove_variable = hbe_af_no_national
+if = { limit = { hbe_af_can_1_small = yes } set_variable = hbe_balance_pass_relief_above_cap test_log = HBE_BALANCE_PASS_relief_above_cap } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_relief_above_cap }
+hbe_af_auto_choose = yes
+if = { limit = { var:hbe_af_choice = 11 } set_variable = hbe_balance_pass_auto_relief_above_cap test_log = HBE_BALANCE_PASS_auto_relief_above_cap } else = { set_variable = hbe_balance_failed test_log = HBE_BALANCE_FAIL_auto_relief_above_cap }
+if = { limit = { NOT = { has_variable = hbe_balance_failed } } set_variable = hbe_balance_all_pass test_log = HBE_BALANCE_ALL_PASS } } }

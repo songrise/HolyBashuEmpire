@@ -1,11 +1,4 @@
-﻿hbe_service_chengdu_plain = {
-    tags = { BAB BAE BAF BAJ BAL HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_chengdu_plain.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_chengdu_plain.a ai_chance = { value = 100 } effect = { } }
-}
+﻿
 hbe_mission_chengdu_plain_1 = {
     tags = { BAB BAE BAF BAJ BAL HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_chengdu_plain_1.dds"
@@ -46,14 +39,7 @@ hbe_mission_chengdu_plain_5 = {
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_chengdu_plain_5.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_decision_bill_10 multiply = -1 } set_variable = hbe_mission_chengdu_plain_5 change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
-hbe_service_southern_salt_wine = {
-    tags = { BAO BAP BAQ BAW HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_southern_salt_wine.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_southern_salt_wine.a ai_chance = { value = 100 } effect = { } }
-}
+
 hbe_mission_southern_salt_wine_1 = {
     tags = { BAO BAP BAQ BAW HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_southern_salt_wine_1.dds"
@@ -94,14 +80,7 @@ hbe_mission_southern_salt_wine_5 = {
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_southern_salt_wine_5.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_decision_bill_10 multiply = -1 } set_variable = hbe_mission_southern_salt_wine_5 change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
-hbe_service_eastern_river = {
-    tags = { BAX BAZ BBB BBC BBE BBF BBH HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_eastern_river.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_eastern_river.a ai_chance = { value = 100 } effect = { } }
-}
+
 hbe_mission_eastern_river_1 = {
     tags = { BAX BAZ BBB BBC BBE BBF BBH HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_eastern_river_1.dds"
@@ -142,14 +121,7 @@ hbe_mission_eastern_river_5 = {
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_eastern_river_5.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_decision_bill_10 multiply = -1 } set_variable = hbe_mission_eastern_river_5 change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
-hbe_service_northern_shudao = {
-    tags = { BBI BBJ BBL BBM BBN BBO BBP HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_northern_shudao.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_northern_shudao.a ai_chance = { value = 100 } effect = { } }
-}
+
 hbe_mission_northern_shudao_1 = {
     tags = { BBI BBJ BBL BBM BBN BBO BBP HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_northern_shudao_1.dds"
@@ -190,14 +162,7 @@ hbe_mission_northern_shudao_5 = {
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_northern_shudao_5.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_decision_bill_10 multiply = -1 } set_variable = hbe_mission_northern_shudao_5 change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
-hbe_service_central_hills = {
-    tags = { BBQ BBR BBS BBT HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_central_hills.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_central_hills.a ai_chance = { value = 100 } effect = { } }
-}
+
 hbe_mission_central_hills_1 = {
     tags = { BBQ BBR BBS BBT HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_central_hills_1.dds"
@@ -238,14 +203,7 @@ hbe_mission_central_hills_5 = {
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_central_hills_5.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_decision_bill_10 multiply = -1 } set_variable = hbe_mission_central_hills_5 change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
-hbe_service_western_tea_horse = {
-    tags = { BBU BBV BBW HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_western_tea_horse.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_western_tea_horse.a ai_chance = { value = 100 } effect = { } }
-}
+
 hbe_mission_western_tea_horse_1 = {
     tags = { BBU BBV BBW HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_western_tea_horse_1.dds"
@@ -286,14 +244,7 @@ hbe_mission_western_tea_horse_5 = {
     ai_will_do = { value = 10 }
     option = { name = hbe_mission_western_tea_horse_5.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_decision_bill_10 multiply = -1 } set_variable = hbe_mission_western_tea_horse_5 change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 5 } hbe_clamp_yiqi = yes international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi add = 2 } if = { limit = { var:hbe_guoqi > 100 } set_variable = { name = hbe_guoqi value = 100 } } } add_prestige = 2 } }
 }
-hbe_service_southwestern_valleys = {
-    tags = { BBX BBY BBZ BCA BCB BCC HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_service_southwestern_valleys.dds"
-    potential = { always = no }
-    allow = { always = no }
-    ai_will_do = { value = 10 }
-    option = { name = hbe_service_southwestern_valleys.a ai_chance = { value = 100 } effect = { } }
-}
+
 hbe_mission_southwestern_valleys_1 = {
     tags = { BBX BBY BBZ BCA BCB BCC HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_mission_southwestern_valleys_1.dds"
@@ -350,14 +301,7 @@ hbe_salt_repay = {
     ai_will_do = { value = 20 }
     option = { name = hbe_salt_repay.a ai_chance = { value = 100 } effect = { add_gold = -10 change_variable = { name = hbe_salt_debt subtract = 10 } hbe_add_credit = yes } }
 }
-hbe_status = {
-    tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB }
-    decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_status.dds"
-    potential = { always = no }
-    allow = { always = yes  }
-    ai_will_do = { value = 0 }
-    option = { name = hbe_status.a ai_chance = { value = 100 } effect = {  trigger_event_non_silently = { id = hbe.4 } } }
-}
+
 hbe_assembly = {
     tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB }
     decision_category = country_specific_decisions image = "gfx/interface/hbe/decisions/hbe_assembly.dds"

@@ -1,0 +1,1 @@
+﻿hbe_balance_smoke = { year = 1337 end_year = 1338 fail_on_end_year = yes success = { current_date >= 1337.4.20 } success_effect = { test_log = HBE_BALANCE_TEST_DONE } }

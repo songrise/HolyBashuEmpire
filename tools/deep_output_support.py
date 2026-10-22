@@ -14,13 +14,15 @@ def apply(out,report):
  }}
 }}''')
  migrate=['hbe_migrate_legacy_output_supports = { if = { limit = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_legacy_output_migrated } }']
+ identities=set()
  for row in report['pooled_support']:
   if row['empty_original']:
-   p=out/'main_menu/common/static_modifiers/hbe_legacy_output_flags.txt'
-   with p.open('a',encoding='utf-8-sig') as f:f.write(row['modifier']+' = { } # Existing-save identity only.\n')
+   identities.add(row['modifier'])
   for typ,value in row['values'].items():
    kind='production' if typ=='global_production_efficiency' else 'food'
    migrate.append(f'if = {{ limit = {{ has_country_modifier = {row["modifier"]} NOT = {{ has_country_modifier = hbe_shared_{kind}_support }} }} hbe_grant_{kind}_support = {{ strength = {float(value)*100:g} years = 0 months = 3 days = 0 }} }}')
+ p=out/'main_menu/common/static_modifiers/hbe_legacy_output_flags.txt'
+ p.write_text(''.join(key+' = { } # Existing-save identity only.\n' for key in sorted(identities)),encoding='utf-8-sig')
  migrate+=['set_variable = hbe_legacy_output_migrated } }'];helper.append('\n'.join(migrate))
  path.write_text('\n\n'.join(helper)+'\n',encoding='utf-8-sig')
  # Use bounded refresh, not additive duration extension. Keep stronger existing arrangements.

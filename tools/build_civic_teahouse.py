@@ -13,7 +13,7 @@ def build(out, root, put, loc, manifest):
     permission='hbe_teahouse_monthly_burden_relief'
     put('in_game/common/advances/hbe_teahouse.txt',f'''{advance} = {{
  age = {cfg['age']} starting_technology_level = 99
- icon = {advance} content_priority = 845 research_cost = {cfg['research_cost']:g}
+ icon = {advance} content_priority = 845
  potential = {{ hbe_research_origin_common = yes }}
  allow = {{ is_member_of_international_organization = international_organization:hbe_empire }}
  requires = {cfg['parent']}

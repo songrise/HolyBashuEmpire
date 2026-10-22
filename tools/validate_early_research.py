@@ -28,7 +28,7 @@ def validate(mod,root,game,manifest,check):
             check(key+' retains stable originating-circle visibility',tags==expected and 'has_variable = hbe_home' not in body)
         for country in manifest['countries']:
             check(key+' visible only to '+country['tag']+' native circle',(country['tag'] in tags)==(country['region']==region))
-        check(key+' researched separately in age one after the regional foundation',values['age']=='age_1_traditions' and values['requires']=='hbe_tech_'+region+'_1' and values['starting_technology_level']=='99' and float(values['research_cost'])==config['military_cost'])
+        check(key+' researched separately in age one after the regional foundation',values['age']=='age_1_traditions' and values['requires']=='hbe_tech_'+region+'_1' and values['starting_technology_level']=='99' and 'research_cost' not in values)
         check(key+' grants only its own base unit',unit_unlocks[row['unit']]==[key] and re.findall(r'unlock_unit\s*=\s*(\w+)',body)==[row['unit']])
         check(key+' no national army buffs automatic research or calendar gates',not any(k in body for k in ('country_modifier','current_year','current_date','research_advance','combat_power','discipline','army_maintenance_efficiency')))
         check(key+' industry node no longer grants an army','unlock_unit' not in definitions['hbe_tech_'+region+'_2'])

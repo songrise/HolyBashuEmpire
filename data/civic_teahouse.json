@@ -3,7 +3,6 @@
   "name": "茶社公议",
   "parent": "hbe_tech_common_3",
   "age": "age_2_renaissance",
-  "research_cost": 2.5,
   "building": "hbe_public_teahouse",
   "building_name": "茶社公所",
   "national_level_cap": 5,

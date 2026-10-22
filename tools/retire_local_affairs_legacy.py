@@ -11,9 +11,6 @@ def apply(out, put, regions):
     obsolete = ['hbe_service_cooldown', 'hbe_project_pending', 'hbe_project_timer']
     for group in groups:
         obsolete += [f'hbe_service_{group}_pending', f'hbe_service_{group}_timer', f'hbe_recent_delivery_{group}']
-    cleanup = ' '.join('remove_variable = '+v for v in obsolete)
-    put('in_game/common/scripted_effects/hbe_af_legacy_effects.txt',
-        'hbe_af_retire_legacy_country = { if = { limit = { NOT = { has_variable = hbe_af_legacy_retired_v1 } } '+cleanup+' set_variable = hbe_af_legacy_retired_v1 } }')
 
     # Drop only if branches whose own limit tests an obsolete pending order.
     # Enclosing monthly country/organization logic remains intact.
@@ -66,8 +63,7 @@ def apply(out, put, regions):
             edits=[]
             for key,_,a,b,_ in blocks(text,0):
                 if key in ('hbe_feast_help','hbe_deliver_contract'):
-                    # Keep saved event/function references resolvable without rewards.
-                    edits.append((a,b,' hbe_af_retire_legacy_country = yes '))
+                    edits.append((a,b,''))
             text=apply_edits(text,edits)
         # Retired hidden feast proposals must not depend on, or recreate, old orders.
         text=re.sub(r'\bNOT\s*=\s*\{\s*any_country\s*=\s*\{\s*has_variable\s*=\s*hbe_project_pending\s*\}\s*\}', '', text)
@@ -85,13 +81,13 @@ def apply(out, put, regions):
         if text != original: write_preserving_format(path,text)
 
     replacements = {
-        'hbe_levy_policy_desc': '按府额征集人手。地方项目役负投入提高25%；政令带来营建便利，也增加乡里负担。',
+        'hbe_levy_policy_desc': '按府额征集人手。地方事业役负投入提高25%；政令带来营建便利，也增加乡里负担。',
         'hbe_communal_policy_desc': '由乡社见证分摊与期限，按项目列示承担役负；驻防粮额沿用议约。',
-        'hbe_paid_policy_desc': '由行会承办项目，地方项目役负投入降低50%；金币费用按项目面板列示。',
+        'hbe_paid_policy_desc': '由行会承办项目，地方事业役负投入降低50%；金币费用按项目面板列示。',
         'hbe_banquet_ledger.desc': '查看两派成员、本届贡献与收益。成员悬浮列示出资及项目贡献。',
         'hbe_banquet_ledger.desc.entry': '查看两派成员、本届贡献与收益。成员悬浮列示出资及项目贡献。',
         'game_concept_hbe_term_regional_desc': '本圈机构、产业与项目成果共同构成地方经营。具体资格由相关科技、建筑与决议列示。',
-        'game_concept_hbe_term_service_desc': '在地方事业面板选择全国或地方项目，确定投入后自动施工。费用、工期与预计成果由项目列示；完工发放实际成果并计入本届贡献。',
+        'game_concept_hbe_term_service_desc': '在地方事业面板选择全国或地方事业，确定投入后自动施工。费用、工期与预计成果由项目列示；完工发放实际成果并计入本届贡献。',
         'game_concept_hbe_term_mission_desc': '每圈五个验收阶段。满足前置阶段、研究及列示的经营条件后，支付金币并承担2点役负。验收增加义气、共同信用与威望，各阶段只能完成一次。',
         'game_concept_hbe_term_delivery_desc': '项目完工后的实际成果记入本届贡献；各国记录可在大开席成员行悬浮查看。',
         'game_concept_hbe_term_civic_office_desc': '须满足委任科技、成长验收及机构运转等列示条件。每圈同时一位主持，每国至多两任，任期五年；断供、退盟或役负达到70会提前退任。',
@@ -115,7 +111,7 @@ def apply(out, put, regions):
             if key.startswith(('hbe_coordinate_','hbe_seek_')):
                 line=line.replace('本届地方储备与','本府财力与').replace('五年内完成本圈事业','本圈机构正常运转')
             if key in ('hbe_term_burden_desc','game_concept_hbe_term_burden_desc'):
-                line=line.replace('事业征办+6、议办+2、雇办不增加','地方项目役负按投入档次列示，征办提高25%，雇办降低50%')
+                line=line.replace('事业征办+6、议办+2、雇办不增加','地方事业役负按投入档次列示，征办提高25%，雇办降低50%')
             if key == 'game_concept_hbe_term_charter_divided_desc':
                 line=re.sub(r'；地区\[Concept\([^\]]+\)\|e\]交付追加2声望','',line)
                 line=re.sub(r'\\n\\n它不会免费提供.*?(?="$)','',line)
@@ -173,28 +169,28 @@ def clean_descriptions(out):
         'hbe_tech_common_5_effects': '可授予行会雇价保任；须采用行会雇办。',
         'hbe_civic_common_2_effects': '可取得其他圈的产业建筑及基础兵种资格；须在目标圈拥有土地，满足政策、义气与费用条件，再分别办理准入。',
         'game_concept_hbe_term_research_desc': '在革新树中选择科技并投入研究进度。前置科技与时代要求由科技卡列示；建筑、兵种、生产方式和经营权限以卡片实际效果为准。',
-        'game_concept_hbe_term_contribution_desc': '本国对会盟的累计贡献，不随领主更替清零。每届出资计1分；地方项目完工按投入、工期和实际成果计入小数贡献，每届项目贡献至多2分。大开席成员行悬浮显示本届构成。',
-        'game_concept_hbe_term_contract_desc': '共同事务应写明谁承担钱粮、如何交割以及所得成果。地方项目在右下角面板筹办，政治合作在大开席面板办理；具体费用、工期和收益以对应行动列示为准。',
-        'game_concept_hbe_term_saltproject_desc': '诸府围绕盐货与江运开展合作，会盟按实际出资和地方项目完工贡献结算。',
-        'game_concept_hbe_term_teaproject_desc': '诸府围绕茶货、商路与山谷贸易开展合作，会盟按实际出资和地方项目完工贡献结算。',
+        'game_concept_hbe_term_contribution_desc': '本国对会盟的累计贡献，不随领主更替清零。每届出资计1分；地方事业完工按投入、工期和实际成果计入小数贡献，每届项目贡献至多2分。大开席成员行悬浮显示本届构成。',
+        'game_concept_hbe_term_contract_desc': '共同事务应写明谁承担钱粮、如何交割以及所得成果。地方事业在右下角面板筹办，政治合作在大开席面板办理；具体费用、工期和收益以对应行动列示为准。',
+        'game_concept_hbe_term_saltproject_desc': '诸府围绕盐货与江运开展合作，会盟按实际出资和地方事业完工贡献结算。',
+        'game_concept_hbe_term_teaproject_desc': '诸府围绕茶货、商路与山谷贸易开展合作，会盟按实际出资和地方事业完工贡献结算。',
         'game_concept_hbe_term_subsidy_desc': '会盟出资在大开席面板办理，每国每届一次，实际费用与贡献由按钮列示。',
-        'game_concept_hbe_term_audit_desc': '当前地方项目的费用与实际成果在项目卡和完工通知列示，本届贡献可在大开席面板查看。',
+        'game_concept_hbe_term_audit_desc': '当前地方事业的费用与实际成果在项目卡和完工通知列示，本届贡献可在大开席面板查看。',
         'game_concept_hbe_term_yiqi_desc': '本国合作信誉，范围0—100。用于部分政治、产业合作与经营资格；具体增减以行动效果列示为准。',
-        'game_concept_hbe_term_civic_policy_desc': '全国选择一种民役政策，五年内不能改换。地方项目按卡片费用办理：征办使役负增加25%，雇办使役负减少50%，议办按原数承担。',
-        'hbe.4.desc': '本府的义气：[ROOT.GetVariable(\'hbe_yiqi\').GetValue|0] / 100。\n帝国锅气：[GetUniqueInternationalOrganization(\'hbe_empire\').MakeScope.GetVariable(\'hbe_guoqi\').GetValue|0] / 100。\n\n地方项目请在右下角地方事业面板查看；会盟贡献与奖励在大开席面板查看，科技在革新树中研究。',
+        'game_concept_hbe_term_civic_policy_desc': '全国选择一种民役政策，五年内不能改换。地方事业按卡片费用办理：征办使役负增加25%，雇办使役负减少50%，议办按原数承担。',
+        'hbe.4.desc': '本府的义气：[ROOT.GetVariable(\'hbe_yiqi\').GetValue|0] / 100。\n帝国锅气：[GetUniqueInternationalOrganization(\'hbe_empire\').MakeScope.GetVariable(\'hbe_guoqi\').GetValue|0] / 100。\n\n地方事业请在右下角地方事业面板查看；会盟贡献与奖励在大开席面板查看，科技在革新树中研究。',
         'hbe_civic.4.desc': '本届圈署委任已经到期，或本府不再满足机构运转、成员身份与役负条件。恢复相关条件后，可按委任决议列示的要求重新申请。',
         'hbe_civic_audit.desc': '役负与工法整理可通过地方事业项目办理。',
-        'hbe_civic_revision.desc': '地方项目统一在地方事业面板筹办。',
+        'hbe_civic_revision.desc': '地方事业统一在地方事业面板筹办。',
     }
     replacements.update({
-        'hbe.3.desc': '三年工期已满，掌事者带着领料簿、交接凭据与乡里签押来到府衙。曾经在图上细如一线的渠道和道路，如今已有百姓沿它往来；曾经空着的仓位，也终于能够按册交割。\n\n验收官确认本府完成了所承[Concept(\'hbe_term_service\', \'地方项目\')|e]，交付因此有了新的凭据。各家自然都愿将功劳写得长些，然而明年的维护与下一次续办，才会决定这番投入能留下多久。',
-        'hbe_banquet.34.desc': '新修的圈际图册已经送来，谷中代表却指出，一条常用的山路在图上被缩成了不起眼的支线。沿途需修的桥栈与安置的转运人手，因此未列入共同费用。\n\n纸上的远近与行旅实际所费并不总是相同。若愿重勘道路，[Concept(\'hbe_term_service\', \'地方项目\')|e]与驿路的经验便能成为依据；若只据现有图册拨款，被漏下的地方将不得不自行补足缺口。',
+        'hbe.3.desc': '三年工期已满，掌事者带着领料簿、交接凭据与乡里签押来到府衙。曾经在图上细如一线的渠道和道路，如今已有百姓沿它往来；曾经空着的仓位，也终于能够按册交割。\n\n验收官确认本府完成了所承[Concept(\'hbe_term_service\', \'地方事业\')|e]，交付因此有了新的凭据。各家自然都愿将功劳写得长些，然而明年的维护与下一次续办，才会决定这番投入能留下多久。',
+        'hbe_banquet.34.desc': '新修的圈际图册已经送来，谷中代表却指出，一条常用的山路在图上被缩成了不起眼的支线。沿途需修的桥栈与安置的转运人手，因此未列入共同费用。\n\n纸上的远近与行旅实际所费并不总是相同。若愿重勘道路，[Concept(\'hbe_term_service\', \'地方事业\')|e]与驿路的经验便能成为依据；若只据现有图册拨款，被漏下的地方将不得不自行补足缺口。',
         'hbe_civic.5.desc': '征调的文书接连到来，乡里已经很难在田亩、修路与驻守之间安排人手。府臣仍能列出每道命令的理由，却无法解释为何它们合在一起，就应由同一批人无休止地承担。\n\n见证者请求重新议定期限。我们可以用现钱替代部分劳役，也可以暂缓急办；若继续维持旧额，本府的[Concept(\'hbe_term_yiqi\', \'信用\')|e]和阶层支持将一并受损。',
         'hbe_civic.6.desc': '案房把近年的付费、雇价与轮役分别抄列。旧簿中的总数尚能相合，却有一些支出只记承办人，有些征调只记乡名，继任者难以查明同一份责任是否被记了两次。\n\n复核将花费府库和书记的人手，能使未清的分摊得到处理，也为1457年之后的[Concept(\'hbe_term_charter\', \'续约\')|e]留下可循的凭据。',
     })
     for group,index,building,title,_,requirement,trigger in NETWORKS:
         if re.search(r'var:hbe_(?:water|salt|river|roads|grain|tea|valleys)\b',trigger):
-            requirement='拥有运转中的本圈机构，或已完成本圈地方项目'
+            requirement='拥有运转中的本圈机构，或已完成本圈地方事业'
         replacements[f'hbe_network_{group}_{index}_desc'] = f'{title}由本圈机构维持，须满足相关科技、机构运转、役负及卡片所列经营条件。'
         # Replace just the network sentence, preserving unrelated unlocks and caps.
         replacements[f'NETWORK:{group}:{index}'] = f'解锁“{title}”：${building}$正常运转、役负低于70，且{requirement}时生效；条件不满足时暂停。'
@@ -212,7 +208,7 @@ def clean_descriptions(out):
             except ValueError:lines.append(line);continue
             before=value
             for term,label in legacy_terms.items():
-                value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]","[Concept('hbe_term_service', '地方项目')|e]",value)
+                value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]","[Concept('hbe_term_service', '地方事业')|e]",value)
                 value=re.sub(r'@hbe_'+term+r'!','',value)
             base=key.removesuffix('.entry')
             if base in replacements:value=replacements[base]
@@ -227,15 +223,15 @@ def clean_descriptions(out):
             if key.endswith('_scenario_desc') or key.startswith(('country_history_','country_description_category_desc_')):
                 value=re.sub(r'@hbe_(?:water|salt|river|roads|grain|tea|valleys)!','',value)
                 for term,label in legacy_terms.items():
-                    value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]","[Concept('hbe_term_service', '地方项目')|e]",value)
+                    value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]","[Concept('hbe_term_service', '地方事业')|e]",value)
                     for old_name,label2 in (('水权储备',label),('盐引信用',label),('江运互保',label),('轮戍履约',label),('义仓储备',label),('商队互保',label),('地方共治',label)):
                         value=value.replace(old_name,label2)
             if key in ('hbe_term_'+t for t in legacy_terms) or key in ('game_concept_hbe_term_'+t for t in legacy_terms):
                 term=key.rsplit('_',1)[1];value=legacy_terms[term]
             value=value.replace('近五年完成本圈事业、','').replace('三年分账循环','两年会盟结算')
-            if key.startswith(('hbe_service_','hbe_coordinate_')) and '.desc' in key:value='地方项目统一在右下角地方事业面板筹办。'
+            if key.startswith(('hbe_service_','hbe_coordinate_')) and '.desc' in key:value='地方事业统一在右下角地方事业面板筹办。'
             if key.startswith(('hbe_role_','hbe_project_pledge','hbe_project_reconsider','hbe_project_subsidize','hbe_audit_accounts')) and '.desc' in key:
-                value='请在大开席面板查看本届出资与地方项目贡献，并办理相关操作。'
+                value='请在大开席面板查看本届出资与地方事业贡献，并办理相关操作。'
             if key.endswith('_desc') and '全国同类最多一所' in value:
                 value=value.replace('全国同类最多一所','全国同类总等级上限3（含在建），每地点上限1')
             if value!=before:line=' '+key+': '+json.dumps(value,ensure_ascii=False);total+=1
@@ -254,7 +250,7 @@ def clarify_booleans(out):
     fixed={
         'hbe_can_cross_circle_industry': ('可在本圈之外的直属领土建造对应产业建筑，生产当地特色产物。须先在目标圈拥有土地，采用乡社议办，义气达到60，再支付金币和10点义气办理准入；各建筑仍受当地地域和数量限制。', 'Allows regional industry buildings and specialty production outside the home circle. Own land in that circle, use communal labor policy, reach 60 fraternity, then pay the listed gold and 10 fraternity to establish access. Local geography and building caps still apply.'),
         'hbe_af_allow_large_investment': ('地方事业可选择大量投入，支付更多金币与役负，获得该档列示的收益；工期以卡片为准。切换投入档次会同时更新两张候选卡。', 'Enables the large-investment tier in local affairs. Pay its listed gold and labor burden for its listed rewards and duration. Switching tiers updates both candidate cards.'),
-        'hbe_af_allow_local_refresh': ('空闲时可点击地方项目卡右上角的圆形按钮，更换这张候选卡。每两年一次；全国候选和正在施工的项目不变。', 'While idle, use the round button at the upper right of the local project card to replace that offer. Available once every two years; the national offer and active construction stay unchanged.'),
+        'hbe_af_allow_local_refresh': ('空闲时可点击地方事业卡右上角的圆形按钮，更换这张候选卡。每两年一次；全国候选和正在施工的项目不变。', 'While idle, use the round button at the upper right of the local project card to replace that offer. Available once every two years; the national offer and active construction stay unchanged.'),
         'hbe_af_allow_guild_projects': ('地方事业可抽到整理工法、准备工料、验货定样、招收学徒、扩建作坊和试作新法六类项目。正常运转的特色产业机构可使这些项目役负减少20%；本地项目须由目标地点的机构承办。', 'Adds six guild project roles to local affairs: craft records, materials, quality standards, apprentices, workshops and trial production. Operating specialty institutions reduce their labor burden by 20%; local projects require an institution at the target location.'),
         'hbe_elector_can_participate_in_parliament': ('允许本组织选侯参与议会事务；具体可用操作仍由组织规则和议会条件决定。', 'Allows this organization’s electors to participate in parliament, subject to the organization rules and parliament requirements.'),
     }

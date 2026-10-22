@@ -59,7 +59,6 @@
     "in_game/common/building_types/hbe_civic_buildings.txt",
     "in_game/common/decisions/hbe_decisions.txt",
     "in_game/common/goods/hbe_special_goods.txt",
-    "in_game/common/scripted_effects/hbe_effects.txt",
     "in_game/common/scripted_effects/hbe_native_content_effects.txt",
     "in_game/common/scripted_effects/hbe_observer_sync.txt",
     "in_game/events/hbe_banquet_events.txt",

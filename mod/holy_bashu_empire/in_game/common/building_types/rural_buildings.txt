@@ -36,8 +36,7 @@
 		}
 		owner = scope:actor #not in subjects
 	}
-	
-	
+
 	unique_production_methods = {
 		bailiff_input = {
 			icon_type = building_type
@@ -55,8 +54,7 @@
 		local_nobles_estate_power = 1.0
 		local_peasant_enfranchisment = -0.1
 	}
-	
-	
+
 }
 
 fishing_village = {
@@ -80,8 +78,6 @@ fishing_village = {
 		}
 	}
 
-
-
 	build_time = village_build_time
 
 	possible_production_methods = {
@@ -104,8 +100,6 @@ fishing_village = {
 		harbor_suitability = 0.02
 
 		local_sailors = 0.001
-
-
 
 	}
 	raw_modifier = {
@@ -142,9 +136,7 @@ farming_village = {
 			raw_material = goods:wool
 		}
 	}
-	
-		
-	
+
 	build_time = village_build_time
 	
 	unique_production_methods = {
@@ -189,7 +181,6 @@ forest_village = {
 	
 	category = village_category
 	employment_size = village_employment_size
-	
 
 	rural_settlement = yes
 	
@@ -201,11 +192,8 @@ forest_village = {
 			vegetation = jungle
 		}
 	}
-	
-		
-	
-	build_time = village_build_time
 
+	build_time = village_build_time
 
 	possible_production_methods = {
 		forest_tannery
@@ -213,7 +201,6 @@ forest_village = {
 		rural_weaponmaker
 		rural_blacksmith
 	}
-
 
 	construction_demand = village_construction
 
@@ -243,13 +230,10 @@ market_village = {
 	rural_settlement = yes
 	
 	category = village_category
-	
-		
-	
+
 	build_time = village_build_time
 
 	construction_demand = village_construction
-
 
 	possible_production_methods = {
 		rural_blacksmith
@@ -337,20 +321,14 @@ rural_clothmaker = {
 	employment_size = rural_peasant_produce_employment
 	
 	rural_settlement = yes
-	
-	
+
 	town =  no
 	city =  no
-
-	
-
 
 	build_time = rural_build_time
 	
 	unique_production_methods = {
-	
-	
-			
+
 		rural_wool_clothmaker = {
 			icon_type = goods
 			icon = wool
@@ -387,7 +365,6 @@ rural_clothmaker = {
 			category = guild_input
 		}
 
-		
 	}
 
 	construction_demand = village_construction
@@ -404,13 +381,10 @@ charcoal_maker = {
 	startup_ramp_target = rural_startup_ramp_target
 	
 	employment_size = rural_peasant_produce_employment
-	
-	
+
 	category = rgo_building_category
 	
 	rural_settlement = yes
-	
-	
 
 	build_time = rural_build_time
 	
@@ -448,8 +422,6 @@ improved_charcoal_maker = {
 	town = yes
 	city = yes
 	megalopolis = yes
-	
-	
 
 	build_time = rural_build_time
 	
@@ -503,11 +475,8 @@ elephant_hunting_grounds = {
 	location_potential = {
 		raw_material = goods:elephants
 	}
-	
-		
-	
+
 	build_time = rural_build_time
-	
 
 	unique_production_methods = {
 		elephant_hunting_grounds_maintenance = {
@@ -532,7 +501,6 @@ elephant_hunting_grounds = {
 		local_nobles_desired_pop = 0.010
 	}
 
-
 	construction_demand = village_construction
 
 }
@@ -545,7 +513,6 @@ windmill = {
 	max_levels = 1
 
 	employment_size = rural_peasant_enhance_employment
-
 
 	category = rgo_enhancement_category
 
@@ -578,10 +545,7 @@ windmill = {
 		local_millet_output_modifier = 0.1
 	}
 
-	
-
 	build_time = rural_build_time
-
 
 	construction_demand = farm_constructions
 }
@@ -594,7 +558,6 @@ local_smelters = {
 	max_levels = 1
 
 	employment_size = rural_peasant_enhance_employment
-
 
 	category = rgo_enhancement_category
 
@@ -629,10 +592,7 @@ local_smelters = {
 		local_lead_output_modifier = 0.1
 	}
 
-	
-
 	build_time = rural_build_time
-
 
 	construction_demand = farm_constructions
 }
@@ -676,10 +636,7 @@ sawmill = {
 		local_lumber_output_modifier = 0.2
 	}
 
-	
-
 	build_time = rural_build_time
-
 
 	construction_demand = farm_constructions
 }
@@ -692,8 +649,7 @@ sheep_farms = {
 	startup_ramp_target = rural_startup_ramp_target
 	
 	employment_size = rural_peasant_produce_employment
-	
-	
+
 	category = rgo_building_category
 	
 	rural_settlement = yes
@@ -724,10 +680,7 @@ sheep_farms = {
 	modifier = {
 	}
 
-	
-
 	build_time = rural_build_time
-
 
 	construction_demand = farm_constructions
 }
@@ -738,16 +691,13 @@ settlement_building = {
 	max_levels = 1
 	pop_type = peasants
 
-	
 	category = infrastructure_category
 
 	employment_size = tiny_rural_peasant_produce_employment
-	
-	
+
 	rural_settlement = yes
 	town = no
 	city = no
-
 
 	location_potential = {
 		location_population_percentage < 0.05
@@ -757,14 +707,12 @@ settlement_building = {
 			location_population_percentage > 0.1
 		}
 	}
-	
 
 	possible_production_methods = {
 		colony_maintenance
 	}
 	construction_demand = colony_construction
 
-	
 	build_time = village_build_time
 	
 	modifier = {
@@ -830,14 +778,11 @@ kilwan_shipwrights = {
 	
 	build_time = medium_port_building_time
 
-	
-	
 	possible_production_methods = {
 		kilwan_shipwrights_maintenance
 	}
 
 	construction_demand = port_building_construction
-	
 
 	modifier = {
 		local_sailors = 0.01

@@ -2,9 +2,7 @@
 hbe_civic.1 = {
  outcome = neutral
  type = country_event title = hbe_civic.1.title desc = hbe_civic.1.desc illustration_tags = { 1000 = hbe_event_art_civic_council } option = { name = hbe_civic.1.a ai_chance = { base = 100 }  } }
-hbe_civic.2 = {
- outcome = neutral
- type = country_event title = hbe_civic.2.title desc = hbe_civic.2.desc illustration_tags = { 1000 = hbe_event_art_civic_council } option = { name = hbe_civic.2.a ai_chance = { base = 100 }  } }
+
 hbe_civic.100 = {
  outcome = neutral
  type = country_event title = hbe_civic.100.title desc = hbe_civic.100.desc illustration_tags = { 1000 = hbe_event_art_water } immediate = { set_variable = { name = hbe_civic_incident_cooldown value = yes years = 5 } }
@@ -112,9 +110,4 @@ hbe_civic.4 = {
 hbe_civic.5 = {
  outcome = neutral
  type = country_event title = hbe_civic.5.title desc = hbe_civic.5.desc illustration_tags = { 1000 = hbe_event_art_civic_council } immediate = { set_variable = { name = hbe_petition_cooldown value = yes years = 5 } } option = { name = hbe_civic.5.a trigger = { gold >= hbe_paid_bill } ai_chance = { base = 65 } add_gold = { value = hbe_paid_bill multiply = -1 } change_variable = { name = hbe_burden add = -11 } hbe_clamp_burden = yes } option = { name = hbe_civic.5.b ai_chance = { base = 30 } change_variable = { name = hbe_burden add = -7 } hbe_clamp_burden = yes add_country_modifier = { modifier = hbe_civic_slow_work years = 3 mode = replace } } option = { name = hbe_civic.5.c ai_chance = { base = 5 } change_variable = { name = hbe_burden add = 8 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = -8 } hbe_clamp_yiqi = yes add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.08 } } }
-hbe_civic.6 = {
- outcome = neutral
- type = country_event title = hbe_civic.6.title desc = hbe_civic.6.desc illustration_tags = { 1000 = hbe_event_art_civic_council } option = { name = hbe_civic.6.a trigger = { gold >= hbe_public_bill } ai_chance = { base = 100 } add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes set_variable = { name = hbe_audit_ready value = yes years = 10 } } option = { name = hbe_civic.6.b ai_chance = { base = 0 }  } }
-hbe_civic.7 = {
- outcome = neutral
- type = country_event title = hbe_civic.7.title desc = hbe_civic.7.desc illustration_tags = { 1000 = hbe_event_art_civic_council } option = { name = hbe_civic.7.a trigger = { gold >= hbe_public_bill } ai_chance = { base = 100 } add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes if = { limit = { situation:hbe_banquet = { var:hbe_charter = 1 } } international_organization:hbe_empire = { change_variable = { name = hbe_guoqi add = 1 } } } else_if = { limit = { situation:hbe_banquet = { var:hbe_charter = 2 } } change_variable = { name = hbe_burden add = -1 } hbe_clamp_burden = yes } else = { change_variable = { name = hbe_yiqi add = 1 } hbe_clamp_yiqi = yes } } option = { name = hbe_civic.7.b ai_chance = { base = 0 }  } }
+

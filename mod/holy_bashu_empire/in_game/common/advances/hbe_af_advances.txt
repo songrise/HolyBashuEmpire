@@ -1,7 +1,6 @@
 ﻿hbe_af_public_funding = {
  age = age_2_renaissance
  starting_technology_level = 99
- research_cost = 2.5
  icon = hbe_af_public_funding
  content_priority = 835
  potential = { hbe_research_origin_common = yes }
@@ -15,7 +14,6 @@
 hbe_af_local_proposals = {
  age = age_2_renaissance
  starting_technology_level = 99
- research_cost = 2.5
  icon = hbe_af_local_proposals
  content_priority = 830
  potential = { hbe_research_origin_common = yes }

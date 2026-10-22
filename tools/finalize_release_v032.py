@@ -2,6 +2,8 @@
 from build_support import snapshot_files
 from pathlib import Path
 import json
+import re
+from build_support import write_preserving_format
 
 def apply(out, root=None, game=None):
     out=Path(out);p=out/'.metadata/metadata.json'
@@ -16,13 +18,19 @@ def apply(out, root=None, game=None):
     # Retain the 36 existing personal-event trigger labels in independent builds.
     for language in ('simp_chinese','english'):
         target=out/f'main_menu/localization/{language}/hbe_personal_tooltips_l_{language}.yml'
-        if not target.exists():
-            lines=[f'l_{language}:']
-            for index,country in enumerate(m['countries'],200):
-                key='hbe_personal_'+country['tag'].lower()+'_not_seen_tt'
-                label=(f'本府尚未经历「$hbe_banquet.{index}.title$」' if language=='simp_chinese' else f'This country has not yet experienced “$hbe_banquet.{index}.title$”.')
-                lines.append(' '+key+': '+json.dumps(label,ensure_ascii=False))
-            target.write_text('\n'.join(lines)+'\n',encoding='utf-8-sig')
+        core=out/f'main_menu/localization/{language}/hbe_l_{language}.yml'
+        existing=set(re.findall(r'^\s+(hbe_personal_\w+_not_seen_tt):',core.read_text(encoding='utf-8-sig'),re.M)) if core.exists() else set()
+        lines=[f'l_{language}:']
+        for index,country in enumerate(m['countries'],200):
+            key='hbe_personal_'+country['tag'].lower()+'_not_seen_tt'
+            if key in existing:
+                continue
+            label=(f'本府尚未经历「$hbe_banquet.{index}.title$」' if language=='simp_chinese' else f'This country has not yet experienced “$hbe_banquet.{index}.title$”.')
+            lines.append(' '+key+': '+json.dumps(label,ensure_ascii=False))
+        if len(lines)>1:
+            write_preserving_format(target,'\n'.join(lines)+'\n') if target.exists() else target.write_text('\n'.join(lines)+'\n',encoding='utf-8-sig')
+        elif target.exists():
+            target.unlink()
     m['release_v032']={'version':'0.3.2','visible_events':event_count,'capital_recruitment_fallback':True,'special_regiment_strength':500,'burden_per_net_new_special_regiment':2,'loading_art_enabled':False}
     m['current_release']={'version':version,'research_nodes':m['research_nodes'],'visible_events':event_count}
     m['current_release']['loading_art_enabled']=bool(m.get('panda_loading',{}).get('enabled'))

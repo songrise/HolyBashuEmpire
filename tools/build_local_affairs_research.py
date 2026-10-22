@@ -30,7 +30,6 @@ def build(out, root, put, loc, manifest):
         advances.append(f'''{key} = {{
  age = {config['age']}
  starting_technology_level = 99
- research_cost = {row['research_cost']:g}
  icon = {key}
  content_priority = {835-i*5}
  potential = {{ {potential.strip()} }}
@@ -94,5 +93,5 @@ def refresh_support(config, projects, triggers, effects, sguis, loc):
  is_valid = {{ hbe_af_can_refresh_local = yes }}
  effect = {{ hbe_af_refresh_local = yes }}
 }}''')
-    loc['HBE_AF_REFRESH_LOCAL'] = '刷新地区项目'
+    loc['HBE_AF_REFRESH_LOCAL'] = '刷新地方事业'
     loc['HBE_AF_REFRESH_LOCAL_TT'] = f'另取一项地区议案；每{months}个月可刷新一次。须当前空闲且有其他合格项目。'

@@ -1,212 +1,228 @@
-﻿hbe_af_preview_1_0_0_low = { value = 4 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_1_0_0_high = { value = 4 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_1_1_0_low = { value = 7 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_1_1_0_high = { value = 7 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_1_0_1_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.75 }
-hbe_af_preview_1_0_1_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.25 }
-hbe_af_preview_1_1_1_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.75 }
-hbe_af_preview_1_1_1_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.25 }
-hbe_af_preview_1_0_2_low = { value = monthly_manpower multiply = 0.025 multiply = 0.65 max = { value = monthly_manpower multiply = 0.1 } max = { value = max_manpower multiply = 0.001 } min = 0 multiply = 1000 }
-hbe_af_preview_1_0_2_high = { value = monthly_manpower multiply = 0.025 multiply = 1.35 max = { value = monthly_manpower multiply = 0.1 } max = { value = max_manpower multiply = 0.001 } min = 0 multiply = 1000 }
-hbe_af_preview_1_1_2_low = { value = monthly_manpower multiply = 0.05 multiply = 0.65 max = { value = monthly_manpower multiply = 0.1 } max = { value = max_manpower multiply = 0.001 } min = 0 multiply = 1000 }
-hbe_af_preview_1_1_2_high = { value = monthly_manpower multiply = 0.05 multiply = 1.35 max = { value = monthly_manpower multiply = 0.1 } max = { value = max_manpower multiply = 0.001 } min = 0 multiply = 1000 }
+﻿hbe_af_preview_1_0_0_low = { value = 8 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_1_0_0_high = { value = 8 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_1_1_0_low = { value = 14 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_1_1_0_high = { value = 14 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_1_0_1_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.75 }
+hbe_af_preview_1_0_1_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.25 }
+hbe_af_preview_1_1_1_low = { value = research_progress_weak_bonus multiply = 1.6 multiply = 0.75 }
+hbe_af_preview_1_1_1_high = { value = research_progress_weak_bonus multiply = 1.6 multiply = 1.25 }
+hbe_af_preview_1_0_2_low = { value = monthly_manpower multiply = 0.05 multiply = 0.65 max = { value = monthly_manpower multiply = 0.2 } max = { value = max_manpower multiply = 0.002 } min = 0 multiply = 1000 }
+hbe_af_preview_1_0_2_high = { value = monthly_manpower multiply = 0.05 multiply = 1.35 max = { value = monthly_manpower multiply = 0.2 } max = { value = max_manpower multiply = 0.002 } min = 0 multiply = 1000 }
+hbe_af_preview_1_1_2_low = { value = monthly_manpower multiply = 0.1 multiply = 0.65 max = { value = monthly_manpower multiply = 0.2 } max = { value = max_manpower multiply = 0.002 } min = 0 multiply = 1000 }
+hbe_af_preview_1_1_2_high = { value = monthly_manpower multiply = 0.1 multiply = 1.35 max = { value = monthly_manpower multiply = 0.2 } max = { value = max_manpower multiply = 0.002 } min = 0 multiply = 1000 }
 hbe_af_preview_2_0_0_low = { value = 24 multiply = 0.8 }
 hbe_af_preview_2_0_0_high = { value = 24 multiply = 1.2 }
 hbe_af_preview_2_1_0_low = { value = 48 multiply = 0.8 }
 hbe_af_preview_2_1_0_high = { value = 48 multiply = 1.2 }
-hbe_af_preview_2_0_1_low = { value = 0.1 multiply = 0.75 multiply = hbe_af_cost_2_small }
-hbe_af_preview_2_0_1_high = { value = 0.1 multiply = 1.25 multiply = hbe_af_cost_2_small }
-hbe_af_preview_2_1_1_low = { value = 0.15 multiply = 0.75 multiply = hbe_af_cost_2_large }
-hbe_af_preview_2_1_1_high = { value = 0.15 multiply = 1.25 multiply = hbe_af_cost_2_large }
-hbe_af_preview_2_0_2_low = { value = prestige_weak_bonus multiply = 0.16 multiply = 0.65 }
-hbe_af_preview_2_0_2_high = { value = prestige_weak_bonus multiply = 0.16 multiply = 1.35 }
-hbe_af_preview_2_1_2_low = { value = prestige_weak_bonus multiply = 0.36 multiply = 0.65 }
-hbe_af_preview_2_1_2_high = { value = prestige_weak_bonus multiply = 0.36 multiply = 1.35 }
+hbe_af_preview_2_0_1_low = { value = 0.2 multiply = 0.75 multiply = hbe_af_cost_2_small }
+hbe_af_preview_2_0_1_high = { value = 0.2 multiply = 1.25 multiply = hbe_af_cost_2_small }
+hbe_af_preview_2_1_1_low = { value = 0.3 multiply = 0.75 multiply = hbe_af_cost_2_large }
+hbe_af_preview_2_1_1_high = { value = 0.3 multiply = 1.25 multiply = hbe_af_cost_2_large }
+hbe_af_preview_2_0_2_low = { value = prestige_weak_bonus multiply = 0.32 multiply = 0.65 }
+hbe_af_preview_2_0_2_high = { value = prestige_weak_bonus multiply = 0.32 multiply = 1.35 }
+hbe_af_preview_2_1_2_low = { value = prestige_weak_bonus multiply = 0.72 multiply = 0.65 }
+hbe_af_preview_2_1_2_high = { value = prestige_weak_bonus multiply = 0.72 multiply = 1.35 }
 hbe_af_preview_3_0_0_low = { value = 24 multiply = 0.8 }
 hbe_af_preview_3_0_0_high = { value = 24 multiply = 1.2 }
 hbe_af_preview_3_1_0_low = { value = 48 multiply = 0.8 }
 hbe_af_preview_3_1_0_high = { value = 48 multiply = 1.2 }
-hbe_af_preview_3_0_1_low = { value = 0.08 multiply = 0.75 multiply = hbe_af_cost_3_small }
-hbe_af_preview_3_0_1_high = { value = 0.08 multiply = 1.25 multiply = hbe_af_cost_3_small }
-hbe_af_preview_3_1_1_low = { value = 0.16 multiply = 0.75 multiply = hbe_af_cost_3_large }
-hbe_af_preview_3_1_1_high = { value = 0.16 multiply = 1.25 multiply = hbe_af_cost_3_large }
-hbe_af_preview_4_0_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.015 multiply = 0.8 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_0_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.015 multiply = 1.2 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_1_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.04 multiply = 0.8 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_1_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.04 multiply = 1.2 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_3_0_1_low = { value = 0.16 multiply = 0.75 multiply = hbe_af_cost_3_small }
+hbe_af_preview_3_0_1_high = { value = 0.16 multiply = 1.25 multiply = hbe_af_cost_3_small }
+hbe_af_preview_3_1_1_low = { value = 0.32 multiply = 0.75 multiply = hbe_af_cost_3_large }
+hbe_af_preview_3_1_1_high = { value = 0.32 multiply = 1.25 multiply = hbe_af_cost_3_large }
+hbe_af_preview_4_0_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.03 multiply = 0.8 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_4_0_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.03 multiply = 1.2 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_4_1_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.08 multiply = 0.8 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_4_1_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.08 multiply = 1.2 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
 hbe_af_preview_4_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_4_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_4_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_4_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_0_2_low = { value = prestige_weak_bonus multiply = 0.12 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_0_2_high = { value = prestige_weak_bonus multiply = 0.12 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_1_2_low = { value = prestige_weak_bonus multiply = 0.24 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_4_1_2_high = { value = prestige_weak_bonus multiply = 0.24 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_4_0_2_low = { value = prestige_weak_bonus multiply = 0.24 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_4_0_2_high = { value = prestige_weak_bonus multiply = 0.24 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_4_1_2_low = { value = prestige_weak_bonus multiply = 0.48 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_4_1_2_high = { value = prestige_weak_bonus multiply = 0.48 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_5_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_5_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_5_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_5_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_5_0_2_low = { value = 0.1 multiply = 0.65 multiply = hbe_af_cost_5_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_5_0_2_high = { value = 0.1 multiply = 1.35 multiply = hbe_af_cost_5_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_5_1_2_low = { value = 0.2 multiply = 0.65 multiply = hbe_af_cost_5_large multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_5_1_2_high = { value = 0.2 multiply = 1.35 multiply = hbe_af_cost_5_large multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_5_0_2_low = { value = 0.2 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_5_small }
+hbe_af_preview_5_0_2_high = { value = 0.2 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_5_small }
+hbe_af_preview_5_1_2_low = { value = 0.4 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_5_large }
+hbe_af_preview_5_1_2_high = { value = 0.4 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_5_large }
 hbe_af_preview_6_0_0_low = { value = 48 multiply = 0.8 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_6_0_0_high = { value = 48 multiply = 1.2 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_6_1_0_low = { value = 72 multiply = 0.8 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_6_1_0_high = { value = 72 multiply = 1.2 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_0_1_low = { value = var:hbe_af_candidate_target.population multiply = 0.005 multiply = 0.75 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_0_1_high = { value = var:hbe_af_candidate_target.population multiply = 0.005 multiply = 1.25 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_1_1_low = { value = var:hbe_af_candidate_target.population multiply = 0.0125 multiply = 0.75 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_1_1_high = { value = var:hbe_af_candidate_target.population multiply = 0.0125 multiply = 1.25 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_0_2_low = { value = 0.05 multiply = 0.65 multiply = hbe_af_cost_6_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_0_2_high = { value = 0.05 multiply = 1.35 multiply = hbe_af_cost_6_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_1_2_low = { value = 0.12 multiply = 0.65 multiply = hbe_af_cost_6_large multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_6_1_2_high = { value = 0.12 multiply = 1.35 multiply = hbe_af_cost_6_large multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_7_0_0_low = { value = research_progress_weak_bonus multiply = 1 multiply = 0.8 }
-hbe_af_preview_7_0_0_high = { value = research_progress_weak_bonus multiply = 1 multiply = 1.2 }
-hbe_af_preview_7_1_0_low = { value = research_progress_weak_bonus multiply = 2 multiply = 0.8 }
-hbe_af_preview_7_1_0_high = { value = research_progress_weak_bonus multiply = 2 multiply = 1.2 }
+hbe_af_preview_6_0_1_low = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 0.75 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_6_0_1_high = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 1.25 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_6_1_1_low = { value = var:hbe_af_candidate_target.population multiply = 0.025 multiply = 0.75 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_6_1_1_high = { value = var:hbe_af_candidate_target.population multiply = 0.025 multiply = 1.25 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_6_0_2_low = { value = 0.1 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_6_small }
+hbe_af_preview_6_0_2_high = { value = 0.1 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_6_small }
+hbe_af_preview_6_1_2_low = { value = 0.24 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_6_large }
+hbe_af_preview_6_1_2_high = { value = 0.24 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_6_large }
+hbe_af_preview_7_0_0_low = { value = research_progress_weak_bonus multiply = 2 multiply = 0.8 }
+hbe_af_preview_7_0_0_high = { value = research_progress_weak_bonus multiply = 2 multiply = 1.2 }
+hbe_af_preview_7_1_0_low = { value = research_progress_weak_bonus multiply = 4 multiply = 0.8 }
+hbe_af_preview_7_1_0_high = { value = research_progress_weak_bonus multiply = 4 multiply = 1.2 }
 hbe_af_preview_7_0_1_low = { value = 24 multiply = 0.75 }
 hbe_af_preview_7_0_1_high = { value = 24 multiply = 1.25 }
 hbe_af_preview_7_1_1_low = { value = 36 multiply = 0.75 }
 hbe_af_preview_7_1_1_high = { value = 36 multiply = 1.25 }
-hbe_af_preview_7_0_2_low = { value = prestige_weak_bonus multiply = 0.12 multiply = 0.65 }
-hbe_af_preview_7_0_2_high = { value = prestige_weak_bonus multiply = 0.12 multiply = 1.35 }
-hbe_af_preview_7_1_2_low = { value = prestige_weak_bonus multiply = 0.28 multiply = 0.65 }
-hbe_af_preview_7_1_2_high = { value = prestige_weak_bonus multiply = 0.28 multiply = 1.35 }
-hbe_af_preview_8_0_0_low = { value = 5 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_8_0_0_high = { value = 5 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_8_1_0_low = { value = 9 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_8_1_0_high = { value = 9 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_7_0_2_low = { value = prestige_weak_bonus multiply = 0.24 multiply = 0.65 }
+hbe_af_preview_7_0_2_high = { value = prestige_weak_bonus multiply = 0.24 multiply = 1.35 }
+hbe_af_preview_7_1_2_low = { value = prestige_weak_bonus multiply = 0.56 multiply = 0.65 }
+hbe_af_preview_7_1_2_high = { value = prestige_weak_bonus multiply = 0.56 multiply = 1.35 }
+hbe_af_preview_8_0_0_low = { value = 10 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_8_0_0_high = { value = 10 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_8_1_0_low = { value = 18 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_8_1_0_high = { value = 18 multiply = 1.2 max = var:hbe_burden }
 hbe_af_preview_8_0_1_low = { value = 18 multiply = 0.75 }
 hbe_af_preview_8_0_1_high = { value = 18 multiply = 1.25 }
 hbe_af_preview_8_1_1_low = { value = 30 multiply = 0.75 }
 hbe_af_preview_8_1_1_high = { value = 30 multiply = 1.25 }
-hbe_af_preview_8_0_2_low = { value = stability_weak_bonus multiply = 0.24 multiply = 0.65 }
-hbe_af_preview_8_0_2_high = { value = stability_weak_bonus multiply = 0.24 multiply = 1.35 }
-hbe_af_preview_8_1_2_low = { value = stability_weak_bonus multiply = 0.52 multiply = 0.65 }
-hbe_af_preview_8_1_2_high = { value = stability_weak_bonus multiply = 0.52 multiply = 1.35 }
-hbe_af_preview_9_0_0_low = { value = 4 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_9_0_0_high = { value = 4 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_9_1_0_low = { value = 8 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_9_1_0_high = { value = 8 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_9_0_1_low = { value = 0.1 multiply = 0.75 multiply = hbe_af_cost_9_small }
-hbe_af_preview_9_0_1_high = { value = 0.1 multiply = 1.25 multiply = hbe_af_cost_9_small }
-hbe_af_preview_9_1_1_low = { value = 0.2 multiply = 0.75 multiply = hbe_af_cost_9_large }
-hbe_af_preview_9_1_1_high = { value = 0.2 multiply = 1.25 multiply = hbe_af_cost_9_large }
-hbe_af_preview_9_0_2_low = { value = research_progress_weak_bonus multiply = 0.2 multiply = 0.65 }
-hbe_af_preview_9_0_2_high = { value = research_progress_weak_bonus multiply = 0.2 multiply = 1.35 }
-hbe_af_preview_9_1_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 }
-hbe_af_preview_9_1_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 }
-hbe_af_preview_10_0_0_low = { value = 0.3 multiply = 0.8 multiply = hbe_af_cost_10_small }
-hbe_af_preview_10_0_0_high = { value = 0.3 multiply = 1.2 multiply = hbe_af_cost_10_small }
-hbe_af_preview_10_1_0_low = { value = 0.45 multiply = 0.8 multiply = hbe_af_cost_10_large }
-hbe_af_preview_10_1_0_high = { value = 0.45 multiply = 1.2 multiply = hbe_af_cost_10_large }
+hbe_af_preview_8_0_2_low = { value = stability_weak_bonus multiply = 0.48 multiply = 0.65 }
+hbe_af_preview_8_0_2_high = { value = stability_weak_bonus multiply = 0.48 multiply = 1.35 }
+hbe_af_preview_8_1_2_low = { value = stability_weak_bonus multiply = 1.04 multiply = 0.65 }
+hbe_af_preview_8_1_2_high = { value = stability_weak_bonus multiply = 1.04 multiply = 1.35 }
+hbe_af_preview_9_0_0_low = { value = 8 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_9_0_0_high = { value = 8 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_9_1_0_low = { value = 16 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_9_1_0_high = { value = 16 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_9_0_1_low = { value = 0.2 multiply = 0.75 multiply = hbe_af_cost_9_small }
+hbe_af_preview_9_0_1_high = { value = 0.2 multiply = 1.25 multiply = hbe_af_cost_9_small }
+hbe_af_preview_9_1_1_low = { value = 0.4 multiply = 0.75 multiply = hbe_af_cost_9_large }
+hbe_af_preview_9_1_1_high = { value = 0.4 multiply = 1.25 multiply = hbe_af_cost_9_large }
+hbe_af_preview_9_0_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 }
+hbe_af_preview_9_0_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 }
+hbe_af_preview_9_1_2_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.65 }
+hbe_af_preview_9_1_2_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.35 }
+hbe_af_preview_10_0_0_low = { value = 0.6 multiply = 0.8 multiply = hbe_af_cost_10_small }
+hbe_af_preview_10_0_0_high = { value = 0.6 multiply = 1.2 multiply = hbe_af_cost_10_small }
+hbe_af_preview_10_1_0_low = { value = 0.9 multiply = 0.8 multiply = hbe_af_cost_10_large }
+hbe_af_preview_10_1_0_high = { value = 0.9 multiply = 1.2 multiply = hbe_af_cost_10_large }
 hbe_af_preview_10_0_1_low = { value = 18 multiply = 0.75 }
 hbe_af_preview_10_0_1_high = { value = 18 multiply = 1.25 }
 hbe_af_preview_10_1_1_low = { value = 30 multiply = 0.75 }
 hbe_af_preview_10_1_1_high = { value = 30 multiply = 1.25 }
-hbe_af_preview_10_0_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 }
-hbe_af_preview_10_0_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 }
-hbe_af_preview_10_1_2_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.65 }
-hbe_af_preview_10_1_2_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.35 }
-hbe_af_preview_10_0_3_low = { value = prestige_weak_bonus multiply = 0.2 multiply = 0.65 }
-hbe_af_preview_10_0_3_high = { value = prestige_weak_bonus multiply = 0.2 multiply = 1.35 }
-hbe_af_preview_10_1_3_low = { value = prestige_weak_bonus multiply = 0.48 multiply = 0.65 }
-hbe_af_preview_10_1_3_high = { value = prestige_weak_bonus multiply = 0.48 multiply = 1.35 }
-hbe_af_preview_11_0_0_low = { value = 3 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_11_0_0_high = { value = 3 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_11_1_0_low = { value = 5 multiply = 0.8 max = var:hbe_burden }
-hbe_af_preview_11_1_0_high = { value = 5 multiply = 1.2 max = var:hbe_burden }
-hbe_af_preview_11_0_1_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.75 }
-hbe_af_preview_11_0_1_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.25 }
-hbe_af_preview_11_1_1_low = { value = research_progress_weak_bonus multiply = 1.6 multiply = 0.75 }
-hbe_af_preview_11_1_1_high = { value = research_progress_weak_bonus multiply = 1.6 multiply = 1.25 }
+hbe_af_preview_10_0_2_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.65 }
+hbe_af_preview_10_0_2_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.35 }
+hbe_af_preview_10_1_2_low = { value = research_progress_weak_bonus multiply = 1.6 multiply = 0.65 }
+hbe_af_preview_10_1_2_high = { value = research_progress_weak_bonus multiply = 1.6 multiply = 1.35 }
+hbe_af_preview_10_0_3_low = { value = prestige_weak_bonus multiply = 0.4 multiply = 0.65 }
+hbe_af_preview_10_0_3_high = { value = prestige_weak_bonus multiply = 0.4 multiply = 1.35 }
+hbe_af_preview_10_1_3_low = { value = prestige_weak_bonus multiply = 0.96 multiply = 0.65 }
+hbe_af_preview_10_1_3_high = { value = prestige_weak_bonus multiply = 0.96 multiply = 1.35 }
+hbe_af_preview_11_0_0_low = { value = 6 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_11_0_0_high = { value = 6 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_11_1_0_low = { value = 10 multiply = 0.8 max = var:hbe_burden }
+hbe_af_preview_11_1_0_high = { value = 10 multiply = 1.2 max = var:hbe_burden }
+hbe_af_preview_11_0_1_low = { value = research_progress_weak_bonus multiply = 1.6 multiply = 0.75 }
+hbe_af_preview_11_0_1_high = { value = research_progress_weak_bonus multiply = 1.6 multiply = 1.25 }
+hbe_af_preview_11_1_1_low = { value = research_progress_weak_bonus multiply = 3.2 multiply = 0.75 }
+hbe_af_preview_11_1_1_high = { value = research_progress_weak_bonus multiply = 3.2 multiply = 1.25 }
 hbe_af_preview_11_0_2_low = { value = 18 multiply = 0.65 }
 hbe_af_preview_11_0_2_high = { value = 18 multiply = 1.35 }
 hbe_af_preview_11_1_2_low = { value = 30 multiply = 0.65 }
 hbe_af_preview_11_1_2_high = { value = 30 multiply = 1.35 }
-hbe_af_preview_11_0_3_low = { value = prestige_weak_bonus multiply = 0.24 multiply = 0.65 }
-hbe_af_preview_11_0_3_high = { value = prestige_weak_bonus multiply = 0.24 multiply = 1.35 }
-hbe_af_preview_11_1_3_low = { value = prestige_weak_bonus multiply = 0.52 multiply = 0.65 }
-hbe_af_preview_11_1_3_high = { value = prestige_weak_bonus multiply = 0.52 multiply = 1.35 }
+hbe_af_preview_11_0_3_low = { value = prestige_weak_bonus multiply = 0.48 multiply = 0.65 }
+hbe_af_preview_11_0_3_high = { value = prestige_weak_bonus multiply = 0.48 multiply = 1.35 }
+hbe_af_preview_11_1_3_low = { value = prestige_weak_bonus multiply = 1.04 multiply = 0.65 }
+hbe_af_preview_11_1_3_high = { value = prestige_weak_bonus multiply = 1.04 multiply = 1.35 }
 hbe_af_preview_12_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_12_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_12_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_12_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_0_2_low = { value = 0.1 multiply = 0.65 multiply = hbe_af_cost_12_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_0_2_high = { value = 0.1 multiply = 1.35 multiply = hbe_af_cost_12_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_1_2_low = { value = 0.2 multiply = 0.65 multiply = hbe_af_cost_12_large multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_1_2_high = { value = 0.2 multiply = 1.35 multiply = hbe_af_cost_12_large multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_0_3_low = { value = prestige_weak_bonus multiply = 0.12 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_0_3_high = { value = prestige_weak_bonus multiply = 0.12 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_1_3_low = { value = prestige_weak_bonus multiply = 0.28 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_12_1_3_high = { value = prestige_weak_bonus multiply = 0.28 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_0_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.0075 multiply = 0.8 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_0_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.0075 multiply = 1.2 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_1_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.0175 multiply = 0.8 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_1_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.0175 multiply = 1.2 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_12_0_2_low = { value = 0.2 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_12_small }
+hbe_af_preview_12_0_2_high = { value = 0.2 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_12_small }
+hbe_af_preview_12_1_2_low = { value = 0.4 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_12_large }
+hbe_af_preview_12_1_2_high = { value = 0.4 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_12_large }
+hbe_af_preview_12_0_3_low = { value = prestige_weak_bonus multiply = 0.24 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_12_0_3_high = { value = prestige_weak_bonus multiply = 0.24 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_12_1_3_low = { value = prestige_weak_bonus multiply = 0.56 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_12_1_3_high = { value = prestige_weak_bonus multiply = 0.56 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_13_0_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.015 multiply = 0.8 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_13_0_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.015 multiply = 1.2 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_13_1_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.035 multiply = 0.8 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_13_1_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.035 multiply = 1.2 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
 hbe_af_preview_13_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_13_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_13_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_13_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_0_2_low = { value = research_progress_weak_bonus multiply = 0.3 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_0_2_high = { value = research_progress_weak_bonus multiply = 0.3 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_1_2_low = { value = research_progress_weak_bonus multiply = 0.6 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_13_1_2_high = { value = research_progress_weak_bonus multiply = 0.6 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_0_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 0.8 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_0_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 1.2 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_1_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.025 multiply = 0.8 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_1_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.025 multiply = 1.2 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_13_0_2_low = { value = research_progress_weak_bonus multiply = 0.6 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_13_0_2_high = { value = research_progress_weak_bonus multiply = 0.6 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_13_1_2_low = { value = research_progress_weak_bonus multiply = 1.2 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_13_1_2_high = { value = research_progress_weak_bonus multiply = 1.2 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_14_0_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.02 multiply = 0.8 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_14_0_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.02 multiply = 1.2 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_14_1_0_low = { value = var:hbe_af_candidate_target.population multiply = 0.05 multiply = 0.8 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_14_1_0_high = { value = var:hbe_af_candidate_target.population multiply = 0.05 multiply = 1.2 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
 hbe_af_preview_14_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_14_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_14_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_14_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_0_2_low = { value = stability_weak_bonus multiply = 0.32 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_0_2_high = { value = stability_weak_bonus multiply = 0.32 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_1_2_low = { value = stability_weak_bonus multiply = 0.64 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_14_1_2_high = { value = stability_weak_bonus multiply = 0.64 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_14_0_2_low = { value = stability_weak_bonus multiply = 0.64 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_14_0_2_high = { value = stability_weak_bonus multiply = 0.64 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_14_1_2_low = { value = stability_weak_bonus multiply = 1.28 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_14_1_2_high = { value = stability_weak_bonus multiply = 1.28 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_15_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_15_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_15_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_15_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_15_0_2_low = { value = research_progress_weak_bonus multiply = 0.2 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_15_0_2_high = { value = research_progress_weak_bonus multiply = 0.2 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_15_1_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_15_1_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_0_0_low = { value = 3 multiply = 0.8 max = var:hbe_burden multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_0_0_high = { value = 3 multiply = 1.2 max = var:hbe_burden multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_1_0_low = { value = 6 multiply = 0.8 max = var:hbe_burden multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_1_0_high = { value = 6 multiply = 1.2 max = var:hbe_burden multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_15_0_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_15_0_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_15_1_2_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_15_1_2_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_16_0_0_low = { value = 6 multiply = 0.8 multiply = hbe_af_local_reward_multiplier max = var:hbe_burden }
+hbe_af_preview_16_0_0_high = { value = 6 multiply = 1.2 multiply = hbe_af_local_reward_multiplier max = var:hbe_burden }
+hbe_af_preview_16_1_0_low = { value = 12 multiply = 0.8 multiply = hbe_af_local_reward_multiplier max = var:hbe_burden }
+hbe_af_preview_16_1_0_high = { value = 12 multiply = 1.2 multiply = hbe_af_local_reward_multiplier max = var:hbe_burden }
 hbe_af_preview_16_0_1_low = { value = 24 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_16_0_1_high = { value = 24 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_16_1_1_low = { value = 36 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_16_1_1_high = { value = 36 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_0_2_low = { value = var:hbe_af_candidate_target.population multiply = 0.005 multiply = 0.65 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_0_2_high = { value = var:hbe_af_candidate_target.population multiply = 0.005 multiply = 1.35 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_1_2_low = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 0.65 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_1_2_high = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 1.35 multiply = 1000 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_0_3_low = { value = army_tradition_weak_bonus multiply = 0.28 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_0_3_high = { value = army_tradition_weak_bonus multiply = 0.28 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_1_3_low = { value = army_tradition_weak_bonus multiply = 0.64 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_16_1_3_high = { value = army_tradition_weak_bonus multiply = 0.64 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_16_0_2_low = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_16_0_2_high = { value = var:hbe_af_candidate_target.population multiply = 0.01 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_16_1_2_low = { value = var:hbe_af_candidate_target.population multiply = 0.02 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_16_1_2_high = { value = var:hbe_af_candidate_target.population multiply = 0.02 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = 1000 }
+hbe_af_preview_16_0_3_low = { value = army_tradition_weak_bonus multiply = 0.56 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_16_0_3_high = { value = army_tradition_weak_bonus multiply = 0.56 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_16_1_3_low = { value = army_tradition_weak_bonus multiply = 1.28 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_16_1_3_high = { value = army_tradition_weak_bonus multiply = 1.28 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_17_0_1_low = { value = 18 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_17_0_1_high = { value = 18 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_17_1_1_low = { value = 30 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_17_1_1_high = { value = 30 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_17_0_2_low = { value = research_progress_weak_bonus multiply = 0.2 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_17_0_2_high = { value = research_progress_weak_bonus multiply = 0.2 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_17_1_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_17_1_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_17_0_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_17_0_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_17_1_2_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.65 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_17_1_2_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.35 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_18_0_0_low = { value = 24 multiply = 0.8 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_18_0_0_high = { value = 24 multiply = 1.2 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_18_1_0_low = { value = 36 multiply = 0.8 multiply = hbe_af_local_reward_multiplier }
 hbe_af_preview_18_1_0_high = { value = 36 multiply = 1.2 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_0_1_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_0_1_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_1_1_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_1_1_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_0_2_low = { value = 0.08 multiply = 0.65 multiply = hbe_af_cost_18_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_0_2_high = { value = 0.08 multiply = 1.35 multiply = hbe_af_cost_18_small multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_1_2_low = { value = 0.16 multiply = 0.65 multiply = hbe_af_cost_18_large multiply = hbe_af_local_reward_multiplier }
-hbe_af_preview_18_1_2_high = { value = 0.16 multiply = 1.35 multiply = hbe_af_cost_18_large multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_18_0_1_low = { value = research_progress_weak_bonus multiply = 0.8 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_18_0_1_high = { value = research_progress_weak_bonus multiply = 0.8 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_18_1_1_low = { value = research_progress_weak_bonus multiply = 1.6 multiply = 0.75 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_18_1_1_high = { value = research_progress_weak_bonus multiply = 1.6 multiply = 1.25 multiply = hbe_af_local_reward_multiplier }
+hbe_af_preview_18_0_2_low = { value = 0.16 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_18_small }
+hbe_af_preview_18_0_2_high = { value = 0.16 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_18_small }
+hbe_af_preview_18_1_2_low = { value = 0.32 multiply = 0.65 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_18_large }
+hbe_af_preview_18_1_2_high = { value = 0.32 multiply = 1.35 multiply = hbe_af_local_reward_multiplier multiply = hbe_af_cost_18_large }
+hbe_af_preview_19_0_1_low = { value = prestige_weak_bonus multiply = 0.4 multiply = 0.75 }
+hbe_af_preview_19_0_1_high = { value = prestige_weak_bonus multiply = 0.4 multiply = 1.25 }
+hbe_af_preview_19_1_1_low = { value = prestige_weak_bonus multiply = 0.8 multiply = 0.75 }
+hbe_af_preview_19_1_1_high = { value = prestige_weak_bonus multiply = 0.8 multiply = 1.25 }
+hbe_af_preview_19_0_2_low = { value = research_progress_weak_bonus multiply = 0.2 multiply = 0.65 }
+hbe_af_preview_19_0_2_high = { value = research_progress_weak_bonus multiply = 0.2 multiply = 1.35 }
+hbe_af_preview_19_1_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 }
+hbe_af_preview_19_1_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 }
+hbe_af_preview_20_0_1_low = { value = prestige_weak_bonus multiply = 0.4 multiply = 0.75 }
+hbe_af_preview_20_0_1_high = { value = prestige_weak_bonus multiply = 0.4 multiply = 1.25 }
+hbe_af_preview_20_1_1_low = { value = prestige_weak_bonus multiply = 0.8 multiply = 0.75 }
+hbe_af_preview_20_1_1_high = { value = prestige_weak_bonus multiply = 0.8 multiply = 1.25 }
+hbe_af_preview_20_0_2_low = { value = research_progress_weak_bonus multiply = 0.2 multiply = 0.65 }
+hbe_af_preview_20_0_2_high = { value = research_progress_weak_bonus multiply = 0.2 multiply = 1.35 }
+hbe_af_preview_20_1_2_low = { value = research_progress_weak_bonus multiply = 0.4 multiply = 0.65 }
+hbe_af_preview_20_1_2_high = { value = research_progress_weak_bonus multiply = 0.4 multiply = 1.35 }

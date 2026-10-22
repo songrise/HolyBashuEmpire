@@ -1,0 +1,46 @@
+{
+  "status": "local_draft_not_published",
+  "steam_published": false,
+  "description": "docs\\workshop_description_v040_schinese.bbcode",
+  "copy_scope": "replace council/feast section with a concise Local Affairs gameplay introduction",
+  "media": [
+    {
+      "name": "七圈地图",
+      "source": "assets/workshop/unified/地图原始截图.png",
+      "file": "assets/workshop/unified/七圈地图.jpg",
+      "placeholder": "{{WORKSHOP_MAP_IMAGE_URL}}",
+      "method": "code-only crop and compositing",
+      "source_crop": [
+        260,
+        40,
+        1200,
+        743
+      ],
+      "source_dimensions": [
+        1203,
+        867
+      ]
+    },
+    {
+      "name": "科技分支",
+      "source": "assets/workshop/unified/科技原始截图.png",
+      "file": "assets/workshop/unified/科技分支.jpg",
+      "placeholder": "{{WORKSHOP_TECHNOLOGY_IMAGE_URL}}",
+      "method": "code-only screenshot compositing"
+    },
+    {
+      "name": "地方事业",
+      "file": "assets/workshop/unified/地方事业.jpg",
+      "placeholder": "{{WORKSHOP_LOCAL_AFFAIRS_IMAGE_URL}}",
+      "method": "built-in ImageGen; exact screenshot composited afterward",
+      "source": "assets/workshop/unified/地方事业底图.png",
+      "screenshot": "assets/workshop/unified/地方事业原始截图.png",
+      "prompt": "assets/workshop/unified/local_affairs_prompt.txt",
+      "visual_reviewed": true
+    }
+  ],
+  "image_copy_rule": "No numeric promotional claims; broad gameplay introduction only. Original UI screenshot numbers remain unaltered.",
+  "art_complete": true,
+  "pending_publication": "Steam media URLs must replace the explicit placeholders when publication is requested.",
+  "local_commit_requested": true
+}

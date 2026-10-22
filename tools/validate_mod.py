@@ -15,6 +15,8 @@ def main():
         checks.append(dict(check=name,passed=bool(ok)))
         if not ok and not a.keep_going:raise AssertionError(name)
     manifest=json.loads((m/'build_manifest.json').read_text(encoding='utf-8'))
+    cleanup=manifest.get('legacy_state_cleanup', {})
+    retired_events=set(cleanup.get('events', []));retired_decisions=set(cleanup.get('decisions', []))
     check('36 selectable princes',len(manifest['countries'])==36)
     check('7 circles and 7 distinct electors',len(manifest['regions'])==7 and len(set(manifest['electors'].values()))==7)
     check('164 unique domain locations',len(set(l for c in manifest['countries'] for l in c['locations']))==164)
@@ -75,8 +77,8 @@ def main():
     check('Tianfu is permanent and idempotent','NOT = { has_location_modifier = hbe_tianfu }' in effects and 'modifier = hbe_tianfu years = -1' in effects)
     check('external owners have the Tianfu modifier removed','remove_location_modifier = hbe_tianfu' in effects)
     expected_nodes = 80 + manifest.get('industry_transmission', {}).get('advance_count', 0) + manifest.get('early_research_design', {}).get('military_count', 0) + manifest.get('local_affairs_research', {}).get('advance_count', 0) + manifest.get('civic_teahouse', {}).get('advance_count', 0)
-    check('current decisions and native research node count',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and manifest['research_nodes']==expected_nodes)
-    check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==7)
+    check('current decisions and native research node count',manifest['decisions']==97+len(manifest.get('formables_units_v031',{}).get('formations',[]))-len(retired_decisions) and manifest['research_nodes']==expected_nodes)
+    check('35 regional milestone missions and repeatable services',manifest['regional_missions']==35 and manifest['recurring_services']==(0 if cleanup else 7))
     pulse=(m/'in_game/common/on_action/hbe_on_actions.txt').read_text(encoding="utf-8-sig")
     check('centennial content and repeatable pulse persist','current_year >= 1437' in pulse and 'yearly_country_pulse' in pulse and 'current_year < 1457' not in pulse)
     from validate_open_diplomacy_v032 import validate as validate_open_diplomacy
@@ -105,8 +107,8 @@ def main():
     if manifest['version'] in ('0.2.1','0.3.0','0.3.1','0.3.2','0.3.3','0.4.0'):
         check('two-year accounts are once per situation','var:hbe_round_month >= 24' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
         check('cooperative settlement uses adaptive contribution target','var:hbe_feast_total >= var:hbe_feast_required' in banquet)
-        check('funding requires real scaled payment','gold >= hbe_feast_fee' in new_decisions and 'hbe_fund_project' in banquet)
-        check('obsolete promises and duplicate feast decision entrances hidden', 'hbe_project_pledge = {' in new_decisions and new_decisions.count('potential = { always = no }')==24)
+        check('funding requires real scaled payment','gold >= hbe_feast_fee' in banquet and 'hbe_fund_project' in banquet)
+        check('obsolete promises and duplicate feast decision entrances hidden', not blocks(new_decisions,0) if cleanup else 'hbe_project_pledge = {' in new_decisions and new_decisions.count('potential = { always = no }')==24)
         check('centennial arrangement needs a century and actual successes','current_year >= 1437' in banquet and 'var:hbe_completed_projects >= 6' in banquet)
     else:
         check('three-year accounts are once per situation','var:hbe_round_month >= 36' in banquet and 'on_monthly = { hbe_banquet_monthly = yes }' in sit)
@@ -114,11 +116,11 @@ def main():
         check('funding requires enough gold and does not supply role credits','gold >= 3' in new_decisions and 'hbe_fund_project' in banquet)
         check('pledges require later actual payment','var:hbe_round_month = 12' in banquet and 'gold >= 4' in banquet and 'add_gold = -4' in banquet)
         check('centennial charter needs 100 years and real projects','current_year >= 1437' in new_decisions and 'var:hbe_completed_projects >= 30' in new_decisions)
-    check('exactly 36 historical capital seats are counted',sum(banquet.count('location:'+c['capital']+'.owner ?=') for c in countries)==36)
-    check('each of seven circles needs strict local majority',banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
-    check('79 inherited banquet events plus authored story expansion',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79 and manifest['events']==117+manifest.get('playable_stories',{}).get('event_count',0)+manifest.get('ending_art_v031',{}).get('new_afterwords',0)+manifest.get('common_defense_v032',{}).get('visible_events',0))
+    check('exactly 36 historical capital seats are counted',('hbe_tally_charter' not in banquet) if cleanup else sum(banquet.count('location:'+c['capital']+'.owner ?=') for c in countries)==36)
+    check('each of seven circles needs strict local majority',('hbe_ballot_' not in banquet) if cleanup else banquet.count('var:hbe_ballot_seat_votes > ')==7 and 'var:hbe_ballot_circle_votes >= 4' in banquet)
+    check('current banquet event catalogue excludes only retired event IDs',len([k for k,*_ in blocks(new_events,0) if k.startswith('hbe_banquet.')])==79-sum(k.startswith('hbe_banquet.') for k in retired_events))
     check('all 36 princes have personal events',sum('has_or_had_tag = '+c['tag'] in new_events for c in countries)==36)
-    check('regional researched options and late recurring events exist',('hbe_choice_western_tea_horse_1' in new_events if 'event_choices' in manifest else 'hbe_tech_western_tea_horse_3' in new_events) and 'current_year >= 1457' in new_events)
+    check('regional researched options and late recurring events exist',('hbe_choice_western_tea_horse_1' in new_events if 'event_choices' in manifest else 'hbe_tech_western_tea_horse_3' in new_events) and ('hbe_banquet.120' in new_events if cleanup else 'current_year >= 1457' in new_events))
     check('situation has native GUI panel',(m/'in_game/gui/panels/situation/hbe_banquet.gui').is_file())
     flagdefs=(m/'main_menu/common/coat_of_arms/coat_of_arms/hbe_placeholders.txt').read_text(encoding='utf-8-sig')
     flagkeys=[k for k,*_ in blocks(flagdefs,0)]
@@ -149,7 +151,7 @@ def main():
         check(name,b[:4]==b'DDS ' and struct.unpack_from('<2I',b,12)==dimensions and len(b)==128+dimensions[0]*dimensions[1]*4 and hashlib.sha256(b).hexdigest()==expected)
     check('12 painted event backgrounds serve all 96 events',len(full['event_backgrounds'])==12 and len(full['event_mapping'])==96 and len({e['id'] for e in full['event_mapping']})==96)
     event_keys={e['key'] for e in full['event_backgrounds']}
-    check('event scene mapping resolves',all(e['scene'] in event_keys for e in full['event_mapping']))
+    check('event scene mapping resolves',all(e['scene'] in event_keys for e in full['event_mapping'] if e['id'] not in retired_events))
     scene_script=(m/'in_game/gfx/scenes/hbe_event_scenes.txt').read_text(encoding='utf-8-sig')
     image_script=(m/'in_game/gfx/images/hbe_event_backgrounds.txt').read_text(encoding='utf-8-sig')
     database=(m/'loading_screen/gfx/illustrations/database/hbe_event_illustrations.txt').read_text(encoding='utf-8-sig')
@@ -158,7 +160,10 @@ def main():
         key=e['key'];painted_dds('painted event background '+key,e['image'],(440,1080),e['sha256'])
         check('private native illustration scene '+key,f'hbe_event_scene_{key} = ' in scene_script and f'list = "hbe_event_background_{key}"' in scene_script and f'hbe_event_art_{key}' in database and f'gfx/interface/hbe/events/{key}.dds' in image_script)
     event_blocks={key:all_events[a:b] for key,_,a,b,_ in blocks(all_events,0)}
-    check('96 event illustration tags link private scenes',all(('1000 = hbe_event_art_feast_two_parties' if 'art_v021' in manifest and e['id'] in ['hbe_banquet.1','hbe_banquet.2','hbe_banquet.4','hbe_banquet.5','hbe_banquet.7'] else f'1000 = hbe_event_art_{e["scene"]}') in event_blocks[e['id']] for e in full['event_mapping']))
+    if cleanup:
+        registered={k for f in (m/'in_game/events').glob('hbe*.txt') for k,*_ in blocks(f.read_text(encoding='utf-8-sig'),0)}
+        check('manifest event count matches current runtime registry',manifest['events']==len(registered))
+    check('96 event illustration tags link private scenes',all(('1000 = hbe_event_art_feast_two_parties' if 'art_v021' in manifest and e['id'] in ['hbe_banquet.1','hbe_banquet.2','hbe_banquet.4','hbe_banquet.5','hbe_banquet.7'] else f'1000 = hbe_event_art_{e["scene"]}') in event_blocks[e['id']] for e in full['event_mapping'] if e['id'] not in retired_events))
     check('native portrait layers retained and native scene database not overridden','list = "characters_regular"' in scene_script and not (m/'in_game/gfx/scenes/00_scenes_events.txt').exists())
     check('eight organization emblems and dedicated panel files',len(full['organizations'])==8 and {e['key'] for e in full['organizations']}=={'hbe_empire'}|{'hbe_circle_'+r[0] for r in manifest['regions']})
     for e in full['organizations']:
@@ -171,10 +176,11 @@ def main():
     decision_scripts='\n'.join(f.read_text(encoding='utf-8-sig') for f in (m/'in_game/common/decisions').glob('hbe*decisions.txt'))
     decision_blocks={key:decision_scripts[a:b] for key,_,a,b,_ in blocks(decision_scripts,0)}
     for e in pictures:
+        if e['key'] in retired_decisions:continue
         painted_dds('painted non-research decision '+e['key'],e['image'],(440,1080),e['sha256'])
         check('decision picture linked '+e['key'],any(p in decision_blocks[e['key']] for p in [f'gfx/interface/hbe/decisions/{e["key"]}.dds',f'gfx/interface/hbe/v021/decisions/{e["key"]}.dds']))
     legacy_gui_files=[f for f in (m/'in_game/gui').rglob('*.gui') if not ('local_affairs' in manifest and f.name=='hbe_local_affairs.gui')]
-    check('all current decision images exist and no active checker placeholders outside the explicit affairs prototype',len(decision_blocks)==97+len(manifest.get('formables_units_v031',{}).get('formations',[])) and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in legacy_gui_files))
+    check('all current decision images exist and no active checker placeholders outside the explicit affairs prototype',len(decision_blocks)==manifest['decisions'] and 'placeholder.dds' not in decision_scripts and all((m/'main_menu'/p).is_file() for p in re.findall(r'image\s*=\s*"([^"]+)"',decision_scripts)) and not any('placeholder.dds' in f.read_text(encoding='utf-8-sig') for f in legacy_gui_files))
     check('all implicit decision titles and catalogue entries localized',all(k+'.title' in loc_keys and k+'.title.entry' in loc_keys and k+'.desc.entry' in loc_keys for k in decision_blocks))
     check('all visible decisions registered in native country category',all('decision_category = country_specific_decisions' in b and ('tags = {' in b or k.startswith('hbe_form_')) for k,b in decision_blocks.items()))
     native=json.loads((ROOT/'data/native_content_v011.json').read_text(encoding='utf-8'))
@@ -188,7 +194,7 @@ def main():
         return any(re.search(r'(?:has_advance\s*=\s*'+re.escape(key)+r'\b|hbe_advance_gate_'+re.escape(key)+r'\s*=\s*yes)',body[b:e]) for k,_,b,e,_ in blocks(body) if k=='NOT')
     check('seven pairs of research branches are mutually exclusive',all(excludes(advance_blocks['hbe_tech_'+r[0]+'_3'],'hbe_tech_'+r[0]+'_6') and excludes(advance_blocks['hbe_tech_'+r[0]+'_6'],'hbe_tech_'+r[0]+'_3') for r in manifest['regions']))
     check('36 single-country events indexed without new autonomous event rolls',len(native['events'])==36 and all('monthly_chance = 0' in event_blocks[e['id']] and 'dynamic_historical_event' in event_blocks[e['id']] and 'fire_only_once = yes' in event_blocks[e['id']] for e in native['events']))
-    check('60 shared or recurring events keep their original dispatch',len(native['non_dhe_event_ids'])==60 and all('dynamic_historical_event' not in event_blocks[k] and 'fire_only_once' not in event_blocks[k] for k in native['non_dhe_event_ids']))
+    check('60 shared or recurring events keep their original dispatch',len(native['non_dhe_event_ids'])==60 and all('dynamic_historical_event' not in event_blocks[k] and 'fire_only_once' not in event_blocks[k] for k in native['non_dhe_event_ids'] if k not in retired_events))
     check('36 distinct native country histories and lobby profiles localized',len(native['country_biographies'])==36 and len({e['body'] for e in native['country_biographies']})==36 and all('country_history_'+e['tag'] in loc_keys and 'country_description_category_desc_hbe_profile_'+e['tag'].lower() in loc_keys for e in native['country_biographies']))
     check('36 redesigned flags contain no text or nameplates',flagdefs.count('texture = "te_hbe_crest_')==36 and 'hbe_name' not in flagdefs and all(f['inscription']=='' and f['nameplate'] is None for f in expansion['flags']))
     texts=json.loads((ROOT/'data/decision_texts_v011.json').read_text(encoding='utf-8'))
@@ -203,9 +209,9 @@ def main():
     check('native glossary definitions have localized names and descriptions',all('game_concept_'+key in loc_keys and 'game_concept_'+key+'_desc' in loc_keys for key in concept_keys))
     check('all inline hover links resolve to private native game concepts',references<=concept_keys and len(references)>=45)
     check('mechanic and historical hover guides are present',len([k for k in concept_keys if k.startswith('hbe_term_')])==manifest['player_guides']['mechanic_concepts'] and len([k for k in concept_keys if k.startswith('hbe_history_')])==12+manifest.get('history_guides_v031',{}).get('new_concepts',0))
-    check('all narrative descriptions include valid hover links',all('Concept(' in event_blocks[e['id']] or f'{e["id"]}.desc:' in loc_text and 'Concept(' in next(line for line in loc_text.splitlines() if line.lstrip().startswith(e['id']+'.desc:')) for e in prose))
+    check('all narrative descriptions include valid hover links',all('Concept(' in event_blocks[e['id']] or f'{e["id"]}.desc:' in loc_text and 'Concept(' in next(line for line in loc_text.splitlines() if line.lstrip().startswith(e['id']+'.desc:')) for e in prose if e['id'] not in retired_events))
     check('guide icon textures exist',all((m/'main_menu/gfx/interface/icons'/str(p+'.dds')).exists() for p in re.findall(r'texture\s*=\s*"([^"]+)"',concepts)))
-    check('ledger narratives preserve dynamic state readouts',"GetVariable('hbe_yiqi')" in loc_text and "GetVariable('hbe_contribution')" in loc_text)
+    check('current panel narratives retain dynamic state readouts',"GetVariable('hbe_feast_points')" in (m/'in_game/gui/panels/situation/hbe_banquet.gui').read_text(encoding='utf-8-sig') and "GetVariable('hbe_burden')" in (m/'main_menu/localization/simp_chinese/hbe_af_l_simp_chinese.yml').read_text(encoding='utf-8-sig') and "GetVariable('hbe_contribution')" not in loc_text)
     from validate_unit_detail_art_v031 import validate_unit_detail_art
     validate_unit_detail_art(m,ROOT,game,manifest,check)
     from validate_social_expansion import validate_social_expansion
@@ -250,6 +256,8 @@ def main():
     validate_local_affairs(m,ROOT,game,manifest,check)
     from validate_text_hygiene import validate as validate_text_hygiene
     validate_text_hygiene(m,ROOT,game,manifest,check)
+    from cleanup_retired_state import validate as validate_retired_state
+    validate_retired_state(m, manifest, check)
     from validate_variable_hygiene import validate as validate_variable_hygiene
     validate_variable_hygiene(m,ROOT,game,manifest,check)
     from apply_presentation_v040 import validate as validate_presentation

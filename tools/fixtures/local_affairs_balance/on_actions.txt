@@ -1,0 +1,1 @@
+﻿on_game_start = { on_actions = { hbe_balance_probe_start } } hbe_balance_probe_start = { effect = { c:BAB = { trigger_event_silently = { id = hbe_balance_smoke.1 days = 3 } } } }

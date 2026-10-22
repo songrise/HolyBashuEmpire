@@ -82,7 +82,7 @@ def build_quality_hotfix(out,root,loc,put):
         loc[key]=circle+'客籍资格'
         loc[key+'_desc']='本府已承认当地旧约，并取得该圈机构及基础军制的使用资格。营建与招募仍须在该圈土地进行，且必须维持机构供养；这份凭据不授予地区科技的数值加成。'
         advances.append(f'''{key} = {{
- age = age_2_renaissance starting_technology_level = 99 research_cost = 1
+ age = age_2_renaissance starting_technology_level = 99
  icon = hbe_civic_{g}_1 content_priority = 850
  potential = {{ has_variable = hbe_guest_{g} }}
  allow = {{ always = no }} requires = hbe_civic_common_2

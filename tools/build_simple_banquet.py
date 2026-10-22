@@ -1,7 +1,7 @@
 """Two factions, two-year cooperative feasts and a vanilla two-leader UI.
 
-Existing event IDs and obsolete decisions remain registered for save/reference safety.
-Only four core decisions remain visible; real regional service completion contributes.
+Shared art stages use the historical catalogue; final 0.4 cleanup removes retired shells.
+Current panel actions and local projects provide the two-year contribution loop.
 """
 import re, json, shutil
 from pdxscript import blocks, apply_edits
@@ -14,7 +14,7 @@ def replace_bodies(text,values):
 
 def build_simple_banquet(out,root,countries,loc,put,game):
  names={1:('hbe_common_party','共建派'),2:('hbe_local_party','兴业派')}
- titles={'hbe_banquet':'巴蜀大开席','hbe_stance_1':'共建派','hbe_stance_2':'兴业派','hbe_stance_3':'兴业派',
+ titles={'hbe_banquet':'巴蜀大开席','hbe_stance_1':'共建派','hbe_stance_2':'兴业派','hbe_stance_3':'账房派',
   'hbe_common_party':'共建派','hbe_local_party':'兴业派','HBE_COMMON_LEADER':'共建派领袖','HBE_LOCAL_LEADER':'兴业派领袖',
   'HBE_FEAST_MEMBER_COLUMNS':'成员　　　　　　　　本届贡献',
   'hbe_feast_cooperation':'会盟相助','hbe_feast_success':'盛会余泽','hbe_feast_common_reward':'共同兴建','hbe_feast_local_reward':'百业争荣',
@@ -43,7 +43,7 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  # Plain words in the main feast surfaces; internal keys and old save variables survive.
  for k,v in list(loc.items()):
   if k.startswith(('hbe_banquet','hbe_project','hbe_stance','HBE_BANQUET','HBE_DISPUTE')):
-   for old,new in [('共锅派','共建派'),('分锅派','兴业派'),('账房派','兴业派'),('争席度','分歧'),('个人履约','个人贡献'),('专业交付','地方援助'),('锅气','合作信心'),('义气','信誉')]:v=v.replace(old,new)
+   for old,new in [('争席度','分歧'),('个人履约','个人贡献'),('专业交付','地方援助'),('锅气','合作信心'),('义气','信誉')]:v=v.replace(old,new)
    loc[k]=v
  organizations=[]
  for i,(key,name) in names.items():
@@ -72,7 +72,6 @@ def build_simple_banquet(out,root,countries,loc,put,game):
   target=icon/(key+'.dds');original=icon/(source+'.dds');assert original.exists(),original
   shutil.copyfile(original,target)
  sync='''
- if = { limit = { has_variable = hbe_stance var:hbe_stance > 2 } set_variable = { name = hbe_stance value = 2 } }
  if = { limit = { NOT = { has_variable = hbe_feast_points } } set_variable = { name = hbe_feast_points value = 0 } }
 '''
  for i,(key,name) in names.items():
@@ -85,7 +84,7 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  replacements={}
  replacements['hbe_banquet_register']=f'''
  if = {{ limit = {{ NOT = {{ has_variable = hbe_banquet_joined }} }}
-  hbe_initialize = yes set_variable = hbe_banquet_joined set_variable = {{ name = hbe_contribution value = 0 }}
+  hbe_initialize = yes set_variable = hbe_banquet_joined
   set_variable = {{ name = hbe_stance value = 0 }}
   trigger_event_non_silently = {{ id = hbe_banquet.1 days = 1 }}
  }} hbe_feast_sync_party = yes
@@ -95,8 +94,8 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  replacements['hbe_fund_project']='''
  if = { limit = { is_situation_active = situation:hbe_banquet NOT = { has_variable = hbe_round_contributed } gold >= hbe_feast_fee }
   hbe_banquet_register = yes
-  add_gold = { value = hbe_feast_fee multiply = -1 } set_variable = hbe_round_contributed set_variable = hbe_round_delivered
-  change_variable = { name = hbe_feast_points add = 1 } change_variable = { name = hbe_contribution add = 1 }
+  add_gold = { value = hbe_feast_fee multiply = -1 } set_variable = hbe_round_contributed
+  change_variable = { name = hbe_feast_points add = 1 }
   change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes
   add_country_modifier = { modifier = hbe_feast_cooperation years = 2 mode = replace }
   hbe_feast_recount = yes
@@ -107,8 +106,7 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  set_variable = { name = hbe_round_month value = 0 } set_variable = { name = hbe_feast_total value = 0 }
  international_organization:hbe_empire ?= { every_international_organization_member = {
   hbe_banquet_register = yes set_variable = { name = hbe_feast_points value = 0 }
-  remove_variable = hbe_round_contributed remove_variable = hbe_round_delivered remove_variable = hbe_feast_helped
-  remove_variable = hbe_round_pledged remove_variable = hbe_fund_pledge remove_variable = hbe_declined_project
+  remove_variable = hbe_round_contributed
   if = { limit = { is_ai = no situation:hbe_banquet = { var:hbe_round > 1 } } trigger_event_non_silently = { id = hbe_banquet.2 days = 1 } }
  } } hbe_feast_recount = yes
 '''
@@ -135,19 +133,9 @@ def build_simple_banquet(out,root,countries,loc,put,game):
   }
  } else = { international_organization:hbe_empire ?= { every_international_organization_member = { if = { limit = { var:hbe_feast_points > 0 } trigger_event_non_silently = { id = hbe_banquet.5 } } } } }
  change_variable = { name = hbe_round add = 1 }
- # Keep long-campaign milestone variables for existing civic and history events.
- if = { limit = { current_year >= 1352 } set_variable = { name = hbe_chapter value = 2 } }
- if = { limit = { current_year >= 1372 } set_variable = { name = hbe_chapter value = 3 } }
- if = { limit = { current_year >= 1397 } set_variable = { name = hbe_chapter value = 4 } }
- if = { limit = { current_year >= 1437 } set_variable = { name = hbe_chapter value = 5 } }
  hbe_open_accounts = yes
 '''
  replacements['hbe_banquet_monthly']='''
- if = { limit = { NOT = { has_variable = hbe_feast_v021 } }
-  set_variable = hbe_feast_v021 remove_variable = hbe_ballot_active
-  if = { limit = { var:hbe_charter = 3 } set_variable = { name = hbe_charter value = 2 } }
-  hbe_open_accounts = yes
- }
  international_organization:hbe_empire ?= { every_international_organization_member = { hbe_banquet_register = yes } }
  change_variable = { name = hbe_round_month add = 1 } hbe_feast_recount = yes
  if = { limit = { var:hbe_round_month >= 24 } hbe_settle_accounts = yes }
@@ -172,15 +160,6 @@ def build_simple_banquet(out,root,countries,loc,put,game):
  situation:hbe_banquet ?= {
   if = { limit = { var:hbe_feast_required > 12 } set_variable = { name = hbe_feast_required value = 12 } }
   if = { limit = { var:hbe_feast_required < 3 } set_variable = { name = hbe_feast_required value = 3 } }
- }
-}
-hbe_feast_help = {
- if = { limit = { is_situation_active = situation:hbe_banquet NOT = { has_variable = hbe_feast_helped } }
-  hbe_banquet_register = yes
-  set_variable = hbe_feast_helped set_variable = hbe_round_delivered
-  change_variable = { name = hbe_feast_points add = 2 } change_variable = { name = hbe_contribution add = 2 }
-  add_country_modifier = { modifier = hbe_feast_cooperation years = 2 mode = replace }
-  hbe_feast_recount = yes
  }
 }
 '''
@@ -234,13 +213,15 @@ hbe_simple_feast_country = { trigger = { hbe_is_prince = yes } effect = {
    effect = {{ scope:actor = {{ {effect} }} }} ai_will_do = {{ value = 0 }}
   }}''')
  put('in_game/common/generic_actions/hbe_feast_actions.txt','\n'.join(actions))
- messages=out/'main_menu/gui/messagetypes.txt';msgtext=messages.read_text(encoding='utf-8-sig')
+ messages=out/'main_menu/gui/messagetypes/00_messagetypes.txt'
+ if not messages.is_file():messages=out/'main_menu/gui/messagetypes.txt'
+ msgtext=messages.read_text(encoding='utf-8-sig')
  for key in ['hbe_feast_fund_action','hbe_feast_common_action','hbe_feast_local_action']:
   for prefix in ['PERFORM_','WE_PERFORM_','OTHER_PERFORMS_']:
    m=prefix+key+'_ACTION'
    if m+' = {' not in msgtext:msgtext+='\n'+m+' = { log = yes onmap = no popup = no idle = no option = no pausepopup = no message_category = government }\n'
    loc[m]=loc[key];loc[m+'_DESC']='本府在会盟中'+loc[key]+'。'
- put('main_menu/gui/messagetypes.txt',msgtext)
+ put(messages.relative_to(out).as_posix(),msgtext)
  for key,title,desc in [
   ('hbe_stance_change_1','支持共建派','各府共修道路、渠堰与仓廪。共建派在本届贡献领先时，参与国额外获得三年建设速度+20%、粮食生产+15%。\n\n改派有五年间隔；本届已有贡献会计入新派，但不会重领参与或结算奖励。'),
   ('hbe_stance_change_2','支持兴业派','让各府的商路、作坊与文化事业互相成就。兴业派在本届贡献领先时，参与国额外获得三年商人容量+25%、文化影响力+20%。\n\n改派有五年间隔；本届已有贡献会计入新派，但不会重领参与或结算奖励。'),
@@ -276,10 +257,6 @@ hbe_simple_feast_country = { trigger = { hbe_is_prince = yes } effect = {
  hbe_completed_projects = { format = HBE_SUCCESSES_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 }''')])
  txt=re.sub(r'\s*legend_key = \{ desc = hbe_stance_3[^}]*\}','',txt)
  txt=txt.replace('value = yellow','value = blue')
- # Fresh campaigns must not reset the first month's contributions as if migrating.
- sb=next(x for x in blocks(txt,1) if x[0]=='on_start')
- startbody=txt[sb[2]:sb[3]]
- if 'set_variable = hbe_feast_v021' not in startbody:txt=apply_edits(txt,[(sb[2],sb[2],' set_variable = hbe_feast_v021 set_variable = { name = hbe_chapter value = 1 } ')])
  put('in_game/common/situations/hbe_banquet.txt',txt)
  gui='''# Reuses vanilla situation blocks and two_countries_header_template.
 # No GetGagMemberItems/GetCountryGuelphsProgress: those are engine-bound to Italy.

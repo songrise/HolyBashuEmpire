@@ -101,7 +101,7 @@ def apply(out,root,game):
         region=row['region'];key=military_key(row)
         identity='hbe_research_origin_'+region+' = yes'
         military_nodes.append(f'''{key} = {{
- age = age_1_traditions starting_technology_level = 99 research_cost = {config['military_cost']:g}
+ age = age_1_traditions starting_technology_level = 99
  icon = {key} content_priority = 875
  potential = {{ {identity} }}
  allow = {{ is_member_of_international_organization = international_organization:hbe_empire }}
@@ -125,7 +125,6 @@ def apply(out,root,game):
         if key in config['modifiers']:body=set_modifiers(body,config['modifiers'][key])
         if key=='hbe_tech_central_hills_1':
             body=remove_fields(body,{'unlock_building'});body+='\n unlock_building = hbe_community_granary\n'
-        if key=='hbe_civic_common_1':body=set_fields(body,{'research_cost':2})
         if key=='hbe_tech_common_4':
             body=set_fields(body,{permission:'yes'});body=remove_fields(body,{'pure_tooltip_entry'})
         if re.fullmatch(r'hbe_civic_(?!common)\w+_1',key):body=set_fields(body,{'age':'age_2_renaissance','requires':'renaissance_development'})

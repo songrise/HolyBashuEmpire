@@ -2,12 +2,10 @@
 hbe_civic_initialize = {
  if = { limit = { NOT = { has_variable = hbe_civic_initialized } }
  set_variable = hbe_civic_initialized set_variable = { name = hbe_office_chengdu_plain value = 0 } set_variable = { name = hbe_office_southern_salt_wine value = 0 } set_variable = { name = hbe_office_eastern_river value = 0 } set_variable = { name = hbe_office_northern_shudao value = 0 } set_variable = { name = hbe_office_central_hills value = 0 } set_variable = { name = hbe_office_western_tea_horse value = 0 } set_variable = { name = hbe_office_southwestern_valleys value = 0 } set_variable = { name = hbe_burden value = 20 }
- set_variable = { name = hbe_labor_policy value = 0 } set_variable = { name = hbe_office_count value = 0 }
+ set_variable = { name = hbe_office_count value = 0 }
  set_variable = { name = hbe_special_record value = hbe_civic_special_count }
  trigger_event_non_silently = { id = hbe_civic.1 days = 30 } }
 }
-
-
 
 hbe_office_chengdu_plain_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_chengdu_plain_1 has_variable = hbe_mission_chengdu_plain_2 } AND = { has_variable = hbe_guest_chengdu_plain has_advance = hbe_tech_common_4 } } OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_chengdu_plain = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_chengdu_plain value = 1 } set_variable = { name = hbe_office_chengdu_plain_term value = yes years = 5 }
@@ -15,13 +13,11 @@ hbe_office_chengdu_plain_appoint = { if = { limit = { OR = { AND = { has_advance
  international_organization:hbe_circle_chengdu_plain = { set_variable = { name = hbe_civic_holder value = prev } }
  trigger_event_non_silently = { id = hbe_civic.3 } } }
 
-
 hbe_office_southern_salt_wine_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_southern_salt_wine_1 has_variable = hbe_mission_southern_salt_wine_2 } AND = { has_variable = hbe_guest_southern_salt_wine has_advance = hbe_tech_common_4 } } OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_southern_salt_wine = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_southern_salt_wine value = 1 } set_variable = { name = hbe_office_southern_salt_wine_term value = yes years = 5 }
  change_variable = { name = hbe_office_count add = 1 }
  international_organization:hbe_circle_southern_salt_wine = { set_variable = { name = hbe_civic_holder value = prev } }
  trigger_event_non_silently = { id = hbe_civic.3 } } }
-
 
 hbe_office_eastern_river_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_eastern_river_1 has_variable = hbe_mission_eastern_river_2 } AND = { has_variable = hbe_guest_eastern_river has_advance = hbe_tech_common_4 } } OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_eastern_river = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_eastern_river value = 1 } set_variable = { name = hbe_office_eastern_river_term value = yes years = 5 }
@@ -29,13 +25,11 @@ hbe_office_eastern_river_appoint = { if = { limit = { OR = { AND = { has_advance
  international_organization:hbe_circle_eastern_river = { set_variable = { name = hbe_civic_holder value = prev } }
  trigger_event_non_silently = { id = hbe_civic.3 } } }
 
-
 hbe_office_northern_shudao_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_northern_shudao_1 has_variable = hbe_mission_northern_shudao_2 } AND = { has_variable = hbe_guest_northern_shudao has_advance = hbe_tech_common_4 } } OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_northern_shudao = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_northern_shudao value = 1 } set_variable = { name = hbe_office_northern_shudao_term value = yes years = 5 }
  change_variable = { name = hbe_office_count add = 1 }
  international_organization:hbe_circle_northern_shudao = { set_variable = { name = hbe_civic_holder value = prev } }
  trigger_event_non_silently = { id = hbe_civic.3 } } }
-
 
 hbe_office_central_hills_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_central_hills_1 has_variable = hbe_mission_central_hills_2 } AND = { has_variable = hbe_guest_central_hills has_advance = hbe_tech_common_4 } } OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_central_hills = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_central_hills value = 1 } set_variable = { name = hbe_office_central_hills_term value = yes years = 5 }
@@ -43,13 +37,11 @@ hbe_office_central_hills_appoint = { if = { limit = { OR = { AND = { has_advance
  international_organization:hbe_circle_central_hills = { set_variable = { name = hbe_civic_holder value = prev } }
  trigger_event_non_silently = { id = hbe_civic.3 } } }
 
-
 hbe_office_western_tea_horse_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_western_tea_horse_1 has_variable = hbe_mission_western_tea_horse_2 } AND = { has_variable = hbe_guest_western_tea_horse has_advance = hbe_tech_common_4 } } OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_western_tea_horse = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_western_tea_horse value = 1 } set_variable = { name = hbe_office_western_tea_horse_term value = yes years = 5 }
  change_variable = { name = hbe_office_count add = 1 }
  international_organization:hbe_circle_western_tea_horse = { set_variable = { name = hbe_civic_holder value = prev } }
  trigger_event_non_silently = { id = hbe_civic.3 } } }
-
 
 hbe_office_southwestern_valleys_appoint = { if = { limit = { OR = { AND = { has_advance = hbe_civic_southwestern_valleys_1 has_variable = hbe_mission_southwestern_valleys_2 } AND = { has_variable = hbe_guest_southwestern_valleys has_advance = hbe_tech_common_4 } } OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes }  var:hbe_burden < 70 var:hbe_office_count < 2 international_organization:hbe_circle_southwestern_valleys = { NOT = { has_variable = hbe_civic_holder } } }
  set_variable = { name = hbe_office_southwestern_valleys value = 1 } set_variable = { name = hbe_office_southwestern_valleys_term value = yes years = 5 }
@@ -106,7 +98,7 @@ if = { limit = { var:hbe_office_southwestern_valleys = 1 } change_variable = { n
  else = { remove_country_modifier = hbe_civic_strained remove_country_modifier = hbe_civic_exhausted }
  if = { limit = { var:hbe_burden >= 70 NOT = { has_variable = hbe_petition_cooldown } } trigger_event_non_silently = { id = hbe_civic.5 } }
 }
-hbe_civic_yearly = { if = { limit = { NOT = { at_war = yes } NOT = { has_variable = hbe_work_burst_cooldown } } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } if = { limit = { has_variable = hbe_home_chengdu_plain current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_chengdu_plain = 1 } }
+hbe_civic_yearly = { if = { limit = { NOT = { at_war = yes } } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } if = { limit = { has_variable = hbe_home_chengdu_plain current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_chengdu_plain = 1 } }
  if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.100 } }
  else = { set_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.101 } } } if = { limit = { has_variable = hbe_home_southern_salt_wine current_year >= 1352 NOT = { has_variable = hbe_civic_incident_cooldown } has_advance = hbe_civic_common_1 OR = { var:hbe_burden >= 40 var:hbe_office_southern_salt_wine = 1 } }
  if = { limit = { has_variable = hbe_civic_alternate } remove_variable = hbe_civic_alternate trigger_event_non_silently = { id = hbe_civic.102 } }

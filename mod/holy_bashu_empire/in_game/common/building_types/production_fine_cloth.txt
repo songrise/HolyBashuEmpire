@@ -12,8 +12,6 @@
 	city = yes
 	megalopolis = yes
 
-	
-
 	build_time = guild_build_time
 	graphical_tags = { factory_small }
 	
@@ -131,8 +129,6 @@ fine_cloth_workshop = {
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	
 
 	build_time = workshop_build_time
 	graphical_tags = { factory_medium }
@@ -253,13 +249,10 @@ fine_cloth_manufactory = {
 
 	employment_size = manufactory_employment
 
-	
 	town = yes
 	city = yes
 	megalopolis = yes
 
-	
-	
 	obsolete = fine_cloth_workshop
 
 	build_time = manufactory_build_time
@@ -283,7 +276,6 @@ fine_cloth_manufactory = {
 			icon = cloth
 			produced = fine_cloth
 			cloth = 3.0769
-
 
 			output = 2.0
 			debug_max_profit = manufactory_profit_margin
@@ -338,13 +330,10 @@ fine_cloth_mill = {
 	category = consumer_goods_category
 	employment_size = mills_employment
 
-	
 	town = yes
 	city = yes
 	megalopolis = yes
 
-	
-	
 	obsolete = fine_cloth_manufactory
 
 	build_time = mills_build_time

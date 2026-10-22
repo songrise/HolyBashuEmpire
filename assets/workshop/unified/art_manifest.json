@@ -32,10 +32,11 @@
         1672,
         941
       ],
-      "bytes": 638703,
-      "sha256": "cc5f33e08c0e6e5c723b2e6d5d162d70f0c9a787683c90910a3f86087d67cc9d",
+      "bytes": 637560,
+      "sha256": "be7010e18f139206f35bfe28b16c9849f5717974b9606d0bf12a74022b1f7342",
       "generated_source": "exec-ae7f02b0-050b-43e8-9b1d-e0ac09017dcd.png",
-      "manual_review": "no version text; factual labels checked"
+      "manual_review": "Original illustration and frame retained; supplied screenshot updated; map crop retains HBE footprint; numeric promotional statistics removed",
+      "method": "code-only update, no image regeneration"
     },
     {
       "name": "玩法总览",
@@ -56,10 +57,11 @@
         1672,
         941
       ],
-      "bytes": 778271,
-      "sha256": "3655f38af8b96b55529d80fd72e2d910063bcd8297c9a964b39013ab181f76a6",
+      "bytes": 762794,
+      "sha256": "f72d1e8ea3ccda0097b8c66b713851f73d3d1012a7106697287d540fd162e487",
       "generated_source": "exec-99d5117d-4282-45a5-a1c9-3b0fda4b660e.png",
-      "manual_review": "no version text; factual labels checked"
+      "manual_review": "Original illustration and frame retained; supplied screenshot updated; map crop retains HBE footprint; numeric promotional statistics removed",
+      "method": "code-only update, no image regeneration"
     },
     {
       "name": "名产与建筑",
@@ -72,7 +74,31 @@
       "sha256": "1366206a0e40a705ec26f7af2461dbfdc66eb19187a87a51a10f3ebd28a35cf8",
       "generated_source": "exec-9444bc3a-e361-4f4b-95f9-ff0fc2d0d30d.png",
       "manual_review": "no version text; factual labels checked"
+    },
+    {
+      "name": "地方事业",
+      "file": "地方事业.jpg",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 729577,
+      "sha256": "0ad5cbb831e62a792d9f948f5a8db4964d7cd691e7fefbab5f0978fcda30aa06",
+      "generated_source": "地方事业底图.png",
+      "method": "built-in ImageGen plus exact user screenshot compositing",
+      "prompt": "local_affairs_prompt.txt",
+      "screenshot": "地方事业原始截图.png",
+      "screenshot_box": [
+        34,
+        187,
+        850,
+        795
+      ],
+      "manual_review": "Paper, serif title, thin frame and illustrated explanatory panels match the series; provided UI preserved; no added numeric promotional claims"
     }
   ],
-  "prompt_set": "Newly generated ivory-paper, blue-black Song-type illustrated-book posters; preserve each original gameplay theme. Map keeps user-selected layout with version footer removed. Technology UI is composited from authoritative screenshot."
+  "prompt_set": "Newly generated ivory-paper, blue-black Song-type illustrated-book posters; preserve each original gameplay theme. Map keeps user-selected layout with version footer removed. Technology UI is composited from authoritative screenshot.",
+  "latest_refresh": "2026-10-23",
+  "gallery_count": 6,
+  "local_draft_only": true
 }

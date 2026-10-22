@@ -3,7 +3,7 @@
     starting_technology_level = 99
     icon = hbe_tech_common_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = written_alphabet
@@ -19,7 +19,7 @@ hbe_tech_common_2 = {
     starting_technology_level = 99
     icon = hbe_tech_common_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -32,7 +32,7 @@ hbe_tech_common_3 = {
     starting_technology_level = 99
     icon = hbe_tech_common_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire hbe_advance_gate_hbe_tech_common_2 = yes }
     requires = renaissance_development
@@ -47,7 +47,7 @@ hbe_tech_common_4 = {
     starting_technology_level = 99
     icon = hbe_tech_common_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -61,7 +61,7 @@ hbe_tech_common_5 = {
     starting_technology_level = 99
     icon = hbe_tech_common_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_4
@@ -76,7 +76,7 @@ hbe_tech_common_6 = {
     starting_technology_level = 99
     icon = hbe_tech_common_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire hbe_advance_gate_hbe_tech_common_5 = yes }
     requires = renaissance_development
@@ -91,7 +91,7 @@ hbe_tech_common_7 = {
     starting_technology_level = 99
     icon = hbe_tech_common_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -105,7 +105,8 @@ hbe_tech_common_8 = {
     starting_technology_level = 99
     icon = hbe_tech_common_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_common = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire hbe_advance_gate_hbe_tech_common_7 = yes }
     requires = renaissance_development
@@ -119,7 +120,7 @@ hbe_tech_chengdu_plain_1 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -136,7 +137,7 @@ hbe_tech_chengdu_plain_2 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_chengdu_plain_1
@@ -158,7 +159,7 @@ hbe_tech_chengdu_plain_3 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_chengdu_plain_6 = yes } NOT = { has_variable = hbe_tech_chengdu_plain_6 } hbe_advance_gate_hbe_tech_chengdu_plain_2 = yes }
 
@@ -173,7 +174,7 @@ hbe_tech_chengdu_plain_4 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_chengdu_plain_6 = yes } NOT = { has_variable = hbe_tech_chengdu_plain_6 } }
 
@@ -188,7 +189,7 @@ hbe_tech_chengdu_plain_5 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_chengdu_plain_6 = yes } NOT = { has_variable = hbe_tech_chengdu_plain_6 } }
 
@@ -203,7 +204,7 @@ hbe_tech_chengdu_plain_6 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_chengdu_plain_3 = yes } NOT = { has_variable = hbe_tech_chengdu_plain_3 } hbe_advance_gate_hbe_tech_chengdu_plain_2 = yes }
 
@@ -218,7 +219,7 @@ hbe_tech_chengdu_plain_7 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_chengdu_plain_3 = yes } NOT = { has_variable = hbe_tech_chengdu_plain_3 } }
 
@@ -233,7 +234,8 @@ hbe_tech_chengdu_plain_8 = {
     starting_technology_level = 99
     icon = hbe_tech_chengdu_plain_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_chengdu_plain = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_chengdu_plain_3 = yes } NOT = { has_variable = hbe_tech_chengdu_plain_3 } }
 
@@ -249,7 +251,7 @@ hbe_tech_southern_salt_wine_1 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -270,7 +272,7 @@ hbe_tech_southern_salt_wine_2 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_southern_salt_wine_1
@@ -288,7 +290,7 @@ hbe_tech_southern_salt_wine_3 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southern_salt_wine_6 = yes } NOT = { has_variable = hbe_tech_southern_salt_wine_6 } hbe_advance_gate_hbe_tech_southern_salt_wine_2 = yes }
 
@@ -304,7 +306,7 @@ hbe_tech_southern_salt_wine_4 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southern_salt_wine_6 = yes } NOT = { has_variable = hbe_tech_southern_salt_wine_6 } }
 
@@ -319,7 +321,7 @@ hbe_tech_southern_salt_wine_5 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southern_salt_wine_6 = yes } NOT = { has_variable = hbe_tech_southern_salt_wine_6 } }
 
@@ -335,7 +337,7 @@ hbe_tech_southern_salt_wine_6 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southern_salt_wine_3 = yes } NOT = { has_variable = hbe_tech_southern_salt_wine_3 } hbe_advance_gate_hbe_tech_southern_salt_wine_2 = yes }
 
@@ -350,7 +352,7 @@ hbe_tech_southern_salt_wine_7 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southern_salt_wine_3 = yes } NOT = { has_variable = hbe_tech_southern_salt_wine_3 } }
 
@@ -365,7 +367,8 @@ hbe_tech_southern_salt_wine_8 = {
     starting_technology_level = 99
     icon = hbe_tech_southern_salt_wine_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_southern_salt_wine = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southern_salt_wine_3 = yes } NOT = { has_variable = hbe_tech_southern_salt_wine_3 } }
 
@@ -380,7 +383,7 @@ hbe_tech_eastern_river_1 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -397,7 +400,7 @@ hbe_tech_eastern_river_2 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_eastern_river_1
@@ -415,7 +418,7 @@ hbe_tech_eastern_river_3 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_eastern_river_6 = yes } NOT = { has_variable = hbe_tech_eastern_river_6 } hbe_advance_gate_hbe_tech_eastern_river_2 = yes }
 
@@ -430,7 +433,7 @@ hbe_tech_eastern_river_4 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_eastern_river_6 = yes } NOT = { has_variable = hbe_tech_eastern_river_6 } }
 
@@ -446,7 +449,7 @@ hbe_tech_eastern_river_5 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_eastern_river_6 = yes } NOT = { has_variable = hbe_tech_eastern_river_6 } }
 
@@ -461,7 +464,7 @@ hbe_tech_eastern_river_6 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_eastern_river_3 = yes } NOT = { has_variable = hbe_tech_eastern_river_3 } hbe_advance_gate_hbe_tech_eastern_river_2 = yes }
 
@@ -477,7 +480,7 @@ hbe_tech_eastern_river_7 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_eastern_river_3 = yes } NOT = { has_variable = hbe_tech_eastern_river_3 } }
 
@@ -492,7 +495,8 @@ hbe_tech_eastern_river_8 = {
     starting_technology_level = 99
     icon = hbe_tech_eastern_river_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_eastern_river = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_eastern_river_3 = yes } NOT = { has_variable = hbe_tech_eastern_river_3 } }
 
@@ -507,7 +511,7 @@ hbe_tech_northern_shudao_1 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -523,7 +527,7 @@ hbe_tech_northern_shudao_2 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_northern_shudao_1
@@ -540,7 +544,7 @@ hbe_tech_northern_shudao_3 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_northern_shudao_6 = yes } NOT = { has_variable = hbe_tech_northern_shudao_6 } hbe_advance_gate_hbe_tech_northern_shudao_2 = yes }
 
@@ -555,7 +559,7 @@ hbe_tech_northern_shudao_4 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_northern_shudao_6 = yes } NOT = { has_variable = hbe_tech_northern_shudao_6 } }
 
@@ -570,7 +574,7 @@ hbe_tech_northern_shudao_5 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_northern_shudao_6 = yes } NOT = { has_variable = hbe_tech_northern_shudao_6 } }
 
@@ -585,7 +589,7 @@ hbe_tech_northern_shudao_6 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_northern_shudao_3 = yes } NOT = { has_variable = hbe_tech_northern_shudao_3 } hbe_advance_gate_hbe_tech_northern_shudao_2 = yes  hbe_advance_gate_chancery_records = yes }
 
@@ -607,7 +611,7 @@ hbe_tech_northern_shudao_7 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_northern_shudao_3 = yes } NOT = { has_variable = hbe_tech_northern_shudao_3 } }
 
@@ -623,7 +627,8 @@ hbe_tech_northern_shudao_8 = {
     starting_technology_level = 99
     icon = hbe_tech_northern_shudao_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_northern_shudao = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_northern_shudao_3 = yes } NOT = { has_variable = hbe_tech_northern_shudao_3 } }
 
@@ -638,7 +643,7 @@ hbe_tech_central_hills_1 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -655,7 +660,7 @@ hbe_tech_central_hills_2 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_central_hills_1
@@ -672,7 +677,7 @@ hbe_tech_central_hills_3 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_central_hills_6 = yes } NOT = { has_variable = hbe_tech_central_hills_6 } hbe_advance_gate_hbe_tech_central_hills_2 = yes }
 
@@ -689,7 +694,7 @@ hbe_tech_central_hills_4 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_central_hills_6 = yes } NOT = { has_variable = hbe_tech_central_hills_6 } }
 
@@ -705,7 +710,7 @@ hbe_tech_central_hills_5 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_central_hills_6 = yes } NOT = { has_variable = hbe_tech_central_hills_6 } }
 
@@ -720,7 +725,7 @@ hbe_tech_central_hills_6 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_central_hills_3 = yes } NOT = { has_variable = hbe_tech_central_hills_3 } hbe_advance_gate_hbe_tech_central_hills_2 = yes }
 
@@ -736,7 +741,7 @@ hbe_tech_central_hills_7 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_central_hills_3 = yes } NOT = { has_variable = hbe_tech_central_hills_3 } }
 
@@ -751,7 +756,8 @@ hbe_tech_central_hills_witness_8 = {
     starting_technology_level = 99
     icon = hbe_tech_central_hills_witness_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_central_hills = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_central_hills_3 = yes } NOT = { has_variable = hbe_tech_central_hills_3 } }
 
@@ -766,7 +772,7 @@ hbe_tech_western_tea_horse_1 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -787,7 +793,7 @@ hbe_tech_western_tea_horse_2 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_western_tea_horse_1
@@ -804,7 +810,7 @@ hbe_tech_western_tea_horse_3 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_western_tea_horse_6 = yes } NOT = { has_variable = hbe_tech_western_tea_horse_6 } hbe_advance_gate_hbe_tech_western_tea_horse_2 = yes }
 
@@ -820,7 +826,7 @@ hbe_tech_western_tea_horse_4 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_western_tea_horse_6 = yes } NOT = { has_variable = hbe_tech_western_tea_horse_6 } }
 
@@ -835,7 +841,7 @@ hbe_tech_western_tea_horse_5 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_western_tea_horse_6 = yes } NOT = { has_variable = hbe_tech_western_tea_horse_6 } }
 
@@ -851,7 +857,7 @@ hbe_tech_western_tea_horse_6 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_western_tea_horse_3 = yes } NOT = { has_variable = hbe_tech_western_tea_horse_3 } hbe_advance_gate_hbe_tech_western_tea_horse_2 = yes }
 
@@ -866,7 +872,7 @@ hbe_tech_western_tea_horse_7 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_western_tea_horse_3 = yes } NOT = { has_variable = hbe_tech_western_tea_horse_3 } }
 
@@ -881,7 +887,8 @@ hbe_tech_western_tea_horse_8 = {
     starting_technology_level = 99
     icon = hbe_tech_western_tea_horse_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_western_tea_horse = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_western_tea_horse_3 = yes } NOT = { has_variable = hbe_tech_western_tea_horse_3 } }
 
@@ -896,7 +903,7 @@ hbe_tech_southwestern_valleys_1 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_1
     content_priority = 900
-    research_cost = 1.5
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_common_1
@@ -915,7 +922,7 @@ hbe_tech_southwestern_valleys_2 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_2
     content_priority = 890
-    research_cost = 1.5
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire }
     requires = hbe_tech_southwestern_valleys_1
@@ -932,7 +939,7 @@ hbe_tech_southwestern_valleys_3 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_3
     content_priority = 880
-    research_cost = 2.5
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southwestern_valleys_6 = yes } NOT = { has_variable = hbe_tech_southwestern_valleys_6 } hbe_advance_gate_hbe_tech_southwestern_valleys_2 = yes }
 
@@ -947,7 +954,7 @@ hbe_tech_southwestern_valleys_4 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_4
     content_priority = 870
-    research_cost = 4.0
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southwestern_valleys_6 = yes } NOT = { has_variable = hbe_tech_southwestern_valleys_6 } }
 
@@ -963,7 +970,7 @@ hbe_tech_southwestern_valleys_5 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_5
     content_priority = 860
-    research_cost = 4.0
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southwestern_valleys_6 = yes } NOT = { has_variable = hbe_tech_southwestern_valleys_6 } }
 
@@ -978,7 +985,7 @@ hbe_tech_southwestern_valleys_6 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_6
     content_priority = 850
-    research_cost = 2.5
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southwestern_valleys_3 = yes } NOT = { has_variable = hbe_tech_southwestern_valleys_3 } hbe_advance_gate_hbe_tech_southwestern_valleys_2 = yes }
 
@@ -993,7 +1000,7 @@ hbe_tech_southwestern_valleys_7 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_7
     content_priority = 840
-    research_cost = 4.0
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southwestern_valleys_3 = yes } NOT = { has_variable = hbe_tech_southwestern_valleys_3 } }
 
@@ -1008,7 +1015,8 @@ hbe_tech_southwestern_valleys_8 = {
     starting_technology_level = 99
     icon = hbe_tech_southwestern_valleys_8
     content_priority = 830
-    research_cost = 4.0
+    research_cost = 0.5
+
     potential = { hbe_research_origin_southwestern_valleys = yes }
     allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { hbe_advance_gate_hbe_tech_southwestern_valleys_3 = yes } NOT = { has_variable = hbe_tech_southwestern_valleys_3 } }
 

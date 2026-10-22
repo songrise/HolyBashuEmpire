@@ -16,9 +16,7 @@ unlock_archers_advance = {
 	age = age_1_traditions
 	unlock_unit = a_archers
 
-	
 	requires = unlock_footmen_advance	
-
 
 }
 
@@ -48,7 +46,6 @@ unlock_men_at_arms_advance = {
 	unlock_unit = hbe_permanent_pass
 }
 
-
 unlock_crossbowmen_advance = {
 	age = age_2_renaissance
 	unlock_unit = a_crossbowmen
@@ -56,7 +53,6 @@ unlock_crossbowmen_advance = {
 	requires = armory_advance
 	unlock_unit = hbe_canal_crossbow_renaissance
 }
-
 
 unlock_reformed_crusader_knights_advance = {
 	age = age_2_renaissance
@@ -78,7 +74,6 @@ unlock_peasant_levy_advance = {
 
 	requires = renaissance_development
 }
-
 
 unlock_halberdiers_advance = {
 	age = age_3_discovery
@@ -103,8 +98,6 @@ unlock_matchlock_levy = {
 	in_tree_of = pike_and_shot_advance
 }
 
-
-
 unlock_arquebusiers_advance = {
 	age = age_4_reformation
 	unlock_unit = a_arquebusiers
@@ -121,7 +114,6 @@ unlock_pikemen_advance = {
 
 }
 
-
 unlock_flintlock_levy = {
 	age = age_4_reformation
 	unlock_levy = levy_a_flintlock_levy
@@ -132,16 +124,14 @@ unlock_flintlock_levy = {
 unlock_hunters_advance = {
 	age = age_5_absolutism
 	unlock_unit = a_hunters
-	
-	
+
 	requires = military_revolution_advance
 }
 
 unlock_musketeers_advance = {
 	age = age_5_absolutism
 	unlock_unit = a_musketeers
-	
-	
+
 	requires = unlock_hunters_advance
 }
 
@@ -155,7 +145,6 @@ militiamen_advance = {
 unlock_sharpshooters_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_sharpshooters
-	
 
 	requires = long_rifle
 }
@@ -163,7 +152,6 @@ unlock_sharpshooters_advance = {
 unlock_fusiliers_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_fusiliers
-	
 
 	requires = conscription_center_advance
 }
@@ -175,14 +163,12 @@ unlock_grenadiers_advance = {
 	requires = conscription_center_advance
 }
 
-
 conscription_advance = {
 	age = age_6_revolutions
 	unlock_levy = levy_conscripts
 
 	in_tree_of = levee_en_masse_advance
 }
-
 
 ######################
 # Cavalry
@@ -228,7 +214,6 @@ unlock_crusader_knights_advance = {
 unlock_cavalry_advance = {
 	age = age_2_renaissance
 	unlock_unit = a_cavalrymen
-	
 
 	requires = correct_box_advance_renaissance
 	unlock_unit = hbe_tea_riders_renaissance
@@ -237,35 +222,27 @@ unlock_cavalry_advance = {
 unlock_heavy_cavalry_advance = {
 	age = age_2_renaissance
 	unlock_unit = a_heavy_cavalrymen
-	
 
 	requires = unlock_cavalry_advance
 }
 
-
 unlock_lancers_advance = {
 	age = age_3_discovery
 	unlock_unit = a_lancers
-	
 
 	requires = training_fields_advance
 }
-
-
 
 unlock_light_lancers_advance = {
 	age = age_3_discovery
 	unlock_unit = a_light_lancers
-	
 
 	requires = training_fields_advance
 }
 
-
 unlock_pistoleers_advance = {
 	age = age_4_reformation
 	unlock_unit = a_pistoleers
-	
 
 	requires = flintlock_gun
 }
@@ -277,13 +254,9 @@ unlock_heavy_lancers_advance = {
 	requires = barracks_advance
 }
 
-
-
-
 unlock_hussars_advance = {
 	age = age_5_absolutism
 	unlock_unit = a_hussars
-
 
 	requires = regimental_camp_advance
 }
@@ -291,7 +264,6 @@ unlock_hussars_advance = {
 unlock_gallop_cavalry_advance = {
 	age = age_5_absolutism
 	unlock_unit = a_gallop_cavalry
-	
 
 	requires = regimental_camp_advance
 }
@@ -300,23 +272,15 @@ unlock_light_dragoons_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_light_dragoons
 
-
 	requires = conscription_center_advance
 }
-
-
-
-
 
 unlock_cuirassiers_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_cuirassiers
-	
 
 	requires = unlock_light_dragoons_advance
 }
-
-
 
 ######################
 # Camel Cavalry
@@ -330,17 +294,7 @@ unlock_camel_1_advance = {
 	unlock_levy = levy_heavy_camelry_1
 
 	potential = {
-		original_capital ?= {
-			OR = {
-				sub_continent = sub_continent:middle_east
-				sub_continent = sub_continent:north_africa
-				sub_continent = sub_continent:central_asia
-				region = region:sahel_region
-				region = region:somalia_region
-				region = region:nubia_region
-				region = region:western_india_region
-			}
-		}
+		original_capital ?= { unit_camelry_region_trigger = yes }
 	}
 
 	allow = {
@@ -358,17 +312,7 @@ unlock_camel_2_advance = {
 	unlock_levy = levy_heavy_camelry_2
 
 	potential = {
-		original_capital ?= {
-			OR = {
-				sub_continent = sub_continent:middle_east
-				sub_continent = sub_continent:north_africa
-				sub_continent = sub_continent:central_asia
-				region = region:sahel_region
-				region = region:somalia_region
-				region = region:nubia_region
-				region = region:western_india_region
-			}
-		}
+		original_capital ?= { unit_camelry_region_trigger = yes }
 	}
 
 	allow = {
@@ -386,17 +330,7 @@ unlock_camel_3_advance = {
 	unlock_levy = levy_heavy_camelry_3
 
 	potential = {
-		original_capital ?= {
-			OR = {
-				sub_continent = sub_continent:middle_east
-				sub_continent = sub_continent:north_africa
-				sub_continent = sub_continent:central_asia
-				region = region:sahel_region
-				region = region:somalia_region
-				region = region:nubia_region
-				region = region:western_india_region
-			}
-		}
+		original_capital ?= { unit_camelry_region_trigger = yes }
 	}
 
 	allow = {
@@ -414,17 +348,7 @@ unlock_camel_4_advance = {
 	unlock_levy = levy_heavy_camelry_4
 
 	potential = {
-		original_capital ?= {
-			OR = {
-				sub_continent = sub_continent:middle_east
-				sub_continent = sub_continent:north_africa
-				sub_continent = sub_continent:central_asia
-				region = region:sahel_region
-				region = region:somalia_region
-				region = region:nubia_region
-				region = region:western_india_region
-			}
-		}
+		original_capital ?= { unit_camelry_region_trigger = yes }
 	}
 
 	allow = {
@@ -442,17 +366,7 @@ unlock_camel_5_advance = {
 	unlock_levy = levy_heavy_camelry_5
 
 	potential = {
-		original_capital ?= {
-			OR = {
-				sub_continent = sub_continent:middle_east
-				sub_continent = sub_continent:north_africa
-				sub_continent = sub_continent:central_asia
-				region = region:sahel_region
-				region = region:somalia_region
-				region = region:nubia_region
-				region = region:western_india_region
-			}
-		}
+		original_capital ?= { unit_camelry_region_trigger = yes }
 	}
 
 	allow = {
@@ -470,17 +384,7 @@ unlock_camel_6_advance = {
 	unlock_levy = levy_heavy_camelry_6
 
 	potential = {
-		original_capital ?= {
-			OR = {
-				sub_continent = sub_continent:middle_east
-				sub_continent = sub_continent:north_africa
-				sub_continent = sub_continent:central_asia
-				region = region:sahel_region
-				region = region:somalia_region
-				region = region:nubia_region
-				region = region:western_india_region
-			}
-		}
+		original_capital ?= { unit_camelry_region_trigger = yes }
 	}
 
 	allow = {
@@ -489,7 +393,6 @@ unlock_camel_6_advance = {
 
 	requires = conscription_center_advance
 }
-
 
 ######################
 # Artillery
@@ -502,12 +405,9 @@ unlock_houfnice_advance = {
 
 }
 
-
 unlock_falconet_advance = {
 	age = age_3_discovery
 	unlock_unit = a_falconet
-	
-
 
 	requires = training_fields_advance
 }
@@ -515,16 +415,13 @@ unlock_falconet_advance = {
 unlock_chambered_cannon_advance = {
 	age = age_4_reformation
 	unlock_unit = a_chambered_cannon
-	
 
 	requires = assault_ability_reformation
 }
 
-
 unlock_royal_mortar_advance = {
 	age = age_5_absolutism
 	unlock_unit = a_royal_mortar
-	
 
 	requires = regimental_camp_advance
 }
@@ -532,12 +429,9 @@ unlock_royal_mortar_advance = {
 unlock_flying_battery_advance = {
 	age = age_6_revolutions
 	unlock_unit = a_flying_battery
-	
 
 	requires = military_tactics_advance_6
 }
-
-
 
 ######################
 # Auxiliary
@@ -550,13 +444,9 @@ unlock_supply_carts = {
 
 }
 
-
-
-
 unlock_supply_convoy = {
 	age = age_3_discovery
 	unlock_unit = a_supply_convoy
-	
 
 	requires = training_fields_advance
 }
@@ -567,7 +457,6 @@ unlock_baggage_train = {
 
 	in_tree_of = artillery_institution_advance
 }
-
 
 unlock_wagon_train = {
 	age = age_5_absolutism
@@ -582,5 +471,4 @@ unlock_logistics_corps = {
 	
 	requires = corps_organisation
 }
-
 

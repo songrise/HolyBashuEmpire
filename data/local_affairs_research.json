@@ -6,7 +6,6 @@
       "key": "hbe_af_public_funding",
       "name": "公帑筹办",
       "parent": "renaissance_development",
-      "research_cost": 2.5,
       "permission": "hbe_af_allow_large_investment",
       "permission_name": "允许大量投入",
       "description": "各府将工料、雇价与拨款合记一册，按工程所需分期调集公帑。大项营办从此有据可核，不再临时向一乡一户摊派。",
@@ -17,11 +16,10 @@
       "key": "hbe_af_local_proposals",
       "name": "地方采议",
       "parent": "hbe_af_public_funding",
-      "research_cost": 2.5,
       "permission": "hbe_af_allow_local_refresh",
       "permission_name": "允许刷新地方事业",
       "description": "乡社与府署定期递交工程、招徕与修治的议案，记明地点及所需工料。旧议未定时，可以另取新案比较，再择一项筹办。",
-      "permission_description": "空闲时可以刷新地区项目，每两年一次；全国项目及进行中的工程不变。",
+      "permission_description": "空闲时可以刷新地方事业，每两年一次；全国项目及进行中的工程不变。",
       "source": "assets/local_affairs_research/local_proposals.png",
       "local_reward_bonus": 0.2
     }

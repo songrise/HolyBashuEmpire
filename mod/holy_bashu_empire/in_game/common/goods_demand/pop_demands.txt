@@ -94,8 +94,6 @@ hbe_shu_paper = 1
 hbe_border_tea = 1
 }
 
-
-
 nobles_demand = {
     hidden = yes
     copy_from = pop_demand

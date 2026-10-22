@@ -8,8 +8,8 @@
  hbe_round_month = { format = HBE_FEAST_MONTH_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 24 }
  hbe_feast_total = { format = HBE_FEAST_TOTAL_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 }
  hbe_completed_projects = { format = HBE_SUCCESSES_DISPLAY change_format = VARIABLE_CHANGE_FORMAT start = 0 min = 0 max = 9999 }}
-    on_start = { set_variable = hbe_feast_v021 set_variable = { name = hbe_chapter value = 1 }
-        set_variable = { name = hbe_project_kind value = 1 }
+    on_start = {
+        
         set_variable = { name = hbe_charter value = 0 }
         international_organization:hbe_empire = { every_international_organization_member = { hbe_banquet_register = yes } }
         hbe_open_accounts = yes

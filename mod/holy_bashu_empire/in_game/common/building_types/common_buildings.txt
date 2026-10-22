@@ -127,7 +127,6 @@ mason = {
 	startup_ramp_target = rural_startup_ramp_target
 	pop_type = laborers
 
-
 	category = basic_industry_category
 	employment_size = advanced_peasant_building_employment
 	
@@ -373,7 +372,6 @@ lumber_mill = {
 	city = yes
 	megalopolis = yes
 
-	
 	location_potential = {
 		OR = {
 			vegetation = woods
@@ -507,7 +505,6 @@ bog_iron_smelter = {
 	city = yes
 	megalopolis = yes
 
-	
 	location_potential = {
 		OR = {
 			is_adjacent_to_lake = yes

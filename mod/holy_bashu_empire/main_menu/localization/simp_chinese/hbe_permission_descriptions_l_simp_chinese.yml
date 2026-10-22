@@ -13,7 +13,7 @@
  MODIFIER_TYPE_DESC_can_extract_hbe_well_salt: "允许在具备井盐原料产地的地点开采该货物；不会凭空增加产地，也不替代特色建筑和生产方式的解锁要求。"
  MODIFIER_TYPE_DESC_hbe_af_allow_guild_projects: "地方事业可抽到整理工法、准备工料、验货定样、招收学徒、扩建作坊和试作新法六类项目。正常运转的特色产业机构可使这些项目役负减少20%；本地项目须由目标地点的机构承办。"
  MODIFIER_TYPE_DESC_hbe_af_allow_large_investment: "地方事业可选择大量投入，支付更多金币与役负，获得该档列示的收益；工期以卡片为准。切换投入档次会同时更新两张候选卡。"
- MODIFIER_TYPE_DESC_hbe_af_allow_local_refresh: "空闲时可点击地方项目卡右上角的圆形按钮，更换这张候选卡。每两年一次；全国候选和正在施工的项目不变。"
+ MODIFIER_TYPE_DESC_hbe_af_allow_local_refresh: "空闲时可点击地方事业卡右上角的圆形按钮，更换这张候选卡。每两年一次；全国候选和正在施工的项目不变。"
  MODIFIER_TYPE_DESC_hbe_border_tea_used_for_minting: "允许把边茶用于铸币；实际铸币收入及通胀影响仍按原版规则计算。"
  MODIFIER_TYPE_DESC_hbe_can_cross_circle_industry: "可在本圈之外的直属领土建造对应产业建筑，生产当地特色产物。须先在目标圈拥有土地，采用乡社议办，义气达到60，再支付金币和10点义气办理准入；各建筑仍受当地地域和数量限制。"
  MODIFIER_TYPE_DESC_hbe_elector_can_participate_in_parliament: "允许本组织选侯参与议会事务；具体可用操作仍由组织规则和议会条件决定。"

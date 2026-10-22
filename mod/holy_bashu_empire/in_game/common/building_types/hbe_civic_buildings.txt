@@ -3,7 +3,7 @@
  category = government_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ country_potential = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_domain }
  allow = { scope:actor = { has_advance = hbe_tech_common_1 }   hbe_civil_institution_below_cap = { type = hbe_assembly_hall } }
  modifier = {    local_monthly_control = 0.05 local_burghers_max_literacy = 2.5 }
@@ -17,7 +17,7 @@ hbe_works_archive = {
  category = government_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ country_potential = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_domain }
  allow = { scope:actor = { has_advance = hbe_tech_common_3 }   hbe_civil_institution_below_cap = { type = hbe_works_archive } }
  modifier = { local_burghers_max_literacy = 1.5   local_construction_speed = 0.075 local_monthly_literacy = 0.01 }
@@ -31,7 +31,7 @@ hbe_canal_office = {
  category = infrastructure_category pop_type = peasants employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_chengdu_plain } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_chengdu_plain } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_chengdu_plain_1 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_chengdu_plain } } } has_advance = hbe_inherited_industry_license_chengdu_plain } }   hbe_civil_institution_below_cap = { type = hbe_canal_office } }
  modifier = {     local_monthly_food_modifier = 0.075 local_rice_output_modifier = 0.075 }
@@ -45,7 +45,7 @@ hbe_brocade_school = {
  category = cultural_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_chengdu_plain } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_chengdu_plain } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_chengdu_plain_2 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_chengdu_plain } } } has_advance = hbe_inherited_industry_license_chengdu_plain } }   hbe_transmission_embroidery_below_cap = yes }
  modifier = {     local_fine_cloth_output_modifier = 0.1 local_burghers_max_literacy = 5 local_hbe_shu_embroidery_output_modifier = 0.125 }
@@ -60,8 +60,6 @@ hbe_chengdu_plain_ordinary_production = { icon_type = goods icon = fine_cloth si
 }
  ai_construct_weight = { value = 4 }
 
-
-
  # HBE_INDUSTRY_BALANCE_PATCH: national cap 2, raised to 3 by transmission; civilian modifiers 0.5x.
 }
 hbe_salt_office = {
@@ -69,7 +67,7 @@ hbe_salt_office = {
  category = government_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_southern_salt_wine } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_southern_salt_wine } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_southern_salt_wine_1 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_southern_salt_wine } } } has_advance = hbe_inherited_industry_license_southern_salt_wine } }   hbe_transmission_well_salt_below_cap = yes }
  modifier = {     local_salt_output_modifier = 0.1 local_construction_speed = 0.05 local_hbe_well_salt_output_modifier = 0.125 }
@@ -83,8 +81,6 @@ hbe_southern_salt_wine_ordinary_production = { icon_type = goods icon = salt lum
 }
  ai_construct_weight = { value = 4 }
 
-
-
  # HBE_INDUSTRY_BALANCE_PATCH: national cap 2, raised to 3 by transmission; civilian modifiers 0.5x.
 }
 hbe_salt_contract_house = {
@@ -92,7 +88,7 @@ hbe_salt_contract_house = {
  category = trade_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_southern_salt_wine } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_southern_salt_wine } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_southern_salt_wine_2 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_southern_salt_wine } } } has_advance = hbe_inherited_industry_license_southern_salt_wine } }   hbe_civil_institution_below_cap = { type = hbe_salt_contract_house } }
  modifier = {     local_liquor_output_modifier = 0.1 local_burghers_max_literacy = 3 }
@@ -106,7 +102,7 @@ hbe_river_warehouse = {
  category = trade_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_eastern_river } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_eastern_river } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river OR = { has_river = yes is_coastal = yes } }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_eastern_river_1 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_eastern_river } } } has_advance = hbe_inherited_industry_license_eastern_river } }   hbe_civil_institution_below_cap = { type = hbe_river_warehouse } }
  modifier = {     local_food_decay = -0.125 local_construction_speed = 0.05 }
@@ -122,7 +118,7 @@ hbe_cliff_stockade = {
  category = military_category pop_type = soldiers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_eastern_river } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_eastern_river } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river OR = { topography = mountains topography = hills topography = plateau } }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_eastern_river_6 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_eastern_river } } } has_advance = hbe_inherited_industry_license_eastern_river } }  }
  modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1  local_manpower = 0.0015 local_defensive = 0.2 }
@@ -134,7 +130,7 @@ hbe_plank_fort = {
  category = military_category pop_type = soldiers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_northern_shudao } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_northern_shudao } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_military_northern_shudao AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_northern_shudao } } } has_advance = hbe_inherited_industry_license_northern_shudao } }  }
  modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1  local_manpower = 0.0015 local_defensive = 0.2 }
@@ -146,7 +142,7 @@ hbe_gate_registry = {
  category = trade_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_northern_shudao } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_northern_shudao } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_northern_shudao_6 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_northern_shudao } } } has_advance = hbe_inherited_industry_license_northern_shudao } }   hbe_transmission_paper_below_cap = yes }
  modifier = {     local_monthly_control = 0.075 local_burghers_max_literacy = 4 local_hbe_shu_paper_output_modifier = 0.125 }
@@ -160,8 +156,6 @@ hbe_northern_shudao_ordinary_production = { icon_type = goods icon = paper lumbe
 }
  ai_construct_weight = { value = 4 }
 
-
-
  # HBE_INDUSTRY_BALANCE_PATCH: national cap 2, raised to 3 by transmission; civilian modifiers 0.5x.
 }
 hbe_community_granary = {
@@ -169,7 +163,7 @@ hbe_community_granary = {
  category = infrastructure_category pop_type = peasants employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_central_hills } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_central_hills } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_central_hills_1 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_central_hills } } } has_advance = hbe_inherited_industry_license_central_hills } }   hbe_civil_institution_below_cap = { type = hbe_community_granary } }
  modifier = {     local_monthly_food_modifier = 0.1 local_food_decay = -0.125 }
@@ -185,7 +179,7 @@ hbe_witness_house = {
  category = government_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_central_hills } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_central_hills } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_central_hills_6 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_central_hills } } } has_advance = hbe_inherited_industry_license_central_hills } }   hbe_civil_institution_below_cap = { type = hbe_witness_house } }
  modifier = {     local_monthly_prosperity = 0.05 local_burghers_max_literacy = 5 }
@@ -199,7 +193,7 @@ hbe_tea_exchange = {
  category = trade_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_western_tea_horse } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_western_tea_horse } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_western_tea_horse_1 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_western_tea_horse } } } has_advance = hbe_inherited_industry_license_western_tea_horse } }   hbe_transmission_border_tea_below_cap = yes }
  modifier = { local_construction_speed = 0.015    local_tea_output_modifier = 0.1 local_leather_output_modifier = 0.075 local_hbe_border_tea_output_modifier = 0.125 }
@@ -216,8 +210,6 @@ hbe_western_tea_horse_ordinary_production = { icon_type = goods icon = leather l
 }
  ai_construct_weight = { value = 4 }
 
-
-
  # HBE_INDUSTRY_BALANCE_PATCH: national cap 2, raised to 3 by transmission; civilian modifiers 0.5x.
 }
 hbe_guide_station = {
@@ -225,7 +217,7 @@ hbe_guide_station = {
  category = infrastructure_category pop_type = peasants employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_western_tea_horse } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_western_tea_horse } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_military_western_tea_horse AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_western_tea_horse } } } has_advance = hbe_inherited_industry_license_western_tea_horse } }   hbe_civil_institution_below_cap = { type = hbe_guide_station } }
  modifier = { local_manpower = 0.00075    local_construction_speed = 0.075 local_food_decay = -0.075 }
@@ -239,7 +231,7 @@ hbe_valley_inn = {
  category = trade_category pop_type = burghers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_southwestern_valleys } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_southwestern_valleys } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_tech_southwestern_valleys_1 AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_southwestern_valleys } } } has_advance = hbe_inherited_industry_license_southwestern_valleys } }   hbe_civil_institution_below_cap = { type = hbe_valley_inn } }
  modifier = { local_construction_speed = 0.015    local_tools_output_modifier = 0.1 local_monthly_prosperity = 0.04 }
@@ -255,7 +247,7 @@ hbe_covenant_stockade = {
  category = military_category pop_type = soldiers employment_size = 0.15 max_levels = 1
  build_time = 540 construction_demand = hbe_institution_construction
  rural_settlement = yes town = yes city = yes megalopolis = yes
- country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } } has_advance = hbe_inherited_industry_license_southwestern_valleys } }
+ country_potential = { OR = { AND = { is_member_of_international_organization = international_organization:hbe_empire hbe_is_prince_tag = yes } has_advance = hbe_inherited_industry_license_southwestern_valleys } }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
  allow = { scope:actor = { OR = { AND = { OR = { has_advance = hbe_military_southwestern_valleys AND = { has_advance = hbe_tech_common_4 has_variable = hbe_guest_southwestern_valleys } } } has_advance = hbe_inherited_industry_license_southwestern_valleys } }  }
  modifier = {  can_recruit_regiment_in_this_location = yes max_regiments_trained_at_same_time = 1  local_manpower = 0.0015 local_defensive = 0.15 }

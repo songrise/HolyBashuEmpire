@@ -56,7 +56,7 @@
       "name": "清理役簿",
       "description": "核对各处役簿，注销重复征调，厘清尚未交接的责任。",
       "requires": [],
-      "cost": 5,
+      "cost": 4,
       "burden": [
         0,
         0
@@ -70,8 +70,8 @@
         {
           "type": "burden",
           "amount": [
-            4,
-            7
+            8,
+            14
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -82,8 +82,8 @@
         {
           "type": "research",
           "amount": [
-            0.4,
-            0.8
+            0.8,
+            1.6
           ],
           "role": "secondary",
           "ordinary_factors": [
@@ -95,8 +95,8 @@
         {
           "type": "manpower",
           "amount": [
-            0.025,
-            0.05
+            0.05,
+            0.1
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -142,7 +142,7 @@
       "name": "邀集行商",
       "description": "备妥货栈与交割凭据，邀请行商携货赴会。",
       "requires": [],
-      "cost": 6,
+      "cost": 5,
       "burden": [
         1,
         3
@@ -169,8 +169,8 @@
         {
           "type": "gold",
           "amount": [
-            0.1,
-            0.15
+            0.2,
+            0.3
           ],
           "role": "secondary",
           "ordinary_factors": [
@@ -181,8 +181,8 @@
         {
           "type": "prestige",
           "amount": [
-            0.16,
-            0.36
+            0.32,
+            0.72
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -228,7 +228,7 @@
       "name": "行会备料",
       "description": "各行会合订木料、铁器与染料，分批交货，减少各坊争料误工。",
       "requires": [],
-      "cost": 6,
+      "cost": 5,
       "burden": [
         2,
         4
@@ -256,8 +256,8 @@
         {
           "type": "gold",
           "amount": [
-            0.08,
-            0.16
+            0.16,
+            0.32
           ],
           "role": "secondary",
           "ordinary_factors": [
@@ -298,7 +298,7 @@
       "name": "招徕农户",
       "description": "备置农具与住处，接纳愿在本地落籍耕作的来户。",
       "requires": [],
-      "cost": 7,
+      "cost": 5,
       "burden": [
         3,
         6
@@ -312,8 +312,8 @@
         {
           "type": "population",
           "amount": [
-            0.015,
-            0.04
+            0.03,
+            0.08
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -338,8 +338,8 @@
         {
           "type": "prestige",
           "amount": [
-            0.12,
-            0.24
+            0.24,
+            0.48
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -385,7 +385,7 @@
       "name": "合建公廨",
       "description": "按本地建造资格抽定一项公共建筑，备料修筑，并安排乡匠接续经营。",
       "requires": [],
-      "cost": 10,
+      "cost": 7,
       "burden": [
         4,
         6
@@ -407,6 +407,10 @@
           "ordinary_factors": [
             0.8,
             1.2
+          ],
+          "amount": [
+            2,
+            2
           ]
         },
         {
@@ -425,8 +429,8 @@
         {
           "type": "gold",
           "amount": [
-            0.1,
-            0.2
+            0.2,
+            0.4
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -471,7 +475,7 @@
       "name": "疏浚支渠",
       "description": "清理田间水道与淤段，恢复支渠输水，使田亩得以按时受水。",
       "requires": [],
-      "cost": 5,
+      "cost": 4,
       "burden": [
         3,
         6
@@ -501,8 +505,8 @@
         {
           "type": "population",
           "amount": [
-            0.005,
-            0.0125
+            0.01,
+            0.025
           ],
           "role": "secondary",
           "ordinary_factors": [
@@ -514,8 +518,8 @@
         {
           "type": "gold",
           "amount": [
-            0.05,
-            0.12
+            0.1,
+            0.24
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -560,7 +564,7 @@
       "name": "合抄工法",
       "description": "师傅与学徒比勘工法，记下用料、火候与失败的缘由，交各坊传习。",
       "requires": [],
-      "cost": 6,
+      "cost": 5,
       "burden": [
         1,
         2
@@ -574,8 +578,8 @@
         {
           "type": "research",
           "amount": [
-            1.0,
-            2.0
+            2.0,
+            4.0
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -601,8 +605,8 @@
         {
           "type": "prestige",
           "amount": [
-            0.12,
-            0.28
+            0.24,
+            0.56
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -652,7 +656,7 @@
       "name": "雇役代征",
       "description": "以公款招募短工，替换催征中的劳役，使人户得以归耕。",
       "requires": [],
-      "cost": 7,
+      "cost": 5,
       "burden": [
         0,
         0
@@ -666,8 +670,8 @@
         {
           "type": "burden",
           "amount": [
-            5,
-            9
+            10,
+            18
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -691,8 +695,8 @@
         {
           "type": "stability",
           "amount": [
-            0.24,
-            0.52
+            0.48,
+            1.04
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -738,7 +742,7 @@
       "name": "清偿旧役",
       "description": "清点积欠工钱，补给凭据，将已经履行的旧役逐项销账。",
       "requires": [],
-      "cost": 6,
+      "cost": 5,
       "burden": [
         0,
         0
@@ -752,8 +756,8 @@
         {
           "type": "burden",
           "amount": [
-            4,
-            8
+            8,
+            16
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -764,8 +768,8 @@
         {
           "type": "gold",
           "amount": [
-            0.1,
-            0.2
+            0.2,
+            0.4
           ],
           "role": "secondary",
           "ordinary_factors": [
@@ -776,8 +780,8 @@
         {
           "type": "research",
           "amount": [
-            0.2,
-            0.4
+            0.4,
+            0.8
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -823,7 +827,7 @@
       "name": "验货定样",
       "description": "各坊议定尺寸、成色与验收办法，减少退货和交割争执。",
       "requires": [],
-      "cost": 6,
+      "cost": 5,
       "burden": [
         1,
         2
@@ -837,8 +841,8 @@
         {
           "type": "gold",
           "amount": [
-            0.3,
-            0.45
+            0.6,
+            0.9
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -863,8 +867,8 @@
         {
           "type": "research",
           "amount": [
-            0.4,
-            0.8
+            0.8,
+            1.6
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -876,8 +880,8 @@
         {
           "type": "prestige",
           "amount": [
-            0.2,
-            0.48
+            0.4,
+            0.96
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -935,7 +939,7 @@
       "name": "合校地籍",
       "description": "合校田籍、水册与差役簿，删去重记户名，将核定办法留作成例。",
       "requires": [],
-      "cost": 6,
+      "cost": 5,
       "burden": [
         0,
         0
@@ -949,8 +953,8 @@
         {
           "type": "burden",
           "amount": [
-            3,
-            5
+            6,
+            10
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -961,8 +965,8 @@
         {
           "type": "research",
           "amount": [
-            0.8,
-            1.6
+            1.6,
+            3.2
           ],
           "role": "secondary",
           "ordinary_factors": [
@@ -987,8 +991,8 @@
         {
           "type": "prestige",
           "amount": [
-            0.24,
-            0.52
+            0.48,
+            1.04
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1042,7 +1046,7 @@
       "name": "修通乡道",
       "description": "从有集市往来而尚未通路的邻地中择段，铺设碎石，另定赶集交割日。",
       "requires": [],
-      "cost": 9,
+      "cost": 7,
       "burden": [
         3,
         5
@@ -1059,6 +1063,10 @@
           "ordinary_factors": [
             0.8,
             1.2
+          ],
+          "amount": [
+            2,
+            2
           ]
         },
         {
@@ -1077,8 +1085,8 @@
         {
           "type": "gold",
           "amount": [
-            0.1,
-            0.2
+            0.2,
+            0.4
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1089,8 +1097,8 @@
         {
           "type": "prestige",
           "amount": [
-            0.12,
-            0.28
+            0.24,
+            0.56
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1144,7 +1152,7 @@
       "name": "招收学徒",
       "description": "作坊备好工具与住处，招收新户随师学艺，逐步补足当地人手。",
       "requires": [],
-      "cost": 7,
+      "cost": 5,
       "burden": [
         2,
         4
@@ -1158,8 +1166,8 @@
         {
           "type": "population",
           "amount": [
-            0.0075,
-            0.0175
+            0.015,
+            0.035
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -1186,8 +1194,8 @@
         {
           "type": "research",
           "amount": [
-            0.3,
-            0.6
+            0.6,
+            1.2
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1259,7 +1267,7 @@
       "name": "义诊收户",
       "description": "延医巡村，接济病户，并将愿意留居的人家编入乡里。",
       "requires": [],
-      "cost": 7,
+      "cost": 5,
       "burden": [
         2,
         4
@@ -1273,8 +1281,8 @@
         {
           "type": "population",
           "amount": [
-            0.01,
-            0.025
+            0.02,
+            0.05
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -1299,8 +1307,8 @@
         {
           "type": "stability",
           "amount": [
-            0.32,
-            0.64
+            0.64,
+            1.28
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1346,7 +1354,7 @@
       "name": "修复集廛",
       "description": "从尚有扩建余地的公共设施中抽定一项，修复集廛，留工法供后续营建。",
       "requires": [],
-      "cost": 10,
+      "cost": 7,
       "burden": [
         3,
         5
@@ -1368,6 +1376,10 @@
           "ordinary_factors": [
             0.8,
             1.2
+          ],
+          "amount": [
+            2,
+            2
           ]
         },
         {
@@ -1386,8 +1398,8 @@
         {
           "type": "research",
           "amount": [
-            0.2,
-            0.4
+            0.4,
+            0.8
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1433,7 +1445,7 @@
       "name": "募工轮歇",
       "description": "雇人接替疲敝役户，让归乡军户轮歇并传授操练，帮助少量新户落脚。",
       "requires": [],
-      "cost": 7,
+      "cost": 5,
       "burden": [
         0,
         0
@@ -1447,8 +1459,8 @@
         {
           "type": "burden",
           "amount": [
-            3,
-            6
+            6,
+            12
           ],
           "role": "primary",
           "ordinary_factors": [
@@ -1472,8 +1484,8 @@
         {
           "type": "population",
           "amount": [
-            0.005,
-            0.01
+            0.01,
+            0.02
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1485,8 +1497,8 @@
         {
           "type": "army_tradition",
           "amount": [
-            0.28,
-            0.64
+            0.56,
+            1.28
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1540,7 +1552,7 @@
       "name": "整备作坊",
       "description": "选有工料与人手的地点添置作坊，扩大现有行业的生产规模。",
       "requires": [],
-      "cost": 11,
+      "cost": 8,
       "burden": [
         3,
         5
@@ -1579,6 +1591,10 @@
           "ordinary_factors": [
             0.8,
             1.2
+          ],
+          "amount": [
+            2,
+            2
           ]
         },
         {
@@ -1598,8 +1614,8 @@
         {
           "type": "research",
           "amount": [
-            0.2,
-            0.4
+            0.4,
+            0.8
           ],
           "basis": "research_progress_weak_bonus",
           "role": "minor",
@@ -1671,7 +1687,7 @@
       "name": "试作新法",
       "description": "选一处已有生产的作坊，试验工具与工序，确认能稳定出货后再行推广。",
       "requires": [],
-      "cost": 7,
+      "cost": 5,
       "burden": [
         2,
         4
@@ -1699,8 +1715,8 @@
         {
           "type": "research",
           "amount": [
-            0.4,
-            0.8
+            0.8,
+            1.6
           ],
           "basis": "research_progress_weak_bonus",
           "role": "secondary",
@@ -1712,8 +1728,8 @@
         {
           "type": "gold",
           "amount": [
-            0.08,
-            0.16
+            0.16,
+            0.32
           ],
           "role": "minor",
           "ordinary_factors": [
@@ -1776,6 +1792,176 @@
         "iron_mill"
       ],
       "target_active_industry": true
+    },
+    {
+      "id": 19,
+      "key": "talent_search",
+      "pool": "national",
+      "category": "administration",
+      "name": "访求贤才",
+      "description": "资助各处荐举与考察，延揽愿意入朝任职的人才。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        1,
+        2
+      ],
+      "months": [
+        6,
+        9
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "courtier",
+          "chance": [
+            20,
+            40
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            1,
+            1
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.4,
+            0.8
+          ],
+          "basis": "prestige_weak_bonus",
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.2,
+            0.4
+          ],
+          "basis": "research_progress_weak_bonus",
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "廷臣招徕机会",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "key": "patronage",
+      "pool": "national",
+      "category": "commerce",
+      "name": "延揽文艺",
+      "description": "资助书画与艺事，邀请艺术家，或将作品收入本国。",
+      "requires": [],
+      "cost": 6,
+      "burden": [
+        1,
+        2
+      ],
+      "months": [
+        6,
+        9
+      ],
+      "score": 9,
+      "rewards": [
+        {
+          "type": "patronage",
+          "chance": [
+            20,
+            40
+          ],
+          "role": "primary",
+          "ordinary_factors": [
+            1,
+            1
+          ]
+        },
+        {
+          "type": "prestige",
+          "amount": [
+            0.4,
+            0.8
+          ],
+          "basis": "prestige_weak_bonus",
+          "role": "secondary",
+          "ordinary_factors": [
+            0.75,
+            1.25
+          ]
+        },
+        {
+          "type": "research",
+          "amount": [
+            0.2,
+            0.4
+          ],
+          "basis": "research_progress_weak_bonus",
+          "role": "minor",
+          "ordinary_factors": [
+            0.65,
+            1.35
+          ]
+        }
+      ],
+      "benefits": [
+        {
+          "label": "艺术家或艺术品机会",
+          "grades": [
+            "中量",
+            "大量"
+          ],
+          "priority": 100
+        },
+        {
+          "label": "威望收益",
+          "grades": [
+            "少量",
+            "中量"
+          ],
+          "priority": 70
+        },
+        {
+          "label": "研究进度",
+          "grades": [
+            "少量",
+            "少量"
+          ],
+          "priority": 40
+        }
+      ]
     }
   ],
   "outcomes": [
@@ -1801,134 +1987,134 @@
     12,
     24
   ],
-  "gold_cost_multiplier": 0.7,
-  "burden_cost_multiplier": 1.2,
+  "gold_cost_multiplier": 2.5,
+  "burden_cost_multiplier": 1.8,
   "modifiers": {
     "fair": {
       "scope": "country",
       "name": "行商货会",
       "description": "交割凭据与货栈已备，商旅循约赴会。",
       "effects": {
-        "global_merchant_capacity_modifier": 0.05
+        "global_merchant_capacity_modifier": 0.1
       },
-      "summary": "全国贸易容量 +5%"
+      "summary": "全国贸易容量 +10%"
     },
     "materials": {
       "scope": "country",
       "name": "统筹采料",
       "description": "各处物料合并订购，交货与运输已有定约。",
       "effects": {
-        "global_construction_speed": 0.04
+        "global_construction_speed": 0.08
       },
-      "summary": "全国建设速度 +4%"
+      "summary": "全国建设速度 +8%"
     },
     "copyists": {
       "scope": "country",
       "name": "工艺会抄",
       "description": "各坊工艺经过比勘，抄本交由学舍传习。",
       "effects": {
-        "research_speed_modifier": 0.03
+        "research_speed_modifier": 0.06
       },
-      "summary": "全国研究速度 +3%"
+      "summary": "全国研究速度 +6%"
     },
     "paid_crews": {
       "scope": "country",
       "name": "雇役轮替",
       "description": "以雇募替代临时征调，各处工程得以接续用工。",
       "effects": {
-        "global_construction_speed": 0.02
+        "global_construction_speed": 0.04
       },
-      "summary": "全国建设速度 +2%"
+      "summary": "全国建设速度 +4%"
     },
     "food_small": {
       "scope": "location",
       "name": "支渠清淤",
       "description": "淤段已清，田间水口恢复输水。",
       "effects": {
-        "local_monthly_food_modifier": 0.06
+        "local_monthly_food_modifier": 0.12
       },
-      "summary": "当地粮食产出 +6%"
+      "summary": "当地粮食产出 +12%"
     },
     "food_large": {
       "scope": "location",
       "name": "支渠整修",
       "description": "支渠与水口经过整修，田亩受水有序。",
       "effects": {
-        "local_monthly_food_modifier": 0.08
+        "local_monthly_food_modifier": 0.16
       },
-      "summary": "当地粮食产出 +8%"
+      "summary": "当地粮食产出 +16%"
     },
     "settlement": {
       "scope": "location",
       "name": "新户安业",
       "description": "农具与住处已备，新户逐步恢复耕作。",
       "effects": {
-        "local_monthly_food_modifier": 0.03
+        "local_monthly_food_modifier": 0.06
       },
-      "summary": "当地粮食产出 +3%"
+      "summary": "当地粮食产出 +6%"
     },
     "local_works": {
       "scope": "location",
       "name": "乡匠协作",
       "description": "乡匠分工备料，邻里轮班接续修造。",
       "effects": {
-        "local_construction_speed": 0.05
+        "local_construction_speed": 0.1
       },
-      "summary": "当地建设速度 +5%"
+      "summary": "当地建设速度 +10%"
     },
     "road_market": {
       "scope": "location",
       "name": "通路交割",
       "description": "乡道接通，赶集与交货不再绕行。",
       "effects": {
-        "local_merchant_capacity": 0.5
+        "local_merchant_capacity": 1.0
       },
-      "summary": "当地贸易容量 +0.5"
+      "summary": "当地贸易容量 +1"
     },
     "clinics": {
       "scope": "location",
       "name": "义诊留方",
       "description": "医者巡诊留下药方，里社接续照护病户。",
       "effects": {
-        "local_disease_resistance": 0.05
+        "local_disease_resistance": 0.1
       },
-      "summary": "当地疾病抵抗 +5%"
+      "summary": "当地疾病抵抗 +10%"
     },
     "apprentices": {
       "scope": "location",
       "name": "师徒协作",
       "description": "新户随师学习，作坊分工渐熟，现有生产更为顺畅。",
       "effects": {
-        "local_production_efficiency": 0.03
+        "local_production_efficiency": 0.06
       },
-      "summary": "当地生产效率 +3%"
+      "summary": "当地生产效率 +6%"
     },
     "guild_standards": {
       "scope": "country",
       "name": "验货有据",
       "description": "尺寸、成色与交割凭据已有定式，各坊货物较易售出。",
       "effects": {
-        "global_merchant_capacity_modifier": 0.03
+        "global_merchant_capacity_modifier": 0.06
       },
-      "summary": "全国贸易容量 +3%"
+      "summary": "全国贸易容量 +6%"
     },
     "workshop_setup": {
       "scope": "location",
       "name": "作坊备工",
       "description": "工具与工料就位，后续扩建可依现成分工接续。",
       "effects": {
-        "local_construction_speed": 0.05
+        "local_construction_speed": 0.1
       },
-      "summary": "当地建设速度 +5%"
+      "summary": "当地建设速度 +10%"
     },
     "guild_trials": {
       "scope": "location",
       "name": "新法试成",
       "description": "新工序已经试作，工匠依记录调整用料与次序。",
       "effects": {
-        "local_production_efficiency": 0.05
+        "local_production_efficiency": 0.1
       },
-      "summary": "当地生产效率 +5%"
+      "summary": "当地生产效率 +10%"
     }
   },
   "great_reward_factors": [
@@ -1938,8 +2124,8 @@
   ],
   "reward_randomization": "independent_components_locked_on_start",
   "manpower_limits": {
-    "monthly_recovery": 0.1,
-    "capacity_fraction": 0.001
+    "monthly_recovery": 0.2,
+    "capacity_fraction": 0.002
   },
   "contribution": {
     "base": 0.2,
@@ -1967,8 +2153,8 @@
       "hbe_tea_exchange"
     ],
     "special_output": {
-      "country": 0.08,
-      "location": 0.1
+      "country": 0.16,
+      "location": 0.2
     },
     "goods_names": {
       "hbe_shu_embroidery": "蜀绣",
@@ -1992,5 +2178,10 @@
       "workshop_setup": "location",
       "guild_trials": "location"
     }
+  },
+  "gold_economic_multiplier": 0.7,
+  "relief_draw": {
+    "minimum_burden_exclusive": 50,
+    "weight": 70
   }
 }

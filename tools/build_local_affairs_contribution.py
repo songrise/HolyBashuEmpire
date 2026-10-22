@@ -35,17 +35,13 @@ hbe_af_feast_dividend_weight = {{
   if = { limit = { OR = { NOT = { has_variable = hbe_af_credit_round } NOT = { var:hbe_af_credit_round = situation:hbe_banquet.var:hbe_round } } }
    set_variable = { name = hbe_af_credit_round value = situation:hbe_banquet.var:hbe_round }
    set_variable = { name = hbe_af_round_points value = 0 }
-   set_variable = { name = hbe_af_round_completions value = 0 }
   }
   if = { limit = { NOT = { has_variable = hbe_af_credit_economic } } set_variable = { name = hbe_af_credit_economic value = hbe_event_economic_base } }
   set_variable = { name = hbe_af_credit_last value = hbe_af_feast_credit }
   if = { limit = { var:hbe_af_credit_last > 0 }
    change_variable = { name = hbe_af_round_points add = var:hbe_af_credit_last }
-   change_variable = { name = hbe_af_round_completions add = 1 }
    change_variable = { name = hbe_feast_points add = var:hbe_af_credit_last }
-   change_variable = { name = hbe_contribution add = var:hbe_af_credit_last }
    set_variable = { name = hbe_af_credit_last_project value = var:hbe_af_active }
-   set_variable = hbe_feast_helped set_variable = hbe_round_delivered
    hbe_feast_recount = yes
   }
  }
@@ -54,7 +50,7 @@ hbe_af_feast_dividend_weight = {{
 '''
     effect = effect.replace('set_variable = { name = hbe_af_round_points value = 0 }', 'set_variable = { name = hbe_af_round_points value = 0 } '+reset_projects)
     entries = ' '.join(f'if = {{ limit = {{ var:hbe_af_active = {p["id"]} }} change_variable = {{ name = hbe_af_round_credit_{p["id"]} add = var:hbe_af_credit_last }} }}' for p in projects)
-    effect = effect.replace('change_variable = { name = hbe_af_round_completions add = 1 }', 'change_variable = { name = hbe_af_round_completions add = 1 } '+entries)
+    effect = effect.replace('change_variable = { name = hbe_feast_points add = var:hbe_af_credit_last }', 'change_variable = { name = hbe_feast_points add = var:hbe_af_credit_last } '+entries)
     put('in_game/common/scripted_effects/hbe_af_contribution_effects.txt', effect)
 
     # Reset the new ledger with the existing 24-month feast round, never on load.
@@ -66,7 +62,6 @@ hbe_af_feast_dividend_weight = {{
     if marker not in body:
         body = body.replace('set_variable = { name = hbe_feast_points value = 0 }',
             'set_variable = { name = hbe_feast_points value = 0 } '+marker+
-            ' set_variable = { name = hbe_af_round_completions value = 0 }'+
             ' set_variable = { name = hbe_af_credit_last value = 0 }')
         text = apply_edits(text, [(section[2], section[3], body)])
     if 'name = hbe_af_round_credit_1 ' not in text:
@@ -102,13 +97,13 @@ hbe_af_feast_last_text = { type = country text = { trigger = { hbe_af_feast_proj
         loc[f'HBE_AF_MEMBER_PROJECT_{pid}'] = f"\\n  · {p['name']}：[Country.MakeScope.GetVariable('hbe_af_round_credit_{pid}').GetValue|2]"
     put('in_game/common/customizable_localization/hbe_af_contribution_custom.txt', custom)
     loc['HBE_AF_BLANK'] = ''
-    loc['HBE_AF_MEMBER_CONTRIBUTION_TT'] = "#T [Country.GetName]·本届贡献#!\\n席面出资：[Country.MakeScope.ScriptValue('hbe_af_feast_funding')|2]\\n地方项目：[Country.MakeScope.ScriptValue('hbe_af_feast_projects')|2] / 2.00[Country.Custom('hbe_af_feast_prior_text')]\\n合计：[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|2][Country.Custom('hbe_af_feast_last_text')]"
+    loc['HBE_AF_MEMBER_CONTRIBUTION_TT'] = "#T [Country.GetName]·本届贡献#!\\n席面出资：[Country.MakeScope.ScriptValue('hbe_af_feast_funding')|2]\\n地方事业：[Country.MakeScope.ScriptValue('hbe_af_feast_projects')|2] / 2.00[Country.Custom('hbe_af_feast_prior_text')]\\n合计：[Country.MakeScope.GetVariable('hbe_feast_points').GetValue|2][Country.Custom('hbe_af_feast_last_text')]"
     loc['HBE_AF_MEMBER_CONTRIBUTION_TT'] = loc['HBE_AF_MEMBER_CONTRIBUTION_TT'].replace("[Country.Custom('hbe_af_feast_prior_text')]", ''.join(f"[Country.Custom('hbe_af_feast_detail_{p['id']}')]" for p in projects)+"[Country.Custom('hbe_af_feast_prior_text')]")
     loc['HBE_AF_MEMBER_PRIOR'] = "\\n此前已记贡献：[Country.MakeScope.ScriptValue('hbe_af_feast_prior')|2]"
     loc['HBE_AF_MEMBER_LAST'] = "\\n\\n最近：[Country.Custom('hbe_af_feast_last_name')] +[Country.MakeScope.ScriptValue('hbe_af_feast_last')|2]"
 
     replacements = {
-        'HBE_FEAST_GUIDE': '出资记1分；地方项目完工按投入与成果记分，每届至多2分。\\n每两年结算。悬浮成员可查看贡献明细。',
+        'HBE_FEAST_GUIDE': '出资记1分；地方事业完工按投入与成果记分，每届至多2分。\\n每两年结算。悬浮成员可查看贡献明细。',
         'HBE_FEAST_ACTION_HELP': '出资每届一次；换派有五年间隔。悬浮按钮查看条件。',
         'game_concept_hbe_term_local_service_desc': '地方事业在右下角专用面板筹办，每轮从全国、地方两张候选中选一项。完工自动结算成果，并按投入、工期和实际成果计入本届贡献，每届至多2分；开工、撤办与候选过期不加分。',
     }

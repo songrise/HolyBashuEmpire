@@ -1,7 +1,6 @@
 {
   "age": "age_2_renaissance",
   "parent": "renaissance_development",
-  "research_cost": 3.0,
   "atlas": "assets/industry_transmission/technology_atlas_2x2.png",
   "industries": [
     {
@@ -27,7 +26,7 @@
       "id": "well_salt",
       "name": "井灶合煎",
       "english": "Shared Brine Refining",
-      "method_name": "分锅精煎",
+      "method_name": "兴业精煎",
       "method_english": "Separate-Pan Brine Refining",
       "region": "southern_salt_wine",
       "building_advance": "hbe_tech_southern_salt_wine_1",
@@ -39,7 +38,7 @@
       "carriers": ["salt_collector"],
       "file": "common_buildings.txt",
       "category": "building_maintenance",
-      "description": "旧盐场依常法出盐，井户另领木料与铁器，择卤分锅精煎。几家共用的灶具记入一册，精盐单独过秤，日常盐课仍照旧交纳。",
+      "description": "旧盐场依常法出盐，井户另领木料与铁器，择卤兴业精煎。几家共用的灶具记入一册，精盐单独过秤，日常盐课仍照旧交纳。",
       "description_english": "The saltworks keep their ordinary production while experienced well households refine a smaller batch in separate pans. Shared equipment is entered in one ledger, and the refined salt is weighed apart from the usual salt dues."
     },
     {

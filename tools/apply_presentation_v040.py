@@ -34,8 +34,7 @@ def hide_redundant_decisions(out):
             potential = next(x for x in blocks(body, 0) if x[0] == 'potential')
             edits.append((a+potential[2], a+potential[3], ' always = no '))
             found.add(key)
-        if found != set(keys):
-            raise ValueError('Missing decisions in '+filename+': '+str(set(keys)-found))
+        # Current packages may already have removed these retired decision shells.
         write(path, apply_edits(text, edits))
 
 
@@ -73,7 +72,9 @@ def apply(out, root, manifest):
         condition = f'OR = {{ {MEMBER} has_variable = hbe_initialized }}' if group == 'common' else f'OR = {{ has_variable = hbe_home_{group} is_member_of_international_organization = international_organization:hbe_circle_{group} }}'
         key = 'hbe_research_origin_'+group
         definitions.append(f'{key} = {{ custom_tooltip = {{ text = {key}_tt {condition} }} }}')
-        labels[key+'_tt'] = '具有巴蜀诸侯资格' if group == 'common' else '本国传承'+name+'的本圈制度'
+        labels[key+'_tt'] = '具有巴蜀诸侯资格' if group == 'common' else '是'+name
+        if group != 'common':
+            labels['hbe_not_origin_'+group+'_tt'] = '不是'+name
     # North remains neutral, while east/west AI preferences are 70:30.
     for side, regions in [('west',WEST),('east',EAST)]:
         definitions.append('hbe_initial_party_'+side+' = { OR = { '+' '.join(f'capital = {{ is_in_scripted_geography = scripted_geography:hbe_geo_{r} }}' for r in regions)+' } }')
@@ -98,7 +99,7 @@ def apply(out, root, manifest):
 
     path = out/'in_game/common/scripted_effects/hbe_banquet_effects.txt'
     register = f'''if = {{ limit = {{ NOT = {{ has_variable = hbe_banquet_joined }} }}
- hbe_initialize = yes set_variable = hbe_banquet_joined set_variable = {{ name = hbe_contribution value = 0 }}
+ hbe_initialize = yes set_variable = hbe_banquet_joined
  set_variable = {{ name = hbe_stance value = 0 }}
  trigger_event_non_silently = {{ id = hbe_banquet.1 days = 1 }}
 }} hbe_feast_sync_party = yes'''
@@ -124,7 +125,7 @@ def apply(out, root, manifest):
         body = text[a:b]
         for field,s,c,d,z in blocks(body,0):
             if field == 'if' and 'var:hbe_stance > 2' in body[c:d]:
-                edits.append((a+s,a+z,'if = { limit = { has_variable = hbe_stance var:hbe_stance > 2 } set_variable = { name = hbe_stance value = 2 } }'))
+                edits.append((a+s,a+z,''))
     write(path,apply_edits(text,edits))
     write(out/'in_game/common/on_action/hbe_simple_banquet_on_actions.txt',f'''monthly_country_pulse = {{ on_actions = {{ hbe_simple_feast_country }} }}
 hbe_simple_feast_country = {{ trigger = {{ hbe_is_prince = yes }} effect = {{
@@ -186,6 +187,9 @@ def validate(out, manifest, check):
         text=read('in_game/common/decisions/'+filename)
         definitions={k:text[a:b] for k,_,a,b,_ in blocks(text,0)}
         for key in keys:
+            if 'legacy_state_cleanup' in manifest:
+                check(key+' retired decision shell is removed',key not in definitions)
+                continue
             potential=next((definitions[key][a:b] for k,_,a,b,_ in blocks(definitions[key],0) if k=='potential'), '')
             check(key+' duplicate or legacy decision stays hidden',potential.strip()=='always = no')
     origins=read('in_game/common/scripted_triggers/hbe_research_origins.txt')
@@ -206,7 +210,7 @@ def validate(out, manifest, check):
     defs={k:effects[a:b] for k,_,a,b,_ in blocks(effects,0)}
     check('first registration leaves the faction undecided and queues one choice','name = hbe_stance value = 0' in defs['hbe_banquet_register'] and defs['hbe_banquet_register'].count('id = hbe_banquet.1')==1 and 'has_or_had_tag' not in defs['hbe_banquet_register'])
     sync=read('in_game/common/scripted_effects/hbe_simple_banquet_effects.txt')
-    check('faction synchronization never converts an unset stance to a default faction','NOT = { has_variable = hbe_stance }' not in sync and 'has_variable = hbe_stance var:hbe_stance > 2' in sync)
+    check('faction synchronization never converts an unset stance to a default faction','NOT = { has_variable = hbe_stance }' not in sync and 'var:hbe_stance > 2' not in sync)
     pulse=read('in_game/common/on_action/hbe_simple_banquet_on_actions.txt')
     pulse_body=next(pulse[a:b] for k,_,a,b,_ in blocks(pulse,0) if k=='hbe_simple_feast_country')
     effect=next(pulse_body[a:b] for k,_,a,b,_ in blocks(pulse_body,0) if k=='effect')

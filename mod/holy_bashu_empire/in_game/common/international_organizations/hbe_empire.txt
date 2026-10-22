@@ -50,8 +50,6 @@ hbe_circle_chengdu_plain = {
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
 
-    
-
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }
  join_offensive_wars_always = { always = no }
@@ -68,8 +66,6 @@ hbe_circle_southern_salt_wine = {
     can_join_trigger = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-
-    
 
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }
@@ -88,8 +84,6 @@ hbe_circle_eastern_river = {
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
 
-    
-
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }
  join_offensive_wars_always = { always = no }
@@ -106,8 +100,6 @@ hbe_circle_northern_shudao = {
     can_join_trigger = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-
-    
 
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }
@@ -126,8 +118,6 @@ hbe_circle_central_hills = {
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
 
-    
-
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }
  join_offensive_wars_always = { always = no }
@@ -145,8 +135,6 @@ hbe_circle_western_tea_horse = {
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
 
-    
-
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }
  join_offensive_wars_always = { always = no }
@@ -163,8 +151,6 @@ hbe_circle_southwestern_valleys = {
     can_join_trigger = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
     can_leave_trigger = { always = no } auto_leave_trigger = { hbe_is_prince = no }
     auto_disband_trigger = { always = no }
-
-    
 
  join_defensive_wars_always = { scope:recipient = { NOT = { this = scope:target } } }
  join_defensive_wars_can_call = { always = yes }

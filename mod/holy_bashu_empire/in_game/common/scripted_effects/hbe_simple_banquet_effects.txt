@@ -1,6 +1,5 @@
 ﻿hbe_feast_sync_party = {
 
- if = { limit = { has_variable = hbe_stance var:hbe_stance > 2 } set_variable = { name = hbe_stance value = 2 } }
  if = { limit = { NOT = { has_variable = hbe_feast_points } } set_variable = { name = hbe_feast_points value = 0 } }
 if = { limit = { var:hbe_stance = 1 }
    if = { limit = { is_member_of_international_organization = international_organization:hbe_local_party } international_organization:hbe_local_party = { remove_country_from_international_organization = prev } }
@@ -12,7 +11,6 @@ if = { limit = { var:hbe_stance = 2 }
    if = { limit = { NOT = { exists = international_organization:hbe_local_party } } create_international_organization = { type = international_organization_type:hbe_local_party add_country_to_international_organization = prev set_leader_country = prev } }
    else_if = { limit = { NOT = { is_member_of_international_organization = international_organization:hbe_local_party } } international_organization:hbe_local_party = { add_country_to_international_organization = prev } }
  }
-
 
  if = { limit = { NOT = { has_variable = hbe_feast_last_dividend } } set_variable = { name = hbe_feast_last_dividend value = 0 } }
 
@@ -33,4 +31,3 @@ hbe_feast_recount = {
   if = { limit = { var:hbe_feast_required < 3 } set_variable = { name = hbe_feast_required value = 3 } }
  }
 }
-hbe_feast_help = { hbe_af_retire_legacy_country = yes }

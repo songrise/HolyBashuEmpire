@@ -204,9 +204,14 @@ def build(game, out):
         geo.append(f'hbe_geo_{key} = {{ location = {{ {" ".join(owned)} }} }}');L(f'hbe_geo_{key}',name)
     put('in_game/common/scripted_geography/hbe_geography.txt','\n'.join(geo));L('hbe_domain','神圣巴蜀帝国地域')
     # Tags certify indigenous polities, geography limits protection to the domain.
+    # The tag certificate is one named condition so every tooltip shows one line.
     tag_trigger='OR = { '+' '.join(f'has_or_had_tag = {c["tag"]}' for c in countries)+' }'
-    triggers=f'''hbe_is_prince = {{
-    {tag_trigger}
+    L('hbe_prince_tag_tt','我们是或曾是巴蜀三十六府州之一')
+    triggers=f'''hbe_is_prince_tag = {{
+    custom_tooltip = {{ text = hbe_prince_tag_tt {tag_trigger} }}
+}}
+hbe_is_prince = {{
+    hbe_is_prince_tag = yes
     capital ?= {{ is_in_scripted_geography = scripted_geography:hbe_domain }}
 }}
 hbe_is_domain_polity = {{
@@ -310,14 +315,20 @@ hbe_elector_agenda_impact = {
                 'hbe_election_specific':'投票选择巴蜀皇帝','hbe_election_specific_desc':'从合资格的成员诸侯中选择。',
                 'vote_in_hbe_election':'投票：巴蜀皇帝','vote_in_hbe_election_desc':'每名选侯有一票。'}.items():L(k,v)
     # Message types are registered from one fixed file; preserve the native list.
-    messages=(game/'main_menu/gui/messagetypes.txt').read_text(encoding='utf-8-sig')
+    # 1.13 moved the flat file into a scanned folder; support both layouts.
+    messages_rel='main_menu/gui/messagetypes/00_messagetypes.txt'
+    messages_path=game/messages_rel
+    if not messages_path.is_file():
+        messages_rel='main_menu/gui/messagetypes.txt'
+        messages_path=game/messages_rel
+    messages=messages_path.read_text(encoding='utf-8-sig')
     for prefix in ('PERFORM','WE_PERFORM','OTHER_PERFORMS'):
         message=f'{prefix}_hbe_election_ACTION'
         messages+=f'\n{message} = {{ log = yes onmap = no popup = no idle = no option = yes pausepopup = no message_category = government }}\n'
         L(message,'巴蜀选侯投票')
         for suffix in ('HEADER','TITLE','DESC','LOG','MAP','SETUP'):
             L(message+'_'+suffix,'巴蜀选侯就皇帝人选投票。')
-    put('main_menu/gui/messagetypes.txt',messages)
+    put(messages_rel,messages)
     put('in_game/common/resolutions/hbe_election.txt','''hbe_election = {
     loc = hbe_election potential = { always = yes } allow = { }
     ai_tick = monthly is_live = { always = yes } requires_explicit_votes = no
@@ -457,7 +468,7 @@ hbe_add_credit = {
     for stage,(year,title,desc) in enumerate(((1352,'第一代事业，第二本账','地方课题开始长成圈级事业。接下来的验收需要更成熟的研究与更多地区履约。'),
           (1372,'旧约重审，人人有功','三十五年过去，旧合同的受益者与新主持需要重新认账。深化课题与第三阶段任务继续开放。'),
           (1397,'地区重组，债随人走','皇帝换了，诸侯换了，欠条还在。地区终点研究与第四阶段任务现在进入长期治理。'),
-          (1422,'八十五载，商路换了','外部市场和采购条件改变，但自治盟约仍然有效。保持地区事业，不断续办公共项目。'),
+          (1422,'八十五载，商路换了','外部市场和采购条件改变，但自治盟约仍然有效。保持地方事业，不断续办公共项目。'),
           (1437,'百年巴蜀，重新盖章','百年章程验收开放。地区治理须继续出资与履约；统一国家也可以继续维护本乡机构。'))):
         eid=10+stage;simple.append((eid,title,desc,'旧约重认，事业续办。'))
     for eid,title,desc,option in simple:
@@ -546,7 +557,7 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     variable_labels.update({r[4]:r[3] for r in REGIONS})
     for f in out.rglob('*.txt'):
         for key in re.findall(r'\bname\s*=\s*(hbe_[a-z0-9_]+)',f.read_text(encoding='utf-8-sig')):
-            if key not in loc:L(key,variable_labels.get(key,'地区事业交付计时'))
+            if key not in loc:L(key,variable_labels.get(key,'地方事业交付计时'))
     from build_player_guides import GUIDES
     GUIDES.extend((key.removeprefix('hbe_term_'),v[0],[v[0]],v[1],'hbe_burden' if key=='hbe_term_burden' else None) for key,v in social_expansion['concepts'].items())
     player_guides = build_player_guides(ROOT, loc, L, put)

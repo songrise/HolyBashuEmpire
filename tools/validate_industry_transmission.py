@@ -134,7 +134,7 @@ def validate(mod, root, game, manifest, check):
         stem, licensed, ready, active, off = ids(row)
         values = direct_values(advances[stem])
         check(stem + ' manually researched at age two with native tree parent and no stat grants',
-              values == {'age': config['age'], 'starting_technology_level': '99', 'research_cost': f"{config['research_cost']:g}",
+              values == {'age': config['age'], 'starting_technology_level': '99',
                          'content_priority': '830', 'icon': stem, 'requires': row.get('parent', config['parent']),
                          'pure_tooltip_entry': stem + '_effects', 'unlock_production_method': active})
         allow = next(advances[stem][a:b] for key, _, a, b, _ in blocks(advances[stem], 0) if key == 'allow')

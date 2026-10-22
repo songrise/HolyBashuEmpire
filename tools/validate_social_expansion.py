@@ -44,9 +44,9 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     service_decisions=read('in_game/common/decisions/hbe_decisions.txt')
     check('retired service decisions are hidden or current policy costs apply',all('always = no' in service_decisions[a:b] for k,_,a,b,_ in blocks(service_decisions,0) if k.startswith('hbe_service_')) if retired else service_decisions.count('value = hbe_paid_bill add = hbe_decision_bill_4')==7)
     check('existing regiments persist when over supply limit', 'hbe_civic_over_supply' in eff and 'destroy' not in eff and 'delete' not in eff)
-    check('all three charter outcomes continue after 1457','var:hbe_charter = 1' in read('in_game/events/hbe_civic_events.txt') and 'var:hbe_charter = 2' in read('in_game/events/hbe_civic_events.txt') and 'current_year >= 1457' in read('in_game/common/decisions/hbe_civic_decisions.txt'))
-    check('21 new events localized with repeat-safe dispatch',len(data['events'])==21 and all(e['id']+'.title' in loc and '\n\n' in e['body'] for e in data['events']) and 'fire_only_once' not in read('in_game/events/hbe_civic_events.txt'))
-    check('27 native country decisions have multi-paragraph narrative',len(data['decisions'])==27 and all('\n\n' in e['body'] and e['key']+'.title.entry' in loc for e in data['decisions']))
+    check('current charters retain maintenance after old revision decisions retire','hbe_charter_maintenance = {' in read('in_game/common/scripted_effects/hbe_banquet_effects.txt'))
+    check('21 new events localized with repeat-safe dispatch',len(data['events'])==21 and all(e['id']+'.title' in loc and '\n\n' in e['body'] for e in data['events'] if e['id'] not in manifest.get('legacy_state_cleanup',{}).get('events',[])) and 'fire_only_once' not in read('in_game/events/hbe_civic_events.txt'))
+    check('27 native country decisions have multi-paragraph narrative',len(data['decisions'])==27 and all('\n\n' in e['body'] and e['key']+'.title.entry' in loc for e in data['decisions'] if e['key'] not in manifest.get('legacy_state_cleanup',{}).get('decisions',[])))
     check('57 distinct new icon/illustration cells plus 3 event scenes',len(art['exports'])==60 and len({e['sha256'] for e in art['exports']})==60)
     for e in art['exports']:
         b=(mod/e['path']).read_bytes();w,h=(1080,440) if e['kind']=='units' else e['dimensions']
@@ -59,3 +59,28 @@ def validate_social_expansion(mod,root,game,manifest,loc,check):
     demands+='\n'+'\n'.join(f.read_text(encoding='utf-8-sig') for f in (mod/'in_game/common/goods_demand').glob('*.txt'))
     demandkeys={k for k,*_ in blocks(demands,0)}
     check('unit and building construction/maintenance IDs resolve',set(re.findall(r'(?:construction_demand|maintenance_demand) = (\w+)',buildings+units))<=demandkeys)
+
+    # A compact tooltip must retain the circle, including when used negatively.
+    from validate_industry_transmission import evaluate
+    from build_social_expansion import identity
+    decisions=read('in_game/common/decisions/hbe_civic_decisions.txt')
+    definitions={k:decisions[a:b] for k,_,a,b,_ in blocks(decisions,0)}
+    trigger_defs={}
+    for filename in ('hbe_triggers.txt','hbe_research_origins.txt'):
+        text=read('in_game/common/scripted_triggers/'+filename)
+        trigger_defs.update({k:text[a:b] for k,_,a,b,_ in blocks(text,0)})
+    issues=read('in_game/common/parliament_issues/hbe_civic_issues.txt')
+    issue_defs={k:issues[a:b] for k,_,a,b,_ in blocks(issues,0)}
+    for group,name,*_ in manifest['regions']:
+        body=definitions['hbe_guest_'+group]
+        potential=next(body[a:b] for key,_,a,b,_ in blocks(body,0) if key=='potential')
+        check(group+' guest compact has an explicit negative circle tooltip',identity(group,negate=True) in potential and 'has_or_had_tag' not in potential)
+        for country in manifest['countries']:
+            allowed=evaluate(potential,set(),tag_history={country['tag']},origin=country['region'],definitions=trigger_defs)
+            check(group+' compact excludes only its own circle '+country['tag'],allowed == (country['region']!=group))
+        check(group+' regional parliament retains its own circle',identity(group) in issue_defs['hbe_fuyi_'+group])
+        check(group+' office retains native-circle or guest access','OR = { '+identity(group)+' has_variable = hbe_guest_'+group+' }' in definitions['hbe_seek_'+group])
+        for lang in ('simp_chinese','english','traditional_chinese'):
+            labels=read(f'main_menu/localization/{lang}/hbe_presentation_l_{lang}.yml')
+            check(group+' concise positive and negative circle labels '+lang,
+                  f'hbe_research_origin_{group}_tt: "是{name}"' in labels and f'hbe_not_origin_{group}_tt: "不是{name}"' in labels)

@@ -17,7 +17,7 @@ def apply(out,root,game):
   assert len(buildings)==2 and recipes and all('_advanced_' not in r for r in recipes)
   icon=re.search(r'icon\s*=\s*(\w+)',body).group(1)
   industrial.append(f'''{receipt} = {{
- age = age_1_traditions starting_technology_level = 99 research_cost = 1 content_priority = 850 icon = {icon}
+ age = age_1_traditions starting_technology_level = 99 content_priority = 850 icon = {icon}
  potential = {{ has_variable = {marker} }} allow = {{ always = no }}
  {' '.join('unlock_building = '+x for x in buildings)}
  {' '.join('unlock_production_method = '+x for x in recipes)}

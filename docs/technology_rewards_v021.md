@@ -12,7 +12,7 @@
 |匠人互访|global_institution_growth_modifier = 0.16 hbe_can_cross_circle_industry = yes|开放跨圈经营：满足条件并签订客籍议约后，可在目标圈建造机构并经营基础产业。|
 |行会传习|global_burghers_max_literacy = 4|开放行会雇价保任；仍须采用行会雇办。|
 |跨区工艺学堂|research_speed_modifier = 0.12 global_books_output_modifier = 0.16 global_hbe_shu_paper_output_modifier = 0.16||
-|驿路勘绘|global_road_building_time = -0.12 build_gravel_road_cost_modifier = -0.12|；降低原版道路工期与碎石路成本；可与蜀道接递叠加。|
+|驿路勘绘|global_road_building_time = -0.12 build_gravel_road_cost_modifier = -0.12|降低原版道路工期与碎石路成本；可与蜀道接递叠加。|
 |山河交通总图|burghers_estate_target_satisfaction = 0.048 global_trade_center_power = 0.12||
 |渠田协作|global_monthly_food_modifier = 0.05|解锁本圈三年地方事业与地方援助资格。|
 |蜀锦作坊分工|global_hbe_shu_embroidery_output_modifier = 0.1|取得本圈成长验收的课题资格。；解锁机构生产方式：锦坊试织。|
@@ -103,8 +103,8 @@
 |分仓义廪|仓社附田|lumber = 0.2 tools = 0.06|rice 0.7|分仓赈贷|
 |分仓义廪|塘堰轮作|lumber = 0.3 tools = 0.1|rice 1.25|乡社借粮|
 |茶马交割场|驮具修造|livestock = 0.5 tools = 0.05|leather 0.65|茶马集市|
-|茶马交割场|边茶压砖|tea = 0.65 tools = 0.08 paper = 0.03|hbe_border_tea 1.2|商队互保|
-|茶马交割场|蜀纸包茶|tea = 0.65 tools = 0.08 hbe_shu_paper = 0.03|hbe_border_tea 1.5|商队互保|
+|茶马交割场|边茶压砖|tea = 0.65 tools = 0.08 paper = 0.03|hbe_border_tea 1.2|茶引分庄|
+|茶马交割场|蜀纸包茶|tea = 0.65 tools = 0.08 hbe_shu_paper = 0.03|hbe_border_tea 1.5|茶引分庄|
 |谷市盟栈|谷市农具|iron = 0.25 lumber = 0.2|tools 0.5|山谷市集|
 |谷市盟栈|诸谷铁木联作|iron = 0.4 lumber = 0.25|tools 0.85|商盟互保|
 

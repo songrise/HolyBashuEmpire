@@ -39,9 +39,6 @@ local_governor_advance = {
 	ai_weight = { add = 200 }
 }
 
-
-
-
 ###############################
 # Economy Buildings
 ###############################
@@ -60,7 +57,6 @@ counting_house_advance = {
 	ai_weight = { add = 100 }
 }
 
-
 merchants_quarters_advance = {
 	age = age_3_discovery
 	
@@ -78,15 +74,12 @@ colonial_administration_advance = {
 	unlock_building = colonial_administration
 }
 
-
 grand_marketplace_advance = {
 	age = age_5_absolutism
 	
 	unlock_building = grand_marketplace
 	requires = merchant_power_from_maritime_absolutism_advance
 }
-
-
 
 commerce_center_advance = {
 	age = age_6_revolutions
@@ -95,16 +88,12 @@ commerce_center_advance = {
 	requires = merchant_power_from_maritime_revolutions_advance
 }
 
-
-
 port_authority_advance = {
 	age = age_4_reformation
 	
 	unlock_building = port_authority
 	requires = maritime_advance_age_4
 }
-
-
 
 ##############################
 # Production buildings
@@ -131,7 +120,6 @@ porcelain_kiln_advance = {
 	
 	requires = talented_traders
 }
-
 
 lacquerware_guild_advance = {
 	age = age_1_traditions
@@ -162,7 +150,6 @@ paper_guild_advance = {
 	requires = scriptorium_advance
 }
 
-
 gun_smith_advance = {
 	age = age_2_renaissance
 	
@@ -174,7 +161,6 @@ gun_smith_advance = {
 	ai_weight = { add = 1000 }
 }
 
-
 #not a building, but need building..
 unlock_handgonners_advance = {
 	age = age_2_renaissance
@@ -182,7 +168,6 @@ unlock_handgonners_advance = {
 	
 	requires = gun_smith_advance
 }
-
 
 cannon_maker_advance = {
 	age = age_2_renaissance
@@ -198,8 +183,6 @@ slave_center_advance = {
 	unlock_building = slave_center
 	requires = gun_smith_advance
 }
-
-
 
 #############################
 # Workshops
@@ -224,9 +207,6 @@ naval_supplies_workshop_advance = {
 	requires = pike_and_shot_advance
 }
 
-
-
-
 paper_workshop_advance = {
 	age = age_3_discovery
 
@@ -243,7 +223,6 @@ printing_press_shop_advance = {
 
 	requires = paper_workshop_advance
 }
-
 
 beer_workshop_advance = {
 	age = age_4_reformation
@@ -359,14 +338,10 @@ guns_workshop_advance = {
 	requires = artillery_institution_advance
 }
 
-
-
 #############################
 #Manufactories:
 # Absolutism!
 #############################
-
-
 
 naval_supplies_manufactory_advance = {
 	age = age_5_absolutism
@@ -386,8 +361,6 @@ firearms_manufactory_advance = {
 	requires = lead_ore_dressing
 }
 
-
-
 cloth_manufactory_advance = {
 	age = age_5_absolutism
 	research_cost = -0.5
@@ -405,7 +378,6 @@ printing_manufactory_advance = {
 	
 	requires = newspapers_advance
 }
-
 
 putrefaction_works_advance = {
 	age = age_5_absolutism
@@ -488,7 +460,6 @@ furniture_manufactory_advance = {
 	requires = powerful_statues	
 }
 
-
 distiller_manufactory_advance = {
 	age = age_5_absolutism
 	research_cost = -0.5
@@ -516,7 +487,6 @@ winery_manufactory_advance = {
 	requires = cork_stoppers	
 }
 
-
 lacquerware_manufactory_advance = {
 	age = age_5_absolutism
 	research_cost = -0.75
@@ -526,7 +496,6 @@ lacquerware_manufactory_advance = {
 	requires = pottery_manufactory_advance	
 }
 
-
 iron_foundry_advance = {
 	age = age_5_absolutism
 	research_cost = -0.5
@@ -535,7 +504,6 @@ iron_foundry_advance = {
 	
 	requires = lead_ore_dressing
 }
-
 
 weapon_manufactory_advance = {
 	age = age_5_absolutism
@@ -576,7 +544,6 @@ printing_mill_advance = {
 	requires = hot_blast_furnace
 }
 
- 
 paper_mill_advance = {
 	age = age_6_revolutions
 	research_cost = -0.75
@@ -598,14 +565,12 @@ tannery_mill_advance = {
 	requires = cupola_smelting
 }
 
-
 naval_supplies_mill_advance = {
 	age = age_6_revolutions
 	research_cost = -0.75
 	unlock_building = naval_supplies_mill
 	requires = tannery_mill_advance
 }
-
 
 brewery_mill_advance = {
 	age = age_6_revolutions
@@ -627,7 +592,6 @@ iron_mill_advance = {
 	unlock_building = iron_mill
 	requires = hot_blast_furnace
 }
-
 
 textile_mill_advance = {
 	age = age_6_revolutions
@@ -679,7 +643,6 @@ dyes_mill_advance = {
 	requires = maritime_advance_age_6	
 }
 
-
 furniture_mill_advance = {
 	age = age_6_revolutions
 	research_cost = -0.75
@@ -689,7 +652,6 @@ furniture_mill_advance = {
 	requires = pottery_mill_advance	
 }
 
-
 weapon_factory_advance = {
 	age = age_6_revolutions
 	research_cost = -0.75
@@ -698,7 +660,6 @@ weapon_factory_advance = {
 	
 	requires = cupola_smelting
 }
-
 
 firearms_factory_advance = {
 	age = age_6_revolutions
@@ -717,8 +678,6 @@ gun_factory_advance = {
 	
 	requires = weapon_factory_advance
 }
-
-
 
 ##############################
 # Soldier type buildings
@@ -762,7 +721,6 @@ regimental_camp_advance = {
 	unlock_building = regimental_camp
 }
 
-
 conscription_center_advance = {
 	age = age_6_revolutions
 	requires = napoleonic_warfare
@@ -771,8 +729,6 @@ conscription_center_advance = {
 
 	unlock_building = conscription_center
 }
-
-
 
 ##############################
 # Port Buildings
@@ -916,8 +872,6 @@ naval_base_advance = {
 	}
 }
 
-
-
 ##############################
 # Coastal Fort Buildings
 ##############################
@@ -962,8 +916,6 @@ naval_battery_advance = {
 	unlock_building = naval_battery
 }
 
-
-
 ##############################
 # Fort Buildings
 ##############################
@@ -973,6 +925,8 @@ castle_advance = {
 	requires = feudalism_advance
 	
 	unlock_building = castle
+	unlock_estate_privilege = clergy_military_orders
+	unlock_estate_privilege = noble_fortification_licenses
 	starting_technology_level = 3
 
 	ai_weight = { add = 2 }
@@ -1004,9 +958,6 @@ fortress_advance = {
 
 	ai_weight = { add = 2 }
 }
-
-
-
 
 ##############################
 # Cultural Buildings
@@ -1091,7 +1042,6 @@ theater_advance = {
 	unlock_building = theater
 }
 
-
 ###################################
 # Capital Buildings
 ###################################
@@ -1122,7 +1072,6 @@ order_headquarters_advance = {
 	unlock_building = order_headquarters
 }
 
-
 weapon_guild_advance = {
 	age = age_1_traditions
 	
@@ -1134,8 +1083,7 @@ chancery_advance = {
 	age = age_1_traditions
 	
 	requires = codified_laws
-	
-	
+
 	unlock_building = chancery
 }
 
@@ -1171,7 +1119,6 @@ tax_assessor_advance = {
 	unlock_building = tax_assessor
 }
 
-
 supreme_court_advance = {
 	age = age_4_reformation
 	
@@ -1180,7 +1127,6 @@ supreme_court_advance = {
 	unlock_building = supreme_court
 }
 
-
 arts_academy_advance = {
 	age = age_3_discovery
 	
@@ -1188,7 +1134,6 @@ arts_academy_advance = {
 	
 	unlock_building = arts_academy
 }
-
 
 ###################################
 # Market Buildings
@@ -1266,7 +1211,6 @@ stock_exchange_advance = {
 	max_bonds = 1
 }
 
-
 clearing_house_advance = {
 	age = age_6_revolutions
 	
@@ -1285,7 +1229,6 @@ clearing_house_advance = {
 	unlock_building = clearing_house
 }
 
-
 ###################################
 # Government Buildings
 ###################################
@@ -1297,7 +1240,6 @@ house_of_parliament_advance = {
 }
 
 # Unique Religious Buildings
-
 
 fortress_church_advance = {
 	age = age_1_traditions
@@ -1320,7 +1262,6 @@ fortress_church_advance = {
 	unlock_building = fortress_church
 	allow_children = no
 }
-
 
 ##############################
 # Coastal Fort Buildings

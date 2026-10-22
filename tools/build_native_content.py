@@ -88,7 +88,7 @@ TECH_PROSE={
 
 BIOGRAPHIES={
 '成都':'锦官城的织机与平原的渠田，使成都在巴蜀诸府之中享有声望。都江堰留下的治水传统、蜀锦的经营与文翁兴学的旧事，提供了不同的治国道路。\n\n如今本府掌握平原圈的选侯席位，也主持帝国最初的公议。邻府认可成都的名望，却未必愿意长期承担由成都决定的费用。皇位可以带来主持之权；能否使渠旁的人同样受益，才决定这种权威能维持多久。',
-'汉州':'汉州居于平原北部，受水的田亩与连接邻府的通路同样重要。城中的库吏关注交割，乡里的掌事者则关心何时开渠、何处备料，两者未必总能在同一本账上作答。\n\n成都近在一旁，给本府带来市场与议事的便利，也使汉州必须争取自己的声音。以真实渠务办成本圈地方项目，再将交付写入共同账册，本府便能用稳妥的交付换取比疆域更广的影响。',
+'汉州':'汉州居于平原北部，受水的田亩与连接邻府的通路同样重要。城中的库吏关注交割，乡里的掌事者则关心何时开渠、何处备料，两者未必总能在同一本账上作答。\n\n成都近在一旁，给本府带来市场与议事的便利，也使汉州必须争取自己的声音。以真实渠务办成本圈地方事业，再将交付写入共同账册，本府便能用稳妥的交付换取比疆域更广的影响。',
 '彭州':'彭州位于平原与山地相接之处，田亩的受水、山口的通行与地方采办相互牵连。一项看似只关渠口的决定，往往也改变了沿路乡里的负担。\n\n本府疆域有限，难以单靠兵势左右成都的公议，却可以在修渠与讲会之间选择自己的长处。让旧水次得到清楚记录，或以官学联络各府，都能使彭州成为平原圈不能轻易忽略的一员。',
 '邛州':'邛州的城郭与作坊连着平原西缘的行旅，器物的流转也连着乡里的日常生计。邛窑旧日的声名提醒掌事者：地方巧技只有得到可靠采办与传习，才能超出一时的好奇。\n\n在新的会盟中，邛州无需与大府争夺每一次主持权。修渠保产、组织作坊与参加匠人互访，都能为本府积累履约信誉。如何使工匠的长处成为诸侯共同需要的事业，将决定这座小国的前途。',
 '眉州':'眉州的乡田与市集养育了自己的地方社会，三苏留下的文章与声名又使它在蜀中文脉中有一席之地。书卷可以传得很远，乡里的渠务与借券却仍须有人逐件办理。\n\n本府可以沿渠务之路维持粮政，也可以在官学讲会中争取主持之誉。若以议论代替交付，声望终究会被邻府的账册质问；若让公议回应地方生计，眉州便能将文化之名化为长久的会盟信用。',
@@ -186,12 +186,14 @@ def build_native_content(out,root,countries,regions,nodes,loc,put,full_art,game)
         if cross_age:
             branch+=' has_advance = '+logical_parent
             parent='renaissance_development'
+        # Only the eighth node of each of the eight trees keeps a premium.
+        cost_line='    research_cost = 0.5\n' if idx==7 else ''
         advances.append(f'''{key} = {{
     age = {age}
     starting_technology_level = 99
     icon = {key}
     content_priority = {900-idx*10}
-    research_cost = {1.5 if idx<2 else 2.5 if idx in (2,5) else 4.0}
+{cost_line}
     potential = {{ hbe_research_origin_{group} = yes }}
     allow = {{ is_member_of_international_organization = international_organization:hbe_empire current_year >= {n['year']} {branch} }}
     requires = {parent}
@@ -199,7 +201,7 @@ def build_native_content(out,root,countries,regions,nodes,loc,put,full_art,game)
 }}''')
         bridge.append(f'''if = {{ limit = {{ has_variable = {key} NOT = {{ has_advance = {key} }} }} research_advance = advance_type:{key} }}
     if = {{ limit = {{ has_advance = {key} NOT = {{ has_variable = {key} }} }} set_variable = {key} hbe_add_credit = yes trigger_event_non_silently = {{ id = hbe.2 }} }}''')
-        tech_text.append(dict(key=key,name=n['name'],body=prose,unlock=unlock,year=n['year'],native_research_cost=1.5 if idx<2 else 2.5 if idx in (2,5) else 4.0,predecessor=parent,logical_predecessor=logical_parent,age=age,tags=tags))
+        tech_text.append(dict(key=key,name=n['name'],body=prose,unlock=unlock,year=n['year'],native_research_cost=0.5 if idx==7 else 0.0,predecessor=parent,logical_predecessor=logical_parent,age=age,tags=tags))
     put('in_game/common/advances/hbe_advances.txt','\n'.join(advances))
     put('in_game/common/scripted_effects/hbe_native_content_effects.txt','hbe_sync_native_research = {\n'+'\n'.join(bridge)+'\n}')
     put('in_game/common/on_action/hbe_native_content_on_actions.txt','''on_game_start = { on_actions = { hbe_native_content_start } }
@@ -208,7 +210,10 @@ monthly_country_pulse = { on_actions = { hbe_native_content_monthly } }
 hbe_native_content_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_sync_native_research = yes } }''')
     # Register concrete tags, not just runtime variable predicates, for native discovery.
     decision_text=[];registered_decisions=[]
-    for path in sorted((out/'in_game/common/decisions').glob('hbe*decisions.txt')):
+    # Later-stage formables may already exist during a repeated build; their
+    # localization is not available until their owning generator runs.
+    for name in ('hbe_banquet_decisions.txt', 'hbe_decisions.txt'):
+        path = out/'in_game/common/decisions'/name
         s=path.read_text(encoding='utf-8-sig');edits=[]
         for key,start,a,b,end in blocks(s,0):
             if key.startswith('hbe_tech_'):
@@ -232,8 +237,8 @@ hbe_native_content_monthly = { trigger = { hbe_is_prince = yes } effect = { hbe_
                 prose=REGION_CONTEXT[group]+'各有熟悉事务的掌事者，共同工程却需要他们的交付在同一期限内得到认可。\n\n我们愿认领这项专业合同，出钱备办并以地方储备作保。半年后的查验，将决定这份承诺能否成为本届工程真正齐备的一环。'
             elif key.startswith('hbe_stance_change_'):
                 i=int(key[-1]);prose=[
-                    '各府分头出资，仍有许多工程难以贯通府界。我们愿以共同主持协调这些事业，也接受由此而来的经费与维护之责。\n\n转向共锅之议，是让集中筹办得到更多支持；它不会使旧欠自行消失，也不能免去诸侯对公账的质问。',
-                    '乡里的旧例由当地承担者维持，过远的主持者未必能够看见每处实际负担。我们愿让各府保有更大的地方安排，再以共同认可的验收相互联系。\n\n转向分锅之议，是选择以自治维护协作。独立的府库仍须兑现自己签下的承诺，地方的便利也需要持续交付。',
+                    '各府分头出资，仍有许多工程难以贯通府界。我们愿以共同主持协调这些事业，也接受由此而来的经费与维护之责。\n\n转向共建之议，是让集中筹办得到更多支持；它不会使旧欠自行消失，也不能免去诸侯对公账的质问。',
+                    '乡里的旧例由当地承担者维持，过远的主持者未必能够看见每处实际负担。我们愿让各府保有更大的地方安排，再以共同认可的验收相互联系。\n\n转向兴业之议，是选择以自治维护协作。独立的府库仍须兑现自己签下的承诺，地方的便利也需要持续交付。',
                     '名望可以让一份承诺容易被接纳，却不能说明货物何时送达。我们愿以公账和凭据衡量共同事业，使出资者与承担者按实际交付取得回报。\n\n转向账房之议，是请诸侯将情面之外的责任写明。规矩越清楚，主持者也越须接受同样的查验。'][i-1]
             elif key.startswith(('hbe_propose_charter_','hbe_ballot_vote_')):
                 i=int(key[-1]);choice=['集中主持共同工程，并由皇帝承担持续维护','保留各府自治经营，以地方事业与粮政相互扶助','按实际交付核定共同收益，以契约保存彼此责任'][i-1]

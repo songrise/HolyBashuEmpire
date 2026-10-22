@@ -36,27 +36,7 @@ hbe_apply_tianfu = yes
 }
 hbe_country_monthly = {
 if = { limit = { hbe_is_prince = yes } hbe_initialize = yes
-if = { limit = { is_situation_active = situation:hbe_banquet } 
 
-
-
-
-
- }
-
-
-
-
-
-
-
-if = { limit = { always = yes always = no }  }
-if = { limit = { always = yes always = no }  }
-if = { limit = { always = yes always = no }  }
-if = { limit = { always = yes always = no }  }
-if = { limit = { always = yes always = no }  }
-if = { limit = { always = yes always = no }  }
-if = { limit = { always = yes always = no }  }
 }
 else = { every_owned_location = { limit = { has_location_modifier = hbe_tianfu } remove_location_modifier = hbe_tianfu } }
 }

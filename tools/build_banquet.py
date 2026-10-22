@@ -47,12 +47,12 @@ def build_banquet(out,countries,regions,L,put,root,game):
         'HBE_DISPUTE_DISPLAY':'争席度：$VALUE|0$ / 100','HBE_CHAPTER_DISPLAY':'章程阶段：$VALUE|0$ / 5',
         'HBE_ROUND_DISPLAY':'分账会届次：$VALUE|0$','HBE_MONTH_DISPLAY':'本届月份：$VALUE|0$ / 36',
         'HBE_SUCCESSES_DISPLAY':'交付项目：$VALUE|0$','HBE_POT_DISPLAY':'锅气：$VALUE|0$ / 100',
-        'hbe_stance_1':'共锅派','hbe_stance_2':'分锅派','hbe_stance_3':'账房派',
+        'hbe_stance_1':'共建派','hbe_stance_2':'兴业派','hbe_stance_3':'账房派',
         'hbe_charter_1':'一锅巴蜀','hbe_charter_2':'万国茶会','hbe_charter_3':'各吃各的，账照样交',
-        'hbe_banquet_map_tt':'本地诸侯参加巴蜀大开席；颜色显示共锅、分锅或账房立场。',
+        'hbe_banquet_map_tt':'本地诸侯参加巴蜀大开席；颜色显示共建、兴业或账房立场。',
         'hbe_dispute':'争席度','hbe_round':'分账会届次','hbe_round_month':'本届月份','hbe_chapter':'章程阶段',
-        'hbe_completed_projects':'已交付共同项目','hbe_stance':'茶会立场（1 共锅、2 分锅、3 账房）',
-        'hbe_contribution':'个人履约记录','hbe_charter':'百年章程（0 未定、1 共锅、2 分锅、3 账房）',
+        'hbe_completed_projects':'已交付共同项目','hbe_stance':'茶会立场（1 共建、2 兴业、3 账房）',
+        'hbe_contribution':'个人履约记录','hbe_charter':'百年章程（0 未定、1 共建、2 兴业、3 账房）',
         'hbe_project_kind':'公共项目（1 盐船共账、2 茶马过蜀道）',
         'hbe_role_1':'首项交付','hbe_role_2':'次项交付','hbe_role_3':'第三项交付',
         'hbe_pot_display':'帝国锅气','hbe_ballot_month':'章程议决计时','hbe_ballot_vote':'本国章程表决',
@@ -87,8 +87,8 @@ hbe_banquet_clamp = {
                  f'NOT = {{ var:hbe_stance = {i} }} NOT = {{ has_variable = hbe_stance_cooldown }}',f'hbe_choose_stance_{i} = yes',ai=0)
     event(1,'你这行省，怎么还选皇帝？',
         '大元使者前来查盐粮交割，却发现三十六家正在给第七位选侯挪椅子。使者答应按旧敕书维护巴蜀自治，但诸侯必须共同担保工程与交付。\n你已参加「巴蜀大开席」。分账会每三年召开，拒绝某项出资仍保有成员席位。选择一项政治立场；各派均可经营和竞选皇帝。',
-        [('共锅派：公共事业，皇帝牵头。','hbe_choose_stance_1 = yes','',30),
-         ('分锅派：各府自己管，圈里共同办。','hbe_choose_stance_2 = yes','',35),
+        [('共建派：公共事业，皇帝牵头。','hbe_choose_stance_1 = yes','',30),
+         ('兴业派：各府自己管，圈里共同办。','hbe_choose_stance_2 = yes','',35),
          ('账房派：先看合同，再谈情义。','hbe_choose_stance_3 = yes','',35)],category='entry')
 
     # Native situation variables are the shared state; country variables hold personal contracts.
@@ -218,11 +218,11 @@ hbe_banquet_clamp = {
     decision('hbe_audit_accounts','公开公账：三金核账','支付三金，降低四点争席度并增加二点义气；两年可核账一次。',
              'NOT = { has_variable = hbe_audit_cooldown }',f'{dispute(-4)} {yiqi(2)} set_variable = {{ name = hbe_audit_cooldown value = yes years = 2 }}',cost=3,ai=10)
     decision('hbe_banquet_ledger','查看大开席账本','查看立场、本届交付、争席度、长期章程和个人履约。','always = yes','trigger_event_non_silently = { id = hbe_banquet.7 }',ai=0)
-    status="""本国立场：[ROOT.GetVariable('hbe_stance').GetValue|0]（1 共锅、2 分锅、3 账房）。个人履约：[ROOT.GetVariable('hbe_contribution').GetValue|0]。
+    status="""本国立场：[ROOT.GetVariable('hbe_stance').GetValue|0]（1 共建、2 兴业、3 账房）。个人履约：[ROOT.GetVariable('hbe_contribution').GetValue|0]。
 阶段：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_chapter').GetValue|0] / 5。争席度：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_dispute').GetValue|0] / 100。
 届次：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_round').GetValue|0]；本届月份：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_round_month').GetValue|0] / 36。
 主工程：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_project_kind').GetValue|0]（1 盐船共账、2 茶马过蜀道）。三项交付：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_role_1').GetValue|0] / [GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_role_2').GetValue|0] / [GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_role_3').GetValue|0]。
-成功工程：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_completed_projects').GetValue|0]。章程：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_charter').GetValue|0]（0 未定、1 共锅、2 分锅、3 账房）。
+成功工程：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_completed_projects').GetValue|0]。章程：[GetSituationByKey('hbe_banquet').MakeScope.GetVariable('hbe_charter').GetValue|0]（0 未定、1 共建、2 兴业、3 账房）。
 百年章程至少在1437年、第五阶段与三十次成功工程后提案，由七圈授权表决。合并诸侯后，原府州首府仍构成固定代表席位。"""
     event(7,'席位、账目与锅底',status,[('账看完了，继续忙。','')],category='ledger')
     # Project settlement and chapter milestones retain a hundred-year calendar gate.
@@ -301,8 +301,8 @@ hbe_banquet_clamp = {
     remove_variable = hbe_ballot_active set_variable = {{ name = hbe_ballot_cooldown value = yes years = 5 }}
     hbe_banquet_clamp = yes
 }}''')
-    event(21,'这次盖章，真有七圈的印','至少四圈正式授权，百年章程生效。共锅章程提高本地建造速度，皇帝每年承担一金维护；分锅章程提高粮食产出，地区事业交付追加声望；契约章程各项提高少量，成功出资者取得合同返还。分账会和区域机构继续运行。',[('锅底换了，账还要记。','')],category='charter')
-    event(22,'七圈的印，少了几枚','本次章程没有取得至少四圈授权。旧章继续，争席度增加五，五年后可重提；已完成的地区项目和个人履约保留。',[('皇帝可以提案，不能替圈盖章。','')],category='charter')
+    event(21,'这次盖章，真有七圈的印','至少四圈正式授权，百年章程生效。共建章程提高本地建造速度，皇帝每年承担一金维护；兴业章程提高粮食产出，地方事业交付追加声望；契约章程各项提高少量，成功出资者取得合同返还。分账会和区域机构继续运行。',[('锅底换了，账还要记。','')],category='charter')
+    event(22,'七圈的印，少了几枚','本次章程没有取得至少四圈授权。旧章继续，争席度增加五，五年后可重提；已完成的地方事业和个人履约保留。',[('皇帝可以提案，不能替圈盖章。','')],category='charter')
     effects.append(f'''hbe_apply_charter = {{
     every_owned_location = {{
         limit = {{ is_in_scripted_geography = scripted_geography:hbe_domain }}
@@ -392,7 +392,7 @@ hbe_banquet_clamp = {
         ('泸州的宴席验收法','泸州提出宴席采购逐坛验收，酒商则要求不能把品酒算成免费劳动。'),
         ('长宁竹契不怕水','长宁推广耐潮竹契，盐船账房终于不用到港后猜纸上写了什么。'),
         ('昌州石刻永不撤回','昌州把出资承诺刻在石上，后来发现修正金额比原先出资还费工。'),
-        ('山城升降不是座次','重庆要求按运力分担，共锅派却把码头阶梯画成了礼仪等级。'),
+        ('山城升降不是座次','重庆要求按运力分担，共建派却把码头阶梯画成了礼仪等级。'),
         ('涪州渡牌该认哪一岸','涪州为两岸渡口争取同一张凭证，避免转运双方各算一遍。'),
         ('合州三江，三份收据','合州把三个水口的收入分别记账，帝国审计询问它们是否属于同一条船。'),
         ('夔州峡口不收空气钱','夔州愿以实际护航换共同经费，但不能只因峡口狭窄就加价。'),
@@ -488,7 +488,7 @@ hbe_banquet_yearly = {{ trigger = {{ is_situation_active = {SIT} {MEMBER} }} eff
     # Native panel structure, with a functional ledger rather than a blank situation tab.
     L('HBE_BANQUET_PANEL_TITLE','三十六家，一张账单')
     L('HBE_BANQUET_PANEL_BODY',status.replace('ROOT.','Player.MakeScope.'))
-    L('HBE_BANQUET_PANEL_HELP','前六个月在决议中出资或签专业合同；半年交付，第十二个月兑现承诺，第三十六个月统一结算。\n三份专业交付齐全且争席度低于75才算成功。1437年以后、第五阶段且至少30次成功项目，皇帝可提请百年章程。\n共锅、分锅、账房立场在局势地图上分别为红、蓝、黄。全部帝国成员参加；自治盟约一直有效。')
+    L('HBE_BANQUET_PANEL_HELP','前六个月在决议中出资或签专业合同；半年交付，第十二个月兑现承诺，第三十六个月统一结算。\n三份专业交付齐全且争席度低于75才算成功。1437年以后、第五阶段且至少30次成功项目，皇帝可提请百年章程。\n共建、兴业、账房立场在局势地图上分别为红、蓝、黄。全部帝国成员参加；自治盟约一直有效。')
     gui='''situation_panel = {
     blockoverride "situation_panel_image" {
         background = { texture = "gfx/interface/hbe/placeholder.dds" }

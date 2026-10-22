@@ -1,13 +1,12 @@
 ﻿hbe_civic_common_1 = { age = age_1_traditions starting_technology_level = 99
- icon = hbe_civic_common_1 content_priority = 880 
+ icon = hbe_civic_common_1 content_priority = 880
  potential = { hbe_research_origin_common = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_common_1  unlock_law = hbe_civil_service_law unlock_policy = hbe_levy_policy unlock_policy = hbe_communal_policy unlock_policy = hbe_paid_policy
     # 0.3.0: immediate native rewards, rendered by the vanilla technology UI.
-    research_cost = 2
 }
 hbe_civic_common_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_common_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_common_2 content_priority = 880
  potential = { hbe_research_origin_common = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire hbe_advance_gate_hbe_tech_common_3 = yes  hbe_advance_gate_chancery_records = yes }
  requires = government_size_renaissance pure_tooltip_entry = hbe_civic_common_2_effects
@@ -16,7 +15,7 @@ hbe_civic_common_2 = { age = age_2_renaissance starting_technology_level = 99
     global_monthly_literacy = 0.02
 }
 hbe_civic_chengdu_plain_1 = {  starting_technology_level = 99
- icon = hbe_civic_chengdu_plain_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_chengdu_plain_1 content_priority = 880
  potential = { hbe_research_origin_chengdu_plain = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_chengdu_plain_2 OR = { hbe_advance_gate_hbe_tech_chengdu_plain_4 = yes hbe_advance_gate_hbe_tech_chengdu_plain_7 = yes } }
   
@@ -28,7 +27,7 @@ hbe_civic_chengdu_plain_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_chengdu_plain_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_chengdu_plain_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_chengdu_plain_2 content_priority = 880
  potential = { hbe_research_origin_chengdu_plain = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_chengdu_plain_5 OR = { hbe_advance_gate_hbe_tech_chengdu_plain_5 = yes hbe_advance_gate_hbe_tech_chengdu_plain_8 = yes } hbe_advance_gate_hbe_civic_chengdu_plain_1 = yes }
  requires = hbe_civic_common_2 
@@ -37,7 +36,7 @@ hbe_civic_chengdu_plain_2 = { age = age_2_renaissance starting_technology_level 
     cultural_tradition_modifier = 0.16
 }
 hbe_civic_southern_salt_wine_1 = {  starting_technology_level = 99
- icon = hbe_civic_southern_salt_wine_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_southern_salt_wine_1 content_priority = 880
  potential = { hbe_research_origin_southern_salt_wine = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southern_salt_wine_2 OR = { hbe_advance_gate_hbe_tech_southern_salt_wine_4 = yes hbe_advance_gate_hbe_tech_southern_salt_wine_7 = yes } }
   
@@ -49,7 +48,7 @@ hbe_civic_southern_salt_wine_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_southern_salt_wine_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_southern_salt_wine_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_southern_salt_wine_2 content_priority = 880
  potential = { hbe_research_origin_southern_salt_wine = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southern_salt_wine_5 OR = { hbe_advance_gate_hbe_tech_southern_salt_wine_5 = yes hbe_advance_gate_hbe_tech_southern_salt_wine_8 = yes } hbe_advance_gate_hbe_civic_southern_salt_wine_1 = yes }
  requires = hbe_civic_common_2 
@@ -58,7 +57,7 @@ hbe_civic_southern_salt_wine_2 = { age = age_2_renaissance starting_technology_l
     total_loan_capacity_modifier = 0.4
 }
 hbe_civic_eastern_river_1 = {  starting_technology_level = 99
- icon = hbe_civic_eastern_river_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_eastern_river_1 content_priority = 880
  potential = { hbe_research_origin_eastern_river = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_eastern_river_2 OR = { hbe_advance_gate_hbe_tech_eastern_river_4 = yes hbe_advance_gate_hbe_tech_eastern_river_7 = yes } }
   
@@ -69,7 +68,7 @@ hbe_civic_eastern_river_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_eastern_river_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_eastern_river_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_eastern_river_2 content_priority = 880
  potential = { hbe_research_origin_eastern_river = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_eastern_river_5 OR = { hbe_advance_gate_hbe_tech_eastern_river_5 = yes hbe_advance_gate_hbe_tech_eastern_river_8 = yes } hbe_has_military_eastern_river = yes  hbe_advance_gate_hbe_civic_common_2 = yes }
    
@@ -79,7 +78,7 @@ hbe_civic_eastern_river_2 = { age = age_2_renaissance starting_technology_level 
     requires = renaissance_development
 }
 hbe_civic_northern_shudao_1 = {  starting_technology_level = 99
- icon = hbe_civic_northern_shudao_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_northern_shudao_1 content_priority = 880
  potential = { hbe_research_origin_northern_shudao = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_northern_shudao_2 OR = { hbe_advance_gate_hbe_tech_northern_shudao_4 = yes hbe_advance_gate_hbe_tech_northern_shudao_7 = yes } }
   
@@ -90,7 +89,7 @@ hbe_civic_northern_shudao_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_northern_shudao_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_northern_shudao_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_northern_shudao_2 content_priority = 880
  potential = { hbe_research_origin_northern_shudao = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_northern_shudao_5 OR = { hbe_advance_gate_hbe_tech_northern_shudao_5 = yes hbe_advance_gate_hbe_tech_northern_shudao_8 = yes } hbe_has_military_northern_shudao = yes  hbe_advance_gate_hbe_civic_common_2 = yes }
    
@@ -100,7 +99,7 @@ hbe_civic_northern_shudao_2 = { age = age_2_renaissance starting_technology_leve
     requires = renaissance_development
 }
 hbe_civic_central_hills_1 = {  starting_technology_level = 99
- icon = hbe_civic_central_hills_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_central_hills_1 content_priority = 880
  potential = { hbe_research_origin_central_hills = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_central_hills_2 OR = { hbe_advance_gate_hbe_tech_central_hills_4 = yes hbe_advance_gate_hbe_tech_central_hills_7 = yes } }
   
@@ -111,7 +110,7 @@ hbe_civic_central_hills_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_central_hills_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_central_hills_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_central_hills_2 content_priority = 880
  potential = { hbe_research_origin_central_hills = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_central_hills_5 OR = { hbe_advance_gate_hbe_tech_central_hills_5 = yes hbe_advance_gate_hbe_tech_central_hills_witness_8 = yes } hbe_advance_gate_hbe_civic_central_hills_1 = yes }
  requires = hbe_civic_common_2 
@@ -120,7 +119,7 @@ hbe_civic_central_hills_2 = { age = age_2_renaissance starting_technology_level 
     global_estate_target_satisfaction = 0.064
 }
 hbe_civic_western_tea_horse_1 = {  starting_technology_level = 99
- icon = hbe_civic_western_tea_horse_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_western_tea_horse_1 content_priority = 880
  potential = { hbe_research_origin_western_tea_horse = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_western_tea_horse_2 OR = { hbe_advance_gate_hbe_tech_western_tea_horse_4 = yes hbe_advance_gate_hbe_tech_western_tea_horse_7 = yes } }
   
@@ -131,7 +130,7 @@ hbe_civic_western_tea_horse_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_western_tea_horse_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_western_tea_horse_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_western_tea_horse_2 content_priority = 880
  potential = { hbe_research_origin_western_tea_horse = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_western_tea_horse_5 OR = { hbe_advance_gate_hbe_tech_western_tea_horse_5 = yes hbe_advance_gate_hbe_tech_western_tea_horse_8 = yes } hbe_advance_gate_hbe_civic_western_tea_horse_1 = yes }
  requires = hbe_civic_common_2 
@@ -140,7 +139,7 @@ hbe_civic_western_tea_horse_2 = { age = age_2_renaissance starting_technology_le
     diplomatic_capacity_modifier = 0.16
 }
 hbe_civic_southwestern_valleys_1 = {  starting_technology_level = 99
- icon = hbe_civic_southwestern_valleys_1 content_priority = 880 research_cost = 3
+ icon = hbe_civic_southwestern_valleys_1 content_priority = 880
  potential = { hbe_research_origin_southwestern_valleys = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southwestern_valleys_2 OR = { hbe_advance_gate_hbe_tech_southwestern_valleys_4 = yes hbe_advance_gate_hbe_tech_southwestern_valleys_7 = yes } }
   
@@ -151,7 +150,7 @@ hbe_civic_southwestern_valleys_1 = {  starting_technology_level = 99
     requires = renaissance_development
 }
 hbe_civic_southwestern_valleys_2 = { age = age_2_renaissance starting_technology_level = 99
- icon = hbe_civic_southwestern_valleys_2 content_priority = 880 research_cost = 4
+ icon = hbe_civic_southwestern_valleys_2 content_priority = 880
  potential = { hbe_research_origin_southwestern_valleys = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire has_variable = hbe_mission_southwestern_valleys_5 OR = { hbe_advance_gate_hbe_tech_southwestern_valleys_5 = yes hbe_advance_gate_hbe_tech_southwestern_valleys_8 = yes } hbe_advance_gate_hbe_civic_southwestern_valleys_1 = yes }
  requires = hbe_civic_common_2 

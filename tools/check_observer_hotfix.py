@@ -25,7 +25,7 @@ for name, body in old.items():
     key = name.replace(OLD, NEW)
     check(key + ': remains registered', key in active)
     current = active[key]
-    for field in ('age', 'research_cost'):
+    for field in ('age',):
         pattern = r'\b'+field+r'\s*=\s*(\S+)'
         check(key + ': ' + field + ' unchanged', re.search(pattern, body)[1] == re.search(pattern,current)[1])
     for field in ('requires', 'allow', 'potential'):

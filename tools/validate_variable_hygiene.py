@@ -2,21 +2,13 @@
 import re
 from collections import defaultdict
 
-WRITE = re.compile(r"(?:set|change)_variable\s*=\s*(?:\{\s*name\s*=\s*(hbe_[a-z0-9_]+)|(hbe_[a-z0-9_]+))")
-READ = re.compile(r"(?:\bvar:|has_variable\s*=\s*|remove_variable\s*=\s*|has_or_had_variable\s*=\s*)(hbe_[a-z0-9_]+)")
+NAME = r'hbe_[A-Za-z0-9_]*[A-Za-z0-9](?![\w$])'
+WRITE = re.compile(r"(?:set|change)_variable\s*=\s*(?:\{\s*name\s*=\s*("+NAME+r")|("+NAME+r"))")
+READ = re.compile(r"(?:\bvar:|has_variable\s*=\s*|has_or_had_variable\s*=\s*)("+NAME+r")")
 GET = re.compile(r"GetVariable\(\s*[\'\"](hbe_[a-z0-9_]+)[\'\"]")
 
 # A condition read decides whether a branch runs; remove_variable is only cleanup.
-COND = re.compile(r"(?:\bvar:|has_variable\s*=\s*)(hbe_[a-z0-9_]*[a-z0-9])(?![\w$])")
-
-# Read by a condition but written nowhere: the branch can never fire. These are the
-# remaining known instances (documented in docs/patch_notes_v040.md); a new entry
-# means a broken branch, not a whitelist candidate.
-UNWRITTEN = ('hbe_declined_project', 'hbe_round_pledged', 'hbe_work_burst_cooldown')
-
-
-# Writes kept deliberately for save compatibility; they carry no gameplay read.
-ALLOWED = ('hbe_water', 'hbe_salt', 'hbe_river', 'hbe_roads', 'hbe_grain', 'hbe_tea', 'hbe_valleys')
+COND = READ
 
 
 def collect(root):
@@ -38,11 +30,11 @@ def collect(root):
 
 
 def orphans_in(writes, reads):
-    return sorted(n for n in writes if n not in reads and n not in ALLOWED)
+    return sorted(n for n in writes if n not in reads)
 
 
 def unwritten_in(writes, cond):
-    return sorted(n for n in cond if n not in writes and n not in UNWRITTEN)
+    return sorted(n for n in cond if n not in writes)
 
 
 def validate(m, root, game, manifest, check):

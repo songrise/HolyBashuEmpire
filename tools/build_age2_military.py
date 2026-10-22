@@ -5,7 +5,7 @@ import copy
 import json
 import re
 
-from pdxscript import blocks, apply_edits
+from pdxscript import blocks, apply_edits, tokens
 from build_early_research import scalars, remove_fields, set_fields, update_localization
 from build_support import snapshot_files, sha256_file, write_preserving_format
 
@@ -51,6 +51,12 @@ def patch_native(text, rows):
         body = body.rstrip() + '\n' + ''.join('\tunlock_unit = ' + unit + '\n' for unit in additions)
         edits.append((a, b, body))
     return apply_edits(text, edits)
+
+
+def supported_override(current, native, patched):
+    """Permit final-stage whitespace cleanup, while rejecting foreign script edits."""
+    signature = lambda text: tuple(t.value for t in tokens(text))
+    return signature(current) in (signature(native), signature(patched))
 
 
 def scalar_script(values):
@@ -130,7 +136,7 @@ def apply(out, root, game):
         if target.exists():
             current = target.read_text(encoding='utf-8-sig')
             allowed = patch_native(native, rows)
-            assert current in (native, allowed), 'Unexpected existing native advance override: ' + str(target)
+            assert supported_override(current, native, allowed), 'Unexpected existing native advance override: ' + str(target)
         put(target, patch_native(native, rows))
         native_patches.append({'file': relative, 'source_sha256': sha256_file(game / relative), 'patched_advances': [k for k in definitions(native) if any(r['native_advance'] == k for r in rows)]})
 

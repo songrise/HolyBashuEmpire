@@ -7,13 +7,10 @@
 	category = basic_industry_category
 	
 	employment_size = guild_employment
-	
-	
+
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	
 
 	build_time = guild_build_time
 	graphical_tags = { factory_small }
@@ -75,13 +72,10 @@ paper_workshop = {
 	category = basic_industry_category
 	
 	employment_size = workshop_employment
-	
-	
+
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	
 
 	build_time = workshop_build_time
 	graphical_tags = { factory_medium }
@@ -133,12 +127,9 @@ paper_manufactory = {
 	
 	employment_size = manufactory_employment
 
-	
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	
 
 	build_time = manufactory_build_time
 	graphical_tags = { factory_large }
@@ -151,8 +142,7 @@ paper_manufactory = {
 			cloth = 0.2464 #Lump
 			fiber_crops = 0.9841
 			lumber = 0.2464
-		
-			
+
 			produced = paper
 			output = 2
 			
@@ -183,12 +173,9 @@ paper_mill = {
 	
 	employment_size = mills_employment
 
-	
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	
 
 	build_time = mills_build_time
 	graphical_tags = { factory_large }
@@ -223,7 +210,6 @@ paper_mill = {
 	}
 	
 	obsolete = paper_manufactory
-
 
 	custom_tags = { lategame_manufactory }
 	construction_demand = mill_construction

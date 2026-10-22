@@ -1,5 +1,5 @@
 ﻿hbe_guest_license_chengdu_plain = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_chengdu_plain_1 content_priority = 850
  potential = { has_variable = hbe_guest_chengdu_plain }
  allow = { always = no } requires = hbe_tech_common_4
@@ -10,7 +10,7 @@
  unlock_production_method = hbe_chengdu_plain_ordinary_production
 }
 hbe_guest_license_southern_salt_wine = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_southern_salt_wine_1 content_priority = 850
  potential = { has_variable = hbe_guest_southern_salt_wine }
  allow = { always = no } requires = hbe_tech_common_4
@@ -21,7 +21,7 @@ hbe_guest_license_southern_salt_wine = {
  unlock_production_method = hbe_southern_salt_wine_ordinary_production
 }
 hbe_guest_license_eastern_river = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_eastern_river_1 content_priority = 850
  potential = { has_variable = hbe_guest_eastern_river }
  allow = { always = no } requires = hbe_tech_common_4
@@ -30,7 +30,7 @@ hbe_guest_license_eastern_river = {
  unlock_production_method = hbe_eastern_river_basic_production
 }
 hbe_guest_license_northern_shudao = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_northern_shudao_1 content_priority = 850
  potential = { has_variable = hbe_guest_northern_shudao }
  allow = { always = no } requires = hbe_tech_common_4
@@ -41,7 +41,7 @@ hbe_guest_license_northern_shudao = {
  unlock_production_method = hbe_northern_shudao_ordinary_production
 }
 hbe_guest_license_central_hills = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_central_hills_1 content_priority = 850
  potential = { has_variable = hbe_guest_central_hills }
  allow = { always = no } requires = hbe_tech_common_4
@@ -50,7 +50,7 @@ hbe_guest_license_central_hills = {
  unlock_production_method = hbe_central_hills_basic_production
 }
 hbe_guest_license_western_tea_horse = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_western_tea_horse_1 content_priority = 850
  potential = { has_variable = hbe_guest_western_tea_horse }
  allow = { always = no } requires = hbe_tech_common_4
@@ -61,7 +61,7 @@ hbe_guest_license_western_tea_horse = {
  unlock_production_method = hbe_western_tea_horse_ordinary_production
 }
 hbe_guest_license_southwestern_valleys = {
- age = age_1_traditions starting_technology_level = 99 research_cost = 1
+ age = age_1_traditions starting_technology_level = 99
  icon = hbe_civic_southwestern_valleys_1 content_priority = 850
  potential = { has_variable = hbe_guest_southwestern_valleys }
  allow = { always = no } requires = hbe_tech_common_4

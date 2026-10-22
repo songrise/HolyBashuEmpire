@@ -1,0 +1,12 @@
+Create a new Local Affairs Steam Workshop promotional poster by closely matching the attached technology poster's EXACT composition and art direction. Wide landscape 16:9, 1672x941 preferred. This must look like the same series: ivory antique paper, blue-black bold Song/Ming Chinese serif typography, fine double-line corner borders, delicate illustrated historical book ink outlines and subdued watercolor, gray-blue Sichuan mountains, ochre wooden buildings, muted blue/brown clothes, corner bamboo and distant pavilions. No photorealism, bright colors, gold decoration or red seals.
+Preserve the layout: one big top title, a LARGE plain dark rectangular screenshot placeholder covering the LEFT half (it will be filled afterward with the user's exact real gameplay screenshot), and illustrated explanatory panels on the RIGHT half. Do NOT invent or render a game screenshot inside the left placeholder.
+Main title EXACT: “地方事业，因地兴办”.
+Right upper subtitle EXACT: “全国筹办 · 地方经营”.
+Below it, four illustrated panels in a two-by-two grid matching the reference. Each has only a short title, no explanation paragraphs:
+“随机项目” — prefect and scribe considering different projects over scrolls and a regional map, a river town behind.
+“投入取舍” — local official and craftsman discussing resources for a worthwhile undertaking beside a register and materials, restrained historical scene.
+“成果多样” — a lively improving Sichuan village, new homes and families, artisans and a scholar, meaningful understated composition.
+“自动筹办” — official entrusting records to a steward, orderly work continuing behind, conveying delegated management.
+Footer EXACT: “择项兴办，量力而行，让本府渐兴”.
+Small bottom right imprint EXACT: “神圣巴蜀帝国”.
+No other writing. No statistics, numerical rewards, prices, probabilities, times, project counts or version numbers. This is a broad gameplay introduction, not an operation guide. Keep paper hue, typography, border weight and illustration style as close as possible to the attached reference.

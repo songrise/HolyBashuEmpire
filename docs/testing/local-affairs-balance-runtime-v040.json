@@ -1,0 +1,26 @@
+{
+  "status": "controlled_cases_passed",
+  "cases": 12,
+  "passed": [
+    "relief_blocked",
+    "relief_allowed",
+    "cost",
+    "double_burden",
+    "duration",
+    "courtier_miss",
+    "courtier_success",
+    "no_double_complete",
+    "art_miss",
+    "art_success",
+    "relief_above_cap",
+    "auto_relief_above_cap"
+  ],
+  "headless_exit_code": 0,
+  "saved_date": "1337.4.15",
+  "automatic_test_summary": "Tests:\n[ FAIL ] Error log: 11309 errors",
+  "error_log_lines": 11309,
+  "hbe_nonregistration_messages": [],
+  "test_profile": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\v040-balance-smoke-20261023-relief",
+  "installed_test_fixtures": false,
+  "note": "The engine-wide automated-test wrapper fails on all logged diagnostics, including registration warnings. Per-case game-state assertions are checked independently. Final verified artifact; controlled fixture grants are confined to the isolated test copy."
+}

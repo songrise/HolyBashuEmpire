@@ -390,7 +390,7 @@
       "key": "hbe_canal_crossbow",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_canal_crossbow.dds",
-      "sha256": "007b6782433cd4622a549d623074584c8efe6548705b80dc7237c7fbf0345867",
+      "sha256": "15a705354d5110766f825eeb45d9c3a5186417e4dceadb506fd58538b04f7d9e",
       "source": "assets/civic_atlases/units.png",
       "cell": 0,
       "dimensions": [
@@ -402,7 +402,7 @@
       "key": "hbe_salt_guard",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_salt_guard.dds",
-      "sha256": "2093d8b06bf83ea9e8556b9a9d000296f49c4e46483bfb5605ede1ecea57974c",
+      "sha256": "9b9d7a34fc9d72c37d74ac4911927da66dbdd02649e7db37a3c48bc8abcc7c78",
       "source": "assets/civic_atlases/units.png",
       "cell": 1,
       "dimensions": [
@@ -414,7 +414,7 @@
       "key": "hbe_river_garrison",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_river_garrison.dds",
-      "sha256": "bede2eea5a1f7ab8157f5b6b0ad7a07dc00eb3ba02bbd1942fab59723f0e5d06",
+      "sha256": "e9f34a95bb7671f26e0c79c7dd8406fc4480e15d5eef3628d201c3c4d42fa4ad",
       "source": "assets/civic_atlases/units.png",
       "cell": 2,
       "dimensions": [
@@ -426,7 +426,7 @@
       "key": "hbe_pass_rotation",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_pass_rotation.dds",
-      "sha256": "8703a092a1346c41474748b8fe4976dc9625b4810fe6ffc002baa5b4a15606be",
+      "sha256": "ee70d1c40ea9ce81d534f783f8e9185a8853085cb70eb2a2f1fd388f69f7acfd",
       "source": "assets/civic_atlases/units.png",
       "cell": 3,
       "dimensions": [
@@ -438,7 +438,7 @@
       "key": "hbe_granary_militia",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_granary_militia.dds",
-      "sha256": "6f015ea0ae5a5e68adb3947ca923a01e2de302dbce3c9b48ec80cf025c595f04",
+      "sha256": "fea456e4788a7207a0351a4c5681fae54547206b248bf01e45e0314f4175c292",
       "source": "assets/civic_atlases/units.png",
       "cell": 4,
       "dimensions": [
@@ -450,7 +450,7 @@
       "key": "hbe_tea_riders",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_tea_riders.dds",
-      "sha256": "2443521a50ae3728fa23388ed1d22bb4f40e5e16f307f4278864ab97fa4c863c",
+      "sha256": "efa8595c0305c2c233dc7de70fecdf9bf72b2a2f16beac14a3c9f50120ecf953",
       "source": "assets/civic_atlases/units.png",
       "cell": 5,
       "dimensions": [
@@ -462,7 +462,7 @@
       "key": "hbe_valley_soldiers",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_valley_soldiers.dds",
-      "sha256": "d62f080ab3804a0eff0283d73f86bb2c8fce71295ecfe23783fff0bee56cf313",
+      "sha256": "1c217826505653e75adfc4c031b01ad11258d2969ee181622f1f23262f14fa95",
       "source": "assets/civic_atlases/units.png",
       "cell": 6,
       "dimensions": [
@@ -474,7 +474,7 @@
       "key": "hbe_trained_river",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_trained_river.dds",
-      "sha256": "d8c4cb934a3c889761561b62521f885256eb07f827960b284aefaf731e35aded",
+      "sha256": "ab90a163f3b2c2d4df46cacadc9575b1d13fa45946d813072e507475ec5901e7",
       "source": "assets/civic_atlases/units.png",
       "cell": 7,
       "dimensions": [
@@ -486,7 +486,7 @@
       "key": "hbe_permanent_pass",
       "kind": "units",
       "path": "main_menu/gfx/interface/illustrations/units/hbe_permanent_pass.dds",
-      "sha256": "f769f8b6bdb05389bd5429854a12f9e76acb930a87d391c5a5a42237bbfb38f2",
+      "sha256": "8bb370a82070704724a73f29ccee3dfe94f8953c7745f606c0aa8252723548ee",
       "source": "assets/civic_atlases/units.png",
       "cell": 8,
       "dimensions": [

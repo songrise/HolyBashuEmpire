@@ -5,6 +5,7 @@ No installation or release operations. Vanilla GUI primitives / scripted GUIs.
 """
 from pathlib import Path
 import json
+import math
 import re
 
 from build_support import write_preserving_format
@@ -165,7 +166,7 @@ def apply(out, root, game):
         if p['pool'] == 'local':
             extra += f' any_owned_location = {{ {target_condition(p)} }}'
         if p.get('relief_weight'):
-            extra += ' var:hbe_burden >= 6'
+            extra += f' var:hbe_burden > {catalogue["relief_draw"]["minimum_burden_exclusive"]}'
         for item in p['rewards']:
             if item['type'] == 'modifier' and 'modifier' in item and catalogue['modifiers'][item['modifier']]['scope'] == 'country':
                 extra += f' NOT = {{ has_country_modifier = hbe_af_{item["modifier"]} }}'
@@ -177,14 +178,15 @@ def apply(out, root, game):
         loc[f'hbe_af_desc_{pid}'] = p['description']
         for i, tier in enumerate(tiers):
             ident = f'{pid}_{tier["key"]}'
-            multiplier = p['cost'] / 4 * tier['cost_multiplier'] * gold_scale
+            multiplier = p['cost'] * tier['cost_multiplier'] * catalogue['gold_economic_multiplier']
             values.append(f'hbe_af_cost_{ident} = {{ value = hbe_event_economic_base multiply = {multiplier:g} min = {p["cost"] * tier["cost_multiplier"] * gold_scale:g} }}')
             sponsored = f' if = {{ limit = {{ {guild_sponsor(p)} }} multiply = {1-catalogue["guilds"]["sponsor_discount"]:g} }}' if p.get('guild_role') else ''
-            values.append(f'hbe_af_load_{ident} = {{ value = {p["burden"][i] * burden_scale:g} if = {{ limit = {{ has_policy = hbe_paid_policy }} multiply = 0.5 }} else_if = {{ limit = {{ has_policy = hbe_levy_policy }} multiply = 1.25 }}{sponsored} }}')
+            values.append(f'hbe_af_load_{ident} = {{ value = {math.ceil(p["burden"][i] * burden_scale)} if = {{ limit = {{ has_policy = hbe_paid_policy }} multiply = 0.5 }} else_if = {{ limit = {{ has_policy = hbe_levy_policy }} multiply = 1.25 }}{sponsored} }}')
             local = p['pool'] == 'local'
             candidate = 'hbe_af_local' if local else 'hbe_af_national'
             allowed = f'hbe_af_access = yes hbe_af_idle = yes var:{candidate} = {pid} hbe_af_eligible_{pid} = yes {tier_requirements(tier)} gold >= hbe_af_cost_{ident} '
-            allowed += f'var:hbe_burden <= {{ value = 70 subtract = hbe_af_load_{ident} }} '
+            if not has_reward(p, 'burden'):
+                allowed += f'var:hbe_burden <= {{ value = 70 subtract = hbe_af_load_{ident} }} '
             if local:
                 allowed += f'exists = var:hbe_af_candidate_target var:hbe_af_candidate_target = {{ {target_condition(p)} }} '
                 if has_reward(p, 'road'):
@@ -232,9 +234,8 @@ hbe_af_roll_outcome = yes hbe_af_roll_rewards_{pid} = yes hbe_af_update_eta = ye
             if p['pool'] != pool: continue
             pid = p['id']
             others = ' '.join(f'hbe_af_eligible_{q["id"]} = yes' for q in projects if q['pool']==pool and q['id']!=pid)
-            choice = f'100 = {{ trigger = {{ hbe_af_eligible_{pid} = yes OR = {{ NOT = {{ var:hbe_af_last_{pool} = {pid} }} NOT = {{ OR = {{ {others} }} }} }} }} '
-            if p.get('relief_weight'):
-                choice += 'modifier = { factor = 2 var:hbe_burden >= 40 } modifier = { factor = 1.5 var:hbe_burden >= 60 } '
+            weight = catalogue['relief_draw']['weight'] if p.get('relief_weight') else 100
+            choice = f'{weight} = {{ trigger = {{ hbe_af_eligible_{pid} = yes OR = {{ NOT = {{ var:hbe_af_last_{pool} = {pid} }} NOT = {{ OR = {{ {others} }} }} }} }} '
             choice += f'set_variable = {{ name = hbe_af_{pool} value = {pid} }} hbe_af_reset_{pool}_expiry = yes '
             if pool == 'local': choice += choose_target(p)
             choices.append(choice+' }')
@@ -243,14 +244,10 @@ hbe_af_roll_outcome = yes hbe_af_roll_rewards_{pid} = yes hbe_af_update_eta = ye
     effects.append('hbe_af_draw = { hbe_af_draw_national = yes hbe_af_draw_local = yes change_variable = { name = hbe_af_round add = 1 } }')
     # Only cancellation retains the accepted three-month cooldown, never auto/manual skip.
     effects.append('hbe_af_begin_wait = { set_variable = hbe_af_wait set_variable = { name = hbe_af_wait_left value = 3 } set_variable = { name = hbe_af_wait_progress value = 0 } }')
-    expiry_migration = ['if = { limit = { NOT = { has_variable = hbe_af_expiry_v1 } } set_variable = hbe_af_expiry_v1 if = { limit = { has_variable = hbe_af_wait NOT = { has_variable = hbe_af_active } } remove_variable = hbe_af_wait hbe_af_draw = yes } }']
     tick = []
     for pool in ('national','local'):
         timer = f'hbe_af_{pool}_expires'
-        expiry_migration.append(f'if = {{ limit = {{ has_variable = hbe_af_{pool} NOT = {{ has_variable = {timer} }} }} hbe_af_reset_{pool}_expiry = yes }}')
-        expiry_migration.append(f'if = {{ limit = {{ hbe_af_idle = yes NOT = {{ has_variable = hbe_af_{pool} }} }} hbe_af_draw_{pool} = yes }}')
         tick.append(f'if = {{ limit = {{ has_variable = hbe_af_{pool} }} change_variable = {{ name = {timer} subtract = 1 }} if = {{ limit = {{ var:{timer} <= 0 }} hbe_af_draw_{pool} = yes }} }} else = {{ hbe_af_draw_{pool} = yes }}')
-    effects.append('hbe_af_migrate_expiry = { '+' '.join(expiry_migration)+' }')
     effects.append('hbe_af_tick_offers = { if = { limit = { hbe_af_idle = yes } '+' '.join(tick)+' } }')
     effects.append('hbe_af_update_eta = { set_variable = { name = hbe_af_eta_year value = current_year } set_variable = { name = hbe_af_eta_month value = { value = current_month add = var:hbe_af_months subtract = var:hbe_af_elapsed } } while = { limit = { var:hbe_af_eta_month > 12 } change_variable = { name = hbe_af_eta_year add = 1 } change_variable = { name = hbe_af_eta_month subtract = 12 } } }')
     complete = []
@@ -259,7 +256,7 @@ hbe_af_roll_outcome = yes hbe_af_roll_rewards_{pid} = yes hbe_af_update_eta = ye
             ti = tiers.index(tier) + 1
             complete.append(f'if = {{ limit = {{ var:hbe_af_active = {p["id"]} var:hbe_af_tier = {ti} }} hbe_af_reward_{p["id"]}_{tier["key"]} = yes hbe_af_record_contribution = yes hbe_af_receipt_{p["id"]} = yes }}')
     mark = ' '.join(f'if = {{ limit = {{ var:hbe_af_target = {{ is_in_scripted_geography = scripted_geography:hbe_geo_{r[0]} }} }} set_variable = hbe_af_done_{r[0]} }}' for r in regions)
-    effects.append('hbe_af_complete = { if = { limit = { has_variable = hbe_af_active } ' + ' '.join(complete) + f' if = {{ limit = {{ exists = var:hbe_af_target }} {mark} var:hbe_af_target = {{ set_variable = {{ name = hbe_af_local_cooldown value = yes years = 5 }} }} }} set_variable = {{ name = hbe_af_last_project value = var:hbe_af_active }} change_variable = {{ name = hbe_af_completed add = 1 }} remove_variable = hbe_af_active remove_variable = hbe_af_target remove_variable = hbe_af_road_target remove_variable = hbe_af_pause hbe_af_draw = yes }} }}')
+    effects.append('hbe_af_complete = { if = { limit = { has_variable = hbe_af_active } ' + ' '.join(complete) + f' if = {{ limit = {{ exists = var:hbe_af_target }} {mark} var:hbe_af_target = {{ set_variable = {{ name = hbe_af_local_cooldown value = yes years = 5 }} }} }} change_variable = {{ name = hbe_af_completed add = 1 }} remove_variable = hbe_af_active remove_variable = hbe_af_target remove_variable = hbe_af_road_target remove_variable = hbe_af_pause hbe_af_draw = yes }} }}')
     # Budgeted deterministic scoring over exactly the same two cards / tiers.
     auto = 'set_variable = { name = hbe_af_best value = 0 } set_variable = { name = hbe_af_choice value = 0 } '
     for p in projects:
@@ -270,10 +267,11 @@ hbe_af_roll_outcome = yes hbe_af_roll_rewards_{pid} = yes hbe_af_update_eta = ye
             auto_preferences = f'NOT = {{ has_variable = hbe_af_no_{p["pool"]} }} '
             if i:
                 auto_preferences += 'NOT = { has_variable = hbe_af_no_large } '
-            auto += f'''if = {{ limit = {{ {auto_preferences} hbe_af_can_{ident} = yes gold >= {{ value = hbe_af_cost_{ident} add = var:hbe_af_reserve }} var:hbe_af_spent <= {{ value = var:hbe_af_budget subtract = hbe_af_cost_{ident} }} var:hbe_burden <= {{ value = var:hbe_af_limit subtract = hbe_af_load_{ident} }} }}
+            load_guard = '' if has_reward(p, 'burden') else f'var:hbe_burden <= {{ value = var:hbe_af_limit subtract = hbe_af_load_{ident} }}'
+            auto += f'''if = {{ limit = {{ {auto_preferences} hbe_af_can_{ident} = yes gold >= {{ value = hbe_af_cost_{ident} add = var:hbe_af_reserve }} var:hbe_af_spent <= {{ value = var:hbe_af_budget subtract = hbe_af_cost_{ident} }} {load_guard} }}
 set_variable = {{ name = hbe_af_score value = {score} }}
 if = {{ limit = {{ gold < {{ value = hbe_af_cost_{ident} multiply = 4 }} }} change_variable = {{ name = hbe_af_score subtract = {4 if i else 1} }} }}
-if = {{ limit = {{ var:hbe_burden >= 40 }} change_variable = {{ name = hbe_af_score subtract = {p['burden'][i] * burden_scale:g} }} }}
+if = {{ limit = {{ var:hbe_burden >= 40 }} change_variable = {{ name = hbe_af_score subtract = {math.ceil(p['burden'][i] * burden_scale)} }} }}
 '''
             if p.get('relief_weight'):
                 auto += 'change_variable = { name = hbe_af_score add = { value = var:hbe_burden multiply = 0.2 } } '
@@ -288,28 +286,16 @@ if = {{ limit = {{ var:hbe_burden >= 40 }} change_variable = {{ name = hbe_af_sc
     auto += 'if = { limit = { var:hbe_af_choice > 0 var:hbe_af_best >= 7 } if = { limit = { is_ai = yes } hbe_af_ai_consider = yes } else = { hbe_af_auto_start = yes } }'
     # If nothing qualifies, leave both offers intact until their natural expiry.
     effects.append('hbe_af_auto_choose = { ' + auto + ' }')
-    initialize = ' '.join('remove_variable = ' + c for c in COUNTERS)
-    effects.append(f'''hbe_af_initialize = {{ hbe_af_retire_legacy_country = yes if = {{ limit = {{ NOT = {{ has_variable = hbe_af_initialized }} }}
+    effects.append(f'''hbe_af_initialize = {{ if = {{ limit = {{ NOT = {{ has_variable = hbe_af_initialized }} }}
 set_variable = hbe_af_initialized set_variable = {{ name = hbe_af_round value = 0 }} set_variable = {{ name = hbe_af_completed value = 0 }}
-set_variable = {{ name = hbe_af_spent value = 0 }} set_variable = {{ name = hbe_af_reserve value = 10 }} set_variable = {{ name = hbe_af_budget value = hbe_af_budget }} set_variable = {{ name = hbe_af_limit value = 50 }} {initialize}
+set_variable = {{ name = hbe_af_spent value = 0 }} set_variable = {{ name = hbe_af_reserve value = 10 }} set_variable = {{ name = hbe_af_budget value = hbe_af_budget }} set_variable = {{ name = hbe_af_limit value = 50 }}
 if = {{ limit = {{ NOT = {{ has_variable = hbe_burden }} }} set_variable = {{ name = hbe_burden value = 20 }} }}
 if = {{ limit = {{ hbe_af_idle = yes }} hbe_af_draw = yes }} }} }}''')
-    effects.append("""hbe_af_migrate_cards = { if = { limit = { NOT = { has_variable = hbe_af_cards_v2 } }
-set_variable = hbe_af_cards_v2
-if = { limit = { has_variable = hbe_af_active }
- set_variable = { name = hbe_af_national value = var:hbe_af_last_national }
- set_variable = { name = hbe_af_local value = var:hbe_af_last_local }
- if = { limit = { exists = var:hbe_af_target } set_variable = { name = hbe_af_candidate_target value = var:hbe_af_target } }
- if = { limit = { NOT = { has_variable = hbe_af_outcome } } hbe_af_roll_outcome = yes }
- hbe_af_update_eta = yes
-}
-if = { limit = { has_variable = hbe_af_wait } hbe_af_begin_wait = yes }
-} }""")
     # Availability means a real, affordable choice; merely seeing a card is insufficient.
     available = ' '.join(f'hbe_af_can_{p["id"]}_{t["key"]} = yes' for p in projects for t in tiers)
     triggers.append('hbe_af_available = { hbe_af_access = yes hbe_af_idle = yes OR = { '+available+' } }')
     effects.append('''hbe_af_monthly = {
- hbe_af_initialize = yes hbe_af_migrate_cards = yes hbe_af_migrate_expiry = yes hbe_af_tick_offers = yes
+ hbe_af_initialize = yes hbe_af_tick_offers = yes
  if = { limit = { has_variable = hbe_af_wait }
  change_variable = { name = hbe_af_wait_left subtract = 1 }
  set_variable = { name = hbe_af_wait_progress value = { value = 3 subtract = var:hbe_af_wait_left divide = 3 min = 0 max = 1 } }
@@ -348,8 +334,8 @@ hbe_af_year = {{ trigger = {{ hbe_af_access = yes }} effect = {{ set_variable = 
     # Scripted GUI execution always rechecks cost, eligibility and one-choice round lock.
     for key, valid, eff in [
         ('access', 'hbe_af_access = yes', ''),
-        ('prepare', 'hbe_af_access = yes', 'hbe_af_initialize = yes hbe_af_migrate_cards = yes hbe_af_migrate_expiry = yes'),
-        ('panel_open', 'hbe_af_access = yes', 'hbe_af_migrate_cards = yes hbe_af_migrate_expiry = yes set_variable = hbe_af_panel_visible'),
+        ('prepare', 'hbe_af_access = yes', 'hbe_af_initialize = yes'),
+        ('panel_open', 'hbe_af_access = yes', 'set_variable = hbe_af_panel_visible'),
         ('panel_close', 'hbe_af_access = yes', 'remove_variable = hbe_af_panel_visible'),
         ('auto', 'hbe_af_access = yes', 'if = { limit = { has_variable = hbe_af_auto } remove_variable = hbe_af_auto } else = { set_variable = hbe_af_auto }'),
         ('cancel', 'hbe_af_access = yes has_variable = hbe_af_active', 'hbe_af_cancel = yes'),
@@ -402,7 +388,7 @@ hbe_af_year = {{ trigger = {{ hbe_af_access = yes }} effect = {{ set_variable = 
     for lang in ('simp_chinese', 'english', 'traditional_chinese'):
         header = {'simp_chinese': 'l_simp_chinese:', 'english': 'l_english:', 'traditional_chinese': 'l_traditional_chinese:'}[lang]
         put(f'main_menu/localization/{lang}/hbe_af_l_{lang}.yml', header + '\n' + '\n'.join(' ' + k + ': "' + v.replace('"', '\\"') + '"' for k, v in loc.items()) + '\n')
-    report = dict(schema_version=1, projects=len(projects), categories=catalogue['categories'], tiers=tiers, old_counter_files=changed, legacy_retired=True, hidden_regional_coordination=7, placeholder_art=True, runtime_verified=False, visual_verified=False, release_status='pending', independent_gui='in_game/gui/hbe_local_affairs.gui', gui_host='in_game/gui/ingame_topbar.gui')
+    report = dict(schema_version=1, projects=len(projects), categories=catalogue['categories'], tiers=tiers, legacy_retired=True, retired_regional_coordination=7, placeholder_art=True, runtime_verified=False, visual_verified=False, release_status='pending', independent_gui='in_game/gui/hbe_local_affairs.gui', gui_host='in_game/gui/ingame_topbar.gui')
     manifest['local_affairs'] = report
     report['ai_participation'] = catalogue['ai_participation']
     report['guilds'] = guilds
@@ -415,6 +401,10 @@ hbe_af_year = {{ trigger = {{ hbe_af_access = yes }} effect = {{ set_variable = 
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     from apply_presentation_v040 import apply as polish_presentation
     polish_presentation(out, root, manifest)
+    from cleanup_retired_state import apply as cleanup_retired_state
+    cleanup_retired_state(out, manifest)
+    from normalize_concept_labels import apply as normalize_concept_labels
+    normalize_concept_labels(out)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return report
 

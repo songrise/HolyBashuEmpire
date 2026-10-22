@@ -1,5 +1,4 @@
 {
-  "military_cost": 1.5,
   "atlas": "assets/early_research/military_atlas.png",
   "cross_permission": "hbe_can_cross_circle_industry",
   "military": [

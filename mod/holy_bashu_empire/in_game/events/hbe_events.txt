@@ -64,8 +64,7 @@ option = { name = hbe.106.c ai_chance = { base = 25 }   add_gold = { value = hbe
 }
 hbe.1 = { type = country_event title = hbe.1.title desc = hbe.1.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.1.a } }
 hbe.2 = { type = country_event title = hbe.2.title desc = hbe.2.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_academy } option = { name = hbe.2.a } }
-hbe.3 = { type = country_event title = hbe.3.title desc = hbe.3.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_ledger } option = { name = hbe.3.a } }
-hbe.4 = { type = country_event title = hbe.4.title desc = hbe.4.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_ledger } option = { name = hbe.4.a } }
+
 hbe.10 = { type = country_event title = hbe.10.title desc = hbe.10.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.10.a } }
 hbe.11 = { type = country_event title = hbe.11.title desc = hbe.11.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.11.a } }
 hbe.12 = { type = country_event title = hbe.12.title desc = hbe.12.desc outcome = neutral illustration_tags = { 1000 = hbe_event_art_council } option = { name = hbe.12.a } }

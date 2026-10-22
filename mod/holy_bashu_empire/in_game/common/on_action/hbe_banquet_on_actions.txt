@@ -30,7 +30,7 @@ if = { limit = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag
 yearly_country_pulse = { on_actions = { hbe_banquet_yearly } }
 hbe_banquet_yearly = { trigger = { is_situation_active = situation:hbe_banquet is_member_of_international_organization = international_organization:hbe_empire } effect = { if = { limit = { situation:hbe_banquet = { var:hbe_charter = 1 } is_leader_of_international_organization = international_organization:hbe_empire }
         if = { limit = { gold >= 1 } add_gold = -1 add_prestige = 1 }
-        else = { situation:hbe_banquet ?= { change_variable = { name = hbe_dispute add = 5 } hbe_banquet_clamp = yes } }
+        else = { situation:hbe_banquet ?= {   } }
     } if = { limit = { current_year >= 1338 has_or_had_tag = BAB NOT = { has_variable = hbe_personal_bab } } trigger_event_non_silently = { id = hbe_banquet.200 } }
 if = { limit = { current_year >= 1339 has_or_had_tag = BAE NOT = { has_variable = hbe_personal_bae } } trigger_event_non_silently = { id = hbe_banquet.201 } }
 if = { limit = { current_year >= 1340 has_or_had_tag = BAF NOT = { has_variable = hbe_personal_baf } } trigger_event_non_silently = { id = hbe_banquet.202 } }

@@ -27,7 +27,7 @@
         "global_max_literacy": 4.0
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_common_4",
@@ -56,7 +56,7 @@
         "global_hbe_shu_paper_output_modifier": 0.16
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_common_7",
@@ -66,7 +66,7 @@
         "build_gravel_road_cost_modifier": -0.12
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。\n降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
+      "link": "降低原版道路工期与碎石路成本；可与蜀道接递叠加。"
     },
     {
       "key": "hbe_tech_common_8",
@@ -76,7 +76,7 @@
         "global_trade_center_power": 0.12
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_chengdu_plain_1",
@@ -89,7 +89,7 @@
     },
     {
       "key": "hbe_tech_chengdu_plain_2",
-      "name": "[Concept('hbe_history_shujin', '蜀锦')|e]作坊分工",
+      "name": "蜀锦作坊分工",
       "modifiers": {
         "global_hbe_shu_embroidery_output_modifier": 0.1
       },
@@ -107,7 +107,7 @@
         "peasants_estate_target_satisfaction": 0.04
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_chengdu_plain_4",
@@ -137,7 +137,7 @@
         "cultural_tradition_modifier": 0.12
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_chengdu_plain_7",
@@ -221,11 +221,11 @@
         "cultural_tradition_modifier": 0.08
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_southern_salt_wine_7",
-      "name": "宴席采购[Concept('hbe_term_contract', '契约')|e]",
+      "name": "宴席采购契约",
       "modifiers": {
         "merchant_maintenance_efficiency": 0.16,
         "global_production_efficiency": 0.08
@@ -271,11 +271,11 @@
         "merchant_maintenance_efficiency": 0.12
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_eastern_river_4",
-      "name": "@hbe_river! [Concept('hbe_term_river', '江运互保')|e]",
+      "name": "江运互保",
       "modifiers": {
         "global_merchant_capacity_modifier": 0.2,
         "global_food_decay": -0.08
@@ -287,7 +287,7 @@
     },
     {
       "key": "hbe_tech_eastern_river_5",
-      "name": "[Concept('hbe_history_river', '川江')|e]通商总约",
+      "name": "川江通商总约",
       "modifiers": {
         "global_trade_center_power": 0.2,
         "global_production_efficiency": 0.12
@@ -303,7 +303,7 @@
         "fort_maintenance_efficiency": 0.16
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_eastern_river_7",
@@ -353,7 +353,7 @@
         "fort_maintenance_efficiency": 0.16
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_northern_shudao_4",
@@ -367,7 +367,7 @@
     },
     {
       "key": "hbe_tech_northern_shudao_5",
-      "name": "[Concept('hbe_history_shudao', '蜀道')|e]联防总镇",
+      "name": "蜀道联防总镇",
       "modifiers": {
         "global_defensive": 0.16,
         "global_manpower_modifier": 0.16
@@ -401,7 +401,7 @@
     },
     {
       "key": "hbe_tech_northern_shudao_8",
-      "name": "[Concept('hbe_history_shudao', '蜀道')|e]驿传总局",
+      "name": "蜀道驿传总局",
       "modifiers": {
         "global_institution_growth_modifier": 0.24,
         "global_monthly_control": 0.08
@@ -464,13 +464,13 @@
     },
     {
       "key": "hbe_tech_central_hills_6",
-      "name": "[Concept('hbe_term_contract', '契约')|e]见证",
+      "name": "契约见证",
       "modifiers": {
         "total_loan_capacity_modifier": 0.32,
         "burghers_estate_target_satisfaction": 0.064
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_central_hills_7",
@@ -516,7 +516,7 @@
     },
     {
       "key": "hbe_tech_western_tea_horse_3",
-      "name": "@hbe_tea! [Concept('hbe_term_tea', '商队互保')|e]",
+      "name": "商队互保",
       "modifiers": {
         "global_leather_output_modifier": 0.2,
         "global_food_decay": -0.08,
@@ -554,7 +554,7 @@
         "global_disease_resistance": 0.04
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_western_tea_horse_7",
@@ -605,7 +605,7 @@
         "tribes_estate_target_satisfaction": 0.048
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_southwestern_valleys_4",
@@ -637,7 +637,7 @@
         "global_levy_recruitment_speed_modifier": 0.12
       },
       "unlocks": [],
-      "link": "本课题的永久加成立即生效，并推进后续地区课题与验收。"
+      "link": ""
     },
     {
       "key": "hbe_tech_southwestern_valleys_7",

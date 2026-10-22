@@ -91,7 +91,7 @@ def render(out, put, loc, projects, tiers, game):
         HBE_AF_ETA="预计于 [Player.MakeScope.GetVariable('hbe_af_eta_year').GetValue|0]年[Player.MakeScope.GetVariable('hbe_af_eta_month').GetValue|0]月 完成\\n（[GuiScope.SetRoot(Player.MakeScope).ScriptValue('hbe_af_remaining')|0]个月后）",
         HBE_AF_PAUSED="暂缓推进\\n尚需 [GuiScope.SetRoot(Player.MakeScope).ScriptValue('hbe_af_remaining')|0] 个月",
         HBE_AF_PAID="已投入 @gold! [Player.MakeScope.GetVariable('hbe_af_paid').GetValue|2]   @hbe_burden! +[Player.MakeScope.GetVariable('hbe_af_load').GetValue|1]",
-        HBE_AF_NOTICE='有可筹办的地方项目', HBE_AF_NOTICE_HIDE='隐藏本轮提醒', HBE_AF_NOTICE_TT='本轮有可支付的地方项目。左键查看；右键隐藏本轮提醒。',
+        HBE_AF_NOTICE='有可筹办的地方事业', HBE_AF_NOTICE_HIDE='隐藏本轮提醒', HBE_AF_NOTICE_TT='本轮有可支付的地方事业。左键查看；右键隐藏本轮提醒。',
     )
     running=shown('hbe_af_ui_running')[1:-1]
     waiting=shown('hbe_af_ui_waiting')[1:-1]

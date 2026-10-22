@@ -1,6 +1,6 @@
 ﻿hbe_teahouse_public_deliberation = {
  age = age_2_renaissance starting_technology_level = 99
- icon = hbe_teahouse_public_deliberation content_priority = 845 research_cost = 2.5
+ icon = hbe_teahouse_public_deliberation content_priority = 845
  potential = { hbe_research_origin_common = yes }
  allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_common_3

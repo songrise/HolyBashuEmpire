@@ -44,6 +44,9 @@ def reward(p, i):
     for j, r in enumerate(p['rewards']):
         kind = r['type']; var = f'hbe_af_actual_{j}'
         result.append(f'set_variable = {{ name = {var} value = 0 }}')
+        if kind in ('courtier', 'patronage'):
+            from build_local_affairs_people import effect
+            result.append(effect(r, j, i))
         # Capture the no-random nominal reward before effects change the target state.
         basis = r.get('basis')
         nominal = ('var:hbe_af_target.population' if basis == 'target_population' else basis) or str(r.get('amount',[1,1])[i])
@@ -69,6 +72,8 @@ def reward(p, i):
             if kind == 'population':
                 pop=r.get('pop_type','peasants')
                 result.append(f'var:hbe_af_target = {{ add_pop = {{ culture = root.culture religion = root.religion type = pop_type:{pop} size = root.var:{var} }} }} change_variable = {{ name = {var} multiply = 1000 }}')
+        elif kind in ('courtier', 'patronage'):
+            pass
         elif kind == 'modifier':
             key = r.get('modifier') or r['modifiers'][i]
             scope = catalogue()['modifiers'][key]['scope']
@@ -76,12 +81,15 @@ def reward(p, i):
             from build_local_affairs_guilds import modifier_effect
             result.append(modifier_effect(p,r,i,var))
         elif kind == 'building':
-            choices = ' '.join(f'100 = {{ trigger = {{ var:hbe_af_target = {{ {building_condition(b)} }} }} var:hbe_af_target = {{ change_building_level_in_location = {{ building = building_type:{b} value = 1 }} }} set_variable = {{ name = {var} value = 1 }} }}' for b in r['choices'])
+            choices = ' '.join(f'100 = {{ trigger = {{ var:hbe_af_target = {{ {building_condition(b)} }} }} var:hbe_af_target = {{ change_building_level_in_location = {{ building = building_type:{b} value = {r["amount"][i]} }} }} set_variable = {{ name = {var} value = {r["amount"][i]} }} }}' for b in r['choices'])
             result.append('random_list = { '+choices+' }')
             result.append(f'if = {{ limit = {{ var:{var} = 0 }} change_variable = {{ name = hbe_af_fallback_gold add = {{ value = var:hbe_af_paid multiply = 0.75 }} }} }}')
         elif kind == 'road':
             valid = 'exists = var:hbe_af_road_target var:hbe_af_road_target = { owner = root controller = root } var:hbe_af_target = { is_connected_to = root.var:hbe_af_road_target NOT = { has_road_to = root.var:hbe_af_road_target } }'
-            result.append(f'if = {{ limit = {{ {valid} }} var:hbe_af_target = {{ add_road_to = {{ target = root.var:hbe_af_road_target type = gravel_road }} }} set_variable = {{ name = {var} value = 1 }} }} else = {{ change_variable = {{ name = hbe_af_fallback_gold add = {{ value = var:hbe_af_paid multiply = 0.35 }} }} }}')
+            result.append(f'if = {{ limit = {{ {valid} }} var:hbe_af_target = {{ add_road_to = {{ target = root.var:hbe_af_road_target type = gravel_road }} }} set_variable = {{ name = {var} value = 1 }} }}')
+            for _ in range(r['amount'][i]):
+                result.append(f'if = {{ limit = {{ var:{var} < {r["amount"][i]} }} var:hbe_af_target = {{ random_neighbor_location = {{ limit = {{ owner = root controller = root is_connected_to = prev NOT = {{ has_road_to = prev }} }} add_road_to = {{ target = root.var:hbe_af_target type = gravel_road }} root = {{ change_variable = {{ name = {var} add = 1 }} }} }} }} }}')
+            result.append(f'change_variable = {{ name = hbe_af_fallback_gold add = {{ value = {r["amount"][i]} subtract = var:{var} divide = {r["amount"][i]} multiply = 0.35 multiply = var:hbe_af_paid }} }}')
         else: raise ValueError(kind)
 
         weight = catalogue()['contribution']['role_weights'][r['role']]
@@ -103,7 +111,10 @@ def preview(p, i):
         def displayed(edge):
             key=f'hbe_af_preview_{p["id"]}_{i}_{j}_{edge}'
             return f"[GetPlayer.MakeScope.ScriptValue('{key}')|2]"
-        if kind=='burden': lines.append(f'降低役负约 {displayed("low")}—{displayed("high")}（以现有役负为限）。')
+        if kind in ('courtier','patronage'):
+            from build_local_affairs_people import preview as people_preview
+            lines.append(people_preview(r,i))
+        elif kind=='burden': lines.append(f'降低役负约 {displayed("low")}—{displayed("high")}（以现有役负为限）。')
         elif kind=='research': lines.append(f'研究进度 +{displayed("low")}—{displayed("high")} 点。')
         elif kind in ('prestige','stability','army_tradition'):
             label={'prestige':'威望','stability':'稳定度','army_tradition':'陆军传统'}[kind]
@@ -119,14 +130,14 @@ def preview(p, i):
             key=r.get('modifier') or r['modifiers'][i]
             lines.append(catalogue()['modifiers'][key]['summary']+f'，持续约 {displayed("low")}—{displayed("high")} 个月。')
             if r.get('guild_variant'):
-                lines.append('已研究对应产业传习科技且有该产业机构正常运转时，另含对应特色产出加成；全国项目+8%，本地项目+10%（须机构在目标地点）。')
+                lines.append('已研究对应产业传习科技且有该产业机构正常运转时，另含对应特色产出加成；全国项目+16%，本地项目+20%（须机构在目标地点）。')
         elif kind=='building':
             if p.get('guild_role'):
-                lines.append('合格原版产业建筑随机 +1 级（布匹、精纺品、纸、陶器或工具）；不会增加特色机构或越过科技与建造条件，条件改变时返还75%已付金币。')
+                lines.append('合格原版产业建筑随机 +2 级（布匹、精纺品、纸、陶器或工具）；不会增加特色机构或越过科技与建造条件，条件改变时返还75%已付金币。')
             else:
                 names={'granary':'粮仓','marketplace':'集市','temple':'庙宇','library':'图书馆'}
-                lines.append('合格公共建筑随机 +1 级（'+'／'.join(names[b] for b in r['choices'])+'）；资格改变时返还75%已付金币。')
-        elif kind=='road': lines.append('接通目标与一处直属相邻地点的碎石道路；已通路或条件改变时返还35%已付金币。')
+                lines.append('合格公共建筑随机 +2 级（'+'／'.join(names[b] for b in r['choices'])+'）；资格改变时返还75%已付金币。')
+        elif kind=='road': lines.append('最多接通目标与两处直属相邻地点的碎石道路；每缺少一段补退17.5%已付金币。')
     if p.get('guild_role'):
         lines.append('产业机构承办时役负减少20%，已计入卡片费用；本地项目须机构在目标地点。')
     return '\\n'.join(lines)
@@ -141,12 +152,12 @@ def build(put, loc, projects):
             if row['type'] not in ('research','prestige','stability','manpower','army_tradition','population','modifier','gold','burden'): continue
             for tier in range(2):
                 for edge,factor in zip(('low','high'),row['ordinary_factors']):
-                    calc=reward_expression(row,tier,f'{factor:g}')
+                    local_bonus = ' multiply = hbe_af_local_reward_multiplier' if project['pool']=='local' else ''
+                    calc=reward_expression(row,tier,f'{factor:g}'+local_bonus)
                     if row['type']=='population':
                         calc=calc.replace('var:hbe_af_target.population','var:hbe_af_candidate_target.population')+' multiply = 1000'
-                    if row['type']=='modifier':calc=f'value = {row["months"][tier]} multiply = {factor:g}'
+                    if row['type']=='modifier':calc=f'value = {row["months"][tier]} multiply = {factor:g}'+local_bonus
                     if row['type']=='gold':calc=calc.replace('var:hbe_af_paid',f'hbe_af_cost_{project["id"]}_{"large" if tier else "small"}')
-                    if project['pool']=='local':calc+=' multiply = hbe_af_local_reward_multiplier'
                     if row['type']=='manpower': calc+=' multiply = 1000'
                     range_values.append(f'hbe_af_preview_{project["id"]}_{tier}_{j}_{edge} = {{ {calc} }}')
     put('in_game/common/script_values/hbe_af_reward_values.txt','\n'.join(range_values))
@@ -155,6 +166,10 @@ def build(put, loc, projects):
     for project in projects:
         rolls=[]
         for j,item in enumerate(project['rewards']):
+            if item['type'] in ('courtier','patronage'):
+                from build_local_affairs_people import roll
+                rolls.append(roll(item,j))
+                continue
             if item['type'] in ('building','road'): continue
             lo,hi=item['ordinary_factors']
             ordinary=[(15,lo),(20,(1+lo)/2),(30,1),(20,(1+hi)/2),(15,hi)]
@@ -170,7 +185,12 @@ def build(put, loc, projects):
             snapshot.append(f'save_scope_value_as = {{ name = af_actual_{j} value = var:hbe_af_actual_{j} }}')
             val=f"[SCOPE.GetValue('af_actual_{j}')|{'0' if r['type'] in ('population','modifier','building','road') else '2'}]"
             kind=r['type']
-            if kind=='burden': lines.append(f'役负实际降低 {val} 点。')
+            if kind in ('courtier','patronage'):
+                from build_local_affairs_people import receipt
+                lines.append(receipt(r,j))
+                if kind=='patronage':
+                    snapshot += ['save_scope_value_as = { name = af_artist_gain value = var:hbe_af_artist_gain }','save_scope_value_as = { name = af_art_gain value = var:hbe_af_art_gain }']
+            elif kind=='burden': lines.append(f'役负实际降低 {val} 点。')
             elif kind=='research': lines.append(f'研究进度实际增加 {val} 点。')
             elif kind=='gold': lines.append(f'实际收回 {val} @gold!。')
             elif kind in ('prestige','stability','army_tradition'):
@@ -213,7 +233,7 @@ def build(put, loc, projects):
                 events.append(f'{key} = {{ type = country_event outcome = positive title = {key}.title desc = {key}.desc illustration_tags = {{ 1000 = hbe_event_art_civic_council }} option = {{ name = hbe_af_result.accept ai_chance = {{ base = 100 }} }} }}')
                 branch.append(f'trigger_event_non_silently = {{ id = {key} }}')
             dispatch.append((variant,'if = { limit = { var:hbe_af_outcome = 4 } '+branch[1]+' } else = { '+branch[0]+' }'))
-        snapshot += ['save_scope_value_as = { name = af_fallback_gold value = var:hbe_af_fallback_gold }','save_scope_value_as = { name = af_modifier_strength value = { value = 6 if = { limit = { var:hbe_af_tier = 2 } add = 2 } } }','if = { limit = { exists = var:hbe_af_target } var:hbe_af_target = { save_scope_as = af_location } }']
+        snapshot += ['save_scope_value_as = { name = af_fallback_gold value = var:hbe_af_fallback_gold }','save_scope_value_as = { name = af_modifier_strength value = { value = 12 if = { limit = { var:hbe_af_tier = 2 } add = 4 } } }','if = { limit = { exists = var:hbe_af_target } var:hbe_af_target = { save_scope_as = af_location } }']
         # Variant selection happens before event dispatch, so its text is immutable.
         route=' '.join(('if' if i==0 else 'else_if')+f' = {{ limit = {{ var:hbe_af_guild_variant = {variant} }} '+branch+' }' for i,(variant,branch) in enumerate(dispatch[1:]))
         if route:route+=' else = { '+dispatch[0][1]+' }'

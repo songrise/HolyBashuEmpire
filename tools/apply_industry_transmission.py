@@ -211,7 +211,6 @@ def apply(out, root, game):
         advances.append(f'''{stem} = {{
     age = {config['age']}
     starting_technology_level = 99
-    research_cost = {config['research_cost']:g}
     content_priority = 830
     icon = {stem}
     requires = {row.get('parent', config['parent'])}
