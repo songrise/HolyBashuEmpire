@@ -1,6 +1,6 @@
 {
-  "status": "local_draft_not_published",
-  "steam_published": false,
+  "status": "published_and_verified",
+  "steam_published": true,
   "description": "docs\\workshop_description_v040_schinese.bbcode",
   "copy_scope": "replace council/feast section with a concise Local Affairs gameplay introduction",
   "media": [
@@ -41,6 +41,12 @@
   ],
   "image_copy_rule": "No numeric promotional claims; broad gameplay introduction only. Original UI screenshot numbers remain unaltered.",
   "art_complete": true,
-  "pending_publication": "Steam media URLs must replace the explicit placeholders when publication is requested.",
-  "local_commit_requested": true
+  "local_commit_requested": true,
+  "description_english": "docs/workshop_description_v040_english.bbcode",
+  "verification": "docs/workshop_release_v040.json",
+  "compact_package": true,
+  "distribution_file_count": 857,
+  "distribution_bytes": 169188245,
+  "all_runtime_paths_preserved": true,
+  "description_unchanged_by_repack": true
 }

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "static",
+  "scope": "hygiene",
+  "at": "2026-10-22T21:32:30.159679+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "localization no longer links or defines retired local-affairs resources",
+      "passed": true
+    },
+    {
+      "name": "mod localization keys are unique across files within each language",
+      "passed": true
+    },
+    {
+      "name": "english gameplay concept labels use canonical names",
+      "passed": true
+    },
+    {
+      "name": "english gameplay concept titles contain no nested links",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese gameplay concept labels use canonical names",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese gameplay concept titles contain no nested links",
+      "passed": true
+    },
+    {
+      "name": "no custom variable is written without any read",
+      "passed": true
+    },
+    {
+      "name": "no custom variable is read by a condition that nothing sets",
+      "passed": true
+    }
+  ]
+}

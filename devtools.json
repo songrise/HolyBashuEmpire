@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "mod": "mod/holy_bashu_empire",
+  "runs": "work/runs",
+  "packages": "dist",
+  "game": "D:/SteamLibrary/steamapps/common/Europa Universalis V",
+  "settings_template": null,
+  "workshop": {
+    "app_id": 3450310,
+    "item_id": 3818491932,
+    "languages": ["schinese", "english", "tchinese"]
+  }
+}

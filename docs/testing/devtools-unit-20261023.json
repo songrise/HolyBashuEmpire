@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "kind": "unit",
+  "scope": "all",
+  "at": "2026-10-22T21:34:51.999567+00:00",
+  "status": "passed",
+  "tests": 108,
+  "passed": 107,
+  "skipped": [
+    {
+      "test": "test_all_checkpoint_projections (test_eu5save_integration.ArchivedCheckpointTests.test_all_checkpoint_projections)",
+      "reason": "Set EU5_SAVE_REFERENCE and EU5_SAVE_DIR to compare real checkpoints"
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "expected_failures": 0,
+  "unexpected_successes": 0,
+  "elapsed_seconds": 1.9015
+}

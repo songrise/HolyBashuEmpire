@@ -58,7 +58,7 @@ EU5 巴蜀架空历史风味包：一个帝国、七个帝国圈、三十六个�
 
 ## 版本与验证
 
-0.4.0仍在开发，以新开1337年游戏为准，不保留历史开发存档迁移。国家编号和地块名单沿用，其他修改1337年领土的模组可能冲突，初次游玩建议单独启用本包。
+0.4.0已发布到创意工坊，建议新开1337年存档，不保留历史开发存档迁移。国家编号和地块名单沿用，其他修改1337年领土的模组可能冲突，初次游玩建议单独启用本包。自然AI观察发现的问题见[0.4.0遗留问题](docs/known_issues_v040.md)。
 
 当前构建、安装与地方事业受控验证见[0.4.0本地验证记录](docs/testing/v040-local-verification-20261023.json)。以下0.3.x验证与规则说明为历史记录。
 
@@ -68,7 +68,13 @@ EU5 巴蜀架空历史风味包：一个帝国、七个帝国圈、三十六个�
 
 ## 源码
 
+开发流程统一使用 [`tools/dev.py`](tools/dev.py)，用法见[可复用开发工具](docs/development_tools.md)。场景配置负责测试差异，发布计划负责更新范围，不再复制按版本或日期命名的临时脚本。日常默认专项检查，完整构建和全量 hash 均需显式执行。
+
 仓库：C:\github\holy-bashu-empire。常规构建使用tools/build_mod.py，新机制生成已集成；只核对本次改动可运行tools/validate_v021.py。完整历史检查不在每次小改动时运行。
+
+发布包使用[完整文件精简打包](docs/distribution_build.md)：`tools/package_mod.py`保留全部文件，只对通过画质门槛的DDS做BC3压缩。发布确认见[0.4.0工坊记录](docs/workshop_release_v040.json)。
+
+存档观察统一使用[语义读取工具](docs/save_parser.md)：`python tools/save_query.py summary <存档>`，以及`country`、`projects`、`timeline`、`check`子命令。解析逻辑位于可复用的`tools/eu5save`模块，重复查询使用持久缓存，不再逐次复制原始存档正则或编写一次性解析器。
 
 商品人口需求保留完整原版pop_demand定义并追加四项，其他覆盖同一需求定义的模组需合并兼容。
 

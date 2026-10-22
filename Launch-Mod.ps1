@@ -19,7 +19,8 @@ if (Test-Path -LiteralPath $playsetFile) {
     $playsetDoc = Get-Content -LiteralPath $playsetFile -Raw -Encoding UTF8 | ConvertFrom-Json
     Copy-Item -LiteralPath $playsetFile -Destination ($playsetFile + '.hbe-backup') -Force
 } else { $playsetDoc = [pscustomobject]@{file_version='1.0.0';playsets=@()} }
-$ownName = 'Holy Bashu Empire v0.2.0'
+$modMetadata = Get-Content -LiteralPath (Join-Path $modSource '.metadata\metadata.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$ownName = 'Holy Bashu Empire v' + $modMetadata.version
 $retained = @($playsetDoc.playsets | Where-Object { $_.name -notlike 'Holy Bashu Empire v*' })
 foreach ($existingPlayset in $retained) { $existingPlayset | Add-Member -NotePropertyName isActive -NotePropertyValue $false -Force }
 $hbePlayset = [pscustomobject]@{ name=$ownName;isActive=$true;isAutomaticallySorted=$true;

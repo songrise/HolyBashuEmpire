@@ -583,93 +583,13 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
                   event_prose=event_prose,player_guides=player_guides,
                   files={str(f.relative_to(out)).replace(chr(92),'/'):sha(f) for f in sorted(out.rglob('*')) if f.is_file() and f.name!='build_manifest.json'})
     put('build_manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))
-    # Final observer diagnostics/AI correction pass; retain current art and setup.
-    from apply_observer_hotfix import apply as apply_observer_hotfix
-    apply_observer_hotfix(out, ROOT)
-    from apply_name_hotfix import apply as apply_name_hotfix
-    apply_name_hotfix(out, ROOT)
-    from export_goods_modifier_icons import apply as export_goods_modifier_icons
-    export_goods_modifier_icons(out, ROOT)
-    from build_playable_stories import build as build_playable_stories
-    build_playable_stories(out, ROOT)
-    import export_story_art
-    export_story_art.OUT = out
-    export_story_art.export()
-    from apply_industry_balance_patch import apply as apply_industry_balance
-    from apply_advance_gate_patch import apply as apply_advance_gates
-    from apply_event_balance_patch import apply as apply_event_balance
-    from apply_red_turban_caution import apply as apply_red_turban_caution
-    apply_industry_balance(out, ROOT)
-    apply_advance_gates(out, ROOT)
-    apply_event_balance(out, ROOT)
-    apply_red_turban_caution(out, ROOT)
-    from apply_unit_maintenance_patch import apply as apply_unit_maintenance
-    apply_unit_maintenance(out, ROOT)
-    from apply_local_ui_patch import apply as apply_local_ui_patch
-    apply_local_ui_patch(out, ROOT)
-    from apply_deep_balance_v031 import apply as apply_deep_balance
-    deep_balance_report = apply_deep_balance(out, ROOT)
-    from apply_guest_production_patch import apply as apply_guest_production
-    guest_production_report = apply_guest_production(out, ROOT)
-    from build_opening_population import apply as apply_opening_population
-    opening_population_report = apply_opening_population(out, ROOT, game)
-    from apply_opening_armistice_fix import apply as apply_opening_armistice
-    opening_armistice_report = apply_opening_armistice(out, ROOT, game)
-    from apply_formables_units_v031 import apply as apply_formables_units
-    apply_formables_units(out, ROOT, game)
-    from apply_annex_industry_v031 import apply as apply_annex_industry
-    apply_annex_industry(out, ROOT, game)
-    from apply_story_logic_v031 import apply as apply_story_logic
-    apply_story_logic(out, ROOT, game)
-    from apply_ending_art_v031 import apply as apply_ending_art
-    apply_ending_art(out, ROOT, game)
-    from apply_progress_art_v031 import apply as apply_progress_art
-    apply_progress_art(out, ROOT, game)
-    from apply_history_guides_v031 import apply as apply_history_guides
-    apply_history_guides(out, ROOT, game)
-    from apply_story_narratives_v031 import apply as apply_story_narratives
-    apply_story_narratives(out, ROOT, game)
-    from apply_loading_art_v031 import apply as apply_loading_art
-    apply_loading_art(out, ROOT, game)
-    from apply_unit_detail_art_v031 import apply as apply_unit_detail_art
-    apply_unit_detail_art(out, ROOT, game)
-    from apply_capital_recruitment_v031 import apply as apply_capital_recruitment
-    apply_capital_recruitment(out, ROOT, game)
-    from apply_red_turban_actions_v032 import apply as apply_red_turban_actions
-    apply_red_turban_actions(out, ROOT, game)
-    from apply_common_defense_v032 import apply as apply_common_defense
-    apply_common_defense(out, ROOT, game)
-    from apply_egret_art_v032 import apply as apply_egret_art
-    apply_egret_art(out, ROOT, game)
-    from apply_open_diplomacy_v032 import apply as apply_open_diplomacy
-    apply_open_diplomacy(out, ROOT, game)
-    from apply_western_tributes_v032 import apply as apply_western_tributes
-    apply_western_tributes(out, ROOT, game)
-    from apply_diplomacy_restraint_v032 import apply as apply_diplomacy_restraint
-    apply_diplomacy_restraint(out, ROOT, game)
-    from apply_industry_transmission import apply as apply_industry_transmission
-    apply_industry_transmission(out, ROOT, game)
-    from apply_western_opening_v032 import apply as apply_western_opening
-    apply_western_opening(out, ROOT, game)
-    from apply_production_advance_semantics_v032 import apply as apply_production_semantics
-    apply_production_semantics(out, ROOT, game)
-    from apply_advance_display_v032 import apply as apply_advance_display
-    apply_advance_display(out, ROOT, game)
-    from apply_opening_identity_v032 import apply as apply_opening_identity
-    apply_opening_identity(out, ROOT, game)
-    from apply_population_identity_v032 import apply as apply_population_identity
-    apply_population_identity(out, ROOT, game)
-    from build_early_research import apply as build_early_research
-    build_early_research(out, ROOT, game)
-    from finalize_release_v032 import apply as finalize_release_v032
-    finalize_release_v032(out, ROOT, game)
-    from build_age2_military import apply as build_age2_military
-    build_age2_military(out, ROOT, game)
-    # Allocate the earlier population changes before moving their resident places.
-    from apply_opening_territory import apply as apply_opening_territory
-    apply_opening_territory(out, ROOT, game)
-    from build_local_affairs import apply as build_local_affairs
-    build_local_affairs(out, ROOT, game)
+    # Ordered passes retain their existing semantics; registry owns invocation/order.
+    from devkit.pipeline import run_final
+    stage_results = run_final(out, ROOT, game)
+    deep_balance_report = stage_results['apply_deep_balance_v031']
+    guest_production_report = stage_results['apply_guest_production_patch']
+    opening_population_report = stage_results['build_opening_population']
+    opening_armistice_report = stage_results['apply_opening_armistice_fix']
     # Line endings are part of the artifact: normalise once, after every stage.
     normalized = normalize_text_newlines(out)
     manifest_path = out / "build_manifest.json"

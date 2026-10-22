@@ -1,0 +1,1301 @@
+{
+  "schema_version": 1,
+  "kind": "static",
+  "scope": "local-affairs",
+  "at": "2026-10-22T21:32:31.357138+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "affairs GUI type has exactly one live HUD instance",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD override only wraps the native alert row and adds its mount",
+      "passed": true
+    },
+    {
+      "name": "affairs entry is anchored to screen bottom right",
+      "passed": true
+    },
+    {
+      "name": "affairs one window for ready running and waiting",
+      "passed": true
+    },
+    {
+      "name": "affairs visibility does not read a valueless country flag",
+      "passed": true
+    },
+    {
+      "name": "affairs keeps situation layout with only authorized row accounting changes",
+      "passed": true
+    },
+    {
+      "name": "affairs credits completion once before immutable receipt",
+      "passed": true
+    },
+    {
+      "name": "affairs round contribution cap is shared with prior service credit",
+      "passed": true
+    },
+    {
+      "name": "affairs credit uses realized rewards and net cost",
+      "passed": true
+    },
+    {
+      "name": "affairs member scores display fractions without deprecated source",
+      "passed": true
+    },
+    {
+      "name": "affairs dividends use continuous fractional weights",
+      "passed": true
+    },
+    {
+      "name": "affairs contribution has its own deduplication guard",
+      "passed": true
+    },
+    {
+      "name": "affairs member hover itemizes every credited project",
+      "passed": true
+    },
+    {
+      "name": "affairs automation keeps rules in hover and compact state only",
+      "passed": true
+    },
+    {
+      "name": "affairs twenty definitions retain six distinct guild roles",
+      "passed": true
+    },
+    {
+      "name": "affairs guarded selections for both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs large investment uses its boolean permission for all projects",
+      "passed": true
+    },
+    {
+      "name": "affairs persistent draws not GUI randomization",
+      "passed": true
+    },
+    {
+      "name": "affairs auto checks budgets and caps burden-increasing projects",
+      "passed": true
+    },
+    {
+      "name": "zero-load relief remains available above burden caps",
+      "passed": true
+    },
+    {
+      "name": "affairs AI two persistent equally weighted personalities use 70 and 40 percent",
+      "passed": true
+    },
+    {
+      "name": "affairs AI rolls only for a scored affordable idle peaceful choice",
+      "passed": true
+    },
+    {
+      "name": "affairs AI consumes one decision per calendar month including refusal",
+      "passed": true
+    },
+    {
+      "name": "affairs player automation bypasses personality dice and all starts recheck eligibility",
+      "passed": true
+    },
+    {
+      "name": "affairs monthly progress bounded and paused on lost control",
+      "passed": true
+    },
+    {
+      "name": "affairs population and building use native outcomes",
+      "passed": true
+    },
+    {
+      "name": "affairs fixed compact dual cards and all guarded choices",
+      "passed": true
+    },
+    {
+      "name": "affairs tall rewards and two masked illustrated headers",
+      "passed": true
+    },
+    {
+      "name": "affairs cards leave padding and only local card has a refresh button",
+      "passed": true
+    },
+    {
+      "name": "affairs panel initializes old saves before opening",
+      "passed": true
+    },
+    {
+      "name": "affairs uses treasury rather than monthly balance",
+      "passed": true
+    },
+    {
+      "name": "affairs automation host only adds one economy entry",
+      "passed": true
+    },
+    {
+      "name": "affairs automation uses native economy filter and controls",
+      "passed": true
+    },
+    {
+      "name": "affairs automation explicitly supplies native search context",
+      "passed": true
+    },
+    {
+      "name": "affairs native circular refresh remains inside dual-card window",
+      "passed": true
+    },
+    {
+      "name": "affairs global investment preview changes both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs active card shows paid cost date and remaining months",
+      "passed": true
+    },
+    {
+      "name": "affairs availability mounts a native top ribbon",
+      "passed": true
+    },
+    {
+      "name": "affairs outcomes locked once at guarded start",
+      "passed": true
+    },
+    {
+      "name": "affairs completion receipts include immutable specialized guild variants",
+      "passed": true
+    },
+    {
+      "name": "affairs receipts snapshot actual gains before clearing active project",
+      "passed": true
+    },
+    {
+      "name": "affairs settlement is guarded against duplicate completion",
+      "passed": true
+    },
+    {
+      "name": "affairs target loss still pauses and dates update",
+      "passed": true
+    },
+    {
+      "name": "affairs main panel only has a status cog, with right-click toggle",
+      "passed": true
+    },
+    {
+      "name": "affairs auto respects national local and large preferences",
+      "passed": true
+    },
+    {
+      "name": "affairs descriptive grades use explicit vanilla colors",
+      "passed": true
+    },
+    {
+      "name": "affairs outcome weights and greatness are bounded",
+      "passed": true
+    },
+    {
+      "name": "affairs project cards keep ETA rather than a progress meter",
+      "passed": true
+    },
+    {
+      "name": "affairs project titles have distinct visual hierarchy",
+      "passed": true
+    },
+    {
+      "name": "affairs event modifiers expose native description keys",
+      "passed": true
+    },
+    {
+      "name": "affairs title status and panel use the same center",
+      "passed": true
+    },
+    {
+      "name": "affairs time uses the native clock icon",
+      "passed": true
+    },
+    {
+      "name": "affairs only two pool header textures",
+      "passed": true
+    },
+    {
+      "name": "affairs manual skip removed and auto preserves current offers",
+      "passed": true
+    },
+    {
+      "name": "affairs every candidate has a bounded persisted random expiry",
+      "passed": true
+    },
+    {
+      "name": "affairs expiry labels sit below both cards",
+      "passed": true
+    },
+    {
+      "name": "affairs panel opening uses idempotent current initialization",
+      "passed": true
+    },
+    {
+      "name": "affairs all projects have two to four reward types",
+      "passed": true
+    },
+    {
+      "name": "affairs preview hides great success amounts and removes probability lecture",
+      "passed": true
+    },
+    {
+      "name": "affairs no project both charges and reduces burden",
+      "passed": true
+    },
+    {
+      "name": "affairs primary secondary and minor grades differ in both tiers",
+      "passed": true
+    },
+    {
+      "name": "affairs independent random rewards are locked on project start",
+      "passed": true
+    },
+    {
+      "name": "affairs real population remains distinct from conservative manpower",
+      "passed": true
+    },
+    {
+      "name": "affairs manpower has no fixed headcount floor and caps apply after random factor",
+      "passed": true
+    },
+    {
+      "name": "affairs all population and native currency rewards use their declared bases",
+      "passed": true
+    },
+    {
+      "name": "affairs resource hover values are live and hide implementation details",
+      "passed": true
+    },
+    {
+      "name": "affairs four additional native resource rewards have measured deltas",
+      "passed": true
+    },
+    {
+      "name": "affairs each component has its own ordinary range",
+      "passed": true
+    },
+    {
+      "name": "affairs shared cost multipliers match latest balance",
+      "passed": true
+    },
+    {
+      "name": "affairs every generated cost and burden applies the shared multipliers",
+      "passed": true
+    },
+    {
+      "name": "affairs fallback plus cash rewards cannot exceed paid cost",
+      "passed": true
+    },
+    {
+      "name": "affairs relief requires burden above fifty and has lower draw weight",
+      "passed": true
+    },
+    {
+      "name": "affairs native research road and varied buildings supported",
+      "passed": true
+    },
+    {
+      "name": "affairs targets prefer suitable workers and infrastructure",
+      "passed": true
+    },
+    {
+      "name": "affairs modifier names and descriptions are complete",
+      "passed": true
+    },
+    {
+      "name": "affairs all scripted GUI references exist",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card registers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card fair",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card materials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card settlers",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card granary",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card canal",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card copyists",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card paid_crews",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card old_services",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card deliveries",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card land_books",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_roads",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card seek_artisans",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card village_clinics",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card restore_market",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card rest_crews",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card guild_workshops",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card guild_trials",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card talent_search",
+      "passed": true
+    },
+    {
+      "name": "affairs localized complete card patronage",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_water",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_salt",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_river",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_roads",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_grain",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_tea",
+      "passed": true
+    },
+    {
+      "name": "retired balance never read or awarded hbe_valleys",
+      "passed": true
+    },
+    {
+      "name": "seven old service decisions retired",
+      "passed": true
+    },
+    {
+      "name": "seven regional coordination decisions are temporarily hidden",
+      "passed": true
+    },
+    {
+      "name": "retired service dependencies are removed outright",
+      "passed": true
+    },
+    {
+      "name": "retired pending orders cannot finish or trigger rewards",
+      "passed": true
+    },
+    {
+      "name": "retired callbacks only perform marker cleanup",
+      "passed": true
+    },
+    {
+      "name": "legacy country migration state is no longer registered",
+      "passed": true
+    },
+    {
+      "name": "regional mission descriptions no longer charge retired resources",
+      "passed": true
+    },
+    {
+      "name": "affairs exactly two new permission technologies",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_public_funding hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_allow_large_investment has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals uses age two with native parent and no calendar gate",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals retains all HBE identities and membership requirement",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals grants its sole registered country boolean",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals localizes its native boolean name and description",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals has a padded transparent 256px painted icon",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals advance exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_local_proposals hbe/technology exact uncompressed BGRA export",
+      "passed": true
+    },
+    {
+      "name": "hbe_af_allow_local_refresh has native modifier icon mapping",
+      "passed": true
+    },
+    {
+      "name": "local proposals grants the native twenty percent local-reward modifier",
+      "passed": true
+    },
+    {
+      "name": "affairs removes superseded age-one capability hint",
+      "passed": true
+    },
+    {
+      "name": "affairs small investment remains free of the new research gate",
+      "passed": true
+    },
+    {
+      "name": "affairs local redraw requires permission idle cooldown and every alternative",
+      "passed": true
+    },
+    {
+      "name": "affairs redraw effect rechecks gate and only redraws local offer",
+      "passed": true
+    },
+    {
+      "name": "affairs manual local refresh has a two-year cooldown and matching descriptions",
+      "passed": true
+    },
+    {
+      "name": "affairs refresh uses native round button and native change arrows",
+      "passed": true
+    },
+    {
+      "name": "affairs both boolean names are present in every shipped locale",
+      "passed": true
+    },
+    {
+      "name": "guild pools have three distinct roles each",
+      "passed": true
+    },
+    {
+      "name": "guild merge preserves four existing catalogue entries without duplicate concepts",
+      "passed": true
+    },
+    {
+      "name": "guild transmission keeps literacy and grants one native project permission",
+      "passed": true
+    },
+    {
+      "name": "registers guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "registers small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "registers small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "registers large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "registers large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "fair guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "fair small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "fair small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "fair large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "fair large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "materials guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "materials small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "materials small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "materials small sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "materials locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "materials variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "materials large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "materials large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "materials large sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "materials locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "materials variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "settlers guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "settlers small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "settlers small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "settlers large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "settlers large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "granary guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "granary small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "granary small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "granary large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "granary large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "canal guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "canal small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "canal small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "canal large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "canal large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "copyists guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "copyists small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "copyists small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "copyists small sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "copyists locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "copyists variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "copyists large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "copyists large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "copyists large sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "copyists locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "copyists variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "paid_crews guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "paid_crews small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "paid_crews small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "paid_crews large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "paid_crews large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "old_services guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "old_services small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "old_services small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "old_services large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "old_services large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "deliveries guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "deliveries small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "deliveries small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "deliveries small sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "deliveries locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "deliveries variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "deliveries large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "deliveries large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "deliveries large sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "deliveries locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "deliveries variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "land_books guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "land_books small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "land_books small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "land_books large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "land_books large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "village_roads guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "village_roads small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "village_roads small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "village_roads large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "village_roads large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans small sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans sponsor uses candidate location",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans large sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans sponsor uses candidate location",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "seek_artisans variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "village_clinics guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "village_clinics small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "village_clinics small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "village_clinics large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "village_clinics large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "restore_market guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "restore_market small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "restore_market small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "restore_market large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "restore_market large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "rest_crews guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "rest_crews small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "rest_crews small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "rest_crews large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "rest_crews large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops small sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops sponsor uses candidate location",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops large sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops sponsor uses candidate location",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "guild_workshops variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "guild_trials guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "guild_trials small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "guild_trials small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "guild_trials small sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "guild_trials sponsor uses candidate location",
+      "passed": true
+    },
+    {
+      "name": "guild_trials locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "guild_trials variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "guild_trials large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "guild_trials large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "guild_trials large sponsor discount is once-only and employment-based",
+      "passed": true
+    },
+    {
+      "name": "guild_trials sponsor uses candidate location",
+      "passed": true
+    },
+    {
+      "name": "guild_trials locks only qualified specialized production at start",
+      "passed": true
+    },
+    {
+      "name": "guild_trials variants replace ordinary modifiers without extra contribution",
+      "passed": true
+    },
+    {
+      "name": "talent_search guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "talent_search small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "talent_search small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "talent_search large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "talent_search large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "patronage guild gate has correct scope",
+      "passed": true
+    },
+    {
+      "name": "patronage small uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "patronage small snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "patronage large uses exactly one guarded normal completion path",
+      "passed": true
+    },
+    {
+      "name": "patronage large snapshots the correct local reward bonus",
+      "passed": true
+    },
+    {
+      "name": "guild workshop only adds vanilla industry scale, never special institutions",
+      "passed": true
+    },
+    {
+      "name": "simp_chinese all mod booleans have a single plain-language definition",
+      "passed": true
+    },
+    {
+      "name": "english all mod booleans have a single plain-language definition",
+      "passed": true
+    },
+    {
+      "name": "traditional_chinese all mod booleans have a single plain-language definition",
+      "passed": true
+    },
+    {
+      "name": "no retired service unlock or recent-service network condition remains",
+      "passed": true
+    },
+    {
+      "name": "teahouse is an age-two child of works archive research",
+      "passed": true
+    },
+    {
+      "name": "teahouse government building allows five local and five total levels including queues",
+      "passed": true
+    },
+    {
+      "name": "teahouse monthly relief scales by supplied effective levels capped at 2.5",
+      "passed": true
+    },
+    {
+      "name": "teahouse provides local native assimilation only",
+      "passed": true
+    },
+    {
+      "name": "teahouse advance has a unique transparent native-sized icon",
+      "passed": true
+    },
+    {
+      "name": "teahouse icons/buildings has a unique transparent native-sized icon",
+      "passed": true
+    },
+    {
+      "name": "completion settings keeps all unrelated vanilla event controls intact",
+      "passed": true
+    },
+    {
+      "name": "completion settings uses the native menu button and actual context menu",
+      "passed": true
+    },
+    {
+      "name": "every result receipt respects all great-only and silent modes",
+      "passed": true
+    },
+    {
+      "name": "completion preferences can be re-enabled from economy automation",
+      "passed": true
+    },
+    {
+      "name": "two national talent projects have distinct primary rewards",
+      "passed": true
+    },
+    {
+      "name": "court recruitment uses twenty and forty percent",
+      "passed": true
+    },
+    {
+      "name": "talent_search dice are locked before completion, without greatness multiplying chance",
+      "passed": true
+    },
+    {
+      "name": "talent_search small creates rewards only after a successful locked roll",
+      "passed": true
+    },
+    {
+      "name": "talent_search large creates rewards only after a successful locked roll",
+      "passed": true
+    },
+    {
+      "name": "patronage dice are locked before completion, without greatness multiplying chance",
+      "passed": true
+    },
+    {
+      "name": "patronage small creates rewards only after a successful locked roll",
+      "passed": true
+    },
+    {
+      "name": "patronage large creates rewards only after a successful locked roll",
+      "passed": true
+    },
+    {
+      "name": "artists respect native capacity and cultural maintenance",
+      "passed": true
+    },
+    {
+      "name": "all cultural reward types exist in the installed vanilla catalogue",
+      "passed": true
+    },
+    {
+      "name": "cultural receipt snapshots separate artist and artwork gains",
+      "passed": true
+    },
+    {
+      "name": "affairs one circular 64px HUD entry replaces old text button",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD follows native research circle and cultural frame",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD has three independently painted state icons",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD uses muted slate moss and cinnabar state backplates",
+      "passed": true
+    },
+    {
+      "name": "affairs idle HUD transparent 128px art exports exactly",
+      "passed": true
+    },
+    {
+      "name": "affairs local HUD transparent 128px art exports exactly",
+      "passed": true
+    },
+    {
+      "name": "affairs national HUD transparent 128px art exports exactly",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD idle icon also covers cancellation wait",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD local state covers exactly its catalogue projects",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD national state covers exactly its catalogue projects",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD ring uses running progress with transparent remainder",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD wait ring is separate from construction",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD decoration cannot intercept clicks",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD uses native separate hit surface and explicit open action",
+      "passed": true
+    },
+    {
+      "name": "affairs window and close button read same explicit boolean marker",
+      "passed": true
+    },
+    {
+      "name": "affairs HUD tooltip names actual project and ETA",
+      "passed": true
+    },
+    {
+      "name": "no basis gate is satisfied by an operating building in the same block",
+      "passed": true
+    }
+  ]
+}

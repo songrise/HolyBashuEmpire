@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "kind": "run_receipt",
+  "generated": "2026-10-22T21:31:24.815858+00:00",
+  "run": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\v040-observe50-20261023",
+  "version": "0.4.0",
+  "run_state": "stopped_by_user",
+  "analysis_status": "completed",
+  "validation_status": "failed",
+  "observation": {
+    "target_reached": false,
+    "missing_checkpoints": [
+      "1382.4.1",
+      "1387.4.1"
+    ],
+    "checkpoint_coverage_complete": false,
+    "last_date": "1377.4.1",
+    "playthrough_id": "d36ce632-10ed-41fe-8acf-af4d3e014357",
+    "cumulative": {
+      "surviving": 191.0,
+      "extinct_retained": 119.0
+    },
+    "note": "Extinct countries are retained separately. Deleted/recreated records may reduce cumulative counters. One run is not a balance conclusion."
+  },
+  "checkpoint_dates": [
+    "1337.4.2",
+    "1342.4.1",
+    "1347.4.1",
+    "1352.4.1",
+    "1357.4.1",
+    "1362.4.1",
+    "1367.4.1",
+    "1372.4.1",
+    "1377.4.1"
+  ],
+  "engine": {
+    "wrapper_status": "failed",
+    "result_lines": [
+      "[ FAIL ] Error log: 11251 errors"
+    ],
+    "controlled_assertions": {
+      "status": "not_run",
+      "results": [],
+      "source": "frozen scenario",
+      "definitions": []
+    },
+    "static_checks": "not_run",
+    "visual": "not_verified"
+  },
+  "log_counts": {
+    "engine_other": 727,
+    "gui_localization": 10276,
+    "resource": 6,
+    "script": 195,
+    "registration": 210
+  },
+  "hbe_nonregistration_groups": [],
+  "crash_files": [],
+  "analysis_errors": []
+}

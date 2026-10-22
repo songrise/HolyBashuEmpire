@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "checkpoints": 9,
+  "projection_rows": [
+    {
+      "date": "1337.4.2",
+      "cache_hit": false,
+      "elapsed_seconds": 8.5388,
+      "status": "matched"
+    },
+    {
+      "date": "1342.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 13.5545,
+      "status": "matched"
+    },
+    {
+      "date": "1347.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 14.5477,
+      "status": "matched"
+    },
+    {
+      "date": "1352.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 14.2415,
+      "status": "matched"
+    },
+    {
+      "date": "1357.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 15.2883,
+      "status": "matched"
+    },
+    {
+      "date": "1362.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 14.9544,
+      "status": "matched"
+    },
+    {
+      "date": "1367.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 15.9436,
+      "status": "matched"
+    },
+    {
+      "date": "1372.4.1",
+      "cache_hit": false,
+      "elapsed_seconds": 15.8711,
+      "status": "matched"
+    },
+    {
+      "date": "1377.4.1",
+      "cache_hit": true,
+      "elapsed_seconds": 0.0176,
+      "status": "matched"
+    }
+  ],
+  "compared_summary_fields": [
+    "alive",
+    "locations",
+    "gold_median",
+    "gold_total",
+    "population_total",
+    "burden_mean",
+    "burden_max",
+    "completed_all",
+    "completed_live",
+    "active",
+    "paused",
+    "buildings",
+    "building_levels",
+    "operating_buildings",
+    "special_units",
+    "wars",
+    "missing_government_heads"
+  ],
+  "compared_country_fields": true,
+  "compared_hbe_variables": true,
+  "note": "Existing observations are the oracle; the test reads raw saves only through the reusable parser.",
+  "unit_tests": 26,
+  "package_tests": 3,
+  "warm_timeline_seconds": 0.1177,
+  "warm_projects_seconds": 0.0075,
+  "cold_summary_seconds": 14.0219,
+  "cli_commands_verified": [
+    "summary",
+    "country",
+    "check",
+    "projects",
+    "timeline"
+  ],
+  "cache_invalidation_version": 2
+}

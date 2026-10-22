@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "name": "affairs-balance",
+  "mode": "controlled",
+  "months": 2,
+  "checkpoints": [
+    "1337.4.2",
+    "1337.4.20"
+  ],
+  "test_name": "hbe_balance_smoke",
+  "fixtures": [
+    {
+      "source": "tools/fixtures/local_affairs_balance/events.txt",
+      "target": "in_game/events/hbe_dev_fixture.txt"
+    },
+    {
+      "source": "tools/fixtures/local_affairs_balance/on_actions.txt",
+      "target": "in_game/common/on_action/hbe_dev_fixture.txt"
+    },
+    {
+      "source": "tools/fixtures/local_affairs_balance/tests.txt",
+      "target": "in_game/common/tests/hbe_dev_fixture.txt"
+    }
+  ],
+  "assertions": [
+    {
+      "name": "relief_blocked",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_relief_blocked",
+      "equals": true
+    },
+    {
+      "name": "relief_allowed",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_relief_allowed",
+      "equals": true
+    },
+    {
+      "name": "cost",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_cost",
+      "equals": true
+    },
+    {
+      "name": "double_burden",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_double_burden",
+      "equals": true
+    },
+    {
+      "name": "duration",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_duration",
+      "equals": true
+    },
+    {
+      "name": "courtier_miss",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_courtier_miss",
+      "equals": true
+    },
+    {
+      "name": "courtier_success",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_courtier_success",
+      "equals": true
+    },
+    {
+      "name": "no_double_complete",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_no_double_complete",
+      "equals": true
+    },
+    {
+      "name": "art_miss",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_art_miss",
+      "equals": true
+    },
+    {
+      "name": "art_success",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_art_success",
+      "equals": true
+    },
+    {
+      "name": "relief_above_cap",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_relief_above_cap",
+      "equals": true
+    },
+    {
+      "name": "auto_relief_above_cap",
+      "country": "BAB",
+      "variable": "hbe_balance_pass_auto_relief_above_cap",
+      "equals": true
+    },
+    {
+      "name": "no_failure_marker",
+      "country": "BAB",
+      "variable": "hbe_balance_failed",
+      "absent": true
+    }
+  ]
+}

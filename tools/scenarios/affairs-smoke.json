@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "affairs-smoke",
+  "mode": "controlled",
+  "months": 13,
+  "checkpoints": ["1337.4.2", "1338.4.2"],
+  "test_name": "hbe_af_test",
+  "fixtures": [
+    {"source": "tools/fixtures/local_affairs_mvp/events.txt", "target": "in_game/events/hbe_dev_fixture.txt"},
+    {"source": "tools/fixtures/local_affairs_mvp/on_actions.txt", "target": "in_game/common/on_action/hbe_dev_fixture.txt"},
+    {"source": "tools/fixtures/local_affairs_mvp/tests.txt", "target": "in_game/common/tests/hbe_dev_fixture.txt"}
+  ]
+}

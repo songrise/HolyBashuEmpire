@@ -1,0 +1,11 @@
+{
+  "strategy": "complete_inventory_bc3",
+  "payload": "C:\\Users\\songrise\\Documents\\Codex\\2026-10-11\\ni-k\\work\\workshop_payload_v040_compact_20261023",
+  "source": "C:\\github\\holy-bashu-empire\\mod\\holy_bashu_empire",
+  "source_bytes": 419372051,
+  "payload_bytes": 169188245,
+  "file_count": 857,
+  "files_preserved": true,
+  "compressed": 399,
+  "quality_retained": 63
+}

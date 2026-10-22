@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "kind": "run_receipt",
+  "generated": "2026-10-22T21:31:24.376731+00:00",
+  "run": "C:\\github\\holy-bashu-empire\\work\\runs\\devkit-balance-regression",
+  "version": "0.4.0",
+  "run_state": "completed",
+  "analysis_status": "completed",
+  "validation_status": "failed",
+  "observation": {
+    "target_reached": true,
+    "missing_checkpoints": [],
+    "checkpoint_coverage_complete": true,
+    "last_date": "1337.4.20",
+    "playthrough_id": "61c8a30a-9083-47a1-b6a3-933f0eff5739",
+    "cumulative": {
+      "surviving": 1.0,
+      "extinct_retained": 0
+    },
+    "note": "Extinct countries are retained separately. Deleted/recreated records may reduce cumulative counters. One run is not a balance conclusion."
+  },
+  "checkpoint_dates": [
+    "1337.4.2",
+    "1337.4.20"
+  ],
+  "engine": {
+    "wrapper_status": "failed",
+    "result_lines": [
+      "[ FAIL ] Error log: 11309 errors"
+    ],
+    "controlled_assertions": {
+      "status": "passed",
+      "results": [
+        {
+          "name": "relief_blocked",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "relief_allowed",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "cost",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "double_burden",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "duration",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "courtier_miss",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "courtier_success",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "no_double_complete",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "art_miss",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "art_success",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "relief_above_cap",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "auto_relief_above_cap",
+          "passed": true,
+          "country_available": true,
+          "present": true,
+          "actual": true
+        },
+        {
+          "name": "no_failure_marker",
+          "passed": true,
+          "country_available": true,
+          "present": false,
+          "actual": null
+        }
+      ],
+      "source": "tools\\scenarios\\affairs-balance.json",
+      "definitions": [
+        {
+          "name": "relief_blocked",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_relief_blocked",
+          "equals": true
+        },
+        {
+          "name": "relief_allowed",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_relief_allowed",
+          "equals": true
+        },
+        {
+          "name": "cost",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_cost",
+          "equals": true
+        },
+        {
+          "name": "double_burden",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_double_burden",
+          "equals": true
+        },
+        {
+          "name": "duration",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_duration",
+          "equals": true
+        },
+        {
+          "name": "courtier_miss",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_courtier_miss",
+          "equals": true
+        },
+        {
+          "name": "courtier_success",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_courtier_success",
+          "equals": true
+        },
+        {
+          "name": "no_double_complete",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_no_double_complete",
+          "equals": true
+        },
+        {
+          "name": "art_miss",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_art_miss",
+          "equals": true
+        },
+        {
+          "name": "art_success",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_art_success",
+          "equals": true
+        },
+        {
+          "name": "relief_above_cap",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_relief_above_cap",
+          "equals": true
+        },
+        {
+          "name": "auto_relief_above_cap",
+          "country": "BAB",
+          "variable": "hbe_balance_pass_auto_relief_above_cap",
+          "equals": true
+        },
+        {
+          "name": "no_failure_marker",
+          "country": "BAB",
+          "variable": "hbe_balance_failed",
+          "absent": true
+        }
+      ]
+    },
+    "static_checks": "not_run",
+    "visual": "not_verified"
+  },
+  "log_counts": {
+    "engine_other": 564,
+    "gui_localization": 10276,
+    "resource": 6,
+    "script": 195,
+    "registration": 268
+  },
+  "hbe_nonregistration_groups": [],
+  "crash_files": [],
+  "analysis_errors": []
+}
