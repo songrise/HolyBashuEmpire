@@ -30,7 +30,7 @@ def direct_values(text):
     return result
 
 
-def evaluate(text, advances, member=True, pending=False, tag_history=(), origin=None, definitions=None):
+def evaluate(text, advances, member=True, tag_history=(), origin=None, definitions=None):
     """Evaluate the qualification subset without discarding repeated predicates."""
     def terms(source):
         result=[]
@@ -49,7 +49,6 @@ def evaluate(text, advances, member=True, pending=False, tag_history=(), origin=
                 if key=='has_advance':result.append(value in advances)
                 elif key=='has_or_had_tag':result.append(value in tag_history)
                 elif key=='is_member_of_international_organization':result.append(member if value=='international_organization:hbe_empire' else value=='international_organization:hbe_circle_'+str(origin))
-                elif key=='has_variable' and value=='hbe_research_pending':result.append(pending)
                 elif key=='has_variable' and value.startswith('hbe_home_'):result.append(value=='hbe_home_'+str(origin))
                 elif key=='has_variable' and value=='hbe_initialized':result.append(origin is not None)
                 elif definitions and key in definitions:result.append(all(terms(definitions[key])))
@@ -139,9 +138,8 @@ def validate(mod, root, game, manifest, check):
                          'content_priority': '830', 'icon': stem, 'requires': row.get('parent', config['parent']),
                          'pure_tooltip_entry': stem + '_effects', 'unlock_production_method': active})
         allow = next(advances[stem][a:b] for key, _, a, b, _ in blocks(advances[stem], 0) if key == 'allow')
-        check(stem + ' native parent plus industry qualification and HBE research guard',
-              licensed+' = yes' in allow and 'is_member_of_international_organization' in allow and
-              'NOT = { has_variable = hbe_research_pending }' in allow)
+        check(stem + ' native parent plus industry qualification',
+              licensed+' = yes' in allow and 'is_member_of_international_organization' in allow)
         potential=next(advances[stem][a:b] for key,_,a,b,_ in blocks(advances[stem],0) if key=='potential')
         expected_tags={country['tag'] for country in manifest['countries'] if country['region']==row['region']}
         actual_tags=set(re.findall(r'has_or_had_tag\s*=\s*(\w+)',potential))
@@ -164,15 +162,15 @@ def validate(mod, root, game, manifest, check):
             check(label+' industry qualification without transmission cannot operate sidework',not evaluate(expanded_ready,all_licenses,tag_history=history))
             check(label+' transmission without original industry research cannot operate sidework',not evaluate(expanded_ready,{stem},tag_history=history))
             check(label+' even an already held foreign transmission cannot bypass origin',evaluate(expanded_ready,all_licenses|{stem},tag_history=history)==native)
-            check(label+' research gate rejects every non-originating state',evaluate(expanded_allow,all_licenses,tag_history=history)==native)
+            check(label+' advance allow rejects every non-originating state',evaluate(expanded_allow,all_licenses,tag_history=history)==native)
         native_tag=next(iter(expected_tags))
         for bits in itertools.product((False,True),repeat=3):
             keys=[row['building_advance'],'hbe_guest_license_'+row['region'],'hbe_inherited_industry_license_'+row['region']]
             held={key for key,selected in zip(keys,bits) if selected}
             check(stem+' only original industry research qualifies '+str(bits),evaluate(triggers[licensed],held,tag_history={native_tag})==bits[0])
         check(stem+' keeps its originating right after forming a new tag',evaluate(potential,set(),tag_history={native_tag,'HQS'},origin=row['region'],definitions=origin_definitions))
-        for member,pending in itertools.product((False,True),repeat=2):
-            check(stem+f' research guard member={member} pending={pending}',evaluate(expanded_allow,{row['building_advance']},member,pending,{native_tag})==(member and not pending))
+        for member in (False,True):
+            check(stem+f' advance allow requires HBE membership member={member}',evaluate(expanded_allow,{row['building_advance']},member,tag_history={native_tag})==member)
         inputs = {g: float(direct_values(methods[active])[g]) for g in row['inputs']}
         check(active + ' paid recipe matches planned goods inputs and output',
               inputs == row['inputs'] and direct_values(methods[active])['produced'] == row['goods'] and

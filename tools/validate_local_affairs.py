@@ -6,6 +6,30 @@ from pdxscript import blocks
 from build_local_affairs import COUNTERS
 
 
+def implied_basis(scripts, basis):
+    """Return 'file:basis trigger' for every basis gate its own block already satisfies.
+
+    `scripts` is an iterable of (name, text); `basis` maps a basis trigger to the
+    operating-building triggers that make up its OR.
+    """
+    hits = []
+    for name, text in scripts:
+        if 'hbe_af_basis_' not in text:
+            continue
+        spans = sorted(((a, b) for _, _, a, b, _ in blocks(text)), key=lambda s: s[1] - s[0])
+        for m in re.finditer(r'hbe_af_basis_(\w+) = yes', text):
+            gate = 'hbe_af_basis_' + m.group(1)
+            ops = basis.get(gate)
+            if not ops:
+                continue
+            for a, b in spans:
+                if a <= m.start() and m.end() <= b:
+                    if any(op + ' = yes' in text[a:b] for op in ops):
+                        hits.append(f'{name}:{gate}')
+                    break
+    return hits
+
+
 def validate(mod, root, game, manifest, check):
     if 'local_affairs' not in manifest:
         return
@@ -192,3 +216,13 @@ def validate(mod, root, game, manifest, check):
     check('affairs HUD uses native separate hit surface and explicit open action','button_regular = { name = "hbe_af_hud_hitbox"' in entry and entry.count('onclick =')==1 and 'on_action =' not in entry)
     check('affairs window and close button read same explicit boolean marker','has_variable = hbe_af_panel_visible' in sguis and 'remove_variable = hbe_af_panel_visible' in sguis and "GetScriptedGui('hbe_af_ui_panel_visible').IsShown" in gui and "GetScriptedGui('hbe_af_ui_panel_close').Execute" in gui and "GetVariableSystem.Exists('hbe_af_panel_open')" not in gui)
     check('affairs HUD tooltip names actual project and ETA',all(s in loc for s in ('HBE_AF_HUD_TT:',"Player.Custom('hbe_af_active_name')",'$HBE_AF_ETA$','$HBE_AF_PAUSED$')))
+
+    # A retired counter threshold is replaced by hbe_af_basis_<group>, which is
+    # `done OR operating building A OR operating building B`. Where the same block
+    # already requires A or B the replacement can never fail and the gate is gone.
+    basis = {k: set(re.findall(r'hbe_operating_\w+', triggers[a:b]))
+             for k, _, a, b, _ in blocks(triggers) if k.startswith('hbe_af_basis_')}
+    scripts = [(p.name, p.read_text(encoding='utf-8-sig'))
+               for p in sorted((mod/'in_game').rglob('*.txt'))]
+    check('no basis gate is satisfied by an operating building in the same block',
+          not implied_basis(scripts, basis))

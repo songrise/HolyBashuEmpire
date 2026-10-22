@@ -1,4 +1,5 @@
-﻿hbe_advance_gate_hbe_civic_central_hills_1 = { custom_tooltip = { text = hbe_advance_gate_hbe_civic_central_hills_1_tt has_advance = hbe_civic_central_hills_1 } }
+﻿hbe_advance_gate_chancery_records = { custom_tooltip = { text = hbe_advance_gate_chancery_records_tt has_advance = chancery_records } }
+hbe_advance_gate_hbe_civic_central_hills_1 = { custom_tooltip = { text = hbe_advance_gate_hbe_civic_central_hills_1_tt has_advance = hbe_civic_central_hills_1 } }
 hbe_advance_gate_hbe_civic_chengdu_plain_1 = { custom_tooltip = { text = hbe_advance_gate_hbe_civic_chengdu_plain_1_tt has_advance = hbe_civic_chengdu_plain_1 } }
 hbe_advance_gate_hbe_civic_common_2 = { custom_tooltip = { text = hbe_advance_gate_hbe_civic_common_2_tt has_advance = hbe_civic_common_2 } }
 hbe_advance_gate_hbe_civic_eastern_river_1 = { custom_tooltip = { text = hbe_advance_gate_hbe_civic_eastern_river_1_tt has_advance = hbe_civic_eastern_river_1 } }
@@ -59,4 +60,3 @@ hbe_advance_gate_hbe_tech_western_tea_horse_5 = { custom_tooltip = { text = hbe_
 hbe_advance_gate_hbe_tech_western_tea_horse_6 = { custom_tooltip = { text = hbe_advance_gate_hbe_tech_western_tea_horse_6_tt has_advance = hbe_tech_western_tea_horse_6 } }
 hbe_advance_gate_hbe_tech_western_tea_horse_7 = { custom_tooltip = { text = hbe_advance_gate_hbe_tech_western_tea_horse_7_tt has_advance = hbe_tech_western_tea_horse_7 } }
 hbe_advance_gate_hbe_tech_western_tea_horse_8 = { custom_tooltip = { text = hbe_advance_gate_hbe_tech_western_tea_horse_8_tt has_advance = hbe_tech_western_tea_horse_8 } }
-hbe_advance_gate_chancery_records = { custom_tooltip = { text = hbe_advance_gate_chancery_records_tt has_advance = chancery_records } }

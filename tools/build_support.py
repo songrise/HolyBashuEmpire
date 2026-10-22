@@ -50,6 +50,26 @@ def write_preserving_format(path, text):
     path.write_bytes(content)
 
 
+def normalize_text_newlines(out):
+    """Write generated text as LF so a rebuild never inherits the target's history.
+
+    `write_preserving_format` keeps whatever newline the existing file had, so an
+    incremental build produced CRLF while a clean build produced LF. Normalising the
+    whole tree after the last stage makes both paths byte-identical.
+    """
+    out = Path(out)
+    changed = 0
+    for path in out.rglob('*'):
+        if not path.is_file() or path.suffix not in ('.txt', '.yml', '.gui'):
+            continue
+        data = path.read_bytes()
+        if b'\r\n' not in data:
+            continue
+        path.write_bytes(data.replace(b'\r\n', b'\n'))
+        changed += 1
+    return changed
+
+
 def save_png(path, image):
     """Keep Pillow's PNG bytes, skip equal content, replace through a closed temporary file.
 

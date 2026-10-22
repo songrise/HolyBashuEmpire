@@ -84,9 +84,13 @@ def validate(mod, root, game, manifest, check):
         check(first+' preferred successor is correct', dict((k, v) for k, v, _, _ in scalars(units[first])).get('upgrades_to') == key)
         check(first+' upgrade preserves unit category and strength', values['category'] == resolve(first)['category'] and values['max_strength'] == resolve(first)['max_strength'])
         check(key+' shares the original family cap', values['family'] == config['unit_family'] and 'limit =' not in units[key])
-        origin = child(units[key], 'country_potential')
+        origin = child(units[key], 'country_potential').strip()
         expected = {c['tag'] for c in manifest['countries'] if c['region'] == region}
-        check(key+' elite visibility is home-circle only', set(re.findall(r'has_or_had_tag\s*=\s*(\w+)', origin)) == expected and 'has_variable' not in origin)
+        if 'presentation_v040' in manifest:
+            # 0.4.0 replaced the tag list with the shared origin trigger.
+            check(key+' elite visibility is home-circle only', origin == 'hbe_research_origin_'+region+' = yes')
+        else:
+            check(key+' elite visibility is home-circle only', set(re.findall(r'has_or_had_tag\s*=\s*(\w+)', origin)) == expected and 'has_variable' not in origin)
         gate = triggers[ready_key(row)]
         check(key+' requires both native and studied home military', 'has_advance = '+row['native_advance'] in gate and 'has_advance = hbe_military_'+region in gate and 'has_variable' not in gate)
         check(key+' has no calendar or final-story requirement', not any(term in units[key]+gate for term in ('current_year', 'current_date', 'hbe_mission_', 'hbe_civic_'+region+'_2')))

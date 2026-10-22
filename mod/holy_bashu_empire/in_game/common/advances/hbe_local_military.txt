@@ -2,7 +2,7 @@
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_chengdu_plain content_priority = 875
  potential = { hbe_research_origin_chengdu_plain = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_chengdu_plain_1
  unlock_unit = hbe_canal_crossbow
  
@@ -13,7 +13,7 @@ hbe_military_southern_salt_wine = {
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_southern_salt_wine content_priority = 875
  potential = { hbe_research_origin_southern_salt_wine = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_southern_salt_wine_1
  unlock_unit = hbe_salt_guard
  
@@ -24,7 +24,7 @@ hbe_military_eastern_river = {
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_eastern_river content_priority = 875
  potential = { hbe_research_origin_eastern_river = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_eastern_river_1
  unlock_unit = hbe_river_garrison
  
@@ -35,7 +35,7 @@ hbe_military_northern_shudao = {
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_northern_shudao content_priority = 875
  potential = { hbe_research_origin_northern_shudao = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_northern_shudao_1
  unlock_unit = hbe_pass_rotation
  unlock_building = hbe_plank_fort
@@ -46,7 +46,7 @@ hbe_military_central_hills = {
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_central_hills content_priority = 875
  potential = { hbe_research_origin_central_hills = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_central_hills_1
  unlock_unit = hbe_granary_militia
  
@@ -57,7 +57,7 @@ hbe_military_western_tea_horse = {
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_western_tea_horse content_priority = 875
  potential = { hbe_research_origin_western_tea_horse = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_western_tea_horse_1
  unlock_unit = hbe_tea_riders
  unlock_building = hbe_guide_station
@@ -68,7 +68,7 @@ hbe_military_southwestern_valleys = {
  age = age_1_traditions starting_technology_level = 99 research_cost = 1.5
  icon = hbe_military_southwestern_valleys content_priority = 875
  potential = { hbe_research_origin_southwestern_valleys = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_tech_southwestern_valleys_1
  unlock_unit = hbe_valley_soldiers
  unlock_building = hbe_covenant_stockade

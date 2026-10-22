@@ -177,7 +177,7 @@ hbe_civic_special_limit = {{
             advances.append(f'''{k} = {{ age = {'age_1_traditions' if year<1437 else 'age_2_renaissance'} starting_technology_level = 99
  icon = {k} content_priority = 880 research_cost = {3 if i==1 else 4}
  potential = {{ hbe_research_origin_{g} = yes }}
- allow = {{ {MEMBER} current_year >= {year} {gate} NOT = {{ has_variable = hbe_research_pending }} }}
+ allow = {{ {MEMBER} current_year >= {year} {gate} }}
  requires = {parent} pure_tooltip_entry = {k}_effects {' '.join(unlocks[k])} }}''')
             advancedata.append(dict(key=k,name=name,group=g,year=year,parent=parent,logical_parent=logical_parent,allow=gate,unlocks=unlocks[k]))
     put('in_game/common/advances/hbe_civic_advances.txt','\n'.join(advances))
@@ -367,6 +367,10 @@ def export_art(out,root,catalogue,put):
                 from PIL import ImageOps
                 from apply_local_ui_patch import framed_portrait, source_cell
                 sprite=framed_portrait(source_cell(atlas,i))
+                # Unit icons keep the whole authored cell: the framed banner crop is
+                # zoomed for 1080x440 and loses the surrounding camp at 128 px.
+                cell=atlas.crop(box);bounds=cell.getchannel('A').point(lambda x:255 if x>16 else 0).getbbox()
+                icon_sprite=ImageOps.fit(cell.crop(bounds),(1080,440),Image.Resampling.LANCZOS)
             png=root/'assets/civic_icons'/f'{k}.png';png.parent.mkdir(parents=True,exist_ok=True);sprite.save(png)
             p=out/target/f'{k}.dds';save_dds(p,sprite);exports.append(dict(key=k,kind=kind,path=p.relative_to(out).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),source=registry[kind]['source'],cell=i,dimensions=list(sprite.size)))
             if kind=='buildings':
@@ -387,7 +391,7 @@ def export_art(out,root,catalogue,put):
                 # Unit selection is explicit, not guessed from the illustration filename.
                 illustration.append(f'{k}_illustration = {{ texture = "gfx/interface/illustrations/units/{k}.dds" priority = 950000 trigger = {{ is_unit_type = {k} }} }}')
                 save_dds(out/'main_menu/gfx/interface/illustrations/units/masks'/f'{k}.dds',Image.new('RGBA',(1080,440),(0,0,0,255)))
-                save_dds(out/'main_menu/gfx/interface/icons/unit_types'/f'{k}.dds',fit(sprite,128))
+                save_dds(out/'main_menu/gfx/interface/icons/unit_types'/f'{k}.dds',fit(icon_sprite,128))
     put('in_game/gfx/unit_illustrations/hbe_civic_illustrations.txt','\n'.join(illustration))
     proof.save(root/'assets/civic_buildings_tech_preview.png')
     # Three new scene backgrounds reuse the original portrait, lighting and scene shell.

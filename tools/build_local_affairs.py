@@ -18,10 +18,36 @@ def burden(n):
     return f'change_variable = {{ name = hbe_burden add = {n} }} hbe_clamp_burden = yes'
 
 
+def unvacuum(text, operating_for):
+    """Require the completed project where a basis gate would be implied anyway.
+
+    `hbe_af_basis_<group>` is `OR = { done_<group>  operating buildings }`. When the
+    same block already requires one of those operating buildings the OR can never
+    fail, so the counter threshold it replaced disappears. Ask for the project that
+    was actually completed in the circle instead.
+    """
+    spans = sorted(((a, b) for _, _, a, b, _ in blocks(text)), key=lambda s: s[1] - s[0])
+    edits = []
+    for m in re.finditer(r'hbe_af_basis_(\w+) = yes', text):
+        group = m.group(1)
+        wanted = operating_for.get(group)
+        if not wanted:
+            continue
+        for a, b in spans:
+            if a <= m.start() and m.end() <= b:
+                if any(op in text[a:b] for op in wanted):
+                    edits.append((m.start(), m.end(), f'has_variable = hbe_af_done_{group}'))
+                break
+    return apply_edits(text, edits) if edits else text
+
+
 def migrate(out, regions):
     """Retire old balances without leaving financial or progression dead ends."""
     changed = []
     group_for = {r[4]: r[0] for r in regions}
+    from expansion_catalogue import BUILDINGS
+    operating_for = {r[0]: ['hbe_operating_' + b[0].removeprefix('hbe_') + ' = yes'
+                            for b in BUILDINGS if b[2] == r[0]] for r in regions}
     for path in (out / 'in_game').rglob('*.txt'):
         if path.name.startswith('hbe_af_'):
             continue
@@ -68,6 +94,8 @@ def migrate(out, regions):
                     body = body[:pot[2]] + ' always = no ' + body[pot[3]:]
                     edits.append((a, b, body))
             text = apply_edits(text, edits)
+        # The retired counters gated real work; do not let the replacement collapse.
+        text = unvacuum(text, operating_for)
         write_preserving_format(path, text)
         changed.append(path.relative_to(out).as_posix())
     return changed

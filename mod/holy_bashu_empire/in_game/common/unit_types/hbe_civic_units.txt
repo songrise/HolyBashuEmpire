@@ -133,7 +133,7 @@ hbe_trained_river = {
  combat = { river = 0.18 }
  construction_demand = early_heavy_infantry_construction
  maintenance_demand = hbe_age2_heavy_maintenance
- country_potential = { OR = { has_or_had_tag = BAX has_or_had_tag = BAZ has_or_had_tag = BBB has_or_had_tag = BBC has_or_had_tag = BBE has_or_had_tag = BBF has_or_had_tag = BBH } }
+ country_potential = { hbe_research_origin_eastern_river = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_river_warehouse has_building_with_at_least_one_level = hbe_cliff_stockade } any_buildings_in_location = { OR = { building_type = building_type:hbe_river_warehouse building_type = building_type:hbe_cliff_stockade } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } var:hbe_burden < 70
@@ -154,7 +154,7 @@ hbe_permanent_pass = {
  combat = { mountains = 0.18 }
  construction_demand = early_heavy_infantry_construction
  maintenance_demand = hbe_age2_heavy_maintenance
- country_potential = { OR = { has_or_had_tag = BBI has_or_had_tag = BBJ has_or_had_tag = BBL has_or_had_tag = BBM has_or_had_tag = BBN has_or_had_tag = BBO has_or_had_tag = BBP } }
+ country_potential = { hbe_research_origin_northern_shudao = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_plank_fort } any_buildings_in_location = { OR = { building_type = building_type:hbe_plank_fort } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } var:hbe_burden < 70
@@ -173,7 +173,7 @@ hbe_canal_crossbow_renaissance = {
  morale_damage_taken = -0.05
  construction_demand = hbe_age2_crossbow_construction
  maintenance_demand = hbe_age2_infantry_maintenance
- country_potential = { OR = { has_or_had_tag = BAB has_or_had_tag = BAE has_or_had_tag = BAF has_or_had_tag = BAJ has_or_had_tag = BAL } }
+ country_potential = { hbe_research_origin_chengdu_plain = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_canal_office } any_buildings_in_location = { OR = { building_type = building_type:hbe_canal_office } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } var:hbe_burden < 70
@@ -194,7 +194,7 @@ hbe_salt_guard_renaissance = {
  flanking_ability = 0.4
  construction_demand = early_infantry_construction
  maintenance_demand = hbe_age2_infantry_maintenance
- country_potential = { OR = { has_or_had_tag = BAO has_or_had_tag = BAP has_or_had_tag = BAQ has_or_had_tag = BAW } }
+ country_potential = { hbe_research_origin_southern_salt_wine = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_salt_office has_building_with_at_least_one_level = hbe_salt_contract_house } any_buildings_in_location = { OR = { building_type = building_type:hbe_salt_office building_type = building_type:hbe_salt_contract_house } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } var:hbe_burden < 70 var:hbe_yiqi >= 20
@@ -214,7 +214,7 @@ hbe_granary_militia_renaissance = {
  food_consumption_per_strength = -0.05
  construction_demand = early_infantry_construction
  maintenance_demand = hbe_age2_militia_maintenance
- country_potential = { OR = { has_or_had_tag = BBQ has_or_had_tag = BBR has_or_had_tag = BBS has_or_had_tag = BBT } }
+ country_potential = { hbe_research_origin_central_hills = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_community_granary has_building_with_at_least_one_level = hbe_witness_house } any_buildings_in_location = { OR = { building_type = building_type:hbe_community_granary building_type = building_type:hbe_witness_house } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } var:hbe_burden < 70 has_variable = hbe_garrison_compact
@@ -238,7 +238,7 @@ hbe_tea_riders_renaissance = {
  combat = { mountains = 0.05 }
  construction_demand = cavalry_construction
  maintenance_demand = hbe_age2_cavalry_maintenance
- country_potential = { OR = { has_or_had_tag = BBU has_or_had_tag = BBV has_or_had_tag = BBW } }
+ country_potential = { hbe_research_origin_western_tea_horse = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_guide_station } any_buildings_in_location = { OR = { building_type = building_type:hbe_guide_station } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } var:hbe_burden < 70
@@ -261,7 +261,7 @@ hbe_valley_soldiers_renaissance = {
  combat = { hills = 0.15 mountains = 0.2 }
  construction_demand = early_infantry_construction
  maintenance_demand = hbe_age2_infantry_maintenance
- country_potential = { OR = { has_or_had_tag = BBX has_or_had_tag = BBY has_or_had_tag = BBZ has_or_had_tag = BCA has_or_had_tag = BCB has_or_had_tag = BCC } }
+ country_potential = { hbe_research_origin_southwestern_valleys = yes }
  location_potential = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys }
  location_trigger = { OR = { has_building_with_at_least_one_level = hbe_covenant_stockade } any_buildings_in_location = { OR = { building_type = building_type:hbe_covenant_stockade } building_employed_amount >= 0.05 }
  owner = { is_member_of_international_organization = international_organization:hbe_empire OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } var:hbe_burden < 70 has_variable = hbe_garrison_compact

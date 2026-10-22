@@ -124,6 +124,46 @@ def apply(out, put, regions):
             lines.append(line)
         write_preserving_format(path,'\n'.join(lines)+'\n')
     clean_descriptions(out)
+    strip_orphan_writes(out)
+
+
+ORPHAN_VARIABLES = (
+    'hbe_ballot_month', 'hbe_delivery_circle', 'hbe_delivery_kind', 'hbe_delivery_role',
+    'hbe_pot_display', 'hbe_common_defense_notice_acknowledged',
+    'hbe_formed_chongqing', 'hbe_formed_sichuan',
+    'hbe_opening_children', 'hbe_opening_expiry_completed',
+    'hbe_af_last_project', 'hbe_af_round_completions', 'hbe_civic_council_done',
+)
+
+
+def strip_orphan_writes(out):
+    """Drop writes to variables nothing reads any more (kept for old saves)."""
+    names = set(ORPHAN_VARIABLES)
+    touched = 0
+    for path in (out / 'in_game').rglob('*.txt'):
+        text = path.read_text(encoding='utf-8-sig')
+        if not any(n in text for n in names):
+            continue
+        edits = []
+        for key, start, a, b, end in blocks(text):
+            if key not in ('set_variable', 'change_variable'):
+                continue
+            name = re.search(r'\bname\s*=\s*(\w+)', text[a:b])
+            short = re.fullmatch(r'\s*(hbe_\w+)\s*', text[a:b])
+            target = name[1] if name else (short[1] if short else None)
+            if target in names:
+                edits.append((start, end, ''))
+        if edits:
+            write_preserving_format(path, apply_edits(text, edits))
+            touched += len(edits)
+        text = path.read_text(encoding='utf-8-sig')
+        cleaned = text
+        for name in names:
+            cleaned = re.sub(r'\b(?:set|change)_variable\s*=\s*' + name + r'\b', '', cleaned)
+        if cleaned != text:
+            write_preserving_format(path, cleaned)
+            touched += 1
+    return touched
 
 
 def clean_descriptions(out):
@@ -146,6 +186,12 @@ def clean_descriptions(out):
         'hbe_civic_audit.desc': '役负与工法整理可通过地方事业项目办理。',
         'hbe_civic_revision.desc': '地方项目统一在地方事业面板筹办。',
     }
+    replacements.update({
+        'hbe.3.desc': '三年工期已满，掌事者带着领料簿、交接凭据与乡里签押来到府衙。曾经在图上细如一线的渠道和道路，如今已有百姓沿它往来；曾经空着的仓位，也终于能够按册交割。\n\n验收官确认本府完成了所承[Concept(\'hbe_term_service\', \'地方项目\')|e]，交付因此有了新的凭据。各家自然都愿将功劳写得长些，然而明年的维护与下一次续办，才会决定这番投入能留下多久。',
+        'hbe_banquet.34.desc': '新修的圈际图册已经送来，谷中代表却指出，一条常用的山路在图上被缩成了不起眼的支线。沿途需修的桥栈与安置的转运人手，因此未列入共同费用。\n\n纸上的远近与行旅实际所费并不总是相同。若愿重勘道路，[Concept(\'hbe_term_service\', \'地方项目\')|e]与驿路的经验便能成为依据；若只据现有图册拨款，被漏下的地方将不得不自行补足缺口。',
+        'hbe_civic.5.desc': '征调的文书接连到来，乡里已经很难在田亩、修路与驻守之间安排人手。府臣仍能列出每道命令的理由，却无法解释为何它们合在一起，就应由同一批人无休止地承担。\n\n见证者请求重新议定期限。我们可以用现钱替代部分劳役，也可以暂缓急办；若继续维持旧额，本府的[Concept(\'hbe_term_yiqi\', \'信用\')|e]和阶层支持将一并受损。',
+        'hbe_civic.6.desc': '案房把近年的付费、雇价与轮役分别抄列。旧簿中的总数尚能相合，却有一些支出只记承办人，有些征调只记乡名，继任者难以查明同一份责任是否被记了两次。\n\n复核将花费府库和书记的人手，能使未清的分摊得到处理，也为1457年之后的[Concept(\'hbe_term_charter\', \'续约\')|e]留下可循的凭据。',
+    })
     for group,index,building,title,_,requirement,trigger in NETWORKS:
         if re.search(r'var:hbe_(?:water|salt|river|roads|grain|tea|valleys)\b',trigger):
             requirement='拥有运转中的本圈机构，或已完成本圈地方项目'
@@ -165,6 +211,9 @@ def clean_descriptions(out):
             try:value=json.loads(m[2])
             except ValueError:lines.append(line);continue
             before=value
+            for term,label in legacy_terms.items():
+                value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]","[Concept('hbe_term_service', '地方项目')|e]",value)
+                value=re.sub(r'@hbe_'+term+r'!','',value)
             base=key.removesuffix('.entry')
             if base in replacements:value=replacements[base]
             if key.startswith('hbe_tech_') and key.endswith('_effects'):
@@ -175,10 +224,12 @@ def clean_descriptions(out):
                     if sentence:value=re.sub(r'解锁“[^”]+”：[^\n]+',lambda _:sentence,value)
             if re.fullmatch(r'hbe_tech_\w+(?:_desc|\.desc)(?:\.entry)?',key):
                 value=re.sub(r'\n费用[^\n]+研究[^\n]+年[^\n]*','',value)
-            if key.startswith(('country_history_','country_description_category_desc_')):
+            if key.endswith('_scenario_desc') or key.startswith(('country_history_','country_description_category_desc_')):
                 value=re.sub(r'@hbe_(?:water|salt|river|roads|grain|tea|valleys)!','',value)
                 for term,label in legacy_terms.items():
-                    value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]",label,value)
+                    value=re.sub(r"\[Concept\('hbe_term_"+term+r"',\s*'[^']+'\)\|e\]","[Concept('hbe_term_service', '地方项目')|e]",value)
+                    for old_name,label2 in (('水权储备',label),('盐引信用',label),('江运互保',label),('轮戍履约',label),('义仓储备',label),('商队互保',label),('地方共治',label)):
+                        value=value.replace(old_name,label2)
             if key in ('hbe_term_'+t for t in legacy_terms) or key in ('game_concept_hbe_term_'+t for t in legacy_terms):
                 term=key.rsplit('_',1)[1];value=legacy_terms[term]
             value=value.replace('近五年完成本圈事业、','').replace('三年分账循环','两年会盟结算')
@@ -220,6 +271,7 @@ def clarify_booleans(out):
             text=path.read_text(encoding='utf-8-sig')
             text=re.sub(r'(?m)^ (?:'+'|'.join(re.escape('MODIFIER_TYPE_DESC_'+key) for key in keys)+r'):.*\n?', '',text)
             write_preserving_format(path,text)
+        directory.mkdir(parents=True, exist_ok=True)
         path=directory/f'hbe_permission_descriptions_l_{lang}.yml'
         text='l_'+lang+':\n'+'\n'.join(' MODIFIER_TYPE_DESC_'+key+': '+json.dumps(fixed[key][lang=='english'],ensure_ascii=False) for key in sorted(keys))+'\n'
         if path.exists():write_preserving_format(path,text)

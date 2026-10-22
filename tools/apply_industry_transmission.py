@@ -219,7 +219,6 @@ def apply(out, root, game):
     allow = {{
         is_member_of_international_organization = international_organization:hbe_empire
         {license_trigger} = yes
-        NOT = {{ has_variable = hbe_research_pending }}
     }}
     pure_tooltip_entry = {stem}_effects
     unlock_production_method = {active}

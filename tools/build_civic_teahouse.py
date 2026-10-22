@@ -15,7 +15,7 @@ def build(out, root, put, loc, manifest):
  age = {cfg['age']} starting_technology_level = 99
  icon = {advance} content_priority = 845 research_cost = {cfg['research_cost']:g}
  potential = {{ hbe_research_origin_common = yes }}
- allow = {{ is_member_of_international_organization = international_organization:hbe_empire NOT = {{ has_variable = hbe_research_pending }} }}
+ allow = {{ is_member_of_international_organization = international_organization:hbe_empire }}
  requires = {cfg['parent']}
  unlock_building = {building}
  ai_weight = {{ add = 15 }}

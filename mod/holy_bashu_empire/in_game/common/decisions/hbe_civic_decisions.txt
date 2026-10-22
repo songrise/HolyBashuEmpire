@@ -37,7 +37,7 @@ hbe_coordinate_chengdu_plain = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_0.dds"
  potential = { always = no }
- allow = { var:hbe_office_chengdu_plain = 1 OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } NOT = { has_variable = hbe_office_chengdu_plain_action_cooldown } gold >= hbe_public_bill hbe_af_basis_chengdu_plain = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_chengdu_plain = 1 OR = { hbe_operating_canal_office = yes hbe_operating_brocade_school = yes } NOT = { has_variable = hbe_office_chengdu_plain_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_chengdu_plain } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_chengdu_plain.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_chengdu_plain_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_chengdu_plain_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_chengdu_plain = {
@@ -58,7 +58,7 @@ hbe_coordinate_southern_salt_wine = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_1.dds"
  potential = { always = no }
- allow = { var:hbe_office_southern_salt_wine = 1 OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } NOT = { has_variable = hbe_office_southern_salt_wine_action_cooldown } gold >= hbe_public_bill hbe_af_basis_southern_salt_wine = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_southern_salt_wine = 1 OR = { hbe_operating_salt_office = yes hbe_operating_salt_contract_house = yes } NOT = { has_variable = hbe_office_southern_salt_wine_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_southern_salt_wine } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_southern_salt_wine.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_southern_salt_wine_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_southern_salt_wine_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_southern_salt_wine = {
@@ -79,7 +79,7 @@ hbe_coordinate_eastern_river = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_2.dds"
  potential = { always = no }
- allow = { var:hbe_office_eastern_river = 1 OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } NOT = { has_variable = hbe_office_eastern_river_action_cooldown } gold >= hbe_public_bill hbe_af_basis_eastern_river = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_eastern_river = 1 OR = { hbe_operating_river_warehouse = yes hbe_operating_cliff_stockade = yes } NOT = { has_variable = hbe_office_eastern_river_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_eastern_river } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_eastern_river.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_eastern_river_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_eastern_river_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_eastern_river = {
@@ -100,7 +100,7 @@ hbe_coordinate_northern_shudao = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_3.dds"
  potential = { always = no }
- allow = { var:hbe_office_northern_shudao = 1 OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } NOT = { has_variable = hbe_office_northern_shudao_action_cooldown } gold >= hbe_public_bill hbe_af_basis_northern_shudao = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_northern_shudao = 1 OR = { hbe_operating_plank_fort = yes hbe_operating_gate_registry = yes } NOT = { has_variable = hbe_office_northern_shudao_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_northern_shudao } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_northern_shudao.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_northern_shudao_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_northern_shudao_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_northern_shudao = {
@@ -121,7 +121,7 @@ hbe_coordinate_central_hills = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_4.dds"
  potential = { always = no }
- allow = { var:hbe_office_central_hills = 1 OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } NOT = { has_variable = hbe_office_central_hills_action_cooldown } gold >= hbe_public_bill hbe_af_basis_central_hills = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_central_hills = 1 OR = { hbe_operating_community_granary = yes hbe_operating_witness_house = yes } NOT = { has_variable = hbe_office_central_hills_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_central_hills } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_central_hills.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_central_hills_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_central_hills_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_central_hills = {
@@ -142,7 +142,7 @@ hbe_coordinate_western_tea_horse = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_5.dds"
  potential = { always = no }
- allow = { var:hbe_office_western_tea_horse = 1 OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } NOT = { has_variable = hbe_office_western_tea_horse_action_cooldown } gold >= hbe_public_bill hbe_af_basis_western_tea_horse = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_western_tea_horse = 1 OR = { hbe_operating_tea_exchange = yes hbe_operating_guide_station = yes } NOT = { has_variable = hbe_office_western_tea_horse_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_western_tea_horse } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_western_tea_horse.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_western_tea_horse_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_western_tea_horse_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_western_tea_horse = {
@@ -163,7 +163,7 @@ hbe_coordinate_southwestern_valleys = {
  tags = { BAB BAE BAF BAJ BAL BAO BAP BAQ BAW BAX BAZ BBB BBC BBE BBF BBH BBI BBJ BBL BBM BBN BBO BBP BBQ BBR BBS BBT BBU BBV BBW BBX BBY BBZ BCA BCB BCC HQS HQC HQB } decision_category = country_specific_decisions
  image = "gfx/interface/hbe/civic/decisions/hbe_office_6.dds"
  potential = { always = no }
- allow = { var:hbe_office_southwestern_valleys = 1 OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } NOT = { has_variable = hbe_office_southwestern_valleys_action_cooldown } gold >= hbe_public_bill hbe_af_basis_southwestern_valleys = yes } ai_will_do = { value = 15 }
+ allow = { var:hbe_office_southwestern_valleys = 1 OR = { hbe_operating_valley_inn = yes hbe_operating_covenant_stockade = yes } NOT = { has_variable = hbe_office_southwestern_valleys_action_cooldown } gold >= hbe_public_bill has_variable = hbe_af_done_southwestern_valleys } ai_will_do = { value = 15 }
  option = { name = hbe_coordinate_southwestern_valleys.a ai_chance = { value = 100 } effect = { add_gold = { value = hbe_public_bill multiply = -1 } change_variable = { name = hbe_burden add = 2 } hbe_clamp_burden = yes change_variable = { name = hbe_burden add = -6 } hbe_clamp_burden = yes change_variable = { name = hbe_yiqi add = 2 } hbe_clamp_yiqi = yes change_variable = { name = hbe_contribution add = 1 } set_variable = { name = hbe_office_southwestern_valleys_action_cooldown value = yes years = 3 } if = { limit = { has_advance = hbe_civic_southwestern_valleys_2 } change_variable = { name = hbe_burden add = -3 } hbe_clamp_burden = yes } } }
 }
 hbe_guest_southwestern_valleys = {

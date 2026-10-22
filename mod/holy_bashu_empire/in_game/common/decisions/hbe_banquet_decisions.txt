@@ -68,10 +68,10 @@ hbe_role_chengdu_plain = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_chengdu_plain_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_chengdu_plain } } } var:hbe_burden <= 64  gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_chengdu_plain.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 1 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_chengdu_plain.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 0 }
-            set_variable = { name = hbe_delivery_kind value = 0 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_role_southern_salt_wine = {
@@ -80,10 +80,10 @@ hbe_role_southern_salt_wine = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_southern_salt_wine_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_southern_salt_wine } } } var:hbe_burden <= 64 situation:hbe_banquet = { var:hbe_project_kind = 1 } gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_southern_salt_wine.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 2 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_southern_salt_wine.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 1 }
-            set_variable = { name = hbe_delivery_kind value = 1 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_role_eastern_river = {
@@ -92,10 +92,10 @@ hbe_role_eastern_river = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_eastern_river_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_eastern_river } } } var:hbe_burden <= 64 situation:hbe_banquet = { var:hbe_project_kind = 1 } gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_eastern_river.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 3 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_eastern_river.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 2 }
-            set_variable = { name = hbe_delivery_kind value = 1 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_role_northern_shudao = {
@@ -104,10 +104,10 @@ hbe_role_northern_shudao = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_northern_shudao_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_northern_shudao } } } var:hbe_burden <= 64 situation:hbe_banquet = { var:hbe_project_kind = 2 } gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_northern_shudao.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 4 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_northern_shudao.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 2 }
-            set_variable = { name = hbe_delivery_kind value = 2 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_role_central_hills = {
@@ -116,10 +116,10 @@ hbe_role_central_hills = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_central_hills_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_central_hills } } } var:hbe_burden <= 64 situation:hbe_banquet = { var:hbe_project_kind = 1 } gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_central_hills.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 5 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_central_hills.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 3 }
-            set_variable = { name = hbe_delivery_kind value = 1 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_role_western_tea_horse = {
@@ -128,10 +128,10 @@ hbe_role_western_tea_horse = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_western_tea_horse_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_western_tea_horse } } } var:hbe_burden <= 64 situation:hbe_banquet = { var:hbe_project_kind = 2 } gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_western_tea_horse.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 6 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_western_tea_horse.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 1 }
-            set_variable = { name = hbe_delivery_kind value = 2 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_role_southwestern_valleys = {
@@ -140,10 +140,10 @@ hbe_role_southwestern_valleys = {
     potential = { always = no }
     allow = { situation:hbe_banquet = { var:hbe_round_month < 6 } NOT = { has_variable = hbe_round_contributed } NOT = { has_variable = hbe_round_pledged } NOT = { has_variable = hbe_declined_project } OR = { has_variable = hbe_tech_southwestern_valleys_1 AND = { has_variable = hbe_tech_common_2 any_owned_location = { is_in_scripted_geography = scripted_geography:hbe_geo_southwestern_valleys } } } var:hbe_burden <= 64 situation:hbe_banquet = { var:hbe_project_kind = 2 } gold >= 2 }
     ai_will_do = { value = 40 }
-    option = { name = hbe_role_southwestern_valleys.a ai_chance = { value = 100 } effect = { set_variable = { name = hbe_delivery_circle value = 7 }  add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
+    option = { name = hbe_role_southwestern_valleys.a ai_chance = { value = 100 } effect = {   add_gold = -2 set_variable = hbe_round_contributed set_variable = hbe_project_pending
             
-            set_variable = { name = hbe_delivery_role value = 3 }
-            set_variable = { name = hbe_delivery_kind value = 2 }
+            
+            
             change_variable = { name = hbe_burden add = 6 } hbe_clamp_burden = yes } }
 }
 hbe_project_subsidize = {
@@ -181,7 +181,7 @@ hbe_propose_charter_1 = {
     potential = { always = no }
     allow = { current_year >= 1437 situation:hbe_banquet = { var:hbe_chapter = 5 var:hbe_completed_projects >= 30 var:hbe_charter = 0 NOT = { has_variable = hbe_ballot_active } NOT = { has_variable = hbe_ballot_cooldown } } international_organization:hbe_empire = { var:hbe_guoqi >= 20 } var:hbe_stance = 1 gold >= 5 }
     ai_will_do = { value = 3 }
-    option = { name = hbe_propose_charter_1.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 1 } } situation:hbe_banquet = { set_variable = { name = hbe_ballot_month value = 0 } set_variable = hbe_ballot_active }
+    option = { name = hbe_propose_charter_1.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 1 } } situation:hbe_banquet = {  set_variable = hbe_ballot_active }
         international_organization:hbe_empire = { every_international_organization_member = {
             set_variable = { name = hbe_ballot_vote value = 0 } trigger_event_non_silently = { id = hbe_banquet.20 days = 1 }
         } } } }
@@ -200,7 +200,7 @@ hbe_propose_charter_2 = {
     potential = { always = no }
     allow = { current_year >= 1437 situation:hbe_banquet = { var:hbe_chapter = 5 var:hbe_completed_projects >= 30 var:hbe_charter = 0 NOT = { has_variable = hbe_ballot_active } NOT = { has_variable = hbe_ballot_cooldown } } international_organization:hbe_empire = { var:hbe_guoqi >= 20 } var:hbe_stance = 2 gold >= 5 }
     ai_will_do = { value = 3 }
-    option = { name = hbe_propose_charter_2.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 2 } } situation:hbe_banquet = { set_variable = { name = hbe_ballot_month value = 0 } set_variable = hbe_ballot_active }
+    option = { name = hbe_propose_charter_2.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 2 } } situation:hbe_banquet = {  set_variable = hbe_ballot_active }
         international_organization:hbe_empire = { every_international_organization_member = {
             set_variable = { name = hbe_ballot_vote value = 0 } trigger_event_non_silently = { id = hbe_banquet.20 days = 1 }
         } } } }
@@ -219,7 +219,7 @@ hbe_propose_charter_3 = {
     potential = { always = no }
     allow = { current_year >= 1437 situation:hbe_banquet = { var:hbe_chapter = 5 var:hbe_completed_projects >= 30 var:hbe_charter = 0 NOT = { has_variable = hbe_ballot_active } NOT = { has_variable = hbe_ballot_cooldown } } international_organization:hbe_empire = { var:hbe_guoqi >= 20 } var:hbe_stance = 3 gold >= 5 }
     ai_will_do = { value = 3 }
-    option = { name = hbe_propose_charter_3.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 3 } } situation:hbe_banquet = { set_variable = { name = hbe_ballot_month value = 0 } set_variable = hbe_ballot_active }
+    option = { name = hbe_propose_charter_3.a ai_chance = { value = 100 } effect = { add_gold = -5 international_organization:hbe_empire ?= { change_variable = { name = hbe_guoqi subtract = 20 } hbe_clamp_guoqi = yes } situation:hbe_banquet = { set_variable = { name = hbe_proposal value = 3 } } situation:hbe_banquet = {  set_variable = hbe_ballot_active }
         international_organization:hbe_empire = { every_international_organization_member = {
             set_variable = { name = hbe_ballot_vote value = 0 } trigger_event_non_silently = { id = hbe_banquet.20 days = 1 }
         } } } }

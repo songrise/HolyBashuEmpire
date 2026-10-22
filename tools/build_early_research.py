@@ -104,7 +104,7 @@ def apply(out,root,game):
  age = age_1_traditions starting_technology_level = 99 research_cost = {config['military_cost']:g}
  icon = {key} content_priority = 875
  potential = {{ {identity} }}
- allow = {{ is_member_of_international_organization = international_organization:hbe_empire NOT = {{ has_variable = hbe_research_pending }} }}
+ allow = {{ is_member_of_international_organization = international_organization:hbe_empire }}
  requires = hbe_tech_{region}_1
  unlock_unit = {row['unit']}
  {' '.join('unlock_building = '+b for b in row['buildings'])}

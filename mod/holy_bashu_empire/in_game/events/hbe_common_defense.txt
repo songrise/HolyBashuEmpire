@@ -41,6 +41,6 @@ hbe_common_defense.2 = {
  option = {
   name = hbe_common_defense.2.a
   ai_chance = { base = 100 }
-  hidden_effect = { set_variable = hbe_common_defense_notice_acknowledged }
+  hidden_effect = {  }
  }
 }

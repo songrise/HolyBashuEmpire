@@ -23,10 +23,10 @@ hbe_generate_opening_family = {
   ruler = { marry_character_ignore_blocks = scope:hbe_start_mother }
  } else = { ruler = { every_spouse = { save_scope_as = hbe_start_mother } } }
  random_list = {
-  25 = { set_variable = { name = hbe_opening_children value = 0 } }
-  25 = { set_variable = { name = hbe_opening_children value = 1 } hbe_generate_opening_child = yes }
-  25 = { set_variable = { name = hbe_opening_children value = 2 } hbe_generate_opening_child = yes hbe_generate_opening_child = yes }
-  25 = { set_variable = { name = hbe_opening_children value = 3 } hbe_generate_opening_child = yes hbe_generate_opening_child = yes hbe_generate_opening_child = yes }
+  25 = {  }
+  25 = {  hbe_generate_opening_child = yes }
+  25 = {  hbe_generate_opening_child = yes hbe_generate_opening_child = yes }
+  25 = {  hbe_generate_opening_child = yes hbe_generate_opening_child = yes hbe_generate_opening_child = yes }
  }
  set_variable = hbe_opening_family_done
  set_variable = hbe_opening_abilities_fixed

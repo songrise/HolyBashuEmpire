@@ -223,7 +223,7 @@ hbe_expire_opening_truces = {
  else_if = { limit = { has_or_had_tag = BCA } hbe_expire_opening_pair_flags = { self = BCA } }
  else_if = { limit = { has_or_had_tag = BCB } hbe_expire_opening_pair_flags = { self = BCB } }
  else_if = { limit = { has_or_had_tag = BCC } hbe_expire_opening_pair_flags = { self = BCC } }
- set_variable = hbe_opening_expiry_completed
+ 
 }
 hbe_clear_broken_opening_pair = {
  if = { limit = { scope:recipient = { has_or_had_tag = BAB } } remove_variable = hbe_opening_truce_BAB }

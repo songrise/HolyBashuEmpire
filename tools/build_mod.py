@@ -3,7 +3,7 @@
 Run with Python 3.10+. No changes are made to the installation. The large setup
 override is generated locally and pinned to the source hash in build_manifest.
 """
-from build_support import sha256_file as sha, snapshot_files, defer_file_snapshots
+from build_support import sha256_file as sha, snapshot_files, defer_file_snapshots, normalize_text_newlines
 import argparse, colorsys, csv, json, re, struct, zlib
 from collections import OrderedDict
 from pathlib import Path
@@ -383,7 +383,7 @@ hbe_add_credit = {
         init.append(f'''if = {{ limit = {{ OR = {{ {' '.join('has_or_had_tag = '+t for t in tags)} }} NOT = {{ has_variable = hbe_home_{key} }} }}
             set_variable = hbe_home_{key} set_variable = {{ name = {counter} value = 20 }} }}''')
     effects.append('hbe_initialize = {\n'+'\n'.join(init)+'\nhbe_apply_tianfu = yes\n}')
-    # Research uses decisions and timed projects, not an unverified new vanilla tree UI.
+    # Research runs in the native technology queue; build_native_content owns the advances.
     catalog=table_nodes();decisions=[];monthly=[];events=[]
     def decision(key,title,desc,potential,allow,effect,cost=0,ai=10):
         L(key,title);L(key+'.desc',desc);L(key+'.a','执行')
@@ -395,19 +395,6 @@ hbe_add_credit = {
     ai_will_do = {{ value = {ai} }}
     option = {{ name = {key}.a ai_chance = {{ value = 100 }} effect = {{ {'add_gold = -'+str(cost) if cost else ''} {effect} }} }}
 }}''')
-    for n in catalog:
-        key=n['key'];idx=n['index'];group=n['group'];allowed=''
-        if group!='common':allowed=f'has_variable = hbe_home_{group}'
-        req=f'has_variable = {n["predecessor"]}' if n['predecessor'] else ''
-        opposite=''
-        if group!='common' and idx in (2,5):opposite=f'NOT = {{ has_variable = hbe_tech_{group}_{6 if idx==2 else 3} }}'
-        decision(key,'研究：'+n['name'],f'{n["description"]}\n费用 {n["cost"]}，研究 {n["years"]} 年；须达到 {n["year"]} 年。',
-                 f'{allowed} NOT = {{ has_variable = {key} }}',
-                 f'current_year >= {n["year"]} {req} {opposite} NOT = {{ has_variable = hbe_research_pending }}',
-                 f'set_variable = hbe_research_pending set_variable = {key}_pending set_variable = {{ name = hbe_research_timer value = yes years = {n["years"]} }}',cost=n['cost'])
-        monthly.append(f'''if = {{ limit = {{ has_variable = {key}_pending NOT = {{ has_variable = hbe_research_timer }} }}
-            remove_variable = {key}_pending remove_variable = hbe_research_pending set_variable = {key}
-            hbe_add_credit = yes trigger_event_non_silently = {{ id = hbe.2 }} }}''')
     # Seven real regional state counters, recurring services, and debt repayment.
     for ri,(group,name,_,label,counter,action_a,action_b) in enumerate(REGIONS):
         pending=f'hbe_service_{group}_pending';timer=f'hbe_service_{group}_timer'
@@ -553,7 +540,7 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     event_choices = build_event_choices(out, ROOT, loc, put, game)
     # Both Chinese and English UI modes have complete keys (English uses Chinese placeholder text).
     variable_labels={'hbe_yiqi':'义气','hbe_guoqi':'锅气','hbe_salt_debt':'盐债',
-                     'hbe_research_timer':'地方课题计时','hbe_flavor_cooldown':'地方事件间隔',
+                     'hbe_flavor_cooldown':'地方事件间隔',
                      'hbe_service_cooldown':'事业续办间隔','hbe_assembly_cooldown':'帝国茶会间隔',
                      'hbe_loan_cooldown':'盐引发行间隔'}
     variable_labels.update({r[4]:r[3] for r in REGIONS})
@@ -672,6 +659,8 @@ hbe_yearly = { trigger = { hbe_is_prince = yes } effect = {
     apply_opening_territory(out, ROOT, game)
     from build_local_affairs import apply as build_local_affairs
     build_local_affairs(out, ROOT, game)
+    # Line endings are part of the artifact: normalise once, after every stage.
+    normalized = normalize_text_newlines(out)
     manifest_path = out / "build_manifest.json"
     final_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     final_manifest["deep_balance_v031"] = {"version":"0.3.1", "local_only":True, "decision_prices":len(deep_balance_report["decision_prices"]), "event_receipts":len(deep_balance_report["event_receipts"]), "national_output_caps":deep_balance_report["national_output_caps"], "reforms":deep_balance_report["reforms"], "support_duration_rule":deep_balance_report["support_duration_rule"]}

@@ -33,7 +33,6 @@ government = {
         royal_court_customs_law = balanced_court_policy
         administrative_system = central_councils
         cultural_traditions_law = civil_society
-
         marriage_law = monogamous_marriage
         heir_religion_law = heir_any_religion
         legal_code_law = traditional_law_policy

@@ -248,6 +248,10 @@ def main():
         validate_opening_territory(m,ROOT,manifest,check)
     from validate_local_affairs import validate as validate_local_affairs
     validate_local_affairs(m,ROOT,game,manifest,check)
+    from validate_text_hygiene import validate as validate_text_hygiene
+    validate_text_hygiene(m,ROOT,game,manifest,check)
+    from validate_variable_hygiene import validate as validate_variable_hygiene
+    validate_variable_hygiene(m,ROOT,game,manifest,check)
     from apply_presentation_v040 import validate as validate_presentation
     validate_presentation(m,manifest,check)
     failed=[row['check'] for row in checks if not row['passed']]

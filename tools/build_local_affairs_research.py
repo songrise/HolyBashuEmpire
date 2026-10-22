@@ -34,7 +34,7 @@ def build(out, root, put, loc, manifest):
  icon = {key}
  content_priority = {835-i*5}
  potential = {{ {potential.strip()} }}
- allow = {{ is_member_of_international_organization = international_organization:hbe_empire NOT = {{ has_variable = hbe_research_pending }} }}
+ allow = {{ is_member_of_international_organization = international_organization:hbe_empire }}
  requires = {row['parent']}
  {permission} = yes
  {LOCAL_REWARDS+' = '+str(row['local_reward_bonus']) if 'local_reward_bonus' in row else ''}

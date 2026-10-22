@@ -5,7 +5,7 @@
  icon = hbe_af_public_funding
  content_priority = 835
  potential = { hbe_research_origin_common = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = renaissance_development
  hbe_af_allow_large_investment = yes
  
@@ -19,7 +19,7 @@ hbe_af_local_proposals = {
  icon = hbe_af_local_proposals
  content_priority = 830
  potential = { hbe_research_origin_common = yes }
- allow = { is_member_of_international_organization = international_organization:hbe_empire NOT = { has_variable = hbe_research_pending } }
+ allow = { is_member_of_international_organization = international_organization:hbe_empire }
  requires = hbe_af_public_funding
  hbe_af_allow_local_refresh = yes
  hbe_af_local_reward_modifier = 0.2

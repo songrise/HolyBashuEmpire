@@ -9,7 +9,6 @@
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_embroidery_license = yes
-        NOT = { has_variable = hbe_research_pending }
     }
     pure_tooltip_entry = hbe_transmission_embroidery_effects
     unlock_production_method = hbe_chengdu_plain_advanced_production
@@ -29,7 +28,6 @@ hbe_transmission_well_salt = {
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_well_salt_license = yes
-        NOT = { has_variable = hbe_research_pending }
     }
     pure_tooltip_entry = hbe_transmission_well_salt_effects
     unlock_production_method = hbe_southern_salt_wine_advanced_production
@@ -48,7 +46,6 @@ hbe_transmission_paper = {
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_paper_license = yes
-        NOT = { has_variable = hbe_research_pending }
     }
     pure_tooltip_entry = hbe_transmission_paper_effects
     unlock_production_method = hbe_northern_shudao_advanced_production
@@ -67,7 +64,6 @@ hbe_transmission_border_tea = {
     allow = {
         is_member_of_international_organization = international_organization:hbe_empire
         hbe_transmission_border_tea_license = yes
-        NOT = { has_variable = hbe_research_pending }
     }
     pure_tooltip_entry = hbe_transmission_border_tea_effects
     unlock_production_method = hbe_western_tea_horse_advanced_production
